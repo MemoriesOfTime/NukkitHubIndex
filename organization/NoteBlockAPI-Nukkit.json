@@ -1,0 +1,42 @@
+{
+  "api_version": "1.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1493877159,
+  "dependencies": [],
+  "description": "# NoteBlockAPI\r\nThis plugin forked from [**xxmicloxx/NoteBlockAPI**](https://github.com/xxmicloxx/NoteBlockAPI)\r\n#### **Test video on Youtube**\r\n[![NoteBlockAPI Test (with ServerSongTest)](https://i.ytimg.com/vi/wuO2IVG4Hb0/hqdefault.jpg)](https://www.youtube.com/watch?v=wuO2IVG4Hb0 \"NoteBlockAPI Test (with ServerSongTest)\")\r\n\r\n\r\n## How to use in maven (pom.xml)\r\nAdd the following source to pom.xml:\r\n```\r\n<repositories>\r\n   <repository>\r\n      <id>organization</id>\r\n      <url>https://github.com/nukkitplugin/maven-repo/raw/master/</url>\r\n   </repository>\r\n</repositories>\r\n<dependencies>\r\n   <dependency>\r\n      <groupId>nukkitplugin</groupId>\r\n      <artifactId>NoteBlockAPI</artifactId>\r\n      <version>1.0.0-SNAPSHOT</version>\r\n      <scope>provided</scope>\r\n   </dependency>\r\n</dependencies>\r\n```\r\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/11614510?v=4",
+  "id": "organization/NoteBlockAPI-Nukkit",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "name": "NoteBlockAPI",
+  "server_version": "",
+  "source": "https://github.com/organization/NoteBlockAPI-Nukkit",
+  "stars": 1,
+  "summary": "",
+  "updated_at": 1679764467,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "NoteBlockAPI-1.0.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 19424,
+          "url": "https://github.com/organization/NoteBlockAPI-Nukkit/releases/download/1.0.0/NoteBlockAPI-1.0.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "1.0.0-SNAPSHOT",
+      "prerelease": false,
+      "published_at": 1494311022,
+      "version": "1.0.0"
+    }
+  ]
+}

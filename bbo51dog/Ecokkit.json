@@ -1,0 +1,62 @@
+{
+  "api_version": "1.0.9",
+  "authors": [],
+  "categories": [],
+  "created_at": 1581810793,
+  "dependencies": [],
+  "description": "# Ecokkit\nEconomy plugin for Nukkit\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/44104663?v=4",
+  "id": "bbo51dog/Ecokkit",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/bbo51dog/Ecokkit",
+    "wiki": ""
+  },
+  "name": "Ecokkit",
+  "server_version": "",
+  "source": "https://github.com/bbo51dog/Ecokkit",
+  "stars": 1,
+  "summary": "Economy plugin for Nukkit",
+  "updated_at": 1590215794,
+  "versions": [
+    {
+      "changelog": "- Support for multiple languages(English and Japanese)\r\n- Refactoring",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Ecokkit_v1.0.1.jar",
+          "primary": true,
+          "size": 7660995,
+          "url": "https://github.com/bbo51dog/Ecokkit/releases/download/1.0.1/Ecokkit_v1.0.1.jar"
+        }
+      ],
+      "name": "v1.0.1",
+      "prerelease": false,
+      "published_at": 1582516664,
+      "version": "1.0.1"
+    },
+    {
+      "changelog": "Nukkit用の経済プラグインです。\r\nThis is economy plugin for Nukkit.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Ecokkit_v1.0.0.jar",
+          "primary": true,
+          "size": 7659600,
+          "url": "https://github.com/bbo51dog/Ecokkit/releases/download/1.0.0/Ecokkit_v1.0.0.jar"
+        }
+      ],
+      "name": "v1.0.0",
+      "prerelease": false,
+      "published_at": 1582362752,
+      "version": "1.0.0"
+    }
+  ]
+}

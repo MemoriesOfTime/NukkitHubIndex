@@ -1,0 +1,58 @@
+{
+  "api_version": "2.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1591081810,
+  "dependencies": [],
+  "description": "<!-- MAIN TITLE -->\r\n# • CryptoPrices\r\n\r\n<!-- BADGES -->\r\n![Nukkit: 2.0](https://img.shields.io/badge/nukkit-2.0-red?style=flat-square)\r\n![License: GPL v3](https://img.shields.io/badge/license-GPLv3-blue.svg?style=flat-square)\r\n\r\n<!-- KEY INFORMATION HEADER -->\r\n## → Information\r\n\r\n* Nukkit 2.0 plugin.\r\n* Get the latest crypto prices for various coins inside a server.\r\n\r\n<!-- LICENSE INFO -->\r\n## → License\r\n\r\n  This project is licensed under the GPLv3.\r\n\r\n<!-- END OF README -->\r\n## → Questions / Contact me\r\n\r\n* Discord Account: `TrackRunny#2503`\r\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/45835198?v=4",
+  "id": "TrackRunny/CryptoPrices",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "name": "CryptoPrices",
+  "server_version": "",
+  "source": "https://github.com/TrackRunny/CryptoPrices",
+  "stars": 0,
+  "summary": "Get current prices of crypto currency",
+  "updated_at": 1611194114,
+  "versions": [
+    {
+      "changelog": "* Switch to task based system instead of on Demand system",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "CryptoPrices-1.1.0.jar",
+          "primary": true,
+          "size": 5296493,
+          "url": "https://github.com/TrackRunny/CryptoPrices/releases/download/1.1.0/CryptoPrices-1.1.0.jar"
+        }
+      ],
+      "name": "CryptoPrices 1.1.0",
+      "prerelease": false,
+      "published_at": 1602012589,
+      "version": "1.1.0"
+    },
+    {
+      "changelog": "* First release\r\n* 3 crypto coins to use ",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "CryptoPrices-1.0.0-all.jar",
+          "primary": true,
+          "size": 5297259,
+          "url": "https://github.com/TrackRunny/CryptoPrices/releases/download/1.0.0/CryptoPrices-1.0.0-all.jar"
+        }
+      ],
+      "name": "CryptoPrices v1.0.0",
+      "prerelease": false,
+      "published_at": 1591082068,
+      "version": "1.0.0"
+    }
+  ]
+}

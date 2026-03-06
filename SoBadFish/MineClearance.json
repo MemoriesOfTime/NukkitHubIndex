@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.11",
+  "authors": [],
+  "categories": [],
+  "created_at": 1770387373,
+  "dependencies": [],
+  "description": "# MineClear - 扫雷游戏插件\n\n一个为 Nukkit 服务器开发的扫雷游戏插件，支持自定义游戏区域、计时功能和游戏记录保存。\n\n## 功能特点\n\n- ✅ 自定义扫雷游戏区域\n- ✅ 游戏计时功能\n- ✅ 游戏记录保存\n- ✅ 玩家离开区域自动重置\n- ✅ 玩家切换地图自动重置\n- ✅ 自定义雷数设置\n- ✅ 美观的游戏界面\n\n## 安装方法\n\n1. 下载插件的 JAR 文件\n2. 将 JAR 文件放入服务器的 `plugins` 文件夹中\n3. 重启服务器\n4. 插件会自动生成配置文件\n\n## 命令说明\n\n### 创建游戏区域\n\n使用以下命令打开创建游戏区域的表单：\n\n```\n/mt\n```\n\n在表单中，你可以设置：\n- 房间名称\n- 游戏区域宽度（5-20格）\n- 游戏区域高度（5-20格）\n- 雷数（1-50个）\n\n### 删除游戏区域\n\n使用以下命令删除指定的游戏区域：\n\n```\n/mt remove <房间名称>\n```\n\n## 游戏玩法\n\n1. 创建游戏区域后，点击区域内的方块开始游戏\n2. 点击方块时，会根据扫雷规则进行处理：\n   - 挖到雷：游戏结束，显示用时\n   - 挖到数字：显示周围雷数\n   - 挖到空白：自动连锁挖掘周围方块\n3. 当所有非雷方块都被挖掘时，游戏胜利，显示用时并保存记录\n\n## 配置文件\n\n### room.yml\n\n存储游戏区域的配置信息，格式如下：\n\n```yaml\nroom:\n- startX: 100\n  endX: 108\n  y: 64\n  startZ: 100\n  endZ: 108\n  mine: 10\n  levelName: world\n  roomName: 测试房间\n```\n\n### player.yml\n\n存储玩家的游戏记录，格式如下：\n\n```yaml\n玩家名称:\n  房间名称:\n    timeUsed: 10\n    lastPlayed: 1620000000000\n```\n\n\n## 资源包\n\n插件包含一个资源包，提供了扫雷游戏所需的纹理和模型：\n- 雷的纹理和模型\n- 数字的纹理和模型\n- 旗子的纹理和模型\n- 方块的纹理和模型\n\n## 权限说明\n\n- 只有 OP 玩家可以使用 `/mt` 命令创建和删除游戏区域\n- 所有玩家都可以参与扫雷游戏\n\n## 注意事项\n\n- 游戏区域大小建议在 5x5 到 20x20 之间\n- 雷数建议不超过总方块数的 30%\n- 玩家离开游戏区域超过 5 米时，游戏会自动重置\n- 玩家切换地图时，游戏会自动重置\n\n游戏效果:\n\n| ![游戏效果](https://raw.githubusercontent.com/SoBadFish/MineClearance/master/img/p1.png) | ![游戏效果](https://raw.githubusercontent.com/SoBadFish/MineClearance/master/img/p2.png) |\n| --- | --- |\n\n\n",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-03-06",
+      "description": "",
+      "title": "游戏效果",
+      "url": "https://raw.githubusercontent.com/SoBadFish/MineClearance/master/img/p1.png"
+    },
+    {
+      "created": "2026-03-06",
+      "description": "",
+      "title": "游戏效果",
+      "url": "https://raw.githubusercontent.com/SoBadFish/MineClearance/master/img/p2.png"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/83235042?v=4",
+  "id": "SoBadFish/MineClearance",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "name": "MineClear",
+  "server_version": "",
+  "source": "https://github.com/SoBadFish/MineClearance",
+  "stars": 0,
+  "summary": "",
+  "updated_at": 1771771122,
+  "versions": []
+}

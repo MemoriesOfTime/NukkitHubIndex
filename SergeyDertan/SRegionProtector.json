@@ -1,0 +1,396 @@
+{
+  "api_version": "1.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1542033028,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "EconomyAPI",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "FastAsyncWorldEdit",
+      "version_range": ""
+    }
+  ],
+  "description": "# SRegionProtector\nSRegionProtector is a nukkit plugin that allows players to protect their regions.\n## Download\n* [NukkitX.com](https://nukkitx.com/resources/sregionprotector.164/)\n* [GoogleDrive](https://drive.google.com/file/d/17y1987s7YitfpL2mGQ9ele3dACSSFwea/view?usp=sharing)\n* [All versions](https://drive.google.com/drive/folders/1Z98RAPGY-7NK49ktsBYkZgafUB50r7NC?usp=sharing)\n## Features\n* Chest and form UI with custom page support\n* API for another plugins\n* Lots of flags\n* Flexible settings\n* High performance\n## Maven dependency\n<details>\n<summary>Maven dependency</summary>\n\n```\n<repositories>\n    <repository>\n        <id>SRegionProtector-master</id>\n        <url>https://raw.github.com/SergeyDertan/SRegionProtector/mvn-repo/</url>\n        <snapshots>\n            <enabled>true</enabled>\n            <updatePolicy>always</updatePolicy>\n        </snapshots>\n    </repository>\n</repositories>\n<dependencies>\n    <dependency>\n        <groupId>sergeydertan.sregionprotector</groupId>\n        <artifactId>SRegionProtector</artifactId>\n        <version>LATEST</version>\n    </dependency>\n</dependencies>\n```\n\n</details>\n\n## Commands and permissions can be found at [Wiki](https://github.com/SergeyDertan/SRegionProtector/wiki).\n\n## !Warning! some flags may not work because they are disabled, pls check config.yml first\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/7607627?v=4",
+  "id": "SergeyDertan/SRegionProtector",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "http://t.me/Sergey57ss",
+    "wiki": ""
+  },
+  "name": "${pom.artifactId}",
+  "server_version": "",
+  "source": "https://github.com/SergeyDertan/SRegionProtector",
+  "stars": 16,
+  "summary": "",
+  "updated_at": 1727262638,
+  "versions": [
+    {
+      "changelog": "Lots of stuff and fixes",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SRegionProtector-30.0.jar",
+          "primary": true,
+          "size": 842478,
+          "url": "https://github.com/SergeyDertan/SRegionProtector/releases/download/30.0/SRegionProtector-30.0.jar"
+        }
+      ],
+      "name": "Lots of stuff and fixes",
+      "prerelease": false,
+      "published_at": 1596025877,
+      "version": "30.0"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SRegionProtector-20.1.jar",
+          "primary": true,
+          "size": 836700,
+          "url": "https://github.com/SergeyDertan/SRegionProtector/releases/download/20.1/SRegionProtector-20.1.jar"
+        }
+      ],
+      "name": "Make wand item modifiable",
+      "prerelease": false,
+      "published_at": 1565445189,
+      "version": "20.1"
+    },
+    {
+      "changelog": "Changelist:\r\nFix YAML provider thread amount\r\nAngry villager particle when flag activated\r\nCopy flags command\r\nFix lang strings\r\nFix NPE\r\nFix explode block break status\r\nFix region size calculation\r\nFix member remove form member check\r\nAdd warning when flag disabled\r\nIncrease default save period to 6 minutes\r\nRemove useless messages when enabling plugin",
+      "downloads": 0,
+      "files": [],
+      "name": "Flag particle & fixes",
+      "prerelease": false,
+      "published_at": 1560863088,
+      "version": "20.0"
+    },
+    {
+      "changelog": "https://github.com/SergeyDertan/SRegionProtector/wiki/Flags#bucket-empty\r\nhttps://github.com/SergeyDertan/SRegionProtector/wiki/Flags#bucket-fill\r\n\r\nhide disabled flags from form UI",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SRegionProtector-19.8.jar",
+          "primary": true,
+          "size": 831761,
+          "url": "https://github.com/SergeyDertan/SRegionProtector/releases/download/19.8/SRegionProtector-19.8.jar"
+        }
+      ],
+      "name": "Bucket fill & bucket empty flags",
+      "prerelease": false,
+      "published_at": 1559241042,
+      "version": "19.8"
+    },
+    {
+      "changelog": "[Frame Drop Item flag](https://github.com/SergeyDertan/SRegionProtector/wiki/Flags#frame-item-drop)",
+      "downloads": 0,
+      "files": [],
+      "name": "Frame drop item flag",
+      "prerelease": false,
+      "published_at": 1557936031,
+      "version": "19.7"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [],
+      "name": "Protected message type, maximum borders amount, remove fastjson",
+      "prerelease": false,
+      "published_at": 1556827983,
+      "version": "19.6"
+    },
+    {
+      "changelog": "[PlaceHolderAPI support](https://github.com/SergeyDertan/SRegionProtector/wiki/Placeholders)\r\n[Chest UI custom pages](https://github.com/SergeyDertan/SRegionProtector/wiki/API#adding-custom-pages-to-chest-ui)\r\n[New permissions](https://github.com/SergeyDertan/SRegionProtector/wiki/Configuration#default-max-size--max-amount)\r\nHeal flag fix",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SRegionProtector-19.5.jar",
+          "primary": true,
+          "size": 829008,
+          "url": "https://github.com/SergeyDertan/SRegionProtector/releases/download/19.5/SRegionProtector-19.5.jar"
+        }
+      ],
+      "name": "PlaceholderAPI, chest UI custom pages & new permissions",
+      "prerelease": false,
+      "published_at": 1556450018,
+      "version": "19.5"
+    },
+    {
+      "changelog": "Fix remove region & sell region commands permissions",
+      "downloads": 0,
+      "files": [],
+      "name": "Permissions fix",
+      "prerelease": false,
+      "published_at": 1556046458,
+      "version": "19.4.1"
+    },
+    {
+      "changelog": "Form UI\r\nOnly one UI can be active\r\nBy default its chest ui, see gui-type at config.yml",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SRegionProtector-19.4.jar",
+          "primary": true,
+          "size": 826006,
+          "url": "https://github.com/SergeyDertan/SRegionProtector/releases/download/19.4/SRegionProtector-19.4.jar"
+        }
+      ],
+      "name": "Form UI",
+      "prerelease": false,
+      "published_at": 1555867468,
+      "version": "19.4"
+    },
+    {
+      "changelog": "Nether portal flag prevents nether portal from being created in region\r\nGlobal value: enabled\r\nRegion default value: enabled",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SRegionProtector-19.3.jar",
+          "primary": true,
+          "size": 802968,
+          "url": "https://github.com/SergeyDertan/SRegionProtector/releases/download/19.3/SRegionProtector-19.3.jar"
+        }
+      ],
+      "name": "Nether portal flag",
+      "prerelease": false,
+      "published_at": 1555684647,
+      "version": "19.3"
+    },
+    {
+      "changelog": "GUI",
+      "downloads": 0,
+      "files": [],
+      "name": "GUI",
+      "prerelease": false,
+      "published_at": 1555446491,
+      "version": "19.2"
+    },
+    {
+      "changelog": "Admin update notifier, heal & explode flags fix",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SRegionProtector-19.1.jar",
+          "primary": true,
+          "size": 781995,
+          "url": "https://github.com/SergeyDertan/SRegionProtector/releases/download/19.1/SRegionProtector-19.1.jar"
+        }
+      ],
+      "name": "Admin update notifier, heal & explode flags fix",
+      "prerelease": false,
+      "published_at": 1554924500,
+      "version": "19.1"
+    },
+    {
+      "changelog": "MySQL, SQLite and PostrgeSQL support & migrate command",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SRegionProtector-19.0.jar",
+          "primary": true,
+          "size": 661872,
+          "url": "https://github.com/SergeyDertan/SRegionProtector/releases/download/19.0/SRegionProtector-19.0.jar"
+        }
+      ],
+      "name": "MySQL, SQLite and PostrgeSQL support & migrate command",
+      "prerelease": false,
+      "published_at": 1554645258,
+      "version": "19.0"
+    },
+    {
+      "changelog": "Allow & deny instead of true & false",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SRegionProtector-18.9.jar",
+          "primary": true,
+          "size": 6816630,
+          "url": "https://github.com/SergeyDertan/SRegionProtector/releases/download/18.9/SRegionProtector-18.9.jar"
+        }
+      ],
+      "name": "Allow & deny instead of true & false",
+      "prerelease": false,
+      "published_at": 1554053255,
+      "version": "18.9"
+    },
+    {
+      "changelog": "NPE fix & auto save enabling",
+      "downloads": 0,
+      "files": [],
+      "name": "NPE fix & auto save enabling",
+      "prerelease": false,
+      "published_at": 1554048931,
+      "version": "18.8.1"
+    },
+    {
+      "changelog": "Fall damage flag",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SRegionProtector-18.8.jar",
+          "primary": true,
+          "size": 6816417,
+          "url": "https://github.com/SergeyDertan/SRegionProtector/releases/download/18.8/SRegionProtector-18.8.jar"
+        }
+      ],
+      "name": "Fall damage flag",
+      "prerelease": false,
+      "published_at": 1553886843,
+      "version": "18.8"
+    },
+    {
+      "changelog": "Minefarm flag",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SRegionProtector-18.7.jar",
+          "primary": true,
+          "size": 6819809,
+          "url": "https://github.com/SergeyDertan/SRegionProtector/releases/download/18.7/SRegionProtector-18.7.jar"
+        }
+      ],
+      "name": "Minefarm flag",
+      "prerelease": false,
+      "published_at": 1553630702,
+      "version": "18.7"
+    },
+    {
+      "changelog": "Smart doors flag",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SRegionProtector-18.6.jar",
+          "primary": true,
+          "size": 6815407,
+          "url": "https://github.com/SergeyDertan/SRegionProtector/releases/download/18.6/SRegionProtector-18.6.jar"
+        }
+      ],
+      "name": "Smart doors flag",
+      "prerelease": false,
+      "published_at": 1553454687,
+      "version": "18.6"
+    },
+    {
+      "changelog": "Chunk loader flag",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SRegionProtector-18.5.jar",
+          "primary": true,
+          "size": 6813591,
+          "url": "https://github.com/SergeyDertan/SRegionProtector/releases/download/18.5/SRegionProtector-18.5.jar"
+        }
+      ],
+      "name": "Chunk loader flag",
+      "prerelease": false,
+      "published_at": 1553384401,
+      "version": "18.5"
+    },
+    {
+      "changelog": "Mobplugin support",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SRegionProtector-18.4.jar",
+          "primary": true,
+          "size": 6812105,
+          "url": "https://github.com/SergeyDertan/SRegionProtector/releases/download/18.4/SRegionProtector-18.4.jar"
+        }
+      ],
+      "name": "Mobplugin support",
+      "prerelease": false,
+      "published_at": 1553277921,
+      "version": "18.4"
+    },
+    {
+      "changelog": "Split build flag into place and break",
+      "downloads": 0,
+      "files": [],
+      "name": "Split build flag into place and break",
+      "prerelease": false,
+      "published_at": 1553183250,
+      "version": "18.3"
+    },
+    {
+      "changelog": "Unique message for each flag",
+      "downloads": 0,
+      "files": [],
+      "name": "Unique message for each flag",
+      "prerelease": false,
+      "published_at": 1552741644,
+      "version": "18.2"
+    },
+    {
+      "changelog": "Lightning strike & mob spawn flags fix",
+      "downloads": 0,
+      "files": [],
+      "name": "Lightning strike & mob spawn flags fix",
+      "prerelease": false,
+      "published_at": 1552245570,
+      "version": "18.1"
+    },
+    {
+      "changelog": "Priority system & update description",
+      "downloads": 0,
+      "files": [],
+      "name": "Priority system & update description",
+      "prerelease": false,
+      "published_at": 1552184757,
+      "version": "18.0"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [],
+      "name": "",
+      "prerelease": false,
+      "published_at": 1551432422,
+      "version": "17.6"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SRegionProtector-14.3.jar",
+          "primary": true,
+          "size": 98042,
+          "url": "https://github.com/SergeyDertan/SRegionProtector/releases/download/14.3/SRegionProtector-14.3.jar"
+        }
+      ],
+      "name": "",
+      "prerelease": false,
+      "published_at": 1545680277,
+      "version": "14.3"
+    },
+    {
+      "changelog": "\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SRegionProtector-14.1.jar",
+          "primary": true,
+          "size": 94206,
+          "url": "https://github.com/SergeyDertan/SRegionProtector/releases/download/14.1/SRegionProtector-14.1.jar"
+        }
+      ],
+      "name": "",
+      "prerelease": false,
+      "published_at": 1545266353,
+      "version": "14.1"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "api_version": "1.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1758578159,
+  "dependencies": [],
+  "description": "# FakeInventories\n\nFakeInventories is a simple library plugin for Lumi and Nukkit-MOT Minecraft Bedrock server software, that will help you to create\nyour custom virtual inventories with ease.\n\n### [Download the plugin](https://github.com/LuminiaDev/FakeInventories/releases)\n\n## How to use\n\n```java\nFakeInventory inventory = new FakeInventory(InventoryType.CHEST, \"Custom inventory\");\n\ninventory.setDefaultItemHandler((item, event) -> {\n    event.setCancelled();\n\n    Player target = event.getTransaction().getSource();\n    target.sendMessage(\"This is default item handler\");\n});\n\ninventory.setItem(5, Item.get(Item.DIAMOND), (item, event) -> {\n    event.setCancelled();\n\n    Player target = event.getTransaction().getSource();\n    target.sendMessage(\"This is custom item handler\");\n    target.removeWindow(inventory);\n});\n\ninventory.setOpenHandler(player -> player.sendMessage(\"You opened inventory\"));\ninventory.setCloseHandler(player -> player.sendMessage(\"You closed inventory\"));\n\nplayer.addWindow(inventory);\n```\n\n> [!WARNING]\n> To open fake inventory from the chat window or form, you need to add a delay of 10-20 ticks so that the window has time to close, otherwise the inventory will not open.\n\n## Maven\nAdding repo:\n```xml\n<repository>\n    <id>luminiadev-repository-releases</id>\n    <url>https://repo.luminiadev.com/releases</url>\n</repository>\n```\n\nAdding dependency:\n```xml\n<dependency>\n    <groupId>com.luminiadev.fakeinventories</groupId>\n    <artifactId>fakeinventories</artifactId>\n    <version>1.2.1</version>\n</dependency>\n```\n\n## Gradle\nAdding repo:\n```kts\nmaven {\n    name = \"luminiadevRepositoryReleases\"\n    url = uri(\"https://repo.luminiadev.com/releases\")\n}\n```\n\nAdding dependency:\n```kts\ncompileOnly(\"com.luminiadev.fakeinventories:fakeinventories:1.2.1\")\n```",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/122298065?v=4",
+  "id": "LuminiaDev/FakeInventories",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "name": "${project.name}",
+  "server_version": "",
+  "source": "https://github.com/LuminiaDev/FakeInventories",
+  "stars": 1,
+  "summary": "",
+  "updated_at": 1769951913,
+  "versions": [
+    {
+      "changelog": "## What's Changed\r\n* feat: open & close handlers + FakeInventory#setItemHandler method by @MEFRREEX in https://github.com/LuminiaDev/FakeInventories/pull/2\r\n\r\n\r\n**Full Changelog**: https://github.com/LuminiaDev/FakeInventories/compare/1.2.0...1.2.1",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FakeInventories-1.2.1.jar",
+          "primary": true,
+          "size": 16176,
+          "url": "https://github.com/LuminiaDev/FakeInventories/releases/download/1.2.1/FakeInventories-1.2.1.jar"
+        }
+      ],
+      "name": "1.2.1",
+      "prerelease": false,
+      "published_at": 1758587042,
+      "version": "1.2.1"
+    },
+    {
+      "changelog": "## What's Changed\r\n* feat: new offsets, fake blocks and non-reflection event handler by @MEFRREEX in https://github.com/LuminiaDev/FakeInventories/pull/1\r\n\r\n## New Contributors\r\n* @MEFRREEX made their first contribution in https://github.com/LuminiaDev/FakeInventories/pull/1\r\n\r\n**Full Changelog**: https://github.com/LuminiaDev/FakeInventories/commits/1.2.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FakeInventories-1.2.0.jar",
+          "primary": true,
+          "size": 15511,
+          "url": "https://github.com/LuminiaDev/FakeInventories/releases/download/1.2.0/FakeInventories-1.2.0.jar"
+        }
+      ],
+      "name": "Release",
+      "prerelease": false,
+      "published_at": 1758584820,
+      "version": "1.2.0"
+    }
+  ]
+}

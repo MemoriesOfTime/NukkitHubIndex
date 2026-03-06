@@ -1,0 +1,74 @@
+{
+  "api_version": "1.0.9",
+  "authors": [],
+  "categories": [],
+  "created_at": 1625452759,
+  "dependencies": [],
+  "description": "<a href=\"https://github.com/SmallasWater/EasyMySQL/releases/latest\" alt=\"Latest release\">\n    <img src=\"https://img.shields.io/github/v/release/SmallasWater/EasyMySQL?include_prereleases\" alt=\"Latest release\">\n</a>\n\n# EasySQL\n\n> 使用本插件可以更方便的使用MySQL数据库\n> 使用本插件需要先了解一定的MySQL 至少要知道 **字段**，**表名** 的意思\n\n> * 使用方法:\n    >   - 实例化 **SqlEnable**, **SqlManager** 或者 **UseTableSqlManager** 任意一个均可连接数据库\n    >   ~~~\n>    \n>   /**\n>    * 连接数据表\n>    */\n>   SqlManager manager = new SqlManager(Plugin, UserData);\n>     \n>   ~~~\n~~~~\n * 用法简介\n    * SqlManager 类: 使用本插件需实例化本类连接数据库\n      \n      参数:\n       - plugin: 插件的 pluginBase 类即可\n       - data: 数据库账号密码等数据 具体参考 **UserData** 构造方法\n\n      方法:\n       - isEnable(): 返回数据库是否连接成功\n       - disable(): 关闭数据库的连接 一般在插件onDisable 内使用\n       - getConnection(): 获取**Connection**\n       - executeSql(String sql, ChunkSqlType... value): 执行sql语句\n       - executeFunction(MySqlFunctions functions): 执行MySQL函数\n       - executeFunction(String functions): 执行MySQL函数\n       - isExistTable(String tableName): 是否存在表\n       - createTable(String tableName): 创建一个只包含自增ID的表\n       - createTable(String tableName, TableType... tableTypes): 根据参数创建表\n       - deleteTable(String tableName): 删除表\n       - isExistColumn(String table, String column): 是否存在字段(列)  \n       - createColumn(String tableName, TableType tableType): 创建字段(列)\n       - deleteColumn(String tableName, String args): 删除字段(列)\n       - isExistsData(String tableName, String column, String data): 是否存在数据\n       - setData(String tableName, SqlData data, SqlData where): 修改数据\n       - insertData(String tableName, SqlData data): 添加数据\n       - insertData(String tableName, LinkedList<SqlData> datas): 添加多条数据\n       - deleteData(String tableName, SqlData data): 删除数据\n       - getDataSize(String sql, String tableName, ChunkSqlType... sqlType): 获取数据条数\n       - getData(String tableName, SelectType selectType): 获取数据\n       - getData(String sql, ChunkSqlType... types): 获取数据\n~~~~\n    * SqlData: 为查询语句获取的返回值 或者为向 MySQL写入数据用到的参数\n    \n      参数:\n       - column: 字段名\n       - object: 读取到的数值\n    \n      方法:\n       - put(String column,Object object): 写入数据 column 为字段名 object 为要写入的数据\n       - get(String column,T defaultValue): 根据字段名获取 任意类型数据 T 为返回值为null的情况下的类型\n       - getColumns(): 获取返回的所有字段名称\n       - getColumn(int index): 根据索引获取对应的字段名\n\n## ORM 部分\n\n> 如果你习惯使用 **orm** 来操作数据库的话，EasyMySQL也提供了一个 orm 框架 (效率并不高)\n>\n> 使用 orm 能够更加的快捷方便的操作数据\n\n+ Example is all you need\n\n> 先创建一个 **Entity** (这里的 Entity 不是 nk 里的实体，而是 orm 里面的数据对象)\n>\n> 例如:\n>\n> ```java\n> public class ExampleEntity {\n> \n>     @Column(name = \"id\", type = Types.ID) // ID 类型的 column 会自增\n>     public Long id;\n> \n>     @Constraint(name = \"t_unique_uuids\", type = Constraint.Type.UNIQUE)\n>     @AutoUUIDGenerate // 自动生成 uuid\n>     @Column(name = \"uuid\", type = Types.VARCHAR)\n>     //@ForeignKey(tableName = \"t_other\", columnName = \"uuid\")  外键\n>     public String uuid;\n> \n>     @Column(name = \"register_index\", type = Types.INT, options = {Options.NULL}) // 注意name字段不要命名成关键字，如这里的 index\n>     public Long index;\n> \n>     @Constraint(name = \"t_unique_uuids\", type = Constraint.Type.UNIQUE)\n>     @AutoUUIDGenerate\n>     @Column(name = \"second_uuid\", type = Types.VARCHAR, options = {Options.NULL})  // 可以是 null\n>     public String secondUUID;\n> \n>     @Column(name = \"name\", type = Types.VARCHAR)\n>     public String name;\n> \n> }\n> ```\n>\n> 更多的注解请看: https://github.com/iGxnon/EasyMySQL/tree/feat-orm/src/main/java/com/smallaswater/easysql/orm/annotations/entity\n\n> 然后创建一个 接口(interface) 去继承我们的 **com.smallaswater.easysql.orm.api.IDAO**\n>\n> IDAO的范型需要确定为你上面定义的 Entity\n>\n> 例如:\n>\n> ```java\n> public interface ExampleDAO extends IDAO<ExampleEntity> {\n> \n>     @DoInsert // DoInsert 注释的方法只支持一个参数，并且为范型类型\n>     void insert(ExampleEntity entity);\n> \n>     @DoQuery(\"SELECT * FROM {table}\") // {table} 会在执行时替换成Builder内的table\n>     List<ExampleEntity> queryEntities();\n> \n>     /**\n>      * ? 为参数的占位符，多少个参数就多少个 ?，? 在什么位置参数就会补充到什么位置\n>      */\n>     @DoQuery(\"SELECT * FROM {table} WHERE id > ?\")\n>     List<ExampleEntity> queryEntitiesIDAfter(Long id);\n> \n>     @DoQueryRow(\"SELECT * FROM {table} WHERE id = ?\")\n>     ExampleEntity queryEntity(Long id);\n> \n>     @DoExecute(\"DELETE FROM {table} WHERE id = ? AND uuid = ?\")\n>     void deleteEntity(Long id, String uuid);\n> \n>     /**\n>      * 底层使用的是 javassist 生成代理类来执行这个方法\n>      */\n>     @DoDefault\n>     default void doSomething() {\n>         getManager(); // you got sqlManager\n>         getTable(); // you got tableName\n>         // and do something you like!\n>     }\n> \n> }\n> ```\n>\n> 在这个接口内，你可以使用 orm 提供的一些注解来 ‘注释’ 你的操作，如果你了解 SQL 语句的话，这会十分易懂\n>\n> 你只需模仿这个例子，写一个自己的 IDAO 就行了！\n>\n> 为什么只需要写一个接口？因为 orm 帮你把接口实现了！\n>\n> 更多注解请看: https://github.com/iGxnon/EasyMySQL/tree/feat-orm/src/main/java/com/smallaswater/easysql/orm/annotations/dao\n\n> 最后，就像这样就能使用了!\n>\n> ```java\n> public static void main(String[] args) {\n> \n>         ORMHandleBuilder builder = ORMHandleBuilder.builder(null/*your pluginBase*/, \"test\");\n>         ExampleDAO dao = ((ExampleDAO) builder.fromUserData(new UserData(\"root\", \"114514\", \"localhost\", 3306, \"test_db\")) // 连接你的数据库\n>                 .buildHost()  // 这一步不能省略\n>                 .buildORMDynaProxyIDAO(ExampleDAO.class));  // 传入你的 IDAO 接口，然后强转成那个类型\n> \n>         ExampleEntity entity = new ExampleEntity();\n>         entity.name = \"hahaha\";\n>         entity.index = 114514L;\n>         dao.insert(entity); // doInsert 会在 ExampleEntity 表不存在时创建一个\n> \n>         dao.deleteEntity(1L, \"your uuid\");  // 删掉这个数据\n>         List<ExampleEntity> got = dao.queryEntitiesIDAfter(2L);// 查询一些你想要的数据\n> \n>         dao.doSomething();  // 做一些你想做的事情\n> \n> }\n> ```\n>\n> \n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
+  "id": "SmallasWater/EasyMySQL",
+  "license": {
+    "id": "LGPL-2.1",
+    "name": "GNU Lesser General Public License v2.1",
+    "url": "https://spdx.org/licenses/LGPL-2.1.html"
+  },
+  "links": null,
+  "name": "EasyMySQL",
+  "server_version": "",
+  "source": "https://github.com/SmallasWater/EasyMySQL",
+  "stars": 0,
+  "summary": "",
+  "updated_at": 1739531872,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EasyMySQL_v3.0.6.jar",
+          "primary": true,
+          "size": 8884601,
+          "url": "https://github.com/SmallasWater/EasyMySQL/releases/download/v3.0.6/EasyMySQL_v3.0.6.jar"
+        }
+      ],
+      "name": "3.0.6",
+      "prerelease": false,
+      "published_at": 1675681841,
+      "version": "v3.0.6"
+    },
+    {
+      "changelog": "+ 合并绿泡泡的分支，并更新版本",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EasyMySQL_v3.0.5-SNAPSHOT.jar",
+          "primary": true,
+          "size": 8743684,
+          "url": "https://github.com/SmallasWater/EasyMySQL/releases/download/v3.0.5/EasyMySQL_v3.0.5-SNAPSHOT.jar"
+        }
+      ],
+      "name": "更新啦",
+      "prerelease": false,
+      "published_at": 1643083087,
+      "version": "v3.0.5"
+    },
+    {
+      "changelog": "增加了MySQL连接池",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EasyMySQL_v2.1.0.jar",
+          "primary": true,
+          "size": 2157018,
+          "url": "https://github.com/SmallasWater/EasyMySQL/releases/download/v2.1.0/EasyMySQL_v2.1.0.jar"
+        }
+      ],
+      "name": "更新啦",
+      "prerelease": false,
+      "published_at": 1625452867,
+      "version": "v2.1.0"
+    }
+  ]
+}

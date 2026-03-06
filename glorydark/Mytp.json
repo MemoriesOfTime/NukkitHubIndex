@@ -1,0 +1,31 @@
+{
+  "api_version": "1.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1682256803,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "EconomyAPI",
+      "version_range": ""
+    }
+  ],
+  "description": "# Mytp\n单独储存，由于频繁更改。\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
+  "id": "glorydark/Mytp",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "name": "Mytp",
+  "server_version": "",
+  "source": "https://github.com/glorydark/Mytp",
+  "stars": 1,
+  "summary": "Mytp",
+  "updated_at": 1731771237,
+  "versions": []
+}

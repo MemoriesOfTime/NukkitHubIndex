@@ -1,0 +1,80 @@
+{
+  "api_version": "1.0.11",
+  "authors": [],
+  "categories": [],
+  "created_at": 1662954920,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "ScoreboardPlugin",
+      "version_range": ""
+    }
+  ],
+  "description": "# GameDemo\n\n小游戏的模板框架\n修改模板来快捷的开发小游戏\n\n## **开发文档**\n\n---\n\n#### **房间管理**\n\n1.**简介**\n\n本插件的房间管理通过 **RoomManager** 获取房间对象 (**GameRoom**) 以及房间的配置文件 (**GameRoomConfig**）来操作房间的启动。\n\n2.**房间功能配置**\n\n房间的配置在 GameRoomConfig.java 文件设置，对应的配置文件为 **room.yml** 。本模板已预设好如下参数\n\n\n| 参数变量             | 类型                        | 介绍                                                                                                                                                                                              |\n| ---------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| name                 | String                      | 游戏房间的名称 同时对应着插件文件夹中生成的文件                                                                                                                                                   |\n| worldInfo            | WorldInfoConfig             | 游戏房间的地图配置,内部封装游戏地图，等待坐标等变量<br />开发者可以根据游戏的地图需求增加其他的                                                                                                   |\n| time                 | int                         | 游戏总时长 超过这个时间游戏结束                                                                                                                                                                   |\n| waitTime             | int                         | 当玩家数量满足最低人数限制的时候，就开始读取等待时长<br />达到等待时长后，游戏进入开始状态                                                                                                        |\n| reSpawnTime          | int                         | 玩家的复活时长，如果这个时间为 0 则玩家死亡后<br />迅速回到队伍的出生点                                                                                                                           |\n| maxWaitTime          | int                         | 当房间人数到达上限后，等待时长就会相应的修改为maxWaitTime                                                                                                                                         |\n| minPlayerSize        | int                         | 游戏房间开始的最低玩家数量                                                                                                                                                                        |\n| maxPlayerSize        | int                         | 游戏房间的人数上限                                                                                                                                                                                |\n| isAutomaticNextRound | boolean                     | 当游戏结束或队伍失败后，当这个选项开启，则自动匹配其他游戏房间                                                                                                                                    |\n| teamCfg              | Map`<String,TeamConfig>`    | 存放队伍的名称与队伍的数据信息 队伍的配置信息默认为<br /> 名称,队伍颜色字符，队伍方块颜色，队伍皮革套的颜色。<br />开发者可以根据游戏的需求对这个参数进行调整<br />**对应的配置文件为** team.yml |\n| teamConfigs          | List`<TeamInfoConfig>`      | 存放队伍的配置，包含队伍的数据信息(TeamConfig),队伍的出生点<br />如果队伍中存在物品刷新点，可以在这个配置文件添加                                                                                 |\n| hasWatch             | boolean                     | 游戏房间是否允许玩家进入观战                                                                                                                                                                      |\n| callbackY            | int                         | 防止玩家在游戏的等待大厅跳下虚空 当玩家低于等待大厅的y轴<br />一定的值后将玩家传送回等待大厅的出生点                                                                                             |\n| floatTextInfoConfigs | List`<FloatTextInfoConfig>` | 浮空字的配置文件 包含名称，显示的坐标，显示的文本                                                                                                                                                 |\n| banCommand           | List`<String>`              | 在游戏内禁用的指令                                                                                                                                                                                |\n| quitCommand          | List`<String>`              | 玩家退出游戏房间执行的指令                                                                                                                                                                        |\n| victoryCommand       | List`<String>`              | 玩家在游戏中获得胜利执行的指令                                                                                                                                                                    |\n| defeatCommand        | List`<String>`              | 玩家在游戏中失败执行的指令                                                                                                                                                                        |\n| gameStartMessage     | List`<String>`              | 游戏开始时，给玩家发送的一些话                                                                                                                                                                    |\n\n如果你的游戏房间有其他的参数需求，例如空岛战争需要资源箱，就可以在地图的配置中 **WorldInfoConfig** 写入资源箱的位置并在WorldInfoConfig中的**getInstance()** 中写入读取坐标点的逻辑 WorldInfoConfig 封装了 positionToString 方法和 getPositionByString 方法，可以将坐标点转换为字符串。\n\n如果是房间内需要增加一些参数需要在 **getGameRoomConfigByFile** 中写入读取文件中配置的逻辑，加载到GameRoomConfig 中,并在**save()**中写入保存\n\n2.**游戏房间逻辑**\n\n只有房间被启动后 GameRoom才会被实例化 比如玩家加入房间，此时，GameRoomConfig 被激活，RoomManager就可以获取到相应的**GameRoom**房间对象\n\n启动后房间的初始状态为 **WAIT 大部分都是写好的逻辑 构造方法可以不需要修改**\n\n可以在房间中增加一些变量来实现游戏的功能玩法\n\n房间的主要逻辑为:\n\n#### onUpdate() 房间更新\n\n当房间被实例化后 这个方法**每秒**就会触发一次 触发类在**RoomLoadRunnable** 线程类中。\n\n##### onWait: 房间状态为等待玩家加入\n\n##### onStart: 房间状态为正在进行\n\n##### onEnd: 房间状态为结束\n\n##### onClose: 房间状态为正在进行回收关闭，短时间无法启动\n\n---\n\n#### 玩家管理\n\n在游戏中的玩家使用 PlayerInfo进行控制 PlayerInfo可传入EntityHuman实体 以及Player对象\n\n**onUpdate**方法为时刻监听玩家状态的方法每秒更新一次，玩家复活，计分板在这个方法中进行实现\n\n---\n\n### Tips与RsNPC变量\n**Tips:**  \n%gd-level% 玩家等级  \n%gd-exp% 玩家当前经验  \n%gd-nextExp% 玩家下一级经验  \n%gd-line% 玩家经验条  \n%gd-per% 玩家经验进度百分比  \n%gd-击杀% 玩家总击杀数  \n%gd-死亡% 玩家总死亡数  \n%gd-胜利% 玩家总胜利数  \n%gd-失败% 玩家总失败数  \n%gd-助攻% 玩家总助攻数  \n%gd-游戏次数% 玩家总游戏次数  \n  \n**RsNpc**  \n%房间名-player% 游戏房间人数  \n%模式名-player% 游戏模式人数  \n%all-player% 全部房间游戏人数  \n%房间名-maxplayer% 游戏房间最大人数  \n%房间名-status% 游戏房间状态  \n\n---\n\n### 拓展插件对接\n\n在拓展插件的onEnable方法中 执行\n\n```java\n\nGameRoomDlcManager.register(\"拓展名称\",DLC类的实体类);\n```\n\nDLC实体类要实现接口，重写方法\n\n```\nIGameRoomDlc\n```\n#### 重写结束条件\n如果要重写小游戏房间的结束条件 继承接口\n```\nIGameEndJudge\n//重写\nboolean judgeGameEnd(GameRoom room);\n```\n当实现的方法 返回值为true 则立即结束此游戏  \n此时就需要你在这个方法中设置好胜利的队伍与失败的队伍，总得有胜利者不是吗\n你可以调用GameRoom中的方法。\n```\n/**\n*@param teamInfo 胜利的队伍\n* @param more 是否为多队伍模式\n*/\npublic void gameEnd(TeamInfo teamInfo,boolean more);\n```\n不过这个方法有局限性 你可以参考GameRoom中的demoGameEnd 来开发  \n\n#### 重写计分板\n\n实现接口中的方法可以重写玩家在游戏中的计分板信息\n```\nIGamePlayerScoreBoard\n```\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/83235042?v=4",
+  "id": "SoBadFish/GameDemo",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "name": "Gamedemo",
+  "server_version": "",
+  "source": "https://github.com/SoBadFish/GameDemo",
+  "stars": 10,
+  "summary": "小游戏插件框架",
+  "updated_at": 1770253421,
+  "versions": [
+    {
+      "changelog": "+ 优化小游戏结束条件逻辑\r\n+ 增加获得经验的提示",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "GameDemo_v2.4.9.jar",
+          "primary": true,
+          "size": 332317,
+          "url": "https://github.com/SoBadFish/GameDemo/releases/download/v2.4.9/GameDemo_v2.4.9.jar"
+        }
+      ],
+      "name": "2023/10/28 更新",
+      "prerelease": false,
+      "published_at": 1698475363,
+      "version": "v2.4.9"
+    },
+    {
+      "changelog": "+ 增加玩家倒地扶起功能\r\n+ 增加自定义队伍皮肤功能\r\n+ 增加自定义死亡尸体功能\r\n+ 修复一系列BUG",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "GameDemo_v2.3.7.jar",
+          "primary": true,
+          "size": 312329,
+          "url": "https://github.com/SoBadFish/GameDemo/releases/download/v2.3.7/GameDemo_v2.3.7.jar"
+        }
+      ],
+      "name": "2023/4/11 更新",
+      "prerelease": false,
+      "published_at": 1681193415,
+      "version": "v2.3.7"
+    },
+    {
+      "changelog": "增加事件系统\r\n修复一系列BUG",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "GameDemo_v2.0.0.jar",
+          "primary": true,
+          "size": 220952,
+          "url": "https://github.com/SoBadFish/GameDemo/releases/download/v2.0.0/GameDemo_v2.0.0.jar"
+        }
+      ],
+      "name": "2022/10/14 更新",
+      "prerelease": false,
+      "published_at": 1665758434,
+      "version": "v2.0.0"
+    }
+  ]
+}

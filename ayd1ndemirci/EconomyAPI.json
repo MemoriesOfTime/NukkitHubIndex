@@ -1,0 +1,42 @@
+{
+  "api_version": "2.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1736079710,
+  "dependencies": [],
+  "description": "\n# PowerNukkitX Economy Plugin (with Admin Commands)\n\n---\n\n## **PowerNukkitX Economy Plugin**\n\nThis is a lightweight economy plugin for PowerNukkitX that supports commands with admin functionality. It integrates **EconomyAPI** for seamless economic management. While it is functional, **this plugin is not optimized for large servers** and is best suited for small or personal servers. **Use at your own discretion** for larger setups.\n\n---\n\n## **Features**\n\n- Basic economy system powered by **EconomyAPI**.\n- Admin commands to manage player balances.\n- Lightweight and easy to use.\n- Ideal for small PowerNukkitX servers.\n\n---\n\n## **Installation**\n\n1. Download the latest release of the plugin.\n2. Place the `.jar` file into your server's `plugins` directory.\n3. Restart your server.\n4. The plugin will generate a configuration file upon first run.\n\n---\n\n## **Commands**\n\n### **Admin Commands**\n| Command                   | Description                        | Permission              |\n|---------------------------|------------------------------------|-------------------------|\n| `/setmoney <player> <money>` | Set a player's money.           | `OPERATOR`         |\n| `/addmoney <player> <money>` | Add to a player's money.        | `OPERATOR`         |\n| `/takemoney <player> <money>` | Remove from a player's money.   | `OPERATOR`         |\n| `/seemoney <player>`       | Check a player's money.          | `OPERATOR`         |\n\n### **Player Commands**\n| Command                   | Description                        | Permission              |\n|---------------------------|------------------------------------|-------------------------|\n| `/money`                | Check your current money.        | `no permission`          |\n\n---\n\n## **Important Notice**\n\n⚠️ **Warning: This plugin is not optimized for large-scale servers.**  \n- It may cause performance issues on servers with a large player base.\n- Recommended for small or personal servers only.\n\n---\n\n## **Known Issues**\n\n- Performance may degrade on servers with a high number of players.\n- Not extensively tested under heavy load.\n\n---\n\n## **Contributing**\n\nContributions are welcome! Feel free to submit a pull request or report issues on the GitHub repository.\n\n---\n\n## **Disclaimer**\n\nUse this plugin at your own risk. The developer is not responsible for any issues caused by the use of this plugin on large or production servers.\n\n---\n## **Developers**\nThis plugin was coded by ayd1ndemirci & EngincanErgunGG.\n---\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/128159204?v=4",
+  "id": "ayd1ndemirci/EconomyAPI",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "name": "EconomyAPI",
+  "server_version": "",
+  "source": "https://github.com/ayd1ndemirci/EconomyAPI",
+  "stars": 5,
+  "summary": "",
+  "updated_at": 1749289727,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EconomyAPI-1.0.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 4196189,
+          "url": "https://github.com/ayd1ndemirci/EconomyAPI/releases/download/plugin/EconomyAPI-1.0.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "EconomyAPI v01@mini",
+      "prerelease": false,
+      "published_at": 1736081059,
+      "version": "plugin"
+    }
+  ]
+}

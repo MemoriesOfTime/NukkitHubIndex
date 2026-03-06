@@ -1,0 +1,42 @@
+{
+  "api_version": "1.0.12",
+  "authors": [],
+  "categories": [],
+  "created_at": 1628587562,
+  "dependencies": [],
+  "description": "# DropEntityItem\n\n基于Nukkit的击杀生物掉落生物插件\n\n\n## 引言:\n此插件安装后当玩家击杀生物时会掉落一个生物物品 可通过监听事件实现各种功能\n\n#### 关键字: 事件 接口\n#### 简介\n\n#### 事件  \n```\n/**\n  * 掉落物生成事件\n  */\nEntityDropItemSpawnEvent\n/**\n  * 掉落物移除事件\n  */\nEntityItemCloseEvent\n/**\n  * 掉落物附近有玩家拾取事件\n  */\nPlayerPickUpEntityEvent\n```\n \n#### 接口\n\n```java\n/**\n  * 生成掉落物\n  * @param e 坐标\n  * @param entityId 掉落物的生物id\n  **/\nDropEntityItem.dropEntityItem(Position e,int entityId);\n/**\n  * 生成掉落物\n  * @param entity 直接掉落抽象方法 AbstractDropEntity 生物\n  **/\nDropEntityItem.dropEntityItem(AbstractDropEntity entity);\n```\n\n \n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/83235042?v=4",
+  "id": "SoBadFish/DropEntityItem",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "name": "DropEntityItem",
+  "server_version": "",
+  "source": "https://github.com/SoBadFish/DropEntityItem",
+  "stars": 0,
+  "summary": "",
+  "updated_at": 1703405571,
+  "versions": [
+    {
+      "changelog": "[+] 配置文件自定义掉落",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "DropEntityItem-v1.0.1.jar",
+          "primary": true,
+          "size": 10931,
+          "url": "https://github.com/SoBadFish/DropEntityItem/releases/download/v1.0.1/DropEntityItem-v1.0.1.jar"
+        }
+      ],
+      "name": "v1.0.1",
+      "prerelease": false,
+      "published_at": 1628588190,
+      "version": "v1.0.1"
+    }
+  ]
+}

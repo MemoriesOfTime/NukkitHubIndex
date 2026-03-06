@@ -1,0 +1,31 @@
+{
+  "api_version": "1.0.9",
+  "authors": [],
+  "categories": [],
+  "created_at": 1591761642,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "MemoriesOfTime-GameCore",
+      "version_range": ""
+    }
+  ],
+  "description": "# MurderMystery_Nukkit\n[![License](https://img.shields.io/badge/License-AGPL%20v3-blue.svg?style=plastic)](LICENSE)\n![Java CI](https://github.com/lt-name/MurderMystery_Nukkit/workflows/Java%20CI/badge.svg)\n[![MCBBS](https://img.shields.io/badge/Link-MCBBS-brightgreen?style=plastic)](https://www.mcbbs.net/thread-1014768-1-1.html)\n[![bilibili](https://img.shields.io/badge/Link-bilibili-ff69b4?style=plastic)](https://www.bilibili.com/video/BV1ga4y147Lf/)\n[![Discord](https://img.shields.io/discord/710480168598372354?style=plastic)](https://discord.gg/pJjQDQC)    \nMurderMystery game for Nukkit    \n### depend:\n* MemoriesOfTime-GameCore:  \n  https://github.com/MemoriesOfTime/MemoriesOfTime-GameCore\n\n#### 详细介绍/Detailed introduction:\n[![MCBBS](https://img.shields.io/badge/Link-MCBBS-brightgreen)](https://www.mcbbs.net/thread-1014768-1-1.html)  \n#### 演示视频/Demo video:\n[![bilibili](https://img.shields.io/badge/Link-bilibili-ff69b4)](https://www.bilibili.com/video/BV1ga4y147Lf/)\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+  "id": "lt-name/MurderMystery_Nukkit",
+  "license": {
+    "id": "AGPL-3.0",
+    "name": "GNU Affero General Public License v3.0",
+    "url": "https://spdx.org/licenses/AGPL-3.0.html"
+  },
+  "links": null,
+  "name": "MurderMystery",
+  "server_version": "",
+  "source": "https://github.com/lt-name/MurderMystery_Nukkit",
+  "stars": 14,
+  "summary": "",
+  "updated_at": 1703405552,
+  "versions": []
+}

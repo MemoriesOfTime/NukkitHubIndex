@@ -1,0 +1,31 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "PMpluginmaker-Team",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1483086484,
+  "dependencies": [],
+  "description": "# ToCookQuickly (Nukkit_Edition)\n![1](https://pp.vk.me/c637419/v637419272/282ac/PeJz5uazl8w.jpg)\n***\n## ENG\nYou can cook at high speed by holding food and tapping the specified block.<br>\nIn addition, the user can switch the language of plug-in by editing config.<br>\n\nAuthor: gigantessbeta\n***\n## JPN\n生の食物を持ち、configにて指定したブロックをタップすることで、高速調理ができます。<br>\nさらに、プラグインの言語を、configを編集することによって切り替えることができます.<br>\n\n作者: gigantessbeta\n***\n## RUS\nПлагин позволит сделать быструю приготовку пиши при тапе на блок который вы укажите в конфиге. <br>\nТакже вам нужно будет указать язык кофнфиге. \n\nАвтор: gigantessbeta\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/20610410?v=4",
+  "id": "MyDeacy/ToCookQuickly-Nukkit",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "name": "ToCookQuickly",
+  "server_version": "",
+  "source": "https://github.com/MyDeacy/ToCookQuickly-Nukkit",
+  "stars": 0,
+  "summary": "",
+  "updated_at": 1518919272,
+  "versions": []
+}

@@ -1,0 +1,48 @@
+{
+  "api_version": "1.0.13",
+  "authors": [],
+  "categories": [],
+  "created_at": 1704704413,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "PlaceholderAPI",
+      "version_range": ""
+    }
+  ],
+  "description": "This plugin is an addon to the [QueryPlaceholders](https://github.com/MEFRREEX/QueryPlaceholders) plugin. It will summarize the online of all servers added to QueryPlaceholders.\n\n## ⚙️ Plugin сonfiguration\n```yml\n# Summarize online of all servers\n# If enabled, servers specified in servers will be ignored\nsum-all: false\n\n# Summarize maximum online\nsum-max-online: true\n\n# Servers from which online will be summarized\nservers:\n - \"zeqa\"\n - \"nethergames\"\n```\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/83061703?v=4",
+  "id": "MEFRREEX/QueryPlaceholders-OnlineSummator",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "name": "${project.name}",
+  "server_version": "",
+  "source": "https://github.com/MEFRREEX/QueryPlaceholders-OnlineSummator",
+  "stars": 0,
+  "summary": "",
+  "updated_at": 1704706051,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "QueryPlaceholders-OnlineSummator-1.0.jar",
+          "primary": true,
+          "size": 6097,
+          "url": "https://github.com/MEFRREEX/QueryPlaceholders-OnlineSummator/releases/download/1.0/QueryPlaceholders-OnlineSummator-1.0.jar"
+        }
+      ],
+      "name": "1.0",
+      "prerelease": false,
+      "published_at": 1704705461,
+      "version": "1.0"
+    }
+  ]
+}

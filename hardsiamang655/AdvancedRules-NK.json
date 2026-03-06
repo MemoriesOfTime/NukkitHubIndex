@@ -1,0 +1,35 @@
+{
+  "api_version": "1.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1628619464,
+  "dependencies": [],
+  "description": "Shows the rules you set for a player who enters for the first time.<br />\nby [HardSiamang655](https://github.com/hardsiamang655) & [qreardedwastaken](https://qreardedwastaken.com)\n- [Go to the official Nukkit page.](https://cloudburstmc.org/resources/advancedrules.751/)\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/54169162?v=4",
+  "id": "hardsiamang655/AdvancedRules-NK",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "name": "AdvancedRules",
+  "server_version": "",
+  "source": "https://github.com/hardsiamang655/AdvancedRules-NK",
+  "stars": 3,
+  "summary": "",
+  "updated_at": 1665203337,
+  "versions": [
+    {
+      "changelog": "We have released our v1.1.0 Update and have worked on all reported bugs. You can download it from our original Nukkit page.",
+      "downloads": 0,
+      "files": [],
+      "name": "v1.1.0 Bug Fix Update",
+      "prerelease": false,
+      "published_at": 1634322788,
+      "version": "v1.1.0"
+    }
+  ]
+}

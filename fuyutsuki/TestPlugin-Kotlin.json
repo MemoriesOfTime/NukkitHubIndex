@@ -1,0 +1,25 @@
+{
+  "api_version": "1.0.5",
+  "authors": [],
+  "categories": [],
+  "created_at": 1518762075,
+  "dependencies": [],
+  "description": "# TestPlugin-Kotlin\nNukkitX plugin written by Kotlin + Gradle\n\n## ビルド方法\n```bash\ngit clone https://github.com/fuyutsuki/TestPlugin-Kotlin.git\ncd TestPlugin-Kotlin\n./gradlew build\n```\nか\n```\none_click_build.bat を実行\n```",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/16377174?v=4",
+  "id": "fuyutsuki/TestPlugin-Kotlin",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "name": "TestPlugin",
+  "server_version": "",
+  "source": "https://github.com/fuyutsuki/TestPlugin-Kotlin",
+  "stars": 0,
+  "summary": "",
+  "updated_at": 1518858195,
+  "versions": []
+}

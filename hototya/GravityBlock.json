@@ -1,0 +1,62 @@
+{
+  "api_version": "1.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1514095179,
+  "dependencies": [],
+  "description": "# GravityBlock\n普通の四角いブロックなら落ちるプラグイン  \n柵とかの向きが変わってしまうけど許して下さい。\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/32798229?v=4",
+  "id": "hototya/GravityBlock",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/hototya/GravityBlock",
+    "wiki": ""
+  },
+  "name": "GravityBlock",
+  "server_version": "",
+  "source": "https://github.com/hototya/GravityBlock",
+  "stars": 1,
+  "summary": "",
+  "updated_at": 1514100429,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "GravityBlock-1.1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 5352,
+          "url": "https://github.com/hototya/GravityBlock/releases/download/1.1.0/GravityBlock-1.1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "GravityBlock_v1.1.0",
+      "prerelease": false,
+      "published_at": 1514201680,
+      "version": "1.1.0"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "GravityBlock-1.0.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 5075,
+          "url": "https://github.com/hototya/GravityBlock/releases/download/1.0.0/GravityBlock-1.0.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "GravityBlock_v1.0.0",
+      "prerelease": false,
+      "published_at": 1514098476,
+      "version": "1.0.0"
+    }
+  ]
+}

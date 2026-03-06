@@ -1,0 +1,134 @@
+{
+  "api_version": "2.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1583467779,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "FormConstructor",
+      "version_range": ""
+    }
+  ],
+  "description": "[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)\n[![Version](https://img.shields.io/badge/version-3.0-brightgreen)](https://github.com/qPexLegendary/DGuard-Nukkit/releases/tag/3.0)\n\nDGuard\n------------- \n\nПлагин для ядра PowerNukkitX для защиты регионов от гриферства.\n\nОтличия от других плагинов на приват:\n\n- Качественный интерфейс с помощью форм.\n- Возможность устанавливать абсолютно любые названия для регионов.\n- Добавлена специальная роль `Гость`, которая дает доступ к региону без доступа к строительства в нем.\n- Создание регионов по всей высоте, где размер региона расчитывается по его площади. Эту опцию можно выключить в конфиге.\n- Возможность легко создавать свои флаги с помощью кода.\n- Упор плагина идет на максимальную производительность. Присутствует кеширование поиска регионов.\n\n\n### Зависимости\n- Библиотека [FormConstructor](https://github.com/ContentForge/FormConstructor) версии не менее 2.0.0\n- PowerNukkitX версии не менее 2.0\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/54776640?v=4",
+  "id": "ScarletRedMan/DGuard-Nukkit",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "name": "DGuard",
+  "server_version": "",
+  "source": "https://github.com/ScarletRedMan/DGuard-Nukkit",
+  "stars": 8,
+  "summary": "",
+  "updated_at": 1724507887,
+  "versions": [
+    {
+      "changelog": "### Changelog\r\n\r\n- Добавлена поддержка PNX 2.0\r\n\r\n### Внимание\r\n\r\nЭто пре-релиз плагина для pnx2.0, возможно некоторые функции плагина поломаны и работают непрарильно. Позже сделаю фиксы",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "DGuard.jar",
+          "primary": true,
+          "size": 41565,
+          "url": "https://github.com/ScarletRedMan/DGuard-Nukkit/releases/download/3.0/DGuard.jar"
+        }
+      ],
+      "name": "DGuard v3.0",
+      "prerelease": true,
+      "published_at": 1712334766,
+      "version": "3.0"
+    },
+    {
+      "changelog": "### Chfngelog\r\n\r\n- Исправлен критический баг удаления всех регионов в мире",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "DGuard.jar",
+          "primary": true,
+          "size": 41027,
+          "url": "https://github.com/ScarletRedMan/DGuard-Nukkit/releases/download/2.2/DGuard.jar"
+        }
+      ],
+      "name": "DGuard v2.2",
+      "prerelease": false,
+      "published_at": 1636009657,
+      "version": "2.2"
+    },
+    {
+      "changelog": "### Changelog\r\n\r\n- Добавлено кеширование поиска регионов. \r\n- Изменено оформление списка флагов в информации о регионе.\r\n- Добавлено описание флагов в разделе редактирования флагов.\r\n- Добавлена кнопка управления регионов в окне просмотра информации о регионе.\r\n\r\n# Присутствует критическая уязвимость в данном патче!",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "DGuard.jar",
+          "primary": true,
+          "size": 41020,
+          "url": "https://github.com/ScarletRedMan/DGuard-Nukkit/releases/download/2.1/DGuard.jar"
+        }
+      ],
+      "name": "DGuard v 2.1",
+      "prerelease": false,
+      "published_at": 1630168589,
+      "version": "2.1"
+    },
+    {
+      "changelog": "### Changelog\r\n\r\n- Полностью переписан плагин.\r\n- Изменен способ хранения регионов. Убрано много лишнего мусора.\r\n- Теперь все названия региона могут иметь любые имена. Идентификация регионов идет по их id.\r\n- Вместо библиотеки FormAPI был использован [Form Constructor](https://github.com/ContentForge/FormConstructor). Библиотека минимальной версии прикреплена к данному релизу.\r\n- Теперь кнопка 'Информация о текущем регионе' доступна только тогда, когда вы находитесь в каком-то регионе.\r\n- Добавлена кнопка 'Управление ткущим регионом' в главном меню для владельцев региона.\r\n\r\n# Присутствует критическая уязвимость в данном патче!",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "DGuard.jar",
+          "primary": true,
+          "size": 40508,
+          "url": "https://github.com/ScarletRedMan/DGuard-Nukkit/releases/download/2.0/DGuard.jar"
+        },
+        {
+          "filename": "FormConstructor.jar",
+          "primary": true,
+          "size": 26190,
+          "url": "https://github.com/ScarletRedMan/DGuard-Nukkit/releases/download/2.0/FormConstructor.jar"
+        }
+      ],
+      "name": "DGuard v 2.0",
+      "prerelease": false,
+      "published_at": 1629117772,
+      "version": "2.0"
+    },
+    {
+      "changelog": "### Changelog\r\n\r\n- Добавлена поддержка блоков из PowerNukkit",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "DGuard.jar",
+          "primary": true,
+          "size": 35037,
+          "url": "https://github.com/ScarletRedMan/DGuard-Nukkit/releases/download/1.1/DGuard.jar"
+        }
+      ],
+      "name": "DGuard v 1.1",
+      "prerelease": false,
+      "published_at": 1600944714,
+      "version": "1.1"
+    },
+    {
+      "changelog": "Первый релиз плагина",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "DGuard.jar",
+          "primary": true,
+          "size": 34834,
+          "url": "https://github.com/ScarletRedMan/DGuard-Nukkit/releases/download/1.0/DGuard.jar"
+        }
+      ],
+      "name": "DGuard v 1.0",
+      "prerelease": false,
+      "published_at": 1595950766,
+      "version": "1.0"
+    }
+  ]
+}

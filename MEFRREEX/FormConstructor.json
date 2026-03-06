@@ -1,0 +1,214 @@
+{
+  "api_version": "1.0.13",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "ScarletRedMan",
+      "url": ""
+    },
+    {
+      "avatar_url": "",
+      "name": "MEFRREEX",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1680723625,
+  "dependencies": [],
+  "description": "![logo](https://raw.githubusercontent.com/MEFRREEX/FormConstructor/master/.github/logo_v3.png)\n\n[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)\n[![Version](https://img.shields.io/badge/Version-3.1.0-brightgreen)](https://github.com/MEFRREEX/FormConstructor/releases/tag/2.0.1)\n[![Jitpack](https://jitpack.io/v/MEFRREEX/FormConstructor.svg)](https://jitpack.io/#MEFRREEX/FormConstructor)\n[![CloudBurst](https://img.shields.io/badge/CloudBurst-2.0.1-brightgreen)](https://cloudburstmc.org/resources/formconstructor-v2.957)\n\n> [!IMPORTANT]\n> Version 3.0.0 is no longer compatible with 2.0.x. If you need older version use:  \n> https://github.com/MEFRREEX/FormConstructor/tree/legacy-2.0.0\n\n# 🤔 Introduction\n\nLibrary is designed to simplify the creation and handling of forms.\nIt has a few key advantages over other form libraries:\n\n- Forms are handled using a lambda that is passed in when the form itself is created, and not by catching events.\n- For each button in SimpleForm, we can set a handler.\n- In SimpleForm we get a button object as a response, where we can get its name and index.\n- In CustomForm we can mark elements with an identifier to conveniently get this element in its handler. We can get element by id and its index.\n- For each form we can set its closing handler.\n- Easy async handling.\n- Dynamic form update.\n\n## 🛠 Examples\n\nCreating a SimpleForm:\n\n```java\nSimpleForm form = new SimpleForm(\"Sample title\");\n// Adding form content\nform.addContent(\"New content line\");\n    \n// Easiest way to add a button\nform.addHeader(\"Header text\")\n    .addDivider()\n    .addButton(\"Button\", (pl, b) -> {\n        pl.sendMessage(\"Button clicked: \" + b.getName());\n    })\n    .addLabel(\"Here's a button with an image\")\n    // Button with image\n    .addButton(\"Button with image\", ImageType.PATH, \"textures/items/diamond\")\n    // Another way to add a button\n    .addButton(new Button(\"Another button\")\n        .setImage(ImageType.PATH, \"textures/blocks/stone\")\n        .onClick((pl, b) -> {\n            pl.sendMessage(\"Another button clicked: \" + b.getName());\n        }))\n    .addLabel(\"Yes, we can add labels anywhere!\");\n\n// Setting the form close handler\nform.setCloseHandler(pl -> {\n    pl.sendMessage(\"You closed the form!\");\n});\n\nform.send(player);\n```\n<div align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/MEFRREEX/FormConstructor/master/.github/examples/simple_form_example.png\" width=\"75%\">\n</div>\n\nCreating a ModalForm:\n\n```java\nModalForm form = new ModalForm(\"Test modal form\");\nform.addContent(\"New content line\");\n\nform.setPositiveButton(\"Positive button\")\n    .setNegativeButton(\"Negative button\");\n\n// Setting the form handler\n// Result returns true if a positive button was ckicked and false if a negative button was ckicked\nform.setHandler((pl, result) -> {\n    pl.sendMessage(\"You clicked \" + (result ? \"correct\" : \"wrong\") + \" button!\");\n});\n\n// Setting the form close reason handler\nform.setCloseHandler((pl, reason) -> {\n    pl.sendMessage(\"You closed the form with reason \" + reason);\n});\n        \nform.send(player);\n```\n<div align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/MEFRREEX/FormConstructor/master/.github/examples/modal_form_example.png\" width=\"75%\">\n</div>\n\nCreating a CustomForm:\n\n```java\nCustomForm form = new CustomForm(\"Test custom form\");\n\n// Options list \nList<SelectableElement> elements = List.of(\n    new SelectableElement(\"Option 1\"),\n    new SelectableElement(\"Option 2\"),\n    // SelectableElement may be named and may contain a value\n    new SelectableElement(\"Option with value\", 15)\n);\n\nform.addElement(new Header(\"My Header\"))\n    .addElement(\"Test label\")\n    .addElement(new Divider())\n    .addElement(\"input\", new Input(\"Input\")\n        .setPlaceholder(\"Text\")\n        .setDefaultValue(\"Default value\")\n        .setTooltip(\"Input element tooltip\"))\n    .addElement(\"slider\", new Slider(\"Slider\", 1f, 100f, 1, 1))\n    .addElement(\"stepslider\", new StepSlider(\"Step slider\")\n        .addStep(\"1\")\n        .addStep(\"2\")\n        .addStep(\"3\"))\n    .addElement(\"dropdown\", new Dropdown(\"Dropdown\")\n        .addElement(\"Element 1\")\n        .addElement(\"Element 2\")\n        .addElement(\"Element 3\")\n        .setTooltip(\"Dropdown element tooltip\"))\n    .addElement(\"dropdown1\", new Dropdown(\"Second dropdown\", elements))\n    .addElement(\"toggle\", new Toggle(\"Toggle\"));\n\n// Set the text of the submit button\n// You can also set the key from the resource pack to this button\nform.setSubmitButton(\"My Submit Button\"); \n\n// Setting the form handler\nform.setHandler((pl, response) -> {\n    String input = response.getInput(\"input\").getValue();\n\n    float slider = response.getSlider(\"slider\").getValue();\n    SelectableElement stepslider = response.getStepSlider(\"stepslider\").getValue();\n    SelectableElement dropdown = response.getDropdown(\"dropdown\").getValue();\n\n    // Getting the value we set in SelectableElement\n    Integer dropdownValue = response.getDropdown(\"dropdown1\").getValue().getValue(Integer.class);\n\n    boolean toggle = response.getToggle(\"toggle\").getValue();\n\n    pl.sendMessage(\"Input: \" + input + \", Slider: \" + slider + \", Step Slider: \" + stepslider + \", Dropdown: \" + dropdown + \", Toggle: \" + toggle);\n    pl.sendMessage(\"Second dropdown value: \" + dropdownValue);\n});\n\nform.send(player);\n```\n<div align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/MEFRREEX/FormConstructor/master/.github/examples/custom_form_example_1.png\" width=\"75%\">\n  <img src=\"https://raw.githubusercontent.com/MEFRREEX/FormConstructor/master/.github/examples/custom_form_example_2.png\" width=\"75%\">\n</div>\n\nCreating an updatable form:\n\n```java\nSimpleForm form = new SimpleForm(\"Sample title\");\n\nAtomicInteger counter = new AtomicInteger();\n\n// For example, let's create a task that will increment the counter by 1 every second\nServer.getInstance().getScheduler().scheduleRepeatingTask(() -> {\n    form.setContent(\"Count is \" + counter.get()); // Set form content\n    form.sendUpdate(player); // Send a form update\n    counter.getAndIncrement();\n}, 20);\n\nform.send(player);\n```\nNote, this works with any type and content of form.\n\n### Async handling\nAlso you can use method `sendAsync(player)` or `send(player, true)` for using async form handling.\n\n## 📋 Events\n| Name                 | Cancellable | Description                      |\n|----------------------|-------------|----------------------------------|\n| PlayerFormSendEvent  | true        | Called when a form is sent       |\n| PlayerFormCloseEvent | false       | Called when the form is closed   |\n\nExample:\n```java\n@EventHandler\npublic void onFormSend(PlayerFormSendEvent event) {\n    // Getting a player\n    Player player = event.getPlayer();\n    // Getting the form\n    Form form = event.getForm();\n}\n```\n\n## 🔌 Installation\nPlace the plugin of the appropriate version in the `plugins` folder.\n\n### Maven\n\nRepository:\n```xml\n<repository>\n    <id>luminiadev-repository-releases</id>\n    <url>https://repo.luminiadev.com/releases</url>\n</repository>\n```\n\nDependency\n```xml\n<dependency>\n    <groupId>com.mefrreex.formconstructor</groupId>\n    <artifactId>formconstructor</artifactId>\n    <version>3.1.0</version>\n</dependency>\n```\n\n### Gradle\n\nRepository:\n```groovy\nmaven {\n    name \"luminiadevRepositoryReleases\"\n    url \"https://repo.luminiadev.com/releases\"\n}\n```\nDependency:\n```groovy\nimplementation \"com.mefrreex.formconstructor:formconstructor:3.1.0\"\n```",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-03-06",
+      "description": "",
+      "title": "",
+      "url": "https://raw.githubusercontent.com/MEFRREEX/FormConstructor/master/.github/examples/simple_form_example.png"
+    },
+    {
+      "created": "2026-03-06",
+      "description": "",
+      "title": "",
+      "url": "https://raw.githubusercontent.com/MEFRREEX/FormConstructor/master/.github/examples/modal_form_example.png"
+    },
+    {
+      "created": "2026-03-06",
+      "description": "",
+      "title": "",
+      "url": "https://raw.githubusercontent.com/MEFRREEX/FormConstructor/master/.github/examples/custom_form_example_1.png"
+    },
+    {
+      "created": "2026-03-06",
+      "description": "",
+      "title": "",
+      "url": "https://raw.githubusercontent.com/MEFRREEX/FormConstructor/master/.github/examples/custom_form_example_2.png"
+    },
+    {
+      "created": "2026-03-06",
+      "description": "",
+      "title": "logo",
+      "url": "https://raw.githubusercontent.com/MEFRREEX/FormConstructor/master/.github/logo_v3.png"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/83061703?v=4",
+  "id": "MEFRREEX/FormConstructor",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "name": "${project.name}",
+  "server_version": "",
+  "source": "https://github.com/MEFRREEX/FormConstructor",
+  "stars": 8,
+  "summary": "Library for easy creating and handling of forms",
+  "updated_at": 1759666408,
+  "versions": [
+    {
+      "changelog": "## What's Changed\r\n* feat: added api for element tooltips + refactor: remove debug command by @MEFRREEX in https://github.com/MEFRREEX/FormConstructor/pull/12\r\n\r\n\r\n**Full Changelog**: https://github.com/MEFRREEX/FormConstructor/compare/3.0.0...3.1.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FormConstructor-3.1.0.jar",
+          "primary": true,
+          "size": 52722,
+          "url": "https://github.com/MEFRREEX/FormConstructor/releases/download/3.1.0/FormConstructor-3.1.0.jar"
+        }
+      ],
+      "name": "3.1.0",
+      "prerelease": false,
+      "published_at": 1750489460,
+      "version": "3.1.0"
+    },
+    {
+      "changelog": "## What's Changed\r\n* Better dependency info by @IndianBartonka in https://github.com/MEFRREEX/FormConstructor/pull/5\r\n* fix: mojang moment on 1.21.80 by @MEFRREEX in https://github.com/MEFRREEX/FormConstructor/pull/6\r\n* fix: ignore also Header and Divider by @MEFRREEX in https://github.com/MEFRREEX/FormConstructor/pull/7\r\n* feat: added method to change submit button text by @MEFRREEX in https://github.com/MEFRREEX/FormConstructor/pull/8\r\n* feat: form updating + close form method by @MEFRREEX in https://github.com/MEFRREEX/FormConstructor/pull/9\r\n* feat: close reason handler by @MEFRREEX in https://github.com/MEFRREEX/FormConstructor/pull/10\r\n* feat: 3.0.0 update by @MEFRREEX in https://github.com/MEFRREEX/FormConstructor/pull/11\r\n\r\n## New Contributors\r\n* @IndianBartonka made their first contribution in https://github.com/MEFRREEX/FormConstructor/pull/5\r\n\r\n**Full Changelog**: https://github.com/MEFRREEX/FormConstructor/compare/2.0.5...3.0.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FormConstructor-3.0.0.jar",
+          "primary": true,
+          "size": 53408,
+          "url": "https://github.com/MEFRREEX/FormConstructor/releases/download/3.0.0/FormConstructor-3.0.0.jar"
+        }
+      ],
+      "name": "3.0.0",
+      "prerelease": false,
+      "published_at": 1748262041,
+      "version": "3.0.0"
+    },
+    {
+      "changelog": "**Full Changelog**: https://github.com/MEFRREEX/FormConstructor/compare/2.0.3...2.0.5",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FormConstructor-2.0.5-Nukkit.jar",
+          "primary": true,
+          "size": 40084,
+          "url": "https://github.com/MEFRREEX/FormConstructor/releases/download/2.0.5/FormConstructor-2.0.5-Nukkit.jar"
+        },
+        {
+          "filename": "FormConstructor-2.0.5-PNX.jar",
+          "primary": true,
+          "size": 40082,
+          "url": "https://github.com/MEFRREEX/FormConstructor/releases/download/2.0.5/FormConstructor-2.0.5-PNX.jar"
+        }
+      ],
+      "name": "2.0.5",
+      "prerelease": false,
+      "published_at": 1727349789,
+      "version": "2.0.5"
+    },
+    {
+      "changelog": "**Full Changelog**: https://github.com/MEFRREEX/FormConstructor/compare/2.0.2...2.0.3",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FormConstructor-2.0.3-Nukkit.jar",
+          "primary": true,
+          "size": 41285,
+          "url": "https://github.com/MEFRREEX/FormConstructor/releases/download/2.0.3/FormConstructor-2.0.3-Nukkit.jar"
+        },
+        {
+          "filename": "FormConstructor-2.0.3-PNX.jar",
+          "primary": true,
+          "size": 41328,
+          "url": "https://github.com/MEFRREEX/FormConstructor/releases/download/2.0.3/FormConstructor-2.0.3-PNX.jar"
+        }
+      ],
+      "name": "2.0.3",
+      "prerelease": false,
+      "published_at": 1712407920,
+      "version": "2.0.3"
+    },
+    {
+      "changelog": "**Full Changelog**: https://github.com/MEFRREEX/FormConstructor/compare/2.0.1...2.0.2",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FormConstructor-2.0.2-Nukkit.jar",
+          "primary": true,
+          "size": 41269,
+          "url": "https://github.com/MEFRREEX/FormConstructor/releases/download/2.0.2/FormConstructor-2.0.2-Nukkit.jar"
+        },
+        {
+          "filename": "FormConstructor-2.0.2-PNX.jar",
+          "primary": true,
+          "size": 41276,
+          "url": "https://github.com/MEFRREEX/FormConstructor/releases/download/2.0.2/FormConstructor-2.0.2-PNX.jar"
+        }
+      ],
+      "name": "2.0.2",
+      "prerelease": false,
+      "published_at": 1705854284,
+      "version": "2.0.2"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FormConstructor-2.0.1.jar",
+          "primary": true,
+          "size": 41264,
+          "url": "https://github.com/MEFRREEX/FormConstructor/releases/download/2.0.1/FormConstructor-2.0.1.jar"
+        }
+      ],
+      "name": "2.0.1",
+      "prerelease": false,
+      "published_at": 1703296748,
+      "version": "2.0.1"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FormConstructor-2.0.0.jar",
+          "primary": true,
+          "size": 40766,
+          "url": "https://github.com/MEFRREEX/FormConstructor/releases/download/2.0.0/FormConstructor-2.0.0.jar"
+        }
+      ],
+      "name": "2.0.0",
+      "prerelease": false,
+      "published_at": 1702976579,
+      "version": "2.0.0"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FormConstructor-1.1.3.jar",
+          "primary": true,
+          "size": 37521,
+          "url": "https://github.com/MEFRREEX/FormConstructor/releases/download/1.1.3/FormConstructor-1.1.3.jar"
+        }
+      ],
+      "name": "1.1.3",
+      "prerelease": false,
+      "published_at": 1680725409,
+      "version": "1.1.3"
+    }
+  ]
+}

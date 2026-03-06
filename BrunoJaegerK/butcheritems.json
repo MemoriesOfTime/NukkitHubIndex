@@ -1,0 +1,42 @@
+{
+  "api_version": "1.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1767584884,
+  "dependencies": [],
+  "description": "Butcheritems es un plugin para servidores minecraft bedrock que usan software nukkit.\nElimina entidades y bloques flotantes para disminuir el lag.\n\nFacil manejo y uso.\nMensajes altamente customizable.\n\nActualmente el plugin borra hologramas por lo que no es compatible con https://cloudburstmc.org/resources/holograms.42/\n\nSi encuentras algún error por favor informarlo.\n\nel plugin es compatible con:\n- NPC Slapper\n- KotlinLib\n- PlaceholderApi\n\nPuedes descargar la ultima version desde:\n\nhttps://cloudburstmc.org/resources/butcher-items.1121/\n\nAñadire nuevas funciones pronto\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/99422811?v=4",
+  "id": "BrunoJaegerK/butcheritems",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "name": "ButcherItems",
+  "server_version": "",
+  "source": "https://github.com/BrunoJaegerK/butcheritems",
+  "stars": 0,
+  "summary": "",
+  "updated_at": 1769630715,
+  "versions": [
+    {
+      "changelog": "Version con corrección de errores",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "butcheritems.jar",
+          "primary": true,
+          "size": 13360,
+          "url": "https://github.com/BrunoJaegerK/butcheritems/releases/download/correcci%C3%B3n/butcheritems.jar"
+        }
+      ],
+      "name": "Butchetitems",
+      "prerelease": false,
+      "published_at": 1769630509,
+      "version": "corrección"
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "api_version": "2.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1627098828,
+  "dependencies": [],
+  "description": "![logo by @tolimag](https://raw.githubusercontent.com/ContentForge/FormConstructor/master/.github/logo.png)\n\n[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)\n[![Version](https://img.shields.io/badge/version-2.0.0-brightgreen)](https://github.com/ContentForge/FormConstructor/releases/tag/2.0.0)\n\n:warning:  Discontinued :warning: \n======\nI stopped writing plugins for Nukkit and I don't see any point in supporting this project. \nUse a good fork that my friend made: https://github.com/MEFRREEX/FormConstructor\n\n\n\nIntroduction\n------------- \n\nLibrary is designed to simplify the creation and handling of forms.\nIt has a few key advantages over other  form libraries:\n\n- Forms are processed using a lambda, which is passed when the form itself is created, and not by catching events.\n- For each button we can set a lambda function in SimpleForm.\n- In SimpleForm we get a button object as a response, where we can get its text and index.\n- In CustomForm we can mark elements with an identifier to conveniently get this element in its handler. We can get element by id and its index.\n- Easy async handling.\n\nExamples\n-------------\n\n### SimpleForm\n```java\nSimpleForm form = new SimpleForm(\"Sample title\");\n\nSimpleFormHandler handler = (p, button) -> {\n    p.sendMessage(\"Your selected button is \" + button.getName());\n    p.sendMessage(\"Its index - \" + button.index);\n};\n\nform.setContent(\"This is a text\")\n    .addContent(\"\\nThis is addition :3\")\n    .add(new Button(\"Test button\", handler))\n    .add(new Button(\"Same button but with image\", Button.Icon.texture(\"textures/items/diamond\"), handler));\n\n//We can set handler for null result\nform.setOnCloseHandler(p -> {\n    p.sendMessage(\"Why you closed this form? :c\");\n});\n\nform.send(player);\n```\n\n### ModalForm\n```java\nModalForm form = new ModalForm(\"Test modal form\");\n\nform.setContent(\"Is OneKN gay?\") //local meme in RuNukkitDev\n    .setPositiveButton(\"Yes\")\n    .setNegativeButton(\"Sure\");\n\nform.setResponse((p, result) -> {\n    p.sendMessage(result? \"I knew it!\" : \"Quite right :D\");\n});\n\nform.send(player);\n```\n\n### CustomForm\n```java\nCustomForm form = new CustomForm(\"Sample custom form\");\n\nList<SelectableElement> elements = Arrays.asList(\n    new SelectableElement(\"Option 1\"),\n    new SelectableElement(\"Option 2 but with value\", 42),\n    new SelectableElement(\"Option 3\")\n);\n\nform.add(new Label(\"This is a test\"))\n    .add(\"Easy way to add a label\")\n    .add(\"my-text\", new Input(\"A sample input\"))\n    .add(\"my-toggle\", new Toggle(\"Toggle?\", true))\n    .add(\"my-dd\", new Dropdown(\"Dropdown\",  elements))\n    .add(new Dropdown(\"Dropdown with default value\", elements, 1))\n    .add(\"my-ss\", new StepSlider(\"Step slider\", elements, 2));\n\nform.setHandler((p, response) -> {\n    //We can get by id and index\n    p.sendMessage(response.getInput(\"my-text\").getValue());\n    p.sendMessage(response.getInput(1).getValue()); //It's bad practice. Do not use indexes\n    p.sendMessage(response.getToggle(\"my-toggle\").getValue());\n    \n    SelectableElement el = response.getDropdown(\"my-dd\").getValue();\n    p.sendMessage(el.getText());\n    if(el.getValue() != null) p.sendMessage(el.getValue(Integer.class));\n    \n    el = response.getStepSlider(\"my-ss\").getValue();\n    p.sendMessage(el.getText());\n});\n\nform.send(player);\n```\n\n### Async handling\nAlso you can use method `form.sendAsync(player)` for using async form handling.\n",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-03-06",
+      "description": "",
+      "title": "logo by @tolimag",
+      "url": "https://raw.githubusercontent.com/ContentForge/FormConstructor/master/.github/logo.png"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/78837507?v=4",
+  "id": "ContentForge/FormConstructor",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "name": "FormConstructor",
+  "server_version": "",
+  "source": "https://github.com/ContentForge/FormConstructor",
+  "stars": 10,
+  "summary": "Library for easy creating and handling of forms",
+  "updated_at": 1749489069,
+  "versions": [
+    {
+      "changelog": "### Changelog\r\n- Switched to Gradle project from Maven\r\n- Removed useless Text Input Validator\r\n- Removed Builder for Input\r\n- Renamed methods and some classes\r\n- Refactored Button Icons\r\n- Thread-safe form handler execution\r\n- Updated for PowerNukkitX 2.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FormConstructor.jar",
+          "primary": true,
+          "size": 27399,
+          "url": "https://github.com/ContentForge/FormConstructor/releases/download/2.0.0/FormConstructor.jar"
+        }
+      ],
+      "name": "FormConstructor 2.0.0",
+      "prerelease": false,
+      "published_at": 1712332013,
+      "version": "2.0.0"
+    },
+    {
+      "changelog": "### Changelog\r\n- Made a separate method for async form sending",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FormConstructor.jar",
+          "primary": true,
+          "size": 33023,
+          "url": "https://github.com/ContentForge/FormConstructor/releases/download/1.1.3/FormConstructor.jar"
+        }
+      ],
+      "name": "FormConstructor 1.1.3",
+      "prerelease": false,
+      "published_at": 1643605866,
+      "version": "1.1.3"
+    },
+    {
+      "changelog": "**Changelog**\r\n\r\n- CustomForm has async handling\r\n- Added sending method for CustomForm with setting handler\r\n- Added sending method for ModalForm with setting handler",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FormConstructor.jar",
+          "primary": true,
+          "size": 32861,
+          "url": "https://github.com/ContentForge/FormConstructor/releases/download/1.1.2/FormConstructor.jar"
+        }
+      ],
+      "name": "FormConstructor 1.1.2",
+      "prerelease": false,
+      "published_at": 1636003646,
+      "version": "1.1.2"
+    },
+    {
+      "changelog": "### Changelog\r\n\r\n- Added getter of elements list in CustomForm.\r\n- Added getter of buttons list in SimpleForm.\r\n- Simplified adding Label in CustomForm.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FormConstructor.jar",
+          "primary": true,
+          "size": 26190,
+          "url": "https://github.com/ContentForge/FormConstructor/releases/download/1.0.3/FormConstructor.jar"
+        }
+      ],
+      "name": "FormConstructor 1.0.3",
+      "prerelease": false,
+      "published_at": 1629171077,
+      "version": "1.0.3"
+    },
+    {
+      "changelog": "### Changelog\r\n\r\n- Refactored with Lombok.\r\n- Implemented validation of CustomForm for StepSlider and Dropdown.\r\n- Implemented resend SimpleForm if validation failed.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FormConstructor.jar",
+          "primary": true,
+          "size": 26031,
+          "url": "https://github.com/ContentForge/FormConstructor/releases/download/1.0.2/FormConstructor.jar"
+        }
+      ],
+      "name": "FormConstructor 1.0.2",
+      "prerelease": false,
+      "published_at": 1628169638,
+      "version": "1.0.2"
+    },
+    {
+      "changelog": "### Changelog\r\n\r\n- Added method for get all elements of a specific type in CustomForm.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FormConstructor.jar",
+          "primary": true,
+          "size": 25022,
+          "url": "https://github.com/ContentForge/FormConstructor/releases/download/1.0.1/FormConstructor.jar"
+        }
+      ],
+      "name": "FormConstructor 1.0.1",
+      "prerelease": false,
+      "published_at": 1627478709,
+      "version": "1.0.1"
+    },
+    {
+      "changelog": "### Changelog\r\n- Added ModalForm\r\n- Added SimpleForm\r\n- Added CustomForm\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FormConstructor.jar",
+          "primary": true,
+          "size": 24637,
+          "url": "https://github.com/ContentForge/FormConstructor/releases/download/1.0.0/FormConstructor.jar"
+        }
+      ],
+      "name": "FormConstructor 1.0.0",
+      "prerelease": true,
+      "published_at": 1627439854,
+      "version": "1.0.0"
+    }
+  ]
+}

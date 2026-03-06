@@ -1,0 +1,68 @@
+{
+  "api_version": "1.0.5",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Example",
+      "url": ""
+    },
+    {
+      "avatar_url": "",
+      "name": "Another",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1512669356,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "PluginA",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "PluginB",
+      "version_range": ""
+    }
+  ],
+  "description": "# ExamplePlugin\nExample Nukkit plugin, showing the API\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/34250602?v=4",
+  "id": "CloudburstMC/ExamplePlugin",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/NukkitX/ExamplePlugin",
+    "wiki": ""
+  },
+  "name": "ExamplePlugin",
+  "server_version": "",
+  "source": "https://github.com/CloudburstMC/ExamplePlugin",
+  "stars": 12,
+  "summary": "Example plugin showing the API",
+  "updated_at": 1770409767,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "example-plugin-1.0.0.jar",
+          "primary": true,
+          "size": 6742,
+          "url": "https://github.com/CloudburstMC/ExamplePlugin/releases/download/1.0.0/example-plugin-1.0.0.jar"
+        }
+      ],
+      "name": "1.0.0",
+      "prerelease": false,
+      "published_at": 1513695138,
+      "version": "1.0.0"
+    }
+  ]
+}

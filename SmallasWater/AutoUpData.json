@@ -1,0 +1,394 @@
+{
+  "api_version": "1.0.8",
+  "authors": [],
+  "categories": [],
+  "created_at": 1571297948,
+  "dependencies": [],
+  "description": "# AutoUpData\n根据Github仓库 更新插件\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
+  "id": "SmallasWater/AutoUpData",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "name": "AutoUpData",
+  "server_version": "",
+  "source": "https://github.com/SmallasWater/AutoUpData",
+  "stars": 4,
+  "summary": "",
+  "updated_at": 1700644032,
+  "versions": [
+    {
+      "changelog": "* 完善maven不指定后缀时的版本检查\r\n* 支持版本后缀检查",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoUpData-1.3.0.jar",
+          "primary": true,
+          "size": 15643,
+          "url": "https://github.com/SmallasWater/AutoUpData/releases/download/v1.3.0/AutoUpData-1.3.0.jar"
+        }
+      ],
+      "name": "更新  v1.3.0",
+      "prerelease": false,
+      "published_at": 1701050886,
+      "version": "v1.3.0"
+    },
+    {
+      "changelog": "增加 API接口\r\n详情请阅读\r\nhttps://github.com/SmallasWater/AutoUpData/blob/master/README.md\r\n优化插件启动",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoUpData_v1.2.2.jar",
+          "primary": true,
+          "size": 7561,
+          "url": "https://github.com/SmallasWater/AutoUpData/releases/download/v1.2.2/AutoUpData_v1.2.2.jar"
+        }
+      ],
+      "name": "更新 v1.2.2",
+      "prerelease": false,
+      "published_at": 1572697770,
+      "version": "v1.2.2"
+    },
+    {
+      "changelog": "修复由于文件名不同出现的重复更新BUG",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoUpData_v1.2.0.jar",
+          "primary": true,
+          "size": 7032,
+          "url": "https://github.com/SmallasWater/AutoUpData/releases/download/v1.2.0/AutoUpData_v1.2.0.jar"
+        }
+      ],
+      "name": "修复",
+      "prerelease": false,
+      "published_at": 1571477541,
+      "version": "v1.2.0"
+    },
+    {
+      "changelog": "1. 移除 getUpData(File file, String user, String project) \r\n2. 增加 getUpData(Pluginbase plugin,File file, String user, String project) ",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoUpData_v1.1.9.jar",
+          "primary": true,
+          "size": 7030,
+          "url": "https://github.com/SmallasWater/AutoUpData/releases/download/v1.1.9/AutoUpData_v1.1.9.jar"
+        }
+      ],
+      "name": "修复API",
+      "prerelease": false,
+      "published_at": 1571475944,
+      "version": "v1.1.9"
+    },
+    {
+      "changelog": "还是加上了重启插件",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoUpData_v1.1.8.jar",
+          "primary": true,
+          "size": 6805,
+          "url": "https://github.com/SmallasWater/AutoUpData/releases/download/v1.1.8/AutoUpData_v1.1.8.jar"
+        }
+      ],
+      "name": "end",
+      "prerelease": false,
+      "published_at": 1571474891,
+      "version": "v1.1.8"
+    },
+    {
+      "changelog": "取消 更新后关闭 再加载插件\r\n不那样做会出现很多问题\r\n(更新后再重启即可)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoUpData_v1.1.7.jar",
+          "primary": true,
+          "size": 6524,
+          "url": "https://github.com/SmallasWater/AutoUpData/releases/download/v1.1.7/AutoUpData_v1.1.7.jar"
+        }
+      ],
+      "name": "Final",
+      "prerelease": false,
+      "published_at": 1571472850,
+      "version": "v1.1.7"
+    },
+    {
+      "changelog": "尝试修复插件加载两次BUG",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoUpData_v1.1.6.jar",
+          "primary": true,
+          "size": 6805,
+          "url": "https://github.com/SmallasWater/AutoUpData/releases/download/v1.1.6/AutoUpData_v1.1.6.jar"
+        }
+      ],
+      "name": "v1.1.6",
+      "prerelease": false,
+      "published_at": 1571405246,
+      "version": "v1.1.6"
+    },
+    {
+      "changelog": "1.优化更新内容显示\r\n2.在更新界面换行就可以换行或者用换行字符",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoUpData_v1.1.5.jar",
+          "primary": true,
+          "size": 6758,
+          "url": "https://github.com/SmallasWater/AutoUpData/releases/download/v1.1.5/AutoUpData_v1.1.5.jar"
+        }
+      ],
+      "name": "v1.1.5",
+      "prerelease": false,
+      "published_at": 1571404231,
+      "version": "v1.1.5"
+    },
+    {
+      "changelog": "修复迷之BUG\r\n取消插件关闭....",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoUpData_v1.1.4.jar",
+          "primary": true,
+          "size": 6606,
+          "url": "https://github.com/SmallasWater/AutoUpData/releases/download/v1.1.4/AutoUpData_v1.1.4.jar"
+        }
+      ],
+      "name": "v1.1.4",
+      "prerelease": false,
+      "published_at": 1571403600,
+      "version": "v1.1.4"
+    },
+    {
+      "changelog": "修复插件BUG",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoUpData_v1.1.3.jar",
+          "primary": true,
+          "size": 6708,
+          "url": "https://github.com/SmallasWater/AutoUpData/releases/download/v1.1.3/AutoUpData_v1.1.3.jar"
+        }
+      ],
+      "name": "v1.1.3",
+      "prerelease": false,
+      "published_at": 1571403219,
+      "version": "v1.1.3"
+    },
+    {
+      "changelog": "增加更详细的更新提示",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoUpData_v1.1.2.jar",
+          "primary": true,
+          "size": 6517,
+          "url": "https://github.com/SmallasWater/AutoUpData/releases/download/v1.1.2/AutoUpData_v1.1.2.jar"
+        }
+      ],
+      "name": "v1.1.2",
+      "prerelease": false,
+      "published_at": 1571402664,
+      "version": "v1.1.2"
+    },
+    {
+      "changelog": "修复自身更新出现的BUG",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoUpData_v1.1.1.jar",
+          "primary": true,
+          "size": 6471,
+          "url": "https://github.com/SmallasWater/AutoUpData/releases/download/v1.1.1/AutoUpData_v1.1.1.jar"
+        }
+      ],
+      "name": "v1.1.1",
+      "prerelease": false,
+      "published_at": 1571402343,
+      "version": "v1.1.1"
+    },
+    {
+      "changelog": "增加更新完成后 关闭本插件",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoUpData_v1.1.0.jar",
+          "primary": true,
+          "size": 6526,
+          "url": "https://github.com/SmallasWater/AutoUpData/releases/download/v1.1.0/AutoUpData_v1.1.0.jar"
+        }
+      ],
+      "name": "v1.1.0",
+      "prerelease": false,
+      "published_at": 1571402046,
+      "version": "v1.1.0"
+    },
+    {
+      "changelog": "修复检测更新BUG\r\n修复插件更新失败BUG",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoUpData_v1.0.9.jar",
+          "primary": true,
+          "size": 6380,
+          "url": "https://github.com/SmallasWater/AutoUpData/releases/download/v1.0.9/AutoUpData_v1.0.9.jar"
+        }
+      ],
+      "name": "v1.0.9",
+      "prerelease": false,
+      "published_at": 1571401584,
+      "version": "v1.0.9"
+    },
+    {
+      "changelog": "修改API接口\r\n旧的API接口已经过时 \r\n\r\n新的接口\r\nAutoData.get(File,User,Project);\r\n\r\n移除\r\ngetPluginVersion()\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoUpData_v1.0.8.jar",
+          "primary": true,
+          "size": 6301,
+          "url": "https://github.com/SmallasWater/AutoUpData/releases/download/v1.0.8/AutoUpData_v1.0.8.jar"
+        }
+      ],
+      "name": "v1.0.8",
+      "prerelease": false,
+      "published_at": 1571401144,
+      "version": "v1.0.8"
+    },
+    {
+      "changelog": "修复更新后关服的问题",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoUpData_v1.0.7.jar",
+          "primary": true,
+          "size": 5920,
+          "url": "https://github.com/SmallasWater/AutoUpData/releases/download/v1.0.7/AutoUpData_v1.0.7.jar"
+        }
+      ],
+      "name": "v1.0.7",
+      "prerelease": false,
+      "published_at": 1571397156,
+      "version": "v1.0.7"
+    },
+    {
+      "changelog": "修复中文乱码BUG",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoUpData_v1.0.6.jar",
+          "primary": true,
+          "size": 5946,
+          "url": "https://github.com/SmallasWater/AutoUpData/releases/download/v1.0.6/AutoUpData_v1.0.6.jar"
+        }
+      ],
+      "name": "v1.0.6",
+      "prerelease": false,
+      "published_at": 1571396913,
+      "version": "v1.0.6"
+    },
+    {
+      "changelog": "add getNewVersionMessage()",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoUpData_v1.0.5.jar",
+          "primary": true,
+          "size": 5872,
+          "url": "https://github.com/SmallasWater/AutoUpData/releases/download/v1.0.5/AutoUpData_v1.0.5.jar"
+        }
+      ],
+      "name": "v1.0.5",
+      "prerelease": false,
+      "published_at": 1571315242,
+      "version": "v1.0.5"
+    },
+    {
+      "changelog": "updata",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoUpData_v1.0.4.jar",
+          "primary": true,
+          "size": 6010,
+          "url": "https://github.com/SmallasWater/AutoUpData/releases/download/v1.0.4/AutoUpData_v1.0.4.jar"
+        }
+      ],
+      "name": "v1.0.4",
+      "prerelease": false,
+      "published_at": 1571302030,
+      "version": "v1.0.4"
+    },
+    {
+      "changelog": "updata",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoUpData_v1.0.3.jar",
+          "primary": true,
+          "size": 6009,
+          "url": "https://github.com/SmallasWater/AutoUpData/releases/download/v1.0.3/AutoUpData_v1.0.3.jar"
+        }
+      ],
+      "name": "v1.0.3",
+      "prerelease": false,
+      "published_at": 1571301556,
+      "version": "v1.0.3"
+    },
+    {
+      "changelog": "fix bug",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoUpData_v1.0.2.jar",
+          "primary": true,
+          "size": 5896,
+          "url": "https://github.com/SmallasWater/AutoUpData/releases/download/v1.0.2/AutoUpData_v1.0.2.jar"
+        }
+      ],
+      "name": "v1.0.2",
+      "prerelease": false,
+      "published_at": 1571300513,
+      "version": "v1.0.2"
+    },
+    {
+      "changelog": "UpData",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoUpData_v1.0.1.jar",
+          "primary": true,
+          "size": 5869,
+          "url": "https://github.com/SmallasWater/AutoUpData/releases/download/v1.0.1/AutoUpData_v1.0.1.jar"
+        }
+      ],
+      "name": "v1.0.1",
+      "prerelease": false,
+      "published_at": 1571299949,
+      "version": "v1.0.1"
+    },
+    {
+      "changelog": "first",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoUpData.jar",
+          "primary": true,
+          "size": 5582,
+          "url": "https://github.com/SmallasWater/AutoUpData/releases/download/v1.0.0/AutoUpData.jar"
+        }
+      ],
+      "name": "v1.0.0",
+      "prerelease": false,
+      "published_at": 1571298027,
+      "version": "v1.0.0"
+    }
+  ]
+}

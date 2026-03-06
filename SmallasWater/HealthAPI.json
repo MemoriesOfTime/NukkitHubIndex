@@ -1,0 +1,25 @@
+{
+  "api_version": "1.0.9",
+  "authors": [],
+  "categories": [],
+  "created_at": 1584551086,
+  "dependencies": [],
+  "description": "# HealthAPI\n血量核心\n\nAPI类:\n```java\n//获取玩家虚拟血量类\nPlayerHealth healt = PlayerHealth.getPlayerHealth(玩家名);\n\n//PlayerHealth参数\n/**\n    * 获取玩家虚拟血量类\n    * @param player 玩家类\n    * @return PlayerHealth类\n    * */\n  getPlayerHealth(Player player);\n\n    /**\n     * 获取玩家虚拟血量类\n     * @param playerName 玩家名称\n     * @return PlayerHealth类\n     * */\n  getPlayerHealth(String playerName);\n    \n    /**\n     * 获取虚拟血量上限\n     * @return 血量上限\n     * */\n    getDefaultMaxHealth();\n\n    /**\n     * 获取玩家名\n     * @return 玩家名\n     * */\n    getPlayerName();\n\n    /**\n     * 获取玩家虚拟血量\n     *\n     * @return 玩家血量\n     * */\n    getHealth() ;\n\n    /**\n     * 设置玩家虚拟血量 如果玩家在线 同步玩家血量\n     * @param health 虚拟血量值\n     * */\n    setHealth(double health) ;\n    /**\n     * 获取玩家最大血量\n     * @return 最大虚拟血量\n     * */\n    getMaxHealth();\n\n    /**\n     * 插件api 累计增加虚拟血量上限\n     * @param owner 识别名\n     * @param health 血量上限\n     *\n     * */\n    addMaxHealth(String owner,int health);\n\n    /**\n     * 插件api 设置虚拟血量上限\n     * @param owner 识别名\n     * @param health 血量上限\n     *\n     * */\n    setMaxHealth(String owner,int health);\n\n    /**\n     * 插件api 减少虚拟血量上限\n     * @param owner 识别名\n     * @param health 血量上限\n     * */\n    removeMaxHealth(String owner,int health);\n\n    /**\n     * 插件api 获取识别名增加的虚拟血量\n     * @param owner 识别名\n     * @return 增加的虚拟血量上限\n     * */\n    getOwnerMaxHealth(String owner);\n\n\n    /**\n     * 设置虚拟血量上限\n     * @param maxHealth 虚拟血量上限\n     * */\n     setMaxHealth(int maxHealth) ;\n    \n\n    /**\n     * 获取计算后玩家的真实血量\n     * @return 玩家的真实血量\n     * */\n    getPlayerHealth();\n\n\n    /**\n     * 获取玩家受到攻击后的真实血量\n     * @return 玩家的真实血量\n     * */\n    getDamageHealth(float damage);\n\n    /**\n     * 获取玩家血量百分比\n     * @return 百分比血量\n     * */\n    getHealthPercentage();\n    /**\n     * 设置玩家重生血量\n     * */\n    setSpawnHealth();\n   /**\n     * 设置玩家重生血量\n     * */\n    setSpawnHealth();\n    /**\n     * 获取玩家世界独立血量\n     * @param levelName 世界名称\n     * @return 最大血量\n     * */\n    getLevelHealth(String levelName)；\n    /**\n     * 移除玩家世界独立血量\n     * @param levelName 世界名称\n     * */\n    removeLevelHealth(String levelName)；\n    /**\n     * 设置玩家世界独立血量\n     * @param levelName 世界名称\n     * @param maxHealth 最大血量\n     * */\n    setLevelHealth(String levelName,int maxHealth)；\n```\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
+  "id": "SmallasWater/HealthAPI",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "name": "HealthAPI",
+  "server_version": "",
+  "source": "https://github.com/SmallasWater/HealthAPI",
+  "stars": 2,
+  "summary": "",
+  "updated_at": 1670143561,
+  "versions": []
+}

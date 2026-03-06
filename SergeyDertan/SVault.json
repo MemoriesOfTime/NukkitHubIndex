@@ -1,0 +1,70 @@
+{
+  "api_version": "1.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1556494301,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "KotlinLib",
+      "version_range": ""
+    }
+  ],
+  "description": "# SVault\nSVault is a nukkit plugin that allows players to creating their private vaults\n\n[WIKI](https://github.com/SergeyDertan/SVault/wiki)\n## Download\n[Nukkitx.com](https://nukkitx.com/resources/svault.243/)\n[Google drive](https://drive.google.com/file/d/14di0TdNrjNzmjMnwG0wrSUJF-kqmE_vR/view?usp=sharing)\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/7607627?v=4",
+  "id": "SergeyDertan/SVault",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://vk.com/sergey_dertan",
+    "wiki": ""
+  },
+  "name": "${pom.artifactId}",
+  "server_version": "",
+  "source": "https://github.com/SergeyDertan/SVault",
+  "stars": 0,
+  "summary": "",
+  "updated_at": 1623622833,
+  "versions": [
+    {
+      "changelog": "KotlinLib dependency",
+      "downloads": 0,
+      "files": [],
+      "name": "KotlinLib dependency",
+      "prerelease": false,
+      "published_at": 1565691969,
+      "version": "2.2"
+    },
+    {
+      "changelog": "Plugin Identifiable Command\r\nRemove useless messages",
+      "downloads": 0,
+      "files": [],
+      "name": "",
+      "prerelease": false,
+      "published_at": 1560975982,
+      "version": "2.1"
+    },
+    {
+      "changelog": "MySQL, SQLite & postrgresql support\r\nPlaceholderAPI support\r\nMigrate command\r\nRussian translation\r\nVault name pattern",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SVault-2.0.jar",
+          "primary": true,
+          "size": 102363,
+          "url": "https://github.com/SergeyDertan/SVault/releases/download/2.0/SVault-2.0.jar"
+        }
+      ],
+      "name": "Data providers, migrate command, placeholders and more",
+      "prerelease": false,
+      "published_at": 1556813149,
+      "version": "2.0"
+    }
+  ]
+}

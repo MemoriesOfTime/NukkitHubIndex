@@ -1,0 +1,52 @@
+{
+  "api_version": "1.0.12",
+  "authors": [],
+  "categories": [],
+  "created_at": 1624882647,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "PowerNukkit",
+      "version_range": ""
+    }
+  ],
+  "description": "# Reserved Slots Plugin\n[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=PowerNukkit_Plugin-Reserved-Slots&metric=alert_status)](https://sonarcloud.io/dashboard?id=PowerNukkit_Plugin-Reserved-Slots)\n[![Build and Test](https://github.com/PowerNukkit/Plugin-Reserved-Slots/actions/workflows/maven.yml/badge.svg)](https://github.com/PowerNukkit/Plugin-Reserved-Slots/actions/workflows/maven.yml)\n[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=PowerNukkit_Plugin-Reserved-Slots&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=PowerNukkit_Plugin-Reserved-Slots)\n[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=PowerNukkit_Plugin-Reserved-Slots&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=PowerNukkit_Plugin-Reserved-Slots)\n[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=PowerNukkit_Plugin-Reserved-Slots&metric=security_rating)](https://sonarcloud.io/dashboard?id=PowerNukkit_Plugin-Reserved-Slots)\n<br/>\n[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=PowerNukkit_Plugin-Reserved-Slots&metric=coverage)](https://sonarcloud.io/dashboard?id=PowerNukkit_Plugin-Reserved-Slots)\n[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=PowerNukkit_Plugin-Reserved-Slots&metric=duplicated_lines_density)](https://sonarcloud.io/dashboard?id=PowerNukkit_Plugin-Reserved-Slots)\n[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=PowerNukkit_Plugin-Reserved-Slots&metric=bugs)](https://sonarcloud.io/dashboard?id=PowerNukkit_Plugin-Reserved-Slots)\n[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=PowerNukkit_Plugin-Reserved-Slots&metric=code_smells)](https://sonarcloud.io/dashboard?id=PowerNukkit_Plugin-Reserved-Slots)\n[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=PowerNukkit_Plugin-Reserved-Slots&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=PowerNukkit_Plugin-Reserved-Slots)\n\n\nThis plugin allows you to define how many player slots will be reserved for a group of players.\n\nAs an example, you can use it to reserve slots:\n- for VIP or donors\n- for staff members\n- for members with a specific permission\n\nYou can also allow members to join even if the server is full.\n\nThe messages are fully customizable.\n\n## Cloning and importing\n1. Just do a normal `git clone https://github.com/PowerNukkit/Plugin-Reserved-Slots.git` (or the URL of your own git repository)\n2. Import the `pom.xml` file with your IDE, it should do the rest by itself\n\n## Debugging\n1. Create a zip file containing only the `plugin.yml` file\n2. Rename the zip file to change the extension to jar\n3. Create an empty folder anywhere, that will be your server folder.  \n   <small>_Note: You don't need to place the PowerNukkit jar in the folder, your IDE will load it from the maven classpath._</small>\n4. Create a folder named `plugins` inside your server folder  \n   <small>_Note: It is needed to bootstrap your plugin, your IDE will load your plugin classes from the classpath automatically,\n   so it needs to have only the `plugin.yml` file._</small>\n5. Move the jar file that contains only the `plugin.yml` to the `plugins` folder\n6. Create a new Application run configuration setting the working directory to the server folder and the main class to:  `cn.nukkit.Nukkit`  \n![](https://i.imgur.com/NUrrZab.png)\n7. Now you can run in debug mode. If you change the `plugin.yml` you will need to update the jar file that you've made.\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/67816604?v=4",
+  "id": "PowerNukkit/Plugin-Reserved-Slots",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/PowerNukkit/Plugin-Reserved-Slots",
+    "wiki": ""
+  },
+  "name": "reserved-slots",
+  "server_version": "",
+  "source": "https://github.com/PowerNukkit/Plugin-Reserved-Slots",
+  "stars": 0,
+  "summary": "Reserve player slots for important players",
+  "updated_at": 1624955537,
+  "versions": [
+    {
+      "changelog": "Initial implementation of the plugin. The reserved slots can be configured from the config file that is generated inside the plugin folder.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "plugin-reserved-slots-0.1.0.jar",
+          "primary": true,
+          "size": 13038,
+          "url": "https://github.com/PowerNukkit/Plugin-Reserved-Slots/releases/download/v0.1.0/plugin-reserved-slots-0.1.0.jar"
+        }
+      ],
+      "name": "Reserved Slots v0.1.0",
+      "prerelease": false,
+      "published_at": 1624955125,
+      "version": "v0.1.0"
+    }
+  ]
+}

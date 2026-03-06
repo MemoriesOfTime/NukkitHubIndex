@@ -1,0 +1,104 @@
+{
+  "api_version": "1.0.14",
+  "authors": [],
+  "categories": [],
+  "created_at": 1700539589,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "CustomItemAPI",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "EconomyAPI",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "Money",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "playerPoints",
+      "version_range": ""
+    }
+  ],
+  "description": "# <div align=\"center\">SalesMachine</div>  \n\n------\n![](https://img.shields.io/badge/license-GPL3.0-blue) <a href=\"https://github.com/Sobadfish/SalesMachine/releases/latest\" alt=\"Latest release\">\n<img src=\"https://img.shields.io/github/v/release/Sobadfish/SalesMachine?include_prereleases\" alt=\"Latest release\">\n</a>\n\n### ⚠️Server\n\n| 核心           |         是否支持         |\n|--------------|:--------------------:|\n| NukkitX      |          ❌           |\n| PowerNukkitX |          ✅           |\n| Nukkit-PM1E  | ✅(需要CustomItemAPI前置) |\n| Nukkit-MOT   |          ✅           |\n\n### 📝Function\n|     |    功能     |\n|:---:|:---------:|\n|  ✅  | 自定义物品  |\n|  ✅  | 增加物品以及出售  |\n|  ✅  | 是否支持自定义物品 |\n|  ✅  |  商品无限库存   |\n|  ✅  |   商品回收    |\n|  ✅  |  商品数量限购   |\n|  ✅  | 刷新商品限购次数  |\n|  ✅  | 售货机调整位置  |\n\n### ✋How to use\n* 管理员在游戏中执行 `/sa give [玩家] [数量] ` 即可获得售货机物品\n将售货机放置即可生成\n* 手持物品潜行点击售货机即可添加物品 ⚠首次添加的时候 数量代表出售的数量，之后添加的数量则是增加库存。\n* 使用模型切换器可以直接更改模型\n\n###  📄DownLoad\n[下载](https://motci.cn/job/SalesMachine_Project/)\n\n### 👀Display\n\n| ![本地](https://raw.githubusercontent.com/SoBadFish/SalesMachine/master/img/1.jpg)   | ![本地](https://raw.githubusercontent.com/SoBadFish/SalesMachine/master/img/2.jpg)   |\n|----------------------|----------------------|\n| ![本地](https://raw.githubusercontent.com/SoBadFish/SalesMachine/master/img/3.jpg)   | ![本地](https://raw.githubusercontent.com/SoBadFish/SalesMachine/master/img/4.jpg)   |\n\n\n\n\n\n\n\n",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-03-06",
+      "description": "",
+      "title": "本地",
+      "url": "https://raw.githubusercontent.com/SoBadFish/SalesMachine/master/img/1.jpg"
+    },
+    {
+      "created": "2026-03-06",
+      "description": "",
+      "title": "本地",
+      "url": "https://raw.githubusercontent.com/SoBadFish/SalesMachine/master/img/2.jpg"
+    },
+    {
+      "created": "2026-03-06",
+      "description": "",
+      "title": "本地",
+      "url": "https://raw.githubusercontent.com/SoBadFish/SalesMachine/master/img/3.jpg"
+    },
+    {
+      "created": "2026-03-06",
+      "description": "",
+      "title": "本地",
+      "url": "https://raw.githubusercontent.com/SoBadFish/SalesMachine/master/img/4.jpg"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/83235042?v=4",
+  "id": "SoBadFish/SalesMachine",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "name": "SalesmMchine",
+  "server_version": "",
+  "source": "https://github.com/SoBadFish/SalesMachine",
+  "stars": 5,
+  "summary": "",
+  "updated_at": 1771677539,
+  "versions": [
+    {
+      "changelog": "合并MOT分支的收购以及自定义物品\r\n兼容CustomItemAPI插件\r\n优化管理员页面设置",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SalesMachine_v1.1.2.jar",
+          "primary": true,
+          "size": 76563,
+          "url": "https://github.com/SoBadFish/SalesMachine/releases/download/1.1.2/SalesMachine_v1.1.2.jar"
+        }
+      ],
+      "name": "2023/12/04 更新",
+      "prerelease": false,
+      "published_at": 1701662024,
+      "version": "1.1.2"
+    },
+    {
+      "changelog": "添加到github",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SalesMachine_v1.0.9.jar",
+          "primary": true,
+          "size": 60868,
+          "url": "https://github.com/SoBadFish/SalesMachine/releases/download/1.0.9/SalesMachine_v1.0.9.jar"
+        }
+      ],
+      "name": "2023/11/27更新",
+      "prerelease": false,
+      "published_at": 1701065241,
+      "version": "1.0.9"
+    }
+  ]
+}

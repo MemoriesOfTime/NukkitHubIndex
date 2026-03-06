@@ -1,0 +1,234 @@
+{
+  "api_version": "1.1.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1743875280,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "PlaceholderAPI",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "LuckPerms",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "Multipass",
+      "version_range": ""
+    }
+  ],
+  "description": "# EssentialsChat 🌟\n\n**EssentialsChat** is a powerful and flexible chat management plugin for Nukkit servers! 🚀 It supports global and local chat, customizable prefixes and nicknames, integration with LuckPerms and Multipass, and advanced chat filtering. Perfect for servers that need enhanced chat control and customization. 🎉\n\n---\n\n## ✨ Features\n\n- **Global and Local Chat**:\n  - Local chat with configurable radius 📍\n  - Global chat triggered by a symbol (default: `!`) 🌍\n  - Support for default Minecraft chat format 🗨️\n- **Prefix and Suffix Customization**:\n  - Seamless integration with **LuckPerms** and **Multipass** for prefix/suffix management 🔖\n  - `/prefix` command to set custom prefixes 🎨\n- **Nickname Management**:\n  - `/nick` command to set custom nicknames 🖌\n  - Optional colored nicknames and duplicate nickname restrictions 🚫\n  - `/realname` command to find a player's real name 🕵️‍♂️\n- **Chat Filtering**:\n  - Message cooldown to prevent spam ⏰\n  - Maximum message length restriction 📏\n  - Anti-spam protection for repeated messages 🚨\n  - Configurable punishments: kick, message, or custom command ⚖️\n- **PlaceholderAPI Integration**:\n  - Use placeholders to customize chat formats 📝\n- **Highly Configurable**:\n  - Blacklists for nicknames and prefixes 🚫\n  - Customizable message formats and character limits 🔧\n- **Debug Mode**:\n  - Detailed logging for developers 🛠️\n\n---\n\n## 📥 Installation\n\n1. **Download the Plugin**:\n  - Grab the [latest](https://github.com/CrieXD1337/EssentialsChat/releases/latest) `.jar` file from [Releases](https://github.com/CrieXD1337/EssentialsChat/releases/latest) 📦\n2. **Install Dependencies**:\n  - **Required**: [PlaceholderAPI](https://cloudburstmc.org/resources/placeholderapi.104/) for placeholder support.\n  - **Optional**: [LuckPerms](https://luckperms.net/download) or [Multipass](https://cloudburstmc.org/resources/multipass.29/) for prefix/suffix support.\n3. **Place the Jar**:\n  - Drop `EssentialsChat.jar` into your `plugins` folder.\n4. **Restart the Server**:\n  - Start or restart your Nukkit server to load the plugin. The default configuration files (`config.yml`, `messages.yml`, `provider.yml`) will be generated automatically. 🔄\n5. **Configure**:\n  - Edit `config.yml` and `messages.yml` in the `plugins/EssentialsChat` folder to customize settings and messages. 🛠️\n  - Set the provider in `provider.yml` (`luckperms`, `multipass`, or `fallback`).\n\n---\n\n## ⚙️ Configuration\n\nThe plugin is highly customizable through its configuration files. Below are the key files and their purposes:\n\n- **config.yml**: Main configuration for chat formats, nickname/prefix rules, and chat filtering settings.\n- **messages.yml**: Customizable messages for commands and chat filtering.\n- **provider.yml**: Select the prefix/suffix provider (`luckperms`, `multipass`, or `fallback`).\n\n### Example Config Snippets\n\n**config.yml**:\n```yaml\nchat-formatting:\n  format-method: 1 # 1: Local/Global, 2: Single, 3: Default Minecraft\n  local-chat-radius: 100\n  global-chat-symbol: \"!\"\n  local-chat-format: \"§7[§aL§7] §r{prefix}§r {player}{suffix}§r §a» §8{msg}\"\n  global-chat-format: \"§7[§4G§7] §r{prefix}§r {player}{suffix}§r §a» §f{msg}\"\n\nnick:\n  max-characters-length: 15\n  min-characters-length: 3\n  allow-colored-nick: false\n  allow-duplicate-nicknames: false\n```\n\n**messages.yml**:\n```yaml\nprefix-set: \"§7> §fYour prefix successfully moved to: §b{prefix}\"\nnick-success: \"§7> §fYour nickname changed to §b{nick}\"\ncooldown-for-messages: \"§7> §cWait §b{seconds} §cseconds\"\n```\n\nCheck the full configuration files in the [repository](https://github.com/CriexD1337/EssentialsChat/tree/main/main/resources) for all available options.\n\n---\n\n## 📜 Commands\n\n| Command | Description | Permission                         | Usage                           |\n|---------|-------------|------------------------------------|---------------------------------|\n| `/prefix <prefix\\|off>` | Set or clear your prefix | `essentialschat.commands.prefix`   | `/prefix VIP` or `/prefix off`  |\n| `/nick <nick\\|off>` | Set or clear your nickname | `essentialschat.commands.nick`     | `/nick Nick` or `/nick off` |\n| `/realname <player>` | Find a player's real name | `essentialschat.commands.realname` | `/realname Nick`                |\n\n**Note**: By default, these permissions are granted to operators (`op`). Configure permissions using LuckPerms or Multipass for other players.\n\n---\n\n## 🔌 API\n\nEssentialsChat provides a simple API for developers to integrate with the plugin. Use the `EssentialsChatAPI` interface to manage nicknames and prefixes programmatically.\n\n### Example Usage\n\n```java\nimport cn.nukkit.Player;\nimport me.criex.essentialschat.api.EssentialsChatAPI;\nimport me.criex.essentialschat.EssentialsChat;\n\n// Get the API instance\nEssentialsChatAPI api = EssentialsChat.getAPI();\n\n// Set a player's nickname\napi.setNickname(player, \"ExampleNick\");\n\n// Clear a player's nickname\napi.clearNickname(player);\n\n// Get a player's real name from their nickname\nString realName = api.getRealName(\"ExampleNick\");\n\n// Set a player's prefix\napi.setPrefix(player, \"&b[Magic]\");\n\n// Clear a player's prefix\napi.clearPrefix(player);\n\n// Get a player's prefix or suffix\nString prefix = api.getPrefix(player);\nString suffix = api.getSuffix(player);\n```\n\nFor more details, check the [API documentation](https://github.com/CrieXD1337/EssentialsChat/blob/master/API.md).\n\n---\n\n## 📝 License\n\nThis project is licensed under MIT license. Please see the [LICENSE](https://github.com/CrieXD1337/EssentialsChat/blob/master/LICENSE) file for details.\n\n🌟 **Make your server’s chat awesome with EssentialsChat!** 🌟",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/205987103?v=4",
+  "id": "CrieXD1337/EssentialsChat",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "name": "EssentialsChat",
+  "server_version": "",
+  "source": "https://github.com/CrieXD1337/EssentialsChat",
+  "stars": 1,
+  "summary": "Chat plugin with global and local chat support for LuckPerms or Multipass",
+  "updated_at": 1767524163,
+  "versions": [
+    {
+      "changelog": "# Release v1.1.4\r\nLatest commit in tag: [`67c0e57`](https://github.com/CrieXD1337/EssentialsChat/commit/67c0e57b31752a3972a10dd8b1c7d48bdda62aec)\r\n\r\n## Change Log:\r\n- [`26298ac`](https://github.com/CrieXD1337/EssentialsChat/commit/26298acef5f57bc5b53cfa605086adf57576b0c8): [+] The ability to customize the display name update cooldown ([CrieXD1337](https://github.com/CrieXD1337))\r\n- [`4d01fda`](https://github.com/CrieXD1337/EssentialsChat/commit/4d01fdae4efdf018bb28545e12ab06c7cbdb4a03): [+] Russian language  ([CrieXD1337](https://github.com/CrieXD1337))\r\n- [`734b31e`](https://github.com/CrieXD1337/EssentialsChat/commit/734b31e13ed06bf8ceb93df95bbfa1c66c89545c): [+] Nickname storage in data folder with JSON/YAML support ([CrieXD1337](https://github.com/CrieXD1337))\r\n- [`67c0e57`](https://github.com/CrieXD1337/EssentialsChat/commit/67c0e57b31752a3972a10dd8b1c7d48bdda62aec): [+] Layout configuration for welcome and death messages ([CrieXD1337](https://github.com/CrieXD1337))",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EssentialsChat-1.1.4.jar",
+          "primary": true,
+          "size": 53680,
+          "url": "https://github.com/CrieXD1337/EssentialsChat/releases/download/1.1.4/EssentialsChat-1.1.4.jar"
+        }
+      ],
+      "name": "EСhat - 1.1.4",
+      "prerelease": false,
+      "published_at": 1758382787,
+      "version": "1.1.4"
+    },
+    {
+      "changelog": "# Release v1.1.3\r\nLatest commit in tag: [`56aae34`](https://github.com/CrieXD1337/EssentialsChat/commit/56aae34a89e9f440eb2939eeaf3ceda22208e4dc)\r\n\r\n## Change Log:\r\n- [`c4ecb3e`](https://github.com/CrieXD1337/EssentialsChat/commit/c4ecb3ef669729884db15492fd8f44828d03092e): [+] Configurable repetition punishment for chat filtering ([eventex](https://github.com/eventex213))\r\n- [`37ae175`](https://github.com/CrieXD1337/EssentialsChat/commit/37ae1758d0b269410e9398bd83e273c08e7595f6): [⁎] Added missing strings to `messages.yml`. ([eventex](https://github.com/eventex213))\r\n- [`b8673dc`](https://github.com/CrieXD1337/EssentialsChat/commit/b8673dcd3f7fc09d7951ed90f9128d9494fcd9ff): [+] Debug mode. ([eventex](https://github.com/eventex213))\r\n- [`97efe3c`](https://github.com/CrieXD1337/EssentialsChat/commit/97efe3c3475ba7f387201f529c1d45fd2c90b481): [+] Automatic provider selection. ([eventex](https://github.com/eventex213))\r\n- [`63c8563`](https://github.com/CrieXD1337/EssentialsChat/commit/63c85638290899976462392f6351bcad9138b86c): [⁎] Rename class and update package declarations. ([eventex](https://github.com/eventex213))\r\n- [`a6625b9`](https://github.com/CrieXD1337/EssentialsChat/commit/a6625b989e5ac13ddfd8fd63d082320b94c1885f): [⁎] Updated `fake-nickname-character` string in config. ([eventex](https://github.com/eventex213))\r\n- [`bd7aac7`](https://github.com/CrieXD1337/EssentialsChat/commit/bd7aac7b6d695785926b8380bf107425181d783c): [+] Added `chat-formatting` section with single-chat-type for format-method 2 ([eventex](https://github.com/eventex213))\r\n- [`c83e3a2`](https://github.com/CrieXD1337/EssentialsChat/commit/c83e3a2250c793e0124becc6ad4b33541d8836cd): [⁎] Fixed `op-nickname-color` addition for operators. ([eventex](https://github.com/eventex213))\r\n- [`0890558`](https://github.com/CrieXD1337/EssentialsChat/commit/08905586fea981fce9dfc0c34edb23ddd655fb1d): [+] Added Multi-Language support. ([CrieXD1337](https://github.com/CrieXD1337))\r\n- [`8fe4e8b`](https://github.com/CrieXD1337/EssentialsChat/commit/8fe4e8bc06b83ceff592390a27995262190be3b7): [+] Added the ability to change the description, aliases, etc. of commands. ([CrieXD1337](https://github.com/CrieXD1337))\r\n- [`99d3753`](https://github.com/CrieXD1337/EssentialsChat/commit/99d37535a3931f43c2e855d6754dcb3819bf5aaa): [*] Added API docs on repository page. ([CrieXD1337](https://github.com/CrieXD1337))",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EssentialsChat-1.1.3.jar",
+          "primary": true,
+          "size": 45905,
+          "url": "https://github.com/CrieXD1337/EssentialsChat/releases/download/1.1.3/EssentialsChat-1.1.3.jar"
+        }
+      ],
+      "name": "EChat - 1.1.3",
+      "prerelease": false,
+      "published_at": 1757092411,
+      "version": "1.1.3"
+    },
+    {
+      "changelog": "## Change Log:\r\n- [`c4ecb3e`](https://github.com/CrieXD1337/EssentialsChat/commit/c4ecb3ef669729884db15492fd8f44828d03092e): [+] Configurable repetition punishment for chat filtering ([eventex](https://github.com/eventex213))\r\n- [`37ae175`](https://github.com/CrieXD1337/EssentialsChat/commit/37ae1758d0b269410e9398bd83e273c08e7595f6): [⁎] Added missing strings to `messages.yml`. ([eventex](https://github.com/eventex213))\r\n- [`b8673dc`](https://github.com/CrieXD1337/EssentialsChat/commit/b8673dcd3f7fc09d7951ed90f9128d9494fcd9ff): [+] Debug mode. ([eventex](https://github.com/eventex213))\r\n- [`97efe3c`](https://github.com/CrieXD1337/EssentialsChat/commit/97efe3c3475ba7f387201f529c1d45fd2c90b481): [+] Automatic provider selection. ([eventex](https://github.com/eventex213))\r\n- [`63c8563`](https://github.com/CrieXD1337/EssentialsChat/commit/63c85638290899976462392f6351bcad9138b86c): [⁎] Rename class and update package declarations. ([eventex](https://github.com/eventex213))\r\n- [`a6625b9`](https://github.com/CrieXD1337/EssentialsChat/commit/a6625b989e5ac13ddfd8fd63d082320b94c1885f): [⁎] Updated `fake-nickname-character` string in config. ([eventex](https://github.com/eventex213))\r\n- [`bd7aac7`](https://github.com/CrieXD1337/EssentialsChat/commit/bd7aac7b6d695785926b8380bf107425181d783c): [+] Added `chat-formatting` section with single-chat-type for format-method 2 ([eventex](https://github.com/eventex213))\r\n- [`c83e3a2`](https://github.com/CrieXD1337/EssentialsChat/commit/c83e3a2250c793e0124becc6ad4b33541d8836cd): [⁎] Fixed `op-nickname-color` addition for operators. ([eventex](https://github.com/eventex213))",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EssentialsChat.jar",
+          "primary": true,
+          "size": 30081,
+          "url": "https://github.com/CrieXD1337/EssentialsChat/releases/download/snapshot/EssentialsChat.jar"
+        }
+      ],
+      "name": "Snapshot",
+      "prerelease": true,
+      "published_at": 1754998815,
+      "version": "snapshot"
+    },
+    {
+      "changelog": "### Added:\r\n- [X] Chat filtering (optional)\r\n- [X] Updated config.yml",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EssentialsChat-1.1.2.jar",
+          "primary": true,
+          "size": 20969,
+          "url": "https://github.com/CrieXD1337/EssentialsChat/releases/download/1.1.2/EssentialsChat-1.1.2.jar"
+        }
+      ],
+      "name": "EChat - 1.1.2",
+      "prerelease": false,
+      "published_at": 1748251848,
+      "version": "1.1.2"
+    },
+    {
+      "changelog": "### Added:\r\n- [X] Blacklist for prefixes and nicknames\r\n- [X] Updated config.yml\r\n- [ ] Removed bug with `/realname` command",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EssentialsChat-1.1.0.jar",
+          "primary": true,
+          "size": 15336,
+          "url": "https://github.com/CrieXD1337/EssentialsChat/releases/download/1.1/EssentialsChat-1.1.0.jar"
+        }
+      ],
+      "name": "Echat - 1.1.0",
+      "prerelease": false,
+      "published_at": 1745935973,
+      "version": "1.1"
+    },
+    {
+      "changelog": "### Added:\r\n- [X] PlaceholderAPI placeholders support\r\n- [X] Updated config",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EssentialsChat-1.0.9.jar",
+          "primary": true,
+          "size": 14499,
+          "url": "https://github.com/CrieXD1337/EssentialsChat/releases/download/1.0.9/EssentialsChat-1.0.9.jar"
+        }
+      ],
+      "name": "Echat - 1.0.9",
+      "prerelease": false,
+      "published_at": 1745878985,
+      "version": "1.0.9"
+    },
+    {
+      "changelog": "## Added:\r\n- [X] Updated nicknames system.\r\n- [X] Now, if you set a nickname, another player will not be able to set the same one.\r\n- [ ] Fixed a bug with a symbol before a fake nickname.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EssentialsChat-1.0.8.1.jar",
+          "primary": true,
+          "size": 14420,
+          "url": "https://github.com/CrieXD1337/EssentialsChat/releases/download/1.0.8/EssentialsChat-1.0.8.1.jar"
+        }
+      ],
+      "name": "EChat - 1.0.8.1",
+      "prerelease": false,
+      "published_at": 1745345960,
+      "version": "1.0.8"
+    },
+    {
+      "changelog": "## Added:\r\n\r\n  - [+] `/nick <nick>` command (change your real name to fake).\r\n  - [+] `/realname <player>` comamnd (see the real player name).\r\n  - [+] Configuration updated.\r\n  - [+] Improved mechanics.\r\n  \r\n  - [–] Any bugs and errors.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EssentialsChat-1.0.7.jar",
+          "primary": true,
+          "size": 13183,
+          "url": "https://github.com/CrieXD1337/EssentialsChat/releases/download/1.0.7/EssentialsChat-1.0.7.jar"
+        }
+      ],
+      "name": "EChat - 1.0.7",
+      "prerelease": false,
+      "published_at": 1745094142,
+      "version": "1.0.7"
+    },
+    {
+      "changelog": "## Added:\r\n - Prefix command\r\n - Permission `essentialschat.prefix.setprefix`\r\n - Updated config",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EssentialsChat-1.0.6.jar",
+          "primary": true,
+          "size": 11224,
+          "url": "https://github.com/CrieXD1337/EssentialsChat/releases/download/release-2/EssentialsChat-1.0.6.jar"
+        }
+      ],
+      "name": "EChat - 1.0.6",
+      "prerelease": false,
+      "published_at": 1745011928,
+      "version": "release-2"
+    },
+    {
+      "changelog": "14/04/25: Added prefix and suffix in display name\r\n\r\n14/04/25: Fixed `plugin.yml`\r\n\r\n14/04/25: Added prefix and suffix in display name option in `config.yml`",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EssentialsChat-1.0.4.jar",
+          "primary": true,
+          "size": 9100,
+          "url": "https://github.com/CrieXD1337/EssentialsChat/releases/download/1.0.4/EssentialsChat-1.0.4.jar"
+        }
+      ],
+      "name": "EChat - 1.0.4",
+      "prerelease": false,
+      "published_at": 1744651541,
+      "version": "1.0.4"
+    },
+    {
+      "changelog": "13/04/25: Updated chat formatter",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EssentialsChat-1.0.3.jar",
+          "primary": true,
+          "size": 7077,
+          "url": "https://github.com/CrieXD1337/EssentialsChat/releases/download/1.0.3/EssentialsChat-1.0.3.jar"
+        }
+      ],
+      "name": "EChat - 1.0.3",
+      "prerelease": false,
+      "published_at": 1744573954,
+      "version": "1.0.3"
+    },
+    {
+      "changelog": "06/04/25: Fixed API version\r\n\r\n05/04/25: Added Multipass provider",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EssentialsChat-1.0.2.jar",
+          "primary": true,
+          "size": 7001,
+          "url": "https://github.com/CrieXD1337/EssentialsChat/releases/download/1.0.2/EssentialsChat-1.0.2.jar"
+        }
+      ],
+      "name": "EChat - 1.0.2",
+      "prerelease": false,
+      "published_at": 1743875454,
+      "version": "1.0.2"
+    }
+  ]
+}

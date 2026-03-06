@@ -1,0 +1,42 @@
+{
+  "api_version": "1.0.13",
+  "authors": [],
+  "categories": [],
+  "created_at": 1741620361,
+  "dependencies": [],
+  "description": "# FakeInventories \n\nFakeInventories is a simple library plugin for Nukkit-MOT Minecraft Bedrock server software, that will help you to create\nyour custom virtual inventories with ease.\n\n##### [Download plugin](https://github.com/LuminiaDev/FakeInventories-MOT/releases)\n\n## Usage\n\n```java\nFakeInventory inventory = new FakeInventory(InventoryType.CHEST, \"custom title\");\n\ninventory.setDefaultItemHandler((item, event) -> {\n    event.setCancelled(true);\n\n    Player target = event.getTransaction().getSource();\n\n    target.sendMessage(\"is default item handler\");\n});\n\ninventory.addItems((item, event) -> {\n    event.setCancelled(true);\n\n    Player target = event.getTransaction().getSource();\n    \n    target.sendMessage(\"is custom item handler in addItem method\");\n    \n    target.removeWindow(inventory);\n}, Item.get(Item.IRON_BLOCK), Item.get(Item.IRON_BAR))\n\ninventory.setItem(5, Item.get(Item.DIAMOND), (item, event) -> {\n    event.setCancelled(true);\n\n    Player target = event.getTransaction().getSource();\n\n    target.sendMessage(\"is custom item handler\");\n\n    target.removeWindow(inventory);\n});\n\nplayer.addWindow(inventory);\n```\n\n## Maven\nAdding repo:\n```xml\n<repositories>\n    <repository>\n        <id>luminiadev-repository-snapshots</id>\n        <url>https://repo.luminiadev.com/snapshots</url>\n    </repository>\n</repositories>\n```\n\nAdding dependency:\n```xml\n<dependency>\n    <groupId>me.iwareq.fakeinventories</groupId>\n    <artifactId>fakeinventories</artifactId>\n    <version>1.1.9-MOT</version>\n</dependency>\n```\n\n## Gradle\nAdding repo:\n```kts\nmaven {\n    name = \"luminiadevRepositorySnapshots\"\n    url = uri(\"https://repo.luminiadev.com/snapshots\")\n}\n```\n\nAdding dependency:\n```kts\ncompileOnly(\"me.iwareq.fakeinventories:fakeinventories:1.1.9-MOT\")\n```",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/122298065?v=4",
+  "id": "LuminiaDev/FakeInventories-MOT-old",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "name": "FakeInventories",
+  "server_version": "",
+  "source": "https://github.com/LuminiaDev/FakeInventories-MOT-old",
+  "stars": 1,
+  "summary": "",
+  "updated_at": 1766689240,
+  "versions": [
+    {
+      "changelog": "## What's Changed\r\n* fix: fast inventory open by @MEFRREEX in https://github.com/LuminiaBedrock/FakeInventories-MOT/pull/1\r\n\r\n## New Contributors\r\n* @MEFRREEX made their first contribution in https://github.com/LuminiaBedrock/FakeInventories-MOT/pull/1\r\n\r\n**Full Changelog**: https://github.com/LuminiaBedrock/FakeInventories-MOT/commits/1.1.9",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FakeInventories-1.1.9-MOT.jar",
+          "primary": true,
+          "size": 15751,
+          "url": "https://github.com/LuminiaDev/FakeInventories-MOT-old/releases/download/1.1.9/FakeInventories-1.1.9-MOT.jar"
+        }
+      ],
+      "name": "Download",
+      "prerelease": false,
+      "published_at": 1749514523,
+      "version": "1.1.9"
+    }
+  ]
+}

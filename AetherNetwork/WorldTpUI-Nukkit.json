@@ -1,0 +1,90 @@
+{
+  "api_version": "1.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1513267878,
+  "dependencies": [],
+  "description": "# Notice\nI am back! I will be updating this plugin and will start making new plugins for nukkit\n\n\n\n> Please incude in your issue\n* Issue or bug\n* Console log (if an error appears) \n* Provide what nukkit version your using (if your using a fork please let us know)\n\n# World Teleport UI\n\n> Allows Admins to teleport between worlds with a simple UI in Nukkit\n\n> Version: v0.0.3\n\n> Minecraft: v1.11.3\n\n# Download\ndownload the latest jar file [here](https://github.com/AetherNetwork/WorldTpUI-Nukkit/releases) and drop it in your plugins folder\n\n# How to Use\nDrop the jar in your plugins folder.\n\nEdit Config:\n```\nversion: 0.0.3\nadminsOnly: true\nloadWorldWithGui: true\nuseItemToOpenGUI: true\nitem: 339\n```\n\n> commands: /wtpui\n![ui](https://i.imgur.com/oaLrGc5.png)\n\n> item: 339 (paper as default)\n![item](https://i.imgur.com/nK7KP2M.png)\n\n# License\n```\nMIT License\n\nCopyright (c) 2017-2019 Aether Network\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n```",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/33165117?v=4",
+  "id": "AetherNetwork/WorldTpUI-Nukkit",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "name": "WorldTpUI",
+  "server_version": "",
+  "source": "https://github.com/AetherNetwork/WorldTpUI-Nukkit",
+  "stars": 10,
+  "summary": "Allows Admins to tp between worlds with a simple UI in Nukkit",
+  "updated_at": 1608176409,
+  "versions": [
+    {
+      "changelog": "this fix will prevent multiple gui's from appearing ",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "WorldTpUI-Nukkit-1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 8462,
+          "url": "https://github.com/AetherNetwork/WorldTpUI-Nukkit/releases/download/0.0.3.1/WorldTpUI-Nukkit-1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "Forgot to add cooldown",
+      "prerelease": true,
+      "published_at": 1558384511,
+      "version": "0.0.3.1"
+    },
+    {
+      "changelog": "- added item gui\r\n\r\n- moved around a lot of stuff\r\n\r\n- rewrite of some of the original code\r\n\r\n- added config for customization ",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "WorldTpUI-Nukkit-1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 8387,
+          "url": "https://github.com/AetherNetwork/WorldTpUI-Nukkit/releases/download/0.0.3/WorldTpUI-Nukkit-1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "Item GUI",
+      "prerelease": true,
+      "published_at": 1558383099,
+      "version": "0.0.3"
+    },
+    {
+      "changelog": "- fixed null errors ( these were caused if other plugins used forms, now it should not have this problem )\r\n\r\n- removed main from constructors\r\n\r\n- cleaned up code",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "WorldTpUI.jar",
+          "primary": true,
+          "size": 10845072,
+          "url": "https://github.com/AetherNetwork/WorldTpUI-Nukkit/releases/download/0.0.2/WorldTpUI.jar"
+        }
+      ],
+      "name": "Update v0.0.2",
+      "prerelease": true,
+      "published_at": 1516343964,
+      "version": "0.0.2"
+    },
+    {
+      "changelog": "Basic First update, Planning to add more features later.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "WorldTpUI.jar",
+          "primary": true,
+          "size": 8045,
+          "url": "https://github.com/AetherNetwork/WorldTpUI-Nukkit/releases/download/0.0.1/WorldTpUI.jar"
+        }
+      ],
+      "name": "Update v0.0.1",
+      "prerelease": true,
+      "published_at": 1513276708,
+      "version": "0.0.1"
+    }
+  ]
+}

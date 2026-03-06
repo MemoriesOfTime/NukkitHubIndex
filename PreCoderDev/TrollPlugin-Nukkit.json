@@ -1,0 +1,90 @@
+{
+  "api_version": "1.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1500388148,
+  "dependencies": [],
+  "description": "# TrollPlugin-Nukkit\n\nPAUSIERT\n\n\n[![Travis](https://img.shields.io/travis/PreCoderDev/TrollPlugin-Nukkit.svg?style=flat)](https://travis-ci.org/PreCoderDev/TrollPlugin-Nukkit)\n\nEin sich stätig erweiterndes Troll Plugin für Nukkit\n\nPermissions\n-------------\n- troll.cmd\n\nMomentane Features/Commands\n-------------\n- /troll help\n- /troll vanish\n- /troll freeze\n- /troll fire\n- /troll crash\n- /troll strike\n- /troll granade\n\nReleases\n-------------\n- [Releases](https://github.com/PreCoderDev/TrollPlugin-Nukkit/releases/)\n\nJAR Datei erstellen\n-------------\n- `mvn clean`\n- `mvn package`\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/30264842?v=4",
+  "id": "PreCoderDev/TrollPlugin-Nukkit",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "name": "TrollPlugin",
+  "server_version": "",
+  "source": "https://github.com/PreCoderDev/TrollPlugin-Nukkit",
+  "stars": 1,
+  "summary": "TrollPlugin by PreCoder",
+  "updated_at": 1582465184,
+  "versions": [
+    {
+      "changelog": "- many fixes\r\n- added \"/troll\" verification\r\n- add \"/troll granade\" (a explosive tool)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "TrollPlugin-0.3-SNAPSHOT.jar",
+          "primary": true,
+          "size": 15159,
+          "url": "https://github.com/PreCoderDev/TrollPlugin-Nukkit/releases/download/v0.3/TrollPlugin-0.3-SNAPSHOT.jar"
+        }
+      ],
+      "name": "v0.3",
+      "prerelease": true,
+      "published_at": 1500503579,
+      "version": "v0.3"
+    },
+    {
+      "changelog": "- some fixes\r\n- added \"/troll vanish\"\r\n- added \"/troll crash\"\r\n- added \"/troll fire\"",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "TrollPlugin-0.2-SNAPSHOT.jar",
+          "primary": true,
+          "size": 10758,
+          "url": "https://github.com/PreCoderDev/TrollPlugin-Nukkit/releases/download/v0.2/TrollPlugin-0.2-SNAPSHOT.jar"
+        }
+      ],
+      "name": "v0.2",
+      "prerelease": true,
+      "published_at": 1500479765,
+      "version": "v0.2"
+    },
+    {
+      "changelog": "- added \"/troll freeze\"",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "TrollPlugin-0.1-SNAPSHOT.jar",
+          "primary": true,
+          "size": 8756,
+          "url": "https://github.com/PreCoderDev/TrollPlugin-Nukkit/releases/download/v0.1/TrollPlugin-0.1-SNAPSHOT.jar"
+        }
+      ],
+      "name": "v0.1",
+      "prerelease": true,
+      "published_at": 1500472661,
+      "version": "v0.1"
+    },
+    {
+      "changelog": "- empty test",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "TrollPlugin-0.0.1-SNAPSHOT.jar",
+          "primary": true,
+          "size": 237681,
+          "url": "https://github.com/PreCoderDev/TrollPlugin-Nukkit/releases/download/v0.0.1/TrollPlugin-0.0.1-SNAPSHOT.jar"
+        }
+      ],
+      "name": "v0.0.1",
+      "prerelease": true,
+      "published_at": 1500467441,
+      "version": "v0.0.1"
+    }
+  ]
+}

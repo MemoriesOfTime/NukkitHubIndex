@@ -1,0 +1,42 @@
+{
+  "api_version": "1.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1501178360,
+  "dependencies": [],
+  "description": "Example for creating virtual inventory\nFor Nukkit core :D\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/16573760?v=4",
+  "id": "vzlomka76/VirtualChestExample",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "name": "VirtualChestExample",
+  "server_version": "",
+  "source": "https://github.com/vzlomka76/VirtualChestExample",
+  "stars": 4,
+  "summary": "",
+  "updated_at": 1756605647,
+  "versions": [
+    {
+      "changelog": "Working VirtualInventory with default items (examples)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "VirtualChestExample.jar",
+          "primary": true,
+          "size": 5676,
+          "url": "https://github.com/vzlomka76/VirtualChestExample/releases/download/VirtualChest/VirtualChestExample.jar"
+        }
+      ],
+      "name": "Version 0.1",
+      "prerelease": false,
+      "published_at": 1501183920,
+      "version": "VirtualChest"
+    }
+  ]
+}

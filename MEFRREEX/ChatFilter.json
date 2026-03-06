@@ -1,0 +1,113 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Driftay",
+      "url": ""
+    },
+    {
+      "avatar_url": "",
+      "name": "MEFRREEX",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1667224668,
+  "dependencies": [],
+  "description": "# ChatFilter\nChat filter for your Nukkit server!\n\nConfig:\n```yml\n# Use '§' or '&' to change the color of the message.\n\nmessages:\n  # Chat filter bypass permission: chatfilter.bypass\n  warning-message: '&cThere is a forbidden word in your message. &7You can get a mute for excessive matting!'\n  enable-warning-message: false\n\n  block-message: \"&cYour message has been blocked. &7You can get a mute for excessive matting!\"\n  enable-block-message: true\n\nchatfilter:\n  # Example: Hello will be replaced with ****\n  replace-symbol: '*'\n  # Available: \n  # 'block' - message blocking, \n  # 'replace' - replacing the message with stars,\n  # 'silent' - blocked message will only be visible to the sender.\n  filter-type: \"replace\"\n\n# You can continue this list as long as you want just copy my examples above\nmuted-words:\n- 'word 1'\n- 'word 2'\n- 'word 3'\n\n```\n\n\n`Without filter:`\n\n![no filter](https://user-images.githubusercontent.com/83061703/199034153-65ce8e26-ba24-4a43-8124-0a37d4a8f968.png)\n\n`With filter:`\n\n![filter](https://user-images.githubusercontent.com/83061703/199034166-44bd8bcd-105e-4ebc-8bd2-f3917968bfce.png)\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/83061703?v=4",
+  "id": "MEFRREEX/ChatFilter",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "name": "${project.name}",
+  "server_version": "",
+  "source": "https://github.com/MEFRREEX/ChatFilter",
+  "stars": 1,
+  "summary": "The Best Plugin For Managing Offensive Words",
+  "updated_at": 1737562685,
+  "versions": [
+    {
+      "changelog": "Fully rewritten plugin.\r\n\r\nA new type of filter:\r\n`silent` - blocked message will only be visible to the sender.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ChatFilter-2.3.jar",
+          "primary": true,
+          "size": 7409,
+          "url": "https://github.com/MEFRREEX/ChatFilter/releases/download/2.3/ChatFilter-2.3.jar"
+        }
+      ],
+      "name": "v2.3",
+      "prerelease": false,
+      "published_at": 1682745952,
+      "version": "2.3"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ChatFilter-RU.jar",
+          "primary": true,
+          "size": 5648,
+          "url": "https://github.com/MEFRREEX/ChatFilter/releases/download/2.2/ChatFilter-RU.jar"
+        },
+        {
+          "filename": "ChatFilter.jar",
+          "primary": true,
+          "size": 5420,
+          "url": "https://github.com/MEFRREEX/ChatFilter/releases/download/2.2/ChatFilter.jar"
+        }
+      ],
+      "name": "v2.2",
+      "prerelease": false,
+      "published_at": 1667718377,
+      "version": "2.2"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ChatFilter-RU.jar",
+          "primary": true,
+          "size": 5473,
+          "url": "https://github.com/MEFRREEX/ChatFilter/releases/download/2.1/ChatFilter-RU.jar"
+        },
+        {
+          "filename": "ChatFilter.jar",
+          "primary": true,
+          "size": 5342,
+          "url": "https://github.com/MEFRREEX/ChatFilter/releases/download/2.1/ChatFilter.jar"
+        }
+      ],
+      "name": "v2.1",
+      "prerelease": false,
+      "published_at": 1667398247,
+      "version": "2.1"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ChatFilter.jar",
+          "primary": true,
+          "size": 4820,
+          "url": "https://github.com/MEFRREEX/ChatFilter/releases/download/release/ChatFilter.jar"
+        }
+      ],
+      "name": "v2.0",
+      "prerelease": false,
+      "published_at": 1667226762,
+      "version": "release"
+    }
+  ]
+}

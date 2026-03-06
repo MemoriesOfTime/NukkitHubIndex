@@ -1,0 +1,70 @@
+{
+  "api_version": "1.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1678647759,
+  "dependencies": [],
+  "description": "# JKit\n\nhelp plugin for YanyanQt\n\nhttps://www.youtube.com/watch?v=ZLzqiZbvmz4\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/172227050?v=4",
+  "id": "JossArchived/JKit",
+  "license": {
+    "id": "Apache-2.0",
+    "name": "Apache License 2.0",
+    "url": "https://spdx.org/licenses/Apache-2.0.html"
+  },
+  "links": null,
+  "name": "JKit",
+  "server_version": "",
+  "source": "https://github.com/JossArchived/JKit",
+  "stars": 1,
+  "summary": "",
+  "updated_at": 1735382536,
+  "versions": [
+    {
+      "changelog": "The artifacts are kept up to date with the branch release.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "JKit-1.0.1.jar",
+          "primary": true,
+          "size": 42702,
+          "url": "https://github.com/JossArchived/JKit/releases/download/1.0.1/JKit-1.0.1.jar"
+        },
+        {
+          "filename": "original-JKit-1.0.1.jar",
+          "primary": true,
+          "size": 14675,
+          "url": "https://github.com/JossArchived/JKit/releases/download/1.0.1/original-JKit-1.0.1.jar"
+        }
+      ],
+      "name": "Release v1.0.1",
+      "prerelease": false,
+      "published_at": 1679322230,
+      "version": "1.0.1"
+    },
+    {
+      "changelog": "The artifacts are kept up to date with the branch release.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "JKit-1.0.0.jar",
+          "primary": true,
+          "size": 42456,
+          "url": "https://github.com/JossArchived/JKit/releases/download/1.0.0/JKit-1.0.0.jar"
+        },
+        {
+          "filename": "original-JKit-1.0.0.jar",
+          "primary": true,
+          "size": 14429,
+          "url": "https://github.com/JossArchived/JKit/releases/download/1.0.0/original-JKit-1.0.0.jar"
+        }
+      ],
+      "name": "Release v1.0.0",
+      "prerelease": false,
+      "published_at": 1678648330,
+      "version": "1.0.0"
+    }
+  ]
+}

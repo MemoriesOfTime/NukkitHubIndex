@@ -1,0 +1,73 @@
+{
+  "api_version": "1.0.11",
+  "authors": [],
+  "categories": [],
+  "created_at": 1700017703,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "EasyMySQL",
+      "version_range": ""
+    }
+  ],
+  "description": "# <div align=\"center\">Report举报系统</div>  \n\n------\n![](https://img.shields.io/badge/license-GPL3.0-blue) \n\n### ⚡ Depends\n\n#### MySQL 5.6\nMySQL数据库管理系统版本5.6。\n\n#### EasyMySQL\n\n[下载](https://motci.cn/view/SmallasWater/job/EasyMySQL/job/master/)\n\n\n### ⚠️Server\n\n| 核心           |         是否支持         |\n|--------------|:--------------------:|\n| NukkitX      |          ✅           |\n| PowerNukkitX |          ✅           |\n| Nukkit-PM1E  |          ✅           |\n| Nukkit-MOT   |          ✅           |\n\n### 📝Function\n|     |    功能     |\n|:---:|:---------:|\n|  ✅  | 自定义举报内容  |\n|  ✅  | 可增加协管协作处理  |\n|  ✅  | 可查看历史举报信息 |\n|  ✅  |  自定义举报惩罚   |\n|  ✅  |   记录举报时间与次数    |\n\n\n### ✋How to use\n* 玩家执行/rp 即可举报在线玩家 当玩家不在线时执行/rp r <玩家> 进行举报\n* 管理员需要执行/rp a查看举报信息\n* 如需查看历史举报记录执行/rp h <玩家>\n* 设置协管执行 /rp p <玩家> 即可设置\n\n###  📄DownLoad\n[下载](https://motci.cn/view/SoBadFish/job/Report/)\n\n### 👀Display\n\n| ![本地](https://raw.githubusercontent.com/SoBadFish/Report/master/img/1.jpg)   | ![本地](https://raw.githubusercontent.com/SoBadFish/Report/master/img/2.jpg)   |\n|----------------------|----------------------|\n| ![本地](https://raw.githubusercontent.com/SoBadFish/Report/master/img/3.jpg)   | ![本地](https://raw.githubusercontent.com/SoBadFish/Report/master/img/4.jpg)   |\n",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-03-06",
+      "description": "",
+      "title": "本地",
+      "url": "https://raw.githubusercontent.com/SoBadFish/Report/master/img/1.jpg"
+    },
+    {
+      "created": "2026-03-06",
+      "description": "",
+      "title": "本地",
+      "url": "https://raw.githubusercontent.com/SoBadFish/Report/master/img/2.jpg"
+    },
+    {
+      "created": "2026-03-06",
+      "description": "",
+      "title": "本地",
+      "url": "https://raw.githubusercontent.com/SoBadFish/Report/master/img/3.jpg"
+    },
+    {
+      "created": "2026-03-06",
+      "description": "",
+      "title": "本地",
+      "url": "https://raw.githubusercontent.com/SoBadFish/Report/master/img/4.jpg"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/83235042?v=4",
+  "id": "SoBadFish/Report",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "name": "Report",
+  "server_version": "",
+  "source": "https://github.com/SoBadFish/Report",
+  "stars": 2,
+  "summary": "",
+  "updated_at": 1713834005,
+  "versions": [
+    {
+      "changelog": "开源到GitHub",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Report_v1.0.6.jar",
+          "primary": true,
+          "size": 42820,
+          "url": "https://github.com/SoBadFish/Report/releases/download/v1.0.6/Report_v1.0.6.jar"
+        }
+      ],
+      "name": "2023/11/15更新",
+      "prerelease": false,
+      "published_at": 1700017840,
+      "version": "v1.0.6"
+    }
+  ]
+}

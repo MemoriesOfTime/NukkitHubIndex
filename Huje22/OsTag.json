@@ -1,0 +1,363 @@
+{
+  "api_version": "1.0.14",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "IndianPL",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1669305395,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "PlaceholderAPI",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "LuckPerms",
+      "version_range": ""
+    }
+  ],
+  "description": "<div align=\"center\">\n\n## OsTag Plugin for nukkit\n\n[![Discord](https://img.shields.io/discord/1071413512414449666?color=7289da&logo=discord&logoColor=white&style=for-the-badge)](https://discord.gg/k69htTFCVk)\n[![License](https://img.shields.io/github/license/OpenPlugins-Minecraft/OsTag?style=for-the-badge)](https://github.com/OpenPlugins-Minecraft/OsTag/blob/main/License)\n![Nukkit API support](https://img.shields.io/badge/Nukkit%20API-1.0.14-blueviolet?style=for-the-badge)</br>\n[![Open issues](https://img.shields.io/github/issues/OpenPlugins-Minecraft/OsTag?style=for-the-badge)](https://github.com/OpenPlugins-Minecraft/OsTag/issues)\n[![Open pull requests](https://img.shields.io/github/issues-pr/OpenPlugins-Minecraft/OsTag?style=for-the-badge)](https://github.com/OpenPlugins-Minecraft/OsTag/pulls)\n![GitHub commit activity](https://img.shields.io/github/commit-activity/m/OpenPlugins-Minecraft/OsTag?color=brightgreen&style=for-the-badge)\n[![Last Commit](https://img.shields.io/github/last-commit/OpenPlugins-Minecraft/OsTag?style=for-the-badge)](https://github.com/OpenPlugins-Minecraft/OsTag/commits/main)</br>\n![Commits since latest release (by date)](https://img.shields.io/github/commits-since/OpenPlugins-Minecraft/OsTag/latest?style=for-the-badge)\n![GitHub commits since latest release (by date including pre-releases)](https://img.shields.io/github/commits-since/OpenPlugins-Minecraft/Ostag/latest?include_prereleases&style=for-the-badge) </br>\n[![Repo size](https://img.shields.io/github/repo-size/OpenPlugins-Minecraft/OsTag?style=for-the-badge)](https://github.com/OpenPlugins-Minecraft/OsTag)\n[![Contributors](https://img.shields.io/github/contributors/OpenPlugins-Minecraft/OsTag?color=blue&style=for-the-badge)](https://github.com/OpenPlugins-Minecraft/OsTag/graphs/contributors) </br>\n![Latest Tag](https://img.shields.io/github/v/tag/OpenPlugins-Minecraft/OsTag?label=LATEST%20TAG&style=for-the-badge) </br>\n[![Forks](https://img.shields.io/github/forks/OpenPlugins-Minecraft/OsTag?style=for-the-badge)](https://github.com/OpenPlugins-Minecraft/OsTag/network/members)\n[![Stars](https://img.shields.io/github/stars/OpenPlugins-Minecraft/OsTag?style=for-the-badge)](https://github.com/OpenPlugins-Minecraft/OsTag/stargazers)   </br>\n[![bStats Players](https://img.shields.io/bstats/players/16838?style=for-the-badge)](https://bstats.org/plugin/bukkit/OsTagPNX-Nukkit/16838)\n[![bStats Servers](https://img.shields.io/bstats/servers/16838?style=for-the-badge)](https://bstats.org/plugin/bukkit/OsTagPNX-Nukkit/16838)</br>\n![JDK8](https://github.com/intergrav/devins-badges/blob/v2/assets/cozy/built-with/java8_vector.svg?raw=true)\n![Maven](https://github.com/intergrav/devins-badges/blob/v2/assets/cozy/built-with/maven_vector.svg)</br>\n[![PayPal](https://github.com/intergrav/devins-badges/blob/v2/assets/compact/donate/paypal-singular_vector.svg)](https://github.com/OpenPlugins-Minecraft/.github/blob/master/programers/donations.md)\n\nThis plugin is used to display information under the player's heads. And for chat formatting with LuckPerms plugin.\n\nDon't know how to start? Just check the [wiki](https://github.com/OpenPlugins-Minecraft/OsTag/blob/main/ConfigWiki.MD) page!\n\nIf you wanna be contributor\nlook [Contributing wiki page](https://github.com/OpenPlugins-Minecraft/OsTag/wiki/Concributing) <br/>\n\n**[Join our Discord Server](https://discord.gg/aXDs6qtDCV)\n\n</div>\n\n----\n\n## Features\n\n* OsTag (name and scoretag)\n* Chat formating (with luckperms plugin support)\n* Cps Limiter \n* Many placeholders and PlaceholderAPI support\n* Easy to configure \n* AutoUpdate and Update checker\n* and many more...\n\n----\n\n## Requirements\n\n* Java 8 minimum\n* Nukkit api 1.0.14+\n\n----\n\n## Tested softwares\n\n* Nukkit\n* Nukkit PetteriM1's Edition\n* PowerNukkit X\n\n----\n\n## Informations\n\n* Issues / bugs or suggestions please report on discord or in github issues\n* If the configuration was not generated, use configuration from github\n* If you can't set something Indian will probably help you (write on discord)\n* I don't recommend building jar from this code , i recommend download latest version from releases , if in releases not\n  contains version that would be compatible with the pom.xml version, I do not recommend building it this means that a\n  new version is already in the works, but this may not always be the case, but if you need you can try to build it\n  yourself\n\n----\n\n## Beta versions\n\n* [1.5.5.7](https://github.com/OpenPlugins-Minecraft/OsTag/releases/tag/1.5.7.2-Beta)\n* [1.5.6-Beta](https://github.com/OpenPlugins-Minecraft/OsTag/releases/tag/1.5.6.1-Beta) (Outdated)\n* [1.5.5-Beta](https://github.com/OpenPlugins-Minecraft/OsTag/releases/tag/1.5.5-Beta) (Outdated)\n* [1.5.4-Beta](https://github.com/OpenPlugins-Minecraft/OsTag/releases/tag/1.5.4-Beta) (Outdated)\n\n----\n\n## Links\n\n* [Discord Server](https://discord.gg/aXDs6qtDCV)\n* [CloudBurst](https://cloudburstmc.org/resources/ostag.836/)\n* [Wiki](https://github.com/OpenPlugins-Minecraft/OsTag/wiki)\n\n----\n\n## Inspirations\n\n* https://github.com/mdisprgm/bdsx-ostag\n\n----\n\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/129004426?v=4",
+  "id": "Huje22/OsTag",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "name": "OsTag",
+  "server_version": "",
+  "source": "https://github.com/Huje22/OsTag",
+  "stars": 2,
+  "summary": "OsTag plugin",
+  "updated_at": 1737303319,
+  "versions": [
+    {
+      "changelog": "Fix forms (now support 2.0 )\r\n\r\n[FormConstructor V2 | Cloudburst Nukkit & Minecraft Server Software (cloudburstmc.org)](https://cloudburstmc.org/resources/formconstructor-v2.957/)\r\n\r\nThe next update, if I go ahead with it, will be version 2.0, where all the code will be written practically from scratch",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "OsTag-1.5.7.5.jar",
+          "primary": true,
+          "size": 122974,
+          "url": "https://github.com/Huje22/OsTag/releases/download/1.5.7.5/OsTag-1.5.7.5.jar"
+        }
+      ],
+      "name": "1.5.7.5",
+      "prerelease": false,
+      "published_at": 1706025237,
+      "version": "1.5.7.5"
+    },
+    {
+      "changelog": "-------------------------------------------------\r\n**Released on the day xx.xx.2023** <br/>\r\n\r\n### **1.5.7** <br/>\r\n\r\n__Naming changes__: <br/>\r\nFrom `and-for-all` to `And-for-all` (Since 1.5.7.3)  <br/>\r\nFrom `movement-server` to `Movement-server` (Since 1.5.7.3)  <br/>\r\n\r\n__New things__: <br/>\r\nInfo how many kb have been downloaded on the download percentage (Since 1.5.7.1)  <br/>\r\nRemove `ReplaceUtil` and add replace method in `PlayerInfoUtil` (Since 1.5.7.1)  <br/>\r\nDisabling the entire \"Ostag\" module when \"scoretag\" and \"nametag\" are disabled (Since 1.5.7.1)  <br/>\r\nAdded more metrics (Since 1.5.7.2 - 1.5.7.3)  <br/>\r\nAdded finally working tab command completion (Since 1.5.7.2)  <br/>\r\nAdded better config , now scoretag is as a list (Since 1.5.7.3)  <br/>\r\nAdded `/ostag menu` to manage some things using the GUI (Since 1.5.7.3)  <br/>\r\nAdded new boolean in config `FormsDebug` If it is enabled, information about what a given player has done in forms is\r\nsent (Since 1.5.7.3)  <br/>\r\nNew `OsTimer` system (Since 1.5.7.3)  <br/>\r\nAdded CpsLimiter (Since 1.5.7.4)  <br/>\r\n**NOTE**\r\n\r\n```\r\nI adding he here because I don't think anyone knows that I added it in `GommeAWM/CPSCounter` in commit `/commit/78069051c10d3c6770d523edb48ec1d1a78cdabb`\r\n```\r\n\r\nNow `refresh time` is in ticks! (Since 1.5.7.4)  <br/>\r\nNew censhorship system , now censor word muste be char! (Since 1.5.7.4)  <br/>\r\nAdded sound when player mention system (FormConstructor plugin required) (Since 1.5.7.4)  <br/>\r\n**New plugin version tagging system!\r\n** [Check This](https://github.com/OpenPlugins-Minecraft/OsTag/blob/main/ChangeLog.md#general-info--)  (Since\r\n1.5.7.4)  <br/>\r\n\r\n__Fixes__: <br/>\r\nCode and code style fixes <br/>\r\nBetter auto redownload (Since 1.5.7.1)  <br/>\r\nFixed ostag command error when `/ostag add` player argument is null (Since 1.5.7.1)  <br/>\r\nFixed `/ostag version` commpatibliity command (Since 1.5.7.3)  <br/>\r\n\r\n__Others__: <br/>\r\nNew thing (Since x.x.x)  <br/>\r\n\r\n--------------------------------------------------",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "OsTag-1.5.7.4.jar",
+          "primary": true,
+          "size": 113345,
+          "url": "https://github.com/Huje22/OsTag/releases/download/1.5.7.4/OsTag-1.5.7.4.jar"
+        }
+      ],
+      "name": "1.5.7.4",
+      "prerelease": true,
+      "published_at": 1688419018,
+      "version": "1.5.7.4"
+    },
+    {
+      "changelog": "-------------------------------------------------\r\n**1.5.7** <br/>\r\n\r\n__Naming changes__: <br/>\r\nFrom `and-for-all` to `And-for-all` (Since 1.5.7.3)  <br/>\r\nFrom `movement-server` to `Movement-server` (Since 1.5.7.3)  <br/>\r\n\r\n__New things__: <br/>\r\nInfo how many kb have been downloaded on the download percentage (Since 1.5.7.1)  <br/>\r\nRemove `ReplaceUtil` and add replace method in `PlayerInfoUtil` (Since 1.5.7.1)  <br/>\r\nDisabling the entire \"Ostag\" module when \"scoretag\" and \"nametag\" are disabled (Since 1.5.7.1)  <br/>\r\nAdded more metrics (Since 1.5.7.2 - 1.5.7.3)  <br/>\r\nAdded finally working tab command completion (Since 1.5.7.2)  <br/>\r\nAdded better config , now scoretag is as a list (Since 1.5.7.3)  <br/>\r\nAdded `/ostag menu` to manage some things using the GUI (Since 1.5.7.3)  <br/>\r\nAdded new boolean in config `FormsDebug` If it is enabled, information about what a given player has done in forms is\r\nsent (Since 1.5.7.3)  <br/>\r\nNew `OsTimer` system (Since 1.5.7.3)  <br/>\r\n\r\n__Fixes__: <br/>\r\nCode and code style fixes <br/>\r\nBetter auto redownload (Since 1.5.7.1)  <br/>\r\nFixed ostag command error when `/ostag add` player argument is null (Since 1.5.7.1)  <br/>\r\nFixed `/ostag version` commpatibliity command (Since 1.5.7.3)  <br/>\r\n\r\n__Others__: <br/>\r\nNew thing (Since x.x.x)  <br/>\r\n\r\n--------------------------------------------------",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "OsTag-1.5.7.3-Beta.jar",
+          "primary": true,
+          "size": 99466,
+          "url": "https://github.com/Huje22/OsTag/releases/download/1.5.7.3-Beta/OsTag-1.5.7.3-Beta.jar"
+        }
+      ],
+      "name": "1.5.7.3-Beta",
+      "prerelease": true,
+      "published_at": 1687446090,
+      "version": "1.5.7.3-Beta"
+    },
+    {
+      "changelog": "-------------------------------------------------\r\n**Released on the day xx.xx.2023** <br/>\r\n**1.5.7** <br/>\r\n\r\n__Naming changes__: <br/>\r\nNew thing (Since x.x.x)  <br/>\r\n\r\n__New things__: <br/>\r\nInfo how many kb have been downloaded on the download percentage (Since 1.5.7.1)  <br/>\r\nRemove `ReplaceUtil` and add replace method in `PlayerInfoUtil` (Since 1.5.7.1)  <br/>\r\nDisabling the entire \"Ostag\" module when \"scoretag\" and \"nametag\" are disabled (Since 1.5.7.1)  <br/>\r\nAdded more metrics (Since 1.5.7.2)  <br/>\r\nAdded finally working tab command completion (Since 1.5.7.2)  <br/>\r\n\r\n__Fixes__: <br/>\r\nCode and code style fixes <br/>\r\nBetter auto redownload (Since 1.5.7.1)  <br/>\r\nFix ostag command error when `/ostag add` player argument is null (Since 1.5.7.1)  <br/>\r\n\r\n__Others__: <br/>\r\nNew thing (Since x.x.x)  <br/>\r\n\r\n--------------------------------------------------",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "OsTag-1.5.7.2-Beta.jar",
+          "primary": true,
+          "size": 67488,
+          "url": "https://github.com/Huje22/OsTag/releases/download/1.5.7.2-Beta/OsTag-1.5.7.2-Beta.jar"
+        }
+      ],
+      "name": "1.5.7.2-Beta",
+      "prerelease": true,
+      "published_at": 1686162792,
+      "version": "1.5.7.2-Beta"
+    },
+    {
+      "changelog": "-------------------------------------------------\r\n**1.5.7** <br/>\r\n\r\n__Naming changes__: <br/>\r\nNew thing (Since x.x.x)  <br/>\r\n\r\n__New things__: <br/>\r\nInfo how many kb have been downloaded on the download percentage (Since 1.5.7.1)  <br/>\r\nRemove `ReplaceUtil` and add replace method in `PlayerInfoUtil` (Since 1.5.7.1)  <br/>\r\nDisabling the entire \"Ostag\" module when \"scoretag\" and \"nametag\" are disabled (Since 1.5.7.1)  <br/>\r\n\r\n__Fixes__: <br/>\r\nCode and code style fixes <br/>\r\nBetter auto redownload (Since 1.5.7.1)  <br/>\r\nFix ostag command error when `/ostag add` player argument is null (Since 1.5.7.1)  <br/>\r\n\r\n__Others__: <br/>\r\nNew thing (Since x.x.x)  <br/>\r\n\r\n--------------------------------------------------",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "OsTag-1.5.7.1-Beta.jar",
+          "primary": true,
+          "size": 65183,
+          "url": "https://github.com/Huje22/OsTag/releases/download/1.5.7.1-Beta/OsTag-1.5.7.1-Beta.jar"
+        }
+      ],
+      "name": "1.5.7.1Beta",
+      "prerelease": true,
+      "published_at": 1685544911,
+      "version": "1.5.7.1-Beta"
+    },
+    {
+      "changelog": "---------------------------------------------------------------\r\n**Released on the day 17.05.2023** <br/>\r\n**1.5.6** <br/>\r\n\r\n__Naming changes__: <br/>\r\nnone\r\n\r\n__New things__: <br/>\r\nUpdate checker (you can disable the update information when entering the player in config) (since 1.5.6.1) </br>\r\nNow you can use (almost) any placeholder anywhere you want (except <msg>) (since 1.5.6.1) </br>\r\nAutoUpdate - Download the latest version automatically if it possible (since 1.5.6.2) </br>\r\n`/ostag update` - You can update the plugin manually (since 1.5.6.3) </br>\r\nNew metrics update system (since 1.5.6.3) </br>\r\nBehind version counter in `/ostag v` (since 1.5.6.3) </br>\r\nWhere the execution time is more than 1000ms it has been changed to seconds (since 1.5.6.4) </br>\r\nAdded timed remove from list (ostag command) and map (input listener) since (1.5.6.4) </br>\r\nNow `<name>` placeholder show player name , and new `<dis_name>` show player display name since (1.5.6.5) </br\r\nDownload Update percentage info (since 1.5.6.5) </br>\r\nAuto download retry when auto download failed (one time) (since 1.5.6.5) </br>\r\n\r\n\r\n__Fixes__:  <br/>\r\nCode optymalization (since 1.5.6.1-1.5.6.5) </br>\r\nFixed multi-threading issues with latest version download (since 1.5.6.3-1.5.6.4) </br>\r\nFixed dumb runnable usage (in version 1.5.6.3), which duplicated the collected data for bstats (since 1.5.6.4) </br>\r\nBetter and safety method to get UpDateUtil (since 1.5.6.4) </br>\r\nBetter `UpDateUtil` info for sender (since 1.5.6.5) </br>\r\n\r\n__Others__: <br/>\r\nPermissions interface (since 1.5.6.1) </br>\r\nRemoved Prefixes interface because is un necessary, now we have ReplaceUtil (since 1.5.6.1) <br>\r\n\r\n-------------------------------------------------\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "OsTag-1.5.6.5.jar",
+          "primary": true,
+          "size": 65598,
+          "url": "https://github.com/Huje22/OsTag/releases/download/1.5.6.5/OsTag-1.5.6.5.jar"
+        }
+      ],
+      "name": "1.5.6.5",
+      "prerelease": false,
+      "published_at": 1684360678,
+      "version": "1.5.6.5"
+    },
+    {
+      "changelog": "---------------------------------------------------------------\r\n**1.5.6** <br/>\r\n\r\n__Naming changes__: <br/>\r\n\r\n__New things__: <br/>\r\nUpdate checker (you can disable the update information when entering the player in config) (since 1.5.6.1) </br>\r\nNow you can use (almost) any placeholder anywhere you want (except <msg>) (since 1.5.6.1) </br>\r\nAutoUpdate - Download the latest version automatically if it possible (since 1.5.6.2) </br>\r\n`/ostag update` - You can update the plugin manually (since 1.5.6.3) </br>\r\nNew metrics update system (since 1.5.6.3) </br>\r\nBehind version counter in `/ostag v` (since 1.5.6.3) </br>\r\nWhere the execution time is more than 1000ms it has been changed to seconds (since 1.5.6.4) </br>\r\nAdded timed remove from list (ostag command) and map (input listener) since (1.5.6.4) </br>\r\n\r\n__Fixes__:  <br/>\r\nCode optymalization (since 1.5.6.1-1.5.6.x) </br>\r\nFixed multi-threading issues with latest version download (since 1.5.6.3-1.5.6.4) </br>\r\nFixed dumb runnable usage (in version 1.5.6.3), which duplicated the collected data for bstats (since 1.5.6.4) </br>\r\nBetter and safety method to get UpDateUtil (since 1.5.6.4) </br>\r\n\r\n__Others__: <br/>\r\nPermissions interface (since 1.5.6.1) </br>\r\nRemoved Prefixes interface because is un neccesery, now we have ReplaceUtil (since 1.5.6.1) <br>\r\n\r\n-------------------------------------------------",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "OsTag-1.5.6.4-Beta.jar",
+          "primary": true,
+          "size": 62884,
+          "url": "https://github.com/Huje22/OsTag/releases/download/1.5.6.4-Beta/OsTag-1.5.6.4-Beta.jar"
+        }
+      ],
+      "name": "1.5.6.4-Beta",
+      "prerelease": true,
+      "published_at": 1680983429,
+      "version": "1.5.6.4-Beta"
+    },
+    {
+      "changelog": "**Released on the day 28.03.2023** <br/>\r\n**1.5.5** <br/>\r\n__Naming changes__: <br/>\r\nFixed naming `<controler>` and `%ostag_controler%` to `<controller>` `%ostag_controller%` and also fixed `<preffix>`\r\nand `%ostag_preffix%` and `<unique_description>` <br/>\r\nChanged in Modules section  `ChatFormater`to `ChatFormatter` in config <br/>\r\n\r\n__New things__: <br/>\r\nAdded `PrefixesUtil` interface to faster changing plugin placeholder naming (my first interface ~IndianPL) <br/>\r\nAdded 35 and 5 levels in `<xp>` placeholder <br/>\r\nAdded `%ostag_xp%` placeholder for PlaceholderApi <br/>\r\n\r\n__Fixes__: <br/>\r\nCode style fixes and efficency <br/>\r\nFixed `Dedicated` in `<device>` placeholder <br/>\r\nFixed decimals in `<health>` placeholder <br/>\r\nCooldown fix <br/>\r\n\r\n__Others__: <br/>\r\nCooldown disable info <br/>\r\nBetter code optymalization <br/>",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "OsTag-1.5.5.jar",
+          "primary": true,
+          "size": 50828,
+          "url": "https://github.com/Huje22/OsTag/releases/download/1.5.5/OsTag-1.5.5.jar"
+        }
+      ],
+      "name": "1.5.5",
+      "prerelease": false,
+      "published_at": 1680017572,
+      "version": "1.5.5"
+    },
+    {
+      "changelog": "1.5.5\r\n\r\nNaming changes:\r\nFixed naming <controler> and %ostag_controler% to <controller> %ostag_controller% and also fixed <preffix> and %ostag_preffix% and <unique_description>\r\nChanged in Modules section  \"ChatFormater\" to \"ChatFormatter\" in config\r\n\r\nOthers:\r\nCode style fixes and efficency\r\nCooldown fix\r\nAdded \"PrefixesUtil\" interface to faster changing plugin placeholder naming (my first interface ~IndianPL)\r\nCooldown disable info\r\nfixed \"Dedicated\" in <device> placeholder\r\nfixed decimals in <health> placeholder\r\nBetter code optymalization\r\nAdded 35 and 5 levels in <xp> placeholder\r\nAdded %ostag_xp% placeholder for PlaceholderApi\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "OsTag-1.5.5-Beta.jar",
+          "primary": true,
+          "size": 50716,
+          "url": "https://github.com/Huje22/OsTag/releases/download/1.5.5-Beta/OsTag-1.5.5-Beta.jar"
+        }
+      ],
+      "name": "1.5.5-Beta",
+      "prerelease": true,
+      "published_at": 1678456465,
+      "version": "1.5.5-Beta"
+    },
+    {
+      "changelog": "**Released on the day 22.02.2023**\r\n1.5.4\r\nIf you used old versions, remove config to generate a new one!!!\r\nSome code improvments and so many code style fixes\r\nWindows phone and gear vr removed from <device> placeholder , because not suported by mojang\r\n``\r\nIMPORTANT NEWS:\r\nAs of October 2020, Minecraft will no longer be updated or supported on Windows 10 Mobile, Gear VR, iOS 10 or lower & Android devices with less than 768MB of RAM.\r\n``\r\nadded in <device> placeholder linux detect\r\nSmal naming changes , check new config in github (https://github.com/IndianBartonka/OsTag/blob/main/src/main/resources/config.yml)\r\nyou can choose whether to display name or score tag\r\nadded food placeholders <food> and <food_max>\r\nnow \"breaks between messages\" don't require enable cooldown\r\nCooldown fix and cooldown placeholder %ostag_cooldown%\r\n\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "OsTag-1.5.4.jar",
+          "primary": true,
+          "size": 49436,
+          "url": "https://github.com/Huje22/OsTag/releases/download/1.5.4/OsTag-1.5.4.jar"
+        }
+      ],
+      "name": "1.5.4",
+      "prerelease": false,
+      "published_at": 1677067930,
+      "version": "1.5.4"
+    },
+    {
+      "changelog": "1.5.4\r\nIf you used old versions, remove config to generate a new one!!!\r\nSome code improvments\r\nWindows phone and gear vr removed from <device> placeholder , because not suported by mojang\r\n``\r\nIMPORTANT NEWS:\r\nAs of October 2020, Minecraft will no longer be updated or supported on Windows 10 Mobile, Gear VR, iOS 10 or lower & Android devices with less than 768MB of RAM.\r\n``\r\nadded in <device> placeholder linux detect\r\nSmal naming changes , check new config in github (https://github.com/IndianBartonka/OsTag/blob/main/src/main/resources/config.yml)\r\nyou can choose whether to display name or score tag\r\nadded food placeholders <food> and <food_max>\r\nnow \"breaks between messages\" don't require enable cooldown\r\nCooldown fix and cooldown placeholder %ostag_cooldown%\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "OsTag-1.5.4-Beta.jar",
+          "primary": true,
+          "size": 49449,
+          "url": "https://github.com/Huje22/OsTag/releases/download/1.5.4-Beta/OsTag-1.5.4-Beta.jar"
+        }
+      ],
+      "name": "1.5.4-Beta",
+      "prerelease": true,
+      "published_at": 1674988577,
+      "version": "1.5.4-Beta"
+    },
+    {
+      "changelog": "1.5.3\r\nadded better support for \"PowerNukkit\"\r\nadded in <gamemode> placeholder spectator detect\r\ncode improvments\r\nadded %ostag_group% placeholder to papi\r\nchanged \"PowerNukkiX-movement-server\" to \"movement-server\"",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "OsTag-1.5.3.jar",
+          "primary": true,
+          "size": 48712,
+          "url": "https://github.com/Huje22/OsTag/releases/download/1.5.3/OsTag-1.5.3.jar"
+        }
+      ],
+      "name": "1.5.3",
+      "prerelease": false,
+      "published_at": 1672783096,
+      "version": "1.5.3"
+    },
+    {
+      "changelog": "**Released on the day 13.12.2022**\r\n1.5.2\r\nbig code improvments\r\nnow add \"Windows Phone\" in <device> placeholder\r\nnow when you move away from the player you only see the name line\r\nadded placeholders that already existed but can now be used in other plugins using PlaceholderAPI\r\n%ostag_cps%\r\n%ostag_test%\r\n%ostag_device%\r\n%ostag_controler%\r\n%ostag_prefix%\r\n%ostag_suffix%\r\nDelated <deathskull> placeholder , now this placeholder is in DeathSkull plugin\r\n\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "OsTag-1.5.2.jar",
+          "primary": true,
+          "size": 48943,
+          "url": "https://github.com/Huje22/OsTag/releases/download/1.5.2/OsTag-1.5.2.jar"
+        }
+      ],
+      "name": "1.5.2",
+      "prerelease": false,
+      "published_at": 1671660708,
+      "version": "1.5.2"
+    },
+    {
+      "changelog": "1.5.1\r\ncode improvments\r\nbug fixes (<device> placeholder)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "OsTag-1.5.1.jar",
+          "primary": true,
+          "size": 47416,
+          "url": "https://github.com/Huje22/OsTag/releases/download/1.5.1/OsTag-1.5.1.jar"
+        }
+      ],
+      "name": "1.5.1",
+      "prerelease": false,
+      "published_at": 1671387382,
+      "version": "1.5.1"
+    },
+    {
+      "changelog": "**Released on the day 18.12.2022**\r\n1.5.0\r\nadded PlaceholderAPI support\r\nremoved <faction> placeholder\r\nwant to use OsTag but don't want to use PlaceholderAPI? you can still use it without the placeholder api\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "OsTag-1.5.0.jar",
+          "primary": true,
+          "size": 46412,
+          "url": "https://github.com/Huje22/OsTag/releases/download/1.5.0/OsTag-1.5.0.jar"
+        }
+      ],
+      "name": "1.5.0",
+      "prerelease": false,
+      "published_at": 1671319506,
+      "version": "1.5.0"
+    },
+    {
+      "changelog": "**Released on the day 17.12.2022**\r\n1.4.9.02\r\ncode improvments\r\nnow § working in chat :D\r\nadded disable ostag in a given world! if the player logs into a world where it is allowed, the name and information will remain until no other plugin changes it or enters a allowed world\r\nFactions plugin support (Placeholder <faction>)\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "OsTag-1.4.9.02.jar",
+          "primary": true,
+          "size": 45704,
+          "url": "https://github.com/Huje22/OsTag/releases/download/1.4.9.02/OsTag-1.4.9.02.jar"
+        }
+      ],
+      "name": "1.4.9.02",
+      "prerelease": false,
+      "published_at": 1671300322,
+      "version": "1.4.9.02"
+    },
+    {
+      "changelog": "**Released on the day 15.12.2022**\r\nVersion: 1.4.9.01\r\nno breaks between messages when player was operator, fixed!\r\nsome improvments in code",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "OsTag-1.4.9.01.jar",
+          "primary": true,
+          "size": 44946,
+          "url": "https://github.com/Huje22/OsTag/releases/download/1.4.9.01/OsTag-1.4.9.01.jar"
+        }
+      ],
+      "name": "1.4.9.01",
+      "prerelease": false,
+      "published_at": 1671142512,
+      "version": "1.4.9.01"
+    },
+    {
+      "changelog": "**started in 11.12.2022 released on the day 12.12.2022**\r\nconfig look improvments\r\nVersion: 1.4.9\r\nwhen you just type only/ostag it will bring up a list of parameters you can use\r\nadded <unique-description> using it in the \"Players\" section you can add an emoji or some text for this player only\r\nhow to create custom emoijs? visit this page https://wiki.bedrock.dev/concepts/emojis.html#custom-emoji\r\nhow to make player face emoij? visit this page https://mcskins.top/avatar-maker\r\nChanged some naming in config again!\r\ncooldown.enable: true\r\ncooldown.delay: 10\r\ncooldown.message: \"&aYou must wait &b<left> &eSeconds&a!\"\r\nchanged to\r\ncooldown:\r\n  enable: true\r\n  delay: 10\r\n  message: \"&aYou must wait &b<left> &eSeconds&a!\"\r\nAnd\r\nenable-censorship: true\r\ncensorship: \"Bread\"\r\nchanged to\r\ncensorship:\r\n  word: \"Bread\"\r\n  enable: true\r\nadded breaks between messages\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "OsTag-1.4.9.jar",
+          "primary": true,
+          "size": 44813,
+          "url": "https://github.com/Huje22/OsTag/releases/download/1.4.9/OsTag-1.4.9.jar"
+        }
+      ],
+      "name": "Chat formating and emoji improvments",
+      "prerelease": false,
+      "published_at": 1670874089,
+      "version": "1.4.9"
+    },
+    {
+      "changelog": "11.12.2022\r\nVersion: 1.4.8.01\r\nnow if you want everyone to be able to use & by default instead of § \"set and-for-all\" to true\r\nStill canot use § in chat , I try to fix it\r\nnow  <suffix> <prefix> <groupDisName> support & in chat\r\nnow you can use <xp> in name and chat\r\nblock \\n in chat formating\r\nchanged message.format to message-format\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "OsTag-1.4.8.01.jar",
+          "primary": true,
+          "size": 43320,
+          "url": "https://github.com/Huje22/OsTag/releases/download/1.4.8.01/OsTag-1.4.8.01.jar"
+        }
+      ],
+      "name": "Small improvments",
+      "prerelease": false,
+      "published_at": 1670769111,
+      "version": "1.4.8.01"
+    },
+    {
+      "changelog": "Big update\r\n09.12.2022\r\nVersion: 1.4.8\r\nThe plugin now has so many naming changes, see the plugin page on CloudBurst to know them all and get it right\r\nChanged name from \"OstagPNX\" to \"OsTag\"\r\nChanged permision names\r\n\r\nPermisions:\r\nostag.admin - all comands and colors in chat\r\nostag.colors - allow to use § in chat\r\n\r\nadded support for Nukkit (Vanilla) (required java 8 or higer)\r\nadded Ping colors added in config yml\r\nadded colors improvement in /ostag ver and start message\r\nadded showing plugin activation speed\r\nnow you can use /ostag r for reload plugin\r\nnow you can use & for colors in config\r\nnow you can use & for colors in chat if you have ostag.colors and disable § in chat\r\nwhen the plugin encounters an error while reloading the config, it will inform about it and show an error in the console",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "OsTag-1.4.8.jar",
+          "primary": true,
+          "size": 42558,
+          "url": "https://github.com/Huje22/OsTag/releases/download/1.4.8/OsTag-1.4.8.jar"
+        }
+      ],
+      "name": "Version 1.4.8 support Java 8",
+      "prerelease": false,
+      "published_at": 1670636559,
+      "version": "1.4.8"
+    }
+  ]
+}

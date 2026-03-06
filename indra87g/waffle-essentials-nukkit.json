@@ -1,0 +1,67 @@
+{
+  "api_version": "1.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1758424939,
+  "dependencies": [],
+  "description": "No README, just check the [wiki](https://github.com/indra87g/waffle-core-nukkit/wiki)\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/146718520?v=4",
+  "id": "indra87g/waffle-essentials-nukkit",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "name": "WaffleEssentialsNK",
+  "server_version": "",
+  "source": "https://github.com/indra87g/waffle-essentials-nukkit",
+  "stars": 0,
+  "summary": "Lorem ipsum dolor sit amet.",
+  "updated_at": 1764676583,
+  "versions": [
+    {
+      "changelog": "## What's Changed\r\n* Remove Command dan Add Lombok by @google-labs-jules[bot] in https://github.com/indra87g/waffle-essentials-nukkit/pull/21\r\n\r\n\r\n**Full Changelog**: https://github.com/indra87g/waffle-essentials-nukkit/compare/v0.1.5...v0.1.6",
+      "downloads": 0,
+      "files": [],
+      "name": "Version 0.1.6-alpha",
+      "prerelease": false,
+      "published_at": 1763783842,
+      "version": "v0.1.6"
+    },
+    {
+      "changelog": "## What's Changed\r\n* Add /wbuy command by @google-labs-jules[bot] in https://github.com/indra87g/waffle-core-nukkit/pull/15\r\n* feat: Implement /near command by @google-labs-jules[bot] in https://github.com/indra87g/waffle-core-nukkit/pull/16\r\n\r\n\r\n**Full Changelog**: https://github.com/indra87g/waffle-core-nukkit/compare/v0.1.4...v0.1.5",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "WaffleCoreNK-0.1.5-alpha.jar",
+          "primary": true,
+          "size": 30684,
+          "url": "https://github.com/indra87g/waffle-essentials-nukkit/releases/download/v0.1.5/WaffleCoreNK-0.1.5-alpha.jar"
+        }
+      ],
+      "name": "Version 0.1.5-alpha",
+      "prerelease": false,
+      "published_at": 1761635555,
+      "version": "v0.1.5"
+    },
+    {
+      "changelog": "## What's Changed\r\n* Refactor Project Structure for Maintainability by @google-labs-jules[bot] in https://github.com/indra87g/waffle-core-nukkit/pull/2\r\n* feat: Add /servers command for server selection by @google-labs-jules[bot] in https://github.com/indra87g/waffle-core-nukkit/pull/3\r\n* Refactor Commands to Use a Common BaseCommand by @google-labs-jules[bot] in https://github.com/indra87g/waffle-core-nukkit/pull/4\r\n* feat: Add /clearchat command by @google-labs-jules[bot] in https://github.com/indra87g/waffle-core-nukkit/pull/5\r\n* Tambahkan file konfigurasi `config.yml` sebagai config utama by @google-labs-jules[bot] in https://github.com/indra87g/waffle-core-nukkit/pull/6\r\n* feat: Add /me command to display player information by @google-labs-jules[bot] in https://github.com/indra87g/waffle-core-nukkit/pull/9\r\n* Feat: Replace /me with /info command by @google-labs-jules[bot] in https://github.com/indra87g/waffle-core-nukkit/pull/10\r\n* Add EconomyAPI integration and update info command by @google-labs-jules[bot] in https://github.com/indra87g/waffle-core-nukkit/pull/11\r\n* feat: Add /redeem command by @google-labs-jules[bot] in https://github.com/indra87g/waffle-core-nukkit/pull/12\r\n* feat(info): Merge player and playerpp subcommands by @google-labs-jules[bot] in https://github.com/indra87g/waffle-core-nukkit/pull/13\r\n\r\n## New Contributors\r\n* @google-labs-jules[bot] made their first contribution in https://github.com/indra87g/waffle-core-nukkit/pull/2\r\n\r\n**Full Changelog**: https://github.com/indra87g/waffle-core-nukkit/commits/0.1.4",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "WaffleCoreNK-0.1.4-alpha.jar",
+          "primary": true,
+          "size": 26170,
+          "url": "https://github.com/indra87g/waffle-essentials-nukkit/releases/download/v0.1.4/WaffleCoreNK-0.1.4-alpha.jar"
+        }
+      ],
+      "name": "Version 0.1.4-alpha",
+      "prerelease": true,
+      "published_at": 1760745887,
+      "version": "v0.1.4"
+    }
+  ]
+}

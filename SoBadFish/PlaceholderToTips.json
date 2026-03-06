@@ -1,0 +1,53 @@
+{
+  "api_version": "1.0.8",
+  "authors": [],
+  "categories": [],
+  "created_at": 1698042913,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "Tips",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "required",
+      "plugin_id": "PlaceholderAPI",
+      "version_range": ""
+    }
+  ],
+  "description": "# PlaceholderToTips\nPlaceholderAPI变量转换为Tips变量\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/83235042?v=4",
+  "id": "SoBadFish/PlaceholderToTips",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "name": "PlaceholderToTips",
+  "server_version": "",
+  "source": "https://github.com/SoBadFish/PlaceholderToTips",
+  "stars": 0,
+  "summary": "",
+  "updated_at": 1698043051,
+  "versions": [
+    {
+      "changelog": "+ 修复一系列BUG 对接最新版(2.2)的PAPI",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "PlaceholderToTips_v1.0.2.jar",
+          "primary": true,
+          "size": 5161,
+          "url": "https://github.com/SoBadFish/PlaceholderToTips/releases/download/v1.0.2/PlaceholderToTips_v1.0.2.jar"
+        }
+      ],
+      "name": "2023/10/23 更新",
+      "prerelease": false,
+      "published_at": 1698043162,
+      "version": "v1.0.2"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "api_version": "1.0.11",
+  "authors": [],
+  "categories": [],
+  "created_at": 1619528273,
+  "dependencies": [],
+  "description": "# TheWorldShop\n\n基于Nukkit的全球市场插件\n箱子UI全球市场 Win10玩家体验更佳\n\n## 引言:\n还在为 GUI 商店而烦恼吗 还在为GUI商店繁琐的操作而感到不适吗 不如尝试一下这款插件吧。\n本插件拥有便捷的操作，简洁的UI界面会让你爱上这款插件!\n\n#### 关键字: 上架 出售 筛选\n#### 简介\n#### 物品出售  \n 1. 仅需要执行: /tw add 就可以将物品出售到 全球市场！ 是不是非常方便  \n 1. 仅需要执行/tw 便可打开交易市场界面当物品太多的时候会自动的分页\n#### 市场筛选\n 1. 进入交易市场界面后 可设置筛选条件,物品排序\n 2. 利用筛选和排序可以快捷的得到需要的物品\n \n#### 物品回收\n 1. 仅需要执行/tw set <金钱> 就可以设置物品的回收价格`当物品为nbt物品时 指令为/tw set <金钱> <名称>`\n 2. 仅需要执行/tw sell 就可以检测出售背包内的物品玩家可以利用箱子UI进行出售\n \n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/83235042?v=4",
+  "id": "SoBadFish/TheWorldShop",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "name": "TheWorldShop",
+  "server_version": "",
+  "source": "https://github.com/SoBadFish/TheWorldShop",
+  "stars": 5,
+  "summary": "",
+  "updated_at": 1771941460,
+  "versions": [
+    {
+      "changelog": "增加回收功能",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "TheWorldShop_v1.1.1.jar",
+          "primary": true,
+          "size": 74919,
+          "url": "https://github.com/SoBadFish/TheWorldShop/releases/download/v1.1.1/TheWorldShop_v1.1.1.jar"
+        }
+      ],
+      "name": "v1.1.1",
+      "prerelease": false,
+      "published_at": 1619529876,
+      "version": "v1.1.1"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "api_version": "1.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1689512140,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "Tips",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "required",
+      "plugin_id": "RsNPC",
+      "version_range": ""
+    }
+  ],
+  "description": "",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
+  "id": "glorydark/TreasureHunt",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "name": "TreasureHunt",
+  "server_version": "",
+  "source": "https://github.com/glorydark/TreasureHunt",
+  "stars": 0,
+  "summary": "TreasureHunt",
+  "updated_at": 1722483255,
+  "versions": []
+}

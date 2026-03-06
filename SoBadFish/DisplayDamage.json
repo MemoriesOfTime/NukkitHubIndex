@@ -1,0 +1,25 @@
+{
+  "api_version": "1.0.14",
+  "authors": [],
+  "categories": [],
+  "created_at": 1722703943,
+  "dependencies": [],
+  "description": "# DisplayDamage\nNukkit-MOT的伤害显示\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/83235042?v=4",
+  "id": "SoBadFish/DisplayDamage",
+  "license": {
+    "id": "Apache-2.0",
+    "name": "Apache License 2.0",
+    "url": "https://spdx.org/licenses/Apache-2.0.html"
+  },
+  "links": null,
+  "name": "DisplayDamage",
+  "server_version": "",
+  "source": "https://github.com/SoBadFish/DisplayDamage",
+  "stars": 0,
+  "summary": "",
+  "updated_at": 1727232603,
+  "versions": []
+}

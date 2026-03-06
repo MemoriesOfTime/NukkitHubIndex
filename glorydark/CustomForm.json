@@ -1,0 +1,105 @@
+{
+  "api_version": "1.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1682257468,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "GameAPI",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "DCurrency",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "EconomyAPI",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "Tips",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "RsNPC",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "LanguageAPI",
+      "version_range": ""
+    }
+  ],
+  "description": "# CustomForm\n\n备份一下\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
+  "id": "glorydark/CustomForm",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "name": "CustomForm",
+  "server_version": "",
+  "source": "https://github.com/glorydark/CustomForm",
+  "stars": 5,
+  "summary": "CustomForm",
+  "updated_at": 1768905717,
+  "versions": [
+    {
+      "changelog": "Minecart Chest Menu is coming to you!",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "CustomForm-1.0.7.jar",
+          "primary": true,
+          "size": 87945,
+          "url": "https://github.com/glorydark/CustomForm/releases/download/1.0.7/CustomForm-1.0.7.jar"
+        }
+      ],
+      "name": "1.0.7 Snapshot",
+      "prerelease": false,
+      "published_at": 1686205718,
+      "version": "1.0.7"
+    },
+    {
+      "changelog": "In this version, the plugin provides more methods for creating specific forms by plugins and fixed some bugs and the support to TipsVariable has come to a brand new level. And hope it can help both the server owners and developers.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "CustomForm-1.0.6Candidate3.jar",
+          "primary": true,
+          "size": 67791,
+          "url": "https://github.com/glorydark/CustomForm/releases/download/1.0.6/CustomForm-1.0.6Candidate3.jar"
+        }
+      ],
+      "name": "1.0.6Candidate3 Released!",
+      "prerelease": false,
+      "published_at": 1683297567,
+      "version": "1.0.6"
+    },
+    {
+      "changelog": "**This is where we spread our wings and soared into the vast blue sky. 梦腾飞的版本**",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "CustomForm_1.0.5F3.jar",
+          "primary": true,
+          "size": 37384,
+          "url": "https://github.com/glorydark/CustomForm/releases/download/1.0.5/CustomForm_1.0.5F3.jar"
+        }
+      ],
+      "name": "1.0.5Fixed3 Released!",
+      "prerelease": false,
+      "published_at": 1682340515,
+      "version": "1.0.5"
+    }
+  ]
+}

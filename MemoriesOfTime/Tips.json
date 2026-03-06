@@ -1,0 +1,147 @@
+{
+  "api_version": "1.0.8",
+  "authors": [],
+  "categories": [],
+  "created_at": 1578645493,
+  "dependencies": [],
+  "description": "<a href=\"https://github.com/SmallasWater/Tips/releases/latest\" alt=\"Latest release\">\n    <img src=\"https://img.shields.io/github/v/release/SmallasWater/Tips?include_prereleases\" alt=\"Latest release\">\n</a>\n\n# **Tips**\n一款多功能显示插件\n\n#### 使用说明\n   - 用户:\n     1. 将本插件安装到` plugins`文件夹\n     2. 安装前置插件 参考 **`Tips变量.txt`** 文件\n     3. 修改` config.yml` 配置  \n     \n     > (小贴士) config内的 default 为全地图通用显示  \n      若想实现每个 地图 不同的内容 只需要复制粘贴\n      delfault 内容即可 然后将 default 替换成 \n      那个地图的名称\n     \n     开发者 \n      > 注册变量\n      >> 创建一个类继承 `BaseVariable `  \n      调用`BaseVariable `类里的` addStrReplaceString`方法  \n      传入 key(变量名称) value(显示内容)  \n      然后在 插件的 onEnable 里增加 \n       ```java\n      Api.registerVariables(\"插件名\",<? extends BaseVariable>class);\n       ```\n      >添加单一变量\n      ```java\n      Api.addVariable(\"变量字符\",\"值\");\n     ```\n       \n     修改内容\n     >  调用Api类内的方法 修改\n     \n   \n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/62042238?v=4",
+  "id": "MemoriesOfTime/Tips",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "name": "Tips",
+  "server_version": "",
+  "source": "https://github.com/MemoriesOfTime/Tips",
+  "stars": 7,
+  "summary": "",
+  "updated_at": 1754994234,
+  "versions": [
+    {
+      "changelog": "fix: Main class memory problem\r\nfix: Problems with command permissions",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Tips-2.2.2.jar",
+          "primary": true,
+          "size": 226770,
+          "url": "https://github.com/MemoriesOfTime/Tips/releases/download/v2.2.2/Tips-2.2.2.jar"
+        }
+      ],
+      "name": "v2.2.2",
+      "prerelease": false,
+      "published_at": 1742474099,
+      "version": "v2.2.2"
+    },
+    {
+      "changelog": "feat: Added new variables for player experience: {player_exp}, {player_exp_level}, {player_exp_min}, {player_exp_max}\r\nfix: TipTask memory problem",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Tips-2.2.1.jar",
+          "primary": true,
+          "size": 227562,
+          "url": "https://github.com/MemoriesOfTime/Tips/releases/download/v2.2.1/Tips-2.2.1.jar"
+        }
+      ],
+      "name": "v2.2.1",
+      "prerelease": false,
+      "published_at": 1742217537,
+      "version": "v2.2.1"
+    },
+    {
+      "changelog": "添加 {playerVersion}玩家客户端版本 变量",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Tips-2.1.8.jar",
+          "primary": true,
+          "size": 96669,
+          "url": "https://github.com/MemoriesOfTime/Tips/releases/download/v2.1.8/Tips-2.1.8.jar"
+        }
+      ],
+      "name": "v2.1.8",
+      "prerelease": false,
+      "published_at": 1700649109,
+      "version": "v2.1.8"
+    },
+    {
+      "changelog": "v2.1.7\r\n兼容ServerInfo1.0.9\r\n捕获变量类报错",
+      "downloads": 0,
+      "files": [],
+      "name": "v2.1.7",
+      "prerelease": false,
+      "published_at": 1692014528,
+      "version": "v2.1.7"
+    },
+    {
+      "changelog": "v2.1.6\r\n添加{deviceOS}变量\r\n修复ViewCompassVariable空指针报错",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Tips-2.1.6.jar",
+          "primary": true,
+          "size": 95857,
+          "url": "https://github.com/MemoriesOfTime/Tips/releases/download/v2.1.6/Tips-2.1.6.jar"
+        }
+      ],
+      "name": "v2.1.6",
+      "prerelease": false,
+      "published_at": 1683112690,
+      "version": "v2.1.6"
+    },
+    {
+      "changelog": "v2.1.5\r\n计分板依赖改为GameCore，实现自动下载依赖",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Tips-2.1.5.jar",
+          "primary": true,
+          "size": 95703,
+          "url": "https://github.com/MemoriesOfTime/Tips/releases/download/v2.1.5/Tips-2.1.5.jar"
+        }
+      ],
+      "name": "v2.1.5",
+      "prerelease": false,
+      "published_at": 1679578242,
+      "version": "v2.1.5"
+    },
+    {
+      "changelog": "v2.0.9\r\n删除其他插件的变量支持\r\n\r\nv2.0.3\r\n 优化变量的使用\r\n 修复玩家自定义显示的bug \r\n\r\nv1.9.0\r\n 修改一系列的bug...\r\n\r\nv1.8.1\r\n 修复玩家进入游戏自选样式重置bug\r\nv1.8.0\r\n 增加玩家自定义样式\r\nv1.7.9\r\n 优化Tips变量代码",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Tips_v2.0.9.jar",
+          "primary": true,
+          "size": 87211,
+          "url": "https://github.com/MemoriesOfTime/Tips/releases/download/v2.0.9/Tips_v2.0.9.jar"
+        }
+      ],
+      "name": "v2.0.9",
+      "prerelease": false,
+      "published_at": 1603808564,
+      "version": "v2.0.9"
+    },
+    {
+      "changelog": "- v1.7.4\r\n  对接 AutoUpData",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Tips_v1.7.4.jar",
+          "primary": true,
+          "size": 71822,
+          "url": "https://github.com/MemoriesOfTime/Tips/releases/download/v1.7.4/Tips_v1.7.4.jar"
+        }
+      ],
+      "name": "更新啦",
+      "prerelease": false,
+      "published_at": 1595499788,
+      "version": "v1.7.4"
+    }
+  ]
+}

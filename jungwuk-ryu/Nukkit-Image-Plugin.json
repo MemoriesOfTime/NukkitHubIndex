@@ -1,0 +1,74 @@
+{
+  "api_version": "1.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1613162185,
+  "dependencies": [],
+  "description": "# Nukkit Image plugin\nYou can place your image in your Nukkit server.\n\n![Minecraft 2021-02-13 3_34_55 AM](https://user-images.githubusercontent.com/29895665/107820213-f9f02700-6dac-11eb-8563-c30266a49a70.png)\n\n## Commands\n```\n- /ip place <image name>\n- /ip remove\n```\n\n## API\nThe description will be added soon.\n```java\nImagePlugin.breakImage(BlockEntityItemFrame blockEntity);\nImagePlugin.placeImage(RequestInformation info);\nImageUtils.getSplitImageMap(int lx, int ly, BufferedImage image, @Nullable Map<String, String> data);\n```",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/29895665?v=4",
+  "id": "jungwuk-ryu/Nukkit-Image-Plugin",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "name": "ImagePlugin",
+  "server_version": "",
+  "source": "https://github.com/jungwuk-ryu/Nukkit-Image-Plugin",
+  "stars": 0,
+  "summary": "",
+  "updated_at": 1657797422,
+  "versions": [
+    {
+      "changelog": "* Hotfix",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "nukkit-image-plugin-1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 16639,
+          "url": "https://github.com/jungwuk-ryu/Nukkit-Image-Plugin/releases/download/1.1.1/nukkit-image-plugin-1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "Release 1.1.1",
+      "prerelease": false,
+      "published_at": 1613670798,
+      "version": "1.1.1"
+    },
+    {
+      "changelog": "* Fixed many bugs\r\n* Added some features",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "nukkit-image-plugin-1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 13182,
+          "url": "https://github.com/jungwuk-ryu/Nukkit-Image-Plugin/releases/download/1.1.0/nukkit-image-plugin-1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "Release 1.1.0",
+      "prerelease": false,
+      "published_at": 1613497753,
+      "version": "1.1.0"
+    },
+    {
+      "changelog": "English is not surpported yet. ",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "nukkit-image-plugin-1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 10577,
+          "url": "https://github.com/jungwuk-ryu/Nukkit-Image-Plugin/releases/download/1.0.0/nukkit-image-plugin-1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "Release 1.0.0",
+      "prerelease": true,
+      "published_at": 1613168479,
+      "version": "1.0.0"
+    }
+  ]
+}

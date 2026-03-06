@@ -1,0 +1,215 @@
+{
+  "api_version": "1.0.14",
+  "authors": [],
+  "categories": [],
+  "created_at": 1702048399,
+  "dependencies": [],
+  "description": "# NewTipsVariables\r\n[![GitHub License](https://img.shields.io/github/license/stevei5mc/NewTipsVariables?style=plastic)](LICENSE)\r\n![GitHub top language](https://img.shields.io/github/languages/top/stevei5mc/NewTipsVariables?style=plastic)\r\n[![GitHub Release](https://img.shields.io/github/v/release/stevei5mc/NewTipsVariables?style=plastic&color=drak%20green)](https://github.com/stevei5mc/NewTipsVariables/releases)  \r\n![GitHub Repo stars](https://img.shields.io/github/stars/stevei5mc/NewTipsVariables?style=plastic)\r\n![GitHub forks](https://img.shields.io/github/forks/stevei5mc/NewTipsVariables?style=plastic)\r\n![GitHub issues](https://img.shields.io/github/issues/stevei5mc/NewTipsVariables?style=plastic&color=linkGreen)\r\n![GitHub pull requests](https://img.shields.io/github/issues-pr/stevei5mc/NewTipsVariables?style=plastic)  \r\n## **插件介绍**\r\n### **前言**\r\n- **该插件可以为Tips提供更多的变量内容**  \r\n- **有问题请及时提交[issues](https://github.com/stevei5mc/NewTipsVariables/issues)**  \r\n- **如果你有开发能力可以为其提供[PR](https://github.com/stevei5mc/NewTipsVariables/pulls)来增加更多变量或修复问题**\r\n### **命令与权限节点**\r\n|命令|权限节点|权限介绍|默认权限|\r\n|:-:|:-:|:-:|:-:|\r\n|/newtipsariables|newtipsariables.admin|主命令|OP|\r\n|/newtipsariables reload|newtipsariables.admin.reload|重载配置文件|OP|\r\n|/newtipsariables checkstatus|newtipsariables.admin.checkstate|检查插件状态|OP|\r\n### **变量介绍文档**\r\n- **[基础变量](https://github.com/stevei5mc/NewTipsVariables/blob/main/docs/base-variables.md)**\r\n- **[支持下列插件](https://github.com/stevei5mc/NewTipsVariables/blob/main/docs/SupportPluginsVariables.md \"点击查看变量文档\")**\r\n### **配置文件使用说明**\r\n- **若未在此说明中写配置项出则代表该配置项还没有支持,也有可能是忘记写出来了**\r\n- **给出的预览图片可能不是最新的，但也差不到哪去**\r\n\r\n<details>\r\n<summary>config.yml</summary>\r\n\r\n**[查看原文件](https://github.com/stevei5mc/NewTipsVariables/blob/main/../src/main/resources/config.yml)**\r\n```yaml\r\n#使用说明:\r\n#https://github.com/stevei5mc/NewTipsVariables/blob/main/README.md\r\n#https://gitee.com/stevei5mc/NewTipsVariables/blob/main/README.md\r\n#配置文件版本，勿动\r\nversion: 2\r\n# 更新功能(这个功能展示没有用)\r\nupdata-plugin:\r\n  #检查更新(暂时没有用)\r\n  check: false\r\n  #自动更新(需开启检查更新但暂时没有用)\r\n  auto: false\r\n# 是否释放新的变量说明文档\r\nsave-variables-doc: true\r\ndebug: false\r\n```\r\n\r\n1. `save-variables-doc` 该功能关闭后就算删除变量文档也不会生成新的变量文档\r\n2. `debug` 显示一些额外的信息  \r\n![6](https://raw.githubusercontent.com/stevei5mc/NewTipsVariables/main/docs/image/debug.PNG)  \r\n3. `updata -> in-config -> check` 配置文件版本检查\r\n4. `updata -> in-config -> auto` 配置文件自动更新(需开启检查更新)**注意： 开启后配置文件将强制更新不会保留原来的配置**  \r\n![7](https://raw.githubusercontent.com/stevei5mc/NewTipsVariables/main/docs//image/check_config.PNG)\r\n</details>\r\n<details>\r\n<summary>server.yml</summary>\r\n\r\n**[查看原文件](https://github.com/stevei5mc/NewTipsVariables/blob/main/../src/main/resources/server.yml)**\r\n```yml\r\n#使用说明:\r\n#https://github.com/stevei5mc/NewTipsVariables/blob/main/README.md\r\n#https://gitee.com/stevei5mc/NewTipsVariables/blob/main/README.md\r\n#配置文件版本，勿动\r\nversion: 1\r\nTPS:\r\n  low_color: \"§c\"\r\n  medium_value: 9\r\n  medium_color: \"§e\"\r\n  high_value: 15\r\n  high_color: \"§a\"\r\n```\r\n1. ```color```设置显示的颜色，```low```、```medium```、```high```为显示的范围 \r\n2. ```value```是一个范围值，```medium```、```high```为可设置的范围值，```low```值只能为```0```\r\n</details>\r\n<details>\r\n<summary>player.yml</summary>\r\n\r\n**[查看原文件](https://github.com/stevei5mc/NewTipsVariables/blob/main/../src/main/resources/player.yml)**\r\n```yml\r\n#使用说明:\r\n#https://github.com/stevei5mc/NewTipsVariables/blob/main/README.md\r\n#https://gitee.com/stevei5mc/NewTipsVariables/blob/main/README.md\r\n#配置文件版本，勿动\r\nversion: 1\r\nDevice:\r\n  OS:\r\n    Android: \"Android\"\r\n    iOS: \"iOS\"\r\n    macOS: \"macOS\"\r\n    Fire_OS: \"Fire OS\"\r\n    Gear_VR: \"Gear VR\"\r\n    HoloLens: \"HoloLens\"\r\n    Windows_10: \"Windows 10\"\r\n    Windows: \"Windows\"\r\n    Dedicated: \"Dedicated\"\r\n    tvOS: \"tvOS\"\r\n    PlayStation: \"PlayStation\"\r\n    Switch: \"Switch\"\r\n    Xbox: \"Xbox\"\r\n    Windows_Phone: \"Windows Phone\"\r\n  Controls:\r\n    Keyboard: Keyboard\r\n    Touch: Touch\r\n    pad: pad\r\n    motion_controller: motion_controller\r\n  UIProfile:\r\n    classic: \"classic ui\"\r\n    pocket: \"pocket ui\"\r\nping:\r\n  low_color: \"§a\"\r\n  medium_value: 80\r\n  medium_color: \"§e\"\r\n  high_value: 120\r\n  high_color: \"§c\"\r\nHP:\r\n  low_color: \"§c{0}§7/§c{1}\"\r\n  medium_value: 9\r\n  medium_color: \"§e{0}§7/§e{1}\"\r\n  high_value: 15\r\n  high_color: \"§a{0}§7/§a{1}\"\r\nFood:\r\n  empty_color: \"§7{0}/{1}\"\r\n  low_color: \"§c{0}§7/§c{1}\"\r\n  medium_value: 9\r\n  medium_color: \"§e{0}§7/§e{1}\"\r\n  high_value: 15\r\n  high_color: \"§a{0}§7/§a{1}\"\r\n```\r\n1. `color`设置显示的颜色，`low`、`medium`、`high`为显示的范围  \r\n2. `value`是一个范围值，`medium`、`high` 为可设置的范围值，`empty`值只能为`0`，`low`值只能为`0`或`1`\r\n- **`Device -> OS`玩家的设备系统**  \r\n- **`Device -> Controls`获取玩家设备的操作方式**\r\n- **`Device -> UIProfile`玩家的设备UI**\r\n- **`ping` 玩家的延迟**\r\n- **`HP`  玩家的血量**\r\n- **`Food` 玩家的饥饿值**\r\n---\r\n</details>\r\n\r\n## **使用方法**\r\n|使用步骤|使用说明|\r\n|:-:|:-|\r\n|1|将插件放进`plugins`文件夹|\r\n|2|确保安装前置插件[Tips](https://motci.cn/job/Tips/)后重启（启动）服务器|\r\n|3|在`./plugins/NewTipsVariables`文件夹中的`.txt`文件获取相关变量介绍，也可在本页面获取相关的变量介绍就可以在Tips中使用同时也可以在支持Tips变量的插件中使用|\r\n## **注意事项及建议**\r\n1. **请不要随意的改动配置文件的版本号，否则带来的后果一切自负！！！**\r\n2. **建议备份好已经配置好的配置文件以备不时之需**\r\n3. **1.0.0-beta10之后合并了[UnicodeVariables](https://github.com/stevei5mc/UnicodeVariables)插件的相关功能，更新至1.0.0-beta10及以上版本即可删除[UnicodeVariables](https://github.com/stevei5mc/UnicodeVariables)了**\r\n",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-03-06",
+      "description": "",
+      "title": "6",
+      "url": "https://raw.githubusercontent.com/stevei5mc/NewTipsVariables/main/docs/image/debug.PNG"
+    },
+    {
+      "created": "2026-03-06",
+      "description": "",
+      "title": "7",
+      "url": "https://raw.githubusercontent.com/stevei5mc/NewTipsVariables/main/docs//image/check_config.PNG"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/82391055?v=4",
+  "id": "stevei5mc/NewTipsVariables",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "name": "NewTipsVariables",
+  "server_version": "",
+  "source": "https://github.com/stevei5mc/NewTipsVariables",
+  "stars": 1,
+  "summary": "",
+  "updated_at": 1770615687,
+  "versions": [
+    {
+      "changelog": "# **1.1.0**\n---\n## **注意事项**\n1. **从版本 `1.0.1` 配置文件的自动更新不会受到配置文件的控制，配置文件如果有新的内容将会自动执行更新**\n2. **从版本 `1.0.1` 起会对配置文件的版本号有异常的配置文件进行重置，在重置时会对旧配置文件进行备份**\n3. **不要随意修改配置文件的版本号，否则配置文件的更新机制所带来的后果需要自负**\n4. **建议备份好已经配置好的配置文件，以便在配置文件自动更新时出现问题可以及时恢复**\n---\n## **更新内容**\n1. 删除代码中无用的参数 < [ea296d7c](https://github.com/stevei5mc/NewTipsVariables/commit/ea296d7cc0ad74ba722dd33ff724738260145195) >\n2. 调整并精简部分代码 < [94dd3056](https://github.com/stevei5mc/NewTipsVariables/commit/94dd305691cdea07fc76219136af26645974271d) >\n3. 对前置插件和受支持的插件是否存在的判断方式进行重构 < [8b69669b](https://github.com/stevei5mc/NewTipsVariables/commit/8b69669b823ff09a06a3633be8190088eb2869bd) >\n4. 修复部分文案和代码中拼写错误的问题\n5. 对部分文案进行调整\n6. 将部分变量调整为即使玩家不在线也正常生效\n7. 支持自动删除插件 UnicodeVariables < [8aaccc16](https://github.com/stevei5mc/NewTipsVariables/commit/8aaccc16a9c18f8af532067eb9a5ddefc09240b5) >",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "NewTipsVariables-1.1.0.jar",
+          "primary": true,
+          "size": 36656,
+          "url": "https://github.com/stevei5mc/NewTipsVariables/releases/download/1.1.0/NewTipsVariables-1.1.0.jar"
+        }
+      ],
+      "name": "1.1.0",
+      "prerelease": false,
+      "published_at": 1767503103,
+      "version": "1.1.0"
+    },
+    {
+      "changelog": "# **1.0.1 更新日志**\r\n---\r\n## **注意事项**\r\n1. **从该版本起（1.0.1）配置文件的自动更新不会受到配置文件的控制，如果配置文件有新的内容会自动执行更新**\r\n2. **不要随意修改配置文件的版本号，否则带来的后果自负（虽然从1.0.1版本起会对被重置的配置文件生成备份文件，但还是不要随意修改）**\r\n3. **建议备份好已经配置好的配置文件以备不时之需**\r\n---\r\n## **更新内容**\r\n1. 将配置文件的更新改为强制性的 < [f06015e](https://github.com/stevei5mc/NewTipsVariables/commit/f06015e78348c16596e0d4c2e24a53c5770cac78) >\r\n2. 添加重置配置文件时会对被重置的配置文件生成备份文件的功能 < [47f420e](https://github.com/stevei5mc/NewTipsVariables/commit/47f420efef301b09f215ea1e08f1244168a67d7e) >\r\n3. 对import进行调整 < [c770689](https://github.com/stevei5mc/NewTipsVariables/commit/c770689892fe5ffc09dfb84a060cc444d393f0f5) >\r\n4. 修改提醒 < [e01e44f](https://github.com/stevei5mc/NewTipsVariables/commit/e01e44fdf5110c33323c64104302d06f3fcbf564) >\r\n5. 修改方法名\r\n6. 为前置插件增加多一个下载链接的提醒 < [6c96e76](https://github.com/stevei5mc/NewTipsVariables/commit/6c96e7668f5bbb16b1ebf5ca1849bdb04a6ad366) >\r\n7. 将Tips的依赖的版本更新至2.2.1 < [08458a0](https://github.com/stevei5mc/NewTipsVariables/commit/08458a0be188b113029cc18c06de5de3e30a6e55) >\r\n8. 修复unicode码的相关变量无法正常生效的问题 < [8d3ac93](https://github.com/stevei5mc/NewTipsVariables/commit/8d3ac93f1092a6e7d7a0ec4c33831f19eb38020f) >",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "NewTipsVariables-1.0.1.jar",
+          "primary": true,
+          "size": 34925,
+          "url": "https://github.com/stevei5mc/NewTipsVariables/releases/download/1.0.1/NewTipsVariables-1.0.1.jar"
+        }
+      ],
+      "name": "1.0.1",
+      "prerelease": false,
+      "published_at": 1743159015,
+      "version": "1.0.1"
+    },
+    {
+      "changelog": "# **1.0.0**\r\n---\r\n## **注意事项**\r\n1. **建议备份好已经配置好的配置文件以备不时之需**\r\n2. **1.0.0-beta10之后合并了[UnicodeVariables](https://github.com/stevei5mc/UnicodeVariables)插件的相关功能，更新至1.0.0-beta10及以上版本即可删除[UnicodeVariables](https://github.com/stevei5mc/UnicodeVariables)了**\r\n---\r\n## **更新建议**\r\n1. **建议备份好已经配置好的配置文件以备不时之需**\r\n---\r\n## **更新内容**\r\n- **这里整理和简化了beta版本的更新记录，如果想要查看详细的更新记录请自行查看历史的更新记录**\r\n\r\n1. 初始开发 <[58a88cc](https://github.com/stevei5mc/NewTipsVariables/commit/58a88ccc970f51a78abc63226933435eb1c77495) [834ed4cf](https://github.com/stevei5mc/NewTipsVariables/commit/834ed4cfde095b97de8735dcdae525f15b18c508) [480dc59](https://github.com/stevei5mc/NewTipsVariables/commit/480dc591057776ee91fce8cc49a6ade3580e04cd)>\r\n2. 添加变量  {PlayerUI} <[78a166c](https://github.com/stevei5mc/NewTipsVariables/commit/78a166c055250c7b422353a5c03a354c96bd4da6)>\r\n3.  添加变量: <[074c35a](https://github.com/stevei5mc/NewTipsVariables/commit/834ff02df8e75d3b413893d836bed84e9)>\r\n    - {deviceOS} {PlayerUi} {PlayerLang}  {PlayerUuid}\r\n4. 修改变量名和新增变量 <[debb5b1](https://github.com/stevei5mc/NewTipsVariables/commit/debb5b1b133d98930bbcbd4d24af5d140f393df2)>\r\n    - 添加变量\r\n    - {PlayerPing} {PlayerFood} {PlayerHealth} {ServerTps}\r\n    - 修改变量名  \r\n    - {xp} -> {PlayerXp} , {deviceOS} ->{DeviceOs}  \r\n5. 修改变量名 <[16a0082](https://github.com/stevei5mc/NewTipsVariables/commit/16a00821256bbcfadcb0785dd46d89b31009eed3)>\r\n6. 支持插件[EconomyAPI](https://github.com/Nukkit-coders/EconomyAPI)、[playerPoints](https://github.com/SmallasWater/PlayerPoints) <[19abbce](https://github.com/stevei5mc/NewTipsVariables/commit/19abbce3224fd0ba73cb7cd0ac0d976af8f93d3f)>\r\n7. 支持插件[OreArea](https://github.com/SmallasWater/OreArea) <[c984cf2](https://github.com/stevei5mc/NewTipsVariables/commit/c984cf2ced6fc26cf13abf6cd752a9931dd1201a)>\r\n8. 支持插件[RSTask](https://github.com/MemoriesOfTime/RSTask) <[e9b1812](https://github.com/stevei5mc/NewTipsVariables/commit/e9b181214e31a173c3c6f12867da0628fd834a71)>\r\n9. 对配置文件进行支持 <[8601071](https://github.com/stevei5mc/NewTipsVariables/commit/8601071e833f607f41bd6a7d7387aaf0d363bb36) [2ae624b](https://github.com/stevei5mc/NewTipsVariables/commit/2ae624b9fa67ad5c4f37697c607cc6efd5800ea2) [821bd35](https://github.com/stevei5mc/NewTipsVariables/commit/821bd3505bc6f369ff935b1ff98566fcb09d229a) [1cd593a](https://github.com/stevei5mc/NewTipsVariables/commit/1cd593a7b89d2ef1c8ae6dbc945bfdb94b362369)>\r\n10. 添加debug功能 <[d853ac4](https://github.com/stevei5mc/NewTipsVariables/commit/d853ac47257694d34ae1d59cb99f31509b9822a1) [e39629a](https://github.com/stevei5mc/NewTipsVariables/commit/e39629afa292c0871057d55a0b013ef794bdbaae)>\r\n11. 添加变量 {Player-World}和{WorldOnline@世界名} <[0c285a1](https://github.com/stevei5mc/NewTipsVariables/commit/0c285a158ff2770a36daf4c710ad7c9a5bedb0c9)>\r\n12. 添加和支持语言文件 <[7b192e3](https://github.com/stevei5mc/NewTipsVariables/commit/7b192e3d56c51f2dad65d52669f60c41acf801f5) [adce148](https://github.com/stevei5mc/NewTipsVariables/commit/adce148eab564e9b8eda4dd0a2026037029fea17)>\r\n13. 新增变量 {Player-Controls}  <[39e3580](https://github.com/stevei5mc/NewTipsVariables/commit/39e3580148dc6fda6a21ca776c371942bcd11c4d)>\r\n14. 添加重载命令 <[3c39e10](https://github.com/stevei5mc/NewTipsVariables/commit/3c39e10a5ec3afa31d9ece597d4e93509cd691d8)>\r\n15. 添加对配置文件版本检查\r\n16. 添加对插件[HealthAPI](https://github.com/SmallasWater/HealthAPI)的支持 <[9d4ff7c](https://github.com/stevei5mc/NewTipsVariables/commit/9d4ff7cec5b3a74667c48bb2aa9ab548efd1f97b)>\r\n17. 添加变量 <[8501ec7](https://github.com/stevei5mc/NewTipsVariables/commit/8501ec72afe61edf22d375c9ec64fde57c9fc4c5)>\r\n    - {Player-Yaw}\r\n    - {Player-Pitch}\r\n18. 添加两个插件的变量支持 <[3e97dd8](https://github.com/stevei5mc/NewTipsVariables/commit/3e97dd8c1c90592275c59c53b004a8fd9c0af3ff)>\r\n    - [LevelAwakenSystem](https://github.com/SmallasWater/LevelAwakenSystem)\r\n    - [RsWeapon](https://github.com/SmallasWater/RsWeapon)\r\n19. 添加变量{Player-HeadYaw} <[84cc577](https://github.com/stevei5mc/NewTipsVariables/commit/84cc577048a23f3894ebde1dba99398c713d1ced)>\r\n20. 将若水的插件合并到一个class <[194b6c1](https://github.com/stevei5mc/NewTipsVariables/commit/194b6c1489bbf2e31edf90e700309eb3dce044b5)>\r\n21. 添加变量 <[ff5fd4a](https://github.com/stevei5mc/NewTipsVariables/commit/ff5fd4a177f472aac91654eca03971c51a0f3509)>\r\n    - {LuckPerms-prefix}\r\n    - {LuckPerms-suffix}\r\n22. 添加变量 {LuckPerms-group} <[388288e](https://github.com/stevei5mc/NewTipsVariables/commit/388288e6c36e627eaf754c4ac32af7606ad344ce)>\r\n23. 支持配置文件的自动更新 <[22ada27](https://github.com/stevei5mc/NewTipsVariables/commit/22ada273d4a91e3959f7a883f33e60c19102ff7f)>\r\n24. 修复配置文件自动更新后不能获取最新的配置内容的问题 <[6e20179](https://github.com/stevei5mc/NewTipsVariables/commit/6e20179c8975425787c61c2b4b905078629091cf)>\r\n25. 支持世界名的通配符 <[63b95e1](https://github.com/stevei5mc/NewTipsVariables/commit/63b95e1dd52b16f33af81b0bd3c3741eea2582be)>\r\n26. 添加变量 {LuckPerms-group-weight} <[de42f62](https://github.com/stevei5mc/NewTipsVariables/commit/de42f62c45070a2bab1d5820249e2f6b11374dcc)>\r\n27. 将配置文件的自动更新功能和重置功能区分开 <[a24e64b](https://github.com/stevei5mc/NewTipsVariables/commit/a24e64bc27fed762b2d7b5a236ba9708a11f7d5c)>\r\n28. 合并插件[UnicodeVariables](https://github.com/stevei5mc/UnicodeVariables)的功能 <[61ae8bd](https://github.com/stevei5mc/NewTipsVariables/commit/61ae8bde63e75742f72b65e4524d2dd3c7a54188)>\r\n29. 调整代码 <[493b4e3](https://github.com/stevei5mc/NewTipsVariables/commit/493b4e3b002bff6315e7afe1d0b1695ccc266b65)>",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "NewTipsVariables-1.0.0.jar",
+          "primary": true,
+          "size": 34757,
+          "url": "https://github.com/stevei5mc/NewTipsVariables/releases/download/1.0.0/NewTipsVariables-1.0.0.jar"
+        }
+      ],
+      "name": "1.0.0",
+      "prerelease": false,
+      "published_at": 1728715054,
+      "version": "1.0.0"
+    },
+    {
+      "changelog": "# **1.0.0-beta10**\n---\n## **注意事项**\n1. **不建议开启配置文件的自动更新，如果开启后配置文件有更新会覆盖式更新就会导致原有的配置丢失**\n2. **预计beta10之后如果没有问题发布正式版该版本，有问题或者需求请及时提出[issue](https://github.com/stevei5mc/NewTipsVariables/issues)**\n3. **建议备份好已经配置好的配置文件以备不时之需**\n4. **1.0.0-beta10之后合并了[UnicodeVariables](https://github.com/stevei5mc/UnicodeVariables)插件的相关功能，更新至1.0.0-beta10就可以删除[UnicodeVariables](https://github.com/stevei5mc/UnicodeVariables)了**\n---\n## **更新内容**\n1. 调整代码 <[4322c34](https://github.com/stevei5mc/NewTipsVariables/commit/4322c34c45ec680323f41d57710de751d568c400)>\n2. 添加注释\n3. 将部分提示信息改到服务器启动完成后发出 <[1b55d24](https://github.com/stevei5mc/NewTipsVariables/commit/1b55d2496a79ef8fb232f0a28841e3924849d559)>\n4. 修复配置文件自动更新后不能获取最新的配置内容的问题 <[6e20179](https://github.com/stevei5mc/NewTipsVariables/commit/6e20179c8975425787c61c2b4b905078629091cf)>\n5. 调整部分代码 <[715a69b](https://github.com/stevei5mc/NewTipsVariables/commit/715a69bcdafd5f296781cf9c842c140db6b7dd58)>\n6. 调整代码中的注释 <[4ece6ef](https://github.com/stevei5mc/NewTipsVariables/commit/4ece6ef8cb267bb369be18a01d71637d57f1c3f9)>\n7. 调整和优化代码\n8. 支持世界名的通配符 <[63b95e1](https://github.com/stevei5mc/NewTipsVariables/commit/63b95e1dd52b16f33af81b0bd3c3741eea2582be)>\n9. 添加变量 {LuckPerms-group-weight} <[de42f62](https://github.com/stevei5mc/NewTipsVariables/commit/de42f62c45070a2bab1d5820249e2f6b11374dcc)>\n10. 修整文档 <[1a150b9](https://github.com/stevei5mc/NewTipsVariables/commit/1a150b9d561114f676b6b897b9ee25d22bd5f2a3)>\n11. 将配置文件的自动更新功能和重置功能区分开 <[a24e64b](https://github.com/stevei5mc/NewTipsVariables/commit/a24e64bc27fed762b2d7b5a236ba9708a11f7d5c)>\n12. 调整注释\n13. 调整代码\n14. 重写插件是否存在的判断 <[43c84c7](https://github.com/stevei5mc/NewTipsVariables/commit/43c84c78161d323e9e7c3c32170f4e05f8fac20c)> <[2d77c2f](https://github.com/stevei5mc/NewTipsVariables/commit/2d77c2fecb2245281ad22ffb69315077abf4586b)>\n15. 增加受支持插件的状态检查的功能 <[3312eab](https://github.com/stevei5mc/NewTipsVariables/commit/3312eab9384d3a3e766378aefb54e22685a5df87)>\n16. 对部分文案进行调整 <[4861f2c](https://github.com/stevei5mc/NewTipsVariables/commit/4861f2c131c72b5c3017a3d3b02ca4e9d00a64df)>\n17. 调整代码 <[5e53ce2](https://github.com/stevei5mc/NewTipsVariables/commit/5e53ce26897748f969802ff5c929390e3ae9ed3a)>\n18. 合并插件[UnicodeVariables](https://github.com/stevei5mc/UnicodeVariables)的功能 <[61ae8bd](https://github.com/stevei5mc/NewTipsVariables/commit/61ae8bde63e75742f72b65e4524d2dd3c7a54188)>\n19. 玩家不在线时不调用变量 <[724593b](https://github.com/stevei5mc/NewTipsVariables/commit/724593bb55f3e8267a07a580c5aaa96dbda6ed5c)>",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "NewTipsVariables-1.0.0-beta10.jar",
+          "primary": true,
+          "size": 34727,
+          "url": "https://github.com/stevei5mc/NewTipsVariables/releases/download/1.0.0-beta10/NewTipsVariables-1.0.0-beta10.jar"
+        }
+      ],
+      "name": "1.0.0-beta10",
+      "prerelease": false,
+      "published_at": 1726030351,
+      "version": "1.0.0-beta10"
+    },
+    {
+      "changelog": "# **1.0.0-beta9**\n---\n## **注意事项**\n- **不建议开启配置文件的自动更新，如果开启后配置文件有更新会覆盖式更新就会导致原有的配置丢失**\n- **预计发布beta10之后如果没有问题发布正式版该版本，有问题或者需求请及时提出[issue](https://github.com/stevei5mc/NewTipsVariables/issues)**\n---\n## **更新建议**\n- **建议备份好已经配置好的配置文件以备不时之需**\n---\n## **更新内容**\n### [de8334c](https://github.com/stevei5mc/NewTipsVariables/commit/de8334cc3de163dcca5241dd7b032fa7b59d7a97)\n1. 修改缩进(修复代码中错误的缩进)\n### [3ea2a73](https://github.com/stevei5mc/NewTipsVariables/commit/3ea2a73d101731eb781564be74e9f5b8a48c1442)\n1. 删除变量文档中的空行\n2. 添加变量{Player-Health}的if判断\n3. 调整了一个class的位置\n### [194b6c1](https://github.com/stevei5mc/NewTipsVariables/commit/194b6c1489bbf2e31edf90e700309eb3dce044b5)\n1. 将若水的插件合并到一个class\n### [401d170](https://github.com/stevei5mc/NewTipsVariables/commit/401d170c5f9eef6ec7dc8ca857165c8eee0d08bd)\n1. 对配置文件的版本检查进行修改\n2. debug功能不在为隐藏的配置项\n3. 对配置文件的doc文档进行修改\n### [884c4c3](https://github.com/stevei5mc/NewTipsVariables/commit/884c4c35b26d5418b29a8eac2a807fd45cf0a886)\n1. 合并部分代码\n2. 对配置文件的doc文件进行修改\n### [f5e53ea](https://github.com/stevei5mc/NewTipsVariables/commit/f5e53ea5f93004f270f8c63364aaac624a768abe)\n1. 修改部分提示内容\n2. 删除一些空格\n### [ff5fd4a](https://github.com/stevei5mc/NewTipsVariables/commit/ff5fd4a177f472aac91654eca03971c51a0f3509)\n1. 添加对LuckPerms的支持(虽然只支持获取prefix和suffix，变量名请看变量文档)\n### [c6d9055](https://github.com/stevei5mc/NewTipsVariables/commit/c6d905544cc61cb7fd40dd0d00a240c4a5bea57c)\n1. 删除遗留无用的imoort\n2. 对一些if判断进行调整\n### [588f29e](https://github.com/stevei5mc/NewTipsVariables/commit/588f29ee44078c4c277990927667655b3f33c31e)\n1. 修复一个错误的拼写\n2. 优化配置文件的版本检查功能的代码可读性\n### [cf6fe57](https://github.com/stevei5mc/NewTipsVariables/commit/cf6fe5799005ca117dd3ff140fdb90a635dca92f)\n1. 修复一处注释中的错误\n2. 调整debug功能的开启时机\n3. 增加debug消息\n### [9493ec3](https://github.com/stevei5mc/NewTipsVariables/commit/9493ec335528e768e496e876ce2ff078c8395af7)\n1. 对代码进行调整\n2. 修改代码注释信息\n### [7b427a7](https://github.com/stevei5mc/NewTipsVariables/commit/7b427a7710968a7cd4f40640c77b918c2855586b)\n1. 对代码进行调整\n2. 修复debug相关功能的问题\n### [388288e](https://github.com/stevei5mc/NewTipsVariables/commit/388288e6c36e627eaf754c4ac32af7606ad344ce)\n1. 添加变量 {LuckPerms-group}\n### [f706901](https://github.com/stevei5mc/NewTipsVariables/commit/f70690106572e9dc02694794735786144fd511e1)\n1. 添加无法获取到配置文件版本时的默认版本号\n### [22ada27](https://github.com/stevei5mc/NewTipsVariables/commit/22ada273d4a91e3959f7a883f33e60c19102ff7f)\n1. 支持配置文件的自动更新\n### [9417b26](https://github.com/stevei5mc/NewTipsVariables/commit/9417b264dda02c0eea36c578f6157e92b23951fb)\n1. 调整配置文件版本检查仅在onLoad阶段",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "NewTipsVariables-1.0.0-beta9.jar",
+          "primary": true,
+          "size": 30832,
+          "url": "https://github.com/stevei5mc/NewTipsVariables/releases/download/1.0.0-beta9/NewTipsVariables-1.0.0-beta9.jar"
+        }
+      ],
+      "name": "1.0.0-beta9",
+      "prerelease": false,
+      "published_at": 1717910822,
+      "version": "1.0.0-beta9"
+    },
+    {
+      "changelog": "# **1.0.0-beta8**\r\n---\r\n## **更新内容**\r\n### [3c39e10](https://github.com/stevei5mc/NewTipsVariables/commit/3c39e10a5ec3afa31d9ece597d4e93509cd691d8)\r\n1. 添加重载命令\r\n2. 添加对配置文件版本检查\r\n### [b531259](https://github.com/stevei5mc/NewTipsVariables/commit/b531259309bee23e689ec556d999ed52c255b132)\r\n1. 把部分debug信息在代码中写死(不可在语言文件中修改)\r\n2. 调整提示的颜色，用不同颜色来区分不同类型的提示\r\n3. 删去代码中多余的空行\r\n### [9d4ff7c](https://github.com/stevei5mc/NewTipsVariables/commit/9d4ff7cec5b3a74667c48bb2aa9ab548efd1f97b)\r\n1. 添加对插件[HealthAPI](https://github.com/SmallasWater/HealthAPI)的支持\r\n### [2a9656e](https://github.com/stevei5mc/NewTipsVariables/commit/2a9656e5ea9a77a1c9344edf00163ab8a188ce55)\r\n1. 补全变量文档\r\n2. 删除一下空行\r\n3. 对加载相对应插件变量的代码进行调整\r\n### [8501ec7](https://github.com/stevei5mc/NewTipsVariables/commit/8501ec72afe61edf22d375c9ec64fde57c9fc4c5)\r\n1. 添加变量\r\n    - {Player-Yaw}\r\n    - {Player-Pitch}\r\n2. 修改doc文档\r\n### [dce4443](https://github.com/stevei5mc/NewTipsVariables/commit/dce4443c8f8f5dc59f2508cb107926d2ee19d4fa)\r\n1. 删除变量文档中多余的字符\r\n2. 修改命令提示\r\n3. 进一步完善HealthAPI相关变量\r\n### [3e97dd8](https://github.com/stevei5mc/NewTipsVariables/commit/3e97dd8c1c90592275c59c53b004a8fd9c0af3ff)\r\n1. 添加两个插件的变量支持\r\n    - LevelAwakenSystem\r\n    - RSWeapon\r\n### [f423e01](https://github.com/stevei5mc/NewTipsVariables/commit/f423e01c11d267fd90949e35f06da233f7be9826)\r\n1. 补全变量文档\r\n2. 对变量文档进行修改\r\n3. 对代码进行调整\r\n### [84cc577](https://github.com/stevei5mc/NewTipsVariables/commit/84cc577048a23f3894ebde1dba99398c713d1ced)\r\n1. 添加变量{Player-HeadYaw}\r\n2. 调整代码\r\n### [c32cd36](https://github.com/stevei5mc/NewTipsVariables/commit/c32cd363f320993f38e413cc7aadd1b2ed7af51a)\r\n1. 补全变量文档\r\n### [c05a3f3](https://github.com/stevei5mc/NewTipsVariables/commit/c05a3f34fb299e454f5298ce3259145cd9ef783d)\r\n1. 修改前置插件的下载地址(提示)\r\n2. 调整代码\r\n### [b72b8ca](https://github.com/stevei5mc/NewTipsVariables/commit/b72b8cacd0809a8280d862d1eb4aba5f0fad3eea)\r\n1. 修改配置文件的注释",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "NewTipsVariables-1.0.0-beta8.jar",
+          "primary": true,
+          "size": 33667,
+          "url": "https://github.com/stevei5mc/NewTipsVariables/releases/download/1.0.0-beta8/NewTipsVariables-1.0.0-beta8.jar"
+        }
+      ],
+      "name": "1.0.0-beta8",
+      "prerelease": false,
+      "published_at": 1713674479,
+      "version": "1.0.0-beta8"
+    },
+    {
+      "changelog": "# **1.0.0-beta7**\n## **注意事项：本次更新需要删除player.yml来更新配置文件**\n#### [d853ac4](https://github.com/stevei5mc/NewTipsVariables/commit/d853ac47257694d34ae1d59cb99f31509b9822a1)\n> 添加debug功能\n#### [e39629a](https://github.com/stevei5mc/NewTipsVariables/commit/e39629afa292c0871057d55a0b013ef794bdbaae)\n> 将部分信息归入debug信息\n#### [ee1c1aa](https://github.com/stevei5mc/NewTipsVariables/commit/ee1c1aacb0245a3fd32f22395ec8d5dcd96e7a77)\n> 修复一出错误  \n> 调整代码\n#### [0c285a1](https://github.com/stevei5mc/NewTipsVariables/commit/0c285a158ff2770a36daf4c710ad7c9a5bedb0c9)\n> 添加变量:  \n>> {Player-World}  \n>> {WorldOnline@世界名}\n#### [7b192e3](https://github.com/stevei5mc/NewTipsVariables/commit/7b192e3d56c51f2dad65d52669f60c41acf801f5) [adce148](https://github.com/stevei5mc/NewTipsVariables/commit/adce148eab564e9b8eda4dd0a2026037029fea17)\n> 添加和支持语言文件\n#### [287d375](https://github.com/stevei5mc/NewTipsVariables/commit/287d375cf9e7866ecaaff45d453010e055deca98)\n> 调整一些变量的配置项  \n> **注意! 需要删除player.yml再开服来获取最新配置**\n#### [68df138](https://github.com/stevei5mc/NewTipsVariables/commit/68df13875140a7c1a8dcad192379ea04fab91f4a)\n> 改动一些变量内容的判断方式\n#### [8e8a218](https://github.com/stevei5mc/NewTipsVariables/commit/8e8a218d3b55c7f632bd7a82099fcde5d5b6e8b7)\n> 移除无用代码\n#### [39e3580](https://github.com/stevei5mc/NewTipsVariables/commit/39e3580148dc6fda6a21ca776c371942bcd11c4d)\n> 新增变量\n>> {Player-Controls}\n#### [8858721](https://github.com/stevei5mc/NewTipsVariables/commit/88587212c5619e4929c451db653340ef554765e7)\n> 调整代码  \n> 移除部分debug信息",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "NewTipsVariables-1.0.0-beta7.jar",
+          "primary": true,
+          "size": 22420,
+          "url": "https://github.com/stevei5mc/NewTipsVariables/releases/download/1.0.0-beta7/NewTipsVariables-1.0.0-beta7.jar"
+        }
+      ],
+      "name": "1.0.0-beta7",
+      "prerelease": false,
+      "published_at": 1710997001,
+      "version": "1.0.0-beta7"
+    },
+    {
+      "changelog": "# V1.0.0-beta6\r\n对配置文件进行支持",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "NewTipsVariables-1.0.0-beta6.jar",
+          "primary": true,
+          "size": 20509,
+          "url": "https://github.com/stevei5mc/NewTipsVariables/releases/download/1.0.0-beta6/NewTipsVariables-1.0.0-beta6.jar"
+        }
+      ],
+      "name": "Release V1.0.0-beta6",
+      "prerelease": false,
+      "published_at": 1707319241,
+      "version": "1.0.0-beta6"
+    },
+    {
+      "changelog": "# **V1.0.0-beta3**\r\n支持下列插件的变量\r\n> [EconomyAPI](https://github.com/Nukkit-coders/EconomyAPI) [OreArea](https://github.com/SmallasWater/OreArea) [playerPoints](https://github.com/SmallasWater/PlayerPoints) [RSTask](https://github.com/MemoriesOfTime/RSTask)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "NewTipsVariables-1.0.0-beta3.jar",
+          "primary": true,
+          "size": 18036,
+          "url": "https://github.com/stevei5mc/NewTipsVariables/releases/download/1.0.0-beta3/NewTipsVariables-1.0.0-beta3.jar"
+        }
+      ],
+      "name": "Release V1.0.0-beta3",
+      "prerelease": false,
+      "published_at": 1707046826,
+      "version": "1.0.0-beta3"
+    },
+    {
+      "changelog": "# V1.0.0-beta2\r\n#### [78a166c](https://github.com/stevei5mc/NewTipsVariables/commit/78a166c055250c7b422353a5c03a354c96bd4da6)  \r\n> 添加变量 {PlayerUI}\r\n#### [074c35a](https://github.com/stevei5mc/NewTipsVariables/commit/834ff02df8e75d3b413893d836bed84e9)\r\n> 添加变量:  \r\n> {deviceOS} {PlayerUi} {PlayerLang}  {PlayerUuid}\r\n#### [debb5b1](https://github.com/stevei5mc/NewTipsVariables/commit/debb5b1b133d98930bbcbd4d24af5d140f393df2)\r\n> 修改变量名\r\n> {xp} -> {PlayerXp} , {deviceOS} ->{DeviceOs}\r\n> 添加变量\r\n> {PlayerPing} {PlayerFood} {PlayerHealth} {ServerTps}\r\n#### [16a0082](https://github.com/stevei5mc/NewTipsVariables/commit/16a00821256bbcfadcb0785dd46d89b31009eed3)\r\n> 修改变量名:\r\n> 由于改动变量过多,所以请到README查看",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "NewTipsVariables-1.0.0-beta2.jar",
+          "primary": true,
+          "size": 10909,
+          "url": "https://github.com/stevei5mc/NewTipsVariables/releases/download/1.0.0-beta2/NewTipsVariables-1.0.0-beta2.jar"
+        }
+      ],
+      "name": "Release V1.0.0-beta2",
+      "prerelease": false,
+      "published_at": 1706353539,
+      "version": "1.0.0-beta2"
+    },
+    {
+      "changelog": "V1.0.0-beta1\r\n[+]添加变量 (详情请看变量文档)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "NewTipsVariables-1.0.0-beta1.jar",
+          "primary": true,
+          "size": 7490,
+          "url": "https://github.com/stevei5mc/NewTipsVariables/releases/download/1.0.0-beta1/NewTipsVariables-1.0.0-beta1.jar"
+        }
+      ],
+      "name": "Release V1.0.0-beta1",
+      "prerelease": false,
+      "published_at": 1705378878,
+      "version": "1.0.0-beta1"
+    }
+  ]
+}

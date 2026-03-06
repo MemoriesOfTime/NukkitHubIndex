@@ -1,0 +1,48 @@
+{
+  "api_version": "1.0.9",
+  "authors": [],
+  "categories": [],
+  "created_at": 1576575072,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "EasyMySQL",
+      "version_range": ""
+    }
+  ],
+  "description": "<a href=\"https://github.com/SmallasWater/PlayerPoints/releases/latest\" alt=\"Latest release\">\n    <img src=\"https://img.shields.io/github/v/release/SmallasWater/PlayerPoints?include_prereleases\" alt=\"Latest release\">\n</a>\n<br>\n \n\n\n#PlayerPoints\n\n点券系统",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
+  "id": "SmallasWater/PlayerPoints",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "name": "playerPoints",
+  "server_version": "",
+  "source": "https://github.com/SmallasWater/PlayerPoints",
+  "stars": 3,
+  "summary": "",
+  "updated_at": 1701757005,
+  "versions": [
+    {
+      "changelog": "v1.1.7\r\n对接 EasyMySQL 2.0.3版本\r\n\r\nv1.1.6\r\n对接 MySql数据库 （需要EasyMySql前置插件）\r\n对接 McRmb\r\n\r\nv1.0.8\r\n增加存储类型判断\r\n增加\r\nv1.0.7\r\n优化排行榜显示",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "PlayerPoints_v1.1.7.jar",
+          "primary": true,
+          "size": 51980,
+          "url": "https://github.com/SmallasWater/PlayerPoints/releases/download/v1.1.7/PlayerPoints_v1.1.7.jar"
+        }
+      ],
+      "name": "1.1.7",
+      "prerelease": false,
+      "published_at": 1576575247,
+      "version": "v1.1.7"
+    }
+  ]
+}

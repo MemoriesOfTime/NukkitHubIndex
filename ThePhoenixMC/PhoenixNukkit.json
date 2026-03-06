@@ -1,0 +1,25 @@
+{
+  "api_version": "1.0.6",
+  "authors": [],
+  "categories": [],
+  "created_at": 1517062182,
+  "dependencies": [],
+  "description": "<h1 align=\"center\">\r\n  <br>\r\n  <img src=\"https://avatars0.githubusercontent.com/u/35197080?s=400&u=289914ca504d80656a3cdb9646342c76666e2c0b&v=4\" alt=\"Phoenix\" width=\"200\"><img src=\"https://raw.githubusercontent.com/NukkitX/Nukkit/master/.github/images/logo.png\" alt=\"Phoenix\" width=\"200\"></a>\r\n  <br>\r\n  Phoenix Nukkit\r\n  <br>\r\n</h1>\r\n\r\nA Nukkit implementation of the Phoenix API.\r\n\r\n[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f29028f92726402cad6e579d1594d903)](https://app.codacy.com/app/PhoenixMC/PhoenixNukkit?utm_source=github.com&utm_medium=referral&utm_content=ThePhoenixMC/PhoenixNukkit&utm_campaign=Badge_Grade_Dashboard)\n [![Build Status](https://travis-ci.org/ThePhoenixMC/PhoenixNukkit.svg?branch=master)](https://travis-ci.org/ThePhoenixMC/PhoenixNukkit)\r\n[![Gitter](https://camo.githubusercontent.com/da2edb525cde1455a622c58c0effc3a90b9a181c/68747470733a2f2f6261646765732e6769747465722e696d2f4a6f696e253230436861742e737667)](https://gitter.im/ThePhoenixMC)\r\n[![GitHub forks](https://img.shields.io/github/forks/ThePhoenixMC/PhoenixNukkit.svg?style=flat-square&label=Fork)](https://github.com/ThePhoenixMC/PhoenixAPI/fork)\r\n![GitHub stars](https://img.shields.io/github/stars/ThePhoenixMC/PhoenixNukkit.svg?style=flat-square&label=Stars)\r\n[![LICENSE](https://img.shields.io/github/license/ThePhoenixMC/PhoenixNukkit.svg)](LICENSE)\r\n\r\n\r\n\r\n# Requirements\r\n\r\n-  Java 1.8 or higher\r\n-  Maven\r\n\r\n# Cloning\r\nThe following steps will ensure your project is cloned properly.\r\n\r\n ```\r\ngit clone  --recursive https://github.com/ThePhoenixMC/PhoenixNukkit.git\r\n```\r\n\r\n## Updating \r\nThe following steps will update your clone with the official repo.\r\n\r\n```\r\ngit pull\r\ngit submodule update --recursive\r\n```\r\n# Building\r\n\r\n1.  Cloning project\r\n2. Building:\r\n```\r\n./mvnw clean install\r\n```\r\nYou can find the compiled JAR files in `PhoenixNukkit/target` directory.\r\n\r\n# Running\r\n\r\nAfter building the project, drop `PhoenixNukkit-x.x.x-x-x.x-x.jar' to your server's plugin directory, and then restart your server.\r\n\r\n-  You can put your Phoenix Module to 'modules' directory.\r\n- The configuration files of the modules is under 'config' directory.\r\n\r\n\r\n# Contributing\r\n\r\nSee [CONTRIBUTING](https://github.com/ThePhoenixMC/PhoenixNukkit/blob/master/CONTRIBUTING.md).\r\n\r\n# License\r\n\r\nThis project is licensed under the [MIT License](https://github.com/ThePhoenixMC/PhoenixNukkit/blob/master/LICENSE).\r\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/35197080?v=4",
+  "id": "ThePhoenixMC/PhoenixNukkit",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "name": "PhoneixFramework",
+  "server_version": "",
+  "source": "https://github.com/ThePhoenixMC/PhoenixNukkit",
+  "stars": 0,
+  "summary": "",
+  "updated_at": 1648492340,
+  "versions": []
+}

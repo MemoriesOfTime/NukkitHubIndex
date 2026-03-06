@@ -1,0 +1,41 @@
+{
+  "api_version": "1.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1682491256,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "ScoreboardPlugin",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "Tips",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "Ghosty",
+      "version_range": ""
+    }
+  ],
+  "description": "# GameAPI",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
+  "id": "glorydark/GameAPI",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "name": "GameAPI",
+  "server_version": "",
+  "source": "https://github.com/glorydark/GameAPI",
+  "stars": 3,
+  "summary": "GameAPI",
+  "updated_at": 1771857230,
+  "versions": []
+}

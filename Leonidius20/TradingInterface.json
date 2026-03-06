@@ -1,0 +1,124 @@
+{
+  "api_version": "1.0.8",
+  "authors": [],
+  "categories": [],
+  "created_at": 1534104396,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "EconomyAPI",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "required",
+      "plugin_id": "DbLib",
+      "version_range": ""
+    }
+  ],
+  "description": "# Trading Interface\n![cover](https://raw.githubusercontent.com/Leonidius20/TradingInterface/master/screenshots/cover.png)\n\nShop system with a graphical interface for [NukkitX][nukkitx] server software for Minecraft Bedrock Edition!\n\n## Features:\n-   Buying and selling items & shop management through an intuitive interface;\n-   Support for items with enchantments, custom names & lores;\n-   The list of items, available for buying, is divided into categories for convenience;\n-   Temporary discounts for items (which expire after a set time);\n-   Custom translations of items' names (for displaying in the shop).\n\n## Installation:\n-   Make sure that [EconomyAPI][economy] and [DbLib][dblib] are installed on your server;\n-   Place the plugin's _.jar_ file into _plugins_ folder on your server;\n-   Launch the server and set up the plugin through its interface.\n\n## Setting up:\nShop management functions are available for players with `shop.edit` permission (operators have it by default). Players with this permission will see management buttons in the interface.\n\n## Usage:\nTo open up the shop's interface type `/shop` into the chat.\n\n## Translations\nIf the plugin is not translated into the language of your choosing, a file called `<your_lang>.lng`, where `<your_lang>` is the three-letter ID of your language, will be created in the plugin's data folder. It will contain text strings in the format of `key: value`, where `key` is the string's identifier and `value` is the string itself. Replace values in English with the values in your language, and these new strings will be used by the plugin. You can also start a pull request, placing `<your_lang>.lng` into `src/main/resources/lang`, and your translation may officially become a part of the plugin.\n\n## Building from sources\n`mvn clean package`\n\n## Links\n-   [Trading Interface on nukkitx.com](https://nukkitx.com/resources/trading-interface.113/)\n-   [Trading Interface on nukkit.ru](http://forums.voxelwind.com/resources/trading-interface.144/)\n\n[economy]: https://github.com/EconomyS/EconomyAPI\n[dblib]: https://github.com/fromgate/DbLib\n[nukkitx]: http://github.com/NukkitX/Nukkit\n",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-03-06",
+      "description": "",
+      "title": "cover",
+      "url": "https://raw.githubusercontent.com/Leonidius20/TradingInterface/master/screenshots/cover.png"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/25536411?v=4",
+  "id": "Leonidius20/TradingInterface",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "name": "Trading_Interface",
+  "server_version": "",
+  "source": "https://github.com/Leonidius20/TradingInterface",
+  "stars": 9,
+  "summary": "Shop system based on interface.",
+  "updated_at": 1722707852,
+  "versions": [
+    {
+      "changelog": "Warning! Please backup `buyList.yml`, `sellList.yml` and `customItemNames.yml` before installing this update.\r\nNote! Starting with version 2.0.0 the plugin depends on [DbLib](https://github.com/fromgate/DbLib).\r\n\r\n- Added support for items with enchantments, custom names and lores\r\n- Temporary discounts, which expire after a set time\r\n- Revamped interface\r\n\r\nNote! Starting with version 2.0.0 the plugin stores items in a database. When you first launch an update, `.yml` config files will be converted into the database format and deleted. Existing discounts will remain eternal after the conversion, but you will not be able to create eternal discounts anymore.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "TradingInterface.jar",
+          "primary": true,
+          "size": 128014,
+          "url": "https://github.com/Leonidius20/TradingInterface/releases/download/2.0.0/TradingInterface.jar"
+        }
+      ],
+      "name": "Trading Interface 2.0.0",
+      "prerelease": false,
+      "published_at": 1598273439,
+      "version": "2.0.0"
+    },
+    {
+      "changelog": "- Fixed the bug which allowed to receive free money by selecting an item to sell and dropping it during transition between windows;\r\n- Added Chinese translation (thanks to Anders233). ",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "TradingInterface.jar",
+          "primary": true,
+          "size": 82679,
+          "url": "https://github.com/Leonidius20/TradingInterface/releases/download/1.0.3/TradingInterface.jar"
+        }
+      ],
+      "name": "Trading Interface 1.0.3",
+      "prerelease": false,
+      "published_at": 1597777915,
+      "version": "1.0.3"
+    },
+    {
+      "changelog": "- Fixed money not adding after selling an item.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "TradingInterface.jar",
+          "primary": true,
+          "size": 78090,
+          "url": "https://github.com/Leonidius20/TradingInterface/releases/download/1.0.2/TradingInterface.jar"
+        }
+      ],
+      "name": "Trading Interface 1.0.2",
+      "prerelease": false,
+      "published_at": 1538124516,
+      "version": "1.0.2"
+    },
+    {
+      "changelog": "- Fixed an error, which appeard when player responded to a form created by another plugin.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "TradingInterface.jar",
+          "primary": true,
+          "size": 77960,
+          "url": "https://github.com/Leonidius20/TradingInterface/releases/download/1.0.1/TradingInterface.jar"
+        }
+      ],
+      "name": "Trading Interface 1.0.1",
+      "prerelease": false,
+      "published_at": 1534711677,
+      "version": "1.0.1"
+    },
+    {
+      "changelog": "The first release of Trading Interface.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "TradingInterface.jar",
+          "primary": true,
+          "size": 78028,
+          "url": "https://github.com/Leonidius20/TradingInterface/releases/download/1.0.0/TradingInterface.jar"
+        }
+      ],
+      "name": "Trading Interface 1.0.0",
+      "prerelease": false,
+      "published_at": 1534106961,
+      "version": "1.0.0"
+    }
+  ]
+}

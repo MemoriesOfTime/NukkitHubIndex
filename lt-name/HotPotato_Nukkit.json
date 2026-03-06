@@ -1,0 +1,86 @@
+{
+  "api_version": "1.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1589104833,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "MemoriesOfTime-GameCore",
+      "version_range": ""
+    }
+  ],
+  "description": "# HotPotato  \n[![License](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](LICENSE)\n![Java CI](https://github.com/lt-name/HotPotato_Nukkit/workflows/Java%20CI/badge.svg)\n[![MCBBS](https://img.shields.io/badge/Link-MCBBS-brightgreen)](https://www.mcbbs.net/thread-1042842-1-1.html)  \n\n> HotPotato是一个简单的小游戏插件，在游戏中玩家需要在倒计时结束前将手中的烤马铃薯交给其他玩家，在倒计时结束后手中持有烤马铃薯的玩家将会被淘汰\n\n## 介绍\n请前往插件介绍贴查看！  \n[mcbbs](https://www.mcbbs.net/thread-1042842-1-1.html)  \n[minebbs](https://www.minebbs.com/resources/hotpotato.1237/)\n\n## 下载\n[Jenkins](https://ci.lt-name.cn/view/LT_Name/job/HotPotato/)  \n[GitHub-Actions](https://github.com/lt-name/HotPotato_Nukkit/actions)",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+  "id": "lt-name/HotPotato_Nukkit",
+  "license": {
+    "id": "AGPL-3.0",
+    "name": "GNU Affero General Public License v3.0",
+    "url": "https://spdx.org/licenses/AGPL-3.0.html"
+  },
+  "links": null,
+  "name": "HotPotato",
+  "server_version": "",
+  "source": "https://github.com/lt-name/HotPotato_Nukkit",
+  "stars": 5,
+  "summary": "",
+  "updated_at": 1703405569,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HotPotato-1.2.1-PM1E.jar",
+          "primary": true,
+          "size": 109629,
+          "url": "https://github.com/lt-name/HotPotato_Nukkit/releases/download/v1.2.1/HotPotato-1.2.1-PM1E.jar"
+        },
+        {
+          "filename": "HotPotato-1.2.1.jar",
+          "primary": true,
+          "size": 109471,
+          "url": "https://github.com/lt-name/HotPotato_Nukkit/releases/download/v1.2.1/HotPotato-1.2.1.jar"
+        }
+      ],
+      "name": "1.2.1",
+      "prerelease": false,
+      "published_at": 1672225434,
+      "version": "v1.2.1"
+    },
+    {
+      "changelog": "添加boss血条显示爆炸倒计时",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HotPotato-1.1.2.jar",
+          "primary": true,
+          "size": 103073,
+          "url": "https://github.com/lt-name/HotPotato_Nukkit/releases/download/v1.1.2/HotPotato-1.1.2.jar"
+        }
+      ],
+      "name": "v1.1.2",
+      "prerelease": false,
+      "published_at": 1648123749,
+      "version": "v1.1.2"
+    },
+    {
+      "changelog": "* 添加聊天限制\r\n* 添加自动更新",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HotPotato-v1.0.1.jar",
+          "primary": true,
+          "size": 86203,
+          "url": "https://github.com/lt-name/HotPotato_Nukkit/releases/download/v1.0.1/HotPotato-v1.0.1.jar"
+        }
+      ],
+      "name": "v1.0.1",
+      "prerelease": false,
+      "published_at": 1595559240,
+      "version": "v1.0.1"
+    }
+  ]
+}

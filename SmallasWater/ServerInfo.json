@@ -1,0 +1,31 @@
+{
+  "api_version": "1.0.11",
+  "authors": [],
+  "categories": [],
+  "created_at": 1626227329,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "MemoriesOfTime-GameCore",
+      "version_range": ""
+    }
+  ],
+  "description": "# **ServerInfo**\n[下载地址](https://motci.cn/job/ServerInfo/)  \n\n- Nukkit服务器的跨服菜单\n- 显示服务器的在线人数\n\n## 使用介绍\n- **命令: /trs**\n- **在启用多服务器转移时建议看完注意事项**\n\n### 配置文件\n\n<details>\n<summary>config.yml</summary>\n\n```yml\n# 服务器列表\nserver-info:\n  - name: \"测试服务器 #1\"\n    group: \"测试服务器组\"\n    ip: \"127.0.0.1\"\n    port: 19132\n\n# 服务器信息更新方式 可选: Simple, Details\nUpdateInfoProvide: \"Simple\"\n\n# 在MOTD显示所有服务器的玩家数量总数\nsync-player: false\n\n#服务器关闭时传送到其他服务器\nServerCloseTransfer:\n  enable: false\n  showTitle:\n    title: \"服务器即将关闭!\"\n    subTitle: \"您将会被转移到其他服务器!\"\n  ip: \"127.0.0.1\"\n  port: 19132\n  # 为 true 时将在 ServerList 中寻找可用的服务器进行转移\n  # 为 false 时则会转移到 ServerCloseTransfer.ip&prot 定义的服务器中\n  TransferMode: false\n  # 如果使用 WaterdogPE 则启用该功能\n  use-WaterdogPE: false\n  # 可转移的服务器列表，名称为 server-info 中定义的 name\n  # 例如：name 定义了 lobby1 就填写 lobby1\n  ServerList:\n  - lobby1\n  - lobby2\n```\n\n</details>\n\n### **注意事项**\n- **给出是示例配置文件会省略部分无关的配置项，只会给出跟功能相关的配置项**\n- **在下方会将 `WaterdogPE` 简写为 `WDPE`，仅有部分内容保留 `WaterdogPE` 的写法**\n\n#### 一、**启用多服务器转移注意事项**\n1. **`ServerCloseTransfer.ServerList` 配置的服务器名是在 `server-info` 中定义的，定义的名字为 `lobby1` 就填写 `lobby1`**\n\n- **与 `WDPE` 搭配使用示例在下方给出**\n\n<details>\n<summary>ServerInfo config.yml</summary>\n\n```yml\n# 省略了部分无关的配置项\n\nserver-info:\n  - name: \"lobby1\"\n    group: \"lobby\"\n    ip: \"127.0.0.1\"\n    port: 19201\n  - name: \"lobby2\"\n    group: \"lobby\"\n    ip: \"127.0.0.1\"\n    port: 19202\n\n#服务器关闭时传送到其他服务器\nServerCloseTransfer:\n  enable: true\n  TransferMode: true\n # 可转移的服务器列表，名称为 server-info 中定义的 name\n  # 例如：name 定义了 lobby1 就填写 lobby1\n  ServerList:\n  - lobby1\n  - lobby2\n```\n\n</details>\n\n#### 二、**启用多服务器转移并与 WDPE 搭配使用的注意事项**\n\n1. **`server.properties` 要与本插件的配置文件中的 `server-info` 定义的ip端口一致，才能够正常的使用**\n2. **特别是在与 `WDPE` 搭配使用时子服的 `server.properties` 要与本插件的配置文件中的 `server-info` 定义的ip端口必须一致才能够正常的使用，通常子服的ip是填写成 `127.0.0.1`**\n\n- **示例在下方给出**\n\n<details>\n<summary>lobby1 server.properties</summary>\n\n```properties\nserver-port=19201\nserver-ip=127.0.0.1\n```\n\n</details>\n\n<details>\n<summary>lobby2 server.properties</summary>\n\n```properties\nserver-port=19202\nserver-ip=127.0.0.1\n```\n\n</details>\n\n<details>\n<summary>WDPE config.yml</summary>\n\n```yml\n# 省略了部分无关的配置项\n\nserver-info:\n  - name: \"lobby1\"\n    group: \"lobby\"\n    ip: \"127.0.0.1\"\n    port: 19201\n  - name: \"lobby2\"\n    group: \"lobby\"\n    ip: \"127.0.0.1\"\n    port: 19202\n\n\n#服务器关闭时传送到其他服务器\nServerCloseTransfer:\n  enable: true\n  # 为 true 时将在 ServerList 中寻找可用的服务器进行转移\n  # 为 false 时则会转移到 ServerCloseTransfer.ip&prot 定义的服务器中\n  TransferMode: true\n  # 如果使用 WaterdogPE 则启用该功能\n  use-WaterdogPE: true\n  # 可转移的服务器列表，名称为 server-info 中定义的 name\n  # 例如：name 定义了 lobby1 就填写 lobby1\n  ServerList:\n    - lobby1\n    - lobby2\n```\n\n</details>\n\n#### 三、启用多服务器转移但不搭配 WDPE 来使用****\n1. **服务端的 `server-ip=` 为 `0.0.0.0` 即可**\n2. **因为服务器的ip和port(端口)是判断可供转移的服务器是否为当前服务器的，所以是需要修改 `ServerCloseTransfer.ip` 的ip来实现以防玩家转移原服务器**\n\n```yml\n# 省略了部分无关的配置项\n\nserver-info:\n  - name: \"lobby1\"\n    group: \"lobby\"\n    ip: \"mc.example.com\"\n    port: 19201\n  - name: \"lobby2\"\n    group: \"lobby\"\n    ip: \"mc.example.com\"\n    port: 19202\n\n\n#服务器关闭时传送到其他服务器\nServerCloseTransfer:\n  enable: true\n  ip: \"mc.example.com\"\n  # 为 true 时将在 ServerList 中寻找可用的服务器进行转移\n  # 为 false 时则会转移到 ServerCloseTransfer.ip&prot 定义的服务器中\n  TransferMode: true\n  # 如果使用 WaterdogPE 则启用该功能\n  use-WaterdogPE: false\n  # 可转移的服务器列表，名称为 server-info 中定义的 name\n  # 例如：name 定义了 lobby1 就填写 lobby1\n  ServerList:\n    - lobby1\n    - lobby2\n```\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
+  "id": "SmallasWater/ServerInfo",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "name": "ServerInfo",
+  "server_version": "",
+  "source": "https://github.com/SmallasWater/ServerInfo",
+  "stars": 6,
+  "summary": "",
+  "updated_at": 1766143417,
+  "versions": []
+}

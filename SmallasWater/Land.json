@@ -1,0 +1,176 @@
+{
+  "api_version": "1.0.9",
+  "authors": [],
+  "categories": [],
+  "created_at": 1585116245,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "AutoUpData",
+      "version_range": ""
+    }
+  ],
+  "description": "<a href=\"https://github.com/SmallasWater/Land/releases/latest\" alt=\"Latest release\">\n    <img src=\"https://img.shields.io/github/v/release/SmallasWater/Land?include_prereleases\" alt=\"Latest release\">\n</a>\n\n# Land\n### 领地系统\n#### 功能:\n  - 自定义圈地提示\n  - 自定义玩家领地上限\n  - 自定义禁止圈地世界\n  - 自定义购买领地价格\n  - 领地成员独立权限\n  - 立体领地\n  - GUI 操作\n  - 领地套娃?(主领地内可设置数个子领地(配置可更改))\n  - 领地粒子区域显示\n  - 领地出售\n  - 领地赠送\n  - 领地寄售\n  - 自定义经济核心\n  - 领地GUI查找\n  - 使用工具圈地\n\n#### 领地权限:\n   - 禁止破坏\n   - 禁止放置 \n   - 禁止传送\n   - 禁止进入\n   - 禁止丢弃物品\n   - 禁止使用箱子 熔炉 \n   - 禁止PVP\n   - 禁止伤害生物\n   - 使用桶\n   - 使用打火石\n   - 创建子领地\n   - 使用展示框\n   - 告示牌编辑\n\n\n#### 使用方法:\n  - 安装前置 经济核心\n  - 插件指令: /la help\n    - ① 玩家输指令/la pos <1/2> 确定两点\n    - ② 玩家手持圈地工具(默认木锄) 点击方块进行圈地\n\n  - 之后执行 /la create 名称 即可创建领地 (领地范围为长方体)\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
+  "id": "SmallasWater/Land",
+  "license": {
+    "id": "GPL-2.0",
+    "name": "GNU General Public License v2.0",
+    "url": "https://spdx.org/licenses/GPL-2.0.html"
+  },
+  "links": null,
+  "name": "Land",
+  "server_version": "",
+  "source": "https://github.com/SmallasWater/Land",
+  "stars": 8,
+  "summary": "",
+  "updated_at": 1771229168,
+  "versions": [
+    {
+      "changelog": "修复自动领地范围显示报错问题",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Land_v1.8.7.jar",
+          "primary": true,
+          "size": 182449,
+          "url": "https://github.com/SmallasWater/Land/releases/download/v1.8.7/Land_v1.8.7.jar"
+        }
+      ],
+      "name": "1.8.7",
+      "prerelease": false,
+      "published_at": 1712745890,
+      "version": "v1.8.7"
+    },
+    {
+      "changelog": "添加自动显示玩家附近领地范围功能",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Land_v1.8.6.jar",
+          "primary": true,
+          "size": 182437,
+          "url": "https://github.com/SmallasWater/Land/releases/download/v1.8.6/Land_v1.8.6.jar"
+        }
+      ],
+      "name": "1.8.6",
+      "prerelease": false,
+      "published_at": 1711632159,
+      "version": "v1.8.6"
+    },
+    {
+      "changelog": "修复nkmot兼容问题",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Land_v1.8.5.jar",
+          "primary": true,
+          "size": 180912,
+          "url": "https://github.com/SmallasWater/Land/releases/download/v1.8.5/Land_v1.8.5.jar"
+        }
+      ],
+      "name": "1.8.5",
+      "prerelease": false,
+      "published_at": 1711545164,
+      "version": "v1.8.5"
+    },
+    {
+      "changelog": "添加编辑告示牌权限设置",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Land_v1.8.4.jar",
+          "primary": true,
+          "size": 180825,
+          "url": "https://github.com/SmallasWater/Land/releases/download/v1.8.4/Land_v1.8.4.jar"
+        }
+      ],
+      "name": "1.8.4",
+      "prerelease": false,
+      "published_at": 1688653068,
+      "version": "v1.8.4"
+    },
+    {
+      "changelog": "资源包加载优化",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Land_v1.8.3.jar",
+          "primary": true,
+          "size": 180380,
+          "url": "https://github.com/SmallasWater/Land/releases/download/v1.8.3/Land_v1.8.3.jar"
+        }
+      ],
+      "name": "1.8.3",
+      "prerelease": false,
+      "published_at": 1679145050,
+      "version": "v1.8.3"
+    },
+    {
+      "changelog": "优化活塞判断",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Land_v1.8.1.jar",
+          "primary": true,
+          "size": 152489,
+          "url": "https://github.com/SmallasWater/Land/releases/download/v1.8.1/Land_v1.8.1.jar"
+        }
+      ],
+      "name": "v1.8.1",
+      "prerelease": false,
+      "published_at": 1663336605,
+      "version": "v1.8.1"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Land_v1.8.0.jar",
+          "primary": true,
+          "size": 151273,
+          "url": "https://github.com/SmallasWater/Land/releases/download/v1.8.0/Land_v1.8.0.jar"
+        }
+      ],
+      "name": "v1.8.0",
+      "prerelease": false,
+      "published_at": 1663245991,
+      "version": "v1.8.0"
+    },
+    {
+      "changelog": "v1.7.4\r\n修复使用工具圈地出现的bug\r\n\r\nv1.7.3\r\n修复领地权限bug\r\n\r\nv1.7.2\r\n修复木桶报错bug\r\n\r\nv1.7.1\r\n修复访客权限bug\r\n修复潜影盒 木桶可以开启bug\r\n修复高炉 烟熏炉可以被打开bug\r\n\r\nv1.7.0\r\n禁止领地内任何形式交互\r\n\r\nv1.6.9\r\n增加领地传送延时是否开启功能\r\n调整api\r\n\r\nv1.6.8\r\n移除禁止领地范围外三格放置活塞\r\n增加领地范围外禁止活塞活动\r\n修复玩家利用活塞将方块推入领地bug\r\n\r\nv1.6.7\r\n 增加禁止领地范围外3格放置活塞设置（防止玩家偷物品）",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Land_v1.7.4.jar",
+          "primary": true,
+          "size": 143915,
+          "url": "https://github.com/SmallasWater/Land/releases/download/v1.7.4/Land_v1.7.4.jar"
+        }
+      ],
+      "name": "v1.7.4",
+      "prerelease": false,
+      "published_at": 1628005935,
+      "version": "v1.7.4"
+    },
+    {
+      "changelog": "- v1.6.6\r\n  - 修复无法踢出玩家bug\r\n\r\n- v1.6.3\r\n  - 增加领地分页功能\r\n   - 修复子领地寄售的时候界面bug\r\n   - 修复领地寄售信息 %message% 变量问题\r\n\r\n- v1.5.5\r\n 修复拓展时出现的领地缩小bug\r\n\r\n- v1.5.4\r\n 进行大范围优化\r\n 修复领地拓展问题\r\n\r\n- v1.5.0\r\n 修复通配符问题\r\n- v1.4.8\r\n  修复玩家拓展领地出现的bug\r\n- v1.4.7\r\n  修复玩家无法设置领地出售金钱bug\r\n - v1.4.6\r\n  接入 AutoUpData 自动更新系统\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Land_v1.6.6.jar",
+          "primary": true,
+          "size": 140553,
+          "url": "https://github.com/SmallasWater/Land/releases/download/v1.6.6/Land_v1.6.6.jar"
+        }
+      ],
+      "name": "v1.6.6",
+      "prerelease": false,
+      "published_at": 1595482680,
+      "version": "v1.6.6"
+    }
+  ]
+}

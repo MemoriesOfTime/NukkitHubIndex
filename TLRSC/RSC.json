@@ -1,0 +1,58 @@
+{
+  "api_version": "1.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1509738875,
+  "dependencies": [],
+  "description": "# Remote Server Control - Nukkit Version\n[![CircleCI](https://circleci.com/gh/TLRSC/RSC.svg?style=svg)](https://circleci.com/gh/TLRSC/RSC)\n\n### Build:\n<pre>\nmvn clean package\n</pre>\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/33370594?v=4",
+  "id": "TLRSC/RSC",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "name": "RSC",
+  "server_version": "",
+  "source": "https://github.com/TLRSC/RSC",
+  "stars": 2,
+  "summary": "",
+  "updated_at": 1556897559,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "RSC-1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 7880768,
+          "url": "https://github.com/TLRSC/RSC/releases/download/0.2.1-ALPHA/RSC-1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "0.2.1-ALPHA",
+      "prerelease": false,
+      "published_at": 1515702249,
+      "version": "0.2.1-ALPHA"
+    },
+    {
+      "changelog": "- Code refactoring",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "RSC-1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 7786287,
+          "url": "https://github.com/TLRSC/RSC/releases/download/0.2-ALPHA/RSC-1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "0.2-ALPHA",
+      "prerelease": false,
+      "published_at": 1509787261,
+      "version": "0.2-ALPHA"
+    }
+  ]
+}

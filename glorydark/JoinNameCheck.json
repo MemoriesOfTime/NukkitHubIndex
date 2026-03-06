@@ -1,0 +1,25 @@
+{
+  "api_version": "1.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1706380247,
+  "dependencies": [],
+  "description": "",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
+  "id": "glorydark/JoinNameCheck",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "name": "JoinNameCheck",
+  "server_version": "",
+  "source": "https://github.com/glorydark/JoinNameCheck",
+  "stars": 0,
+  "summary": "JoinNameCheck",
+  "updated_at": 1706427720,
+  "versions": []
+}

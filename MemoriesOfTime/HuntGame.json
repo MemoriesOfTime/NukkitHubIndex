@@ -1,0 +1,256 @@
+{
+  "api_version": "1.0.9",
+  "authors": [],
+  "categories": [],
+  "created_at": 1594780940,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "ScoreboardPlugin",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "ScoreboardAPI",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "Tips",
+      "version_range": ""
+    }
+  ],
+  "description": "# HuntGame\n[![License](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](LICENSE)\n![Java CI](https://github.com/MemoriesOfTime/HuntGame/workflows/Java%20CI/badge.svg?branch=master)\n[![Discord](https://img.shields.io/badge/Link-Discord-blue.svg)](https://discord.gg/pJjQDQC)    \n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/62042238?v=4",
+  "id": "MemoriesOfTime/HuntGame",
+  "license": {
+    "id": "AGPL-3.0",
+    "name": "GNU Affero General Public License v3.0",
+    "url": "https://spdx.org/licenses/AGPL-3.0.html"
+  },
+  "links": null,
+  "name": "HuntGame",
+  "server_version": "",
+  "source": "https://github.com/MemoriesOfTime/HuntGame",
+  "stars": 3,
+  "summary": "",
+  "updated_at": 1735716629,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuntGame-1.3.0-PM1E.jar",
+          "primary": true,
+          "size": 173511,
+          "url": "https://github.com/MemoriesOfTime/HuntGame/releases/download/1.3.0/HuntGame-1.3.0-PM1E.jar"
+        },
+        {
+          "filename": "HuntGame-1.3.0.jar",
+          "primary": true,
+          "size": 171969,
+          "url": "https://github.com/MemoriesOfTime/HuntGame/releases/download/1.3.0/HuntGame-1.3.0.jar"
+        }
+      ],
+      "name": "1.3.0",
+      "prerelease": false,
+      "published_at": 1686489726,
+      "version": "1.3.0"
+    },
+    {
+      "changelog": "1.1.0-PM1E",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuntGame-1.1.0-PM1E.jar",
+          "primary": true,
+          "size": 134213,
+          "url": "https://github.com/MemoriesOfTime/HuntGame/releases/download/1.1.0-PM1E/HuntGame-1.1.0-PM1E.jar"
+        }
+      ],
+      "name": "v1.1.0-PM1E",
+      "prerelease": false,
+      "published_at": 1630379114,
+      "version": "1.1.0-PM1E"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuntGame-1.1.0.jar",
+          "primary": true,
+          "size": 134159,
+          "url": "https://github.com/MemoriesOfTime/HuntGame/releases/download/1.1.0/HuntGame-1.1.0.jar"
+        }
+      ],
+      "name": "v1.1.0",
+      "prerelease": false,
+      "published_at": 1630379078,
+      "version": "1.1.0"
+    },
+    {
+      "changelog": "1.0.0-PM1E",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuntGame-1.0.0-PM1E.jar",
+          "primary": true,
+          "size": 133530,
+          "url": "https://github.com/MemoriesOfTime/HuntGame/releases/download/1.0.0-PM1E/HuntGame-1.0.0-PM1E.jar"
+        }
+      ],
+      "name": "v1.0.0-PM1E",
+      "prerelease": false,
+      "published_at": 1629368061,
+      "version": "1.0.0-PM1E"
+    },
+    {
+      "changelog": "1.0.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuntGame-1.0.0.jar",
+          "primary": true,
+          "size": 133538,
+          "url": "https://github.com/MemoriesOfTime/HuntGame/releases/download/1.0.0/HuntGame-1.0.0.jar"
+        }
+      ],
+      "name": "v1.0.0",
+      "prerelease": false,
+      "published_at": 1629368021,
+      "version": "1.0.0"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BlockHunt-PM1E-v0.0.4.jar",
+          "primary": true,
+          "size": 113799,
+          "url": "https://github.com/MemoriesOfTime/HuntGame/releases/download/0.0.4-PM1E/BlockHunt-PM1E-v0.0.4.jar"
+        }
+      ],
+      "name": "v0.0.4-PM1E",
+      "prerelease": false,
+      "published_at": 1596952222,
+      "version": "0.0.4-PM1E"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BlockHunt-v0.0.4.jar",
+          "primary": true,
+          "size": 113644,
+          "url": "https://github.com/MemoriesOfTime/HuntGame/releases/download/0.0.4/BlockHunt-v0.0.4.jar"
+        }
+      ],
+      "name": "v0.0.4",
+      "prerelease": false,
+      "published_at": 1596952180,
+      "version": "0.0.4"
+    },
+    {
+      "changelog": "fix startroom\r\nadd English(Google Translate)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BlockHunt-PM1E-v0.0.3.jar",
+          "primary": true,
+          "size": 113620,
+          "url": "https://github.com/MemoriesOfTime/HuntGame/releases/download/0.0.3-PM1E/BlockHunt-PM1E-v0.0.3.jar"
+        }
+      ],
+      "name": "v0.0.3-PM1E",
+      "prerelease": false,
+      "published_at": 1595816703,
+      "version": "0.0.3-PM1E"
+    },
+    {
+      "changelog": "fix startroom\r\nadd English(Google Translate)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BlockHunt-v0.0.3.jar",
+          "primary": true,
+          "size": 113456,
+          "url": "https://github.com/MemoriesOfTime/HuntGame/releases/download/0.0.3/BlockHunt-v0.0.3.jar"
+        }
+      ],
+      "name": "v0.0.3",
+      "prerelease": false,
+      "published_at": 1595816379,
+      "version": "0.0.3"
+    },
+    {
+      "changelog": "* add ui\r\n\r\nThis branch is only for Nukkit PetteriM1 Edition!",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BlockHunt-PM1E-v0.0.2.jar",
+          "primary": true,
+          "size": 111275,
+          "url": "https://github.com/MemoriesOfTime/HuntGame/releases/download/0.0.2-PM1E/BlockHunt-PM1E-v0.0.2.jar"
+        }
+      ],
+      "name": "v0.0.2-PM1E",
+      "prerelease": false,
+      "published_at": 1595653037,
+      "version": "0.0.2-PM1E"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BlockHunt-v0.0.2.jar",
+          "primary": true,
+          "size": 111066,
+          "url": "https://github.com/MemoriesOfTime/HuntGame/releases/download/0.0.2/BlockHunt-v0.0.2.jar"
+        }
+      ],
+      "name": "v0.0.2",
+      "prerelease": false,
+      "published_at": 1595649732,
+      "version": "0.0.2"
+    },
+    {
+      "changelog": "This branch is only for Nukkit PetteriM1 Edition!",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BlockHunt-PM1E-v0.0.1.jar",
+          "primary": true,
+          "size": 101794,
+          "url": "https://github.com/MemoriesOfTime/HuntGame/releases/download/0.0.1-PM1E/BlockHunt-PM1E-v0.0.1.jar"
+        }
+      ],
+      "name": "v0.0.1-PM1E",
+      "prerelease": false,
+      "published_at": 1595587193,
+      "version": "0.0.1-PM1E"
+    },
+    {
+      "changelog": "0.0.1",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BlockHunt-v0.0.1.jar",
+          "primary": true,
+          "size": 101802,
+          "url": "https://github.com/MemoriesOfTime/HuntGame/releases/download/0.0.1/BlockHunt-v0.0.1.jar"
+        }
+      ],
+      "name": "v0.0.1",
+      "prerelease": false,
+      "published_at": 1595587032,
+      "version": "0.0.1"
+    }
+  ]
+}

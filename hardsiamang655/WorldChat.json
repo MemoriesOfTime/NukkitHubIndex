@@ -1,0 +1,42 @@
+{
+  "api_version": "1.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1642357358,
+  "dependencies": [],
+  "description": "# WorldChat\nWorldChat plugin for Nukkit\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/54169162?v=4",
+  "id": "hardsiamang655/WorldChat",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "name": "WorldChat",
+  "server_version": "",
+  "source": "https://github.com/hardsiamang655/WorldChat",
+  "stars": 1,
+  "summary": "",
+  "updated_at": 1665203625,
+  "versions": [
+    {
+      "changelog": "WC For Nukkit - Version 1.0.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "WorldChat.jar",
+          "primary": true,
+          "size": 169373,
+          "url": "https://github.com/hardsiamang655/WorldChat/releases/download/WC/WorldChat.jar"
+        }
+      ],
+      "name": "WC - v1.0.0",
+      "prerelease": false,
+      "published_at": 1642689707,
+      "version": "WC"
+    }
+  ]
+}

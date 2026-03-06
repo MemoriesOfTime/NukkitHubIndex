@@ -1,0 +1,90 @@
+{
+  "api_version": "1.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1583406176,
+  "dependencies": [],
+  "description": "# Obsidian  \nObsidian-黑曜石 nk空岛辅助插件  \n#### 已实现功能:  \n - [X] 空桶点击黑曜石还原岩浆  \n - [X] 可设置仅潜行有效  \n - [X] 禁止高空流水/岩浆  \n - [X] 禁止高空流水自定义判断格数  \n - [X] 树苗掉落保底（最后的树叶必掉树苗）  \n - [X] 虚空保护\n    - [X] 玩家掉入虚空拉回\n    - [ ] 物品掉入虚空拉回 \n#### 实验状态的功能:  \n - [X] 允许错误的刷石机（该功能bug多）  \n#### 尚未实现的功能:  ",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+  "id": "lt-name/Obsidian",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "name": "Obsidian",
+  "server_version": "",
+  "source": "https://github.com/lt-name/Obsidian",
+  "stars": 0,
+  "summary": "",
+  "updated_at": 1717295662,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Obsidian_v1.0.8.jar",
+          "primary": true,
+          "size": 14062,
+          "url": "https://github.com/lt-name/Obsidian/releases/download/1.0.8/Obsidian_v1.0.8.jar"
+        }
+      ],
+      "name": "v1.0.8",
+      "prerelease": false,
+      "published_at": 1585196019,
+      "version": "1.0.8"
+    },
+    {
+      "changelog": "加入自动更新功能\r\n拆分监听器，需要时再注册\r\n玩家掉入虚空检测可选同步或异步检测",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Obsidian_v1.0.7.jar",
+          "primary": true,
+          "size": 15654,
+          "url": "https://github.com/lt-name/Obsidian/releases/download/1.0.7/Obsidian_v1.0.7.jar"
+        }
+      ],
+      "name": "v1.0.7",
+      "prerelease": false,
+      "published_at": 1584177476,
+      "version": "1.0.7"
+    },
+    {
+      "changelog": "规范插件命名",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Obsidian_Restore_v1.0.2.jar",
+          "primary": true,
+          "size": 3343,
+          "url": "https://github.com/lt-name/Obsidian/releases/download/1.0.2/Obsidian_Restore_v1.0.2.jar"
+        }
+      ],
+      "name": "Obsidian_Restore_nk",
+      "prerelease": false,
+      "published_at": 1583495453,
+      "version": "1.0.2"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "islandadds_v1.0.1.jar",
+          "primary": true,
+          "size": 3204,
+          "url": "https://github.com/lt-name/Obsidian/releases/download/1.0.1/islandadds_v1.0.1.jar"
+        }
+      ],
+      "name": "ASkyBlock_islandadds_v1.0.1",
+      "prerelease": false,
+      "published_at": 1583411941,
+      "version": "1.0.1"
+    }
+  ]
+}

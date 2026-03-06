@@ -1,0 +1,29 @@
+{
+  "api_version": "1.0.7",
+  "authors": [],
+  "categories": [],
+  "created_at": 1548242316,
+  "dependencies": [],
+  "description": "# JoinMessage  \nQiitaの記事用プラグイン  \n[NukkitプラグインをKotlinで書こう](https://qiita.com/BitterPeaceV/items/1f7603ff9f85d375d20b)\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/44942320?v=4",
+  "id": "BitterPeaceV/JoinMessage",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/BitterPeaceV/JoinMessage",
+    "wiki": ""
+  },
+  "name": "JoinMessage",
+  "server_version": "",
+  "source": "https://github.com/BitterPeaceV/JoinMessage",
+  "stars": 0,
+  "summary": "exsample plugin",
+  "updated_at": 1548308302,
+  "versions": []
+}

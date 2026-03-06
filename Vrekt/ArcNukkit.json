@@ -1,0 +1,234 @@
+{
+  "api_version": "1.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1589428049,
+  "dependencies": [],
+  "description": "# Arc\n\nArc is an experimental anticheat for Nukkit. It is a \"fork\" of my Bukkit version, which you can find on my page. Arc is still in the very early stages of development and as such alot of checks are missing, incomplete or not fully functional yet.\n\nRegardless, The goal of Arc is to be highly performant, configurable and easy to work with. Checks are designed for the smoothest gameplay, while still being very effective. Every check is very customizable and features many vaules within the configuration allowing you to tune exactly how it works within your server.\n\n## Features\n\n#### Configurable\n- Customize checks\n- Customize violations\n- Customize messages\n- Customize punishment\n- And more!\n\n#### Performant\n\nArc is built with performance in mind with every check and feature, and optimizations are constantly being added. In the future, there will be tick/lag watch features and Arc will take into account the server TPS and adjust accordingly.\n\n#### Permissions\n- Permissions for each command\n- Permissions for each check\n- Permissions for check categories\n- Permissions for administrative actions\n\n#### Commands\n- Toggle violations on or off.\n- Toggle debug messages on or off.\n- Cancel a ban that was scheduled by Arc\n- Configuration reloading for easy modification during up-time.\n- Exempt players temporarily on the fly.\n- View check timings\n- View violation history\n- And more!\n\nhttps://github.com/Vrekt/ArcNukkit/wiki/Commands-overview\n\n#### Misc\n\nThe base of Arc is very stable and easy to work with. This allows new features or checks to be implemented easily, or for anybody else to add something!\n\n## Permissions \nArc has a very extensive permissions system. You can choose to bypass all checks, a category all together or a singular check.\n\n*Command access*\n- `arc.commands.all` Allows access to all /arc commands.\n- `arc.commands.base` Allows access to the base /arc command.\n- `arc.commands.toggleviolations` Allows a player to toggle violations.\n- `arc.commands.cancelban` Allows a player to cancel a pending ban.\n- `arc.commands.reloadconfig` Allows a player to reload the Arc configuration.\n- `arc.commands.debug` Allows a player to view debug information with each violation.\n- `arc.commands.timings` Allows a player to view check timings.\n- `arc.commands.violationhistory` Allows a player to view violation history of another player.\n- `arc.commands.summary` Allows a player to view basic information and violations of another player.\n\n*Bypass all checks*\n- `arc.bypass` Allows you to bypass all checks.\n\n*Bypass all checks within a category*\n- `arc.bypass.moving` Allows you to bypass all moving checks.\n\n*Bypass a singular check*\n- `arc.bypass.moving.morepackets` Allows you to bypass the MorePackets check.\n\n*View player violations as they come in*\n- `arc.violations` Allows you to view violations.\n\n## Checks\n\nPlease note not all checks are finished, and not all checks fully block that certain cheat, **YET**\n\n###### Flight\n- Prevents the player from jumping too high.\n- Prevents the player from climbing vines or ladders too fast.\n- Prevents the player from jumping/ascending for too long. (AirJump, Spider, etc)\n- Prevents the player from hovering. (AirStuck, etc)\n- Prevents the player from bouncing really high on slimeblocks\n- work-in-progress\n\n###### Speed\n- Prevents the player from moving too fast in a variety of conditions\n\n###### FastUse\n- Checks if the player is eating or drinking potions too fast.\n\n###### MorePackets\n- Prevents the player from sending too many position packets.\n- Prevents the player from using timer cheats and regeneration.\n- Prevents the player from 'blinking'\n\n###### Nuker\n- Prevents the player from breaking an impossible amount of blocks.\n\n###### FastBreak\n- Prevents the player from breaking blocks too fast.\n\n###### FastClick\n- Prevents the player from clicking/interacting with blocks too fast.\n\n###### KillAura\n- Ensures the player is looking at the entity when attacking.\n\n##### LiquidWalk\n- Prevents the player from walking on water and lava.\n\n## Configuration\n\nOnce Arc is ran at-least once on a server, you can find every configuration value and a explantation of what it does in your plugins folder under 'Arc'.\n\nYou can also view other basic information [here](https://github.com/Vrekt/ArcNukkit/wiki)\n\n\n## In-depth \n\n### Extensive configuration\n\nArc allows you to customize checks, violations, messages, banning, kicking, and a few advanced features within Arc. You can also customize check parameters allowing you to tune the check to your players needs.\n\nFor example, in the `MorePackets` check you can change how many packets are allowed per second. This is useful for laggy players or a laggy server.\n\n`max-moves-per-second: 25 -> max-moves-per-second: 30`\n\nWith this change, there is more headroom for lag and thus a smoother experience while still being safe.\n\n**All check configurations are already tested and are optimized, so in most cases you shouldn't need to change much.**\n\n### Performant\n\nArc is built with performance in mind with every check and feature, and optimizations are constantly being added.\n\nIn the future, there will be tick/lag watch features and Arc will take into account the server TPS and adjust accordingly.\n\n### Permissions\n\nArc includes a very extensive permission set and system. Arc has permissions for every command, check category and check. This allows you to fully disable certain categories for players, or just disable one check.\n\nFor example, giving the player the permission `arc.bypass.moving` will allow them to bypass **ALL** moving checks. \n\nBut assigning `arc.bypass.moving.flight` will allow them to bypass **ONLY** the flight check.\n\n### Commands\n\nAnother goal of Arc is to provide powerful administration tools. These features are still work-in-progress but right now there are a few.\n\nAt the moment Arc allows you to cancel bans scheduled, enable or disable violation messages, enable or disable debugging and the ability to reload the configuration anytime via a command.\n\n### Other\n\nArc is able to keep player violation data when they logout for a set period of time. This prevents players from re-logging to restate their state within the Anticheat. This timeout value is also configurable. \n\nThe base of Arc is very strong and easy to work with. This allows anybody to easily fork or implement and feature or check they want.\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/14141937?v=4",
+  "id": "Vrekt/ArcNukkit",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "name": "Arc",
+  "server_version": "",
+  "source": "https://github.com/Vrekt/ArcNukkit",
+  "stars": 18,
+  "summary": "An anticheat for Nukkit.",
+  "updated_at": 1756389953,
+  "versions": [
+    {
+      "changelog": "Fixed a few small issues and bumped version.\r\n\r\nNow compatible with 1.19",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Arc.jar",
+          "primary": true,
+          "size": 765173,
+          "url": "https://github.com/Vrekt/ArcNukkit/releases/download/1.7.2/Arc.jar"
+        }
+      ],
+      "name": "Arc 1.7.2 - 1.19",
+      "prerelease": false,
+      "published_at": 1655497318,
+      "version": "1.7.2"
+    },
+    {
+      "changelog": "This release fixes a minor issue with Flight flagging upon joining",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Arc.jar",
+          "primary": true,
+          "size": 764904,
+          "url": "https://github.com/Vrekt/ArcNukkit/releases/download/1.7.1/Arc.jar"
+        }
+      ],
+      "name": "1.7.1 - 106a-nukkit",
+      "prerelease": false,
+      "published_at": 1633567092,
+      "version": "1.7.1"
+    },
+    {
+      "changelog": "This release includes numerous fixes and a new check: LiquidWalk.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Arc.jar",
+          "primary": true,
+          "size": 764614,
+          "url": "https://github.com/Vrekt/ArcNukkit/releases/download/1.7/Arc.jar"
+        }
+      ],
+      "name": "1.7 - 824b-nukkit",
+      "prerelease": false,
+      "published_at": 1629861958,
+      "version": "1.7"
+    },
+    {
+      "changelog": "This release includes a new WaterWalk check + fixes for speed and flight.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Arc.jar",
+          "primary": true,
+          "size": 749999,
+          "url": "https://github.com/Vrekt/ArcNukkit/releases/download/1.6.3-b/Arc.jar"
+        }
+      ],
+      "name": "1.6.3 - 81721b-nukkit",
+      "prerelease": false,
+      "published_at": 1629208539,
+      "version": "1.6.3-b"
+    },
+    {
+      "changelog": "This release fixes a few minor issues in Speed/Flight. It also adds the command /arc summary (player)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Arc.jar",
+          "primary": true,
+          "size": 747431,
+          "url": "https://github.com/Vrekt/ArcNukkit/releases/download/1.6.3/Arc.jar"
+        }
+      ],
+      "name": "1.6.3 - 81721a-nukkit",
+      "prerelease": false,
+      "published_at": 1629193760,
+      "version": "1.6.3"
+    },
+    {
+      "changelog": "This release includes a fix for FastBreak and a new speed check.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Arc.jar",
+          "primary": true,
+          "size": 740646,
+          "url": "https://github.com/Vrekt/ArcNukkit/releases/download/1.6.2/Arc.jar"
+        }
+      ],
+      "name": "1.6.2 - 81621a-nukkit",
+      "prerelease": false,
+      "published_at": 1629113409,
+      "version": "1.6.2"
+    },
+    {
+      "changelog": "This release includes a new check `FastClick` and a KillAura direction check. It also includes bug fixes and performance improvements.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Arc.jar",
+          "primary": true,
+          "size": 722023,
+          "url": "https://github.com/Vrekt/ArcNukkit/releases/download/1.6.1/Arc.jar"
+        }
+      ],
+      "name": "1.6.1 - 81321a-nukkit",
+      "prerelease": false,
+      "published_at": 1628889200,
+      "version": "1.6.1"
+    },
+    {
+      "changelog": "This release removes slime-block checking, as it was not working correctly. There is now also a FastBreak check and a basic gliding check.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Arc.jar",
+          "primary": true,
+          "size": 695420,
+          "url": "https://github.com/Vrekt/ArcNukkit/releases/download/1.6/Arc.jar"
+        }
+      ],
+      "name": "1.6",
+      "prerelease": false,
+      "published_at": 1628488094,
+      "version": "1.6"
+    },
+    {
+      "changelog": "This release fixes Nuker, MorePackets, and missing permissions/exemptions.\r\n\r\nIt also includes support for slime-blocks.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Arc.jar",
+          "primary": true,
+          "size": 692005,
+          "url": "https://github.com/Vrekt/ArcNukkit/releases/download/1.5.1/Arc.jar"
+        }
+      ],
+      "name": "1.5.1 - Major + Fix",
+      "prerelease": false,
+      "published_at": 1627517251,
+      "version": "1.5.1"
+    },
+    {
+      "changelog": "This release will now ignore Elytras, for now. There is now also a Nuker check.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Arc.jar",
+          "primary": true,
+          "size": 686362,
+          "url": "https://github.com/Vrekt/ArcNukkit/releases/download/1.4/Arc.jar"
+        }
+      ],
+      "name": "1.4 - Minor release",
+      "prerelease": false,
+      "published_at": 1627436845,
+      "version": "1.4"
+    },
+    {
+      "changelog": "This release includes the following additions and changes.\r\n\r\n*Arc now is Java 8 compatible*\r\n\r\n##### Additions\r\n\r\n- Flight will now check how far the player is away from the ground.\r\n\r\n**This should improve detection for spider and step related cheats**\r\n\r\n##### Changes\r\n\r\n- Improved the Flight check, although it is *NOT* complete.\r\n- Fixed an issue with player adventure settings causing bypass.\r\n- Improved how blocks are retrieved and how player data is calculated.\r\n- Improved packet listening for better performance, should it come to that.\r\n- Implemented plugin onDisable() to clean up after itself.\r\n\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Arc.jar",
+          "primary": true,
+          "size": 678042,
+          "url": "https://github.com/Vrekt/ArcNukkit/releases/download/1.3/Arc.jar"
+        }
+      ],
+      "name": "1.3 Major Release",
+      "prerelease": false,
+      "published_at": 1626400860,
+      "version": "1.3"
+    },
+    {
+      "changelog": "The flight check is incomplete.\r\n\r\n**Please report any issues to the issues section of this repository.**",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Arc.jar",
+          "primary": true,
+          "size": 677164,
+          "url": "https://github.com/Vrekt/ArcNukkit/releases/download/1.2/Arc.jar"
+        }
+      ],
+      "name": "1.2 - Flight & MorePackets, Commands, debug information",
+      "prerelease": false,
+      "published_at": 1624010257,
+      "version": "1.2"
+    },
+    {
+      "changelog": "Use `arc.violations` permission to view violations.\r\n\r\nUse `arc.bypass` if you want a player to bypass this check.\r\n\r\nYou can view the configuration after arc has been loaded to customize the check and any other features you want.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Arc.jar",
+          "primary": true,
+          "size": 645039,
+          "url": "https://github.com/Vrekt/ArcNukkit/releases/download/1.0/Arc.jar"
+        }
+      ],
+      "name": "1.0 release - FastEat check.",
+      "prerelease": false,
+      "published_at": 1623674896,
+      "version": "1.0"
+    }
+  ]
+}

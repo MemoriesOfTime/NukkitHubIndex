@@ -1,0 +1,42 @@
+{
+  "api_version": "1.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1706261566,
+  "dependencies": [],
+  "description": "<p align=\"center\">\n\t<a href=\"https://discord.com/invite/HcXTaB8UwA\"><img src=\"https://img.shields.io/discord/1205173062375575572?label=discord&color=7289DA&logo=discord\" alt=\"Discord\" /></a>\n\t<br>\n</p>\n\n\n## 🧐 Why SavePlayerSkin\nIt is a plugin that saves the player skin as an image.\n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/153876401?v=4",
+  "id": "ZenSageX444/SavePlayerSkin",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "name": "${project.name}",
+  "server_version": "",
+  "source": "https://github.com/ZenSageX444/SavePlayerSkin",
+  "stars": 2,
+  "summary": "",
+  "updated_at": 1707654863,
+  "versions": [
+    {
+      "changelog": "1.0 version",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SavePlayerSkin-1.0.jar",
+          "primary": true,
+          "size": 5790,
+          "url": "https://github.com/ZenSageX444/SavePlayerSkin/releases/download/1.0/SavePlayerSkin-1.0.jar"
+        }
+      ],
+      "name": "1.0",
+      "prerelease": false,
+      "published_at": 1706262035,
+      "version": "1.0"
+    }
+  ]
+}

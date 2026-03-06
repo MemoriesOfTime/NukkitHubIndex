@@ -1,0 +1,587 @@
+{
+  "api_version": "1.0.11",
+  "authors": [],
+  "categories": [],
+  "created_at": 1653202793,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "RsNPC",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "ScoreboardPlugin",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "AutoUpData",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "Tips",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "Ghosty",
+      "version_range": ""
+    }
+  ],
+  "description": "<a href=\"https://github.com/Sobadfish/BedWar/releases/latest\" alt=\"Latest release\">\n    <img src=\"https://img.shields.io/github/v/release/Sobadfish/BedWar?include_prereleases\" alt=\"Latest release\">\n</a>\n\n![Github](https://img.shields.io/badge/English-100%25-brightgreen)\n[![Github](https://img.shields.io/badge/简体中文-100%25-brightgreen)](https://github.com/SoBadFish/BedWar/blob/master/README_CHS.md)\n<div align=\"center\">\n    <img src=\"https://raw.githubusercontent.com/SoBadFish/BedWar/master/img/bed.png\"/>\n</div>\n\n\n# <div align=\"center\"><font size=12 color='BlueViolet'>B</font><font size = 6 color=\"DeepSkyBlue\">e</font><font size=12 color='Red'>d</font><font size=12 color='Yellow'>W</font><font size = 6 color=\"Chartreuse\">a</font><font size=12 color='Green'>r</font>\n\n**Introduction:**\nIn the game, players will have a completely different competition in the form of team PVP. The goal of the players is to protect their beds from being destroyed in the game, so they must work together and rely on teammates to cooperate with each other to destroy the opponent's bed, which will be considered a victory in the game.！\n\nGame Features：  \n1.Players will be divided into four teams with 16 other players to compete against each other in order to protect their own beds；   \n2.As long as the bed exists, players in the team can recover their vitality, allowing their teammates to instantly recover to their best condition and return to battle；   \n3.Build bridges to enemy islands, invade enemy territory, and destroy opponent's beds to win the final victory.\n\n------\n\nGameMode:  \n 1. **Exp**  \n 2. **Item**  \n\n**HOW TO USE:**  \n\n**[DOWNLOAD](https://motci.cn/view/SoBadFish/job/BedWar/)**\n\n**1、Enable**\n\n1. Drag this plugin to the plugins folder\n2. Start the server until the plugin is loaded\n\n\n3. After entering the game, enter and come to the game map, execute /bd to start creating a room.。\n\n\n\n**2、Command**\n\n|Command               | Msg                             |\n| ------------------- | -------------------------------- |\n| /bd reload          | reload config                 |\n| /bd set [name]      | Creating a Custom Room Template           |\n| /bd tsl             | Read the team data and store item data of the template |\n| /bd see             | View loaded rooms                   |\n| /bd close [name]    | Close room                         |\n| /bd end             | Stop Template Preset                     |\n| /bw                 | Join Game                      |\n| /bw join [name]     | Join a game room                     |\n| /bw quit            | Quit a game room                     |\n| /bws [ask] | Send a message to all players in the game room           |\n\n**3、CONFIG**\n\nto see resources\n\n------\n\n**4、HOW TO CONFIG**\n\n1. run/bd set name Start Preset Template (Please be careful not to make mistakes, otherwise you can only execute /bd cancel to reset it.)\n\n| ![本地路径](https://raw.githubusercontent.com/SoBadFish/BedWar/master/img/5.png) |                                                                                                        |\n|----------------------|----------------------------------------------------------------------------------------------------------------------------|\n| Follow the prompts to customize the settings         | set team.yml file after run **/bd tsl**                                                                           |\n| ![本地路径](https://raw.githubusercontent.com/SoBadFish/BedWar/master/img/6.png) |Then execute /bd set to preset the number of item generation points, and then execute /bd to start the room configuration.  **Note: Please do not make mistakes when setting, otherwise you can only reset the flag by /bd cancel. The order of the team's store spawn points is the order of the team.yml configuration file. Please set it according to the order.** |\n\n\n\n------\n\n**5、GAME:**\n\n| ![本地](https://raw.githubusercontent.com/SoBadFish/BedWar/master/img/7.jpg)   | ![本地](https://raw.githubusercontent.com/SoBadFish/BedWar/master/img/8.jpg)   |\n|----------------------|----------------------|\n| ![本地](https://raw.githubusercontent.com/SoBadFish/BedWar/master/img/9.jpg)   | ![本地](https://raw.githubusercontent.com/SoBadFish/BedWar/master/img/10.jpg)  |\n| ![本地](https://raw.githubusercontent.com/SoBadFish/BedWar/master/img/11.jpeg) | ![本地](https://raw.githubusercontent.com/SoBadFish/BedWar/master/img/12.jpeg) |\n\n\n\n",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-03-06",
+      "description": "",
+      "title": "",
+      "url": "https://raw.githubusercontent.com/SoBadFish/BedWar/master/img/bed.png"
+    },
+    {
+      "created": "2026-03-06",
+      "description": "",
+      "title": "本地路径",
+      "url": "https://raw.githubusercontent.com/SoBadFish/BedWar/master/img/5.png"
+    },
+    {
+      "created": "2026-03-06",
+      "description": "",
+      "title": "本地路径",
+      "url": "https://raw.githubusercontent.com/SoBadFish/BedWar/master/img/6.png"
+    },
+    {
+      "created": "2026-03-06",
+      "description": "",
+      "title": "本地",
+      "url": "https://raw.githubusercontent.com/SoBadFish/BedWar/master/img/7.jpg"
+    },
+    {
+      "created": "2026-03-06",
+      "description": "",
+      "title": "本地",
+      "url": "https://raw.githubusercontent.com/SoBadFish/BedWar/master/img/8.jpg"
+    },
+    {
+      "created": "2026-03-06",
+      "description": "",
+      "title": "本地",
+      "url": "https://raw.githubusercontent.com/SoBadFish/BedWar/master/img/9.jpg"
+    },
+    {
+      "created": "2026-03-06",
+      "description": "",
+      "title": "本地",
+      "url": "https://raw.githubusercontent.com/SoBadFish/BedWar/master/img/10.jpg"
+    },
+    {
+      "created": "2026-03-06",
+      "description": "",
+      "title": "本地",
+      "url": "https://raw.githubusercontent.com/SoBadFish/BedWar/master/img/11.jpeg"
+    },
+    {
+      "created": "2026-03-06",
+      "description": "",
+      "title": "本地",
+      "url": "https://raw.githubusercontent.com/SoBadFish/BedWar/master/img/12.jpeg"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/83235042?v=4",
+  "id": "SoBadFish/BedWar",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "name": "BedWar",
+  "server_version": "",
+  "source": "https://github.com/SoBadFish/BedWar",
+  "stars": 32,
+  "summary": "起床战争小游戏插件",
+  "updated_at": 1770954036,
+  "versions": [
+    {
+      "changelog": "+ 新增紧凑型防护墙特殊道具\r\n+ 新增蠹虫特殊道具",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BedWar_v2.2.3.jar",
+          "primary": true,
+          "size": 437018,
+          "url": "https://github.com/SoBadFish/BedWar/releases/download/v2.2.3/BedWar_v2.2.3.jar"
+        }
+      ],
+      "name": "2023/08/27 v2.2.3 更新",
+      "prerelease": false,
+      "published_at": 1724731298,
+      "version": "v2.2.3"
+    },
+    {
+      "changelog": "+ 解决GUI商店物品名称BUG\r\n+ 增加防爆玻璃逻辑（起床世界内的玻璃均有防爆属性）\r\n+ 增加床会被初始方块保护功能（需要在配置文件开启）\r\n\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BedWar_v2.2.1.jar",
+          "primary": true,
+          "size": 423811,
+          "url": "https://github.com/SoBadFish/BedWar/releases/download/v2.2.1/BedWar_v2.2.1.jar"
+        }
+      ],
+      "name": "2024/8/19 v2.2.1 更新",
+      "prerelease": false,
+      "published_at": 1724048229,
+      "version": "v2.2.1"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BedWar_v2.2.0.jar",
+          "primary": true,
+          "size": 422689,
+          "url": "https://github.com/SoBadFish/BedWar/releases/download/v2.2.0/BedWar_v2.2.0.jar"
+        }
+      ],
+      "name": "2024/08/13 v2.2.0 更新",
+      "prerelease": false,
+      "published_at": 1723539525,
+      "version": "v2.2.0"
+    },
+    {
+      "changelog": "+ 优化商店物品读取\r\n+ 修复参数丢失BUG\r\n+ 修复玩家背包保存BUG\r\n+ 修复床重复破坏BUG",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BedWar_v2.1.9.jar",
+          "primary": true,
+          "size": 405964,
+          "url": "https://github.com/SoBadFish/BedWar/releases/download/V2.1.9/BedWar_v2.1.9.jar"
+        }
+      ],
+      "name": "2024/07/17 更新",
+      "prerelease": false,
+      "published_at": 1711332806,
+      "version": "V2.1.9"
+    },
+    {
+      "changelog": "+ 修复火球无法炸飞玩家的BUG\r\n+ 完善多语言功能\r\n+ 多语言商店",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BedWar_v2.1.7.jar",
+          "primary": true,
+          "size": 405120,
+          "url": "https://github.com/SoBadFish/BedWar/releases/download/v2.1.7/BedWar_v2.1.7.jar"
+        }
+      ],
+      "name": "2024/3/11更新",
+      "prerelease": false,
+      "published_at": 1710124465,
+      "version": "v2.1.7"
+    },
+    {
+      "changelog": "【FIX】修复了浮空字意外消失的问题\r\n【FIX】修复了火球在Nukkit-MOT核心的问题\r\n【ADD】完善了多语言功能",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BedWar_v2.1.6.jar",
+          "primary": true,
+          "size": 404701,
+          "url": "https://github.com/SoBadFish/BedWar/releases/download/v2.1.6/BedWar_v2.1.6.jar"
+        }
+      ],
+      "name": "2024-3-8 更新日志",
+      "prerelease": false,
+      "published_at": 1710003077,
+      "version": "v2.1.6"
+    },
+    {
+      "changelog": "修复商店相关BUG\r\n优化商店箱子菜单相关功能\r\n修复复活相关BUG\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BedWar_v2.1.0.jar",
+          "primary": true,
+          "size": 370765,
+          "url": "https://github.com/SoBadFish/BedWar/releases/download/v2.1.0/BedWar_v2.1.0.jar"
+        }
+      ],
+      "name": "2024-1-16 更新日志",
+      "prerelease": false,
+      "published_at": 1705371697,
+      "version": "v2.1.0"
+    },
+    {
+      "changelog": "+ 优化浮空字以及浮空方块显示功能，修复相关BUG\r\n+ 优化商店支持自定义物品功能\r\n+ 增加自定义商店物品与名称功能",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BedWar_v2.0.9.jar",
+          "primary": true,
+          "size": 370526,
+          "url": "https://github.com/SoBadFish/BedWar/releases/download/v2.0.9/BedWar_v2.0.9.jar"
+        }
+      ],
+      "name": "2024-1-15 更新日志",
+      "prerelease": false,
+      "published_at": 1705311536,
+      "version": "v2.0.9"
+    },
+    {
+      "changelog": "+ 修复同时死亡游戏不结束BUG\r\n+ 更改房间游戏时刻为 tick\r\n+ 增加自定义头部显示\r\n+ 增加强行启动游戏指令",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BedWar_v2.0.8.jar",
+          "primary": true,
+          "size": 369517,
+          "url": "https://github.com/SoBadFish/BedWar/releases/download/v2.0.8/BedWar_v2.0.8.jar"
+        }
+      ],
+      "name": "2024-1-15 更新日志",
+      "prerelease": false,
+      "published_at": 1705288529,
+      "version": "v2.0.8"
+    },
+    {
+      "changelog": "修复退出重进的BUG\r\n尝试优化观战的UI箱子菜单",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BedWar_v2.0.6.jar",
+          "primary": true,
+          "size": 345687,
+          "url": "https://github.com/SoBadFish/BedWar/releases/download/v2.0.6/BedWar_v2.0.6.jar"
+        }
+      ],
+      "name": "2023/11/27更新",
+      "prerelease": false,
+      "published_at": 1701051975,
+      "version": "v2.0.6"
+    },
+    {
+      "changelog": "修复浮空方块不生效BUG\r\n修复守卫墙BUG",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BedWar_v2.0.3.jar",
+          "primary": true,
+          "size": 345075,
+          "url": "https://github.com/SoBadFish/BedWar/releases/download/v2.0.3/BedWar_v2.0.3.jar"
+        }
+      ],
+      "name": "2023/11/11 更新",
+      "prerelease": false,
+      "published_at": 1699694809,
+      "version": "v2.0.3"
+    },
+    {
+      "changelog": "+ 增加守卫墙功能\r\n+ 优化回城物品传送\r\n+ 增加团队末影箱功能",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BedWar_v2.0.2.jar",
+          "primary": true,
+          "size": 344415,
+          "url": "https://github.com/SoBadFish/BedWar/releases/download/v2.0.2/BedWar_v2.0.2.jar"
+        }
+      ],
+      "name": "2023/11/10 更新",
+      "prerelease": false,
+      "published_at": 1699603919,
+      "version": "v2.0.2"
+    },
+    {
+      "changelog": "+ 快速搭路功能 玩家手持方块潜行 左键/长按 可自由切换是否启用快速搭路 开启后会沿着放置方向每100ms 放置一个方块\r\n   使用此功能需要将room.yml 中 fast-place 更改为true\r\n\r\n+ 增加资源点浮空实体方块功能",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BedWar_v2.0.1.jar",
+          "primary": true,
+          "size": 340388,
+          "url": "https://github.com/SoBadFish/BedWar/releases/download/v2.0.1/BedWar_v2.0.1.jar"
+        }
+      ],
+      "name": "2023/11/06 v2.0.1 更新",
+      "prerelease": false,
+      "published_at": 1699264899,
+      "version": "v2.0.1"
+    },
+    {
+      "changelog": "修复排行榜 / 浮空字的BUG",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BedWar_v1.9.7.jar",
+          "primary": true,
+          "size": 324094,
+          "url": "https://github.com/SoBadFish/BedWar/releases/download/v1.9.7/BedWar_v1.9.7.jar"
+        }
+      ],
+      "name": "2023/8/21 v1.9.7 更新",
+      "prerelease": false,
+      "published_at": 1692602038,
+      "version": "v1.9.7"
+    },
+    {
+      "changelog": "修复游戏对局中隐身药水结束吞装备的BUG\r\n修改火球的冷却时间 1.5s -> 0.5s",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BedWar_v1.9.3.jar",
+          "primary": true,
+          "size": 323472,
+          "url": "https://github.com/SoBadFish/BedWar/releases/download/v1.9.3/BedWar_v1.9.3.jar"
+        }
+      ],
+      "name": "2023/7/25 v1.9.3 更新",
+      "prerelease": false,
+      "published_at": 1690264521,
+      "version": "v1.9.3"
+    },
+    {
+      "changelog": "修复浮空字不更新的问题\r\n修复浮空字变量失效的问题",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BedWar_v1.9.2.jar",
+          "primary": true,
+          "size": 323422,
+          "url": "https://github.com/SoBadFish/BedWar/releases/download/v1.9.2/BedWar_v1.9.2.jar"
+        }
+      ],
+      "name": "2023/7/18 v1.9.2 更新",
+      "prerelease": false,
+      "published_at": 1689646048,
+      "version": "v1.9.2"
+    },
+    {
+      "changelog": "+ 优化在游戏内使用隐身药水的效果 使用隐身药水后不需要脱装备\r\n+ 修复玩家之间互刷盔甲的BUG 所有购买的盔甲均与玩家绑定\r\n+ 增加盔甲的无限耐久效果\r\n+ 修复地图重置时崩服的BUG\r\n+ 修复团队附魔等级异常的BUG",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BedWar_v1.8.20.jar",
+          "primary": true,
+          "size": 327324,
+          "url": "https://github.com/SoBadFish/BedWar/releases/download/v1.8.20/BedWar_v1.8.20.jar"
+        }
+      ],
+      "name": "2023/7/11 v1.8.20 更新",
+      "prerelease": false,
+      "published_at": 1689038509,
+      "version": "v1.8.20"
+    },
+    {
+      "changelog": "修复更新地图的问题\r\n修复购买盔甲扣除金钱BUG",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BedWar_v1.8.10.jar",
+          "primary": true,
+          "size": 324935,
+          "url": "https://github.com/SoBadFish/BedWar/releases/download/v1.8.10/BedWar_v1.8.10.jar"
+        }
+      ],
+      "name": "2023/1/16 更新",
+      "prerelease": false,
+      "published_at": 1673841364,
+      "version": "v1.8.10"
+    },
+    {
+      "changelog": "修复开始游戏分配玩家的BUG",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BedWar_v1.8.8.jar",
+          "primary": true,
+          "size": 323087,
+          "url": "https://github.com/SoBadFish/BedWar/releases/download/v1.8.8/BedWar_v1.8.8.jar"
+        }
+      ],
+      "name": "2022/12/29 v1.8.8 更新",
+      "prerelease": false,
+      "published_at": 1672972781,
+      "version": "v1.8.8"
+    },
+    {
+      "changelog": "+ 修复了床会掉落的BUG\r\n+ 移除计分板部分内容的颜色\r\n+ 修复盔甲重复购买的BUG",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BedWar_v1.8.7.jar",
+          "primary": true,
+          "size": 324837,
+          "url": "https://github.com/SoBadFish/BedWar/releases/download/v1.8.7/BedWar_v1.8.7.jar"
+        }
+      ],
+      "name": "2022/12/24 v1.8.7 更新",
+      "prerelease": false,
+      "published_at": 1671856555,
+      "version": "v1.8.7"
+    },
+    {
+      "changelog": "优化了一些内容\r\n修复了一些BUG",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BedWar_v1.8.6.jar",
+          "primary": true,
+          "size": 322893,
+          "url": "https://github.com/SoBadFish/BedWar/releases/download/v1.8.6/BedWar_v1.8.6.jar"
+        }
+      ],
+      "name": "2022/12/21 v1.8.6 更新",
+      "prerelease": false,
+      "published_at": 1671603350,
+      "version": "v1.8.6"
+    },
+    {
+      "changelog": "修复玩家背包不保存的BUG",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BedWar_v1.8.5.jar",
+          "primary": true,
+          "size": 323664,
+          "url": "https://github.com/SoBadFish/BedWar/releases/download/v1.8.5/BedWar_v1.8.5.jar"
+        }
+      ],
+      "name": "2022/12/1 v1.8.5",
+      "prerelease": false,
+      "published_at": 1669878778,
+      "version": "v1.8.5"
+    },
+    {
+      "changelog": "+ 增加传送地图进入房间\r\n+ 其他功能上的优化",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BedWar_v1.8.4.jar",
+          "primary": true,
+          "size": 323568,
+          "url": "https://github.com/SoBadFish/BedWar/releases/download/v1.8.4/BedWar_v1.8.4.jar"
+        }
+      ],
+      "name": "2022/9/20 v1.8.4 更新",
+      "prerelease": false,
+      "published_at": 1663676613,
+      "version": "v1.8.4"
+    },
+    {
+      "changelog": "+ 增加旁观者底部提示\r\n+ 修改计分板lore\r\n+ 增加死亡时显示药水图标",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BedWar_v1.8.2.jar",
+          "primary": true,
+          "size": 322645,
+          "url": "https://github.com/SoBadFish/BedWar/releases/download/v1.8.2/BedWar_v1.8.2.jar"
+        }
+      ],
+      "name": "2022/9/6 v1.8.2 更新",
+      "prerelease": false,
+      "published_at": 1662445971,
+      "version": "v1.8.2"
+    },
+    {
+      "changelog": "修复一些问题 整理代码",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BedWar_v1.8.0.jar",
+          "primary": true,
+          "size": 316071,
+          "url": "https://github.com/SoBadFish/BedWar/releases/download/v1.8.0/BedWar_v1.8.0.jar"
+        }
+      ],
+      "name": "2022/9/5 v1.8.0 更新",
+      "prerelease": false,
+      "published_at": 1662344948,
+      "version": "v1.8.0"
+    },
+    {
+      "changelog": "+ 增加等级系统",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BedWar_v1.7.9.jar",
+          "primary": true,
+          "size": 315322,
+          "url": "https://github.com/SoBadFish/BedWar/releases/download/v1.7.9/BedWar_v1.7.9.jar"
+        }
+      ],
+      "name": "2022/9/3 v1.7.9 更新",
+      "prerelease": false,
+      "published_at": 1662187299,
+      "version": "v1.7.9"
+    },
+    {
+      "changelog": "+ 修复浮空字的一些问题\r\n+ 修复组队选择一个队伍导致的问题\r\n+ 修复逻辑错误\r\n+ 优化代码",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BedWar_v1.7.8.jar",
+          "primary": true,
+          "size": 308820,
+          "url": "https://github.com/SoBadFish/BedWar/releases/download/v1.7.8/BedWar_v1.7.8.jar"
+        }
+      ],
+      "name": "2022/9/2 v1.7.8 更新",
+      "prerelease": false,
+      "published_at": 1661925388,
+      "version": "v1.7.8"
+    },
+    {
+      "changelog": "+ 修复卡生存BUG\r\n+ 修复已知BUG\r\n+ 对接反作弊\r\n+ 选择队伍后穿上服装\r\n+ 修复团队商店半价BUG",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BedWar_v1.7.5.jar",
+          "primary": true,
+          "size": 308545,
+          "url": "https://github.com/SoBadFish/BedWar/releases/download/1.7.5/BedWar_v1.7.5.jar"
+        }
+      ],
+      "name": "2022/8/29 v1.7.5 更新",
+      "prerelease": false,
+      "published_at": 1661242108,
+      "version": "1.7.5"
+    },
+    {
+      "changelog": "+ 修复没有前置报错BUG",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BedWar_v1.7.1.1.jar",
+          "primary": true,
+          "size": 305265,
+          "url": "https://github.com/SoBadFish/BedWar/releases/download/v1.7.1.1/BedWar_v1.7.1.1.jar"
+        }
+      ],
+      "name": "2022/8/21 v1.7.1",
+      "prerelease": false,
+      "published_at": 1661085729,
+      "version": "v1.7.1.1"
+    },
+    {
+      "changelog": "+ 修复一系列BUG\r\n+ 增加插件稳定性",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BedWar_v1.6.8.jar",
+          "primary": true,
+          "size": 304600,
+          "url": "https://github.com/SoBadFish/BedWar/releases/download/v1.6.8/BedWar_v1.6.8.jar"
+        }
+      ],
+      "name": "2022/8/20 v1.6.8 更新",
+      "prerelease": false,
+      "published_at": 1660927261,
+      "version": "v1.6.8"
+    }
+  ]
+}

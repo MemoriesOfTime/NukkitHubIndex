@@ -1,0 +1,42 @@
+{
+  "api_version": "1.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1596052417,
+  "dependencies": [],
+  "description": "# Nukkit Auto Save Plugin\n![tmp1](https://user-images.githubusercontent.com/29895665/107823902-24dd7980-6db3-11eb-8c58-a78248b023a4.png)  \n#### Please back up your server before using this plugin.\nThis plugin will save all plugins on your server without restarting server.  \n\n## How it works?\n- It will detect \"save\" method on plugin and invoke it.    \n- You can add a plugin from config.yml to invoke_OnDisable if your plugin saves when the server stops.\n\n## DOWNLOAD\nPlease check [here](https://github.com/jungwuk-ryu/Nukkit-AutoSave-Plugin/releases) or [Cloudburst resource](https://cloudburstmc.org/resources/autosave.656/)\n\n## Command\n```\n/as save - save instantly\n/as reload - reload config.yml\n```\n\n## Monitoring\n![image](https://user-images.githubusercontent.com/29895665/107825303-6f5ff580-6db5-11eb-901c-b840db24776d.png)  \nYou can monitor by setting debug to true in config.yml \n\n \n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/29895665?v=4",
+  "id": "jungwuk-ryu/Nukkit-AutoSave-Plugin",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "name": "AutoSave",
+  "server_version": "",
+  "source": "https://github.com/jungwuk-ryu/Nukkit-AutoSave-Plugin",
+  "stars": 0,
+  "summary": "",
+  "updated_at": 1613769044,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "autosave-1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 7511,
+          "url": "https://github.com/jungwuk-ryu/Nukkit-AutoSave-Plugin/releases/download/1.0.0/autosave-1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "1.0.0",
+      "prerelease": true,
+      "published_at": 1613168359,
+      "version": "1.0.0"
+    }
+  ]
+}

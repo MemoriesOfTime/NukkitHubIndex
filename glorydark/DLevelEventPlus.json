@@ -1,0 +1,25 @@
+{
+  "api_version": "1.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1686127207,
+  "dependencies": [],
+  "description": "",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
+  "id": "glorydark/DLevelEventPlus",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "name": "DLevelEventPlus",
+  "server_version": "",
+  "source": "https://github.com/glorydark/DLevelEventPlus",
+  "stars": 2,
+  "summary": "DLevelEventPlus",
+  "updated_at": 1717933655,
+  "versions": []
+}

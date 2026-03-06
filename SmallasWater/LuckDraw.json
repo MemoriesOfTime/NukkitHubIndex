@@ -1,0 +1,42 @@
+{
+  "api_version": "1.0.9",
+  "authors": [],
+  "categories": [],
+  "created_at": 1578677313,
+  "dependencies": [],
+  "description": "<a href=\"https://github.com/SmallasWater/LuckDraw/releases/latest\" alt=\"Latest release\">\n    <img src=\"https://img.shields.io/github/v/release/SmallasWater/LuckDraw?include_prereleases\" alt=\"Latest release\">\n</a>\n\n# LuckDraw\n抽奖箱\n------\n## 功能\n- [x] 自定义箱子模型 （只能展示一遍，，推荐关闭）\n\n- [x] 自定义抽奖物品\n\n- [x] 自定义奖励展示\n\n- [x] 自定义物品概率\n\n- [x] 生物伪装系统\n\n- [x] 物品掉落显示名字\n\n\n## 用法\n>  /luck help 主命令(OP) \n>\n>  /pla help 玩家伪装 (Player) \n>\n>  /luckadd 抽奖箱拓展指令\n \n  \n",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
+  "id": "SmallasWater/LuckDraw",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "name": "LuckDraw",
+  "server_version": "",
+  "source": "https://github.com/SmallasWater/LuckDraw",
+  "stars": 3,
+  "summary": "",
+  "updated_at": 1665203241,
+  "versions": [
+    {
+      "changelog": "v1.3.8\r\n增加自动更新系统(需要安装AutoUpData)\r\n\r\nv1.3.7.1\r\n上传到github\r\n增加变身时粒子效果\r\n优化变身系统",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "luckdraw_v1.3.8.jar",
+          "primary": true,
+          "size": 148104,
+          "url": "https://github.com/SmallasWater/LuckDraw/releases/download/v1.3.8/luckdraw_v1.3.8.jar"
+        }
+      ],
+      "name": "更新啦",
+      "prerelease": false,
+      "published_at": 1607436200,
+      "version": "v1.3.8"
+    }
+  ]
+}
