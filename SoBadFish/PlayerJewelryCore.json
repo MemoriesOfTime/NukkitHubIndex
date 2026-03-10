@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.11",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "sobadfish",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1751611911,
+  "dependencies": [],
+  "description": "# PlayerJewelryCore - 玩家饰品核心插件\n\n## 功能概述\nPlayerJewelryCore是一款基于 Nukkit MOT 核心插件，允许服务器为玩家添加3D饰品模型。主要功能包括：\n- 动态合并多个3D模型到玩家皮肤上\n- 支持自定义饰品位置和UV映射\n- 异步处理模型合并，避免阻塞主线程\n- 自动适配不同尺寸的皮肤和模型\n\n## 安装方法\n1. 将插件jar文件放入Nukkit服务器的`plugins`目录\n2. 重启服务器\n3. 插件会自动生成默认配置\n\n## API调用方式\n\n### 添加饰品模型\n```java\n// 获取插件实例\nPlayerJewelryCore core = PlayerJewelryCore.getInstance();\n\n// 方式1：直接添加GeometryData对象\nFile skinImage = new File(\"贴图.png\");\nFile skinModel = new File(\"饰品模型.json\");\nGeometryData data = core.loadFileToGeometryData(skinImage, skinModel);\ncore.addPlayerGeometryData(\"自定义名称\", data);\n\n// 方式2：通过图片和模型文件添加\nFile skinImage = new File(\"贴图.png\");\nFile skinModel = new File(\"饰品模型.json\"); \ncore.addPlayerGeometryData(\"骨骼模型\", skinImage, skinModel);\n```\n\n### 获取饰品模型\n```java\nGeometryData data = core.getPlayerGeometryData(\"自定义名称\");\n```\n\n### 更新玩家皮肤\n```java\ncore.updatePlayerSkinModel(player);\n```\n\n\n## 使用示例\n\n### 添加一个饰品\n```java\nPlayerJewelryCore core = PlayerJewelryCore.getInstance();\n\n// 加载饰品资源\nFile wingImage = new File(core.getDataFolder(), \"贴图.png\");\nFile wingModel = new File(core.getDataFolder(), \"骨骼模型.json\");\n\n// 添加到玩家\ncore.addPlayerGeometryData(\"自定义名称\", wingImage, wingModel);\n\n// 更新玩家皮肤\ncore.updatePlayerSkinModel(player);\n```\n\n## 模型文件规范\n饰品模型需要符合以下规范：\n1. 图片文件必须是PNG格式\n2. JSON模型文件需符合Minecraft基岩版实体模型格式\n3. 建议模型尺寸为32x32或64x64像素\n\n## 开发者提示\n- 使用`ImageUtils.mergeImagesWithDynamicCanvas()`方法可以合并多个饰品图片\n- `GeometryJsonData`类提供了完整的模型数据结构\n- 建议在异步线程中处理模型合并操作\n\n## 兼容性\n- 支持Nukkit API 1.0.11+\n- 支持Minecraft基岩版1.16.0+的皮肤格式",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/83235042?v=4",
+  "id": "SoBadFish/PlayerJewelryCore",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "PlayerJeweleryCore",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/SoBadFish/PlayerJewelryCore",
+  "stars": 5,
+  "summary": "玩家饰品核心",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1768285924,
+  "versions": []
+}

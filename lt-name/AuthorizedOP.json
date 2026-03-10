@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Anders",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1595141765,
+  "dependencies": [],
+  "description": "<h1>AuthorizedOP - 授权OP系统 <img src=\"https://raw.githubusercontent.com/Anders233/AuthorizedOP/master/op.png\" height=\"64\" width=\"64\" align=\"left\"></img></h1>\n<br>\n\n## AuthorizedOP 是什么?\n\n一个[NukkitX](https://github.com/NukkitX/Nukkit)插件\n\n## AuthorizedOP 有哪些功能？\n> - 检查非法获取OP权限的玩家并在控制台发出警告\n> - 添加/删除授权OP名单\n> - 防止玩家刷取OP权限\n\n## AuthorizedOP 该如何使用？\n#### 命令介绍\n| 命令 | 描述 | 权限 |\n| :--: | :--: | :--: |\n| /aop add <玩家> | 添加授权OP | 控制台 |\n| /aop del <玩家> | 删除授权OP | 控制台 |\n| /aop help | 查看授权帮助 | 控制台 |\n| /aop list | 授权OP列表 | 控制台 |\n| /aop switch | 授权指令开关 | 控制台 |\n| /aop reload | 重载配置文件 | 控制台 |\n\n> - [x] 添加(add)/删除(del)/列表(list)指令\n> - [x] 重载配置文件指令(reload)\n> - [x] 命令开关(switch)\n> - [x] 检查非法OP\n\n## AuthorizedOP 使用截图\n![image](https://github.com/Anders233/AuthorizedOP/blob/master/使用截图.png)\n\n## 问题反馈\n#### 在使用中有任何问题，欢迎反馈给我，可以用以下联系方式跟我交流\n![](http://q2.qlogo.cn/headimg_dl?bs=2641541097&dst_uin=2641541097&dst_uin=2641541097&;dst_uin=2641541097&spec=100&url_enc=0&referer=bu_interface&term_type=PC)\n- FFF团长:\n  - Mail: keyapi@qq.com\n  - QQ: [3zero] 2641541097\n  - GitHub: [Anders](https://github.com/Anders233)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+  "id": "lt-name/AuthorizedOP",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "AuthorizedOP",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/lt-name/AuthorizedOP",
+  "stars": 1,
+  "summary": "授权OP系统，防止玩家刷OP权限",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1772678239,
+  "versions": []
+}

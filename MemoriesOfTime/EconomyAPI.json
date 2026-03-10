@@ -1,0 +1,43 @@
+{
+  "api_version": "1.0.13",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "onebone",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1724933869,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "EasySQLX",
+      "version_range": ""
+    }
+  ],
+  "description": "# EconomyAPI\nCore of economy system for Nukkit\n\n## Commands\n - /mymoney\n - /seemoney\n - /givemoney\n - /takemoney\n - /topmoney\n - /setmoney\n\n## Permissions\n- economyapi\n\t- economyapi.command\n\t\t- economyapi.command.mymoney\n\t\t- economyapi.command.givemoney `OP`\n\t\t- economyapi.command.takemoney `OP`\n\t\t- economyapi.command.setmoney `OP`\n\t\t- economyapi.command.topmoney\n\n## For developers\n\n> [!WARNING]\n> MySQL provider:\n> Due to precision issues, MySQL uses bigint to store monetary amounts. The retrieved values need to be divided by 100 to convert them to the actual amounts.\n\n###  Single Currency Economies\n\nDevelopers can access to EconomyAPI's API by using:\n```java\nEconomyAPI.getInstance().myMoney(player);\nEconomyAPI.getInstance().reduceMoney(player, amount);\nEconomyAPI.getInstance().addMoney(player, amount);\n```\n\n> [!TIP]\n> Operating through the provider:\n> - `provider.addMoney(player, amount);`\n\n### Multiple Currency Economies\n\n**`currencyName`:** This parameter is a `String` that specifies the currency you want to interact with.  If your economy system supports multiple currencies (e.g., real-world currencies like \"USD\", \"EUR\", \"GBP\" or in-game items like \"Gold\", \"Silver\", \"Diamonds\"), you can use this parameter to target a specific currency.\n\nIf your system only has one currency, use the first set of methods (without the `currencyName` parameter).\n\n```java\nEconomyAPI.getInstance().myMoney(player, currencyName);\nEconomyAPI.getInstance().reduceMoney(player, amount, currencyName);\nEconomyAPI.getInstance().addMoney(player, amount, currencyName);\n```\n\n> [!TIP]\n> When operating through the provider, the parameter order needs to be adjusted:\n> - `provider.addMoney(currencyName, player, amount);`\n\n### Maven repository\n\n```xml\n<repository>\n    <id>nukkitx-repo</id>\n    <url>https://repo.nukkitx.com/snapshot</url>\n</repository>\n\n<dependency>\n    <groupId>me.onebone</groupId>\n    <artifactId>economyapi</artifactId>\n    <version>2.0.2</version>\n    <scope>provided</scope>\n</dependency>\n```\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/62042238?v=4",
+  "id": "MemoriesOfTime/EconomyAPI",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "EconomyAPI",
+  "primary_target": "nkmot",
+  "server_version": "",
+  "source": "https://github.com/MemoriesOfTime/EconomyAPI",
+  "stars": 1,
+  "summary": "Core of economy system for Nukkit",
+  "targets": [
+    "nkmot"
+  ],
+  "updated_at": 1771497123,
+  "versions": []
+}

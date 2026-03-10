@@ -1,6 +1,12 @@
 {
   "api_version": "1.0.8",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "sobadfish",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1698042913,
   "dependencies": [
@@ -16,6 +22,7 @@
     }
   ],
   "description": "# PlaceholderToTips\nPlaceholderAPI变量转换为Tips变量\n",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/83235042?v=4",
@@ -26,11 +33,17 @@
     "url": ""
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "PlaceholderToTips",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/SoBadFish/PlaceholderToTips",
   "stars": 0,
-  "summary": "",
+  "summary": "PlaceholderAPI变量转换为Tips变量",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1698043051,
   "versions": [
     {

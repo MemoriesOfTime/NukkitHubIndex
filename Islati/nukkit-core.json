@@ -1,10 +1,17 @@
 {
   "api_version": "1.0.9",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "maru, PetteriM1",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1589481985,
   "dependencies": [],
   "description": "About\n====\n\nCreated while learning the ins and outs of Nukkits API, features 3 components which add new gameplay dynamics and an API to easily create new features.\n\nFeatures\n----\n\n* Wizard Spells & Wands [Source](https://github.com/TechnicalBro/nukkit-rpg-example/blob/master/src/main/java/com/levelmc/core/components/wizarding/WizardingComponent.java)\n* Damage Indicators [Source](https://github.com/TechnicalBro/nukkit-rpg-example/tree/master/src/main/java/com/levelmc/core/components/damageindicators)\n* Loot Generation [Source](https://github.com/TechnicalBro/nukkit-rpg-example/tree/master/src/main/java/com/levelmc/core/components/loot)\n* API [Package](https://github.com/TechnicalBro/nukkit-rpg-example/tree/master/src/main/java/com/levelmc/core/api)\n  * @Command annotations [Source](https://github.com/TechnicalBro/nukkit-rpg-example/tree/master/src/main/java/com/levelmc/core/api/cmd), [Example](https://github.com/TechnicalBro/nukkit-rpg-example/blob/master/src/main/java/com/levelmc/core/commands/TestCommand.java)\n  * Debugging [Source](https://github.com/TechnicalBro/nukkit-rpg-example/tree/master/src/main/java/com/levelmc/core/api/debug), [Example](https://github.com/TechnicalBro/nukkit-rpg-example/blob/master/src/main/java/com/levelmc/core/debug/DebugTestGadget.java)\n  * @Annoation YML Serialization [Example](https://github.com/TechnicalBro/nukkit-rpg-example/blob/master/src/main/java/com/levelmc/core/config/CoreConfig.java)\n  * Easy GUI Forms [Example - Spell Binds GUI](https://github.com/TechnicalBro/nukkit-rpg-example/blob/master/src/main/java/com/levelmc/core/components/wizarding/guis/MagicBindGUI.java)\n  * Custom Gadgets [Example - Magic Wand](https://github.com/TechnicalBro/nukkit-rpg-example/blob/master/src/main/java/com/levelmc/core/components/wizarding/gadgets/MagicWand.java)\n  * User Management [Example](https://github.com/TechnicalBro/nukkit-rpg-example/blob/master/src/main/java/com/levelmc/core/users/User.java)\n  * Utilities\n    * Item Builder\n    * Plugin Utils\n    * World Utils\n    * Block Utils\n    * Location Utils\n    * Entity Utils\n \n",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/2342656?v=4",
@@ -15,11 +22,17 @@
     "url": ""
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "Core",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/Islati/nukkit-core",
   "stars": 0,
-  "summary": "",
+  "summary": "Minecraft (Bedrock) Content API built ontop of Nukkit. Features everything needed to make life easy, create gameplay features & dynamics.",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1679314400,
   "versions": []
 }

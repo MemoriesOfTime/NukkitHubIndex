@@ -1,0 +1,41 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "wode490390",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1671968012,
+  "dependencies": [],
+  "description": "# Radio for Nukkit\n[![Nukkit](https://img.shields.io/badge/Nukkit-1.0-green)](https://github.com/NukkitX/Nukkit)\n[![Build](https://img.shields.io/jenkins/build?jobUrl=https://motci.cn/job/Radio&label=jenkins&logo=jenkins)](https://motci.cn/job/Radio)\n[![Release](https://img.shields.io/github/v/release/lt-name/Radio)](https://github.com/lt-name/Radio/releases)\n[![Release date](https://img.shields.io/github/release-date/lt-name/Radio)](https://github.com/lt-name/Radio/releases)\n<!--[![MCBBS](https://img.shields.io/badge/-mcbbs-inactive)](https://www.mcbbs.net/thread-932833-1-1.html \"音乐电台\")\n[![Servers](https://img.shields.io/bstats/servers/6082)](https://bstats.org/plugin/bukkit/Radio/6082)\n[![Players](https://img.shields.io/bstats/players/6082)](https://bstats.org/plugin/bukkit/Radio/6082)-->\n\nRadio is a plugin that allows the client to play specified background music.\n\n[//]: # (If you found any bugs or have any suggestions, please open an issue on [GitHub Issues]&#40;https://github.com/wode490390/Radio/issues&#41;.)\n\nIf you like this plugin, please star it on [GitHub](https://github.com/wode490390/Radio).\n\n## Usage\n1. Copy audio files in **OGG Vobis format** (file suffix must be `ogg`) to \"Path_to_Nukkit/plugins/Radio/**music**/\".\n2. Restart the server.\n3. Audio files will be automatically sent to the client when the player joins the game for the first time.\n\nTips:\nYou can create subfolders named after world names in the music folder and place audio files for different worlds in their corresponding subfolders.\nWhen a player enters a specific world, the plugin will automatically play the audio files for that world to the player.\n\n## Download\n- [Releases](https://github.com/lt-name/Radio/releases)\n- [Snapshots](https://motci.cn/job/Radio)\n\n## Commands\n| Command | Alias | Permission | Description | Default |\n| - | - | - | - | - |\n| `/radio [play\\|stop]` | `/fm` <br> `/music` | radio.command | Plays/Stops audio | true |\n| `/radioadmin dump` |  | radio.admin.command | Dumps radio resource packs | OP |\n\n## Configuration\n\n<details>\n<summary>config.yml</summary>\n\n```yaml\n# If true, music will play automatically when the player joins the game.\n# Allowed values: \"true\" or \"false\"\nautoplay: true\n\n# Allowed values: \"order\" or \"random\"\nplay-mode: random\n\n# Show music name when playing begins\nshow-notification: true\n```\n</details>\n\n## Compiling\n1. Install [Maven](https://maven.apache.org/).\n2. Run `mvn clean package`. The compiled JAR can be found in the `target/` directory.\n\n## Metrics Collection\n\nThis plugin uses [bStats](https://github.com/wode490390/bStats-Nukkit). You can opt out using the global bStats config; see the [official website](https://bstats.org/getting-started) for more details.\n\n<!--[![Metrics](https://bstats.org/signatures/bukkit/Radio.svg)](https://bstats.org/plugin/bukkit/Radio/6082)-->\n\n###### If I have any grammar and/or term errors, please correct them :)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+  "id": "lt-name/Radio",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://wode490390.cn/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Radio",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/lt-name/Radio",
+  "stars": 1,
+  "summary": "Radio plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1743428123,
+  "versions": []
+}

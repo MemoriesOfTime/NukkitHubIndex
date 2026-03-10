@@ -1,10 +1,17 @@
 {
   "api_version": "1.0.8",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "若水",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1571297948,
   "dependencies": [],
   "description": "# AutoUpData\n根据Github仓库 更新插件\n",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
@@ -15,11 +22,17 @@
     "url": ""
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "AutoUpData",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/SmallasWater/AutoUpData",
   "stars": 4,
-  "summary": "",
+  "summary": "根据Github仓库 更新插件",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1700644032,
   "versions": [
     {

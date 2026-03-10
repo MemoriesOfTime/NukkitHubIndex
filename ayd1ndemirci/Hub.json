@@ -1,10 +1,17 @@
 {
   "api_version": "2.0.0",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "ayd1ndemirci",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1761743459,
   "dependencies": [],
   "description": "# Hub\nHub for RedFox\n\n## Description\nThis project was initially developed as RedFox Skyblock. However, due to the project owner's loss of interest and inability to maintain it, active development was discontinued.  \nIt has been made publicly available for the MC:BE community as an example and reference for educational and developmental purposes.\n\n## Technologies\n- Kotlin\n- MongoDB\n- Redis\n",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/128159204?v=4",
@@ -15,11 +22,18 @@
     "url": ""
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "Foxer",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/ayd1ndemirci/Hub",
   "stars": 1,
-  "summary": "",
+  "summary": "A PowerNukkitX-based repository written in Kotlin, which was left incomplete and made publicly available so that others may benefit from it",
+  "targets": [
+    "nkx",
+    "nkmot",
+    "pnx"
+  ],
   "updated_at": 1763020441,
   "versions": []
 }

@@ -1,32 +1,45 @@
 {
-  "api_version": "",
-  "authors": [],
+  "api_version": "unknown",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Minecraft AUR OpenSource Community",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1656673891,
   "dependencies": [],
   "description": "<div align=\"center\"><img src=\"https://raw.githubusercontent.com/Minecraft-AUR/AUR/ver/1.0.0/.github/AUR.png\"></div>\n\n# **AUR**\n\n[![GitHub license](https://img.shields.io/github/license/Minecraft-AUR/AUR?style=flat-square)](https://github.com/Minecraft-AUR/AUR/)\n[![Gradle Test Build](https://github.com/Minecraft-AUR/AUR/actions/workflows/GradleTestBuild.yml/badge.svg)](https://github.com/Minecraft-AUR/AUR/actions/workflows/GradleTestBuild.yml)\n![Bukkit Support](https://img.shields.io/badge/Bukkit-1.8--1.19-brightgreen)\n![Bungee Support](https://img.shields.io/badge/BungeeCord-latest-brightgreen)\n![Sponge Support](https://img.shields.io/badge/Sponge-API--8-brightgreen)\n\n## Make your server easier to create!\n\n[StatusPage](https://mcaur.statuspage.io/)\n\n[CI Server](http://101.200.240.210:8080)\n\nMulti language Readme\n------\n[中文](https://github.com/Minecraft-AUR/AUR/blob/ver/1.0.0/README-ZH.md)\n\nSo...What is AUR?\n-----\nAUR is a repository of plugins for minecraft servers, you can choose plugins from AUR and install them freely into your server just like in the market. Inspired by Arch Linux's AUR.\n\nFeature\n-----\nThe global CDN in America, Asia and Europe allows you to quickly connect to AUR's plugin network at any time!\n\n### NOW IN DEVELOP\n\nSpeed of progress: 12%\n\n",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [
     {
-      "created": "2026-03-06",
+      "created": "2026-03-10",
       "description": "",
       "title": "",
       "url": "https://raw.githubusercontent.com/Minecraft-AUR/AUR/ver/1.0.0/.github/AUR.png"
     }
   ],
   "icon_url": "https://avatars.githubusercontent.com/u/108525589?v=4",
-  "id": "Minecraft-AUR/AUR",
+  "id": "Minecraft-AUR/AUR--bukkit",
   "license": {
     "id": "MIT",
     "name": "MIT License",
     "url": "https://spdx.org/licenses/MIT.html"
   },
   "links": null,
+  "manifest_path": "bukkit/src/main/resources/plugin.yml",
   "name": "AUR",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/Minecraft-AUR/AUR",
   "stars": 4,
-  "summary": "",
+  "summary": "Make your server easier to create!",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1699818779,
   "versions": []
 }

@@ -1,6 +1,12 @@
 {
   "api_version": "1.0.8",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Leondius20",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1534104396,
   "dependencies": [
@@ -16,6 +22,7 @@
     }
   ],
   "description": "# Trading Interface\n![cover](https://raw.githubusercontent.com/Leonidius20/TradingInterface/master/screenshots/cover.png)\n\nShop system with a graphical interface for [NukkitX][nukkitx] server software for Minecraft Bedrock Edition!\n\n## Features:\n-   Buying and selling items & shop management through an intuitive interface;\n-   Support for items with enchantments, custom names & lores;\n-   The list of items, available for buying, is divided into categories for convenience;\n-   Temporary discounts for items (which expire after a set time);\n-   Custom translations of items' names (for displaying in the shop).\n\n## Installation:\n-   Make sure that [EconomyAPI][economy] and [DbLib][dblib] are installed on your server;\n-   Place the plugin's _.jar_ file into _plugins_ folder on your server;\n-   Launch the server and set up the plugin through its interface.\n\n## Setting up:\nShop management functions are available for players with `shop.edit` permission (operators have it by default). Players with this permission will see management buttons in the interface.\n\n## Usage:\nTo open up the shop's interface type `/shop` into the chat.\n\n## Translations\nIf the plugin is not translated into the language of your choosing, a file called `<your_lang>.lng`, where `<your_lang>` is the three-letter ID of your language, will be created in the plugin's data folder. It will contain text strings in the format of `key: value`, where `key` is the string's identifier and `value` is the string itself. Replace values in English with the values in your language, and these new strings will be used by the plugin. You can also start a pull request, placing `<your_lang>.lng` into `src/main/resources/lang`, and your translation may officially become a part of the plugin.\n\n## Building from sources\n`mvn clean package`\n\n## Links\n-   [Trading Interface on nukkitx.com](https://nukkitx.com/resources/trading-interface.113/)\n-   [Trading Interface on nukkit.ru](http://forums.voxelwind.com/resources/trading-interface.144/)\n\n[economy]: https://github.com/EconomyS/EconomyAPI\n[dblib]: https://github.com/fromgate/DbLib\n[nukkitx]: http://github.com/NukkitX/Nukkit\n",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [
     {
@@ -33,11 +40,17 @@
     "url": "https://spdx.org/licenses/MIT.html"
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "Trading_Interface",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/Leonidius20/TradingInterface",
   "stars": 9,
   "summary": "Shop system based on interface.",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1722707852,
   "versions": [
     {

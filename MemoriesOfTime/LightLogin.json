@@ -1,0 +1,54 @@
+{
+  "api_version": "1.0.11",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "LT_Name",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1695991052,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "MemoriesOfTime-GameCore",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "EasyMySQL",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "AutoUpData",
+      "version_range": ""
+    }
+  ],
+  "description": "",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/62042238?v=4",
+  "id": "MemoriesOfTime/LightLogin",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "LightLogin",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/MemoriesOfTime/LightLogin",
+  "stars": 1,
+  "summary": "",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1741801294,
+  "versions": []
+}

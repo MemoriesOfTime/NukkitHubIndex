@@ -1,0 +1,32 @@
+{
+  "api_version": "1.1.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1755898438,
+  "dependencies": [],
+  "description": "# Structure generators for Nukkit-MOT\n\nBased on plugins made by [wode490390](https://github.com/wode490390) & [PetteriM1](https://github.com/PetteriM1)\n\n- https://github.com/wode490390/QuasiStructurePopulator\n- https://github.com/wode490390/ClassicVillagePopulator\n- https://github.com/wode490390/OceanMonumentPopulator\n- https://github.com/wode490390/StrongholdPopulator\n- https://github.com/wode490390/NetherFortressPopulator\n- https://github.com/wode490390/MineshaftPopulator\n- https://github.com/wode490390/MultiTemplateStructurePopulator\n- https://github.com/wode490390/SingleTemplateStructurePopulator\n- https://github.com/wode490390/ScatteredBuildingPopulator\n- https://github.com/wode490390/BetterVanillaGenerator\n- https://github.com/wode490390/TheEnd\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/62042238?v=4",
+  "id": "MemoriesOfTime/WorldGeneratorExtension",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "WorldGeneratorExtension",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/MemoriesOfTime/WorldGeneratorExtension",
+  "stars": 0,
+  "summary": "Structure generators for Nukkit-MOT (Only Initial Support)",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1755959656,
+  "versions": []
+}

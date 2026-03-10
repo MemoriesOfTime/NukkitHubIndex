@@ -1,6 +1,12 @@
 {
   "api_version": "1.0.9",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "若水",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1585116245,
   "dependencies": [
@@ -11,6 +17,7 @@
     }
   ],
   "description": "<a href=\"https://github.com/SmallasWater/Land/releases/latest\" alt=\"Latest release\">\n    <img src=\"https://img.shields.io/github/v/release/SmallasWater/Land?include_prereleases\" alt=\"Latest release\">\n</a>\n\n# Land\n### 领地系统\n#### 功能:\n  - 自定义圈地提示\n  - 自定义玩家领地上限\n  - 自定义禁止圈地世界\n  - 自定义购买领地价格\n  - 领地成员独立权限\n  - 立体领地\n  - GUI 操作\n  - 领地套娃?(主领地内可设置数个子领地(配置可更改))\n  - 领地粒子区域显示\n  - 领地出售\n  - 领地赠送\n  - 领地寄售\n  - 自定义经济核心\n  - 领地GUI查找\n  - 使用工具圈地\n\n#### 领地权限:\n   - 禁止破坏\n   - 禁止放置 \n   - 禁止传送\n   - 禁止进入\n   - 禁止丢弃物品\n   - 禁止使用箱子 熔炉 \n   - 禁止PVP\n   - 禁止伤害生物\n   - 使用桶\n   - 使用打火石\n   - 创建子领地\n   - 使用展示框\n   - 告示牌编辑\n\n\n#### 使用方法:\n  - 安装前置 经济核心\n  - 插件指令: /la help\n    - ① 玩家输指令/la pos <1/2> 确定两点\n    - ② 玩家手持圈地工具(默认木锄) 点击方块进行圈地\n\n  - 之后执行 /la create 名称 即可创建领地 (领地范围为长方体)\n",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
@@ -21,11 +28,17 @@
     "url": "https://spdx.org/licenses/GPL-2.0.html"
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "Land",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/SmallasWater/Land",
   "stars": 8,
-  "summary": "",
+  "summary": "领地系统",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1771229168,
   "versions": [
     {

@@ -1,10 +1,17 @@
 {
   "api_version": "1.0.0",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "TheDiamondYT",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1471606742,
   "dependencies": [],
   "description": "# NukkitEssentials   \n**Discontinued**  \n  \nAn essentials plugin for the terrible [Nukkit Server Software](https://github.com/Nukkit/Nukkit).\n\n### Commands\n\n```\n/heal [player]\n/feed [player]\n/broadcast <message>\n/fly [player]\n/ping\n/helpop <message>\n/clearinventory [player]\n/motd\n/tpall\n/tell <player> <message>\n```\n\n\n",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/14148452?v=4",
@@ -15,11 +22,17 @@
     "url": "https://spdx.org/licenses/GPL-3.0.html"
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "Essentials",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/TheDiamondYT1/NukkitEssentials",
   "stars": 2,
-  "summary": "",
+  "summary": "Port of Bukkit Essentials to Nukkit. Discontinued.",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1552525620,
   "versions": []
 }

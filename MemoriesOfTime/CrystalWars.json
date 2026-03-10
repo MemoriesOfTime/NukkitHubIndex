@@ -1,0 +1,54 @@
+{
+  "api_version": "1.0.9",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "LT_Name",
+      "url": ""
+    },
+    {
+      "avatar_url": "",
+      "name": "iGxnon",
+      "url": ""
+    },
+    {
+      "avatar_url": "",
+      "name": "Glorydark",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1612007555,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "MemoriesOfTime-GameCore",
+      "version_range": ""
+    }
+  ],
+  "description": "# CrystalWars\n![CWLOGO.png](https://s2.loli.net/2022/01/18/Bx7ZUYr9nHO1KS2.png)\n\n插件介绍帖：https://www.mcbbs.net/thread-1259462-1-1.html\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/62042238?v=4",
+  "id": "MemoriesOfTime/CrystalWars",
+  "license": {
+    "id": "AGPL-3.0",
+    "name": "GNU Affero General Public License v3.0",
+    "url": "https://spdx.org/licenses/AGPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "CrystalWars",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/MemoriesOfTime/CrystalWars",
+  "stars": 7,
+  "summary": "",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1685693511,
+  "versions": []
+}

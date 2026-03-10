@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.8",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "若水",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1765281613,
+  "dependencies": [],
+  "description": "# CustomCraft\n\n一个适用于Nukkit-MOT的自定义合成配方和熔炉配方插件\n\n## 功能特性\n\n- 支持无序合成（类似染料合成）\n- 支持有序合成（类似工具合成，需要按照特定形状摆放）\n- 支持设置合成次数限制\n- 支持额外输出物品\n- 支持 NBT 物品作为合成材料或产物\n- 提供便捷的游戏内命令添加物品配置\n\n## 下载地址\n\n- [Jenkins 构建](https://motci.cn/job/CustomCraft/)\n\n## 安装方法\n\n1. 下载 CustomCraft 插件的 jar 文件\n2. 将 jar 文件放入你的 Nukkit-MOT 服务器的 `plugins` 文件夹中\n3. 重启服务器\n4. 插件会自动在 `plugins/CustomCraft` 目录下生成配置文件\n\n## 配置文件说明\n\n### craft.json - 合成配方配置\n\n配置文件位置：`plugins/CustomCraft/craft.json`\n\n#### 配置项说明\n\n| 字段            | 类型    | 说明                                   |\n|---------------|-------|--------------------------------------|\n| type          | 整数    | 配方类型：`0` = 无序合成，`1` = 有序合成           |\n| maxCraftCount | 整数    | 最大合成次数：`-1` = 无限次，其他数字为具体次数（此功能仍未完成） |\n| input         | 数组/对象 | 输入材料（格式见下方）                          |\n| output        | 字符串   | 输出物品（格式：`物品ID:特殊值:数量`）               |\n| shape         | 数组    | 仅有序合成需要，定义合成台的摆放形状                   |\n| extraOutput   | 数组    | 可选，额外输出的物品列表                         |\n\n#### 物品格式说明\n\n插件支持三种物品格式：\n\n**1. 普通物品格式**\n\n- 格式：`物品ID:特殊值:数量`\n- 示例：`58:0:1` 表示 1 个工作台（ID:58，特殊值:0）\n- 示例：`3:0` 表示泥土（ID:3，特殊值:0），数量默认为 1\n- 示例：`35:14:5` 表示 5 个红色羊毛（ID:35，特殊值:14）\n\n**2. NBT 物品格式（带特殊属性）**\n\n用于使用带有附魔、自定义名称、Lore 等 NBT 数据的物品：\n\n- 引用格式：`物品名称@nbt`\n- 使用步骤：\n  1. 在游戏中手持物品，执行 `/craft add <名称>` 保存到配置\n  2. 在配方中使用 `名称@nbt` 引用\n- 示例：\n  - 配置中引用：`\"input\": [\"神剑@nbt\"]`\n  - 作为输出：`\"output\": \"神剑@nbt\"`\n\n**说明**：NBT 物品的实际数据存储在 `nbtItems.json` 文件中，格式为 `物品ID:特殊值:数量:NBT数据`（自动生成，无需手动编辑）  \n如果物品发生了改变（如附魔、自定义名称、Lore 等），需要重新执行 `/craft add <名称>` 保存到配置文件中，否则插件将无法识别为同一物品。  \n如果不知道普通物品的ID或特殊值，也可在游戏中手持物品执行 `/craft add <名称>` 保存到配置文件中，当作NBT物品使用。\n\n**3. 命名空间物品格式（自定义物品）**\n\n用于新版本的命名空间 ID 物品：\n\n- 格式：`命名空间ID:数量`\n- 示例：`minecraft:diamond_sword:1`、`minecraft:netherite_ingot:1`\n\n**在配方中混合使用示例：**\n\n```json\n{\n  \"type\": 1,\n  \"maxCraftCount\": -1,\n  \"input\": {\n    \"A\": \"神剑@nbt\",\n    \"B\": \"minecraft:diamond:0:1\",\n    \"C\": \"minecraft:netherite_ingot:1\"\n  },\n  \"shape\": [\n    \"ABA\",\n    \"BCB\",\n    \"ABA\"\n  ],\n  \"output\": \"超级神剑@nbt\"\n}\n```\n\n#### 配置示例\n\n**无序合成示例**（将泥土合成为工作台）：\n\n```json\n{\n  \"recipes\": [\n    {\n      \"type\": 0,\n      \"maxCraftCount\": -1,\n      \"input\": [\n        \"3:0\"\n      ],\n      \"output\": \"58:0:1\"\n    }\n  ]\n}\n```\n\n**有序合成示例**（9 个泥土按 3x3 摆放合成工作台，并额外获得 1 个泥土）：\n\n```json\n{\n  \"recipes\": [\n    {\n      \"type\": 1,\n      \"maxCraftCount\": -1,\n      \"input\": {\n        \"A\": \"3:0\"\n      },\n      \"shape\": [\n        \"AAA\",\n        \"AAA\",\n        \"AAA\"\n      ],\n      \"output\": \"58:0:1\",\n      \"extraOutput\": [\n        \"3:0:1\"\n      ]\n    }\n  ]\n}\n```\n\n**有序合成形状说明**：\n\nshape 数组定义了物品在合成台中的摆放形状，每个字符代表一个格子：\n- `\"AAA\"` = 第一行三个格子都放 A 材料\n- `\"A A\"` = 第二行左右两边放 A 材料，中间空着\n- `\" A \"` = 第三行只有中间放 A 材料\n\n你可以定义多种材料：\n```json\n{\n  \"type\": 1,\n  \"input\": {\n    \"A\": \"5:0\",\n    \"B\": \"280:0\"\n  },\n  \"shape\": [\n    \"AAA\",\n    \" B \",\n    \" B \"\n  ],\n  \"output\": \"269:0:1\"\n}\n```\n上面的例子表示用木板和木棍合成木镐。\n\n### nbtItems.json - NBT 物品配置\n\n如果你需要使用带有特殊属性（如附魔、自定义名称等）的物品作为材料或产物，可以使用游戏内命令添加到此配置文件。\n\n配置文件位置：`plugins/CustomCraft/nbtItems.json`\n\n#### NBT 物品配置格式\n\n此文件由插件自动维护，通常不需要手动编辑。格式如下：\n\n```json\n{\n  \"物品名称\": \"物品ID:特殊值:数量:NBT数据\"\n}\n```\n\n**字段说明：**\n- `物品名称`：自定义的物品标识符，用于在配方中引用\n- `物品ID`：Minecraft 物品 ID（数字）或命名空间 ID（如 `minecraft:diamond_sword`）\n- `特殊值`：物品的特殊值/损害值（如钻石剑的耐久）\n- `数量`：物品数量\n- `NBT数据`：物品的 NBT 标签数据（Base64 编码），如果没有 NBT 数据则为 `not`\n\n#### 示例配置\n\n```json\n{\n  \"神剑\": \"276:0:1:CgAACQQAZW5jaAoBAAAAAgIAaWQJAAIDAGx2bAMAAA==\",\n  \"普通钻石\": \"264:0:1:not\",\n  \"自定义物品\": \"minecraft:diamond_sword:1:nbt\"\n}\n```\n\n**使用方法：**\n\n1. 通过命令添加（推荐）：\n```\n/craft add 神剑\n```\n系统会自动保存手中物品的所有 NBT 数据\n\n2. 在配方中引用：\n```json\n{\n  \"type\": 0,\n  \"input\": [\"神剑@nbt\", \"diamond:0:8\"],\n  \"output\": \"超级神剑@nbt\"\n}\n```\n\n**注意事项：**\n- NBT 数据包含了物品的所有特殊属性（附魔、自定义名称、Lore、隐藏标志等）\n- 带 NBT 的物品必须完全匹配才能用于合成（包括附魔等级、名称等）\n- 建议使用命令添加 NBT 物品，避免手动编辑出错\n\n## 使用教程\n\n### 1. 添加简单配方\n\n直接编辑 `craft.json` 文件，按照上面的格式添加配方，然后使用 `/reload` 重载插件。\n\n### 2. 使用 NBT 物品创建高级配方\n\nNBT 物品可以保存物品的所有特殊属性，包括：\n- 附魔（锋利、耐久等）\n- 自定义名称和描述（Lore）\n- 隐藏的标志\n- 其他 NBT 数据\n\n**操作步骤：**\n\n1. **准备你的特殊物品**\n   - 在游戏中制作或获取一个带有特殊属性的物品\n   - 例如：一把附魔了锋利 V 的钻石剑，重命名为\"神剑\"\n\n2. **保存物品到配置**\n   - 手持该物品\n   - 执行命令：`/craft add <名称>`\n   - 例如：`/craft add 神剑`\n   - 系统会提示保存成功\n\n3. **在配方中引用 NBT 物品**\n   - 格式：`物品名称@nbt`\n   - 作为输入材料：`\"input\": [\"神剑@nbt\"]`\n   - 作为输出物品：`\"output\": \"神剑@nbt\"`\n\n**完整示例 - 用普通材料合成特殊物品：**\n\n```json\n{\n  \"type\": 1,\n  \"maxCraftCount\": 1,\n  \"input\": {\n    \"A\": \"diamond:0\",\n    \"B\": \"emerald:0\"\n  },\n  \"shape\": [\n    \"AAA\",\n    \"ABA\",\n    \"AAA\"\n  ],\n  \"output\": \"神剑@nbt\"\n}\n```\n\n**完整示例 - 升级特殊物品：**\n\n```json\n{\n  \"type\": 0,\n  \"maxCraftCount\": -1,\n  \"input\": [\"神剑@nbt\", \"nether_star:0:1\"],\n  \"output\": \"超级神剑@nbt\"\n}\n```\n\n**重要提示：**\n- 使用 NBT 物品作为材料时，玩家的物品必须完全匹配（附魔等级、名称等）\n- 建议为每个特殊物品起一个容易识别的名称\n- 可以在 `nbtItems.json` 中查看已保存的所有 NBT 物品\n\n### 3. 测试配方\n\n1. 保存配置文件\n2. 在游戏中使用 `/reload` 命令重载插件\n3. 打开合成台测试你的配方\n\n## 命令说明\n\n| 命令 | 说明 | 权限 |\n|------|------|------|\n| `/craft add <名称>` | 将手中的物品添加到 nbtItems 配置中 | customcraft.craft |\n\n**权限说明**：\n- `customcraft.craft` - 默认只有管理员（OP）拥有此权限\n\n## 常见问题\n\n**Q: 修改配置后不生效？**  \nA: 修改配置文件后需要重启服务器。\n\n**Q: 如何使用带附魔的物品作为材料？**  \nA: 使用 `/craft add <名称>` 保存带附魔的物品，然后在配方中用 `名称@nbt` 引用。注意：玩家的物品必须与保存的物品完全一致才能合成。\n\n**Q: NBT 物品格式 `@nbt` 后缀是必须的吗？**  \nA: 是的，引用 nbtItems.json 中的物品时必须加上 `@nbt` 后缀，例如 `神剑@nbt`。这样插件才能识别这是一个 NBT 物品。\n\n**Q: 普通物品格式和命名空间格式有什么区别？**  \nA:\n- 普通格式：`物品ID:特殊值:数量`（如 `276:0:1`，适用于常规物品）\n- 命名空间格式：`minecraft:物品名称`（如 `minecraft:diamond_sword`，适用于自定义物品和部分高版本物品）\n\n**Q: extraOutput 有什么用？**  \nA: 它可以让玩家在合成主要物品的同时，额外获得其他物品，适合制作\"副产品\"或\"返还材料\"的配方。\n\n**Q: maxCraftCount 设置为 1 后，是否全服玩家只能合成一次？**  \nA: 不是，maxCraftCount配置是针对单个玩家的合成次数限制，设置为 1 表示每个玩家只能合成该配方 1 次。\n\n**Q: 如何查看已保存的 NBT 物品列表？**  \nA: 打开 `plugins/CustomCraft/nbtItems.json` 文件，所有通过命令保存的物品都会列在这里。\n\n## 反馈与支持\n\n如果你在使用过程中遇到问题或有建议，欢迎通过以下方式反馈：\n- 提交 Issue：[CustomCraft GitHub Issues](https://github.com/MemoriesOfTime/CustomCraft/issues)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/62042238?v=4",
+  "id": "MemoriesOfTime/CustomCraft",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "CustomCraft",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/MemoriesOfTime/CustomCraft",
+  "stars": 1,
+  "summary": "A custom crafting and furnace recipe plugin for Nukkit-MOT",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1766827034,
+  "versions": []
+}

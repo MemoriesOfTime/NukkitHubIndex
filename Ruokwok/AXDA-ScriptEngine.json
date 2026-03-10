@@ -1,0 +1,60 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Ruok",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1753028085,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "AXDA-Kernel",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "EconomyAPI",
+      "version_range": ""
+    }
+  ],
+  "description": "\n<p align=\"center\">\n    <img height=\"165\" src=\"https://raw.githubusercontent.com/Ruokwok/AXDA-ScriptEngine/master/ase_logo.png\">\n</p>\n\n[![stars](https://img.shields.io/github/stars/Ruokwok/AXDA-ScriptEngine)](https://github.com/Ruokwok/AXDA-ScriptEngine)\n[![license](https://img.shields.io/github/license/Ruokwok/AXDA-ScriptEngine)](https://github.com/Ruokwok/AXDA-ScriptEngine/blob/master/LICENSE)\n[![version](https://img.shields.io/badge/version-1.0.0-red)](https://github.com/Ruokwok/AXDA-ScriptEngine)\n\n## AXDA - Script Engine\nNukkit-MOT平台上的JavaScript脚本插件加载器，基于GraalVM实现。\n兼容 [LegacyScriptEngine](https://lse.levimc.org/zh/)(LSE)的API。完全支持ES2022语法标准和特性。\n\nASE可以在绝大部分JVM上运行(>=17)，在使用GraalVM时，可能需安装js模块，命令如下:\n\n`gu install js`\n\n### 下载\n[MOTCI Jenkins](https://motci.cn/job/AXDA-ScriptEngine/)\n### 安装脚本插件\n\n**简单安装:**\n-  将JS脚本插件存放在 `plugins/` 目录下，启动服务器插件将会自动加载。\n\n**ZIP压缩包安装:**\n-  将zip插件包存放在 `plugins/` 目录下，启动服务器将自动解压清单和插件等文件。\n\n### 命令\n- `ase ls` 打印已加载的脚本插件列表\n- `ase reload` 重新加载所有的脚本插件\n- `ase unload <plugin>` 卸载指定插件\n\n### LSE兼容性\nASE API目标是兼容绝大部分LSE API，基于LSE开发的JavaScript插件可以直接在ASE上运行，查看LSE文档请移步至[https://lse.levimc.org/zh/](https://lse.levimc.org/zh/)\n\n#### Level差异\n在LSE中，对于世界的操作只需传入int类型的维度ID，而在ASE中的相应API函数，除了维度ID外，还可传入String类型的世界名称。\n\n#### KVDatabase差异\nASE的KVDatabase接口虽然底层和LSE一样使用LevelDB实现，但是序列化/反序列化实现方式有所不同，所以在LSE上创建的数据库无法迁移到ASE上使用。\n\n### 致谢\nAXDA-ScriptEngine的实现离不开以下项目:\n- [Nukkit-MOT](https://github.com/MemoriesOfTime/Nukkit-MOT)\n- [PNX LLSE-Lib](https://github.com/PowerNukkitX-Bundle/LLSE-Lib)\n- [LegacyScriptEngine](https://github.com/LiteLDev/LegacyScriptEngine)",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-03-07",
+      "description": "",
+      "title": "",
+      "url": "https://raw.githubusercontent.com/Ruokwok/AXDA-ScriptEngine/master/ase_logo.png"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/72373519?v=4",
+  "id": "Ruokwok/AXDA-ScriptEngine",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://axda.net/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "AXDA-ScriptEngine",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Ruokwok/AXDA-ScriptEngine",
+  "stars": 5,
+  "summary": "AXDA ScriptEngine",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1766927725,
+  "versions": []
+}

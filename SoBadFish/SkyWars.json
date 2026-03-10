@@ -1,0 +1,53 @@
+{
+  "api_version": "1.0.11",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "sobadfish",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1664357908,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "ScoreboardPlugin",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "Ghosty",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "MemoriesOfTime-GameCore",
+      "version_range": ""
+    }
+  ],
+  "description": "# SkyWars\n\n空岛战争小游戏\n\n指令:/sw\n\n管理员指令: /swa\n\n[下载](https://motci.cn/view/SoBadFish/job/SkyWars/)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/83235042?v=4",
+  "id": "SoBadFish/SkyWars",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "SkyWars",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/SoBadFish/SkyWars",
+  "stars": 6,
+  "summary": "空岛战争小游戏",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1738167024,
+  "versions": []
+}

@@ -1,10 +1,17 @@
 {
   "api_version": "1.0.0",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "ZeroDevOfficial",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1513267878,
   "dependencies": [],
   "description": "# Notice\nI am back! I will be updating this plugin and will start making new plugins for nukkit\n\n\n\n> Please incude in your issue\n* Issue or bug\n* Console log (if an error appears) \n* Provide what nukkit version your using (if your using a fork please let us know)\n\n# World Teleport UI\n\n> Allows Admins to teleport between worlds with a simple UI in Nukkit\n\n> Version: v0.0.3\n\n> Minecraft: v1.11.3\n\n# Download\ndownload the latest jar file [here](https://github.com/AetherNetwork/WorldTpUI-Nukkit/releases) and drop it in your plugins folder\n\n# How to Use\nDrop the jar in your plugins folder.\n\nEdit Config:\n```\nversion: 0.0.3\nadminsOnly: true\nloadWorldWithGui: true\nuseItemToOpenGUI: true\nitem: 339\n```\n\n> commands: /wtpui\n![ui](https://i.imgur.com/oaLrGc5.png)\n\n> item: 339 (paper as default)\n![item](https://i.imgur.com/nK7KP2M.png)\n\n# License\n```\nMIT License\n\nCopyright (c) 2017-2019 Aether Network\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n```",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/33165117?v=4",
@@ -15,11 +22,17 @@
     "url": "https://spdx.org/licenses/MIT.html"
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "WorldTpUI",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/AetherNetwork/WorldTpUI-Nukkit",
   "stars": 10,
   "summary": "Allows Admins to tp between worlds with a simple UI in Nukkit",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1608176409,
   "versions": [
     {

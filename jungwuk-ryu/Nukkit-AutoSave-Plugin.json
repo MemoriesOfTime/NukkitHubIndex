@@ -1,10 +1,17 @@
 {
   "api_version": "1.0.0",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Hancho",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1596052417,
   "dependencies": [],
   "description": "# Nukkit Auto Save Plugin\n![tmp1](https://user-images.githubusercontent.com/29895665/107823902-24dd7980-6db3-11eb-8c58-a78248b023a4.png)  \n#### Please back up your server before using this plugin.\nThis plugin will save all plugins on your server without restarting server.  \n\n## How it works?\n- It will detect \"save\" method on plugin and invoke it.    \n- You can add a plugin from config.yml to invoke_OnDisable if your plugin saves when the server stops.\n\n## DOWNLOAD\nPlease check [here](https://github.com/jungwuk-ryu/Nukkit-AutoSave-Plugin/releases) or [Cloudburst resource](https://cloudburstmc.org/resources/autosave.656/)\n\n## Command\n```\n/as save - save instantly\n/as reload - reload config.yml\n```\n\n## Monitoring\n![image](https://user-images.githubusercontent.com/29895665/107825303-6f5ff580-6db5-11eb-901c-b840db24776d.png)  \nYou can monitor by setting debug to true in config.yml \n\n \n",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/29895665?v=4",
@@ -15,11 +22,17 @@
     "url": "https://spdx.org/licenses/GPL-3.0.html"
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "AutoSave",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/jungwuk-ryu/Nukkit-AutoSave-Plugin",
   "stars": 0,
-  "summary": "",
+  "summary": "A Nukkit plugin which will save all plugins on your server without restarting server.",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1613769044,
   "versions": [
     {

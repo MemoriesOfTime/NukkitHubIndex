@@ -1,10 +1,17 @@
 {
   "api_version": "1.0.9",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "若水",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1578677313,
   "dependencies": [],
   "description": "<a href=\"https://github.com/SmallasWater/LuckDraw/releases/latest\" alt=\"Latest release\">\n    <img src=\"https://img.shields.io/github/v/release/SmallasWater/LuckDraw?include_prereleases\" alt=\"Latest release\">\n</a>\n\n# LuckDraw\n抽奖箱\n------\n## 功能\n- [x] 自定义箱子模型 （只能展示一遍，，推荐关闭）\n\n- [x] 自定义抽奖物品\n\n- [x] 自定义奖励展示\n\n- [x] 自定义物品概率\n\n- [x] 生物伪装系统\n\n- [x] 物品掉落显示名字\n\n\n## 用法\n>  /luck help 主命令(OP) \n>\n>  /pla help 玩家伪装 (Player) \n>\n>  /luckadd 抽奖箱拓展指令\n \n  \n",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
@@ -15,11 +22,17 @@
     "url": "https://spdx.org/licenses/GPL-3.0.html"
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "LuckDraw",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/SmallasWater/LuckDraw",
   "stars": 3,
-  "summary": "",
+  "summary": "幸运箱子+变身+掉落物显示名称",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1665203241,
   "versions": [
     {

@@ -1,10 +1,17 @@
 {
   "api_version": "1.0.9",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "HmmHmmmm",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1582038964,
   "dependencies": [],
   "description": "## WorldProtect\n\n\n[Language English](#english)\n\n\nDownload WorldProtect.jar https://nukkitx.com/resources/worldprotect.400/\n\n\n# English\n\n\n**Features of plugin**<br>\n- Is a protection world plugin By using events #event\n- Have ban item\n- Have ban cmd\n- Have whitelist\n- Have gui form\n- Have language thai and english (You can edit the language you don't like at, `/resources/language`)\n\n\n**Event**<br>\n- place (Player place block)\n- break (Player break block)\n- interact (Player touch block)\n- damage (Player immortal)\n- pvp (Player battle)\n- explode (Block spread explode)\n- weather (Raining)\n- item-drop (Player discard item)\n- move (Player Walking)\n- fly (Player Flying)\n- keepinventory (Player death item fall)\n- keepexperience (Player death xp fall)\n- bucketfill (Player fill bucket)\n- bucketempty (Player empty bucket)\n- chat (Player chat print)\n- bedenter (Player enter bed)\n- eatfood (Player eat food)\n- food (Esophageal player do not reduce)\n- teleport (Player teleport)\n- itemframe-drop (Item frame fall)\n\n\n**How to use**<br>\n- \n\n\n**Command**<br>\n- /worldprotect : open gui form\n\n\n**Images**<br>\n![1](https://github.com/HmmHmmmm/WorldProtect/blob/master/images/2.0/1.jpg)\n\n![2](https://github.com/HmmHmmmm/WorldProtect/blob/master/images/2.0/2.jpg)\n\n![3](https://github.com/HmmHmmmm/WorldProtect/blob/master/images/2.0/3.jpg)\n\n\n# Config\n```\n#Language\n#thai=ภาษาไทย\n#english=English language\nlanguage: english\n```\n  \n\n# Permissions\n```\nworldprotect.command:\r\n  default: op\n```",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/57228397?v=4",
@@ -19,11 +26,17 @@
     "homepage": "https://github.com/HmmHmmmm/WorldProtect",
     "wiki": ""
   },
-  "name": "${pom.artifactId}",
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "WorldProtect",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/HmmHmmmm/WorldProtect",
   "stars": 5,
-  "summary": "",
+  "summary": "WorldProtection",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1727262779,
   "versions": [
     {

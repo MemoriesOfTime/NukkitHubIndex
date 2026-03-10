@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.9",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "LT_Name",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1627560030,
+  "dependencies": [],
+  "description": "# HiddenCommands\n\nNukkit 隐藏命令插件  \n/hcmd cmd 开启/关闭隐藏所有命令  \n/hcmd tip 开启/关闭隐藏命令不存在提示  \n\n下载：https://ci.lt-name.com/view/LT_Name/job/HiddenCommands/\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+  "id": "lt-name/HiddenCommands",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "HiddenCommands",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/lt-name/HiddenCommands",
+  "stars": 1,
+  "summary": "",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1654780347,
+  "versions": []
+}

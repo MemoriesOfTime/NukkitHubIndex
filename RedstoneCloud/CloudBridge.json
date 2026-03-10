@@ -1,0 +1,59 @@
+{
+  "api_version": "2.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "RedstoneCloud",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1725822595,
+  "dependencies": [],
+  "description": "<div align=\"center\">\n<img src=\"https://avatars.githubusercontent.com/u/178515769?s=400&u=a56cd5675db6ef4014913e34ff55ed0d3e5013d2&v=4\" width=\"150\" height=\"150\" alt=\"RedstoneCloud CloudBridge\">\n<h4>Seamlessly connect your Minecraft server to RedstoneCloud</h4>\n</div>\n\n## 📖 Overview\nCloudBridge is an essential component for linking your Minecraft server to RedstoneCloud. It enables communication between your server and the cloud, ensuring smooth synchronization and management of resources across your network.\n\n## 🎯 Key Features\n* Establishes a reliable connection between your server and RedstoneCloud.\n* Facilitates real-time data synchronization using [Redis](https://redis.io/).\n* Supports a wide range of server software for maximum compatibility.\n* Easily extensible to support additional server software.\n\n### Currently supported softwares:\n- [WaterdogPE](https://github.com/WaterdogPE/WaterdogPE)\n- [PowerNukkitX](https://github.com/PowerNukkitX/PowerNukkitX)\n- [Nukkit](https://github.com/CloudburstMC/Nukkit)\n- [Allay](https://github.com/AllayMC/Allay) *partially*\n\n## 🚀 Getting Started\n\nTo set up CloudBridge on your server, follow these steps:\n\n1. **Download the latest release:**\n   - Visit the [releases page](https://github.com/RedstoneCloud/CloudBridge/releases) and download the latest version of CloudBridge.\n\n2. **Install CloudBridge:**\n   - Place the downloaded `.jar` file into your server's `plugins` folder.\n\n3. **Start your server:**\n   - Once CloudBridge is installed and configured, you can now start your server. It will now be connected to RedstoneCloud.\n\n## 💡 Important\nEnsure you're running the latest version of CloudBridge to maintain compatibility with RedstoneCloud and benefit from new features and security updates.\n\n## 🙌 Contributing\nWe welcome contributions to help improve CloudBridge! Here are some ways you can contribute:\n\n### Reporting Issues\nIf you encounter any issues while using CloudBridge, please open an [issue](https://github.com/RedstoneCloud/CloudBridge/issues) on GitHub. Be sure to provide a clear description of the issue and steps to reproduce it.\n\n### Adding Support for New Software\nCloudBridge is designed to be flexible and can be extended to support additional Minecraft server software. If you have experience with other server software and would like to contribute, you can add support by following these steps:\n1. Fork the repository and implement the required changes to support the new software.\n2. Ensure that your changes follow the project’s coding standards and include appropriate documentation.\n3. Submit a pull request, and our team will review your contribution.\n\n### Submitting a Pull Request\nFor any other code contributions—bug fixes, feature additions, or improvements—please submit a pull request. Make sure to:\n- Follow our coding guidelines.\n- Include tests where applicable.\n- Provide documentation for any new features.\n\n## 📌 License\nThis project is licensed under the Apache-2.0 License. For more information, see the [LICENSE](https://github.com/RedstoneCloud/CloudBridge/blob/main//LICENSE) file.\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/178515769?v=4",
+  "id": "RedstoneCloud/CloudBridge",
+  "license": {
+    "id": "Apache-2.0",
+    "name": "Apache License 2.0",
+    "url": "https://spdx.org/licenses/Apache-2.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/RedstoneCloud",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/powernukkitx.yml",
+  "name": "CloudBridge",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/RedstoneCloud/CloudBridge",
+  "stars": 0,
+  "summary": "CloudBridge for RedstoneCloud",
+  "targets": [
+    "nkx",
+    "pnx"
+  ],
+  "updated_at": 1767895888,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "cloudbridge.jar",
+          "primary": true,
+          "size": 47324949,
+          "url": "https://github.com/RedstoneCloud/CloudBridge/releases/download/snapshot/cloudbridge.jar"
+        }
+      ],
+      "name": "Snapshot Build",
+      "prerelease": true,
+      "published_at": 1767896241,
+      "version": "snapshot"
+    }
+  ]
+}

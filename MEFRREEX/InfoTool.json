@@ -1,10 +1,17 @@
 {
   "api_version": "1.0.8",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "MEFRREEX",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1670322431,
   "dependencies": [],
   "description": "# InfoTool\nJust use the information tool on blocks or entities to get more information about them.\n\n![Снимок экрана (508)](https://user-images.githubusercontent.com/83061703/205898112-68bb2bf2-e5a6-4e8a-a812-f349669064fe.png)\n![Снимок экрана (509)](https://user-images.githubusercontent.com/83061703/205898148-7080a192-befe-4ef7-924b-bf82856b75f8.png)\n\nCommands:\n```\n/infotool - Get an info tool\n/infotool about - About the plugin\n/infotool help - Help\n```\nPermissions:\n```\ninfotool.use\n```\n",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/83061703?v=4",
@@ -15,11 +22,18 @@
     "url": ""
   },
   "links": null,
-  "name": "${project.name}",
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "InfoTool",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/MEFRREEX/InfoTool",
   "stars": 0,
-  "summary": "",
+  "summary": "Just use the information tool on blocks or entities to get more information about them.",
+  "targets": [
+    "nkx",
+    "nkmot",
+    "pnx"
+  ],
   "updated_at": 1678451473,
   "versions": [
     {

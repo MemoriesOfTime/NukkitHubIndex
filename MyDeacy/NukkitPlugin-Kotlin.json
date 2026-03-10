@@ -1,10 +1,17 @@
 {
   "api_version": "1.0.0",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "RuinPray",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1510994311,
   "dependencies": [],
   "description": "# NukkitPlugin-Kotlin\nKotlinで簡単なNukkitプラグインを書いただけ。  \n  \n持ったアイテムのID,MetaをTipで出力します。\n",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/20610410?v=4",
@@ -15,11 +22,17 @@
     "url": ""
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "IdPopup",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/MyDeacy/NukkitPlugin-Kotlin",
   "stars": 0,
-  "summary": "",
+  "summary": "Kotlinで簡単なのを書いただけ。",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1511068213,
   "versions": []
 }

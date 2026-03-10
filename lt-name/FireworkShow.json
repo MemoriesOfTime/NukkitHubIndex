@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "PetteriM1",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1595921063,
+  "dependencies": [],
+  "description": "# FireworkShow Plugin\n\n**Language / 语言**: [English](https://github.com/lt-name/FireworkShow/blob/master/README.md) | [中文](https://github.com/lt-name/FireworkShow/blob/master/README_zh.md)\n\nA Nukkit plugin that creates spectacular automated firework displays in your Minecraft Bedrock Edition server.\n\n## Features\n\n- **Automated Firework Shows**: Create stunning firework displays that run automatically in specified worlds\n- **Multi-World Support**: Configure different firework shows for different worlds\n- **Customizable Positions**: Set multiple spawn positions for fireworks in each world\n- **Performance Optimized**: Uses direct packet sending instead of entity spawning to prevent server lag\n- **Flexible Configuration**: Global and per-world settings with override capabilities\n- **Sound Control**: Option to mute spawn and explosion sounds\n- **Group Splitting**: Alternate between position groups for varied display patterns\n- **Multi-Language Support**: English and Chinese language support\n- **Easy Management**: Simple commands for configuration and control\n\n## Requirements\n\n- Nukkit-MOT server\n- Java 17 or higher\n- Permission: `fireworkshow.admin` (default: op)\n\n## Installation\n\n1. Download the latest `FireworkShow-3.0.0-SNAPSHOT.jar` from releases\n2. Place the jar file in your server's `plugins` folder\n3. Restart your server\n4. Configure the plugin using the generated `config.yml` file\n\n## Configuration\n\nThe plugin creates a `config.yml` file with the following structure:\n\n```yaml\nconfigVersion: 4\n\n# Global default settings (shared by all worlds)\nglobal:\n  spawnTick: 40              # Ticks between spawns (20 = 1 second)\n  fireworkFlightDuration: 1   # Flight duration (1-3 recommended)\n  muteSpawnSound: false      # Mute spawn sound\n  muteExplodeSound: false    # Mute explosion sound\n  splitGroups: false         # Alternate between position groups\n\n# Per-world configurations\nworlds:\n  lobby:\n    enabled: true\n    positions:\n      - {x: -12, y: 87, z: 29}\n      - {x: -29, y: 87, z: -12}\n      # ... more positions\n```\n\n### Configuration Options\n\n#### Global Settings\n- `spawnTick`: Time between firework spawns (in ticks, 20 ticks = 1 second)\n- `fireworkFlightDuration`: How long fireworks fly before exploding (1-3 recommended)\n- `muteSpawnSound`: Whether to mute the firework launch sound\n- `muteExplodeSound`: Whether to mute the firework explosion sound\n- `splitGroups`: Split positions into alternating groups for varied patterns\n\n#### World Settings\nEach world can override global settings and has:\n- `enabled`: Whether fireworks are active in this world\n- `positions`: List of coordinates where fireworks spawn\n- Any global setting can be overridden per-world\n\n## Commands\n\nAll commands use the base command `/fireworkshow` or `/fws`:\n\n### General Commands\n- `/fws help` - Show command help\n- `/fws reload` - Reload configuration\n- `/fws list` - List all configured worlds\n\n### World Management\n- `/fws enable <world>` - Enable fireworks in a world\n- `/fws disable <world>` - Disable fireworks in a world\n\n### Position Management\n- `/fws pos add <world> [x y z]` - Add a firework spawn position\n- `/fws pos remove <world> <index>` - Remove a position by index\n- `/fws pos list <world>` - List all positions in a world\n- `/fws pos clear <world>` - Clear all positions in a world\n\n### Configuration\n- `/fws set <world> <setting> <value>` - Set world-specific setting\n- `/fws global <setting> <value>` - Set global setting\n\n#### Available Settings\n- `spawnTick` - Time between spawns (integer)\n- `flightDuration` - Flight duration (integer, 1-3)\n- `muteSpawn` - Mute spawn sound (true/false)\n- `muteExplode` - Mute explosion sound (true/false)\n- `splitGroups` - Use alternating groups (true/false)\n\n## Usage Examples\n\n### Basic Setup\n1. Add positions where fireworks should spawn:\n   ```\n   /fws pos add lobby 0 80 0\n   /fws pos add lobby 10 80 10\n   ```\n\n2. Enable the world:\n   ```\n   /fws enable lobby\n   ```\n\n### Advanced Configuration\n1. Set faster firework spawning:\n   ```\n   /fws set lobby spawnTick 20\n   ```\n\n2. Make fireworks fly longer:\n   ```\n   /fws set lobby flightDuration 2\n   ```\n\n3. Mute sounds for a quieter display:\n   ```\n   /fws set lobby muteSpawn true\n   /fws set lobby muteExplode true\n   ```\n\n## Performance Notes\n\n- The plugin uses optimized packet sending instead of spawning entities\n- Large numbers of positions are supported without significant performance impact\n- The `splitGroups` option can help distribute load across multiple ticks\n- Fireworks only spawn when players are present in the world\n\n## Permissions\n\n- `fireworkshow.admin` - Access to all plugin commands (default: op)\n\n## Language Support\n\nThe plugin supports multiple languages:\n- English (`en_US`)\n- Chinese Simplified (`zh_CN`)\n\nLanguage is automatically detected based on your server's language setting.",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+  "id": "lt-name/FireworkShow",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "FireworkShow",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/lt-name/FireworkShow",
+  "stars": 0,
+  "summary": "Firework show plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1767094106,
+  "versions": []
+}

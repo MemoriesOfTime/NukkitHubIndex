@@ -1,6 +1,12 @@
 {
   "api_version": "1.0.9",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "LT_Name",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1594780940,
   "dependencies": [
@@ -21,6 +27,7 @@
     }
   ],
   "description": "# HuntGame\n[![License](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](LICENSE)\n![Java CI](https://github.com/MemoriesOfTime/HuntGame/workflows/Java%20CI/badge.svg?branch=master)\n[![Discord](https://img.shields.io/badge/Link-Discord-blue.svg)](https://discord.gg/pJjQDQC)    \n",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/62042238?v=4",
@@ -31,11 +38,17 @@
     "url": "https://spdx.org/licenses/AGPL-3.0.html"
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "HuntGame",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/MemoriesOfTime/HuntGame",
   "stars": 3,
-  "summary": "",
+  "summary": "BlockHunt+AnimalHunt game for Nukkit",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1735716629,
   "versions": [
     {

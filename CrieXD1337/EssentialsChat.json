@@ -1,6 +1,12 @@
 {
   "api_version": "1.1.0",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Criex",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1743875280,
   "dependencies": [
@@ -21,6 +27,7 @@
     }
   ],
   "description": "# EssentialsChat 🌟\n\n**EssentialsChat** is a powerful and flexible chat management plugin for Nukkit servers! 🚀 It supports global and local chat, customizable prefixes and nicknames, integration with LuckPerms and Multipass, and advanced chat filtering. Perfect for servers that need enhanced chat control and customization. 🎉\n\n---\n\n## ✨ Features\n\n- **Global and Local Chat**:\n  - Local chat with configurable radius 📍\n  - Global chat triggered by a symbol (default: `!`) 🌍\n  - Support for default Minecraft chat format 🗨️\n- **Prefix and Suffix Customization**:\n  - Seamless integration with **LuckPerms** and **Multipass** for prefix/suffix management 🔖\n  - `/prefix` command to set custom prefixes 🎨\n- **Nickname Management**:\n  - `/nick` command to set custom nicknames 🖌\n  - Optional colored nicknames and duplicate nickname restrictions 🚫\n  - `/realname` command to find a player's real name 🕵️‍♂️\n- **Chat Filtering**:\n  - Message cooldown to prevent spam ⏰\n  - Maximum message length restriction 📏\n  - Anti-spam protection for repeated messages 🚨\n  - Configurable punishments: kick, message, or custom command ⚖️\n- **PlaceholderAPI Integration**:\n  - Use placeholders to customize chat formats 📝\n- **Highly Configurable**:\n  - Blacklists for nicknames and prefixes 🚫\n  - Customizable message formats and character limits 🔧\n- **Debug Mode**:\n  - Detailed logging for developers 🛠️\n\n---\n\n## 📥 Installation\n\n1. **Download the Plugin**:\n  - Grab the [latest](https://github.com/CrieXD1337/EssentialsChat/releases/latest) `.jar` file from [Releases](https://github.com/CrieXD1337/EssentialsChat/releases/latest) 📦\n2. **Install Dependencies**:\n  - **Required**: [PlaceholderAPI](https://cloudburstmc.org/resources/placeholderapi.104/) for placeholder support.\n  - **Optional**: [LuckPerms](https://luckperms.net/download) or [Multipass](https://cloudburstmc.org/resources/multipass.29/) for prefix/suffix support.\n3. **Place the Jar**:\n  - Drop `EssentialsChat.jar` into your `plugins` folder.\n4. **Restart the Server**:\n  - Start or restart your Nukkit server to load the plugin. The default configuration files (`config.yml`, `messages.yml`, `provider.yml`) will be generated automatically. 🔄\n5. **Configure**:\n  - Edit `config.yml` and `messages.yml` in the `plugins/EssentialsChat` folder to customize settings and messages. 🛠️\n  - Set the provider in `provider.yml` (`luckperms`, `multipass`, or `fallback`).\n\n---\n\n## ⚙️ Configuration\n\nThe plugin is highly customizable through its configuration files. Below are the key files and their purposes:\n\n- **config.yml**: Main configuration for chat formats, nickname/prefix rules, and chat filtering settings.\n- **messages.yml**: Customizable messages for commands and chat filtering.\n- **provider.yml**: Select the prefix/suffix provider (`luckperms`, `multipass`, or `fallback`).\n\n### Example Config Snippets\n\n**config.yml**:\n```yaml\nchat-formatting:\n  format-method: 1 # 1: Local/Global, 2: Single, 3: Default Minecraft\n  local-chat-radius: 100\n  global-chat-symbol: \"!\"\n  local-chat-format: \"§7[§aL§7] §r{prefix}§r {player}{suffix}§r §a» §8{msg}\"\n  global-chat-format: \"§7[§4G§7] §r{prefix}§r {player}{suffix}§r §a» §f{msg}\"\n\nnick:\n  max-characters-length: 15\n  min-characters-length: 3\n  allow-colored-nick: false\n  allow-duplicate-nicknames: false\n```\n\n**messages.yml**:\n```yaml\nprefix-set: \"§7> §fYour prefix successfully moved to: §b{prefix}\"\nnick-success: \"§7> §fYour nickname changed to §b{nick}\"\ncooldown-for-messages: \"§7> §cWait §b{seconds} §cseconds\"\n```\n\nCheck the full configuration files in the [repository](https://github.com/CriexD1337/EssentialsChat/tree/main/main/resources) for all available options.\n\n---\n\n## 📜 Commands\n\n| Command | Description | Permission                         | Usage                           |\n|---------|-------------|------------------------------------|---------------------------------|\n| `/prefix <prefix\\|off>` | Set or clear your prefix | `essentialschat.commands.prefix`   | `/prefix VIP` or `/prefix off`  |\n| `/nick <nick\\|off>` | Set or clear your nickname | `essentialschat.commands.nick`     | `/nick Nick` or `/nick off` |\n| `/realname <player>` | Find a player's real name | `essentialschat.commands.realname` | `/realname Nick`                |\n\n**Note**: By default, these permissions are granted to operators (`op`). Configure permissions using LuckPerms or Multipass for other players.\n\n---\n\n## 🔌 API\n\nEssentialsChat provides a simple API for developers to integrate with the plugin. Use the `EssentialsChatAPI` interface to manage nicknames and prefixes programmatically.\n\n### Example Usage\n\n```java\nimport cn.nukkit.Player;\nimport me.criex.essentialschat.api.EssentialsChatAPI;\nimport me.criex.essentialschat.EssentialsChat;\n\n// Get the API instance\nEssentialsChatAPI api = EssentialsChat.getAPI();\n\n// Set a player's nickname\napi.setNickname(player, \"ExampleNick\");\n\n// Clear a player's nickname\napi.clearNickname(player);\n\n// Get a player's real name from their nickname\nString realName = api.getRealName(\"ExampleNick\");\n\n// Set a player's prefix\napi.setPrefix(player, \"&b[Magic]\");\n\n// Clear a player's prefix\napi.clearPrefix(player);\n\n// Get a player's prefix or suffix\nString prefix = api.getPrefix(player);\nString suffix = api.getSuffix(player);\n```\n\nFor more details, check the [API documentation](https://github.com/CrieXD1337/EssentialsChat/blob/master/API.md).\n\n---\n\n## 📝 License\n\nThis project is licensed under MIT license. Please see the [LICENSE](https://github.com/CrieXD1337/EssentialsChat/blob/master/LICENSE) file for details.\n\n🌟 **Make your server’s chat awesome with EssentialsChat!** 🌟",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/205987103?v=4",
@@ -31,11 +38,17 @@
     "url": "https://spdx.org/licenses/MIT.html"
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "EssentialsChat",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/CrieXD1337/EssentialsChat",
   "stars": 1,
   "summary": "Chat plugin with global and local chat support for LuckPerms or Multipass",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1767524163,
   "versions": [
     {

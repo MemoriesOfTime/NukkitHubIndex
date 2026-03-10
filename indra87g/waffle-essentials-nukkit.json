@@ -1,10 +1,17 @@
 {
   "api_version": "1.0.0",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "indra87g",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1758424939,
   "dependencies": [],
   "description": "No README, just check the [wiki](https://github.com/indra87g/waffle-core-nukkit/wiki)\n",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/146718520?v=4",
@@ -15,22 +22,19 @@
     "url": "https://spdx.org/licenses/MIT.html"
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "WaffleEssentialsNK",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/indra87g/waffle-essentials-nukkit",
   "stars": 0,
   "summary": "Lorem ipsum dolor sit amet.",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1764676583,
   "versions": [
-    {
-      "changelog": "## What's Changed\r\n* Remove Command dan Add Lombok by @google-labs-jules[bot] in https://github.com/indra87g/waffle-essentials-nukkit/pull/21\r\n\r\n\r\n**Full Changelog**: https://github.com/indra87g/waffle-essentials-nukkit/compare/v0.1.5...v0.1.6",
-      "downloads": 0,
-      "files": [],
-      "name": "Version 0.1.6-alpha",
-      "prerelease": false,
-      "published_at": 1763783842,
-      "version": "v0.1.6"
-    },
     {
       "changelog": "## What's Changed\r\n* Add /wbuy command by @google-labs-jules[bot] in https://github.com/indra87g/waffle-core-nukkit/pull/15\r\n* feat: Implement /near command by @google-labs-jules[bot] in https://github.com/indra87g/waffle-core-nukkit/pull/16\r\n\r\n\r\n**Full Changelog**: https://github.com/indra87g/waffle-core-nukkit/compare/v0.1.4...v0.1.5",
       "downloads": 0,

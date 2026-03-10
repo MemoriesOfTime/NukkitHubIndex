@@ -1,10 +1,17 @@
 {
   "api_version": "1.0.0",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "若水",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1610032175,
   "dependencies": [],
   "description": "## AnvilPlus\n使用本插件可以让你的服务器继续使用铁砧\n\n开发者API\n```java\n/**\n* 注册好后，就可以自定义插件功能啦\n*/\n* @param base 这里是配方 可以传入{@link com.smallaswater.anvilplus.craft.CraftItem}\n*             或者 {@link com.smallaswater.anvilplus.craft.FixItemCraft}\n*/\nCraftItemManager.register(BaseCraftItem base);\n```\n\n",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
@@ -15,11 +22,17 @@
     "url": "https://spdx.org/licenses/GPL-3.0.html"
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "AnvilPlus",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/SmallasWater/AnvilPlus",
   "stars": 0,
-  "summary": "",
+  "summary": "铁砧功能插件",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1618053362,
   "versions": []
 }

@@ -1,10 +1,17 @@
 {
   "api_version": "1.0.0",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "IWareQ",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1758578159,
   "dependencies": [],
   "description": "# FakeInventories\n\nFakeInventories is a simple library plugin for Lumi and Nukkit-MOT Minecraft Bedrock server software, that will help you to create\nyour custom virtual inventories with ease.\n\n### [Download the plugin](https://github.com/LuminiaDev/FakeInventories/releases)\n\n## How to use\n\n```java\nFakeInventory inventory = new FakeInventory(InventoryType.CHEST, \"Custom inventory\");\n\ninventory.setDefaultItemHandler((item, event) -> {\n    event.setCancelled();\n\n    Player target = event.getTransaction().getSource();\n    target.sendMessage(\"This is default item handler\");\n});\n\ninventory.setItem(5, Item.get(Item.DIAMOND), (item, event) -> {\n    event.setCancelled();\n\n    Player target = event.getTransaction().getSource();\n    target.sendMessage(\"This is custom item handler\");\n    target.removeWindow(inventory);\n});\n\ninventory.setOpenHandler(player -> player.sendMessage(\"You opened inventory\"));\ninventory.setCloseHandler(player -> player.sendMessage(\"You closed inventory\"));\n\nplayer.addWindow(inventory);\n```\n\n> [!WARNING]\n> To open fake inventory from the chat window or form, you need to add a delay of 10-20 ticks so that the window has time to close, otherwise the inventory will not open.\n\n## Maven\nAdding repo:\n```xml\n<repository>\n    <id>luminiadev-repository-releases</id>\n    <url>https://repo.luminiadev.com/releases</url>\n</repository>\n```\n\nAdding dependency:\n```xml\n<dependency>\n    <groupId>com.luminiadev.fakeinventories</groupId>\n    <artifactId>fakeinventories</artifactId>\n    <version>1.2.1</version>\n</dependency>\n```\n\n## Gradle\nAdding repo:\n```kts\nmaven {\n    name = \"luminiadevRepositoryReleases\"\n    url = uri(\"https://repo.luminiadev.com/releases\")\n}\n```\n\nAdding dependency:\n```kts\ncompileOnly(\"com.luminiadev.fakeinventories:fakeinventories:1.2.1\")\n```",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/122298065?v=4",
@@ -15,11 +22,18 @@
     "url": "https://spdx.org/licenses/MIT.html"
   },
   "links": null,
-  "name": "${project.name}",
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "FakeInventories",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/LuminiaDev/FakeInventories",
   "stars": 1,
-  "summary": "",
+  "summary": "FakeInventories library for Lumi servers",
+  "targets": [
+    "nkx",
+    "nkmot",
+    "lumi"
+  ],
   "updated_at": 1769951913,
   "versions": [
     {

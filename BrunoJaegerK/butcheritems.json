@@ -1,10 +1,17 @@
 {
   "api_version": "1.0.0",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "BrunoJaegerK",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1767584884,
   "dependencies": [],
   "description": "Butcheritems es un plugin para servidores minecraft bedrock que usan software nukkit.\nElimina entidades y bloques flotantes para disminuir el lag.\n\nFacil manejo y uso.\nMensajes altamente customizable.\n\nActualmente el plugin borra hologramas por lo que no es compatible con https://cloudburstmc.org/resources/holograms.42/\n\nSi encuentras algún error por favor informarlo.\n\nel plugin es compatible con:\n- NPC Slapper\n- KotlinLib\n- PlaceholderApi\n\nPuedes descargar la ultima version desde:\n\nhttps://cloudburstmc.org/resources/butcher-items.1121/\n\nAñadire nuevas funciones pronto\n",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/99422811?v=4",
@@ -15,11 +22,17 @@
     "url": ""
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "ButcherItems",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/BrunoJaegerK/butcheritems",
   "stars": 0,
-  "summary": "",
+  "summary": "Plugin para disminuir el lag en servidores nukkit",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1769630715,
   "versions": [
     {

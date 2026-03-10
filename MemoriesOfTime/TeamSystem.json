@@ -1,0 +1,59 @@
+{
+  "api_version": "1.0.11",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "LT_Name",
+      "url": ""
+    },
+    {
+      "avatar_url": "",
+      "name": "SmallasWater",
+      "url": ""
+    },
+    {
+      "avatar_url": "",
+      "name": "iGxnon",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1625315135,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "MemoriesOfTime-GameCore",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "FullKotlinLib",
+      "version_range": ""
+    }
+  ],
+  "description": "# TeamSystem\n\nLanguage: 中文 | [English](https://github.com/MemoriesOfTime/TeamSystem/blob/master/README_en.md)\n\n> 一个支持多服协同的队伍系统\n\n## 目录\n\n\n- [安装](#安装)\n- [配置](#配置)\n- [开发](#开发)\n- [注意](#注意)\n\n## 安装\n\n得到插件的主体 `TeamSystem-xxx.jar` 后，请将其放入服务器的 `plugins/` 文件夹内\n\n在使用插件之前，您必须安装以下依赖\n\n- [MemoriesOfTime-GameCore](https://github.com/MemoriesOfTime/MemoriesOfTime-GameCore)\n- FormDSL 模块\n- FullKotlinLib 模块\n  - 在 GameCore 插件内的 `modules.txt` 内配置  `implementation(cn.lanink.module:FullKotlinLib:1.0.0)` 即可自动下载\n  - 初次下载会花费一些时间，请确保下载完毕再安装 TeamSystem 插件本体\n  - 您也可以在其他地方获得此模块的 jar 包，将其放入 `plugins/`(GameCore 版本低于 1.6.1 或者 使用 PM1E 核心情况下) 或者将其放入 GameCore 插件目录里的 `modules/` 下(GameCore 1.6.1 及以上) \n\n\n## 配置\n\n- config.yml\n  - 多个服务器配置同一个 Mysql 服务器即可开启多服协同\n\n## 开发\n\n待插件 API 稳定后更新\n\n## 注意\n\n插件目前处于快速更新状态，不保证 API 的兼容性",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/62042238?v=4",
+  "id": "MemoriesOfTime/TeamSystem",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "TeamSystem",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/MemoriesOfTime/TeamSystem",
+  "stars": 3,
+  "summary": "",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1767698733,
+  "versions": []
+}

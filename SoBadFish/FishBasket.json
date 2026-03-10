@@ -1,0 +1,63 @@
+{
+  "api_version": "1.0.11",
+  "authors": [],
+  "categories": [],
+  "created_at": 1752128045,
+  "dependencies": [],
+  "description": "# 🎣 FishBasket - 智能自动钓鱼系统\n\n![Plugin Icon](https://raw.githubusercontent.com/SoBadFish/FishBasket/master/img/pack_icon.png)\n\n> 革命性的Nukkit自动钓鱼解决方案，通过放置鱼篓实现全自动钓鱼，支持多水域差异化配置\n\n## 🚀 核心优势\n\n- **全自动运作**：放置鱼篓后自动工作，解放玩家双手\n- **智能鱼饵管理**：可配置鱼饵消耗 (`working-food`)\n- **水域专属鱼获**：不同水域可配置不同物品 (`water_area.yml`)\n- **灵活时间控制**：自定义钓鱼间隔 (`fish-get-time`)\n- **丰富物品支持**：兼容原版和自定义NBT物品\n\n## 🛠️ 快速开始\n\n1. 放置鱼篓到水中\n2. 放入鱼饵 (数量由`working-food`控制)\n3. 系统自动按间隔钓鱼 (`fish-get-time`)\n4. 从鱼篓收获物品\n\n## ⚙️ 命令大全\n\n| 命令 | 示例 | 描述 | 权限 |\n|------|------|------|------|\n| 保存物品 | `/fsh save 金鱼` | 保存手持物品为模板 | op |\n| 设置起点 | `/fsh wa pos1` | 标记水域起点坐标 | op |\n| 设置终点 | `/fsh wa pos2` | 标记水域终点坐标 | op |\n| 创建水域 | `/fsh wa create 湖泊` | 创建新钓鱼水域 | op |\n| 删除水域 | `/fsh wa remove 河流` | 删除指定水域 | op |\n| 预览水域 | `/fsh wa see 海洋` | 可视化水域范围 | op |\n\n## ⚡ 性能优化\n\n- **高效存储**：SQLite数据库管理水域数据\n- **异步处理**：钓鱼逻辑不影响主线程\n- **智能缓存**：减少重复数据库查询\n\n## 📝 配置详解\n\n```yaml\n# config.yml\nfish-get-time: \"10~20\" # 钓鱼间隔(秒)\nworking-food: 1        # 每次消耗鱼饵数量\n\nfish-list:             # 全局鱼获列表\n  - \"minecraft:cod~4\"   # 物品ID~权重\n  - \"301:0~2\"          # 自定义物品支持\n```\n\n```yaml\n# water_area.yml\nwater_area:\n  \"珊瑚礁\":             # 水域名称\n    - \"minecraft:tropical_fish~5\" # 专属鱼获\n    - \"minecraft:coral~3\"        # 不同权重\n```\n\n## 🖼️ 界面预览\n\n| 功能    | 截图                        | 说明      |\n|-------|---------------------------|---------|\n| 鱼篓放置  | ![image1](https://raw.githubusercontent.com/SoBadFish/FishBasket/master/img/image1.png) | 水中放置效果  |\n| 物品保存  | ![image2](https://raw.githubusercontent.com/SoBadFish/FishBasket/master/img/image2.png) | 保存自定义物品 |\n| 物品可视化 | ![image3](https://raw.githubusercontent.com/SoBadFish/FishBasket/master/img/image5.png) | 可视化容量   |\n| 物品获取  | ![image4](https://raw.githubusercontent.com/SoBadFish/FishBasket/master/img/image6.png) | 收取鱼类物品  |\n```\n\n\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-03-07",
+      "description": "",
+      "title": "Plugin Icon",
+      "url": "https://raw.githubusercontent.com/SoBadFish/FishBasket/master/img/pack_icon.png"
+    },
+    {
+      "created": "2026-03-07",
+      "description": "",
+      "title": "image1",
+      "url": "https://raw.githubusercontent.com/SoBadFish/FishBasket/master/img/image1.png"
+    },
+    {
+      "created": "2026-03-07",
+      "description": "",
+      "title": "image2",
+      "url": "https://raw.githubusercontent.com/SoBadFish/FishBasket/master/img/image2.png"
+    },
+    {
+      "created": "2026-03-07",
+      "description": "",
+      "title": "image3",
+      "url": "https://raw.githubusercontent.com/SoBadFish/FishBasket/master/img/image5.png"
+    },
+    {
+      "created": "2026-03-07",
+      "description": "",
+      "title": "image4",
+      "url": "https://raw.githubusercontent.com/SoBadFish/FishBasket/master/img/image6.png"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/83235042?v=4",
+  "id": "SoBadFish/FishBasket",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "FishBasket",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/SoBadFish/FishBasket",
+  "stars": 0,
+  "summary": "鱼篓 可用来捕鱼",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1752157502,
+  "versions": []
+}

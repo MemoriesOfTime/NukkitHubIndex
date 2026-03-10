@@ -1,10 +1,17 @@
 {
   "api_version": "1.0.0",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "vzlomka76",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1501178360,
   "dependencies": [],
   "description": "Example for creating virtual inventory\nFor Nukkit core :D\n",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/16573760?v=4",
@@ -15,11 +22,17 @@
     "url": ""
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "VirtualChestExample",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/vzlomka76/VirtualChestExample",
   "stars": 4,
   "summary": "",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1756605647,
   "versions": [
     {

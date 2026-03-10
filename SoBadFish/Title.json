@@ -1,6 +1,12 @@
 {
   "api_version": "1.0.13",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Sobadfish",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1701392480,
   "dependencies": [
@@ -21,6 +27,7 @@
     }
   ],
   "description": "# Title\n基于MySQL的Nukkit称号插件\n",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/83235042?v=4",
@@ -31,11 +38,17 @@
     "url": ""
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "Title",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/SoBadFish/Title",
   "stars": 1,
-  "summary": "",
+  "summary": "基于MySQL的Nukkit称号插件",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1739160242,
   "versions": []
 }

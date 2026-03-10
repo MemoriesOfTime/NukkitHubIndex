@@ -1,6 +1,12 @@
 {
   "api_version": "2.0.0",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "ScarletRedMan",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1583467779,
   "dependencies": [
@@ -11,6 +17,7 @@
     }
   ],
   "description": "[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)\n[![Version](https://img.shields.io/badge/version-3.0-brightgreen)](https://github.com/qPexLegendary/DGuard-Nukkit/releases/tag/3.0)\n\nDGuard\n------------- \n\nПлагин для ядра PowerNukkitX для защиты регионов от гриферства.\n\nОтличия от других плагинов на приват:\n\n- Качественный интерфейс с помощью форм.\n- Возможность устанавливать абсолютно любые названия для регионов.\n- Добавлена специальная роль `Гость`, которая дает доступ к региону без доступа к строительства в нем.\n- Создание регионов по всей высоте, где размер региона расчитывается по его площади. Эту опцию можно выключить в конфиге.\n- Возможность легко создавать свои флаги с помощью кода.\n- Упор плагина идет на максимальную производительность. Присутствует кеширование поиска регионов.\n\n\n### Зависимости\n- Библиотека [FormConstructor](https://github.com/ContentForge/FormConstructor) версии не менее 2.0.0\n- PowerNukkitX версии не менее 2.0\n",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/54776640?v=4",
@@ -21,11 +28,18 @@
     "url": "https://spdx.org/licenses/MIT.html"
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "DGuard",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/ScarletRedMan/DGuard-Nukkit",
   "stars": 8,
-  "summary": "",
+  "summary": "Nukkit-плагин для защиты ваших регионов в Minecraft Bedrock",
+  "targets": [
+    "nkx",
+    "nkmot",
+    "pnx"
+  ],
   "updated_at": 1724507887,
   "versions": [
     {

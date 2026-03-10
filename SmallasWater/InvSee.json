@@ -1,0 +1,31 @@
+{
+  "api_version": "1.0.11",
+  "authors": [],
+  "categories": [],
+  "created_at": 1629606739,
+  "dependencies": [],
+  "description": "# InvSee\n查看并编辑玩家背包~\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
+  "id": "SmallasWater/InvSee",
+  "license": {
+    "id": "GPL-2.0",
+    "name": "GNU General Public License v2.0",
+    "url": "https://spdx.org/licenses/GPL-2.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "InvSee",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/SmallasWater/InvSee",
+  "stars": 1,
+  "summary": "查看并编辑玩家背包~",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1651796113,
+  "versions": []
+}

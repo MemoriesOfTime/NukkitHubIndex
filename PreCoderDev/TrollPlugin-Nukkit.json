@@ -1,10 +1,17 @@
 {
   "api_version": "1.0.0",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "PreCoder",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1500388148,
   "dependencies": [],
   "description": "# TrollPlugin-Nukkit\n\nPAUSIERT\n\n\n[![Travis](https://img.shields.io/travis/PreCoderDev/TrollPlugin-Nukkit.svg?style=flat)](https://travis-ci.org/PreCoderDev/TrollPlugin-Nukkit)\n\nEin sich stätig erweiterndes Troll Plugin für Nukkit\n\nPermissions\n-------------\n- troll.cmd\n\nMomentane Features/Commands\n-------------\n- /troll help\n- /troll vanish\n- /troll freeze\n- /troll fire\n- /troll crash\n- /troll strike\n- /troll granade\n\nReleases\n-------------\n- [Releases](https://github.com/PreCoderDev/TrollPlugin-Nukkit/releases/)\n\nJAR Datei erstellen\n-------------\n- `mvn clean`\n- `mvn package`\n",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/30264842?v=4",
@@ -15,11 +22,17 @@
     "url": ""
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "TrollPlugin",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/PreCoderDev/TrollPlugin-Nukkit",
   "stars": 1,
   "summary": "TrollPlugin by PreCoder",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1582465184,
   "versions": [
     {

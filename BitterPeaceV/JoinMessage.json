@@ -1,10 +1,17 @@
 {
   "api_version": "1.0.7",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "BitterPeaceV",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1548242316,
   "dependencies": [],
   "description": "# JoinMessage  \nQiitaの記事用プラグイン  \n[NukkitプラグインをKotlinで書こう](https://qiita.com/BitterPeaceV/items/1f7603ff9f85d375d20b)\n",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/44942320?v=4",
@@ -19,11 +26,17 @@
     "homepage": "https://github.com/BitterPeaceV/JoinMessage",
     "wiki": ""
   },
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "JoinMessage",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/BitterPeaceV/JoinMessage",
   "stars": 0,
   "summary": "exsample plugin",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1548308302,
   "versions": []
 }

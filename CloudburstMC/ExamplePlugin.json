@@ -3,6 +3,11 @@
   "authors": [
     {
       "avatar_url": "",
+      "name": "Nukkit Project",
+      "url": ""
+    },
+    {
+      "avatar_url": "",
       "name": "Example",
       "url": ""
     },
@@ -27,6 +32,7 @@
     }
   ],
   "description": "# ExamplePlugin\nExample Nukkit plugin, showing the API\n",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/34250602?v=4",
@@ -41,11 +47,17 @@
     "homepage": "https://github.com/NukkitX/ExamplePlugin",
     "wiki": ""
   },
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "ExamplePlugin",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/CloudburstMC/ExamplePlugin",
   "stars": 12,
   "summary": "Example plugin showing the API",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1770409767,
   "versions": [
     {

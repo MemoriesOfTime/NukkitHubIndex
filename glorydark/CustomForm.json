@@ -1,6 +1,12 @@
 {
   "api_version": "1.0.0",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Glorydark",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1682257468,
   "dependencies": [
@@ -36,6 +42,7 @@
     }
   ],
   "description": "# CustomForm\n\n备份一下\n",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
@@ -46,12 +53,18 @@
     "url": ""
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "CustomForm",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/glorydark/CustomForm",
   "stars": 5,
   "summary": "CustomForm",
-  "updated_at": 1768905717,
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1772793044,
   "versions": [
     {
       "changelog": "Minecart Chest Menu is coming to you!",

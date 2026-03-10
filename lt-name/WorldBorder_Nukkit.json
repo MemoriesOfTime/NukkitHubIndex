@@ -1,0 +1,86 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "LT_Name",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1584943399,
+  "dependencies": [],
+  "description": "<h1 align=\"center\">\n  WorldBorder\n</h1>\n\n### 📖 Plugin Introduction\n\n**WorldBorder** is a world border management plugin designed specifically for Nukkit servers. It helps server administrators by setting fixed boundaries to limit player movement.\n\n### 📝 Plugin Commands\n\n- `/WorldBorder` — Open the world border management interface (GUI)\n- `/WorldBorder AddBorder <shape> <name>` — Add a new world border to the current world\n- `/WorldBorder Reload` — Reload the plugin configuration\n\n### 📄 Download Link\n\n[Download from Jenkins](https://motci.cn/job/WorldBorder/)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+  "id": "lt-name/WorldBorder_Nukkit",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "WorldBorder",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/lt-name/WorldBorder_Nukkit",
+  "stars": 1,
+  "summary": "",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1738548381,
+  "versions": [
+    {
+      "changelog": "更改插件名称\r\n修复文本实体重复生成问题\r\n添加 /worldborder delete 命令\r\n添加新的检测方式",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "WorldBorder-1.1.0.jar",
+          "primary": true,
+          "size": 17634,
+          "url": "https://github.com/lt-name/WorldBorder_Nukkit/releases/download/1.1.0/WorldBorder-1.1.0.jar"
+        }
+      ],
+      "name": "v1.1.0",
+      "prerelease": false,
+      "published_at": 1611660561,
+      "version": "1.1.0"
+    },
+    {
+      "changelog": "添加ui设置界面\r\n添加悬浮字体提示",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "WorldBoundary-1.0.2.jar",
+          "primary": true,
+          "size": 10577,
+          "url": "https://github.com/lt-name/WorldBorder_Nukkit/releases/download/1.0.2/WorldBoundary-1.0.2.jar"
+        }
+      ],
+      "name": "v1.0.2",
+      "prerelease": false,
+      "published_at": 1588769794,
+      "version": "1.0.2"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "WorldBoundary_v1.0.1.jar",
+          "primary": true,
+          "size": 4644,
+          "url": "https://github.com/lt-name/WorldBorder_Nukkit/releases/download/1.0.1/WorldBoundary_v1.0.1.jar"
+        }
+      ],
+      "name": "v1.0.1",
+      "prerelease": false,
+      "published_at": 1584948710,
+      "version": "1.0.1"
+    }
+  ]
+}

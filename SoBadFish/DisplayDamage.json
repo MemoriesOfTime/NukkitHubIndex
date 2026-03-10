@@ -1,10 +1,17 @@
 {
   "api_version": "1.0.14",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Sobadfish",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1722703943,
   "dependencies": [],
   "description": "# DisplayDamage\nNukkit-MOT的伤害显示\n",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/83235042?v=4",
@@ -15,11 +22,17 @@
     "url": "https://spdx.org/licenses/Apache-2.0.html"
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "DisplayDamage",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/SoBadFish/DisplayDamage",
   "stars": 0,
-  "summary": "",
+  "summary": "伤害显示浮空字",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1727232603,
   "versions": []
 }

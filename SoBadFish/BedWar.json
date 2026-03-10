@@ -1,6 +1,12 @@
 {
   "api_version": "1.0.11",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "sobadfish",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1653202793,
   "dependencies": [
@@ -31,6 +37,7 @@
     }
   ],
   "description": "<a href=\"https://github.com/Sobadfish/BedWar/releases/latest\" alt=\"Latest release\">\n    <img src=\"https://img.shields.io/github/v/release/Sobadfish/BedWar?include_prereleases\" alt=\"Latest release\">\n</a>\n\n![Github](https://img.shields.io/badge/English-100%25-brightgreen)\n[![Github](https://img.shields.io/badge/简体中文-100%25-brightgreen)](https://github.com/SoBadFish/BedWar/blob/master/README_CHS.md)\n<div align=\"center\">\n    <img src=\"https://raw.githubusercontent.com/SoBadFish/BedWar/master/img/bed.png\"/>\n</div>\n\n\n# <div align=\"center\"><font size=12 color='BlueViolet'>B</font><font size = 6 color=\"DeepSkyBlue\">e</font><font size=12 color='Red'>d</font><font size=12 color='Yellow'>W</font><font size = 6 color=\"Chartreuse\">a</font><font size=12 color='Green'>r</font>\n\n**Introduction:**\nIn the game, players will have a completely different competition in the form of team PVP. The goal of the players is to protect their beds from being destroyed in the game, so they must work together and rely on teammates to cooperate with each other to destroy the opponent's bed, which will be considered a victory in the game.！\n\nGame Features：  \n1.Players will be divided into four teams with 16 other players to compete against each other in order to protect their own beds；   \n2.As long as the bed exists, players in the team can recover their vitality, allowing their teammates to instantly recover to their best condition and return to battle；   \n3.Build bridges to enemy islands, invade enemy territory, and destroy opponent's beds to win the final victory.\n\n------\n\nGameMode:  \n 1. **Exp**  \n 2. **Item**  \n\n**HOW TO USE:**  \n\n**[DOWNLOAD](https://motci.cn/view/SoBadFish/job/BedWar/)**\n\n**1、Enable**\n\n1. Drag this plugin to the plugins folder\n2. Start the server until the plugin is loaded\n\n\n3. After entering the game, enter and come to the game map, execute /bd to start creating a room.。\n\n\n\n**2、Command**\n\n|Command               | Msg                             |\n| ------------------- | -------------------------------- |\n| /bd reload          | reload config                 |\n| /bd set [name]      | Creating a Custom Room Template           |\n| /bd tsl             | Read the team data and store item data of the template |\n| /bd see             | View loaded rooms                   |\n| /bd close [name]    | Close room                         |\n| /bd end             | Stop Template Preset                     |\n| /bw                 | Join Game                      |\n| /bw join [name]     | Join a game room                     |\n| /bw quit            | Quit a game room                     |\n| /bws [ask] | Send a message to all players in the game room           |\n\n**3、CONFIG**\n\nto see resources\n\n------\n\n**4、HOW TO CONFIG**\n\n1. run/bd set name Start Preset Template (Please be careful not to make mistakes, otherwise you can only execute /bd cancel to reset it.)\n\n| ![本地路径](https://raw.githubusercontent.com/SoBadFish/BedWar/master/img/5.png) |                                                                                                        |\n|----------------------|----------------------------------------------------------------------------------------------------------------------------|\n| Follow the prompts to customize the settings         | set team.yml file after run **/bd tsl**                                                                           |\n| ![本地路径](https://raw.githubusercontent.com/SoBadFish/BedWar/master/img/6.png) |Then execute /bd set to preset the number of item generation points, and then execute /bd to start the room configuration.  **Note: Please do not make mistakes when setting, otherwise you can only reset the flag by /bd cancel. The order of the team's store spawn points is the order of the team.yml configuration file. Please set it according to the order.** |\n\n\n\n------\n\n**5、GAME:**\n\n| ![本地](https://raw.githubusercontent.com/SoBadFish/BedWar/master/img/7.jpg)   | ![本地](https://raw.githubusercontent.com/SoBadFish/BedWar/master/img/8.jpg)   |\n|----------------------|----------------------|\n| ![本地](https://raw.githubusercontent.com/SoBadFish/BedWar/master/img/9.jpg)   | ![本地](https://raw.githubusercontent.com/SoBadFish/BedWar/master/img/10.jpg)  |\n| ![本地](https://raw.githubusercontent.com/SoBadFish/BedWar/master/img/11.jpeg) | ![本地](https://raw.githubusercontent.com/SoBadFish/BedWar/master/img/12.jpeg) |\n\n\n\n",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [
     {
@@ -96,11 +103,17 @@
     "url": "https://spdx.org/licenses/GPL-3.0.html"
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "BedWar",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/SoBadFish/BedWar",
   "stars": 32,
   "summary": "起床战争小游戏插件",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1770954036,
   "versions": [
     {

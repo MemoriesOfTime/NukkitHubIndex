@@ -1,0 +1,44 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Ricoco",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1707899525,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "MemoriesOfTime-GameCore",
+      "version_range": ""
+    }
+  ],
+  "description": "# BridgingPractiseNK\n\n[Chinese](https://github.com/lt-name/BridgingPractiseNK/blob/master/README.zh.md) | English\n\nBridging practice plugin for Nukkit. Provides a dedicated practice world, block-based checkpoints, and optional leveling/scoreboard.\n\n## Requirements\n\n- Nukkit\n- Dependency: MemoriesOfTime-GameCore\n\n## Install\n\n1. Place the plugin jar in `plugins/`.\n2. Install `MemoriesOfTime-GameCore`.\n3. Start the server once to generate `plugins/BridgingPractise/config.json` and language files.\n4. Edit `plugins/BridgingPractise/config.json` to fit your world and rules.\n\n## Commands\n\n- `/bpractise join` - Join the practice area.\n- `/bpractise leave` - Leave the practice area.\n\nCommand name is configurable via `practice.command`.\n\n## Features\n\n- Auto-copy and restore the practice world on shutdown.\n- Practice blocks: respawn, stop, back-to-spawn, speedup, elevator.\n- Optional level/experience system with scoreboard.\n- Popup prompts for speed/distance stats.\n- PvP protection, mob spawn blocking, and command whitelist.\n\n## Config (config.json)\n\nTop-level:\n\n- `ConfigVersion`: current format version (2).\n- `block`: practice block info and special blocks.\n- `positions`: practice world location, exit location, and low-Y fallback.\n- `practice`: language, rules, prompts, experience, and scoreboard.\n\n`block`:\n\n- `block.practice`: practice block (`id`, `meta`, `count`).\n- `block.pickaxe`: practice pickaxe (`id`, `meta`).\n- `block.special.respawn`: respawn checkpoint block id.\n- `block.special.stop`: finish block id.\n- `block.special.speedUp`: speedup block id.\n- `block.special.backSpawn`: back-to-spawn block id.\n- `block.special.elevator`: elevator block id.\n\n`positions`:\n\n- `positions.lowY`: below this Y, player is pulled back to respawn.\n- `positions.practice`: practice spawn (`x`, `y`, `z`, `level`).\n- `positions.exit`: exit location after leaving (`x`, `y`, `z`, `level`).\n\n`practice`:\n\n- `practice.language`: language file in `plugins/BridgingPractise/lang/` (e.g. `en_us`).\n- `practice.command`: command name (default `bpractise`).\n- `practice.enableCommands`: allowed commands while in practice world.\n- `practice.pvpProtect`: block PvP damage.\n- `practice.prompt`: show popup prompt.\n- `practice.time`: lock world time.\n- `practice.weather`: lock world weather (`clear`, `rain`, `thunder`).\n- `practice.instaBreak`: clear blocks instantly on death.\n- `practice.breakParticle`: show break particles.\n- `practice.breakDelay`: delay between block clears (ms).\n- `practice.canDrop`: allow item drops.\n- `practice.victoryReplace`: block replaced after completing a bridge (`id`, `meta`).\n- `practice.fallDamage.enableRespawn`: respawn on heavy fall damage.\n- `practice.fallDamage.threshold`: damage threshold to respawn.\n- `practice.fallDamage.tip`: show fall damage tips.\n- `practice.experience.enable`: enable leveling system.\n- `practice.experience.scoreboard`: enable scoreboard display.\n- `practice.experience.levelUp`: show level up prompt.\n- `practice.experience.tip`: show exp gain prompt.\n- `practice.experience.timeEarn`: exp for time played (`enable`, `seconds`, `exp`).\n- `practice.experience.blockEarn`: exp for placed blocks (`enable`, `blocks`, `exp`).\n- `practice.scoreboard.lines`: scoreboard lines.\n\nScoreboard placeholders:\n\n- `%player%`, `%level%`, `%lowProgcess%`, `%maxProgcess%`, `%placed%`\n\n## Notes\n\n- Do not modify `plugins/BridgingPractise/cache/` manually.\n- Use the `stop` command to shut down the server so the world can restore cleanly.\n- Ensure no world named `bpractise` exists before first startup (it will be overwritten).\n- Avoid other plugins spawning mobs in the practice world.\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+  "id": "lt-name/BridgingPractiseNK",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "BridgingPractise",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/lt-name/BridgingPractiseNK",
+  "stars": 0,
+  "summary": "A bridging practise plugin helps you practise your bridging ability.",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1767403508,
+  "versions": []
+}

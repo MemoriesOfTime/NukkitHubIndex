@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "glorydark",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1710679197,
+  "dependencies": [],
+  "description": "",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
+  "id": "glorydark/CloudInventory",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "CloudInventory",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/glorydark/CloudInventory",
+  "stars": 2,
+  "summary": "CloudInventory",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1762933606,
+  "versions": []
+}

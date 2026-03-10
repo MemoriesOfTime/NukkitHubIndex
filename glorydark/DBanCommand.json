@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "glorydark",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1734355751,
+  "dependencies": [],
+  "description": "",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
+  "id": "glorydark/DBanCommand",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "DBanCommand",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/glorydark/DBanCommand",
+  "stars": 0,
+  "summary": "BanCommand",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1734355952,
+  "versions": []
+}

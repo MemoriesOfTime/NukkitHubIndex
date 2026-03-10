@@ -1,10 +1,17 @@
 {
   "api_version": "1.0.9",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "MyDeacy",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1581856452,
   "dependencies": [],
   "description": "# ServerDocument\r\nNukkit plugin. (Written in Groovy)\r\n\r\n## Setup\r\nPut the plugin in the plugin folder and place the files in the data folder.  \r\n\r\nOnly text files(*.txt ) and folder are supported.\r\n```\r\n📂plugin_data\r\n ┗ 📂ServerDocument\r\n    ┗ 📂public\r\n      --------------------------\r\n     | ┣ 📜File1.txt            \r\n     | ┣ 📜てきとう.txt           \r\n     | ┣ 📂Folder               \r\n     | ┃  ┗ 📜HogeHoge.txt      \r\n     | ┗ 📂Rule                      ← Display on server\r\n     |    ┣ 📜Hoge.txt         \r\n     |    ┣ 📜General.txt         \r\n     |    ┣ 📜Fuga.txt         \r\n     |    ┗ 📂Folder3           \r\n     |       ┗📜MyDeacy.txt     \r\n      --------------------------\r\n```\r\n\r\n\r\n## Usage\r\nJoin the server and enter the ``/sd`` command.\r\n\r\n\r\n## ScreenShots\r\n![image](https://raw.githubusercontent.com/MyDeacy/ServerDocument-PMMP/master/images/image1.png)\r\n![image](https://raw.githubusercontent.com/MyDeacy/ServerDocument-PMMP/master/images/image2.png)\r\n![image](https://raw.githubusercontent.com/MyDeacy/ServerDocument-PMMP/master/images/image3.png)\r\n\r\n",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/20610410?v=4",
@@ -15,11 +22,17 @@
     "url": "https://spdx.org/licenses/GPL-3.0.html"
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "ServerDocument",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/MyDeacy/ServerDocument-Nukkit",
   "stars": 0,
   "summary": "View text files from server (Nukkit)",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1581953326,
   "versions": [
     {

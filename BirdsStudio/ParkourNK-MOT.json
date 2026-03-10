@@ -1,0 +1,43 @@
+{
+  "api_version": "1.0.13",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "daoge_cmd",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1725337153,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "MemoriesOfTime-GameCore",
+      "version_range": ""
+    }
+  ],
+  "description": "# ParkourNK\n适用于PowerNukkitX的跑酷插件\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/121806308?v=4",
+  "id": "BirdsStudio/ParkourNK-MOT",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "ParkourNK",
+  "primary_target": "nkmot",
+  "server_version": "",
+  "source": "https://github.com/BirdsStudio/ParkourNK-MOT",
+  "stars": 1,
+  "summary": "",
+  "targets": [
+    "nkmot"
+  ],
+  "updated_at": 1756142503,
+  "versions": []
+}

@@ -1,0 +1,49 @@
+{
+  "api_version": "1.0.11",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "LT_Name",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1608868967,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "KotlinLib",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "required",
+      "plugin_id": "MemoriesOfTime-GameCore",
+      "version_range": ""
+    }
+  ],
+  "description": "# AutoResourceChest\n\nAutoResourceChest 自动刷新资源箱，可实现自动刷新箱子内容，支持自定义刷新规则。\n\n## ✨ 特性\n\n- 自动刷新指定箱子的物品内容\n- 支持自动扫描并刷新整个世界中的所有箱子\n- 浮空字显示刷新倒计时（靠近显示，远离消失，不影响隐藏箱子）\n- 潜行点击箱子打开 GUI 界面进行快捷配置\n- 支持设置每个玩家打开箱子的次数限制（适合新手箱、特殊宝箱）\n- 支持设置固定刷新物品\n- 支持设置随机物品并限制随机数量\n\n## 📦 安装\n\n1. 下载 [AutoResourceChest 最新版本](https://motci.cn/job/AutoResourceChest/job/master/)。\n2. 将 `.jar` 文件放入你服务器的 `/plugins/` 目录下。\n3. 重启服务器，插件自动加载。\n\n## ⚙️ 使用方法\n\n- 首次使用时使用/arc create命令创建一个新的资源箱配置。\n- 使用/arc place命令将资源箱放置在指定位置。\n- 在配置文件中修改刷新规则，包括物品、数量和刷新时间。\n- 重启服务器，资源箱将按照配置自动刷新。",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+  "id": "lt-name/AutoResourceChest",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "AutoResourceChest",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/lt-name/AutoResourceChest",
+  "stars": 0,
+  "summary": "",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1746416624,
+  "versions": []
+}

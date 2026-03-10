@@ -1,10 +1,17 @@
 {
   "api_version": "1.1.0",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Criex",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1746727517,
   "dependencies": [],
   "description": "# FormWarps\n**Plugin for warp system for Nukkit with GUI**\n\n## ⭐ Features\n- Forms\n- Simple config\n- Creating warps\n- Teleportation to warps\n- Removing warps\n\n## 🔨 Commands\n- **/warp** - open warp UI\n- **/setwarp** - open setwarp UI\n- **/removewarp** - open remove warps UI\n- **/warps** - view all warps on the server (warp by OPs pinned)\n\n## 🔑 Permissions\n- formarps\n  - formwarps.commands\n    - formwarps.commands.warp\n    - formwarps.commands.warps\n    - formwarps.commands.delwarp\n      - formwarps.commands.delwarp.others\n    - formwarps.commands.setwarp\n\n## 👾 Bugs:\nYou can report bugs on [issues page](https://github.com/CrieXD1337/FormWarps/issues)\n\n## 📒 Config\n```yaml\nmessages:\n  # --- Chat messages ---\n  warp-usage: \"§7> §cUsage: §e/warp <warp name>\"\n  warp-tp-success: \"§7> §fTeleported to warp §b{warp}\"\n  warp-set-success: \"§7> §fWarp §b{warp} §fcreated successfully!\"\n  warp-exists: \"§7> §cThis warp already exists!\"\n  warp-not-found: \"§7> §cWarp not found!\"\n  warp-deleted: \"§7> §fWarp §b{warp} §fdeleted successfully.\"\n  no-permission: \"§c%commands.generic.permission\"\n  name-too-short: \"§7> §cWarp name must be between §e2§c and §e14§c characters.\"\n\n  # --- Forms text ---\n  no-warps: \"You have no warps.\"\n  form-setwarp-title: \"Create Warp Point\"\n  form-setwarp-input: \"Enter warp name (2-14 characters):\"\n  form-deletewarp-title: \"Delete Warp\"\n  form-deletewarp-desc: \"Select a warp to delete:\"\n  form-confirm-title: \"Confirm Deletion\"\n  form-confirm-desc: \"Delete warp {warp}?\"\n  form-warp-title: \"Teleport to warp\"\n  form-warp-input: \"Enter warp name:\"\n  form-warp-tip: \"warp name\"\n  form-warps-title: \"Server Warps\"\n  form-warps-desc: \"Select a warp:\"\n  form-warpinfo-title: \"Warp Info\"\n  form-warpinfo-desc: \"Info about §e{warp}§f warp\"\n  form-warpinfo-teleport: \"Teleport to warp\"\n  form-warpinfo-remove: \"Remove warp\"\n  form-warpinfo-back: \"Back\"\n  yes: \"§2Yes\"\n  no: \"§cNo\"\n\nproperties:\n  # minimum characters in warp name\n  min-create-warp-characters: 2\n\n  # maximum characters in warp name\n  max-create-warp-characters: 14\n\n  # allowed characters in warp name\n  create-warp-allowed-characters: \"^[a-zA-Z0-9_]+$\"\n\n# --- Commands ---\ncommands:\n  warp:\n    name: warp                           # command name\n    aliases: [\"w\"]                       # command aliases\n    description: \"Teleport to a warp\"    # command description\n    permission: formwarps.commands.warp  # permission\n  setwarp:\n    name: setwarp\n    aliases: [\"createwarp\"]\n    description: \"Create a warp\"\n    permission: formwarps.commands.setwarp\n  delwarp:\n    name: delwarp\n    aliases: [\"removewarp\", \"rmwarp\"]\n    description: \"Delete a warp\"\n    permission: formwarps.commands.delwarp\n  warps:\n    name: warps\n    aliases: []\n    description: \"See all warps\"\n    permission: formwarps.commands.warps\n```\n    \n## 📸 Screenshots\n![image](https://github.com/user-attachments/assets/9dc0b285-f736-4651-a719-6556e2851804)\n![image](https://github.com/user-attachments/assets/88ed7d73-7362-469f-a652-cd73a720a3d9)\n![image](https://github.com/user-attachments/assets/5cb8e867-35b5-4c8c-9bc2-af68de16104d)\n\n### 📝 License\nThis project is licensed under MIT license. Please see the [LICENSE](https://github.com/CrieXD1337/FormWarps/blob/master/LICENSE) file for details.\n",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/205987103?v=4",
@@ -15,11 +22,17 @@
     "url": "https://spdx.org/licenses/MIT.html"
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "FormWarps",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/CrieXD1337/FormWarps",
   "stars": 0,
   "summary": "Warp system for your server with UI Forms.",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1757794479,
   "versions": [
     {

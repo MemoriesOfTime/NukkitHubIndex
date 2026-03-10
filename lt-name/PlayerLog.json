@@ -1,0 +1,43 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "LT_Name",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1590838351,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "EasyMySQL",
+      "version_range": ""
+    }
+  ],
+  "description": "",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+  "id": "lt-name/PlayerLog",
+  "license": {
+    "id": "AGPL-3.0",
+    "name": "GNU Affero General Public License v3.0",
+    "url": "https://spdx.org/licenses/AGPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "PlayerLog",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/lt-name/PlayerLog",
+  "stars": 1,
+  "summary": "",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1639571737,
+  "versions": []
+}

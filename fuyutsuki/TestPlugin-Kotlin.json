@@ -1,10 +1,17 @@
 {
   "api_version": "1.0.5",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "yuko_fuyutsuki",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1518762075,
   "dependencies": [],
   "description": "# TestPlugin-Kotlin\nNukkitX plugin written by Kotlin + Gradle\n\n## ビルド方法\n```bash\ngit clone https://github.com/fuyutsuki/TestPlugin-Kotlin.git\ncd TestPlugin-Kotlin\n./gradlew build\n```\nか\n```\none_click_build.bat を実行\n```",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/16377174?v=4",
@@ -15,11 +22,17 @@
     "url": "https://spdx.org/licenses/MIT.html"
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "TestPlugin",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/fuyutsuki/TestPlugin-Kotlin",
   "stars": 0,
-  "summary": "",
+  "summary": "NukkitX plugin written by Kotlin + Gradle",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1518858195,
   "versions": []
 }

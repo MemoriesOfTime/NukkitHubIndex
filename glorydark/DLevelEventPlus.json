@@ -1,10 +1,17 @@
 {
   "api_version": "1.0.0",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "glorydark",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1686127207,
   "dependencies": [],
   "description": "",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
@@ -15,11 +22,17 @@
     "url": ""
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "DLevelEventPlus",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/glorydark/DLevelEventPlus",
   "stars": 2,
   "summary": "DLevelEventPlus",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1717933655,
   "versions": []
 }

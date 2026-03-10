@@ -1,0 +1,62 @@
+{
+  "api_version": "1.1.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "marioCST",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1748392894,
+  "dependencies": [],
+  "description": "# OnixModuleControl\r\n\r\nA Nukkit plugin that lets server owners block or modify Onix Client modules or settings for players who join their server.\r\n\r\nTested on [Nukkit](https://github.com/CloudburstMC/Nukkit), [Nukkit-MOT](https://github.com/MemoriesOfTime/Nukkit-MOT), [NukkitPetteriM1Edition](https://github.com/PetteriM1/NukkitPetteriM1Edition) and [PowerNukkitX](https://github.com/PowerNukkitX/PowerNukkitX).\r\n\r\n## What it does\r\n\r\n> NOTE: Players not using Onix Client will not be affected.\r\n\r\nThis plugin gives you more control over what players can or can't use when they join your server with Onix Client. Whether you want to block things like Freelook or Hitboxes, or auto-enable helpful features like Double Click Prevent, this plugin makes it easy to do that through a simple config file.\r\n\r\n[View the official documentation here](https://onixclient.com/smc).\r\n\r\n## Example config\r\n\r\n```yaml\r\n# Onix Client Module Control Configuration\r\n# You can find a list of modules here: https://github.com/OnixClient/translations/blob/main/client/languages/en_US.lang\r\n\r\n# Verifies blocked_modules, forced_modules and module_settings entry names using https://github.com/OnixClient/translations/blob/main/client/languages/en_US.lang\r\n# If a module or setting doesn't exist or a setting doesn't belong to a module, they'll get ignored\r\n# No verification is done if the lang file couldn't be accessed or parsed\r\nverify_entries: true\r\n\r\n# Server name that will be shown in Onix Client UI\r\nserver_name: \"Server Name\"\r\n\r\n# Custom notification message (optional, leave empty to use default)\r\nnotification_message: \"\"\r\n\r\n# BLOCKED MODULES\r\n# Format:\r\n#   module_name:\r\n#     block: true\r\n#     restriction_reason: \"Optional message explaining why it's blocked\"\r\nblocked_modules:\r\n  module.freelook.name:\r\n    block: true\r\n  module.hitboxes.name:\r\n    block: true\r\n    restriction_reason: \"Wear your glasses instead.\"\r\n\r\n# FORCED MODULES\r\n# Format:\r\n#   module_name:\r\n#     force_enable: true\r\n#     restriction_reason: \"Optional message explaining why it's forced\"\r\n#     settings:\r\n#       setting_name:\r\n#         value: setting_value\r\n#         min: minimum_value (optional)\r\n#         max: maximum_value (optional)\r\n#         lock_value: true/false (optional)\r\n#         removed_options: [1, 2] (optional, for enum settings)\r\nforced_modules:\r\n  module.double_click_prevent.name:\r\n    force_enable: true\r\n    restriction_reason: \"High CPS is not allowed on this server.\"\r\n    settings:\r\n      module.double_click_prevent.setting.limit_left_click.name:\r\n        value: true\r\n      module.double_click_prevent.setting.left_max.name:\r\n        max: 17\r\n\r\n# MODULE SETTINGS ONLY\r\n# For modules that you don't want to block or force, but just want to change settings\r\n# Format is the same as in the \"settings\" section above\r\nmodule_settings:\r\n  module.fullbright.name:\r\n    settings:\r\n      module.fullbright.setting.gamma.name:\r\n        max: 3\r\n```\r\n\r\n## Result of the example config above\r\n\r\n![preview.png](https://raw.githubusercontent.com/marioCST/OnixModuleControl-NK/main/assets/preview.png)\r\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-03-10",
+      "description": "",
+      "title": "preview.png",
+      "url": "https://raw.githubusercontent.com/marioCST/OnixModuleControl-NK/main/assets/preview.png"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/68396929?v=4",
+  "id": "marioCST/OnixModuleControl-NK",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "OnixModuleControl-NK",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/marioCST/OnixModuleControl-NK",
+  "stars": 2,
+  "summary": "Nukkit implementation of Onix' module control API",
+  "targets": [
+    "nkx",
+    "pnx"
+  ],
+  "updated_at": 1757797098,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "OnixModuleControl-NK-1.0.jar",
+          "primary": true,
+          "size": 23557,
+          "url": "https://github.com/marioCST/OnixModuleControl-NK/releases/download/initial/OnixModuleControl-NK-1.0.jar"
+        }
+      ],
+      "name": "Initial release",
+      "prerelease": false,
+      "published_at": 1748392963,
+      "version": "initial"
+    }
+  ]
+}

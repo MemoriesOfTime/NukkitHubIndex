@@ -1,6 +1,12 @@
 {
-  "api_version": "",
-  "authors": [],
+  "api_version": "unknown",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "AuroraLS3",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1481218451,
   "dependencies": [
@@ -196,6 +202,7 @@
     }
   ],
   "description": "![Player Analytics](http://puu.sh/AXSg7/5f2f78c06c.jpg)\n\n[![Github Actions](https://github.com/plan-player-analytics/Plan/workflows/CI/badge.svg)](https://github.com/plan-player-analytics/Plan/actions/workflows/ci.yml)\n[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=com.djrapitops%3APlan&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.djrapitops%3APlan)  \n![Java](https://custom-icon-badges.demolab.com/badge/⮞-red?logo=java-white)\n[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=com.djrapitops%3APlan&metric=ncloc)](https://sonarcloud.io/dashboard?id=com.djrapitops%3APlan)\n[![Code coverage](https://sonarcloud.io/api/project_badges/measure?project=com.djrapitops%3APlan&metric=coverage)](https://sonarcloud.io/dashboard?id=com.djrapitops%3APlan)  \n![React](https://custom-icon-badges.demolab.com/badge/⮞-blue?logo=react-white)\n[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=plan-player-analytics_Plan&metric=ncloc)](https://sonarcloud.io/summary/overall?id=plan-player-analytics_Plan)\n\n[Documentation & Tutorials](https://github.com/plan-player-analytics/Plan/wiki) | [Releases](https://github.com/plan-player-analytics/Plan/releases) | [DEV builds](https://github.com/plan-player-analytics/Plan/actions/workflows/ci.yml?query=branch%3Amaster) | [Issues & Suggestions](https://github.com/plan-player-analytics/Plan/issues)\n\nPlayer Analytics is a fully-fledged solution for the analytics needs of your Minecraft server. A built-in webserver displays insights into different aspects of the server such as Online activity, Playerbase, and how these change over time.\n\nPlan supports multiple different platforms and versions; Spigot, Paper, Sponge, SpongeForge, Bungeecord, Velocity, Cauldron & all derivatives - One jar for all platforms.\n\n- [Version 5 Release trailer on Youtube](https://www.youtube.com/watch?v=BS_Ti9zkoRc)\n\n## API\n\n- [Javadocs](https://plan-player-analytics.github.io/Plan/)\n- [API documentation](https://github.com/plan-player-analytics/Plan/wiki/APIv5)\n\n[![](https://jitpack.io/v/plan-player-analytics/Plan.svg)](https://jitpack.io/#plan-player-analytics/Plan)\n\n```xml\n<repository>\n    <id>jitpack</id>\n    <url>https://jitpack.io</url>\n</repository>\n\n<dependency>\n    <groupId>com.github.plan-player-analytics</groupId>\n    <artifactId>Plan</artifactId>\n    <version>{jitpack version}</version>\n    <scope>provided</scope>\n</dependency>\n```\n\n## Building\n\nYou can build the project by running the following in the repository root:\n```\ncd Plan\n./gradlew build\n```\n\n- [More information about setting up the project](https://github.com/plan-player-analytics/Plan/wiki/Project-Setup)\n\n## Used Libraries\n\n- **[SBAdmin 2 Template](https://github.com/BlackrockDigital/startbootstrap-sb-admin-2)** | [MIT License](https://opensource.org/licenses/MIT)\n- **[Bootstrap](https://getbootstrap.com/)** | [MIT License](https://v4-alpha.getbootstrap.com/about/license/)\n- **[HighCharts](https://www.highcharts.com/)** | [Free for non-commercial](https://www.highcharts.com/products/highcharts/#non-commercial)\n- **[jQuery Datatables](https://datatables.net/)** | [MIT License](https://datatables.net/license/mit)\n- **[FullCalendar](https://github.com/fullcalendar/fullcalendar)** | [MIT License](https://datatables.net/license/mit)\n- **[Font Awesome Icons](http://fontawesome.io/icons/)** | [SIL Open Font License](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)\n- **[MaxMind GeoIP2 Country](https://www.maxmind.com/en/geoip2-country-database)** | [MaxMind End User License Agreement (EULA)](https://www.maxmind.com/en/end-user-license-agreement)\n- **[Dagger](https://dagger.dev/)** | [Apache-2.0 License](https://github.com/google/dagger/blob/master/LICENSE.txt)\n- **[DependencyDownload](https://github.com/Vankka/DependencyDownload)** | [MIT License](https://github.com/Vankka/DependencyDownload/blob/main/LICENSE)\n\n## License\n\nPlayer Analytics is licensed under LGPL-3 (GNU Lesser General Public License)\n\n- [License](https://github.com/plan-player-analytics/Plan/blob/master/LICENSE)\n",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/48692242?v=4",
@@ -206,13 +213,41 @@
     "url": "https://spdx.org/licenses/LGPL-3.0.html"
   },
   "links": null,
+  "manifest_path": "Plan/bukkit/src/main/resources/plugin.yml",
   "name": "Plan",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/plan-player-analytics/Plan",
-  "stars": 990,
-  "summary": "",
-  "updated_at": 1772651379,
+  "stars": 988,
+  "summary": "Player Analytics plugin for Minecraft Server platforms - View player activity of your server with ease. :calendar:",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1773081241,
   "versions": [
+    {
+      "changelog": "# 5.7 DEV build 3265\r\n\r\nThis dev release is a collection of bugfixes intended to release next weekend.\r\n\r\nSpecial thanks to **Guinness_Akihiko** for contributions to this update\r\n\r\n# Change log\r\n\r\n## Website\r\n\r\n- Improved readability of World Pie on servers that have over 7 worlds\r\n- Improved readability of Server Pie on networks that have over 7 servers\r\n- Moved Performance graph loading to Web Worker (async threading in browsers) - This should improve rendering times slightly\r\n- Fixed a couple of instances where Trend was not properly showing\r\n- Fixed a bug with Change history floating on top of the Save button in Theme Editor when using Night mode.\r\n- Fixed CUSTOM locale defaulting to Chinese locale for time/date/country localization due to \"Best match\" in browser matching.\r\n\r\n## Themes\r\n\r\nAdded solarized theme based on https://github.com/altercation/solarized\r\n\r\n<img width=\"1903\" height=\"955\" alt=\"solarized theme\" src=\"https://github.com/user-attachments/assets/2f74fc03-76b1-4bd6-9ff4-1e45ec195c42\" />\r\n\r\n## Locale\r\n\r\n- Guinness_Akihiko updated KO locale\r\n\r\n## Other\r\n\r\n- Builds now require JDK 25 in preparation for switch to Mojang mappings.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.7-dev-build-3265.jar",
+          "primary": true,
+          "size": 17577523,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3265/Plan-5.7-dev-build-3265.jar"
+        },
+        {
+          "filename": "PlanFabric-5.7-dev-build-3265.jar",
+          "primary": true,
+          "size": 17522601,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3265/PlanFabric-5.7-dev-build-3265.jar"
+        }
+      ],
+      "name": "5.7 DEV build 3265",
+      "prerelease": true,
+      "published_at": 1773080750,
+      "version": "5.7.3265"
+    },
     {
       "changelog": "# 5.7 build 3247\r\n\r\nThis update brings a big bunch of new features and improvements, such as Theme Editor, Milliseconds per Tick, Players online -tooltip, Database move/merge rewrite and many others.\r\n\r\nSpecial thanks to **Kopo, SaolGhra, TWJohnJohn20116, Shadowhackercz, Vankka, DrexHD, Jsinco & julianvdhogen** for contributions to this update\r\n\r\n# Change log\r\n\r\nThe theme settings have changed.\r\nSee https://github.com/plan-player-analytics/Plan/wiki/Migration-guide-from-Version-5.6-to-5.7 for what might need changing in the config.\r\n\r\n## Website\r\n\r\n### Fixed vulnerabilities\r\n\r\n- Fixed potential XSS injected through malicious plugin. (User would have had to click the link to activate XSS) [What is XSS](https://owasp.org/www-community/attacks/xss/)\r\n- Fixed potential Session hijack vulnerability after successful XSS where attacker could read authentication cookie through javascript.\r\n  - It is recommended to run `/plan logout *` after the update to protect against this vulnerability, even if the sessions will eventually expire.\r\n  \r\nThere has not been reports of exploitation of these vulnerabilities.\r\n\r\n### Theme Editor\r\n\r\nYou can now create your own themes for Plan without needing Html Customization. This is the main new feature of this version and is documented [here](https://github.com/plan-player-analytics/Plan/wiki/Themes).\r\n\r\n<img alt=\"image\" src=\"https://github.com/user-attachments/assets/6574c4fe-75e6-4feb-acb3-336e34d91c55\" />\r\n\r\n- theme.yml has now been deprecated and will be deleted if it only contains default values\r\n\r\n### MSPT (Milliseconds per Tick)\r\n\r\n<img width=\"903\" height=\"507\" alt=\"image\" src=\"https://github.com/user-attachments/assets/cf799d02-efe0-4647-b954-501a3892e714\" />\r\n\r\nMilliseconds per Tick (average/95th percentile) have been added to performance metrics on all applicable platforms.\r\n\r\n### Players online -tooltip\r\n\r\n<img width=\"418\" height=\"301\" alt=\"image\" src=\"https://github.com/user-attachments/assets/1f288e4f-3bdc-459b-a384-677995689cfb\" />\r\n\r\nYou can now hover over Players online graph to see who was online at specific time (up to 63 players).\r\n\r\n### Query page improvements\r\n\r\n<img width=\"1659\" height=\"422\" alt=\"image\" src=\"https://github.com/user-attachments/assets/993ad0b7-4d97-4981-a394-39c168e58f6c\" />\r\n\r\n- New filters have been added\r\n  - Played on date\r\n  - Activity group on date\r\n  - Last seen between\r\n- All 'between' filters now support 'Before' and 'After' by deselecting one of the checkboxes (e.g. played between -> played before)\r\n- Multi-select components have been replaced with a mobile friendly, text searchable alternative that no longer requires pressing Shift for multi-selection\r\n- Fixed timezone inconsistency between View time input fields and the graph\r\n\r\n### Performance graph improvements\r\n\r\n![performance-tab-graph-linking](https://github.com/user-attachments/assets/e45a1e36-9f38-44e7-a30d-e2bc24394d99)\r\n\r\n- Performance graph tabs now sync the graph range-finder so that you can view different data for same time easier\r\n- Network performance graph colors now vary between servers to be easier to read\r\n- Fixed extra Series label appearing in HTTP mode on Performance graph (This was the plugin version history series in HTTPS mode)\r\n- Added Uptime data to Performance as Numbers tables\r\n\r\n### Other\r\n\r\n- Kills table can now be searched/sorted/exported and gets up to 25000 entries from the database  \r\n<img alt=\"image\" src=\"https://github.com/user-attachments/assets/4cb0d003-d67e-44f5-99e3-3e5fbb741ae6\" />\r\n\r\n- Added support for nickname search in player tables\r\n- Fixed some night mode text invisibility issues\r\n- SaolGhra fixed error `r.includes is not a function` related to Litebans\r\n- Fixed 'View full query' button in the modal that opens when clicking Server calendar\r\n- Fixed clicking Server calendar results including players who played on other servers during selected days\r\n\r\n## Config\r\n\r\n- Changed default `Display_options.Player_head_image_url` to `https://crafthead.net/helm/${playerUUIDNoDash}/120` (Existing configs need to be manually updated)\r\n- Jsinco updated 'Data_gathering.Join_addresses_.Filter_out_from_data' to support regex. Note that any existing setting values with . (dot character) will now match any character.\r\n- `Display_options.Theme` (default \"default\") now refers to theme name in the theme editor rather than \"What theme.yml to copy values from\"\r\n- `Display_options.Night_mode` (default false) added\r\n\r\n## Data\r\n\r\n- MSPT average and 95th percentile added to plan_tps table\r\n- Register date `0` (1970-01-01) is now regarded as invalid.\r\n- Ban status is now updated by an automatic task that cycles through all known players small amount at a time\r\n\r\n## Sponge\r\n\r\n- Sponge API 14 is now used, API 8 is no longer supported.\r\n\r\n## Fabric\r\n\r\n- Fabric was updated to 1.12.9 by DrexHD (Supports 1.12.11 as well)\r\n\r\n## Velocity\r\n\r\n- Velocity was updated to 3.5.0-SNAPSHOT\r\n\r\n## Database\r\n\r\n### Database move system rewrite\r\n\r\nRewrote the system responsible for copying data from one database to another since previous system would crash under large datasets. The goal of this was to allow copying large SQLite databases to MySQL even on larger servers. The system was tested against a 3 GB MySQL database on a server with 1 GB of allocated memory. (Sidenote: Please don't try to run your server off 3 GB large database.db SQLite file)\r\n\r\n- /plan db move, /plan db backup, /plan db restore use the new system\r\n- Added /plan db merge command (permission: plan.data.merge) which allows merging SQLite data to existing MySQL. This is useful for those merging multiple servers into a network when all servers had Plan installed on separate SQLite databases.\r\n\r\n### Other\r\n\r\n- id column added to old plan_tps tables that did not have it yet via Patch.\r\n- Lock hints for selections inside transactions to reduce deadlocks\r\n- Fixed 1020 \"Record has changed since last read in table\" error on MariaDB 11.8.3\r\n- Fixed dyplicate key violation related to AllowListBounce\r\n- Possibly fixed ShutdownDataPreservationTransaction failing on existing join address insert\r\n- Fixed playtime queries where session started before view window or ended after.\r\n\r\n## Locale\r\n\r\n- Dates, time amounts & country names are now translated based on the selected locale. (If specific ones aren't please report it as a bug)\r\n- HighCharts & Calendar are now translated based on the selected locale\r\n- TWJohnJohn20116 updated zh_TW locale\r\n- Shadowhackercz updated CS locale\r\n- julianvdhogen updated NL locale\r\n\r\n## Extensions\r\n\r\n- Fixed ArithmeticException related to LibertyBans when bans were infinite\r\n- Fixed an issue related to rendering boolean values\r\n- Updated Jobs extension to support newer version\r\n- Added Time.Periodical_tasks.Extension_player_data_refresh_every setting (default 15 MINUTES) which only affects plugins that decide to support it.\r\n- Made gathered PlaceholderAPI data update periodically\r\n\r\n## Placeholders\r\n\r\n- Fixed network_players_online always saying 0\r\n\r\n## Other\r\n\r\n- Added Typescript support.\r\n- Vankka updated DependencyDownload to clean up libraries folder of old versions\r\n- Kopo updated the build system to speed up builds & IDE indexing performance\r\n",
       "downloads": 0,
@@ -850,28 +885,6 @@
       "prerelease": false,
       "published_at": 1678002002,
       "version": "5.5.2272"
-    },
-    {
-      "changelog": "# 5.5 DEV build 2254\r\n\r\nThis dev release enables the React Frontend by default and adds new APIs for adding content to the React website via Javascript and Java.\r\n\r\nThis is a release candidate, I just didn't have time to write enough documentation for a full release this weekend.\r\n\r\n## Changes from DEV build 2208\r\n\r\n- Enabled React frontend by default\r\n- Added 'Plugin.Use_Legacy_Frontend' (default: false) that still allows using old frontend for a while until it's completely removed.\r\n- Added new PageExtension javascript APIs. Documentation is still in progress.\r\n  - [pageExtensionApi.js](https://github.com/plan-player-analytics/Plan/blob/master/Plan/react/dashboard/public/pageExtensionApi.js)\r\n  - [ResourceService](https://plan-player-analytics.github.io/Plan/api/com/djrapitops/plan/delivery/web/ResourceService.html) got two new methods\r\n  - `ResourceService.Position.AFTER_MAIN_SCRIPT` is now deprecated and is a no-op if used with index.html (The react bundle .html file)\r\n\r\n# Change log\r\n\r\n## React Frontend (Previously called Frontend BETA)\r\n\r\nNew frontend is now enabled by default. 'Plugin.Use_Legacy_Frontend' (default: false) setting still allows using old frontend for a while until it's completely removed.\r\n\r\n- Use public_html for customizing React-bundle. See https://github.com/plan-player-analytics/Plan/wiki/Html-Customization--migration-guide-to-React on how to use the customization features with new frontend.\r\n- Added a page navigation button that allows moving to different servers and other pages easily. This replaces the 'Back to main page' button.\r\n![image](https://user-images.githubusercontent.com/24460436/216813593-a5a3b8b9-56a7-4bc2-b817-f222e7e2ff14.png)\r\n- Improved mobile navigation. With the navigation button this should help mobile users a lot.\r\n- Fixed network server list saying \"No servers installed\" while servers were being loaded.\r\n- Fixed page translation issues\r\n- React was updated to version 18\r\n\r\n## Webserver\r\n\r\n- Implemented HTTP Caching: Browser will now cache some responses and avoid sending unnecessary data if it was already loaded. This can improve page loading times from multiple seconds to milliseconds.\r\n- Implemented public_html feature that allows hosting custom files from a configurable folder `Webserver.Public_html_directory` (default `/plugins/Plan/public_html`). This can be used to host http-challenge file for certbot and other files.\r\n- /v1/network/servers endpoint was optimized, got a 66% speed increase, so Servers tab on network page should load faster.\r\n\r\n## Database\r\n\r\n- PlayerTableRowPatch should no longer be re-applied all the time\r\n- Optimized server player table query: /server/players now loads much faster. Tested optimization: 4s -> 500ms: 8x improvement\r\n- Optimized server latest join addresses query: /sever/join_addresses now loads much faster. Tested optimization: 19s -> 150ms: 120x improvement\r\n\r\n## PlaceholderAPI\r\n\r\n- Unregister placeholder extension when Plan disables: this possibly fixes an issue where PlaceholderAPI would log errors when Plan disabled before PlaceholderAPI.",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "Plan-5.5-dev-build-2254.jar",
-          "primary": true,
-          "size": 16897968,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.5.2254/Plan-5.5-dev-build-2254.jar"
-        },
-        {
-          "filename": "PlanFabric-5.5-dev-build-2254.jar",
-          "primary": true,
-          "size": 17414032,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.5.2254/PlanFabric-5.5-dev-build-2254.jar"
-        }
-      ],
-      "name": "5.5 DEV build 2254",
-      "prerelease": true,
-      "published_at": 1677330197,
-      "version": "5.5.2254"
     }
   ]
 }

@@ -1,0 +1,49 @@
+{
+  "api_version": "Nukkit-MOT",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "若水",
+      "url": ""
+    },
+    {
+      "avatar_url": "",
+      "name": "LT_Name",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1609650239,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "MemoriesOfTime-GameCore",
+      "version_range": ""
+    }
+  ],
+  "description": "<h1 align=\"center\">\n  RsNPC\n</h1>\n\n<p align=\"center\">\nEnglish | <a href=\"https://github.com/MemoriesOfTime/RsNPC/blob/master/README_zh.md\">简体中文</a> | <a href=\"https://github.com/MemoriesOfTime/RsNPC/blob/master/README_ru.md\">Русский</a>\n</p>\n\n### 📖 Introduction\n\n**RsNPC** is a powerful command NPC plugin with 4D skin support and highly customizable features for Nukkit servers. This plugin allows you to create and manage command NPCs with a wide range of interactive features and settings. You can customize NPC skins, paths, dialogues, actions, and more to enhance your server's experience.  \n\n### 📝 Features\n\n**4D Skin Support**: Assign 4D skins to NPCs for more dynamic appearances.   \n**Custom Entities**: Add custom entities using resource packs, enabling unique NPC models.   \n**Custom Handheld Items/Armor**: Equip NPCs with custom held items and armor.  \n**Look at Players**: NPCs automatically face players for better interaction.   \n**Emote Actions**: NPCs can perform various actions like \"Over There!\" or \"Simple Clap\" their heads.  \n**Custom Click Commands**: Set custom commands and messages for each NPC, with support for different permission levels (player, OP, console).   \n**Path Setting**: NPCs can move along a defined path automatically.  \n**Dialog System**: Perfect for RPG dialogues, information introductions, and more.  \n**Rotating in Place**: NPCs can rotate in place, ideal for showcasing skins or models.  \n**GUI Configuration**: Configure 90% of the plugin’s features in-game using a GUI interface without the need for manual file editing.  \n\n### 📄 Download\nCompatible with Nukkit-MOT: [download](https://ci.lanink.cn/job/RsNPC/job/master/)  \nCompatible with NukkitX: [download](https://ci.lanink.cn/job/RsNPC/job/nkx/)  \n\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/62042238?v=4",
+  "id": "MemoriesOfTime/RsNPC",
+  "license": {
+    "id": "AGPL-3.0",
+    "name": "GNU Affero General Public License v3.0",
+    "url": "https://spdx.org/licenses/AGPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "RsNPC",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/MemoriesOfTime/RsNPC",
+  "stars": 13,
+  "summary": "NPC plugin for Nukkit-MOT",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1770818613,
+  "versions": []
+}

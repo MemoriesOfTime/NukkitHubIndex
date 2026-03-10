@@ -1,0 +1,113 @@
+{
+  "api_version": "unknown",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "PQguanfang",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1772807329,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "MMOItems",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "MythicLib",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "ItemsAdder",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "Oraxen",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "EcoItems",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "EcoArmor",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "PlaceholderAPI",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "MythicMobs",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "CraftEngine",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "NeigeItems",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "ExecutableItems",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "MythicChanger",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "NBTAPI",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "LevelledMobs",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "MythicChanger",
+      "version_range": ""
+    }
+  ],
+  "description": "# ✨ Welcome to **EnchantedMobs**\n\n**EnchantedMobs** is a highly configurable Minecraft plugin that dynamically assigns **powers (abilities)** to mobs.  \nMobs can automatically scale with nearby players, gain unique combat abilities, and create far more challenging and interesting encounters.\n\nDesigned for **Spigot / Paper servers**, EnchantedMobs integrates seamlessly with popular plugins such as ItemsAdder, Oraxen, MMOItems, MythicMobs, and PlaceholderAPI.\n\nWith its **event-driven ability system**, you can create powerful enemies, dynamic combat mechanics, and scalable difficulty for your server.\n\n---\n\n# ✨ Features\n\n## ⚔ Dynamic Mob Powers\n- Assign **abilities (powers)** to mobs from configurable files in `powers/`.\n- Supports **weighted random selection**, **level budgets**, and **unique power groups**.\n- Powers can modify mob behavior such as:\n    - Damage & healing\n    - Burning & freezing\n    - Death effects\n    - Explosions\n    - Target control\n    - Projectile mechanics\n\n---\n\n## 📈 Player-Based Difficulty Scaling\nMobs can automatically scale based on **nearby player power levels**.\n\nFeatures include:\n- Configurable **spawn probability**\n- Adjustable **level ranges**\n- **Maximum mob level**\n- **Player scan radius**\n- World/entity blacklist\n\nThis allows mobs to naturally become stronger as players progress.\n\n---\n\n## 👑 Elite Mob System\nEnhanced mobs can display:\n\n- **Custom names with power tags**\n- **BossBars showing health and abilities**\n- Limited display with a **“more…” indicator**\n\nPlayers instantly know when they encounter a dangerous enemy.\n\n---\n\n## 🔥 Event-Based Ability System\n\nAbilities can trigger on many combat events:\n\n- `on-spawn`\n- `on-damage`\n- `on-regain`\n- `on-melee-attack`\n- `on-death`\n- `on-target`\n- `on-explode`\n- `on-projectile-hit`\n- `on-shoot-bow`\n- `on-projectile-tick`\n- `on-tick`\n- `on-target-tick`\n\nBuilt-in abilities include:\n\n- `explosion`\n- `lightning`\n- `particle`\n- `sound`\n- `set_attribute`\n- `set_health`\n- `potion_effect`\n- `freeze`\n- `fire`\n- `homing_projectile`\n- `arrow_rain`\n- `execute_command`\n- `mythic_skill`\n\nThis system allows server owners to design **complex boss-like mob mechanics purely through configuration**.\n\n---\n\n## 🧰 Item & Plugin Ecosystem Integration\n\n- Save held items directly as plugin configuration.\n- Export items into `generated-item-format.yml`.\n- Fully compatible with major item plugins.\n- Supports **PlaceholderAPI placeholders**.\n\n---\n\n# 📜 Commands\n\nMain command:\nMain command:\n\n\n/enchantedmobs\n\n\nAliases:\n\n\n/em\n/emobs\n\n\n---\n\n## Reload Plugin\n\n/enchantedmobs reload\n\nReload plugin configuration, language files, powers, and items.\n\n---\n\n## Save Item\n\n/enchantedmobs saveitem <id> [bukkit|itemformat]\n\n\nSave the item in your main hand.\n\nFormats:\n- `bukkit` (default)\n- `itemformat`\n\n---\n\n## Give Saved Item\n\n/enchantedmobs givesaveitem <id> [player] [amount]\n\n\nGive a previously saved item to a player.\n\n---\n\n## Generate Item Format\n\n/enchantedmobs generateitemformat\n\n\nExport your held item to `generated-item-format.yml`.\n\n---\n\n## Spawn Mob With Powers\n\n/enchantedmobs spawnmob <entityType> <level> <power...> [world x y z]\n\n\nSpawn a mob with specific powers.\n\n---\n\n## Spawn Random Powered Mob\n\n/enchantedmobs spawnrandommob <level> <entityType> [world x y z]\n\n\nSpawn a mob with randomly assigned powers based on level.\n\n---\n\n## Check Player Power\n\n/enchantedmobs power [player]\n\n\nCheck your own or another player's power level.\n\n---\n\n## Check Nearby Player Power\n\n/enchantedmobs chunkpower\n\n\nDisplay the **average player power in the surrounding area**, which affects mob difficulty.\n\n---\n\n# ⭐ Highlights\n\n✔ **Player-scaling mobs** – enemies become stronger as players progress  \n✔ **Highly configurable** – create complex mobs without writing code  \n✔ **Clear visual feedback** – names + BossBars for elite mobs  \n✔ **Plugin ecosystem support** – compatible with major item plugins  \n✔ **Powerful admin tools** – spawn mobs, inspect power levels, manage items",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/172976604?v=4",
+  "id": "ManyouTeam/EnchantedMobs",
+  "license": {
+    "id": "NOASSERTION",
+    "name": "Other",
+    "url": "https://github.com/ManyouTeam/EnchantedMobs/blob/master/LICENSE"
+  },
+  "links": null,
+  "manifest_path": "plugin/src/main/resources/plugin.yml",
+  "name": "EnchantedMobs",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/ManyouTeam/EnchantedMobs",
+  "stars": 0,
+  "summary": "Configurable mob abilities and powers plugin for Paper servers.",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1773022130,
+  "versions": []
+}

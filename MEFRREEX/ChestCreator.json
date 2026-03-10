@@ -21,6 +21,7 @@
     }
   ],
   "description": "# ChestCreator\nTool for easy creation of chests in Json file for Nukkit\n\n> [!IMPORTANT]\n> This plugin is dependent on the [FakeInventories](https://github.com/IWareQ/FakeInventories) library\n\n## How to use\n\n> All chests are stored in the plugins/ChestCreator/chests folder\n\nExample chest:\n\n`example.json`\n```json5\n{\n    // Command\n    \"command\": {\n        // Is enable\n        \"enable\": true,\n        \"name\": \"example\",\n        \"description\": \"Example command\", \n        // Command aliases\n        \"aliases\": [\"example1\"],\n        // Permission\n        // Delete it if you don't have to\n        \"permission\": \"chestcreator.example\"\n    },\n    // Chest title\n    \"title\": \"Example chest\",\n    // Inventory type\n    // Available: CHEST, DOUBLE_CHEST, HOPPER, DROPPER\n    \"type\": \"CHEST\",\n    // Mode of switching between chests\n    // Available: DEFAULT (default), REOPEN (before the new chest is opened, \n    // the current chest will be closed)\n    \"switchMode\": \"DEFAULT\",\n    // Chest items\n    \"items\": {\n        \"12\": { // <-- Item slot\n            // Item id (Minecraft item id)\n            \"id\": \"minecraft:iron_sword\",\n            \"name\": \"First item\",\n            // Item lore\n            \"lore\": [\n                \"&dHello, %player%\",\n                \"&6Click me!\"\n            ],\n            // Item actions\n            \"actions\": [\n                {\n                    // Available types: \n                    // PLAYER_COMMAND - Execute command from player\n                    // CONSOLE_COMMAND  - Execute command from server\n                    // MESSAGE - Send message to player\n                    // PLAYER_MESSAGE - Send message from player\n                    // OPEN_CHEST - Open other chest\n                    // OPEN_FORM - Open form from FormCreator\n                    \"type\": \"OPEN\",    // Type\n                    \"value\": \"example\" // Action value\n                }\n            ]   \n        },\n        \"14\": {\n            \"id\": \"minecraft:barrier\",\n            \"name\": \"Close\",\n            \"canTake\": false, // Can a player take an item\n            \"close\": true, // Close the chest after a click\n            \"lore\": [\"&cClick to close\"],\n            \"actions\": [\n                {\n                    \"type\": \"PLAYER_COMMAND\",\n                    \"value\": \"say Test\"\n                }\n            ]\n        }\n    },\n    // Chest open actions\n    \"openActions\": [\n        {\n            \"type\": \"CONSOLE_COMMAND\",\n            \"value\": \"say %player% Chest opened!\"\n        }\n    ],\n    // Chest close actions\n    \"closeActions\": [\n        {\n            \"type\": \"CONSOLE_COMMAND\",\n            \"value\": \"say %player% Chest closed!\"\n        }\n    ]\n}\n```\nRegistration of the chest:\n\n`chests.yml`\n```yml\n# Registration of the chest\nchests:\n  # chest name: \"chest path in the 'chests' folder\"\n  example: \"example.json\"\n```\n\n## Commands\n| Name          | Sub Command | Usage                               | Description       | Permission        |\n|---------------|-------------|-------------------------------------|-------------------|-------------------|\n| /chestcreator | open        | /chestcreator open <chest> <player> | Open player chest | chestcreator.open |\n| /chestcreator | info        | /chestcreator info                  | Plugin info       | chestcreator.info |\n| /chestcreator | help        | /chestcreator help                  | Help              |                   |\n\n## API\n### ChestManager\nGet a folder with chests:\n```java\nFile folder = ChestManager.getChestsFolder();\n```\nGetting a chest by name:\n```java\nChest chest = ChestManager.get(\"chest_name\");\n```\nCheck the existence of the chest:\n```java\nChestManager.exists(\"chest_name\");\n```\nLoad chest from file:\n```java\nChestManager.load(\"chest_name\", file);\n```\n\n### Creating a custom action executor\n\nYour executor:\n```java\npublic class YourExecutor implements Executor {\n\n    /**\n     * @param player Player\n     * @param value  Value of action\n     */\n    @Override\n    public void execute(Player player, String value) {\n        // Handling action\n    }\n}\n```\n\nExecutor registration:\n```java\n// name - Executor name. For example: YOUR_EXECUTOR \nExecutorManager.register(\"name\", new YourExecutor());\n```\nGetting a executor:\n```java\nExecutorManager.getExecutor(\"YOUR_EXECUTOR\");\n```\n\n### Events\n| Name           | Cancellable | Description                      |\n|----------------|-------------|----------------------------------|\n| ChestLoadEvent | true        | Called when the chest is loaded  |\n| ChestSendEvent | true        | Called when a chest is opened    |\n\n# \n\n> [!TIP]\n> Chest slots identifiers\n> \n> ![image](https://github.com/MEFRREEX/ChestCreator/assets/83061703/95e27994-0668-4654-b41c-d846148550f4)\n\n",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/83061703?v=4",
@@ -31,11 +32,18 @@
     "url": "https://spdx.org/licenses/GPL-3.0.html"
   },
   "links": null,
-  "name": "${project.name}",
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "ChestCreator",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/MEFRREEX/ChestCreator",
   "stars": 0,
-  "summary": "",
+  "summary": "Tool for easy creation of chests in Json file for Nukkit",
+  "targets": [
+    "nkx",
+    "nkmot",
+    "pnx"
+  ],
   "updated_at": 1703077725,
   "versions": [
     {

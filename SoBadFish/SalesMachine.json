@@ -1,6 +1,12 @@
 {
   "api_version": "1.0.14",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Sobadfish",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1700539589,
   "dependencies": [
@@ -26,6 +32,7 @@
     }
   ],
   "description": "# <div align=\"center\">SalesMachine</div>  \n\n------\n![](https://img.shields.io/badge/license-GPL3.0-blue) <a href=\"https://github.com/Sobadfish/SalesMachine/releases/latest\" alt=\"Latest release\">\n<img src=\"https://img.shields.io/github/v/release/Sobadfish/SalesMachine?include_prereleases\" alt=\"Latest release\">\n</a>\n\n### ⚠️Server\n\n| 核心           |         是否支持         |\n|--------------|:--------------------:|\n| NukkitX      |          ❌           |\n| PowerNukkitX |          ✅           |\n| Nukkit-PM1E  | ✅(需要CustomItemAPI前置) |\n| Nukkit-MOT   |          ✅           |\n\n### 📝Function\n|     |    功能     |\n|:---:|:---------:|\n|  ✅  | 自定义物品  |\n|  ✅  | 增加物品以及出售  |\n|  ✅  | 是否支持自定义物品 |\n|  ✅  |  商品无限库存   |\n|  ✅  |   商品回收    |\n|  ✅  |  商品数量限购   |\n|  ✅  | 刷新商品限购次数  |\n|  ✅  | 售货机调整位置  |\n\n### ✋How to use\n* 管理员在游戏中执行 `/sa give [玩家] [数量] ` 即可获得售货机物品\n将售货机放置即可生成\n* 手持物品潜行点击售货机即可添加物品 ⚠首次添加的时候 数量代表出售的数量，之后添加的数量则是增加库存。\n* 使用模型切换器可以直接更改模型\n\n###  📄DownLoad\n[下载](https://motci.cn/job/SalesMachine_Project/)\n\n### 👀Display\n\n| ![本地](https://raw.githubusercontent.com/SoBadFish/SalesMachine/master/img/1.jpg)   | ![本地](https://raw.githubusercontent.com/SoBadFish/SalesMachine/master/img/2.jpg)   |\n|----------------------|----------------------|\n| ![本地](https://raw.githubusercontent.com/SoBadFish/SalesMachine/master/img/3.jpg)   | ![本地](https://raw.githubusercontent.com/SoBadFish/SalesMachine/master/img/4.jpg)   |\n\n\n\n\n\n\n\n",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [
     {
@@ -61,11 +68,17 @@
     "url": ""
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "SalesmMchine",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/SoBadFish/SalesMachine",
   "stars": 5,
-  "summary": "",
+  "summary": "拥有模型的售货机商店系统！",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1771677539,
   "versions": [
     {

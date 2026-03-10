@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "LT_Name",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1617263842,
+  "dependencies": [],
+  "description": "# RankingAPI\n排行榜API，提供简单创建排行榜方法\n\n示例：\n```java\nRanking ranking=createRanking(this,\"测试排行榜\",pos);\nHashMap<String, Number> map = new HashMap<>();\nmap.put(\"ltname\",100);\nmap.put(\"ltname2\",99);\nmap.put(\"ltname3\",98);\nmap.put(\"ltname4\",10);\nranking.setRankingList(map);\n```\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+  "id": "lt-name/RankingAPI",
+  "license": {
+    "id": "LGPL-2.1",
+    "name": "GNU Lesser General Public License v2.1",
+    "url": "https://spdx.org/licenses/LGPL-2.1.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "RankingAPI",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/lt-name/RankingAPI",
+  "stars": 1,
+  "summary": "提供简单易用的排行榜接口",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1703405473,
+  "versions": []
+}

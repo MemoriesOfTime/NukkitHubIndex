@@ -1,10 +1,17 @@
 {
   "api_version": "1.0.14",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "stevei5mc",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1702048399,
   "dependencies": [],
   "description": "# NewTipsVariables\r\n[![GitHub License](https://img.shields.io/github/license/stevei5mc/NewTipsVariables?style=plastic)](LICENSE)\r\n![GitHub top language](https://img.shields.io/github/languages/top/stevei5mc/NewTipsVariables?style=plastic)\r\n[![GitHub Release](https://img.shields.io/github/v/release/stevei5mc/NewTipsVariables?style=plastic&color=drak%20green)](https://github.com/stevei5mc/NewTipsVariables/releases)  \r\n![GitHub Repo stars](https://img.shields.io/github/stars/stevei5mc/NewTipsVariables?style=plastic)\r\n![GitHub forks](https://img.shields.io/github/forks/stevei5mc/NewTipsVariables?style=plastic)\r\n![GitHub issues](https://img.shields.io/github/issues/stevei5mc/NewTipsVariables?style=plastic&color=linkGreen)\r\n![GitHub pull requests](https://img.shields.io/github/issues-pr/stevei5mc/NewTipsVariables?style=plastic)  \r\n## **插件介绍**\r\n### **前言**\r\n- **该插件可以为Tips提供更多的变量内容**  \r\n- **有问题请及时提交[issues](https://github.com/stevei5mc/NewTipsVariables/issues)**  \r\n- **如果你有开发能力可以为其提供[PR](https://github.com/stevei5mc/NewTipsVariables/pulls)来增加更多变量或修复问题**\r\n### **命令与权限节点**\r\n|命令|权限节点|权限介绍|默认权限|\r\n|:-:|:-:|:-:|:-:|\r\n|/newtipsariables|newtipsariables.admin|主命令|OP|\r\n|/newtipsariables reload|newtipsariables.admin.reload|重载配置文件|OP|\r\n|/newtipsariables checkstatus|newtipsariables.admin.checkstate|检查插件状态|OP|\r\n### **变量介绍文档**\r\n- **[基础变量](https://github.com/stevei5mc/NewTipsVariables/blob/main/docs/base-variables.md)**\r\n- **[支持下列插件](https://github.com/stevei5mc/NewTipsVariables/blob/main/docs/SupportPluginsVariables.md \"点击查看变量文档\")**\r\n### **配置文件使用说明**\r\n- **若未在此说明中写配置项出则代表该配置项还没有支持,也有可能是忘记写出来了**\r\n- **给出的预览图片可能不是最新的，但也差不到哪去**\r\n\r\n<details>\r\n<summary>config.yml</summary>\r\n\r\n**[查看原文件](https://github.com/stevei5mc/NewTipsVariables/blob/main/../src/main/resources/config.yml)**\r\n```yaml\r\n#使用说明:\r\n#https://github.com/stevei5mc/NewTipsVariables/blob/main/README.md\r\n#https://gitee.com/stevei5mc/NewTipsVariables/blob/main/README.md\r\n#配置文件版本，勿动\r\nversion: 2\r\n# 更新功能(这个功能展示没有用)\r\nupdata-plugin:\r\n  #检查更新(暂时没有用)\r\n  check: false\r\n  #自动更新(需开启检查更新但暂时没有用)\r\n  auto: false\r\n# 是否释放新的变量说明文档\r\nsave-variables-doc: true\r\ndebug: false\r\n```\r\n\r\n1. `save-variables-doc` 该功能关闭后就算删除变量文档也不会生成新的变量文档\r\n2. `debug` 显示一些额外的信息  \r\n![6](https://raw.githubusercontent.com/stevei5mc/NewTipsVariables/main/docs/image/debug.PNG)  \r\n3. `updata -> in-config -> check` 配置文件版本检查\r\n4. `updata -> in-config -> auto` 配置文件自动更新(需开启检查更新)**注意： 开启后配置文件将强制更新不会保留原来的配置**  \r\n![7](https://raw.githubusercontent.com/stevei5mc/NewTipsVariables/main/docs//image/check_config.PNG)\r\n</details>\r\n<details>\r\n<summary>server.yml</summary>\r\n\r\n**[查看原文件](https://github.com/stevei5mc/NewTipsVariables/blob/main/../src/main/resources/server.yml)**\r\n```yml\r\n#使用说明:\r\n#https://github.com/stevei5mc/NewTipsVariables/blob/main/README.md\r\n#https://gitee.com/stevei5mc/NewTipsVariables/blob/main/README.md\r\n#配置文件版本，勿动\r\nversion: 1\r\nTPS:\r\n  low_color: \"§c\"\r\n  medium_value: 9\r\n  medium_color: \"§e\"\r\n  high_value: 15\r\n  high_color: \"§a\"\r\n```\r\n1. ```color```设置显示的颜色，```low```、```medium```、```high```为显示的范围 \r\n2. ```value```是一个范围值，```medium```、```high```为可设置的范围值，```low```值只能为```0```\r\n</details>\r\n<details>\r\n<summary>player.yml</summary>\r\n\r\n**[查看原文件](https://github.com/stevei5mc/NewTipsVariables/blob/main/../src/main/resources/player.yml)**\r\n```yml\r\n#使用说明:\r\n#https://github.com/stevei5mc/NewTipsVariables/blob/main/README.md\r\n#https://gitee.com/stevei5mc/NewTipsVariables/blob/main/README.md\r\n#配置文件版本，勿动\r\nversion: 1\r\nDevice:\r\n  OS:\r\n    Android: \"Android\"\r\n    iOS: \"iOS\"\r\n    macOS: \"macOS\"\r\n    Fire_OS: \"Fire OS\"\r\n    Gear_VR: \"Gear VR\"\r\n    HoloLens: \"HoloLens\"\r\n    Windows_10: \"Windows 10\"\r\n    Windows: \"Windows\"\r\n    Dedicated: \"Dedicated\"\r\n    tvOS: \"tvOS\"\r\n    PlayStation: \"PlayStation\"\r\n    Switch: \"Switch\"\r\n    Xbox: \"Xbox\"\r\n    Windows_Phone: \"Windows Phone\"\r\n  Controls:\r\n    Keyboard: Keyboard\r\n    Touch: Touch\r\n    pad: pad\r\n    motion_controller: motion_controller\r\n  UIProfile:\r\n    classic: \"classic ui\"\r\n    pocket: \"pocket ui\"\r\nping:\r\n  low_color: \"§a\"\r\n  medium_value: 80\r\n  medium_color: \"§e\"\r\n  high_value: 120\r\n  high_color: \"§c\"\r\nHP:\r\n  low_color: \"§c{0}§7/§c{1}\"\r\n  medium_value: 9\r\n  medium_color: \"§e{0}§7/§e{1}\"\r\n  high_value: 15\r\n  high_color: \"§a{0}§7/§a{1}\"\r\nFood:\r\n  empty_color: \"§7{0}/{1}\"\r\n  low_color: \"§c{0}§7/§c{1}\"\r\n  medium_value: 9\r\n  medium_color: \"§e{0}§7/§e{1}\"\r\n  high_value: 15\r\n  high_color: \"§a{0}§7/§a{1}\"\r\n```\r\n1. `color`设置显示的颜色，`low`、`medium`、`high`为显示的范围  \r\n2. `value`是一个范围值，`medium`、`high` 为可设置的范围值，`empty`值只能为`0`，`low`值只能为`0`或`1`\r\n- **`Device -> OS`玩家的设备系统**  \r\n- **`Device -> Controls`获取玩家设备的操作方式**\r\n- **`Device -> UIProfile`玩家的设备UI**\r\n- **`ping` 玩家的延迟**\r\n- **`HP`  玩家的血量**\r\n- **`Food` 玩家的饥饿值**\r\n---\r\n</details>\r\n\r\n## **使用方法**\r\n|使用步骤|使用说明|\r\n|:-:|:-|\r\n|1|将插件放进`plugins`文件夹|\r\n|2|确保安装前置插件[Tips](https://motci.cn/job/Tips/)后重启（启动）服务器|\r\n|3|在`./plugins/NewTipsVariables`文件夹中的`.txt`文件获取相关变量介绍，也可在本页面获取相关的变量介绍就可以在Tips中使用同时也可以在支持Tips变量的插件中使用|\r\n## **注意事项及建议**\r\n1. **请不要随意的改动配置文件的版本号，否则带来的后果一切自负！！！**\r\n2. **建议备份好已经配置好的配置文件以备不时之需**\r\n3. **1.0.0-beta10之后合并了[UnicodeVariables](https://github.com/stevei5mc/UnicodeVariables)插件的相关功能，更新至1.0.0-beta10及以上版本即可删除[UnicodeVariables](https://github.com/stevei5mc/UnicodeVariables)了**\r\n",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [
     {
@@ -28,11 +35,17 @@
     "url": "https://spdx.org/licenses/GPL-3.0.html"
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "NewTipsVariables",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/stevei5mc/NewTipsVariables",
   "stars": 1,
   "summary": "",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1770615687,
   "versions": [
     {

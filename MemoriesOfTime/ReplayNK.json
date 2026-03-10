@@ -1,0 +1,48 @@
+{
+  "api_version": "1.0.14",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "daoge_cmd",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1687525869,
+  "dependencies": [],
+  "description": "# ReplayNK - MCBE Nukkit-MOT camera plugin\n\n![ReplayNK](https://socialify.git.ci/MemoriesOfTime/ReplayNK/image?description=1&descriptionEditable=ReplayMod%20for%20MCBE!&font=Inter&forks=1&issues=1&language=1&name=1&owner=1&pattern=Plus&pulls=1&stargazers=1&theme=Light)\n\n##### English | [简体中文](https://github.com/MemoriesOfTime/ReplayNK/blob/master/README_zh-cn.md)\n\n`ReplayNK` is a camera plugin developed for the Bedrock Edition server software `PowerNukkitX`, based on the latest Camera API of MCBE 1.20.0  \nThis repository is a modified version compatible with `Nukkit-MOT`.\n\n`ReplayNK` has made a lot of optimizations for camera movement, making its camera movement smoother and smoother than the traditional `/teleport`command plus command block to achieve camera movement\n\n`ReplayNK` perfectly supports all available parameters of the original `/camera` command, and adds a series of smoothing algorithms for path smoothing, such as Bézier curves.\n\n`ReplayNK` is simple and intuitive to use, with full visual operation, and most of the functions can be activated with one click of a button. At the same time, the plugin supports Chinese and English dual languages, and will automatically switch according to the user's language settings.\n\n## Simple tutorial\n\n### 1. Install plugin\n\nDownload the latest plugin jar package from Github Release, put it into the plugin folder of Nukkit-MOT, and restart the server. The resource packs required by the plugin are built into the plugin, and you don't need to install additional resource packs.\n\nAfter startup, the plugin will generate `plugins/ReplayNK/trails` directory and save trail files in this directory\n\n### 2. Commands\n\nThe list of available commands for the plugin is as follows, you can also enter `help replaynk` to get command help\n\n`/replaynk create <name>` - Create a new trail preset\n\n`/replaynk remove <name>` - Delete a new trail preset\n\n`/replaynk operate <name>` - Start operating a trail preset\n\n`/replaynk list` - List all trail presets\n\n### 3. Operation Guide\n\nHere are some things that will appear in your inventory after entering the operation mode (`/replay operate`), we will introduce from left to right\n\n![tools.png](https://raw.githubusercontent.com/MemoriesOfTime/ReplayNK/master/img%2Ftools.png)\n\n`Add Marker` - Add a marker\n\nAdd a marker, the marker is the basic unit of the track, you can set the camera position, orientation, camera speed and other parameters on the marker. The newly created marker will inherit the player's position and orientation\n\n`Remove Marker` - Remove a marker\n\nUse this tool to click on a marker to delete the marker point. After deleting a marker, the numbers of all subsequent markers will be reduced by one\n\n`Edit Marker` - Edit a marker\n\nUse this tool to click a marker to edit the parameters of this marker\n\n`Marker Picker` - Pick up a marker\n\nThis tool is used to move markers quickly. Left click to select a marker and move to a new position right click, the marker you selected will be moved to your new position\n\n`Play` - Play the trail\n\nRight click to play the trail\n\n`Pause` - Stop playing\n\nRight click on this tool while playing to stop playing\n\n`Setting` - Trail settings\n\nClick this tool to open the trail setting interface, where you can set the smoothing type of the trail, the default camera speed, playback speed and other parameters\n\n`Exit` - Exit edit mode\n\nRight click this tool to exit the edit mode\n\n## Troubleshooting\n\nQ: Why do I feel that the camera is still stuck?\n\nA: Due to the limitation of the client, when the speed of the mirror is too high and the distance between the markers is too small, there will be a freeze phenomenon. We have optimized it as much as possible. You can improve this problem by reducing the camera speed or increasing the marker spacing\n\nQ: Why doesn't my camera reset after playback ends?\n\nA: This may be caused by sending packets too fast. You can fix this by using the command `camera @s clear`",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-03-07",
+      "description": "",
+      "title": "tools.png",
+      "url": "https://raw.githubusercontent.com/MemoriesOfTime/ReplayNK/master/img%2Ftools.png"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/62042238?v=4",
+  "id": "MemoriesOfTime/ReplayNK",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/MemoriesOfTime/ReplayNK",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "ReplayNK",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/MemoriesOfTime/ReplayNK",
+  "stars": 5,
+  "summary": "",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1769601237,
+  "versions": []
+}

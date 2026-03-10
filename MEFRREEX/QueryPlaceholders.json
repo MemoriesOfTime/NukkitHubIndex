@@ -1,6 +1,12 @@
 {
   "api_version": "1.0.13",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "MEFRREEX",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1699416718,
   "dependencies": [
@@ -11,6 +17,7 @@
     }
   ],
   "description": "## 🎮 How to use\nYou can use query placeholders in any plugin that has PlaceholderAPI support\n\n**Player count placeholder**    \nIn this placeholder you can specify multiple servers for online summation    \nExample: `%query_player_count<zeqa;nethergames>%`\n\n\n## 🖨️ Placeholders\n`%query_player_count<server_name>%` - Placeholder for display the number of players\n\n`%query_max_players<server_name>%` - Placeholder for display the maximum number of players\n\n`%query_motd<server_name>%` - Placeholder for display server motd\n\n`%query_minecraft_version<server_name>%` - Placeholder for display minecraft server version\n\n## ⚙️ Plugin сonfiguration\n```yml\n# Timeout time for query request\ntimeout: 2000 # In milliseconds\n\n# Interval for updating query information\nupdate: 1200 # In ticks\n\n# Servers for query\nservers:\n  zeqa:                 # Server name\n    address: \"zeqa.net\" # Server address\n    port: 19132         # Server port\n  nethergames:\n    address: \"play.nethergames.org\"\n    port: 19132\n```\n\n## 🧩 Addons\n- [QueryPlaceholders-OnlineSummator](https://github.com/MEFRREEX/QueryPlaceholders-OnlineSummator)\n\n## 🛠 API\nGetting QueryPlaceholders class\n```java\nQueryPlaceholders queryPlaceholders = QueryPlaceholders.getInstance();\n```\nGetting query of server\n```java\nBedrockQueryResponse query = queryPlaceholders.getQuery(\"server_name\");\n```\nGetting ServerEntry class by name\n```java\nServerEntry serverEntry = queryPlaceholders.getServer(\"server_name\");\n```\nGetting BedrockQuery class\n```java\nBedrockQuery bedrockQuery = BedrockQueryFactory.getBedrockQuery();\n```\n\n## 🔌 Maven\nRepository\n```xml\n<repositories>\n    <repository>\n        <id>jitpack.io</id>\n        <url>https://jitpack.io</url>\n    </repository>\n</repositories>\n```\nDependency\n```xml\n<dependency>\n    <groupId>com.github.MEFRREEX</groupId>\n    <artifactId>QueryPlaceholders</artifactId>\n    <version>1.2</version>\n</dependency>\n```\n",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/83061703?v=4",
@@ -21,11 +28,18 @@
     "url": "https://spdx.org/licenses/GPL-3.0.html"
   },
   "links": null,
-  "name": "${project.name}",
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "QueryPlaceholders",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/MEFRREEX/QueryPlaceholders",
   "stars": 2,
-  "summary": "",
+  "summary": "Placeholders for displaying information about the server",
+  "targets": [
+    "nkx",
+    "nkmot",
+    "pnx"
+  ],
   "updated_at": 1742146183,
   "versions": [
     {

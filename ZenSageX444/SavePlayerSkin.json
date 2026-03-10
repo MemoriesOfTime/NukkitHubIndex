@@ -1,10 +1,17 @@
 {
   "api_version": "1.0.0",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "ZenSageX444, SimpleZx",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1706261566,
   "dependencies": [],
   "description": "<p align=\"center\">\n\t<a href=\"https://discord.com/invite/HcXTaB8UwA\"><img src=\"https://img.shields.io/discord/1205173062375575572?label=discord&color=7289DA&logo=discord\" alt=\"Discord\" /></a>\n\t<br>\n</p>\n\n\n## 🧐 Why SavePlayerSkin\nIt is a plugin that saves the player skin as an image.\n",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/153876401?v=4",
@@ -15,11 +22,18 @@
     "url": ""
   },
   "links": null,
-  "name": "${project.name}",
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "SavePlayerSkin",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/ZenSageX444/SavePlayerSkin",
   "stars": 2,
-  "summary": "",
+  "summary": "a nukkit plugin: Player skin to png",
+  "targets": [
+    "nkx",
+    "nkmot",
+    "pnx"
+  ],
   "updated_at": 1707654863,
   "versions": [
     {

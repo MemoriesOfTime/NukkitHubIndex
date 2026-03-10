@@ -1,6 +1,12 @@
 {
   "api_version": "Nukkit-MOT",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "LT_Name",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1588842447,
   "dependencies": [
@@ -16,6 +22,7 @@
     }
   ],
   "description": "# GunWar\n\n[![License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](LICENSE)\n![Java CI](https://github.com/MemoriesOfTime/GunWar/workflows/Java%20CI/badge.svg)\n[![bilibili](https://img.shields.io/badge/Link-bilibili-ff69b4)](https://www.bilibili.com/video/BV12A411t7Gr/)\n\n## Switch between Languages?\n\n[![Github](https://img.shields.io/badge/简体中文-100%25-brightgreen)](https://github.com/MemoriesOfTime/GunWar/blob/master/README(zh-CN).md)\n![Github](https://img.shields.io/badge/English[Selected]-100%25-brightgreen)\n\n## Intro\n\nGunwar is a simple team war with four different modes. You need to battle enemy team with different equipments and the ultimate target is to win the game. It is easy to manage, fun to play and extremely fast-paced and exciting game that you and your players will enjoy a lot!\n\n## Features\n\n**Four different modes!** Including Elimination Match, Team Death Match, Team Match, Take The Flag Match.\n\n**Rankinglist System!** All players included. Can you be the best player of all?\n\n**Customizable configurations!** You can set players' initial items, including vanilla items and customized items(Melee, Projectile, Weapon_gun)\n\n**ScoreBoard & Dummy HealthBar Support!** Scoreboard will display all useful information for you while Dummy Bossbar will display your health status.\n\n**Simple GUI management!** You can easily set or modify every room. All simplified for easy configuration!\n\n**Run given commands!** You can reward or punish your players, based on who wins and loses!\n\n**Multi-languages support!** You can choose a existed language you like. And you can make your own language file.\n\n## In-game Screenshots\n\n![](https://raw.githubusercontent.com/MemoriesOfTime/GunWar/master/pic/en-US/screenshot_01.jpg)\n\n![](https://raw.githubusercontent.com/MemoriesOfTime/GunWar/master/pic/en-US/screenshot_02.jpg)\n\n![](https://raw.githubusercontent.com/MemoriesOfTime/GunWar/master/pic/en-US/screenshot_03.jpg)\n\n## Bugs & Reports\n\nIf you come across any bug or problem while using it, you can report it on [Discord](https://discord.gg/pJjQDQC), or send a issue here to us.\n",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [
     {
@@ -49,11 +56,17 @@
     "homepage": "https://www.lanink.cn",
     "wiki": ""
   },
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "GunWar",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/MemoriesOfTime/GunWar",
   "stars": 10,
-  "summary": "",
+  "summary": "Simple pvp game",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1767363390,
   "versions": []
 }

@@ -1,10 +1,17 @@
 {
   "api_version": "1.0.0",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "hototya",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1514095179,
   "dependencies": [],
   "description": "# GravityBlock\n普通の四角いブロックなら落ちるプラグイン  \n柵とかの向きが変わってしまうけど許して下さい。\n",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/32798229?v=4",
@@ -19,11 +26,17 @@
     "homepage": "https://github.com/hototya/GravityBlock",
     "wiki": ""
   },
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "GravityBlock",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/hototya/GravityBlock",
   "stars": 1,
-  "summary": "",
+  "summary": "普通の四角いブロックなら落ちるプラグイン",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1514100429,
   "versions": [
     {

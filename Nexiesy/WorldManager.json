@@ -5,6 +5,7 @@
   "created_at": 1591655943,
   "dependencies": [],
   "description": "# WorldManager\n",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/43706864?v=4",
@@ -15,11 +16,17 @@
     "url": ""
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "WorldManager",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/Nexiesy/WorldManager",
   "stars": 7,
-  "summary": "",
+  "summary": "World Manager",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1739092552,
   "versions": []
 }

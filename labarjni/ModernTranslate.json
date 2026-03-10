@@ -1,0 +1,38 @@
+{
+  "api_version": "unknown",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Labarjni",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1772834744,
+  "dependencies": [],
+  "description": "# ModernTranslate\n\n## Overview\nModernTranslate is a Nukkit-MOT plugin that provides a comprehensive translation system for Minecraft: Bedrock Edition servers. It supports multiple languages and allows plugins to register their own translations.\n[This lib works only in Nukkit-MOT/java25](https://github.com/MemoriesOfTime/Nukkit-MOT/actions/workflows/maven.yml?query=branch%3Afeature/java-25)\n\n## Features\n- 🌍 Multi-language support with 22+ languages\n- 🔌 Plugin integration API\n- 📝 Pattern-based translations\n- ⚡ Player language auto-detection\n- 🎯 Fallback strategy for missing translations\n\n## Supported Languages\nThe plugin supports the following languages:\n\n| Code | Language | Native Name |\n|------|----------|-------------|\n| eng | English | English |\n| rus | Russian | Русский |\n| ukr | Ukrainian | Українська |\n| deu | German | Deutsch |\n| fra | French | Français |\n| spa | Spanish | Español |\n| ita | Italian | Italiano |\n| jpn | Japanese | 日本語 |\n| kor | Korean | 한국어 |\n| zho | Chinese | 中文 |\n| pol | Polish | Polski |\n| por | Portuguese | Português |\n| tur | Turkish | Türkçe |\n| vie | Vietnamese | Tiếng Việt |\n| nld | Dutch | Nederlands |\n| ces | Czech | Čeština |\n| dan | Danish | Dansk |\n| ell | Greek | Ελληνικά |\n| fin | Finnish | Suomi |\n| hun | Hungarian | Magyar |\n| nor | Norwegian | Norsk |\n| swe | Swedish | Svenska |\n\n## API Usage\n\n### Getting the API Instance\n\n```java\nimport ru.labarjni.api.TranslationAPI;\n```\n\n### Register Plugin Translations\n```java\nFile langFolder = new File(getDataFolder(), \"translations\");\nTranslationAPI.registerPlugin(\"YourPlugin\", langFolder);\n```\n\n### Translate Text\n```java\n// Translate for a player (auto-detects their language)\nString message = TranslationAPI.translate(\"YourPlugin\", player, \"key.name\");\n\n// Translate with parameters\nString message = TranslationAPI.translate(\"YourPlugin\", player, \"welcome.message\", player.getName());\n\n// Translate for specific language\nString message = TranslationAPI.translate(\"YourPlugin\", \"rus\", \"key.name\");\n```\n\n### Pattern Translations\n```java\n// Use global patterns\nString pattern = TranslationAPI.pattern(player, \"join.message\", player.getName());\n\n// Check if pattern exists\nif (TranslationAPI.hasPattern(\"join.message\")) {\n    // Pattern exists\n}\n```\nPatterns list available [here](https://github.com/labarjni/ModernTranslate/tree/master/src/main/resources/patterns), you can configure it personally\n\n### Language Information\n```java\n// Get supported languages\nSet<String> languages = TranslationAPI.getSupportedLanguages();\n\n// Check if language is supported\nboolean supported = TranslationAPI.isLanguageSupported(\"eng\");\n\n// Get language display name\nString name = TranslationAPI.getLanguageName(\"eng\"); // Returns \"English\"\n\n// Get all languages with names\nMap<String, String> languagesWithNames = TranslationAPI.getLanguagesWithNames();\n\n// Resolve language from input (supports both \"en_US\" and \"eng\" formats)\nLanguageCode lang = TranslationAPI.resolveLanguage(\"en_US\");\n```\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/83462236?v=4",
+  "id": "labarjni/ModernTranslate",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "ModernTranslate",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/labarjni/ModernTranslate",
+  "stars": 0,
+  "summary": "Modern translation system for Nukkit-MOT plugins",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1773101500,
+  "versions": []
+}

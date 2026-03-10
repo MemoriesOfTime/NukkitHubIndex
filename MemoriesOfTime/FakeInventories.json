@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.7",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "SupremeMortal",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1768395154,
+  "dependencies": [],
+  "description": "# Fake Inventories\n\n<p align=\"center\">\n  <a href=\"https://github.com/MemoriesOfTime/FakeInventories/blob/master//README.md\"><img alt=\"English\" src=\"https://img.shields.io/badge/English-d9d9d9\"></a>\n  <a href=\"https://github.com/MemoriesOfTime/FakeInventories/blob/master//README_zh.md\"><img alt=\"中文\" src=\"https://img.shields.io/badge/中文-d9d9d9\"></a>\n</p>\n\n------\n\nEasily create fake inventories that players can interact with.\n\n##### [Download](https://motci.cn/job/FakeInventories/)\n\n## Usage\n\n### 1. Add Dependency in plugin.yml\n\n```yaml\ndepend:\n  - FakeInventories\n```\n\n### 2. Get Service\n\n```java\npublic void onEnable() {\n    RegisteredServiceProvider<FakeInventories> provider =\n        getServer().getServiceManager().getProvider(FakeInventories.class);\n\n    if (provider == null || provider.getProvider() == null) {\n        getLogger().error(\"FakeInventories not found!\");\n        getServer().getPluginManager().disablePlugin(this);\n        return;\n    }\n\n    FakeInventories fakeInventories = provider.getProvider();\n}\n```\n\n### 3. Create Fake Inventory\n\n**Single Chest (27 slots):**\n```java\nChestFakeInventory inventory = new ChestFakeInventory();\n// or with custom title\nChestFakeInventory inventory = new ChestFakeInventory(null, \"Custom Title\");\n```\n\n**Double Chest (54 slots):**\n```java\nDoubleChestFakeInventory inventory = new DoubleChestFakeInventory();\n// or with custom title\nDoubleChestFakeInventory inventory = new DoubleChestFakeInventory(null, \"Custom Title\");\n```\n\n**Hopper (5 slots):**\n```java\nHopperFakeInventory inventory = new HopperFakeInventory();\n// or with custom title\nHopperFakeInventory inventory = new HopperFakeInventory(null, \"Custom Title\");\n```\n\n**Furnace (3 slots):**\n```java\nFurnaceFakeInventory inventory = new FurnaceFakeInventory();\n// or with custom title\nFurnaceFakeInventory inventory = new FurnaceFakeInventory(null, \"Custom Title\");\n```\n\n### 4. Set Items\n\n```java\ninventory.setItem(0, Item.get(Item.DIAMOND));\ninventory.setItem(1, Item.get(Item.GOLD_INGOT, 0, 64));\n```\n\n### 5. Add Event Listener\n\n```java\ninventory.addListener(event -> {\n    Player player = event.getPlayer();\n    SlotChangeAction action = event.getAction();\n\n    int slot = action.getSlot();\n    Item sourceItem = action.getSourceItem();  // item before change\n    Item targetItem = action.getTargetItem();  // item after change\n\n    // Cancel the action (prevent item modification)\n    event.setCancelled();\n\n    // Handle click logic\n    player.sendMessage(\"You clicked slot \" + slot);\n});\n```\n\n### 6. Show to Player\n\n```java\nplayer.addWindow(inventory);\n```\n\n### Complete Example\n\n```java\npublic class MyPlugin extends PluginBase {\n\n    public void openMenu(Player player) {\n        ChestFakeInventory menu = new ChestFakeInventory(null, \"My Menu\");\n\n        // Set menu items\n        menu.setItem(0, Item.get(Item.DIAMOND).setCustomName(\"Option 1\"));\n        menu.setItem(1, Item.get(Item.EMERALD).setCustomName(\"Option 2\"));\n        menu.setItem(2, Item.get(Item.GOLD_INGOT).setCustomName(\"Option 3\"));\n\n        // Handle clicks\n        menu.addListener(event -> {\n            event.setCancelled(); // Prevent taking items\n\n            Player p = event.getPlayer();\n            int slot = event.getAction().getSlot();\n\n            switch (slot) {\n                case 0:\n                    p.sendMessage(\"Selected Option 1\");\n                    break;\n                case 1:\n                    p.sendMessage(\"Selected Option 2\");\n                    break;\n                case 2:\n                    p.sendMessage(\"Selected Option 3\");\n                    break;\n            }\n\n            p.removeWindow(event.getInventory()); // Close menu\n        });\n\n        player.addWindow(menu);\n    }\n}\n``` \n\n## Maven Dependency\n\n```xml\n    <repositories>\n        <repository>\n            <id>repo-lanink-cn</id>\n            <url>https://repo.lanink.cn/repository/maven-public/</url>\n        </repository>\n    </repositories>\n\n    <dependencies>\n        <dependency>\n            <groupId>com.nukkitx</groupId>\n            <artifactId>fakeinventories</artifactId>\n            <version>1.0.3-MOT-SNAPSHOT</version>\n            <scope>provided</scope>\n        </dependency>\n    </dependencies>\n```\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/62042238?v=4",
+  "id": "MemoriesOfTime/FakeInventories",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "FakeInventories",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/MemoriesOfTime/FakeInventories",
+  "stars": 0,
+  "summary": "Create fake inventories",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1771776264,
+  "versions": []
+}

@@ -1,10 +1,17 @@
 {
   "api_version": "1.0.9",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "bbo51dog",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1581810793,
   "dependencies": [],
   "description": "# Ecokkit\nEconomy plugin for Nukkit\n",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/44104663?v=4",
@@ -19,11 +26,17 @@
     "homepage": "https://github.com/bbo51dog/Ecokkit",
     "wiki": ""
   },
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "Ecokkit",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/bbo51dog/Ecokkit",
   "stars": 1,
   "summary": "Economy plugin for Nukkit",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1590215794,
   "versions": [
     {

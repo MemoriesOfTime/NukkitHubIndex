@@ -1,6 +1,12 @@
 {
   "api_version": "1.0.0",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "LT_Name",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1589104833,
   "dependencies": [
@@ -11,6 +17,7 @@
     }
   ],
   "description": "# HotPotato  \n[![License](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](LICENSE)\n![Java CI](https://github.com/lt-name/HotPotato_Nukkit/workflows/Java%20CI/badge.svg)\n[![MCBBS](https://img.shields.io/badge/Link-MCBBS-brightgreen)](https://www.mcbbs.net/thread-1042842-1-1.html)  \n\n> HotPotato是一个简单的小游戏插件，在游戏中玩家需要在倒计时结束前将手中的烤马铃薯交给其他玩家，在倒计时结束后手中持有烤马铃薯的玩家将会被淘汰\n\n## 介绍\n请前往插件介绍贴查看！  \n[mcbbs](https://www.mcbbs.net/thread-1042842-1-1.html)  \n[minebbs](https://www.minebbs.com/resources/hotpotato.1237/)\n\n## 下载\n[Jenkins](https://ci.lt-name.cn/view/LT_Name/job/HotPotato/)  \n[GitHub-Actions](https://github.com/lt-name/HotPotato_Nukkit/actions)",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
@@ -21,11 +28,17 @@
     "url": "https://spdx.org/licenses/AGPL-3.0.html"
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "HotPotato",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/lt-name/HotPotato_Nukkit",
   "stars": 5,
-  "summary": "",
+  "summary": "HotPotato(TNT Tag)",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1703405569,
   "versions": [
     {

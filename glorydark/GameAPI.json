@@ -1,6 +1,12 @@
 {
   "api_version": "1.0.0",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "glorydark",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1682491256,
   "dependencies": [
@@ -18,9 +24,15 @@
       "dependency_type": "optional",
       "plugin_id": "Ghosty",
       "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "LanguageAPI",
+      "version_range": ""
     }
   ],
   "description": "# GameAPI",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
@@ -31,11 +43,17 @@
     "url": ""
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "GameAPI",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/glorydark/GameAPI",
   "stars": 3,
   "summary": "GameAPI",
-  "updated_at": 1771857230,
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1773088324,
   "versions": []
 }

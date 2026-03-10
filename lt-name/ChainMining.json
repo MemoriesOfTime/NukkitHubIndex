@@ -1,0 +1,86 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "LT_Name",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1620736956,
+  "dependencies": [],
+  "description": "",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+  "id": "lt-name/ChainMining",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "ChainMining",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/lt-name/ChainMining",
+  "stars": 6,
+  "summary": "chain mining plugin for nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1719488984,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ChainMining-1.3.0-PN.jar",
+          "primary": true,
+          "size": 30102,
+          "url": "https://github.com/lt-name/ChainMining/releases/download/v1.3.0-PN/ChainMining-1.3.0-PN.jar"
+        }
+      ],
+      "name": "1.3.0-PN",
+      "prerelease": false,
+      "published_at": 1625962095,
+      "version": "v1.3.0-PN"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ChainMining-1.3.0.jar",
+          "primary": true,
+          "size": 29996,
+          "url": "https://github.com/lt-name/ChainMining/releases/download/v1.3.0/ChainMining-1.3.0.jar"
+        }
+      ],
+      "name": "1.3.0",
+      "prerelease": false,
+      "published_at": 1625962057,
+      "version": "v1.3.0"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ChainMining-1.2.0.jar",
+          "primary": true,
+          "size": 30523,
+          "url": "https://github.com/lt-name/ChainMining/releases/download/v1.2.0/ChainMining-1.2.0.jar"
+        }
+      ],
+      "name": "1.2.0",
+      "prerelease": false,
+      "published_at": 1621940002,
+      "version": "v1.2.0"
+    }
+  ]
+}

@@ -1,10 +1,17 @@
 {
   "api_version": "1.0.9",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "若水",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1611309125,
   "dependencies": [],
   "description": "## World\n一款可以自定义信息的多世界插件\n\n\n\n\n",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
@@ -15,11 +22,17 @@
     "url": "https://spdx.org/licenses/GPL-3.0.html"
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "World",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/SmallasWater/World",
   "stars": 3,
-  "summary": "",
+  "summary": "多世界插件",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1677766891,
   "versions": []
 }

@@ -1,10 +1,17 @@
 {
   "api_version": "1.0.0",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "glorydark",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1706007949,
   "dependencies": [],
   "description": "## PotionSplashDecoration\nA nukkit plugin that shows potion splash effect to a certain set of points\n\n## Commands\n| Command                   | Description                                      |\n|---------------------------|--------------------------------------------------|\n| potionsplash reload       | Reload Configuration                             |\n| potionsplash add effectID | Add a potion splash effect to where you stand    |\n| potionsplash remove       | Remove a potion splash effect to where you stand |\n\n## config.yml\n```yaml\ninterval_ticks: 20\npotion_spawns:\n  - potion_id: 1\n    x: 1.0\n    y: 1.0\n    z: 1.0\n    world: \"world\"\n```\n\n## Notes\n1. To change command name, you should restart the server!\n2. This plugin is specially for the rewards of insiders who have helped me finished many non-profit plugins.\n3. No snapshot provided. It's currently in beta phase now.",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
@@ -15,11 +22,17 @@
     "url": ""
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "PotionSplashDecoration",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/glorydark/PotionSplashDecoration",
   "stars": 0,
   "summary": "PotionSplashDecoration",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1706427648,
   "versions": []
 }

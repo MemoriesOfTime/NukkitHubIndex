@@ -1,0 +1,59 @@
+{
+  "api_version": "Nukkit-MOT",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "daoge_cmd",
+      "url": ""
+    },
+    {
+      "avatar_url": "",
+      "name": "CoolLoong",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1685620784,
+  "dependencies": [],
+  "description": "# ImageNK\nShow images in your server!  \nModified version of Nukkit-MOT supported",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/62042238?v=4",
+  "id": "MemoriesOfTime/ImageNK",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "ImageNK",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/MemoriesOfTime/ImageNK",
+  "stars": 1,
+  "summary": "Show images in your server!",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1772356720,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ImageNK-1.0.3-MOT-shaded.jar",
+          "primary": true,
+          "size": 483024,
+          "url": "https://github.com/MemoriesOfTime/ImageNK/releases/download/1.0.3-MOT/ImageNK-1.0.3-MOT-shaded.jar"
+        }
+      ],
+      "name": "1.0.3-MOT",
+      "prerelease": false,
+      "published_at": 1685873502,
+      "version": "1.0.3-MOT"
+    }
+  ]
+}

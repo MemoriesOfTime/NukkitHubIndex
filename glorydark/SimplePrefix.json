@@ -1,6 +1,12 @@
 {
   "api_version": "1.0.0",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "glorydark",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1686648478,
   "dependencies": [
@@ -21,6 +27,7 @@
     }
   ],
   "description": "# SimplePrefix\n\nThis plugin is a blast to the past, which contains basic functions concerning prefix.\n\nHere are some intros about it:\n- Purchase & Wear prefixes\n- Unknown or obselete prefixes will be not allowed to wear\n- Prefixes can either be purchasable or not\n- Form/Gui Support\n- Basic Api & Events\n",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
@@ -31,11 +38,17 @@
     "url": ""
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "SimplePrefix",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/glorydark/SimplePrefix",
   "stars": 0,
   "summary": "SimplePrefix",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1766687950,
   "versions": []
 }

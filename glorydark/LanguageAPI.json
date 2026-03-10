@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "glorydark",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1692876832,
+  "dependencies": [],
+  "description": "# TranslationAPI\nBasic TranslationAPI for Nukkit\n\n# How to use\n请自行将版本号进行更改！\n```xml\n<dependency>\n    <groupId>glorydark.nukkit</groupId>\n    <artifactId>LanguageAPI</artifactId>\n    <version>1.0.9</version>\n    <scope>provided</scope>\n</dependency>\n```\n\n# How to add a language\n## Step 1\n```java\n// Category is an identifier, which allows you to load various files while keeping them apart from each other\nLanguage language = new Language(\"test_category\");\n```\n\n## Step 2\n```java\n// Then try to add entries to the language data\n// Way 1\nLanguageData languageData = new LanguageData();\nlanguage.addLanguageData(\"en_US\", languageData);\nlanguageData.addTranslationEntry(\"test_entry\", \"test\"); // or you can use LanguageData.fromProperties(File file)\nLanguageAPI.addLanguage(this, language);\n\n// Way 2: To load a whole directory and automatically identify the language code based on each file's name\nLanguageReader.loadLanguageFromDictionary(this, new File(path + \"/languages\"));\n\n// Way 3: To place your language files into LanguageAPI/plugin_data/YOUR_PLUGIN_NAME/\n```\n\n## Last Step\n```java\n// add your file\nLanguageAPI.registerLanguage(\"test_category\", language);\n```\n\n# How to get a translation (From LanguageAPI)\n## Methods\nString translate(Plugin plugin, Player player, String category, String key, Object... replacements)\n\nString translate(String category, Player player, String category, String key, Object... replacements)\n\nString translate(Plugin plugin, String languageCode, String category, String key, Object... replacements)\n\nString translate(String category, String languageCode, String category, String key, Object... replacements)\n\n## Example\n```java\n// We offer variable-length argument lists for you to replace texts with your preference, e.g. %1% %2% ...\nLanguageAPI.translate(this, \"zh_CN\", \"test_entry\", \"test replacement\");\nLanguageAPI.translate(\"AntiRay\", zh_CN\", \"test_entry\");\n\n```\n\n## Language Code List From Vanilla ResourcePack\n**This json file will generate in the plugin data folder automatically.**\n```json\n[\n  [ \"en_US\", \"English (US)\" ],\n  [ \"en_GB\", \"English (UK)\" ],\n  [ \"de_DE\", \"Deutsch (Deutschland)\" ],\n  [ \"es_ES\", \"Español (España)\" ],\n  [ \"es_MX\", \"Español (México)\" ],\n  [ \"fr_FR\", \"Français (France)\" ],\n  [ \"fr_CA\", \"Français (Canada)\" ],\n  [ \"it_IT\", \"Italiano (Italia)\" ],\n  [ \"ja_JP\", \"日本語 (日本)\" ],\n  [ \"ko_KR\", \"한국어 (대한민국)\" ],\n  [ \"pt_BR\", \"Português (Brasil)\" ],\n  [ \"pt_PT\", \"Português (Portugal)\" ],\n  [ \"ru_RU\", \"Русский (Россия)\" ],\n  [ \"zh_CN\", \"简体中文\" ],\n  [ \"zh_TW\", \"繁體中文\" ],\n  [ \"nl_NL\", \"Nederlands (Nederland)\" ],\n  [ \"bg_BG\", \"Български (BG)\" ],\n  [ \"cs_CZ\", \"Čeština (Česká republika)\" ],\n  [ \"da_DK\", \"Dansk (DA)\" ],\n  [ \"el_GR\", \"Ελληνικά (Ελλάδα)\" ],\n  [ \"fi_FI\", \"Suomi (Suomi)\" ],\n  [ \"hu_HU\", \"Magyar (HU)\" ],\n  [ \"id_ID\", \"Bahasa Indonesia (Indonesia)\" ],\n  [ \"nb_NO\", \"Norsk bokmål (Norge)\" ],\n  [ \"pl_PL\", \"Polski (PL)\" ],\n  [ \"sk_SK\", \"Slovensky (SK)\" ],\n  [ \"sv_SE\", \"Svenska (Sverige)\" ],\n  [ \"tr_TR\", \"Türkçe (Türkiye)\" ],\n  [ \"uk_UA\", \"Українська (Україна)\" ]\n]\n```\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
+  "id": "glorydark/LanguageAPI",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "LanguageAPI",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/glorydark/LanguageAPI",
+  "stars": 0,
+  "summary": "LanguageAPI",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1773079447,
+  "versions": []
+}

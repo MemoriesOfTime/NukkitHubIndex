@@ -1,0 +1,32 @@
+{
+  "api_version": "1.0.9",
+  "authors": [],
+  "categories": [],
+  "created_at": 1591624265,
+  "dependencies": [],
+  "description": "# HandBag\n手提包插件\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
+  "id": "SmallasWater/HandBag",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "HandBag",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/SmallasWater/HandBag",
+  "stars": 0,
+  "summary": "手提包插件",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1749265508,
+  "versions": []
+}

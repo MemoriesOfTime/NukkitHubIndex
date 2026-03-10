@@ -1,6 +1,12 @@
 {
   "api_version": "1.0.0",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "MEFRREEX",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1720553360,
   "dependencies": [
@@ -16,6 +22,7 @@
     }
   ],
   "description": "# Whitelister\nAdvanced whitelist plugin for Nukkit and PowerNukkitX\n\n[![License: GNU GPLv3](https://img.shields.io/badge/License-GNU%20GPLv3-yellow)](LICENSE)\n[![Version](https://img.shields.io/badge/Version-1.4.3-brightgreen)](https://github.com/MEFRREEX/Whitelister/releases/tag/1.4.3)\n\n## 📖 Overview\n**Whitelister** is an advanced whitelist plugin for Nukkit and PowerNukkitX, providing enhanced features beyond the standard whitelist. With Whitelister, you can easily manage access to your server, configure settings through forms, commands, or directly in configuration files, and more. The plugin also supports multiple languages and various database integrations.\n\n### ✨ Features\n- **User-friendly Configuration**: Manage the whitelist through in-game forms or commands.\n- **Customizable Messages**: Tailor all plugin messages in a single configuration file.\n- **Kick on Enable**: Automatically disconnect all players when the whitelist is enabled.\n- **Database Support**: Choose between JSON, SQLite3, or MySQL for storing whitelist data.\n- **Multilingual**: Supports English, Russian, and Ukrainian.\n\n## 📷 Screenshots\n<p align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/MEFRREEX/Whitelister/nukkit/.github/preview_main.png\" alt=\"Main Menu Preview\" width=\"400\"/>\n  <img src=\"https://raw.githubusercontent.com/MEFRREEX/Whitelister/nukkit/.github/preview_players.png\" alt=\"Players Menu Preview\" width=\"400\"/>\n  <img src=\"https://raw.githubusercontent.com/MEFRREEX/Whitelister/nukkit/.github/preview_settings.png\" alt=\"Settings Menu Preview\" width=\"400\"/>\n</p>\n\n## 💻 Commands\n| Command       | Description                       |\n|---------------|-----------------------------------|\n| `/whitelister` | Opens the main Whitelister menu. |\n\n## 🔒 Permissions\n| Permission                      | Description                                                      |\n|---------------------------------|------------------------------------------------------------------|\n| `whitelister.command.whitelister` | Allows the player to use the `/whitelister` command.             |\n| `whitelister.bypass`            | Allows a player to join a whitelisted server without being listed.|\n\n## 📋 Events\n| Event Name                | Cancellable | Description                                                     |\n|---------------------------|-------------|-----------------------------------------------------------------|\n| `WhitelistKickPlayerEvent` | Yes         | Triggered when a player is kicked due to whitelist activation.   |\n\n## 🚀 Installation\nTo get started with Whitelister, follow these steps:\n\n1. **Download Whitelister**  \n   Head to the [releases page](https://github.com/MEFRREEX/Whitelister/releases) and download the latest `.jar` file.\n2. **Place the Plugin in Your Server**  \n   Move the downloaded `.jar` file to your server's `plugins` folder.\n3. **Install Dependencies**  \n   - Download [JOOQConnector](https://github.com/MEFRREEX/JOOQConnector) and place its `.jar` file in the `plugins` folder.\n   - Download [FormConstructor](https://github.com/MEFRREEX/FormConstructor) and place its `.jar` file in the `plugins` folder.\n4. **Start the Server**  \n   Launch your server to complete the setup and generate configuration files.\n\n---\n\n[Switch to Russian](https://github.com/MEFRREEX/Whitelister/blob/nukkit/README_ru.md)",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [
     {
@@ -45,11 +52,18 @@
     "url": "https://spdx.org/licenses/GPL-3.0.html"
   },
   "links": null,
-  "name": "${project.name}",
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Whitelister",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/MEFRREEX/Whitelister",
   "stars": 0,
-  "summary": "",
+  "summary": "Advanced whitelist plugin for Nukkit and PowerNukkitX",
+  "targets": [
+    "nkx",
+    "nkmot",
+    "pnx"
+  ],
   "updated_at": 1753762049,
   "versions": [
     {

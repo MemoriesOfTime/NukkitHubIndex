@@ -1,6 +1,12 @@
 {
   "api_version": "1.0.5",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "WCPE",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1583246015,
   "dependencies": [
@@ -21,6 +27,7 @@
     }
   ],
   "description": "# WC-Bot\nNukkit QQ机器人插件\n\n## 食用方法\n> 首先进入下载链接\n> \n> 下载插件本体 下载插件前置 [WcpeLib](https://wxys233.lanzout.com/b00v6geyh) 密码 1stb\n> \n>将本体和前置一起丢入服务器下的插件文件夹 plugins\n>\n>开启服务器一次服务器 加载完毕后关服\n> \n>然后打开服务器插件文件夹 plugins/WC-Bot/config.yml 配置文件\n> \n>进行相应配置 然后开服即可\n> \n>如果你登录不上去 请参照帖子使用 Mirai Android 进行登录\n> \n> [无法登录的临时处理方案 | MiraiForum (mamoe.net) ](https://mirai.mamoe.net/topic/223/%E6%97%A0%E6%B3%95%E7%99%BB%E5%BD%95%E7%9A%84%E4%B8%B4%E6%97%B6%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88/3)\n\n## 指令部分\n> /wc-bot\n> \n> /wb\n> \n>      setOwner <主人QQ>\n>      描述: 设置主人QQ\n>      权限: wc-bot.setOwner.use\n>      addGroups <QQ群号>\n>      描述: 添加开启群聊\n>      权限: wc-bot.addGroups.use\n>      delGroups <QQ群号>\n>      描述: 删除开启群聊\n>      权限: wc-bot.delGroups.use\n>      listGroups\n>      描述: 查询开启群聊\n>      权限: wc-bot.listGroups.use\n>      sendGroup <QQ群号> <消息>\n>      描述: 发送消息至QQ群\n>      权限: wc-bot.sendGroup.use\n>      sendQQ <QQ号> <消息>\n>      描述: 发送消息至QQ\n>      权限: wc-bot.sendQQ.use\n>      reload\n>      描述: 重载机器人\n>      权限: wc-bot.reload.use\n> []为选填参数 <>为必填参数\n## Api\n\nWCBotApi\n\n```kotlin\n//获取 QQ 用户的数据\nfun getQQMemberData(qq: Long): QQMemberData\n\n//存储 QQ 用户的数据\nfun saveQQMemberData(qqMemberData: QQMemberData): Boolean\n\n//使用 QQ 用户的数据\nfun useQQMemberData(qq: Long, callBack: Consumer<QQMemberData>)\n\n//使用并存储 QQ 用户的数据\nfun useSaveQQMemberData(qq: Long, callBack: UnaryOperator<QQMemberData>): Boolean\n\n//获取玩家的数据\nfun getGamePlayerData(playerName: String): GamePlayerData\n\n//获取玩家的数据\nfun saveGamePlayerData(gamePlayerData: GamePlayerData): Boolean\n\n//使用玩家的数据\nfun useGamePlayerData(playerName: String, callBack: Consumer<GamePlayerData>)\n\n//使用并存储玩家的数据\nfun useSaveGamePlayerData(playerName: String, callBack: UnaryOperator<GamePlayerData>): Boolean\n```\n\n## Building\n\n* [Gradle](https://gradle.org/) - Dependency Management\n\nThe GradleWrapper in included in this project.\n\n**Windows:**\n\n```\ngradlew.bat clean shadowJar\n```\n\n**macOS/Linux:**\n\n```\n./gradlew clean shadowJar\n```\n\nBuild artifacts should be found in `./build/libs` folder.\n\n\n# 本插件使用以下开源 SDK\n\n<div align=\"center\">\n   <img width=\"160\" src=\"https://github.com/mamoe/mirai/blob/dev/docs/mirai.png\" alt=\"logo\"></br>\n\n   <img width=\"95\" src=\"https://github.com/mamoe/mirai/blob/dev/docs/mirai.svg\" alt=\"title\">\n\n----\n\n![Gradle CI](https://github.com/mamoe/mirai/workflows/Gradle%20CI/badge.svg?branch=master)\n[![Maven Central](https://img.shields.io/maven-central/v/net.mamoe/mirai-core-api.svg?label=Maven%20Central)](https://search.maven.org/search?q=net.mamoe%20mirai)\n[![Gitter](https://badges.gitter.im/mamoe/mirai.svg)](https://gitter.im/mamoe/mirai?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)\n[![MiraiForum](https://img.shields.io/badge/post-on%20MiraiForum-yellow)](https://mirai.mamoe.net)\n\nmirai 是一个在全平台下运行，提供 QQ Android 协议支持的高效率机器人库\n\n这个项目的名字来源于\n<p><a href = \"http://www.kyotoanimation.co.jp/\">京都动画</a>\n作品<a href = \"https://zh.moegirl.org.cn/zh-hans/%E5%A2%83%E7%95%8C%E7%9A%84%E5%BD%BC%E6%96%B9\">《境界的彼方》</a>\n的<a href = \"https://zh.moegirl.org.cn/zh-hans/%E6%A0%97%E5%B1%B1%E6%9C%AA%E6%9D%A5\">栗山未来(Kuriyama <b>mirai</b>)</a></p>\n<p><a href = \"https://www.crypton.co.jp/\">CRYPTON</a>以<a href = \"https://www.crypton.co.jp/miku_eng\">初音未来</a>\n为代表的创作与活动<a href = \"https://magicalmirai.com/2019/index_en.html\">(Magical <b>mirai</b>)</a></p>\n图标以及形象由画师<a href = \"https://github.com/DazeCake\">DazeCake</a>绘制\n</div>",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/56812380?v=4",
@@ -31,84 +38,17 @@
     "url": ""
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "WC-Bot",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/wcpe/WC-Bot",
   "stars": 3,
   "summary": "WC-Bot",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1667622333,
-  "versions": [
-    {
-      "changelog": "修复了些bug",
-      "downloads": 0,
-      "files": [],
-      "name": "更新v2.0.2版本",
-      "prerelease": false,
-      "published_at": 1611405409,
-      "version": "v2.0.2"
-    },
-    {
-      "changelog": "新增玩家事件窗口 用javaswing编写的窗口\r\n目前只有\r\nPlayerMove 移动\r\nBreakBlock 打破方块\r\nPlayerDeath 死亡地点\r\n后续可能会加上部分需要的\r\n修复了之前的bug\r\n事件窗口 内右侧为在线玩家列表 右键可踢出游戏 后续可能增加更多操作",
-      "downloads": 0,
-      "files": [],
-      "name": "更新1.7.0版本",
-      "prerelease": false,
-      "published_at": 1591933797,
-      "version": "v1.7.0"
-    },
-    {
-      "changelog": "移除了Rcon 更换为Sudo执行名字 (可自行设置)\r\n添加了在线时间积分 并添加了签到天数\r\n在qq群消息转至服务器内新增变量 %player_name% QQ名称\r\n新增积分添加 移除 以及管理员积分查询功能\r\n修复了之前添加管理员 删不掉的bug\r\n修复了管理员无法使用指令的bug",
-      "downloads": 0,
-      "files": [],
-      "name": "更新v1.6.0",
-      "prerelease": false,
-      "published_at": 1588306876,
-      "version": "v1.6.0"
-    },
-    {
-      "changelog": "修复签到积分覆盖问题\r\n以及Bstats统计失效问题",
-      "downloads": 0,
-      "files": [],
-      "name": "更新v1.5.1",
-      "prerelease": false,
-      "published_at": 1587360754,
-      "version": "v1.5.1"
-    },
-    {
-      "changelog": "更新了签到功能 积分功能 每日五点刷新签到\r\n并添加了积分兑换商店 可自行设置奖励\r\n签到支持随机数 如1~100\r\n添加了检测更新版本 添加统计bstats\r\n添加了管理员/Bind 命令 修改玩家绑定账号\r\n我的信息新增积分显示\r\n每次开启插件时提示信息可自定义",
-      "downloads": 0,
-      "files": [],
-      "name": "更新v1.5.0",
-      "prerelease": false,
-      "published_at": 1584783247,
-      "version": "v1.5.0"
-    },
-    {
-      "changelog": "修复版本 修复了开启RCON其他功能相应缺失 不回复",
-      "downloads": 0,
-      "files": [],
-      "name": "更新v1.4.1",
-      "prerelease": false,
-      "published_at": 1584084206,
-      "version": "v1.4.1"
-    },
-    {
-      "changelog": "修复管理列表和群列表指令无法使用\r\n以及反了的bug\r\n添加了群内提示 以及游戏内提示文件 Message.yml",
-      "downloads": 0,
-      "files": [],
-      "name": "更新v1.4.0",
-      "prerelease": false,
-      "published_at": 1583820643,
-      "version": "v1.4.0"
-    },
-    {
-      "changelog": "新增群内绑定 游戏内玩家\r\n与Economyapi对接  获取玩家金币 暂不支持转账\r\n\r\n可在配置文件中配置回复格式\r\n\r\n管理指令均可自行设置 中文化 简单化\r\n",
-      "downloads": 0,
-      "files": [],
-      "name": "更新v1.3.0",
-      "prerelease": false,
-      "published_at": 1583820077,
-      "version": "v1.3.0"
-    }
-  ]
+  "versions": []
 }

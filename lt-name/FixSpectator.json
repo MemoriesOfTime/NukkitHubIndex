@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "LT_Name",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1597107268,
+  "dependencies": [],
+  "description": "",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+  "id": "lt-name/FixSpectator",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "FixSpectator",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/lt-name/FixSpectator",
+  "stars": 0,
+  "summary": "",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1597307198,
+  "versions": []
+}

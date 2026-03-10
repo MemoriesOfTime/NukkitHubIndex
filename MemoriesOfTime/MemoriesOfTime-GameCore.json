@@ -1,0 +1,59 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "LT_Name",
+      "url": ""
+    },
+    {
+      "avatar_url": "",
+      "name": "iGxnon",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1600500317,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "ScoreboardPlugin",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "ScoreboardAPI",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "Tips",
+      "version_range": ""
+    }
+  ],
+  "description": "# MemoriesOfTime-GameCore\n![Logo1.png](https://s2.loli.net/2022/01/13/FvU1QrWxTspG6im.png)\n\nMaven  \n```xml\n<dependencies>\n    <dependency>\n        <groupId>cn.lanink</groupId>\n        <artifactId>MemoriesOfTime-GameCore</artifactId>\n        <version>1.5.2</version>\n        <scope>provided</scope>\n    </dependency>\n</dependencies>\n```\n\nGradle\n\n```groovy\nimplementation 'cn.lanink:MemoriesOfTime-GameCore:1.5.2'\n```\n\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/62042238?v=4",
+  "id": "MemoriesOfTime/MemoriesOfTime-GameCore",
+  "license": {
+    "id": "Apache-2.0",
+    "name": "Apache License 2.0",
+    "url": "https://spdx.org/licenses/Apache-2.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "MemoriesOfTime-GameCore",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/MemoriesOfTime/MemoriesOfTime-GameCore",
+  "stars": 7,
+  "summary": "lib plugin for nukkit",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1760791154,
+  "versions": []
+}

@@ -1,10 +1,17 @@
 {
   "api_version": "1.0.0",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "moca128",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1521451573,
   "dependencies": [],
   "description": "# Nukkit-Plugin-Chest\nNukkit版チェストプラグイン\n\ntedoさんのEconomySystemAPIのみ使用可能なJarです。\n\nそうでない場合は、あなたがこのコードをみて作ってください\n",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/37535063?v=4",
@@ -15,11 +22,17 @@
     "url": ""
   },
   "links": null,
+  "manifest_path": "PSMPlugin/src/main/resources/plugin.yml",
   "name": "PSMPlugin",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/moca128/Nukkit-Plugin-Chest",
   "stars": 0,
-  "summary": "",
+  "summary": "Nukkit版ChestPlugin bymoca128",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1550737650,
   "versions": []
 }

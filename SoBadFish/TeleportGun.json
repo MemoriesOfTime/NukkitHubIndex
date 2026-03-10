@@ -1,0 +1,92 @@
+{
+  "api_version": "1.0.11",
+  "authors": [],
+  "categories": [],
+  "created_at": 1749804318,
+  "dependencies": [],
+  "description": "# TeleportGun - Nukkit传送枪插件\n\n![传送枪图标](https://raw.githubusercontent.com/SoBadFish/TeleportGun/master/src/main/resources/assets/resource_pack/textures/items/teleport_gun.png)\n\n## 功能特性\n\n✨ **真实模型与粒子效果**  \n- 精美的3D传送枪模型\n- 炫酷的传送门粒子特效\n\n🌍 **跨维度传送**  \n- 支持多个地图纬度的传送\n- 可传送玩家、生物和掉落物\n\n🚪 **双向传送门**  \n- 创建永久或临时的双向传送门\n- 可自定义传送门大小和颜色\n\n📍 **传送点管理**  \n- 设置个人传送点\n- 管理员可创建公共传送点\n\n## 快速开始\n\n1. 将插件放入`plugins`文件夹\n2. 重启服务器\n3. 在创造背包中拿出：\n4. 右键射击创建传送门入口，再次射击创建出口\n5. 拖动传送液到传送枪即可补充\n\n\n## 效果展示\n\n<div align=\"center\">\n<table>\n  <tr>\n    <td><img src=\"https://raw.githubusercontent.com/SoBadFish/TeleportGun/master/src/main/resources/assets/resource_pack/textures/particle/teleport_door_blue.png\" width=\"200\" alt=\"蓝色传送门\"></td>\n    <td><img src=\"https://raw.githubusercontent.com/SoBadFish/TeleportGun/master/src/main/resources/assets/resource_pack/textures/particle/teleport_door.png\" width=\"200\" alt=\"绿色传送门\"></td>\n  </tr>\n  <tr>\n    <td><img src=\"https://raw.githubusercontent.com/SoBadFish/TeleportGun/master/img/s1.png\" width=\"200\" alt=\"传送枪使用效果1\"></td>\n    <td><img src=\"https://raw.githubusercontent.com/SoBadFish/TeleportGun/master/img/s2.png\" width=\"200\" alt=\"传送枪使用效果2\"></td>\n  </tr>\n  <tr>\n    <td><img src=\"https://raw.githubusercontent.com/SoBadFish/TeleportGun/master/img/s3.png\" width=\"200\" alt=\"传送门效果1\"></td>\n    <td><img src=\"https://raw.githubusercontent.com/SoBadFish/TeleportGun/master/img/s4.png\" width=\"200\" alt=\"传送门效果2\"></td>\n  </tr>\n</table>\n</div>\n\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-03-07",
+      "description": "",
+      "title": "蓝色传送门",
+      "url": "https://raw.githubusercontent.com/SoBadFish/TeleportGun/master/src/main/resources/assets/resource_pack/textures/particle/teleport_door_blue.png"
+    },
+    {
+      "created": "2026-03-07",
+      "description": "",
+      "title": "绿色传送门",
+      "url": "https://raw.githubusercontent.com/SoBadFish/TeleportGun/master/src/main/resources/assets/resource_pack/textures/particle/teleport_door.png"
+    },
+    {
+      "created": "2026-03-07",
+      "description": "",
+      "title": "传送枪使用效果1",
+      "url": "https://raw.githubusercontent.com/SoBadFish/TeleportGun/master/img/s1.png"
+    },
+    {
+      "created": "2026-03-07",
+      "description": "",
+      "title": "传送枪使用效果2",
+      "url": "https://raw.githubusercontent.com/SoBadFish/TeleportGun/master/img/s2.png"
+    },
+    {
+      "created": "2026-03-07",
+      "description": "",
+      "title": "传送门效果1",
+      "url": "https://raw.githubusercontent.com/SoBadFish/TeleportGun/master/img/s3.png"
+    },
+    {
+      "created": "2026-03-07",
+      "description": "",
+      "title": "传送门效果2",
+      "url": "https://raw.githubusercontent.com/SoBadFish/TeleportGun/master/img/s4.png"
+    },
+    {
+      "created": "2026-03-07",
+      "description": "",
+      "title": "传送枪图标",
+      "url": "https://raw.githubusercontent.com/SoBadFish/TeleportGun/master/src/main/resources/assets/resource_pack/textures/items/teleport_gun.png"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/83235042?v=4",
+  "id": "SoBadFish/TeleportGun",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "TeleportGun",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/SoBadFish/TeleportGun",
+  "stars": 1,
+  "summary": "同款传送枪?",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1771677957,
+  "versions": [
+    {
+      "changelog": "首次开源..",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "TeleportGun_v1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 315621,
+          "url": "https://github.com/SoBadFish/TeleportGun/releases/download/v1.0.0/TeleportGun_v1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "初次发布",
+      "prerelease": false,
+      "published_at": 1749804535,
+      "version": "v1.0.0"
+    }
+  ]
+}

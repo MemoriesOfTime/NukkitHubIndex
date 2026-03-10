@@ -1,10 +1,17 @@
 {
   "api_version": "1.0.0",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "suinua",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1538742955,
   "dependencies": [],
   "description": "# nukkit_scala_plugin\nnukkitのプラグインをscalaで書きました。\nqiita: https://qiita.com/suinua/items/f141051956d5a18cada1\n",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/34801662?v=4",
@@ -15,11 +22,17 @@
     "url": "https://spdx.org/licenses/GPL-3.0.html"
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "Sample",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/suinua/nukkit_scala_plugin",
   "stars": 1,
-  "summary": "",
+  "summary": "nukkitのプラグインをscalaで",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1540283193,
   "versions": []
 }

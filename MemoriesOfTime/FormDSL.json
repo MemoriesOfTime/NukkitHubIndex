@@ -1,0 +1,66 @@
+{
+  "api_version": "1.0.11",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "iGxnon",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1659261980,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "MemoriesOfTime-GameCore",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "FullKotlinLib",
+      "version_range": ""
+    }
+  ],
+  "description": "# FormDSL Module\n\n> FormDSL 支持 kotlin 开发者使用 DSL 的方式来便捷的创建 Form 表单\n\n## 前置\n\n- GameCore\n- FullKotlinLib\n\n## 例子\n\n1. 创建一个 Simple 类型的 Form 表单并发送给 `player`\n```kotlin\nFormSimple {\n    target = player  // 设置了 player 将会自动发送给 player，可以省略手动 showToPlayer\n    title = \"This is Title\"\n    Button {\n        text = \"Button1\"\n        icon {  // 声明 Button 时设置了 icon，lambda 表达式里的 image { } 不会覆盖\n            type = ElementButtonImageData.IMAGE_DATA_TYPE_PATH\n            data = \"textures/blocks/bedrock.png\"\n        }\n        onPlayerClick {\n            sendMessage(\"You click button1\")\n        }\n    }\n    Button(\"Button2\") {\n        onPlayerClick {\n            sendMessage(\"You click button2\")\n        }\n    }\n\n    onButtonClick {\n        player.sendMessage(\"You click $text\")\n    }\n\n    onClose {\n        player.sendMessage(\"You closed\")\n    }\n}\n```\n\n2. 创建一个 Custom 类型的 Form 表单\n   - 需要传入构造一个返回数据类型的类\n   - 每添加一个控件需要绑定其返回数据类型到你构造的类的字段上( label 控件除外)\n\n```kotlin\nclass MyResp : FormCustomResponseModel {\n    lateinit var inputResp: String\n    lateinit var dropdownResp: FormResponseData\n    var toggleResp: Boolean = false\n    var sliderResp: Float = 1F\n    lateinit var stepSliderResp: FormResponseData\n}\n\n...\n\nFormCustom<MyResp> {  // 传入构造的类的泛型即可\n    target = player\n    title = \"This is Title\"\n\n    icon {\n        type = ElementButtonImageData.IMAGE_DATA_TYPE_PATH\n        data = \"textures/blocks/bedrock.png\"\n    }\n\n    Label(\"This is a Label\")\n\n    // 声明时需要绑定传入的RespModel一个合适的字段\n    Input(MyResp::inputResp) {\n        text = \"Input1\"\n        placeHolder = \"input your name\"\n        default = \"iGxnon\"\n    }\n\n    Dropdown(MyResp::dropdownResp) {\n        text = \"Dropdown1\"\n        option(\"A\", \"B\" to true, \"C\")  // B 是默认值\n    }\n\n    Toggle(MyResp::toggleResp) {\n        text = \"is Male?\"\n        default = true\n    }\n\n    Slider(MyResp::sliderResp) {\n        text = \"Slider1\"\n        min = 1F\n        max = 15F\n        step = 2\n        default = 5F\n    }\n\n    StepSlider(MyResp::stepSliderResp) {\n        text = \"StepSlider1\"\n        option {\n           - \"A\"\n           - \"B\"\n           + \"C\"  // 默认\n           - \"D\"\n        }\n    }\n\n    onElementRespond {\n        // 这里就可以快乐地使用构造的返回类型的字段了！\n        player.sendMessage(\"you input $inputResp\")\n        player.sendMessage(\"you toggle select to $toggleResp\")\n        // ...\n    }\n\n    onClose {\n        player.sendMessage(\"You closed.\")\n    }\n}\n```\n\n3. 创建一个 Modal 类型的 Form 表单\n\n```kotlin\nFormModal {\n   target = player\n   title = \"This is Title\"\n   content = \"This is content\"\n   trueText = \"True\"\n   falseText = \"False\"\n\n   onTrue {\n      player.sendMessage(\"Ture!\")\n   }\n\n   onFalse {\n      player.sendMessage(\"False!\")\n   }\n\n   onClose {\n      player.sendMessage(\"Close!\")\n   }\n}\n```\n\n## 测试\n\n- 将插件放入 `/plugins` 文件夹下加载\n- OP 状态下指令 `/formtest [1|2|3]` 即可测试 ",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/62042238?v=4",
+  "id": "MemoriesOfTime/FormDSL",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "FormDSL",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/MemoriesOfTime/FormDSL",
+  "stars": 2,
+  "summary": "support dsl operation in kotlin to build Form UI",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1707234856,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FormDSL-1.0.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 49995,
+          "url": "https://github.com/MemoriesOfTime/FormDSL/releases/download/1.0.0/FormDSL-1.0.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "v1.0.0-pre-release",
+      "prerelease": true,
+      "published_at": 1659623366,
+      "version": "1.0.0"
+    }
+  ]
+}

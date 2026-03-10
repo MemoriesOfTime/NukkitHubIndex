@@ -1,6 +1,12 @@
 {
   "api_version": "1.0.9",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "若水",
+      "url": ""
+    }
+  ],
   "categories": [],
   "created_at": 1576575072,
   "dependencies": [
@@ -11,6 +17,7 @@
     }
   ],
   "description": "<a href=\"https://github.com/SmallasWater/PlayerPoints/releases/latest\" alt=\"Latest release\">\n    <img src=\"https://img.shields.io/github/v/release/SmallasWater/PlayerPoints?include_prereleases\" alt=\"Latest release\">\n</a>\n<br>\n \n\n\n#PlayerPoints\n\n点券系统",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
@@ -21,11 +28,17 @@
     "url": "https://spdx.org/licenses/GPL-3.0.html"
   },
   "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
   "name": "playerPoints",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/SmallasWater/PlayerPoints",
   "stars": 3,
-  "summary": "",
+  "summary": "点券系统",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
   "updated_at": 1701757005,
   "versions": [
     {
