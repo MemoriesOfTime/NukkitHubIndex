@@ -37,7 +37,7 @@
     "nkx",
     "pnx"
   ],
-  "updated_at": 1767895888,
+  "updated_at": 1774556234,
   "versions": [
     {
       "changelog": "",
@@ -46,13 +46,13 @@
         {
           "filename": "cloudbridge.jar",
           "primary": true,
-          "size": 47324949,
+          "size": 47334777,
           "url": "https://github.com/RedstoneCloud/CloudBridge/releases/download/snapshot/cloudbridge.jar"
         }
       ],
       "name": "Snapshot Build",
       "prerelease": true,
-      "published_at": 1767896241,
+      "published_at": 1774556637,
       "version": "snapshot"
     }
   ]

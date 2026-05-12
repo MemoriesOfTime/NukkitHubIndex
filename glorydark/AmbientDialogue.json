@@ -14,6 +14,11 @@
       "dependency_type": "required",
       "plugin_id": "MemoriesOfTime-GameCore",
       "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "LanguageAPI",
+      "version_range": ""
     }
   ],
   "description": "",
@@ -39,6 +44,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1714559232,
+  "updated_at": 1774391134,
   "versions": []
 }

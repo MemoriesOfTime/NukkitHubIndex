@@ -27,13 +27,13 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/SoBadFish/TheWorldShop",
-  "stars": 5,
+  "stars": 4,
   "summary": "基于Nukkit的全球市场插件",
   "targets": [
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1771941460,
+  "updated_at": 1773761204,
   "versions": [
     {
       "changelog": "增加回收功能",

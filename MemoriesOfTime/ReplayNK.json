@@ -38,11 +38,11 @@
   "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/MemoriesOfTime/ReplayNK",
-  "stars": 5,
+  "stars": 6,
   "summary": "",
   "targets": [
     "pnx"
   ],
-  "updated_at": 1769601237,
+  "updated_at": 1774371083,
   "versions": []
 }

@@ -31,11 +31,11 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/lt-name/Radio",
-  "stars": 1,
+  "stars": 2,
   "summary": "Radio plugin for Nukkit",
   "targets": [
     "nkx"
   ],
-  "updated_at": 1743428123,
+  "updated_at": 1778317119,
   "versions": []
 }

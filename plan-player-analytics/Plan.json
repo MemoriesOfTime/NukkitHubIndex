@@ -201,7 +201,7 @@
       "version_range": ""
     }
   ],
-  "description": "![Player Analytics](http://puu.sh/AXSg7/5f2f78c06c.jpg)\n\n[![Github Actions](https://github.com/plan-player-analytics/Plan/workflows/CI/badge.svg)](https://github.com/plan-player-analytics/Plan/actions/workflows/ci.yml)\n[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=com.djrapitops%3APlan&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.djrapitops%3APlan)  \n![Java](https://custom-icon-badges.demolab.com/badge/⮞-red?logo=java-white)\n[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=com.djrapitops%3APlan&metric=ncloc)](https://sonarcloud.io/dashboard?id=com.djrapitops%3APlan)\n[![Code coverage](https://sonarcloud.io/api/project_badges/measure?project=com.djrapitops%3APlan&metric=coverage)](https://sonarcloud.io/dashboard?id=com.djrapitops%3APlan)  \n![React](https://custom-icon-badges.demolab.com/badge/⮞-blue?logo=react-white)\n[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=plan-player-analytics_Plan&metric=ncloc)](https://sonarcloud.io/summary/overall?id=plan-player-analytics_Plan)\n\n[Documentation & Tutorials](https://github.com/plan-player-analytics/Plan/wiki) | [Releases](https://github.com/plan-player-analytics/Plan/releases) | [DEV builds](https://github.com/plan-player-analytics/Plan/actions/workflows/ci.yml?query=branch%3Amaster) | [Issues & Suggestions](https://github.com/plan-player-analytics/Plan/issues)\n\nPlayer Analytics is a fully-fledged solution for the analytics needs of your Minecraft server. A built-in webserver displays insights into different aspects of the server such as Online activity, Playerbase, and how these change over time.\n\nPlan supports multiple different platforms and versions; Spigot, Paper, Sponge, SpongeForge, Bungeecord, Velocity, Cauldron & all derivatives - One jar for all platforms.\n\n- [Version 5 Release trailer on Youtube](https://www.youtube.com/watch?v=BS_Ti9zkoRc)\n\n## API\n\n- [Javadocs](https://plan-player-analytics.github.io/Plan/)\n- [API documentation](https://github.com/plan-player-analytics/Plan/wiki/APIv5)\n\n[![](https://jitpack.io/v/plan-player-analytics/Plan.svg)](https://jitpack.io/#plan-player-analytics/Plan)\n\n```xml\n<repository>\n    <id>jitpack</id>\n    <url>https://jitpack.io</url>\n</repository>\n\n<dependency>\n    <groupId>com.github.plan-player-analytics</groupId>\n    <artifactId>Plan</artifactId>\n    <version>{jitpack version}</version>\n    <scope>provided</scope>\n</dependency>\n```\n\n## Building\n\nYou can build the project by running the following in the repository root:\n```\ncd Plan\n./gradlew build\n```\n\n- [More information about setting up the project](https://github.com/plan-player-analytics/Plan/wiki/Project-Setup)\n\n## Used Libraries\n\n- **[SBAdmin 2 Template](https://github.com/BlackrockDigital/startbootstrap-sb-admin-2)** | [MIT License](https://opensource.org/licenses/MIT)\n- **[Bootstrap](https://getbootstrap.com/)** | [MIT License](https://v4-alpha.getbootstrap.com/about/license/)\n- **[HighCharts](https://www.highcharts.com/)** | [Free for non-commercial](https://www.highcharts.com/products/highcharts/#non-commercial)\n- **[jQuery Datatables](https://datatables.net/)** | [MIT License](https://datatables.net/license/mit)\n- **[FullCalendar](https://github.com/fullcalendar/fullcalendar)** | [MIT License](https://datatables.net/license/mit)\n- **[Font Awesome Icons](http://fontawesome.io/icons/)** | [SIL Open Font License](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)\n- **[MaxMind GeoIP2 Country](https://www.maxmind.com/en/geoip2-country-database)** | [MaxMind End User License Agreement (EULA)](https://www.maxmind.com/en/end-user-license-agreement)\n- **[Dagger](https://dagger.dev/)** | [Apache-2.0 License](https://github.com/google/dagger/blob/master/LICENSE.txt)\n- **[DependencyDownload](https://github.com/Vankka/DependencyDownload)** | [MIT License](https://github.com/Vankka/DependencyDownload/blob/main/LICENSE)\n\n## License\n\nPlayer Analytics is licensed under LGPL-3 (GNU Lesser General Public License)\n\n- [License](https://github.com/plan-player-analytics/Plan/blob/master/LICENSE)\n",
+  "description": "![Player Analytics](https://raw.githubusercontent.com/plan-player-analytics/drawio-diagrams-storage/master/image/header/main-header-Plan.jpg)\n\n[![Github Actions](https://github.com/plan-player-analytics/Plan/workflows/CI/badge.svg)](https://github.com/plan-player-analytics/Plan/actions/workflows/ci.yml)\n[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=com.djrapitops%3APlan&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.djrapitops%3APlan)  \n![Java](https://custom-icon-badges.demolab.com/badge/⮞-red?logo=java-white)\n[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=com.djrapitops%3APlan&metric=ncloc)](https://sonarcloud.io/dashboard?id=com.djrapitops%3APlan)\n[![Code coverage](https://sonarcloud.io/api/project_badges/measure?project=com.djrapitops%3APlan&metric=coverage)](https://sonarcloud.io/dashboard?id=com.djrapitops%3APlan)  \n![React](https://custom-icon-badges.demolab.com/badge/⮞-blue?logo=react-white)\n[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=plan-player-analytics_Plan&metric=ncloc)](https://sonarcloud.io/summary/overall?id=plan-player-analytics_Plan)\n\n[Documentation & Tutorials](https://github.com/plan-player-analytics/Plan/wiki) | [Releases](https://github.com/plan-player-analytics/Plan/releases) | [DEV builds](https://github.com/plan-player-analytics/Plan/actions/workflows/ci.yml?query=branch%3Amaster) | [Issues & Suggestions](https://github.com/plan-player-analytics/Plan/issues)\n\nPlayer Analytics is a fully-fledged solution for the analytics needs of your Minecraft server. A built-in webserver displays insights into different aspects of the server such as Online activity, Playerbase, and how these change over time.\n\nPlan supports multiple different platforms and versions; Spigot, Paper, Fabric, Sponge, SpongeForge, Bungeecord, Velocity, Folia & all derivatives - One jar for all platforms.\n\n- [Version 5 Release trailer on Youtube](https://www.youtube.com/watch?v=BS_Ti9zkoRc)\n\n## API\n\n- [Javadocs](https://plan-player-analytics.github.io/Plan/)\n- [API documentation](https://github.com/plan-player-analytics/Plan/wiki/APIv5)\n\n[![](https://jitpack.io/v/plan-player-analytics/Plan.svg)](https://jitpack.io/#plan-player-analytics/Plan)\n\n```xml\n<repository>\n    <id>jitpack</id>\n    <url>https://jitpack.io</url>\n</repository>\n\n<dependency>\n    <groupId>com.github.plan-player-analytics</groupId>\n    <artifactId>Plan</artifactId>\n    <version>{jitpack version}</version>\n    <scope>provided</scope>\n</dependency>\n```\n\n## Building\n\nYou can build the project by running the following in the repository root:\n```\ncd Plan\n./gradlew build\n```\n\n- [More information about setting up the project](https://github.com/plan-player-analytics/Plan/wiki/Project-Setup)\n\n## Used Libraries\n\n- **[SBAdmin 2 Template](https://github.com/BlackrockDigital/startbootstrap-sb-admin-2)** | [MIT License](https://opensource.org/licenses/MIT)\n- **[Bootstrap](https://getbootstrap.com/)** | [MIT License](https://v4-alpha.getbootstrap.com/about/license/)\n- **[HighCharts](https://www.highcharts.com/)** | [Free for non-commercial](https://www.highcharts.com/products/highcharts/#non-commercial)\n- **[FullCalendar](https://github.com/fullcalendar/fullcalendar)** | [MIT License](https://datatables.net/license/mit)\n- **[Font Awesome Icons](http://fontawesome.io/icons/)** | [SIL Open Font License](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)\n- **[MaxMind GeoIP2 Country](https://www.maxmind.com/en/geoip2-country-database)** | [MaxMind End User License Agreement (EULA)](https://www.maxmind.com/en/end-user-license-agreement)\n- **[Dagger](https://dagger.dev/)** | [Apache-2.0 License](https://github.com/google/dagger/blob/master/LICENSE.txt)\n- **[DependencyDownload](https://github.com/Vankka/DependencyDownload)** | [MIT License](https://github.com/Vankka/DependencyDownload/blob/main/LICENSE)\n\n## License\n\nPlayer Analytics is licensed under LGPL-3 (GNU Lesser General Public License)\n\n- [License](https://github.com/plan-player-analytics/Plan/blob/master/LICENSE)\n",
   "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
@@ -218,14 +218,146 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/plan-player-analytics/Plan",
-  "stars": 988,
+  "stars": 1005,
   "summary": "Player Analytics plugin for Minecraft Server platforms - View player activity of your server with ease. :calendar:",
   "targets": [
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1773081241,
+  "updated_at": 1778595255,
   "versions": [
+    {
+      "changelog": "# 5.7 DEV build 3341\r\n\r\nThis dev release includes support for mc version 26.1 on fabric, new sessions tab and bugfixes.\r\n\r\nSpecial thanks to **AnttiMK & Minecraft0122** for contributions to this update\r\n\r\n# Change log\r\n\r\n## Website\r\n\r\n### New sessions tab \r\n\r\nSessions tab was rewritten on all pages (Network, Server, Player) and it now gets you up to 10k sessions, which can be searched further and exported as CSV. You can choose a date range using the session calendar or the new date picker component.\r\n\r\nAll of the data on session page will reflect the selected dates. All ongoing sessions within selected date range are shown, even if they didn't start within the date range, but before it.\r\n\r\n<img width=\"1901\" height=\"949\" alt=\"image\" src=\"https://github.com/user-attachments/assets/a3c83cbb-d7c7-4ae5-b97b-f4fa37f648df\" />\r\n<img width=\"1903\" height=\"955\" alt=\"image\" src=\"https://github.com/user-attachments/assets/0829f493-fcb0-49db-ac64-cf4af53a41b3\" />\r\n<img width=\"1903\" height=\"955\" alt=\"image\" src=\"https://github.com/user-attachments/assets/1a4d1dcf-a073-4f28-8e3f-9351e265b3dd\" />\r\n\r\nOn the Export website this feature is not available and defaults to most recent data (Similar to before)\r\n\r\n### New Web permissions\r\n\r\nTo implement dynamic date based filtering seen above, new endpoint /v1/datapoint was implemented. This will be expanded upon in the future. This endpoint uses data.player, data.server, data.network (and further subdivisions) to control visiblity. These permissions are granted automatically based on existing permissions:\r\n\r\n- access.network -> group is given data.network\r\n- access.server -> group is given data.server\r\n- access.player -> group is given data.player\r\n\r\n/v1/datapoint will also check for access.player and access.player.self if looking for player specific data.\r\n\r\n### Other\r\n\r\nThe new date picker component is in use anywhere you can input dates to a text field\r\n\r\n<img width=\"1920\" height=\"954\" alt=\"image\" src=\"https://github.com/user-attachments/assets/92c6b8e5-0ef3-423a-a4bc-03004ce98c50\" />\r\n\r\n### Bugfixes\r\n\r\n- Fixed Average MSPT not showing if MSPT was under 1ms\r\n- Fixed date saying 'Today' if it was in the future\r\n- Fixed Alternative_IP.Address changes not being reflected in Javascript due to Cache policy\r\n- Fixed boolean Extension values causing 'variable t not found' error.\r\n\r\n## Fabric 26.1\r\n\r\nAnttiMK implemented Fabric 26.1 support. 1.21.9-1.21.11 are no longer supported by this version.\r\n\r\n## Config\r\n\r\n- Display_options.Sessions.Show_on_page setting has been removed\r\n- Changed default value for `Time.Thresholds.Remove_time_series_after` to 3650 on Bungee/Velocity (Default is not automatically replaced)\r\n\r\n## Locale\r\n\r\n- CN locale updated by Minecraft0122",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.7-build-3341.jar",
+          "primary": true,
+          "size": 18028470,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3341/Plan-5.7-build-3341.jar"
+        },
+        {
+          "filename": "PlanFabric-5.7-build-3341.jar",
+          "primary": true,
+          "size": 17595858,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3341/PlanFabric-5.7-build-3341.jar"
+        }
+      ],
+      "name": "5.7 DEV build 3341",
+      "prerelease": true,
+      "published_at": 1775230721,
+      "version": "5.7.3341"
+    },
+    {
+      "changelog": "# 5.7 build 3306\r\n\r\nHotfix for config update bug in build 3288.\r\n\r\n# Change log\r\n\r\n- Fixed config resetting some values to default on reload\r\n- Fixed table sorting with alphabetical things\r\n- Minor dependency updates\r\n- CI pipelines for releasing to Ore, Hangar and Modrinth",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.7-build-3306.jar",
+          "primary": true,
+          "size": 17710640,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3306/Plan-5.7-build-3306.jar"
+        },
+        {
+          "filename": "PlanFabric-5.7-build-3306.jar",
+          "primary": true,
+          "size": 17654727,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3306/PlanFabric-5.7-build-3306.jar"
+        }
+      ],
+      "name": "5.7 build 3306",
+      "prerelease": false,
+      "published_at": 1774076440,
+      "version": "5.7.3306"
+    },
+    {
+      "changelog": "5.7 DEV build 3298\r\n\r\nDEV build to test new publishing pipelines to Ore, Hangar and Modrinth.\r\n\r\nNo changes compared to DEV build 3294/3295 https://github.com/plan-player-analytics/Plan/releases/tag/5.7.3295",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.7-dev-build-3298.jar",
+          "primary": true,
+          "size": 17710394,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3298/Plan-5.7-dev-build-3298.jar"
+        },
+        {
+          "filename": "PlanFabric-5.7-dev-build-3298.jar",
+          "primary": true,
+          "size": 17654479,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3298/PlanFabric-5.7-dev-build-3298.jar"
+        }
+      ],
+      "name": "5.7 DEV build 3298",
+      "prerelease": true,
+      "published_at": 1773846685,
+      "version": "5.7.3298"
+    },
+    {
+      "changelog": "# 5.7 DEV build 3295\r\n\r\nHotfix for config update bug in build 3288.\r\n\r\nDEV build to test new publishing pipelines to Ore, Hangar and Modrinth.\r\n\r\n# Change log\r\n\r\n- Fixed config resetting some values to default on reload\r\n- Fixed table sorting with alphabetical things",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.7-dev-build-3295.jar",
+          "primary": true,
+          "size": 17710464,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3295/Plan-5.7-dev-build-3295.jar"
+        },
+        {
+          "filename": "PlanFabric-5.7-dev-build-3295.jar",
+          "primary": true,
+          "size": 17654549,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3295/PlanFabric-5.7-dev-build-3295.jar"
+        }
+      ],
+      "name": "5.7 DEV build 3295",
+      "prerelease": true,
+      "published_at": 1773771188,
+      "version": "5.7.3295"
+    },
+    {
+      "changelog": "# 5.7 DEV build 3294\r\n\r\nHotfix for config update bug in build 3288.\r\n\r\nDEV build to test new publishing pipelines to Ore, Hangar and Modrinth.\r\n\r\n# Change log\r\n\r\n- Fixed config resetting some values to default on reload\r\n- Fixed table sorting with alphabetical things",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.7-dev-build-3294.jar",
+          "primary": true,
+          "size": 17710464,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3294/Plan-5.7-dev-build-3294.jar"
+        },
+        {
+          "filename": "PlanFabric-5.7-dev-build-3294.jar",
+          "primary": true,
+          "size": 17654549,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3294/PlanFabric-5.7-dev-build-3294.jar"
+        }
+      ],
+      "name": "5.7 DEV build 3294",
+      "prerelease": true,
+      "published_at": 1773771042,
+      "version": "5.7.3294"
+    },
+    {
+      "changelog": "# 5.7 build 3288\r\n\r\nThis release contains bugfixes to build 3265 and a new theme.\r\n\r\nSpecial thanks to **Kopo, Leolebleis & Guinness_Akihiko** for contributions to this update\r\n\r\n# Change log\r\n\r\n## Website\r\n\r\n- Improved readability of World Pie on servers that have over 7 worlds\r\n- Improved readability of Server Pie on networks that have over 7 servers\r\n- Moved Performance graph loading to Web Worker (async threading in browsers) - This should improve rendering times slightly\r\n- Fixed issue where Join Address Groups would reset when using HTTPS\r\n- Fixed a couple of instances where Trend was not properly showing\r\n- Fixed 'showPlayersOnline is not defined' when viewing network page on networks with multiple Proxy servers\r\n- Fixed a bug with Change history floating on top of the Save button in Theme Editor when using Night mode.\r\n- Fixed CUSTOM locale defaulting to Chinese locale for time/date/country localization due to \"Best match\" in browser matching.\r\n- Fixed Swagger documentation not showing\r\n- Fixed 'New player retention' label in Server overview\r\n- Fixed typo in a locale key\r\n- Fixed Low TPS Insights showing entities instead of CPU\r\n- Leolebleis fixed reverse-proxy https address not being recognized as correct address\r\n\r\n## Fabric\r\n\r\nKopo updated Fabric to use Mojang mappings (Tested with 1.12.9-1.12.11)\r\n\r\n## Themes\r\n\r\nAdded solarized theme based on https://github.com/altercation/solarized\r\n\r\n<img width=\"1903\" height=\"955\" alt=\"solarized theme\" src=\"https://github.com/user-attachments/assets/2f74fc03-76b1-4bd6-9ff4-1e45ec195c42\" />\r\n\r\n## Config\r\n\r\n- Possibly fixed a race condition that caused server identity to be reset, creating duplicate servers when server was shut down during Database patching\r\n- Fixed trailing comments removing part of config setting value.\r\n- Fixed some config changes being applied every time\r\n\r\n## Locale\r\n\r\n- Guinness_Akihiko updated KO locale\r\n\r\n## Other\r\n\r\n- Builds now require JDK 25 for switch to Mojang mappings.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.7-build-3288.jar",
+          "primary": true,
+          "size": 17710184,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3288/Plan-5.7-build-3288.jar"
+        },
+        {
+          "filename": "PlanFabric-5.7-build-3288.jar",
+          "primary": true,
+          "size": 17654270,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3288/PlanFabric-5.7-build-3288.jar"
+        }
+      ],
+      "name": "5.7 build 3288",
+      "prerelease": false,
+      "published_at": 1773495855,
+      "version": "5.7.3288"
+    },
     {
       "changelog": "# 5.7 DEV build 3265\r\n\r\nThis dev release is a collection of bugfixes intended to release next weekend.\r\n\r\nSpecial thanks to **Guinness_Akihiko** for contributions to this update\r\n\r\n# Change log\r\n\r\n## Website\r\n\r\n- Improved readability of World Pie on servers that have over 7 worlds\r\n- Improved readability of Server Pie on networks that have over 7 servers\r\n- Moved Performance graph loading to Web Worker (async threading in browsers) - This should improve rendering times slightly\r\n- Fixed a couple of instances where Trend was not properly showing\r\n- Fixed a bug with Change history floating on top of the Save button in Theme Editor when using Night mode.\r\n- Fixed CUSTOM locale defaulting to Chinese locale for time/date/country localization due to \"Best match\" in browser matching.\r\n\r\n## Themes\r\n\r\nAdded solarized theme based on https://github.com/altercation/solarized\r\n\r\n<img width=\"1903\" height=\"955\" alt=\"solarized theme\" src=\"https://github.com/user-attachments/assets/2f74fc03-76b1-4bd6-9ff4-1e45ec195c42\" />\r\n\r\n## Locale\r\n\r\n- Guinness_Akihiko updated KO locale\r\n\r\n## Other\r\n\r\n- Builds now require JDK 25 in preparation for switch to Mojang mappings.",
       "downloads": 0,
@@ -753,138 +885,6 @@
       "prerelease": true,
       "published_at": 1686487704,
       "version": "5.5.2411"
-    },
-    {
-      "changelog": "# 5.5 build 2391\r\n\r\nThis is a feature packed update, as it brings support for multiple proxy servers, IP allowlist CIDR and Dynamic DNS support, Fabric 1.19.4, and lots and lots of improvements.\r\n\r\nSpecial thanks to **Kopo**, **WolverStones** & **inductor** for contributions to this update!\r\n\r\n# Change log\r\n\r\n## Fabric 1.19.4\r\n\r\n- Kopo updated Fabric support to 1.19.4, older versions are no longer be supported by this version\r\n- Kopo fixed Gamemode change event not triggering\r\n- Fixed a dog killing something crashing the server when running older fabric version\r\n\r\n## Multi proxy support\r\n\r\nPlan can now be installed on multiple proxy servers. This is useful for networks that divide their players between multiple proxy servers.\r\n\r\n- You can now name proxy servers with _Server.ServerName_ config option (to distinguish in Performance tab)\r\n- _Server.IP_ setting is no longer required to be set, since some proxy servers may have their webserver disabled. It's recommended to have only a single Plan webserver running.\r\n- If multiple proxy servers have their webserver enabled, the commands that have links link to one of them.\r\n- If all webservers are disabled, but export is enabled, the commands that have links link to one with export enabled.\r\n- Network online graph stacks the player online counts of all the proxies if RedisBungee is not used. Non-stacked version can be checked from Performance tab.\r\n\r\nKnown limitations: Online sessions/status are not synced on multiple proxies\r\n\r\n## IP Allowlist improvements\r\n\r\n- IP Allowlist now supports a lot more notations for easier use: CIDR, Wildcard, IPv6 with omitted zeros. See comment above the setting for examples.\r\n- IP Allowlist now supports dynamic DNS addresses. Add \"dns:{address}\" to the allowlist to have Plan resolve the IP address of the dynamic DNS. This may be useful for those without static IP addresses at home.\r\n\r\n## Database\r\n\r\n- MySQL databases using incorrect character set are now corrected to use utf8mb4 collate utf8mb4_general_ci upon startup. This should prevent some errors from popping up.\r\n- Fixed join address by day graph error if MySQL strict group by policy is enabled.\r\n- If Plan detects that two servers are storing data with the same UUID, a warning will be logged to console once every 30 minutes.\r\n  - This usually happens if ServerInfoFile.yml is copied between servers during installation.\r\n  - /plan info command now shows the ServerUUID of the server so that it is easier to debug which server it is\r\n  - The detection looks if previous tps was stored < 30s ago, which suggests two servers are storing data as the same one\r\n- Add _Database.MySQL.Max_Lifetime_ setting. This setting can be used if database connection keeps timing out\r\n\r\n## Website\r\n\r\n- Added option to disable registering new users _Webserver.Security.Disable_registration_ (default false)\r\n- Improvements to network performance tab\r\n  - Added some information why TPS, entities or chunks is not available if only proxy servers are selected\r\n  - Reduced resolution of the data to minutes, so that all servers with data show up in the tooltip when hovering over the graph\r\n  - Fixed server selector not allowing to change servers in some cases\r\n  - Fixed the graph re-rendering when selecting different servers even though the data wasn't reloaded\r\n  - Added warning if none of the selected servers have sent data over 30 days\r\n- Improvements to network server list\r\n  - An icon is shown if server hasn't sent data for some time (Red triangle if no data in last 24h, Grey triangle if no data in last 7d, Grey archive icon if no data in last 30d)\r\n- /plan server command now gives link to /server/UUID instead of /server/Name\r\n- Fixed configured theme not applying by default\r\n- Extension data with colors or links now render properly\r\n- Fixed the logged in player's head image not loading on the top right\r\n\r\n## Locale\r\n\r\n- Custom locale files (locale.yml) are now updated with new translation lines whenever server starts\r\n- WolverStones updated Czech (CS) locale\r\n- inductor updated Japanese (JA) locale\r\n\r\n## Extensions\r\n\r\n- Fixed ExceptionInInitializerError in Extension construction causing Plan to not enable properly\r\n- Fixed exception related to LibertyBans Extension\r\n- Fixed exception related to Towny Extension",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "Plan-5.5-build-2391.jar",
-          "primary": true,
-          "size": 17080856,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.5.2391/Plan-5.5-build-2391.jar"
-        },
-        {
-          "filename": "PlanFabric-5.5-build-2391.jar",
-          "primary": true,
-          "size": 17604801,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.5.2391/PlanFabric-5.5-build-2391.jar"
-        }
-      ],
-      "name": "5.5 build 2391",
-      "prerelease": false,
-      "published_at": 1684653971,
-      "version": "5.5.2391"
-    },
-    {
-      "changelog": "# 5.5 DEV build 2379\r\n\r\nThis update brings support for multiple proxy servers, fabric 1.19.4 and lots of lots of improvements.\r\n\r\nSpecial thanks to **Kopo** & **WolverStones** for contributions to this update!\r\n\r\n# Change log\r\n\r\n## Fabric 1.19.4\r\n\r\n- Kopo updated Fabric support to 1.19.4, older versions are no longer be supported by this version\r\n- Kopo fixed Gamemode change event not triggering\r\n- Fixed a dog killing something crashing the server when running older fabric version\r\n\r\n## Multi proxy support\r\n\r\nPlan can now be installed on multiple proxy servers. This is useful for networks that divide their players between multiple proxy servers.\r\n\r\n- You can now name proxy servers with Server.Name config option\r\n- Server.IP is no longer required to be set, since some proxy servers may have their webserver disabled. It's recommended to have a single Plan webserver running.\r\n- If multiple proxy servers have their webserver enabled, the commands that have links link to one of them.\r\n- Network online graph stacks the player online counts of all the proxies if RedisBungee is not used. Non-stacked version can be checked from Performance tab.\r\n\r\nKnown limitations: Online sessions/status are not yet synced on multiple proxies\r\n\r\n## IP Allowlist improvements\r\n\r\n- IP Allowlist now supports a lot more notations for easier use CIDR, Wildcard, IPv6 with omitted zeros. See comment on the setting for more.\r\n- IP Allowlist now supports dynamic DNS addresses. Add \"dns:{address}\" to the allowlist to have Plan resolve the IP address of the dynamic DNS. This may be useful for those without static IP addresses.\r\n\r\n## Website\r\n\r\n- Improvements to network performance tab\r\n  - Added some information why TPS, entities or chunks is not available if only proxy servers are selected\r\n  - Reduced resolution of the data to minutes, so that all servers with data show up in the tooltip when hovering over the graph\r\n  - Fixed server selector not allowing to change servers in some cases\r\n  - Fixed the graph re-rendering when selecting different servers even though the data wasn't reloaded\r\n  - Added warning if none of the selected servers have sent data over 30 days\r\n- Improvements to network server list\r\n  - An icon is shown if server hasn't sent data for some time (Red triangle if no data in last 24h, Grey triangle if no data in last 7d, Grey archive icon if no data in last 30d)\r\n- /plan server command now gives link to /server/UUID instead of /server/Name\r\n- Fixed configured theme not applying by default\r\n- Extension data with colors or links now render properly\r\n- Fixed the logged in player's head image not loading on the top right\r\n\r\n## Database\r\n\r\n- MySQL databases using incorrect character set are now corrected to use utf8mb4 collate utf8mb4_general_ci upon startup. This should prevent some errors from popping up.\r\n- Fixed join address by day graph error if MySQL strict group by policy is enabled.\r\n- If Plan detects that two servers are storing data with the same UUID, a warning will be logged to console once every 30 minutes.\r\n  - This usually happens if ServerInfoFile.yml is copied between servers during installation.\r\n  - /plan info command now shows the ServerUUID of the server so that it is easier to debug which server it is\r\n- Add Database.MySQL.Max_Lifetime setting. This setting can be used if database connection keeps timing out\r\n\r\n## Locale\r\n\r\n- Custom locale files (locale.yml) are now updated with new translation lines whenever server starts\r\n- WolverStones updated Czech (CS) locale\r\n\r\n## Extensions\r\n\r\n- Fixed ExceptionInInitializerError in Extension construction causing Plan to not enable properly\r\n- Fixed exception related to LibertyBans Extension\r\n- Fixed exception related to Towny Extension",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "Plan-5.5-dev-build-2379.jar",
-          "primary": true,
-          "size": 17079595,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.5.2379/Plan-5.5-dev-build-2379.jar"
-        },
-        {
-          "filename": "PlanFabric-5.5-dev-build-2379.jar",
-          "primary": true,
-          "size": 17603562,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.5.2379/PlanFabric-5.5-dev-build-2379.jar"
-        }
-      ],
-      "name": "5.5 DEV build 2379",
-      "prerelease": true,
-      "published_at": 1683957804,
-      "version": "5.5.2379"
-    },
-    {
-      "changelog": "# 5.5 DEV build 2335\r\n\r\nThis update brings support for multiple proxy servers, fabric 1.19.4 and lots of lots of improvements.\r\n\r\nSpecial thanks to **Kopo** & **WolverStones** for contributions to this update!\r\n\r\n# Change log\r\n\r\n## Fabric 1.19.4\r\n\r\n- Kopo updated Fabric support to 1.19.4, older versions may no longer be supported by this version\r\n- Kopo fixed Gamemode change event not triggering\r\n\r\n## Multi proxy support\r\n\r\nPlan can now be installed on multiple proxy servers. This is useful for networks that divide their players between multiple proxy servers.\r\n\r\n- You can now name proxy servers with Server.Name config option\r\n- Server.IP is no longer required to be set, since some proxy servers may have their webserver disabled. It's recommended to have a single Plan webserver running.\r\n- If multiple proxy servers have their webserver enabled, the commands that have links link to one of them.\r\n- Network online graph stacks the player online counts of all the proxies if RedisBungee is not used. Non-stacked version can be checked from Performance tab.\r\n\r\nKnown limitations: Online sessions/status are not yet synced on multiple proxies\r\n\r\n## Website\r\n\r\n- Improvements to network performance tab\r\n  - Added some information why TPS, entities or chunks is not available if only proxy servers are selected\r\n  - Reduced resolution of the data to minutes, so that all servers with data show up in the tooltip when hovering over the graph\r\n  - Fixed server selector not allowing to change servers in some cases\r\n  - Fixed the graph re-rendering when selecting different servers even though the data wasn't reloaded\r\n  - Added warning if none of the selected servers have sent data over 30 days\r\n- Improvements to network server list\r\n  - An icon is shown if server hasn't sent data for some time (Red triangle if no data in last 24h, Grey triangle if no data in last 7d, Grey archive icon if no data in last 30d)\r\n- /plan server command now gives link to /server/UUID instead of /server/Name\r\n\r\n## Database\r\n\r\n- MySQL databases using incorrect character set are now corrected to use utf8mb4 collate utf8mb4_general_ci upon startup. This should prevent some errors from popping up.\r\n- Fixed join address by day graph error if MySQL strict group by policy is enabled.\r\n- If Plan detects that two servers are storing data with the same UUID, a warning will be logged to console once every 30 minutes.\r\n  - This usually happens if ServerInfoFile.yml is copied between servers during installation.\r\n  - /plan info command now shows the ServerUUID of the server so that it is easier to debug which server it is\r\n\r\n## Locale\r\n\r\n- Custom locale files (locale.yml) are now updated with new translation lines whenever server starts\r\n- WolverStones updated Czech (CS) locale\r\n\r\n## Extensions\r\n\r\n- Fixed ExceptionInInitializerError in Extension construction causing Plan to not enable properly",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "Plan-5.5-dev-build-2335.jar",
-          "primary": true,
-          "size": 17064083,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.5.2335/Plan-5.5-dev-build-2335.jar"
-        },
-        {
-          "filename": "PlanFabric-5.5-dev-build-2335.jar",
-          "primary": true,
-          "size": 17588070,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.5.2335/PlanFabric-5.5-dev-build-2335.jar"
-        }
-      ],
-      "name": "5.5 DEV build 2335",
-      "prerelease": true,
-      "published_at": 1681025835,
-      "version": "5.5.2335"
-    },
-    {
-      "changelog": "# 5.5 build 2307\r\n\r\nThis release has some new tools for analyzing player retention, as well as further improvements to the website.\r\n\r\nSpecial thanks to **TheLittle_Yang** for contributing to this update.\r\n\r\n# Change log\r\n\r\n## Player Retention Analysis Graph\r\n\r\n![retention-graph-possibilities](https://user-images.githubusercontent.com/24460436/225984161-560bcff1-cdfb-4ab4-bf51-38056eec30ff.gif)\r\n\r\nThis update adds a graph to network and server pages (Playerbase > Player Retention) that has options to:\r\n- Draw graphs at different time resolutions\r\n- Limit input data by time\r\n- Group players by register date or join address\r\n- Visualize player retention in different ways\r\n  - Time since registration date\r\n  - Playtime\r\n  - Date\r\n  - Cumulative player gain\r\n  - Percentage / Player count / Stacked player count\r\n\r\nAny and all combinations are allowed which allows extensive analysis of player retention. Help sections attempt to make the data understandable and show examples.\r\n\r\n## Data gathering\r\n\r\n- Attempt to correct register dates if they report a date in the year 1970 (Epoch millisecond 0 = Jan 1 1970).\r\n\r\n## Website\r\n\r\n- Any extension tables can now be sorted\r\n- Fixed Network > Servers Overview Quick view graph not loading\r\n- Fixed sidebar being transparent in nightmode on mobile\r\n- Fixed Activity index help modal not drawing the index function after certain x threshold\r\n- Fixed data not updating when switching from Server to Network page in cases where they shared same components (eg. Playerbase graphs, Join address graphs, etc)\r\n- Improved player overview card layout on mobile\r\n- Reduced font size on mobile when in portrait mode, so that more tables remain readable\r\n\r\n## Extensions\r\n\r\n- Fixed NPE when player joined and FloodGate had not loaded its API\r\n\r\n## Locale\r\n\r\n- TheLittle_Yang updated Traditional Chinese (CN) Locale",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "Plan-5.5-build-2307.jar",
-          "primary": true,
-          "size": 17052110,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.5.2307/Plan-5.5-build-2307.jar"
-        },
-        {
-          "filename": "PlanFabric-5.5-build-2307.jar",
-          "primary": true,
-          "size": 17574471,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.5.2307/PlanFabric-5.5-build-2307.jar"
-        }
-      ],
-      "name": "5.5 build 2307",
-      "prerelease": false,
-      "published_at": 1679821619,
-      "version": "5.5.2307"
-    },
-    {
-      "changelog": "# 5.5 DEV build 2290\r\n\r\nThis dev release adds a new player retention analysis graph and fixes a couple bugs. There are still some bugs that I want to fix before full release, but those bugs are also present in build 2272.\r\n\r\nSpecial thanks to **TheLittle_Yang** for contributing to this update.\r\n\r\n# Change log\r\n\r\n# Player Retention Analysis Graph\r\n\r\n![retention-graph-possibilities](https://user-images.githubusercontent.com/24460436/225984161-560bcff1-cdfb-4ab4-bf51-38056eec30ff.gif)\r\n\r\nThis update adds a graph to network and server pages (Playerbase > Player Retention) that has options to:\r\n- Draw graphs at different time resolutions\r\n- Limit input data by time\r\n- Group players by register date or join address\r\n- Visualize player retention in different ways\r\n  - Time since registration date\r\n  - Playtime\r\n  - Date\r\n  - Cumulative player gain\r\n  - Percentage / Player count / Stacked player count\r\n\r\nAny and all combinations are allowed which allows extensive analysis of player retention. Help sections attempt to make the data understandable and show examples.\r\n\r\n## Website\r\n\r\n- Fixed Network > Servers Overview Quick view graph not loading\r\n- Fixed sidebar being transparent in nightmode on mobile\r\n- Fixed Activity index help not drawing the index function after certain x threshold\r\n\r\n## Locale\r\n\r\n- TheLittle_Yang updated Traditional Chinese (CN) Locale",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "Plan-5.5-dev-build-2290.jar",
-          "primary": true,
-          "size": 17028256,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.5.2290/Plan-5.5-dev-build-2290.jar"
-        },
-        {
-          "filename": "PlanFabric-5.5-dev-build-2290.jar",
-          "primary": true,
-          "size": 17546915,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.5.2290/PlanFabric-5.5-dev-build-2290.jar"
-        }
-      ],
-      "name": "5.5 DEV build 2290",
-      "prerelease": true,
-      "published_at": 1679076547,
-      "version": "5.5.2290"
-    },
-    {
-      "changelog": "# 5.5 build 2272\r\n\r\nThis update enables the new React based frontend by default, speeds up loading various parts of the website, and fixes a couple of issues.\r\n\r\nIf you are using Html Customization, it is now possible to migrate to the new system, see https://github.com/plan-player-analytics/Plan/wiki/Html-Customization--migration-guide-to-React - You can use _Plugin.Use_Legacy_Frontend_ setting until your migrations are complete.\r\n\r\nBack up your config in case you need to revert to previous version. Updating should be easy, simply replace the jar.\r\n\r\n# Change log\r\n\r\n## React Frontend (Previously called Frontend BETA)\r\n\r\nThe frontend rewrite is complete, so the new frontend is now enabled by default. _Plugin.Use_Legacy_Frontend_ (default: false) setting still allows using old frontend for a while until it's completely removed.\r\n\r\nHere is a summary of improvements this brings if you have not participated in the Beta:\r\n\r\n- Faster loading time since less data requests are made at once\r\n- Improved mobile navigation\r\n- New features\r\n  - Page navigation button for switching between pages\r\n  - Switching language on the frontend\r\n  - Join address tab\r\n  - Visualizer switches for some graphs\r\n  - Average players online data to Performance tabs\r\n  - Interactive '?' help for Activity Index and New Player Retention (These were the two most common questions on how they work)\r\n  - Redesigned Network > Servers tab\r\n- Easier to maintain and develop further\r\n\r\nChanges from previous update:\r\n\r\n- Added a page navigation button that allows moving to different servers and other pages easily. This replaces the 'Back to main page' button. You can switch between the same page for two servers (eg. Move from Server 1 > Performance to Server 2 > Performance in one click)\r\n![image](https://user-images.githubusercontent.com/24460436/216813593-a5a3b8b9-56a7-4bc2-b817-f222e7e2ff14.png)\r\n- Improved mobile navigation. With the navigation button this should help mobile users a lot.\r\n- Interactive '?' help for Activity Index and New Player Retention (These were the two most common questions on how they work)\r\n- Fixed network server list saying \"No servers installed\" while servers were being loaded.\r\n- Fixed page translation issues\r\n- React was updated to version 18\r\n- Javascript APIs for extending the page programmatically were implemented https://github.com/plan-player-analytics/Plan/wiki/APIv5-PageExtension-API#javascript-api\r\n- Fixed join address data breaking the page when visualized as a table\r\n- Fixed issues of plugin cards overlapping when switching between plugins of two servers on player page\r\n\r\n## New feature: public_html\r\n\r\nA new feature in the webserver allows hosting any web files on the Plan webserver. Please note that any files placed in the public_html folder (/plugins/Plan/public_html by default) can be read by anyone who knows the address to the webserver even if you have login enabled. The folder can be configured with _Webserver.Public_html_directory_ setting.\r\n\r\nThe main purpose of this feature is to allow Html Customization of the React bundle https://github.com/plan-player-analytics/Plan/wiki/Html-Customization\r\n\r\n## Webserver\r\n\r\n- Implemented HTTP Caching: Browser will now cache some responses and avoid sending unnecessary data if it was already loaded. This can improve page loading times from multiple seconds to milliseconds.\r\n- Implemented public_html feature that allows hosting custom files from a configurable folder `Webserver.Public_html_directory` (default `/plugins/Plan/public_html`). This can be used to host http-challenge file for certbot and other files.\r\n\r\n## Database\r\n\r\n- PlayerTableRowPatch should no longer be re-applied all the time\r\n- Optimized server player table query: /server/players now loads much faster. Tested optimization: 4s -> 500ms: 8x improvement\r\n- Optimized server latest join addresses query: /sever/join_addresses now loads much faster. Tested optimization: 19s -> 150ms: 120x improvement\r\n- Optimized /v1/network/servers endpoint, got a 66% speed increase, so Servers tab on network page should load faster.\r\n\r\n## PlaceholderAPI\r\n\r\n- Unregister placeholder extension when Plan disables: this possibly fixes an issue where PlaceholderAPI would log errors when Plan disabled before PlaceholderAPI.",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "Plan-5.5-build-2272.jar",
-          "primary": true,
-          "size": 16960497,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.5.2272/Plan-5.5-build-2272.jar"
-        },
-        {
-          "filename": "PlanFabric-5.5-build-2272.jar",
-          "primary": true,
-          "size": 17477573,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.5.2272/PlanFabric-5.5-build-2272.jar"
-        }
-      ],
-      "name": "5.5 build 2272",
-      "prerelease": false,
-      "published_at": 1678002002,
-      "version": "5.5.2272"
     }
   ]
 }

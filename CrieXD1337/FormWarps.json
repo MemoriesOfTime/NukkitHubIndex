@@ -33,7 +33,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1757794479,
+  "updated_at": 1775715530,
   "versions": [
     {
       "changelog": "### Change log:\r\n- [X] Commands are now configured in `config.yml`.\r\n- [X] Added `properties` option to `config.yml`\r\n\r\nYou can report bugs on [issues page](https://github.com/CrieXD1337/FormWarps/issues).\r\n\r\n**v1.2.4**",
