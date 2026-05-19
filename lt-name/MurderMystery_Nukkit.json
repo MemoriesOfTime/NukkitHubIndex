@@ -33,12 +33,12 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/lt-name/MurderMystery_Nukkit",
-  "stars": 14,
+  "stars": 15,
   "summary": "MurderMystery game for Nukkit",
   "targets": [
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1703405552,
+  "updated_at": 1779154596,
   "versions": []
 }

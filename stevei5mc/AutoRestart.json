@@ -1,0 +1,280 @@
+{
+  "api_version": "1.0.14",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "stevei5mc",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1718251216,
+  "dependencies": [],
+  "description": "# **AutoRestart 自动重启**\n[![GitHub License](https://img.shields.io/github/license/stevei5mc/AutoRestart?style=plastic)](LICENSE)\n![GitHub top language](https://img.shields.io/github/languages/top/stevei5mc/AutoRestart?style=plastic)\n[![GitHub Release](https://img.shields.io/github/v/release/stevei5mc/AutoRestart?style=plastic&color=drak%20green)](https://github.com/stevei5mc/AutoRestart/releases)  \n![GitHub Repo stars](https://img.shields.io/github/stars/stevei5mc/AutoRestart?style=plastic)\n![GitHub forks](https://img.shields.io/github/forks/stevei5mc/AutoRestart?style=plastic)\n![GitHub issues](https://img.shields.io/github/issues/stevei5mc/AutoRestart?style=plastic&color=linkGreen)\n![GitHub pull requests](https://img.shields.io/github/issues-pr/stevei5mc/AutoRestart?style=plastic)\n## **插件介绍**\n### **功能介绍**\n- [x] **多语言（根据玩家客户端的语言进行匹配）**\n- [x] **播放音效提醒玩家（暂时只支持mc原有的）**\n- [x] **取消自动重启任务**\n- [x] **暂停任务**\n### **任务类型**\n- [x] **自动重启**\n- [x] **手动重启（手动重启的时间为配置文件中的提示时间）**\n- [x] **服务器无人时自动重启**\n- [x] **投票重启**\n- [x] **定时重启**\n### **命令与权限**\n<table>\n    <tr align=\"center\" valign=\"center\">\n        <th>命令</th><th>权限节点</th><th>命令/权限介绍</th><th>权限归属</th>\n    </tr>\n    <tr>\n        <td>/autorestart</td><td>autorestart.admin</td><td>主命令、打开GUI</td><td rowspan=\"5\" align=\"center\" valign=\"center\">OP</td>\n    </tr>\n    <tr>\n        <td>/autorestart reload</td><td>autorestart.admin.reload</td><td>重载配置文件</td>\n    </tr>\n    <tr>\n        <td>/autorestart cancel</td><td>autorestart.admin.cancel</td><td>取消重启任务</td>\n    </tr>\n    <tr>\n      <td>/autorestart pause</td><td>autorestart.admin.pause</td><td>暂停/继续运行重启任务</td>\n    </tr>\n    <tr>\n      <td>/autorestart restart [任务类型] (时间单位) (时间)</td><td>autorestart.admin.restart</td><td>手动重启服务器</td>\n    </tr>\n    <tr>\n      <td>/voterestart</td><td rowspan=\"5\">autorestart.user.vote</td><td>主命令、打开GUI</td><td rowspan=\"5\" align=\"center\" valign=\"center\">player</td>\n    </tr>\n    <tr>\n      <td>/voterestart initiate</td><td>发起投票</td>\n    </tr>\n    <tr>\n      <td>/voterestart vote approval</td><td>投出赞成票</td>\n    </tr>\n    <tr>\n      <td>/voterestart vote oppose</td><td>投出反对票</td>\n    </tr>\n    <tr>\n      <td>/voterestart vote abstention</td><td>投出弃权票</td>\n    </tr>\n    <tr>\n      <td>/voterestart vote veto</td><td>autorestart.admin.vote.veto</td><td>使用一票否决</td><td rowspan=\"3\" align=\"center\" valign=\"center\">OP</td>\n    </tr>\n    <tr>\n      <td></td><td>autorestart.admin.vote.force</td><td>在调试模式中强制发起投票<br>该功能方便开发而设立的(需开启debug模式)</td>\n    </tr>\n    <tr>\n      <td></td><td>autorestart.admin.reload</td><td>在线修改配置文件<br>注： 跟重载配置文件的权限相同但无相关命令</td>\n    </tr>\n</table>\n\n#### **命令参数讲解**\n- **[ ]  内的参数必填**\n- **（ ） 内的参数选填**\n##### **任务类型**\n- `manual` **手动重启**\n- `no-players` **无人时重启**\n- `scheduled` **定时重启**\n##### **时间单位**\n- `hour` **小时**\n- `minutes` **分钟**\n- `seconds` **秒**\n\n### **配置文件介绍**\n<details>\n<summary>config.yml</summary>\n\n```yml\n# 配置文件版本（勿动!!!）\nversion: 12\n# 默认语言\ndefault_language: zh_CN\n# 重启时间(分钟 min)\nrestart_time: 180\n# 提示时间(秒 s)\npre_restart_tip_time: 30\n#  是否在重启前把玩家踢出\nkick_player: true\n# 一些显示的设置\n# 显示title(包括subtitle)\nshow_title: true\n# 底部显示(在物品栏上方)\nshow_tip: true\n# 是否播放音效\nplay_sound: true\nsound:\n  name: \"random.toast\"\n  volume: 1.0\n  pitch: 0.5\n# 重启前执行的命令(&con为控制台执行 @p 代表玩家名)\nruncommand: true\ncommands:\n  global:\n    # 全局性的命令，需要在关服前执行的命令（注意，如果需要每一名玩家都执行命令的请在 player 的命令配置中填写）\n    - \"list\"\n    - \"status\"\n  player:\n    # 为每一名玩家执行的命令\n    # &con为控制台执行 @p代表玩家名 ( 只有为每一名玩家都执行的命令 @p 与 &con 才会生效 )\n    - \"help\"\n    - \"say hello @p&con\"\n# 发起重启投票的最低人数（最低只能为3）\nvote_start_player: 3\n# 投票的时间限制（最高只能为5 (分钟 min)）\nvote_time: 5\n# 调试模式\ndebug: false\n# 消息前缀\nmessage_prefix: \"§l§bAutoRestart §r§7>> \"\n# 本地化语言文件（开启后语言文件才会保存至插件对应文件及其会使用保存至插件文件夹的语言文件）\nlocal_language_flies: false\n# 显示投票状态\nprompt_voting_status: true\n# 显示投票状态的类型\n# 0 = ActionBar，1 = tip，2 = popup\nprompt_type: 0\n# 忽略剩余时间，启用后当赞成票数达到要求不需要等到投票结束就执行相关功能\nignore_vote_remainder_time: false\n# 定时提醒服务器执行的剩余时间\n## 是否启用\nenable_reminder_timer: true\n## 广播周期 （单位：分钟）\nbroadcast_restart_reminder_cycle: 30\n```\n\n</details>\n\n### **支持的语言**\n- **顺序按照支持的顺序排序**\n- [x] zh_CN   中文(简体)\n- [x] zh_TW   中文(繁體)\n- [x] en_US   English (United States)\n\n### **变量信息**\n- **对接Tips的变量信息**\n\n|变量|介绍|\n|:-:|:-:|\n|{restart-remainder}|获取重启任务的剩余时间|\n|{vote-data}|获取投票重启的数据|\n|{vote-remainder}|获取投票重启任务的剩余时间|\n\n## **使用方法**\n|步骤|说明|\n|:-:|:-|\n|1|准备好相关的启动脚本并放置在服务端的根目录下 **（一般情况下启动脚本是放置在服务端的根目录下）** 并调整好启动脚本的配置 **(如果你拥有并使用相关的启动脚本则无视这一步骤)**|\n|2|**将本插件放进`plugins`文件夹，并确保安装前置插件[MemoriesOfTime-GameCore](https://motci.cn/job/GameCore/)后启动服务器** <br> 安装前置插件[Tips](https://motci.cn/job/Tips/)对接的变量生效（这是可选的）|\n|3|如果不使用默认配置则修改好配置文件后重启服务器让新的配置生效（由于自动重启任务的配置读取是在服务器启动阶段进行的，所以无法通过重载配置文件的操作让新的配置完全生效只能通过重启服务器来让新的配置生效）|\n### **注意事项**\n1. **自动重启还需要脚本的配合才能实现，相关脚本会在 [Github Actions](https://github.com/stevei5mc/NewTipsVariables/actions) 中编译完成后会一并给出，也可以到对应 [GITHUB 仓库](https://github.com/stevei5mc/McStartServer) 中获取，[Releases](https://github.com/stevei5mc/AutoRestart/releases) 界面也可以获取得到相关脚本，但只会在版本发布后才会有相关脚本( Windows用`.bat`后缀的脚本，Linux请用`.sh`后缀的脚本，另外每种系统的脚本都有两种，建议根据实际需求选用 )，如果你已经拥有了相关脚本则可以忽略这一点**\n2. **本插件会受 `TPS` 的影响可能会导致跟时间相关的数据计算不准确！**\n3. **在使用时请不要随意改动语言文件或配置文件的版本号，否则所带来的后果一切自负！！！！！！**\n4. **默认情况下使用的语言文件为内置的语言文件，如果有修改语言文件的需求请将 `local_language_flies` 的 `false` 改为 `true`**\n\n### **脚本使用说明**\n- **此内容使用于配套的启动脚本，可配置项已在下方列出**\n- **如果你没有相关知识，请不要修改可配置项以外的地方**\n- **可配置项是在`=`后面的，例如`jvm_ram_xms=\"512M\"`的`512M`就为可配置项, 注：`\"\"`可加可不加，如果无法运行可尝试加上`\"\"`**\n\n<details>\n<summary>Windows</summary>\n\n```bat\n::设置用于启动的java版本 (默认填 java，当然你也可以填java的安装路径)\nset java_version=java\n::服务器名提示\nset server_name=test\n::设置最小内存\nset ram_Xms=512m\n::设置最大内存\nset ram_Xmx=1024m\n::设置开服核心名(开服核心名不用加.jar的后缀名)\nset server_jar_name=server\n::设置重启等待时间\nset restart_time=20\n```\n</details>\n\n<details>\n<summary>Linux</summary>\n\n```sh\nReStart_Time=5s  #等待多少秒后重启要加时间单位\njvm_ram_xms=\"512M\"  #设置最小内存\njvm_ram_xmx=\"1024M\"  #设置最大内存\njar_name=\"server.jar\"  #开服核心的名字记得加.jar后缀名\nserver_name=\"testmc\"  #服务名(方便维护用的)，比如说是生存服就将testmc改为生存服\n```\n</details>\n\n## **效果预览**\n|![1](https://raw.githubusercontent.com/stevei5mc/AutoRestart/master/docs/image/1.jpg)|![2](https://raw.githubusercontent.com/stevei5mc/AutoRestart/master/docs/image/2.jpg)|![3](https://raw.githubusercontent.com/stevei5mc/AutoRestart/master/docs/image/3.jpg)|\n|-|-|-|\n|![4](https://raw.githubusercontent.com/stevei5mc/AutoRestart/master/docs/image/4.jpg)|![5](https://raw.githubusercontent.com/stevei5mc/AutoRestart/master/docs/image/5.jpg)|![6](https://raw.githubusercontent.com/stevei5mc/AutoRestart/master/docs/image/6.jpg)|\n|![7](https://raw.githubusercontent.com/stevei5mc/AutoRestart/master/docs/image/7.jpg)|![8](https://raw.githubusercontent.com/stevei5mc/AutoRestart/master/docs/image/8.jpg)|![9](https://raw.githubusercontent.com/stevei5mc/AutoRestart/master/docs/image/9.jpg)|\n|![10](https://raw.githubusercontent.com/stevei5mc/AutoRestart/master/docs/image/10.jpg)|![11](https://raw.githubusercontent.com/stevei5mc/AutoRestart/master/docs/image/11.jpg)||\n\n## **开发文档**\n- **请在[Releases](https://github.com/stevei5mc/AutoRestart/releases)界面下载`-javadoc.jar`结尾的文件解压后点击`index.html`获取相关文档**\n- [![](https://jitpack.io/v/stevei5mc/AutoRestart.svg)](https://jitpack.io/#stevei5mc/AutoRestart/1.0.1)\n\n<details>\n<summary>Maven</summary>\n\n```xml\n<repository>\n\t<id>jitpack.io</id>\n\t<url>https://jitpack.io</url>\n</repository>\n```\n```xml\n<dependency>\n\t<groupId>com.github.stevei5mc</groupId>\n\t<artifactId>AutoRestart</artifactId>\n\t<version>1.0.1</version>\n</dependency>\n```\n\n</details>\n\n<details>\n<summary>Gradle</summary>\n\n- gradle.kts\n\n```kts\n  maven(\"https://jitpack.io\")\n```\n\n```kts\n  compileOnly(\"com.github.stevei5mc:AutoRestart:1.0.1\")\n```\n\n</details>",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-05-19",
+      "description": "",
+      "title": "1",
+      "url": "https://raw.githubusercontent.com/stevei5mc/AutoRestart/master/docs/image/1.jpg"
+    },
+    {
+      "created": "2026-05-19",
+      "description": "",
+      "title": "2",
+      "url": "https://raw.githubusercontent.com/stevei5mc/AutoRestart/master/docs/image/2.jpg"
+    },
+    {
+      "created": "2026-05-19",
+      "description": "",
+      "title": "3",
+      "url": "https://raw.githubusercontent.com/stevei5mc/AutoRestart/master/docs/image/3.jpg"
+    },
+    {
+      "created": "2026-05-19",
+      "description": "",
+      "title": "4",
+      "url": "https://raw.githubusercontent.com/stevei5mc/AutoRestart/master/docs/image/4.jpg"
+    },
+    {
+      "created": "2026-05-19",
+      "description": "",
+      "title": "5",
+      "url": "https://raw.githubusercontent.com/stevei5mc/AutoRestart/master/docs/image/5.jpg"
+    },
+    {
+      "created": "2026-05-19",
+      "description": "",
+      "title": "6",
+      "url": "https://raw.githubusercontent.com/stevei5mc/AutoRestart/master/docs/image/6.jpg"
+    },
+    {
+      "created": "2026-05-19",
+      "description": "",
+      "title": "7",
+      "url": "https://raw.githubusercontent.com/stevei5mc/AutoRestart/master/docs/image/7.jpg"
+    },
+    {
+      "created": "2026-05-19",
+      "description": "",
+      "title": "8",
+      "url": "https://raw.githubusercontent.com/stevei5mc/AutoRestart/master/docs/image/8.jpg"
+    },
+    {
+      "created": "2026-05-19",
+      "description": "",
+      "title": "9",
+      "url": "https://raw.githubusercontent.com/stevei5mc/AutoRestart/master/docs/image/9.jpg"
+    },
+    {
+      "created": "2026-05-19",
+      "description": "",
+      "title": "10",
+      "url": "https://raw.githubusercontent.com/stevei5mc/AutoRestart/master/docs/image/10.jpg"
+    },
+    {
+      "created": "2026-05-19",
+      "description": "",
+      "title": "11",
+      "url": "https://raw.githubusercontent.com/stevei5mc/AutoRestart/master/docs/image/11.jpg"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/82391055?v=4",
+  "id": "stevei5mc/AutoRestart",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "AutoRestart",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/stevei5mc/AutoRestart",
+  "stars": 0,
+  "summary": "",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1776229911,
+  "versions": [
+    {
+      "changelog": "# **1.0.1**\n---\n## **注意事项**\n1. **请不要随意修改语言文件的版本号，若随意修改语言文件的版本号可能导致更新检测功能出现异常，届时后果自负！**\n2. **从版本 `1.0.0-beta5` 起，配置文件的版本号存异常时重置配置文件前生成备份文件，但在使用时还是不要随意修改配置文件的版本号**\n3. **从版本 `1.0.1` 起，对语言文件的更新机制改成无损更新，不会对已有的内容进行改动（如果某项语言文本被移除会自动从语言文件中自动删除）**\n4. **从版本 `1.0.1` 起，如果语言文件的版本号出现异常会对其进行重置并在重置前生成备份**\n---\n## **更新 / 使用 建议**\n1. **如果没有对语言文件有修改内容的需求建议使用插件内置的语言文件**\n---\n## **更新内容**\n1. 调整播放音效的代码 < [be1b786](https://github.com/stevei5mc/AutoRestart/commit/be1b7863067cef689dd45fa2c07addb07a837232) >\n2. 添加在线修改配置文件的功能 < [c40f08d](https://github.com/stevei5mc/AutoRestart/commit/c40f08d42b15a075a67a1adad934dd98c92530bc) [590757c](https://github.com/stevei5mc/AutoRestart/commit/590757cd75483d11f66c8fa1fcaaca7914d67a33) >\n3. 添加对版本号异常的语言文件生成备份文件的功能 < [2a3a5e1](https://github.com/stevei5mc/AutoRestart/commit/2a3a5e1541e9d4b6d73be2f8356ca8b081d2fc93) >\n4. 将对异常版本号的语言文件进行重置改为不受自动更新语言文件的配置影响\n5. 将语言文件的更新改为无损更新，不会对已经存在的内容进行覆盖，只会添加新内容和移除不再使用的语言文本\n6. 调整部分文案和代码\n7. 对部分配置项进行重命名 (会自动迁移原始设置) < [b50c2d2](https://github.com/stevei5mc/AutoRestart/commit/b50c2d2c9cfe0139846310efc940feceef7f1b11) >\n   - tips_time --> pre_restart_tip_time\n   - ignore_remainder_time --> ignore_vote_remainder_time\n8. 补全一些缺失的文案 < [bfcbca7](https://github.com/stevei5mc/AutoRestart/commit/bfcbca726a8268fe5266f102cc6d0ccc9e3a8866) >\n9. 增加定时播报服务器离执行重启的剩余时间的功能\n10. 移除自动更新语言文件的配置项（Commit信息是打错了的） < [b62dee2](https://github.com/stevei5mc/AutoRestart/commit/b62dee2163b083f72f8181fb9dc3d1f3deb7db39) >\n\n### **文件版本号**\n|文件类型|旧版本号|新版本号|\n|:-:|:-:|:-:|\n|配置文件|9|12|\n|语言文件|4|7|",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoRestart-1.0.1-javadoc.jar",
+          "primary": true,
+          "size": 168815,
+          "url": "https://github.com/stevei5mc/AutoRestart/releases/download/1.0.1/AutoRestart-1.0.1-javadoc.jar"
+        },
+        {
+          "filename": "AutoRestart-1.0.1.jar",
+          "primary": true,
+          "size": 63779,
+          "url": "https://github.com/stevei5mc/AutoRestart/releases/download/1.0.1/AutoRestart-1.0.1.jar"
+        }
+      ],
+      "name": "1.0.1",
+      "prerelease": false,
+      "published_at": 1754795115,
+      "version": "1.0.1"
+    },
+    {
+      "changelog": "# **1.0.0**\n---\n## **注意事项**\n1. **请不要随意修改语言文件的版本号，因为语言文件的更新检测是根据版本号进行的，所以随意修改版本号的后果自负**\n2. **从版本 `1.0.0-beta5` 起配置文件的版本号存异常时重置配置文件前生成备份文件，但在使用时还是不要随意修改配置文件的版本号**\n3. **该版本（`1.0.0`）为正式版本**\n---\n## **更新（使用）建议**\n1. **如果没有对语言文件有修改内容的需求建议使用插件内置的语言文件**\n2. **如果在使用外置的语言文件在更新内容时建议采用合适自身的方式进行更新**\n---\n## **更新内容**\n- **这里简化了beta版本的更新记录，如果想要查看详细的更新记录请自行查看beta版本的更新记录**\n1. 支持多语言（根据玩家客户端的语言进行匹配）< [ade7b94](https://github.com/stevei5mc/AutoRestart/commit/ade7b9407f91ff6edcb90e7f0bfd70c7e6f06b09) [50b45d3](https://github.com/stevei5mc/AutoRestart/commit/50b45d3b50b7881f04c8993e26ba7c00e34ae89a) >\n2. 支持播放音效提醒玩家（暂时只支持mc原有的）< [2656c48](https://github.com/stevei5mc/AutoRestart/commit/2656c485f4026c388c95f02b089b2d75f828aa31) [9efcb14](https://github.com/stevei5mc/AutoRestart/commit/9efcb145d8b484cdd7d2e156e0c56680ea5c0597) [7c74c0a](https://github.com/stevei5mc/AutoRestart/commit/7c74c0a034332d93c3a3d828f7039f466dc06e19)>\n3. 支持取消自动重启任务 < [a6e2e16](https://github.com/stevei5mc/AutoRestart/commit/a6e2e164c5233167d7a885472cff85c9b2e71987) >\n4. 支持手动运行重启任务（手动重启需要的时间为配置文件中的提示时间）< [450fb30](https://github.com/stevei5mc/AutoRestart/commit/450fb304306304a0909ab6535ae8af4eef0993db) >\n5. 添加重前执行命令的功能 < [16c8331](https://github.com/stevei5mc/AutoRestart/commit/16c8331b406f06c52df873a5dafdcaf7f6a89618) >\n6. 添加确认界面 < [390940b](https://github.com/stevei5mc/AutoRestart/commit/390940b9b2368b11344c54931c1929adc5d73162) >\n7. 修复缺秒的问题 < [2e37de4](https://github.com/stevei5mc/AutoRestart/commit/2e37de437a58c4efd9e1682921578a6ab63dba12) >\n8. 添加服务器没有在线玩家时自动重启的任务选项 < [78d363c](https://github.com/stevei5mc/AutoRestart/commit/78d363cbd54c3b8052eff864b51b1ac684c091b0) >\n9. 对接变量到Tips < [36b03d8](https://github.com/stevei5mc/AutoRestart/commit/36b03d81abaec565b186bf7d7cac4ebd1df55752)>\n10. 添加投票重启的功能 < [d729b53](https://github.com/stevei5mc/AutoRestart/commit/d729b53579ee02f300e5dccc5b3b46c5d357bd16) >\n11. 支持配置文件自动更新\n12. 添加调试模式\n13. 细分时间类型和任务类型 < [1d61151](https://github.com/stevei5mc/AutoRestart/commit/1d611516bd672951090e8e074746617c2f40c8ea) >\n14. 添加暂停任务的功能 < [695f3d9](https://github.com/stevei5mc/AutoRestart/commit/695f3d956113d73eb827a974f9fe1da2314d3c82) >\n15. 添加了消息的统一前缀 < [2f90183](https://github.com/stevei5mc/AutoRestart/commit/2f9018372e4f39b9ef5c1404e4d1894521265029) [d74b47d](https://github.com/stevei5mc/AutoRestart/commit/d74b47d5dd385b8680a9757627f1078e259e1522) >\n16. 添加了消息的统一前缀 < [2f90183](https://github.com/stevei5mc/AutoRestart/commit/2f9018372e4f39b9ef5c1404e4d1894521265029) [d74b47d](https://github.com/stevei5mc/AutoRestart/commit/d74b47d5dd385b8680a9757627f1078e259e1522) >\n17. 为语言文件添加版本号 < [40f2f14](https://github.com/stevei5mc/AutoRestart/commit/40f2f148ff867b3d0c13826d654b90ef5420799f) >\n18. 添加自动更新语言文件的功能\n19. 添加重置配置文件时会生成备份文件的功能 < [c13404e](https://github.com/stevei5mc/AutoRestart/commit/c13404e97378df8d0bf137795d482ac19631f940) >\n20. 添加可以使用内置或外置语言文件的功能 < [5dec902](https://github.com/stevei5mc/AutoRestart/commit/5dec902a7ad35fe0a6a1c1a66044bec50e34fe0b) >\n21. 自动重启任务只能运行一次 < [16c9aaf](https://github.com/stevei5mc/AutoRestart/commit/16c9aafa05a80927f7e9ca9caff84f5aa89c63f4) >\n22. 增加变量 {vote-data} < [7715517](https://github.com/stevei5mc/AutoRestart/commit/771551744040d078c7da574ec09cfe7ecfa5d5b8) >\n23. 为前置插件增加多一个下载链接的提醒 < [521026b](https://github.com/stevei5mc/AutoRestart/commit/521026b4c02bd5dca8d637f186a3306cc93a3beb) >",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoRestart-1.0.0-javadoc.jar",
+          "primary": true,
+          "size": 163908,
+          "url": "https://github.com/stevei5mc/AutoRestart/releases/download/1.0.0/AutoRestart-1.0.0-javadoc.jar"
+        },
+        {
+          "filename": "AutoRestart-1.0.0.jar",
+          "primary": true,
+          "size": 53764,
+          "url": "https://github.com/stevei5mc/AutoRestart/releases/download/1.0.0/AutoRestart-1.0.0.jar"
+        }
+      ],
+      "name": "1.0.0",
+      "prerelease": false,
+      "published_at": 1748499542,
+      "version": "1.0.0"
+    },
+    {
+      "changelog": "# **1.0.0-beta7**\r\n---\r\n## **注意事项**\r\n1. **请不要随意修改语言文件的版本号，因为语言文件的更新检测是根据版本号进行的，所以随意修改版本号的后果自负**\r\n2. **从版本 `1.0.0-beta5` 起配置文件的版本号存异常时重置配置文件前生成备份文件，但在使用时还是不要随意修改配置文件的版本号**\r\n3. **预计在该版本发布后没有问题将会发布正式版本**\r\n---\r\n## **更新（使用）建议**\r\n1. **如果没有对语言文件有修改内容的需求建议使用插件内置的语言文件**\r\n2. **如果在使用外置的语言文件在更新内容时建议采用合适自身的方式进行更新**\r\n---\r\n## **更新内容**\r\n1. 为前置插件增加多一个下载链接的提醒 < [521026b](https://github.com/stevei5mc/AutoRestart/commit/521026b4c02bd5dca8d637f186a3306cc93a3beb) >\r\n2. 将Tips的依赖的版本更新至2.2.1 < [3c5720c](https://github.com/stevei5mc/AutoRestart/commit/3c5720ce76cc86c2460b57c43ce0d7c52c95cd28) >\r\n3. 投票重启任务结束后清理掉相关数据 < [7a802c6](https://github.com/stevei5mc/AutoRestart/commit/7a802c69d5d3bdc60cf7e6b68b07c74e432b264d) >\r\n4. 添加if判断防止一些代码在不该执行的时候被执行 < [aa115e0](https://github.com/stevei5mc/AutoRestart/commit/aa115e07130859f28c5919b7c91d6d56f245ca45) >\r\n5. 增加变量 {vote-remainder} < [3423733](https://github.com/stevei5mc/AutoRestart/commit/34237339d509be2714dd9d18ce057ecdde955665) >\r\n6. 对剩余时间的显示方式进行调整 < [85bf72d](https://github.com/stevei5mc/AutoRestart/commit/85bf72db6b3f9457702a0a3662d838266200e838) >\r\n7. 对需要的赞成票的计算代码进行调整 **（调整后赞成票是取在线人数的3分之2，而不是在线人数的70%）** < [8016d36](https://github.com/stevei5mc/AutoRestart/commit/8016d36efd7607a8ba359ff616d34a5e7af9c0d2) >\r\n8. 添加当赞成票数达到要求时不需要等到时间结束就提前执行相对应的功能 **（需要在配置文件中启用）** < [8ce0461](https://github.com/stevei5mc/AutoRestart/commit/8ce046103af8c1f95c4a43f9f841bc6fd2f89595) >\r\n9. 将重启前执行的命令拆分为global和player两种类型 < [580d091](https://github.com/stevei5mc/AutoRestart/commit/580d0913802658a944b8a8041a9af664962df359) [ebcb964](https://github.com/stevei5mc/AutoRestart/commit/ebcb964b91fd8a9afb980292e0715dd17ef70e23) [2ccc54f](https://github.com/stevei5mc/AutoRestart/commit/2ccc54f183225089f2864d4e20b643ecde8e9c29) >\r\n10. 调整部分代码 < [cbbe061](https://github.com/stevei5mc/AutoRestart/commit/cbbe061840d94e8d98ea2754210fce27c52dcee5) >\r\n11. 将任务类的继承由 Task 改为 PluginTask < [b3609a8](https://github.com/stevei5mc/AutoRestart/commit/b3609a855b144003f358eed1262d5742cba880a2) >\r\n\r\n### **文件版本号**\r\n- **配置文件版本号 `7 -> 9`**",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoRestart-1.0.0-beta7-javadoc.jar",
+          "primary": true,
+          "size": 164305,
+          "url": "https://github.com/stevei5mc/AutoRestart/releases/download/1.0.0-beta7/AutoRestart-1.0.0-beta7-javadoc.jar"
+        },
+        {
+          "filename": "AutoRestart-1.0.0-beta7.jar",
+          "primary": true,
+          "size": 53767,
+          "url": "https://github.com/stevei5mc/AutoRestart/releases/download/1.0.0-beta7/AutoRestart-1.0.0-beta7.jar"
+        }
+      ],
+      "name": "1.0.0-beta7",
+      "prerelease": false,
+      "published_at": 1744884878,
+      "version": "1.0.0-beta7"
+    },
+    {
+      "changelog": "# **1.0.0-beta6**\r\n---\r\n## **注意事项**\r\n1. **预计在该版本发布后没有问题将会发布正式版本**\r\n2. **请不要随意修改语言文件的版本号，因为语言文件的更新检测是根据版本号进行的，所以随意修改版本号的后果自负**\r\n3. **从该版本起配置文件的版本号存异常时重置配置文件前生成备份文件，但在使用时还是不要随意修改配置文件的版本号**\r\n---\r\n## **更新建议**\r\n1. **使用外置语言文件在更新时建议采用合适自身的更新方式来进行更新，如果没有对语言文件进行修改建议使用内置的语言文件**\r\n---\r\n## **更新内容**\r\n1. 修改插件的版权提醒文案 <[98c911b](https://github.com/stevei5mc/AutoRestart/commit/98c911beb4642b654f13377241eae03578e2350f)>\r\n2. 调整if判断 <[120fa18](https://github.com/stevei5mc/AutoRestart/commit/120fa180e79933157d027bcfb16d19e025f92723)>\r\n3. 调整对接Tips的变量在特定的条件下的显示内容\r\n4. 调整部分方法所在的位置 <[e7e4023](https://github.com/stevei5mc/AutoRestart/commit/e7e4023556551a432f3824e115aa88a88284e6c2)>\r\n5. 迁移自动更新配置文件的相关代码 <[e141ebf](https://github.com/stevei5mc/AutoRestart/commit/e141ebff08dca95227a54c23754c9fbb6780fd16)>\r\n6. 调整部分代码 <[7715517](https://github.com/stevei5mc/AutoRestart/commit/771551744040d078c7da574ec09cfe7ecfa5d5b8)>\r\n7. 增加变量 {vote-data}\r\n8. 修复[7715517](https://github.com/stevei5mc/AutoRestart/commit/771551744040d078c7da574ec09cfe7ecfa5d5b8) <[ed484e0](https://github.com/stevei5mc/AutoRestart/commit/ed484e0487682eb9ef2a57cc93ee9c9a7d9a1869)>\r\n9. 修复[e141ebf](https://github.com/stevei5mc/AutoRestart/commit/e141ebff08dca95227a54c23754c9fbb6780fd16)(没在提交记录中注明)\r\n10. 移除无效导入 <[090e762](https://github.com/stevei5mc/AutoRestart/commit/090e762587227d0182cec1331738c762281ed5e2)>\r\n\r\n### **文件版本号**\r\n- **配置文件版本号 `5 -> 7`**\r\n- **语言文件版本号 `3 -> 4`**",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoRestart-1.0.0-beta6-javadoc.jar",
+          "primary": true,
+          "size": 163631,
+          "url": "https://github.com/stevei5mc/AutoRestart/releases/download/1.0.0-beta6/AutoRestart-1.0.0-beta6-javadoc.jar"
+        },
+        {
+          "filename": "AutoRestart-1.0.0-beta6.jar",
+          "primary": true,
+          "size": 52852,
+          "url": "https://github.com/stevei5mc/AutoRestart/releases/download/1.0.0-beta6/AutoRestart-1.0.0-beta6.jar"
+        }
+      ],
+      "name": "1.0.0-beta6",
+      "prerelease": false,
+      "published_at": 1740837948,
+      "version": "1.0.0-beta6"
+    },
+    {
+      "changelog": "# **1.0.0-beta5**\r\n---\r\n## **注意事项**\r\n1. **从该版本起默认使用内置的语言文件，如需修改语言文件的内容请开启 `local_language_flies` 设置**\r\n2. **配置项 `auto_update_language_files` 需要谨慎开起，因为自动更新是采用覆盖试更新的。**\r\n3. **请不要随意修改语言文件的版本号，因为语言文件的更新检测是根据版本号进行的，所以随意修改版本号的后果自负**\r\n4. **从该版本起配置文件的版本号存异常时重置配置文件前生成备份文件，但在使用时还是不要随意修改配置文件的版本号**\r\n---\r\n## **更新建议**\r\n1. **使用外置语言文件在更新时建议采用合适的更新方式来进行**\r\n---\r\n## **更新内容**\r\n1. 添加了消息的统一前缀 <[2f90183](https://github.com/stevei5mc/AutoRestart/commit/2f9018372e4f39b9ef5c1404e4d1894521265029) [d74b47d](https://github.com/stevei5mc/AutoRestart/commit/d74b47d5dd385b8680a9757627f1078e259e1522)>\r\n2. 修复Admin UI的时间提示bug <[669c44f](https://github.com/stevei5mc/AutoRestart/commit/669c44f803061604edfd91c1a3758ca28a8a7986)>\r\n3. 将投票重启相关的代码移到单独的类 <[4a7eb7f](https://github.com/stevei5mc/AutoRestart/commit/4a7eb7fbdd1253dff3ee62fb80e7ea0592059c26)>\r\n4. 修复投票的票数可能会被篡改的bug\r\n5. 修复 [4a7eb7f](https://github.com/stevei5mc/AutoRestart/commit/4a7eb7fbdd1253dff3ee62fb80e7ea0592059c26) 存在的bug <[99a159e](https://github.com/stevei5mc/AutoRestart/commit/99a159eda733982b848ca48ba7a33e859450174d)>\r\n    - 无法记录已投票的玩家\r\n    - 无法在后台取消掉投票重启任务(使用一票否决权)的bug\r\n    - 无法正确获取需要投赞成票人数的bug\r\n6. 修复 [2f90183](https://github.com/stevei5mc/AutoRestart/commit/2f9018372e4f39b9ef5c1404e4d1894521265029) 导致部分文案无法正常显示的bug \r\n7. 移除无用代码 <[21ddd62](https://github.com/stevei5mc/AutoRestart/commit/21ddd628b3d3e318b5656ef8b5fac360084e9ac5)>\r\n8. 调整跟投票重启相关的if判断\r\n9. 增加Javadoc注释\r\n10. 调整获取信息的方式（需要使用相关的get方法）<[f537a52](https://github.com/stevei5mc/AutoRestart/commit/f537a52bcc8cab6152b5ca8754a9eea38b8ef0be)>\r\n11. 为投票重启设置一个单独的任务类型\r\n12. 修改部分参数名\r\n13. 对import进行调整 <[927a2f2](https://github.com/stevei5mc/AutoRestart/commit/927a2f2c5d8347e27d3cedd190311bd320076b8b)>\r\n14. 增加Javadoc <[36f6e32](https://github.com/stevei5mc/AutoRestart/commit/36f6e320dd1308dbd487702c6f908083b4c77bad)>\r\n15. 调整部分代码 <[36f6e32](https://github.com/stevei5mc/AutoRestart/commit/36f6e320dd1308dbd487702c6f908083b4c77bad) [40f2f14](https://github.com/stevei5mc/AutoRestart/commit/40f2f148ff867b3d0c13826d654b90ef5420799f) [42e8db8](https://github.com/stevei5mc/AutoRestart/commit/42e8db8d8ed37c4047d036ae5e30a6eecaec9292) [988156e](https://github.com/stevei5mc/AutoRestart/commit/988156e3caf2c85fb228105ab0db8b7666f00a9e)>\r\n16. 将现有的定时重启改为自动重启 <[40f2f14](https://github.com/stevei5mc/AutoRestart/commit/40f2f148ff867b3d0c13826d654b90ef5420799f)>\r\n17. 为语言文件添加版本号\r\n18. 添加自动更新语言文件的功能\r\n19. 添加重置配置文件时会生成备份文件的功能 <[c13404e](https://github.com/stevei5mc/AutoRestart/commit/c13404e97378df8d0bf137795d482ac19631f940)>\r\n20. 优化重启任务的暂停功能 <[42e8db8](https://github.com/stevei5mc/AutoRestart/commit/42e8db8d8ed37c4047d036ae5e30a6eecaec9292)>\r\n21. 添加可以使用内置或外置语言文件的功能 <[5dec902](https://github.com/stevei5mc/AutoRestart/commit/5dec902a7ad35fe0a6a1c1a66044bec50e34fe0b)>\r\n22. 修改一些判断方便后续开发 <[026aa98](https://github.com/stevei5mc/AutoRestart/commit/026aa9803361930ac82284821261bc4d972180fa)>\r\n23. 将通知玩家参与投票的广播时间改为30秒\r\n24. 添加真正的定时重启功能 <[3ed9fff](https://github.com/stevei5mc/AutoRestart/commit/3ed9ffff0bd1da2f7c81410c1531d6239a2fea24)>\r\n25. 调整语言文件的更新检测逻辑\r\n26. 明确部分命令参数为可选参数 <[ea125f7](https://github.com/stevei5mc/AutoRestart/commit/ea125f7a4317b01465df6e1abc7964716c6389d4)>\r\n27. 自动重启任务只能运行一次 <[16c9aaf](https://github.com/stevei5mc/AutoRestart/commit/16c9aafa05a80927f7e9ca9caff84f5aa89c63f4)>",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoRestart-1.0.0-beta5-javadoc.jar",
+          "primary": true,
+          "size": 158933,
+          "url": "https://github.com/stevei5mc/AutoRestart/releases/download/1.0.0-beta5/AutoRestart-1.0.0-beta5-javadoc.jar"
+        },
+        {
+          "filename": "AutoRestart-1.0.0-beta5.jar",
+          "primary": true,
+          "size": 50360,
+          "url": "https://github.com/stevei5mc/AutoRestart/releases/download/1.0.0-beta5/AutoRestart-1.0.0-beta5.jar"
+        }
+      ],
+      "name": "1.0.0-beta5",
+      "prerelease": false,
+      "published_at": 1734434999,
+      "version": "1.0.0-beta5"
+    },
+    {
+      "changelog": "# **1.0.0-beta4**\r\n---\r\n## **注意事项**\r\n- **需要更新语言文件**\r\n- **从1.0.0-beta4起不需要手动更新配置文件**\r\n---\r\n## **更新建议**\r\n- **建议保存配置文件以备不时之需**\r\n---\r\n## **更新内容**\r\n1. 改动部分代码方便后续开发 <[d729b53](https://github.com/stevei5mc/AutoRestart/commit/d729b53579ee02f300e5dccc5b3b46c5d357bd16)>\r\n2. 添加投票重启的功能\r\n3. 支持配置文件自动更新\r\n4. 添加调试模式\r\n5. 细分时间类型和任务类型 <[1d61151](https://github.com/stevei5mc/AutoRestart/commit/1d611516bd672951090e8e074746617c2f40c8ea)>\r\n6. 修改文档 <[4de4a1a](https://github.com/stevei5mc/AutoRestart/commit/4de4a1a11f01571fc679abfb9fe213340826a03d)>\r\n7. 修复bug\r\n8. 修改部分代码方便后续开发 <[429af88](https://github.com/stevei5mc/AutoRestart/commit/429af88ae04007107f4dc4d84c50c461ae03fe54)>\r\n9. 修复一个bug\r\n10. 调整配置文件的更新机制 <[ebf61f8](https://github.com/stevei5mc/AutoRestart/commit/ebf61f8df6d78160df66692c7683527ca5861f0a)>\r\n11. 添加暂停任务的功能 <[695f3d9](https://github.com/stevei5mc/AutoRestart/commit/695f3d956113d73eb827a974f9fe1da2314d3c82)>\r\n12. 投票重启的发起者现在只能是玩家<[f5222d0](https://github.com/stevei5mc/AutoRestart/commit/f5222d0c57113a43701da4ed3f2aa29b61bd8f8a)>\r\n13. 投票重启的发起者默认投出赞成票\r\n14. 在重启任务暂停时无法发起投票\r\n15. 修复继续运行重启任务会有时间提示的bug\r\n16. 调整发起投票的需求判断的代码到runVoteTask方法中 <[efeaaa2](https://github.com/stevei5mc/AutoRestart/commit/efeaaa20b94777fdc5ada731d8465f169cf3869a)>\r\n17. 修复使用在服务端参与投票的bug\r\n18. 补全命令提示 <[858c54c](https://github.com/stevei5mc/AutoRestart/commit/858c54ca5ab38712d7969a6838a0e3b4e7010d7b)>\r\n19. 修复继续运行重启任务会有时间提示的bug <[53efbfb](https://github.com/stevei5mc/AutoRestart/commit/53efbfbd7125ab9495860aca8d89a7734715584f)>\r\n20. 移除掉一些在后台发送的消息 <[4a4b6e5](https://github.com/stevei5mc/AutoRestart/commit/4a4b6e51bc30f268f2a60cb03ef609c610c724b8)>\r\n21. 调整部分文案\r\n22. 调整命令相关的代码结构 <[034a4b3](https://github.com/stevei5mc/AutoRestart/commit/034a4b328e8399bed1ce551c08e046587dd7433a)>\r\n23. 修复投票重启任务可能导致服务器暂停重启任务失效的bug <[cef7ad3](https://github.com/stevei5mc/AutoRestart/commit/cef7ad3e8fb8d530b5d65aa1683f80492712e3a3)>\r\n24. 对文案的排版进行调整 <[33b2ac5](https://github.com/stevei5mc/AutoRestart/commit/33b2ac5a5b62531833683280801cff408b377865)>\r\n25. 修复错误的命令提示\r\n26. 修复[53efbfb](https://github.com/stevei5mc/AutoRestart/commit/53efbfbd7125ab9495860aca8d89a7734715584f)导致无法获取任务类型的bug\r\n27. 修复[33b2ac5](https://github.com/stevei5mc/AutoRestart/commit/33b2ac5a5b62531833683280801cff408b377865)编译失败的问题 <[5c121e1](https://github.com/stevei5mc/AutoRestart/commit/5c121e190716e590dc527bf044c95964248056da)>\r\n\r\n### **新增命令与权限**\r\n<table>\r\n    <tr align=\"center\" valign=\"center\">\r\n        <th>命令</th><th>权限节点</th><th>命令/权限介绍</th><th>权限归属</th>\r\n    </tr>\r\n    <tr>\r\n      <td>/autorestart pause</td><td>autorestart.admin.pause</td><td>暂停/继续运行重启任务</td><td>OP</td>\r\n    </tr>\r\n    <tr>\r\n      <td>/voterestart</td><td rowspan=\"5\">autorestart.user.vote</td><td>主命令、打开GUI</td><td rowspan=\"5\" align=\"center\" valign=\"center\">player</td>\r\n    </tr>\r\n    <tr>\r\n      <td>/voterestart initiate</td><td>发起投票</td>\r\n    </tr>\r\n    <tr>\r\n      <td>/voterestart vote approval</td><td>投出赞成票</td>\r\n    </tr>\r\n    <tr>\r\n      <td>/voterestart vote oppose</td><td>投出反对票</td>\r\n    </tr>\r\n    <tr>\r\n      <td>/voterestart vote abstention</td><td>投出弃权票</td>\r\n    </tr>\r\n    <tr>\r\n      <td>/voterestart vote veto</td><td>autorestart.admin.vote.veto</td><td>使用一票否决</td><td rowspan=\"2\" align=\"center\" valign=\"center\">OP</td>\r\n    </tr>\r\n    <tr>\r\n      <td></td><td>autorestart.admin.vote.force</td><td>在调试模式中强制发起投票<br>该功能方便开发而设立的(需开启debug模式)</td>\r\n    </tr>\r\n</table>",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoRestart-1.0.0-beta4.jar",
+          "primary": true,
+          "size": 44743,
+          "url": "https://github.com/stevei5mc/AutoRestart/releases/download/1.0.0-beta4/AutoRestart-1.0.0-beta4.jar"
+        }
+      ],
+      "name": "1.0.0-beta4",
+      "prerelease": false,
+      "published_at": 1729596864,
+      "version": "1.0.0-beta4"
+    },
+    {
+      "changelog": "# **1.0.0-beta3**\n---\n## **注意事项**\n- **需要更新语言文件**\n---\n## **更新内容**\n1. 对接变量到Tips <[36b03d8](https://github.com/stevei5mc/AutoRestart/commit/36b03d81abaec565b186bf7d7cac4ebd1df55752)>\n2. 改动变量加载的时间(基于第一条) <[0a6b6c9](https://github.com/stevei5mc/AutoRestart/commit/0a6b6c93511813dee04ca6e90e1ca200071daf82)>\n3. 修改变量的内容(基于第一条) <[6d9011b](https://github.com/stevei5mc/AutoRestart/commit/6d9011ba3d093c7c863c40988fdeb8e20b051325)>\n4. 调整确认窗口的文本 <[dc7a6f9](https://github.com/stevei5mc/AutoRestart/commit/dc7a6f9fb77ea149d3efd0d5d2c1641e02caf9ac)>\n5. 玩家不在线时不调用变量 <[6b40db](https://github.com/stevei5mc/AutoRestart/commit/6b40dbed407c1f62541c1e0f6a54ee30f96b5b61)>",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoRestart-1.0.0-beta3.jar",
+          "primary": true,
+          "size": 26262,
+          "url": "https://github.com/stevei5mc/AutoRestart/releases/download/1.0.0-beta3/AutoRestart-1.0.0-beta3.jar"
+        }
+      ],
+      "name": "1.0.0-beta3",
+      "prerelease": false,
+      "published_at": 1726030363,
+      "version": "1.0.0-beta3"
+    },
+    {
+      "changelog": "# **1.0.0-beta2**\n---\n## **注意事项**\n### **更新到beta2的用户加上下列内容可使用新功能**\n```yml\n#重启前执行的命令(&con为控制台执行 @p 代表玩家名)\nruncommand: true\ncommands:\n  - \"say hello world&con\"\n  - \"help\"\n  - \"say hello @p&con\"\n```\n### **可配置项**\n- **此内容使用于配套的启动脚本，可配置项已在下方列出**\n- **如果你没有相关知识，请不要修改可配置项以外的地方**\n- **可配置项是在`=`后面的，例如`jvm_ram_xms=\"512M\"`的`512M`就为可配置项, 注：`\"\"`可加可不加，如果无法运行可尝试加上`\"\"`**\n### **Windows**\n```bat\n::设置用于启动的java版本 (默认填 java，当然你也可以填java的安装路径)\nset java_version=java\n::服务器名提示\nset server_name=test\n::设置最小内存\nset ram_Xms=512m\n::设置最大内存\nset ram_Xmx=1024m\n::设置开服核心名(开服核心名不用加.jar的后缀名)\nset server_jar_name=server\n::设置重启等待时间\nset restart_time=20\n```\n### **Linux**\n\n```sh\nReStart_Time=5s  #等待多少秒后重启要加时间单位\njvm_ram_xms=\"512M\"  #设置最小内存\njvm_ram_xmx=\"1024M\"  #设置最大内存\njar_name=\"server.jar\"  #开服核心的名字记得加.jar后缀名\nserver_name=\"testmc\"  #服务名(方便维护用的)，比如说是生存服就将testmc改为生存服\n```\n```sh\nReStart_Time=20s  #等待多少秒后重启要加时间单位\njvm_ram_xms=\"512M\"  #设置最小内存\njvm_ram_xmx=\"1024M\"  #设置最大内存\njar_name=\"server.jar\"  #开服核心的名字记得加.jar后缀名\n```\n---\n## **更新内容**\n### **[16c8331](https://github.com/stevei5mc/AutoRestart/commit/16c8331b406f06c52df873a5dafdcaf7f6a89618)**\n1. 添加重前执行命令的功能\n### **[444ea15](https://github.com/stevei5mc/AutoRestart/commit/444ea154fa517417c887ffc56969f1d369e71e44)**\n1. 调整语言文件(将原来的.properties改为.yml格式)\n### **[37de1d](https://github.com/stevei5mc/AutoRestart/commit/37de1d7576cd0345bd2f8ccc58debe9f7a048a0d) [2fb0ce0](https://github.com/stevei5mc/AutoRestart/commit/2fb0ce056349f0a7d49b731bfced4f0acfb65ba3) [2dfb88b](https://github.com/stevei5mc/AutoRestart/commit/2dfb88ba24cf6a53c5f6293c4473ecff5bf713f3)**\n1. 添加确认界面\n### **[390940b](https://github.com/stevei5mc/AutoRestart/commit/390940b9b2368b11344c54931c1929adc5d73162)**\n1. 调整代码及注释\n### **[2e37de4](https://github.com/stevei5mc/AutoRestart/commit/2e37de437a58c4efd9e1682921578a6ab63dba12)**\n1. 修复缺秒的问题\n### **[da6951b](https://github.com/stevei5mc/AutoRestart/commit/da6951b5d5b0380009e851ad20943c1d4b213d90)**\n1. 对代码进行调整\n2. 修复一些问题\n### **[78d363c](https://github.com/stevei5mc/AutoRestart/commit/78d363cbd54c3b8052eff864b51b1ac684c091b0)**\n1. 添加服务器没有在线玩家时自动重启的任务选项\n### **[af0395a](https://github.com/stevei5mc/AutoRestart/commit/af0395a294aa9eae9c7fe9e5b15c3d4cf876a724) [5cd31d4](https://github.com/stevei5mc/AutoRestart/commit/5cd31d42ae2c9c6e88e47bb5866a82fc503af98d) [88d310a](https://github.com/stevei5mc/AutoRestart/commit/88d310a2b495e1c1b035193d45181c44ffe4d269) [0538ba8](https://github.com/stevei5mc/AutoRestart/commit/0538ba84f19b1cd31dd65924ed917c92b4095a64) [c7ecbb6](https://github.com/stevei5mc/AutoRestart/commit/c7ecbb69c0c70db4dd70297f7beb17b168fc5a33)**\n- 调整代码",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoRestart-1.0.0-beta2.jar",
+          "primary": true,
+          "size": 24913,
+          "url": "https://github.com/stevei5mc/AutoRestart/releases/download/1.0.0-beta2/AutoRestart-1.0.0-beta2.jar"
+        }
+      ],
+      "name": "1.0.0-beta2",
+      "prerelease": false,
+      "published_at": 1724042513,
+      "version": "1.0.0-beta2"
+    },
+    {
+      "changelog": "# **1.0.0-beta1**\n---\n## **注意事项**\n- **该版本目前还在beta测试阶段**\n---\n## **更新内容**\n- **该版本目前还在beta测试阶段，所以并没有什么可说的，就简单的介绍一下插件**\n\n### **功能介绍**\n1. **支持多语言（根据玩家客户端的语言进行匹配）**\n2. **支持播放音效提醒玩家（暂时只支持mc原有的）**\n3. **支持取消自动重启任务**\n4. **支持手动运行重启任务（手动重启的时间为配置文件中的提示时间）**\n### **命令与权限**\n|命令|权限节点|命令/权限介绍|默认权限|\n|:-:|:-:|:-:|:-:|\n|/autorestart|autorestart.admin|主命令|OP|\n|/autorestart reload|autorestart.admin.reload|重载配置文件|OP|\n|/autorestart cancel|autorestart.admin.cancel|取消重启任务|OP|\n|/autorestart restart|autorestart.admin.restart|手动重启|OP|",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoRestart-1.0.0-beta1.jar",
+          "primary": true,
+          "size": 21200,
+          "url": "https://github.com/stevei5mc/AutoRestart/releases/download/1.0.0-beta1/AutoRestart-1.0.0-beta1.jar"
+        }
+      ],
+      "name": "1.0.0-beta1",
+      "prerelease": false,
+      "published_at": 1721216085,
+      "version": "1.0.0-beta1"
+    }
+  ]
+}

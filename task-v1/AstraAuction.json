@@ -1,0 +1,98 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Taskov1ch",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1769969311,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "EconomyAPI",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "FakeInventories",
+      "version_range": ""
+    }
+  ],
+  "description": "<div align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/task-v1/AstraAuction/master/assets/logo.png\" alt=\"AstraAuction logo\" width=\"220\" />\n\n# 💫 AstraAuction β\n**Market (Auction) plugin for [Lumi](https://github.com/koshakminedev/lumi).**\n\n**EN** | **[RU](https://github.com/task-v1/AstraAuction/blob/master/README_ru.md)** | **[UA](https://github.com/task-v1/AstraAuction/blob/master/README_ua.md)** | **[JA](https://github.com/task-v1/AstraAuction/blob/master/README_ja.md)**\n\n</div>\n\n## Description 📖\nAstraAuction is a player-to-player marketplace plugin for [Lumi](https://github.com/koshakminedev/lumi).\nThe plugin preserves full item NBT, stores data in a database, and provides a clean and convenient GUI with search, sorting, and lot management.\n\n## Features 🌟\n- **NBT preservation** — items are sold exactly as they were owned by the seller.\n- **Asynchronous database** — all queries run in the background without blocking the main thread.\n- **Transaction fee** — configurable tax percentage.\n- **Return storage (claims)** — unsold lots and payments for offline sellers are stored until expiration.\n- **GUI market** — buying, confirmation dialogs, and page navigation.\n- **Sorting and search** — sort by price and search by item name.\n- **Manage your lots** — view and cancel active lots via GUI.\n- **Flexible database support** — SQLite / MySQL.\n- **Localization** — built-in support for `eng`, `rus`, `ukr`, `jpn`, with the ability to add custom languages.\n\n## Screenshots 🖼️\n| **Main market page** | **My lots page** |\n|---|---|\n| ![](https://raw.githubusercontent.com/task-v1/AstraAuction/master/assets/base.jpg) | ![](https://raw.githubusercontent.com/task-v1/AstraAuction/master/assets/my_lots.jpg) |\n\n| **Return storage page** | **Purchase confirmation page** |\n|---|---|\n| ![](https://raw.githubusercontent.com/task-v1/AstraAuction/master/assets/claims.jpg) | ![](https://raw.githubusercontent.com/task-v1/AstraAuction/master/assets/confirm.jpg) |\n\n## Commands ♿\n| **Command** | **Description** | **Permission** |\n|---|---|---|\n| `/ah` | Open the market | `astraauction.use` |\n| `/ah open [page: int]` | Open the market at a specific page | `astraauction.use` |\n| `/ah sell <price: int>` | List the item in hand | `astraauction.use` |\n| `/ah view <nickname: str> [page: int]` | View lots of a specific player | `astraauction.use` |\n| `/ah search <query: str> [page: int]` | Search lots by name | `astraauction.use` |\n| `/ah force_buy <id: int>` | Force-buy a lot (processed like a normal purchase) | `astraauction.force` |\n| `/ah force_expire <id: int>` | Force-expire a lot | `astraauction.force` |\n\n**Command aliases:** `/auction`, `/auc`.\n\n## Permissions 🔐\n- `astraauction.use` — access to basic commands (granted to everyone by default).\n- `astraauction.force` — access to force commands (granted to operators only by default).\n\n## Configuration ⚙️\nMain configuration file: [config.yml](https://github.com/task-v1/AstraAuction/blob/master/src/main/resources/config.yml)\n\n| Parameter | Description | Default |\n|---|---|---|\n| `database.type` | Database type: `sqlite` / `mysql` | `sqlite` |\n| `language.value` | Language mode: `eng` / `rus` / `ukr` / `jpn` / `autodetect` / `server` | `autodetect` |\n| `language.default` | Default language | `eng` |\n| `auction.duration-seconds` | Lot lifetime (seconds) | `172800` (48h) |\n| `auction.tax-percent` | Transaction fee (%) | `10.0` |\n| `auction.round-prices` | Round prices to whole numbers | `false` |\n| `auction.max-slots` | Max active lots (0 = unlimited) | `6` |\n| `auction.claim-expire-seconds` | Claims storage duration (seconds) | `604800` (7d) |\n| `auction.gui.page-size` | GUI page size (up to 45) | `45` |\n| `auction.gui.open-delay-ticks` | GUI open delay (ticks) | `10` |\n| `auction.gui.sort-default` | Default sorting | `price_asc` |\n\n## Dependencies 🔌\n- **[EconomyAPI](https://cloudburstmc.org/resources/economyapi.14/)** — required for purchases and payouts.\n- **[FakeInventories](https://github.com/LuminiaDev/FakeInventories)** — required for GUI support.\n- **[JOOQConnector](https://github.com/MEFRREEX/JOOQConnector)** — database support via JOOQ ORM.\n- **[Polyglot](https://github.com/DensyDev/Polyglot)** — localization engine for dynamic language loading (shaded).\n\n## Building from Source 🔨\n1. Install **[JDK 21+](https://www.google.com/search?q=jdk+21)**.\n2. [Clone the repository](https://www.google.com/search?q=how+to+clone+git+repository) and open the project directory.\n3. Run the build command: `./gradlew build`\n4. The compiled JAR will be located in `build/libs`.\n\n### Build Warning ⚠️\nThe repository contains two `build.gradle` files:\none main file (using fallback repositories via `jitpack.io`) and another with the `.old` suffix (with original Lumi repositories).\n\nIf Lumi repositories are temporarily unavailable (e.g. HTTP 500 errors) and the build fails, just use the current `build.gradle` as-is.\nAlternatively, to use the original Lumi repositories, remove or move the current `build.gradle`, and rename `build.gradle.old` by removing the `.old` suffix.\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-05-19",
+      "description": "",
+      "title": "AstraAuction logo",
+      "url": "https://raw.githubusercontent.com/task-v1/AstraAuction/master/assets/logo.png"
+    },
+    {
+      "created": "2026-05-19",
+      "description": "",
+      "title": "",
+      "url": "https://raw.githubusercontent.com/task-v1/AstraAuction/master/assets/base.jpg"
+    },
+    {
+      "created": "2026-05-19",
+      "description": "",
+      "title": "",
+      "url": "https://raw.githubusercontent.com/task-v1/AstraAuction/master/assets/my_lots.jpg"
+    },
+    {
+      "created": "2026-05-19",
+      "description": "",
+      "title": "",
+      "url": "https://raw.githubusercontent.com/task-v1/AstraAuction/master/assets/claims.jpg"
+    },
+    {
+      "created": "2026-05-19",
+      "description": "",
+      "title": "",
+      "url": "https://raw.githubusercontent.com/task-v1/AstraAuction/master/assets/confirm.jpg"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/178176581?v=4",
+  "id": "task-v1/AstraAuction",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "AstraAuction",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/task-v1/AstraAuction",
+  "stars": 2,
+  "summary": "Auction plugin scaffold for Lumi (Nukkit-MOT fork)",
+  "targets": [
+    "nkx",
+    "nkmot",
+    "lumi"
+  ],
+  "updated_at": 1777869454,
+  "versions": [
+    {
+      "changelog": "## What's Changed\n* Upgrade to v0.10 by @Taskov1ch in https://github.com/astra-v1/AstraAuction/pull/1\n\n## New Contributors\n* @Taskov1ch made their first contribution in https://github.com/astra-v1/AstraAuction/pull/1\n\n**Full Changelog**: https://github.com/astra-v1/AstraAuction/compare/v0.9.23...v0.10.19\n\n## What's Changed\n* Upgrade to v0.10 by @Taskov1ch in https://github.com/astra-v1/AstraAuction/pull/1\n\n## New Contributors\n* @Taskov1ch made their first contribution in https://github.com/astra-v1/AstraAuction/pull/1\n\n**Full Changelog**: https://github.com/astra-v1/AstraAuction/compare/v0.9.23...v0.10.19\n\n## What's Changed\n* Upgrade to v0.10 by @Taskov1ch in https://github.com/astra-v1/AstraAuction/pull/1\n\n## New Contributors\n* @Taskov1ch made their first contribution in https://github.com/astra-v1/AstraAuction/pull/1\n\n**Full Changelog**: https://github.com/astra-v1/AstraAuction/compare/v0.9.23...v0.10.19\n\n## What's Changed\n* Upgrade to v0.10 by @Taskov1ch in https://github.com/astra-v1/AstraAuction/pull/1\n\n## New Contributors\n* @Taskov1ch made their first contribution in https://github.com/astra-v1/AstraAuction/pull/1\n\n**Full Changelog**: https://github.com/astra-v1/AstraAuction/compare/v0.9.23...v0.10.19",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AstraAuction-0.10.19.jar",
+          "primary": true,
+          "size": 762856,
+          "url": "https://github.com/task-v1/AstraAuction/releases/download/v0.10.19/AstraAuction-0.10.19.jar"
+        }
+      ],
+      "name": "v0.10.19",
+      "prerelease": false,
+      "published_at": 1770144669,
+      "version": "v0.10.19"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "api_version": "1.0.5",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Mcayear",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1715860681,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "NInvShop",
+      "version_range": ""
+    }
+  ],
+  "description": "# SuperDialog - 超级 NPC 对话框\n\n感受划时代的 RPG 色彩！\n\n## 预览\n\n![preview](https://raw.githubusercontent.com/Mcayear/SuperDialog/master/image/preview.gif)\n\n## 快速开始\n\n### 命令\n\n| 命令                                                                                    | 描述             |\n|---------------------------------------------------------------------------------------|----------------|\n| `/supernpc value <player> <typeEnum: string, int, boolean> <string: key> <any: data>` | 设置玩家持久化数据的值    |\n| `/supernpc open <player> <scenes>`                                                    | 为玩家打开一个指定的场景   |\n| `/supernpc change <player> <scenes>`                                                  | 暂无实际作用(WIP)    |\n| `/supernpc reload`                                                                    | 重载配置文件和 Lua 缓存 |\n| `/supernpc help`                                                                      | 获取帮助           |\n\n只需要 NPC 执行 `/supernpc open Mcayear default` 即可向玩家 `Mcayear` 打开 `default.lua` 编写的对话框。\n\n### config.yml\n\n```yml\ndialog:\n  scrolling: true # 使用滚动对话框\n  scrolling_speed: 1 # 滚动速度，正整数，最小为 1，值越大越快\n ```\n\n### scenes/default.lua\n\n每一个 lua 脚本都是一个场景，你可以在 lua 脚本中定义多个对话框。\n\n不包含后缀的文件名就是命令中的 `<scenes>` 值，如 `default.lua` 就是 `default`。\n\n## Lua 进阶\n\nLua 语言的语法非常简单，你可以参考 [LuaJava API 官方文档](https://gudzpoz.github.io/luajava/api.html#jclass-type)。\n\n### Lua 函数设计\n\n轻便简洁是设计的初衷，每一个场景都必须包含 `function main()` 与 `function close()` 两个函数。\n\n函数 `main()` 是默认执行的，函数 `close()` 是当对话框关闭时执行的。\n\n```lua\nopenCount = nil;\n\nfunction main()\n    openCount = share:getIntValue(\"openCount\", 0); -- 读取玩家持久化数据的值\n    openCount = openCount + 1;\n    local playerName = player:getName()  -- 调用Java方法获取玩家名称\n    local entityName = entity:getName()..\"§r\"  -- 调用Java方法获取实体名称\n    local title = \"Welcome \" .. playerName .. \"!\"\n    local description = \"You are interacting with \" .. entityName .. \".\\nopen count: \".. openCount ..\".\\nChoose again:\"\n    local options = {\"Option 1\", \"Option 2\"}\n    return {title, description, options, { \"close\", \"close\" }}\nend\n\nfunction close()\n    -- 此函数没有返回值。\n    share:setIntValue(\"openCount\", openCount);\nend\n```\n\n### Lua 全局变量设计\n\n我们添加了一些全局变量\n\n| 变量名 | 描述     | Java 类型                                                                                                                       |\n|-----|--------|-------------------------------------------------------------------------------------------------------------------------------|\n| player | 玩家对象   | [cn.nukkit.Player](https://github.com/CloudburstMC/Nukkit/blob/master/src/main/java/cn/nukkit/Player.java)                                                                                                           |\n| entity | 实体对象   | [cn.nukkit.entity.Entity](https://github.com/CloudburstMC/Nukkit/blob/master/src/main/java/cn/nukkit/entity/Entity.java)      |\n| share | 共享变量对象 | [cn.vusv.plugin.superdialog.config.LuaShareVariable](https://github.com/Mcayear/SuperDialog/blob/master/src/main/java/cn/vusv/plugin/superdialog/config/LuaShareVariable.java) |\n| tools | 工具对象   | [cn.vusv.plugin.superdialog.config.LuaToolsVariable](https://github.com/Mcayear/SuperDialog/blob/master/src/main/java/cn/vusv/plugin/superdialog/config/LuaToolsVariable.java) |\n\n### share 变量详解\n\nshare 是玩家的数据文件，它会以玩家名字被持久化保存到服务器的 `./plugins/SuperDialog/players/` 目录下。`\n\n我们只提供了基础的 int、string、boolean 类型的读写方法。\n\n## 鸣谢\n\n[gh-proxy](https://github.com/hunshcn/gh-proxy)：提供 gif 图片 proxy CDN\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-05-19",
+      "description": "",
+      "title": "preview",
+      "url": "https://raw.githubusercontent.com/Mcayear/SuperDialog/master/image/preview.gif"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/48203962?v=4",
+  "id": "Mcayear/SuperDialog",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/Mcayear/SuperDialog",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "SuperDialog",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Mcayear/SuperDialog",
+  "stars": 2,
+  "summary": "超级NPC对话框",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1773210983,
+  "versions": []
+}

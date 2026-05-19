@@ -1,0 +1,61 @@
+{
+  "api_version": "1.0.14",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "mcayear",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1773056801,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "EasySQLX",
+      "version_range": ""
+    }
+  ],
+  "description": "# OfflineLogin\n\nOfflineLogin 是一个为 Nukkit-MOT 服务器设计的离线登录与账号验证插件，支持基础密码注册以及通过邮箱（Resend API 或标准 SMTP 服务）发送验证码进行注册验证。\n\n## 主要特性\n\n- **安全的世界隔离**：提供一个专门的 `login` 超平坦世界，在玩家验证身份前取消所有的移动、交互、破坏和聊天等操作，避免对主世界造成影响和背包数据混乱。\n- **多种验证模式**：\n  - `NONE`: 仅基础密码验证\n  - `RESEND`: 通过 Resend API 发送邮箱验证码进行注册\n  - `SMTP`: 通过传统 SMTP 服务发送邮箱验证码进行注册\n- **数据存储支持**：基于 EasySQLX 插件，默认采用 SQLite 存储玩家账号信息，支持扩展到 MySQL。\n- **正版数据迁移**：内置 `/offline convertuuid` 指令，方便正版服务器转入离线模式时，将基于 UUID 保存的玩家背包数据安全迁移为基于玩家名字保存的数据（包含自动备份机制）。\n\n## 前置依赖\n\n- **[EasySQLX](https://github.com/MemoriesOfTime/EasySQLX.git)**：用于处理数据库存储。请务必确保服务器已安装该前置插件。\n\n## 指令列表\n\n| 指令 | 描述 | 权限 |\n| --- | --- | --- |\n| `/reg <password> <password>` | 注册账号 | 默认玩家 |\n| `/login <password>` | 登录账号 | 默认玩家 |\n| `/reset <password>` | 重置密码 | 默认玩家 |\n| `/offline convertuuid` | 将所有基于 UUID 的玩家数据转换为名字保存，适用于正版转盗版 | OP |\n\n## 配置文件说明\n\n`config.yml` 示例与说明：\n\n```yaml\n# 注册/验证配置\n# 可选：\n# - NONE：仅密码注册\n# - RESEND：通过 Resend 发送邮箱验证码\n# - SMTP：通过 SMTP 发送邮箱验证码\nactive-method: NONE\n\nsecurity-settings:\n  # 密码最短长度\n  min-password-length: 6\n  # 单个 IP 最多可注册的账号数\n  max-accounts-per-ip: 1\n  # 以下仅在 RESEND / SMTP 模式下生效\n  # 验证码位数\n  code-length: 6\n  # 验证码有效期（秒）\n  expire-time: 300\n  # 发送验证码的冷却时间（秒）\n  request-cooldown: 60\n\nmail-settings:\n  # 邮件标题\n  subject: \"欢迎注册 - 您的验证码\"\n  # 邮件内容，{code} 会替换为实际验证码\n  html-template: \"<h1>欢迎！</h1><p>您的注册验证码：<strong>{code}</strong></p><p>请在 5 分钟内完成验证。</p>\"\n\n# 只会读取与 active-method 对应的配置\n\nresend:\n  # Resend API Key\n  api-key: \"<YOUR_RESEND_API_KEY>\"\n  # 发件地址，需为 Resend 已验证域名下的邮箱\n  from-address: \"onboarding@resend.dev\"\n\nsmtp:\n  # SMTP 服务器地址\n  host: \"smtp.example.com\"\n  # 端口：465(SSL) / 587(TLS) / 25(无加密)\n  port: 465\n  # 加密方式：SSL / TLS / NONE\n  encryption: \"SSL\"\n  # 登录账号\n  username: \"mc-server@example.com\"\n  # 登录密码或应用专用密码\n  password: \"<YOUR_SMTP_PASSWORD>\"\n  # 发件地址，通常与 username 保持一致\n  from-address: \"mc-server@example.com\"\n```\n\n## 数据迁移指南 (UUID 转 Name)\n\n如果您的服务器一开始开启了正版验证（基于 UUID 存储玩家背包及状态），而后安装本插件并关闭了正版验证，可以通过以下步骤进行数据迁移：\n\n1. 确保服务器正在运行且只有管理员在线。\n2. 执行管理员指令：`/offline convertuuid`。\n3. 插件将会自动执行以下操作：\n   - 将当前的 `nukkit.yml` 中的 `save-player-data-by-uuid` 状态修改为 `false`。\n   - 备份 `players/` 目录至 `players_backup/`。\n   - 读取所有 `UUID.dat` 格式的数据，提取其中的玩家名，并将其重命名为小写的 `<玩家名>.dat`。\n   - 清理旧的 `UUID.dat` 文件。\n   - 自动关闭服务器以应用更改。\n4. 确认服务端无异常后重新启动服务器即可。\n\n## 开发信息\n- 适用服务端：Nukkit-MOT\n- API版本：1.0.14\n- 开发者：mcayear",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/48203962?v=4",
+  "id": "Mcayear/OfflineLogin",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "OfflineLogin",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Mcayear/OfflineLogin",
+  "stars": 0,
+  "summary": "离线登录",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1773210926,
+  "versions": [
+    {
+      "changelog": "Initial release of OfflineLogin plugin.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "offline-login-1.0.0.jar",
+          "primary": true,
+          "size": 6155859,
+          "url": "https://github.com/Mcayear/OfflineLogin/releases/download/v1.0.0/offline-login-1.0.0.jar"
+        }
+      ],
+      "name": "Release v1.0.0",
+      "prerelease": false,
+      "published_at": 1773197401,
+      "version": "v1.0.0"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Feisk73",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1774190193,
+  "dependencies": [],
+  "description": "# FartPlugin\nThis nukkit plugin adds some funny features for player interactions.\n\n## Commands:\n- /fart - sound and particle\n  - `fartplugin.command.fart`\n- /spit - sound and particle\n  - `fartplugin.command.spit`\n- /piss - particle trajectory\n  - `fartplugin.command.piss`\n- /fartreload - config reload\n  - `fartplugin.command.reload`\n\n ## Config:\n```yml\ntrajectory:\n  speed: 2\n  gravity: 0.8\n  steps: 50\n```\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/173158652?v=4",
+  "id": "Feisk73/FartPlugin",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "FartPlugin",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Feisk73/FartPlugin",
+  "stars": 0,
+  "summary": "Adds fart, piss, and spit commands.",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1774191776,
+  "versions": []
+}

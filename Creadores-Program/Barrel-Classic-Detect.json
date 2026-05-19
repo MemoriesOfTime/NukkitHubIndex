@@ -1,0 +1,42 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Creadores Program",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1774403413,
+  "dependencies": [],
+  "description": "# BarrelClassicDetect\nDetects when a ClassiCube player joins your server!\n\n\nCompatible with Nukkit and Pocketmine ([MySoft](https://github.com/Dr1xyDev/MySoft-0.15.x-1.21.x), [Submarine](https://github.com/Dr1xyDev/SubmarineMultiCore), [Pocketmine 5 MV](https://github.com/vapebw/Pocketmine-5-MV))!\n\n## Installation (Nukkit)\nSimply place the plugin in the plugins folder!\n### API usage\nImplement in your project:\nMaven:\nPlace the plugin's jar file in the libs folder and run this command:\n```bash\nmvn install:install-file -Dfile=libs/Barrel-Classic-Detect-x.x.x.jar -DgroupId=org.CreadoresProgram -DartifactId=Barrel-Classic-Detect -Dversion=x.x.x -Dpackaging=jar -DgeneratePom=true # replace x.x.x with the plugin version\n```\npom.xml:\n```xml\n<dependency>\n  <groupId>org.CreadoresProgram</groupId>\n  <artifactId>Barrel-Classic-Detect</artifactId>\n  <version>x.x.x</version><!--replace x.x.x with the plugin version-->\n  <scope>provided</scope>\n</dependency>\n```\nplugin.yml:\n```yaml\n#...\nsoftdepend:\n  - \"Barrel_Classic_Detect\"\nloadbefore:\n  - \"Barrel_Classic_Detect\"\n```\nexample of use:\n```java\n//import the class into your plugin\nimport org.CreadoresProgram.BarrelClassicDetect.NukkitMain;\n//...\n//is ClassiCube Player?\nNukkitMain.getInstance().isCCPlayer(player);//player = cn.nukkit.Player returns boolean\n\n//get all ClassiCube Players\nNukkitMain.getInstance().getCCPlayers(); //returns List<cn.nukkit.Player>\n```\n\n## Installation (Pocketmine)\nSimply place the plugin in the plugins folder!\n### API usage\nImplement in your plugin:\n\nplugin.yml:\n```yaml\n#...\nsoftdepend: [\"Barrel_Classic_Detect\"]\n```\n\nexample of use:\n```php\n<?php\ndeclare(strict_types=1);\n//...\n//Use the class in your plugin.\nuse org\\CreadoresProgram\\BarrelClassicDetect\\PocketmineMain;\n//...\n//is ClassiCube Player?\nPocketmineMain::getInstance()->isCCPlayer(player);//player = pocketmine\\player\\Player or pocketmine\\Player returns bool\n//get all ClassiCube Players\nPocketmineMain::getInstance()->getCCPlayers(); //returns pocketmine\\player\\Player[] or pocketmine\\Player[] array\n```\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/181365916?v=4",
+  "id": "Creadores-Program/Barrel-Classic-Detect",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/Creadores-Program/Barrel-Classic-Detect",
+    "wiki": ""
+  },
+  "manifest_path": "Nukkit/src/main/resources/plugin.yml",
+  "name": "Barrel_Classic_Detect",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Creadores-Program/Barrel-Classic-Detect",
+  "stars": 2,
+  "summary": "Detects when a ClassiCube player joins your server",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1775916822,
+  "versions": []
+}
