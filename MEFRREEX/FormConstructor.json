@@ -63,7 +63,7 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/MEFRREEX/FormConstructor",
-  "stars": 8,
+  "stars": 7,
   "summary": "Library for easy creating and handling of forms",
   "targets": [
     "nkx",
@@ -71,7 +71,7 @@
     "pnx",
     "lumi"
   ],
-  "updated_at": 1759666408,
+  "updated_at": 1779699217,
   "versions": [
     {
       "changelog": "## What's Changed\r\n* feat: added api for element tooltips + refactor: remove debug command by @MEFRREEX in https://github.com/MEFRREEX/FormConstructor/pull/12\r\n\r\n\r\n**Full Changelog**: https://github.com/MEFRREEX/FormConstructor/compare/3.0.0...3.1.0",
