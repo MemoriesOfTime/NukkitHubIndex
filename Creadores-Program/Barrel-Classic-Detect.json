@@ -37,6 +37,23 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1775916822,
-  "versions": []
+  "updated_at": 1779767159,
+  "versions": [
+    {
+      "changelog": "**Full Changelog**: https://github.com/Creadores-Program/Barrel-Classic-Detect/commits/1.0.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Barrel-Classic-Detect-1.0.0.jar",
+          "primary": true,
+          "size": 3840,
+          "url": "https://github.com/Creadores-Program/Barrel-Classic-Detect/releases/download/1.0.0/Barrel-Classic-Detect-1.0.0.jar"
+        }
+      ],
+      "name": "Launch!",
+      "prerelease": false,
+      "published_at": 1779766758,
+      "version": "1.0.0"
+    }
+  ]
 }
