@@ -39,7 +39,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1770253421,
+  "updated_at": 1770253417,
   "versions": [
     {
       "changelog": "+ 优化小游戏结束条件逻辑\r\n+ 增加获得经验的提示",

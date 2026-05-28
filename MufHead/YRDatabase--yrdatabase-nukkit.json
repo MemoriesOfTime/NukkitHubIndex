@@ -37,7 +37,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1773248983,
+  "updated_at": 1773249125,
   "versions": [
     {
       "changelog": "## Downloads\r\n- yrdatabase-allay-2.0.0.jar\r\n- yrdatabase-nukkit-2.0.0.jar\r\n- yrdatabase-waterdog.jar\r\n- yrdatabase-api.jar\r\n- yrdatabase-core.jar\r\n\r\n## Notes\r\n- Multi-platform build with session bridge support\r\n- JitPack artifacts available under com.github.MufHead.YRDatabase\r\n",

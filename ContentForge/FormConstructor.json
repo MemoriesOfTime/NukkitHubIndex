@@ -41,7 +41,7 @@
     "nkmot",
     "pnx"
   ],
-  "updated_at": 1749489069,
+  "updated_at": 1749489065,
   "versions": [
     {
       "changelog": "### Changelog\r\n- Switched to Gradle project from Maven\r\n- Removed useless Text Input Validator\r\n- Removed Builder for Input\r\n- Renamed methods and some classes\r\n- Refactored Button Icons\r\n- Thread-safe form handler execution\r\n- Updated for PowerNukkitX 2.0",

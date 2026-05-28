@@ -44,7 +44,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1698043051,
+  "updated_at": 1698043162,
   "versions": [
     {
       "changelog": "+ 修复一系列BUG 对接最新版(2.2)的PAPI",

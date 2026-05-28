@@ -27,7 +27,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1754994234,
+  "updated_at": 1754994230,
   "versions": [
     {
       "changelog": "fix: Main class memory problem\r\nfix: Problems with command permissions",

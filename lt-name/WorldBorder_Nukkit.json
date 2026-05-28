@@ -32,7 +32,7 @@
   "targets": [
     "nkx"
   ],
-  "updated_at": 1738548381,
+  "updated_at": 1738548377,
   "versions": [
     {
       "changelog": "更改插件名称\r\n修复文本实体重复生成问题\r\n添加 /worldborder delete 命令\r\n添加新的检测方式",

@@ -49,7 +49,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1767524163,
+  "updated_at": 1767523951,
   "versions": [
     {
       "changelog": "# Release v1.1.4\r\nLatest commit in tag: [`67c0e57`](https://github.com/CrieXD1337/EssentialsChat/commit/67c0e57b31752a3972a10dd8b1c7d48bdda62aec)\r\n\r\n## Change Log:\r\n- [`26298ac`](https://github.com/CrieXD1337/EssentialsChat/commit/26298acef5f57bc5b53cfa605086adf57576b0c8): [+] The ability to customize the display name update cooldown ([CrieXD1337](https://github.com/CrieXD1337))\r\n- [`4d01fda`](https://github.com/CrieXD1337/EssentialsChat/commit/4d01fdae4efdf018bb28545e12ab06c7cbdb4a03): [+] Russian language  ([CrieXD1337](https://github.com/CrieXD1337))\r\n- [`734b31e`](https://github.com/CrieXD1337/EssentialsChat/commit/734b31e13ed06bf8ceb93df95bbfa1c66c89545c): [+] Nickname storage in data folder with JSON/YAML support ([CrieXD1337](https://github.com/CrieXD1337))\r\n- [`67c0e57`](https://github.com/CrieXD1337/EssentialsChat/commit/67c0e57b31752a3972a10dd8b1c7d48bdda62aec): [+] Layout configuration for welcome and death messages ([CrieXD1337](https://github.com/CrieXD1337))",

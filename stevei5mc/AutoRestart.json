@@ -100,7 +100,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1779364905,
+  "updated_at": 1779364901,
   "versions": [
     {
       "changelog": "# **1.0.2**\n---\n## **重要消息**\n1. **预计`1.0.2`版本将成为`1.x.x(v1)`版本的最后一个版本，之后的版本将使用`2.x.x(v2)`的版本**\n2. **在发布`v2`正式版本前`v1`版本仅提供BUG修复的支持，新功能开发在`v2`版本中进行**\n3. **v2版本不会对v1版本的配置进行兼容的进行兼容的**\n## **注意事项**\n1. **请不要随意修改语言文件的版本号，若随意修改语言文件的版本号可能导致更新检测功能出现异常，届时后果自负！**\n2. **从版本 `1.0.0-beta5` 起，配置文件的版本号存异常时重置配置文件前生成备份文件，但在使用时还是不要随意修改配置文件的版本号**\n3. **从版本 `1.0.1` 起，对语言文件的更新机制改成无损更新，不会对已有的内容进行改动（如果某项语言文本被移除会自动从语言文件中自动删除）**\n4. **从版本 `1.0.1` 起，如果语言文件的版本号出现异常会对其进行重置并在重置前生成备份**\n---\n## **更新 / 使用 建议**\n1. **如果没有对语言文件有修改内容的需求建议使用插件内置的语言文件**\n---\n## **更新内容**\n1. 调整对受支持的语言的判断 < [a68cdb11](https://github.com/stevei5mc/AutoRestart/commit/a68cdb11305522a6a27b480f19218a1d2b23a9e5) >\n2. 修复在行 global 的命令有无用参数导致无法执行命令的问题\n3. 对命令的提示参数进行调整  < [3e7366b7](https://github.com/stevei5mc/AutoRestart/commit/3e7366b765c85432717084fbeaabe4bf12954aca) >\n4. 优化投票重启的逻辑  < [2aa7d4dc](https://github.com/stevei5mc/AutoRestart/commit/2aa7d4dc8297229a439df93eb61a049da55e5ae3) >\n5. 调整部分代码  < [8524d268](https://github.com/stevei5mc/AutoRestart/commit/8524d2686a29cce9eab717d4cbc12e5d16308768) >\n6. 对部分文案进行调整  < [d4ed14eb](https://github.com/stevei5mc/AutoRestart/commit/d4ed14ebcf4c344996dc75228a57af9f71298523) [97daf296](https://github.com/stevei5mc/AutoRestart/commit/97daf2968f4e773972ebb286773eb85efa223f6a) >\n7. 修复重启任务剩余时间的文案显示不完全的问题  < [97daf296](https://github.com/stevei5mc/AutoRestart/commit/97daf2968f4e773972ebb286773eb85efa223f6a) >\n9. 修复有概率无法播报剩余时间的问题 < [7dd0bff9](https://github.com/stevei5mc/AutoRestart/commit/7dd0bff9d4e338a1c276f64b3eddbd4a9600df31) >",

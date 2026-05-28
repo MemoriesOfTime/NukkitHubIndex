@@ -73,7 +73,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1752818117,
+  "updated_at": 1684872796,
   "versions": [
     {
       "changelog": "In the last update, there is a few bugs I found that need a fix, following issues has been fixed:\r\n\r\n- Teleportation issues, only operators can teleport to island\r\n- Config files always being replaced -- My mistake sorry.\r\n- Fixed LuckPerms XUID failure in offline servers.\r\n\r\nThe following is the new update:\r\n- Added some PvP, Mob Attack, Animal Attack, Pickup/Drop Item, Collect/Fill lava, protections.\r\n- Notify players about their protection/settings update.\r\n- Better database stability, fixed mysql as well\r\n",

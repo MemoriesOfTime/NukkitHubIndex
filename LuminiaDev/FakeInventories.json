@@ -34,7 +34,7 @@
     "nkmot",
     "lumi"
   ],
-  "updated_at": 1769951913,
+  "updated_at": 1760499917,
   "versions": [
     {
       "changelog": "## What's Changed\r\n* feat: open & close handlers + FakeInventory#setItemHandler method by @MEFRREEX in https://github.com/LuminiaDev/FakeInventories/pull/2\r\n\r\n\r\n**Full Changelog**: https://github.com/LuminiaDev/FakeInventories/compare/1.2.0...1.2.1",

@@ -39,7 +39,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1703405486,
+  "updated_at": 1697109671,
   "versions": [
     {
       "changelog": "v1.8.2\r\n- 修复玩家不在线时 执行rtc addall 不提示bug\r\n- 任务进度显示小数精确到小数点后两位\r\n\r\nv1.7.9\r\n- 修复了rtc指令bug增加了两条指令\r\n\r\nv1.7.5\r\n- 改了好多好多\r\n- 增加了物品词典功能\r\n\r\nv1.6.9\r\n- 更改部分代码\r\n- 增加自动保存玩家配置功能\r\n\r\nv1.6.6 \r\n- 对接 AutoUpData\r\n- 优化代码\r\n- 大范围优化,修复bug",

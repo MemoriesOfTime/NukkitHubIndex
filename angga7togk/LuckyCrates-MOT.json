@@ -39,7 +39,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1770185005,
+  "updated_at": 1770185002,
   "versions": [
     {
       "changelog": "**News Update**\r\n\r\n- Change java 8\r\n- Update dependency [FakeInventories  v1.1.8](https://github.com/IWareQ/FakeInventories/releases/tag/v1.1.8)\r\n- LuckyCrates for nukkit 1.0\r\n- fix FloatingText\r\n- fix break crates\r\n- new key broadcast: on crates.yml\r\n- multi floating text using '\\n' to make new line\r\n\r\n<img src='https://github.com/angga7togk/LuckyCrates-NK/blob/master/Crates.png?raw=true' width='250'>",

@@ -33,7 +33,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1665203241,
+  "updated_at": 1617602659,
   "versions": [
     {
       "changelog": "v1.3.8\r\n增加自动更新系统(需要安装AutoUpData)\r\n\r\nv1.3.7.1\r\n上传到github\r\n增加变身时粒子效果\r\n优化变身系统",

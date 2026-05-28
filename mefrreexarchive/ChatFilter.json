@@ -39,7 +39,7 @@
     "nkmot",
     "pnx"
   ],
-  "updated_at": 1774153774,
+  "updated_at": 1682837930,
   "versions": [
     {
       "changelog": "Fully rewritten plugin.\r\n\r\nA new type of filter:\r\n`silent` - blocked message will only be visible to the sender.",

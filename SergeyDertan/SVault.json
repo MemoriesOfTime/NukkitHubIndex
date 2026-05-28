@@ -43,7 +43,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1623622833,
+  "updated_at": 1684872692,
   "versions": [
     {
       "changelog": "MySQL, SQLite & postrgresql support\r\nPlaceholderAPI support\r\nMigrate command\r\nRussian translation\r\nVault name pattern",

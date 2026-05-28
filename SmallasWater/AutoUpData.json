@@ -33,7 +33,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1700644032,
+  "updated_at": 1701050886,
   "versions": [
     {
       "changelog": "* 完善maven不指定后缀时的版本检查\r\n* 支持版本后缀检查",

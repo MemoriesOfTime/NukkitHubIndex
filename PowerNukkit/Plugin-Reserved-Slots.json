@@ -43,7 +43,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1624955537,
+  "updated_at": 1641493938,
   "versions": [
     {
       "changelog": "Initial implementation of the plugin. The reserved slots can be configured from the config file that is generated inside the plugin folder.",

@@ -44,7 +44,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1737303319,
+  "updated_at": 1712411367,
   "versions": [
     {
       "changelog": "Fix forms (now support 2.0 )\r\n\r\n[FormConstructor V2 | Cloudburst Nukkit & Minecraft Server Software (cloudburstmc.org)](https://cloudburstmc.org/resources/formconstructor-v2.957/)\r\n\r\nThe next update, if I go ahead with it, will be version 2.0, where all the code will be written practically from scratch",

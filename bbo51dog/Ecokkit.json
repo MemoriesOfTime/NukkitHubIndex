@@ -37,7 +37,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1590215794,
+  "updated_at": 1582516664,
   "versions": [
     {
       "changelog": "- Support for multiple languages(English and Japanese)\r\n- Refactoring",

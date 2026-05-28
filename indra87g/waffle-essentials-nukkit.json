@@ -33,7 +33,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1764676583,
+  "updated_at": 1777292654,
   "versions": [
     {
       "changelog": "## What's Changed\r\n* Add /wbuy command by @google-labs-jules[bot] in https://github.com/indra87g/waffle-core-nukkit/pull/15\r\n* feat: Implement /near command by @google-labs-jules[bot] in https://github.com/indra87g/waffle-core-nukkit/pull/16\r\n\r\n\r\n**Full Changelog**: https://github.com/indra87g/waffle-core-nukkit/compare/v0.1.4...v0.1.5",

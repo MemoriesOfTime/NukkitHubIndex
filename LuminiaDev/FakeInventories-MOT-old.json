@@ -34,7 +34,7 @@
     "nkmot",
     "lumi"
   ],
-  "updated_at": 1766689240,
+  "updated_at": 1758296205,
   "versions": [
     {
       "changelog": "## What's Changed\r\n* fix: fast inventory open by @MEFRREEX in https://github.com/LuminiaBedrock/FakeInventories-MOT/pull/1\r\n\r\n## New Contributors\r\n* @MEFRREEX made their first contribution in https://github.com/LuminiaBedrock/FakeInventories-MOT/pull/1\r\n\r\n**Full Changelog**: https://github.com/LuminiaBedrock/FakeInventories-MOT/commits/1.1.9",

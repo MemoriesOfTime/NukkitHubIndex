@@ -33,7 +33,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1582465184,
+  "updated_at": 1501931586,
   "versions": [
     {
       "changelog": "- many fixes\r\n- added \"/troll\" verification\r\n- add \"/troll granade\" (a explosive tool)",
