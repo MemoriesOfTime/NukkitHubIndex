@@ -1,0 +1,71 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Buddelbubi",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1764699196,
+  "dependencies": [],
+  "description": "# AuthPNX\nA authentication plugin for your (offline mode) PNX server\n\nThis plugin is an authentication plugin for your PowerNukkitX server with xboxAuth disabled.\n\nAll messages are changable in messages.yml\nFor storage, you can use h2 (for smaller servers) or mysql.\nPasswords are hashed and salted using the PBKDF2 password hashing algorithm.\n\nThis plugin also allows you to use microsoft authentication for login.\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/154862792?v=4",
+  "id": "PowerNukkitX-Bundle/AuthPNX",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "AuthPNX",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/PowerNukkitX-Bundle/AuthPNX",
+  "stars": 0,
+  "summary": "An authentication plugin for PowerNukkitX",
+  "targets": [
+    "nkx",
+    "pnx"
+  ],
+  "updated_at": 1780162569,
+  "versions": [
+    {
+      "changelog": "Automated release for v1.0.1",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AuthPNX.jar",
+          "primary": true,
+          "size": 7155677,
+          "url": "https://github.com/PowerNukkitX-Bundle/AuthPNX/releases/download/v1.0.1/AuthPNX.jar"
+        }
+      ],
+      "name": "v1.0.1",
+      "prerelease": false,
+      "published_at": 1780162569,
+      "version": "v1.0.1"
+    },
+    {
+      "changelog": "A authentication plugin for your (offline mode) PNX server\r\n\r\nThis plugin is an authentication plugin for your PowerNukkitX server with xboxAuth disabled.\r\n\r\nAll messages are changable in messages.yml For storage, you can use h2 (for smaller servers) or mysql. Passwords are hashed and salted using the PBKDF2 password hashing algorithm.\r\n\r\nThis plugin also allows you to use microsoft authentication for login.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AuthPNX-1.0.0.jar",
+          "primary": true,
+          "size": 7155615,
+          "url": "https://github.com/PowerNukkitX-Bundle/AuthPNX/releases/download/1.0.0/AuthPNX-1.0.0.jar"
+        }
+      ],
+      "name": "AuthPNX 1.0.0",
+      "prerelease": false,
+      "published_at": 1764699754,
+      "version": "1.0.0"
+    }
+  ]
+}

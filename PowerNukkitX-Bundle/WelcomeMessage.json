@@ -1,0 +1,71 @@
+{
+  "api_version": "3.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1767964260,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "PlaceholderAPI",
+      "version_range": ""
+    }
+  ],
+  "description": "# WelcomeMessage\nSend a nice message to players that join your server\n\nYou can change the messages in the config file.\nThis plugin works best with [PlaceholderAPI](https://github.com/PowerNukkitX-Bundle/PlaceholderAPI)\n\nDefault configuration:\n```yaml\n# A message sent in chat to the joined player\nmessage:\n  enabled: true\n  text: |\n    §aWelcome §e%player_displayname% §ato %server_motd%\n    §aCurrent time is %time%\n\n# A title message sent to the player that joined.\ntitle:\n  enabled: true\n  text: \"§aWelcome to %server_motd%\"\n  subtext: \"§7%player_displayname%\"\n```",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/154862792?v=4",
+  "id": "PowerNukkitX-Bundle/WelcomeMessage",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "WelcomeMessage",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/PowerNukkitX-Bundle/WelcomeMessage",
+  "stars": 0,
+  "summary": "Send a nice message to players that join your server",
+  "targets": [
+    "nkx",
+    "pnx"
+  ],
+  "updated_at": 1780175275,
+  "versions": [
+    {
+      "changelog": "Automated release for v1.0.1",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "WelcomeMessage.jar",
+          "primary": true,
+          "size": 4491,
+          "url": "https://github.com/PowerNukkitX-Bundle/WelcomeMessage/releases/download/v1.0.1/WelcomeMessage.jar"
+        }
+      ],
+      "name": "v1.0.1",
+      "prerelease": false,
+      "published_at": 1780175275,
+      "version": "v1.0.1"
+    },
+    {
+      "changelog": "# WelcomeMessage\r\nSend a nice message to players that join your server\r\n\r\nYou can change the messages in the config file.\r\nThis plugin works best with [PlaceholderAPI](https://github.com/PowerNukkitX-Bundle/PlaceholderAPI)\r\n\r\nDefault configuration:\r\n```yaml\r\n# A message sent in chat to the joined player\r\nmessage:\r\n  enabled: true\r\n  text: |\r\n    §aWelcome §e%player_displayname% §ato %server_motd%\r\n    §aCurrent time is %time%\r\n\r\n# A title message sent to the player that joined.\r\ntitle:\r\n  enabled: true\r\n  text: \"§aWelcome to %server_motd%\"\r\n  subtext: \"§7%player_displayname%\"\r\n```",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "WelcomeMessage.jar",
+          "primary": true,
+          "size": 4411,
+          "url": "https://github.com/PowerNukkitX-Bundle/WelcomeMessage/releases/download/1.0.0/WelcomeMessage.jar"
+        }
+      ],
+      "name": "",
+      "prerelease": false,
+      "published_at": 1767964390,
+      "version": "1.0.0"
+    }
+  ]
+}

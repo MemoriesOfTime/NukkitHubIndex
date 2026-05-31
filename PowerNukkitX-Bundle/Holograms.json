@@ -1,0 +1,93 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Buddelbubi",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1764779007,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "PlaceholderAPI",
+      "version_range": ""
+    }
+  ],
+  "description": "# Holograms\nAdd holograms to your PowerNukkitX Server\n\nThis plugin allows you to add floating text to your PowerNukkitX server.\nThis plugin is fully UI controllable.\n\nOpen the holograms UI with /holograms\n\nThere you can create and modify holograms.\n\n\nThis plugin supports [PlaceholderAPI](https://github.com/PowerNukkitX-Bundle/PlaceholderAPI). \nFor example, you can write %player% in a line so the players username is displayed in the hologram.\n\n<img width=\"747\" height=\"466\" alt=\"grafik\" src=\"https://github.com/user-attachments/assets/fa5348f8-7d79-4ade-9f32-43f552b59a0c\" />\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/154862792?v=4",
+  "id": "PowerNukkitX-Bundle/Holograms",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Holograms",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/PowerNukkitX-Bundle/Holograms",
+  "stars": 0,
+  "summary": "Add holograms to your server",
+  "targets": [
+    "nkx",
+    "pnx"
+  ],
+  "updated_at": 1780164894,
+  "versions": [
+    {
+      "changelog": "Automated release for v1.0.3",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Holograms.jar",
+          "primary": true,
+          "size": 15127,
+          "url": "https://github.com/PowerNukkitX-Bundle/Holograms/releases/download/v1.0.3/Holograms.jar"
+        }
+      ],
+      "name": "v1.0.3",
+      "prerelease": false,
+      "published_at": 1780164894,
+      "version": "v1.0.3"
+    },
+    {
+      "changelog": "API 3.0.0\r\n\r\n**Full Changelog**: https://github.com/PowerNukkitX-Bundle/Holograms/compare/1.0.0...1.0.2",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Holograms.jar",
+          "primary": true,
+          "size": 15111,
+          "url": "https://github.com/PowerNukkitX-Bundle/Holograms/releases/download/1.0.2/Holograms.jar"
+        }
+      ],
+      "name": "1.0.2",
+      "prerelease": false,
+      "published_at": 1780153235,
+      "version": "1.0.2"
+    },
+    {
+      "changelog": "# Holograms\r\nAdd holograms to your PowerNukkitX Server\r\n\r\nThis plugin allows you to add floating text to your PowerNukkitX server.\r\nThis plugin is fully UI controllable.\r\n\r\nOpen the holograms UI with /holograms\r\n\r\nThere you can create and modify holograms.\r\n\r\n\r\nThis plugin supports [PlaceholderAPI](https://github.com/PowerNukkitX-Bundle/PlaceholderAPI). \r\nFor example, you can write %player% in a line so the players username is displayed in the hologram.\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Holograms-1.0.1.jar",
+          "primary": true,
+          "size": 16366,
+          "url": "https://github.com/PowerNukkitX-Bundle/Holograms/releases/download/1.0.0/Holograms-1.0.1.jar"
+        }
+      ],
+      "name": "Holograms 1.0.1",
+      "prerelease": false,
+      "published_at": 1764779419,
+      "version": "1.0.0"
+    }
+  ]
+}

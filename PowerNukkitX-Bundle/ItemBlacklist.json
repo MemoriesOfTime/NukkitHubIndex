@@ -1,0 +1,75 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "PetteriM1",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1709261602,
+  "dependencies": [],
+  "description": "",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/154862792?v=4",
+  "id": "PowerNukkitX-Bundle/ItemBlacklist",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://cloudburstmc.org/resources/itemblacklist.533/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "ItemBlacklist",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/PowerNukkitX-Bundle/ItemBlacklist",
+  "stars": 0,
+  "summary": "Advanced item blacklist plugin for Nukkit",
+  "targets": [
+    "nkx",
+    "pnx"
+  ],
+  "updated_at": 1780180866,
+  "versions": [
+    {
+      "changelog": "Automated release for v1.3.1",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ItemBlacklist.jar",
+          "primary": true,
+          "size": 8618,
+          "url": "https://github.com/PowerNukkitX-Bundle/ItemBlacklist/releases/download/v1.3.1/ItemBlacklist.jar"
+        }
+      ],
+      "name": "v1.3.1",
+      "prerelease": false,
+      "published_at": 1780180866,
+      "version": "v1.3.1"
+    },
+    {
+      "changelog": "https://cloudburstmc.org/resources/itemblacklist.533/",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ItemBlacklist-1.3.0.jar",
+          "primary": true,
+          "size": 8590,
+          "url": "https://github.com/PowerNukkitX-Bundle/ItemBlacklist/releases/download/1.3.0/ItemBlacklist-1.3.0.jar"
+        }
+      ],
+      "name": "ItemBlacklist 1.3.0",
+      "prerelease": false,
+      "published_at": 1764903712,
+      "version": "1.3.0"
+    }
+  ]
+}

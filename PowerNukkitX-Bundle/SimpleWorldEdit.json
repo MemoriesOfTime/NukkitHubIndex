@@ -1,0 +1,71 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Buddelbubi",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1763657011,
+  "dependencies": [],
+  "description": "# SimpleWorldEdit\nA simple worldedit plugin for PowerNukkitX\n\nCommands:\n- /position [first/second] - Sets a position of your selection (Alias //1, //2)\n- /biome [biome] - Changes the biome in your selection.\n- /clipboard [clear/select] <count/index> - Clears your clipboard or switches to a different entry.\n- /copy - Copies your selection to your clipboard.\n- /expand [up/down/north/east/south/west/vert] <amount> - Expands your selection.\n- /floodfill [block] <maxRadius> - Fills empty spaces with a block.\n- /paste <position> - Pastes your selected clipboard entry.\n- /replace [block] <replacement> - Replaces blocks in your selection.\n- /rotate [rotation] - Rotates your selected clipboard entry.\n- /set [block] - Fills your selection with a block.\n- /structure [load/save] [name] - Save or load structures.\n- /undo <amount> - Undo your latest block changes.\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/154862792?v=4",
+  "id": "PowerNukkitX-Bundle/SimpleWorldEdit",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "SimpleWorldEdit",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/PowerNukkitX-Bundle/SimpleWorldEdit",
+  "stars": 1,
+  "summary": "Simple WorldEdit plugin for PNX",
+  "targets": [
+    "nkx",
+    "pnx"
+  ],
+  "updated_at": 1780153581,
+  "versions": [
+    {
+      "changelog": "API 3.0.0\r\n\r\n**Full Changelog**: https://github.com/PowerNukkitX-Bundle/SimpleWorldEdit/compare/1.0.0...1.0.1",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SimpleWorldEdit.jar",
+          "primary": true,
+          "size": 52220,
+          "url": "https://github.com/PowerNukkitX-Bundle/SimpleWorldEdit/releases/download/1.0.1/SimpleWorldEdit.jar"
+        }
+      ],
+      "name": "SimpleWorldEdit 1.0.1",
+      "prerelease": false,
+      "published_at": 1780153183,
+      "version": "1.0.1"
+    },
+    {
+      "changelog": "This is the first release of SimpleWorldEdit.\r\nIt was made because of the FAWE issues.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SimpleWorldEdit-1.0.0.jar",
+          "primary": true,
+          "size": 51345,
+          "url": "https://github.com/PowerNukkitX-Bundle/SimpleWorldEdit/releases/download/1.0.0/SimpleWorldEdit-1.0.0.jar"
+        }
+      ],
+      "name": "SimpleWorldEdit",
+      "prerelease": false,
+      "published_at": 1763657301,
+      "version": "1.0.0"
+    }
+  ]
+}

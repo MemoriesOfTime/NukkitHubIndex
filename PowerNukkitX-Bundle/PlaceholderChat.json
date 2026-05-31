@@ -1,0 +1,77 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Buddelbubi",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1764862687,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "PlaceholderAPI",
+      "version_range": ""
+    }
+  ],
+  "description": "# PlaceholderChat\nFormat your chat with PlaceholderAPI\n\nDefault config:\n```yaml\n# LuckPerms Placeholders\n#  - %luckperms_prefix% - the players prefix\n#  - %luckperms_suffix% - the players suffix\n#  - %luckperms_primary_group% - the players primary group\n#  - %luckperms_groups% - a list of all groups the player is in\n#  - %luckperms_meta;KEY% - the value from the meta with the key.\n\nnametag: \"%player_displayname%\"\nchatmessage: \"[%player_level%] <%player_nametag%> %message%\" # The message in the chat\n```\n\n❗This plugin requires [PlaceholderAPI](https://github.com/PowerNukkitX-Bundle/PlaceholderAPI)❗\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/154862792?v=4",
+  "id": "PowerNukkitX-Bundle/PlaceholderChat",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "PlaceholderChat",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/PowerNukkitX-Bundle/PlaceholderChat",
+  "stars": 0,
+  "summary": "Modify the chat messages using PlaceholderAPI",
+  "targets": [
+    "nkx",
+    "pnx"
+  ],
+  "updated_at": 1780167202,
+  "versions": [
+    {
+      "changelog": "Automated release for v1.0.1",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "PlaceholderChat.jar",
+          "primary": true,
+          "size": 7227,
+          "url": "https://github.com/PowerNukkitX-Bundle/PlaceholderChat/releases/download/v1.0.1/PlaceholderChat.jar"
+        }
+      ],
+      "name": "v1.0.1",
+      "prerelease": false,
+      "published_at": 1780167202,
+      "version": "v1.0.1"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "PlaceholderChat-1.0.0.jar",
+          "primary": true,
+          "size": 7216,
+          "url": "https://github.com/PowerNukkitX-Bundle/PlaceholderChat/releases/download/1.0.0/PlaceholderChat-1.0.0.jar"
+        }
+      ],
+      "name": "PlaceholderChat 1.0.0",
+      "prerelease": false,
+      "published_at": 1764862746,
+      "version": "1.0.0"
+    }
+  ]
+}

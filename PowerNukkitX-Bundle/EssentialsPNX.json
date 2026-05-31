@@ -1,0 +1,62 @@
+{
+  "api_version": "2.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Scallop & KailynDevelopment",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1780220449,
+  "dependencies": [],
+  "description": "<img alt=\"banner\" height=\"265\" src=\"https://raw.githubusercontent.com/PowerNukkitX-Bundle/EssentialsPNX/master/.idea/banner.png\" width=\"770\"/>\n\n# EssentialsPNX \nEssentials plugin is now on PowerNukkitX!\n\nBy [HardSiamang655](https://github.com/hardsiamang655) & [ArdaaArslann](https://github.com/ArdaaArslann)\n\nCommands and Permissions\n------------------------------\n\n| Command         | Default   | Permission                                                                    | Aliases                                                                                                       |\n|-----------------|-----------|-------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|\n| /back           | true      | essentialsnk.back                                                             | /return                                                                                                       |\n| /break          | op        | essentialsnk.break,<br>essentialsnk.break.bedrock                             | ---                                                                                                           |\n| /broadcast      | op        | essentialsnk.broadcast                                                        | /bcast                                                                                                        |\n| /burn           | op        | essentialsnk.burn                                                             | ---                                                                                                           |\n| /clearinventory | op        | essentialsnk.clearinventory, <br>essentialsnk.clearinventory.others           | /ci,<br>/clean,<br>/clearinvent                                                                               |\n| /compass        | true      | essentialsnk.compass\t                                                         | /direction                                                                                                    |\n| /delhome        | true      | essentialsnk.delhome                                                          | /remhome,<br>/rmhome                                                                                          |\n| /delwarp        | op        | essentialsnk.delwarp                                                          | /remwarp,<br>/rmwarp                                                                                          |\n| /depth          | true      | essentialsnk.depth                                                            | /height                                                                                                       |\n| /extinguish     | op        | essentialsnk.extinguish,<br>essentialsnk.extinguish.others                    | /ext                                                                                                          |\n| /feed           | op        | essentialsnk.feed,essentialsnk.feed.others                                    | /eat                                                                                                          |\n| /fly            | op        | essentialsnk.fly, essentialsnk.fly.others                                     | ---                                                                                                           |\n| /gamemode       | op        | essentialsnk.gamemode,<br>essentialsnk.gamemode.others                        | /gm,<br>/gma,<br>/gmc,<br>/gms,<br>/gmt,<br>/adventure,<br>/creative,<br>/survival,<br>/spectator,<br>/viewer |\n| /getpos         | true & op | essentialsnk.getpos,<br> essentialsnk.getpos.others                           | /coord,<br>/position,<br>/whereami,<br>/getlocation,<br>/getloc                                               |\n| /heal           | op        | essentialsnk.heal, <br>essentialsnk.heal.others                               | ---                                                                                                           |\n| /home           | true      | essentialsnk.home                                                             | /homes                                                                                                        |\n| /ignore         | true      | essentialsnk.ignore                                                           | ---                                                                                                           |\n| /itemdb         | true      | essentialsnk.itemdb                                                           | /itemno,<br>/durability,<br>/dura                                                                             |\n| /jump           | op        | essentialsnk.jump                                                             | /j,<br>/jumpto                                                                                                |\n| /kickall        | op        | essentialsnk.kickall                                                          | ---                                                                                                           |\n| /lightning      | op        | essentialsnk.lightning                                                        | /strike,<br>/smite,<br>/thor,<br>/shock                                                                       |\n| /more           | op        | essentialsnk.more                                                             | ---                                                                                                           |\n| /mute           | op        | essentialsnk.mute                                                             | /silence                                                                                                      |\n| /ping           | true      | essentialsnk.ping                                                             | ---                                                                                                           |\n| /realname       | op        | essentialsnk.realname                                                         | ---                                                                                                           |\n| /repair         | op        | essentialsnk.repair,<br>essentialsnk.repair.all,<br>essentialsnk.repair.armor | /fix                                                                                                          |\n| /sethome        | true      | essentialsnk.sethome                                                          | /createhome                                                                                                   |\n| /setwarp        | op        | essentialsnk.setwarp                                                          | /createwarp                                                                                                   |\n| /spawn          | true      | essentialsnk.spawn,<br> essentialsnk.spawn.others                             | ---                                                                                                           |\n| /setspawn       | op        | essentialsnk.setspawn                                                         | ---                                                                                                           |\n| /speed          | op        | essentialsnk.speed,<br>essentialsnk.speed.others                              | ---                                                                                                           |\n| /sudo           | op        | essentialsnk.sudo                                                             | ---                                                                                                           |\n| /top            | op        | essentialsnk.top                                                              | ---                                                                                                           |\n| /tpa            | true      | essentialsnk.tpa                                                              | /call,<br>/tpask                                                                                              |\n| /tpaall         | op        | essentialsnk.tpaall                                                           | ---                                                                                                           |\n| /tpaccept       | true      | essentialsnk.tpaccept                                                         | /types                                                                                                        |\n| /tpahere        | op        | essentialsnk.tpahere                                                          | ---                                                                                                           |\n| /tpdeny         | true      | essentialsnk.tpdeny                                                           | /tpno                                                                                                         |\n| /tphere         | op        | essentialsnk.tphere                                                           | /s                                                                                                            |\n| /vanish         | op        | essentialsnk.vanish,<br>essentialsnk.vanish.others                            | /v                                                                                                            |\n| /warp           | true      | essentialsnk.warp                                                             | ---                                                                                                           |\n| /world          | op        | essentialsnk.world                                                            | /warps                                                                                                        |\n\n\n\n\n__[Download Page](https://github.com/hardsiamang655/EssentialsPNX/releases/tag/EssPNX)__\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-05-31",
+      "description": "",
+      "title": "banner",
+      "url": "https://raw.githubusercontent.com/PowerNukkitX-Bundle/EssentialsPNX/master/.idea/banner.png"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/154862792?v=4",
+  "id": "PowerNukkitX-Bundle/EssentialsPNX",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "EssentialsPNX",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/PowerNukkitX-Bundle/EssentialsPNX",
+  "stars": 0,
+  "summary": "Essentials plugin for PowerNukkitX!",
+  "targets": [
+    "nkx",
+    "pnx"
+  ],
+  "updated_at": 1780228514,
+  "versions": [
+    {
+      "changelog": "Automated release for v1.9.4",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EssentialsPNX.jar",
+          "primary": true,
+          "size": 154177,
+          "url": "https://github.com/PowerNukkitX-Bundle/EssentialsPNX/releases/download/v1.9.4/EssentialsPNX.jar"
+        }
+      ],
+      "name": "v1.9.4",
+      "prerelease": false,
+      "published_at": 1780228514,
+      "version": "v1.9.4"
+    }
+  ]
+}

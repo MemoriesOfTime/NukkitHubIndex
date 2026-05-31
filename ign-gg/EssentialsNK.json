@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.8",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Scallop",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1555076944,
+  "dependencies": [],
+  "description": "# EssentialsNK\nEssentials plugin for Nukkit\n\nContributions are welcome!\n\n__[Download Page](https://nukkitx.com/resources/essentialsnk.15/)__\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/47262780?v=4",
+  "id": "ign-gg/EssentialsNK",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "EssentialsNK",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/ign-gg/EssentialsNK",
+  "stars": 0,
+  "summary": "Essentials plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1780001118,
+  "versions": []
+}

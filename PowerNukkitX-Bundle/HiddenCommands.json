@@ -1,0 +1,71 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "PetteriM1",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1709261565,
+  "dependencies": [],
+  "description": "# HiddenCommands\nHide commands in the command selection list\n\nPorted version of [NukkitX](https://cloudburstmc.org/resources/hiddencommands.807/)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/154862792?v=4",
+  "id": "PowerNukkitX-Bundle/HiddenCommands",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "HiddenCommands",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/PowerNukkitX-Bundle/HiddenCommands",
+  "stars": 0,
+  "summary": "A Nukkit plugin to hide commands from command suggestions",
+  "targets": [
+    "nkx",
+    "pnx"
+  ],
+  "updated_at": 1780180135,
+  "versions": [
+    {
+      "changelog": "Automated release for v1.2",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HiddenCommands.jar",
+          "primary": true,
+          "size": 4554,
+          "url": "https://github.com/PowerNukkitX-Bundle/HiddenCommands/releases/download/v1.2/HiddenCommands.jar"
+        }
+      ],
+      "name": "v1.2",
+      "prerelease": false,
+      "published_at": 1780180135,
+      "version": "v1.2"
+    },
+    {
+      "changelog": "https://cloudburstmc.org/resources/hiddencommands.807/",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HiddenCommands-1.1.jar",
+          "primary": true,
+          "size": 4357,
+          "url": "https://github.com/PowerNukkitX-Bundle/HiddenCommands/releases/download/1.1/HiddenCommands-1.1.jar"
+        }
+      ],
+      "name": "HiddenCommands",
+      "prerelease": false,
+      "published_at": 1764902835,
+      "version": "1.1"
+    }
+  ]
+}

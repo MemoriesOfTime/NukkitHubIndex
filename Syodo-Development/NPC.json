@@ -1,0 +1,97 @@
+{
+  "api_version": "3.0.0",
+  "authors": [],
+  "categories": [],
+  "created_at": 1713896718,
+  "dependencies": [],
+  "description": "# NPC\n\nThis is a NPC Plugin for PowerNukkitX\n\nUse this plugin to spawn player statues. \nUnlike other NPC Plugins that were made for NukkitX, this NPC plugin saves your NPC data in a seperate folder.\n\nIf you want to spawn a NPC with a custom geometry, drop the texture file, and the geometry json in the SKINS folder. The geometrys identifier has to be geometry.unknown (blockbench default)\nThen you can spawn a NPC with that Skin using /npc spawn npcname skinname. (Replace npcname by the name your NPC should be called. This name has to be unique. Replace skinname by the skinname)\n\nIf you want to spawn a NPC of yourself, use /npc save SKINNAME. This will save your skin as a NPC skin. Make your you're using NO premium or persona skins since they do not use textures and geometries.\nIf your skin uses a modified geormtry, check if the geometry identifier was replaced to geometry.unknown.\n\nDo you want to modify your NPC? \nThen go into the NPCS folder and open the corresponding NPC file.\nThere you can modify everything like displayname, scale, commands etc.\n\nTo apply those changes, reload the world or restart your server.\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/164390207?v=4",
+  "id": "Syodo-Development/NPC",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "NPC",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Syodo-Development/NPC",
+  "stars": 1,
+  "summary": "Syodo NPC Plugin",
+  "targets": [
+    "nkx",
+    "pnx"
+  ],
+  "updated_at": 1780153553,
+  "versions": [
+    {
+      "changelog": "Fixed for latest PNX",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "NPC-1.0.0.jar",
+          "primary": true,
+          "size": 20901,
+          "url": "https://github.com/Syodo-Development/NPC/releases/download/1.0.0_2/NPC-1.0.0.jar"
+        }
+      ],
+      "name": "1.0.0_2",
+      "prerelease": false,
+      "published_at": 1759753269,
+      "version": "1.0.0_2"
+    },
+    {
+      "changelog": "API 3.0.0\r\n\r\n**Full Changelog**: https://github.com/Syodo-Development/NPC/compare/1.0.0...1.0.1",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "NPC.jar",
+          "primary": true,
+          "size": 20689,
+          "url": "https://github.com/Syodo-Development/NPC/releases/download/1.0.1/NPC.jar"
+        }
+      ],
+      "name": "1.0.1",
+      "prerelease": false,
+      "published_at": 1780153477,
+      "version": "1.0.1"
+    },
+    {
+      "changelog": "Removed jackson library",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "NPC-1.0.0.jar",
+          "primary": true,
+          "size": 20420,
+          "url": "https://github.com/Syodo-Development/NPC/releases/download/1.0.0_1/NPC-1.0.0.jar"
+        }
+      ],
+      "name": "",
+      "prerelease": false,
+      "published_at": 1743846578,
+      "version": "1.0.0_1"
+    },
+    {
+      "changelog": "NPC Plugin for PowerNukkitX\r\n\r\nCheck help page with /npc\r\n\r\n\r\nWhen you add your NPC geometrys by hand, the geometry has to use the identifier geometry.unknown (blockbench default)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "NPC-1.0.0.jar",
+          "primary": true,
+          "size": 2305178,
+          "url": "https://github.com/Syodo-Development/NPC/releases/download/1.0.0/NPC-1.0.0.jar"
+        }
+      ],
+      "name": "NPC",
+      "prerelease": false,
+      "published_at": 1741602909,
+      "version": "1.0.0"
+    }
+  ]
+}

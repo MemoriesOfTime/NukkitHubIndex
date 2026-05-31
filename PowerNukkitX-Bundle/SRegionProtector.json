@@ -1,0 +1,81 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Sergey_Dertan",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1763986875,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "LlamaEconomy",
+      "version_range": ""
+    }
+  ],
+  "description": "# SRegionProtector\nSRegionProtector is a PowerNukkitX plugin that allows players to protect their regions.\n## [Download](https://github.com/PowerNukkitX-Bundle/SRegionProtector/releases/tag/30.0)\n\n## Features\n* Chest and form UI with custom page support\n* API for another plugins\n* Lots of flags\n* Flexible settings\n* High performance\n\n</details>\n\n## Commands and permissions can be found at [Wiki](https://github.com/SergeyDertan/SRegionProtector/wiki).\n\n## !Warning! some flags may not work because they are disabled, pls check config.yml first\n\n## This is a port of the nukkit plugin to PNX. Please do not use this as a reference when learning to code for PNX.\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/154862792?v=4",
+  "id": "PowerNukkitX-Bundle/SRegionProtector",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "http://t.me/Sergey57ss",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "SRegionProtector",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/PowerNukkitX-Bundle/SRegionProtector",
+  "stars": 0,
+  "summary": "Flexible region protection plugin for nukkit",
+  "targets": [
+    "nkx",
+    "pnx"
+  ],
+  "updated_at": 1780167660,
+  "versions": [
+    {
+      "changelog": "Automated release for v30.1",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SRegionProtector.jar",
+          "primary": true,
+          "size": 24705729,
+          "url": "https://github.com/PowerNukkitX-Bundle/SRegionProtector/releases/download/v30.1/SRegionProtector.jar"
+        }
+      ],
+      "name": "v30.1",
+      "prerelease": false,
+      "published_at": 1780167660,
+      "version": "v30.1"
+    },
+    {
+      "changelog": "Ported version of SRegionProtector 30.0 to PNX",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SRegionProtector-30.0.jar",
+          "primary": true,
+          "size": 24704750,
+          "url": "https://github.com/PowerNukkitX-Bundle/SRegionProtector/releases/download/30.0/SRegionProtector-30.0.jar"
+        }
+      ],
+      "name": "30.0",
+      "prerelease": false,
+      "published_at": 1763987545,
+      "version": "30.0"
+    }
+  ]
+}

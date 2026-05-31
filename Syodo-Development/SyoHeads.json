@@ -1,0 +1,124 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Buddelbubi",
+      "url": ""
+    },
+    {
+      "avatar_url": "",
+      "name": "Syodo Minigames Network",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1735918253,
+  "dependencies": [],
+  "description": "# SyoHeads\n\n<img width=\"85\" height=\"85\" alt=\"grafik\" src=\"https://github.com/user-attachments/assets/ed21cc52-b838-4aa8-9ae4-cd95c7cc1c83\" />\n\nSyoHeads is a plugin that adds playerheads to PowerNukkitX.\nGet heads from bedrock players using /head bedrock (player)\nOr get heads from java players using /head java (player)\n\nYou also can get heads from a heads database by using /head database\n\n<img width=\"599\" height=\"665\" alt=\"grafik\" src=\"https://github.com/user-attachments/assets/518cd257-29e7-412d-94b7-ba360dc9d49d\" />\n<img width=\"693\" height=\"620\" alt=\"grafik\" src=\"https://github.com/user-attachments/assets/94a1d60d-81bb-4646-8de5-8df6e1ce97b4\" />\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/164390207?v=4",
+  "id": "Syodo-Development/SyoHeads",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "SyoHeads",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Syodo-Development/SyoHeads",
+  "stars": 1,
+  "summary": "SyoHeads is a Head Plugin for PowerNukkitX which adds playerheads to the server.",
+  "targets": [
+    "nkx",
+    "pnx"
+  ],
+  "updated_at": 1780172766,
+  "versions": [
+    {
+      "changelog": "Automated release for v1.1.2",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SyoHeads.jar",
+          "primary": true,
+          "size": 23154,
+          "url": "https://github.com/Syodo-Development/SyoHeads/releases/download/v1.1.2/SyoHeads.jar"
+        }
+      ],
+      "name": "v1.1.2",
+      "prerelease": false,
+      "published_at": 1780172766,
+      "version": "v1.1.2"
+    },
+    {
+      "changelog": "- Fixed that you can kill Heads\r\n- Fixed broken java subcommand\r\n- Command is now using paramTree",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SyoHeads-1.1.1.jar",
+          "primary": true,
+          "size": 23285,
+          "url": "https://github.com/Syodo-Development/SyoHeads/releases/download/1.1.1/SyoHeads-1.1.1.jar"
+        }
+      ],
+      "name": "1.1.1",
+      "prerelease": false,
+      "published_at": 1744020391,
+      "version": "1.1.1"
+    },
+    {
+      "changelog": "Updated Forms to use the newest form api in PNX",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SyoHeads-1.1.0.jar",
+          "primary": true,
+          "size": 22573,
+          "url": "https://github.com/Syodo-Development/SyoHeads/releases/download/1.1.0_fix/SyoHeads-1.1.0.jar"
+        }
+      ],
+      "name": "FormAPI Update",
+      "prerelease": false,
+      "published_at": 1741548832,
+      "version": "1.1.0_fix"
+    },
+    {
+      "changelog": "Added HeadsDB.\r\n\r\nTo open the database, use /head database",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SyoHeads-1.1.0.jar",
+          "primary": true,
+          "size": 2307282,
+          "url": "https://github.com/Syodo-Development/SyoHeads/releases/download/1.1.0/SyoHeads-1.1.0.jar"
+        }
+      ],
+      "name": "HeadsDB",
+      "prerelease": false,
+      "published_at": 1735946344,
+      "version": "1.1.0"
+    },
+    {
+      "changelog": "SyoHeads Release v1.\r\n\r\nCommands:\r\n/head bedrock (player)\r\n/head java (playername)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SyoHeads-1.0.0.jar",
+          "primary": true,
+          "size": 2303798,
+          "url": "https://github.com/Syodo-Development/SyoHeads/releases/download/1.0.0/SyoHeads-1.0.0.jar"
+        }
+      ],
+      "name": "1.0.0",
+      "prerelease": false,
+      "published_at": 1735918387,
+      "version": "1.0.0"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Buddelbubi",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1764789363,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "PlaceholderAPI",
+      "version_range": ""
+    }
+  ],
+  "description": "# Scoreboard\nA simple scoreboard plugin for PowerNukkitX\n\nYou can change the scoreboard in the config file.\nThis plugin works best with [PlaceholderAPI](https://github.com/PowerNukkitX-Bundle/PlaceholderAPI)\n\nDefault configuration:\n```yaml\nheader: \"§ePowerNukkitX Server\"\nlines:\n  - \"\"\n  - \"§7Welcome %player_displayname%\"\n  - \"§5%player_pos%\"\n  - \"§7Your money: §q%money%\" #Requires LLamaEconomy\n  - \"\"\n  - \"§7Your ping: §v%player_ping%ms\"\n  - \"§7Online: §t%server_online% / %server_max_players%\"\n  - \"\"\n  - \"§b%server_motd%\"\n  - \"§eThank you for using PNX\"\n```\n<img width=\"361\" height=\"361\" alt=\"grafik\" src=\"https://github.com/user-attachments/assets/b6fb2648-57ab-4edd-a75c-cbe265031a77\" />\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/154862792?v=4",
+  "id": "PowerNukkitX-Bundle/Scoreboard",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Scoreboard",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/PowerNukkitX-Bundle/Scoreboard",
+  "stars": 0,
+  "summary": "Add a scoreboard to your PowerNukkitX server.",
+  "targets": [
+    "nkx",
+    "pnx"
+  ],
+  "updated_at": 1780167426,
+  "versions": [
+    {
+      "changelog": "Automated release for v1.0.2",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Scoreboard.jar",
+          "primary": true,
+          "size": 10679,
+          "url": "https://github.com/PowerNukkitX-Bundle/Scoreboard/releases/download/v1.0.2/Scoreboard.jar"
+        }
+      ],
+      "name": "v1.0.2",
+      "prerelease": false,
+      "published_at": 1780167426,
+      "version": "v1.0.2"
+    },
+    {
+      "changelog": "Fixed a bug that spammed the console after a player left the server",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Scoreboard-1.0.1.jar",
+          "primary": true,
+          "size": 10684,
+          "url": "https://github.com/PowerNukkitX-Bundle/Scoreboard/releases/download/1.0.1/Scoreboard-1.0.1.jar"
+        }
+      ],
+      "name": "Scoreboard 1.0.1",
+      "prerelease": false,
+      "published_at": 1764796952,
+      "version": "1.0.1"
+    },
+    {
+      "changelog": "# Scoreboard\r\nA simple scoreboard plugin for PowerNukkitX\r\n\r\nYou can change the scoreboard in the config file.\r\nThis plugin works best with [PlaceholderAPI](https://github.com/PowerNukkitX-Bundle/PlaceholderAPI)\r\n\r\nDefault configuration:\r\n```yaml\r\nheader: \"§ePowerNukkitX Server\"\r\nlines:\r\n  - \"\"\r\n  - \"§7Welcome %player_displayname%\"\r\n  - \"§5%player_pos%\"\r\n  - \"§7Your money: §q%money%\" #Requires LLamaEconomy\r\n  - \"\"\r\n  - \"§7Your ping: §v%player_ping%ms\"\r\n  - \"§7Online: §t%server_online% / %server_max_players%\"\r\n  - \"\"\r\n  - \"§b%server_motd%\"\r\n  - \"§eThank you for using PNX\"\r\n```\r\n<img width=\"361\" height=\"361\" alt=\"grafik\" src=\"https://github.com/user-attachments/assets/b6fb2648-57ab-4edd-a75c-cbe265031a77\" />\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Scoreboard-1.0.0.jar",
+          "primary": true,
+          "size": 10661,
+          "url": "https://github.com/PowerNukkitX-Bundle/Scoreboard/releases/download/1.0.0/Scoreboard-1.0.0.jar"
+        }
+      ],
+      "name": "Scoreboard 1.0.0",
+      "prerelease": false,
+      "published_at": 1764789558,
+      "version": "1.0.0"
+    }
+  ]
+}

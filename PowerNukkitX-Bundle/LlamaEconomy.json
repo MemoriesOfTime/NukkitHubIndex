@@ -1,0 +1,109 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Proxma",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1709113070,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "PlaceholderAPI",
+      "version_range": ""
+    }
+  ],
+  "description": "# How to download LlamaEconomy\nYou can download LlamaEconomy here: https://nukkitx.com/resources/llamaeconomy.452/\n\n# Thanks to ZAP-Hosting!\nThis project wouldn't be possible without the help of ZAP-Hosting! \n\n***\n### ZAP-Hosting\nZap-Hosting is a VPS, Rootserver, (Lifetime) Gameserver, Domain & TeamSpeak 3/5 hosting company. They offer **good quality** servers **at a low price**. This project was also tested on a ZAP-Hosting Server. So if you need a **cheap** vps/gameserver/rootserver/teamspeak3/etc. hoster, ZAP-Hosting is the best choice.\n\nGet your own **VPS** today here: [Click me](https://zap-hosting.com/schdowvps)\n\nOr your own **Rootserver**: [Click me](https://zap-hosting.com/schdowrootserver)\n\nSpecial offer:\nUse the code `schdow-10` for a 10% discount\n***\n\n![YourKit](https://www.yourkit.com/images/yklogo.png)\n------\nYourKit supports open source projects with innovative and intelligent tools\nfor monitoring and profiling Java and .NET applications.\nYourKit is the creator of [YourKit Java Profiler](https://www.yourkit.com/java/profiler/),\n[YourKit .NET Profiler](https://www.yourkit.com/.net/profiler/\")\nand [YourKit YouMonitor](https://www.yourkit.com/youmonitor/)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/154862792?v=4",
+  "id": "PowerNukkitX-Bundle/LlamaEconomy",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "LlamaEconomy",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/PowerNukkitX-Bundle/LlamaEconomy",
+  "stars": 0,
+  "summary": "Easy to use economy system",
+  "targets": [
+    "nkx",
+    "pnx"
+  ],
+  "updated_at": 1780165246,
+  "versions": [
+    {
+      "changelog": "Automated release for v1.0.1",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "LlamaEconomy.jar",
+          "primary": true,
+          "size": 2640524,
+          "url": "https://github.com/PowerNukkitX-Bundle/LlamaEconomy/releases/download/v1.0.1/LlamaEconomy.jar"
+        }
+      ],
+      "name": "v1.0.1",
+      "prerelease": false,
+      "published_at": 1780165246,
+      "version": "v1.0.1"
+    },
+    {
+      "changelog": "Added PlaceholderAPI placeholders (%money%)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "LlamaEconomy-1.0.0.jar",
+          "primary": true,
+          "size": 2640320,
+          "url": "https://github.com/PowerNukkitX-Bundle/LlamaEconomy/releases/download/1.0.0_placeholder/LlamaEconomy-1.0.0.jar"
+        }
+      ],
+      "name": "LLamaEconony v1.0.0_plh",
+      "prerelease": false,
+      "published_at": 1764714889,
+      "version": "1.0.0_placeholder"
+    },
+    {
+      "changelog": "Fixed default configs not shaded into jar and therefore unable to load",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "LlamaEconomy-1.0.0.jar",
+          "primary": true,
+          "size": 2639931,
+          "url": "https://github.com/PowerNukkitX-Bundle/LlamaEconomy/releases/download/1.0.0_fix/LlamaEconomy-1.0.0.jar"
+        }
+      ],
+      "name": "Fixed default configs",
+      "prerelease": false,
+      "published_at": 1763986615,
+      "version": "1.0.0_fix"
+    },
+    {
+      "changelog": "This is LlamaEconomy for PowerNukkitX",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "LlamaEconomy-1.0.0.jar",
+          "primary": true,
+          "size": 2638379,
+          "url": "https://github.com/PowerNukkitX-Bundle/LlamaEconomy/releases/download/1.0.0/LlamaEconomy-1.0.0.jar"
+        }
+      ],
+      "name": "LlamaEconomy",
+      "prerelease": false,
+      "published_at": 1742319103,
+      "version": "1.0.0"
+    }
+  ]
+}

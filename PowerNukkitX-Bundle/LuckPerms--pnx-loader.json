@@ -1,0 +1,97 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Luck",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1709102311,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "PlaceholderAPI",
+      "version_range": ""
+    }
+  ],
+  "description": "![](https://raw.githubusercontent.com/LuckPerms/branding/master/banner/banner.png \"Banner\")\n# LuckPerms\n[![Build Status](https://ci.lucko.me/job/LuckPerms/badge/icon)](https://ci.lucko.me/job/LuckPerms/)\n[![javadoc](https://javadoc.io/badge2/net.luckperms/api/javadoc.svg)](https://javadoc.io/doc/net.luckperms/api)\n[![Maven Central](https://img.shields.io/maven-metadata/v/https/repo1.maven.org/maven2/net/luckperms/api/maven-metadata.xml.svg?label=maven%20central&colorB=brightgreen)](https://search.maven.org/artifact/net.luckperms/api)\n[![Discord](https://img.shields.io/discord/241667244927483904.svg?label=discord&logo=discord)](https://discord.gg/luckperms)\n\nLuckPerms is a permissions plugin for Minecraft servers. It allows server admins to control what features players can use by creating groups and assigning permissions.\n\nThe latest downloads, wiki & other useful links can be found on the project homepage at [luckperms.net](https://luckperms.net/).\n\nIt is:\n\n* **fast** - written with performance and scalability in mind.\n* **reliable** - trusted by thousands of server admins, and the largest of server networks.\n* **easy to use** - setup permissions using commands, directly in config files, or using the web editor.\n* **flexible** - supports a variety of data storage options, and works on lots of different server types.\n* **extensive** - a plethora of customization options and settings which can be changed to suit your server.\n* **free** - available for download and usage at no cost, and permissively licensed so it can remain free forever.\n\nFor more information, see the wiki article on [Why LuckPerms?](https://luckperms.net/wiki/Why-LuckPerms)\n\n## Building\nLuckPerms uses Gradle to handle dependencies & building.\n\n#### Requirements\n* Java 21 JDK or newer\n* Git\n\n#### Compiling from source\n```sh\ngit clone https://github.com/LuckPerms/LuckPerms.git\ncd LuckPerms/\n./gradlew build\n```\n\nYou can find the output jars in the `loader/build/libs` or `build/libs` directories.\n\n## Tests\nThere are some automated tests which run during each build.\n\n* Unit tests are defined in [`common/src/test`](https://github.com/LuckPerms/LuckPerms/tree/master/common/src/test)\n* Integration tests are defined in [`standalone/src/test`](https://github.com/LuckPerms/LuckPerms/tree/master/standalone/src/test).\n\n## Contributing\n#### Pull Requests\nIf you make any changes or improvements to the plugin which you think would be beneficial to others, please consider making a pull request to merge your changes back into the upstream project. (especially if your changes are bug fixes!)\n\nLuckPerms loosely follows the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html). Generally, try to copy the style of code found in the class you're editing. \n\n#### Project Layout\nThe project is split up into a few separate modules.\n\n* **API** - The public, semantically versioned API used by other plugins wishing to integrate with and retrieve data from LuckPerms. This module (for the most part) does not contain any implementation itself, and is provided by the plugin.\n* **Common** - The common module contains most of the code which implements the respective LuckPerms plugins. This abstract module reduces duplicated code throughout the project.\n* **Bukkit, BungeeCord, Fabric, Forge, Nukkit, Sponge & Velocity** - Each use the common module to implement plugins on the respective server platforms.\n\n## License\nLuckPerms is licensed under the permissive MIT license. Please see [`LICENSE.txt`](https://github.com/LuckPerms/LuckPerms/blob/master/LICENSE.txt) for more info.\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/154862792?v=4",
+  "id": "PowerNukkitX-Bundle/LuckPerms--pnx-loader",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://luckperms.net",
+    "wiki": ""
+  },
+  "manifest_path": "pnx/loader/src/main/resources/plugin.yml",
+  "name": "LuckPerms",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/PowerNukkitX-Bundle/LuckPerms",
+  "stars": 1,
+  "summary": "A permissions plugin",
+  "targets": [
+    "nkx",
+    "pnx"
+  ],
+  "updated_at": 1780166490,
+  "versions": [
+    {
+      "changelog": "Bumbed to API 3.0.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "LuckPerms-PNX-5.4.0.jar",
+          "primary": true,
+          "size": 1378368,
+          "url": "https://github.com/PowerNukkitX-Bundle/LuckPerms/releases/download/API_3.0.0/LuckPerms-PNX-5.4.0.jar"
+        }
+      ],
+      "name": "LuckPerms for PNX",
+      "prerelease": false,
+      "published_at": 1780166490,
+      "version": "API_3.0.0"
+    },
+    {
+      "changelog": "- Fixed that you cannot use quotes for names with spaces\r\n- Increased username char limit to 32\r\n- Added PlaceholderAPI",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "LuckPerms-PNX-5.4.0.jar",
+          "primary": true,
+          "size": 1378459,
+          "url": "https://github.com/PowerNukkitX-Bundle/LuckPerms/releases/download/fixes_1/LuckPerms-PNX-5.4.0.jar"
+        }
+      ],
+      "name": "LuckPerms PNX (Bedrock Adjusted)",
+      "prerelease": false,
+      "published_at": 1764813234,
+      "version": "fixes_1"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "LuckPerms-PNX-5.4.0.jar",
+          "primary": true,
+          "size": 1376495,
+          "url": "https://github.com/PowerNukkitX-Bundle/LuckPerms/releases/download/snapshot/LuckPerms-PNX-5.4.0.jar"
+        }
+      ],
+      "name": "LuckPerms PNX",
+      "prerelease": false,
+      "published_at": 1741694472,
+      "version": "snapshot"
+    }
+  ]
+}
