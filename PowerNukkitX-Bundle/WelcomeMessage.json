@@ -24,13 +24,12 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "WelcomeMessage",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/WelcomeMessage",
   "stars": 0,
   "summary": "Send a nice message to players that join your server",
   "targets": [
-    "nkx",
     "pnx"
   ],
   "updated_at": 1780175275,

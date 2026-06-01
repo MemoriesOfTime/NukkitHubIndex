@@ -29,13 +29,12 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "SyoHeads",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/Syodo-Development/SyoHeads",
   "stars": 1,
   "summary": "SyoHeads is a Head Plugin for PowerNukkitX which adds playerheads to the server.",
   "targets": [
-    "nkx",
     "pnx"
   ],
   "updated_at": 1780172766,

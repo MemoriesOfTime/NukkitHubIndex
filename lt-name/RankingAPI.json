@@ -11,7 +11,7 @@
   "created_at": 1617263842,
   "dependencies": [],
   "description": "# RankingAPI\n排行榜API，提供简单创建排行榜方法\n\n示例：\n```java\nRanking ranking=createRanking(this,\"测试排行榜\",pos);\nHashMap<String, Number> map = new HashMap<>();\nmap.put(\"ltname\",100);\nmap.put(\"ltname2\",99);\nmap.put(\"ltname3\",98);\nmap.put(\"ltname4\",10);\nranking.setRankingList(map);\n```\n",
-  "detection_confidence": "high",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
@@ -30,7 +30,8 @@
   "stars": 1,
   "summary": "提供简单易用的排行榜接口",
   "targets": [
-    "nkx"
+    "nkx",
+    "nkmot"
   ],
   "updated_at": 1677852951,
   "versions": []

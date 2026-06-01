@@ -17,7 +17,7 @@
     }
   ],
   "description": "<a href=\"https://github.com/SmallasWater/PlayerPoints/releases/latest\" alt=\"Latest release\">\n    <img src=\"https://img.shields.io/github/v/release/SmallasWater/PlayerPoints?include_prereleases\" alt=\"Latest release\">\n</a>\n<br>\n \n\n\n#PlayerPoints\n\n点券系统",
-  "detection_confidence": "high",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/46156675?v=4",

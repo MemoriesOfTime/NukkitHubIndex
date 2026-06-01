@@ -30,13 +30,12 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "Scoreboard",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/Scoreboard",
   "stars": 0,
   "summary": "Add a scoreboard to your PowerNukkitX server.",
   "targets": [
-    "nkx",
     "pnx"
   ],
   "updated_at": 1780167426,

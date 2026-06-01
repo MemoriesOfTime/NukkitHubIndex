@@ -40,13 +40,12 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "CrystalWars",
-  "primary_target": "nkx",
+  "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/MemoriesOfTime/CrystalWars",
   "stars": 7,
   "summary": "",
   "targets": [
-    "nkx",
     "nkmot"
   ],
   "updated_at": 1706340547,

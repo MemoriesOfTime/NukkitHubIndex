@@ -34,13 +34,12 @@
   },
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "SRegionProtector",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/SRegionProtector",
   "stars": 0,
   "summary": "Flexible region protection plugin for nukkit",
   "targets": [
-    "nkx",
     "pnx"
   ],
   "updated_at": 1780167660,

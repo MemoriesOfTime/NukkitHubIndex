@@ -34,13 +34,12 @@
   },
   "manifest_path": "pnx/loader/src/main/resources/plugin.yml",
   "name": "LuckPerms",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/LuckPerms",
   "stars": 1,
   "summary": "A permissions plugin",
   "targets": [
-    "nkx",
     "pnx"
   ],
   "updated_at": 1780166490,

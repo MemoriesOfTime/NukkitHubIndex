@@ -11,7 +11,7 @@
   "created_at": 1627560030,
   "dependencies": [],
   "description": "# HiddenCommands\n\nNukkit 隐藏命令插件  \n/hcmd cmd 开启/关闭隐藏所有命令  \n/hcmd tip 开启/关闭隐藏命令不存在提示  \n\n下载：https://ci.lt-name.com/view/LT_Name/job/HiddenCommands/\n",
-  "detection_confidence": "high",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
@@ -30,7 +30,8 @@
   "stars": 1,
   "summary": "",
   "targets": [
-    "nkx"
+    "nkx",
+    "nkmot"
   ],
   "updated_at": 1627636490,
   "versions": []

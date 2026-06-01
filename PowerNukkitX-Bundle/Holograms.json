@@ -30,13 +30,12 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "Holograms",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/Holograms",
   "stars": 0,
   "summary": "Add holograms to your server",
   "targets": [
-    "nkx",
     "pnx"
   ],
   "updated_at": 1780164894,

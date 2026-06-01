@@ -5,7 +5,7 @@
   "created_at": 1629606739,
   "dependencies": [],
   "description": "# InvSee\n查看并编辑玩家背包~\n",
-  "detection_confidence": "high",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
@@ -24,7 +24,8 @@
   "stars": 1,
   "summary": "查看并编辑玩家背包~",
   "targets": [
-    "nkx"
+    "nkx",
+    "nkmot"
   ],
   "updated_at": 1635927506,
   "versions": []

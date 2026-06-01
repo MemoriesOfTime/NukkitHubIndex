@@ -11,7 +11,7 @@
   "created_at": 1678647759,
   "dependencies": [],
   "description": "# JKit\n\nhelp plugin for YanyanQt\n\nhttps://www.youtube.com/watch?v=ZLzqiZbvmz4\n",
-  "detection_confidence": "high",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/172227050?v=4",

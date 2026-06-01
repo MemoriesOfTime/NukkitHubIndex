@@ -18,13 +18,12 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "NPC",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/Syodo-Development/NPC",
   "stars": 1,
   "summary": "Syodo NPC Plugin",
   "targets": [
-    "nkx",
     "pnx"
   ],
   "updated_at": 1780153553,

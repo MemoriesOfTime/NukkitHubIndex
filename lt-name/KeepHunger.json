@@ -11,7 +11,7 @@
   "created_at": 1641169846,
   "dependencies": [],
   "description": "",
-  "detection_confidence": "high",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
@@ -30,7 +30,8 @@
   "stars": 0,
   "summary": "",
   "targets": [
-    "nkx"
+    "nkx",
+    "nkmot"
   ],
   "updated_at": 1641169907,
   "versions": []

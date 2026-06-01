@@ -35,13 +35,12 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "FormDSL",
-  "primary_target": "nkx",
+  "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/MemoriesOfTime/FormDSL",
   "stars": 2,
   "summary": "support dsl operation in kotlin to build Form UI",
   "targets": [
-    "nkx",
     "nkmot"
   ],
   "updated_at": 1686225912,

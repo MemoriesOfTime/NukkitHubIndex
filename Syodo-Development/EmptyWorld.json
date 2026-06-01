@@ -24,13 +24,12 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "EmptyWorld",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/Syodo-Development/EmptyWorld",
   "stars": 1,
   "summary": "EmptyWorld generator",
   "targets": [
-    "nkx",
     "pnx"
   ],
   "updated_at": 1780176943,

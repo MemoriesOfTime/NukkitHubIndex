@@ -34,15 +34,14 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "Core",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/bruchusorthopnea865/Skyblock",
   "stars": 0,
   "summary": "🌌 Explore SkyblockCore, an open-source project for MC:BE, designed as a reference for building your own Skyblock server with Kotlin, MongoDB, and Redis.",
   "targets": [
-    "nkx",
     "pnx"
   ],
-  "updated_at": 1780249812,
+  "updated_at": 1780337199,
   "versions": []
 }

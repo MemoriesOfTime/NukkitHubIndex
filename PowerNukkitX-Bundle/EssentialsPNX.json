@@ -31,13 +31,12 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "EssentialsPNX",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/EssentialsPNX",
   "stars": 0,
   "summary": "Essentials plugin for PowerNukkitX!",
   "targets": [
-    "nkx",
     "pnx"
   ],
   "updated_at": 1780228514,

@@ -50,13 +50,12 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "HorseHunt",
-  "primary_target": "nkx",
+  "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/lt-name/HorseHunt",
   "stars": 0,
   "summary": "",
   "targets": [
-    "nkx",
     "nkmot"
   ],
   "updated_at": 1628039872,

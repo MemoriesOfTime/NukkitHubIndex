@@ -1,0 +1,167 @@
+{
+  "api_version": "2.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Buddelbubi",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1731598796,
+  "dependencies": [],
+  "description": "<img width=\"3550\" height=\"1722\" alt=\"grafik\" src=\"https://github.com/user-attachments/assets/1e99b107-6661-41e8-a15a-f67dedfbb5fc\" />\n\n# AnyVersion - Allow your players to join with older clients down to 1.19.70\n\nAnyVersion is a plugin that allows your players to play with older clients. \nThis plugin is more than a protocol version bypass. It actually translates newer packets to older clients (vice versa).\n\nPlease be aware that this plugin has to be updated with every new minecraft version.\nEven though this plugin allows players to join with versions down to 1.19.70, we only offer support for versions down to 1.20.3.\nThis is because on versions below, custom blocks are not longer translated. For version below 1.20.0, you cannot even connect anymore without disabling xbox auth. And on 1.19.70, there were no BlockHashes, which PNX uses.\nTherefore dont expect help from us when players with clients lower than 1.20.3 have problems on your server. (Thats old enough anyways)\n\nIf using WaterdogPE, you probably want to use [SyodogPE](https://github.com/Syodo-Development/SyodogPE). \nAnyVersion works with base WaterdogPE, but your WDPE console might get spammed with some warnings you can just ignore.\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/154862792?v=4",
+  "id": "PowerNukkitX-Bundle/AnyVersion",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "AnyVersion",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/PowerNukkitX-Bundle/AnyVersion",
+  "stars": 8,
+  "summary": "Allow older clients to join your server.",
+  "targets": [
+    "nkx",
+    "pnx"
+  ],
+  "updated_at": 1780308869,
+  "versions": [
+    {
+      "changelog": "Updated AnyVersion to Minecraft Bedrock 26.20 (975)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AnyVersion.jar",
+          "primary": true,
+          "size": 7027482,
+          "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/2.7.0/AnyVersion.jar"
+        }
+      ],
+      "name": "AnyVersion 2.7.0",
+      "prerelease": false,
+      "published_at": 1778077370,
+      "version": "2.7.0"
+    },
+    {
+      "changelog": "Added Protocol for 26.10",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AnyVersion.jar",
+          "primary": true,
+          "size": 6952234,
+          "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/2.6.0/AnyVersion.jar"
+        }
+      ],
+      "name": "AnyVersion 2.6.0",
+      "prerelease": false,
+      "published_at": 1774540601,
+      "version": "2.6.0"
+    },
+    {
+      "changelog": "Fixed NoSuchMethodException ",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AnyVersion.jar",
+          "primary": true,
+          "size": 6951962,
+          "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/2.5.1/AnyVersion.jar"
+        }
+      ],
+      "name": "AnyVersion 2.5.1",
+      "prerelease": false,
+      "published_at": 1774080570,
+      "version": "2.5.1"
+    },
+    {
+      "changelog": "Updated AnyVersion to Minecraft 26.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AnyVersion.jar",
+          "primary": true,
+          "size": 6863463,
+          "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/2.5.0/AnyVersion.jar"
+        }
+      ],
+      "name": "AnyVersion 2.5.0",
+      "prerelease": false,
+      "published_at": 1770754174,
+      "version": "2.5.0"
+    },
+    {
+      "changelog": "Updated to Minecraft Bedrock 1.21.130",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AnyVersion.jar",
+          "primary": true,
+          "size": 6760516,
+          "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/2.4.0/AnyVersion.jar"
+        }
+      ],
+      "name": "AnyVersion 2.4.0",
+      "prerelease": false,
+      "published_at": 1767989061,
+      "version": "2.4.0"
+    },
+    {
+      "changelog": "Fixed EntityFlag for AddPlayerPacket",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AnyVersion.jar",
+          "primary": true,
+          "size": 6746753,
+          "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/2.3.1/AnyVersion.jar"
+        }
+      ],
+      "name": "AnyVersion 2.3.1",
+      "prerelease": false,
+      "published_at": 1764880422,
+      "version": "2.3.1"
+    },
+    {
+      "changelog": "Updated AnyVersion to newest Minecraft 1.21.124",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AnyVersion.jar",
+          "primary": true,
+          "size": 6704725,
+          "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/2.3.0/AnyVersion.jar"
+        }
+      ],
+      "name": "AnyVersion 2.3.0",
+      "prerelease": false,
+      "published_at": 1764002713,
+      "version": "2.3.0"
+    },
+    {
+      "changelog": "Minecraft Version: 1.21.100",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AnyVersion.jar",
+          "primary": true,
+          "size": 6620156,
+          "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/2.2.0/AnyVersion.jar"
+        }
+      ],
+      "name": "AnyVersion 2.2.0",
+      "prerelease": false,
+      "published_at": 1755547148,
+      "version": "2.2.0"
+    }
+  ]
+}

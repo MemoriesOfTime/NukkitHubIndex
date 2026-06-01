@@ -16,7 +16,7 @@
   "created_at": 1685620784,
   "dependencies": [],
   "description": "# ImageNK\nShow images in your server!  \nModified version of Nukkit-MOT supported",
-  "detection_confidence": "high",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/62042238?v=4",
@@ -35,7 +35,8 @@
   "stars": 1,
   "summary": "Show images in your server!",
   "targets": [
-    "nkx"
+    "nkx",
+    "nkmot"
   ],
   "updated_at": 1772356717,
   "versions": [

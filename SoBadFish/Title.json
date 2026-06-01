@@ -27,7 +27,7 @@
     }
   ],
   "description": "# Title\n基于MySQL的Nukkit称号插件\n",
-  "detection_confidence": "high",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/83235042?v=4",

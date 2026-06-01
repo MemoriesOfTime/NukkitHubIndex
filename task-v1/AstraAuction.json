@@ -66,13 +66,12 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "AstraAuction",
-  "primary_target": "nkx",
+  "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/task-v1/AstraAuction",
   "stars": 2,
   "summary": "Auction plugin scaffold for Lumi (Nukkit-MOT fork)",
   "targets": [
-    "nkx",
     "nkmot",
     "lumi"
   ],

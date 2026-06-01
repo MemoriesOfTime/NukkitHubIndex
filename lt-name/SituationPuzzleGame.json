@@ -3,24 +3,19 @@
   "authors": [
     {
       "avatar_url": "",
-      "name": "若水",
-      "url": ""
-    },
-    {
-      "avatar_url": "",
       "name": "LT_Name",
       "url": ""
     }
   ],
   "categories": [],
-  "created_at": 1585636313,
+  "created_at": 1780324056,
   "dependencies": [],
   "description": "",
-  "detection_confidence": "medium",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
-  "id": "lt-name/CreateAdmin",
+  "id": "lt-name/SituationPuzzleGame",
   "license": {
     "id": "ARR",
     "name": "All Rights Reserved",
@@ -28,16 +23,15 @@
   },
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
-  "name": "CreateAdmin",
-  "primary_target": "nkx",
+  "name": "SituationPuzzleGame",
+  "primary_target": "nkmot",
   "server_version": "",
-  "source": "https://github.com/lt-name/CreateAdmin",
-  "stars": 0,
-  "summary": "",
+  "source": "https://github.com/lt-name/SituationPuzzleGame",
+  "stars": 1,
+  "summary": "Nukkit-MOT 海龟汤（情境猜谜）游戏插件，支持多人房间与 AI 单人模式",
   "targets": [
-    "nkx",
     "nkmot"
   ],
-  "updated_at": 1678619596,
+  "updated_at": 1780324077,
   "versions": []
 }

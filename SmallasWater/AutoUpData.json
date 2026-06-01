@@ -11,7 +11,7 @@
   "created_at": 1571297948,
   "dependencies": [],
   "description": "# AutoUpData\n根据Github仓库 更新插件\n",
-  "detection_confidence": "high",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/46156675?v=4",

@@ -24,13 +24,12 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "Invsee",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/Invsee",
   "stars": 0,
   "summary": "An simple InvSee plugin for Nukkit!",
   "targets": [
-    "nkx",
     "pnx"
   ],
   "updated_at": 1780179024,

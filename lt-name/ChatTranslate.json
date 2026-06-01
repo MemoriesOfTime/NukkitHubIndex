@@ -30,13 +30,12 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "ChatTranslate",
-  "primary_target": "nkx",
+  "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/lt-name/ChatTranslate",
   "stars": 1,
   "summary": "Automatic translation of player chat messages in nukkit",
   "targets": [
-    "nkx",
     "nkmot"
   ],
   "updated_at": 1667308406,

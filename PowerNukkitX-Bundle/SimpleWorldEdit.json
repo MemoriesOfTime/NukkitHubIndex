@@ -24,13 +24,12 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "SimpleWorldEdit",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/SimpleWorldEdit",
   "stars": 1,
   "summary": "Simple WorldEdit plugin for PNX",
   "targets": [
-    "nkx",
     "pnx"
   ],
   "updated_at": 1780153581,

@@ -35,13 +35,12 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "AutoResourceChest",
-  "primary_target": "nkx",
+  "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/lt-name/AutoResourceChest",
   "stars": 0,
   "summary": "",
   "targets": [
-    "nkx",
     "nkmot"
   ],
   "updated_at": 1746416621,

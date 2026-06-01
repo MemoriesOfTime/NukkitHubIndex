@@ -24,13 +24,12 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "AuthPNX",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/AuthPNX",
   "stars": 0,
   "summary": "An authentication plugin for PowerNukkitX",
   "targets": [
-    "nkx",
     "pnx"
   ],
   "updated_at": 1780162569,

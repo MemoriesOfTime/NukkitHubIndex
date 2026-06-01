@@ -1,0 +1,65 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "",
+      "name": "Koshak_Mine",
+      "url": ""
+    },
+    {
+      "avatar_url": "",
+      "name": "PydingAbsorber",
+      "url": ""
+    }
+  ],
+  "categories": [],
+  "created_at": 1779784815,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "MobPlugin",
+      "version_range": ""
+    }
+  ],
+  "description": "# Cheremsha\nUnique plugin which adds.. Cheremsha!\n\nThanks [PydingAbsorber](https://github.com/PydingAbsorber) for a good model and textures (which I was forced to remodel box by box with my own hands)",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/52908036?v=4",
+  "id": "KoshakMineDEV/Cheremsha",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Cheremsha",
+  "primary_target": "lumi",
+  "server_version": "",
+  "source": "https://github.com/KoshakMineDEV/Cheremsha",
+  "stars": 0,
+  "summary": "",
+  "targets": [
+    "lumi"
+  ],
+  "updated_at": 1779784864,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Cheremsha-1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 132097,
+          "url": "https://github.com/KoshakMineDEV/Cheremsha/releases/download/1.0.0/Cheremsha-1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "1.0.0",
+      "prerelease": false,
+      "published_at": 1779784864,
+      "version": "1.0.0"
+    }
+  ]
+}

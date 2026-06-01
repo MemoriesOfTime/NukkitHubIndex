@@ -28,13 +28,12 @@
   },
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "NukkitWorlds",
-  "primary_target": "nkx",
+  "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/Vaktari-Dev/NukkitWorlds",
   "stars": 0,
   "summary": "World management plugin for Nukkit-PM1E and Nukkit-MOT/Lumi",
   "targets": [
-    "nkx",
     "nkmot"
   ],
   "updated_at": 1779881960,

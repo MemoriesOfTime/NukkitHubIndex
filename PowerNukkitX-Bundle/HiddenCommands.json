@@ -24,13 +24,12 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "HiddenCommands",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/HiddenCommands",
   "stars": 0,
   "summary": "A Nukkit plugin to hide commands from command suggestions",
   "targets": [
-    "nkx",
     "pnx"
   ],
   "updated_at": 1780180135,

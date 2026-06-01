@@ -22,7 +22,7 @@
     }
   ],
   "description": "# DCurrency",
-  "detection_confidence": "high",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
@@ -41,7 +41,8 @@
   "stars": 0,
   "summary": "DCurrency",
   "targets": [
-    "nkx"
+    "nkx",
+    "nkmot"
   ],
   "updated_at": 1754902798,
   "versions": []

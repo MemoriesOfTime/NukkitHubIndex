@@ -45,13 +45,12 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "TeamSystem",
-  "primary_target": "nkx",
+  "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/MemoriesOfTime/TeamSystem",
   "stars": 3,
   "summary": "",
   "targets": [
-    "nkx",
     "nkmot"
   ],
   "updated_at": 1660656601,

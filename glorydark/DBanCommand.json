@@ -11,7 +11,7 @@
   "created_at": 1734355751,
   "dependencies": [],
   "description": "",
-  "detection_confidence": "high",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
@@ -30,7 +30,8 @@
   "stars": 0,
   "summary": "BanCommand",
   "targets": [
-    "nkx"
+    "nkx",
+    "nkmot"
   ],
   "updated_at": 1734355948,
   "versions": []

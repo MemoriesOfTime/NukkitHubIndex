@@ -29,13 +29,12 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "PlaceholderAPI",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/PlaceholderAPI",
   "stars": 0,
   "summary": "PlaceholderAPI",
   "targets": [
-    "nkx",
     "pnx"
   ],
   "updated_at": 1780164510,

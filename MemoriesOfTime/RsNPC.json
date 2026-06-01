@@ -35,13 +35,12 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "RsNPC",
-  "primary_target": "nkx",
+  "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/MemoriesOfTime/RsNPC",
   "stars": 13,
   "summary": "NPC plugin for Nukkit-MOT",
   "targets": [
-    "nkx",
     "nkmot"
   ],
   "updated_at": 1770466650,

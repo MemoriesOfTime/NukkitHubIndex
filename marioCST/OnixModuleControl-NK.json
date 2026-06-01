@@ -38,6 +38,7 @@
   "summary": "Nukkit implementation of Onix' module control API",
   "targets": [
     "nkx",
+    "nkmot",
     "pnx"
   ],
   "updated_at": 1748392963,

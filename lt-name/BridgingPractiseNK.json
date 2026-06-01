@@ -30,13 +30,12 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "BridgingPractise",
-  "primary_target": "nkx",
+  "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/lt-name/BridgingPractiseNK",
   "stars": 0,
   "summary": "A bridging practise plugin helps you practise your bridging ability.",
   "targets": [
-    "nkx",
     "nkmot"
   ],
   "updated_at": 1767403504,
