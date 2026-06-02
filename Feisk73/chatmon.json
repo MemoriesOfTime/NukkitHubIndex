@@ -2,12 +2,15 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/173158652?v=4",
+      "avatar_url": "",
       "name": "Feisk73",
-      "url": "https://github.com/Feisk73"
+      "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "social",
+    "management"
+  ],
   "created_at": 1752688794,
   "dependencies": [
     {

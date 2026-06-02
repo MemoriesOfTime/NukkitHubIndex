@@ -2,22 +2,15 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/95095051?v=4",
-      "name": "LeonTenDev",
-      "url": "https://github.com/LeonTenDev"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
-      "name": "Buddelbubi",
-      "url": "https://github.com/Buddelbubi"
-    },
-    {
       "avatar_url": "",
       "name": "Leon1917141",
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "management",
+    "utility"
+  ],
   "created_at": 1709261555,
   "dependencies": [],
   "description": "# Invsee\nAn simple InvSee plugin for Nukkit!\n\nCommands: /invsee, /inv\nPermission: invsee.cmd\n\n<img width=\"524\" height=\"658\" alt=\"grafik\" src=\"https://github.com/user-attachments/assets/17328374-9bed-4d80-99a9-7a979c3ca2da\" />\n",

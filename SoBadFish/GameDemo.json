@@ -2,17 +2,15 @@
   "api_version": "1.0.11",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/83235042?v=4",
-      "name": "SoBadFish",
-      "url": "https://github.com/SoBadFish"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
-      "name": "lt-name",
-      "url": "https://github.com/lt-name"
+      "avatar_url": "",
+      "name": "sobadfish",
+      "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "game-mechanics",
+    "library"
+  ],
   "created_at": 1662954920,
   "dependencies": [
     {

@@ -2,17 +2,15 @@
   "api_version": "1.0.13",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/51165317?v=4",
+      "avatar_url": "",
       "name": "IWareQ",
-      "url": "https://github.com/IWareQ"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/83061703?v=4",
-      "name": "MEFRREEX",
-      "url": "https://github.com/MEFRREEX"
+      "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "library",
+    "utility"
+  ],
   "created_at": 1741620361,
   "dependencies": [],
   "description": "# FakeInventories \n\nFakeInventories is a simple library plugin for Nukkit-MOT Minecraft Bedrock server software, that will help you to create\nyour custom virtual inventories with ease.\n\n##### [Download plugin](https://github.com/LuminiaDev/FakeInventories-MOT/releases)\n\n## Usage\n\n```java\nFakeInventory inventory = new FakeInventory(InventoryType.CHEST, \"custom title\");\n\ninventory.setDefaultItemHandler((item, event) -> {\n    event.setCancelled(true);\n\n    Player target = event.getTransaction().getSource();\n\n    target.sendMessage(\"is default item handler\");\n});\n\ninventory.addItems((item, event) -> {\n    event.setCancelled(true);\n\n    Player target = event.getTransaction().getSource();\n    \n    target.sendMessage(\"is custom item handler in addItem method\");\n    \n    target.removeWindow(inventory);\n}, Item.get(Item.IRON_BLOCK), Item.get(Item.IRON_BAR))\n\ninventory.setItem(5, Item.get(Item.DIAMOND), (item, event) -> {\n    event.setCancelled(true);\n\n    Player target = event.getTransaction().getSource();\n\n    target.sendMessage(\"is custom item handler\");\n\n    target.removeWindow(inventory);\n});\n\nplayer.addWindow(inventory);\n```\n\n## Maven\nAdding repo:\n```xml\n<repositories>\n    <repository>\n        <id>luminiadev-repository-snapshots</id>\n        <url>https://repo.luminiadev.com/snapshots</url>\n    </repository>\n</repositories>\n```\n\nAdding dependency:\n```xml\n<dependency>\n    <groupId>me.iwareq.fakeinventories</groupId>\n    <artifactId>fakeinventories</artifactId>\n    <version>1.1.9-MOT</version>\n</dependency>\n```\n\n## Gradle\nAdding repo:\n```kts\nmaven {\n    name = \"luminiadevRepositorySnapshots\"\n    url = uri(\"https://repo.luminiadev.com/snapshots\")\n}\n```\n\nAdding dependency:\n```kts\ncompileOnly(\"me.iwareq.fakeinventories:fakeinventories:1.1.9-MOT\")\n```",

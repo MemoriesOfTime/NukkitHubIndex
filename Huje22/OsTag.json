@@ -2,22 +2,15 @@
   "api_version": "1.0.14",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/68228599?v=4",
-      "name": "IndianBartonka",
-      "url": "https://github.com/IndianBartonka"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/74245920?v=4",
-      "name": "neziw",
-      "url": "https://github.com/neziw"
-    },
-    {
       "avatar_url": "",
       "name": "IndianPL",
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "social",
+    "utility"
+  ],
   "created_at": 1669305395,
   "dependencies": [
     {

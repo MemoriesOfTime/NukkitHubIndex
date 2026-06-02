@@ -2,32 +2,14 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/51983335?v=4",
-      "name": "Catrainbow233",
-      "url": "https://github.com/Catrainbow233"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/25319400?v=4",
+      "avatar_url": "",
       "name": "WetABQ",
-      "url": "https://github.com/WetABQ"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/49704373?v=4",
-      "name": "huanmeng-qwq",
-      "url": "https://github.com/huanmeng-qwq"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/62297254?v=4",
-      "name": "Colerar",
-      "url": "https://github.com/Colerar"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/108974603?v=4",
-      "name": "LYEmerald",
-      "url": "https://github.com/LYEmerald"
+      "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "management"
+  ],
   "created_at": 1670061766,
   "dependencies": [
     {

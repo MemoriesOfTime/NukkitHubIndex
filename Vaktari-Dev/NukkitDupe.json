@@ -2,12 +2,15 @@
   "api_version": "1.0.13",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/288031207?v=4",
+      "avatar_url": "",
       "name": "Vaktari-Dev",
-      "url": "https://github.com/Vaktari-Dev"
+      "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "utility",
+    "game-mechanics"
+  ],
   "created_at": 1779874175,
   "dependencies": [
     {

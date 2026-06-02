@@ -2,21 +2,6 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
-      "name": "lt-name",
-      "url": "https://github.com/lt-name"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "name": "dependabot[bot]",
-      "url": "https://github.com/apps/dependabot"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/59405399?v=4",
-      "name": "k7Xm9pQr",
-      "url": "https://github.com/k7Xm9pQr"
-    },
-    {
       "avatar_url": "",
       "name": "LT_Name",
       "url": ""
@@ -27,7 +12,10 @@
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "library",
+    "game-mechanics"
+  ],
   "created_at": 1600500317,
   "dependencies": [
     {

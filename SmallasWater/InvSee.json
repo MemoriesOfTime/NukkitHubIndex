@@ -1,17 +1,6 @@
 {
   "api_version": "1.0.11",
-  "authors": [
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
-      "name": "SmallasWater",
-      "url": "https://github.com/SmallasWater"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
-      "name": "lt-name",
-      "url": "https://github.com/lt-name"
-    }
-  ],
+  "authors": [],
   "categories": [],
   "created_at": 1629606739,
   "dependencies": [],

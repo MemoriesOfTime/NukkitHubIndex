@@ -2,17 +2,14 @@
   "api_version": "2.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/54776640?v=4",
+      "avatar_url": "",
       "name": "ScarletRedMan",
-      "url": "https://github.com/ScarletRedMan"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/54947469?v=4",
-      "name": "celishere",
-      "url": "https://github.com/celishere"
+      "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "management"
+  ],
   "created_at": 1583467779,
   "dependencies": [
     {

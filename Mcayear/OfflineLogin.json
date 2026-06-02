@@ -2,12 +2,15 @@
   "api_version": "1.0.14",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/48203962?v=4",
-      "name": "Mcayear",
-      "url": "https://github.com/Mcayear"
+      "avatar_url": "",
+      "name": "mcayear",
+      "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "management",
+    "utility"
+  ],
   "created_at": 1773056801,
   "dependencies": [
     {

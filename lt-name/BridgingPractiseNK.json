@@ -2,27 +2,14 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
-      "name": "lt-name",
-      "url": "https://github.com/lt-name"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/65506006?v=4",
-      "name": "hax0r31337",
-      "url": "https://github.com/hax0r31337"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/29895665?v=4",
-      "name": "jungwuk-ryu",
-      "url": "https://github.com/jungwuk-ryu"
-    },
-    {
       "avatar_url": "",
       "name": "Ricoco",
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "game-mechanics"
+  ],
   "created_at": 1707899525,
   "dependencies": [
     {

@@ -1,18 +1,9 @@
 {
   "api_version": "unknown",
-  "authors": [
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/110056737?v=4",
-      "name": "zernix2077",
-      "url": "https://github.com/zernix2077"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/216477222?v=4",
-      "name": "Kanelucky",
-      "url": "https://github.com/Kanelucky"
-    }
+  "authors": [],
+  "categories": [
+    "game-mechanics"
   ],
-  "categories": [],
   "created_at": 1779776532,
   "dependencies": [],
   "description": "# Legacy Console Edition WorldGen\n\nRe-implementation of a Minecraft Legacy Console Edition world generation based on https://github.com/smartcmd/MinecraftConsoles to be used in AllayMC.\n\nOriginal generation\n![Original generation](https://raw.githubusercontent.com/Kanelucky/LCEWorldGenMOT/master/images/original.png)\n\nAllay reimplementation\n![Allay reimplementation](https://raw.githubusercontent.com/Kanelucky/LCEWorldGenMOT/master/images/allay.png)\n\n# Features\n\n- Biomes\n- Terrain noise\n- Caves and canyons\n- Ores\n- Trees, tall grass, flowers, mushrooms, reeds, cactus, pumpkins, water lilies, and jungle vines\n\n# Not supported\n\n- Villages, strongholds, temples, mineshafts, or any other structures\n- Lakes and dungeons\n- Nether or End generation\n- Exact block-for-block parity with the original client\n\n# Install\n\n- Download .jar file from releases\n- Put it into ./plugins folder\n- Create a world in ./worlds/world-settings.yml with `generator-type: OLD_CONSOLE_OVERWORLD` and `generator-preset: seed=<your-seed-here>`\n- Restart the server\n- Enjoy!\n\n",

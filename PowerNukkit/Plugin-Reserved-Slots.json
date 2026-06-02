@@ -2,17 +2,14 @@
   "api_version": "1.0.12",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/3679022?v=4",
-      "name": "Polyana-Fontes",
-      "url": "https://github.com/Polyana-Fontes"
-    },
-    {
       "avatar_url": "",
       "name": "JoseRobJR",
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "management"
+  ],
   "created_at": 1624882647,
   "dependencies": [
     {

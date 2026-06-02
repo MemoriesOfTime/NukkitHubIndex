@@ -2,42 +2,14 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/1433632?v=4",
-      "name": "xxmicloxx",
-      "url": "https://github.com/xxmicloxx"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/13284800?v=4",
-      "name": "PresentKim",
-      "url": "https://github.com/PresentKim"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/1538232?v=4",
-      "name": "JamieSinn",
-      "url": "https://github.com/JamieSinn"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/18121857?v=4",
-      "name": "TheDarkMoreNight",
-      "url": "https://github.com/TheDarkMoreNight"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/2402661?v=4",
-      "name": "pickernickel",
-      "url": "https://github.com/pickernickel"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/818778?v=4",
-      "name": "Johni0702",
-      "url": "https://github.com/Johni0702"
-    },
-    {
       "avatar_url": "",
       "name": "DeBe",
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "library"
+  ],
   "created_at": 1493877159,
   "dependencies": [],
   "description": "# NoteBlockAPI\r\nThis plugin forked from [**xxmicloxx/NoteBlockAPI**](https://github.com/xxmicloxx/NoteBlockAPI)\r\n#### **Test video on Youtube**\r\n[![NoteBlockAPI Test (with ServerSongTest)](https://i.ytimg.com/vi/wuO2IVG4Hb0/hqdefault.jpg)](https://www.youtube.com/watch?v=wuO2IVG4Hb0 \"NoteBlockAPI Test (with ServerSongTest)\")\r\n\r\n\r\n## How to use in maven (pom.xml)\r\nAdd the following source to pom.xml:\r\n```\r\n<repositories>\r\n   <repository>\r\n      <id>organization</id>\r\n      <url>https://github.com/nukkitplugin/maven-repo/raw/master/</url>\r\n   </repository>\r\n</repositories>\r\n<dependencies>\r\n   <dependency>\r\n      <groupId>nukkitplugin</groupId>\r\n      <artifactId>NoteBlockAPI</artifactId>\r\n      <version>1.0.0-SNAPSHOT</version>\r\n      <scope>provided</scope>\r\n   </dependency>\r\n</dependencies>\r\n```\r\n",

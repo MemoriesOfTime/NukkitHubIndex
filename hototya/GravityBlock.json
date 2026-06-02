@@ -2,12 +2,14 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/32798229?v=4",
+      "avatar_url": "",
       "name": "hototya",
-      "url": "https://github.com/hototya"
+      "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "game-mechanics"
+  ],
   "created_at": 1514095179,
   "dependencies": [],
   "description": "# GravityBlock\n普通の四角いブロックなら落ちるプラグイン  \n柵とかの向きが変わってしまうけど許して下さい。\n",

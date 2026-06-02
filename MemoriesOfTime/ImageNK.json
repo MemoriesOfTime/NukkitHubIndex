@@ -2,16 +2,6 @@
   "api_version": "Nukkit-MOT",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/60499296?v=4",
-      "name": "smartcmd",
-      "url": "https://github.com/smartcmd"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
-      "name": "lt-name",
-      "url": "https://github.com/lt-name"
-    },
-    {
       "avatar_url": "",
       "name": "daoge_cmd",
       "url": ""
@@ -22,7 +12,10 @@
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "decoration",
+    "utility"
+  ],
   "created_at": 1685620784,
   "dependencies": [],
   "description": "# ImageNK\nShow images in your server!  \nModified version of Nukkit-MOT supported",

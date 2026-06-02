@@ -2,112 +2,15 @@
   "api_version": "2.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/6178101?v=4",
-      "name": "SupremeMortal",
-      "url": "https://github.com/SupremeMortal"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/54169162?v=4",
-      "name": "hardsiamang655",
-      "url": "https://github.com/hardsiamang655"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/26197131?v=4",
-      "name": "PetteriM1",
-      "url": "https://github.com/PetteriM1"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/7609294?v=4",
-      "name": "Snake1999",
-      "url": "https://github.com/Snake1999"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/16952958?v=4",
-      "name": "yescallop",
-      "url": "https://github.com/yescallop"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/10363500?v=4",
-      "name": "Creeperface01",
-      "url": "https://github.com/Creeperface01"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/14209707?v=4",
-      "name": "bonnedav",
-      "url": "https://github.com/bonnedav"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
-      "name": "Buddelbubi",
-      "url": "https://github.com/Buddelbubi"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/12520831?v=4",
-      "name": "Cobwebster",
-      "url": "https://github.com/Cobwebster"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
-      "name": "wode490390",
-      "url": "https://github.com/wode490390"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/44261958?v=4",
-      "name": "Kieaer",
-      "url": "https://github.com/Kieaer"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/140769524?v=4",
-      "name": "Hylexx",
-      "url": "https://github.com/Hylexx"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/12137788?v=4",
-      "name": "Johnmacrocraft",
-      "url": "https://github.com/Johnmacrocraft"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/2024109?v=4",
-      "name": "PhanaticD",
-      "url": "https://github.com/PhanaticD"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/24740835?v=4",
-      "name": "jrodr10",
-      "url": "https://github.com/jrodr10"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/29153871?v=4",
-      "name": "Redned235",
-      "url": "https://github.com/Redned235"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/45960833?v=4",
-      "name": "C1oky",
-      "url": "https://github.com/C1oky"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/50034629?v=4",
-      "name": "depascaldc",
-      "url": "https://github.com/depascaldc"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/43497313?v=4",
-      "name": "GoodLucky777",
-      "url": "https://github.com/GoodLucky777"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/20718362?v=4",
-      "name": "maxxie114",
-      "url": "https://github.com/maxxie114"
-    },
-    {
       "avatar_url": "",
       "name": "Scallop & KailynDevelopment",
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "management",
+    "utility"
+  ],
   "created_at": 1780220449,
   "dependencies": [],
   "description": "<img alt=\"banner\" height=\"265\" src=\"https://raw.githubusercontent.com/PowerNukkitX-Bundle/EssentialsPNX/master/.idea/banner.png\" width=\"770\"/>\n\n# EssentialsPNX \nEssentials plugin is now on PowerNukkitX!\n\nBy [HardSiamang655](https://github.com/hardsiamang655) & [ArdaaArslann](https://github.com/ArdaaArslann)\n\nCommands and Permissions\n------------------------------\n\n| Command         | Default   | Permission                                                                    | Aliases                                                                                                       |\n|-----------------|-----------|-------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|\n| /back           | true      | essentialsnk.back                                                             | /return                                                                                                       |\n| /break          | op        | essentialsnk.break,<br>essentialsnk.break.bedrock                             | ---                                                                                                           |\n| /broadcast      | op        | essentialsnk.broadcast                                                        | /bcast                                                                                                        |\n| /burn           | op        | essentialsnk.burn                                                             | ---                                                                                                           |\n| /clearinventory | op        | essentialsnk.clearinventory, <br>essentialsnk.clearinventory.others           | /ci,<br>/clean,<br>/clearinvent                                                                               |\n| /compass        | true      | essentialsnk.compass\t                                                         | /direction                                                                                                    |\n| /delhome        | true      | essentialsnk.delhome                                                          | /remhome,<br>/rmhome                                                                                          |\n| /delwarp        | op        | essentialsnk.delwarp                                                          | /remwarp,<br>/rmwarp                                                                                          |\n| /depth          | true      | essentialsnk.depth                                                            | /height                                                                                                       |\n| /extinguish     | op        | essentialsnk.extinguish,<br>essentialsnk.extinguish.others                    | /ext                                                                                                          |\n| /feed           | op        | essentialsnk.feed,essentialsnk.feed.others                                    | /eat                                                                                                          |\n| /fly            | op        | essentialsnk.fly, essentialsnk.fly.others                                     | ---                                                                                                           |\n| /gamemode       | op        | essentialsnk.gamemode,<br>essentialsnk.gamemode.others                        | /gm,<br>/gma,<br>/gmc,<br>/gms,<br>/gmt,<br>/adventure,<br>/creative,<br>/survival,<br>/spectator,<br>/viewer |\n| /getpos         | true & op | essentialsnk.getpos,<br> essentialsnk.getpos.others                           | /coord,<br>/position,<br>/whereami,<br>/getlocation,<br>/getloc                                               |\n| /heal           | op        | essentialsnk.heal, <br>essentialsnk.heal.others                               | ---                                                                                                           |\n| /home           | true      | essentialsnk.home                                                             | /homes                                                                                                        |\n| /ignore         | true      | essentialsnk.ignore                                                           | ---                                                                                                           |\n| /itemdb         | true      | essentialsnk.itemdb                                                           | /itemno,<br>/durability,<br>/dura                                                                             |\n| /jump           | op        | essentialsnk.jump                                                             | /j,<br>/jumpto                                                                                                |\n| /kickall        | op        | essentialsnk.kickall                                                          | ---                                                                                                           |\n| /lightning      | op        | essentialsnk.lightning                                                        | /strike,<br>/smite,<br>/thor,<br>/shock                                                                       |\n| /more           | op        | essentialsnk.more                                                             | ---                                                                                                           |\n| /mute           | op        | essentialsnk.mute                                                             | /silence                                                                                                      |\n| /ping           | true      | essentialsnk.ping                                                             | ---                                                                                                           |\n| /realname       | op        | essentialsnk.realname                                                         | ---                                                                                                           |\n| /repair         | op        | essentialsnk.repair,<br>essentialsnk.repair.all,<br>essentialsnk.repair.armor | /fix                                                                                                          |\n| /sethome        | true      | essentialsnk.sethome                                                          | /createhome                                                                                                   |\n| /setwarp        | op        | essentialsnk.setwarp                                                          | /createwarp                                                                                                   |\n| /spawn          | true      | essentialsnk.spawn,<br> essentialsnk.spawn.others                             | ---                                                                                                           |\n| /setspawn       | op        | essentialsnk.setspawn                                                         | ---                                                                                                           |\n| /speed          | op        | essentialsnk.speed,<br>essentialsnk.speed.others                              | ---                                                                                                           |\n| /sudo           | op        | essentialsnk.sudo                                                             | ---                                                                                                           |\n| /top            | op        | essentialsnk.top                                                              | ---                                                                                                           |\n| /tpa            | true      | essentialsnk.tpa                                                              | /call,<br>/tpask                                                                                              |\n| /tpaall         | op        | essentialsnk.tpaall                                                           | ---                                                                                                           |\n| /tpaccept       | true      | essentialsnk.tpaccept                                                         | /types                                                                                                        |\n| /tpahere        | op        | essentialsnk.tpahere                                                          | ---                                                                                                           |\n| /tpdeny         | true      | essentialsnk.tpdeny                                                           | /tpno                                                                                                         |\n| /tphere         | op        | essentialsnk.tphere                                                           | /s                                                                                                            |\n| /vanish         | op        | essentialsnk.vanish,<br>essentialsnk.vanish.others                            | /v                                                                                                            |\n| /warp           | true      | essentialsnk.warp                                                             | ---                                                                                                           |\n| /world          | op        | essentialsnk.world                                                            | /warps                                                                                                        |\n\n\n\n\n__[Download Page](https://github.com/hardsiamang655/EssentialsPNX/releases/tag/EssPNX)__\n",
@@ -139,24 +42,8 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1780395400,
+  "updated_at": 1780228514,
   "versions": [
-    {
-      "changelog": "Automated release for v1.9.5",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "EssentialsPNX.jar",
-          "primary": true,
-          "size": 154175,
-          "url": "https://github.com/PowerNukkitX-Bundle/EssentialsPNX/releases/download/v1.9.5/EssentialsPNX.jar"
-        }
-      ],
-      "name": "v1.9.5",
-      "prerelease": false,
-      "published_at": 1780395400,
-      "version": "v1.9.5"
-    },
     {
       "changelog": "Automated release for v1.9.4",
       "downloads": 0,

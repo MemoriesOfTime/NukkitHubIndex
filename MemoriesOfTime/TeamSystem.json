@@ -2,23 +2,13 @@
   "api_version": "1.0.11",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
-      "name": "lt-name",
-      "url": "https://github.com/lt-name"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
-      "name": "glorydark",
-      "url": "https://github.com/glorydark"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
-      "name": "SmallasWater",
-      "url": "https://github.com/SmallasWater"
+      "avatar_url": "",
+      "name": "LT_Name",
+      "url": ""
     },
     {
       "avatar_url": "",
-      "name": "LT_Name",
+      "name": "SmallasWater",
       "url": ""
     },
     {
@@ -27,7 +17,10 @@
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "social",
+    "management"
+  ],
   "created_at": 1625315135,
   "dependencies": [
     {

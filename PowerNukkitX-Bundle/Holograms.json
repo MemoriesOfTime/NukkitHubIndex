@@ -2,12 +2,16 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "avatar_url": "",
       "name": "Buddelbubi",
-      "url": "https://github.com/Buddelbubi"
+      "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "decoration",
+    "management",
+    "utility"
+  ],
   "created_at": 1764779007,
   "dependencies": [
     {
