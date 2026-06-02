@@ -7,7 +7,9 @@
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "game-mechanics"
+  ],
   "created_at": 1672580136,
   "dependencies": [
     {

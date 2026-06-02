@@ -7,7 +7,11 @@
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "storage",
+    "management",
+    "utility"
+  ],
   "created_at": 1608868967,
   "dependencies": [
     {

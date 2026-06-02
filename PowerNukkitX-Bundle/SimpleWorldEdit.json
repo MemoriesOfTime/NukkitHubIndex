@@ -7,7 +7,9 @@
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "utility"
+  ],
   "created_at": 1763657011,
   "dependencies": [],
   "description": "# SimpleWorldEdit\nA simple worldedit plugin for PowerNukkitX\n\nCommands:\n- /position [first/second] - Sets a position of your selection (Alias //1, //2)\n- /biome [biome] - Changes the biome in your selection.\n- /clipboard [clear/select] <count/index> - Clears your clipboard or switches to a different entry.\n- /copy - Copies your selection to your clipboard.\n- /expand [up/down/north/east/south/west/vert] <amount> - Expands your selection.\n- /floodfill [block] <maxRadius> - Fills empty spaces with a block.\n- /paste <position> - Pastes your selected clipboard entry.\n- /replace [block] <replacement> - Replaces blocks in your selection.\n- /rotate [rotation] - Rotates your selected clipboard entry.\n- /set [block] - Fills your selection with a block.\n- /structure [load/save] [name] - Save or load structures.\n- /undo <amount> - Undo your latest block changes.\n",
