@@ -2,15 +2,22 @@
   "api_version": "1.0.0",
   "authors": [
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/10363500?v=4",
+      "name": "Creeperface01",
+      "url": "https://github.com/Creeperface01"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
+    },
+    {
       "avatar_url": "",
       "name": "CreeperFace",
       "url": ""
     }
   ],
-  "categories": [
-    "library",
-    "utility"
-  ],
+  "categories": [],
   "created_at": 1631365739,
   "dependencies": [
     {

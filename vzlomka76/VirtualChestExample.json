@@ -2,14 +2,12 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16573760?v=4",
       "name": "vzlomka76",
-      "url": ""
+      "url": "https://github.com/vzlomka76"
     }
   ],
-  "categories": [
-    "storage"
-  ],
+  "categories": [],
   "created_at": 1501178360,
   "dependencies": [],
   "description": "Example for creating virtual inventory\nFor Nukkit core :D\n",

@@ -2,14 +2,17 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "name": "Buddelbubi",
+      "url": "https://github.com/Buddelbubi"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/26197131?v=4",
       "name": "PetteriM1",
-      "url": ""
+      "url": "https://github.com/PetteriM1"
     }
   ],
-  "categories": [
-    "utility"
-  ],
+  "categories": [],
   "created_at": 1709261565,
   "dependencies": [],
   "description": "# HiddenCommands\nHide commands in the command selection list\n\nPorted version of [NukkitX](https://cloudburstmc.org/resources/hiddencommands.807/)\n",

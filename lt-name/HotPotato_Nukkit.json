@@ -2,14 +2,17 @@
   "api_version": "1.0.0",
   "authors": [
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
+    },
+    {
       "avatar_url": "",
       "name": "LT_Name",
       "url": ""
     }
   ],
-  "categories": [
-    "game-mechanics"
-  ],
+  "categories": [],
   "created_at": 1589104833,
   "dependencies": [
     {

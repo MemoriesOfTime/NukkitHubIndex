@@ -1,10 +1,13 @@
 {
   "api_version": "3.0.0",
-  "authors": [],
-  "categories": [
-    "decoration",
-    "utility"
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "name": "Buddelbubi",
+      "url": "https://github.com/Buddelbubi"
+    }
   ],
+  "categories": [],
   "created_at": 1713896718,
   "dependencies": [],
   "description": "# NPC\n\nThis is a NPC Plugin for PowerNukkitX\n\nUse this plugin to spawn player statues. \nUnlike other NPC Plugins that were made for NukkitX, this NPC plugin saves your NPC data in a seperate folder.\n\nIf you want to spawn a NPC with a custom geometry, drop the texture file, and the geometry json in the SKINS folder. The geometrys identifier has to be geometry.unknown (blockbench default)\nThen you can spawn a NPC with that Skin using /npc spawn npcname skinname. (Replace npcname by the name your NPC should be called. This name has to be unique. Replace skinname by the skinname)\n\nIf you want to spawn a NPC of yourself, use /npc save SKINNAME. This will save your skin as a NPC skin. Make your you're using NO premium or persona skins since they do not use textures and geometries.\nIf your skin uses a modified geormtry, check if the geometry identifier was replaced to geometry.unknown.\n\nDo you want to modify your NPC? \nThen go into the NPCS folder and open the corresponding NPC file.\nThere you can modify everything like displayname, scale, commands etc.\n\nTo apply those changes, reload the world or restart your server.\n",

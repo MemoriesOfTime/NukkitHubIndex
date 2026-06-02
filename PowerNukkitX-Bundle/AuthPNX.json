@@ -2,15 +2,12 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
       "name": "Buddelbubi",
-      "url": ""
+      "url": "https://github.com/Buddelbubi"
     }
   ],
-  "categories": [
-    "management",
-    "utility"
-  ],
+  "categories": [],
   "created_at": 1764699196,
   "dependencies": [],
   "description": "# AuthPNX\nA authentication plugin for your (offline mode) PNX server\n\nThis plugin is an authentication plugin for your PowerNukkitX server with xboxAuth disabled.\n\nAll messages are changable in messages.yml\nFor storage, you can use h2 (for smaller servers) or mysql.\nPasswords are hashed and salted using the PBKDF2 password hashing algorithm.\n\nThis plugin also allows you to use microsoft authentication for login.\n",

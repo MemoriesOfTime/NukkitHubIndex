@@ -2,14 +2,22 @@
   "api_version": "1.0.8",
   "authors": [
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/25536411?v=4",
+      "name": "Leonidius20",
+      "url": "https://github.com/Leonidius20"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/44516212?v=4",
+      "name": "3zeroed",
+      "url": "https://github.com/3zeroed"
+    },
+    {
       "avatar_url": "",
       "name": "Leondius20",
       "url": ""
     }
   ],
-  "categories": [
-    "economy"
-  ],
+  "categories": [],
   "created_at": 1534104396,
   "dependencies": [
     {

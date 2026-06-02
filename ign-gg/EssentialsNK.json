@@ -2,15 +2,97 @@
   "api_version": "1.0.8",
   "authors": [
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/26197131?v=4",
+      "name": "PetteriM1",
+      "url": "https://github.com/PetteriM1"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/6178101?v=4",
+      "name": "SupremeMortal",
+      "url": "https://github.com/SupremeMortal"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/7609294?v=4",
+      "name": "Snake1999",
+      "url": "https://github.com/Snake1999"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/16952958?v=4",
+      "name": "yescallop",
+      "url": "https://github.com/yescallop"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/10363500?v=4",
+      "name": "Creeperface01",
+      "url": "https://github.com/Creeperface01"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/14209707?v=4",
+      "name": "bonnedav",
+      "url": "https://github.com/bonnedav"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/12520831?v=4",
+      "name": "Cobwebster",
+      "url": "https://github.com/Cobwebster"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+      "name": "wode490390",
+      "url": "https://github.com/wode490390"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/44261958?v=4",
+      "name": "Kieaer",
+      "url": "https://github.com/Kieaer"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/12137788?v=4",
+      "name": "Johnmacrocraft",
+      "url": "https://github.com/Johnmacrocraft"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/2024109?v=4",
+      "name": "PhanaticD",
+      "url": "https://github.com/PhanaticD"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/24740835?v=4",
+      "name": "jrodr10",
+      "url": "https://github.com/jrodr10"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/29153871?v=4",
+      "name": "Redned235",
+      "url": "https://github.com/Redned235"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45960833?v=4",
+      "name": "C1oky",
+      "url": "https://github.com/C1oky"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/50034629?v=4",
+      "name": "depascaldc",
+      "url": "https://github.com/depascaldc"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/43497313?v=4",
+      "name": "GoodLucky777",
+      "url": "https://github.com/GoodLucky777"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/20718362?v=4",
+      "name": "maxxie114",
+      "url": "https://github.com/maxxie114"
+    },
+    {
       "avatar_url": "",
       "name": "Scallop",
       "url": ""
     }
   ],
-  "categories": [
-    "management",
-    "utility"
-  ],
+  "categories": [],
   "created_at": 1555076944,
   "dependencies": [],
   "description": "# EssentialsNK\nEssentials plugin for Nukkit\n\nContributions are welcome!\n\n__[Download Page](https://nukkitx.com/resources/essentialsnk.15/)__\n",

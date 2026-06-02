@@ -2,9 +2,49 @@
   "api_version": "1.0.6",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15889642?v=4",
       "name": "larryTheCoder",
-      "url": ""
+      "url": "https://github.com/larryTheCoder"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/26197131?v=4",
+      "name": "PetteriM1",
+      "url": "https://github.com/PetteriM1"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "name": "dependabot[bot]",
+      "url": "https://github.com/apps/dependabot"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/16860075?v=4",
+      "name": "Adam1609",
+      "url": "https://github.com/Adam1609"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/15986189?v=4",
+      "name": "jdot-r",
+      "url": "https://github.com/jdot-r"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/73650825?v=4",
+      "name": "nicugnm",
+      "url": "https://github.com/nicugnm"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/88597837?v=4",
+      "name": "PikyXoS",
+      "url": "https://github.com/PikyXoS"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/28193358?v=4",
+      "name": "UnexMC",
+      "url": "https://github.com/UnexMC"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/60499296?v=4",
+      "name": "smartcmd",
+      "url": "https://github.com/smartcmd"
     },
     {
       "avatar_url": "",
@@ -15,17 +55,9 @@
       "avatar_url": "",
       "name": "Skull3x",
       "url": ""
-    },
-    {
-      "avatar_url": "",
-      "name": "Adam1609",
-      "url": ""
     }
   ],
-  "categories": [
-    "game-mechanics",
-    "management"
-  ],
+  "categories": [],
   "created_at": 1547129692,
   "dependencies": [
     {

@@ -2,15 +2,12 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/154591704?v=4",
       "name": "Taskov1ch",
-      "url": ""
+      "url": "https://github.com/Taskov1ch"
     }
   ],
-  "categories": [
-    "economy",
-    "game-mechanics"
-  ],
+  "categories": [],
   "created_at": 1769969311,
   "dependencies": [
     {

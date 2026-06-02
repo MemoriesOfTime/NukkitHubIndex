@@ -2,15 +2,22 @@
   "api_version": "1.0.0",
   "authors": [
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/78941156?v=4",
+      "name": "dogukancim",
+      "url": "https://github.com/dogukancim"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/54169162?v=4",
+      "name": "hardsiamang655",
+      "url": "https://github.com/hardsiamang655"
+    },
+    {
       "avatar_url": "",
       "name": "HardKing",
       "url": ""
     }
   ],
-  "categories": [
-    "management",
-    "utility"
-  ],
+  "categories": [],
   "created_at": 1628619464,
   "dependencies": [],
   "description": "Shows the rules you set for a player who enters for the first time.<br />\nby [HardSiamang655](https://github.com/hardsiamang655) & [qreardedwastaken](https://qreardedwastaken.com)\n- [Go to the official Nukkit page.](https://cloudburstmc.org/resources/advancedrules.751/)\n",

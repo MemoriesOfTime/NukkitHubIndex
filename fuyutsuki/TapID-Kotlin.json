@@ -2,14 +2,17 @@
   "api_version": "1.0.0",
   "authors": [
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/16377174?v=4",
+      "name": "fuyutsuki",
+      "url": "https://github.com/fuyutsuki"
+    },
+    {
       "avatar_url": "",
       "name": "yuko_fuyutsuki",
       "url": ""
     }
   ],
-  "categories": [
-    "utility"
-  ],
+  "categories": [],
   "created_at": 1519031818,
   "dependencies": [],
   "description": "# TapID-Kotlin\nTapID plugin written by Kotlin + Gradle for NukkitX.\n\n# How to use\nGet a clock, touch a block.",

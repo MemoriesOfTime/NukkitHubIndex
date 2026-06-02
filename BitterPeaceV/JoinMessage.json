@@ -2,14 +2,12 @@
   "api_version": "1.0.7",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44942320?v=4",
       "name": "BitterPeaceV",
-      "url": ""
+      "url": "https://github.com/BitterPeaceV"
     }
   ],
-  "categories": [
-    "utility"
-  ],
+  "categories": [],
   "created_at": 1548242316,
   "dependencies": [],
   "description": "# JoinMessage  \nQiitaの記事用プラグイン  \n[NukkitプラグインをKotlinで書こう](https://qiita.com/BitterPeaceV/items/1f7603ff9f85d375d20b)\n",

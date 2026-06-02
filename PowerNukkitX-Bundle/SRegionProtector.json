@@ -2,15 +2,42 @@
   "api_version": "3.0.0",
   "authors": [
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/7607627?v=4",
+      "name": "SergeyDertan",
+      "url": "https://github.com/SergeyDertan"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/32373441?v=4",
+      "name": "Yexeed",
+      "url": "https://github.com/Yexeed"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/43497313?v=4",
+      "name": "GoodLucky777",
+      "url": "https://github.com/GoodLucky777"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "name": "Buddelbubi",
+      "url": "https://github.com/Buddelbubi"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45939749?v=4",
+      "name": "sm1ck",
+      "url": "https://github.com/sm1ck"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "name": "dependabot[bot]",
+      "url": "https://github.com/apps/dependabot"
+    },
+    {
       "avatar_url": "",
       "name": "Sergey_Dertan",
       "url": ""
     }
   ],
-  "categories": [
-    "management",
-    "utility"
-  ],
+  "categories": [],
   "created_at": 1763986875,
   "dependencies": [
     {

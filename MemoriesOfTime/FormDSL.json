@@ -2,14 +2,17 @@
   "api_version": "1.0.11",
   "authors": [
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/59405399?v=4",
+      "name": "k7Xm9pQr",
+      "url": "https://github.com/k7Xm9pQr"
+    },
+    {
       "avatar_url": "",
       "name": "iGxnon",
       "url": ""
     }
   ],
-  "categories": [
-    "library"
-  ],
+  "categories": [],
   "created_at": 1659261980,
   "dependencies": [
     {

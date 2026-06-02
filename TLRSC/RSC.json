@@ -1,9 +1,7 @@
 {
   "api_version": "1.0.0",
   "authors": [],
-  "categories": [
-    "management"
-  ],
+  "categories": [],
   "created_at": 1509738875,
   "dependencies": [],
   "description": "# Remote Server Control - Nukkit Version\n[![CircleCI](https://circleci.com/gh/TLRSC/RSC.svg?style=svg)](https://circleci.com/gh/TLRSC/RSC)\n\n### Build:\n<pre>\nmvn clean package\n</pre>\n",

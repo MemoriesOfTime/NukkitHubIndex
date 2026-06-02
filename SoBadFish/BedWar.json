@@ -2,15 +2,27 @@
   "api_version": "1.0.11",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "sobadfish",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/83235042?v=4",
+      "name": "SoBadFish",
+      "url": "https://github.com/SoBadFish"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17081165?v=4",
+      "name": "AVitg",
+      "url": "https://github.com/AVitg"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/100994314?v=4",
+      "name": "Shiiyuko",
+      "url": "https://github.com/Shiiyuko"
     }
   ],
-  "categories": [
-    "game-mechanics",
-    "economy"
-  ],
+  "categories": [],
   "created_at": 1653202793,
   "dependencies": [
     {

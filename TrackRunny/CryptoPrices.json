@@ -2,14 +2,22 @@
   "api_version": "2.0.0",
   "authors": [
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/39247615?v=4",
+      "name": "JustTalDevelops",
+      "url": "https://github.com/JustTalDevelops"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45835198?v=4",
+      "name": "TrackRunny",
+      "url": "https://github.com/TrackRunny"
+    },
+    {
       "avatar_url": "",
       "name": "TrackRunny#0001 - Discord",
       "url": ""
     }
   ],
-  "categories": [
-    "utility"
-  ],
+  "categories": [],
   "created_at": 1591081810,
   "dependencies": [],
   "description": "<!-- MAIN TITLE -->\r\n# • CryptoPrices\r\n\r\n<!-- BADGES -->\r\n![Nukkit: 2.0](https://img.shields.io/badge/nukkit-2.0-red?style=flat-square)\r\n![License: GPL v3](https://img.shields.io/badge/license-GPLv3-blue.svg?style=flat-square)\r\n\r\n<!-- KEY INFORMATION HEADER -->\r\n## → Information\r\n\r\n* Nukkit 2.0 plugin.\r\n* Get the latest crypto prices for various coins inside a server.\r\n\r\n<!-- LICENSE INFO -->\r\n## → License\r\n\r\n  This project is licensed under the GPLv3.\r\n\r\n<!-- END OF README -->\r\n## → Questions / Contact me\r\n\r\n* Discord Account: `TrackRunny#2503`\r\n",

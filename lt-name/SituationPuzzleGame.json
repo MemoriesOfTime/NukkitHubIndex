@@ -2,6 +2,11 @@
   "api_version": "1.0.0",
   "authors": [
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
+    },
+    {
       "avatar_url": "",
       "name": "LT_Name",
       "url": ""
@@ -10,7 +15,7 @@
   "categories": [],
   "created_at": 1780324056,
   "dependencies": [],
-  "description": "",
+  "description": "# SituationPuzzleGame\n\nLanguage: [![EN](https://img.shields.io/badge/EN-4c8bf5)](/README.md) [![中文](https://img.shields.io/badge/中文-d9d9d9)](/README_zh.md)\n\nA \"Situation Puzzle\" (also known as \"Lateral Thinking Puzzle\") plugin for Nukkit-MOT servers. Players can create rooms, join games, ask questions, and view stats — all through in-game forms. Server owners can connect an AI to auto-generate puzzles and answer yes/no/irrelevant questions.\n\n## Who Is This For\n\n- Server owners who want to run situation puzzle / lateral thinking / deduction mini-games on their Minecraft Bedrock server\n- Servers that want players to host their own rooms, or use AI to auto-generate and auto-answer puzzles\n- Casual or mini-game servers looking for both single-player AI mode and multi-player room mode\n\n## Features\n\n- **Multi-player rooms**: Players create rooms, the host holds the truth, and others ask questions to deduce the answer\n- **Single-player mode**: AI generates puzzles and auto-answers questions; wins automatically when the player deduces key truths\n- **AI puzzle generation**: Auto-generates puzzle titles and truths by difficulty level\n- **AI answering**: Hosts can let AI help judge player questions\n- **Manual puzzles**: Without an AI generator, players can manually enter puzzle title and truth\n- **Leaderboard & stats**: Tracks games played, completions, questions asked, hit rate, hosting count, and more\n- **Puzzle cache**: Caches AI-generated puzzles to reduce repeated API calls\n- **Multi-language**: Bundled with Simplified Chinese and English language files\n- **Legacy client support**: New clients use Data-Driven UI; older clients fall back to standard forms with chat input\n\n## Requirements\n\n- Server: Nukkit-MOT\n- Java: 17 or higher\n- Client: Minecraft Bedrock 1.26.0+ for full Data-Driven UI\n- Older clients can still use the legacy form flow with chat-based text input\n\n## Installation\n\n1. Place the `SituationPuzzleGame` plugin jar into your server's `plugins` directory.\n2. Start the server once to generate the default config files.\n3. Open `plugins/SituationPuzzleGame/config.yml` and configure AI, stats, and cache as needed.\n4. Restart the server.\n5. Players enter `/hgt` in-game to open the puzzle menu.\n\n## Player Commands\n\n| Command | Description |\n| --- | --- |\n| `/hgt` | Opens the main menu; if the player is already in a room, opens the current game UI |\n| `/hgt rank` | Opens the leaderboard |\n| `/hgt top` | Opens the leaderboard |\n| `/hgt stats` | Shows your personal stats |\n\nPermission node:\n\n```text\nsituationpuzzlegame.use\n```\n\nThis permission is granted to all players by default.\n\n## How to Play\n\n### Multi-player Mode\n\n1. Player enters `/hgt`.\n2. Select \"Create Room\".\n3. Choose \"AI Puzzle\" or \"Manual Puzzle\".\n4. Other players enter `/hgt` and select \"Join Room\".\n5. The host clicks \"Start Game\".\n6. Guessers submit yes/no questions; the host answers \"Yes\", \"No\", or \"Irrelevant\".\n7. When the host ends the game, the truth is revealed to all players in the room.\n\n### Single-player Mode\n\nSingle-player mode requires both a generator AI and an answerer AI to be configured.\n\n1. Player enters `/hgt`.\n2. Select \"Single Player Mode\".\n3. Choose a difficulty.\n4. After the AI generates a puzzle, the player begins deducing.\n5. The player asks yes/no questions and the AI auto-answers; they can also submit a final deduction at any time.\n6. When the AI determines the player has recovered the key truths, the game auto-wins and reveals the truth.\n7. Giving up lets the player view the truth, but does not count as a single-player completion or streak.\n\n## AI Configuration\n\nConfig file location:\n\n```text\nplugins/SituationPuzzleGame/config.yml\n```\n\nThe plugin splits AI into two roles:\n\n- `generator`: The puzzle-generating AI, responsible for creating puzzle titles and truths\n- `answerer`: The answering AI, responsible for judging player questions as yes, no, or irrelevant\n\nThe default config includes example providers for DeepSeek and OpenCode GO. At minimum, server owners need to:\n\n1. Replace `api-key` with a real key — do not keep the default placeholder text.\n2. Confirm that `generator.provider` and `answerer.provider` point to the provider name you want to use.\n\nExample:\n\n```yaml\nproviders:\n  deepseek-generator:\n    api-type: \"openai\"\n    api-url: \"https://api.deepseek.com\"\n    api-key: \"your DeepSeek API key\"\n    model: \"deepseek-v4-pro\"\n    thinking-type: \"enabled\"\n    reasoning-effort: \"high\"\n\n  deepseek-answerer:\n    api-type: \"openai\"\n    api-url: \"https://api.deepseek.com\"\n    api-key: \"your DeepSeek API key\"\n    model: \"deepseek-v4-flash\"\n    thinking-type: \"disabled\"\n\ngenerator:\n  provider: \"deepseek-generator\"\n\nanswerer:\n  provider: \"deepseek-answerer\"\n```\n\nSupported `api-type` values:\n\n- `openai`: OpenAI-compatible `/chat/completions` format\n- `anthropic`: Anthropic `/v1/messages` format\n\n`api-url` accepts a base URL — the plugin auto-appends the correct endpoint based on `api-type`. If you provide a full URL (e.g. `/chat/completions` or `/messages`), the plugin uses it as-is.\n\n## Difficulty Configuration\n\nDefault difficulties:\n\n- Easy: Beginner-friendly\n- Normal: Standard situation puzzles\n- Hard: For deduction enthusiasts\n- Hell: Hardcore deduction\n\nYou can customize display names, star ratings, and descriptions in `generator.difficulties`.\n\n## Stats & Caching\n\nStats config:\n\n```yaml\nstats:\n  enabled: true\n  leaderboard-size: 10\n  auto-save-interval: 300\n  min-questions-for-hit-rate: 10\n```\n\nStats data is saved to:\n\n```text\nplugins/SituationPuzzleGame/stats.yml\n```\n\nPuzzle cache config:\n\n```yaml\ncache:\n  enabled: true\n  max-per-difficulty: 20\n```\n\nCache data is saved to:\n\n```text\nplugins/SituationPuzzleGame/puzzle_cache.yml\n```\n\nWhen caching is enabled, the plugin stores previously generated puzzles and avoids giving the same player a puzzle they've already seen.\n\n## Legacy Client Usage\n\nIf a player's client version does not support full Data-Driven UI, the plugin falls back to legacy form menus. In legacy mode, some text input is handled through the chat bar:\n\n- When manually creating a puzzle, send the title and truth in chat\n- Guessers send questions directly in chat\n- The host can send `是` (yes), `不是` (no), `无关` (irrelevant) to answer the current question\n- The host can send `AI` to invoke AI answering\n- Type `记录` (record) to refresh the question log\n- Type `离开` (leave) to leave the room\n- Type `!message` to send normal chat messages\n\n## FAQ\n\n### Single-player mode is missing from the main menu\n\nSingle-player mode requires both a generator AI and an answerer AI. Please check:\n\n- `generator.provider` points to an existing provider\n- `answerer.provider` points to an existing provider\n- Both providers have a valid `api-key`\n\n### AI puzzle generation or answering fails\n\nPlease check:\n\n- `api-key` is correct\n- `api-url` is reachable from the server\n- `api-type` matches the provider's protocol\n- `model` is a valid model name supported by the provider\n- Your provider account has available credits, quota, or an active subscription\n\nError details are usually printed in the server console log.\n\n### Players cannot use commands\n\nMake sure the player has:\n\n```text\nsituationpuzzlegame.use\n```\n\nThis permission is granted by default; if your server has a permissions management plugin, check whether it overrides the default.\n\n### Legacy clients cannot input text in forms\n\nLegacy clients use the chat input flow. Have players follow the on-screen instructions and send titles, truths, questions, or answers directly in the chat bar.\n\n## File Reference\n\n| File | Purpose |\n| --- | --- |\n| `plugins/SituationPuzzleGame/config.yml` | Main config: AI, stats, cache, difficulties |\n| `plugins/SituationPuzzleGame/stats.yml` | Player statistics data |\n| `plugins/SituationPuzzleGame/puzzle_cache.yml` | AI puzzle cache |\n| `plugins/SituationPuzzleGame/language/zh_CN.lang` | Chinese text and AI prompts |\n| `plugins/SituationPuzzleGame/language/en_US.lang` | English text and AI prompts |\n",
   "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
@@ -28,10 +33,27 @@
   "server_version": "",
   "source": "https://github.com/lt-name/SituationPuzzleGame",
   "stars": 1,
-  "summary": "Nukkit-MOT 海龟汤（情境猜谜）游戏插件，支持多人房间与 AI 单人模式",
+  "summary": "A \"Situation Puzzle\" (also known as \"Lateral Thinking Puzzle\") plugin for Nukkit-MOT servers. Players can create rooms, join games, ask questions, and view stats — all through in-game forms. Server owners can connect an AI to auto-generate puzzles and answer yes/no/irrelevant questions.",
   "targets": [
     "nkmot"
   ],
-  "updated_at": 1780324077,
-  "versions": []
+  "updated_at": 1780412073,
+  "versions": [
+    {
+      "changelog": "## SituationPuzzleGame 1.0.0\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SituationPuzzleGame-1.0.0.jar",
+          "primary": true,
+          "size": 109339,
+          "url": "https://github.com/lt-name/SituationPuzzleGame/releases/download/v1.0.0/SituationPuzzleGame-1.0.0.jar"
+        }
+      ],
+      "name": "Release 1.0.0",
+      "prerelease": false,
+      "published_at": 1780412073,
+      "version": "v1.0.0"
+    }
+  ]
 }

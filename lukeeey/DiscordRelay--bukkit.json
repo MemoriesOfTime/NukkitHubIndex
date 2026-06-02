@@ -2,15 +2,12 @@
   "api_version": "unknown",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/32024335?v=4",
       "name": "lukeeey",
-      "url": ""
+      "url": "https://github.com/lukeeey"
     }
   ],
-  "categories": [
-    "social",
-    "utility"
-  ],
+  "categories": [],
   "created_at": 1615988931,
   "dependencies": [
     {

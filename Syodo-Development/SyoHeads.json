@@ -2,9 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
       "name": "Buddelbubi",
-      "url": ""
+      "url": "https://github.com/Buddelbubi"
     },
     {
       "avatar_url": "",
@@ -12,9 +12,7 @@
       "url": ""
     }
   ],
-  "categories": [
-    "decoration"
-  ],
+  "categories": [],
   "created_at": 1735918253,
   "dependencies": [],
   "description": "# SyoHeads\n\n<img width=\"85\" height=\"85\" alt=\"grafik\" src=\"https://github.com/user-attachments/assets/ed21cc52-b838-4aa8-9ae4-cd95c7cc1c83\" />\n\nSyoHeads is a plugin that adds playerheads to PowerNukkitX.\nGet heads from bedrock players using /head bedrock (player)\nOr get heads from java players using /head java (player)\n\nYou also can get heads from a heads database by using /head database\n\n<img width=\"599\" height=\"665\" alt=\"grafik\" src=\"https://github.com/user-attachments/assets/518cd257-29e7-412d-94b7-ba360dc9d49d\" />\n<img width=\"693\" height=\"620\" alt=\"grafik\" src=\"https://github.com/user-attachments/assets/94a1d60d-81bb-4646-8de5-8df6e1ce97b4\" />\n",

@@ -2,14 +2,22 @@
   "api_version": "1.0.8",
   "authors": [
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
+      "name": "SmallasWater",
+      "url": "https://github.com/SmallasWater"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
+    },
+    {
       "avatar_url": "",
       "name": "若水",
       "url": ""
     }
   ],
-  "categories": [
-    "social"
-  ],
+  "categories": [],
   "created_at": 1562038960,
   "dependencies": [],
   "description": "# Friend\n## 插件介绍：\n> 如何使用此插件\n - 1.将.jar文件安装在~/plugins~文件夹内\n - 2.输入指令~/好友~即可\n> 插件功能\n - [x] 玩家之间添加好友\n - [x] 玩家之间个性签名显示\n - [x] 玩家之间独立聊天系统\n - [x] 玩家之间物品邮寄\n\n## 关于作者:\n @author 若水\n\n",

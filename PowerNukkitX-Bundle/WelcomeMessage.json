@@ -1,10 +1,13 @@
 {
   "api_version": "3.0.0",
-  "authors": [],
-  "categories": [
-    "social",
-    "utility"
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "name": "Buddelbubi",
+      "url": "https://github.com/Buddelbubi"
+    }
   ],
+  "categories": [],
   "created_at": 1767964260,
   "dependencies": [
     {

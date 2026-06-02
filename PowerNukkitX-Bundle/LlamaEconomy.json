@@ -2,14 +2,22 @@
   "api_version": "3.0.0",
   "authors": [
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/39440218?v=4",
+      "name": "justin-eckenweber",
+      "url": "https://github.com/justin-eckenweber"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "name": "Buddelbubi",
+      "url": "https://github.com/Buddelbubi"
+    },
+    {
       "avatar_url": "",
       "name": "Proxma",
       "url": ""
     }
   ],
-  "categories": [
-    "economy"
-  ],
+  "categories": [],
   "created_at": 1709113070,
   "dependencies": [
     {

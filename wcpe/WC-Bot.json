@@ -2,15 +2,12 @@
   "api_version": "1.0.5",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "WCPE",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/56812380?v=4",
+      "name": "wcpe",
+      "url": "https://github.com/wcpe"
     }
   ],
-  "categories": [
-    "social",
-    "management"
-  ],
+  "categories": [],
   "created_at": 1583246015,
   "dependencies": [
     {

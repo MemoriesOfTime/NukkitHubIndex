@@ -2,14 +2,12 @@
   "api_version": "1.0.13",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/83061703?v=4",
       "name": "MEFRREEX",
-      "url": ""
+      "url": "https://github.com/MEFRREEX"
     }
   ],
-  "categories": [
-    "utility"
-  ],
+  "categories": [],
   "created_at": 1704704413,
   "dependencies": [
     {
