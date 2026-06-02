@@ -1,7 +1,10 @@
 {
   "api_version": "3.0.0",
   "authors": [],
-  "categories": [],
+  "categories": [
+    "social",
+    "utility"
+  ],
   "created_at": 1767964260,
   "dependencies": [
     {

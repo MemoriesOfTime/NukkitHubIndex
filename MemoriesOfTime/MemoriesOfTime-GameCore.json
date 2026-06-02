@@ -12,7 +12,10 @@
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "library",
+    "game-mechanics"
+  ],
   "created_at": 1600500317,
   "dependencies": [
     {

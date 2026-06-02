@@ -7,7 +7,9 @@
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "utility"
+  ],
   "created_at": 1764789363,
   "dependencies": [
     {

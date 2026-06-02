@@ -7,7 +7,9 @@
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "utility"
+  ],
   "created_at": 1510994311,
   "dependencies": [],
   "description": "# NukkitPlugin-Kotlin\nKotlinで簡単なNukkitプラグインを書いただけ。  \n  \n持ったアイテムのID,MetaをTipで出力します。\n",

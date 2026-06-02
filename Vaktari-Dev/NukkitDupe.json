@@ -7,7 +7,10 @@
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "utility",
+    "game-mechanics"
+  ],
   "created_at": 1779874175,
   "dependencies": [
     {

@@ -7,7 +7,10 @@
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "game-mechanics",
+    "utility"
+  ],
   "created_at": 1617236552,
   "dependencies": [],
   "description": "# CustomCraft\n自定义合成/熔炉配方  \n此版本根据UHC-Land服务器需求进行了修改，可能不适用于所有服务器！\n\n自定义合成配置(craft.json)示例：\n```json\n{\n  \"recipes\": [\n    {\n      \"type\": 0,\n      \"maxCraftCount\": 1,\n      \"input\": [\n        \"3:0\"\n      ],\n      \"output\": \"58:0:1\"\n    },\n    {\n      \"type\": 1,\n      \"maxCraftCount\": -1,\n      \"input\": {\n        \"A\": \"3:0\"\n      },\n      \"shape\": [\n        \"AAA\",\n        \"AAA\",\n        \"AAA\"\n      ],\n      \"output\": \"58:0:1\"\n    }\n  ]\n}\n```\n",

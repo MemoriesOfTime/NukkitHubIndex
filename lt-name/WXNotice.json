@@ -7,7 +7,9 @@
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "library"
+  ],
   "created_at": 1606462157,
   "dependencies": [],
   "description": "#WXNotice  \nWXNotice是一个Nukkit插件，方便其他插件快速使用 [ServerChan(Server酱)](http://sc.ftqq.com/) 的功能  \n\n设置方法:  \n在config.yml填写SCKEY即可  \n(SCKEY请前往 [http://sc.ftqq.com/](http://sc.ftqq.com/) 获取)  \n\n其他插件调用:  \n```\nWXNotice.sendMessage(\"标题\", \"内容\");\n```",

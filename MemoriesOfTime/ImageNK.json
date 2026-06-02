@@ -12,7 +12,10 @@
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "decoration",
+    "utility"
+  ],
   "created_at": 1685620784,
   "dependencies": [],
   "description": "# ImageNK\nShow images in your server!  \nModified version of Nukkit-MOT supported",

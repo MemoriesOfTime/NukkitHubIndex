@@ -1,7 +1,10 @@
 {
   "api_version": "1.0.11",
   "authors": [],
-  "categories": [],
+  "categories": [
+    "management",
+    "utility"
+  ],
   "created_at": 1626227329,
   "dependencies": [
     {

@@ -7,7 +7,9 @@
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "utility"
+  ],
   "created_at": 1709261565,
   "dependencies": [],
   "description": "# HiddenCommands\nHide commands in the command selection list\n\nPorted version of [NukkitX](https://cloudburstmc.org/resources/hiddencommands.807/)\n",

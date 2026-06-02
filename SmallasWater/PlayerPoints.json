@@ -7,7 +7,9 @@
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "economy"
+  ],
   "created_at": 1576575072,
   "dependencies": [
     {

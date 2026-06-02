@@ -7,7 +7,9 @@
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "management"
+  ],
   "created_at": 1583467779,
   "dependencies": [
     {

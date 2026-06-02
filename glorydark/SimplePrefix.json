@@ -7,7 +7,11 @@
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "economy",
+    "social",
+    "management"
+  ],
   "created_at": 1686648478,
   "dependencies": [
     {

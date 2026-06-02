@@ -7,7 +7,10 @@
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "management",
+    "utility"
+  ],
   "created_at": 1584943399,
   "dependencies": [],
   "description": "<h1 align=\"center\">\n  WorldBorder\n</h1>\n\n### 📖 Plugin Introduction\n\n**WorldBorder** is a world border management plugin designed specifically for Nukkit servers. It helps server administrators by setting fixed boundaries to limit player movement.\n\n### 📝 Plugin Commands\n\n- `/WorldBorder` — Open the world border management interface (GUI)\n- `/WorldBorder AddBorder <shape> <name>` — Add a new world border to the current world\n- `/WorldBorder Reload` — Reload the plugin configuration\n\n### 📄 Download Link\n\n[Download from Jenkins](https://motci.cn/job/WorldBorder/)\n",

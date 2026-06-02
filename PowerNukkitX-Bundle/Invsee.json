@@ -7,7 +7,10 @@
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "management",
+    "utility"
+  ],
   "created_at": 1709261555,
   "dependencies": [],
   "description": "# Invsee\nAn simple InvSee plugin for Nukkit!\n\nCommands: /invsee, /inv\nPermission: invsee.cmd\n\n<img width=\"524\" height=\"658\" alt=\"grafik\" src=\"https://github.com/user-attachments/assets/17328374-9bed-4d80-99a9-7a979c3ca2da\" />\n",

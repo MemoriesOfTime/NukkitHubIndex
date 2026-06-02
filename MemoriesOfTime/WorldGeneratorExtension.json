@@ -1,7 +1,9 @@
 {
   "api_version": "1.1.0",
   "authors": [],
-  "categories": [],
+  "categories": [
+    "game-mechanics"
+  ],
   "created_at": 1755898438,
   "dependencies": [],
   "description": "# Structure generators for Nukkit-MOT\n\nBased on plugins made by [wode490390](https://github.com/wode490390) & [PetteriM1](https://github.com/PetteriM1)\n\n- https://github.com/wode490390/QuasiStructurePopulator\n- https://github.com/wode490390/ClassicVillagePopulator\n- https://github.com/wode490390/OceanMonumentPopulator\n- https://github.com/wode490390/StrongholdPopulator\n- https://github.com/wode490390/NetherFortressPopulator\n- https://github.com/wode490390/MineshaftPopulator\n- https://github.com/wode490390/MultiTemplateStructurePopulator\n- https://github.com/wode490390/SingleTemplateStructurePopulator\n- https://github.com/wode490390/ScatteredBuildingPopulator\n- https://github.com/wode490390/BetterVanillaGenerator\n- https://github.com/wode490390/TheEnd\n",

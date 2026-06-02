@@ -17,7 +17,10 @@
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "social",
+    "management"
+  ],
   "created_at": 1625315135,
   "dependencies": [
     {

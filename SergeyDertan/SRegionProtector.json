@@ -7,7 +7,10 @@
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "management",
+    "game-mechanics"
+  ],
   "created_at": 1542033028,
   "dependencies": [
     {

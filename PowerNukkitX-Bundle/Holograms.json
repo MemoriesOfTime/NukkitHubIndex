@@ -7,7 +7,11 @@
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "decoration",
+    "management",
+    "utility"
+  ],
   "created_at": 1764779007,
   "dependencies": [
     {

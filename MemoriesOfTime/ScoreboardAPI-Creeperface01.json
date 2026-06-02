@@ -7,7 +7,10 @@
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "library",
+    "utility"
+  ],
   "created_at": 1631365739,
   "dependencies": [
     {

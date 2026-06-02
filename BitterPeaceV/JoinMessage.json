@@ -7,7 +7,9 @@
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "utility"
+  ],
   "created_at": 1548242316,
   "dependencies": [],
   "description": "# JoinMessage  \nQiitaの記事用プラグイン  \n[NukkitプラグインをKotlinで書こう](https://qiita.com/BitterPeaceV/items/1f7603ff9f85d375d20b)\n",

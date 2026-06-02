@@ -22,7 +22,10 @@
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "game-mechanics",
+    "management"
+  ],
   "created_at": 1547129692,
   "dependencies": [
     {

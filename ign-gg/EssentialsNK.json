@@ -7,7 +7,10 @@
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "management",
+    "utility"
+  ],
   "created_at": 1555076944,
   "dependencies": [],
   "description": "# EssentialsNK\nEssentials plugin for Nukkit\n\nContributions are welcome!\n\n__[Download Page](https://nukkitx.com/resources/essentialsnk.15/)__\n",

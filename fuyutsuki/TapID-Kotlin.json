@@ -7,7 +7,9 @@
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "utility"
+  ],
   "created_at": 1519031818,
   "dependencies": [],
   "description": "# TapID-Kotlin\nTapID plugin written by Kotlin + Gradle for NukkitX.\n\n# How to use\nGet a clock, touch a block.",

@@ -7,7 +7,9 @@
       "url": ""
     }
   ],
-  "categories": [],
+  "categories": [
+    "utility"
+  ],
   "created_at": 1627560030,
   "dependencies": [],
   "description": "# HiddenCommands\n\nNukkit 隐藏命令插件  \n/hcmd cmd 开启/关闭隐藏所有命令  \n/hcmd tip 开启/关闭隐藏命令不存在提示  \n\n下载：https://ci.lt-name.com/view/LT_Name/job/HiddenCommands/\n",
