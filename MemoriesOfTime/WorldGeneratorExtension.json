@@ -1,6 +1,17 @@
 {
   "api_version": "1.1.0",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/26197131?v=4",
+      "name": "PetteriM1",
+      "url": "https://github.com/PetteriM1"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
+      "name": "glorydark",
+      "url": "https://github.com/glorydark"
+    }
+  ],
   "categories": [
     "game-mechanics"
   ],

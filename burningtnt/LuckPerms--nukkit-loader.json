@@ -1,0 +1,467 @@
+{
+  "api_version": "1.0.5",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/8352868?v=4",
+      "name": "lucko",
+      "url": "https://github.com/lucko"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/35617540?v=4",
+      "name": "emilyy-dev",
+      "url": "https://github.com/emilyy-dev"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/40437205?v=4",
+      "name": "powercasgamer",
+      "url": "https://github.com/powercasgamer"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/7340354?v=4",
+      "name": "bakatrouble",
+      "url": "https://github.com/bakatrouble"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/22878739?v=4",
+      "name": "DrexHD",
+      "url": "https://github.com/DrexHD"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/25347249?v=4",
+      "name": "EuropeJing",
+      "url": "https://github.com/EuropeJing"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/2998171?v=4",
+      "name": "bloodmc",
+      "url": "https://github.com/bloodmc"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/11576465?v=4",
+      "name": "Andre601",
+      "url": "https://github.com/Andre601"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/26658563?v=4",
+      "name": "PixelmonPRO",
+      "url": "https://github.com/PixelmonPRO"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/1076914?v=4",
+      "name": "electron93",
+      "url": "https://github.com/electron93"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/6516698?v=4",
+      "name": "schneidermr",
+      "url": "https://github.com/schneidermr"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/5899144?v=4",
+      "name": "creator3",
+      "url": "https://github.com/creator3"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/43016900?v=4",
+      "name": "Tobi406",
+      "url": "https://github.com/Tobi406"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/15987676?v=4",
+      "name": "TjeuKayim",
+      "url": "https://github.com/TjeuKayim"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/26070412?v=4",
+      "name": "tadhgboyle",
+      "url": "https://github.com/tadhgboyle"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/30863452?v=4",
+      "name": "MrMicky-FR",
+      "url": "https://github.com/MrMicky-FR"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/58414982?v=4",
+      "name": "Laarryy",
+      "url": "https://github.com/Laarryy"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/11360596?v=4",
+      "name": "jpenilla",
+      "url": "https://github.com/jpenilla"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/21029868?v=4",
+      "name": "IzzelAliz",
+      "url": "https://github.com/IzzelAliz"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/25344713?v=4",
+      "name": "BomBardyGamer",
+      "url": "https://github.com/BomBardyGamer"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/10443061?v=4",
+      "name": "LXGaming",
+      "url": "https://github.com/LXGaming"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/11415969?v=4",
+      "name": "Biquaternions",
+      "url": "https://github.com/Biquaternions"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/20979389?v=4",
+      "name": "Sxtanna",
+      "url": "https://github.com/Sxtanna"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/11473832?v=4",
+      "name": "svenar-nl",
+      "url": "https://github.com/svenar-nl"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/7542384?v=4",
+      "name": "spannerman79",
+      "url": "https://github.com/spannerman79"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/3914677?v=4",
+      "name": "Slind14",
+      "url": "https://github.com/Slind14"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/31587616?v=4",
+      "name": "Remigio07",
+      "url": "https://github.com/Remigio07"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/4140635?v=4",
+      "name": "RedstoneFuture",
+      "url": "https://github.com/RedstoneFuture"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/51728317?v=4",
+      "name": "PotatoPresident",
+      "url": "https://github.com/PotatoPresident"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/52257907?v=4",
+      "name": "avaruus1",
+      "url": "https://github.com/avaruus1"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/29421509?v=4",
+      "name": "AstralisVox",
+      "url": "https://github.com/AstralisVox"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/33358441?v=4",
+      "name": "OOP-778",
+      "url": "https://github.com/OOP-778"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17352009?v=4",
+      "name": "misode",
+      "url": "https://github.com/misode"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/298598?v=4",
+      "name": "vorburger",
+      "url": "https://github.com/vorburger"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/5768781?v=4",
+      "name": "Phoenix616",
+      "url": "https://github.com/Phoenix616"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/170312?v=4",
+      "name": "wildone",
+      "url": "https://github.com/wildone"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/11252574?v=4",
+      "name": "mja00",
+      "url": "https://github.com/mja00"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/41978811?v=4",
+      "name": "patyhank",
+      "url": "https://github.com/patyhank"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/7635652?v=4",
+      "name": "untuned",
+      "url": "https://github.com/untuned"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/78062896?v=4",
+      "name": "ruViolence",
+      "url": "https://github.com/ruViolence"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/11040951?v=4",
+      "name": "Einsfier",
+      "url": "https://github.com/Einsfier"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/82463583?v=4",
+      "name": "nikijaz",
+      "url": "https://github.com/nikijaz"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/30026208?v=4",
+      "name": "montlikadani",
+      "url": "https://github.com/montlikadani"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/46265094?v=4",
+      "name": "maxcom1",
+      "url": "https://github.com/maxcom1"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/47250043?v=4",
+      "name": "ByteExceptionM",
+      "url": "https://github.com/ByteExceptionM"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/30619168?v=4",
+      "name": "i509VCB",
+      "url": "https://github.com/i509VCB"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/49704373?v=4",
+      "name": "huanmeng-qwq",
+      "url": "https://github.com/huanmeng-qwq"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/16416198?v=4",
+      "name": "funniray",
+      "url": "https://github.com/funniray"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/16254938?v=4",
+      "name": "dracnis",
+      "url": "https://github.com/dracnis"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/33268728?v=4",
+      "name": "caramat",
+      "url": "https://github.com/caramat"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/4106544?v=4",
+      "name": "BrainStone",
+      "url": "https://github.com/BrainStone"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/5462722?v=4",
+      "name": "Wolfdv1",
+      "url": "https://github.com/Wolfdv1"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/55677189?v=4",
+      "name": "underscore11code",
+      "url": "https://github.com/underscore11code"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/3490861?v=4",
+      "name": "mikroskeem",
+      "url": "https://github.com/mikroskeem"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/46966988?v=4",
+      "name": "Dominik48N",
+      "url": "https://github.com/Dominik48N"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/43303963?v=4",
+      "name": "0ptk",
+      "url": "https://github.com/0ptk"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/7570108?v=4",
+      "name": "DoNotSpamPls",
+      "url": "https://github.com/DoNotSpamPls"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/75280223?v=4",
+      "name": "KR33PYK1NG",
+      "url": "https://github.com/KR33PYK1NG"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/63319713?v=4",
+      "name": "conclube",
+      "url": "https://github.com/conclube"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/42821305?v=4",
+      "name": "ChineseMarc",
+      "url": "https://github.com/ChineseMarc"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/16328918?v=4",
+      "name": "CDAGaming",
+      "url": "https://github.com/CDAGaming"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/19612725?v=4",
+      "name": "D3lph1",
+      "url": "https://github.com/D3lph1"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/86119630?v=4",
+      "name": "BlockyTheDev",
+      "url": "https://github.com/BlockyTheDev"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/43724816?v=4",
+      "name": "Aurelien30000",
+      "url": "https://github.com/Aurelien30000"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/20812471?v=4",
+      "name": "AoElite",
+      "url": "https://github.com/AoElite"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/2106813?v=4",
+      "name": "mcgrizzz",
+      "url": "https://github.com/mcgrizzz"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/679560?v=4",
+      "name": "CuddleTheif",
+      "url": "https://github.com/CuddleTheif"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/167383411?v=4",
+      "name": "MindsMaster",
+      "url": "https://github.com/MindsMaster"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/40795980?v=4",
+      "name": "AlexProgrammerDE",
+      "url": "https://github.com/AlexProgrammerDE"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/9113033?v=4",
+      "name": "3TUSK",
+      "url": "https://github.com/3TUSK"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/54859825?v=4",
+      "name": "Kamillaova",
+      "url": "https://github.com/Kamillaova"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/55924469?v=4",
+      "name": "sadcenter",
+      "url": "https://github.com/sadcenter"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/10050016?v=4",
+      "name": "pixelsquared",
+      "url": "https://github.com/pixelsquared"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/12849249?v=4",
+      "name": "Diddyy",
+      "url": "https://github.com/Diddyy"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/1341848?v=4",
+      "name": "doublej472",
+      "url": "https://github.com/doublej472"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/60293072?v=4",
+      "name": "jb-0001",
+      "url": "https://github.com/jb-0001"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/30979070?v=4",
+      "name": "mcmdev",
+      "url": "https://github.com/mcmdev"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/1491512?v=4",
+      "name": "boy0001",
+      "url": "https://github.com/boy0001"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/40674666?v=4",
+      "name": "yakovliam",
+      "url": "https://github.com/yakovliam"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/75751882?v=4",
+      "name": "JT122406",
+      "url": "https://github.com/JT122406"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/2124489?v=4",
+      "name": "HeroCC",
+      "url": "https://github.com/HeroCC"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45594251?v=4",
+      "name": "Hai-tun",
+      "url": "https://github.com/Hai-tun"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/21014720?v=4",
+      "name": "darbyjack",
+      "url": "https://github.com/darbyjack"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/19868724?v=4",
+      "name": "FixedDev",
+      "url": "https://github.com/FixedDev"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/53803019?v=4",
+      "name": "rymiel",
+      "url": "https://github.com/rymiel"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/12481684?v=4",
+      "name": "EduardWayland",
+      "url": "https://github.com/EduardWayland"
+    }
+  ],
+  "categories": [],
+  "created_at": 1780477874,
+  "dependencies": [],
+  "description": "![](https://raw.githubusercontent.com/LuckPerms/branding/master/banner/banner.png \"Banner\")\n# LuckPerms\n[![Build Status](https://ci.lucko.me/job/LuckPerms/badge/icon)](https://ci.lucko.me/job/LuckPerms/)\n[![javadoc](https://javadoc.io/badge2/net.luckperms/api/javadoc.svg)](https://javadoc.io/doc/net.luckperms/api)\n[![Maven Central](https://img.shields.io/maven-metadata/v/https/repo1.maven.org/maven2/net/luckperms/api/maven-metadata.xml.svg?label=maven%20central&colorB=brightgreen)](https://search.maven.org/artifact/net.luckperms/api)\n[![Discord](https://img.shields.io/discord/241667244927483904.svg?label=discord&logo=discord)](https://discord.gg/luckperms)\n\nLuckPerms is a permissions plugin for Minecraft servers. It allows server admins to control what features players can use by creating groups and assigning permissions.\n\nThe latest downloads, wiki & other useful links can be found on the project homepage at [luckperms.net](https://luckperms.net/).\n\nIt is:\n\n* **fast** - written with performance and scalability in mind.\n* **reliable** - trusted by thousands of server admins, and the largest of server networks.\n* **easy to use** - setup permissions using commands, directly in config files, or using the web editor.\n* **flexible** - supports a variety of data storage options, and works on lots of different server types.\n* **extensive** - a plethora of customization options and settings which can be changed to suit your server.\n* **free** - available for download and usage at no cost, and permissively licensed so it can remain free forever.\n\nFor more information, see the wiki article on [Why LuckPerms?](https://luckperms.net/wiki/Why-LuckPerms)\n\n## Building\nLuckPerms uses Gradle to handle dependencies & building.\n\n#### Requirements\n* Java 21 JDK or newer\n* Git\n\n#### Compiling from source\n```sh\ngit clone https://github.com/LuckPerms/LuckPerms.git\ncd LuckPerms/\n./gradlew build\n```\n\nYou can find the output jars in the `loader/build/libs` or `build/libs` directories.\n\n## Tests\nThere are some automated tests which run during each build.\n\n* Unit tests are defined in [`common/src/test`](https://github.com/LuckPerms/LuckPerms/tree/master/common/src/test)\n* Integration tests are defined in [`standalone/src/test`](https://github.com/LuckPerms/LuckPerms/tree/master/standalone/src/test).\n\n## Contributing\n#### Pull Requests\nIf you make any changes or improvements to the plugin which you think would be beneficial to others, please consider making a pull request to merge your changes back into the upstream project. (especially if your changes are bug fixes!)\n\nLuckPerms loosely follows the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html). Generally, try to copy the style of code found in the class you're editing. \n\n#### Project Layout\nThe project is split up into a few separate modules.\n\n* **API** - The public, semantically versioned API used by other plugins wishing to integrate with and retrieve data from LuckPerms. This module (for the most part) does not contain any implementation itself, and is provided by the plugin.\n* **Common** - The common module contains most of the code which implements the respective LuckPerms plugins. This abstract module reduces duplicated code throughout the project.\n* **Bukkit, BungeeCord, Fabric, Forge, Nukkit, Sponge & Velocity** - Each use the common module to implement plugins on the respective server platforms.\n\n## License\nLuckPerms is licensed under the permissive MIT license. Please see [`LICENSE.txt`](https://github.com/LuckPerms/LuckPerms/blob/master/LICENSE.txt) for more info.\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/88144530?v=4",
+  "id": "burningtnt/LuckPerms--nukkit-loader",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://luckperms.net",
+    "wiki": ""
+  },
+  "manifest_path": "nukkit/loader/src/main/resources/plugin.yml",
+  "name": "LuckPerms",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/burningtnt/LuckPerms",
+  "stars": 0,
+  "summary": "A permissions plugin",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1780477981,
+  "versions": []
+}

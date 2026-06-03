@@ -2,9 +2,14 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "Creadores Program",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/91704943?v=4",
+      "name": "Trollhunters501",
+      "url": "https://github.com/Trollhunters501"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/22427965?v=4",
+      "name": "poggit-bot",
+      "url": "https://github.com/poggit-bot"
     }
   ],
   "categories": [
@@ -40,6 +45,35 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1777161988,
-  "versions": []
+  "updated_at": 1780367472,
+  "versions": [
+    {
+      "changelog": "**Full Changelog**: https://github.com/Creadores-Program/ViaBedrockDetect/commits/1.0.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ViaBedrockDetect-1.0.0-NK-MOT.jar",
+          "primary": true,
+          "size": 3754,
+          "url": "https://github.com/Creadores-Program/ViaBedrockDetect/releases/download/1.0.0/ViaBedrockDetect-1.0.0-NK-MOT.jar"
+        },
+        {
+          "filename": "ViaBedrockDetect-1.0.0-NK.jar",
+          "primary": true,
+          "size": 3706,
+          "url": "https://github.com/Creadores-Program/ViaBedrockDetect/releases/download/1.0.0/ViaBedrockDetect-1.0.0-NK.jar"
+        },
+        {
+          "filename": "ViaBedrockDetect-1.0.0-VP.jar",
+          "primary": true,
+          "size": 4657,
+          "url": "https://github.com/Creadores-Program/ViaBedrockDetect/releases/download/1.0.0/ViaBedrockDetect-1.0.0-VP.jar"
+        }
+      ],
+      "name": "Launch!",
+      "prerelease": false,
+      "published_at": 1780367472,
+      "version": "1.0.0"
+    }
+  ]
 }

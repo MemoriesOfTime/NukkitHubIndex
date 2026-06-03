@@ -1,6 +1,12 @@
 {
   "api_version": "3.0.0",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "name": "Buddelbubi",
+      "url": "https://github.com/Buddelbubi"
+    }
+  ],
   "categories": [
     "decoration",
     "utility"

@@ -1,0 +1,53 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/39440218?v=4",
+      "name": "justin-eckenweber",
+      "url": "https://github.com/justin-eckenweber"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "name": "Buddelbubi",
+      "url": "https://github.com/Buddelbubi"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/56545793?v=4",
+      "name": "TraxTRL",
+      "url": "https://github.com/TraxTRL"
+    }
+  ],
+  "categories": [],
+  "created_at": 1776850347,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "PlaceholderAPI",
+      "version_range": ""
+    }
+  ],
+  "description": "# How to download LlamaEconomy\nYou can download LlamaEconomy here: https://nukkitx.com/resources/llamaeconomy.452/\n\n# Thanks to ZAP-Hosting!\nThis project wouldn't be possible without the help of ZAP-Hosting! \n\n***\n### ZAP-Hosting\nZap-Hosting is a VPS, Rootserver, (Lifetime) Gameserver, Domain & TeamSpeak 3/5 hosting company. They offer **good quality** servers **at a low price**. This project was also tested on a ZAP-Hosting Server. So if you need a **cheap** vps/gameserver/rootserver/teamspeak3/etc. hoster, ZAP-Hosting is the best choice.\n\nGet your own **VPS** today here: [Click me](https://zap-hosting.com/schdowvps)\n\nOr your own **Rootserver**: [Click me](https://zap-hosting.com/schdowrootserver)\n\nSpecial offer:\nUse the code `schdow-10` for a 10% discount\n***\n\n![YourKit](https://www.yourkit.com/images/yklogo.png)\n------\nYourKit supports open source projects with innovative and intelligent tools\nfor monitoring and profiling Java and .NET applications.\nYourKit is the creator of [YourKit Java Profiler](https://www.yourkit.com/java/profiler/),\n[YourKit .NET Profiler](https://www.yourkit.com/.net/profiler/\")\nand [YourKit YouMonitor](https://www.yourkit.com/youmonitor/)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/161360294?v=4",
+  "id": "Lifeblock-Network/LlamaEconomy",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "LlamaEconomy",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/Lifeblock-Network/LlamaEconomy",
+  "stars": 0,
+  "summary": "Easy to use economy system",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1780434732,
+  "versions": []
+}

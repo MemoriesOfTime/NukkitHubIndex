@@ -2,9 +2,24 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/146718520?v=4",
       "name": "indra87g",
-      "url": ""
+      "url": "https://github.com/indra87g"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/in/842251?v=4",
+      "name": "google-labs-jules[bot]",
+      "url": "https://github.com/apps/google-labs-jules"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "name": "dependabot[bot]",
+      "url": "https://github.com/apps/dependabot"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "name": "github-actions[bot]",
+      "url": "https://github.com/apps/github-actions"
     }
   ],
   "categories": [],

@@ -2,19 +2,14 @@
   "api_version": "2.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/128159204?v=4",
       "name": "ayd1ndemirci",
-      "url": ""
+      "url": "https://github.com/ayd1ndemirci"
     },
     {
-      "avatar_url": "",
-      "name": "OguzhanUmutlu",
-      "url": ""
-    },
-    {
-      "avatar_url": "",
-      "name": "seri4lize",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/228748182?v=4",
+      "name": "bruchusorthopnea865",
+      "url": "https://github.com/bruchusorthopnea865"
     }
   ],
   "categories": [
@@ -44,6 +39,6 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1780337199,
+  "updated_at": 1780498112,
   "versions": []
 }

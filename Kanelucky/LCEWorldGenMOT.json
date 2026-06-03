@@ -1,6 +1,17 @@
 {
   "api_version": "unknown",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/110056737?v=4",
+      "name": "zernix2077",
+      "url": "https://github.com/zernix2077"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/216477222?v=4",
+      "name": "Kanelucky",
+      "url": "https://github.com/Kanelucky"
+    }
+  ],
   "categories": [
     "game-mechanics"
   ],
