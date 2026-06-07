@@ -1,0 +1,91 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "name": "Buddelbubi",
+      "url": "https://github.com/Buddelbubi"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/10363500?v=4",
+      "name": "Creeperface01",
+      "url": "https://github.com/Creeperface01"
+    }
+  ],
+  "categories": [],
+  "created_at": 1711295787,
+  "dependencies": [],
+  "description": "# EmptyWorld\n\n<img width=\"1397\" height=\"906\" alt=\"grafik\" src=\"https://github.com/user-attachments/assets/7b2f161b-269f-4457-9aca-59179c974337\" />\n\nEmptyWorld is a \"empty world\" / void generator for PowerNukkitX.\nDownload the jar from the releases and drop it into your server.\n\nYou can generate an empty world using worldmanager or modifying your worlds config.\n\n```json\n{\n  \"format\": \"leveldb\",\n  \"enable\": true,\n  \"generators\": {\n    \"0\": {\n      \"name\": \"emptyworld\",\n      \"seed\": 5310239330429337398,\n      \"enableAntiXray\": false,\n      \"antiXrayMode\": \"LOW\",\n      \"preDeobfuscate\": true,\n      \"dimensionData\": {\n        \"dimensionName\": \"minecraft:overworld\",\n        \"dimensionId\": 0,\n        \"minHeight\": -64,\n        \"maxHeight\": 319,\n        \"height\": 384,\n        \"chunkSectionCount\": 24\n      },\n      \"preset\": {\n        \"block\": true,\n        \"biome\": \"minecraft:jungle\"\n      }\n    }\n  }\n}\n```\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/154862792?v=4",
+  "id": "PowerNukkitX-Bundle/EmptyWorld",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "EmptyWorld",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/PowerNukkitX-Bundle/EmptyWorld",
+  "stars": 1,
+  "summary": "An empty world generator for PowerNukkitX",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1780834833,
+  "versions": [
+    {
+      "changelog": "Automated release for v2.0.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EmptyWorld.jar",
+          "primary": true,
+          "size": 9599,
+          "url": "https://github.com/PowerNukkitX-Bundle/EmptyWorld/releases/download/v2.0.0/EmptyWorld.jar"
+        }
+      ],
+      "name": "v2.0.0",
+      "prerelease": false,
+      "published_at": 1780833828,
+      "version": "v2.0.0"
+    },
+    {
+      "changelog": "Automated release for v1.0.1",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EmptyWorld.jar",
+          "primary": true,
+          "size": 5841,
+          "url": "https://github.com/PowerNukkitX-Bundle/EmptyWorld/releases/download/v1.0.1/EmptyWorld.jar"
+        }
+      ],
+      "name": "v1.0.1",
+      "prerelease": false,
+      "published_at": 1780176943,
+      "version": "v1.0.1"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EmptyWorld.jar",
+          "primary": true,
+          "size": 5924,
+          "url": "https://github.com/PowerNukkitX-Bundle/EmptyWorld/releases/download/1.0/EmptyWorld.jar"
+        }
+      ],
+      "name": "EmptyWorld",
+      "prerelease": false,
+      "published_at": 1766093210,
+      "version": "1.0"
+    }
+  ]
+}
