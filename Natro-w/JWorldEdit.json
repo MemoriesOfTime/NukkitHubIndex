@@ -1,0 +1,54 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/242151603?v=4",
+      "name": "Natro-w",
+      "url": "https://github.com/Natro-w"
+    }
+  ],
+  "categories": [],
+  "created_at": 1781020046,
+  "dependencies": [],
+  "description": "# JWorldEdit\n\n**Advanced world editing plugin for Nukkit / Lumi servers.** Provides fast, asynchronous block operations, geometric shape generation, clipboard system, and compressed schematic saving — inspired by WorldEdit for Bukkit.\n\n> **Version:** 1.1.0  \n> **Author:** Natro  \n> **API:** 1.0.0\n\n---\n\n## Features\n\n- **Selection tools** — Wand-based area selection with `//pos1` and `//pos2`.\n- **Block operations** — Set, replace, copy, paste, cut, and delete blocks in your selection.\n- **Geometric shapes** — Generate cylinders, hollow cylinders, spheres, hollow spheres, and walls.\n- **Clipboard system** — Copy and paste selections with undo/redo support.\n- **Schematic system** — Save and load structures as compressed NBT files.\n- **Async processing** — All operations run off the main thread for zero server lag.\n- **Rotation** — Rotate clipboard contents around any axis.\n\n---\n\n## Installation\n\n1. Build with `./gradlew build` or download the prebuilt jar.\n2. Place `JWorldEdit.jar` into your server's `plugins/` folder.\n3. Restart the server.\n\n---\n\n## Commands\n\n### Selection\n\n| Command | Description |\n|---|---|\n| `//pos1` or `//1` | Set first selection position |\n| `//pos2` or `//2` | Set second selection position |\n| `//wand` | Give the selection wand (axe) |\n| `//desel` or `//deselect` | Clear current selection |\n\n### Editing\n\n| Command | Description |\n|---|---|\n| `//set <block>` | Fill selection with a block |\n| `//replace <from> <to>` | Replace blocks in selection |\n| `//cut` | Cut selection to clipboard |\n| `//copy` | Copy selection to clipboard |\n| `//paste` | Paste clipboard at your position |\n| `//undo` | Undo the last operation |\n\n### Shapes\n\n| Command | Description |\n|---|---|\n| `//walls <block>` | Create walls around selection |\n| `//cyl <block> <radius>` | Create a cylinder |\n| `//hcyl <block> <radius>` | Create a hollow cylinder |\n| `//sphere <block> <radius>` | Create a sphere |\n| `//hsphere <block> <radius>` | Create a hollow sphere |\n\n### Schematics\n\n| Command | Description |\n|---|---|\n| `//schem save <name>` | Save selection as a schematic |\n| `//schem paste <name>` | Paste a saved schematic |\n\n### Utility\n\n| Command | Description |\n|---|---|\n| `//rotate <axis> <degrees>` | Rotate clipboard contents |\n| `//jump` | Teleport to the targeted block |\n| `//thru` | Pass through the targeted block |\n\n---\n\n## Block Specification\n\nBlocks can be specified in these formats:\n\n| Format | Example |\n|---|---|\n| Numeric ID | `1`, `5:2` |\n| Block name | `stone`, `oak_planks` |\n| Full name | `minecraft:stone` |\n\n---\n\n## Permissions\n\n| Permission | Default | Description |\n|---|---|---|\n| `jworldedit.use` | `op` | Use JWorldEdit commands |\n| `jworldedit.schematic` | `op` | Save and load schematics |\n\n---\n\n## Building\n\n```bash\n./gradlew build\n```\n\nThe compiled jar is placed in `build/libs/`.\n\n---\n\n## License\n\nMIT License — see [LICENSE](https://github.com/Natro-w/JWorldEdit/blob/main/LICENSE).\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/242151603?v=4",
+  "id": "Natro-w/JWorldEdit",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "JWorldEdit",
+  "primary_target": "lumi",
+  "server_version": "",
+  "source": "https://github.com/Natro-w/JWorldEdit",
+  "stars": 0,
+  "summary": "",
+  "targets": [
+    "lumi"
+  ],
+  "updated_at": 1781020077,
+  "versions": [
+    {
+      "changelog": "Release v1.0.0 - WorldEdit for Nukkit",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "JWorldEdit-1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 67271,
+          "url": "https://github.com/Natro-w/JWorldEdit/releases/download/v1.0.0/JWorldEdit-1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "v1.0.0",
+      "prerelease": false,
+      "published_at": 1781020077,
+      "version": "v1.0.0"
+    }
+  ]
+}

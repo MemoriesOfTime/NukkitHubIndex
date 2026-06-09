@@ -2,29 +2,24 @@
   "api_version": "1.0.11",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
-      "name": "Buddelbubi",
-      "url": "https://github.com/Buddelbubi"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/173544653?v=4",
-      "name": "Miroshka000",
-      "url": "https://github.com/Miroshka000"
+      "avatar_url": "https://avatars.githubusercontent.com/u/242151603?v=4",
+      "name": "Natro-w",
+      "url": "https://github.com/Natro-w"
     }
   ],
   "categories": [],
-  "created_at": 1780847947,
+  "created_at": 1781020055,
   "dependencies": [],
-  "description": "\n![logo](https://cloudburstmc.org/attachments/1618588553800-png.3459/)\n\n\nFirst of all I should show you all features:\n\n\n    Teleport to another world\n    World-Teleport-UI\n    World-Generation UI\n    generate new worlds (every generator and seed is possible)\n    Delete a world\n    list all worlds. Loaded and unloaded worlds\n    load and unload and even reload worlds\n    rename worlds\n    copy/duplicate/backup worlds\n    set the worldspawn\n    regenerate the whole world\n    change the seed of a existing world\n    world infos like seed, generator, amount of players..\n    per world gamemode (toggleable)\n    UI Settings\n    Change the default world\n    World Load on startup\n    World Restrictions via permissions\n    World Clearlagg (Kill every entity in a world)\n    Change the biome for every loaded chunk\n    Change gamerules via an UI\n    Enable / Disable the Nukkit Build-In movementcheck per world. (Addon)\n    Add notes to your world.\n    Protect your world (Deny build, break and interacts)\n    Fast and easy gamerule syncing\n    Auto-Updater\n    Easy extendable! Ingame addons ui with tons of useful stuff\n    Set a playerlimit per world*\n    Per World Chat*\n    World Whitelist*\n    World Join Messages*\n    World Teleportation Signs*\n    Generators and Populators like The End*\n\n\n\n       * Addon is required! Not everyone needs those features. Thats why they were seperated from the core so people do not have to download stuff they dont need and save performance for other stuff.\n\n\n\n\nCommands and permissions:\n\nWorldManager provides alot of features.. So dont get confused..\n\nBasicly if you have the permission worldmanager.admin you can do anything.\n\nBut lets get started with the main command: Its /worldmanager. But you can also use /wm, /mw, /levelmanager, /lm and even /mv for multiverse2 fans of you ;)\n\n\nThe permission is always worldmanager.[MainSubcommand]. \n\nFor example, the command /wm generate [World] (Generator) {Seed} has the permission worldmanager.generate. worldmanager.gen wont work. It have to be the main subcommand.\n\nYou can see the command and all the aliases when you execute /wm help ingame or via console.\n\nYou also can prevent players from entering a world. Just give them the permission worldmanager.deny.[World]\n\nIf you want to give a player access to /worldmanager teleport but only to a specific world, just give him the permission worldmanager.teleport.[World] \n\nTo open the teleport ui, the player needs the permisson worldmanager.teleportui.\n\nFor the generation ui, they need the permission worldmanager.generationui.\n\nYou can change the max players per world in your world settings. If the limit is reached, you can't enter the world unless you have the permission worldmanager.enterfullworlds\n\n[SPOILER=\"Commands\"][/SPOILER][SPOILER=\"Commands\"][/spoiler][SPOILER=\"Commands\"]\n\n/worldmanager teleport [World] (Player)* teleports you or the pointed player in this world. Instead of teleport, you can use tp and to\n\n/worldmanager generate [World] (Generator)* {Seed}* generate a new world. Instead of \"generate\" you can use gen or create\n\n/worldmanager delete [World] deletes the world. Instead of \"delete\" you can use del, remove or purge\n\n/worldmanager list lists all worlds.\n\n/worldmanager load [World] loads the world while /worldmanager unload [World] unloads a world\n\n/worldmanager reload [World]* reloads a world.\n\n/worldmanager rename [World] (New Worldname) renames a world\n\n/worldmanager copy [World] (Name of the Copy)* will copy a world. Be careful. You can overwrite other worlds.\n\n/worldmanager setspawn will set the worldspawn\n\n/worldmanager settings [World]* opens a FormUI with world-specific settings\n\n/worldmanager regenerate [World]* regenerates the world. You also can use reg  or reset instead of \"regenerate\"\n\n/worldmanager setseed [World] (Seed) Change the seed of your world. Also works with reseed\n\n/worldmanager info [World]* shows you informations about this world\n\n/worldmanager setbiome [Biome] changes the biome of every loaded chunk in the current world.\n\n/worldmanager gamerule [World]* opens an UI to manage the gamerules\n\n/worldmanager version tells you your current WorldManager version.\n\n/worldmanager killentitys [World] kills all entities in a world.\n\n/worldmanager update Updates WorldManager.\n\n/worldmanager sync (templateworld) opens and UI to sync gamerules and settings with this world.\n\n/worldmanager locatebiome (biome) [range]* {teleport}* scans the nearby world for the chosen biome.\n\n/worldmanager spawn teleports you to the spawn of your current world.\n\n/worldmanager addons opens an addon ui where you can extend your server very easy.\n\n/worldmanager default [World]* shows you the default level. You can change it if you write the worldname too.\n\n\n* optional\n\n[/SPOILER]\n\n\n[SPOILER=\"Available Addons\"]\n\nWorldSigns by Buddelbubi\n\nWorldWhilelist by Buddelbubi\n\nWorldPlayerLimits by Buddelbubi\n\nWorldChat by Buddelbubi\n\nWorldJoinMessage by Buddelbubi\n\nTheEnd by wode\n\nQuasiStructurePopulator by wode\n\nBetterVanillaGenerator by wode\n\nClassicVillagePopulator by wode\n\nOceanMonumentPopulator by wode\n\nStrongholdPopulator by wode\n\nNetherFortressPopulator by wode\n\nMineshaftPopulator by wode\n\nScatteredBuildingPopulator by wode\n\nEmptyWorld by Creeperface\n\nMultiNether by PetteriM1\n\nPerWorldInventory by lukeeey\n\nSimpleWorldEdit by raffa505\n\nFastAsyncWorldEdit by IntellectualSites\n\nDbLib by fromgate (in addition to Fawe)\n\n\nYou have addon Ideas? Message me on Discord: Buddelbubi#5018\n\n[/SPOILER]\n\n\n\n",
+  "description": "# WorldManager\n\n**The most powerful multi-world management system for Nukkit / Lumi servers.** Create, delete, copy, teleport, and configure worlds — all from in-game commands and an intuitive form UI. Extend with official addons.\n\n> **Version:** 1.2.3  \n> **Author:** Natro  \n> **API:** 1.0.11–1.0.15\n\n---\n\n## Features\n\n- **World creation** — Generate worlds with any generator and seed.\n- **World management** — Load, unload, reload, rename, copy, duplicate, and delete worlds.\n- **Teleportation** — Teleport between worlds with commands or a UI.\n- **World settings** — Per-world game mode, player limit, protection, gamerules, and spawn location.\n- **World regeneration** — Regenerate entire worlds or change their seed.\n- **Biome editing** — Change the biome of all loaded chunks in a world.\n- **Entity clearing** — Kill all entities in a world (clearlag).\n- **Addon system** — Extend functionality with official addons (signs, whitelist, chat, join messages, The End, etc.).\n- **Default world switching** — Change the server's default world at runtime.\n\n---\n\n## Installation\n\n1. Place `WorldManager.jar` into your server's `plugins/` folder.\n2. Restart the server.\n3. (Optional) Install addons from the in-game addon UI (`/wm addons`).\n\n---\n\n## Commands\n\nUse any of these aliases: `/worldmanager`, `/wm`, `/mw`, `/levelmanager`, `/lm`, or `/mv`.\n\n| Command | Description |\n|---|---|\n| `/wm teleport <world> [player]` | Teleport to a world |\n| `/wm generate <world> [generator] [seed]` | Create a new world |\n| `/wm delete <world>` | Delete a world |\n| `/wm list` | List all worlds (loaded and unloaded) |\n| `/wm load <world>` | Load a world |\n| `/wm unload <world>` | Unload a world |\n| `/wm reload [world]` | Reload a world |\n| `/wm rename <world> <newName>` | Rename a world |\n| `/wm copy <world> [copyName]` | Copy a world |\n| `/wm setspawn` | Set the world spawn to your position |\n| `/wm settings [world]` | Open world settings UI |\n| `/wm regenerate [world]` | Regenerate a world |\n| `/wm setseed <world> <seed>` | Change a world's seed |\n| `/wm info [world]` | Show world information |\n| `/wm setbiome <biome>` | Change biome in loaded chunks |\n| `/wm gamerule [world]` | Open gamerule management UI |\n| `/wm killentitys <world>` | Kill all entities in a world |\n| `/wm spawn` | Teleport to world spawn |\n| `/wm addons` | Open addon management UI |\n| `/wm default [world]` | Show or change the default world |\n| `/wm version` | Show plugin version |\n\nParameters in `[]` are optional.\n\n---\n\n## Permissions\n\n| Permission | Description |\n|---|---|\n| `worldmanager.admin` | Access all WorldManager features |\n| `worldmanager.<subcommand>` | Access a specific subcommand (e.g., `worldmanager.generate`) |\n| `worldmanager.teleport.<world>` | Teleport to a specific world |\n| `worldmanager.deny.<world>` | Prevent entry to a specific world |\n| `worldmanager.teleportui` | Open the teleport UI |\n| `worldmanager.generationui` | Open the generation UI |\n| `worldmanager.enterfullworlds` | Bypass per-world player limits |\n\n---\n\n## Addons\n\nInstall from the in-game addon UI at `/wm addons`:\n\n| Addon | Author |\n|---|---|\n| WorldSigns | Buddelbubi |\n| WorldWhitelist | Buddelbubi |\n| WorldPlayerLimits | Buddelbubi |\n| WorldChat | Buddelbubi |\n| WorldJoinMessage | Buddelbubi |\n| TheEnd | wode |\n| BetterVanillaGenerator | wode |\n| PerWorldInventory | lukeeey |\n| MultiNether | PetteriM1 |\n| FastAsyncWorldEdit | IntellectualSites |\n\n---\n\n## Building\n\n```bash\nmvn clean package\n```\n\n---\n\n## License\n\nMIT License — see [LICENSE](https://github.com/Natro-w/WorldManager/blob/main/LICENSE).\n",
   "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/242151603?v=4",
   "id": "Natro-w/WorldManager",
   "license": {
-    "id": "ARR",
-    "name": "All Rights Reserved",
-    "url": ""
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
   },
   "links": {
     "discord": "",
@@ -42,6 +37,23 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1780849670,
-  "versions": []
+  "updated_at": 1781020080,
+  "versions": [
+    {
+      "changelog": "Release v1.2.3 - World management plugin",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "WorldManager-1.2.3.jar",
+          "primary": true,
+          "size": 134826,
+          "url": "https://github.com/Natro-w/WorldManager/releases/download/v1.2.3/WorldManager-1.2.3.jar"
+        }
+      ],
+      "name": "v1.2.3",
+      "prerelease": false,
+      "published_at": 1781020080,
+      "version": "v1.2.3"
+    }
+  ]
 }

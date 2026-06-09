@@ -1,0 +1,61 @@
+{
+  "api_version": "1.0.11",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/242151603?v=4",
+      "name": "Natro-w",
+      "url": "https://github.com/Natro-w"
+    }
+  ],
+  "categories": [],
+  "created_at": 1781020010,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "LuckPerms",
+      "version_range": ""
+    }
+  ],
+  "description": "# ChatFormatter\n\n**Lightweight, LuckPerms-powered chat formatting plugin for Nukkit / Lumi servers.** Automatically applies player prefix, suffix, and group-based formatting to all chat messages with zero configuration.\n\n> **Version:** 1.0.1  \n> **Author:** Natro  \n> **API:** 1.0.11–1.0.15  \n> **Dependency:** LuckPerms\n\n---\n\n## Features\n\n- **Automatic formatting** — Everything works out of the box. Prefix and suffix from LuckPerms are applied to every chat message.\n- **Group-based formatting** — Each permission group can have its own format template.\n- **Lightweight** — Minimal overhead, no database, no complex configuration.\n- **Full compatibility** — Works with Nukkit-MOT and Lumi-based servers.\n\n---\n\n## Installation\n\n1. Install [LuckPerms](https://luckperms.net/) on your server.\n2. Place `ChatFormatter.jar` into your `plugins/` folder.\n3. Restart the server.\n\n> **Note:** This plugin **requires** LuckPerms and will not function without it.\n\n---\n\n## Permissions\n\n| Permission | Default | Description |\n|---|---|---|\n| `chatformat.bypass` | `op` | Bypass chat formatting (send raw messages) |\n| `chatformatter.reload` | `op` | Reload the plugin configuration |\n\n---\n\n## Commands\n\n| Command | Description |\n|---|---|\n| `/chatformatter reload` | Reload the plugin configuration |\n\n---\n\n## Building\n\n```bash\nmvn clean package\n```\n\n---\n\n## License\n\nMIT License — see [LICENSE](https://github.com/Natro-w/ChatFormatter/blob/main/LICENSE).\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/242151603?v=4",
+  "id": "Natro-w/ChatFormatter",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "ChatFormatter",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Natro-w/ChatFormatter",
+  "stars": 0,
+  "summary": "Formats chat messages using LuckPerms prefix and suffix",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1781020071,
+  "versions": [
+    {
+      "changelog": "Release v1.0.1 - Chat formatting with LuckPerms",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ChatFormatter-1.0.1.jar",
+          "primary": true,
+          "size": 10297,
+          "url": "https://github.com/Natro-w/ChatFormatter/releases/download/v1.0.1/ChatFormatter-1.0.1.jar"
+        }
+      ],
+      "name": "v1.0.1",
+      "prerelease": false,
+      "published_at": 1781020071,
+      "version": "v1.0.1"
+    }
+  ]
+}
