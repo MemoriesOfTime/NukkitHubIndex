@@ -1,0 +1,61 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/50714128?v=4",
+      "name": "xRookieFight",
+      "url": "https://github.com/xRookieFight"
+    }
+  ],
+  "categories": [],
+  "created_at": 1781090858,
+  "dependencies": [],
+  "description": "# CustomServerSettings\n\nA PowerNukkitX plugin that sends a fully customizable server settings form to players when they open the **Settings** screen in Minecraft: Bedrock Edition. The form content is defined in the plugin config and can also be modified at runtime by other plugins through a custom event.\n\n\n<img src=\"https://raw.githubusercontent.com/PowerNukkitX-Bundle/CustomServerSettings/master/.github/img.png\">\n\n## How It Works\n\nWhen the client opens the settings screen, it sends a `ServerSettingsRequestPacket`. This plugin intercepts that packet and replies with a `ServerSettingsResponsePacket` containing a custom form built from `config.yml`. The form appears as a dedicated tab inside the client's settings menu.\n\n## Features\n\n- Fully config-driven custom settings form (title, icon, elements)\n- Supports all custom form element types (`label`, `toggle`, `input`, `dropdown`, `slider`, `step_slider`)\n- `ServerSettingsSendEvent` API for developers to modify or cancel the form per player\n\n## Installation\n\n1. Download or build `CustomServerSettings.jar`\n2. Drop it into your server's `plugins` folder\n3. Restart the server\n4. Edit `plugins/CustomServerSettings/config.yml` to customize the form\n\n## Configuration\n\n```yaml\nform-id: 0\ntitle: \"Custom Server Settings\"\nicon:\n  type: url\n  data: \"https://i.imgur.com/SCi3ZlL.png\"\nelements:\n  - type: label\n    text: \"Welcome to the server! Customize your experience below.\"\n  - type: toggle\n    text: \"Enable notifications\"\n    default: true\n    tag: notifications\n  - type: toggle\n    text: \"Enable particles\"\n    default: true\n    tag: particles\n```\n\n| Key | Description |\n| --- | --- |\n| `form-id` | The form ID used in the response packet |\n| `title` | The title shown at the top of the settings tab |\n| `icon` | Optional form icon; `type` is `url` or `path`, `data` is the image source |\n| `elements` | List of form elements, serialized to the form JSON as-is |\n\nEach entry under `elements` is passed through to the form JSON directly, so any field supported by Bedrock custom forms (`text`, `default`, `options`, `min`, `max`, `step`, `placeholder`, custom tags, etc.) can be used.\n\n## Developer API\n\nListen to `ServerSettingsSendEvent` to modify or cancel the settings form before it is sent:\n\n```java\n@EventHandler\npublic void onServerSettingsSend(ServerSettingsSendEvent event) {\n    Player player = event.getPlayer();\n\n    event.setFormId(0);\n    event.setFormData(\"{\\\"type\\\":\\\"custom_form\\\",\\\"title\\\":\\\"My Settings\\\",\\\"content\\\":[]}\");\n\n    // or prevent the form from being sent entirely\n    event.setCancelled();\n}\n```\n\n| Method | Description |\n| --- | --- |\n| `getPlayer()` | The player who opened the settings screen |\n| `getFormId()` / `setFormId(int)` | The form ID of the response packet |\n| `getFormData()` / `setFormData(String)` | The raw form JSON of the response packet |\n| `isCancelled()` / `setCancelled()` | Cancel to skip sending the form |\n\n## Building\n\n```bash\n./gradlew jar\n```\n\nThe output jar is located at `build/libs/CustomServerSettings.jar`.\n\n## License\n\nThis project is licensed under the [MIT License](https://github.com/PowerNukkitX-Bundle/CustomServerSettings/blob/master/LICENSE).\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-06-10",
+      "description": "",
+      "title": "",
+      "url": "https://raw.githubusercontent.com/PowerNukkitX-Bundle/CustomServerSettings/master/.github/img.png"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/154862792?v=4",
+  "id": "PowerNukkitX-Bundle/CustomServerSettings",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "CustomServerSettings",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/PowerNukkitX-Bundle/CustomServerSettings",
+  "stars": 1,
+  "summary": "A PowerNukkitX plugin that allows you to set your custom server settings.",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1781095837,
+  "versions": [
+    {
+      "changelog": "Latest release of CustomServerSettings.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "CustomServerSettings.jar",
+          "primary": true,
+          "size": 6385,
+          "url": "https://github.com/PowerNukkitX-Bundle/CustomServerSettings/releases/download/latest/CustomServerSettings.jar"
+        }
+      ],
+      "name": "Latest release",
+      "prerelease": false,
+      "published_at": 1781095837,
+      "version": "latest"
+    }
+  ]
+}

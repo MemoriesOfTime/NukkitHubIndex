@@ -33,7 +33,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1781020074,
+  "updated_at": 1781039338,
   "versions": [
     {
       "changelog": "Release v2.7.2 - NPC plugin",
@@ -42,13 +42,13 @@
         {
           "filename": "NPC-2.7.2.jar",
           "primary": true,
-          "size": 61195,
+          "size": 63858,
           "url": "https://github.com/Natro-w/NPC/releases/download/v2.7.2/NPC-2.7.2.jar"
         }
       ],
       "name": "v2.7.2",
       "prerelease": false,
-      "published_at": 1781020074,
+      "published_at": 1781039338,
       "version": "v2.7.2"
     }
   ]

@@ -34,7 +34,7 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/AnyVersion",
-  "stars": 8,
+  "stars": 9,
   "summary": "Allow older clients to join your server.",
   "targets": [
     "nkx",

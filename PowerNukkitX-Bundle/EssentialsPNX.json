@@ -132,7 +132,7 @@
   "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/EssentialsPNX",
-  "stars": 0,
+  "stars": 1,
   "summary": "Essentials plugin for PowerNukkitX!",
   "targets": [
     "pnx"
