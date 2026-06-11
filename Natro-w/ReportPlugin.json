@@ -1,0 +1,44 @@
+{
+  "api_version": "1.0.11",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/242151603?v=4",
+      "name": "Natro-w",
+      "url": "https://github.com/Natro-w"
+    }
+  ],
+  "categories": [],
+  "created_at": 1781122383,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "LuckPerms",
+      "version_range": ""
+    }
+  ],
+  "description": "# ReportPlugin\n\nAdvanced report system for Lumi (Nukkit-MOT) Minecraft Bedrock servers. Features form-based reporting, Discord webhook integration, investigation workflow with spectator/vanish, staff statistics, and a full admin dashboard.\n\n## Features\n\n- **Form-based reporting** — players select the target and reason through intuitive forms\n- **Predefined reasons** — configurable report reasons with ban durations (Kill Aura, Fly, etc.)\n- **Custom reason support** — players can type their own reason\n- **Report status workflow** — `OPEN` → `CLAIMED` → `RESOLVED` / `REJECTED`\n- **Staff investigation** — `/report-start` puts staff in spectator + vanish, teleports to target\n- **Staff vanish** — completely hidden from all players, spectator mode, not in player list\n- **Resolution forms** — staff choose from predefined reasons and punishments\n- **Discord webhook** — reports and resolutions are sent to a Discord channel\n- **Reports dashboard** — `/reports` GUI with categories: Open, Claimed, Resolved, Rejected, Search\n- **Search** — find reports by ID, player name, or reason\n- **Staff statistics** — track handled, confirmed, false reports, and average investigation time\n- **Admin dashboard** — total reports, top reported players, top reporters, top staff\n- **LuckPerms integration** — player prefixes shown in the report form\n- **JSON storage** — all data persisted in JSON files (no database setup required)\n- **Auto-generated default reasons** — on first run if no reasons are configured\n\n## Commands\n\n| Command | Permission | Description |\n|---------|-----------|-------------|\n| `/report` | `reportplugin.use` | Open the report form to select a player |\n| `/reports` | `reportplugin.receive` | Open the reports dashboard GUI |\n| `/report-start <id>` | `reportplugin.receive` | Claim a report, vanish, and teleport to the target |\n| `/report-end <yes\\|no>` | `reportplugin.receive` | End an investigation (yes = resolution form, no = false report) |\n| `/report-list <player> <send\\|receive>` | `reportplugin.receive` | List all reports by or against a player |\n| `/report-stats` | `reportplugin.receive` | View your staff statistics |\n| `/report-admin` | OP only | View the admin dashboard |\n| `/report-reason add <name> <duration>` | OP only | Add a report reason with ban duration |\n| `/report-reason remove <name>` | OP only | Remove a report reason |\n| `/report-reason list` | OP only | List all configured reasons |\n\n### Duration format for `/report-reason add`\n\nUse shorthand: `7d`, `3h`, `30m`, `1w`, `0` = permanent\n\nExamples:\n- `/report-reason add \"Kill Aura\" 7d`\n- `/report-reason add \"Spam\" 1h`\n- `/report-reason add \"Bug Abuse\" 14d`\n\n## Permissions\n\n```yaml\npermissions:\n  reportplugin.use:\n    default: true\n    description: Allows using /report to report players\n  reportplugin.receive:\n    default: op\n    description: Allows receiving report notifications and using staff commands\n```\n\n## Installation\n\n1. Download the latest `ReportPlugin-x.x.x.jar` from the [Releases](https://github.com/Natro/ReportPlugin/releases) page\n2. Place the JAR in your server's `plugins/` folder\n3. Ensure [LuckPerms-Nukkit](https://luckperms.net/download) is installed in `plugins/`\n4. Restart your server (or use a plugin manager to load)\n\n## Configuration\n\nAfter the first run, edit `plugins/ReportPlugin/config.yml`:\n\n```yaml\n# Discord Webhook URL for report notifications\n# Leave empty to disable Discord integration\ndiscord-webhook: \"https://discord.com/api/webhooks/...\"\n\n# Lobby world name for teleporting staff after investigation\n# Leave empty to use default world spawn\nlobby-world: \"lobby\"\n```\n\n## Data Storage\n\nAll data is stored in `plugins/ReportPlugin/data/` as JSON files:\n\n- **reports.json** — all reports with status, timestamps, investigation log\n- **reasons.json** — predefined reasons with ban durations\n- **stats.json** — staff statistics\n\n## Building from Source\n\n### Prerequisites\n\n- Java 11+ (JDK)\n- [Lumi server JAR](https://github.com/LuminiaDev/Lumi/releases) (`Lumi-1.6.0.jar` or later)\n- [LuckPerms-Nukkit](https://luckperms.net/download) (`LuckPerms-Nukkit-5.5.55.jar` or later)\n\n### Build with Maven\n\nUpdate the `pom.xml` system paths to point to your local Lumi and LuckPerms JARs, then run:\n\n```bash\nmvn clean package\n```\n\nThe compiled JAR will be in `target/ReportPlugin-x.x.x.jar`.\n\n### Build without Maven (manual javac)\n\n```bash\n# Compile\njavac -cp \"path/to/Lumi-1.6.0.jar;path/to/LuckPerms-Nukkit-5.5.55.jar\" `\n  -d target/classes `\n  src/main/java/ru/Natro/reportplugin/*.java\n\n# Package JAR\ncd target/classes\njar cf ../ReportPlugin-1.1.0.jar -C . .\njar uf ../ReportPlugin-1.1.0.jar -C ../../src/main/resources plugin.yml\njar uf ../ReportPlugin-1.1.0.jar -C ../../src/main/resources config.yml\n```\n\n## Project Structure\n\n```\nReportPlugin/\n├── .github/workflows/\n│   └── maven.yml\n├── src/main/\n│   ├── java/ru/Natro/reportplugin/\n│   │   ├── ReportPlugin.java      # Main plugin class & commands\n│   │   ├── ReportListener.java    # Form response handling\n│   │   ├── DiscordWebhook.java    # Discord webhook integration\n│   │   ├── VanishManager.java     # Staff vanish/spectator logic\n│   │   ├── Storage.java           # JSON persistence layer\n│   │   ├── ReportData.java        # Report data model\n│   │   ├── ReportReason.java      # Reason data model\n│   │   └── StaffStatsData.java    # Staff stats data model\n│   └── resources/\n│       ├── plugin.yml\n│       └── config.yml\n├── pom.xml\n├── README.md\n├── LICENSE\n└── .gitignore\n```\n\n## Report Status Flow\n\n```\nPlayer submits report\n        │\n        ▼\n      OPEN ──────────────► /report-start <id>\n        │                         │\n        │                         ▼\n        │                     CLAIMED\n        │                         │\n        │                    ┌────┴────┐\n        │                    │         │\n        │              /report-end  /report-end\n        │                yes         no\n        │                    │         │\n        │                    ▼         ▼\n        │               RESOLVED   REJECTED\n        │\n        └── Staff can view in /reports GUI\n```\n\n## Staff Investigation\n\nWhen a staff member runs `/report-start <id>`:\n\n1. Report status changes to **CLAIMED** (no other staff can claim it)\n2. Staff enters **spectator mode** (fully vanished)\n3. Staff is **teleported** to the reported player\n4. Staff sees investigation info: world, ping, device, reason, reporter\n5. Staff investigates and runs `/report-end yes` or `/report-end no`\n6. If **yes**: staff is teleported to lobby, unvanished, opens **resolution form**\n7. If **no**: report marked as **REJECTED** (false report)\n8. Discord webhook (if configured) sends the resolution\n\n## Discord Webhook Format\n\n### New Report\n```json\n{\n  \"title\": \"New Report\",\n  \"color\": 15158332,\n  \"fields\": [\n    {\"name\": \"Reporter\", \"value\": \"PlayerName\", \"inline\": true},\n    {\"name\": \"Target\", \"value\": \"PlayerName\", \"inline\": true},\n    {\"name\": \"Reason\", \"value\": \"Kill Aura\"}\n  ]\n}\n```\n\n### Resolution\n```json\n{\n  \"title\": \"Report #42 RESOLVED\",\n  \"color\": 65280,\n  \"fields\": [\n    {\"name\": \"Reporter\", \"value\": \"...\", \"inline\": true},\n    {\"name\": \"Target\", \"value\": \"...\", \"inline\": true},\n    {\"name\": \"Reason\", \"value\": \"...\", \"inline\": true},\n    {\"name\": \"Handled By\", \"value\": \"...\", \"inline\": true},\n    {\"name\": \"Result\", \"value\": \"...\", \"inline\": true},\n    {\"name\": \"Punishment\", \"value\": \"Ban 7d\"}\n  ]\n}\n```\n\n## License\n\n[MIT](https://github.com/Natro-w/ReportPlugin/blob/main/LICENSE)\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/242151603?v=4",
+  "id": "Natro-w/ReportPlugin",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "ReportPlugin",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Natro-w/ReportPlugin",
+  "stars": 0,
+  "summary": "Advanced report system with Discord support and investigations",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1781124768,
+  "versions": []
+}

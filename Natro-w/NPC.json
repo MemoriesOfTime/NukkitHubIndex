@@ -9,9 +9,15 @@
   ],
   "categories": [],
   "created_at": 1781020023,
-  "dependencies": [],
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "FakeInventories",
+      "version_range": ""
+    }
+  ],
   "description": "# NPC\n\n**Spawn fully interactive NPCs of any mob type on your Nukkit / Lumi server.** Over 70 entity types, human NPCs with full skin/armor/inventory support, command execution on interact, and real-time editing — all persistent across restarts.\n\n> **Version:** 2.7.2  \n> **Author:** Natro  \n> **API:** 1.0.14  \n> **Load:** STARTUP\n\n---\n\n## Features\n\n- **70+ entity types** — Every vanilla mob, plus Humans (with player skins), and even Block NPCs.\n- **Command execution** — Attach console commands or player commands that run when someone interacts with an NPC.\n- **Full customization** — Change held items, armor, scale (1–25x), nametag, score tag, and skin in real time.\n- **Persistent storage** — NPCs are saved via NBT and survive server restarts.\n- **Real server entities** — NPCs are registered as full Nukkit entities, supporting AI, movement, and natural behavior where applicable.\n- **Block NPCs** — Spawn blocks as placeable NPCs that look like actual blocks.\n\n---\n\n## Installation\n\n1. Build the project with `mvn clean package` or use the prebuilt `NPC.jar`.\n2. Place the jar into your server's `plugins/` folder.\n3. Restart the server.\n\n> **Compile dependency:** This project requires `Lumi-1.6.0.jar` (or a compatible Nukkit fork) available at the project root.\n\n---\n\n## Commands\n\n### Spawning\n\n| Command | Description |\n|---|---|\n| `/npc spawn <entity> [name]` | Spawn an NPC at your position |\n| `/npc entities` | List all available entity types |\n| `/npc remove` | Toggle kill mode — click an NPC to remove it |\n| `/npc getid` | Toggle ID mode — click an entity to see its ID |\n\n### Commands\n\n| Command | Description |\n|---|---|\n| `/npc addcmd <ID> <command>` | Add a console command run on interact |\n| `/npc addplayercmd <ID> <command>` | Add a player command run on interact |\n| `/npc listcmd <ID>` | List all commands attached to an NPC |\n| `/npc delcmd <ID> <command>` | Remove a console command |\n| `/npc delplayercmd <ID> <command>` | Remove a player command |\n| `/npc delallcmd <ID>` | Remove all commands from an NPC |\n\n### Editing\n\n| Command | Description |\n|---|---|\n| `/npc edit <ID> item` | Set NPC's hand to your held item |\n| `/npc edit <ID> offhanditem` | Set NPC's offhand item |\n| `/npc edit <ID> armor` | Copy your armor onto the NPC |\n| `/npc edit <ID> skin` | Copy your skin onto the NPC |\n| `/npc edit <ID> scale <value>` | Set NPC scale (1–25) |\n| `/npc edit <ID> name <text>` | Set NPC nametag (`%n` = newline, `%k` = hide) |\n| `/npc edit <ID> scoretag <text>` | Set NPC scoreboard tag |\n| `/npc edit <ID> tphere` | Teleport NPC to your position |\n| `/npc edit <ID> block <id:meta>` | Change a Block NPC's block type |\n\n---\n\n## Supported Entities\n\nAllay, Axolotl, Bat, Bee, Blaze, Block, Cat, CaveSpider, Chicken, Cow, Creeper, Dolphin, Donkey, ElderGuardian, Enderman, Endermite, Evoker, Fox, Frog, Ghast, GlowSquid, Goat, Guardian, Hoglin, Horse, Human, Husk, IronGolem, Llama, MagmaCube, Mooshroom, Mule, Ocelot, Panda, Parrot, Phantom, Pig, Piglin, PiglinBrute, Pillager, PolarBear, Rabbit, Ravager, SkeletonHorse, Sheep, Shulker, Silverfish, Skeleton, Slime, Snowman, Spider, Squid, Stray, Strider, Tadpole, Turtle, Vex, Villager, Vindicator, WanderingTrader, Warden, Witch, Wither, WitherSkeleton, Wolf, Zoglin, ZombieHorse, Zombie, ZombiePigman, ZombieVillager\n\n---\n\n## Permissions\n\n| Permission | Default | Description |\n|---|---|---|\n| `npc.edit` | `op` | Use `/npc` and all subcommands |\n\n---\n\n## License\n\nMIT License — see [LICENSE](https://github.com/Natro-w/NPC/blob/main/LICENSE).\n",
-  "detection_confidence": "medium",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/242151603?v=4",
@@ -24,16 +30,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "NPC",
-  "primary_target": "nkx",
+  "primary_target": "lumi",
   "server_version": "",
   "source": "https://github.com/Natro-w/NPC",
   "stars": 0,
   "summary": "",
   "targets": [
-    "nkx",
-    "nkmot"
+    "lumi"
   ],
-  "updated_at": 1781039338,
+  "updated_at": 1781122184,
   "versions": [
     {
       "changelog": "Release v2.7.2 - NPC plugin",

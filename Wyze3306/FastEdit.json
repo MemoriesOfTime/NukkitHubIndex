@@ -1,0 +1,102 @@
+{
+  "api_version": "2.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/103603305?v=4",
+      "name": "Wyze3306",
+      "url": "https://github.com/Wyze3306"
+    }
+  ],
+  "categories": [],
+  "created_at": 1778688022,
+  "dependencies": [],
+  "description": "# FastEdit\n\nAsync WorldEdit-style plugin for PowerNukkitX (Minecraft Bedrock servers).\nWand, brushes, schematics, undo/redo — without the lag.\n\n---\n\n## Install\n\n1. Drop `FastEdit-1.0.0.jar` into your server's `plugins/` folder.\n2. Restart the server.\n3. In-game: `//wand` to get the wooden axe.\n\nThat's it. No config file, no permissions to set up (commands default to op).\n\n> Every command works with both syntaxes: `/wand` *and* `//wand`. The double\n> slash is rewritten to single slash transparently, so muscle-memory from\n> Java's WorldEdit still works.\n\n---\n\n## Quick start\n\n```\n//wand              # gives you the FastEdit wooden axe\n[left-click]        # sets position 1 on the clicked block\n[right-click]       # sets position 2\n//size              # shows the size of your selection\n//set stone         # fills it with stone\n//undo              # changed your mind\n```\n\nYou can also stand somewhere and use `//pos1` / `//pos2` instead of the wand.\n\n---\n\n## Selecting\n\n| Command | What it does |\n|---|---|\n| `//wand` | Get the wooden axe. Break = pos1, right-click = pos2. |\n| `//pos1` | Set pos1 to your current block. |\n| `//pos2` | Set pos2 to your current block. |\n| `//sel` | Show the current selection. |\n| `//sel clear` | Clear it. |\n| `//size` | Show width × height × length and the block count. |\n| `//expand <n> [dir]` | Grow the selection (see below). |\n| `//expandrod` | Get the blaze rod that grows it by clicking. |\n\n---\n\n## Building shapes\n\nEverything below operates on your current selection (or for `//sphere`,\n`//cyl`, `//pyramid`, at your feet):\n\n```\n//set <pattern>                          fill the selection\n//replace <mask> <pattern>               replace blocks matching the mask\n//walls <pattern>                        outer walls of the selection\n//sphere <pattern> <radius> [hollow]     sphere at your feet\n//cyl <pattern> <radius> <height> [hollow]\n//pyramid <pattern> <size> [hollow]\n```\n\nExamples:\n\n```\n//set oak_planks\n//set 70%stone,30%cobblestone            ~70% stone, ~30% cobble\n//replace dirt grass_block               only swap dirt blocks\n//replace #air glass                     fill air with glass\n//walls bricks\n//sphere glowstone 6\n//cyl water 4 12 hollow                  hollow water cylinder\n//pyramid sandstone 8\n```\n\n### Patterns\n\nWhat you write as `<pattern>`:\n\n| Syntax | Meaning |\n|---|---|\n| `stone` | a single block |\n| `minecraft:stone` | same, fully qualified |\n| `50%stone,50%dirt` | weighted random |\n| `stone,dirt,grass_block` | equal-weight random |\n\n### Masks\n\nWhat you write as `<mask>` (e.g. for `//replace`):\n\n| Syntax | Meaning |\n|---|---|\n| `*` | any block |\n| `#air` | only air |\n| `#solid` | anything that isn't air |\n| `stone` | only this block |\n| `stone,dirt` | any of these |\n| `!stone` | anything *except* stone |\n\n---\n\n## Clipboard\n\n```\n//copy                       copy the selection (anchor = where you stand)\n//cut                        same as copy, then clears the selection\n//paste                      paste at your feet\n//paste -noair               paste but keep existing blocks where the clip is air\n//rotate <90|180|270>        rotate clipboard around Y\n//flip <x|y|z>               mirror the clipboard\n```\n\nDefault `//paste` *overwrites everything* in the paste box, including with\nair blocks from the clipboard. Use `-noair` if you want to overlay the\nclipboard on existing terrain without clearing the gaps.\n\n---\n\n## Move & stack\n\n```\n//move <amount> [direction]      move the selection (and update pos1/pos2)\n//stack <count> [direction]      duplicate the selection N times in a row\n```\n\n`direction` is one of: `up`, `down`, `north`, `south`, `east`, `west`, or\n`me` (the direction you're facing — default).\n\n```\n//stack 5 east        copy your selection 5 times to the east\n//move 10 up          push the selection 10 blocks up\n```\n\n---\n\n## Expand the selection\n\nGrow your current selection without re-selecting it — same idea as Java\nWorldEdit's `//expand`.\n\n```\n//expand <amount> [direction]            grow one side\n//expand <amount> <reverse> [direction]  grow both opposite sides at once\n//expand <amount> n,w                    several directions in one go\n//expand vert                            stretch to the world's build limits\n```\n\n`direction` is the same set as `//move`: `up`, `down`, `north`, `south`,\n`east`, `west`, or `me` / `back` (relative to where you're looking — `me`\nis the default if you omit it, and it accounts for looking up or down).\n\n```\n//expand 10 up        raise the top of the selection by 10\n//expand 5 5 up       add 5 above and 5 below\n//expand 8 me         push it 8 blocks the way you're facing\n//expand vert         floor-to-ceiling on the same footprint\n```\n\n### Expand rod\n\n```\n//expandrod\n[click any block face]\n```\n\n`//expandrod` gives you a **blaze rod**. Left- or right-click a block and\nthe selection grows **1 block toward the face you clicked** — top face\ngrows it up, north face grows it north, and so on. Handy for nudging a\nselection out by hand instead of re-typing coordinates. (You need a\nselection first; set it with `//wand`, `//pos1`/`//pos2`.)\n\n---\n\n## Undo / Redo\n\n```\n//undo [count]        undo the last N edits (default: 1)\n//redo [count]        redo\n```\n\nEach player keeps the last **20 edits** in memory. Cleared on server restart.\n\n---\n\n## Schematics\n\nFastEdit reads three formats:\n\n| Extension | Origin | Notes |\n|---|---|---|\n| `.mcstructure` | Bedrock native | The default save format. |\n| `.schem` | Sponge (WorldEdit / FAWE / Axiom) | Java-edition blocks are translated. |\n| `.schematic` | Legacy MCEdit | Older format; numeric IDs. |\n\nTwo folders are scanned, in this order:\n\n- `plugins/FastEdit/schematics/` — drop your downloaded `.schem` files here\n- The world's `structures/` folder — anything saved via vanilla `/structure\n  save`, SimpleWorldEdit, or FastEdit's own `//schem save`\n\n```\n//schem list                 list everything FastEdit can see\n//schem load <name>          load it into your clipboard\n//schem save <name>          save the clipboard as .mcstructure\n//paste                      drop it in the world\n```\n\n### Java → Bedrock blocks\n\nSchematics made on Java Edition reference block names that don't always exist\non Bedrock (`minecraft:stonebrick`, `minecraft:terracotta`, `minecraft:wool`,\netc.). FastEdit translates the common ones automatically.\n\nFor anything genuinely unknown, FastEdit places **`minecraft:magenta_wool`**\nas a visible placeholder and remembers the original Java ID. After pasting:\n\n```\n//paste                      \"FastEdit | pasted 8421 blocks. (37 placeholders)\"\n/inspect                     gives you the FastEdit Inspector stick\n[right-click a pink block]   shows \"current: minecraft:magenta_wool\"\n                                  \"original (Java): minecraft:stonebrick\"\n```\n\nYou can then fix the placeholders with a regular `//replace`:\n\n```\n//pos1 ... //pos2 ...        select the area you pasted into\n//replace minecraft:magenta_wool minecraft:stone_bricks\n```\n\nThe mapping is persisted to `plugins/FastEdit/unknown_blocks.dat`, so the\ninspector still works after a restart.\n\n---\n\n## Brushes (paint with a shovel)\n\nBrushes are stored **inside** your shovel — give different shovels different\nbrushes and switch between them.\n\n```\n[hold any shovel: wooden, stone, iron, golden, diamond, netherite]\n//brush sphere stone 5\n[right-click anywhere — even at the sky, raycast finds the block in front]\n```\n\nAvailable brushes:\n\n```\n//brush sphere   <pattern> <radius>\n//brush cube     <pattern> <radius>\n//brush cyl      <pattern> <radius> <height>\n//brush smooth   <fillPattern> <radius> [iterations]\n//brush clipboard [-noair]\n//brush none                          unbind the brush from this shovel\n```\n\nAdd a mask so the brush only affects matching blocks:\n\n```\n//brush sphere stone 6\n//mask #air                           only paint into air\n//mask !bedrock                       paint anywhere except on bedrock\n//mask none                           clear the mask\n```\n\nRight-click triggers a brush stroke. There's a **500 ms cooldown** to prevent\nspam from Bedrock's hold-to-attack behaviour, and the raycast reaches up to\n256 blocks so you can sculpt from a distance.\n\n---\n\n## Inspector\n\n```\n/inspect\n[right-click a block]\n```\n\nShows the block's coordinates, its current ID, and — if it's a placeholder\nfrom a schematic load — its original Java ID. Useful for cleaning up\nschematics that referenced Bedrock-unknown blocks.\n\n---\n\n## All commands at a glance\n\n| Command | What it does |\n|---|---|\n| `//wand` | Give the wooden axe |\n| `//pos1` `//pos2` | Set positions manually |\n| `//sel [clear]` | Show / clear the selection |\n| `//size` | Show selection volume |\n| `//expand <n> [rev] [dir]` `//expand vert` | Grow the selection |\n| `//expandrod` | Blaze rod: click a face to grow the selection |\n| `//set <pat>` | Fill |\n| `//replace <mask> <pat>` | Conditional fill |\n| `//walls <pat>` | Outline |\n| `//sphere <pat> <r> [hollow]` | Sphere at your feet |\n| `//cyl <pat> <r> <h> [hollow]` | Cylinder |\n| `//pyramid <pat> <size> [hollow]` | Pyramid |\n| `//copy` `//cut` `//paste [-noair]` | Clipboard |\n| `//rotate <90\\|180\\|270>` `//flip <x\\|y\\|z>` | Transform clipboard |\n| `//move <n> [dir]` `//stack <n> [dir]` | Move / stack |\n| `//undo [n]` `//redo [n]` | Undo / redo |\n| `//schem <save\\|load\\|list> [name]` | Schematics |\n| `//brush <kind> <args>` `//mask <mask>` | Brushes |\n| `/inspect` | Block info stick |\n\n---\n\n## Under the hood\n\nA short note for the curious — you don't need any of this to use the plugin.\n\n- **Async planning, sliced apply.** Block coordinates are computed on a\n  virtual thread (no main-thread cost), then written on the main thread in\n  60 000-block slices per tick, so the server keeps a healthy TPS even on\n  huge edits.\n- **Batched writes.** Each tick's slice goes through PowerNukkitX's\n  `BlockManager.applySubChunkUpdate()`, which sends one packet per sub-chunk\n  instead of one per block and writes chunks in parallel.\n- **No physics / redstone updates** are triggered by edits — exactly the\n  behaviour world-edit operations expect.\n- **Per-player session** keeps pos1, pos2, the clipboard, and a 20-deep\n  undo/redo stack in memory.\n\nThe full architecture lives in\n`src/main/java/fr/fastedit/edit/EditEngine.java` if you want to read it.\n\n---\n\n## Building from source\n\n```bash\n./gradlew shadowJar\n# produces build/libs/FastEdit-1.0.0.jar\n```\n\nIf your machine can't reach the PowerNukkitX maven repo, point at a local\njar instead:\n\n```bash\nFASTEDIT_PNX_JAR=/path/to/powernukkitx.jar ./gradlew shadowJar\n```\n\n---\n\n## License\n\nMIT. Do whatever you want with it.\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/103603305?v=4",
+  "id": "Wyze3306/FastEdit",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "FastEdit",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/Wyze3306/FastEdit",
+  "stars": 3,
+  "summary": "Async WorldEdit for PowerNukkitX",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1781199347,
+  "versions": [
+    {
+      "changelog": "  ## FastEdit v1.0.3\r\n\r\n  ### New\r\n  - **`//expand`** — grow your selection without re-selecting, like Java WorldEdit:\r\n    - `//expand <amount> [direction]`\r\n    - `//expand <amount> <reverse> [direction]` — both sides at once\r\n    - `//expand <amount> n,w` — several directions\r\n    - `//expand vert` — floor-to-ceiling on the same footprint\r\n\r\n    Direction defaults to where you're looking (up/down included).\r\n  - **`//expandrod`** — a blaze rod; left/right-click a block face to grow\r\n    the selection 1 block that way. Never damages the world.\r\n\r\n  ### Schematic conversion\r\n  More Java blocks convert instead of becoming the magenta placeholder:\r\n  `bricks`, `chain`, water/lava/powder-snow cauldrons, potted azalea, and\r\n  `light` (now level-accurate, 0–15). Reload affected schematics to apply.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FastEdit-1.0.3.jar",
+          "primary": true,
+          "size": 133859,
+          "url": "https://github.com/Wyze3306/FastEdit/releases/download/v1.0.3/FastEdit-1.0.3.jar"
+        }
+      ],
+      "name": "FastEdit 1.0.3",
+      "prerelease": false,
+      "published_at": 1778922440,
+      "version": "v1.0.3"
+    },
+    {
+      "changelog": "Major schematic-paste stability fixes plus in-game quality of life.\r\n\r\n  ## ✨ New\r\n\r\n  - **Unlimited paste size**: large schematics stream in bounded segments\r\n    (constant memory regardless of size — no more OOM). `BLOCKS_PER_TICK`\r\n    raised to 40k (~800k blocks/s, TPS stays stable).\r\n  - **Whole-structure undo**: a single `//undo` reverts the entire paste\r\n    at once (transactional). `//undo N` = N structures. `//redo` likewise.\r\n  - **In-game autocomplete (Bedrock)**: native argument suggestions —\r\n    full block list (`//set`, `//replace`, `//sphere`, `//cyl`,\r\n    `//pyramid`, `//walls`, `//brush`, `//mask`), paste flags\r\n    (`-noair`/`--skip-air`), sub-commands (`//schem save|load|list`),\r\n    directions, axes, etc.\r\n\r\n  ## 🐛 Fixes\r\n\r\n  - **`.schem`/`.schematic` pasted as magenta or crashed**:\r\n    - Hidden `null` error → real stack traces in console.\r\n    - `UnknownBlocks` rewrote the file to disk per block → stall/OOM.\r\n    - Lost orientations: Java→Bedrock state translation (stairs, slabs,\r\n      logs, doors, trapdoors, chest/furnace facing…).\r\n    - Legacy `.schematic`: metadata (orientation/variant/colour) now\r\n      decoded; block-id table greatly extended.\r\n    - Resolution **verified against the live registry**: `oak_*`→base,\r\n      `dark_oak` signs→`darkoak`, `rooted_dirt`→`dirt_with_roots`,\r\n      `tall_seagrass`→`seagrass`, etc. (a wrong name is skipped, never\r\n      mis-placed).\r\n  - **Crash loop**: an out-of-world Y block (`AIOOBE`) crashed the tick\r\n    forever → now skipped cleanly, the poison job is dropped.\r\n  - **Missing chunk layers**: edited chunks are now marked changed\r\n    (persisted), relit and fully resent to players → 100% of chunks/layers\r\n    present, even far from the player.\r\n  - **Waterlogged blocks**: submerged stairs/fences/coral keep their water\r\n    (Bedrock layer-1, supported in copy/cut/paste + undo).\r\n\r\n  ## ⚠️ Known limitations\r\n\r\n  - `waterlogged` not handled for legacy `.schematic` (pre-1.13).\r\n  - Composite patterns (`stone,dirt`, `35:2`) are underlined client-side\r\n    but still execute normally (no strict param tree, by design).\r\n  - Very large pastes (>16M blocks): undo beyond the memory budget evicts\r\n    the oldest segments (anti-crash safeguard).\r\n  - Finalization spike at the end of very large pastes (>10k chunks).",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FastEdit-1.0.2.jar",
+          "primary": true,
+          "size": 127419,
+          "url": "https://github.com/Wyze3306/FastEdit/releases/download/v1.0.2/FastEdit-1.0.2.jar"
+        }
+      ],
+      "name": "FastEdit 1.0.2",
+      "prerelease": false,
+      "published_at": 1778887545,
+      "version": "v1.0.2"
+    },
+    {
+      "changelog": "  - EditEngine: drop BlockManager (Block allocs per write caused GC pressure /\r\n  OOM\r\n    on large zones). Write directly via chunk.setBlockState and ship one\r\n    UpdateSubChunkBlocksPacket per touched sub-chunk. Add\r\n  MAX_EDIT_SIZE=5_000_000\r\n    guard so huge edits fail fast with a clear message instead of OOM.\r\n  - RawNbt: minimal limit-free NBT reader to bypass PowerNukkitX's 1 MiB\r\n    ByteArray cap; used for .schem and .schematic loading.\r\n  - Paste defaults to overwriting (air included); -noair / --skip-air keeps\r\n    existing terrain in air cells. Same flag for the clipboard brush.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FastEdit-1.0.0.jar",
+          "primary": true,
+          "size": 105690,
+          "url": "https://github.com/Wyze3306/FastEdit/releases/download/v1.0.1/FastEdit-1.0.0.jar"
+        }
+      ],
+      "name": "FastEdit 1.0.1",
+      "prerelease": false,
+      "published_at": 1778836065,
+      "version": "v1.0.1"
+    },
+    {
+      "changelog": "  First public release.\r\n  \r\n  - Wand + 23 commands (/cmd and //cmd both work)\r\n  - Patterns + masks, async + sliced apply via BlockManager (~60k blocks/tick)\r\n  - Clipboard (rotate/flip), paste overwrite or -noair\r\n  - Schematics: .mcstructure / .schem (Sponge) / .schematic (legacy MCEdit)\r\n  - Java→Bedrock aliases + magenta_wool placeholder + /inspect stick\r\n  - Shovel-bound brushes (sphere/cube/cyl/smooth/clipboard), mask, 500 ms\r\n  cooldown, 256-block raycast\r\n  - Move, stack, undo/redo (20 per player)\r\n\r\n  See README for the full guide.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FastEdit-1.0.0.jar",
+          "primary": true,
+          "size": 100106,
+          "url": "https://github.com/Wyze3306/FastEdit/releases/download/v1.0.0/FastEdit-1.0.0.jar"
+        }
+      ],
+      "name": "FastEdit 1.0.0",
+      "prerelease": false,
+      "published_at": 1778763360,
+      "version": "v1.0.0"
+    }
+  ]
+}
