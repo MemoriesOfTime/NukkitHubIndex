@@ -10,6 +10,11 @@
       "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
       "name": "dependabot[bot]",
       "url": "https://github.com/apps/dependabot"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/99377251?v=4",
+      "name": "lthuas",
+      "url": "https://github.com/lthuas"
     }
   ],
   "categories": [
@@ -52,6 +57,6 @@
   "targets": [
     "nkmot"
   ],
-  "updated_at": 1746416621,
+  "updated_at": 1781274066,
   "versions": []
 }
