@@ -41,7 +41,7 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/SoBadFish/GameDemo",
-  "stars": 10,
+  "stars": 11,
   "summary": "小游戏插件框架",
   "targets": [
     "nkx",

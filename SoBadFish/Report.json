@@ -60,7 +60,7 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/SoBadFish/Report",
-  "stars": 2,
+  "stars": 3,
   "summary": "支持MySQL数据库的举报插件",
   "targets": [
     "nkx",

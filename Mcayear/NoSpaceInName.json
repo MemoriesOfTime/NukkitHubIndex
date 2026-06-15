@@ -1,0 +1,48 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/26197131?v=4",
+      "name": "PetteriM1",
+      "url": "https://github.com/PetteriM1"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/3679022?v=4",
+      "name": "Polyana-Fontes",
+      "url": "https://github.com/Polyana-Fontes"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/48203962?v=4",
+      "name": "Mcayear",
+      "url": "https://github.com/Mcayear"
+    }
+  ],
+  "categories": [],
+  "created_at": 1781480441,
+  "dependencies": [],
+  "description": "",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/48203962?v=4",
+  "id": "Mcayear/NoSpaceInName",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "NoSpaceInName",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Mcayear/NoSpaceInName",
+  "stars": 0,
+  "summary": "A Nukkit plugin to remove spaces from player names",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1781480485,
+  "versions": []
+}
