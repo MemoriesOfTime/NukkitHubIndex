@@ -72,7 +72,7 @@
   "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/task-v1/AstraAuction",
-  "stars": 2,
+  "stars": 3,
   "summary": "Auction plugin scaffold for Lumi (Nukkit-MOT fork)",
   "targets": [
     "nkmot",

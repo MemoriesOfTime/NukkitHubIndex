@@ -42,12 +42,12 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/faststats-dev/faststats-java",
-  "stars": 7,
+  "stars": 8,
   "summary": "Prebuilt SDKs for publishing metrics to faststats.dev",
   "targets": [
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1781630133,
+  "updated_at": 1781718791,
   "versions": []
 }
