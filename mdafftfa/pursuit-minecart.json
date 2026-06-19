@@ -1,0 +1,37 @@
+{
+  "api_version": "2.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/239018447?v=4",
+      "name": "mdafftfa",
+      "url": "https://github.com/mdafftfa"
+    }
+  ],
+  "categories": [],
+  "created_at": 1770049661,
+  "dependencies": [],
+  "description": "# PursuitMinecart\n\nA **PowerNukkitX** plugin that adds a smart pursuit minecart capable of chasing entities using **AHP** (Analytic Hierarchy Process), **TOPSIS** (Technique for Order of Preference by Similarity to Ideal Solution), and **A*** pathfinding.\n- **Smart Target Selection** – Uses **AHP** to weight criteria (distance, speed, path complexity) and **TOPSIS** to rank nearby entities.\n- **Autonomous Pathfinding** – Employs an **A\\*** algorithm with a custom world grid that considers walkable blocks, jumps, and falls.\n- **Dynamic Re‑planning** – The minecart re‑calculates its path periodically (every second) or when the target moves significantly.\n- **Real‑time Pursuit** – Smooth movement with collision detection, and when the target is caught, the minecart mounts it (or stops).\n- **Visual Debug** – Displays path particles and target markers (can be toggled).\n- **Simple Command** – One command to spawn and manage the minecart.\n\n\n---\n\n## Commands\n\n| Command            | Aliases | Description |\n|--------------------|---------|-------------|\n| `/pm spawn`        | `/pm`   | Spawns a pursuit minecart at the player's location and opens a selection form. |\n| `/pm help`         |         | Shows the usage information. |\n\n---\n\n## How It Works\n\n1. **Spawn** – Player runs `/pm spawn`.\n2. **Entity Scanning** – The plugin scans for all living entities within a 500‑block radius (excluding other minecarts and players).\n3. **Multi‑Criteria Evaluation**:\n    - **Criteria**: `Distance`, `Speed`, `Path Complexity` (based on terrain).\n    - **AHP** calculates the weight of each criterion from a predefined pairwise comparison matrix.\n    - **TOPSIS** ranks the entities based on their criteria values.\n4. **Target Selection Form** – The player is presented with a list of entities sorted by TOPSIS score (color‑coded for quality).\n5. **Pathfinding** – After selection, the minecart computes an optimal path using the A\\* algorithm on a 3D grid, considering:\n    - Solid ground\n    - Air space for legs and head\n    - Ability to jump up or drop down one block.\n6. **Pursuit** – The minecart moves along the path, re‑calculating when needed. Once it catches the target, it stops and mounts the target (or dismounts the player).\n\n---\n\n## Installation\n\n1. **Download** the compiled `.jar` file (or build from source).\n2. Place the `.jar` into your PowerNukkitX server's `plugins/` folder.\n3. Start or restart your server.\n4. The plugin will automatically enable.\n\n---\n\n## Building from Source\n\nIf you want to compile the plugin yourself:\n\n1. Clone or download the source code.\n2. Ensure you have a PowerNukkitX API dependency in your build path (e.g., via Maven or by adding the PowerNukkitX JAR).\n3. Compile the Java files (the package is `org.mdafftfa`).\n4. Place the resulting `.jar` in the `plugins/` folder.\n\n## Usage Example\n\n1. Join your PowerNukkitX server and type:\n   ```\n   /pm spawn\n   ```\n2. A form will appear listing nearby entities with their TOPSIS scores (green = high priority, red = low).\n3. Click on an entity to start chasing it.\n4. The minecart will begin moving toward the target; you can ride it or watch it go.\n5. To stop the pursuit, simply dismount the minecart (or close the server).\n\n---\n\n## Configuration\n\nCurrently, the plugin does not have a configuration file. All parameters (criteria weights, pathfinding intervals, etc.) are hard‑coded in the source. If you wish to modify them, you will need to edit the Java source and recompile.\n\n---\n\n## Technical Details\n\n- **AHP Pairwise Matrix** (used for criteria weights):\n    - Distance : Speed : Path Complexity = 1 : 1/2 : 1/3 (or similar; check source).\n- **TOPSIS** uses equal weight normalisation and Euclidean distances.\n- **A\\* Heuristic**: Squared Euclidean distance (scaled to match the movement cost).\n- **Path Re‑planning** occurs every 20 ticks (1 second) or when the target moves more than 3 blocks.\n\n---\n\n## Notes\n\n- The minecart can only chase entities that are **on the ground** and **not touching water** (to avoid complex swimming logic).\n- If the target is too far (>500 blocks), the minecart will warn the player.\n- The plugin is designed for fun and demonstration; it may need tuning for performance on large servers.",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/239018447?v=4",
+  "id": "mdafftfa/pursuit-minecart",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "PursuitMinecart",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/mdafftfa/pursuit-minecart",
+  "stars": 1,
+  "summary": "A PowerNukkitX plugin that can pursue nearest entity selected using AHP, TOPSIS, and A* pathfinding with Minecart",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1781855064,
+  "versions": []
+}

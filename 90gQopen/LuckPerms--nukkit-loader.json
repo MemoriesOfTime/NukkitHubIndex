@@ -474,8 +474,30 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1780548314,
+  "updated_at": 1781845387,
   "versions": [
+    {
+      "changelog": "Automated build of LuckPerms (Bukkit/Paper + Velocity)\n\n**Version:** 5.5-SNAPSHOT\n**Build Number:** 8\n**Commit:** d840ff3fb13598d2d89cf90eadb93dfab88d0b77\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "LuckPerms-Bukkit-5.5.42.jar",
+          "primary": true,
+          "size": 1490307,
+          "url": "https://github.com/90gQopen/LuckPerms/releases/download/v5.5-SNAPSHOT-build.8/LuckPerms-Bukkit-5.5.42.jar"
+        },
+        {
+          "filename": "LuckPerms-Velocity-5.5.42.jar",
+          "primary": true,
+          "size": 1501343,
+          "url": "https://github.com/90gQopen/LuckPerms/releases/download/v5.5-SNAPSHOT-build.8/LuckPerms-Velocity-5.5.42.jar"
+        }
+      ],
+      "name": "LuckPerms v5.5-SNAPSHOT Build 8",
+      "prerelease": true,
+      "published_at": 1781845387,
+      "version": "v5.5-SNAPSHOT-build.8"
+    },
     {
       "changelog": "Automated build of LuckPerms (Bukkit/Paper + Velocity)\n\n**Version:** 5.5-SNAPSHOT\n**Build Number:** 7\n**Commit:** dba410ef9520e01f938eca6b29619d78bf685523\n",
       "downloads": 0,
