@@ -34,13 +34,13 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/AnyVersion",
-  "stars": 9,
+  "stars": 10,
   "summary": "Allow older clients to join your server.",
   "targets": [
     "nkx",
     "pnx"
   ],
-  "updated_at": 1781612920,
+  "updated_at": 1781960890,
   "versions": [
     {
       "changelog": "Updated AnyVersion to Minecraft Bedrock 26.20 (975)",

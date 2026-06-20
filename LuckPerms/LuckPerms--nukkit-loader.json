@@ -458,7 +458,7 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/LuckPerms/LuckPerms",
-  "stars": 2279,
+  "stars": 2278,
   "summary": "A permissions plugin",
   "targets": [
     "nkx",

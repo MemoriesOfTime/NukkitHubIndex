@@ -31,13 +31,47 @@
   "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/HuHoBot/KotlinMergeAdapter",
-  "stars": 7,
+  "stars": 6,
   "summary": "Example plugin showing the API",
   "targets": [
     "nkmot"
   ],
-  "updated_at": 1781163403,
+  "updated_at": 1781966730,
   "versions": [
+    {
+      "changelog": "# HuHoBot-Adapter v2.1.4\n\nfeat(core): 添加玩家进出服务器事件推送功能\n\n- 在 ClientManager 中新增 postCustomChat 方法用于发送自定义消息\n- 实现玩家加入和离开时向机器人发送自定义格式消息\n\n### 构建信息\n- 构建时间: 2026-06-20T14:45:29Z\n- 提交哈希: [d8a202e089c74017e999bbb6b609e0ba89098619](https://github.com/HuHoBot/KotlinMergeAdapter/commit/d8a202e089c74017e999bbb6b609e0ba89098619)\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-2.1.4-Allay.jar",
+          "primary": true,
+          "size": 9352670,
+          "url": "https://github.com/HuHoBot/KotlinMergeAdapter/releases/download/v2.1.4/HuHoBot-2.1.4-Allay.jar"
+        },
+        {
+          "filename": "HuHoBot-2.1.4-Nukkit-MOT.jar",
+          "primary": true,
+          "size": 8843954,
+          "url": "https://github.com/HuHoBot/KotlinMergeAdapter/releases/download/v2.1.4/HuHoBot-2.1.4-Nukkit-MOT.jar"
+        },
+        {
+          "filename": "HuHoBot-2.1.4-Proxy.jar",
+          "primary": true,
+          "size": 10521052,
+          "url": "https://github.com/HuHoBot/KotlinMergeAdapter/releases/download/v2.1.4/HuHoBot-2.1.4-Proxy.jar"
+        },
+        {
+          "filename": "HuHoBot-2.1.4-Spigot.jar",
+          "primary": true,
+          "size": 9272137,
+          "url": "https://github.com/HuHoBot/KotlinMergeAdapter/releases/download/v2.1.4/HuHoBot-2.1.4-Spigot.jar"
+        }
+      ],
+      "name": "HuHoBot v2.1.4",
+      "prerelease": false,
+      "published_at": 1781966730,
+      "version": "v2.1.4"
+    },
     {
       "changelog": "# HuHoBot-Adapter v2.1.3\n\nfeat(motd): 添加自定义Markdown功能支持\n\n- 在Motd配置中新增customMarkdown选项\n- 读取config同目录下的online.md文件作为自定义Markdown\n\n### 构建信息\n- 构建时间: 2026-04-30T18:07:11Z\n- 提交哈希: [b0112cf667a262e3ee35ad0a910ea8e898bbe110](https://github.com/HuHoBot/KotlinMergeAdapter/commit/b0112cf667a262e3ee35ad0a910ea8e898bbe110)\n",
       "downloads": 0,
