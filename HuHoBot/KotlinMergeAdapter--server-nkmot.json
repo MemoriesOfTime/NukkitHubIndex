@@ -31,7 +31,7 @@
   "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/HuHoBot/KotlinMergeAdapter",
-  "stars": 6,
+  "stars": 7,
   "summary": "Example plugin showing the API",
   "targets": [
     "nkmot"

@@ -1,0 +1,55 @@
+{
+  "api_version": "1.0.11",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/83235042?v=4",
+      "name": "SoBadFish",
+      "url": "https://github.com/SoBadFish"
+    }
+  ],
+  "categories": [],
+  "created_at": 1766816186,
+  "dependencies": [],
+  "description": "# Guidelines 寻路指引插件 \n一款为 Nukkit-Mot 核心开发的寻路指引插件，管理员可自定义终点及导航节点链，玩家可一键开启指定终点的寻路导航，解决服务器内迷路问题。\n\n## 📥 安装方法\n1. 下载插件的 `.jar` 格式文件；\n2. 将文件放入服务器目录下的 `plugins` 文件夹；\n3. 重启 Nukkit 服务器，插件即可自动加载生效。\n\n## 📋 指令说明\n插件核心指令前缀为 `/gl`，指令权限根据玩家身份自动区分：\n\n### 🔹 普通玩家指令（所有玩家均可使用）\n| 指令格式                | 功能说明                                  |\n|-------------------------|-------------------------------------------|\n| `/gl help`              | 查看适配自身权限的所有可用指令            |\n| `/gl start [终点名称]`  | 开启前往指定终点的寻路指引                |\n| `/gl end`               | 关闭当前正在进行的寻路指引                |\n| `/gl list`              | 查看服务器内所有已创建的终点及对应节点链  |\n\n### 🔸 管理员指令（仅OP/拥有 `guidelines.admin` 权限的玩家可用）\n| 指令格式                                  | 功能说明                                  |\n|-------------------------------------------|-------------------------------------------|\n| `/gl create [终点名称]`                   | 创建新终点（绑定执行指令时所在的世界，初始无节点） |\n| `/gl addnode [终点名称] [节点名称]`       | 为指定终点添加节点（节点坐标为执行指令时玩家脚下位置） |\n| `/gl setnode [终点名称] [节点索引] [新节点名称]` | 修改指定终点下对应索引的节点（节点坐标更新为执行指令时玩家脚下位置） |\n| `/gl removenode [终点名称]`               | 删除指定终点（包含该终点下所有节点）      |\n| `/gl removenode [终点名称] [节点索引]`    | 删除指定终点下对应索引的节点              |\n\n## ❓  Q&A\n1. **为什么执行 create/addnode/setnode 指令时提示“仅玩家可使用该命令”？**\n\n   这类指令需要获取玩家当前所在的坐标和世界信息，控制台无法提供这些数据，因此仅支持玩家在游戏内执行，控制台无法操作。\n\n\n2. **输入 `/gl start [终点名称]` 后提示“终点不存在”怎么办？**\n\n   首先确认输入的终点名称准确（区分大小写），其次需确认管理员已通过 `/gl create` 指令创建该终点，且终点下至少配置了节点。\n  \n\n3. **修改或删除节点时提示“节点索引越界”是什么原因？**\n\n   节点索引从 0 开始计数，若终点下仅有 2 个节点，索引范围为 0、1，输入 2 及以上的索引就会提示越界。可先执行 `/gl list` 查看该终点下的节点数量和对应索引。\n  \n4. **普通玩家能否使用管理员指令？**\n\n   不能，管理员指令仅对 OP 或拥有 `guidelines.admin` 权限的玩家开放，可通过服务器权限管理插件为指定玩家分配该权限。\n  \n5. **执行 `/gl removenode` 时，如何区分删除整个终点和删除单个节点？**\n\n   仅输入 `/gl removenode [终点名称]` 时，会删除整个终点；输入 `/gl removenode [终点名称] [节点索引]` 时，仅删除该终点下对应索引的节点。\n\n6. **`/gl list` 指令能看到哪些具体信息？**\n\n   可查看服务器内所有已创建的终点名称、终点绑定的世界、每个终点下的节点数量，以及每个节点的名称、索引和坐标信息。\n\n7. **为什么 OP 执行管理员指令时提示“你没有管理权限”？**\n\n   请检查服务器权限配置，确认 OP 列表已正确添加该玩家，或直接为该玩家分配 `guidelines.admin` 权限后重试。\n\n8. **执行 `/gl addnode` 指令后节点未添加成功，可能是什么原因？**\n\n   首先确认输入的终点名称已通过 `/gl create` 创建，其次检查指令参数是否完整（需包含终点名称和节点名称），缺少任一参数都会导致指令执行失败。",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/83235042?v=4",
+  "id": "SoBadFish/OpenGuidelines",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "OpenGuidelines",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/SoBadFish/OpenGuidelines",
+  "stars": 2,
+  "summary": "路线指引",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1782007038,
+  "versions": [
+    {
+      "changelog": "发行到Github",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "OpenGuidelines_v1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 45021,
+          "url": "https://github.com/SoBadFish/OpenGuidelines/releases/download/v1.0.0/OpenGuidelines_v1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "发行版",
+      "prerelease": false,
+      "published_at": 1766816705,
+      "version": "v1.0.0"
+    }
+  ]
+}
