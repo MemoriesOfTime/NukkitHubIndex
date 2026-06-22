@@ -1,0 +1,81 @@
+{
+  "api_version": "1.5.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/179889117?v=4",
+      "name": "Xdoors10",
+      "url": "https://github.com/Xdoors10"
+    }
+  ],
+  "categories": [],
+  "created_at": 1777830159,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "FormConstructor",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "required",
+      "plugin_id": "JOOQConnector",
+      "version_range": ""
+    }
+  ],
+  "description": "# LegacyRegion\n\nLegacyRegion — плагин регионов на блоках для Lumi.\n\nГлавная идея плагина — дать серверу максимально кастомизируемые регионы без привязки к одному конкретному блоку. Можно подключать разные типы регионов, задавать им радиус, название и правила разрушения.\n\n## Возможности\n\n- Несколько типов регионов через отдельные файлы.\n- Подключение своих блоков региона.\n- Включение и отключение каждого типа региона через `enabled`.\n- Индивидуальный радиус для каждого блока региона.\n- Возможность включать и отключать иконку через `button-icon-enabled`.\n- Меню управления регионами через формы.\n- Настраиваемые частицы при установке региона и отказе действия.\n- Голограммы над блоками регионов.\n- SQLite и MySQL хранилище.\n- Полная настройка сообщений в отдельном `messages.yml`.\n- Переключение формата сообщений между чатом и toast-уведомлениями простым переносом ключа.\n- Отдельный `menus.yml` для текста всех кнопок и форм меню.\n\n## Сборка\n\n```powershell\n.\\gradlew.bat build\n```\n\nhttps://github.com/MEFRREEX/FormConstructor и https://github.com/MEFRREEX/JOOQConnector должны лежать рядом с плагином в папке `plugins`.\n\n## Настройки\n\n- `config.yml` настройка команд, частиц, голограмм и регистрация блоков регионов.\n- `messages.yml` хранит сообщения. Ключи можно переносить между `chat-message` и `toast-message`, чтобы выбрать вывод в чат или toast-уведомление.\n- `menus.yml` хранит текст кнопок и форм меню.\n- `regions/*.yml` описывает типы регионов. `enabled` включает или отключает тип региона.\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/179889117?v=4",
+  "id": "Xdoors10/LegacyRegion",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "LegacyRegion",
+  "primary_target": "lumi",
+  "server_version": "",
+  "source": "https://github.com/Xdoors10/LegacyRegion",
+  "stars": 0,
+  "summary": "Кастомизируемые регионы на блоках для Lumi",
+  "targets": [
+    "lumi"
+  ],
+  "updated_at": 1782098218,
+  "versions": [
+    {
+      "changelog": "# Changelog\n\n## [1.0.1] - 2026-06-22\n\n### Update\n**Fixed**\n- исправлена проблема утечки соединений с базой данных (добавлено автоматическое закрытие `Connection` в `JooqRegionRepository`)\n- исправлена проблема утечки памяти из-за хранения объектов `Player` в системе голограмм (заменено на хранение `UUID`)\n- исправлена ошибка некорректного закрытия режима установки региона (теперь данные игрока очищаются при выходе с сервера `PlayerQuitEvent` и выключении плагина)\n- исправлена ошибка утечки асинхронной задачи обновления видимости голограмм (теперь она отменяется при перезагрузке плагина)\n- исправлена проблема с зависимостями ядра Lumi в `build.gradle.kts` (теперь указывает на скомпилированный `server.jar`)\n\n**Improved**\n- оптимизировано удаление региона из памяти (алгоритм удаления из сетки ячеек ускорен и теперь работает за `O(K)`, где K — размер региона, вместо перебора всего мира)\n- оптимизировано удаление владельца региона (сложность снижена с `O(N)` до `O(1)`)\n- улучшена стабильность системы команд: старая система с подменой `CommandData` удалена, внедрены новые классы `RegionCommandOverloads` и отдельные изолированные обработчики (`AddMemberHandler`, `RemoveMemberHandler` и др.)\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "LegacyRegion-1.0.1.jar",
+          "primary": true,
+          "size": 119633,
+          "url": "https://github.com/Xdoors10/LegacyRegion/releases/download/v1.0.1/LegacyRegion-1.0.1.jar"
+        }
+      ],
+      "name": "Release 1.0.1 - Bug fixes & Stability improvements",
+      "prerelease": false,
+      "published_at": 1782098218,
+      "version": "v1.0.1"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "LegacyRegion-1.0.0.jar",
+          "primary": true,
+          "size": 101002,
+          "url": "https://github.com/Xdoors10/LegacyRegion/releases/download/v1.0.0/LegacyRegion-1.0.0.jar"
+        }
+      ],
+      "name": "LegacyRegion 1.0.0",
+      "prerelease": false,
+      "published_at": 1777839350,
+      "version": "v1.0.0"
+    }
+  ]
+}

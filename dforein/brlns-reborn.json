@@ -1,0 +1,152 @@
+{
+  "api_version": "2.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/194613454?v=4",
+      "name": "dforein",
+      "url": "https://github.com/dforein"
+    }
+  ],
+  "categories": [
+    "minigame"
+  ],
+  "created_at": 1767549204,
+  "dependencies": [],
+  "description": "# BrokenLens Reborn Minigames\nPlugin based on PowerNukkitX that recreates from scratch, with high fidelty, the mechanics of MurderMystery minigame (mm) on BrokenLens, a server closed in 2022. \nThe plugin supports multiple minigames, which could be developed later. \nThis project is not affiliated with official BrokenLens.\n\n## First setup\n- Follow the steps listed under the **Install** section, to install PowerNukkitX, at https://github.com/PowerNukkitX/PowerNukkitX\n- Start the server for the first time, in order to create the necessary folders\n- Download the plugin and put it in the **plugins** folder\n- Download the Resource Pack and put the zip file in the **resourcepacks** folder\n- Set up the plugin | next chapter\n\n## config.yml settings and adding maps\nAfter starting the plugin for the first time, the plugin will generate a **config.yml** file, where you can edit the **settings** of the plugin and **add valid maps**.\nYou can use ```/mmop map add [etc...]``` to add new maps, ```/mmop map edit [etc...]``` to edit certain settings, ```/mmop map newspawn <mapId>``` to add new map spawns.\nYou have to manually delete maps: open **config.yml** and remove everything starting from \"enabled-maps: \" to the end. Change ```default-world``` later, when you have a first or favorite map world, to use as a fallback in case the other worlds give some errors.\nSet in **pnx.yml** ```loadAllLevels = true```, because the plugin needs all worlds already loaded.\nHere an example of how to set up a mm map inside config.yml:\n\n```YML\nworld:\n  lobby: \"lobby\"                        # folder name of the lobby world \n  default-world: \"world\"                # folder name of the default map world\n  enabled-maps:                         # which maps are enabled ingame for vote/selection\n    - \"testworld\"\n    - \"museum\"\n  arena-regions:\n    testworld:                          # map ID (better -but not necessary- to use the same name of the folder of the world) (it has to be lowercase)\n      name: \"Test Map\"                  # whatever name you want to show ingame\n      world: \"testworld\"                # folder name of the map world\n      min: \"-20 0 21\"                   # min-max coordinates (x y z) to select the total volume of the map\n      max: \"323 84 152\"\n      night-vision: true                # true/false = on/off\n      weather: \"Clear\"                  # \"Clear\"/\"Rain\"/\"Storm\"\n      builders:\n        - \"Lesz\"                        # List of the map builders' names\n        - \"@BrokenLensTeam\"\n\n      spawns:                           # List of the possible players' spawns when starting a match\n        - \"50 5 23\"\n        - \"11 5 42\"\n        - \"64 3 80\"\n    museum:\n      # ...\n```\n\n## Commands and usage\n### Overview\n```/mm <join|joinall|leave>```  \n```/mmop <start|stop|map|setrules|debug>```  \n\n**MM commands**  \nThese commands are accessible to every player, like ping (everything else is exclusive to ops)\n```/mm join``` - Join a game: after ```{minPlayers}``` players joined, the countdown will start and you will be able to vote for a map and the time of the day  \n```/mm joinall``` - Make all online players join a game  \n```/mm leave``` - Leave a game  \n  \n**MM Operator commands**  \n```/mmop start``` - Force the game to start for all joined players, skipping the countdowns  \n```/mmop stop``` - Force the game to stop for all players  \n```/mmop map <subcommand> <args>``` - Subcommands for map management and gold mapper (check next paragraph and next section for more details)  \n```/mmop setrules``` - Set all the gamerules instantly in a optimal way for a mm game inside the world/level you are in (e.g. no pvp, no fall damage, no mobspawing, etc.)  \n```/mmop debug``` - Command class for developers in order to debug/test features  \n  \n**General commands**  \n```/ping``` - Returns ping  \n```/ping <player>``` - Returns a player's ping  \n  \n```/globalchat``` - Toggle global/local world chat  \n  \n```/reloadconfig``` - Reload config.yml after external edits  \n\n\n### Map management subcommands\n```/mmop map add <mapId> <minCoords> <maxCoords> <worldFolder> <mapName>``` - Add a new map to config.yml  \n```/mmop map edit <mapId> <field> <args>``` - Edit a map settings in config.yml (editable fields: name, world, night-vision, weather, builders; for other fields you have to edit them manually in config.yml)  \n```/mmop map enable <mapId>``` - Enable a map in config.yml, in order to be able to play the game in it  \n```/mmop map disable <mapId>``` - Disable a map in config.yml  \n```/mmop map newspawn <mapId>``` - Save your current position as a new spawn, in the spawns list of the map, in config.yml  \n```/mmop map scan <mapId> <useBarriersWhitelist>``` - Scan map for valid gold spawn blocks and save locally, from min to max coords written in config.yml; add 'true' to treat saved whitelisted barriers as valid spawn blocks  \n```/mmop map scanforbarriers <mapId>``` - Scan and save locally barriers blocks, in order to whitelist them when scanning, if ```<useBarriersWhitelist>``` is true\n```/mmop map countbarriers <mapId>``` - Count barriers present in the map (no save)  \n```/mmop map addvolume <mapId> <from> <to>``` - Add a volume of blocks from coordinates1 to coordinates2 (same as scan: checking for valid blocks, but in a restricted volume)  \n```/mmop map addvolume <mapId> savecurrentpos``` - Save your position in pos1/pos2 variables in order to use them later (first time: pos1 = yourPosition, pos2 = null; second time: pos2 = yourPosition; third time -> first time)  \n```/mmop map addvolume <mapId> usesavedpos``` - Add a volume of blocks from pos1 to pos2 saved in variables (won't do anything if one of the variables is null)  \n```/mmop map removevolume <mapId> <from> <to>``` - Remove a volume of blocks from coordinates1 to coordinates2 (same as scan: checking for valid blocks, but in a restricted volume)  \n```/mmop map removevolume <mapId> savecurrentpos``` - Save your position in pos1/pos2 variables in order to use them later (first time: pos1 = yourPosition, pos2 = null; second time: pos2 = yourPosition; usesavedpos; third time = first time; ...)  \n```/mmop map removevolume <mapId> usesavedpos``` - Remove a volume of blocks from pos1 to pos2 saved in variables (won't do anything if one of the variables is null)  \n```/mmop map reload <mapId>``` - Reload the saved scan in cache  \n```/mmop map reloadbarriers <mapId>``` - Reload the saved barriers scan in cache  \n```/mmop map listmaps``` - Returns a list of the available maps from the gold spawn mapper  \n```/mmop map info <mapId>``` - Returns info about a certain map from the gold spawn mapper  \n\n*Note*: ```<mapId>``` is the main internal name (not shown), ```<worldFolder>``` is the world folder name, ```<mapName>``` is the name displayed to players. It's better (but not necessary) to set a new mapId the same as the world folder name.  \n\n## Making gold spawn in maps\nIn order to make mm gold system work, you need to use the ```/mmop map``` commands to **scan each map** you are going to use, so the plugin understands where it's possible to spawn golds and saves locally the results to use them later during the games.\n\nHowever, the mapper scans **every block** of the volume, starting from the **min** to the **max** coords you specified in the config.yml, so it could find more \"valid\" spawn blocks than necessary (for example outside the map itself, but still inside the mix-max coords).\n\nTherefore, to **exclude** these blocks, you have two options: 1) place **barriers blocks** on top of them (only one per block is enough), or alternatively 2) use ```/mmop map remove [etc..]``` to **remove a volume** of blocks from the gold spawn blocks list; or both methods together of course.\nDon't worry if the volume you selected contains already excluded blocks, these will be ignored.\n\nIf you want to **include** certain **barriers blocks** as valid spawn blocks, use first ```/mmop map scanforbarriers <mapId>``` to save them before the mapper's scanning, then ```/mmop map scan <mapId> true``` to include those barriers scanned before as well.\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/194613454?v=4",
+  "id": "dforein/brlns-reborn",
+  "license": {
+    "id": "LGPL-3.0",
+    "name": "GNU Lesser General Public License v3.0",
+    "url": "https://spdx.org/licenses/LGPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "brlnsreb minigames",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/dforein/brlns-reborn",
+  "stars": 3,
+  "summary": "BrokenLens Reborn Minigames plugin",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1782127417,
+  "versions": [
+    {
+      "changelog": "forgor to post the release\r\n\r\n## What's Changed\r\n* 1.1.7 merge by @dforein in https://github.com/dforein/brlns-reborn/pull/5\r\n\r\n\r\n**Full Changelog**: https://github.com/dforein/brlns-reborn/compare/1.1.4...1.1.7",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "brlnsreb_minigames-1.1.7.jar",
+          "primary": true,
+          "size": 1003662,
+          "url": "https://github.com/dforein/brlns-reborn/releases/download/1.1.7/brlnsreb_minigames-1.1.7.jar"
+        }
+      ],
+      "name": "1.1.7",
+      "prerelease": false,
+      "published_at": 1782124498,
+      "version": "1.1.7"
+    },
+    {
+      "changelog": "Global/local world chat, new mmop command, bug fixes\r\n\r\nImplemented global/local world chat with its command, \r\nSeparated mm command from mmop command (in order to isolate admin/operators commands, and make the mm command simpler for players to use), \r\nFixed some bugs\r\n\r\n**Full Changelog**: https://github.com/dforein/brlns-reborn/compare/1.1.3...1.1.4",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "brlnsreb_minigames-1.1.4.jar",
+          "primary": true,
+          "size": 973650,
+          "url": "https://github.com/dforein/brlns-reborn/releases/download/1.1.4/brlnsreb_minigames-1.1.4.jar"
+        }
+      ],
+      "name": "1.1.4",
+      "prerelease": false,
+      "published_at": 1775396628,
+      "version": "1.1.4"
+    },
+    {
+      "changelog": "Bug fixes\r\n\r\n**Full Changelog**: https://github.com/dforein/brlns-reborn/compare/1.1.2...1.1.3",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "brlnsreb_minigames-1.1.3.jar",
+          "primary": true,
+          "size": 967925,
+          "url": "https://github.com/dforein/brlns-reborn/releases/download/1.1.3/brlnsreb_minigames-1.1.3.jar"
+        }
+      ],
+      "name": "1.1.3",
+      "prerelease": false,
+      "published_at": 1774724242,
+      "version": "1.1.3"
+    },
+    {
+      "changelog": "Bug fixes\r\n\r\n**Full Changelog**: https://github.com/dforein/brlns-reborn/compare/1.1.1...1.1.2",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "brlnsreb_minigames-1.1.2.jar",
+          "primary": true,
+          "size": 967908,
+          "url": "https://github.com/dforein/brlns-reborn/releases/download/1.1.2/brlnsreb_minigames-1.1.2.jar"
+        }
+      ],
+      "name": "1.1.2",
+      "prerelease": false,
+      "published_at": 1771687422,
+      "version": "1.1.2"
+    },
+    {
+      "changelog": "- Removed physics\r\n- More accurate textures (dyes), spectator menu, redstone blood\r\n- Many bugs fixed\r\n\r\n**Full Changelog**: https://github.com/dforein/brlns-reborn/compare/1.1.0...1.1.1",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "brlnsreb_minigames-1.1.1.jar",
+          "primary": true,
+          "size": 967822,
+          "url": "https://github.com/dforein/brlns-reborn/releases/download/1.1.1/brlnsreb_minigames-1.1.1.jar"
+        }
+      ],
+      "name": "1.1.1",
+      "prerelease": false,
+      "published_at": 1771335509,
+      "version": "1.1.1"
+    },
+    {
+      "changelog": "Added command parameters autocomplete and new commands.\r\n\r\n**Full Changelog**: https://github.com/dforein/brlns-reborn/compare/release...1.1.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "brlnsreb_minigames-1.1.0.jar",
+          "primary": true,
+          "size": 963804,
+          "url": "https://github.com/dforein/brlns-reborn/releases/download/1.1.0/brlnsreb_minigames-1.1.0.jar"
+        }
+      ],
+      "name": "1.1.0",
+      "prerelease": false,
+      "published_at": 1770665146,
+      "version": "1.1.0"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "brlnsreb_minigames-1.0.0.jar",
+          "primary": true,
+          "size": 913426,
+          "url": "https://github.com/dforein/brlns-reborn/releases/download/release/brlnsreb_minigames-1.0.0.jar"
+        }
+      ],
+      "name": "1.0.0 first release",
+      "prerelease": false,
+      "published_at": 1767974380,
+      "version": "release"
+    }
+  ]
+}
