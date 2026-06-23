@@ -32,8 +32,24 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1781199347,
+  "updated_at": 1782157928,
   "versions": [
+    {
+      "changelog": "Correction du collage de schematics : l'orientation (`facing`) des trappes et de plusieurs blocs rotatifs était perdue à la conversion Java→Bedrock, qui les posait dans leur état par défaut.\n\n`JavaStates` ne traduisait `facing` que via `weirdo_direction`, `minecraft:cardinal_direction` et `facing_direction`. Or les trappes — et toute la famille bed/bell/cocoa/grindstone/loom/chiseled_bookshelf/beehive/decorated_pot/tripwire_hook — portent la propriété entière `direction`, qui n'était jamais renseignée.\n\nAjout d'une branche `direction` à deux conventions (vérifiées contre PowerNukkitX et dragonfly) : EWSN pour les trappes (E0 W1 S2 N3), index horizontal pour les autres (S0 W1 N2 E3). Aucune rotation requise.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FastEdit-1.0.5.jar",
+          "primary": true,
+          "size": 139383,
+          "url": "https://github.com/Wyze3306/FastEdit/releases/download/v1.0.5/FastEdit-1.0.5.jar"
+        }
+      ],
+      "name": "FastEdit 1.0.5",
+      "prerelease": false,
+      "published_at": 1782157928,
+      "version": "v1.0.5"
+    },
     {
       "changelog": "  ## FastEdit v1.0.3\r\n\r\n  ### New\r\n  - **`//expand`** — grow your selection without re-selecting, like Java WorldEdit:\r\n    - `//expand <amount> [direction]`\r\n    - `//expand <amount> <reverse> [direction]` — both sides at once\r\n    - `//expand <amount> n,w` — several directions\r\n    - `//expand vert` — floor-to-ceiling on the same footprint\r\n\r\n    Direction defaults to where you're looking (up/down included).\r\n  - **`//expandrod`** — a blaze rod; left/right-click a block face to grow\r\n    the selection 1 block that way. Never damages the world.\r\n\r\n  ### Schematic conversion\r\n  More Java blocks convert instead of becoming the magenta placeholder:\r\n  `bricks`, `chain`, water/lava/powder-snow cauldrons, potted azalea, and\r\n  `light` (now level-accurate, 0–15). Reload affected schematics to apply.",
       "downloads": 0,
