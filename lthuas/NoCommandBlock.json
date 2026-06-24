@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/99377251?v=4",
+      "name": "lthuas",
+      "url": "https://github.com/lthuas"
+    }
+  ],
+  "categories": [],
+  "created_at": 1782314420,
+  "dependencies": [],
+  "description": "# NoCommandBlock\n\n全图强制禁用命令方块，轻量级服务器规范管理插件。\n\n## 功能\n\n- **世界加载时自动关闭** — 每个世界加载时自动将 `commandBlocksEnabled` 游戏规则设为 `false`\n- **命令拦截** — 玩家/控制台执行 `/gamerule commandBlocksEnabled` 将被直接阻止\n- **定时巡检（可选）** — 默认每 10 秒巡检所有世界，防止其他插件或 API 绕过\n- **热重载** — `/ncb reload` 即可重载配置，无需重启服务器\n- **零配置开箱即用** — 拖入 `plugins/` 即可，无需任何额外设置\n\n## 配置\n\n首次加载自动生成 `plugins/NoCommandBlock/config.yml`：\n\n```yaml\n# 是否开启定时巡检（每10秒强制纠正一次）\n# 如果服务器没有其他插件会修改此规则，关闭可减少开销\nperiodic-scan: true\n```\n\n修改后运行 `/ncb reload` 热重载即可生效，无需重启服务器。\n\n## 命令\n\n| 命令 | 说明 | 权限 |\n|------|------|------|\n| `/ncb reload` | 热重载配置文件 | `nocommandblock.command` |\n\n所有 `/gamerule commandBlocksEnabled` 操作被静默拦截。\n\n## 兼容性\n\n| 项目 | 说明 |\n|------|------|\n| 服务端 | Nukkit-MOT |\n| API 版本 | 1.0.0 |\n| Java | 17+ |\n\n## 构建\n\n```bash\n# 1. 先将 Nukkit-MOT 安装到本地仓库\ncd Nukkit-MOT-source\nmvn install -DskipTests\n\n# 2. 构建插件\ncd NoCommandBlock\nmvn clean package\n# 输出: target/NoCommandBlock.jar\n```\n\n## 许可\n\nMIT\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/99377251?v=4",
+  "id": "lthuas/NoCommandBlock",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "NoCommandBlock",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/lthuas/NoCommandBlock",
+  "stars": 0,
+  "summary": "Force disables command block gamerule across all worlds.",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1782314733,
+  "versions": []
+}

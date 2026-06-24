@@ -1,5 +1,5 @@
 {
-  "api_version": "2.0.0",
+  "api_version": "3.0.0",
   "authors": [
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/194613454?v=4",
@@ -25,17 +25,33 @@
   },
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
-  "name": "brlnsreb minigames",
+  "name": "brlnsreb",
   "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/dforein/brlns-reborn",
   "stars": 3,
-  "summary": "BrokenLens Reborn Minigames plugin",
+  "summary": "BrokenLens Reborn plugin",
   "targets": [
     "pnx"
   ],
-  "updated_at": 1782127417,
+  "updated_at": 1782324441,
   "versions": [
+    {
+      "changelog": "Migration to PNX 3.0.0 nightly\r\nA few fixes\r\n\r\n**Full Changelog**: https://github.com/dforein/brlns-reborn/compare/1.1.7...1.2.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "brlnsreb-1.2.0.jar",
+          "primary": true,
+          "size": 1073663,
+          "url": "https://github.com/dforein/brlns-reborn/releases/download/1.2.0/brlnsreb-1.2.0.jar"
+        }
+      ],
+      "name": "1.2.0",
+      "prerelease": false,
+      "published_at": 1782298671,
+      "version": "1.2.0"
+    },
     {
       "changelog": "forgor to post the release\r\n\r\n## What's Changed\r\n* 1.1.7 merge by @dforein in https://github.com/dforein/brlns-reborn/pull/5\r\n\r\n\r\n**Full Changelog**: https://github.com/dforein/brlns-reborn/compare/1.1.4...1.1.7",
       "downloads": 0,
