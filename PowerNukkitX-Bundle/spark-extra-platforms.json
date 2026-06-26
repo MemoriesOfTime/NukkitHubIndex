@@ -1,0 +1,57 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/8352868?v=4",
+      "name": "lucko",
+      "url": "https://github.com/lucko"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "name": "Buddelbubi",
+      "url": "https://github.com/Buddelbubi"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/54219265?v=4",
+      "name": "tunikakeks",
+      "url": "https://github.com/tunikakeks"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/105284508?v=4",
+      "name": "onebeastchris",
+      "url": "https://github.com/onebeastchris"
+    }
+  ],
+  "categories": [],
+  "created_at": 1768381715,
+  "dependencies": [],
+  "description": "<h1 align=\"center\">\n\t<img\n\t\talt=\"spark\"\n\t\tsrc=\"https://i.imgur.com/ykHn9vx.png\">\n</h1>\n\n# spark-extra-platforms\n\nThis repository contains implementations of [spark](https://github.com/lucko/spark) for additional platforms.\n\nThese releases do not receive the same level of support as the main spark plugins/mods. They are provided as-is, and may be out of date or contain bugs. If you run into problems, please open an issue on GitHub and/or raise a pull request to fix!\n\n#### Useful Links\n* [**Website**](https://spark.lucko.me/) - browse the project homepage\n* [**Documentation**](https://spark.lucko.me/docs) - read documentation and usage guides\n* [**Downloads**](https://ci.lucko.me/job/spark-extra-platforms/) - latest plugin/mod downloads\n\n## License\n\nspark is free & open source. It is released under the terms of the GNU GPLv3 license. Please see [`LICENSE.txt`](https://github.com/PowerNukkitX-Bundle/spark-extra-platforms/blob/main/LICENSE.txt) for more information. \n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/154862792?v=4",
+  "id": "PowerNukkitX-Bundle/spark-extra-platforms",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://spark.lucko.me/",
+    "wiki": ""
+  },
+  "manifest_path": "spark-pnx/src/main/resources/plugin.yml",
+  "name": "spark",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/PowerNukkitX-Bundle/spark-extra-platforms",
+  "stars": 0,
+  "summary": "Spark implementation for PNX",
+  "targets": [
+    "nkx",
+    "pnx"
+  ],
+  "updated_at": 1782415778,
+  "versions": []
+}
