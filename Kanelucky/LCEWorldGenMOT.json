@@ -53,6 +53,23 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1779778473,
-  "versions": []
+  "updated_at": 1782571928,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "OldConsoleWorldGenMOT-0.1.2.jar",
+          "primary": true,
+          "size": 103016,
+          "url": "https://github.com/Kanelucky/LCEWorldGenMOT/releases/download/MOT/OldConsoleWorldGenMOT-0.1.2.jar"
+        }
+      ],
+      "name": "Nukkit MOT",
+      "prerelease": false,
+      "published_at": 1782571928,
+      "version": "MOT"
+    }
+  ]
 }

@@ -1,0 +1,87 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/979956?v=4",
+      "name": "minecrafter",
+      "url": "https://github.com/minecrafter"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/10179637?v=4",
+      "name": "liam-wiltshire",
+      "url": "https://github.com/liam-wiltshire"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/1396368?v=4",
+      "name": "theminecoder",
+      "url": "https://github.com/theminecoder"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/62796605?v=4",
+      "name": "TebexOllie",
+      "url": "https://github.com/TebexOllie"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/56545793?v=4",
+      "name": "TraxTRL",
+      "url": "https://github.com/TraxTRL"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/26485672?v=4",
+      "name": "itsjh",
+      "url": "https://github.com/itsjh"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/3318873?v=4",
+      "name": "nikosgram",
+      "url": "https://github.com/nikosgram"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/749179?v=4",
+      "name": "WildBamaBoy",
+      "url": "https://github.com/WildBamaBoy"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/20393865?v=4",
+      "name": "nilsbrychzy",
+      "url": "https://github.com/nilsbrychzy"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/73995049?v=4",
+      "name": "PleaseInsertNameHere",
+      "url": "https://github.com/PleaseInsertNameHere"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/104735961?v=4",
+      "name": "ow77",
+      "url": "https://github.com/ow77"
+    }
+  ],
+  "categories": [],
+  "created_at": 1709261592,
+  "dependencies": [],
+  "description": "## Deprecation Notice\nThis plugin and its repository are deprecated as of **January 2, 2024**. Please see the repository for our new Minecraft plugin here: https://github.com/tebexio/Tebex-Minecraft\n\nAny issues or pull requests submitted to this repository will be closed automatically.\n\n# BuycraftX (deprecated)\n\nBuycraftX is the official plugin for the [Buycraft](https://www.buycraft.net) webstore solution for Minecraft servers.\n\n## The major differences\n\n* A total rewrite of the plugin based on modern coding standards. The new plugin is geared towards reliability and performance.\n* Supports multiple platforms:\n  * Spigot 1.7.10 or above (1.8.3+ recommended)\n  * BungeeCord (recent versions)\n  * Sponge 5.x\n* Custom item IDs are not supported, as it is not portable to other platforms and is deprecated.\n\n## Translations\n\nHelp us translate the BuycraftX project by participating in our Crowdin project located at https://crowdin.com/project/buycraftx-plugin.\n\n## Standalone API\n\nBuycraftX includes the `buycraftx-common` module, which contains an API client, and shared code across all platforms.\n\n## Standalone executor\n\nBuycraftX can be integrated into your own custom applications to handle command execution. Most applications will\nfind `StandaloneBuycraftRunnerBuilder` to be the easiest method for integration, but you can also implement the whole\nBuycraftX stack if desired.\n\n## Support\n\nPlease don't raise support issues on this repo. For support with the plugin or any Buycraft issues, please [contact support](http://help.buycraft.net)\n\n## Contributing\n\nWe welcome contributions from the community. Please refer to the CONTRIBUTING.md file for more details. By submitting code to us, you agree to the \nterms set out in the CONTRIBUTING.md file\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/154862792?v=4",
+  "id": "PowerNukkitX-Bundle/BuycraftX",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "pnx/src/main/resources/plugin.yml",
+  "name": "BuycraftX",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/PowerNukkitX-Bundle/BuycraftX",
+  "stars": 0,
+  "summary": "The official Tebex Plugin (Previously called Buycraft) for a variety of Minecraft Server platforms.",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1782514248,
+  "versions": []
+}
