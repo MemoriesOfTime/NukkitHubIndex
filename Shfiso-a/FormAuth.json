@@ -1,0 +1,103 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/202798110?v=4",
+      "name": "Shfiso-a",
+      "url": "https://github.com/Shfiso-a"
+    }
+  ],
+  "categories": [],
+  "created_at": 1741872655,
+  "dependencies": [],
+  "description": "# FormAuth\r\n\r\nA simple authentication plugin for Nukkit Minecraft servers that uses forms for login and registration.\r\n\r\n## Configuration\r\n\r\nconfig file contains :\r\n- Login timeout\r\n- AFK timeout\r\n- Custom messages\r\n- Player database location\r\n- login attempt limiter ( without temporary block )\r\n\r\n## Credits\r\n[KibiAuth](https://github.com/KibiDB/KibiAuth-Nukkit) (i only used it's code structure )\r\n\r\n## Images\r\n\r\n![Screenshot 2025-03-13 170904](https://github.com/user-attachments/assets/6ebcd98c-0a19-4315-ad2f-a2799a44f093)\r\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/202798110?v=4",
+  "id": "Shfiso-a/FormAuth",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "FormAuth",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Shfiso-a/FormAuth",
+  "stars": 0,
+  "summary": "authui",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1782583496,
+  "versions": [
+    {
+      "changelog": "Added : login attempt limiter (no temporary block)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FormAuth-1.0.3.jar",
+          "primary": true,
+          "size": 22006,
+          "url": "https://github.com/Shfiso-a/FormAuth/releases/download/1.0.3/FormAuth-1.0.3.jar"
+        }
+      ],
+      "name": "FormAuth v1.0.3",
+      "prerelease": false,
+      "published_at": 1752569617,
+      "version": "1.0.3"
+    },
+    {
+      "changelog": "you can change the language of form now ( farsi and arabic included )\r\nplayers won't get any damage before register and login",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FormAuth-1.0.2.jar",
+          "primary": true,
+          "size": 21614,
+          "url": "https://github.com/Shfiso-a/FormAuth/releases/download/1.0.2/FormAuth-1.0.2.jar"
+        }
+      ],
+      "name": "FormAuth v1.0.2",
+      "prerelease": false,
+      "published_at": 1743577235,
+      "version": "1.0.2"
+    },
+    {
+      "changelog": "added encryption for password\r\nprevent any player ( including operators ) to use any commands before login and register ",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FormAuth-1.0.1.jar",
+          "primary": true,
+          "size": 17437,
+          "url": "https://github.com/Shfiso-a/FormAuth/releases/download/releases/FormAuth-1.0.1.jar"
+        }
+      ],
+      "name": "FormAuth v1.0.1",
+      "prerelease": false,
+      "published_at": 1741941040,
+      "version": "releases"
+    },
+    {
+      "changelog": "nothing special for now",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FormAuth-1.0.0.jar",
+          "primary": true,
+          "size": 15199,
+          "url": "https://github.com/Shfiso-a/FormAuth/releases/download/release/FormAuth-1.0.0.jar"
+        }
+      ],
+      "name": "FormAuth v1.0.0",
+      "prerelease": false,
+      "published_at": 1741872973,
+      "version": "release"
+    }
+  ]
+}
