@@ -34,7 +34,7 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1782665309,
+  "updated_at": 1782752143,
   "versions": [
     {
       "changelog": "Migration to PNX 3.0.0 nightly\r\nA few fixes\r\n\r\n**Full Changelog**: https://github.com/dforein/brlns-reborn/compare/1.1.7...1.2.0",
