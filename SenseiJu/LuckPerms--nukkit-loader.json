@@ -17,11 +17,6 @@
       "url": "https://github.com/powercasgamer"
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/9086540?v=4",
-      "name": "FilleDev",
-      "url": "https://github.com/FilleDev"
-    },
-    {
       "avatar_url": "https://avatars.githubusercontent.com/u/7340354?v=4",
       "name": "bakatrouble",
       "url": "https://github.com/bakatrouble"
@@ -37,19 +32,14 @@
       "url": "https://github.com/EuropeJing"
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-      "name": "github-actions[bot]",
-      "url": "https://github.com/apps/github-actions"
-    },
-    {
       "avatar_url": "https://avatars.githubusercontent.com/u/2998171?v=4",
       "name": "bloodmc",
       "url": "https://github.com/bloodmc"
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/1076914?v=4",
-      "name": "electron93",
-      "url": "https://github.com/electron93"
+      "avatar_url": "https://avatars.githubusercontent.com/u/11576465?v=4",
+      "name": "Andre601",
+      "url": "https://github.com/Andre601"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/26658563?v=4",
@@ -57,9 +47,9 @@
       "url": "https://github.com/PixelmonPRO"
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/11576465?v=4",
-      "name": "Andre601",
-      "url": "https://github.com/Andre601"
+      "avatar_url": "https://avatars.githubusercontent.com/u/1076914?v=4",
+      "name": "electron93",
+      "url": "https://github.com/electron93"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/6516698?v=4",
@@ -117,11 +107,6 @@
       "url": "https://github.com/LXGaming"
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/11415969?v=4",
-      "name": "Biquaternions",
-      "url": "https://github.com/Biquaternions"
-    },
-    {
       "avatar_url": "https://avatars.githubusercontent.com/u/20979389?v=4",
       "name": "Sxtanna",
       "url": "https://github.com/Sxtanna"
@@ -140,6 +125,11 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/3914677?v=4",
       "name": "Slind14",
       "url": "https://github.com/Slind14"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/47701178?v=4",
+      "name": "SenseiJu",
+      "url": "https://github.com/SenseiJu"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/31587616?v=4",
@@ -192,9 +182,14 @@
       "url": "https://github.com/wildone"
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/11252574?v=4",
-      "name": "mja00",
-      "url": "https://github.com/mja00"
+      "avatar_url": "https://avatars.githubusercontent.com/u/12481684?v=4",
+      "name": "EduardWayland",
+      "url": "https://github.com/EduardWayland"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/11415969?v=4",
+      "name": "Biquaternions",
+      "url": "https://github.com/Biquaternions"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/41978811?v=4",
@@ -277,11 +272,6 @@
       "url": "https://github.com/underscore11code"
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/3490861?v=4",
-      "name": "mikroskeem",
-      "url": "https://github.com/mikroskeem"
-    },
-    {
       "avatar_url": "https://avatars.githubusercontent.com/u/46966988?v=4",
       "name": "Dominik48N",
       "url": "https://github.com/Dominik48N"
@@ -362,6 +352,16 @@
       "url": "https://github.com/3TUSK"
     },
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/11252574?v=4",
+      "name": "mja00",
+      "url": "https://github.com/mja00"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/3490861?v=4",
+      "name": "mikroskeem",
+      "url": "https://github.com/mikroskeem"
+    },
+    {
       "avatar_url": "https://avatars.githubusercontent.com/u/54859825?v=4",
       "name": "Kamillaova",
       "url": "https://github.com/Kamillaova"
@@ -435,24 +435,17 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/53803019?v=4",
       "name": "rymiel",
       "url": "https://github.com/rymiel"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/12481684?v=4",
-      "name": "EduardWayland",
-      "url": "https://github.com/EduardWayland"
     }
   ],
-  "categories": [
-    "management"
-  ],
-  "created_at": 1766961680,
+  "categories": [],
+  "created_at": 1782835390,
   "dependencies": [],
-  "description": "![](https://raw.githubusercontent.com/LuckPerms/branding/master/banner/banner.png \"Banner\")\n# LuckPerms\n[![Build Status](https://ci.lucko.me/job/LuckPerms/badge/icon)](https://ci.lucko.me/job/LuckPerms/)\n[![javadoc](https://javadoc.io/badge2/net.luckperms/api/javadoc.svg)](https://javadoc.io/doc/net.luckperms/api)\n[![Maven Central](https://img.shields.io/maven-metadata/v/https/repo1.maven.org/maven2/net/luckperms/api/maven-metadata.xml.svg?label=maven%20central&colorB=brightgreen)](https://search.maven.org/artifact/net.luckperms/api)\n[![Discord](https://img.shields.io/discord/241667244927483904.svg?label=discord&logo=discord)](https://discord.gg/luckperms)\n\nLuckPerms is a permissions plugin for Minecraft servers. It allows server admins to control what features players can use by creating groups and assigning permissions.\n\nThe latest downloads, wiki & other useful links can be found on the project homepage at [luckperms.net](https://luckperms.net/).\n\nIt is:\n\n* **fast** - written with performance and scalability in mind.\n* **reliable** - trusted by thousands of server admins, and the largest of server networks.\n* **easy to use** - setup permissions using commands, directly in config files, or using the web editor.\n* **flexible** - supports a variety of data storage options, and works on lots of different server types.\n* **extensive** - a plethora of customization options and settings which can be changed to suit your server.\n* **free** - available for download and usage at no cost, and permissively licensed so it can remain free forever.\n\nFor more information, see the wiki article on [Why LuckPerms?](https://luckperms.net/wiki/Why-LuckPerms)\n\n## Building\nLuckPerms uses Gradle to handle dependencies & building.\n\n#### Requirements\n* Java 21 JDK or newer\n* Git\n\n#### Compiling from source\n```sh\ngit clone https://github.com/LuckPerms/LuckPerms.git\ncd LuckPerms/\n./gradlew build\n```\n\nYou can find the output jars in the `loader/build/libs` or `build/libs` directories.\n\n## Tests\nThere are some automated tests which run during each build.\n\n* Unit tests are defined in [`common/src/test`](https://github.com/LuckPerms/LuckPerms/tree/master/common/src/test)\n* Integration tests are defined in [`standalone/src/test`](https://github.com/LuckPerms/LuckPerms/tree/master/standalone/src/test).\n\n## Contributing\n#### Pull Requests\nIf you make any changes or improvements to the plugin which you think would be beneficial to others, please consider making a pull request to merge your changes back into the upstream project. (especially if your changes are bug fixes!)\n\nLuckPerms loosely follows the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html). Generally, try to copy the style of code found in the class you're editing. \n\n#### Project Layout\nThe project is split up into a few separate modules.\n\n* **API** - The public, semantically versioned API used by other plugins wishing to integrate with and retrieve data from LuckPerms. This module (for the most part) does not contain any implementation itself, and is provided by the plugin.\n* **Common** - The common module contains most of the code which implements the respective LuckPerms plugins. This abstract module reduces duplicated code throughout the project.\n* **Bukkit, BungeeCord, Fabric, Forge, Nukkit, Sponge & Velocity** - Each use the common module to implement plugins on the respective server platforms.\n\n## License\nLuckPerms is licensed under the permissive MIT license. Please see [`LICENSE.txt`](https://github.com/LuckPerms/LuckPerms/blob/master/LICENSE.txt) for more info.\n",
+  "description": "![](https://raw.githubusercontent.com/LuckPerms/branding/master/banner/banner.png \"Banner\")\n# LuckPerms\n[![Build Status](https://ci.lucko.me/job/LuckPerms/badge/icon)](https://ci.lucko.me/job/LuckPerms/)\n[![javadoc](https://javadoc.io/badge2/net.luckperms/api/javadoc.svg)](https://javadoc.io/doc/net.luckperms/api)\n[![Maven Central](https://img.shields.io/maven-metadata/v/https/repo1.maven.org/maven2/net/luckperms/api/maven-metadata.xml.svg?label=maven%20central&colorB=brightgreen)](https://search.maven.org/artifact/net.luckperms/api)\n[![Discord](https://img.shields.io/discord/241667244927483904.svg?label=discord&logo=discord)](https://discord.gg/luckperms)\n\nLuckPerms is a permissions plugin for Minecraft servers. It allows server admins to control what features players can use by creating groups and assigning permissions.\n\nThe latest downloads, wiki & other useful links can be found on the project homepage at [luckperms.net](https://luckperms.net/).\n\nIt is:\n\n* **fast** - written with performance and scalability in mind.\n* **reliable** - trusted by thousands of server admins, and the largest of server networks.\n* **easy to use** - setup permissions using commands, directly in config files, or using the web editor.\n* **flexible** - supports a variety of data storage options, and works on lots of different server types.\n* **extensive** - a plethora of customization options and settings which can be changed to suit your server.\n* **free** - available for download and usage at no cost, and permissively licensed so it can remain free forever.\n\nFor more information, see the wiki article on [Why LuckPerms?](https://luckperms.net/wiki/Why-LuckPerms)\n\n## Building\nLuckPerms uses Gradle to handle dependencies & building.\n\n#### Requirements\n* Java 21 JDK or newer\n* Git\n\n#### Compiling from source\n```sh\ngit clone https://github.com/LuckPerms/LuckPerms.git\ncd LuckPerms/\n./gradlew build\n```\n\nYou can find the output jars in the `loader/build/libs` or `build/libs` directories.\n\n## Tests\nThere are some automated tests which run during each build.\n\n* Unit tests are defined in [`common/src/test`](https://github.com/LuckPerms/LuckPerms/tree/master/common/src/test)\n* Integration tests are defined in [`standalone/src/test`](https://github.com/LuckPerms/LuckPerms/tree/master/standalone/src/test).\n\n## Contributing\n#### Pull Requests\nIf you make any changes or improvements to the plugin which you think would be beneficial to others, please consider making a pull request to merge your changes back into the upstream project. (especially if your changes are bug fixes!)\n\nLuckPerms loosely follows the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html). Generally, try to copy the style of code found in the class you're editing. \n\n#### Project Layout\nThe project is split up into a few separate modules.\n\n* **API** - The public, semantically versioned API used by other plugins wishing to integrate with and retrieve data from LuckPerms. This module (for the most part) does not contain any implementation itself, and is provided by the plugin.\n* **Common** - The common module contains most of the code which implements the respective LuckPerms plugins. This abstract module reduces duplicated code throughout the project.\n* **Bukkit, BungeeCord, Fabric, Forge, Nukkit, Sponge, Velocity & Waterdog** - Each use the common module to implement plugins on the respective server platforms.\n\n## License\nLuckPerms is licensed under the permissive MIT license. Please see [`LICENSE.txt`](https://github.com/LuckPerms/LuckPerms/blob/master/LICENSE.txt) for more info.\n",
   "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
-  "icon_url": "https://avatars.githubusercontent.com/u/76787303?v=4",
-  "id": "90gQopen/LuckPerms--nukkit-loader",
+  "icon_url": "https://avatars.githubusercontent.com/u/47701178?v=4",
+  "id": "SenseiJu/LuckPerms--nukkit-loader",
   "license": {
     "id": "MIT",
     "name": "MIT License",
@@ -467,172 +460,13 @@
   "name": "LuckPerms",
   "primary_target": "nkx",
   "server_version": "",
-  "source": "https://github.com/90gQopen/LuckPerms",
+  "source": "https://github.com/SenseiJu/LuckPerms",
   "stars": 0,
   "summary": "A permissions plugin",
   "targets": [
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1782792502,
-  "versions": [
-    {
-      "changelog": "Automated build of LuckPerms (Bukkit/Paper + Velocity)\n\n**Version:** 5.5-SNAPSHOT\n**Build Number:** 9\n**Commit:** 6f3c26cf61310cd2fc8fc60b7ccda20ad84a489b\n",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "LuckPerms-Bukkit-5.5.42.jar",
-          "primary": true,
-          "size": 1493472,
-          "url": "https://github.com/90gQopen/LuckPerms/releases/download/v5.5-SNAPSHOT-build.9/LuckPerms-Bukkit-5.5.42.jar"
-        },
-        {
-          "filename": "LuckPerms-Velocity-5.5.42.jar",
-          "primary": true,
-          "size": 1507824,
-          "url": "https://github.com/90gQopen/LuckPerms/releases/download/v5.5-SNAPSHOT-build.9/LuckPerms-Velocity-5.5.42.jar"
-        }
-      ],
-      "name": "LuckPerms v5.5-SNAPSHOT Build 9",
-      "prerelease": true,
-      "published_at": 1782792502,
-      "version": "v5.5-SNAPSHOT-build.9"
-    },
-    {
-      "changelog": "Automated build of LuckPerms (Bukkit/Paper + Velocity)\n\n**Version:** 5.5-SNAPSHOT\n**Build Number:** 8\n**Commit:** d840ff3fb13598d2d89cf90eadb93dfab88d0b77\n",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "LuckPerms-Bukkit-5.5.42.jar",
-          "primary": true,
-          "size": 1490307,
-          "url": "https://github.com/90gQopen/LuckPerms/releases/download/v5.5-SNAPSHOT-build.8/LuckPerms-Bukkit-5.5.42.jar"
-        },
-        {
-          "filename": "LuckPerms-Velocity-5.5.42.jar",
-          "primary": true,
-          "size": 1501343,
-          "url": "https://github.com/90gQopen/LuckPerms/releases/download/v5.5-SNAPSHOT-build.8/LuckPerms-Velocity-5.5.42.jar"
-        }
-      ],
-      "name": "LuckPerms v5.5-SNAPSHOT Build 8",
-      "prerelease": true,
-      "published_at": 1781845387,
-      "version": "v5.5-SNAPSHOT-build.8"
-    },
-    {
-      "changelog": "Automated build of LuckPerms (Bukkit/Paper + Velocity)\n\n**Version:** 5.5-SNAPSHOT\n**Build Number:** 7\n**Commit:** dba410ef9520e01f938eca6b29619d78bf685523\n",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "LuckPerms-Bukkit-5.5.42.jar",
-          "primary": true,
-          "size": 1490307,
-          "url": "https://github.com/90gQopen/LuckPerms/releases/download/v5.5-SNAPSHOT-build.7/LuckPerms-Bukkit-5.5.42.jar"
-        },
-        {
-          "filename": "LuckPerms-Velocity-5.5.42.jar",
-          "primary": true,
-          "size": 1501343,
-          "url": "https://github.com/90gQopen/LuckPerms/releases/download/v5.5-SNAPSHOT-build.7/LuckPerms-Velocity-5.5.42.jar"
-        }
-      ],
-      "name": "LuckPerms v5.5-SNAPSHOT Build 7",
-      "prerelease": true,
-      "published_at": 1780548314,
-      "version": "v5.5-SNAPSHOT-build.7"
-    },
-    {
-      "changelog": "Automated build of LuckPerms (Bukkit/Paper + Velocity)\n\n**Version:** 5.5-SNAPSHOT\n**Build Number:** 6\n**Commit:** 0d3ff5af73f0ebd9e8a9689fdc8b96c0ab44633c\n",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "LuckPerms-Bukkit-5.5.42.jar",
-          "primary": true,
-          "size": 1490307,
-          "url": "https://github.com/90gQopen/LuckPerms/releases/download/v5.5-SNAPSHOT-build.6/LuckPerms-Bukkit-5.5.42.jar"
-        },
-        {
-          "filename": "LuckPerms-Velocity-5.5.42.jar",
-          "primary": true,
-          "size": 1501343,
-          "url": "https://github.com/90gQopen/LuckPerms/releases/download/v5.5-SNAPSHOT-build.6/LuckPerms-Velocity-5.5.42.jar"
-        }
-      ],
-      "name": "LuckPerms v5.5-SNAPSHOT Build 6",
-      "prerelease": true,
-      "published_at": 1780113502,
-      "version": "v5.5-SNAPSHOT-build.6"
-    },
-    {
-      "changelog": "Automated build of LuckPerms (Bukkit/Paper + Velocity)\n\n**Version:** 5.5-SNAPSHOT\n**Build Number:** 5\n**Commit:** c4a12d558f0c45394c9246a4ea02fa96be02bb1b\n",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "LuckPerms-Bukkit-5.5.42.jar",
-          "primary": true,
-          "size": 1490307,
-          "url": "https://github.com/90gQopen/LuckPerms/releases/download/v5.5-SNAPSHOT-build.5/LuckPerms-Bukkit-5.5.42.jar"
-        },
-        {
-          "filename": "LuckPerms-Velocity-5.5.42.jar",
-          "primary": true,
-          "size": 1501343,
-          "url": "https://github.com/90gQopen/LuckPerms/releases/download/v5.5-SNAPSHOT-build.5/LuckPerms-Velocity-5.5.42.jar"
-        }
-      ],
-      "name": "LuckPerms v5.5-SNAPSHOT Build 5",
-      "prerelease": true,
-      "published_at": 1779874831,
-      "version": "v5.5-SNAPSHOT-build.5"
-    },
-    {
-      "changelog": "Automated build of LuckPerms (Bukkit/Paper)\n\n**Version:** unspecified\n**Build Number:** 4\n**Commit:** b81ab1701df74790a7ab2bb33ec634f044c3bf8b\n",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "LuckPerms-Bukkit-5.5.42.jar",
-          "primary": true,
-          "size": 1490307,
-          "url": "https://github.com/90gQopen/LuckPerms/releases/download/vunspecified-build.4/LuckPerms-Bukkit-5.5.42.jar"
-        }
-      ],
-      "name": "LuckPerms vunspecified Build 4",
-      "prerelease": true,
-      "published_at": 1779874848,
-      "version": "vunspecified-build.4"
-    },
-    {
-      "changelog": "Automated build of LuckPerms (Bukkit/Paper)\n\n**Version:** unspecified\n**Build Number:** 3\n**Commit:** 8f479e1e217b400f1b86b3ff998c2c15c78b5492\n",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "LuckPerms-Bukkit-5.5.42.jar",
-          "primary": true,
-          "size": 1485968,
-          "url": "https://github.com/90gQopen/LuckPerms/releases/download/vunspecified-build.3/LuckPerms-Bukkit-5.5.42.jar"
-        }
-      ],
-      "name": "LuckPerms vunspecified Build 3",
-      "prerelease": true,
-      "published_at": 1779874346,
-      "version": "vunspecified-build.3"
-    },
-    {
-      "changelog": "Automated build of LuckPerms (Bukkit/Paper)\n\n**Version:** unspecified\n**Build Number:** 2\n**Commit:** 8f479e1e217b400f1b86b3ff998c2c15c78b5492\n",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "LuckPerms-Bukkit-5.5.42.jar",
-          "primary": true,
-          "size": 1485968,
-          "url": "https://github.com/90gQopen/LuckPerms/releases/download/vunspecified-build.2/LuckPerms-Bukkit-5.5.42.jar"
-        }
-      ],
-      "name": "LuckPerms vunspecified Build 2",
-      "prerelease": true,
-      "published_at": 1779874348,
-      "version": "vunspecified-build.2"
-    }
-  ]
+  "updated_at": 1782835672,
+  "versions": []
 }
