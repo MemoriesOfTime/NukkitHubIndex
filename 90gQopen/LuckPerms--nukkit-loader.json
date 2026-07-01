@@ -27,6 +27,11 @@
       "url": "https://github.com/bakatrouble"
     },
     {
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "name": "github-actions[bot]",
+      "url": "https://github.com/apps/github-actions"
+    },
+    {
       "avatar_url": "https://avatars.githubusercontent.com/u/22878739?v=4",
       "name": "DrexHD",
       "url": "https://github.com/DrexHD"
@@ -35,11 +40,6 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/25347249?v=4",
       "name": "EuropeJing",
       "url": "https://github.com/EuropeJing"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-      "name": "github-actions[bot]",
-      "url": "https://github.com/apps/github-actions"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/2998171?v=4",
@@ -474,8 +474,30 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1782792502,
+  "updated_at": 1782879875,
   "versions": [
+    {
+      "changelog": "Automated build of LuckPerms (Bukkit/Paper + Velocity)\n\n**Version:** 5.5-SNAPSHOT\n**Build Number:** 10\n**Commit:** a117a95ebc7dc7d9d37dd7fd5cc36f44488f2a11\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "LuckPerms-Bukkit-5.5.42.jar",
+          "primary": true,
+          "size": 1493380,
+          "url": "https://github.com/90gQopen/LuckPerms/releases/download/v5.5-SNAPSHOT-build.10/LuckPerms-Bukkit-5.5.42.jar"
+        },
+        {
+          "filename": "LuckPerms-Velocity-5.5.42.jar",
+          "primary": true,
+          "size": 1507725,
+          "url": "https://github.com/90gQopen/LuckPerms/releases/download/v5.5-SNAPSHOT-build.10/LuckPerms-Velocity-5.5.42.jar"
+        }
+      ],
+      "name": "LuckPerms v5.5-SNAPSHOT Build 10",
+      "prerelease": true,
+      "published_at": 1782879875,
+      "version": "v5.5-SNAPSHOT-build.10"
+    },
     {
       "changelog": "Automated build of LuckPerms (Bukkit/Paper + Velocity)\n\n**Version:** 5.5-SNAPSHOT\n**Build Number:** 9\n**Commit:** 6f3c26cf61310cd2fc8fc60b7ccda20ad84a489b\n",
       "downloads": 0,

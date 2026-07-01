@@ -1,5 +1,5 @@
 {
-  "api_version": "2.0.0",
+  "api_version": "3.0.0",
   "authors": [
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
@@ -31,16 +31,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "AnyVersion",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/AnyVersion",
   "stars": 10,
   "summary": "Allow older clients to join your server.",
   "targets": [
-    "nkx",
     "pnx"
   ],
-  "updated_at": 1781960890,
+  "updated_at": 1782898712,
   "versions": [
     {
       "changelog": "Updated AnyVersion to Minecraft Bedrock 26.20 (975)",
