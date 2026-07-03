@@ -462,8 +462,56 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1782287080,
+  "updated_at": 1783069621,
   "versions": [
+    {
+      "changelog": "# LuckPerms Forge  for Minecraft 1.20.1\n\nVonix Network maintenance release. Matches upstream LuckPerms 5.5.108 on the\nForge 1.20.1 line.\n\n## Compatibility\n- **Minecraft:** 1.20.1\n- **Forge:** 47.x\n- **Java:** 17\n- **Loaders shipped in this jar:** Forge\n\n## Upstream tracking\n- Fork anchor: upstream `f78e2d6c5` (last upstream commit still targeting MC 1.20.1 on the Forge line)\n- **56 upstream commits backported** since the anchor, including the LuckPerms 5.5 API release, adventure 4.17 upgrade, REST storage backend, Redis Sentinel support, Vault \"provide\" support, and many bug fixes.\n- Full ported/skipped log: [`BACKPORT-LOG.md`](https://github.com/Vonix-Network/LuckPerms/blob/vonix-1.20.1/BACKPORT-LOG.md).\n\n## Vonix compile fixes applied on top of the port pass\n- `common/DurationFormatter`: `PlainComponentSerializer.plain()` → `PlainTextComponentSerializer.plainText()` (adventure 4.11+ API rename).\n- `common/FileActionLogger`: `List.reversed()` (Java 21) → `Collections.reverse(new ArrayList<>(...))` (works on Java 17).\n- `common/StandardNodeMatchers.MetaKeyEquals`: missing `this.metaKey = metaKey` initializer added.\n- `settings.gradle`: dropped `fabric` and `common:minecraft` includes (upstream had already moved Fabric off 1.20.1 by the anchor, and the shared `common:minecraft` module never existed on this line).\n\n## Artifact\n- `LuckPerms-Forge-5.5.108+vonix.1.jar` — drop-in replacement for existing LuckPerms Forge jars on 1.20.1 servers.\n- SHA256: `742726680ee1304c496a75d917d1790a5db363940aad239c5519912a15bab930`\n- Size: 1451285 bytes\n\n## Install\nReplace any existing `LuckPerms-Forge-*.jar` in your server's `mods/` directory with this file. Restart the server. Existing LuckPerms config, storage, and permissions data are preserved.\n\n## Credits\n- Upstream: [LuckPerms/LuckPerms](https://github.com/LuckPerms/LuckPerms) by Luck\n- Vonix maintenance: Vonix Network\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "LuckPerms-Forge-5.5.108+vonix.1.jar",
+          "primary": true,
+          "size": 1451285,
+          "url": "https://github.com/Vonix-Network/LuckPerms/releases/download/v5.5.108%2Bvonix.1/LuckPerms-Forge-5.5.108%2Bvonix.1.jar"
+        }
+      ],
+      "name": "LuckPerms Forge 5.5.108+vonix.1 (Minecraft 1.20.1)",
+      "prerelease": false,
+      "published_at": 1783068411,
+      "version": "v5.5.108+vonix.1"
+    },
+    {
+      "changelog": "# LuckPerms Forge 5.4.56+vonix.1 for Minecraft 1.19.2\n\nVonix Network maintenance release. Matches upstream LuckPerms 5.4.56 on the Forge 1.19.2 line.\n\n## Compatibility\n- **Minecraft:** 1.19.2\n- **Forge:** 43.x\n- **Java:** 17\n- **Loaders shipped:** Forge\n\n## Upstream tracking\n- Fork anchor: upstream `ed9dd031c` (last upstream commit still targeting MC 1.19.2 on Forge)\n- **16 upstream commits backported** via narrow filter (same policy as 1.18.2 release)\n- Full ported/skipped log: [`BACKPORT-LOG.md`](https://github.com/Vonix-Network/LuckPerms/blob/vonix-1.19.2/BACKPORT-LOG.md).\n\n## Compile fixes applied on top\n- Reverted `RedisMessenger` to anchor (Redis Sentinel backport needed newer lettuce API).\n- `DurationFormatter`: `PlainComponentSerializer.plain()` → `PlainTextComponentSerializer.plainText()`.\n- `PostgreConnectionFactory` → `PostgresConnectionFactory` (file + references).\n\n## Artifact\n- `LuckPerms-Forge-5.4.56+vonix.1.jar` — 1387182 bytes\n- SHA256: `630f6a3b4e91f7cf5099125aeced6fa110829febc5e785c2ad6e466ee34c721d`\n\n## Install\nReplace any existing `LuckPerms-Forge-*.jar` in your server's `mods/` directory with this file. Restart the server. Existing LuckPerms config, storage, and permissions data are preserved.\n\n## Credits\n- Upstream: [LuckPerms/LuckPerms](https://github.com/LuckPerms/LuckPerms) by Luck\n- Vonix maintenance: Vonix Network",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "LuckPerms-Forge-5.4.56+vonix.1.jar",
+          "primary": true,
+          "size": 1387182,
+          "url": "https://github.com/Vonix-Network/LuckPerms/releases/download/v5.4.56%2Bvonix.1/LuckPerms-Forge-5.4.56%2Bvonix.1.jar"
+        }
+      ],
+      "name": "LuckPerms Forge 5.4.56+vonix.1 (Minecraft 1.19.2)",
+      "prerelease": false,
+      "published_at": 1783069621,
+      "version": "v5.4.56+vonix.1"
+    },
+    {
+      "changelog": "# LuckPerms Forge 5.4.35+vonix.1 for Minecraft 1.18.2\n\nVonix Network maintenance release. Matches upstream LuckPerms 5.4.35 on the Forge 1.18.2 line.\n\n## Compatibility\n- **Minecraft:** 1.18.2\n- **Forge:** 40.x\n- **Java:** 17\n- **Loaders shipped:** Forge\n\n## Upstream tracking\n- Fork anchor: upstream `48e5f428b` (last upstream commit still targeting MC 1.18.2 on Forge)\n- **15 upstream commits backported** via narrow filter (files touching `common/util`, `common/storage/{sql,mongodb}`, `common/messaging`, `common/context`, `common/config`, `common/verbose`, `common/commands`, resources, tests — no `api/`, `common/event`, `common/node`, or platform-loader dirs)\n- Full ported/skipped log: [`BACKPORT-LOG.md`](https://github.com/Vonix-Network/LuckPerms/blob/vonix-1.18.2/BACKPORT-LOG.md).\n\n## Compile fixes applied on top\n- `DurationFormatter`: `PlainComponentSerializer.plain()` → `PlainTextComponentSerializer.plainText()`.\n- `PostgreConnectionFactory` → `PostgresConnectionFactory` (file + references).\n\n## Artifact\n- `LuckPerms-Forge-5.4.35+vonix.1.jar` — 1377850 bytes\n- SHA256: `44324019a22f3e738d9b9f50aab60116e753c78e86c9c41f0c29a75807276f1a`\n\n## Install\nReplace any existing `LuckPerms-Forge-*.jar` in your server's `mods/` directory with this file. Restart the server. Existing LuckPerms config, storage, and permissions data are preserved.\n\n## Credits\n- Upstream: [LuckPerms/LuckPerms](https://github.com/LuckPerms/LuckPerms) by Luck\n- Vonix maintenance: Vonix Network",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "LuckPerms-Forge-5.4.35+vonix.1.jar",
+          "primary": true,
+          "size": 1377850,
+          "url": "https://github.com/Vonix-Network/LuckPerms/releases/download/v5.4.35%2Bvonix.1/LuckPerms-Forge-5.4.35%2Bvonix.1.jar"
+        }
+      ],
+      "name": "LuckPerms Forge 5.4.35+vonix.1 (Minecraft 1.18.2)",
+      "prerelease": false,
+      "published_at": 1783069602,
+      "version": "v5.4.35+vonix.1"
+    },
     {
       "changelog": "Vonix-Network NeoForge 1.21.1 LuckPerms backport.\n\n## What this is\nA NeoForge 1.21.1 build of LuckPerms with:\n1. **Imagineer7's capability-init fixes** ([source](https://github.com/Imagineer7/LuckPerms_Custom_Fixes/releases/tag/5.4.145)) — resolves `IllegalStateException: Capability has not been initialised` race vs Balm/FTB Ranks during player join (LP upstream issues [#4183](https://github.com/LuckPerms/LuckPerms/issues/4183) / [#4235](https://github.com/LuckPerms/LuckPerms/issues/4235))\n2. **41 upstream commits backported** from luckperms/master onto the last MC 1.21.1-compatible base (`136a4859f`). Highlights:\n   - Redis Sentinel support (#4244)\n   - NATS auth token support (#4238)\n   - Common placeholders module (#4267)\n   - SQL Messenger time-column index (#4255)\n   - Verbose chat rate-limit\n   - SqlStorage duplicate readNode fix\n   - UUID mismatch warning suppression (#4194)\n   - IPv6 support\n   - Adventure 4.17\n   - User Housekeeper timeout bump\n   - Many more — see [BACKPORT-LOG.md](https://github.com/Vonix-Network/LuckPerms/blob/vonix-neoforge-fixes/BACKPORT-LOG.md)\n\n## Target\n- Minecraft: **1.21.1**\n- NeoForge: **21.1.x** (tested on 21.1.215)\n- Java: **21** (class file version 65 — works on yolks java_21 and java_25)\n\n## Verified\nBoot-tested locally on `servercheap` with NeoForge 21.1.215 + Java 21:\n- ✅ Standalone boot: `Successfully enabled`, PermissionAPI registered, clean `Done(`\n- ✅ Boot with Balm 21.0.59 + FTB Ranks 2101.1.3 + FTB Library 2101.1.32 + Architectury 13.0.8 — the exact mod set that crashed Protocol Zero / Stone Block 4 on stock LP 5.4.140: no `Capability has not been initialised`, FTB Ranks loaded its rank tree from LP cleanly.\n\n## Skipped from upstream\n5 commits unportable to the 1.21.1 base (Hytale-only, Folia-only, or hard-coupled to post-1.21.1 shared modules). Full log: BACKPORT-LOG.md.\n\n## Credits\n- Original mod: [Luck](https://github.com/LuckPerms/LuckPerms) under MIT\n- Capability-init fixes: [Imagineer7](https://github.com/Imagineer7/LuckPerms_Custom_Fixes)\n- Backport + Vonix build: Vonix Network",
       "downloads": 0,
