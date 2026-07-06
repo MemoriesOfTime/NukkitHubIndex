@@ -1,0 +1,192 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/261936169?v=4",
+      "name": "Dev-Studio95",
+      "url": "https://github.com/Dev-Studio95"
+    }
+  ],
+  "categories": [],
+  "created_at": 1783341153,
+  "dependencies": [],
+  "description": "# EssentialsZ\n\n<p align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/Dev-Studio95/EssentialsZ/main/src/thumbnails/logo.png\" alt=\"EssentialsZ Logo\" width=\"150\">\n</p>\n\n<p align=\"center\">\n  <strong>A modular Nukkit (Bedrock Edition) plugin with essential server features</strong>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/Dev-Studio95/EssentialsZ/releases\">\n    <img src=\"https://img.shields.io/github/v/release/Dev-Studio95/EssentialsZ?style=flat-square\" alt=\"Release\">\n  </a>\n  <a href=\"https://github.com/Dev-Studio95/EssentialsZ/issues\">\n    <img src=\"https://img.shields.io/github/issues/Dev-Studio95/EssentialsZ?style=flat-square\" alt=\"Issues\">\n  </a>\n  <a href=\"https://github.com/Dev-Studio95/EssentialsZ/stargazers\">\n    <img src=\"https://img.shields.io/github/stars/Dev-Studio95/EssentialsZ?style=flat-square\" alt=\"Stars\">\n  </a>\n</p>\n\n---\n\n## Features\n\n| Module | Commands | Description |\n|--------|----------|-------------|\n| **Home** | /home, /sethome | Set and teleport to homes |\n| **TPA** | /tpa, /tpahere, /tpaccept, /tpdeny | Teleport request system |\n| **Warp** | /warp, /setwarp, /delwarp, /warps | Server warps |\n| **RTP** | /rtp | Random teleport |\n| **Spawn** | /spawn, /setspawn | Join/respawn spawn |\n| **Kits** | /kit, /createkit, /delkit | Item kits with cooldowns |\n| **Moderation** | /mute, /unmute, /warn, /warnings | Moderation tools |\n| **Economy** | /bal, /pay, /baltop, /eco | Balance and economy |\n| **Jobs** | /jobs, /job join/leave | Earn money for activities |\n| **Vote** | /vote, /voteclaim, /votetop | Vote rewards |\n| **Backpack** | /backpack | Personal storage |\n| **DailyRewards** | /daily | Daily login rewards |\n| **Sell** | /sell hand, /sell all | Sell items to server |\n| **AuctionHouse** | /ah, /ah sell, /ah buy | Player-to-player trading |\n| **GodMode** | /god | Toggle invincibility |\n| **Fly** | /fly | Toggle flight |\n| **PlayerWarps** | /pwarp | Player-made warps |\n| **ChatFormat** | /setprefix, /setsuffix | Chat prefix/suffix system |\n\n## Installation\n\n<p align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/Dev-Studio95/EssentialsZ/main/src/thumbnails/install.png\" alt=\"Installation\" width=\"400\">\n</p>\n\n### Quick Install\n1. Download `EssentialsZ-1.1.0.jar` from [Releases](https://github.com/Dev-Studio95/EssentialsZ/releases)\n2. Drop into `plugins/` folder\n3. Restart server\n\n### Detailed Guides\n- [Windows Installation](https://github.com/Dev-Studio95/EssentialsZ/blob/main/docs/install/windows.md)\n- [Linux Installation](https://github.com/Dev-Studio95/EssentialsZ/blob/main/docs/install/linux.md)\n- [macOS Installation](https://github.com/Dev-Studio95/EssentialsZ/blob/main/docs/install/macos.md)\n\n## Configuration\n\nEdit `plugins/EssentialsZ/config.yml` to enable/disable modules:\n\n```yaml\nmodules:\n  home:\n    enabled: true\n  tpa:\n    enabled: true\n  economy:\n    enabled: true\n  godmode:\n    enabled: true\n  fly:\n    enabled: true\n  playerwarps:\n    enabled: true\n  chatformat:\n    enabled: true\n  # ... etc\n```\n\n### Vote Configuration\n\nEdit `plugins/EssentialsZ/vote.yml` to add your server's voting sites:\n\n```yaml\nsites:\n  - name: \"TopG\"\n    url: \"https://topg.org/Minecraft-Server-YOUR_SERVER_ID\"\n    enabled: true\n    reward: 100.0\n```\n\nSee [Vote Setup Guide](https://github.com/Dev-Studio95/EssentialsZ/blob/main/docs/issues/voting.md) for detailed instructions.\n\n## Building\n\n<p align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/Dev-Studio95/EssentialsZ/main/src/thumbnails/build.png\" alt=\"Build\" width=\"400\">\n</p>\n\n### Quick Build\n```bash\ngit clone https://github.com/Dev-Studio95/EssentialsZ.git\ncd EssentialsZ\nmvn clean package\n```\n\n### Build Guides\n- [Windows Build](https://github.com/Dev-Studio95/EssentialsZ/blob/main/docs/build/windows.md)\n- [Linux Build](https://github.com/Dev-Studio95/EssentialsZ/blob/main/docs/build/linux.md)\n- [macOS Build](https://github.com/Dev-Studio95/EssentialsZ/blob/main/docs/build/macos.md)\n\n## Documentation\n\n- [Installation Guide](https://github.com/Dev-Studio95/EssentialsZ/blob/main/docs/install/README.md)\n- [Build Guide](https://github.com/Dev-Studio95/EssentialsZ/blob/main/docs/build/README.md)\n- [Troubleshooting](https://github.com/Dev-Studio95/EssentialsZ/blob/main/docs/issues/README.md)\n- [Voting Setup](https://github.com/Dev-Studio95/EssentialsZ/blob/main/docs/issues/voting.md)\n\n## Requirements\n\n- [Nukkit-MOT](https://github.com/MemoriesOfTime/Nukkit-MOT) 1.20.50+\n- Java 17+\n\n## License\n\n- [LICENSE](https://github.com/Dev-Studio95/EssentialsZ/blob/main/LICENSE)\n\n<p align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/Dev-Studio95/EssentialsZ/main/src/thumbnails/footer.png\" alt=\"EssentialsZ Footer\" width=\"400\">\n</p>\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-07-06",
+      "description": "",
+      "title": "EssentialsZ Logo",
+      "url": "https://raw.githubusercontent.com/Dev-Studio95/EssentialsZ/main/src/thumbnails/logo.png"
+    },
+    {
+      "created": "2026-07-06",
+      "description": "",
+      "title": "Installation",
+      "url": "https://raw.githubusercontent.com/Dev-Studio95/EssentialsZ/main/src/thumbnails/install.png"
+    },
+    {
+      "created": "2026-07-06",
+      "description": "",
+      "title": "Build",
+      "url": "https://raw.githubusercontent.com/Dev-Studio95/EssentialsZ/main/src/thumbnails/build.png"
+    },
+    {
+      "created": "2026-07-06",
+      "description": "",
+      "title": "EssentialsZ Footer",
+      "url": "https://raw.githubusercontent.com/Dev-Studio95/EssentialsZ/main/src/thumbnails/footer.png"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/261936169?v=4",
+  "id": "Dev-Studio95/EssentialsZ",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "EssentialsZ",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Dev-Studio95/EssentialsZ",
+  "stars": 1,
+  "summary": "Core essentials plugin for Nukkit MOT.",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1783360599,
+  "versions": [
+    {
+      "changelog": "## EssentialsZ v1.1.2\n\n### Bug Fix (Critical)\n- **economy.yml unquoted integer keys**: Nukkit-MOT's Config class extends HashMap<String, Object>. When SnakeYAML parses unquoted numeric keys (264:, 56:), it creates Integer objects internally. Config tries to cast these to String keys, causing ClassCastException before plugin code even runs.\n- This was the root cause of Economy, Jobs, Vote, DailyRewards, and AuctionHouse all failing to enable.\n- Fix: all numeric keys in economy.yml are now quoted (\"264\": 250.0)\n\n### 18 Modules, 47 Commands\nAll modules now load cleanly.\n\n### Installation\n1. Download EssentialsZ-1.1.2.jar\n2. Drop into plugins/\n3. Restart server\n4. Delete plugins/EssentialsZ/economy.yml if upgrading from older version",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EssentialsZ-1.1.2.jar",
+          "primary": true,
+          "size": 150883,
+          "url": "https://github.com/Dev-Studio95/EssentialsZ/releases/download/v1.1.2/EssentialsZ-1.1.2.jar"
+        }
+      ],
+      "name": "EssentialsZ v1.1.2",
+      "prerelease": false,
+      "published_at": 1783354635,
+      "version": "v1.1.2"
+    },
+    {
+      "changelog": "## EssentialsZ v1.1.1\n\n### Bug Fix\n- **EconomyService ClassCastException**: SnakeYAML parses numeric YAML keys (264:, 277:) as Integer, but loadPrices() cast to Map<String, Object> causing ClassCastException\n- This cascaded to Jobs, Vote, DailyRewards, AuctionHouse which all depend on EconomyService\n- getTopBalances() also used unsafe getSection().getAll() cast\n\n### 18 Modules, 47 Commands\nAll modules now load cleanly on Nukkit-MOT.\n\n### Installation\n1. Download EssentialsZ-1.1.1.jar\n2. Drop into plugins/\n3. Restart server",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EssentialsZ-1.1.1.jar",
+          "primary": true,
+          "size": 150865,
+          "url": "https://github.com/Dev-Studio95/EssentialsZ/releases/download/v1.1.1/EssentialsZ-1.1.1.jar"
+        }
+      ],
+      "name": "EssentialsZ v1.1.1",
+      "prerelease": false,
+      "published_at": 1783354324,
+      "version": "v1.1.1"
+    },
+    {
+      "changelog": "## EssentialsZ v1.1.0\n\n### New Modules (4)\n- **GodMode** - /god [player] - toggle invincibility, persistent across logouts\n- **Fly** - /fly [player] - toggle flight, clears on logout\n- **PlayerWarps** - /pwarp create/remove/list/tp - player-made warps\n- **ChatFormat** - /setprefix, /setsuffix - configurable chat prefixes/suffixes\n\n### Bug Fixes (7)\n- TeleportDelay: fixed cancelTask using tick counter as task ID\n- AhGui: fixed null player listener registration + page tracking\n- AuctionHouse: now uses shared EconomyService, reads config values\n- SpawnListener: respects spawn-on-join and spawn-on-respawn config\n- ChatFormatListener: properly broadcasts formatted chat\n- economy.yml: fixed duplicate item IDs\n- FlyCommand: fixed for MOT API compatibility\n\n### 18 Modules, 47 Commands\nHome | TPA | Warp | RTP | Spawn | Kits | Moderation | Economy | Jobs | Vote | Backpack | DailyRewards | Sell | AuctionHouse | GodMode | Fly | PlayerWarps | ChatFormat\n\n### Installation\n1. Download EssentialsZ-1.1.0.jar\n2. Drop into plugins/\n3. Restart server",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EssentialsZ-1.1.0.jar",
+          "primary": true,
+          "size": 150859,
+          "url": "https://github.com/Dev-Studio95/EssentialsZ/releases/download/v1.1.0/EssentialsZ-1.1.0.jar"
+        }
+      ],
+      "name": "EssentialsZ v1.1.0",
+      "prerelease": false,
+      "published_at": 1783353311,
+      "version": "v1.1.0"
+    },
+    {
+      "changelog": "## EssentialsZ v1.0.4\n\n### Ported to Nukkit-MOT\n- Plugin now targets [Nukkit-MOT](https://github.com/MemoriesOfTime/Nukkit-MOT)\n- Compatible with MOT 1.20.50+\n- All documentation updated\n\n### Changes\n- Updated version to 1.0.4\n- Removed all PetteriM1/P1ME references\n- Updated requirements: Nukkit-MOT + Java 17+\n\n### Previous Features\n- 14 modules with 42 commands\n- Modular architecture with config.yml\n- Rebalanced economy (Diamond 50)\n- Voting links in chat\n- Offline vote rewards\n- Fixed duplicate item IDs in economy.yml\n\n### Installation\n1. Download JAR\n2. Drop into plugins/\n3. Restart server",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EssentialsZ-1.0.4.jar",
+          "primary": true,
+          "size": 133479,
+          "url": "https://github.com/Dev-Studio95/EssentialsZ/releases/download/v1.0.4/EssentialsZ-1.0.4.jar"
+        }
+      ],
+      "name": "EssentialsZ v1.0.4",
+      "prerelease": false,
+      "published_at": 1783349341,
+      "version": "v1.0.4"
+    },
+    {
+      "changelog": "## EssentialsZ v1.0.3\n\n### Documentation\n- Added API reference guide\n- Added configuration guide\n- Added FAQ (Frequently Asked Questions)\n- Added changelog\n- Updated command reference (42 commands)\n- Updated bin files with session history\n\n### Files Added\n- docs/issues/api.md\n- docs/issues/changelog.md\n- docs/issues/configuration.md\n- docs/issues/faq.md\n\n### Previous Features\n- 14 modules with 42 commands\n- Modular architecture with config.yml\n- Rebalanced economy (Diamond 50)\n- Voting links in chat\n- Offline vote rewards\n\n### Installation\n1. Download JAR\n2. Drop into plugins/\n3. Restart server",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EssentialsZ-1.0.0.jar",
+          "primary": true,
+          "size": 134117,
+          "url": "https://github.com/Dev-Studio95/EssentialsZ/releases/download/v1.0.3/EssentialsZ-1.0.0.jar"
+        }
+      ],
+      "name": "EssentialsZ v1.0.3",
+      "prerelease": false,
+      "published_at": 1783345982,
+      "version": "v1.0.3"
+    },
+    {
+      "changelog": "## EssentialsZ v1.0.2\n\n### New Features\n- Vote module now shows voting site links in chat\n- Offline vote rewards queued and given on join\n- Added vote.yml configuration for voting sites\n- Added voting setup documentation\n\n### Changes\n- Updated README with images (banner, logo, install, build)\n- Added docs/issues/voting.md - complete voting setup guide\n\n### Previous Features\n- 14 modules: Home, TPA, Warp, RTP, Spawn, Kits, Moderation, Economy, Jobs, Vote, Backpack, DailyRewards, Sell, AuctionHouse\n- Rebalanced economy prices (Diamond 50, Netherite ,500)\n- Modular architecture with config.yml enable/disable\n\n### Installation\n1. Download JAR from releases\n2. Drop into plugins/\n3. Restart server\n4. Configure vote.yml with your voting site URLs",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EssentialsZ-1.0.0.jar",
+          "primary": true,
+          "size": 134117,
+          "url": "https://github.com/Dev-Studio95/EssentialsZ/releases/download/v1.0.2/EssentialsZ-1.0.0.jar"
+        }
+      ],
+      "name": "EssentialsZ v1.0.2",
+      "prerelease": false,
+      "published_at": 1783345087,
+      "version": "v1.0.2"
+    },
+    {
+      "changelog": "## EssentialsZ v1.0.1\n\n### Changes\n- Rebalanced economy prices for better gameplay balance\n- Diamond: 00 → 50\n- Netherite: 00 → ,500\n- All items scaled proportionally\n- Added 200+ item prices to economy.yml\n\n### Previous Features (v1.0.0)\n- 14 modules: Home, TPA, Warp, RTP, Spawn, Kits, Moderation, Economy, Jobs, Vote, Backpack, DailyRewards, Sell, AuctionHouse\n- Modular architecture with config.yml enable/disable\n- Player-to-player auction house with GUI\n- Job system that pays into economy\n- Teleport delay for all teleports\n\n### Installation\n1. Download JAR from releases\n2. Drop into plugins/\n3. Restart server",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EssentialsZ-1.0.0.jar",
+          "primary": true,
+          "size": 128043,
+          "url": "https://github.com/Dev-Studio95/EssentialsZ/releases/download/v1.0.1/EssentialsZ-1.0.0.jar"
+        }
+      ],
+      "name": "EssentialsZ v1.0.1",
+      "prerelease": false,
+      "published_at": 1783344729,
+      "version": "v1.0.1"
+    },
+    {
+      "changelog": "## EssentialsZ v1.0.0\n\n### 14 Modules\n- Home, TPA, Warp, RTP, Spawn, Kits\n- Moderation (mute, warnings, chat filter)\n- Economy (balance, pay, baltop)\n- Jobs, Vote, Backpack, DailyRewards\n- Sell, AuctionHouse\n\n### Features\n- Modular architecture - enable/disable in config.yml\n- Balanced economy prices (Diamond = 50)\n- Player-to-player auction house with GUI\n- Job system pays into economy\n- Teleport delay for all teleports\n\n### Installation\n1. Download JAR\n2. Drop into plugins/\n3. Restart server",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EssentialsZ-1.0.0.jar",
+          "primary": true,
+          "size": 128043,
+          "url": "https://github.com/Dev-Studio95/EssentialsZ/releases/download/v1.0.0/EssentialsZ-1.0.0.jar"
+        }
+      ],
+      "name": "EssentialsZ v1.0.0",
+      "prerelease": false,
+      "published_at": 1783344675,
+      "version": "v1.0.0"
+    }
+  ]
+}
