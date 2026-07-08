@@ -33,8 +33,24 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1782583496,
+  "updated_at": 1783506312,
   "versions": [
+    {
+      "changelog": "added temporary block when max login attempt reached\r\nadded MySQL and MariaDB drivers (it will get automatically downloaded)\r\nsome security updates\r\ni will add IP-based auto login in next update ",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FormAuth-1.3.0.jar",
+          "primary": true,
+          "size": 2724540,
+          "url": "https://github.com/Shfiso-a/FormAuth/releases/download/1.3.0/FormAuth-1.3.0.jar"
+        }
+      ],
+      "name": "FormAuth v1.3.0",
+      "prerelease": false,
+      "published_at": 1783506312,
+      "version": "1.3.0"
+    },
     {
       "changelog": "Added : login attempt limiter (no temporary block)",
       "downloads": 0,
