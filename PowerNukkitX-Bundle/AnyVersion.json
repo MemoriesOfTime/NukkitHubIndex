@@ -10,6 +10,11 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/50714128?v=4",
       "name": "xRookieFight",
       "url": "https://github.com/xRookieFight"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/82237910?v=4",
+      "name": "AzaleeX",
+      "url": "https://github.com/AzaleeX"
     }
   ],
   "categories": [
@@ -39,7 +44,7 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1782898712,
+  "updated_at": 1783617517,
   "versions": [
     {
       "changelog": "Updated AnyVersion to Minecraft Bedrock 26.20 (975)",

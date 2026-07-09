@@ -5,6 +5,11 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/50714128?v=4",
       "name": "xRookieFight",
       "url": "https://github.com/xRookieFight"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/82237910?v=4",
+      "name": "AzaleeX",
+      "url": "https://github.com/AzaleeX"
     }
   ],
   "categories": [],
@@ -39,8 +44,24 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1781095837,
+  "updated_at": 1783620043,
   "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "CustomServerSettings.jar",
+          "primary": true,
+          "size": 6392,
+          "url": "https://github.com/PowerNukkitX-Bundle/CustomServerSettings/releases/download/1.0.1/CustomServerSettings.jar"
+        }
+      ],
+      "name": "v.1.0.1",
+      "prerelease": false,
+      "published_at": 1783620013,
+      "version": "1.0.1"
+    },
     {
       "changelog": "Latest release of CustomServerSettings.",
       "downloads": 0,

@@ -17,6 +17,11 @@
       "url": "https://github.com/tunikakeks"
     },
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/82237910?v=4",
+      "name": "AzaleeX",
+      "url": "https://github.com/AzaleeX"
+    },
+    {
       "avatar_url": "https://avatars.githubusercontent.com/u/105284508?v=4",
       "name": "onebeastchris",
       "url": "https://github.com/onebeastchris"
@@ -52,6 +57,23 @@
     "nkx",
     "pnx"
   ],
-  "updated_at": 1782415778,
-  "versions": []
+  "updated_at": 1783619833,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "spark-pnx-1.10-PNX-SNAPSHOT.jar",
+          "primary": true,
+          "size": 17723,
+          "url": "https://github.com/PowerNukkitX-Bundle/spark-extra-platforms/releases/download/1.10/spark-pnx-1.10-PNX-SNAPSHOT.jar"
+        }
+      ],
+      "name": "v1.10",
+      "prerelease": false,
+      "published_at": 1783619833,
+      "version": "1.10"
+    }
+  ]
 }

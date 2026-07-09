@@ -7,6 +7,11 @@
       "url": "https://github.com/Buddelbubi"
     },
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/82237910?v=4",
+      "name": "AzaleeX",
+      "url": "https://github.com/AzaleeX"
+    },
+    {
       "avatar_url": "https://avatars.githubusercontent.com/u/10363500?v=4",
       "name": "Creeperface01",
       "url": "https://github.com/Creeperface01"
@@ -37,8 +42,24 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1780834833,
+  "updated_at": 1783620318,
   "versions": [
+    {
+      "changelog": "Automated release for v2.0.1",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EmptyWorld.jar",
+          "primary": true,
+          "size": 9851,
+          "url": "https://github.com/PowerNukkitX-Bundle/EmptyWorld/releases/download/v2.0.1/EmptyWorld.jar"
+        }
+      ],
+      "name": "v2.0.1",
+      "prerelease": false,
+      "published_at": 1783620318,
+      "version": "v2.0.1"
+    },
     {
       "changelog": "Automated release for v2.0.0",
       "downloads": 0,

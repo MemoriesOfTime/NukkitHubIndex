@@ -37,6 +37,11 @@
       "url": "https://github.com/nikosgram"
     },
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/82237910?v=4",
+      "name": "AzaleeX",
+      "url": "https://github.com/AzaleeX"
+    },
+    {
       "avatar_url": "https://avatars.githubusercontent.com/u/749179?v=4",
       "name": "WildBamaBoy",
       "url": "https://github.com/WildBamaBoy"
@@ -82,6 +87,23 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1782514248,
-  "versions": []
+  "updated_at": 1783618908,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BuycraftX.jar",
+          "primary": true,
+          "size": 3275577,
+          "url": "https://github.com/PowerNukkitX-Bundle/BuycraftX/releases/download/2.1.1/BuycraftX.jar"
+        }
+      ],
+      "name": "v.2.1.1",
+      "prerelease": false,
+      "published_at": 1783618749,
+      "version": "2.1.1"
+    }
+  ]
 }
