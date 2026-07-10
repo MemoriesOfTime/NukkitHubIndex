@@ -7,6 +7,11 @@
       "url": "https://github.com/SergeyDertan"
     },
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "name": "Buddelbubi",
+      "url": "https://github.com/Buddelbubi"
+    },
+    {
       "avatar_url": "https://avatars.githubusercontent.com/u/32373441?v=4",
       "name": "Yexeed",
       "url": "https://github.com/Yexeed"
@@ -15,11 +20,6 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/43497313?v=4",
       "name": "GoodLucky777",
       "url": "https://github.com/GoodLucky777"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
-      "name": "Buddelbubi",
-      "url": "https://github.com/Buddelbubi"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/45939749?v=4",
@@ -70,8 +70,24 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1780167660,
+  "updated_at": 1783676698,
   "versions": [
+    {
+      "changelog": "Automated release for v30.2",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SRegionProtector.jar",
+          "primary": true,
+          "size": 24706504,
+          "url": "https://github.com/PowerNukkitX-Bundle/SRegionProtector/releases/download/v30.2/SRegionProtector.jar"
+        }
+      ],
+      "name": "v30.2",
+      "prerelease": false,
+      "published_at": 1783676698,
+      "version": "v30.2"
+    },
     {
       "changelog": "Automated release for v30.1",
       "downloads": 0,

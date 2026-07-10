@@ -39,8 +39,24 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1780180135,
+  "updated_at": 1783672215,
   "versions": [
+    {
+      "changelog": "Automated release for v1.2.1",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HiddenCommands.jar",
+          "primary": true,
+          "size": 4573,
+          "url": "https://github.com/PowerNukkitX-Bundle/HiddenCommands/releases/download/v1.2.1/HiddenCommands.jar"
+        }
+      ],
+      "name": "v1.2.1",
+      "prerelease": false,
+      "published_at": 1783672215,
+      "version": "v1.2.1"
+    },
     {
       "changelog": "Automated release for v1.2",
       "downloads": 0,

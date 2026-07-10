@@ -1,0 +1,91 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "name": "Buddelbubi",
+      "url": "https://github.com/Buddelbubi"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/50714128?v=4",
+      "name": "xRookieFight",
+      "url": "https://github.com/xRookieFight"
+    }
+  ],
+  "categories": [],
+  "created_at": 1778871569,
+  "dependencies": [],
+  "description": "# RPEncrpyter\n\nResource pack encryptor for PowerNukkitX\n\n---\n\n## Features\n- Auto encrypts resource packs\n- You can put keys into config.yml\n- No effort for .key files\n\n---\n\n## Getting Started\n\n### Installation\n1. Download the latest release from [RPEncrypter](https://github.com/PowerNukkitX-Bundle/RPEncrypter/releases).\n2. Place the JAR file into the `plugins` folder of your PowerNukkitX server.\n3. Start or reload your server.\n\n---\n\n## License\n[LICENSE](https://github.com/PowerNukkitX-Bundle/RPEncrypter/blob/master/LICENSE)\n\n---",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/154862792?v=4",
+  "id": "PowerNukkitX-Bundle/RPEncrypter",
+  "license": {
+    "id": "LGPL-3.0",
+    "name": "GNU Lesser General Public License v3.0",
+    "url": "https://spdx.org/licenses/LGPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "RPEncrypterPNX",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/PowerNukkitX-Bundle/RPEncrypter",
+  "stars": 3,
+  "summary": "Resource pack encryptor for PowerNukkitX",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1783680556,
+  "versions": [
+    {
+      "changelog": "Automated release for v1.0.2",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "RPEncrypter.jar",
+          "primary": true,
+          "size": 12972,
+          "url": "https://github.com/PowerNukkitX-Bundle/RPEncrypter/releases/download/v1.0.2/RPEncrypter.jar"
+        }
+      ],
+      "name": "v1.0.2",
+      "prerelease": false,
+      "published_at": 1783680556,
+      "version": "v1.0.2"
+    },
+    {
+      "changelog": "Automated release for v1.0.1",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "RPEncrypter.jar",
+          "primary": true,
+          "size": 12971,
+          "url": "https://github.com/PowerNukkitX-Bundle/RPEncrypter/releases/download/v1.0.1/RPEncrypter.jar"
+        }
+      ],
+      "name": "v1.0.1",
+      "prerelease": false,
+      "published_at": 1783679338,
+      "version": "v1.0.1"
+    },
+    {
+      "changelog": "Latest release of RPEncrypter.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "RPEncrypter.jar",
+          "primary": true,
+          "size": 12971,
+          "url": "https://github.com/PowerNukkitX-Bundle/RPEncrypter/releases/download/latest/RPEncrypter.jar"
+        }
+      ],
+      "name": "Latest release",
+      "prerelease": false,
+      "published_at": 1778871766,
+      "version": "latest"
+    }
+  ]
+}

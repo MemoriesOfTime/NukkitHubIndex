@@ -44,8 +44,24 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1783617517,
+  "updated_at": 1783622611,
   "versions": [
+    {
+      "changelog": "- Fixed StartGamePacket for versions below 1.26.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AnyVersion.jar",
+          "primary": true,
+          "size": 456559,
+          "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/2.8.2/AnyVersion.jar"
+        }
+      ],
+      "name": "AnyVersion 2.8.2",
+      "prerelease": false,
+      "published_at": 1783622611,
+      "version": "2.8.2"
+    },
     {
       "changelog": "Updated AnyVersion to Minecraft Bedrock 26.20 (975)",
       "downloads": 0,

@@ -35,8 +35,24 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1780162569,
+  "updated_at": 1783678176,
   "versions": [
+    {
+      "changelog": "Automated release for v1.0.2",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AuthPNX.jar",
+          "primary": true,
+          "size": 7155775,
+          "url": "https://github.com/PowerNukkitX-Bundle/AuthPNX/releases/download/v1.0.2/AuthPNX.jar"
+        }
+      ],
+      "name": "v1.0.2",
+      "prerelease": false,
+      "published_at": 1783678176,
+      "version": "v1.0.2"
+    },
     {
       "changelog": "Automated release for v1.0.1",
       "downloads": 0,

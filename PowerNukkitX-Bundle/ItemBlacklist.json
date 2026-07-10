@@ -41,8 +41,24 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1780180866,
+  "updated_at": 1783671882,
   "versions": [
+    {
+      "changelog": "Automated release for v1.3.2",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ItemBlacklist.jar",
+          "primary": true,
+          "size": 8655,
+          "url": "https://github.com/PowerNukkitX-Bundle/ItemBlacklist/releases/download/v1.3.2/ItemBlacklist.jar"
+        }
+      ],
+      "name": "v1.3.2",
+      "prerelease": false,
+      "published_at": 1783671882,
+      "version": "v1.3.2"
+    },
     {
       "changelog": "Automated release for v1.3.1",
       "downloads": 0,

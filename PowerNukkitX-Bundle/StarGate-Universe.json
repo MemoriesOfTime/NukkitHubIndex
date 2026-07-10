@@ -1,0 +1,68 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45739737?v=4",
+      "name": "Alemiz112",
+      "url": "https://github.com/Alemiz112"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "name": "Buddelbubi",
+      "url": "https://github.com/Buddelbubi"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/50714128?v=4",
+      "name": "xRookieFight",
+      "url": "https://github.com/xRookieFight"
+    }
+  ],
+  "categories": [],
+  "created_at": 1777920088,
+  "dependencies": [],
+  "description": "# StarGate-Universe\n[![Build Status](https://travis-ci.org/Alemiz112/StarGate-Universe.svg?branch=master)](https://travis-ci.org/Alemiz112/StarGate-Universe) [![Jenkins](http://jenkins.mizerak.eu/job/StarGate-Universe/badge/icon)](http://jenkins.mizerak.eu/job/StarGate-Universe/)\n> This is a stable and fast plugin for PowerNukkitX that allows server connect to WaterDog plugin StarGate.\n\n## 🎯Features:\n- Fast communication between servers\n- Custom packets\n- Moving players between servers (API)\n\nMore features will be added very soon\n\n## 🔧API\nYou can access StarGate-Universe by ``StarGateUniverse.getInstance()``\n#### Avalibe Functions\n- ``RegisterPacket(StarGatePacket packet)`` Really simple method for registring Packet\n- ``putPacket(StarGatePacket packet, String clientName)`` This allows you to send packet. Packet must be registered first\n- ``transferPlayer(Player player, String server, String client)`` This we use to transfer Player between servers\n- ``kickPlayer(Player player, String reason, String client)``  Kick player from any server connected to StarGate network\n- ``isOnline(Player player, String client)`` Check if player is online. Sends back response 'true!server' or 'false'. Examples [here](https://github.com/Alemiz112/StarGate-Universe/tree/master/src/tests#playeronline-response).\n- ``forwardPacket(String destClient, String localClient, StarGatePacket packet)`` Using ForwardPacket you can forward packet to other client/server\n- ``addServer(String address, String port, String name, String client)`` Add server to list and allows players to transfer\n- ``removeServer(String name, String client)`` Remove server from server list\n\nClient variable in API is used to specify destination proxy (if more instances are used). It is not important to define it, if one one proxy is used.\n##### Example:\n```java\nPlayer player = PLUGIN.getServer().getPlayer(\"alemiz003\");\nString server = \"lobby2\";\n\nStarGateUniverse.getInstance().transferPlayer(player, server);\n```\nTo more examples look [here](https://github.com/Alemiz112/StarGate-Universe/tree/master/src/tests)!\n\n#### 📦Packet Handling\nReceived Packets are handled by ``CustomPacketEvent``. Official Packets are handled (if needed) automaticly</br></br>\nAccessing Packet from Event:</br>\n```java\npublic StarGatePacket getPacket() {\n  return packet;\n}\n```\n#### 📞ResponseCheckTask\nResponse checking is useful when we want to get some data created by packet back to client.</br> \nFor more info please consider looking [here](https://github.com/Alemiz112/StarGate-Universe/tree/master/src/tests).\n\n#### ⚙️Creating Own Packets\nFor better understanding please read [StarGatePacket](https://github.com/Alemiz112/StarGate-Universe/blob/master/src/alemiz/sgu/packets/StarGatePacket.java) and [WelcomePacket](https://github.com/Alemiz112/StarGate-Universe/blob/master/src/alemiz/sgu/packets/WelcomePacket.java)\n\n#### Docker Implementation\nIf you have servers inside Docker container this is for you. StarGate allows you to create/remove/start/stop any container. Using `ServerManagePacket` you can set container exposed ports and env. variables too.\n Working example can be found [here](https://github.com/Alemiz112/StarGate-Universe/tree/master/src/tests#docker-implementation-example).\n#### Convertor\nConvertor is used for ``encoding`` and ``decoding`` packets. We can use it for static and nonstatic usage</br>\nFunctions:</br>\n- ``packetStringData(String packetString)`` Exports packetString to data array\n- ``putInt(int integer)`` Pushes Integer to array\n- ``putString(String string)`` Pushes String to array\n- ``getString(int key)`` Returns String from array by key value\n- ``getPacketString()`` Returns packetString from array data\n\n- ``static getInt(String string)`` Returns Integer from String\n- ``static getPacketString(String[] strings)`` Returns packetString from given array\n- ``static getPacketStringData(String packetString)`` Returns array data from given string\n\n##### Example (nonstatic):\n```java\nConvertor convertor = new Convertor(getID());\n\nconvertor.putString(server);\nconvertor.putInt(tps);\nconvertor.putInt(players);\n\nthis.encoded = convertor.getPacketString();\n```\n##### Example (static):\n```java\nString[] data = Convertor.getPacketStringData(packetString);\nint PacketId = Convertor.getInt(data[0]);\n```\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/154862792?v=4",
+  "id": "PowerNukkitX-Bundle/StarGate-Universe",
+  "license": {
+    "id": "Apache-2.0",
+    "name": "Apache License 2.0",
+    "url": "https://spdx.org/licenses/Apache-2.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/Alemiz112",
+    "wiki": ""
+  },
+  "manifest_path": "powernukkitx/src/main/resources/plugin.yml",
+  "name": "StarGate-Universe",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/PowerNukkitX-Bundle/StarGate-Universe",
+  "stars": 0,
+  "summary": "StarGate plugin for PowerNukkitX",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1783680710,
+  "versions": [
+    {
+      "changelog": "Automated release for v2.2-SNAPSHOT",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "StarGate-Universe.jar",
+          "primary": true,
+          "size": 29420787,
+          "url": "https://github.com/PowerNukkitX-Bundle/StarGate-Universe/releases/download/v2.2-SNAPSHOT/StarGate-Universe.jar"
+        }
+      ],
+      "name": "v2.2-SNAPSHOT",
+      "prerelease": false,
+      "published_at": 1783680710,
+      "version": "v2.2-SNAPSHOT"
+    }
+  ]
+}

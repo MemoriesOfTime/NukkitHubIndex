@@ -1,5 +1,5 @@
 {
-  "api_version": "2.0.0",
+  "api_version": "3.0.0",
   "authors": [
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/6178101?v=4",
@@ -27,6 +27,11 @@
       "url": "https://github.com/yescallop"
     },
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "name": "Buddelbubi",
+      "url": "https://github.com/Buddelbubi"
+    },
+    {
       "avatar_url": "https://avatars.githubusercontent.com/u/10363500?v=4",
       "name": "Creeperface01",
       "url": "https://github.com/Creeperface01"
@@ -37,14 +42,9 @@
       "url": "https://github.com/bonnedav"
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
-      "name": "Buddelbubi",
-      "url": "https://github.com/Buddelbubi"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/12520831?v=4",
-      "name": "Cobwebster",
-      "url": "https://github.com/Cobwebster"
+      "avatar_url": "https://avatars.githubusercontent.com/u/44261958?v=4",
+      "name": "Kieaer",
+      "url": "https://github.com/Kieaer"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
@@ -52,9 +52,9 @@
       "url": "https://github.com/wode490390"
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/44261958?v=4",
-      "name": "Kieaer",
-      "url": "https://github.com/Kieaer"
+      "avatar_url": "https://avatars.githubusercontent.com/u/12520831?v=4",
+      "name": "Cobwebster",
+      "url": "https://github.com/Cobwebster"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/140769524?v=4",
@@ -137,8 +137,40 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1780395400,
+  "updated_at": 1783671795,
   "versions": [
+    {
+      "changelog": "Automated release for v1.9.7",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EssentialsPNX.jar",
+          "primary": true,
+          "size": 154799,
+          "url": "https://github.com/PowerNukkitX-Bundle/EssentialsPNX/releases/download/v1.9.7/EssentialsPNX.jar"
+        }
+      ],
+      "name": "v1.9.7",
+      "prerelease": false,
+      "published_at": 1783671795,
+      "version": "v1.9.7"
+    },
+    {
+      "changelog": "Automated release for v1.9.6",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EssentialsPNX.jar",
+          "primary": true,
+          "size": 154799,
+          "url": "https://github.com/PowerNukkitX-Bundle/EssentialsPNX/releases/download/v1.9.6/EssentialsPNX.jar"
+        }
+      ],
+      "name": "v1.9.6",
+      "prerelease": false,
+      "published_at": 1783671414,
+      "version": "v1.9.6"
+    },
     {
       "changelog": "Automated release for v1.9.5",
       "downloads": 0,

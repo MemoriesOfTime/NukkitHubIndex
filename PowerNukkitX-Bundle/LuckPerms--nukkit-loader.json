@@ -405,8 +405,24 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1780166490,
+  "updated_at": 1783668701,
   "versions": [
+    {
+      "changelog": "Automated release for v5.4.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "LuckPerms-PNX-5.4.0.jar",
+          "primary": true,
+          "size": 1378380,
+          "url": "https://github.com/PowerNukkitX-Bundle/LuckPerms/releases/download/v5.4.0/LuckPerms-PNX-5.4.0.jar"
+        }
+      ],
+      "name": "v5.4.0",
+      "prerelease": false,
+      "published_at": 1783668701,
+      "version": "v5.4.0"
+    },
     {
       "changelog": "Bumbed to API 3.0.0",
       "downloads": 0,

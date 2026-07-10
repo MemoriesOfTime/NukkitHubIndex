@@ -1,0 +1,59 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/50714128?v=4",
+      "name": "xRookieFight",
+      "url": "https://github.com/xRookieFight"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "name": "Buddelbubi",
+      "url": "https://github.com/Buddelbubi"
+    }
+  ],
+  "categories": [],
+  "created_at": 1768582704,
+  "dependencies": [],
+  "description": "# UpdateNotifier\n\n**UpdateNotifier** is a lightweight and efficient PowerNukkitX plugin that notifies you when there is a new update available.\n\n---\n\n## ✨ Features\n\n* 🔍 **Automatic GitHub update checking**\n* ⚡ **Asynchronous (non-blocking) HTTP requests**\n* 🧩 **Fully configurable notification message**\n* 👤 **Optional player join notifications**\n* 🔐 **Permission-based notifications**\n* 🛠 **Minimal overhead, clean implementation**\n\n---\n\n## 📦 How It Works\n\nUpdateNotifier compares the **current server Git commit** with the **latest commit on GitHub**.\n\n* If the commits **do not match**, an update is available.\n* If they **match**, the server is up to date.\n* The check is performed asynchronously to ensure zero lag.\n\n---\n\n## 📁 Configuration\n\n```yaml\n# UpdateNotifier configuration\nrepository-url: \"PowerNukkitX/PowerNukkitX\"\n\nnotify:\n  message: \"§5New update is available! You can download it from: §f%repositoryUrl%\"\n  notify-join: true # Notifies the player if the player has permission \"updatenotifier.notify\"\n```\n\n### 🔧 Config Options\n\n#### `repository-url`\n\nThe GitHub repository to check for updates.\n\n**Format:**\n\n```\nowner/repository\n```\n\n**Example:**\n\n```\nPowerNukkitX/PowerNukkitX\n```\n\n---\n\n#### `notify.message`\n\nThe message sent when an update is available.\n\n* Supports Minecraft color codes (`§`)\n* Supports placeholders:\n\n    * `%repositoryUrl%` → replaced with the GitHub repository URL\n\n---\n\n#### `notify.notify-join`\n\nIf enabled, players will be notified **when they join the server**, provided they have the correct permission.\n\n---\n\n## 🔐 Permissions\n\n| Permission              | Description                                               |\n| ----------------------- |-----------------------------------------------------------|\n| `updatenotifier.notify` | Allows the player to receive update notifications on join |\n\n---\n\n## 🚀 Use Cases\n\n* Server owners running **PowerNukkitX nightly builds**\n* Developers tracking **upstream changes**\n* Administrators who want **early update notifications**\n* Production servers that require **manual update awareness**\n\n---\n\n## 📌 Requirements\n\n* A PowerNukkitX server\n* Internet connection (GitHub API access)\n\n---\n\n## 📄 License\n\nThis project has MIT license.\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/154862792?v=4",
+  "id": "PowerNukkitX-Bundle/UpdateNotifier",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "UpdateNotifier",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/PowerNukkitX-Bundle/UpdateNotifier",
+  "stars": 2,
+  "summary": "Notifies you when there is a new update available",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1783681493,
+  "versions": [
+    {
+      "changelog": "Initial release of UpdateNotifier.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "UpdateNotifier.jar",
+          "primary": true,
+          "size": 6949,
+          "url": "https://github.com/PowerNukkitX-Bundle/UpdateNotifier/releases/download/1.0.0/UpdateNotifier.jar"
+        }
+      ],
+      "name": "1.0.0",
+      "prerelease": false,
+      "published_at": 1768582810,
+      "version": "1.0.0"
+    }
+  ]
+}

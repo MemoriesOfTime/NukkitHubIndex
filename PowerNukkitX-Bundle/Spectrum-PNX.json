@@ -1,0 +1,59 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/50714128?v=4",
+      "name": "xRookieFight",
+      "url": "https://github.com/xRookieFight"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/73995049?v=4",
+      "name": "PleaseInsertNameHere",
+      "url": "https://github.com/PleaseInsertNameHere"
+    }
+  ],
+  "categories": [],
+  "created_at": 1771874933,
+  "dependencies": [],
+  "description": "# Spectrum-PNX\nSpectrum-PNX is an implementation of the [Spectrum](https://github.com/cooldogedev/Spectrum) proxy for PowerNukkitX servers.\n\n---\n> [!IMPORTANT]\n> This plugin is on a beta version, bugs may occur. If you find an issue please report it from issues page.\n\n---\n\n## Getting Started\n\n### Installation\n1. Download the latest release from [releases tab](https://github.com/PowerNukkitX-Bundle/Spectrum-PNX/releases).\n2. Place the JAR file into the `plugins` folder of your PowerNukkitX server.\n3. Start or reload your server.\n\n---\n## For Developers\nYou can use specific events like `SpectrumPacketSendEvent` for even listening.",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/154862792?v=4",
+  "id": "PowerNukkitX-Bundle/Spectrum-PNX",
+  "license": {
+    "id": "LGPL-3.0",
+    "name": "GNU Lesser General Public License v3.0",
+    "url": "https://spdx.org/licenses/LGPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Spectrum",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/PowerNukkitX-Bundle/Spectrum-PNX",
+  "stars": 2,
+  "summary": "Spectrum-PNX is an implementation of the Spectrum proxy for PowerNukkitX",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1783688985,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Spectrum-PNX-1.0-SNAPSHOT-all.jar",
+          "primary": true,
+          "size": 86946,
+          "url": "https://github.com/PowerNukkitX-Bundle/Spectrum-PNX/releases/download/1.0.0/Spectrum-PNX-1.0-SNAPSHOT-all.jar"
+        }
+      ],
+      "name": "1.0.0",
+      "prerelease": false,
+      "published_at": 1783688944,
+      "version": "1.0.0"
+    }
+  ]
+}

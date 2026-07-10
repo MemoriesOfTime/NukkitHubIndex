@@ -40,8 +40,24 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1780167426,
+  "updated_at": 1783677432,
   "versions": [
+    {
+      "changelog": "Automated release for v1.0.3",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Scoreboard.jar",
+          "primary": true,
+          "size": 10672,
+          "url": "https://github.com/PowerNukkitX-Bundle/Scoreboard/releases/download/v1.0.3/Scoreboard.jar"
+        }
+      ],
+      "name": "v1.0.3",
+      "prerelease": false,
+      "published_at": 1783677432,
+      "version": "v1.0.3"
+    },
     {
       "changelog": "Automated release for v1.0.2",
       "downloads": 0,
