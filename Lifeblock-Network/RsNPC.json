@@ -7,14 +7,14 @@
       "url": "https://github.com/lt-name"
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "name": "dependabot[bot]",
-      "url": "https://github.com/apps/dependabot"
-    },
-    {
       "avatar_url": "https://avatars.githubusercontent.com/u/56545793?v=4",
       "name": "TraxTRL",
       "url": "https://github.com/TraxTRL"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "name": "dependabot[bot]",
+      "url": "https://github.com/apps/dependabot"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
@@ -63,6 +63,6 @@
     "nkmot",
     "pnx"
   ],
-  "updated_at": 1783205997,
+  "updated_at": 1783732485,
   "versions": []
 }

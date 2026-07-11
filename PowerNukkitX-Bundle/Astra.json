@@ -1,0 +1,59 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/37877491?v=4",
+      "name": "Kaooot",
+      "url": "https://github.com/Kaooot"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "name": "Buddelbubi",
+      "url": "https://github.com/Buddelbubi"
+    }
+  ],
+  "categories": [],
+  "created_at": 1781009960,
+  "dependencies": [],
+  "description": "# Astra\n\noverrideServerAuthBlockBreaking toggle must be enabled in PNX misc settings",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/154862792?v=4",
+  "id": "PowerNukkitX-Bundle/Astra",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Astra",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/PowerNukkitX-Bundle/Astra",
+  "stars": 1,
+  "summary": "Anti-Cheat plugin for PowerNukkitX",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1783782212,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Astra-0.0.2-DEV.jar",
+          "primary": true,
+          "size": 44883,
+          "url": "https://github.com/PowerNukkitX-Bundle/Astra/releases/download/0.0.2-DEV/Astra-0.0.2-DEV.jar"
+        }
+      ],
+      "name": "0.0.2-DEV",
+      "prerelease": false,
+      "published_at": 1783782212,
+      "version": "0.0.2-DEV"
+    }
+  ]
+}

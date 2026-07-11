@@ -35,8 +35,24 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1780153553,
+  "updated_at": 1783723517,
   "versions": [
+    {
+      "changelog": "Automated release for v1.0.2",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "NPC.jar",
+          "primary": true,
+          "size": 20790,
+          "url": "https://github.com/Syodo-Development/NPC/releases/download/v1.0.2/NPC.jar"
+        }
+      ],
+      "name": "v1.0.2",
+      "prerelease": false,
+      "published_at": 1783723517,
+      "version": "v1.0.2"
+    },
     {
       "changelog": "Fixed for latest PNX",
       "downloads": 0,

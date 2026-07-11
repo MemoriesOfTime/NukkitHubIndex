@@ -83,7 +83,7 @@
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/BuycraftX",
   "stars": 0,
-  "summary": "The official Tebex Plugin (Previously called Buycraft) for a variety of Minecraft Server platforms.",
+  "summary": "Link your Tebex store with PNX! The old BuycraftX plugin ported to PowerNukkitX.",
   "targets": [
     "pnx"
   ],
