@@ -1,0 +1,54 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/88402556?v=4",
+      "name": "RinierMC",
+      "url": "https://github.com/RinierMC"
+    }
+  ],
+  "categories": [],
+  "created_at": 1783869322,
+  "dependencies": [],
+  "description": "# Custom Enchants\n\n**Custom Enchants** adds 30 custom enchantments to your PowerNukkitX server. All enchantments work with commands, books, and inventory drag‑and‑drop. The plugin also provides an API for other developers to add their own enchantments.\n\n---\n## Features\n- **30 unique enchantments** – universal, armor, weapon, and tool enchants.\n- **Fully functional** – all enchants have active gameplay effects.\n- **Book system** – store an enchantment in a book, then apply it by dragging onto an item.\n- **Commands** – `/ce` to apply, remove, or list enchants.\n- **API** – third‑party plugins can register their own custom enchantments.\n\n---\n\n## Installation\n\n1. Download the latest: https://github.com/RinierMC/Custom-Enchants/releases/tag/Latest\n2. Place it in your server’s `plugins/` folder.\n3. Restart the server (or use `/reload`).\n4. All 30 enchantments are registered automatically.\n\n---\n\n## Commands\n\n| Command | Description |\n|---------|-------------|\n| `/ce <enchant> <level>` | Apply the enchant directly (if holding a compatible item), or receive a book. |\n| `/ce <enchant> remove` | Remove the enchantment from your held item. |\n| `/ce list` | List all available enchantments with descriptions and categories. |\n| `/ce help` | Show command usage. |\n\n**Alias:** `/customenchant`\n\n---\n\n## How to Use Books\n\n1. Get a book: `/ce <enchant> <level>` (hold nothing or an incompatible item).\n2. Hold the book in your main hand.\n3. Open your inventory and **drag the book onto** the item you want to enchant.\n4. The enchantment is applied, and the book is consumed.\n\n---\n\n## Enchantment List (30)\n\n| Enchantment | Category | Max Level | Description |\n|-------------|----------|-----------|-------------|\n| Overload | Armor (any) | 3 | +2 max health per level per piece. |\n| Vitality | Armor (any) | 2 | Slowly regenerates health while worn. |\n| Fortitude | Armor (any) | 3 | Reduces all incoming damage by 5% per level per piece. |\n| Fire Resistance | Armor (any) | 1 | Grants Fire Resistance while worn. |\n| Featherfall | Boots | 3 | Reduces fall damage by 40% per level. |\n| Magnet | Boots | 3 | Pulls dropped items toward you (radius grows per level). |\n| Reflect | Chestplate | 3 | Reflects melee damage back to the attacker. |\n| Quickstep | Boots | 3 | Increases movement speed. |\n| Leaper | Boots | 3 | Increases jump height. |\n| Aquatic | Helmet | 1 | Grants Water Breathing. |\n| Night Vision | Helmet | 1 | Grants Night Vision. |\n| Glutton | Helmet | 2 | Increases saturation from food. |\n| Haste | Universal | 2 | Gives Haste effect while held/worn. |\n| Voidwalker | Universal | 3 | Chance to dodge incoming damage. |\n| Soulbound | Universal | 1 | Item is not dropped on death. |\n| Vampiric | Weapon (Sword/Axe) | 3 | Heals for a % of damage dealt. |\n| Executioner | Weapon (Sword/Axe) | 3 | Extra damage to targets below 25% HP. |\n| Berserker | Weapon (Sword/Axe) | 3 | Extra damage when below 50% HP. |\n| Venom | Weapon (Sword/Axe) | 2 | Poisons the target on hit. |\n| Withering | Weapon (Sword/Axe) | 2 | Withers the target on hit. |\n| Cripple | Weapon (Sword/Axe) | 2 | Slows the target on hit. |\n| Auto Smelt | Tool (all diggers) | 1 | Smelts ores and blocks automatically. |\n| Explosive | Pickaxe | 2 | Chance to break 3×3 area. |\n| Telepathy | Pickaxe | 1 | Mined items go directly to inventory. |\n| Excavator | Shovel | 1 | Breaks 3×3 area of dirt/sand/gravel. |\n| Lumberjack | Axe | 1 | Breaks entire tree. |\n| Harvest | Hoe | 3 | Increases crop drops. |\n| Scythe | Hoe | 1 | Breaks 3×3 area of crops/leaves. |\n| Drilling | Pickaxe | 1 | Breaks vertical 3‑block line. |\n| Tunnel | Pickaxe | 1 | Breaks 3×1 line in facing direction. |\n\n---\n\n## API for Developers\n\nYou can add your own enchantments from another plugin.\n\n### Step 1: Add the dependency\n\nMake sure `Custom_Enchants.jar` is in your classpath.\n\nIf you are using **Maven** in IntelliJ, you can install the plugin locally:\n\n1. Download the source ZIP of `Custom_Enchants` and extract it.\n2. Open a terminal in the extracted folder and run:\n3. Restart IntelliJ to refresh the local repository.\n4. Add the dependency to your `pom.xml`:\n\n```xml\n<dependency>\n    <groupId>org.powernukkitx</groupId>\n    <artifactId>Custom_Enchants</artifactId>\n    <version>1.1.0</version>\n    <scope>provided</scope>\n</dependency>\n```\n\nAlternatively, if you only have the JAR, add it manually via `File > Project Structure > Libraries > + > Java` and select the JAR.\n\n### Step 2: Declare the dependency in your `plugin.yml`\n\n```yaml\nname: MyCustomEnchants\nmain: myplugin.Main\nversion: 1.0.0\ndepend: [Custom_Enchants]\n```\n\n### Step 3: Create your enchantment\n\nExtend `BaseCustomEnchant` (included in the plugin):\n\n```java\nimport org.powernukkitx.ce.enchantment.BaseCustomEnchant;\n\npublic class MyEnchant extends BaseCustomEnchant {\n    public MyEnchant() {\n        super(new Identifier(\"myplugin:myenchant\"), \"My Enchant\", Rarity.RARE, EnchantmentType.ALL);\n    }\n\n    @Override\n    public int getMaxLevel() { return 5; }\n\n    @Override\n    public int getMinEnchantAbility(int level) { return 10 * level; }\n\n    @Override\n    public int getMaxEnchantAbility(int level) { return 20 * level; }\n\n    @Override\n    public String getCategory() { return \"Custom\"; }\n\n    @Override\n    public String getDescription() { return \"Does something awesome.\"; }\n}\n```\n\n### Step 4: Handling Custom Enchantment Effects\n\nTo make your custom enchantment actually **do something** (e.g., deal extra damage, heal the player, etc.), you need to listen to the appropriate PowerNukkitX events and check if the item has your enchantment.\n\nThe plugin provides utility methods in `EnchantUtil` for this purpose:\n\n- `EnchantUtil.has(Item item, Enchantment enchant)` – checks if the item has the enchantment.\n- `EnchantUtil.getLevel(Item item, Enchantment enchant)` – returns the level (0 if absent).\n\n### Example: Lightning Strike on Hit\n\nCreate a listener that triggers when a player attacks an entity:\n\n```java\nimport org.powernukkitx.Player;\nimport org.powernukkitx.entity.Entity;\nimport org.powernukkitx.event.EventHandler;\nimport org.powernukkitx.event.Listener;\nimport org.powernukkitx.event.entity.EntityDamageByEntityEvent;\nimport org.powernukkitx.item.Item;\nimport org.powernukkitx.ce.util.EnchantUtil;\nimport org.powernukkitx.ce.Main;\nimport myplugin.enchantments.MyLightningEnchant;\n\npublic class LightningListener implements Listener {\n    private final MyLightningEnchant enchant;\n\n    public LightningListener(MyLightningEnchant enchant) {\n        this.enchant = enchant;\n    }\n\n    @EventHandler\n    public void onAttack(EntityDamageByEntityEvent event) {\n        if (!(event.getDamager() instanceof Player player)) return;\n\n        Item weapon = player.getInventory().getItemInMainHand();\n        int level = EnchantUtil.getLevel(weapon, enchant);\n        if (level <= 0) return;\n\n        // Trigger lightning with a chance based on level\n        if (Math.random() < 0.2 * level) {\n            Entity target = event.getEntity();\n            target.getLevel().strikeLightning(target.getPosition());\n        }\n    }\n}\n```\n\nThen register this listener in your plugin:\n\n```java\npublic void onEnable() {\n    Main ce = (Main) getServer().getPluginManager().getPlugin(\"Custom_Enchants\");\n    if (ce != null) {\n        MyLightningEnchant lightning = new MyLightningEnchant();\n        ce.registerCustomEnchant(lightning, \"lightning\");\n\n        // Register your custom listener\n        getServer().getPluginManager().registerEvents(new LightningListener(lightning), this);\n    }\n}\n```\n\nNow your enchantment will strike lightning on hit!\n\n---\n\n### Performance Note\n\nThe listener is invoked **every time** the event fires (e.g., every attack). However, the first check inside the listener is:\n\n```java\nint level = EnchantUtil.getLevel(weapon, enchant);\nif (level <= 0) return;\n```\n\nThis check is **fast** (just reads NBT) and ensures that for items without your enchantment, the listener exits immediately with almost zero overhead. So while the listener is always called, it only executes heavy logic when the enchantment is actually present – making it efficient even on busy servers.\n\nNow players can use `/ce myenchant 3` to get a book, and apply it exactly like the built‑in enchants.\n\n---\n## Notes\n\n- **Permissions:** Only operators can use `/ce` by default.  \n  To allow other players, give them the permission `customenchants.command.enchant`.\n- **Compatibility:** Built for PowerNukkitX 1.19+.\n- **No anvil support:** Books are applied via inventory drag‑and‑drop or commands – anvils are not supported because they only handle vanilla enchants.\n\n\n---\n\n## Support\n\nFor issues, suggestions, or API questions, open an issue on the plugin’s repository or contact me.\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/88402556?v=4",
+  "id": "RinierMC/Custom-Enchants",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Custom_Enchants",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/RinierMC/Custom-Enchants",
+  "stars": 0,
+  "summary": "14 custom enchantments for PowerNukkitX - universal, armor, weapon, tool and single-slot enchants",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1783870315,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Custom_Enchants-1.0.0.jar",
+          "primary": true,
+          "size": 60727,
+          "url": "https://github.com/RinierMC/Custom-Enchants/releases/download/Latest/Custom_Enchants-1.0.0.jar"
+        }
+      ],
+      "name": "Custom Enchants 1.0.0",
+      "prerelease": false,
+      "published_at": 1783870254,
+      "version": "Latest"
+    }
+  ]
+}

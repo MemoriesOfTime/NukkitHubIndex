@@ -1,0 +1,54 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/88402556?v=4",
+      "name": "RinierMC",
+      "url": "https://github.com/RinierMC"
+    }
+  ],
+  "categories": [],
+  "created_at": 1783780990,
+  "dependencies": [],
+  "description": "# Shop & Auction House\n\nA GUI-based shop and player auction house plugin for [PowerNukkitX](https://github.com/PowerNukkitX/PowerNukkitX) servers. Players can buy and sell items through category menus, or list items for other players to purchase via a time-limited auction house.\n\n## Features\n\n- **Category-based shop** — items are organized into 11 categories (blocks, ores, ingots, wood, redstone, containers, food, meat, tools, pvp, armor), browsable through an in-game chest GUI.\n- **Buy & sell menus** — click-to-buy item listings with quantity selection (1 piece, 1–4 stacks), and a sell screen that lets players click items straight out of their inventory to sell them.\n- **Player auction house** — list an item you're holding for a fixed price; other players can browse active listings and purchase them directly. Unsold listings expire automatically and can be collected back.\n- **Configurable prices** — all buy/sell prices, item categories, and display names are defined in `config.yml` and editable without touching code.\n- **Confirmation screens** — every purchase or sale goes through a confirmation GUI showing price, balance, and quantity before anything is charged.\n- **Persistent auctions** — active and expired-but-uncollected auction listings are saved to disk and reloaded on server restart.\n\n## Commands\n\n| Command | Description | Permission |\n|---|---|---|\n| `/shop` | Show shop help | `shop.cmd` |\n| `/shop buy` | Open the category selection menu | `shop.cmd` |\n| `/shop <category>` | Open a specific category directly (e.g. `/shop tools`) | `shop.cmd` |\n| `/shop sell` | Open the sell shop (click items in your inventory to sell) | `shop.cmd` |\n| `/auction` | Show auction house help | `auction.cmd` |\n| `/auction list` | Browse all active auction listings | `auction.cmd` |\n| `/auction sell <price>` | List the item in your hand for the given price | `auction.cmd` |\n| `/auction collect` | Collect items from your expired/unsold listings | `auction.cmd` |\n| `/balance` | Check your own coin balance | `shop.user` |\n| `/balance <player>` | Check another player's balance (self always allowed; checking others requires `shop.admin` or op) | `shop.user` |\n| `/pay <player> <amount>` | Send coins to another player | `shop.user` |\n| `/topcoin` | Show the top 10 richest players | none (usable by console too) |\n| `/addcoin <player> <amount>` | Add coins to a player's balance | `shop.admin` |\n| `/removecoin <player> <amount>` | Remove coins from a player's balance | `shop.admin` |\n\n## How it works\n\n### Shop\n\n1. `/shop buy` opens a category menu (chest GUI). Selecting a category opens a paginated listing of buyable items.\n2. Clicking an item opens a quantity-selection confirmation screen (1 piece / 1–4 stacks for stackable items).\n3. Confirming checks the player's balance and inventory space, then charges coins and gives a clean, unmodified copy of the item \n4. `/shop sell` opens the player's inventory in a sell GUI. Clicking a sellable item opens a confirmation screen showing price and total, then credits the player's balance on confirm.\n\n### Auction House\n\n1. `/auction sell <price>` lists the item currently in the player's hand for a flat price, for 5 minutes.\n2. `/auction list` shows all active listings. Clicking another player's listing opens a purchase confirmation; clicking your own listing opens a removal confirmation.\n3. Listings that expire unsold are marked inactive and can be recovered with `/auction collect`.\n4. Auction state is periodically checked so listings expire (and sellers are notified) even if nobody opens `/auction list`.\n\n### Economy / Coins\n\n- `/balance` shows your own balance; `/balance <player>` shows someone else's — checking another player's balance requires `shop.admin` permission or op, otherwise it's rejected.\n- `/pay <player> <amount>` transfers coins directly to another player, with checks for a valid positive amount, a sane maximum transaction size, insufficient funds, and paying yourself.\n- `/topcoin` prints the top 10 richest players server-wide (works from console too, since it doesn't require a player sender).\n- `/addcoin <player> <amount>` and `/removecoin <player> <amount>` are admin-only balance adjustment commands, restricted to `shop.admin` or op. `/removecoin` will refuse to take more than a player currently has.\n- All amounts are validated against a shared maximum transaction size to prevent absurd values, and every balance change is echoed back to the affected player if they're online.\n\n## Configuration\n\nPrices, item IDs, categories, and display names live in `config.yml` under `shop.prices.buy.*` and `shop.prices.sell.*`, and are seeded with sensible defaults on first run via `createDefault()`. Messages (permission errors, insufficient funds, etc.) are also configurable under `shop.message.*`.\n\nExample:\n\n```yaml\nshop:\n  prices:\n    buy:\n      diamond: 150.0\n    sell:\n      diamond: 100.0\n```\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/88402556?v=4",
+  "id": "RinierMC/Shop",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Shop",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/RinierMC/Shop",
+  "stars": 0,
+  "summary": "A simple Shop with Auction house and Economy support for PowerNukkitX.",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1783782284,
+  "versions": [
+    {
+      "changelog": "Released",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Shop.jar",
+          "primary": true,
+          "size": 49789,
+          "url": "https://github.com/RinierMC/Shop/releases/download/Latest/Shop.jar"
+        }
+      ],
+      "name": "Shop 1.0.0",
+      "prerelease": false,
+      "published_at": 1783782284,
+      "version": "Latest"
+    }
+  ]
+}
