@@ -1,0 +1,54 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/175262502?v=4",
+      "name": "Psycofeu",
+      "url": "https://github.com/Psycofeu"
+    }
+  ],
+  "categories": [],
+  "created_at": 1783947349,
+  "dependencies": [],
+  "description": "# 🇫🇷 FrenchEconomy\n\n![Version](https://img.shields.io/badge/version-1.0.0-blue)\n![Platform](https://img.shields.io/badge/platform-PowerNukkitX-green)\n![Language](https://img.shields.io/badge/language-Java-orange)\n\n**FrenchEconomy** is a complete economy plugin developed for **PowerNukkitX**, allowing you to manage a virtual economy on your Minecraft Bedrock server.\n\nThe plugin provides a wallet system, player-to-player money transfers, leaderboards, and an easy-to-use economy management system.\n\n---\n\n# ✨ Features\n\n## 💰 Money Management\n\n* Automatic player wallet creation\n* Persistent data storage\n* Player cache system for better performance (Native + online cache)\n* Protection against negative balances\n* Fully configurable\n* Simple API for developers\n\n---\n\n# 👤 Player Commands\n\n| Command                  | Description                  |\n| ------------------------ | ---------------------------- |\n| `/mymoney`               | View your current balance    |\n| `/pay <player> <amount>` | Send money to another player |\n| `/top-money`             | View the richest players     |\n\n---\n\n# 🔧 Admin Commands\n\n| Command                        | Description            |\n| ------------------------------ | ---------------------- |\n| `/give-money <player> <amount>` | Give money to a player |\n| `/reduce-money <player> <amount>` | Reduce money to a player |\n| `/set-money <player> <amount>` | Set money to a player |\n\n---\n\n# 🔑 Permissions\n\n| Permission                  | Description      |\n| --------------------------- | ---------------- |\n| `economy.command.givemoney` | Use `/givemoney` |\n| `economy.command.reducemoney` | Use `/givemoney` |\n| `economy.command.setmoney` | Use `/givemoney` |\n\n---\n\n# ⚙️ Configuration\n\nFrenchEconomy provides a fully configurable message system.\n\nExample:\n\n```yaml\ndefault-money: 500\ntopmoney.limit: 10\n\nmymoney.description: §a- §fSee your money\ngivemoney.description: §a- §fGive money to a player\nsetmoney.description: §a- §fSet money to a player\nreducemoney.description: §a- §fReduce money to a player\ntopmoney.description: §a- §fView top money\npay.description: §a- §fPay player\n\ngivemoney.usage: '§cUsage: /givemoney <player> <amount>'\nsetmoney.usage: '§cUsage: /set-money <player> <amount>'\nreducemoney.usage: '§cUsage: /reduce-money <player> <amount>'\npay.usage: '§cUsage: /pay <player> <amount>'\n\nmymoney.message: §aYou have §e{money}$\n\ngivemoney.message.sender: §aYou gave §e{money}$ §ato §b{player}\ngivemoney.message.receiver: §aYou received §e{money}$ §afrom §b{sender}\nsetmoney.message.sender: §aYou set §e{money}$ §ato §b{player}\nsetmoney.message.receiver: §aYour money was set to §e{money}$ §afrom §b{sender}\npay.sender: §aYou sent §e{money}$ §ato §b{player}\npay.receiver: §aYou received §e{money}$ §afrom §b{player}\npay.self: §cYou cannot pay yourself.\nreducemoney.message.sender: §aYou reduce §e{money}$ §ato §b{player}\nreducemoney.message.receiver: §aYour money was reduced to §e{money}$ §afrom §b{sender}\n\ntopmoney.header: §e§lTop Money\ntopmoney.format: '§e#{rank} §f{player}§7: §e{money}$'\ntopmoney.empty: §cNo player found.\n\nerror.only.ingame: §c- §fOnly player command.\nerror.get.wallet: §c- §fAn error occured while getting your wallet.\nerror.player.not.found: §c- §fPlayer not found.\nerror.invalid.amount: §c- §fInvalid amount.\nerror.not.enough.money: §cYou don't have enough money.\nerror.input.must.positive: §c- §fInput must be positive.\n```\n---\n\n# 💾 Data Storage\n\nFrenchEconomy uses a wallet-based system.\n\nEach player has a wallet containing their economy data: (for devs: you can add wallets)\n\n```java\nWallet {\n    money\n}\n```\n\nThe system includes:\n\n* Player cache\n* Automatic saving\n* YAML storage\n* Easy API access for other plugins\n\n---\n\n# 📦 Installation\n\n1. Download the latest `.jar` file\n2. Put it inside your server plugins folder:\n\n```text\nplugins/\n```\n\n3. Restart your PowerNukkitX server\n\n---\n\n# 📄 License\n\nDeveloped by **PsycoFeu**.\n\nYou are free to use and modify this plugin according to the project's license terms.\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/175262502?v=4",
+  "id": "Psycofeu/FrenchEconomy",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "FrenchEconomy",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/Psycofeu/FrenchEconomy",
+  "stars": 0,
+  "summary": "Economy plugin by french guy :)",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1783947823,
+  "versions": [
+    {
+      "changelog": "Plugin .jar",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FrenchEconomy-1.0.jar",
+          "primary": true,
+          "size": 1067356,
+          "url": "https://github.com/Psycofeu/FrenchEconomy/releases/download/Release/FrenchEconomy-1.0.jar"
+        }
+      ],
+      "name": "Plugin V1.0.0",
+      "prerelease": false,
+      "published_at": 1783947823,
+      "version": "Release"
+    }
+  ]
+}

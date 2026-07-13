@@ -1,0 +1,61 @@
+{
+  "api_version": "2.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/239018447?v=4",
+      "name": "mdafftfa",
+      "url": "https://github.com/mdafftfa"
+    }
+  ],
+  "categories": [],
+  "created_at": 1747219749,
+  "dependencies": [],
+  "description": "# PacketLimiter\n\n![icon](https://raw.githubusercontent.com/mdafftfa/PacketLimiter/master/icon.png)\n\n**PacketLimiter** is a plugin for [PowerNukkitX](https://github.com/PowerNukkitX/PowerNukkitX) that limits the number of packets a player can send per second. Players exceeding the packet limit will receive warnings, and after reaching the maximum number of warnings, they will be kicked from the server.\n\n## Features\n\n- Limits packet sending per player\n- Warning system before kicking\n- Auto-kick after exceeding warning limit\n\n## Configuration\n\nThe plugin uses the following settings (add manually or hardcode):\n\n```yaml\n# Maximum number of warnings before a player is kicked\nmaxWarnings: 3\n\n# Limit on the number of packets that can be received per second per player\npacketLimit: 100\n\n# Message displayed when a player is kicked due to packet spam\nkickMessage: \"You have been kicked for sending too many packets!\"\n\n```",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-07-13",
+      "description": "",
+      "title": "icon",
+      "url": "https://raw.githubusercontent.com/mdafftfa/PacketLimiter/master/icon.png"
+    }
+  ],
+  "icon_url": "https://raw.githubusercontent.com/mdafftfa/PacketLimiter/master/icon.png",
+  "id": "mdafftfa/PacketLimiter",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "PacketLimiter",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/mdafftfa/PacketLimiter",
+  "stars": 2,
+  "summary": "📦 A Plugin for PowerNukkitX used to limit the number of packets sent by players",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1783927417,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "PacketLimiter.jar",
+          "primary": true,
+          "size": 7935,
+          "url": "https://github.com/mdafftfa/PacketLimiter/releases/download/PacketLimiter_v1.0.0/PacketLimiter.jar"
+        }
+      ],
+      "name": "PacketLimiter_v1.0.0",
+      "prerelease": false,
+      "published_at": 1747228844,
+      "version": "PacketLimiter_v1.0.0"
+    }
+  ]
+}

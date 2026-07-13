@@ -32,8 +32,24 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1783870315,
+  "updated_at": 1783966119,
   "versions": [
+    {
+      "changelog": "Fixed Soulbound, and Overload enchant",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Custom_Enchants-1.0.0.jar",
+          "primary": true,
+          "size": 60988,
+          "url": "https://github.com/RinierMC/Custom-Enchants/releases/download/Release/Custom_Enchants-1.0.0.jar"
+        }
+      ],
+      "name": "Custom Enchants 1.1.0",
+      "prerelease": false,
+      "published_at": 1783966119,
+      "version": "Release"
+    },
     {
       "changelog": "",
       "downloads": 0,

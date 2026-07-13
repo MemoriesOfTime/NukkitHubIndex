@@ -1,0 +1,79 @@
+{
+  "api_version": "2.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/239018447?v=4",
+      "name": "mdafftfa",
+      "url": "https://github.com/mdafftfa"
+    }
+  ],
+  "categories": [],
+  "created_at": 1748285488,
+  "dependencies": [],
+  "description": "# 🔦 Flashlight Plugin for PowerNukkitX\n\nA dynamic lighting solution that lets players illuminate their surroundings using various items! Perfect for cave explorations and nighttime adventures.\n\n<img src=\"https://raw.githubusercontent.com/mdafftfa/Flashlight/master/assets/icon.png\" width=\"250\" height=\"250\">\n\n## Table of Contents\n- [Features](#features)\n- [Installation](#installation)\n- [Configuration](#configuration)\n- [Preview](#preview)\n- [Contributing](#contributing)\n- [License](#license)\n\n## Features <a name=\"features\"></a>\n- **Item-Based Lighting** - Use any item as a light source\n- **Custom Light Levels** - Configure brightness per item (0-15)\n- **Dual Wield Support** - Works with both main hand and offhand\n- **Smooth Updates** - Configurable refresh rate for optimal performance\n- **Automatic Cleanup** - Removes light blocks when not needed\n- **PowerNukkitX Optimized** - Built specifically for PNX's API\n\n## Installation <a name=\"installation\"></a>\n1. Download latest `Flashlight.jar` from [Releases]()\n2. Place in your server's `plugins/` folder\n3. Restart server\n\n## Configuration (`config.yml`) <a name=\"configuration\"></a>\n```yaml\n# Main configuration file for Flashlight\n# Some of these settings are safe, others can break your server if modified incorrectly\n# New settings/defaults won't appear automatically in this file when upgrading.\n\n# Flashlight update delay [float: seconds] (default: 0.25)\n# It is recommended to be as high as possible. Lower = more CPU, check more often\nupdate-delay: 0.25\n\n# Light level of items [int] (min: 0, max: 15)\n# It supports for set the light level of an item that is not automatically calculated (such as a lava bucket) or a custom items.\n# Item name format is same as the item name of the /give command.\n# example) lava_bucket (same as '325:10')\nitem-light-levels:\n  'lava-bucket': 15\n  #'nether_star': 10\n```\n\n\n## Preview <a name=\"preview\"></a> \n\n[![preview1](https://raw.githubusercontent.com/mdafftfa/Flashlight/master/assets/preview1.png)]()\n[![preview1](https://raw.githubusercontent.com/mdafftfa/Flashlight/master/assets/preview2.png)]()\n[![preview1](https://raw.githubusercontent.com/mdafftfa/Flashlight/master/assets/preview3.png)]()\n\n## Contributing <a name=\"contributing\"></a>\n\nAll kinds of contribution are welcome\n- Send feedbacks.\n- Submit bug reports.\n- Write / Edit the documents.\n- Fix bugs or add new features.\n\nand if you found bug or have any issues please report them [here](https://github.com/pixelwhiz/Flashlight/issues/new)\n\n## License <a name=\"license\"></a>\n\nThis project is licensed under LGPL-3.0. Please see [LICENSE](https://github.com/mdafftfa/Flashlight/blob/master/LICENSE) file for details.",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-07-13",
+      "description": "",
+      "title": "",
+      "url": "https://raw.githubusercontent.com/mdafftfa/Flashlight/master/assets/icon.png"
+    },
+    {
+      "created": "2026-07-13",
+      "description": "",
+      "title": "preview1",
+      "url": "https://raw.githubusercontent.com/mdafftfa/Flashlight/master/assets/preview1.png"
+    },
+    {
+      "created": "2026-07-13",
+      "description": "",
+      "title": "preview1",
+      "url": "https://raw.githubusercontent.com/mdafftfa/Flashlight/master/assets/preview2.png"
+    },
+    {
+      "created": "2026-07-13",
+      "description": "",
+      "title": "preview1",
+      "url": "https://raw.githubusercontent.com/mdafftfa/Flashlight/master/assets/preview3.png"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/239018447?v=4",
+  "id": "mdafftfa/Flashlight",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Flashlight",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/mdafftfa/Flashlight",
+  "stars": 3,
+  "summary": "🕯️ A Plugin for PowerNukkitX used to provide light in the dark when holding a luminous item",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1783925863,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Flashlight.jar",
+          "primary": true,
+          "size": 9040,
+          "url": "https://github.com/mdafftfa/Flashlight/releases/download/Flashlight_v1.0.0/Flashlight.jar"
+        }
+      ],
+      "name": "Flashlight_v1.0.0",
+      "prerelease": false,
+      "published_at": 1748339145,
+      "version": "Flashlight_v1.0.0"
+    }
+  ]
+}

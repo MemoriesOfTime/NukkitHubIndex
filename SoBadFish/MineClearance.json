@@ -39,12 +39,13 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "MineClear",
-  "primary_target": "nkmot",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/SoBadFish/MineClearance",
   "stars": 0,
   "summary": "一款扫雷小游戏 指令/mt",
   "targets": [
+    "nkx",
     "nkmot"
   ],
   "updated_at": 1771771119,

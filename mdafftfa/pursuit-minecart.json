@@ -28,7 +28,7 @@
   "server_version": "",
   "source": "https://github.com/mdafftfa/pursuit-minecart",
   "stars": 1,
-  "summary": "A PowerNukkitX plugin that can pursue nearest entity selected using AHP, TOPSIS, and A* pathfinding with Minecart",
+  "summary": "A Minecraft Bedrock Server (PowerNukkitX) plugin that a Minecart can pursue nearest entity selected using AHP, TOPSIS, and A* pathfinding",
   "targets": [
     "pnx"
   ],
