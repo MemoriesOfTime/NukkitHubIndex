@@ -1,0 +1,54 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/88402556?v=4",
+      "name": "RinierMC",
+      "url": "https://github.com/RinierMC"
+    }
+  ],
+  "categories": [],
+  "created_at": 1783973409,
+  "dependencies": [],
+  "description": "# Factions Plugin\r\n\r\nA clean, lightweight faction management system for PowerNukkitX servers.This plugin focuses on faction mechanics. It is designed as a solid core that can be extended by other plugins.\r\n\r\n---\r\n\r\n## Features\r\n\r\n- ✅ Full faction lifecycle – create, disband, invite, accept, kick, promote, demote, leave\r\n- ✅ Land claiming with a strength‑based economy\r\n- ✅ Strength system – gain/lose strength on kills, each claim costs 100 strength\r\n- ✅ Alliances and enemies – ally/neutral/enemy diplomacy\r\n- ✅ Faction home – set and teleport\r\n- ✅ Claim borders – toggle visible particle borders (officers+)\r\n- ✅ Faction chat – toggle private chat with `/f chat`\r\n- ✅ Chunk notifications – enter/leave messages with titles\r\n- ✅ Top factions – list by strength\r\n- ✅ Optional Ranks integration – placeholders `{faction}`, `{faction_role}`, `{faction_stars}`\r\n- ✅ Developer API – `FactionAPI` for external plugins\r\n\r\n---\r\n\r\n## Installation\r\n\r\n1. Place the plugin JAR in your `plugins/` folder.\r\n2. Restart the server.\r\n3. Configuration files (`config.yml`, `factions.yml`) will be generated automatically.\r\n4. (Optional) Install the **Ranks** plugin for placeholder support – the integration works automatically.\r\n\r\n---\r\n\r\n## Commands\r\n\r\nAll commands are accessed via `/f`, `/faction`, or `/factions`.\r\n\r\n| Command | Description | Permission |\r\n|---------|-------------|------------|\r\n| `/f create <name>` | Create a new faction | `factions.command.f` |\r\n| `/f disband` | Disband your faction (leader only) | `factions.command.f` |\r\n| `/f invite <player>` | Invite a player | `factions.command.f` |\r\n| `/f accept [faction]` | Accept a pending invite | `factions.command.f` |\r\n| `/f decline [faction]` | Decline a pending invite | `factions.command.f` |\r\n| `/f join <faction>` | Join a faction via invite (alias for accept) | `factions.command.f` |\r\n| `/f leave` | Leave your faction | `factions.command.f` |\r\n| `/f kick <player>` | Kick a member | `factions.command.f` |\r\n| `/f promote <player>` | Promote a member (leader only) | `factions.command.f` |\r\n| `/f demote <player>` | Demote a member (leader only) | `factions.command.f` |\r\n| `/f claim` | Claim the chunk you are standing in | `factions.command.f` |\r\n| `/f unclaim` | Unclaim the chunk you are standing in | `factions.command.f` |\r\n| `/f sethome` | Set the faction home to your location | `factions.command.f` |\r\n| `/f home` | Teleport to the faction home | `factions.command.f` |\r\n| `/f info [faction]` | Show faction information | `factions.command.f` |\r\n| `/f list` | List all factions | `factions.command.f` |\r\n| `/f chat` | Toggle faction‑only chat | `factions.command.f` |\r\n| `/f chat <message>` | Send a one‑off faction message | `factions.command.f` |\r\n| `/f ally <faction>` | Send an ally request (leader only) | `factions.command.f` |\r\n| `/f unally <faction>` | Remove an alliance (leader only) | `factions.command.f` |\r\n| `/f enemy <faction>` | Declare a faction as enemy (leader only) | `factions.command.f` |\r\n| `/f unenemy <faction>` | Remove enemy status (leader only) | `factions.command.f` |\r\n| `/f strength` | View your faction's strength and claim requirements | `factions.command.f` |\r\n| `/f border` | Toggle claim border visibility (officer+) | `factions.command.f` |\r\n| `/f top` | Show the top 10 factions by strength | `factions.command.f` |\r\n| `/f allyaccept` | Accept a pending ally request (leader only) | `factions.command.f` |\r\n| `/f allydecline` | Decline a pending ally request (leader only) | `factions.command.f` |\r\n\r\n---\r\n\r\n## Permissions\r\n\r\n| Permission | Description | Default |\r\n|------------|-------------|---------|\r\n| `factions.command.f` | Allows all `/f` commands | `true` |\r\n| `factions.admin` | Bypass claim protection (build/break anywhere) | `op` |\r\n\r\n---\r\n\r\n## Configuration\r\n\r\n### `factions.yml`\r\n\r\nStores all faction data. It is auto‑generated and maintained by the plugin.\r\n\r\n```yaml\r\nMyFaction:\r\n  leader: \"uuid-of-leader\"\r\n  strength: 100\r\n  members:\r\n    \"uuid1\": \"LEADER\"\r\n    \"uuid2\": \"MEMBER\"\r\n  invites:\r\n    - \"uuid-invited\"\r\n  claims:\r\n    - \"world;0;0\"\r\n    - \"world;0;1\"\r\n  allies:\r\n    - \"otherfaction\"\r\n  enemies:\r\n    - \"enemyfaction\"\r\n  home:\r\n    level: \"world\"\r\n    x: 0.0\r\n    y: 70.0\r\n    z: 0.0\r\n```\r\n\r\n- **strength** – starts at 100; each claim costs 100.\r\n- **members** – map of UUID → Role (`LEADER`, `OFFICER`, `MEMBER`)\r\n- **claims** – list of serialised chunks (`levelName;chunkX;chunkZ`)\r\n- **allies** / **enemies** – list of faction names (lowercase)\r\n- **home** – optional; set with `/f sethome`\r\n\r\n### `config.yml`\r\n\r\nCurrently only contains a placeholder; future versions may add options.\r\n\r\n---\r\n\r\n## Placeholders (Ranks Integration)\r\n\r\nIf the **Ranks plugin** is installed, the following placeholders become available in rank display strings (e.g., in `ranks.yml`):\r\n\r\n- `{faction}` – the player's faction name\r\n- `{faction_role}` – the player's role: `MEMBER`, `OFFICER`, or `LEADER`\r\n- `{faction_stars}` – the role symbol: `*`, `**`, or `***`\r\n\r\nExample rank display:\r\n```yaml\r\ndisplay: \"&7[{faction}{faction_stars}] &r\"\r\n```\r\nShows as `[MyFaction***] PlayerName` for the leader of `MyFaction`.\r\n\r\n**No action is required** – the integration is automatic. If Ranks is not installed, placeholders are simply ignored.\r\n\r\n---\r\n\r\n## Developer API\r\n\r\nOther plugins can access faction data via the `FactionAPI` class.\r\n\r\n**Package:** `org.powernukkitx.factionsplugin.api.FactionAPI`\r\n\r\n### Methods\r\n\r\n| Method | Description |\r\n|--------|-------------|\r\n| `Faction getPlayerFaction(Player)` | Returns the player's `Faction` object, or `null` |\r\n| `String getPlayerFactionName(Player)` | Returns the faction name, or `null` |\r\n| `Role getPlayerRole(Player)` | Returns the player's `Role`, or `null` |\r\n| `List<UUID> getFactionMembers(Faction)` | Returns a copy of the member UUIDs |\r\n| `Set<ClaimedChunk> getFactionClaims(Faction)` | Returns a copy of the claimed chunks |\r\n| `int getFactionStrength(Faction)` | Returns the faction's strength |\r\n| `boolean areSameFaction(Player, Player)` | Checks if two players are in the same faction |\r\n| `boolean areAllied(Player, Player)` | Checks if two players' factions are allied |\r\n| `Faction getFaction(String)` | Gets a faction by name (case‑insensitive) |\r\n| `Map<String, Faction> getAllFactions()` | Returns an unmodifiable map of all factions |\r\n\r\n### Usage Example\r\n\r\n```java\r\nimport org.powernukkitx.Player;\r\nimport org.powernukkitx.factionsplugin.api.FactionAPI;\r\nimport org.powernukkitx.factionsplugin.model.Faction;\r\nimport org.powernukkitx.factionsplugin.model.Role;\r\n\r\npublic class MyPluginListener implements Listener {\r\n    @EventHandler\r\n    public void onPlayerJoin(PlayerJoinEvent event) {\r\n        Player player = event.getPlayer();\r\n        Faction faction = FactionAPI.getPlayerFaction(player);\r\n        if (faction != null) {\r\n            Role role = FactionAPI.getPlayerRole(player);\r\n            player.sendMessage(\"Welcome to \" + faction.getName() + \"! You are a \" + role.name());\r\n        }\r\n    }\r\n}\r\n```\r\n\r\n> **Note:** To use the API, add the Factions plugin as a `provided` dependency in your plugin's `pom.xml`.\r\n\r\n---\r\n\r\n## Support\r\n\r\nFor issues or suggestions, please open an issue on the project repository.\r\n\r\n---",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/88402556?v=4",
+  "id": "RinierMC/Factions",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Factions",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/RinierMC/Factions",
+  "stars": 0,
+  "summary": "A simple faction plugin - create, join, invite, claim and manage factions with economy and bounty system.",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1783973909,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FactionsPlugin-1.0.0.jar",
+          "primary": true,
+          "size": 46791,
+          "url": "https://github.com/RinierMC/Factions/releases/download/New/FactionsPlugin-1.0.0.jar"
+        }
+      ],
+      "name": "Factions v1",
+      "prerelease": false,
+      "published_at": 1783973909,
+      "version": "New"
+    }
+  ]
+}
