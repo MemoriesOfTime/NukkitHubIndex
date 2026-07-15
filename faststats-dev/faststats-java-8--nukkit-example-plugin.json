@@ -28,14 +28,14 @@
     }
   ],
   "categories": [],
-  "created_at": 1736011945,
+  "created_at": 1784137866,
   "dependencies": [],
   "description": "# FastStats Java\n\nDocumentation: https://docs.faststats.dev/java\n\n## Building\n\nRun Gradle from the repository root. The library modules use the standard Java lifecycle, while deployable example\nplugins and mods use the packaging task expected by their platform.\n\n### Libraries\n\nUse `build` for the reusable FastStats libraries:\n\n```sh\n./gradlew :core:build\n./gradlew :config:build\n./gradlew :bukkit:build\n./gradlew :bungeecord:build\n./gradlew :hytale:build\n./gradlew :minestom:build\n./gradlew :nukkit:build\n./gradlew :sponge:build\n./gradlew :velocity:build\n```\n\nLibrary jars are written to each module's `build/libs` directory. Fabric and NeoForge compatibility artifacts are\npublished under stable Maven artifact IDs with Minecraft range suffixes:\n\n```text\ndev.faststats.metrics:fabric:<sdk-version>+mc26.1-26.2\ndev.faststats.metrics:neoforge:<sdk-version>+mc26.1-26.2\n```\n\nUse `checkPlatformCompat` to compile all Fabric and NeoForge compatibility modules.\n\n### Bukkit, BungeeCord, Hytale, Minestom, Nukkit, Sponge, and Velocity examples\n\nThese examples use Shadow so FastStats is bundled into the deployable plugin or server jar. Build the `shadowJar` task\ndirectly when you want the artifact to install or run:\n\n```sh\n./gradlew :bukkit:example-plugin:shadowJar\n./gradlew :bungeecord:example-plugin:shadowJar\n./gradlew :hytale:example-plugin:shadowJar\n./gradlew :minestom:example-server:shadowJar\n./gradlew :nukkit:example-plugin:shadowJar\n./gradlew :sponge:example-plugin:shadowJar\n./gradlew :velocity:example-plugin:shadowJar\n```\n\nUse the `*-all.jar` file from the example module's `build/libs` directory.\n\n### Fabric example mod\n\nFabric mods should be packaged by Fabric Loom, not Shadow. Build the mod jar with:\n\n```sh\n./gradlew :fabric:example-mod:jar\n```\n\nUse `fabric/example-mod/build/libs/example-mod-<version>.jar`. Do not use a Shadow `*-all.jar` for Fabric; it can bundle\nMinecraft and loader internals into the mod.\n\n### Building everything\n\nTo compile and test all modules with the standard lifecycle, run:\n\n```sh\n./gradlew build\n```\n\nFor deployable example artifacts, run the platform-specific commands above after `build` or instead of it.\n\n### Platform compatibility checks\n\nCompile all published platform compatibility modules with:\n\n```sh\n./gradlew checkPlatformCompat\n```\n",
   "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/193728693?v=4",
-  "id": "faststats-dev/faststats-java--nukkit-example-plugin",
+  "id": "faststats-dev/faststats-java-8--nukkit-example-plugin",
   "license": {
     "id": "MIT",
     "name": "MIT License",
@@ -46,9 +46,9 @@
   "name": "ExamplePlugin",
   "primary_target": "nkx",
   "server_version": "",
-  "source": "https://github.com/faststats-dev/faststats-java",
-  "stars": 9,
-  "summary": "Prebuilt SDKs for publishing metrics to faststats.dev",
+  "source": "https://github.com/faststats-dev/faststats-java-8",
+  "stars": 0,
+  "summary": "Prebuilt Java 8 SDKs for publishing metrics to faststats.dev",
   "targets": [
     "nkx",
     "nkmot"
