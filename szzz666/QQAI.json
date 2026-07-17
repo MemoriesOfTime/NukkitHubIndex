@@ -1,0 +1,54 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/60167194?v=4",
+      "name": "szzz666",
+      "url": "https://github.com/szzz666"
+    }
+  ],
+  "categories": [],
+  "created_at": 1777202313,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "StarrySkyLink",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "required",
+      "plugin_id": "AiChatNukkit",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "required",
+      "plugin_id": "QQEssential",
+      "version_range": ""
+    }
+  ],
+  "description": "﻿# QQAI\n\n基于 Nukkit 的 QQ AI 聊天插件，通过 [StarrySkyLink](https://github.com/szzz666-mc/StarrySkyLink) 和 [AiChatNukkit](https://github.com/szzz666-mc/AiChatNukkit) 实现 QQ 机器人 AI 对话功能。\n\n## 功能\n\n- **私聊 AI 对话** — 用户私聊机器人即可进行 AI 对话\n- **群聊 AI 对话** — 群内 @机器人 或消息匹配关键词触发 AI 回复\n- **重置对话** — 发送匹配 `reset_chat_matchs` 的消息可重置对话上下文\n- **私聊过滤** — 支持配置正则表达式列表，匹配到的私聊消息不回复\n- **配置热重载** — 支持游戏内命令重新加载配置，无需重启服务器\n\n## 依赖\n\n- [Nukkit](https://github.com/CloudburstMC/Nukkit) (MOT-SNAPSHOT)\n- [StarrySkyLink](https://github.com/szzz666-mc/StarrySkyLink) — QQ 机器人框架\n- [AiChatNukkit](https://github.com/szzz666-mc/AiChatNukkit) — AI 聊天核心\n\n## 安装\n\n1. 编译项目生成 jar 包\n2. 将 jar 放入 Nukkit 的 `plugins/` 目录\n3. 确保 `StarrySkyLink` 和 `AiChatNukkit` 插件已安装\n4. 启动服务器，插件会自动生成配置文件\n\n## 配置\n\n配置文件位于 `plugins/QQAI/config.yml`：\n\n```yaml\n# 命令\ncommand: qqai\n\n# 私聊不回复正则表达式列表，匹配到则不回复\nprivate_ignore_matchs:\n  - 赞我\n```\n\n> 更多配置项（如 `reset_chat_matchs`、`matchs`、`reset_msg` 等）来自 AiChatNukkit 插件，请参考其配置文件。\n\n## 命令\n\n| 命令 | 说明 | 权限 |\n|------|------|------|\n| `/qqai reload` | 重新加载配置文件 | OP / 控制台 |\n\n## 反馈\n\n如有 Bug 或建议，请加入 QQ 群：**894279534**\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/60167194?v=4",
+  "id": "szzz666/QQAI",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "QQAI",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/szzz666/QQAI",
+  "stars": 0,
+  "summary": "QQAI plugin",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1784282840,
+  "versions": []
+}
