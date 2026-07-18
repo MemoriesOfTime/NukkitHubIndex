@@ -1,0 +1,37 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/50714128?v=4",
+      "name": "xRookieFight",
+      "url": "https://github.com/xRookieFight"
+    }
+  ],
+  "categories": [],
+  "created_at": 1784378136,
+  "dependencies": [],
+  "description": "# PNX-Terra\n\nTerra world generator plugin for PowerNukkitX.\n\n## Usage\n\n- Build: `./gradlew build` (jar at `build/libs/PNX-Terra-1.0.0.jar`)\n- Drop the jar into the server's `plugins` folder\n- Use `terra` as the generator name when creating a level\n- Terra config is extracted to `./terra/config.yml` on first start\n\n## Notes\n\n- Requires PowerNukkitX with the plugin generator registry (Registries.GENERATOR)\n- Loads at STARTUP so the generator is available before worlds load\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/154862792?v=4",
+  "id": "PowerNukkitX-Bundle/PNX-Terra",
+  "license": {
+    "id": "LGPL-3.0",
+    "name": "GNU Lesser General Public License v3.0",
+    "url": "https://spdx.org/licenses/LGPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "PNX-Terra",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/PowerNukkitX-Bundle/PNX-Terra",
+  "stars": 0,
+  "summary": "Terra world generator for PowerNukkitX",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1784378408,
+  "versions": []
+}

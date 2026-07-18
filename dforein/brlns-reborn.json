@@ -29,12 +29,12 @@
   "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/dforein/brlns-reborn",
-  "stars": 3,
+  "stars": 2,
   "summary": "BrokenLens Reborn plugin",
   "targets": [
     "pnx"
   ],
-  "updated_at": 1784300184,
+  "updated_at": 1784398812,
   "versions": [
     {
       "changelog": "**Full Changelog**: https://github.com/dforein/brlns-reborn/compare/1.2.0...1.2.1",
