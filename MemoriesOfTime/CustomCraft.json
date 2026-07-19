@@ -35,7 +35,7 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/MemoriesOfTime/CustomCraft",
-  "stars": 1,
+  "stars": 2,
   "summary": "A custom crafting and furnace recipe plugin for Nukkit-MOT",
   "targets": [
     "nkx",
