@@ -1,0 +1,88 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "name": "dependabot[bot]",
+      "url": "https://github.com/apps/dependabot"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/50714128?v=4",
+      "name": "xRookieFight",
+      "url": "https://github.com/xRookieFight"
+    }
+  ],
+  "categories": [],
+  "created_at": 1784476903,
+  "dependencies": [],
+  "description": "<p align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/xRookieFight/Reactor/master/.github/img.png\" width=\"150\" alt=\"Reactor Logo\">\n</p>\n\n<h1 align=\"center\">Reactor</h1>\n\n<p align=\"center\">\n  <strong>Minecraft: Java Edition cross-play plugin for PowerNukkitX</strong>\n</p>\n\n<p align=\"center\">\n  <img src=\"https://img.shields.io/badge/api-3.0.0-blue.svg?cacheSeconds=2592000\" alt=\"Version\">\n  <img src=\"https://img.shields.io/badge/action-all%20builds-FF9B21\" alt=\"Action\">\n  <img src=\"https://img.shields.io/badge/documentation-yes-brightgreen.svg\" alt=\"Documentation\">\n  <img src=\"https://codecov.io/github/xRookieFight/Reactor/graph/badge.svg?token=BGOJYXIA8S\" alt=\"Codecov\">\n  <img src=\"https://img.shields.io/badge/License-LGPL--3-yellow.svg\" alt=\"License\">\n</p>\n\n---\n\n## Purpose\n\nReactor is a PowerNukkitX plugin that enables Minecraft: Bedrock Edition servers to allow Java Edition players. It aims to provide seamless cross-play support while integrating naturally with the PowerNukkitX ecosystem.\n\n## Features\n\n- Java Edition cross-play support\n- Native PowerNukkitX integration\n- Easy configuration\n- Lightweight and performant\n- Open source and community-driven\n\n## Installation\n\n1. Download the latest Reactor release.\n2. Place the plugin JAR into your server's `plugins/` directory.\n3. Ensure PowerNukkitX is properly installed and configured.\n4. Start or restart your server.\n5. Configure Reactor using the generated configuration files if needed.\n\n## Requirements\n\n- Java 21 or newer\n- PowerNukkitX API 3.x\n\n## Contributing\n\nContributions are always welcome.\n\nIf you'd like to contribute:\n\n1. Fork the repository.\n2. Create a feature branch.\n3. Make your changes.\n4. Submit a Pull Request.\n\nPlease follow the project's coding style and keep pull requests focused on a single change whenever possible.\n\n## Credits\n\nReactor is built on top of the amazing Via* ecosystem and related projects:\n\n- [ViaVersion](https://github.com/ViaVersion/ViaVersion) - core protocol translation between Java Edition versions\n- [ViaBackwards](https://github.com/ViaVersion/ViaBackwards) - support for older Java Edition clients\n- [ViaRewind](https://github.com/ViaVersion/ViaRewind) - legacy 1.8.x and 1.7.x client support\n- [ViaLegacy](https://github.com/ViaVersion/ViaLegacy) - ancient client support down to the earliest versions\n- [ViaBedrock](https://github.com/RaphiMC/ViaBedrock) - the heart of the Java to Bedrock protocol translation\n- [ViaProxy](https://github.com/ViaVersion/ViaProxy) - the proxy architecture this plugin is based on\n- [NetMinecraft](https://github.com/RaphiMC/NetMinecraft) - low level Minecraft network protocol implementation\n- [ViAllay](https://github.com/AllayMC/ViAllay) - the AllayMC implementation that inspired this project\n\nHuge thanks to the maintainers of these projects for making cross-play possible.\n\n## License\n\nThis project is licensed under the **GNU Lesser General Public License v3.0 (LGPL-3.0)**.\n\nSee the [LICENSE](https://github.com/xRookieFight/Reactor/blob/master/LICENSE) file for more information.\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-07-20",
+      "description": "",
+      "title": "Reactor Logo",
+      "url": "https://raw.githubusercontent.com/xRookieFight/Reactor/master/.github/img.png"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/50714128?v=4",
+  "id": "xRookieFight/Reactor",
+  "license": {
+    "id": "LGPL-3.0",
+    "name": "GNU Lesser General Public License v3.0",
+    "url": "https://spdx.org/licenses/LGPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "plugin/src/main/resources/plugin.yml",
+  "name": "Reactor",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/xRookieFight/Reactor",
+  "stars": 2,
+  "summary": "Minecraft: Java Edition cross-play plugin for PowerNukkitX",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1784559307,
+  "versions": [
+    {
+      "changelog": "## What's Changed\r\n* build: bump org.projectlombok:lombok from 1.18.42 to 1.18.46 by @dependabot[bot] in https://github.com/xRookieFight/Reactor/pull/11\r\n* build: bump org.junit:junit-bom from 6.0.0 to 6.1.2 by @dependabot[bot] in https://github.com/xRookieFight/Reactor/pull/10\r\n* build: bump com.gradleup.shadow from 9.0.0 to 9.6.0 by @dependabot[bot] in https://github.com/xRookieFight/Reactor/pull/5\r\n* ci: bump gradle/actions from 4 to 6 by @dependabot[bot] in https://github.com/xRookieFight/Reactor/pull/3\r\n* build: bump org.jetbrains:annotations from 26.0.2 to 26.1.0 by @dependabot[bot] in https://github.com/xRookieFight/Reactor/pull/9\r\n* build: bump gradle-wrapper from 9.3.0 to 9.6.1 by @dependabot[bot] in https://github.com/xRookieFight/Reactor/pull/8\r\n* ci: bump actions/upload-artifact from 4 to 7 by @dependabot[bot] in https://github.com/xRookieFight/Reactor/pull/7\r\n* ci: bump codecov/codecov-action from 5 to 7 by @dependabot[bot] in https://github.com/xRookieFight/Reactor/pull/6\r\n* ci: bump actions/setup-java from 4 to 5 by @dependabot[bot] in https://github.com/xRookieFight/Reactor/pull/4\r\n* ci: bump actions/checkout from 4 to 7 by @dependabot[bot] in https://github.com/xRookieFight/Reactor/pull/1\r\n\r\n## New Contributors\r\n* @dependabot[bot] made their first contribution in https://github.com/xRookieFight/Reactor/pull/11\r\n\r\n**Full Changelog**: https://github.com/xRookieFight/Reactor/commits/v0.0.1",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Reactor-1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 19470625,
+          "url": "https://github.com/xRookieFight/Reactor/releases/download/v0.0.1/Reactor-1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "v0.0.1",
+      "prerelease": false,
+      "published_at": 1784559307,
+      "version": "v0.0.1"
+    },
+    {
+      "changelog": "Automated nightly build from dd2fb0f9ea5ce387f34cefcd1134eea833e283d4.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "plugin-1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 76405,
+          "url": "https://github.com/xRookieFight/Reactor/releases/download/nightly/plugin-1.0-SNAPSHOT.jar"
+        },
+        {
+          "filename": "Reactor-1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 19470625,
+          "url": "https://github.com/xRookieFight/Reactor/releases/download/nightly/Reactor-1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "Nightly (2026-07-20)",
+      "prerelease": true,
+      "published_at": 1784559280,
+      "version": "nightly"
+    }
+  ]
+}

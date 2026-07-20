@@ -52,6 +52,11 @@
       "url": "https://github.com/electron93"
     },
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/74198269?v=4",
+      "name": "DiesesFloo",
+      "url": "https://github.com/DiesesFloo"
+    },
+    {
       "avatar_url": "https://avatars.githubusercontent.com/u/6516698?v=4",
       "name": "schneidermr",
       "url": "https://github.com/schneidermr"
@@ -182,11 +187,6 @@
       "url": "https://github.com/mja00"
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/12481684?v=4",
-      "name": "EduardWayland",
-      "url": "https://github.com/EduardWayland"
-    },
-    {
       "avatar_url": "https://avatars.githubusercontent.com/u/11415969?v=4",
       "name": "Biquaternions",
       "url": "https://github.com/Biquaternions"
@@ -272,6 +272,11 @@
       "url": "https://github.com/underscore11code"
     },
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/3490861?v=4",
+      "name": "mikroskeem",
+      "url": "https://github.com/mikroskeem"
+    },
+    {
       "avatar_url": "https://avatars.githubusercontent.com/u/46966988?v=4",
       "name": "Dominik48N",
       "url": "https://github.com/Dominik48N"
@@ -352,11 +357,6 @@
       "url": "https://github.com/3TUSK"
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/3490861?v=4",
-      "name": "mikroskeem",
-      "url": "https://github.com/mikroskeem"
-    },
-    {
       "avatar_url": "https://avatars.githubusercontent.com/u/54859825?v=4",
       "name": "Kamillaova",
       "url": "https://github.com/Kamillaova"
@@ -427,14 +427,14 @@
       "url": "https://github.com/FixedDev"
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/74198269?v=4",
-      "name": "DiesesFloo",
-      "url": "https://github.com/DiesesFloo"
-    },
-    {
       "avatar_url": "https://avatars.githubusercontent.com/u/53803019?v=4",
       "name": "rymiel",
       "url": "https://github.com/rymiel"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/12481684?v=4",
+      "name": "EduardWayland",
+      "url": "https://github.com/EduardWayland"
     }
   ],
   "categories": [],
@@ -467,6 +467,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1784288391,
+  "updated_at": 1784542363,
   "versions": []
 }

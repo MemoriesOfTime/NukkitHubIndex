@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.13",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/60167194?v=4",
+      "name": "szzz666",
+      "url": "https://github.com/szzz666"
+    }
+  ],
+  "categories": [],
+  "created_at": 1747414981,
+  "dependencies": [],
+  "description": "# Gun\nGun plugin for Nukkit-MOT!\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/269338922?v=4",
+  "id": "StarrySkyServer/Gun-MOT",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Gun",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/StarrySkyServer/Gun-MOT",
+  "stars": 0,
+  "summary": "",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1784534375,
+  "versions": []
+}
