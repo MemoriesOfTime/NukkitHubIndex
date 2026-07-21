@@ -34,8 +34,24 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1784459675,
+  "updated_at": 1784578675,
   "versions": [
+    {
+      "changelog": "Automated release for v1.0.4",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SimpleWorldEdit.jar",
+          "primary": true,
+          "size": 52472,
+          "url": "https://github.com/PowerNukkitX-Bundle/SimpleWorldEdit/releases/download/v1.0.4/SimpleWorldEdit.jar"
+        }
+      ],
+      "name": "v1.0.4",
+      "prerelease": false,
+      "published_at": 1784578675,
+      "version": "v1.0.4"
+    },
     {
       "changelog": "Automated release for v1.0.3",
       "downloads": 0,

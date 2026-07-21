@@ -10,6 +10,11 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
       "name": "Buddelbubi",
       "url": "https://github.com/Buddelbubi"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/56545793?v=4",
+      "name": "TraxTRL",
+      "url": "https://github.com/TraxTRL"
     }
   ],
   "categories": [],
@@ -37,8 +42,24 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1784368334,
+  "updated_at": 1784599708,
   "versions": [
+    {
+      "changelog": "Support for PowerNukkitX nightly-SNAPSHOT ([git-b1e328d](https://github.com/PowerNukkitX/PowerNukkitX/tree/b1e328d56bdd53c0742cabfc2c9bbecd59d5ae76)) implementing API version 3.0.0 for Minecraft: BE 1.26.30 (protocol version 1001)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Astra-0.0.3-DEV.jar",
+          "primary": true,
+          "size": 44921,
+          "url": "https://github.com/PowerNukkitX-Bundle/Astra/releases/download/0.0.3-DEV/Astra-0.0.3-DEV.jar"
+        }
+      ],
+      "name": "0.0.3-DEV",
+      "prerelease": false,
+      "published_at": 1784599708,
+      "version": "0.0.3-DEV"
+    },
     {
       "changelog": "",
       "downloads": 0,

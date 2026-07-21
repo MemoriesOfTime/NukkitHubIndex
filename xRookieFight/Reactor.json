@@ -39,7 +39,7 @@
   "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/xRookieFight/Reactor",
-  "stars": 2,
+  "stars": 5,
   "summary": "Minecraft: Java Edition cross-play plugin for PowerNukkitX",
   "targets": [
     "pnx"

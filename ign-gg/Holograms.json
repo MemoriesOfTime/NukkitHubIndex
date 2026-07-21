@@ -1,0 +1,49 @@
+{
+  "api_version": "9.9.9",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/10363500?v=4",
+      "name": "Creeperface01",
+      "url": "https://github.com/Creeperface01"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/26197131?v=4",
+      "name": "PetteriM1",
+      "url": "https://github.com/PetteriM1"
+    }
+  ],
+  "categories": [],
+  "created_at": 1642868992,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "PlaceholderAPI",
+      "version_range": ""
+    }
+  ],
+  "description": "# Holograms\nHologram plugin for nukkit\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/47262780?v=4",
+  "id": "ign-gg/Holograms",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Holograms",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/ign-gg/Holograms",
+  "stars": 0,
+  "summary": "Holograms plugin",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1784646313,
+  "versions": []
+}
