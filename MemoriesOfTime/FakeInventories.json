@@ -44,7 +44,7 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/MemoriesOfTime/FakeInventories",
-  "stars": 0,
+  "stars": 1,
   "summary": "Create fake inventories",
   "targets": [
     "nkx",

@@ -91,7 +91,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1784284265,
+  "updated_at": 1784705854,
   "versions": [
     {
       "changelog": "合并MOT分支的收购以及自定义物品\r\n兼容CustomItemAPI插件\r\n优化管理员页面设置",

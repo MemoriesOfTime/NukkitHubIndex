@@ -63,8 +63,24 @@
     "nkmot",
     "pnx"
   ],
-  "updated_at": 1784595487,
+  "updated_at": 1784666822,
   "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "RsNPC-2.4.5.jar",
+          "primary": true,
+          "size": 164436,
+          "url": "https://github.com/Lifeblock-Network/RsNPC/releases/download/v2.4.5-dev2/RsNPC-2.4.5.jar"
+        }
+      ],
+      "name": "",
+      "prerelease": false,
+      "published_at": 1784666822,
+      "version": "v2.4.5-dev2"
+    },
     {
       "changelog": "",
       "downloads": 0,

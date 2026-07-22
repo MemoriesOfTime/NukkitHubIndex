@@ -1,0 +1,54 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/88402556?v=4",
+      "name": "RinierMC",
+      "url": "https://github.com/RinierMC"
+    }
+  ],
+  "categories": [],
+  "created_at": 1784738794,
+  "dependencies": [],
+  "description": "# PerWorldChat\n\nPowerNukkitX plugin that restricts chat to per‑world groups, with global messaging and spy mode. while fully respecting other chat formatters.\n\n---\n\n## Features\n\n- **World‑based chat groups** – worlds in the same group share a chat channel, worlds that are not listed is isolated.\n- **Global chat** – players with the `perworldchat.globalchat` permission can send a message to all worlds by typing a configurable prefix (e.g., `!Hello`).\n- **Chat spy** – players with the proper permission can toggle spy mode to see all chat from every world, tagged with the source world.\n- **Bypass permission** – allows a player to *receive* chat from all groups without enabling spy (does **not** allow sending across groups).\n- **Console sees all** – optionally let the console receive every chat message.\n- **Respects other plugins** – for normal (non‑spy) messages, the plugin delivers the chat **exactly** as formatted by the server or other chat‑formatting plugins. It **never** adds world tags, colours, or prefixes to regular chat.\n- **Spy‑only formatting** – spy messages are wrapped with a custom format that includes the source world.\n\n---\n\n## Installation\n\n1. Download the latest `.jar` from the releases page.\n2. Place it in your server’s `plugins/` folder.\n3. Restart your server (or use `/pwc reload` after first start).\n4. Configure `config.yml` to match your world groups.\n\n---\n\n## Configuration\n\nThe plugin generates a `config.yml` in the plugin folder on first run.\n\n```yaml\n# Should the console receive all world chat regardless of group?\nconsole-sees-all: true\n\n# Global chat settings – triggers sending to all worlds, but no extra formatting is added.\nglobal-chat:\n  enabled: true\n  prefix: \"!\"                     # The character(s) that trigger a global message\n\n# Format used for spy messages. Placeholders: {world}, {message}\nspy-format: \"&8[{world}]&r {message}\"\n\n# Chat groups: worlds listed under the same group name share chat.\n# Worlds NOT listed fall into their own solo group (world name = group name).\nchat-groups:\n  survival:\n    - world\n    - world_nether\n    - world_the_end\n  creative:\n    - creative\n    - creative_nether\n```\n\n### Options\n\n| Key | Description |\n|-----|-------------|\n| `console-sees-all` | If `true`, console receives every chat message regardless of group. |\n| `global-chat.enabled` | Enable/disable the global chat feature. |\n| `global-chat.prefix` | The prefix that marks a message as global (e.g., `!`). The prefix is stripped from the message before delivery. |\n| `spy-format` | Format for spy messages. Use `{world}` for the source world and `{message}` for the translated chat line. Supports colour codes (`&`). |\n| `chat-groups` | Map of group names to lists of world folder names. Worlds in the same group share chat. |\n\n---\n\n## Commands\n\n- **`/perworldchat`** or **`/pwc`** – Main command.\n    - **`/pwc reload`** – Reload the configuration (requires `perworldchat.command.reload`).\n    - **`/pwc spy`** – Toggle chat spy mode for yourself (requires `perworldchat.command.spy`).\n    - **`/pwc info`** – Show your current world and chat group, and spy status.\n\n---\n\n## Permissions\n\n| Permission | Description | Default |\n|------------|-------------|---------|\n| `perworldchat.command.perworldchat` | Allows use of `/perworldchat` command | op |\n| `perworldchat.command.reload` | Allows reloading the config | op |\n| `perworldchat.command.spy` | Allows toggling spy mode | op |\n| `perworldchat.spy` | Required to actually see spy messages | op |\n| `perworldchat.globalchat` | Allows sending global messages (using the global prefix) | op |\n| `perworldchat.bypass` | Allows **receiving** chat from all world groups (does **not** affect sending) | op |\n\n---\n\n## Example Use Cases\n\n- **Vanilla‑style separation** – Put `world`, `world_nether`, `world_the_end` in one group so players in all dimensions chat together.\n- **Minigame lobbies** – Isolate each minigame world so players don’t see cross‑game chat.\n- **Global announcements** – Use `!` to broadcast important messages to all players.\n- **Staff monitoring** – Give staff the `perworldchat.spy` permission so they can watch all chat without revealing their presence.\n\n---\n\n## Building from Source\n\n1. Clone the repository.\n2. Ensure you have PowerNukkitX API dependencies available (or use Maven/Gradle with the appropriate repository).\n3. Build with your preferred build tool.\n4. The resulting `.jar` will be in the `target/` folder.\n\n---\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/88402556?v=4",
+  "id": "RinierMC/PerWorldChat",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "PerWorldChat",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/RinierMC/PerWorldChat",
+  "stars": 0,
+  "summary": "Restricts chat to per-world groups with global chat and spy mode support.",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1784738918,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "PerWorldChat-1.0.0.jar",
+          "primary": true,
+          "size": 12630,
+          "url": "https://github.com/RinierMC/PerWorldChat/releases/download/v1/PerWorldChat-1.0.0.jar"
+        }
+      ],
+      "name": "PerWorldChat",
+      "prerelease": false,
+      "published_at": 1784738918,
+      "version": "v1"
+    }
+  ]
+}
