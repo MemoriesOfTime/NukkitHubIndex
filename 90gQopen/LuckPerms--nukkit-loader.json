@@ -12,14 +12,14 @@
       "url": "https://github.com/emilyy-dev"
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/40437205?v=4",
-      "name": "powercasgamer",
-      "url": "https://github.com/powercasgamer"
-    },
-    {
       "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
       "name": "github-actions[bot]",
       "url": "https://github.com/apps/github-actions"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/40437205?v=4",
+      "name": "powercasgamer",
+      "url": "https://github.com/powercasgamer"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/9086540?v=4",
@@ -474,8 +474,30 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1784343606,
+  "updated_at": 1784777141,
   "versions": [
+    {
+      "changelog": "Automated build of LuckPerms (Bukkit/Paper + Velocity)\n\n**Version:** 5.5-SNAPSHOT\n**Build Number:** 12\n**Commit:** b5049765d0cc78dc64d2eb1a855547cac5184de6\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "LuckPerms-Bukkit-5.5.42.jar",
+          "primary": true,
+          "size": 1494254,
+          "url": "https://github.com/90gQopen/LuckPerms/releases/download/v5.5-SNAPSHOT-build.12/LuckPerms-Bukkit-5.5.42.jar"
+        },
+        {
+          "filename": "LuckPerms-Velocity-5.5.42.jar",
+          "primary": true,
+          "size": 1508548,
+          "url": "https://github.com/90gQopen/LuckPerms/releases/download/v5.5-SNAPSHOT-build.12/LuckPerms-Velocity-5.5.42.jar"
+        }
+      ],
+      "name": "LuckPerms v5.5-SNAPSHOT Build 12",
+      "prerelease": true,
+      "published_at": 1784777141,
+      "version": "v5.5-SNAPSHOT-build.12"
+    },
     {
       "changelog": "Automated build of LuckPerms (Bukkit/Paper + Velocity)\n\n**Version:** 5.5-SNAPSHOT\n**Build Number:** 11\n**Commit:** 432579cdcdecd897733a4e31e1b0156cfa2f8ac1\n",
       "downloads": 0,
