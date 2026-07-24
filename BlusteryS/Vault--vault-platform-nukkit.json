@@ -1,0 +1,63 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/52814854?v=4",
+      "name": "BlusteryS",
+      "url": "https://github.com/BlusteryS"
+    }
+  ],
+  "categories": [],
+  "created_at": 1784834536,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "EconomyAPI",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "Coins",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "playerPoints",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "OrynthEconomy",
+      "version_range": ""
+    }
+  ],
+  "description": "# Vault\n\n[English](https://github.com/BlusteryS/Vault/blob/main/README.md) | [Русский](https://github.com/BlusteryS/Vault/blob/main/README_RU.md)\n\nVault is a standalone, multi-currency economy for Nukkit, Nukkit-MOT and Lumi. It stores balances itself and gives plugins one asynchronous API for money, points, donation currency and any currencies you add.\n\nIt can also replace an economy that is already in use. Vault imports its balances once, then emulates the old plugin name and API for plugins that still depend on it. EconomyAPI, Coins, playerPoints and OrynthEconomy profiles are included in the Vault jar.\n\n## What you can do\n\n- Run Vault as the only economy on a new server.\n- Keep `money` and `coins` as separate currencies in the same database.\n- Move balances from EconomyAPI, Coins, playerPoints or OrynthEconomy.\n- Remove the old economy jar after migration and enable its compatibility profile.\n- Enable several profiles together. For example, EconomyAPI can expose `money` while playerPoints exposes `coins`.\n- Add `/money`, `/coins`, `/pay`, `/baltop`, `/setcoins` and similar commands from configuration.\n- Use SQLite on one server or MySQL/PostgreSQL for shared balances.\n\nVault does not proxy live operations to installed economy plugins. After startup, every balance operation goes to Vault Ledger. Installed economies are only opened as migration sources when `/vault migrate` reads their data.\n\n## Installation\n\n1. Put `Vault.jar` in the `plugins` directory.\n2. Start the server once.\n3. Edit `plugins/Vault/ledger.yml` if you need different currencies or a network database.\n4. Restart the server after changing Ledger or database settings.\n\nThe default setup creates two currencies:\n\n- `money`, with two decimal places;\n- `coins`, with whole-number balances.\n\nSQLite is selected by default and needs no additional software.\n\n## Configuration\n\nVault keeps unrelated settings in separate files:\n\n| File | Purpose |\n| --- | --- |\n| `config.yml` | Configuration format version |\n| `ledger.yml` | Database, performance and currencies |\n| `commands.yml` | Optional commands and their messages |\n| `emulation.yml` | Compatibility profiles |\n\n### Add a currency\n\nAdd a section to `ledger.yml`:\n\n```yaml\ncurrencies:\n  gems:\n    enabled: true\n    display-name: \"Gems\"\n    symbol: \"♦\"\n    role: DONATION\n    scale: 0\n    initial-balance: \"0\"\n    maximum-balance: \"1000000\"\n```\n\n`scale` is the number of decimal places. Use `0` for whole points and `2` for conventional money. Restart the server after changing this file.\n\n### Use MySQL or PostgreSQL\n\nSelect the database and fill in the existing `network` section:\n\n```yaml\ndatabase:\n  type: postgresql\n  network:\n    url: \"jdbc:postgresql://127.0.0.1:5432/vault?sslmode=prefer&tcpKeepAlive=true\"\n    username: \"vault\"\n    password: \"replace-this\"\n    workers: 4\n```\n\nThe same section accepts a `jdbc:mysql:` URL when `type` is `mysql`. Vault uses a bounded worker pool and does not run JDBC work on the server thread.\n\n### Create commands without code\n\nEvery command in `commands.yml` chooses an operation and a Vault currency.\n\nExample balance command:\n\n```yaml\ncommands:\n  coins:\n    enabled: true\n    type: balance\n    currency: coins\n    aliases: [coin, mycoins]\n    description: \"Show a coins balance\"\n    usage: \"/coins [player]\"\n    permission: \"\"\n    other-player-permission: \"vault.command.coins.others\"\n    messages:\n      self: \"&eYour coins: &f{balance} {symbol}\"\n      other: \"&e{target}'s coins: &f{balance} {symbol}\"\n      no-permission: \"&cYou cannot view another player's balance.\"\n      player-not-found: \"&cPlayer {target} was not found.\"\n      failure: \"&cCannot read the balance: {status}\"\n```\n\nAvailable command types are `balance`, `set`, `add`, `take`, `pay` and `top`. The supplied file contains complete examples for a balance, payment, leaderboard and administration command.\n\n## Migration\n\nKeep the old economy installed during migration. Vault detects supported plugins and lists them in `/vault status` or `/vault migrate`.\n\nCommand format:\n\n```text\n/vault migrate <source> <source-currency> <target-currency>\n```\n\nExamples:\n\n```text\n/vault migrate economyapi default money\n/vault migrate playerpoints points coins\n/vault migrate oryntheconomy regular money\n/vault migrate oryntheconomy donate coins\n```\n\nThe first run shows a preview. Repeat the command with `confirm` to start:\n\n```text\n/vault migrate economyapi default money confirm\n```\n\nVault clears the target currency, reads the source in stable pages and writes every balance to Ledger. It never changes the source. Stop shops, rewards and other balance writers until the command finishes.\n\nAfter checking the imported balances:\n\n1. stop the server;\n2. remove the old economy jar;\n3. enable emulation if another plugin still declares the old economy as a dependency;\n4. start the server again.\n\nCustom economy plugins can provide a migration source through the [migration SPI](https://github.com/BlusteryS/Vault/blob/main/docs/API.md#migration-spi).\n\n## Emulation\n\nEmulation loads a small compatibility plugin directly from the Vault jar. It does not create another jar and does not keep a second balance store.\n\nExample: provide EconomyAPI and playerPoints at the same time:\n\n```yaml\nprofiles:\n  economy-api:\n    enabled: true\n    profile: classic-2.0\n    currencies:\n      default: money\n\n  player-points:\n    enabled: true\n    profile: current\n    currencies:\n      default: coins\n```\n\nExample: replace OrynthEconomy:\n\n```yaml\nprofiles:\n  orynth-economy:\n    enabled: true\n    profile: current\n    currencies:\n      regular: money\n      donate: coins\n```\n\nEconomyAPI has two profiles:\n\n- `classic-2.0` for the common single-currency API;\n- `mot-2.1` for the Nukkit-MOT multi-currency API.\n\nA real plugin and its emulated profile cannot be loaded together.\n\n## Plugin API\n\nAll modern operations are asynchronous and use `BigDecimal`.\n\n```java\nEconomyClient economy = Vault.client(this);\n\neconomy.withdraw(player, \"money\", new BigDecimal(\"25.00\"))\n    .thenAccept(result -> {\n        if (!result.success()) {\n            getLogger().warning(\"Payment failed: \" + result.status());\n            return;\n        }\n\n        BigDecimal balance = result.balanceAfter().orElseThrow();\n        Vault.mainThreadExecutor().execute(() ->\n            player.sendMessage(\"Balance: \" + balance)\n        );\n    })\n    .exceptionally(error -> {\n        getLogger().error(\"Cannot access Vault Ledger\", error);\n        return null;\n    });\n```\n\nThe API supports online players, offline accounts by UUID, system accounts, transfers, leaderboards, full currency resets, currency creation and idempotent mutations. See the complete [API documentation](https://github.com/BlusteryS/Vault/blob/main/docs/API.md).\n\n## Commands\n\n| Command | Purpose |\n| --- | --- |\n| `/vault status` | Database, currencies, emulation and migration sources |\n| `/vault reload` | Reload `commands.yml` and `emulation.yml` |\n| `/vault reset <currency> [confirm]` | Wipe one currency |\n| `/vault migrate ...` | List sources or import balances |\n\nLedger and database changes require a server restart.\n\n## Building\n\n```bash\n./gradlew clean build\n```\n\nThe server plugin is written to `vault-plugin/build/libs/Vault-<version>.jar`.\n\n## License\n\nVault is distributed under the PolyForm Noncommercial License 1.0.0. Commercial sale is not permitted. Redistributed copies and modified versions must retain the license and the required notice linking to this repository.\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/52814854?v=4",
+  "id": "BlusteryS/Vault--vault-platform-nukkit",
+  "license": {
+    "id": "NOASSERTION",
+    "name": "Other",
+    "url": "https://github.com/BlusteryS/Vault/blob/main/LICENSE"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/BlusteryS/Vault",
+    "wiki": ""
+  },
+  "manifest_path": "vault-platform-nukkit/src/main/resources/plugin.yml",
+  "name": "Vault",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/BlusteryS/Vault",
+  "stars": 0,
+  "summary": "Unified and standalone multi-currency economy for Nukkit, Nukkit-MOT and Lumi.",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1784891032,
+  "versions": []
+}

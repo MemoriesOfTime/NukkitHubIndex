@@ -38,22 +38,5 @@
     "pnx"
   ],
   "updated_at": 1736634425,
-  "versions": [
-    {
-      "changelog": "",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "EconomyAPI-1.0.0-SNAPSHOT.jar",
-          "primary": true,
-          "size": 4196189,
-          "url": "https://github.com/ayd1ndemirci/EconomyAPI/releases/download/plugin/EconomyAPI-1.0.0-SNAPSHOT.jar"
-        }
-      ],
-      "name": "EconomyAPI v01@mini",
-      "prerelease": false,
-      "published_at": 1736081059,
-      "version": "plugin"
-    }
-  ]
+  "versions": []
 }

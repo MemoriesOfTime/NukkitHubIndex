@@ -65,7 +65,7 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/lt-name/MurderMystery_Nukkit",
-  "stars": 15,
+  "stars": 16,
   "summary": "MurderMystery game for Nukkit",
   "targets": [
     "nkx",

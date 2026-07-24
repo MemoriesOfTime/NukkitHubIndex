@@ -1,0 +1,48 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/202395408?v=4",
+      "name": "MiyozMC",
+      "url": "https://github.com/MiyozMC"
+    }
+  ],
+  "categories": [],
+  "created_at": 1771908069,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "Tips",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "RsNPC",
+      "version_range": ""
+    }
+  ],
+  "description": "# ClusterCore\n\n一个基于Redis的WaterdogPE群组服核心插件，使用AI辅助完成，支持跨服传送和服务器管理功能。\n\n得益于Redis，ClusterCore能够支撑起大型群组服务器，一服一端或者一服多端都不在话下！\n目前只支持Nukkit-MOT，其他平台请自行实现。\n\nPs: 如果是一服一端的设计，那么你需要使用setServerOpen(true)来控制服务器的开关状态，保证房间只在等待状态时允许加入。\n\n## 🌟 项目简介\n\nClusterCore最初是专为ElysianArena服务器群组设计的核心工具，提供以下主要功能：\n\n- 🔗 **跨服传送** - 玩家可以在不同服务器间自由传送\n- 🔄 **服务器发现** - 自动发现和管理群组中的服务器\n- 💾 **数据同步** - 通过Redis实现实时数据共享\n- 🎮 **命令系统** - 简单易用的玩家命令\n\n## 📦 项目结构\n\n```\nClusterCore/\n├── nukkit-mot/     # Nukkit-MOT服务器端插件\n└── waterdogpe/     # WaterdogPE代理端插件\n```\n\n## ⚙️ 技术栈\n\n- **语言**: Java 21\n- **构建工具**: Maven\n- **依赖管理**: Redis (Jedis 5.1.0)\n- **游戏平台**: \n  - Nukkit-MOT (子服端)\n  - WaterdogPE (代理端)\n\n## 🚀 快速开始\n\n### 1. 环境要求\n\n- Java 21+\n- Redis服务器\n- Nukkit-MOT 或 WaterdogPE 服务器\n\n### 2. 安装步骤\n\n#### Nukkit-MOT端安装\n1. 将编译后的jar包放入Nukkit服务器的`plugins`目录\n2. 启动服务器生成配置文件\n3. 编辑`plugins/ClusterCore/config.yml`配置Redis连接\n4. 重启服务器\n\n#### WaterdogPE端安装\n1. 将编译后的jar包放入WaterdogPE的`plugins`目录\n2. 启动代理服务器生成配置文件\n3. 编辑`plugins/ClusterCore/config.yml`配置Redis连接\n4. 重启代理服务器\n\n### 3. 配置示例\n\n**Nukkit-MOT配置 (`config.yml`)**:\n```yaml\nserver:\n  groupId: \"lobby\"      # 服务器分组ID\n  wdpeId: \"lobby-1\"     # 服务器唯一标识\n  maxPlayers: 100       # 最大玩家数\n\nredis:\n  host: localhost       # Redis地址\n  port: 6379           # Redis端口\n  password: \"\"         # Redis密码（可选）\n```\n\n**WaterdogPE配置 (`config.yml`)**:\n```yaml\nheartbeat:\n  interval: 60         # 心跳间隔（秒）\n  timeout: 5           # 心跳超时（秒）\n\nredis:\n  host: localhost      # Redis地址\n  port: 6379          # Redis端口\n  password: \"\"        # Redis密码（可选）\n```\n\n## 🎮 使用指南\n\n### 玩家命令\n\n#### `/hub` - 返回大厅服务器\n- **功能**: 将玩家传送回大厅服务器\n- **用法**: 直接输入`/hub`\n\n#### `/wdt <分组ID>` - 传送到指定分组\n- **权限**: `clustercore.wdt`\n- **功能**: 查看并传送到指定分组的可用服务器\n- **用法**: `/wdt survival` (传送到生存服务器组)\n\n### API接口\n\n对于开发者，可以通过API实现更多自定义功能：\n\n#### 主要API方法\n\n```java\n// 获取API实例\nClusterAPI api = Main.getInstance().getAPI();\n\n// 传送玩家到指定服务器\napi.transferToServer(player, \"survival-1\");\n\n// 传送玩家到指定分组（自动选择）\napi.transferToGroup(player, \"minigames\");\n\n// 传送玩家到大厅\napi.transferToLobby(player);\n\n// 获取可用服务器列表\nCompletableFuture<JsonObject> servers = api.getAvailableServers(\"lobby\");\n\n// 查询目标玩家当前所在的子服ID，离线时返回Optional.empty()\nCompletableFuture<Optional<String>> serverId = api.getPlayerServerId(\"Steve\");\nCompletableFuture<Optional<String>> serverIdByUuid = api.getPlayerServerId(playerUuid);\n\n// 控制服务器开关状态\napi.setServerOpen(false);  // 关闭服务器\nboolean isOpen = api.isServerOpen();  // 检查服务器状态\n```\n\n### Tips / RsNPC 变量\n\n安装 Tips 或 RsNPC 后，Nukkit-MOT 模块会自动注册以下变量：\n\n- `{cluster_online}`：全服在线人数\n- `{cluster_group_online:<groupId>}`：指定分组在线人数，例如 `{cluster_group_online:lobby}`\n- `{cluster_server_online:<wdpeId>}`：指定服务器在线人数，例如 `{cluster_server_online:lobby-1}`\n\n### 玩家代理事件\n\nWaterdogPE 在玩家首次成功进入子服后触发\n`cn.ElysianArena.ClusterCore.WaterdogPE.event.PlayerRealJoinEvent`，在玩家离开代理时触发\n`PlayerRealQuitEvent`。玩家切换子服时只更新所在子服映射，不重复触发登录事件。\n\nNukkit-MOT 会通过 Redis 接收代理事件，并在主线程触发：\n\n- `cn.ElysianArena.ClusterCore.Nukkit.event.PlayerRealJoinEvent`\n- `cn.ElysianArena.ClusterCore.Nukkit.event.PlayerRealQuitEvent`\n\n两个事件均提供 `getPlayerName()`、`getPlayerUuid()` 和 `getServerId()`。这些事件表示代理全局登录和登出，\n不等同于单个 Nukkit 子服的玩家加入和退出事件。\n\n## 🔧 开发者指南\n\n### 项目模块说明\n\n- **nukkit-mot**: 运行在Nukkit子服上的插件模块\n- **waterdogpe**: 运行在WaterdogPE代理上的插件模块\n\n## 🤝 贡献指南\n\n欢迎提交Issue和Pull Request来帮助改进项目！\n\n## 📄 许可证\n\n本项目采用MIT许可证。\n\n## 🆘 常见问题\n\n**Q: Redis连接失败怎么办？**\nA: 检查Redis服务器是否正常运行，配置文件中的地址和端口是否正确。\n\n**Q: 玩家无法传送怎么办？**\nA: 确保目标服务器已在Redis中正确注册，检查网络连接是否正常。\n\n**Q: 如何添加新的服务器分组？**\nA: 在相应服务器的配置文件中设置不同的`groupId`即可。\n\n---\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/230709932?v=4",
+  "id": "ElysianArena/ClusterCore--nukkit-mot",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "nukkit-mot/src/main/resources/plugin.yml",
+  "name": "ClusterCore",
+  "primary_target": "nkmot",
+  "server_version": "",
+  "source": "https://github.com/ElysianArena/ClusterCore",
+  "stars": 1,
+  "summary": "一个基于Redis的WaterdogPE群组服核心插件，支持跨服传送和服务器管理功能。",
+  "targets": [
+    "nkmot"
+  ],
+  "updated_at": 1784900208,
+  "versions": []
+}
