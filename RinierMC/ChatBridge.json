@@ -1,0 +1,60 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/88402556?v=4",
+      "name": "RinierMC",
+      "url": "https://github.com/RinierMC"
+    }
+  ],
+  "categories": [],
+  "created_at": 1784972746,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "DiscordBridge",
+      "version_range": ""
+    }
+  ],
+  "description": "# ChatBridge\n\nA PowerNukkitX plugin that relays chat between your Minecraft server and a Discord channel using [DiscordBridge](https://github.com/RinierMC/DiscordBridge)\n\n---\n\n## Requirements\n\n- PowerNukkitX server (API 3.0.0)\n- [DiscordBridge](https://github.com/RinierMC/DiscordBridge) plugin installed, configured with a valid bot token, and running.\n\n---\n\n## Installation\n\n1. **Download** the `ChatBridge-1.0.0.jar` from the releases page (or build from source).\n2. **Place** it in your server's `/plugins/` folder.\n3. **Start** your server – the plugin will generate a `config.yml` inside its folder.\n4. **Edit** `plugins/ChatBridge/config.yml` (see [Configuration](#configuration) below).\n5. **Restart** the server (or reload the plugin) for the changes to take effect.\n\n> **Note:** ChatBridge will **not** work unless DiscordBridge is already connected. Start your server once with DiscordBridge installed to generate its config, then set up ChatBridge.\n\n---\n\n## Configuration\n\nThe `config.yml` file contains the following options:\n\n| Key | Type | Description |\n|-----|------|-------------|\n| `channel-id` | String | **Required.** The numeric ID of the Discord text channel where messages will be relayed. |\n| `activity` | String | Text shown as the bot's \"Playing…\" status. Optional; leave empty to disable. |\n| `mc-to-discord` | String | Format of messages sent from Minecraft to Discord. Supports placeholders (see below). |\n| `discord-to-mc` | String | Format of messages sent from Discord to Minecraft. Supports placeholders (see below). |\n| `spam-cooldown` | Integer | Cooldown in seconds between messages from the same Minecraft player. Set to `0` to disable. |\n\n### Placeholders\n\nUse the following placeholders in the format strings:\n\n- `{player}` – Minecraft player name (only for `mc-to-discord`)\n- `{user}` – Discord username or nickname (only for `discord-to-mc`)\n- `{message}` – The message content (trimmed and sanitized)\n\n#### Example\n\n```yaml\nmc-to-discord: \"**[{player}]**: {message}\"\ndiscord-to-mc: \"§9[Discord] §f{user}§7: {message}\"\n```\n\nThis will produce:\n- In Discord: `**[Steve]**: Hello everyone!`\n- In Minecraft: `[Discord] Alice: Hi!`\n\nYou can use Minecraft colour codes (`§`) in `discord-to-mc` to style the chat display. Discord messages are automatically stripped of `@everyone` and `@here` pings for safety.\n\n---\n\n## How to find your Discord channel ID\n\n1. Open Discord and go to **User Settings** (gear icon).\n2. Navigate to **Advanced** and enable **Developer Mode**.\n3. Right‑click the desired text channel in your server and select **Copy ID**.\n4. Paste that ID into the `channel-id` field in `config.yml`.\n\n---\n\n## Troubleshooting\n\n- **\"DiscordBridge not found!\"** – Ensure the DiscordBridge plugin is in the `plugins/` folder and has started successfully.\n- **Messages not appearing** – Double‑check that the `channel-id` is correct and that the bot has permission to read/send messages in that channel.\n- **Spam cooldown** – If players are being rate‑limited unexpectedly, increase the cooldown value or set it to `0`.\n\n---\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/88402556?v=4",
+  "id": "RinierMC/ChatBridge",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "ChatBridge",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/RinierMC/ChatBridge",
+  "stars": 0,
+  "summary": "ChatBridge between minecraft and discord",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1784972828,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ChatBridge-1.0.0.jar",
+          "primary": true,
+          "size": 6009,
+          "url": "https://github.com/RinierMC/ChatBridge/releases/download/Patch/ChatBridge-1.0.0.jar"
+        }
+      ],
+      "name": "ChatBridge",
+      "prerelease": false,
+      "published_at": 1784972828,
+      "version": "Patch"
+    }
+  ]
+}

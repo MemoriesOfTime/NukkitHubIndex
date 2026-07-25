@@ -1,0 +1,70 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/88402556?v=4",
+      "name": "RinierMC",
+      "url": "https://github.com/RinierMC"
+    }
+  ],
+  "categories": [],
+  "created_at": 1784818007,
+  "dependencies": [],
+  "description": "# DiscordBridge\n\nA [PowerNukkitX](https://github.com/PowerNukkitX/PowerNukkitX) plugin that connects your Minecraft server to a Discord bot.\n\n---\n\n## Requirements\n\n- PowerNukkitX (nightly build or compatible release)\n- Java 21+\n- A Discord bot token from the [Discord Developer Portal](https://discord.com/developers/applications)\n\n---\n\n## Installation\n\n1. Download the latest release.\n2. Drop the it into your PNX server's `plugins/` folder.\n\n3. Start the server once to generate `plugins/DiscordBridge/config.yml`, then stop it.\n\n4. Open `config.yml` and paste your bot token:\n   ```yaml\n   bot-token: \"YOUR_BOT_TOKEN_HERE\"\n   ```\n\n5. Start the server again. If the token is valid you'll see:\n   ```\n   [DiscordBridge] Connected to Discord as YourBotName#1234\n   ```\n\n---\n\n## Configuration\n\n```yaml\n# Discord bot token from the Developer Portal.\nbot-token: \"REPLACE_ME\"\n\n# Rate limiting — applied per plugin that uses the API.\nrate-limit:\n  max-actions: 20      # max requests allowed per window\n  window-seconds: 10   # how long the window lasts\n\n# Print all incoming Discord messages to console.\ndebug-logging: false\n```\n\nThe rate limiter runs per plugin name, so if one plugin hits the limit it won't block others.\n\n---\n\n## Using DiscordBridge in your Plugin\n\nFirst, add DiscordBridge as a dependency in your plugin's `plugin.yml`:\n\n```yaml\ndepend: [\"DiscordBridge\"]\n```\n\nThen grab the `Bot` instance from PNX's service manager:\n\n```java\nBot bot = getServer().getServiceManager()\n    .getProvider(Bot.class)\n    .getProvider();\n```\n\n> Always check `bot.isReady()` before making calls. The bot connects asynchronously on startup, so it may not be ready immediately.\n\n---\n\n## Sending Messages\n\nSend a plain text message to a Discord channel:\n\n```java\n// Fire and forget\nbot.getMessageManager().sendMessage(\"123456789012345678\", \"Server is starting up!\", this);\n\n// Wait for the result\nbot.getMessageManager().sendMessageAsync(\"123456789012345678\", \"Hello from Minecraft!\", this)\n    .thenAccept(msg -> getLogger().info(\"Sent message ID: \" + msg.getId()))\n    .exceptionally(err -> { getLogger().warning(\"Failed: \" + err.getMessage()); return null; });\n```\n\n---\n\n## Sending Embeds\n\nBuild a rich embed using the `Embed.builder()`:\n\n```java\nEmbed embed = Embed.builder()\n    .title(\"Player Joined\")\n    .description(\"**Steve** just logged in!\")\n    .color(Color.GREEN)\n    .field(\"World\", \"Overworld\", true)\n    .field(\"Players Online\", \"12 / 20\", true)\n    .footer(\"MyServer • \" + LocalDate.now())\n    .build();\n\nbot.getMessageManager().sendEmbed(\"123456789012345678\", embed, this);\n```\n\nFields can be inline (side-by-side) or block (full width). Max 25 fields per embed.\n\n---\n\n## Slash Commands\n\n### Registering a command\n\n```java\nList<Option> options = List.of(\n    Option.required(OptionType.STRING, \"player\", \"Player name to look up\"),\n    Option.optional(OptionType.BOOLEAN, \"detailed\", \"Show full stats\")\n);\n\n// Guild command (shows up immediately, only in that server)\nbot.getCommandManager().createGuildCommand(\"123456789012345678\", \"stats\", \"Look up a player\", options, this);\n\n// Global command (takes up to an hour to appear in all servers)\nbot.getCommandManager().createGlobalCommand(\"ping\", \"Check if the bot is alive\", List.of(), this);\n```\n\n### Handling a command\n\n```java\nbot.getCommandManager().registerSlashCommandHandler(\"stats\", ctx -> {\n    String playerName = ctx.getStringOption(\"player\", \"unknown\");\n    boolean detailed = ctx.getOption(\"detailed\")\n        .map(OptionMapping::getAsBoolean)\n        .orElse(false);\n\n    if (detailed) {\n        ctx.replyEphemeral(\"Detailed stats for \" + playerName + \": ...\");\n    } else {\n        ctx.reply(\"Stats for \" + playerName + \": 100 kills, 5 deaths\");\n    }\n}, this);\n```\n\n`replyEphemeral` sends a response only the user who ran the command can see. `reply` sends it publicly.\n\n---\n\n## Listening to Incoming Discord Messages\n\nRegister a handler on a specific channel ID. Every message sent to that channel will trigger your callback:\n\n```java\nbot.getMessageManager().registerMessageHandler(\"123456789012345678\", ctx -> {\n    String name = ctx.getAuthorName();\n    String text = ctx.getContent();\n\n    // Relay to Minecraft chat\n    getServer().broadcastMessage(\"[Discord] \" + name + \": \" + text);\n\n    // Auto-reply to a keyword\n    if (text.equalsIgnoreCase(\"!online\")) {\n        ctx.reply(\"Players online: \" + getServer().getOnlinePlayers().size());\n    }\n}, this);\n```\n\n---\n\n## Guild & Moderation\n\n```java\nGuilds guilds = bot.getGuildManager();\n\n// Kick a user\nguilds.kickUser(\"USER_ID\", \"GUILD_ID\", \"Breaking rules\", this)\n    .thenRun(() -> getLogger().info(\"Kicked successfully\"));\n\n// Ban a user and delete their last 3 days of messages\nguilds.banUser(\"USER_ID\", \"GUILD_ID\", \"Spamming\", 3, this);\n\n// Unban\nguilds.unbanUser(\"USER_ID\", \"GUILD_ID\", this);\n\n// Check permission level (OWNER, ADMIN, MODERATOR, or USER)\nLevel level = guilds.getPermissionLevel(\"USER_ID\", \"GUILD_ID\");\nif (level == Level.ADMIN || level == Level.OWNER) {\n    // allow sensitive action\n}\n```\n\n`getPermissionLevel` uses the member cache (no extra API call). Use `getPermissionLevelAsync` if the member might not be cached.\n\n---\n\n## User Management\n\n```java\nUsers users = bot.getUserManager();\n\n// Change a member's nickname\nusers.changeNickname(\"USER_ID\", \"GUILD_ID\", \"CoolNewName\", this);\n\n// Add or remove a role\nusers.addRole(\"USER_ID\", \"GUILD_ID\", \"ROLE_ID\", this);\nusers.removeRole(\"USER_ID\", \"GUILD_ID\", \"ROLE_ID\", this);\n```\n\n---\n\n## Bot Status & Activity\n\n```java\nStatus status = bot.getStatusManager();\n\n// Show what the bot is \"playing\"\nstatus.setActivity(\"Minecraft 1.21\");\n\n// Change online status: \"online\", \"idle\", \"dnd\", \"invisible\"\nstatus.setStatus(\"idle\");\n\n// Clear the activity\nstatus.setActivity(null);\n```\n\n---\n\n## PNX Event: MsgEvent\n\nIf you'd rather listen via PNX's event system instead of registering a handler directly, `MsgEvent` is fired for every Discord message the bot receives:\n\n```java\n@EventHandler\npublic void onDiscordMessage(MsgEvent event) {\n    getLogger().info(\"[Discord #\" + event.getChannelId() + \"] \" + event.getAuthorName() + \": \" + event.getContent());\n}\n```\n\nRegister your listener as usual with `getServer().getPluginManager().registerEvents(this, this)`.\n\n---\n\n## Finding IDs\n\nTo get a channel, guild, user, or role ID in Discord: go to Settings → Advanced → enable **Developer Mode**. Then right-click any server, channel, user, or role and click **Copy ID**.\n\n---\n\n## Notes\n\n- Messages are automatically sanitized — `@everyone` and `@here` pings are blocked, Minecraft color codes (`§a`, `§b`, etc.) are stripped, and messages over 2000 characters are truncated.\n- All IDs (user, guild, channel, role) are validated as Discord snowflakes. Passing a non-numeric or wrong-length ID will throw an `IllegalArgumentException` immediately.\n- The bot shuts down cleanly when the server stops — it waits up to 5 seconds for in-flight requests before force-closing.\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/88402556?v=4",
+  "id": "RinierMC/DiscordBridge",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "DiscordBridge",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/RinierMC/DiscordBridge",
+  "stars": 0,
+  "summary": "Enables PNX server's to run a Discord Bot.",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1784972055,
+  "versions": [
+    {
+      "changelog": "Added User Management & Commands",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "DiscordBridge-1.0.0.jar",
+          "primary": true,
+          "size": 15916057,
+          "url": "https://github.com/RinierMC/DiscordBridge/releases/download/Patch/DiscordBridge-1.0.0.jar"
+        }
+      ],
+      "name": "DiscordBridge",
+      "prerelease": false,
+      "published_at": 1784972055,
+      "version": "Patch"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "DiscordBridgeAPI-1.0.0.jar",
+          "primary": true,
+          "size": 15891396,
+          "url": "https://github.com/RinierMC/DiscordBridge/releases/download/NEW/DiscordBridgeAPI-1.0.0.jar"
+        }
+      ],
+      "name": "DiscordBridgeAPI 1.0.0",
+      "prerelease": false,
+      "published_at": 1784818377,
+      "version": "NEW"
+    }
+  ]
+}
