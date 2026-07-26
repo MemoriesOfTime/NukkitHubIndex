@@ -1,0 +1,49 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/22717389?v=4",
+      "name": "Nissining",
+      "url": "https://github.com/Nissining"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/65096553?v=4",
+      "name": "LRan1028",
+      "url": "https://github.com/LRan1028"
+    }
+  ],
+  "categories": [],
+  "created_at": 1705585761,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "Tips",
+      "version_range": ""
+    }
+  ],
+  "description": "# MusicPlus\n\n- 一款用在MinecraftBE服务器上的红石音乐\n- 只支持.nbs格式的文件\n\n### Plugin Support:\n- Nukkit version: NukkitX, NukkitPM1E, PowerNukkitX, NukkitPM1E-MOT\n- MineCraft Version: 1.18.0-Latest\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/65096553?v=4",
+  "id": "LRan1028/MusicPlus",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "MusicPlus",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/LRan1028/MusicPlus",
+  "stars": 0,
+  "summary": "MusicPlus - A plugin that runs on the Nukkit server",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1785041025,
+  "versions": []
+}
