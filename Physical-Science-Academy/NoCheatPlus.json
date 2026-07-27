@@ -82,7 +82,7 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/Physical-Science-Academy/NoCheatPlus",
-  "stars": 91,
+  "stars": 90,
   "summary": "An advanced Anti-Cheat plugin on Nukkit",
   "targets": [
     "nkx"

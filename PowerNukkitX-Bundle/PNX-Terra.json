@@ -5,6 +5,11 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/50714128?v=4",
       "name": "xRookieFight",
       "url": "https://github.com/xRookieFight"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "name": "Buddelbubi",
+      "url": "https://github.com/Buddelbubi"
     }
   ],
   "categories": [],
@@ -32,6 +37,23 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1784378408,
-  "versions": []
+  "updated_at": 1785108901,
+  "versions": [
+    {
+      "changelog": "Automated release for v1.0.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "PNX-Terra-1.0.0.jar",
+          "primary": true,
+          "size": 11622722,
+          "url": "https://github.com/PowerNukkitX-Bundle/PNX-Terra/releases/download/v1.0.0/PNX-Terra-1.0.0.jar"
+        }
+      ],
+      "name": "v1.0.0",
+      "prerelease": false,
+      "published_at": 1785108901,
+      "version": "v1.0.0"
+    }
+  ]
 }

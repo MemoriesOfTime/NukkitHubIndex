@@ -2,6 +2,11 @@
   "api_version": "3.0.0",
   "authors": [
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "name": "Buddelbubi",
+      "url": "https://github.com/Buddelbubi"
+    },
+    {
       "avatar_url": "https://avatars.githubusercontent.com/u/50714128?v=4",
       "name": "xRookieFight",
       "url": "https://github.com/xRookieFight"
@@ -32,6 +37,23 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1784378587,
-  "versions": []
+  "updated_at": 1785106928,
+  "versions": [
+    {
+      "changelog": "Automated release for v1.0.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "PNX-Waterdog-1.0.0.jar",
+          "primary": true,
+          "size": 2244,
+          "url": "https://github.com/PowerNukkitX-Bundle/PNX-Waterdog/releases/download/v1.0.0/PNX-Waterdog-1.0.0.jar"
+        }
+      ],
+      "name": "v1.0.0",
+      "prerelease": false,
+      "published_at": 1785106928,
+      "version": "v1.0.0"
+    }
+  ]
 }

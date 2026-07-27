@@ -404,7 +404,7 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1783668701,
+  "updated_at": 1785108518,
   "versions": [
     {
       "changelog": "Automated release for v5.4.0",
@@ -413,7 +413,7 @@
         {
           "filename": "LuckPerms-PNX-5.4.0.jar",
           "primary": true,
-          "size": 1378380,
+          "size": 1378114,
           "url": "https://github.com/PowerNukkitX-Bundle/LuckPerms/releases/download/v5.4.0/LuckPerms-PNX-5.4.0.jar"
         }
       ],

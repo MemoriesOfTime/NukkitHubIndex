@@ -1,0 +1,41 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/92098247?v=4",
+      "name": "NuhDevX",
+      "url": "https://github.com/NuhDevX"
+    }
+  ],
+  "categories": [],
+  "created_at": 1784505850,
+  "dependencies": [],
+  "description": "",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/92098247?v=4",
+  "id": "NuhDevX/PurePerms",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/NuhDev",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "PurePerms-PNX",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/NuhDevX/PurePerms",
+  "stars": 0,
+  "summary": "PurePerms PHP plugin converted from pocketmine .",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1785144344,
+  "versions": []
+}

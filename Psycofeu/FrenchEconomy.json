@@ -27,12 +27,12 @@
   "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/Psycofeu/FrenchEconomy",
-  "stars": 0,
+  "stars": 1,
   "summary": "Economy plugin by french guy :)",
   "targets": [
     "pnx"
   ],
-  "updated_at": 1783947823,
+  "updated_at": 1785167558,
   "versions": [
     {
       "changelog": "Plugin .jar",
