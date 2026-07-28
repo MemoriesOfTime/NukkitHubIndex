@@ -1,0 +1,42 @@
+{
+  "api_version": "1.0.13",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/130136947?v=4",
+      "name": "EggrollMC",
+      "url": "https://github.com/EggrollMC"
+    }
+  ],
+  "categories": [],
+  "created_at": 1785258870,
+  "dependencies": [],
+  "description": "# PlayerTrace\n\n一个轻量级的 Nukkit-MOT 服务器插件，提供死亡坐标记录与玩家挂机检测功能。\n\n## 功能特性\n\n- 玩家死亡时自动记录并提示精确坐标。\n- 实时监控玩家坐标，长时间未操作自动判定为挂机状态。\n- 支持查询自己或指定玩家的挂机时长。\n\n## 指令与权限\n\n| **指令**          | **说明**                     | **权限** |\n| ----------------- | ---------------------------- | -------- |\n| `/back`           | 传送回上一次死亡的坐标       | 默认可用 |\n| `/afktime [玩家]` | 查询自己或指定玩家的挂机时长 | 管理员   |\n\n## 安装与使用\n\n1. 将编译好的 `.jar` 文件放入服务器的 `plugins` 目录中。\n2. 启动或重启服务器。\n\n## 开发环境\n\n- 服务端核心：Nukkit-MOT\n- 开发语言：Java\n\n## 开源协议\n\n本项目采用 MIT License 开源协议。\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/130136947?v=4",
+  "id": "EggrollMC/PlayerTracePlugin",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/Eggroll",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "PlayerTrace",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/EggrollMC/PlayerTracePlugin",
+  "stars": 0,
+  "summary": "记录玩家死亡坐标，并支持 /back 指令传送回死亡地点",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1785259638,
+  "versions": []
+}
