@@ -42,6 +42,11 @@
       "url": "https://github.com/AzaleeX"
     },
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "name": "Buddelbubi",
+      "url": "https://github.com/Buddelbubi"
+    },
+    {
       "avatar_url": "https://avatars.githubusercontent.com/u/749179?v=4",
       "name": "WildBamaBoy",
       "url": "https://github.com/WildBamaBoy"
@@ -87,7 +92,7 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1783618908,
+  "updated_at": 1785311781,
   "versions": [
     {
       "changelog": "",

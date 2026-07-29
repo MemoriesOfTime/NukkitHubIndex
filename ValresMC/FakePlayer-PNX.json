@@ -1,0 +1,38 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/104681026?v=4",
+      "name": "ValresMC",
+      "url": "https://github.com/ValresMC"
+    }
+  ],
+  "categories": [],
+  "created_at": 1785317985,
+  "dependencies": [],
+  "description": "# FakePlayer-PNX\nSpawn and control fake players on PowerNukkitX 3.0.0.\n\nInspired by [Muqsit/FakePlayer](https://github.com/Muqsit/FakePlayer) for PocketMine-MP.\n\n## Installation\nPowerNukkitX 3.0.0 and Java 21 are required.\n\nWhen launching the PNX JAR directly, keep its Java 21 module-opening option:\n`--add-opens=java.base/java.lang=ALL-UNNAMED`.\n\nPlace `FakePlayer-PNX.jar` in your server's `plugins/` folder and restart.\n\nOn first run, a `players.json` file is created in the plugin data folder. Add entries to spawn fake players automatically at startup.\n\n## players.json\n```jsonc\n{\n  \"uuid-v4-string\": {\n    \"xuid\": \"required\",\n    \"gamertag\": \"required\",\n    \"behaviours\": {\n      \"fakeplayerpnx:pvp\": {},\n      \"fakeplayerpnx:auto_equip_armor\": {}\n    }\n  }\n}\n```\n\n## Commands\n| Command | Description |\n|---|---|\n| `/fp list` | List all online fake players |\n| `/fp tpall` | Teleport all fake players to your position |\n| `/fp chat <name> <message>` | Make a fake player send a chat message |\n| `/fp interact <name>` | Make a fake player interact with the block they are looking at |\n\n**Permission:** `fakeplayerpnx.command` (default: op)\n\n## Built-in Behaviours\n\n### `fakeplayerpnx:pvp`\nMakes the fake player hunt and attack the nearest living entity (except creative-mode players).\n\n| Config key | Default | Description |\n|---|---|---|\n| `reach_distance` | `4.0` | Attack reach in blocks |\n| `pvp_idle_time` | `500` | Ticks without movement before teleporting back to spawn |\n\n### `fakeplayerpnx:auto_equip_armor`\nAutomatically equips any armor piece the fake player picks up.\n\n## API\n\n### Spawning a fake player\n```java\nFakePlayerPlugin plugin = FakePlayerPlugin.getInstance();\n\nFakePlayerInfo info = FakePlayerInfoBuilder.create()\n        .setUsername(\"MyBot\")\n        .setXuid(\"0\")\n        .setUuid(\"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\")\n        .setSkin(/* optional Skin */)\n        .addBehaviour(\"fakeplayerpnx:pvp\", Map.of(\"reach_distance\", 4.0))\n        .build();\n\nFakePlayer fakePlayer = plugin.getHandler().addPlayer(info);\n```\n\n### Checking if a player is a fake player\n```java\nFakePlayerHandler handler = FakePlayerPlugin.getInstance().getHandler();\nboolean isFake = handler.isFakePlayer(player);\n```\n\n### Removing a fake player\n```java\nhandler.removePlayer(player);\n// or by UUID:\nhandler.removePlayer(uuid);\n```\n\n### Listeners\n```java\nhandler.addListener(new FakePlayerListener() {\n    @Override\n    public void onPlayerAdd(FakePlayer fp) {\n        // fake player joined\n    }\n\n    @Override\n    public void onPlayerRemove(FakePlayer fp) {\n        // fake player removed\n    }\n});\n```\n\n### Registering a custom behaviour\n```java\nhandler.getBehaviourFactory().register(\"myplugin:my_behaviour\", (config) -> new MyBehaviour(config));\n```\n\nCustom behaviours implement `FakePlayerBehaviour`:\n```java\npublic class MyBehaviour implements FakePlayerBehaviour {\n\n    @Override\n    public void onAddToPlayer(FakePlayer fakePlayer) {}\n\n    @Override\n    public void tick(FakePlayer fakePlayer) {\n        // runs every server tick\n    }\n\n    @Override\n    public void onRemoveFromPlayer(FakePlayer fakePlayer) {}\n}\n```\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/104681026?v=4",
+  "id": "ValresMC/FakePlayer-PNX",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "FakePlayer-PNX",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/ValresMC/FakePlayer-PNX",
+  "stars": 0,
+  "summary": "Fake player (bot) library for PowerNukkitX",
+  "targets": [
+    "nkx",
+    "pnx"
+  ],
+  "updated_at": 1785324454,
+  "versions": []
+}

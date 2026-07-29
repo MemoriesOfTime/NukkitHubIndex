@@ -19,7 +19,7 @@
       "version_range": ""
     }
   ],
-  "description": "# PlaceholderChat\nFormat your chat with PlaceholderAPI\n\nDefault config:\n```yaml\n# LuckPerms Placeholders\n#  - %luckperms_prefix% - the players prefix\n#  - %luckperms_suffix% - the players suffix\n#  - %luckperms_primary_group% - the players primary group\n#  - %luckperms_groups% - a list of all groups the player is in\n#  - %luckperms_meta;KEY% - the value from the meta with the key.\n\nnametag: \"%player_displayname%\"\nchatmessage: \"[%player_level%] <%player_nametag%> %message%\" # The message in the chat\n```\n\n❗This plugin requires [PlaceholderAPI](https://github.com/PowerNukkitX-Bundle/PlaceholderAPI)❗\n",
+  "description": "# PlaceholderChat\nFormat your chat with PlaceholderAPI\n\nDefault config:\n```yaml\n# LuckPerms Placeholders\n#  - %luckperms_prefix% - the players prefix\n#  - %luckperms_suffix% - the players suffix\n#  - %luckperms_primary_group% - the players primary group\n#  - %luckperms_groups% - a list of all groups the player is in\n#  - %luckperms_meta;KEY% - the value from the meta with the key.\n\nnametag: \"%player_displayname%\"\nchatmessage: \"[%player_level%] <%player_nametag%> %message%\" # The message in the chat\n```\n\n❗This plugin requires [PlaceholderAPI](https://powernukkitx.org/plugins/PowerNukkitX-Bundle.PlaceholderAPI)❗\n",
   "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
@@ -41,7 +41,7 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1783677555,
+  "updated_at": 1785311865,
   "versions": [
     {
       "changelog": "Automated release for v1.0.2",

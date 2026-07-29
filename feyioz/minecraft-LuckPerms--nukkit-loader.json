@@ -435,7 +435,7 @@
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/164739465?v=4",
-  "id": "feyioz/LuckPerms--nukkit-loader",
+  "id": "feyioz/minecraft-LuckPerms--nukkit-loader",
   "license": {
     "id": "MIT",
     "name": "MIT License",
@@ -450,7 +450,7 @@
   "name": "LuckPerms",
   "primary_target": "nkx",
   "server_version": "",
-  "source": "https://github.com/feyioz/LuckPerms",
+  "source": "https://github.com/feyioz/minecraft-LuckPerms",
   "stars": 0,
   "summary": "A permissions plugin",
   "targets": [

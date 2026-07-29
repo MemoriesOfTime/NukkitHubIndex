@@ -1,0 +1,71 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/100467970?v=4",
+      "name": "YnXahgkiO",
+      "url": "https://github.com/YnXahgkiO"
+    }
+  ],
+  "categories": [],
+  "created_at": 1779214256,
+  "dependencies": [],
+  "description": "# DiscordWebhookAPI-PNX\nSend Discord webhook messages from [PowerNukkitX](https://github.com/PowerNukkitX/PowerNukkitX) plugins.\n\nInspired by [CortexPE/DiscordWebhookAPI](https://github.com/CortexPE/DiscordWebhookAPI) for PocketMine-MP.\n\n## Installation and setup\nPlace `DiscordWebhookAPI-PNX.jar` in your server's `plugins/` folder.\n\n> [!NOTE]\n> You must declare DiscordWebhookAPI-PNX as a dependency before you can use it.\n> ```yaml\n> # in plugin.yml:\n> depend: [DiscordWebhookAPI-PNX]\n> ```\n\n## Send a message\n\n```java\nWebhook webhook = new Webhook(\"https://discord.com/api/webhooks/...\");\n\nMessage message = new Message()\n        .content(\"Hello from PowerNukkitX!\");\n\nwebhook.send(message);\n```\n\n## Override username and avatar\n\n```java\nMessage message = new Message()\n        .content(\"Server is online.\")\n        .username(\"MyServer\")\n        .avatarUrl(\"https://example.com/avatar.png\");\n\nwebhook.send(message);\n```\n\n## Handle the response\n\n`send()` is asynchronous and does not block the main thread.\nPass a callback to act on the response — it runs back on the main thread.\n\n```java\nwebhook.send(message, response -> {\n    if (response.isSuccess()) {\n        getLogger().info(\"Webhook sent! Status: \" + response.statusCode());\n    } else {\n        getLogger().warning(\"Webhook failed: \" + response.statusCode() + \" \" + response.body());\n    }\n});\n```\n\n## Embeds\n\n```java\nEmbed embed = new Embed()\n        .title(\"Player joined\")\n        .description(\"**Steve** joined the server.\")\n        .color(0x57F287)\n        .timestamp();\n\nMessage message = new Message().addEmbed(embed);\nwebhook.send(message);\n```\n\n### Full embed example\n\n```java\nEmbed embed = new Embed()\n        .author(\"Steve\", null, \"https://example.com/steve.png\")\n        .title(\"Achievement unlocked\")\n        .description(\"Steve just got **Taking Inventory**!\")\n        .url(\"https://minecraft.wiki/w/Achievements\")\n        .color(255, 215, 0)\n        .thumbnail(\"https://example.com/thumbnail.png\")\n        .image(\"https://example.com/banner.png\")\n        .field(\"Server\", \"Survival\", true)\n        .field(\"World\", \"Overworld\", true)\n        .footer(\"PowerNukkitX\", \"https://example.com/icon.png\")\n        .timestamp();\n\nwebhook.send(new Message().addEmbed(embed));\n```\n\n### Multiple embeds\n\n```java\nMessage message = new Message()\n        .addEmbed(new Embed().title(\"Embed 1\").color(0xFF0000))\n        .addEmbed(new Embed().title(\"Embed 2\").color(0x00FF00));\n\nwebhook.send(message);\n```\n\n## API reference\n\n### `Webhook`\n| Method | Description |\n|---|---|\n| `new Webhook(url)` | Create a webhook instance |\n| `send(message)` | Send asynchronously, no callback |\n| `send(message, callback)` | Send asynchronously, callback on main thread |\n| `getUrl()` | Returns the webhook URL |\n\n### `Message`\nAll methods return `this` for chaining.\n\n| Method | Description |\n|---|---|\n| `content(text)` | Plain text message |\n| `username(name)` | Override the webhook display name |\n| `avatarUrl(url)` | Override the webhook avatar |\n| `tts(bool)` | Enable text-to-speech |\n| `addEmbed(embed)` | Attach an embed |\n\n### `Embed`\nAll methods return `this` for chaining.\n\n| Method | Description |\n|---|---|\n| `title(text)` | Embed title |\n| `description(text)` | Embed description |\n| `url(url)` | Clickable link on the title |\n| `color(int)` | Hex color, e.g. `0xFF5733` |\n| `color(r, g, b)` | RGB color |\n| `author(name)` | Author name only |\n| `author(name, url, iconUrl)` | Author with link and icon |\n| `field(name, value)` | Add a field |\n| `field(name, value, inline)` | Add an inline field |\n| `thumbnail(url)` | Small image top-right |\n| `image(url)` | Large image at the bottom |\n| `footer(text)` | Footer text |\n| `footer(text, iconUrl)` | Footer with icon |\n| `timestamp()` | Current time |\n| `timestamp(instant)` | Custom `java.time.Instant` |\n\n### `WebhookResponse`\n| Method | Description |\n|---|---|\n| `statusCode()` | HTTP status code (`204` = success, `-1` = connection error) |\n| `body()` | Response body string |\n| `isSuccess()` | `true` if status is 2xx |\n\n## License\nMIT\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/100467970?v=4",
+  "id": "YnXahgkiO/DiscordWebhookAPI-PNX",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "DiscordWebhookAPI-PNX",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/YnXahgkiO/DiscordWebhookAPI-PNX",
+  "stars": 1,
+  "summary": "Discord Webhook API for PowerNukkitX",
+  "targets": [
+    "nkx",
+    "pnx"
+  ],
+  "updated_at": 1785321056,
+  "versions": [
+    {
+      "changelog": "Migrate to PowerNukkitX 3.0.0 & Cloudburst API.\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "DiscordWebhookAPI-PNX-1.0.0.jar",
+          "primary": true,
+          "size": 8725,
+          "url": "https://github.com/YnXahgkiO/DiscordWebhookAPI-PNX/releases/download/v1.0.1/DiscordWebhookAPI-PNX-1.0.0.jar"
+        }
+      ],
+      "name": "Migrate to PowerNukkitX 3.0.0 & Cloudburst API",
+      "prerelease": false,
+      "published_at": 1785321056,
+      "version": "v1.0.1"
+    },
+    {
+      "changelog": "Initial release.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "DiscordWebhookAPI-PNX-1.0.0.jar",
+          "primary": true,
+          "size": 8704,
+          "url": "https://github.com/YnXahgkiO/DiscordWebhookAPI-PNX/releases/download/v1.0.0/DiscordWebhookAPI-PNX-1.0.0.jar"
+        }
+      ],
+      "name": "DiscordWebhookAPI-PNX v1.0.0",
+      "prerelease": false,
+      "published_at": 1779214274,
+      "version": "v1.0.0"
+    }
+  ]
+}

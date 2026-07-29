@@ -1,0 +1,49 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/12100985?v=4",
+      "name": "Him188",
+      "url": "https://github.com/Him188"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
+    }
+  ],
+  "categories": [],
+  "created_at": 1785312992,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "KotlinLib",
+      "version_range": ""
+    }
+  ],
+  "description": "**GUI - FormWindow tools**  \n**(中文版说明)**[**Chinese README**](https://github.com/Him188/GUI/blob/master/README-chs.md)\n\n# Introduction\n\nThis plugin is made for developers.  \nBy using **GUI**, you can easily create forms.  \n**Contribution is welcomed**\n\n# Download\n- [TeamCity](http://mamoe.net:2333/viewType.html?buildTypeId=gui_Build)\n\n# Features\n\n## Kotlin DSL\n\nOnly available in Kotlin  \nLearn more in [](src/main/java/moe/him188/gui/kotlin/FormWindowKt.kt)  \nSample for showing FormSimple\n\n```kotlin\nplayer.showFormSimple() {\n  title(\"Set title here\")\n  content(\"Set content here\")\n  \n  buttons(\"Button1\", \"Button2\", \"Vararg buttons\")\n\n  onClicked {//it: Int\n    player.sendMessage(\"You clicked a button whose id is $it\")\n  }\n  \n  onClosed {//it: Player\n    it.sendMessage(\"You closed the form\")\n  }\n}\n```\n\n## ResponseListener\n\n  ([ResponseListener.java](https://github.com/FunnyArenaPixel/GUI/blob/master/src/main/java/moe/him188/gui/window/listener/response/ResponseListener.java))  \n    Sample:\n  ```java\n  class A extends ResponsibleFormWindowSimple {\n      A() {\n          super(\"Title\", \"Content\");\n          addButton(new ElementButton(\"Say Hi\"));\n          addButton(new ElementButton(\"Say Hello\"));\n      }\n      public void onClicked(int id, Player player) {\n          switch (id){\n              case 0:\n                  player.sendMessage(\"Hi\");\n                  break;\n              case 1:\n                  player.sendMessage(\"Hello\");\n                  break;\n          }\n      }\n      public void onClosed(Player player) {\n          player.sendMessage(\"You Closed\");\n      }\n  }\n  ```\n\n## Functional listeners\n\n  **Functional method(lambda) support**\n\n  You can send FormWindow and process only in one line  \n  Sample:  \n  `\n  player.showFormWindow(new FormModal(\"Tips\", \"Hello\", \"Yes\", \"No\")\n.onResponded(confirmation -> player.sendMessage(\"Your choice:\"+confirmation)));\n  `\n\n  [ResponsibleFormWindowSimpleAdvanced.java](https://github.com/FunnyArenaPixel/GUI/blob/master/src/main/java/moe/him188/gui/window/ResponsibleFormWindowSimpleAdvanced.java):\n### Using Listeners\n\n  ResponseListener and Functional listeners can be used at the same time  \n  Notice that: **ResponseListener will be called before Functional listeners**\n\n## **ResponsibleButton**\n\n  **ResponsibleButton** for ResponsibleFormWindowSimple  \n  Sample:\n\n  ```java\n  class A extends ResponsibleFormWindowSimple {\n      A() {\n          super(\"Title\", \"Content\");\n          addButton(\"Say Hi\", player->player.sendMessage(\"Hi\"));//fast addButton\n          addButton(new ResponsibleElementButton(\"Say Hello\", player->player.sendMessage(\"Hello\")));//common addButton\n      }\n      public void onClosed(Player player) {\n          player.sendMessage(\"You Closed\");\n      }\n  }\n  ```\n\n## ResponsibleFormWindowSimpleAdvanced\n\n  ResponsibleFormWindowSimple**Advanced**  \n  This is a wonderful implement of ResponsibleFormWindowSimple!  \n   (I can't translate this paragraph into English)\n  ```text\n  高级版无需通过 id 自找数据, 一切的一切都由 GUI 帮你完成. 你只需要实现后续处理即可!\n  普通版里面, 点击事件函数参数1是 int, 是按钮的 ID.\n  并且需要使用 Simple 类型表单的情况, 一般是有一组同一类型的数据需要依次显示. 比如传送世界列表, 任务列表\n  在普通版构造器中, 你需要手动对数据遍历并添加按钮, 在普通版click事件中, 你又需要手动从数据(List,Map等)中取出第 n 项, 再处理.\n  如果再来一个窗口, 你又要枯燥地重复一切. 那么是时候使用高级版了!\n\n  高级版里面, 由java泛型支持, 你在构造器中需要传入一组数据和构造按钮的函数, 然后在点击事件中直接拿到按钮对应的数据进行处理\n  ```\n  Please use a minute to check the [source code](https://github.com/FunnyArenaPixel/GUI/blob/master/src/main/java/moe/him188/gui/window/ResponsibleFormWindowSimpleAdvanced.java)\n\n## ResponsibleFormWindowTemplated\n\n  extends `ResponsibleFormWindow`  \n  By using it, you can get responses from your custom **key** such as `enum`, `String`  \n  The template has checkers(parsers) to `TemplateElementInput`, It can automatically check whether the input is correct.  \n  (I can't translate this paragraph into English)\n  ```\n  比如, 你设置ID为\"test\"的 Input 只能输入整数, 你在收到返回数据时, 可以通过ID \"test\" 直接获取玩家的输入内容. 而原本NK表单只有整数ID, 对于项目多达十几个的表单很不方便.\n  当玩家提交表单, 模板会将表单数据按照你预期希望的数据类型转换, 因此你可以直接取到整数型, 日期型, 甚至`Level`, `Player`, `Item`类型的数据!(不然, 试想10个输入框, 你需要花几十行判断和转换类型?)\n  如果玩家输入数据有误, 你可以选择性地处理错误. 我们提供了 `ExceptionConsumer` 来捕获错误. 也提供了默认的处理方法: 只处理一个错误, 处理每个错误, 集中处理全部https://github.com/Him188/GUI/blob/master/src/main/java/moe/him188/gui/window/ResponsibleFormWindowSimpleAdvanced.java错了一个就全没了?)\n  ```\n  Please check the [source code](https://github.com/FunnyArenaPixel/GUI/blob/master/src/main/java/moe/him188/gui/window/ResponsibleFormWindowTemplated.java)  \n  Or fast know hot wo use: [template example](https://github.com/FunnyArenaPixel/GUI/blob/master/TemplateExample.md)\n\n## Backable\n\n  Each `ResponsibleFormWindow` supports directly back to the window which has been sent before.  \n  And you just need to code one line:\n  ```\n  window.goBack(player);\n  ```\n  You can also get players' latest windows, please view [Backable.java](https://github.com/FunnyArenaPixel/GUI/blob/master/src/main/java/moe/him188/gui/utils/Backable.java)\n\n## How to use\n\n### Maven repository\n\n1. Add `repository` in `repositories`\n    ```xml\n    <repository>\n        <id>mamoe-repo</id>\n        <url>http://mamoe.net:8081/repository/public/</url>\n    </repository>\n    ```\n    This repo may permanently work.\n2. Add `dependency` in `build.dependencies`\n    ```xml\n    <dependency>\n        <groupId>moe.him188</groupId>\n        <artifactId>gui</artifactId>\n        <version>LATEST</version>\n    </dependency>\n    ```\n    Sometimes the 'LATEST' version signal does not work, in this case, you need to use the latest version, such as `1.14` instead.\n    And, you can get the latest version in `pom.xml`\n3. Don't forget to add `depend` into `plugin.yml`\n    ```yaml\n    depend:\n    - GUI\n    ```\n\n### Package JAR file\n\n1. Run command `mvn clean package` in project root path\n\n2. Find JAR in `target/`\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/56059204?v=4",
+  "id": "FunnyArenaPixel/GUI",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "GUI",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/FunnyArenaPixel/GUI",
+  "stars": 0,
+  "summary": "Form window tools",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1785313025,
+  "versions": []
+}
