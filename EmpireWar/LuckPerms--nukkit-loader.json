@@ -77,24 +77,14 @@
       "url": "https://github.com/tadhgboyle"
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/10443061?v=4",
-      "name": "LXGaming",
-      "url": "https://github.com/LXGaming"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/25344713?v=4",
-      "name": "BomBardyGamer",
-      "url": "https://github.com/BomBardyGamer"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/21029868?v=4",
-      "name": "IzzelAliz",
-      "url": "https://github.com/IzzelAliz"
-    },
-    {
       "avatar_url": "https://avatars.githubusercontent.com/u/30863452?v=4",
       "name": "MrMicky-FR",
       "url": "https://github.com/MrMicky-FR"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/58414982?v=4",
+      "name": "Laarryy",
+      "url": "https://github.com/Laarryy"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/11360596?v=4",
@@ -102,9 +92,24 @@
       "url": "https://github.com/jpenilla"
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/58414982?v=4",
-      "name": "Laarryy",
-      "url": "https://github.com/Laarryy"
+      "avatar_url": "https://avatars.githubusercontent.com/u/21029868?v=4",
+      "name": "IzzelAliz",
+      "url": "https://github.com/IzzelAliz"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/25344713?v=4",
+      "name": "BomBardyGamer",
+      "url": "https://github.com/BomBardyGamer"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/10443061?v=4",
+      "name": "LXGaming",
+      "url": "https://github.com/LXGaming"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/11415969?v=4",
+      "name": "Biquaternions",
+      "url": "https://github.com/Biquaternions"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/55677189?v=4",
@@ -130,6 +135,11 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/3914677?v=4",
       "name": "Slind14",
       "url": "https://github.com/Slind14"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/11319274?v=4",
+      "name": "SamB440",
+      "url": "https://github.com/SamB440"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/31587616?v=4",
@@ -180,16 +190,6 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/170312?v=4",
       "name": "wildone",
       "url": "https://github.com/wildone"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/12042006?v=4",
-      "name": "masonakdev",
-      "url": "https://github.com/masonakdev"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/11415969?v=4",
-      "name": "Biquaternions",
-      "url": "https://github.com/Biquaternions"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/41978811?v=4",
@@ -257,6 +257,11 @@
       "url": "https://github.com/caramat"
     },
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/10995968?v=4",
+      "name": "Yeregorix",
+      "url": "https://github.com/Yeregorix"
+    },
+    {
       "avatar_url": "https://avatars.githubusercontent.com/u/4106544?v=4",
       "name": "BrainStone",
       "url": "https://github.com/BrainStone"
@@ -272,9 +277,9 @@
       "url": "https://github.com/Warriorrrr"
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/11252574?v=4",
-      "name": "mja00",
-      "url": "https://github.com/mja00"
+      "avatar_url": "https://avatars.githubusercontent.com/u/53803019?v=4",
+      "name": "rymiel",
+      "url": "https://github.com/rymiel"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/12481684?v=4",
@@ -357,6 +362,16 @@
       "url": "https://github.com/3TUSK"
     },
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/12042006?v=4",
+      "name": "masonakdev",
+      "url": "https://github.com/masonakdev"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/11252574?v=4",
+      "name": "mja00",
+      "url": "https://github.com/mja00"
+    },
+    {
       "avatar_url": "https://avatars.githubusercontent.com/u/3490861?v=4",
       "name": "mikroskeem",
       "url": "https://github.com/mikroskeem"
@@ -430,24 +445,17 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/19868724?v=4",
       "name": "FixedDev",
       "url": "https://github.com/FixedDev"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/53803019?v=4",
-      "name": "rymiel",
-      "url": "https://github.com/rymiel"
     }
   ],
-  "categories": [
-    "management"
-  ],
-  "created_at": 1463878152,
+  "categories": [],
+  "created_at": 1709747836,
   "dependencies": [],
   "description": "![](https://raw.githubusercontent.com/LuckPerms/branding/master/banner/banner.png \"Banner\")\n# LuckPerms\n[![Build Status](https://ci.lucko.me/job/LuckPerms/badge/icon)](https://ci.lucko.me/job/LuckPerms/)\n[![javadoc](https://javadoc.io/badge2/net.luckperms/api/javadoc.svg)](https://javadoc.io/doc/net.luckperms/api)\n[![Maven Central](https://img.shields.io/maven-metadata/v/https/repo1.maven.org/maven2/net/luckperms/api/maven-metadata.xml.svg?label=maven%20central&colorB=brightgreen)](https://search.maven.org/artifact/net.luckperms/api)\n[![Discord](https://img.shields.io/discord/241667244927483904.svg?label=discord&logo=discord)](https://discord.gg/luckperms)\n\nLuckPerms is a permissions plugin for Minecraft servers. It allows server admins to control what features players can use by creating groups and assigning permissions.\n\nThe latest downloads, wiki & other useful links can be found on the project homepage at [luckperms.net](https://luckperms.net/).\n\nIt is:\n\n* **fast** - written with performance and scalability in mind.\n* **reliable** - trusted by thousands of server admins, and the largest of server networks.\n* **easy to use** - setup permissions using commands, directly in config files, or using the web editor.\n* **flexible** - supports a variety of data storage options, and works on lots of different server types.\n* **extensive** - a plethora of customization options and settings which can be changed to suit your server.\n* **free** - available for download and usage at no cost, and permissively licensed so it can remain free forever.\n\nFor more information, see the wiki article on [Why LuckPerms?](https://luckperms.net/wiki/Why-LuckPerms)\n\n## Building\nLuckPerms uses Gradle to handle dependencies & building.\n\n#### Requirements\n* Java 21 JDK or newer\n* Git\n\n#### Compiling from source\n```sh\ngit clone https://github.com/LuckPerms/LuckPerms.git\ncd LuckPerms/\n./gradlew build\n```\n\nYou can find the output jars in the `loader/build/libs` or `build/libs` directories.\n\n## Tests\nThere are some automated tests which run during each build.\n\n* Unit tests are defined in [`common/src/test`](https://github.com/LuckPerms/LuckPerms/tree/master/common/src/test)\n* Integration tests are defined in [`standalone/src/test`](https://github.com/LuckPerms/LuckPerms/tree/master/standalone/src/test).\n\n## Contributing\n#### Pull Requests\nIf you make any changes or improvements to the plugin which you think would be beneficial to others, please consider making a pull request to merge your changes back into the upstream project. (especially if your changes are bug fixes!)\n\nLuckPerms loosely follows the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html). Generally, try to copy the style of code found in the class you're editing. \n\n#### Project Layout\nThe project is split up into a few separate modules.\n\n* **API** - The public, semantically versioned API used by other plugins wishing to integrate with and retrieve data from LuckPerms. This module (for the most part) does not contain any implementation itself, and is provided by the plugin.\n* **Common** - The common module contains most of the code which implements the respective LuckPerms plugins. This abstract module reduces duplicated code throughout the project.\n* **Bukkit, BungeeCord, Fabric, Forge, Nukkit, Sponge & Velocity** - Each use the common module to implement plugins on the respective server platforms.\n\n## License\nLuckPerms is licensed under the permissive MIT license. Please see [`LICENSE.txt`](https://github.com/LuckPerms/LuckPerms/blob/master/LICENSE.txt) for more info.\n",
   "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
-  "icon_url": "https://avatars.githubusercontent.com/u/22246894?v=4",
-  "id": "LuckPerms/LuckPerms--nukkit-loader",
+  "icon_url": "https://avatars.githubusercontent.com/u/64003783?v=4",
+  "id": "EmpireWar/LuckPerms--nukkit-loader",
   "license": {
     "id": "MIT",
     "name": "MIT License",
@@ -462,13 +470,13 @@
   "name": "LuckPerms",
   "primary_target": "nkx",
   "server_version": "",
-  "source": "https://github.com/LuckPerms/LuckPerms",
-  "stars": 2300,
+  "source": "https://github.com/EmpireWar/LuckPerms",
+  "stars": 0,
   "summary": "A permissions plugin",
   "targets": [
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1784834931,
+  "updated_at": 1785351863,
   "versions": []
 }
