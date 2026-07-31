@@ -602,7 +602,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1785229092,
+  "updated_at": 1785458137,
   "versions": [
     {
       "changelog": "# 5.8 build 3579\r\n\r\nThis is a hotfix for a database clean task error\r\n\r\nPrevious change log \r\nhttps://github.com/plan-player-analytics/Plan/releases/tag/5.8.3577\r\n\r\nMigration guide from 5.7 to 5.8 \r\nhttps://github.com/plan-player-analytics/Plan/wiki/Migration-guide-from-Version-5.7-to-5.8\r\n\r\n# Change log\r\n\r\n## Bugfixes\r\n\r\n- Fixed database clean task error when there were no plugins to clean",

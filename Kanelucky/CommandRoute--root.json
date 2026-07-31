@@ -1,0 +1,59 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/216477222?v=4",
+      "name": "Kanelucky",
+      "url": "https://github.com/Kanelucky"
+    }
+  ],
+  "categories": [],
+  "created_at": 1785496320,
+  "dependencies": [],
+  "description": "# CommandRoute\n\n---\n\nA lightweight library that provides a modern command tree for Nukkit-MOT\n\n## Should I use CommandRoute?\n\nIt depends on what you're building.\n\n- If you're building a command with **many subcommands and executors**, CommandRoute is a great choice.\n- If you're building a **simple, small** command, the legacy command API is probably enough.\n\n## Installation\n\n---\n\nAdd JitPack to your repositories:\n```gradle\nrepositories {\n    maven(\"https://jitpack.io\")\n}\n```\nAdd the dependency:\n```gradle\ndependencies {\n    implementation(\"com.github.Kanelucky:CommandRoute:0.1.0\")\n}\n```\n## Usage\n\n---\n\n```java\npublic class TestCommand extends BaseCommand {\n    public TestCommand() {\n        super(\"mycommand\", \"TestCommand\", \"/mycommand\");\n        this.enableCommandTree();\n    }\n\n    @Override\n    protected void buildCommandTree(RouteTree tree) {\n        tree.getRoot()\n            .then(RouteNode.literal(\"info\")\n                    .permission(\"mycommand.info\", \"LOL\")\n                           .exec(context -> {\n                               context.getSender().sendMessage(\"CommandRoute!\");\n                               return CommandResult.success();\n        }));\n        tree.getRoot()\n            .then(RouteNode.literal(\"send\")\n                           .then(RouteNode.argument(\"player\", new PlayersArgument())\n                                          .then(RouteNode.argument(\"message\", new StringArgument())\n                                                  .suggest(List.of(\"i\", \"forgot\"))\n                                                         .exec(context -> {\n                                                             // Extract arguments by name\n                                                             List<Player> players = context.getArg(\"player\");\n                                                             String msg = context.getArg(\"message\");\n                                                             for (Player player : players) {\n                                                                 player.sendMessage(msg);\n                                                             }\n                                                             return CommandResult.success();\n                                                         }))));\n        tree.getRoot()\n                .then(RouteNode.literal(\"give\")\n                        .then(RouteNode.argument(\"player\", new PlayersArgument())\n                                .then(RouteNode.argument(\"item\", new ItemArgument())\n                                        .exec(ctx-> {\n                                            Item items = ctx.getArg(\"item\");\n                                            List<Player> players = ctx.getArg(\"player\");\n                                            for (Player player : players) {\n                                                player.giveItem(items);\n                                            }\n                                            return CommandResult.success();\n                                        }))));\n    }\n}\n```\n\n## Building Routes (RouteNode options)\nThe RouteNode class provides a builder-like pattern to construct routing nodes:\n\n`RouteNode.literal(String name)`: Matches a fixed keyword/subcommand name in the argument chain (e.g. /mycommand ban).\n\n`RouteNode.argument(String name, ArgumentType<?> argument)`: Matches a typed input argument (e.g. PlayersArgument(), IntegerArgument(), ItemArgument()).\n\n`.then(RouteNode child)`: Chains a sub-node/argument after the current node.\n\n`.exec(Function<CommandContext, CommandResult> executor)`: Marks the node as executable. If player input ends at this node, this block executes.\n\n`.senderType(SenderType senderType)`: Restricts execution to specific senders (SenderType.PLAYER, SenderType.CONSOLE, or SenderType.ANY).\n\n`.permission(String permission)`: Restricts execution to players with the specified permission.\n\n`.permission(String permission, String message)`: Restricts execution to players with the specified permission and sends the given message if access is denied.\n\n`.optional(boolean optional)`: Marks the node parameter as optional.\n\n`.suggest(List<String> customList)`: Overrides client tab-complete suggestions with a custom list.\n\n`.suggest(boolean visible)`: Enables or disables client tab completion.\n\n## Execution Results (CommandResult)\n\nYour route executors must return a CommandResult:\n\n`CommandResult.success()`: Indicates successful execution.\n\n`CommandResult.fail()`: Indicates command failure.\n\n`CommandResult.fail(\"Error message\")`: Fails the command and automatically sends the specified error message to the command sender.\n\n## Arguments\n\nCommandRoute currently provides 4 built-in argument types:\n\n- `IntegerArgument`\n- `ItemArgument`\n- `PlayersArgument`\n- `StringArgument`\n\nIf you need additional argument types, you can create your own by implementing `ArgumentType<T>` or `EnumArgumentType<T>`.\n\n```java\npublic class ExampleArgument implements ArgumentType<Entity> {\n\n    @Override\n    public Entity parse(CommandContext context, String[] args, int index) {\n        if (index >= args.length) {\n            throw new IllegalArgumentException(\"Missing entity argument.\");\n        }\n\n        String input = args[index];\n\n        Entity entity = context.getSender()\n                .getServer()\n                .getPlayerExact(input);\n\n        if (entity == null) {\n            throw new IllegalArgumentException(\"Entity not found: \" + input);\n        }\n\n        return entity;\n    }\n\n    @Override\n    public CommandParamType getNetworkType() {\n        return CommandParamType.TARGET;\n    }\n}\n```\n### Note!\n- `ArgumentType<T>` is used for arguments that accept arbitrary input and parse it into an object.\n- `EnumArgumentType<T>` is used for arguments with predefined values, providing automatic Bedrock tab completion and client-side validation.\n\n## License\nThis project is licensed under MIT License. Please see the [LICENSE](https://github.com/Kanelucky/CommandRoute/blob/master/LICENSE) file for details.\n\n## Credit\n- [<img src=\"https://raw.githubusercontent.com/PowerNukkitX/PowerNukkitX/refs/heads/master/.github/logo.png\" width=\"16\"/>](https://github.com/PowerNukkitX/PowerNukkitX) [PowernukkitX](https://github.com/PowerNukkitX/PowerNukkitX)",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/216477222?v=4",
+  "id": "Kanelucky/CommandRoute--root",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/Kanelucky/CommandRoute",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "CommandRoute",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Kanelucky/CommandRoute",
+  "stars": 0,
+  "summary": "A lightweight library that provides a modern command tree for Nukkit-MOT",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1785499029,
+  "versions": [
+    {
+      "changelog": "**Full Changelog**: https://github.com/Kanelucky/CommandRoute/commits/0.1.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "CommandRoute-0.1.0.jar",
+          "primary": true,
+          "size": 21334,
+          "url": "https://github.com/Kanelucky/CommandRoute/releases/download/0.1.0/CommandRoute-0.1.0.jar"
+        }
+      ],
+      "name": "0.1.0",
+      "prerelease": false,
+      "published_at": 1785496675,
+      "version": "0.1.0"
+    }
+  ]
+}

@@ -38,8 +38,24 @@
     "nkx",
     "pnx"
   ],
-  "updated_at": 1785325940,
+  "updated_at": 1785501083,
   "versions": [
+    {
+      "changelog": "Fixe playerlist & skins",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FakePlayerPNX-1.0.0.jar",
+          "primary": true,
+          "size": 315099,
+          "url": "https://github.com/YnXahgkiO/FakePlayer-PNX/releases/download/v1.0.2/FakePlayerPNX-1.0.0.jar"
+        }
+      ],
+      "name": "v1.0.2",
+      "prerelease": false,
+      "published_at": 1785501083,
+      "version": "v1.0.2"
+    },
     {
       "changelog": "## What's Changed\n\nMigrated FakePlayer-PNX to the PowerNukkitX 3.0.0 API and the new Cloudburst API.\n\n- Updated all core classes (`FakePlayerHandler`, `FakePlayerEntity`, `FakeBedrockPeer`, `FakeBedrockSession`, behaviours, listeners, commands) for compatibility with PNX 3.0.0\n- Bumped `api` compatibility in `plugin.yml` to `3.0.0`\n\nHuge thanks to @ValresMC for contributing this migration via #1!\n\n**Full Changelog**: https://github.com/YnXahgkiO/FakePlayer-PNX/compare/v1.0.0...v1.0.1\n",
       "downloads": 0,
