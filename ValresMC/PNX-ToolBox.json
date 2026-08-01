@@ -5,6 +5,11 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/104681026?v=4",
       "name": "ValresMC",
       "url": "https://github.com/ValresMC"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/100467970?v=4",
+      "name": "YnXahgkiO",
+      "url": "https://github.com/YnXahgkiO"
     }
   ],
   "categories": [],
@@ -32,8 +37,56 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1785501435,
+  "updated_at": 1785576566,
   "versions": [
+    {
+      "changelog": "## What's Changed\r\n* Fixed minecraft:transformation serialization by @YnXahgkiO in https://github.com/ValresMC/PNX-ToolBox/pull/1\r\n\r\n## New Contributors\r\n* @YnXahgkiO made their first contribution in https://github.com/ValresMC/PNX-ToolBox/pull/1\r\n\r\n**Full Changelog**: https://github.com/ValresMC/PNX-ToolBox/compare/1.0.15...1.0.2",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "pnx-toolbox-1.0.2-SNAPSHOT.jar",
+          "primary": true,
+          "size": 363179,
+          "url": "https://github.com/ValresMC/PNX-ToolBox/releases/download/1.0.2/pnx-toolbox-1.0.2-SNAPSHOT.jar"
+        }
+      ],
+      "name": "1.0.2",
+      "prerelease": false,
+      "published_at": 1785576442,
+      "version": "1.0.2"
+    },
+    {
+      "changelog": "Really fix blocks ..",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "pnx-toolbox-1.0.15-SNAPSHOT.jar",
+          "primary": true,
+          "size": 362318,
+          "url": "https://github.com/ValresMC/PNX-ToolBox/releases/download/1.0.15/pnx-toolbox-1.0.15-SNAPSHOT.jar"
+        }
+      ],
+      "name": "Release 1.0.15",
+      "prerelease": false,
+      "published_at": 1785530175,
+      "version": "1.0.15"
+    },
+    {
+      "changelog": "Fix an issues with sub-command.\r\nFix an issues with custom block registred as items.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "pnx-toolbox-1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 362312,
+          "url": "https://github.com/ValresMC/PNX-ToolBox/releases/download/1.0.1/pnx-toolbox-1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "Release 1.0.1",
+      "prerelease": false,
+      "published_at": 1785529257,
+      "version": "1.0.1"
+    },
     {
       "changelog": "Introduce items (Legacy and Data-Driven), blocks registry.\r\nIntroduce managers lifecycle.\r\nIntroduce commands frameworks for sub-commands, rules, live-refresh.\r\nIntroduce RCON server.",
       "downloads": 0,

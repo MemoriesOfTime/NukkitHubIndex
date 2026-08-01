@@ -1,0 +1,41 @@
+{
+  "api_version": "1.0.13",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/297729495?v=4",
+      "name": "kloerdev",
+      "url": "https://github.com/kloerdev"
+    }
+  ],
+  "categories": [],
+  "created_at": 1785542973,
+  "dependencies": [],
+  "description": "# HealPlugin\n\nПростой и настраиваемый плагин лечения игроков для **Lumi**, написанный на Java.\n\n![Java](https://img.shields.io/badge/Java-21-orange?style=flat-square&logo=openjdk)\n![Lumi](https://img.shields.io/badge/Lumi-1.6.4-blue?style=flat-square)\n\n## Возможности\n\n- Лечение себя через `/heal`\n- Лечение другого игрока через `/heal <игрок>`\n- Поддержка прав доступа\n- Полное или частичное восстановление здоровья\n- Восстановление голода\n- Тушение горящего игрока\n- Поддержка консоли\n- Настройка через `config.yml`\n- Чистая ООП-архитектура\n\n## Команды\n\n| Команда          | Описание                 |\n|------------------|--------------------------|\n| `/heal`          | Вылечить себя            |\n| `/heal <игрок>`  | Вылечить другого игрока  |\n| `/h`             | Сокращение для `/heal`   |\n\n## Права\n\n| Право                   | Описание                         | По умолчанию |\n|-------------------------|----------------------------------|--------------|\n| `heal.permission`       | Использование команды `/heal`    | Все игроки   |\n| `heal.other.permission` | Лечение других игроков           | Операторы    |\n\n## Конфигурация\n\n```yaml\n# Полностью восстанавливать здоровье\nheal-to-maximum: true\n\n# Количество здоровья при частичном лечении\nheal-amount: 10.0\n\n# Тушить игрока после лечения\nextinguish-fire: true\n\n# Восстанавливать голод и насыщение\nrestore-food: true\n```\n\n## Требования\n\n- Java 21\n- Lumi 1.6.4 или новее\n- Maven\n\n## Сборка\n\n```bash\nmvn clean package\n```\n\nСобранный JAR появится в папке:\n\n```text\ntarget/\n```\n\n## Установка\n\n1. Соберите проект через Maven.\n2. Переместите JAR в папку `plugins`.\n3. Полностью перезапустите сервер.\n4. Настройте `config.yml` при необходимости.\n\n## Архитектура\n\n```text\nHealPlugin/\n├── bootstrap/\n├── command/\n├── data/\n└── service/\n```\n\nГлавный класс используется только как точка входа. Команды обрабатывают пользовательский ввод, а логика лечения находится в отдельном сервисе.\n\n## Автор\n\nРазработчик: [`kloerdev`](https://vk.com/kloerdev)",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/297729495?v=4",
+  "id": "kloerdev/HealPlugin",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": {
+    "discord": "",
+    "homepage": "vk.com\\kloerdev",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "HealPlugin",
+  "primary_target": "lumi",
+  "server_version": "",
+  "source": "https://github.com/kloerdev/HealPlugin",
+  "stars": 1,
+  "summary": "A configurable healing plugin for Lumi written in Java.",
+  "targets": [
+    "lumi"
+  ],
+  "updated_at": 1785543182,
+  "versions": []
+}

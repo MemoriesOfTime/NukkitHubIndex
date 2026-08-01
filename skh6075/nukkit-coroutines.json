@@ -1,0 +1,48 @@
+{
+  "api_version": "2.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/32565818?v=4",
+      "name": "alvin0319",
+      "url": "https://github.com/alvin0319"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/44698603?v=4",
+      "name": "skh6075",
+      "url": "https://github.com/skh6075"
+    }
+  ],
+  "categories": [],
+  "created_at": 1785579422,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "KotlinRuntimeProvider",
+      "version_range": ""
+    }
+  ],
+  "description": "# nukkit-coroutines\n\nCoroutine support utilities for PowerNukkitX plugins.\n\n## Requirements\n\n- Java 21+ (the DB dispatcher uses virtual threads)\n\n## Installation\nAdd the snapshot repository and dependencies in your plugin project.\n\n```kotlin\nrepositories {\n    maven(\"https://repo.minjae.dev/snapshots\")\n}\n\ndependencies {\n    implementation(\"dev.minjae.nukkit:nukkit-coroutines-api:1.0-SNAPSHOT\")\n    implementation(\"dev.minjae.nukkit:nukkit-coroutines-core:1.0-SNAPSHOT\")\n}\n```\n\n## Simple Usage (Plugin)\n\n```kotlin\nimport dev.minjae.nukkit.SuspendingPlugin\nimport dev.minjae.nukkit.asyncDispatcher\nimport dev.minjae.nukkit.launch\nimport dev.minjae.nukkit.nukkitDispatcher\nimport dev.minjae.nukkit.ticks\nimport kotlinx.coroutines.delay\nimport kotlinx.coroutines.withContext\n\nclass MyPlugin : SuspendingPlugin() {\n    override suspend fun onEnableAsync() {\n        launch(asyncDispatcher) {\n            val result = \"background work\"\n            withContext(nukkitDispatcher) {\n                logger.info(\"Result: $result\")\n            }\n        }\n\n        launch {\n            delay(20.ticks)\n            logger.info(\"Ran after 20 ticks\")\n        }\n    }\n}\n```\n\nYou can also register suspending listeners with `registerSuspendingEvents(listener)` and use `SuspendingCommand` for suspendable command handlers.\n\n## Event Listener Example\n\n```kotlin\nimport cn.nukkit.event.EventHandler\nimport cn.nukkit.event.Listener\nimport cn.nukkit.event.player.PlayerJoinEvent\nimport dev.minjae.nukkit.SuspendingPlugin\nimport dev.minjae.nukkit.asyncDispatcher\nimport dev.minjae.nukkit.nukkitDispatcher\nimport kotlinx.coroutines.withContext\n\nclass JoinListener(private val plugin: SuspendingPlugin) : Listener {\n    @EventHandler\n    suspend fun onJoin(event: PlayerJoinEvent) {\n        val message = withContext(plugin.asyncDispatcher) {\n            // Simulate blocking I/O or DB work\n            \"Welcome, ${event.player.name}\"\n        }\n        withContext(plugin.nukkitDispatcher) {\n            event.player.sendMessage(message)\n        }\n    }\n}\n\n// In your plugin's onEnableAsync():\n// registerSuspendingEvents(JoinListener(this))\n```\n\n## Command Example\n\n```kotlin\nimport cn.nukkit.command.CommandSender\nimport dev.minjae.nukkit.SuspendingPlugin\nimport dev.minjae.nukkit.SuspendingCommand\nimport dev.minjae.nukkit.asyncDispatcher\nimport dev.minjae.nukkit.nukkitDispatcher\nimport kotlinx.coroutines.withContext\n\nclass StatsCommand(plugin: SuspendingPlugin) : SuspendingCommand(\n    plugin = plugin,\n    name = \"stats\",\n    description = \"Show player stats\"\n) {\n    override suspend fun executeAsync(\n        sender: CommandSender,\n        commandLabel: String,\n        args: Array<out String>\n    ) {\n        val result = withContext(plugin.asyncDispatcher) {\n            // Do blocking lookup here\n            \"Kills: 10, Deaths: 2\"\n        }\n        sender.sendMessage(result)\n    }\n}\n```\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/44698603?v=4",
+  "id": "skh6075/nukkit-coroutines",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "nukkit-coroutines-example/src/main/resources/plugin.yml",
+  "name": "NukkitCoroutineExample",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/skh6075/nukkit-coroutines",
+  "stars": 0,
+  "summary": "",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1785579626,
+  "versions": []
+}
