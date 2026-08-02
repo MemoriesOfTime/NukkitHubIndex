@@ -157,54 +157,9 @@
       "url": "https://github.com/galexrt"
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/32383605?v=4",
-      "name": "10935336",
-      "url": "https://github.com/10935336"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/4625696?v=4",
-      "name": "RoboMWM",
-      "url": "https://github.com/RoboMWM"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/3246162?v=4",
-      "name": "skmedix",
-      "url": "https://github.com/skmedix"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/11409610?v=4",
-      "name": "Sander0542",
-      "url": "https://github.com/Sander0542"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/47499708?v=4",
-      "name": "SaolGhra",
-      "url": "https://github.com/SaolGhra"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/40311581?v=4",
-      "name": "SkipM4",
-      "url": "https://github.com/SkipM4"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/53542570?v=4",
-      "name": "SniperTVmc",
-      "url": "https://github.com/SniperTVmc"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/176787731?v=4",
-      "name": "TWJohnJohn20116",
-      "url": "https://github.com/TWJohnJohn20116"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/46647646?v=4",
-      "name": "XXY233",
-      "url": "https://github.com/XXY233"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/34498917?v=4",
-      "name": "stashenko",
-      "url": "https://github.com/stashenko"
+      "avatar_url": "https://avatars.githubusercontent.com/u/75816946?v=4",
+      "name": "ToxiWoxi",
+      "url": "https://github.com/ToxiWoxi"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/80556999?v=4",
@@ -212,9 +167,54 @@
       "url": "https://github.com/TomPadmanathan"
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/75816946?v=4",
-      "name": "ToxiWoxi",
-      "url": "https://github.com/ToxiWoxi"
+      "avatar_url": "https://avatars.githubusercontent.com/u/34498917?v=4",
+      "name": "stashenko",
+      "url": "https://github.com/stashenko"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/46647646?v=4",
+      "name": "XXY233",
+      "url": "https://github.com/XXY233"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/176787731?v=4",
+      "name": "TWJohnJohn20116",
+      "url": "https://github.com/TWJohnJohn20116"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/53542570?v=4",
+      "name": "SniperTVmc",
+      "url": "https://github.com/SniperTVmc"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/40311581?v=4",
+      "name": "SkipM4",
+      "url": "https://github.com/SkipM4"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/47499708?v=4",
+      "name": "SaolGhra",
+      "url": "https://github.com/SaolGhra"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/11409610?v=4",
+      "name": "Sander0542",
+      "url": "https://github.com/Sander0542"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/3246162?v=4",
+      "name": "skmedix",
+      "url": "https://github.com/skmedix"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/4625696?v=4",
+      "name": "RoboMWM",
+      "url": "https://github.com/RoboMWM"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/32383605?v=4",
+      "name": "10935336",
+      "url": "https://github.com/10935336"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/18164643?v=4",
@@ -235,6 +235,11 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/67716263?v=4",
       "name": "zax71",
       "url": "https://github.com/zax71"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/59896907?v=4",
+      "name": "Zoriot",
+      "url": "https://github.com/Zoriot"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/90173538?v=4",
@@ -375,6 +380,11 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/9787438?v=4",
       "name": "OLEGSHA",
       "url": "https://github.com/OLEGSHA"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/136602369?v=4",
+      "name": "OutHimic",
+      "url": "https://github.com/OutHimic"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/59678453?v=4",
@@ -602,7 +612,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1785458137,
+  "updated_at": 1785687874,
   "versions": [
     {
       "changelog": "# 5.8 build 3579\r\n\r\nThis is a hotfix for a database clean task error\r\n\r\nPrevious change log \r\nhttps://github.com/plan-player-analytics/Plan/releases/tag/5.8.3577\r\n\r\nMigration guide from 5.7 to 5.8 \r\nhttps://github.com/plan-player-analytics/Plan/wiki/Migration-guide-from-Version-5.7-to-5.8\r\n\r\n# Change log\r\n\r\n## Bugfixes\r\n\r\n- Fixed database clean task error when there were no plugins to clean",

@@ -37,8 +37,40 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1785576566,
+  "updated_at": 1785610848,
   "versions": [
+    {
+      "changelog": "**Full Changelog**: https://github.com/ValresMC/PNX-ToolBox/compare/1.0.21...1.0.22",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "pnx-toolbox-1.0.22-SNAPSHOT.jar",
+          "primary": true,
+          "size": 363701,
+          "url": "https://github.com/ValresMC/PNX-ToolBox/releases/download/1.0.22/pnx-toolbox-1.0.22-SNAPSHOT.jar"
+        }
+      ],
+      "name": "Release 1.0.22",
+      "prerelease": false,
+      "published_at": 1785610848,
+      "version": "1.0.22"
+    },
+    {
+      "changelog": "**Full Changelog**: https://github.com/ValresMC/PNX-ToolBox/compare/1.0.2...1.0.21",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "pnx-toolbox-1.0.21-SNAPSHOT.jar",
+          "primary": true,
+          "size": 363609,
+          "url": "https://github.com/ValresMC/PNX-ToolBox/releases/download/1.0.21/pnx-toolbox-1.0.21-SNAPSHOT.jar"
+        }
+      ],
+      "name": "1.0.21",
+      "prerelease": false,
+      "published_at": 1785609768,
+      "version": "1.0.21"
+    },
     {
       "changelog": "## What's Changed\r\n* Fixed minecraft:transformation serialization by @YnXahgkiO in https://github.com/ValresMC/PNX-ToolBox/pull/1\r\n\r\n## New Contributors\r\n* @YnXahgkiO made their first contribution in https://github.com/ValresMC/PNX-ToolBox/pull/1\r\n\r\n**Full Changelog**: https://github.com/ValresMC/PNX-ToolBox/compare/1.0.15...1.0.2",
       "downloads": 0,

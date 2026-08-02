@@ -15,6 +15,11 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/82237910?v=4",
       "name": "AzaleeX",
       "url": "https://github.com/AzaleeX"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/56545793?v=4",
+      "name": "TraxTRL",
+      "url": "https://github.com/TraxTRL"
     }
   ],
   "categories": [
@@ -44,8 +49,24 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1784842103,
+  "updated_at": 1785689790,
   "versions": [
+    {
+      "changelog": "## What's Changed\n* Support for latest PNX version by @Buddelbubi in https://github.com/PowerNukkitX-Bundle/AnyVersion/pull/10\n\n\n**Full Changelog**: https://github.com/PowerNukkitX-Bundle/AnyVersion/compare/v2.8.3...v2.8.4",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AnyVersion.jar",
+          "primary": true,
+          "size": 462551,
+          "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/v2.8.4/AnyVersion.jar"
+        }
+      ],
+      "name": "v2.8.4",
+      "prerelease": false,
+      "published_at": 1785688381,
+      "version": "v2.8.4"
+    },
     {
       "changelog": "**Full Changelog**: https://github.com/PowerNukkitX-Bundle/AnyVersion/compare/2.8.2...v2.8.3",
       "downloads": 0,
