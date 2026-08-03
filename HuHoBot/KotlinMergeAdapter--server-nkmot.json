@@ -36,7 +36,7 @@
   "targets": [
     "nkmot"
   ],
-  "updated_at": 1785481480,
+  "updated_at": 1785735386,
   "versions": [
     {
       "changelog": "# HuHoBot-Adapter v2.1.5\n\nfeat(core): 添加群成员进退群事件\n\n- 在 BotCustomCommand事件中内置了群成员进退群事件处理器\n\n### 构建信息\n- 构建时间: 2026-07-31T07:04:39Z\n- 提交哈希: [8339559ab07bd8af18ade6d88798563d51820c0b](https://github.com/HuHoBot/KotlinMergeAdapter/commit/8339559ab07bd8af18ade6d88798563d51820c0b)\n",

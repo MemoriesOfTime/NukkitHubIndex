@@ -1,0 +1,50 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/70517151?v=4",
+      "name": "0xliam627",
+      "url": "https://github.com/0xliam627"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
+    }
+  ],
+  "categories": [],
+  "created_at": 1785759578,
+  "dependencies": [],
+  "description": "<h1>Broadcaster<img src=\"https://raw.githubusercontent.com/FunnyArenaPixel/Broadcaster/main/assets/images/icon.png\" height=\"64\" width=\"64\" align=\"left\"></img></h1><br/>\n\n[![Discord](https://img.shields.io/discord/979551565415346297.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/ApDXa7Tm)\n\n✨ **Broadcasting System plugin for Nukkit**\n\n## Supported\n\nNukkit API 1.0.13\n\n## Documentation\n\n**Configuration (config.yml):**\n\n```yaml\nbroadcaster-interval: 40 # Seconds\nprefix: \"[ Broadcaster ]\"\nmessages:\n  - \"Message 1\"\n  - \"Message 2\"\n  - \"Message 3\"\n```",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-08-03",
+      "description": "",
+      "title": "",
+      "url": "https://raw.githubusercontent.com/FunnyArenaPixel/Broadcaster/main/assets/images/icon.png"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/56059204?v=4",
+  "id": "FunnyArenaPixel/Broadcaster",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Broadcaster",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/FunnyArenaPixel/Broadcaster",
+  "stars": 0,
+  "summary": "Plugin for Nukkit that automatic message system.",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1785760518,
+  "versions": []
+}

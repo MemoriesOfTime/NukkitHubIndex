@@ -1,0 +1,134 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "name": "Buddelbubi",
+      "url": "https://github.com/Buddelbubi"
+    }
+  ],
+  "categories": [],
+  "created_at": 1735918253,
+  "dependencies": [],
+  "description": "# Heads\n\nHeads is a [PowerNukkitX](https://github.com/PowerNukkitX/PowerNukkitX) plugin for creating and placing custom player heads. It supports online Bedrock players, Java Edition usernames, and a browsable collection of decorative heads from [HeadDB](https://headdb.org/).\n\n## Features\n\n- Create a head from an online Bedrock player's current skin\n- Fetch a player head by Java Edition username\n- Browse decorative heads by category in an in-game form\n\n## Requirements\n\n- A PowerNukkitX server with API 3.0.0\n\n## Installation\n\n1. Download `Heads.jar` from the [latest release](https://github.com/Syodo-Development/Heads/releases/latest).\n2. Copy the file into your server's `plugins` directory.\n3. Restart the server.\n\n## Commands\n\n| Command | Description |\n| --- | --- |\n| `/head bedrock <player>` | Creates a head from an online Bedrock player. Persona skins are not supported. |\n| `/head java <username>` | Downloads and creates a head for a Java Edition username. |\n| `/head database` | Opens the HeadDB category browser. |\n\nAll commands can only be used by players and require the `heads.get` permission.\n\n## Screenshots\n\n<p>\n  <img width=\"599\" alt=\"HeadDB category selection\" src=\"https://github.com/user-attachments/assets/518cd257-29e7-412d-94b7-ba360dc9d49d\" />\n  <img width=\"693\" alt=\"HeadDB head selection\" src=\"https://github.com/user-attachments/assets/94a1d60d-81bb-4646-8de5-8df6e1ce97b4\" />\n</p>\n\n\n## Third-party services\n\nJava player skins are retrieved through [minecraft.tools](https://minecraft.tools/), while the database browser uses [HeadDB](https://headdb.org/). Availability of these features depends on the respective external services.\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/154862792?v=4",
+  "id": "PowerNukkitX-Bundle/Heads",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Heads",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/PowerNukkitX-Bundle/Heads",
+  "stars": 1,
+  "summary": "Heads is a Head Plugin for PowerNukkitX which adds playerheads to the server.",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1785738470,
+  "versions": [
+    {
+      "changelog": "Automated release for v1.1.3",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Heads.jar",
+          "primary": true,
+          "size": 23643,
+          "url": "https://github.com/PowerNukkitX-Bundle/Heads/releases/download/v1.1.3/Heads.jar"
+        }
+      ],
+      "name": "v1.1.3",
+      "prerelease": false,
+      "published_at": 1785737703,
+      "version": "v1.1.3"
+    },
+    {
+      "changelog": "Automated release for v1.1.2",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SyoHeads.jar",
+          "primary": true,
+          "size": 23498,
+          "url": "https://github.com/PowerNukkitX-Bundle/Heads/releases/download/v1.1.2/SyoHeads.jar"
+        }
+      ],
+      "name": "v1.1.2",
+      "prerelease": false,
+      "published_at": 1780172766,
+      "version": "v1.1.2"
+    },
+    {
+      "changelog": "- Fixed that you can kill Heads\r\n- Fixed broken java subcommand\r\n- Command is now using paramTree",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SyoHeads-1.1.1.jar",
+          "primary": true,
+          "size": 23285,
+          "url": "https://github.com/PowerNukkitX-Bundle/Heads/releases/download/1.1.1/SyoHeads-1.1.1.jar"
+        }
+      ],
+      "name": "1.1.1",
+      "prerelease": false,
+      "published_at": 1744020391,
+      "version": "1.1.1"
+    },
+    {
+      "changelog": "Updated Forms to use the newest form api in PNX",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SyoHeads-1.1.0.jar",
+          "primary": true,
+          "size": 22573,
+          "url": "https://github.com/PowerNukkitX-Bundle/Heads/releases/download/1.1.0_fix/SyoHeads-1.1.0.jar"
+        }
+      ],
+      "name": "FormAPI Update",
+      "prerelease": false,
+      "published_at": 1741548832,
+      "version": "1.1.0_fix"
+    },
+    {
+      "changelog": "Added HeadsDB.\r\n\r\nTo open the database, use /head database",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SyoHeads-1.1.0.jar",
+          "primary": true,
+          "size": 2307282,
+          "url": "https://github.com/PowerNukkitX-Bundle/Heads/releases/download/1.1.0/SyoHeads-1.1.0.jar"
+        }
+      ],
+      "name": "HeadsDB",
+      "prerelease": false,
+      "published_at": 1735946344,
+      "version": "1.1.0"
+    },
+    {
+      "changelog": "SyoHeads Release v1.\r\n\r\nCommands:\r\n/head bedrock (player)\r\n/head java (playername)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SyoHeads-1.0.0.jar",
+          "primary": true,
+          "size": 2303798,
+          "url": "https://github.com/PowerNukkitX-Bundle/Heads/releases/download/1.0.0/SyoHeads-1.0.0.jar"
+        }
+      ],
+      "name": "1.0.0",
+      "prerelease": false,
+      "published_at": 1735918387,
+      "version": "1.0.0"
+    }
+  ]
+}

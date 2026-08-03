@@ -1,5 +1,5 @@
 {
-  "api_version": "3.0.0",
+  "api_version": "3.0.1",
   "authors": [
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/57580080?v=4",
@@ -10,7 +10,7 @@
   "categories": [],
   "created_at": 1785690611,
   "dependencies": [],
-  "description": "# PNX-ProxyBlocker\n\nBlocks proxy connections pre-login on PNX servers. Fully open sourced to help the community.\n\n## Installation\n\n1. Download the latest release\n2. Grab .jar from target/\n3. Place the .jar file in your PNX server's `plugins/` folder\n4. Restart your server\n\n## How It Works\n\n- Player tries to connect\n- Plugin checks if they're using a proxy\n- If proxy detected, connection is blocked before login\n- If not, player proceeds normally\n\nNote: This plugin blocks proxies only, not VPNs.\n\n## Building\n\n```bash\ngit clone https://github.com/Zephyr-OP/PNX-ProxyBlocker.git\ncd PNX-ProxyBlocker\n./compile.sh",
+  "description": "# PNX-ProxyBlocker\n\n![ProxyBlocker](https://raw.githubusercontent.com/Zephyr-OP/PNX-ProxyBlocker/main/.jarbage/icon.png)\n\nBlocks proxy connections pre-login on PNX servers. Fully open sourced to help the community.\n\n## Installation\n\n1. Download the latest release\n2. Grab .jar from target/\n3. Place the .jar file in your PNX server's `plugins/` folder\n4. Restart your server\n\n## How It Works\n\n- Player tries to connect\n- Plugin checks if they're using a proxy\n- If proxy detected, connection is blocked before login\n- If not, player proceeds normally\n\nNote: This plugin blocks proxies only, not VPNs.\n\n## Blocks\n- Gophertunnel\n- Bedrock-tool\n- Lumine-Proxy\n- Lunar-Proxy\n\n## Building\n\n```bash\ngit clone https://github.com/Zephyr-OP/PNX-ProxyBlocker.git\ncd PNX-ProxyBlocker\n./compile.sh",
   "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
@@ -27,13 +27,13 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/Zephyr-OP/PNX-ProxyBlocker",
-  "stars": 0,
+  "stars": 1,
   "summary": "Blocks Proxies",
   "targets": [
     "nkx",
     "pnx"
   ],
-  "updated_at": 1785692604,
+  "updated_at": 1785720584,
   "versions": [
     {
       "changelog": "Automated release for v1.0.0",
@@ -42,7 +42,7 @@
         {
           "filename": "ProxyBlocker.jar",
           "primary": true,
-          "size": 5103,
+          "size": 5373,
           "url": "https://github.com/Zephyr-OP/PNX-ProxyBlocker/releases/download/v1.0.0/ProxyBlocker.jar"
         }
       ],
