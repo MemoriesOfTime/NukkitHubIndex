@@ -1,0 +1,42 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "name": "Buddelbubi",
+      "url": "https://github.com/Buddelbubi"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/50714128?v=4",
+      "name": "xRookieFight",
+      "url": "https://github.com/xRookieFight"
+    }
+  ],
+  "categories": [],
+  "created_at": 1785799168,
+  "dependencies": [],
+  "description": "# PNX-Waterdog\n\nWaterdogPE proxy support plugin for PowerNukkitX.\n\n## Usage\n\n- Build: `./gradlew build` (jar at `build/libs/PNX-Waterdog-1.0.0.jar`)\n- Drop the jar into the server's `plugins` folder\n- Enables unsigned login chains (proxy strips the Mojang signature) and reads the player XUID from `Waterdog_XUID` in the login chain\n- Also disables the login time check, since the proxy re-signs login data\n\n## Warning\n\n- Only install this behind a WaterdogPE proxy. With this plugin active, the server accepts unsigned login chains, so it must not be directly reachable from the internet.\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/213217140?v=4",
+  "id": "wan-adrian/PNX-Waterdog",
+  "license": {
+    "id": "LGPL-3.0",
+    "name": "GNU Lesser General Public License v3.0",
+    "url": "https://spdx.org/licenses/LGPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "PNX-Waterdog",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/wan-adrian/PNX-Waterdog",
+  "stars": 0,
+  "summary": "WaterdogPE proxy support for PowerNukkitX",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1785106928,
+  "versions": []
+}

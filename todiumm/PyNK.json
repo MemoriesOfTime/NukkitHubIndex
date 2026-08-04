@@ -36,8 +36,24 @@
   "targets": [
     "nkmot"
   ],
-  "updated_at": 1785718921,
+  "updated_at": 1785802678,
   "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "PyNK.jar",
+          "primary": true,
+          "size": 47959497,
+          "url": "https://github.com/todiumm/PyNK/releases/download/2.0.0/PyNK.jar"
+        }
+      ],
+      "name": "PyNK - 2.0.0",
+      "prerelease": false,
+      "published_at": 1785802678,
+      "version": "2.0.0"
+    },
     {
       "changelog": "",
       "downloads": 0,

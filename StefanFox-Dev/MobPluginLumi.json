@@ -1,0 +1,42 @@
+{
+  "api_version": "1.0.14",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/52908036?v=4",
+      "name": "KoshakMineDEV",
+      "url": "https://github.com/KoshakMineDEV"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/70357814?v=4",
+      "name": "Reider745",
+      "url": "https://github.com/Reider745"
+    }
+  ],
+  "categories": [],
+  "created_at": 1785844022,
+  "dependencies": [],
+  "description": "# MobPlugin\nFork of [MobPlugin](https://github.com/Nukkit-coders/MobPlugin). Plugin that implements mobs and animals for Lumi servers.\n\n> [!IMPORTANT]\n> This version of the plugin is a temporary solution for the period of Lumi Entity AI system development\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/59245729?v=4",
+  "id": "StefanFox-Dev/MobPluginLumi",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "MobPluginLumi",
+  "primary_target": "lumi",
+  "server_version": "",
+  "source": "https://github.com/StefanFox-Dev/MobPluginLumi",
+  "stars": 0,
+  "summary": "Add mobs and animals with AI & spawning",
+  "targets": [
+    "lumi"
+  ],
+  "updated_at": 1785849127,
+  "versions": []
+}

@@ -496,7 +496,7 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/TropicalShadow/LuckPerms",
-  "stars": 0,
+  "stars": 1,
   "summary": "A permissions plugin",
   "targets": [
     "nkx",
