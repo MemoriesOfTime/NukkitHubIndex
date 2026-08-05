@@ -32,8 +32,24 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1785836863,
+  "updated_at": 1785952286,
   "versions": [
+    {
+      "changelog": "Toutes les commandes et tous les outils passent en **opérateur uniquement**. Jusqu'ici FastEdit ne déclarait aucune permission : n'importe quel joueur pouvait lancer `//set` ou `//paste`, le command map dispatchait sans le moindre contrôle.\n\nUne seule permission, `fastedit.use`, déclarée dans `plugin.yml` avec `default: op`.\n\n- **Commandes** — le constructeur de `FeCommand` porte la permission, donc les 28 commandes sont couvertes d'un coup. `SimpleCommandMap` refuse le dispatch avant exécution, et `getDataForPlayer` renvoie `null` pour un non-op : les commandes n'apparaissent même plus dans l'autocomplétion du client Bedrock. `execute()` re-teste la permission pour les appels qui ne passeraient pas par le command map. Les alias `//x` transitent par `Server.executeCommand`, donc même contrôle.\n- **Outils** — `WandListener` prend la même barrière. La hache, les pinceaux, l'inspecteur et la baguette d'expansion portent le pouvoir de la commande sans passer par elle : un pinceau donné à un joueur contournait purement et simplement la permission.\n\nEffet de bord voulu : un joueur non-op peut de nouveau casser des blocs avec une hache en bois. Le listener annulait le cassage pour tout porteur de hache, op ou non.\n\nPour ouvrir FastEdit à un grade non-op (builder, par exemple), il suffit de lui accorder `fastedit.use`.\n\nAucun changement d'édition : mêmes commandes, mêmes sélections, mêmes schematics. Toujours PNX 3.0.x.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FastEdit-1.2.0.jar",
+          "primary": true,
+          "size": 142504,
+          "url": "https://github.com/Wyze3306/FastEdit/releases/download/v1.2.0/FastEdit-1.2.0.jar"
+        }
+      ],
+      "name": "FastEdit 1.2.0",
+      "prerelease": false,
+      "published_at": 1785952286,
+      "version": "v1.2.0"
+    },
     {
       "changelog": "Portage sur **PowerNukkitX 3.0.1**. La 3.0 a renommé tout l'espace de noms `cn.nukkit.*` en `org.powernukkitx.*` et confié le protocole et le NBT à CloudburstMC : la 1.0.5 ne se charge plus du tout dessus, chaque import pointant sur une classe disparue.\n\n**Cette version demande PNX 3.0.x. Pour un serveur PNX 2.x, rester en 1.0.5.**\n\nCe qui a réellement changé de place, au-delà du renommage :\n\n- **Mise à jour des blocs** — `UpdateSubChunkBlocksPacket` est désormais le paquet Cloudburst (setters au lieu du constructeur positionnel, getters de listes au lieu des champs publics) et `BlockChangeEntry` prend un `Vector3i`, une `BlockDefinition` et un `ActorBlockSyncMessageId`. `FLAG_ALL` étant devenu un `Set<Flag>`, le masque par entrée est reconstruit depuis l'enum pour garder exactement `NEIGHBORS|NETWORK`.\n- **Complétion des commandes** — `CommandParamType` vient de la lib protocole et n'a plus de `STRING` : c'est `ID` qui porte le paramètre texte, comme dans les commandes natives de PNX.\n- **Fichiers NBT** — `NBTIO` a disparu. `NbtFiles` fait le pont entre les flux Cloudburst et le `CompoundTag` de PNX, à la manière de `StructureAPI`, en conservant les deux formats dont le plugin dépend : big-endian pour `unknown_blocks.dat` et little-endian pour les `.mcstructure`. Un `unknown_blocks.dat` de 971 entrées écrit par la 1.0.5 se relit à l'identique.\n- **NBT des items** — `hasCompoundTag`/`getNamedTag`/`setNamedTag` deviennent `hasNbt`/`getNbt`/`setNbt`.\n- `plugin.yml` déclare `api: 3.0.0` — le `PluginManager` refuse un major différent.\n\nVérifié sur un serveur 3.0.1 : le plugin s'active, les deux listeners s'enregistrent et une commande se dispatche.\n\nAucun changement de comportement en jeu : mêmes commandes, mêmes sélections, mêmes schematics.",
       "downloads": 0,

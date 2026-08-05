@@ -25,16 +25,6 @@
   "dependencies": [
     {
       "dependency_type": "optional",
-      "plugin_id": "ScoreboardPlugin",
-      "version_range": ""
-    },
-    {
-      "dependency_type": "optional",
-      "plugin_id": "ScoreboardAPI",
-      "version_range": ""
-    },
-    {
-      "dependency_type": "optional",
       "plugin_id": "Tips",
       "version_range": ""
     }
@@ -61,6 +51,6 @@
   "targets": [
     "nkmot"
   ],
-  "updated_at": 1776090860,
+  "updated_at": 1785941289,
   "versions": []
 }
