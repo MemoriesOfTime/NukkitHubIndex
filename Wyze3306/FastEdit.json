@@ -32,8 +32,24 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1785952286,
+  "updated_at": 1785962282,
   "versions": [
+    {
+      "changelog": "Le contour de sélection noyait la connexion de son propriétaire sous les paquets de particules, au point de faire tomber le client en **timeout** — sans la moindre erreur côté serveur, puisque le serveur ne fait qu'envoyer.\n\nChaque point du contour coûte un `SpawnParticleEffectPacket` : il n'y a aucun moyen de les grouper, et ils partent tous dans le même tick. Le plafond `MAX_POINTS = 600` n'en était pas un :\n\n- le pas était planché à `0.5` block, donc sur une sélection petite ou moyenne le nombre de points n'était borné que par le périmètre, jamais par le plafond ;\n- chaque arête émettait son extrémité **en plus** du budget, soit 12 points systématiquement hors quota.\n\nUne sélection 5×8×5 envoyait 156 paquets en un tick toutes les 10 ticks, soit 312 paquets/s pour un seul joueur. Au-delà de 32³ on plafonnait à ~1 224 paquets/s.\n\n**Corrections**\n\n- Pas de `0.5` → `1.0` block, la densité de WorldEdit CUI. Le contour reste lisible, le compte est divisé par deux.\n- Budget de 600 → 160, et **réellement appliqué** : il est décrémenté arête par arête et ne compte que les particules effectivement envoyées, les points écartés par la distance ne coûtant rien.\n- Les 12 extrémités d'arêtes sont retirées du budget **avant** de l'étaler sur le périmètre. Sans ça l'étirement retombait juste au-dessus du plafond et la dernière arête se faisait couper — une boîte à laquelle il manque un côté.\n\n**Mesuré**\n\n| sélection | avant | après |\n|---|---|---|\n| 5×8×5 | 312 paquets/s | 168 |\n| 32×32×32 | 1 224 | 312 |\n| 256×128×256 | 1 224 | 320 |\n\nLe pire cas passe de ~1 224 à 320 paquets/s par joueur, et le plafond tient désormais pour toutes les tailles de sélection au lieu des seules très grandes.\n\n`PERIOD_TICKS` reste à 10 : la particule endrod persiste assez longtemps pour que le contour paraisse continu à cette cadence, l'allonger le ferait clignoter.\n\nAucun changement d'édition : mêmes commandes, mêmes sélections, mêmes schematics. Toujours PNX 3.0.x.\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FastEdit-1.2.1.jar",
+          "primary": true,
+          "size": 142581,
+          "url": "https://github.com/Wyze3306/FastEdit/releases/download/v1.2.1/FastEdit-1.2.1.jar"
+        }
+      ],
+      "name": "FastEdit 1.2.1",
+      "prerelease": false,
+      "published_at": 1785962282,
+      "version": "v1.2.1"
+    },
     {
       "changelog": "Toutes les commandes et tous les outils passent en **opérateur uniquement**. Jusqu'ici FastEdit ne déclarait aucune permission : n'importe quel joueur pouvait lancer `//set` ou `//paste`, le command map dispatchait sans le moindre contrôle.\n\nUne seule permission, `fastedit.use`, déclarée dans `plugin.yml` avec `default: op`.\n\n- **Commandes** — le constructeur de `FeCommand` porte la permission, donc les 28 commandes sont couvertes d'un coup. `SimpleCommandMap` refuse le dispatch avant exécution, et `getDataForPlayer` renvoie `null` pour un non-op : les commandes n'apparaissent même plus dans l'autocomplétion du client Bedrock. `execute()` re-teste la permission pour les appels qui ne passeraient pas par le command map. Les alias `//x` transitent par `Server.executeCommand`, donc même contrôle.\n- **Outils** — `WandListener` prend la même barrière. La hache, les pinceaux, l'inspecteur et la baguette d'expansion portent le pouvoir de la commande sans passer par elle : un pinceau donné à un joueur contournait purement et simplement la permission.\n\nEffet de bord voulu : un joueur non-op peut de nouveau casser des blocs avec une hache en bois. Le listener annulait le cassage pour tout porteur de hache, op ou non.\n\nPour ouvrir FastEdit à un grade non-op (builder, par exemple), il suffit de lui accorder `fastedit.use`.\n\nAucun changement d'édition : mêmes commandes, mêmes sélections, mêmes schematics. Toujours PNX 3.0.x.",
       "downloads": 0,

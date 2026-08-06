@@ -272,11 +272,6 @@
       "url": "https://github.com/Warriorrrr"
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/11252574?v=4",
-      "name": "mja00",
-      "url": "https://github.com/mja00"
-    },
-    {
       "avatar_url": "https://avatars.githubusercontent.com/u/12481684?v=4",
       "name": "EduardWayland",
       "url": "https://github.com/EduardWayland"
@@ -322,6 +317,11 @@
       "url": "https://github.com/BlockyTheDev"
     },
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/280705011?v=4",
+      "name": "BlockException",
+      "url": "https://github.com/BlockException"
+    },
+    {
       "avatar_url": "https://avatars.githubusercontent.com/u/43724816?v=4",
       "name": "Aurelien30000",
       "url": "https://github.com/Aurelien30000"
@@ -355,6 +355,11 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/9113033?v=4",
       "name": "3TUSK",
       "url": "https://github.com/3TUSK"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/11252574?v=4",
+      "name": "mja00",
+      "url": "https://github.com/mja00"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/3490861?v=4",
@@ -469,6 +474,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1785949005,
+  "updated_at": 1785965423,
   "versions": []
 }

@@ -32,7 +32,7 @@
   "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/PNX-Waterdog",
-  "stars": 0,
+  "stars": 1,
   "summary": "WaterdogPE proxy support for PowerNukkitX",
   "targets": [
     "pnx"
