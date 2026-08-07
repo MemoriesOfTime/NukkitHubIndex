@@ -11,11 +11,6 @@
   "created_at": 1682491256,
   "dependencies": [
     {
-      "dependency_type": "required",
-      "plugin_id": "ScoreboardPlugin",
-      "version_range": ""
-    },
-    {
       "dependency_type": "optional",
       "plugin_id": "Tips",
       "version_range": ""
@@ -54,6 +49,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1783974847,
+  "updated_at": 1786098678,
   "versions": []
 }

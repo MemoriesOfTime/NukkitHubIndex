@@ -1,0 +1,186 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "name": "Buddelbubi",
+      "url": "https://github.com/Buddelbubi"
+    }
+  ],
+  "categories": [],
+  "created_at": 1724481926,
+  "dependencies": [],
+  "description": "# WorldManager for PowerNukkitX\n\nWorldManager is a powerful multiworld management plugin for PowerNukkitX. It provides commands and form-based user interfaces for creating, managing, configuring, and navigating worlds.\n\n## Features\n\n- Teleport to another world\n- World teleport UI\n- World generation UI\n- Generate worlds with a custom generator and seed\n- Delete worlds\n- List loaded and unloaded worlds\n- Load, unload, and reload worlds\n- Rename worlds\n- Copy, duplicate, and back up worlds\n- Set the world spawn\n- Regenerate worlds\n- Change the seed of an existing world\n- Display world information such as seed, generator, and player count\n- Optional per-world game modes\n- UI-based settings\n- Change the default world\n- Load worlds on server startup\n- Restrict access to worlds using permissions\n- Remove all entities from a world\n- Change the biome of loaded chunks\n- Manage game rules through a UI\n- Enable or disable the built-in movement check per world\n- Add notes to worlds\n- Protect worlds against building, breaking, and interactions\n- Synchronize game rules and settings between worlds\n- Set a player limit per world\n- Locate nearby biomes\n\n## Commands and permissions\n\nThe main command is `/worldmanager`. The aliases `/wm`, `/mw`, `/levelmanager`, `/lm`, and `/mv` are also available.\n\nUsers with the `worldmanager.admin` permission can use all WorldManager features. Command permissions generally follow this pattern:\n\n```text\nworldmanager.<main-subcommand>\n```\n\nFor example, `/wm generate` requires `worldmanager.generate`. The complete command and alias list is available in-game and in the console with `/wm help`.\n\n| Command | Description |\n| --- | --- |\n| `/worldmanager teleport <world> [player]` | Teleports you or another player to a world. Aliases: `tp`, `to`. |\n| `/worldmanager generate <world> [generator] [seed]` | Generates a world. Aliases: `gen`, `create`. |\n| `/worldmanager delete <world>` | Deletes a world. Aliases: `del`, `remove`, `purge`. |\n| `/worldmanager list` | Lists all worlds. |\n| `/worldmanager load <world>` | Loads a world. |\n| `/worldmanager unload <world>` | Unloads a world. |\n| `/worldmanager reload [world]` | Reloads a world. |\n| `/worldmanager rename <world> <new-name>` | Renames a world. |\n| `/worldmanager copy [world] [copy-name]` | Copies a world. |\n| `/worldmanager setspawn` | Sets the spawn of the current world. |\n| `/worldmanager settings [world]` | Opens the world-specific settings UI. |\n| `/worldmanager regenerate [world]` | Regenerates a world. Aliases: `reg`, `reset`. |\n| `/worldmanager setseed <world> <seed>` | Changes a world's seed. Alias: `reseed`. |\n| `/worldmanager info [world]` | Displays information about a world. |\n| `/worldmanager setbiome <biome>` | Changes the biome of every loaded chunk in the current world. |\n| `/worldmanager gamerule [world]` | Opens the game-rule UI. |\n| `/worldmanager version` | Displays the installed WorldManager version. |\n| `/worldmanager killentitys <world>` | Removes all entities from a world. |\n| `/worldmanager sync [template-world]` | Synchronizes game rules and settings with a template world. |\n| `/worldmanager locatebiome <biome> [range] [teleport]` | Searches nearby chunks for a biome. |\n| `/worldmanager spawn` | Teleports you to the spawn of the current world. |\n| `/worldmanager default [world]` | Displays or changes the default world. |\n\n### Additional permissions\n\n| Permission | Description |\n| --- | --- |\n| `worldmanager.deny.<world>` | Prevents a player from entering the specified world. |\n| `worldmanager.teleport.<world>` | Allows `/worldmanager teleport` only for the specified world. |\n| `worldmanager.teleportui` | Allows access to the world teleport UI. |\n| `worldmanager.generationui` | Allows access to the world generation UI. |",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+  "id": "Buddelbubi/WorldManagerPNX",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://cloudburstmc.org/resources/worldmanager-advanced-multiworld-plugin.560/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "WorldManager",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/Buddelbubi/WorldManagerPNX",
+  "stars": 2,
+  "summary": "WorldManager is the most powerful world management system.",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1786102487,
+  "versions": [
+    {
+      "changelog": "Automated release for v1.2.10",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "WorldManager.jar",
+          "primary": true,
+          "size": 115201,
+          "url": "https://github.com/Buddelbubi/WorldManagerPNX/releases/download/v1.2.10/WorldManager.jar"
+        }
+      ],
+      "name": "v1.2.10",
+      "prerelease": false,
+      "published_at": 1786102418,
+      "version": "v1.2.10"
+    },
+    {
+      "changelog": "Automated release for v1.2.9",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "WorldManager.jar",
+          "primary": true,
+          "size": 113686,
+          "url": "https://github.com/Buddelbubi/WorldManagerPNX/releases/download/v1.2.9/WorldManager.jar"
+        }
+      ],
+      "name": "v1.2.9",
+      "prerelease": false,
+      "published_at": 1783684819,
+      "version": "v1.2.9"
+    },
+    {
+      "changelog": "API 3.0.0\r\n\r\n**Full Changelog**: https://github.com/Buddelbubi/WorldManagerPNX/compare/1.2.7...1.2.8",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "WorldManager.jar",
+          "primary": true,
+          "size": 113281,
+          "url": "https://github.com/Buddelbubi/WorldManagerPNX/releases/download/1.2.8/WorldManager.jar"
+        }
+      ],
+      "name": "1.2.8",
+      "prerelease": false,
+      "published_at": 1780149424,
+      "version": "1.2.8"
+    },
+    {
+      "changelog": "API Changes\r\n\r\nAddapted to PNX API Changes for 1.21.70",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "WorldManager.jar",
+          "primary": true,
+          "size": 113872,
+          "url": "https://github.com/Buddelbubi/WorldManagerPNX/releases/download/1.2.7/WorldManager.jar"
+        }
+      ],
+      "name": "1.2.7",
+      "prerelease": false,
+      "published_at": 1742942464,
+      "version": "1.2.7"
+    },
+    {
+      "changelog": "Updated to the latest PNX version (Dimension changes)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "WorldManager.jar",
+          "primary": true,
+          "size": 113956,
+          "url": "https://github.com/Buddelbubi/WorldManagerPNX/releases/download/1.2.6/WorldManager.jar"
+        }
+      ],
+      "name": "1.2.6",
+      "prerelease": false,
+      "published_at": 1742391674,
+      "version": "1.2.6"
+    },
+    {
+      "changelog": "This updates WorldManager to the new PowerNukkitX Form API. \r\nPlease only update when your running a PowerNukkitX Server with that new Form API",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "WorldManager.jar",
+          "primary": true,
+          "size": 114106,
+          "url": "https://github.com/Buddelbubi/WorldManagerPNX/releases/download/1.2.5/WorldManager.jar"
+        }
+      ],
+      "name": "WorldManager 1.2.5",
+      "prerelease": false,
+      "published_at": 1740678577,
+      "version": "1.2.5"
+    },
+    {
+      "changelog": "This version fixed the copy command, removed some features that PNX can do on its own (config.json) and fixed that it used the getName instead of the getFolderName method.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "WorldManager.jar",
+          "primary": true,
+          "size": 113842,
+          "url": "https://github.com/Buddelbubi/WorldManagerPNX/releases/download/1.2.4/WorldManager.jar"
+        }
+      ],
+      "name": "WorldManager 1.2.4",
+      "prerelease": false,
+      "published_at": 1733744229,
+      "version": "1.2.4"
+    },
+    {
+      "changelog": "- Fixes /wm copy since PNX adds the dimension to the worldname.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "WorldManager-1.2.3.jar",
+          "primary": true,
+          "size": 115043,
+          "url": "https://github.com/Buddelbubi/WorldManagerPNX/releases/download/1.2.3/WorldManager-1.2.3.jar"
+        }
+      ],
+      "name": "WorldManager 1.2.3",
+      "prerelease": false,
+      "published_at": 1725794632,
+      "version": "1.2.3"
+    },
+    {
+      "changelog": "Updated to the latest PowerNukkitX version [98f35f0](https://github.com/PowerNukkitX/PowerNukkitX/commit/98f35f0ab785a604b4f57db0911a63ff80f5fd54)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "WorldManager-1.2.2.jar",
+          "primary": true,
+          "size": 115024,
+          "url": "https://github.com/Buddelbubi/WorldManagerPNX/releases/download/1.2.2/WorldManager-1.2.2.jar"
+        }
+      ],
+      "name": "WorldManager 1.2.2",
+      "prerelease": false,
+      "published_at": 1724482341,
+      "version": "1.2.2"
+    }
+  ]
+}

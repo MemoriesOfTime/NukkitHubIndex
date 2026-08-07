@@ -36,8 +36,42 @@
   "targets": [
     "nkmot"
   ],
-  "updated_at": 1785735386,
+  "updated_at": 1786110194,
   "versions": [
+    {
+      "changelog": "# HuHoBot-Adapter v2.1.6\n\nfeat(core): 添加自定义连接服务器地址\n\n### 构建信息\n- 构建时间: 2026-08-07T13:43:13Z\n- 提交哈希: [ae8fa81adafa6eaa9bfd8a1f3c5588b0f83d65b0](https://github.com/HuHoBot/KotlinMergeAdapter/commit/ae8fa81adafa6eaa9bfd8a1f3c5588b0f83d65b0)\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-2.1.6-Allay.jar",
+          "primary": true,
+          "size": 9357974,
+          "url": "https://github.com/HuHoBot/KotlinMergeAdapter/releases/download/v2.1.6/HuHoBot-2.1.6-Allay.jar"
+        },
+        {
+          "filename": "HuHoBot-2.1.6-Nukkit-MOT.jar",
+          "primary": true,
+          "size": 8851736,
+          "url": "https://github.com/HuHoBot/KotlinMergeAdapter/releases/download/v2.1.6/HuHoBot-2.1.6-Nukkit-MOT.jar"
+        },
+        {
+          "filename": "HuHoBot-2.1.6-Proxy.jar",
+          "primary": true,
+          "size": 10533059,
+          "url": "https://github.com/HuHoBot/KotlinMergeAdapter/releases/download/v2.1.6/HuHoBot-2.1.6-Proxy.jar"
+        },
+        {
+          "filename": "HuHoBot-2.1.6-Spigot.jar",
+          "primary": true,
+          "size": 9280142,
+          "url": "https://github.com/HuHoBot/KotlinMergeAdapter/releases/download/v2.1.6/HuHoBot-2.1.6-Spigot.jar"
+        }
+      ],
+      "name": "HuHoBot v2.1.6",
+      "prerelease": false,
+      "published_at": 1786110194,
+      "version": "v2.1.6"
+    },
     {
       "changelog": "# HuHoBot-Adapter v2.1.5\n\nfeat(core): 添加群成员进退群事件\n\n- 在 BotCustomCommand事件中内置了群成员进退群事件处理器\n\n### 构建信息\n- 构建时间: 2026-07-31T07:04:39Z\n- 提交哈希: [8339559ab07bd8af18ade6d88798563d51820c0b](https://github.com/HuHoBot/KotlinMergeAdapter/commit/8339559ab07bd8af18ade6d88798563d51820c0b)\n",
       "downloads": 0,

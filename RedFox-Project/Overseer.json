@@ -1,0 +1,54 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/128159204?v=4",
+      "name": "ayd1ndemirci",
+      "url": "https://github.com/ayd1ndemirci"
+    }
+  ],
+  "categories": [],
+  "created_at": 1786094000,
+  "dependencies": [],
+  "description": "# Overseer\n\n**Overseer** is an advanced, enterprise-grade Anti-Duplication and Item Integrity plugin for PowerNukkitX. Built with strict performance guidelines, it prevents item duplication vulnerabilities by cryptographically signing items and maintaining an atomic, cross-server global ledger using Redis.\n\n## 🚀 Features\n\n* **Cryptographic Item Signatures:** Each non-stackable item is tagged with a unique UUID, Origin, and an HMAC-SHA256 signature. Any tampering with NBT data instantly invalidates the item.\n* **Atomic Transactions:** Uses Redis Distributed Locks (SETNX) to guarantee thread-safe item transfers and prevent race condition dupes (e.g., two players clicking the same item simultaneously).\n* **Deep Container Scanning:** Recursively scans nested containers like Shulker Boxes to catch hidden duplicated items.\n* **Smart Garbage Collection:** Scans player inventories, chests, hoppers, barrels, and furnaces strictly on close/drop events to minimize Main Thread CPU overhead.\n* **Cross-Server Compatibility:** The Redis Ledger tracks item states globally, making it perfect for multi-server (proxy) setups.\n\n## ⚙️ Architecture\n\nOverseer utilizes a **Strategy Pattern** for its validation logic, ensuring high maintainability and ease of extending.\n\n1. `SignatureValidator`: Validates the HMAC signature to detect NBT manipulation.\n2. `SessionDuplicateValidator`: Ensures the same item UUID does not appear twice in the same interaction cycle.\n3. `CrossPlayerValidator`: Tracks the previous legitimate owner. If an item is traded or dropped, the lock is atomicity transferred. If two online players hold the same UUID, the duplicated copy is destroyed.\n\n## 📦 Installation & Configuration\n\n1. Drop the `Overseer.jar` into your server's `plugins` folder.\n2. Start the server to generate the default configuration.\n3. Configure your Redis instance in `plugins/Overseer/config.yml`.\n4. **IMPORTANT:** Change the `hmac.secret_key` in the config to a long, random string. If this key is compromised, malicious players could forge item signatures.\n\n```yaml\nredis:\n  host: \"127.0.0.1\"\n  port: 6379\n  password: \"\"\n\nhmac:\n  secret_key: \"CHANGE_THIS_TO_A_SECURE_RANDOM_STRING\"\n\nfeatures:\n  shulker_scan: true\n  container_scan: true\n```\n\n## ⚠️ Important Developer Notice\nOverseer strictly enforces its **Zero Main-Thread Blocking** policy. All heavy Redis calls run asynchronously. If any action requires interacting with the server world, the task is safely passed back to the main thread via the scheduler.\n\n---\n**License:** Open-source. Use responsibly.\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/309846955?v=4",
+  "id": "RedFox-Project/Overseer",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Overseer",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/RedFox-Project/Overseer",
+  "stars": 0,
+  "summary": "Advanced Anti-Dupe and Item Integrity System",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1786094247,
+  "versions": [
+    {
+      "changelog": "Download ",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Overseer-1.0.0.jar",
+          "primary": true,
+          "size": 57435,
+          "url": "https://github.com/RedFox-Project/Overseer/releases/download/Download/Overseer-1.0.0.jar"
+        }
+      ],
+      "name": "Download",
+      "prerelease": false,
+      "published_at": 1786094247,
+      "version": "Download"
+    }
+  ]
+}

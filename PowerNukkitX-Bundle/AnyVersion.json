@@ -49,8 +49,24 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1785689790,
+  "updated_at": 1786099762,
   "versions": [
+    {
+      "changelog": "**Full Changelog**: https://github.com/PowerNukkitX-Bundle/AnyVersion/compare/v2.8.4...v2.8.5",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AnyVersion.jar",
+          "primary": true,
+          "size": 467589,
+          "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/v2.8.5/AnyVersion.jar"
+        }
+      ],
+      "name": "v2.8.5",
+      "prerelease": false,
+      "published_at": 1786099762,
+      "version": "v2.8.5"
+    },
     {
       "changelog": "## What's Changed\n* Support for latest PNX version by @Buddelbubi in https://github.com/PowerNukkitX-Bundle/AnyVersion/pull/10\n\n\n**Full Changelog**: https://github.com/PowerNukkitX-Bundle/AnyVersion/compare/v2.8.3...v2.8.4",
       "downloads": 0,
@@ -94,10 +110,42 @@
           "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/2.8.2/AnyVersion.jar"
         }
       ],
-      "name": "AnyVersion 2.8.2",
+      "name": "v2.8.2",
       "prerelease": false,
       "published_at": 1783622611,
       "version": "2.8.2"
+    },
+    {
+      "changelog": "[Migrate imports to org.powernukkitx](https://github.com/PowerNukkitX-Bundle/AnyVersion/commit/032bb0773250d59b482bd494c1c2b4b3b6ef5130)\r\nhttps://github.com/PowerNukkitX-Bundle/AnyVersion/commit/032bb0773250d59b482bd494c1c2b4b3b6ef5130\r\nReplaced legacy `cn.nukkit` API imports/usages across handlers, registries, transformers, and tables with the new `org.powernukkitx` namespace to match current server internals. Also updated the server dependency channel to `nightly-SNAPSHOT` and bumped plugin/build version from 2.8.0 to 2.8.1.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AnyVersion-2.8.1.jar",
+          "primary": true,
+          "size": 451396,
+          "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/2.8.1/AnyVersion-2.8.1.jar"
+        }
+      ],
+      "name": "v2.8.1",
+      "prerelease": false,
+      "published_at": 1783617517,
+      "version": "2.8.1"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AnyVersion.jar",
+          "primary": true,
+          "size": 455740,
+          "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/2.8.0/AnyVersion.jar"
+        }
+      ],
+      "name": "v2.8.0",
+      "prerelease": false,
+      "published_at": 1782898712,
+      "version": "2.8.0"
     },
     {
       "changelog": "Updated AnyVersion to Minecraft Bedrock 26.20 (975)",

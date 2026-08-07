@@ -1,0 +1,54 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/297729495?v=4",
+      "name": "kloerdev",
+      "url": "https://github.com/kloerdev"
+    }
+  ],
+  "categories": [],
+  "created_at": 1786040188,
+  "dependencies": [],
+  "description": "# 🪑 CustomFurniture\n\n![Java](https://img.shields.io/badge/Java-21-orange?style=flat-square&logo=openjdk)\n![Lumi](https://img.shields.io/badge/Lumi-1.6.4-blue?style=flat-square)\n![Version](https://img.shields.io/badge/version-1.0.0-green?style=flat-square)\n![Status](https://img.shields.io/badge/status-beta-yellow?style=flat-square)\n\n**CustomFurniture** — плагин для Lumi, позволяющий добавлять мебель и декоративные блоки через компактные JSON-конфигурации.\n\nДля создания нового блока не требуется писать отдельный Java-класс: достаточно указать его название, модель, текстуру и границы взаимодействия.\n\n---\n\n## Возможности\n\n- 28 готовых предметов мебели\n- Добавление собственных блоков через JSON\n- Автоматическая загрузка всех файлов из папки `definitions`\n- Общие настройки через секцию `defaults`\n- Поворот мебели при установке\n- Переключаемые состояния блоков\n- Настраиваемые collision и selection box\n- Поддержка отдельных материалов для частей модели\n- Настройка свечения и поглощения света\n- Скрытие технических состояний из творческого инвентаря\n- Проверка повторяющихся идентификаторов\n- Проверка отсутствующих целей `toggle`\n- Понятные сообщения об ошибках конфигурации\n\nКоманд у плагина нет — вся мебель регистрируется автоматически при запуске сервера.\n\n---\n\n## Требования\n\n- Java 21\n- Lumi 1.6.4\n- Включённый `enable-experiment-mode`\n- Resource Pack с моделями и текстурами мебели\n\n> Плагин протестирован с Lumi 1.6.4. Совместимость с другими версиями Lumi не гарантируется.\n\n---\n\n## Установка\n\n1. Соберите проект или скачайте готовый JAR из раздела Releases.\n2. Переместите JAR в папку сервера:\n\n```text\nplugins/\n```\n\n3. Включите экспериментальный режим в настройках Lumi:\n\n```yaml\nenable-experiment-mode: true\n```\n\n4. Установите Resource Pack с необходимыми моделями и текстурами.\n5. Полностью перезапустите сервер.\n\nПосле первого запуска появится папка:\n\n```text\nplugins/CustomFurniture/definitions/\n```\n\n---\n\n## Встроенные категории\n\nСтандартные блоки распределены по четырём файлам:\n\n```text\ndefinitions/\n├── decor.json\n├── electronics.json\n├── furniture.json\n└── lighting.json\n```\n\nМожно редактировать существующие категории или создать собственный файл:\n\n```text\ndefinitions/my_furniture.json\n```\n\nПлагин автоматически загружает все файлы с расширением `.json`.\n\nПосле изменения определений требуется полный перезапуск сервера.\n\n---\n\n## Быстрое добавление блока\n\nДобавьте объект в массив `blocks` подходящего JSON-файла:\n\n```json\n{\n  \"id\": \"modern_chair\",\n  \"name\": \"Современный стул\",\n  \"box\": [\n    [-7, 0, -7],\n    [14, 16, 14]\n  ]\n}\n```\n\nИз поля `id` автоматически будут сформированы:\n\n```text\nidentifier: customblock:modern_chair\ntexture: modern_chair\ngeometry: geometry.modern_chair\n```\n\nВ Resource Pack должны существовать текстура и геометрия с соответствующими именами.\n\n---\n\n## Структура файла определений\n\n```json\n{\n  \"defaults\": {\n    \"namespace\": \"customblock\",\n    \"render\": \"alpha_test\",\n    \"hardness\": 1.0,\n    \"friction\": 0.6,\n    \"category\": \"construction\",\n    \"rotatable\": true,\n    \"creative\": true,\n    \"light\": 0,\n    \"light_filter\": 0\n  },\n  \"blocks\": [\n    {\n      \"id\": \"modern_chair\",\n      \"name\": \"Современный стул\",\n      \"box\": [\n        [-7, 0, -7],\n        [14, 16, 14]\n      ]\n    }\n  ]\n}\n```\n\nЗначения из `defaults` применяются ко всем блокам файла, если блок не переопределяет их самостоятельно.\n\n---\n\n## Собственное имя модели и текстуры\n\nПоле `asset` одновременно задаёт название текстуры и геометрии:\n\n```json\n{\n  \"id\": \"modern_chair\",\n  \"name\": \"Современный стул\",\n  \"asset\": \"chair_model_v2\",\n  \"box\": [\n    [-7, 0, -7],\n    [14, 16, 14]\n  ]\n}\n```\n\nБудут использованы:\n\n```text\ntexture: chair_model_v2\ngeometry: geometry.chair_model_v2\n```\n\nТекстуру и геометрию также можно задать отдельно:\n\n```json\n{\n  \"id\": \"modern_chair\",\n  \"name\": \"Современный стул\",\n  \"texture\": \"chair_texture\",\n  \"geometry\": \"geometry.chair_model\",\n  \"box\": [\n    [-7, 0, -7],\n    [14, 16, 14]\n  ]\n}\n```\n\n---\n\n## Переключаемые состояния\n\nЧерез `toggle` можно создать мебель с двумя состояниями: включённую лампу, открытый шкаф или активированный телевизор.\n\n```json\n{\n  \"id\": \"table_lamp_off\",\n  \"name\": \"Настольная лампа\",\n  \"toggle\": \"table_lamp_on\",\n  \"box\": [\n    [-4, 0, -4],\n    [8, 12, 8]\n  ]\n}\n```\n\n```json\n{\n  \"id\": \"table_lamp_on\",\n  \"name\": \"Настольная лампа\",\n  \"toggle\": \"table_lamp_off\",\n  \"creative\": false,\n  \"light\": 12,\n  \"box\": [\n    [-4, 0, -4],\n    [8, 12, 8]\n  ]\n}\n```\n\nПри взаимодействии блок будет переключаться между двумя состояниями.\n\nТехническое состояние рекомендуется скрывать из творческого инвентаря:\n\n```json\n{\n  \"creative\": false\n}\n```\n\n---\n\n## Collision и Selection Box\n\nОдин общий box:\n\n```json\n{\n  \"box\": [\n    [-8, 0, -8],\n    [16, 16, 16]\n  ]\n}\n```\n\nПервый массив — начальная точка, второй — размер:\n\n```text\nbox: [origin, size]\n```\n\nОтдельные границы столкновения и выделения:\n\n```json\n{\n  \"collision\": [\n    [-7, 0, -7],\n    [14, 10, 14]\n  ],\n  \"selection\": [\n    [-8, 0, -8],\n    [16, 16, 16]\n  ]\n}\n```\n\nПолное отключение границы:\n\n```json\n{\n  \"collision\": false\n}\n```\n\n---\n\n## Отдельные материалы\n\nДля разных частей модели можно указать отдельные текстуры и методы рендера:\n\n```json\n{\n  \"id\": \"glass_table\",\n  \"name\": \"Стеклянный стол\",\n  \"materials\": {\n    \"*\": {\n      \"texture\": \"glass_table\",\n      \"render\": \"alpha_test\",\n      \"ambient_occlusion\": true,\n      \"face_dimming\": true\n    }\n  },\n  \"box\": [\n    [-8, 0, -8],\n    [16, 10, 16]\n  ]\n}\n```\n\n---\n\n## Основные параметры\n\n| Поле | Описание |\n|---|---|\n| `id` | Уникальное имя блока |\n| `name` | Отображаемое название |\n| `namespace` | Пространство имён identifier |\n| `asset` | Общее имя модели и текстуры |\n| `texture` | Название текстуры |\n| `geometry` | Identifier геометрии |\n| `unit_cube` | Использовать стандартный куб без модели |\n| `render` | Метод рендера |\n| `category` | Категория творческого инвентаря |\n| `hardness` | Прочность блока |\n| `friction` | Трение от `0.0` до `0.9` |\n| `rotatable` | Поворачивать блок при установке |\n| `creative` | Показывать блок в творческом инвентаре |\n| `light` | Уровень свечения от `0` до `15` |\n| `light_filter` | Поглощение света от `0` до `15` |\n| `toggle` | Identifier второго состояния |\n| `box` | Общий collision и selection box |\n| `collision` | Отдельный collision box |\n| `selection` | Отдельный selection box |\n| `materials` | Материалы отдельных частей модели |\n\n---\n\n## Автор\n\nРазработано [`kloerdev`](https://vk.com/kloerdev).\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/297729495?v=4",
+  "id": "kloerdev/CustomFurniture",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "CustomFurniture",
+  "primary_target": "lumi",
+  "server_version": "",
+  "source": "https://github.com/kloerdev/CustomFurniture",
+  "stars": 1,
+  "summary": "",
+  "targets": [
+    "lumi"
+  ],
+  "updated_at": 1786040650,
+  "versions": [
+    {
+      "changelog": "## CustomFurniture v1.0.0\r\n\r\nПервый публичный релиз CustomFurniture.\r\n\r\n### Возможности\r\n\r\n- 28 готовых предметов мебели\r\n- Добавление собственных блоков через JSON\r\n- Поворот мебели при установке\r\n- Переключаемые состояния блоков\r\n- Настраиваемые collision и selection box\r\n- Поддержка свечения\r\n- Разделение определений по категориям\r\n\r\n### Требования\r\n\r\n- Java 21\r\n- Lumi 1.6.4\r\n- Включённый `enable-experiment-mode`\r\n- CustomFurniture Resource Pack\r\n\r\n### Установка\r\n\r\n1. Поместите `CustomFurniture-1.0.0.jar` в папку `plugins`.\r\n2. Установите CustomBlock.RP.zip.\r\n3. Включите экспериментальный режим Lumi.\r\n4. Полностью перезапустите сервер.\r\n\r\n> Это beta-версия. Перед установкой на production-сервер рекомендуется сделать резервную копию мира.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "CustomFurniture-1.0.0.jar",
+          "primary": true,
+          "size": 43080,
+          "url": "https://github.com/kloerdev/CustomFurniture/releases/download/1.0.0/CustomFurniture-1.0.0.jar"
+        }
+      ],
+      "name": "CustomFurniture 1.0.0",
+      "prerelease": false,
+      "published_at": 1786040650,
+      "version": "1.0.0"
+    }
+  ]
+}
