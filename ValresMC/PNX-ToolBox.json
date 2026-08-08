@@ -15,7 +15,7 @@
   "categories": [],
   "created_at": 1785260061,
   "dependencies": [],
-  "description": "# PNX-ToolBox\n\nToolbox for PowerNukkitX plugins: manager lifecycle, RCON and a typed command framework.\n\nThe command framework supports nested sub-commands, typed arguments, reusable rules,\nautomatic permissions, Bedrock overloads/autocompletion and live command refresh.\nRule and argument errors are configurable through `command-messages-config.yml` and\nserved from an immutable runtime cache that can be refreshed without a restart.\n\nCustom items registered through `CustomItemRegistry` are automatically added to\nthe creative inventory. The toolbox detects armor, tools, ores, smithing\ntemplates, seeds, saplings, crops and spawn eggs, then places them in the matching\nBedrock category and group. `@CreativeInventoryInfo` can override the detected\nplacement or hide an item.\n\nCustom blocks registered through `CustomBlockRegistry` receive generated\nBedrock components from their PNX behavior. Crop permutations are automatic,\nand reusable permutation resolvers can be registered for other block families.\n\nSee [the wiki](https://github.com/ValresMC/PNX-ToolBox/blob/main/wiki/Home.md) for guides and complete examples.\n",
+  "description": "# PNX-ToolBox\n\nToolbox for PowerNukkitX plugins: manager lifecycle, RCON and a typed command framework.\n\nInteractive inventory menus are available through a Java-native `InventoryMenu` facade built\non PowerNukkitX's fake inventory and item-stack request APIs. Menus support shared live\ncontents, explicit transaction decisions, close callbacks and reusable subclasses without\nrequiring packet listeners or manual registration.\n\nThe command framework supports nested sub-commands, typed arguments, reusable rules,\nautomatic permissions, Bedrock overloads/autocompletion and live command refresh.\nRule and argument errors are configurable through `command-messages-config.yml` and\nserved from an immutable runtime cache that can be refreshed without a restart.\n\nCustom items registered through `CustomItemRegistry` are automatically added to\nthe creative inventory. The toolbox detects armor, tools, ores, smithing\ntemplates, seeds, saplings, crops and spawn eggs, then places them in the matching\nBedrock category and group. `@CreativeInventoryInfo` can override the detected\nplacement or hide an item.\n\nCustom blocks registered through `CustomBlockRegistry` receive generated\nBedrock components from their PNX behavior. Crop permutations are automatic,\nand reusable permutation resolvers can be registered for other block families.\nCustom furnaces use PNX's real furnace inventory, recipes and events while the\nbuilt-in furnace resolver generates their directional and lit-state visuals.\n\nCode-defined shaped and shapeless recipes can be assigned to custom crafting\ntables through `CustomCraftRegistry`, without JSON or YAML recipe files.\n\nSee [the wiki](https://github.com/ValresMC/PNX-ToolBox/blob/main/wiki/Home.md) for guides and complete examples.\n",
   "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
@@ -37,8 +37,40 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1785694960,
+  "updated_at": 1786210353,
   "versions": [
+    {
+      "changelog": "**Full Changelog**: https://github.com/ValresMC/PNX-ToolBox/compare/1.1.2...1.5.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "PNX-ToolBox-1.5.0.jar",
+          "primary": true,
+          "size": 401502,
+          "url": "https://github.com/ValresMC/PNX-ToolBox/releases/download/1.5.0/PNX-ToolBox-1.5.0.jar"
+        }
+      ],
+      "name": "Release 1.5.0",
+      "prerelease": false,
+      "published_at": 1786209656,
+      "version": "1.5.0"
+    },
+    {
+      "changelog": "## What's Changed\r\n* Add crafting utils, armor, and item registry upgrades by @ValresMC in https://github.com/ValresMC/PNX-ToolBox/pull/2\r\n\r\n**Full Changelog**: https://github.com/ValresMC/PNX-ToolBox/compare/1.0.22...1.1.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "pnx-toolbox-1.1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 363702,
+          "url": "https://github.com/ValresMC/PNX-ToolBox/releases/download/1.1.0/pnx-toolbox-1.1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "Release 1.1.0",
+      "prerelease": false,
+      "published_at": 1786192129,
+      "version": "1.1.0"
+    },
     {
       "changelog": "**Full Changelog**: https://github.com/ValresMC/PNX-ToolBox/compare/1.0.21...1.0.22",
       "downloads": 0,

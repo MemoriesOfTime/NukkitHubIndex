@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/314587755?v=4",
+      "name": "YehrLB",
+      "url": "https://github.com/YehrLB"
+    }
+  ],
+  "categories": [],
+  "created_at": 1786194680,
+  "dependencies": [],
+  "description": "# Voice\n\nVoice mod for Bedrock (Nukkit MOT).\n\n**EN:** Voice mod for Bedrock (Nukkit MOT)  \n**UK:** Войс мод для Bedrock (Nukkit MOT)  \n**RU:** Войс мод для Bedrock (Nukkit MOT)\n\nAuthor: **YehrLB**\n\n## Parts\n\n| Folder | What |\n|--------|------|\n| `VoiceMod/` | Nukkit MOT plugin (`/voice`) |\n| `Android/` | Voice app for Android |\n| `PC/` | Voice app for Windows/PC |\n| `voice-server/` | Shared proxy for multi-server setups |\n\n## Multi-server\n\nWorks on a single world **or** across lobby + game servers: same `voice-server`, shared `global-data.folder`, unique `server-id` per MC server. One Voice login follows the player across the network.\n\n## Quick start\n\n1. Run `voice-server` (`npm install && npm start`)\n2. Put `VoiceMod` on each MC server, set `server-id` + voice-server endpoints\n3. Install Voice (PC or Android), open `/voice` in-game for the code, connect\n\nDo not upload `target/`, `build/`, `dist/`, `node_modules/`, `lib/`.\n\n## License\n\nSee [LICENSE](https://github.com/YehrLB/VoiceMod/blob/main/LICENSE) (EN / UK / RU).\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/314587755?v=4",
+  "id": "YehrLB/VoiceMod",
+  "license": {
+    "id": "NOASSERTION",
+    "name": "Other",
+    "url": "https://github.com/YehrLB/VoiceMod/blob/main/LICENSE"
+  },
+  "links": null,
+  "manifest_path": "VoiceMod/src/main/resources/plugin.yml",
+  "name": "VoiceMod",
+  "primary_target": "nkmot",
+  "server_version": "",
+  "source": "https://github.com/YehrLB/VoiceMod",
+  "stars": 0,
+  "summary": "Voice mod for Bedrock (Nukkit MOT)",
+  "targets": [
+    "nkmot"
+  ],
+  "updated_at": 1786194758,
+  "versions": []
+}

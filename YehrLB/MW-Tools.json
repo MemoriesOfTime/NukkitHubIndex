@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/314587755?v=4",
+      "name": "YehrLB",
+      "url": "https://github.com/YehrLB"
+    }
+  ],
+  "categories": [],
+  "created_at": 1786195517,
+  "dependencies": [],
+  "description": "# MultiWorlds\n\nHandy multi-world tool for builders and map makers. Made for Nukkit MOT.\n\n**EN:** Create private build worlds, grant access, save/export maps - useful for builders and map makers.  \n**UK:** Створюй окремі світи для білдів, видавай доступ, зберігай/експортуй карти - зручно будівельникам і мапмейкерам.  \n**RU:** Создавай отдельные миры для билдов, выдавай доступ, сохраняй/экспортируй карты - удобно строителям и мапмейкерам.\n\nAuthor: **YehrLB**\n\n## Requirements\n\n- Java 21\n- Nukkit MOT\n\n## Build\n\n```bash\nmvn -DskipTests package\n```\n\nJar: `target/MultiWorlds-1.0.0.jar`  \n(put `lib/Nukkit-MOT-SNAPSHOT.jar` locally for compile - not in the repo)\n\n## Quick start\n\n1. Drop jar into `plugins/`\n2. `/mwcreate \"my_build\" flat` - new flat world for building\n3. `/mwplayer add \"Steve\" \"my_build\"` - give access\n4. `/mwsave \"my_build\"` - save + unload so you can copy `worlds/my_build`\n5. `/mwgo \"my_build\"` - teleport\n\n## Config\n\n`plugins/MultiWorlds/config.yml`\n\n```yaml\nlanguage: en   # en | uk | ru\n```\n\nWorld access lists: `plugins/MultiWorlds/worlds.yml` (auto-created).\n\nIn-game: `/mwlang uk`\n\n## Commands\n\n| Command | Who |\n|---------|-----|\n| `/mwcreate \"name\" flat\\|default` | OP |\n| `/mwdelete \"name\"` | OP |\n| `/mwsave \"name\"` | OP |\n| `/mwplayer add\\|remove \"player\" \"world\"` | OP |\n| `/mwlist` `/mwhelp` `/mwgo` | players |\n| `/mwlang <en\\|uk\\|ru>` | OP |\n\n## License\n\nSee [LICENSE](https://github.com/YehrLB/MW-Tools/blob/main/LICENSE) (EN / UK / RU).\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/314587755?v=4",
+  "id": "YehrLB/MW-Tools",
+  "license": {
+    "id": "NOASSERTION",
+    "name": "Other",
+    "url": "https://github.com/YehrLB/MW-Tools/blob/main/LICENSE"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "MultiWorlds",
+  "primary_target": "nkmot",
+  "server_version": "",
+  "source": "https://github.com/YehrLB/MW-Tools",
+  "stars": 0,
+  "summary": "Multi-world tool for builders and map makers. Made for Nukkit MOT.",
+  "targets": [
+    "nkmot"
+  ],
+  "updated_at": 1786195536,
+  "versions": []
+}

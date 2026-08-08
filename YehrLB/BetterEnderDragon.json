@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/314587755?v=4",
+      "name": "YehrLB",
+      "url": "https://github.com/YehrLB"
+    }
+  ],
+  "categories": [],
+  "created_at": 1786195298,
+  "dependencies": [],
+  "description": "# BetterEnderDragon\r\n\r\nBetter Ender Dragon AI for your Minecraft server. Made for Nukkit MOT.\r\n\r\n**EN:** Better Ender Dragon AI for The End.  \r\n**UK:** Покращений ШІ Ендер-дракона для Краю.  \r\n**RU:** Улучшенный ИИ Эндер-дракона для Энда.\r\n\r\nAuthor: **YehrLB**\r\n\r\n## Requirements\r\n\r\n- Java 21\r\n- Nukkit MOT\r\n\r\n## Build\r\n\r\n```bash\r\nmvn -DskipTests package\r\n```\r\n\r\nJar: `target/BetterEnderDragon-1.0.0.jar`  \r\n(put `lib/Nukkit-MOT-SNAPSHOT.jar` locally for compile - not in the repo)\r\n\r\n## Quick start\r\n\r\n1. Build jar → drop into `plugins/`\r\n2. Start server once → edit `plugins/BetterEnderDragon/config.yml`\r\n3. Set `dragon.world` to your End world name\r\n4. Optional: list portal block coords in `portal.frames` (empty = no portal after kill)\r\n5. `/enderdragon spawn`\r\n\r\n## Config (short)\r\n\r\n```yaml\r\nlanguage: en   # en | uk | ru\r\ndragon:\r\n  world: \"the_end\"\r\n  max-health: 1000   # dragon HP\r\nportal:\r\n  enabled: true\r\n  frames: []   # - {x: 0, y: 64, z: 0}\r\negg:\r\n  x: -0.52\r\n  y: 67.5\r\n  z: 0.51\r\n```\r\n\r\n## Commands\r\n\r\n| Command | Permission |\r\n|---------|------------|\r\n| `/enderdragon spawn` | `enderdragon.admin` |\r\n| `/enderdragon delete` | `enderdragon.admin` |\r\n| `/enderdragon lang <en\\|uk\\|ru>` | `enderdragon.admin` |\r\n\r\n## License\r\n\r\nSee [LICENSE](https://github.com/YehrLB/BetterEnderDragon/blob/main/LICENSE) (EN / UK / RU).\r\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/314587755?v=4",
+  "id": "YehrLB/BetterEnderDragon",
+  "license": {
+    "id": "NOASSERTION",
+    "name": "Other",
+    "url": "https://github.com/YehrLB/BetterEnderDragon/blob/main/LICENSE"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "BetterEnderDragon",
+  "primary_target": "nkmot",
+  "server_version": "",
+  "source": "https://github.com/YehrLB/BetterEnderDragon",
+  "stars": 0,
+  "summary": "Better Ender Dragon AI for The End. Made for Nukkit MOT.",
+  "targets": [
+    "nkmot"
+  ],
+  "updated_at": 1786195339,
+  "versions": []
+}

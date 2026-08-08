@@ -606,7 +606,7 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/plan-player-analytics/Plan",
-  "stars": 1021,
+  "stars": 1022,
   "summary": "Player Analytics plugin for Minecraft Server platforms - View player activity of your server with ease. :calendar:",
   "targets": [
     "nkx",

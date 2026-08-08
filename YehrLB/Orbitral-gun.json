@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/314587755?v=4",
+      "name": "YehrLB",
+      "url": "https://github.com/YehrLB"
+    }
+  ],
+  "categories": [],
+  "created_at": 1786195025,
+  "dependencies": [],
+  "description": "# OrbitralGun\r\n\r\nOrbital gun for your Minecraft server. Made for Nukkit MOT.\r\n\r\n**EN:** Wanted a Java-style orbital gun on MOT? Here it is.  \r\n**UK:** Хотіли орбітальну гармату з Java на MOT? Ось вона.\r\n**RU:** Хотели орбитальную пушку с Java на MOT? Вот она.\r\n\r\nAuthor: **YehrLB**\r\n\r\n## Requirements\r\n\r\n- Java 21\r\n- Nukkit MOT\r\n\r\n## Build\r\n\r\n```bash\r\nmvn -DskipTests package\r\n```\r\n\r\nJar: `target/OrbitralGun-1.0.0.jar`  \r\n(put `lib/Nukkit-MOT-SNAPSHOT.jar` locally for compile - not in the repo)\r\n\r\n## Quick start\r\n\r\n1. Drop jar into `plugins/`\r\n2. `/orbitralgun` - give yourself the gun\r\n3. RMB - orbital strike (item is single-use)\r\n\r\n## Config\r\n\r\n```yaml\r\nlanguage: en   # en | uk | ru\r\nblocked-worlds: []\r\n```\r\n\r\nIn-game: `/orbitralgun lang uk`\r\n\r\n## Commands\r\n\r\n| Command | Permission |\r\n|---------|------------|\r\n| `/orbitralgun [player]` | `orbitralgun.give` |\r\n| `/orbitralgun lang <en\\|uk\\|ru>` | `orbitralgun.give` |\r\n| Use gun | `orbitralgun.use` |\r\n\r\n## License\r\n\r\nSee [LICENSE](https://github.com/YehrLB/Orbitral-gun/blob/main/LICENSE) (EN / UK / RU).\r\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/314587755?v=4",
+  "id": "YehrLB/Orbitral-gun",
+  "license": {
+    "id": "NOASSERTION",
+    "name": "Other",
+    "url": "https://github.com/YehrLB/Orbitral-gun/blob/main/LICENSE"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "OrbitralGun",
+  "primary_target": "nkmot",
+  "server_version": "",
+  "source": "https://github.com/YehrLB/Orbitral-gun",
+  "stars": 0,
+  "summary": "Orbital gun - fishing rod that calls a TNT carpet from the sky. Made for Nukkit MOT.",
+  "targets": [
+    "nkmot"
+  ],
+  "updated_at": 1786195044,
+  "versions": []
+}

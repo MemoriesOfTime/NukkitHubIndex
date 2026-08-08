@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/314587755?v=4",
+      "name": "YehrLB",
+      "url": "https://github.com/YehrLB"
+    }
+  ],
+  "categories": [],
+  "created_at": 1786195397,
+  "dependencies": [],
+  "description": "# EndFix\r\n\r\nTurn any world into The End or Nether - or convert it back. Made for Nukkit MOT.\r\n\r\n**EN:** Want to rebuild a world as The End/Nether (or fix a broken converted one)? This plugin helps.  \r\n**UK:** Хочеш переробити світ під Край/Ад (або полагодити зламану конвертацію)? Цей плагін допоможе.  \r\n**RU:** Хочешь переделать мир под Край/Ад (или починить сломанную конвертацию)? Этот плагин поможет.\r\n\r\nAuthor: **YehrLB**\r\n\r\n## Requirements\r\n\r\n- Java 17+\r\n- Nukkit MOT\r\n\r\n## Build\r\n\r\n```bash\r\nmvn -DskipTests package\r\n```\r\n\r\nJar: `target/EndFix-1.1.0.jar`  \r\n(put `lib/Nukkit-MOT-SNAPSHOT.jar` locally for compile - not in the repo)\r\n\r\n## Quick start\r\n\r\n1. Drop jar into `plugins/`\r\n2. Backup the world folder first\r\n3. `/endfixworld my_world` - make it The End  \r\n   `/netherfixworld my_world` - make it Nether  \r\n   `/worldfix my_world` - convert back to overworld  \r\n   `/endbiome 128` - fix End biomes around spawn\r\n4. Optional: `quick` = only `level.dat` (faster, may need full run later)\r\n\r\n## Config\r\n\r\n`plugins/EndFix/config.yml`\r\n\r\n```yaml\r\nlanguage: en   # en | uk | ru\r\nportal:\r\n  end-worlds: [the_end, world_the_end]\r\n  overworld-worlds: [world]\r\n```\r\n\r\nLanguages: `plugins/EndFix/lang/`  \r\nIn-game: `/endfix lang uk`\r\n\r\n## Commands\r\n\r\n| Command | Description |\r\n|---------|-------------|\r\n| `/endfix` | Help |\r\n| `/endfix lang <en\\|uk\\|ru>` | Language |\r\n| `/endfixworld [world] [quick]` | World → The End |\r\n| `/netherfixworld [world] [quick]` | World → Nether |\r\n| `/worldfix <world> [quick]` | Back to overworld |\r\n| `/endbiome <radius> [force] [debug]` | Fix End biomes |\r\n\r\n## License\r\n\r\nSee [LICENSE](https://github.com/YehrLB/DimensionsReconstructe/blob/main/LICENSE) (EN / UK / RU).\r\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/314587755?v=4",
+  "id": "YehrLB/DimensionsReconstructe",
+  "license": {
+    "id": "NOASSERTION",
+    "name": "Other",
+    "url": "https://github.com/YehrLB/DimensionsReconstructe/blob/main/LICENSE"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "EndFix",
+  "primary_target": "nkmot",
+  "server_version": "",
+  "source": "https://github.com/YehrLB/DimensionsReconstructe",
+  "stars": 0,
+  "summary": "Convert and repair End/Nether worlds. Made for Nukkit MOT.",
+  "targets": [
+    "nkmot"
+  ],
+  "updated_at": 1786195416,
+  "versions": []
+}

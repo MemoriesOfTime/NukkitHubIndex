@@ -1,0 +1,49 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/56059204?v=4",
+      "name": "FunnyArenaPixel",
+      "url": "https://github.com/FunnyArenaPixel"
+    }
+  ],
+  "categories": [],
+  "created_at": 1786205448,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "KotlinLib",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "required",
+      "plugin_id": "NsGameBase",
+      "version_range": ""
+    }
+  ],
+  "description": "# BedWars（蠹虫模式）\n\n> Nukkit-MOT 平台的起床战争全新玩法模式 —「蠹虫」模式（区别于常规 BedWars 的独立玩法分支）\n\n## 简介\n\n本项目是基于 [Nukkit-MOT](https://github.com/MemoriesOfTime/Nukkit-MOT) 服务端的起床战争（BedWars）小游戏插件，为 **FAPIXEL 小游戏**服务器定制开发。\n\n与经典的 `FunnyArenaPixel/BedWars`（普通模式）不同，本仓库是**蠹虫模式**——围绕蠹虫（Silverfish）攻防、雪傀儡、防御塔、TNT 等特殊玩法的独立版本，两套玩法互不冲突、独立部署。\n\n## 玩法特色\n\n- 🐛 **蠹虫玩法** — 团队生成蠹虫、桥梁蠹虫（Silverfish Bridge）、雪傀儡作战\n- 🗼 **防御塔** —— 可搭建的自动防御工事，随队伍羊毛色变色\n- 💥 **TNT 玩法** —— 爆炸破坏、击退、固定伤害\n- 🔥 **火球** / 🧊 **安全区域** / 🛡️ **隐藏护甲** 等机制\n- 🐟 **鱼王争霸赛** —— 晚场小游戏活动，支持经验/像素币/水晶/称号奖励\n- 🏪 **商店系统** —— 物品商店、队伍升级、蠹虫升级、无限火力（Hyt）商店\n- 📊 **排行榜** —— 跨房间计分板与排行榜\n\n## 技术栈\n\n- **语言**：Kotlin（主要）+ Java（少量表单辅助类）\n- **服务端**：Nukkit-MOT（基岩版）\n- **依赖**：\n  - `NsGameBase`（FAPIXEL 基础插件：玩家数据、经济、权限）\n  - `FakeInventories` — 虚拟容器 UI\n  - `KotlinLib` — Kotlin 扩展库\n- 构建：Maven（`mvn clean package`）\n\n## 编译运行\n\n1. 安装 JDK 16+ 与 Maven\n2. 将依赖 jar 放入本地 Maven 仓库或 `libs/` 目录（`NsGameBase`、`FakeInventories`、`KotlinLib`、`Nukkit-MOT`）\n3. 执行：\n   ```bash\n   mvn clean package\n   ```\n4. 将 `target/BedWars-1.0-SNAPSHOT.jar` 放入服务器的 `plugins/` 目录，同时安装 `NsGameBase` 与 `KotlinLib`\n\n## 目录结构\n\n```\nsrc/main/kotlin/nissining/bedwars/\n├── BedWarsMain.kt          # 插件主入口\n├── PluginCmd.kt            # /bw 命令\n├── PluginEvents.kt         # 事件监听\n├── GameSetup.kt            # 游戏配置\n├── FishTournamentManager.kt# 鱼王争霸赛\n├── Leaderboard.kt          # 排行榜\n├── rooms/                  # 房间 / 玩家 / 结算 / 重连\n├── shop/                   # 商店（物品/队伍升级/蜡虫升级/Hyt）\n├── team/                   # 队伍管理\n├── entity/                 # 蜡虫 / 雪傀儡 / 掉落物\n├── expend/                 # 防御塔 / TNT / 火球 / 安全区\n├── leaderboard/            # 计分板 API\n├── form/                   # UI 窗口\n├── backup/                 # 数据备份\n└── utils/                  # 工具集\n```\n\n## 命令\n\n| 命令 | 说明 |\n|------|------|\n| `/bw` | 进入游戏主菜单 |\n| `/fishm` | 鱼王争霸赛（管理员） |\n| `/fishmgrant` | 授予参赛资格 |\n| `/fishmrevoke` | 撤销参赛资格 |\n\n## 配置\n\n配置文件 `plugins/BedWars/config.yml`：\n\n```yaml\ndebug: false                  # 调试模式\nonly_server_mode: false       # 是否仅服务器模式\nenable_game_cmd: true         # 是否启用游戏命令\nhyt_mode: false               # 是否启用「花雨庭」无限火力模式\njoin_fail_cmd: [ \"lobby\",\"hub\" ]\nserver_logo: \"Nissining's MiniGames\"\n```\n\n## 说明\n\n- 本仓库由 FAPIXEL 服务器维护，为便于与主要 BedWars 仓库区分，本仓库只包含「蠹虫」模式玩法。\n- 所有音频/皮肤等资源与玩法配置请参见 `鸡王争霸策划案.md`（活动策划文档）。\n\n## License\n\n内部项目，仅供 FAPIXEL 小游戏服务器使用。",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/56059204?v=4",
+  "id": "FunnyArenaPixel/BedWars-Silverfish",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "BedWars",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/FunnyArenaPixel/BedWars-Silverfish",
+  "stars": 0,
+  "summary": "BedWars 蠹虫模式 — Nukkit-MOT 起床战争玩法分支（蠹虫攻防/雪傀儡/防御塔/TNT/鱼王争霸赛）",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1786205463,
+  "versions": []
+}

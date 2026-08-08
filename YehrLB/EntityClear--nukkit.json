@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/314587755?v=4",
+      "name": "YehrLB",
+      "url": "https://github.com/YehrLB"
+    }
+  ],
+  "categories": [],
+  "created_at": 1786195206,
+  "dependencies": [],
+  "description": "# ClearLag\n\nEntity cleaner for your Minecraft server.\n\n**EN:** Entity cleaner for your Minecraft server.  \n**UK:** Очищувач сутностей для вашого Minecraft-сервера.  \n**RU:** Очиститель сущностей для вашего Minecraft-сервера.\n\nTwo builds:\n- **nukkit/** — Nukkit MOT\n- **geyser/** — Paper / Geyser (Java)\n\nAuthor: **YehrLB**\n\n## Requirements\n\n- Java 21\n- Nukkit MOT **or** Paper 1.21+\n\n## Build\n\n```bash\nmvn -DskipTests package\n```\n\nJars:\n- `nukkit/target/clearlag.jar`\n- `geyser/target/clearlag.jar`\n\n## Config\n\n`plugins/ClearLag/config.yml`\n\n```yaml\nlanguage: en   # en | uk | ru\ninterval-seconds: 150\n```\n\nPaper/Geyser also:\n```yaml\nmax-mobs: 1000\n```\n\nLanguages: `plugins/ClearLag/lang/` (`en.properties`, `uk.properties`, `ru.properties`).\n\nIn-game: `/opclear lang uk`\n\n## Commands\n\n| Command | Permission | Description |\n|---------|------------|-------------|\n| `/opclear` | `clearlag.opclear` | Forced cleanup |\n| `/opclear lang <en\\|uk\\|ru>` | `clearlag.opclear` | Plugin language |\n\nAuto cleanup removes drops, projectiles, hostiles, bats. `/opclear` also removes animals (except tamed/named). Bosses, villagers, named entities are kept.\n\nPaper tip: see `geyser/paper-world-defaults-snippet.yml` (`per-player-mob-spawns: false`).\n\n## License\n\nSee [LICENSE](https://github.com/YehrLB/EntityClear/blob/main/LICENSE) (EN / UK / RU).\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/314587755?v=4",
+  "id": "YehrLB/EntityClear--nukkit",
+  "license": {
+    "id": "NOASSERTION",
+    "name": "Other",
+    "url": "https://github.com/YehrLB/EntityClear/blob/main/LICENSE"
+  },
+  "links": null,
+  "manifest_path": "nukkit/src/main/resources/plugin.yml",
+  "name": "ClearLag",
+  "primary_target": "nkmot",
+  "server_version": "",
+  "source": "https://github.com/YehrLB/EntityClear",
+  "stars": 0,
+  "summary": "Entity cleaner for your Minecraft server (Nukkit MOT)",
+  "targets": [
+    "nkmot"
+  ],
+  "updated_at": 1786195226,
+  "versions": []
+}

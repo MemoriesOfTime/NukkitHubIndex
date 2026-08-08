@@ -1,0 +1,70 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/96527285?v=4",
+      "name": "NaySurGithub",
+      "url": "https://github.com/NaySurGithub"
+    }
+  ],
+  "categories": [],
+  "created_at": 1786151656,
+  "dependencies": [],
+  "description": "# Amethyst\n\nAmethyst is a packet-driven, server-authoritative anti-cheat plugin for PowerNukkitX.\nIt validates Bedrock player movement, combat and block interactions without trusting\nclient-reported collision or movement results.\n\n## Requirements\n\n- PowerNukkitX\n- Java 21\n\n## Features\n\n### Movement prediction\n\n- Tick-by-tick ground and air simulation\n- Water, lava and gliding movement\n- Friction and acceleration from server-side block data\n- Ice, blue ice, slime, ladders, cobwebs and berry bushes\n- Gravity, jump boost, levitation and slow falling\n- Movement, underwater movement and lava movement attributes\n- Scaled player bounding boxes\n- Axis-based collision resolution and 0.5625-block step-up\n- Speed, fly, strafe, phase and velocity classifications\n- Separate prediction for boats, minecarts and controlled mounts\n- Vehicle horizontal, vertical and collision validation\n- Simulated fall-distance tracking independent of client ground flags\n\n### Compensated state\n\n- Bounded history of player positions and velocities\n- Historical block collision boxes and friction\n- Historical nearby entity hitboxes\n- ACK-gated client entity tracking with player and mob interpolation\n- Historical effects, movement attributes and player dimensions\n- Ping-compensated combat ray tracing\n- Historical block occlusion using exact collision boxes\n\n### Packet validation\n\n- Rejects non-finite positions, deltas and rotations\n- Rejects movement or actions replayed on stale client ticks\n- Rejects a zero simulation tick after normal frame progression\n- Rejects self-attacks and invalid block-breaking packet channels\n- Rejects creative crafting outside creative mode\n- Validates movement-vector bounds, hotbar slots, interaction enums and block faces\n- Detects accelerated packet timing with lag credit\n- Compensates missing movement frames only when supported by elapsed server time\n- Enforces one block target, valid break sequencing and server-calculated mining time\n- Detects directional input maintained across inventory item actions\n- Validates block interaction distance\n- Tracks server motion packets by received input sequence with ping-scaled expiry\n- Predicts Riptide impulses from the trident enchantment and player rotation\n\n### Combat validation\n\n- Rejects invalid attack targets\n- Validates reach using eye position, look direction and historical hitboxes\n- Rejects attacks through full blocks, doors, trapdoors and partial collision shapes\n- Uses the final `SetActorMotionPacket` sent by PowerNukkitX for knockback prediction\n- Supports motion produced by players, entities, explosions, wind charges, wind burst,\n  spear lunges, fireworks, fishing hooks, pistons, honey, bells and effects\n- Preserves PowerNukkitX knockback resistance calculations, including netherite armor\n\nAmethyst does not kick, ban or disconnect players. Invalid packets may be cancelled,\nand repeated movement violations may cause a setback to the last safe location.\nViolations are logged and sent to players with `amethyst.alerts`.\n\n## Commands\n\n`/amethyst status` shows the number of tracked players and the alert state.\n\n`/amethyst reload` reloads `config.yml`.\n\n`/amethyst alerts` enables or disables alerts globally until the next reload.\n\nAll subcommands require `amethyst.alerts`. This permission is granted to server\noperators by default.\n\n## Permissions\n\n| Permission | Default | Description |\n| --- | --- | --- |\n| `amethyst.alerts` | OP | Receives alerts and allows `/amethyst`. |\n| `amethyst.bypass` | Nobody | Bypasses all packet checks. |\n\n## Configuration\n\n| Setting | Purpose |\n| --- | --- |\n| `alerts` | Enables violation alerts. |\n| `setback-violations` | Violation level required before a movement setback. |\n| `max-packet-actions` | Maximum block actions accepted in one input packet. |\n| `inventory-move.input-threshold` | Minimum directional input, excluding controller drift. |\n| `inventory-move.request-window-ms` | Maximum delay between an item action and movement confirmation. |\n| `inventory-move.buffer-threshold` | Consecutive suspicious inventory actions required for an alert. |\n| `timer.max-balance-ms` | Maximum accumulated timer advantage. |\n| `timer.max-lag-credit-ms` | Maximum credit retained after network delay. |\n| `timer.warmup-packets` | Samples ignored while the timer stabilizes. |\n| `timer.violation-samples` | Consecutive drift samples required before a Timer violation. |\n| `prediction.tolerance` | Maximum single prediction offset. |\n| `prediction.buffer-threshold` | Buffered offset required for a violation. |\n| `prediction.buffer-decay` | Buffer removed after a valid prediction. |\n| `vehicle.tolerance` | Accepted vehicle model error. |\n| `vehicle.buffer-threshold` | Buffered vehicle error required for a violation. |\n| `vehicle.buffer-decay` | Vehicle buffer removed after valid movement. |\n| `combat.bbox-expansion` | Expansion applied to historical target hitboxes. |\n| `combat.reach-leniency` | Additional tolerance applied only to the predicted ray. |\n| `combat.interpolation-steps` | Partial-tick samples used for attacker and target rewind. |\n| `combat.maximum-attack-angle` | Maximum accepted angle toward the target hitbox. |\n| `combat.close-range-fallback` | Short-range raw hitbox fallback when historical raycast data is incomplete. |\n| `combat.close-range-angle` | Maximum angle allowed by the short-range fallback. |\n| `blocks.max-reach` | Maximum accepted block interaction distance. |\n| `blocks.break-leniency-ms` | Network leniency applied to server-calculated mining time. |\n\n## Source layout\n\n| Package | Responsibility |\n| --- | --- |\n| `check/type` | Check identifiers and categories. |\n| `check/packet` | Invalid Bedrock packet fields, channels and state combinations. |\n| `check/inventory` | Inventory movement correlation checks. |\n| `data/player` | Per-player state and pending impulses. |\n| `history/model` | Immutable world, entity and physics snapshots. |\n| `history/timeline` | Bounded compensated-state history. |\n| `listener/network` | Bedrock packet and server event handling. |\n| `prediction/common` | Shared prediction primitives. |\n| `prediction/movement` | Player physics and collision simulation. |\n| `prediction/combat` | Rewound combat, hitbox and occlusion validation. |\n| `prediction/vehicle` | Boat, minecart and mount prediction. |\n| `tracking/entity` | Acknowledged client-view entity positions and interpolation. |\n\n## Reporting false positives\n\nPlease open a pull request when you can reproduce a false positive. Include enough\ndata for maintainers to reproduce and verify the correction instead of only raising\nthe affected threshold.\n\nEvery false-positive pull request should include:\n\n- The complete, unmodified Amethyst alert line, including the check, VL, offset,\n  actual movement, predicted movement and tick count when present.\n- The PowerNukkitX build, Amethyst commit or version, Bedrock client version,\n  platform and input method.\n- The player's approximate ping, server TPS and any network interruption observed.\n- Relevant plugins, effects, equipment, game mode, vehicle and nearby block types.\n- Exact reproduction steps, starting from a clean login when possible.\n- What happened, what should have happened and whether the issue occurs every time.\n- A minimal recording or additional surrounding logs when timing or movement matters.\n\nAvoid removing checks or adding broad exemptions without evidence. Pull requests\nshould explain why the submitted change matches legitimate Bedrock behaviour and\nwhich reproduction case was used to validate it.\n\n## Build\n\nPlace `powernukkitx.jar` in the parent directory, then run:\n\n```powershell\n.\\gradlew.bat clean build --no-daemon\n```\n\nThe generated plugin is located at `build/libs/Amethyst-1.0.0.jar`.\nCopy it to the server `plugins` directory and restart PowerNukkitX.\n\n## Author\n\nNay\n\nThis README was wrote by AI but was verified by human\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/96527285?v=4",
+  "id": "NaySurGithub/Amethyst",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Amethyst",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/NaySurGithub/Amethyst",
+  "stars": 1,
+  "summary": "Server-authoritative anti-cheat for PowerNukkitX.",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1786192436,
+  "versions": [
+    {
+      "changelog": "**Full Changelog**: https://github.com/NaySurGithub/Amethyst/compare/v1.0.0...v1.0.5",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Amethyst-1.0.5.jar",
+          "primary": true,
+          "size": 137305,
+          "url": "https://github.com/NaySurGithub/Amethyst/releases/download/v1.0.5/Amethyst-1.0.5.jar"
+        }
+      ],
+      "name": "Amethyst v1.0.5",
+      "prerelease": false,
+      "published_at": 1786192436,
+      "version": "v1.0.5"
+    },
+    {
+      "changelog": "**Full Changelog**: https://github.com/NaySurGithub/Amethyst/commits/v1.0.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Amethyst-1.0.0.jar",
+          "primary": true,
+          "size": 125600,
+          "url": "https://github.com/NaySurGithub/Amethyst/releases/download/v1.0.0/Amethyst-1.0.0.jar"
+        }
+      ],
+      "name": "Amethyst v1.0.0",
+      "prerelease": false,
+      "published_at": 1786152389,
+      "version": "v1.0.0"
+    }
+  ]
+}
