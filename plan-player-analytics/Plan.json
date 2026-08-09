@@ -606,14 +606,36 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/plan-player-analytics/Plan",
-  "stars": 1022,
+  "stars": 1021,
   "summary": "Player Analytics plugin for Minecraft Server platforms - View player activity of your server with ease. :calendar:",
   "targets": [
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1786062899,
+  "updated_at": 1786267372,
   "versions": [
+    {
+      "changelog": "# 5.8 build 3605\r\n\r\nSpecial thanks to **Zoriot**, **Minecraft0122** and **OutHimic** for contributions to this update\r\n\r\n# Change log\r\n\r\n## Bugfixes\r\n\r\n- Fixed X-Forwarded-For header being read wrong in multi-jump reverse-proxies\r\n- Fixed SQL syntax error related to database clean task cleaning plugin data\r\n- Fixed Ping graph not displaying in Server Performance graph\r\n- Possibly fixed 'Today' and 'Yesterday' showing wrong in frontend\r\n\r\n## Locale\r\n\r\n- OutHimic and Minecraft0122 updated CN and ZH_TW locales\r\n\r\n## Other\r\n\r\n- Zoriot fixed curseforge release pipeline",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.8-build-3605.jar",
+          "primary": true,
+          "size": 18278250,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.8.3605/Plan-5.8-build-3605.jar"
+        },
+        {
+          "filename": "PlanFabric-5.8-build-3605.jar",
+          "primary": true,
+          "size": 17857805,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.8.3605/PlanFabric-5.8-build-3605.jar"
+        }
+      ],
+      "name": "5.8 build 3605",
+      "prerelease": false,
+      "published_at": 1786267350,
+      "version": "5.8.3605"
+    },
     {
       "changelog": "# 5.8 build 3579\r\n\r\nThis is a hotfix for a database clean task error\r\n\r\nPrevious change log \r\nhttps://github.com/plan-player-analytics/Plan/releases/tag/5.8.3577\r\n\r\nMigration guide from 5.7 to 5.8 \r\nhttps://github.com/plan-player-analytics/Plan/wiki/Migration-guide-from-Version-5.7-to-5.8\r\n\r\n# Change log\r\n\r\n## Bugfixes\r\n\r\n- Fixed database clean task error when there were no plugins to clean",
       "downloads": 0,
@@ -1251,28 +1273,6 @@
       "prerelease": false,
       "published_at": 1697879658,
       "version": "5.6.2614"
-    },
-    {
-      "changelog": "# 5.6 DEV build 2574\r\n\r\nThis is a release candidate.\r\n\r\nThis version contains goodies such as Web User Access-Control, Plugin Version History, removes files related to old non-React frontend, Fabric 1.20.2 support, as well as fixes bugs & does small improvements\r\n\r\n**Updating to this version modifies database schema, so if you want to return to 5.5 later backup your database files.** The database schema is backwards compatible, so 5.4 and 5.5 will continue to insert data (except webuser registrations)\r\n\r\nSpecial thanks to **yu_solt**, **ToxiWoxi**, **Kopo**, **xlanyleeet**, **Jumala9163**, **ringoXD**, **Dreeam-qwq** & **jhqwqmc** for their contributions to this update!\r\n\r\n# Changes from DEV build 2556\r\n\r\n- Plugin Version History\r\n- Inactive player cleaning is now disabled on Game servers if Proxy server is in the database to avoid confusing situations where limit configured on Proxy server doesn't apply.\r\n- Network Performance now disables TPS, Entities and Chunks buttons if there's only Proxy servers in the selected dataset.\r\n- Dreeam-qwq fixed an error that occurred when Join Address didn't contain a port number.\r\n- Simplified Chinese Locale (CN) updated by jhqwqmc\r\n\r\n# Change Log\r\n\r\n## Web user access control (HTTPS required)\r\n\r\n![image](https://github.com/plan-player-analytics/Plan/assets/24460436/79fe47ef-3b80-446f-b2c1-4c5633e030f6)\r\n\r\nA more granular user access control has been requested for quite a long time. Now you can limit users to only see smaller parts of the website. This feature is documented in https://github.com/plan-player-analytics/Plan/wiki/Web-permissions though you will find some help embedded on the /manage page.\r\n\r\nMigrating from old version with permission_level adds groups 'legacy_level_0' etc with permissions that match previous behavior, users are linked to them automatically. It is recommended that you migrate them to the new default groups: https://github.com/plan-player-analytics/Plan/wiki/Web-permissions#legacy-permission-level-groups\r\n\r\nIn order to edit web permissions on the website you need to set at least one webuser as admin with _/plan setgroup {username} admin_.\r\n\r\n**In order to keep /plan register working**, give your players 'plan.webgroup.{group_name}'-permission in your permission plugin (such as LuckPerms) for the group you want them to have. If user has none of these permissions they can't register at all.\r\n\r\n## Plugin Version History\r\n\r\n![image](https://user-images.githubusercontent.com/24460436/273287653-818e79a4-01f6-491f-867b-5b7f045fff28.png)\r\n\r\nPlan now gathers plugin versions on server start. Any modifications are timestamped. This can be useful when tracking performance impact of plugin updates. This data was possible to gather from all server platforms.\r\n\r\nSeeing this data on the website [requires HTTPS to be set up](https://github.com/plan-player-analytics/Plan/wiki/SSL-Certificate-%28HTTPS%29-Set-Up) because some server admins may consider this data sensitive. Without HTTPS the data endpoint is disabled and the data is only visible in the database. After HTTPS is set up admins can control who sees this data through web permissions.\r\n\r\nOn network page it is possible to check plugin versions of any server on the network. This can help you keep up to date with your plugins.\r\n\r\n![image](https://github.com/plan-player-analytics/Plan/assets/24460436/cb9da251-1701-46b0-8c9c-4fba4bdf6a9a)\r\n\r\n## Removal of old frontend files\r\n\r\nWith the React rewrite being complete an in use by most users, this version deletes the old frontend files from the jar. This reduces jar size by 1.5 MB.\r\n\r\nIf you still haven't migrated your html customizations this version does not load them anymore. Migration guide: https://github.com/plan-player-analytics/Plan/wiki/Html-Customization--migration-guide-to-React\r\n\r\n- Removed Plugin.Use_Legacy_Frontend setting.\r\n- Removed any code related to this setting, old behavior and the old web files.\r\n- Moved most html rendering from backend to the frontend.\r\n- DataTables did not support rendering React inside table headers so the library was removed and all functionality used by Plan rewritten in React. The visual differences should be minimal.\r\n\r\n## Website\r\n\r\n![image](https://github.com/plan-player-analytics/Plan/assets/24460436/9bd1192d-a935-42e0-9007-c657fbc2e1a1)\r\n\r\n- You can now choose visible columns on any table that uses the rewritten DataTable (such as Players tables and large plugin tables.\r\n- Navigation button can now go to Plan Error Logs and Swagger Docs\r\n- Added Network Calendar to Network Overview which works similar to how Server Calendar works.\r\n- Network Performance now disables TPS, Entities and Chunks buttons if there's only Proxy servers in the selected dataset.\r\n- Fixed some table text color issues, especially in Night Mode\r\n- Fixed issues with reverse-proxy https falling back to relative addresses in frontend when proxy-mode https was not in use. (Plan would assume address is http:// but browser would have https://, leading to different start for the address, which was interpret as incorrect address.)\r\n\r\n## Webserver\r\n\r\n- Disabled X-Forwarded-For reverse-proxy warning temporarily since it was giving false positive warnings often.\r\n- Fixed out of date information appearing on the /player page due to HTTP caching\r\n- Added /v1/preferences and /v1/storePreferences endpoints that has some default formatting values coming from config.yml and user specific preferences if they have them set. Preferences UI is not yet implemented so for now this only returns the defaults.\r\n- Deprecated /v1/players endpoint, replaced with /v1/playersTable which gives data in raw format instead of formatted.\r\n- Added Group Management related endpoints /v1/webGroups, /v1/groupPermissions, /v1/permissions, /v1/saveGroupPermissions, /v1/deleteGroup (Only enabled with https)\r\n- Added Plugin history endpoint /v1/pluginHistory (Only enabled with https)\r\n\r\n## Database\r\n\r\n- Fixed join address truncation error on backup\r\n- Added tables plan_web_group, plan_web_group_to_permission, plan_web_permission and plan_web_user_preferences\r\n- plan_security column permission_level was replaced with a foreign key column group_id\r\n- Inactive player cleaning is now disabled on Game servers if Proxy server is in the database to avoid confusing situations where limit configured on Proxy server doesn't apply.\r\n\r\n## Spigot\r\n\r\n- Possibly fixed Ping not being gathered on Spigot 1.20+ servers\r\n- Dreeam-qwq fixed an error that occurred when Join Address didn't contain a port number.\r\n\r\n## Fabric\r\n\r\n- Fabric 1.20.2 support was implemented by Kopo. Older versions of fabric are no longer supported.\r\n\r\n## Sponge\r\n\r\n- ToxiWoxi fixed SpongeForge failing to load Plan due to unspecified LuckPerms dependency version in Plan\r\n\r\n## Locale\r\n\r\nSome functionality was added to make life of translators easier.\r\n\r\n- Added setting which lists untranslated keys Plugin.Logging.Log_untranslated_locale_keys (default false). This lists anything that has default value so it may give some false positives.\r\n- Custom locale.yml file is now reloaded when it is modified.\r\n- Ukranian Locale (UK) added by xlanyleeet\r\n- Japanese Locale (JA) updated by yu_solt and Jumala9163\r\n- Simplified Chinese Locale (CN) updated by jhqwqmc\r\n- More things that were translated in the backend (such as Unknown in datapoints) was moved to the frontend\r\n\r\n## Placeholders\r\n\r\n- Fixed off by one mistake in %plan_top_...% placeholders where 1 would give the 2nd highest and 10 nothing.\r\n\r\n## Extensions\r\n\r\n- Fixed an issue where rapid fire Vulcan AntiCheat violations would cause database exceptions.\r\n- Updated Lands API to newer version\r\n- Possibly fixed an issue where Litebans data was not being updated\r\n- Fixed issue where ViaVersion would show no data on network page",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "Plan-5.6-dev-build-2574.jar",
-          "primary": true,
-          "size": 16029842,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2574/Plan-5.6-dev-build-2574.jar"
-        },
-        {
-          "filename": "PlanFabric-5.6-dev-build-2574.jar",
-          "primary": true,
-          "size": 16152351,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2574/PlanFabric-5.6-dev-build-2574.jar"
-        }
-      ],
-      "name": "5.6 DEV build 2574",
-      "prerelease": true,
-      "published_at": 1696659062,
-      "version": "5.6.2574"
     }
   ]
 }

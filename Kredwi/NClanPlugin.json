@@ -28,11 +28,11 @@
   "server_version": "",
   "source": "https://github.com/Kredwi/NClanPlugin",
   "stars": 0,
-  "summary": "Clan Plugin for nukkit",
+  "summary": "Clan Plugin for Nukkit",
   "targets": [
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1786186372,
+  "updated_at": 1786275721,
   "versions": []
 }
