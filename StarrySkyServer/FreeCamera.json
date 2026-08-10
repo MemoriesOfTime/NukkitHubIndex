@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/268506330?v=4",
+      "name": "enigHim",
+      "url": "https://github.com/enigHim"
+    }
+  ],
+  "categories": [],
+  "created_at": 1786377034,
+  "dependencies": [],
+  "description": "# FreeCamera\n\n## 介绍\n\nFreeCamera 是一个运行在 **Nukkit-MOT**（Minecraft 基岩版服务端）上的自由视角插件。玩家执行指令后，客户端进入旁观者模式进行自由飞行探索，而服务端玩家状态保持不变（位置、游戏模式、物品栏均不受影响）。原地会生成一个假人实体显示玩家皮肤和名字，其他玩家可以正常看到。受到伤害时自动退出自由视角模式，支持配置允许使用的世界列表。\n\n## 安装\n\n1. 确保服务端为 Nukkit-MOT。\n2. 将 `FreeCamera-1.0.0.jar` 放入服务端 `plugins/` 目录。\n3. 启动服务端，插件会在 `plugins/FreeCamera/` 下自动生成 `config.yml`。\n\n## 玩家使用\n\n在游戏内执行指令 `/freecamera` 或 `/fc` 切换自由视角模式。\n\n- **进入自由视角**：客户端切换为旁观者模式，可自由飞行穿墙，原地生成假人。\n- **退出自由视角**：再次执行指令，或受到伤害时自动退出，传送回原位。\n- **安全机制**：受伤自动退出、死亡自动退出、退出服务器自动清理。\n\n### 指令一览\n\n| 指令 | 权限 | 作用 |\n| --- | --- | --- |\n| `/freecamera` `/fc` | freecamera.use（默认所有玩家） | 切换自由视角模式 |\n| `/refc` | freecamera.reload（默认 OP） | 重载 `config.yml` 配置 |\n\n### 配置文件\n\n`plugins/FreeCamera/config.yml`\n\n```yaml\n############################\n#   FreeCamera 配置文件    #\n############################\n\n# 允许使用自由视角的世界列表\n# world = 主世界, nether = 下界, the_end = 末地\nallow-worlds:\n  - world\n  - nether\n  - the_end\n```\n\n修改配置后执行 `/refc` 即可热重载，无需重启服务器。\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/269338922?v=4",
+  "id": "StarrySkyServer/FreeCamera",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "FreeCamera",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/StarrySkyServer/FreeCamera",
+  "stars": 0,
+  "summary": "Free camera plugin - enter spectator view without changing server gamemode",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1786379209,
+  "versions": []
+}

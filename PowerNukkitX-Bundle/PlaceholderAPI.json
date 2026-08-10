@@ -44,8 +44,24 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1785705650,
+  "updated_at": 1786347803,
   "versions": [
+    {
+      "changelog": "Automated release for v1.2.4",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "PlaceholderAPI.jar",
+          "primary": true,
+          "size": 11020,
+          "url": "https://github.com/PowerNukkitX-Bundle/PlaceholderAPI/releases/download/v1.2.4/PlaceholderAPI.jar"
+        }
+      ],
+      "name": "v1.2.4",
+      "prerelease": false,
+      "published_at": 1786347803,
+      "version": "v1.2.4"
+    },
     {
       "changelog": "Automated release for v1.2.3",
       "downloads": 0,

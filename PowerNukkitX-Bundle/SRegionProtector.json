@@ -32,10 +32,7 @@
       "url": "https://github.com/apps/dependabot"
     }
   ],
-  "categories": [
-    "management",
-    "utility"
-  ],
+  "categories": [],
   "created_at": 1763986875,
   "dependencies": [
     {
