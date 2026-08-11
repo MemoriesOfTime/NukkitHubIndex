@@ -2,14 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/12100985?v=4",
-      "name": "Him188",
-      "url": "https://github.com/Him188"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
-      "name": "lt-name",
-      "url": "https://github.com/lt-name"
+      "avatar_url": "",
+      "name": "Him188moe",
+      "url": ""
     }
   ],
   "categories": [],
@@ -44,6 +39,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1785313025,
+  "updated_at": 1785313133,
   "versions": []
 }

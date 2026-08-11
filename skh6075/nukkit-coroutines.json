@@ -2,14 +2,9 @@
   "api_version": "2.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/32565818?v=4",
+      "avatar_url": "",
       "name": "alvin0319",
-      "url": "https://github.com/alvin0319"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/44698603?v=4",
-      "name": "skh6075",
-      "url": "https://github.com/skh6075"
+      "url": ""
     }
   ],
   "categories": [],
@@ -43,6 +38,6 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1785579626,
+  "updated_at": 1785579636,
   "versions": []
 }

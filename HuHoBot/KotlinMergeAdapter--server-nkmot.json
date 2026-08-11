@@ -2,9 +2,9 @@
   "api_version": "1.0.5",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/51258524?v=4",
+      "avatar_url": "",
       "name": "HuoHuas001",
-      "url": "https://github.com/HuoHuas001"
+      "url": ""
     }
   ],
   "categories": [],
@@ -36,7 +36,7 @@
   "targets": [
     "nkmot"
   ],
-  "updated_at": 1786110194,
+  "updated_at": 1786351095,
   "versions": [
     {
       "changelog": "# HuHoBot-Adapter v2.1.6\n\nfeat(core): 添加自定义连接服务器地址\n\n### 构建信息\n- 构建时间: 2026-08-07T13:43:13Z\n- 提交哈希: [ae8fa81adafa6eaa9bfd8a1f3c5588b0f83d65b0](https://github.com/HuHoBot/KotlinMergeAdapter/commit/ae8fa81adafa6eaa9bfd8a1f3c5588b0f83d65b0)\n",

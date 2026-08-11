@@ -2,14 +2,9 @@
   "api_version": "1.0.9",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
-      "name": "SmallasWater",
-      "url": "https://github.com/SmallasWater"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
-      "name": "lt-name",
-      "url": "https://github.com/lt-name"
+      "avatar_url": "",
+      "name": "若水",
+      "url": ""
     }
   ],
   "categories": [
@@ -40,7 +35,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1617602659,
+  "updated_at": 1665203241,
   "versions": [
     {
       "changelog": "v1.3.8\r\n增加自动更新系统(需要安装AutoUpData)\r\n\r\nv1.3.7.1\r\n上传到github\r\n增加变身时粒子效果\r\n优化变身系统",

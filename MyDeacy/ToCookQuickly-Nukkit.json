@@ -2,9 +2,14 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/20610410?v=4",
-      "name": "MyDeacy",
-      "url": "https://github.com/MyDeacy"
+      "avatar_url": "",
+      "name": "gigantessbeta",
+      "url": ""
+    },
+    {
+      "avatar_url": "",
+      "name": "PMpluginmaker-Team",
+      "url": ""
     }
   ],
   "categories": [
@@ -36,6 +41,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1495327530,
+  "updated_at": 1518919272,
   "versions": []
 }

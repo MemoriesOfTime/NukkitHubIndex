@@ -2,9 +2,9 @@
   "api_version": "1.0.11",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/83235042?v=4",
-      "name": "SoBadFish",
-      "url": "https://github.com/SoBadFish"
+      "avatar_url": "",
+      "name": "sobadfish",
+      "url": ""
     }
   ],
   "categories": [
@@ -41,7 +41,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1688796262,
+  "updated_at": 1675571028,
   "versions": [
     {
       "changelog": "1. 上传到Github\r\n2. 优化信息提示",

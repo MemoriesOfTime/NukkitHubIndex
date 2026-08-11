@@ -2,14 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/100467970?v=4",
-      "name": "YnXahgkiO",
-      "url": "https://github.com/YnXahgkiO"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/104681026?v=4",
-      "name": "ValresMC",
-      "url": "https://github.com/ValresMC"
+      "avatar_url": "",
+      "name": "Back",
+      "url": ""
     }
   ],
   "categories": [],
@@ -38,7 +33,7 @@
     "nkx",
     "pnx"
   ],
-  "updated_at": 1785501083,
+  "updated_at": 1785501133,
   "versions": [
     {
       "changelog": "Fixe playerlist & skins",

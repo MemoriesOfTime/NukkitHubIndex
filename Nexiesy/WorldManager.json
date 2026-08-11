@@ -1,12 +1,6 @@
 {
   "api_version": "1.0.10",
-  "authors": [
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/43706864?v=4",
-      "name": "Nexiesy",
-      "url": "https://github.com/Nexiesy"
-    }
-  ],
+  "authors": [],
   "categories": [],
   "created_at": 1591655943,
   "dependencies": [],
@@ -33,6 +27,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1591656855,
+  "updated_at": 1781853965,
   "versions": []
 }

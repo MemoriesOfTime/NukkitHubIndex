@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/297729495?v=4",
+      "avatar_url": "",
       "name": "kloerdev",
-      "url": "https://github.com/kloerdev"
+      "url": ""
     }
   ],
   "categories": [],
@@ -32,7 +32,7 @@
   "targets": [
     "lumi"
   ],
-  "updated_at": 1786040650,
+  "updated_at": 1786041052,
   "versions": [
     {
       "changelog": "## CustomFurniture v1.0.0\r\n\r\nПервый публичный релиз CustomFurniture.\r\n\r\n### Возможности\r\n\r\n- 28 готовых предметов мебели\r\n- Добавление собственных блоков через JSON\r\n- Поворот мебели при установке\r\n- Переключаемые состояния блоков\r\n- Настраиваемые collision и selection box\r\n- Поддержка свечения\r\n- Разделение определений по категориям\r\n\r\n### Требования\r\n\r\n- Java 21\r\n- Lumi 1.6.4\r\n- Включённый `enable-experiment-mode`\r\n- CustomFurniture Resource Pack\r\n\r\n### Установка\r\n\r\n1. Поместите `CustomFurniture-1.0.0.jar` в папку `plugins`.\r\n2. Установите CustomBlock.RP.zip.\r\n3. Включите экспериментальный режим Lumi.\r\n4. Полностью перезапустите сервер.\r\n\r\n> Это beta-версия. Перед установкой на production-сервер рекомендуется сделать резервную копию мира.",

@@ -2,9 +2,9 @@
   "api_version": "2.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/239018447?v=4",
-      "name": "mdafftfa",
-      "url": "https://github.com/mdafftfa"
+      "avatar_url": "",
+      "name": "pixelwhiz",
+      "url": ""
     }
   ],
   "categories": [],
@@ -49,15 +49,16 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "Flashlight",
-  "primary_target": "pnx",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/mdafftfa/Flashlight",
   "stars": 3,
   "summary": "🕯️ A Plugin for PowerNukkitX used to provide light in the dark when holding a luminous item",
   "targets": [
+    "nkx",
     "pnx"
   ],
-  "updated_at": 1783925863,
+  "updated_at": 1783925867,
   "versions": [
     {
       "changelog": "",

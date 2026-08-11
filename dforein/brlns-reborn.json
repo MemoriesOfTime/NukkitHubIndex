@@ -2,9 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/194613454?v=4",
-      "name": "dforein",
-      "url": "https://github.com/dforein"
+      "avatar_url": "",
+      "name": "brlnsreb",
+      "url": ""
     }
   ],
   "categories": [
@@ -26,15 +26,16 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "brlnsreb",
-  "primary_target": "pnx",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/dforein/brlns-reborn",
   "stars": 2,
   "summary": "BrokenLens Reborn plugin",
   "targets": [
+    "nkx",
     "pnx"
   ],
-  "updated_at": 1785180804,
+  "updated_at": 1784371029,
   "versions": [
     {
       "changelog": "**Full Changelog**: https://github.com/dforein/brlns-reborn/compare/1.2.0...1.2.1",

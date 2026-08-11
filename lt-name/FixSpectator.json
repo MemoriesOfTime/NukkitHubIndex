@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
-      "name": "lt-name",
-      "url": "https://github.com/lt-name"
+      "avatar_url": "",
+      "name": "LT_Name",
+      "url": ""
     }
   ],
   "categories": [],
@@ -32,6 +32,6 @@
   "targets": [
     "nkx"
   ],
-  "updated_at": 1597223723,
+  "updated_at": 1597307198,
   "versions": []
 }

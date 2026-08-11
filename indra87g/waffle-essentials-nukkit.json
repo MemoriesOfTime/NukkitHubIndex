@@ -2,31 +2,16 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/146718520?v=4",
+      "avatar_url": "",
       "name": "indra87g",
-      "url": "https://github.com/indra87g"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/in/842251?v=4",
-      "name": "google-labs-jules[bot]",
-      "url": "https://github.com/apps/google-labs-jules"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "name": "dependabot[bot]",
-      "url": "https://github.com/apps/dependabot"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-      "name": "github-actions[bot]",
-      "url": "https://github.com/apps/github-actions"
+      "url": ""
     }
   ],
   "categories": [],
   "created_at": 1758424939,
   "dependencies": [],
   "description": "No README, just check the [wiki](https://github.com/indra87g/waffle-core-nukkit/wiki)\n",
-  "detection_confidence": "medium",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/146718520?v=4",
@@ -48,7 +33,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1777292654,
+  "updated_at": 1764676583,
   "versions": [
     {
       "changelog": "## What's Changed\r\n* Add /wbuy command by @google-labs-jules[bot] in https://github.com/indra87g/waffle-core-nukkit/pull/15\r\n* feat: Implement /near command by @google-labs-jules[bot] in https://github.com/indra87g/waffle-core-nukkit/pull/16\r\n\r\n\r\n**Full Changelog**: https://github.com/indra87g/waffle-core-nukkit/compare/v0.1.4...v0.1.5",

@@ -2,19 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "avatar_url": "",
       "name": "Buddelbubi",
-      "url": "https://github.com/Buddelbubi"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/82237910?v=4",
-      "name": "AzaleeX",
-      "url": "https://github.com/AzaleeX"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/10363500?v=4",
-      "name": "Creeperface01",
-      "url": "https://github.com/Creeperface01"
+      "url": ""
     }
   ],
   "categories": [],
@@ -34,14 +24,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "EmptyWorld",
-  "primary_target": "pnx",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/xRookieFight/EmptyWorld",
   "stars": 0,
   "summary": "An empty world generator for PowerNukkitX",
   "targets": [
+    "nkx",
     "pnx"
   ],
-  "updated_at": 1783620318,
+  "updated_at": 1783671805,
   "versions": []
 }

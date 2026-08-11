@@ -2,9 +2,9 @@
   "api_version": "1.0.5",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/48203962?v=4",
+      "avatar_url": "",
       "name": "Mcayear",
-      "url": "https://github.com/Mcayear"
+      "url": ""
     }
   ],
   "categories": [
@@ -53,6 +53,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1772020850,
+  "updated_at": 1784618707,
   "versions": []
 }

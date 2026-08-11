@@ -2,19 +2,9 @@
   "api_version": "1.0.11",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
-      "name": "lt-name",
-      "url": "https://github.com/lt-name"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "name": "dependabot[bot]",
-      "url": "https://github.com/apps/dependabot"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/99377251?v=4",
-      "name": "lthuas",
-      "url": "https://github.com/lthuas"
+      "avatar_url": "",
+      "name": "LT_Name",
+      "url": ""
     }
   ],
   "categories": [
@@ -49,14 +39,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "AutoResourceChest",
-  "primary_target": "nkmot",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/lt-name/AutoResourceChest",
   "stars": 0,
   "summary": "",
   "targets": [
+    "nkx",
     "nkmot"
   ],
-  "updated_at": 1781274066,
+  "updated_at": 1781274138,
   "versions": []
 }

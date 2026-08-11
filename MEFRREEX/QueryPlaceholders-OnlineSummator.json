@@ -2,9 +2,9 @@
   "api_version": "1.0.13",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/83061703?v=4",
+      "avatar_url": "",
       "name": "MEFRREEX",
-      "url": "https://github.com/MEFRREEX"
+      "url": ""
     }
   ],
   "categories": [
@@ -42,7 +42,7 @@
     "nkmot",
     "pnx"
   ],
-  "updated_at": 1704705461,
+  "updated_at": 1704706051,
   "versions": [
     {
       "changelog": "",

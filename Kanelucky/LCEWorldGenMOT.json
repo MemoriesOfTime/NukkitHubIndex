@@ -1,17 +1,6 @@
 {
   "api_version": "unknown",
-  "authors": [
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/110056737?v=4",
-      "name": "zernix2077",
-      "url": "https://github.com/zernix2077"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/216477222?v=4",
-      "name": "Kanelucky",
-      "url": "https://github.com/Kanelucky"
-    }
-  ],
+  "authors": [],
   "categories": [
     "game-mechanics"
   ],
@@ -53,7 +42,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1782571928,
+  "updated_at": 1782720607,
   "versions": [
     {
       "changelog": "",

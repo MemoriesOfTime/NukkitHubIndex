@@ -2,9 +2,9 @@
   "api_version": "3.0.2",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/139102805?v=4",
+      "avatar_url": "",
       "name": "Gh0stDeveloper",
-      "url": "https://github.com/Gh0stDeveloper"
+      "url": ""
     }
   ],
   "categories": [],
@@ -32,6 +32,6 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1786242104,
+  "updated_at": 1786242109,
   "versions": []
 }

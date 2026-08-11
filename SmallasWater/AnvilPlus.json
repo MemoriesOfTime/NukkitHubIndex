@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
-      "name": "SmallasWater",
-      "url": "https://github.com/SmallasWater"
+      "avatar_url": "",
+      "name": "若水",
+      "url": ""
     }
   ],
   "categories": [
@@ -35,6 +35,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1618053360,
+  "updated_at": 1618053362,
   "versions": []
 }

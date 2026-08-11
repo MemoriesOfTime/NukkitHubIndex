@@ -1,22 +1,6 @@
 {
   "api_version": "3.0.0",
-  "authors": [
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/37877491?v=4",
-      "name": "Kaooot",
-      "url": "https://github.com/Kaooot"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
-      "name": "Buddelbubi",
-      "url": "https://github.com/Buddelbubi"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/56545793?v=4",
-      "name": "TraxTRL",
-      "url": "https://github.com/TraxTRL"
-    }
-  ],
+  "authors": [],
   "categories": [],
   "created_at": 1781009960,
   "dependencies": [],
@@ -34,15 +18,16 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "Astra",
-  "primary_target": "pnx",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/Astra",
   "stars": 1,
   "summary": "Anti-Cheat plugin for PowerNukkitX",
   "targets": [
+    "nkx",
     "pnx"
   ],
-  "updated_at": 1784599708,
+  "updated_at": 1784599234,
   "versions": [
     {
       "changelog": "Support for PowerNukkitX nightly-SNAPSHOT ([git-b1e328d](https://github.com/PowerNukkitX/PowerNukkitX/tree/b1e328d56bdd53c0742cabfc2c9bbecd59d5ae76)) implementing API version 3.0.0 for Minecraft: BE 1.26.30 (protocol version 1001)",

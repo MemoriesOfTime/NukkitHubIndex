@@ -1,12 +1,6 @@
 {
   "api_version": "3.0.0",
-  "authors": [
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
-      "name": "Buddelbubi",
-      "url": "https://github.com/Buddelbubi"
-    }
-  ],
+  "authors": [],
   "categories": [
     "decoration",
     "utility"
@@ -27,15 +21,16 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "NPC",
-  "primary_target": "pnx",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/Syodo-Development/NPC",
   "stars": 2,
   "summary": "Syodo NPC Plugin",
   "targets": [
+    "nkx",
     "pnx"
   ],
-  "updated_at": 1785110919,
+  "updated_at": 1785777780,
   "versions": [
     {
       "changelog": "Automated release for v1.0.2",

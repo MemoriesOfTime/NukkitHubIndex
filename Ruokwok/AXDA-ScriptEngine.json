@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/72373519?v=4",
-      "name": "Ruokwok",
-      "url": "https://github.com/Ruokwok"
+      "avatar_url": "",
+      "name": "Ruok",
+      "url": ""
     }
   ],
   "categories": [
@@ -57,6 +57,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1757162784,
+  "updated_at": 1766927725,
   "versions": []
 }

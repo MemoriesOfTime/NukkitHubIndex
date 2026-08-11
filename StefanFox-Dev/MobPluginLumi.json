@@ -2,14 +2,9 @@
   "api_version": "1.0.14",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/52908036?v=4",
-      "name": "KoshakMineDEV",
-      "url": "https://github.com/KoshakMineDEV"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/70357814?v=4",
-      "name": "Reider745",
-      "url": "https://github.com/Reider745"
+      "avatar_url": "",
+      "name": "Koshak_Mine, kniffo80, matt404, augesrob, PetteriM1, PikyCZ, zzz1999, SergeyDertan",
+      "url": ""
     }
   ],
   "categories": [],
@@ -37,6 +32,6 @@
   "targets": [
     "lumi"
   ],
-  "updated_at": 1785849127,
+  "updated_at": 1785849314,
   "versions": []
 }

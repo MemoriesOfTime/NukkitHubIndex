@@ -2,9 +2,9 @@
   "api_version": "1.0.11",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/242151603?v=4",
-      "name": "Natro-w",
-      "url": "https://github.com/Natro-w"
+      "avatar_url": "",
+      "name": "Natro",
+      "url": ""
     }
   ],
   "categories": [],
@@ -39,7 +39,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1781122190,
+  "updated_at": 1781122244,
   "versions": [
     {
       "changelog": "Release v1.0.1 - Chat formatting with LuckPerms",

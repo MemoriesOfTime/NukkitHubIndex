@@ -2,9 +2,9 @@
   "api_version": "1.0.7",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/44942320?v=4",
+      "avatar_url": "",
       "name": "BitterPeaceV",
-      "url": "https://github.com/BitterPeaceV"
+      "url": ""
     }
   ],
   "categories": [
@@ -39,6 +39,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1548255581,
+  "updated_at": 1548308302,
   "versions": []
 }

@@ -2,14 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/22717389?v=4",
+      "avatar_url": "",
       "name": "Nissining",
-      "url": "https://github.com/Nissining"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/65096553?v=4",
-      "name": "LRan1028",
-      "url": "https://github.com/LRan1028"
+      "url": ""
     }
   ],
   "categories": [],
@@ -44,6 +39,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1785041025,
+  "updated_at": 1785041031,
   "versions": []
 }

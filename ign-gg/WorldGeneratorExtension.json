@@ -1,12 +1,6 @@
 {
   "api_version": "1.1.0",
-  "authors": [
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/26197131?v=4",
-      "name": "PetteriM1",
-      "url": "https://github.com/PetteriM1"
-    }
-  ],
+  "authors": [],
   "categories": [
     "game-mechanics"
   ],
@@ -35,6 +29,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1779991926,
+  "updated_at": 1779991931,
   "versions": []
 }

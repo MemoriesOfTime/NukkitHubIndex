@@ -2,9 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/79498377?v=4",
-      "name": "BOFOII",
-      "url": "https://github.com/BOFOII"
+      "avatar_url": "",
+      "name": "bofoiii",
+      "url": ""
     }
   ],
   "categories": [],
@@ -32,6 +32,6 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1781957514,
+  "updated_at": 1781957518,
   "versions": []
 }

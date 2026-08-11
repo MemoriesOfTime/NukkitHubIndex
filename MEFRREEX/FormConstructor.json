@@ -2,19 +2,14 @@
   "api_version": "1.0.13",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/83061703?v=4",
-      "name": "MEFRREEX",
-      "url": "https://github.com/MEFRREEX"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/54776640?v=4",
+      "avatar_url": "",
       "name": "ScarletRedMan",
-      "url": "https://github.com/ScarletRedMan"
+      "url": ""
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/68228599?v=4",
-      "name": "IndianBartonka",
-      "url": "https://github.com/IndianBartonka"
+      "avatar_url": "",
+      "name": "MEFRREEX",
+      "url": ""
     }
   ],
   "categories": [
@@ -78,7 +73,7 @@
     "pnx",
     "lumi"
   ],
-  "updated_at": 1759666407,
+  "updated_at": 1779699217,
   "versions": [
     {
       "changelog": "## What's Changed\r\n* feat: added api for element tooltips + refactor: remove debug command by @MEFRREEX in https://github.com/MEFRREEX/FormConstructor/pull/12\r\n\r\n\r\n**Full Changelog**: https://github.com/MEFRREEX/FormConstructor/compare/3.0.0...3.1.0",

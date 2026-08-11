@@ -2,39 +2,14 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
-      "name": "lt-name",
-      "url": "https://github.com/lt-name"
+      "avatar_url": "",
+      "name": "若水",
+      "url": ""
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/56545793?v=4",
-      "name": "TraxTRL",
-      "url": "https://github.com/TraxTRL"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "name": "dependabot[bot]",
-      "url": "https://github.com/apps/dependabot"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
-      "name": "Buddelbubi",
-      "url": "https://github.com/Buddelbubi"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
-      "name": "glorydark",
-      "url": "https://github.com/glorydark"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/82391055?v=4",
-      "name": "stevei5mc",
-      "url": "https://github.com/stevei5mc"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
-      "name": "SmallasWater",
-      "url": "https://github.com/SmallasWater"
+      "avatar_url": "",
+      "name": "LT_Name",
+      "url": ""
     }
   ],
   "categories": [],
@@ -54,16 +29,17 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "RsNPC",
-  "primary_target": "nkmot",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/Lifeblock-Network/RsNPC",
   "stars": 0,
   "summary": "Advanced NPC plugin for PowerNukkitX",
   "targets": [
+    "nkx",
     "nkmot",
     "pnx"
   ],
-  "updated_at": 1786025375,
+  "updated_at": 1786025245,
   "versions": [
     {
       "changelog": "",

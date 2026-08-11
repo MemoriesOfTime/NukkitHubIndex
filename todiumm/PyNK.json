@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/251192773?v=4",
-      "name": "todiumm",
-      "url": "https://github.com/todiumm"
+      "avatar_url": "",
+      "name": "NightBloom",
+      "url": ""
     }
   ],
   "categories": [],
@@ -28,47 +28,15 @@
   },
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "PyNK",
-  "primary_target": "nkmot",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/todiumm/PyNK",
   "stars": 0,
   "summary": "Permite escrever plugins/scripts Nukkit em Python usando Jython, com API completa, eventos (literalmente todos os do Nukkit, via reflection), comandos e scheduler.",
   "targets": [
+    "nkx",
     "nkmot"
   ],
-  "updated_at": 1785802678,
-  "versions": [
-    {
-      "changelog": "",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "PyNK.jar",
-          "primary": true,
-          "size": 47959497,
-          "url": "https://github.com/todiumm/PyNK/releases/download/2.0.0/PyNK.jar"
-        }
-      ],
-      "name": "PyNK - 2.0.0",
-      "prerelease": false,
-      "published_at": 1785802678,
-      "version": "2.0.0"
-    },
-    {
-      "changelog": "",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "PyNK.jar",
-          "primary": true,
-          "size": 47634969,
-          "url": "https://github.com/todiumm/PyNK/releases/download/1.0.0/PyNK.jar"
-        }
-      ],
-      "name": "PyNK - 1.0.0",
-      "prerelease": false,
-      "published_at": 1785716394,
-      "version": "1.0.0"
-    }
-  ]
+  "updated_at": 1785718924,
+  "versions": []
 }

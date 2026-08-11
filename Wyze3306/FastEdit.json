@@ -2,14 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/103603305?v=4",
-      "name": "Wyze3306",
-      "url": "https://github.com/Wyze3306"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/104681026?v=4",
-      "name": "ValresMC",
-      "url": "https://github.com/ValresMC"
+      "avatar_url": "",
+      "name": "Linesia",
+      "url": ""
     }
   ],
   "categories": [],
@@ -29,15 +24,16 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "FastEdit",
-  "primary_target": "pnx",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/Wyze3306/FastEdit",
   "stars": 4,
   "summary": "Async WorldEdit for PowerNukkitX",
   "targets": [
+    "nkx",
     "pnx"
   ],
-  "updated_at": 1786129494,
+  "updated_at": 1786131109,
   "versions": [
     {
       "changelog": "Two fixes: `//replace` was throwing away a block's orientation, and the `smooth` brush wrecked the terrain instead of smoothing it.\n\n## Orientation is kept\n\nA pattern token resolved to the block type's **default state**. So `//replace oak_stairs stone_brick_stairs` did swap the material, but put every step back facing east and right side up — a whole staircase turned into a pile of blocks all pointing the same way. Same for slabs (top/bottom), logs (axis), trapdoors and doors.\n\n`BlockStates.reorient` now replays the old block's properties onto the new one, in two passes:\n\n1. **Same name on both sides**: straight copy. Covers stairs→stairs, slabs→slabs, logs→logs, and the whole family.\n2. **Different names for the same idea**: through a canonical `BlockFace` / vertical half / axis. Bedrock spells the same orientation six different ways depending on the block — `weirdo_direction` for stairs, `minecraft:vertical_half` for slabs, `direction` for trapdoors, `minecraft:cardinal_direction` for doors, `facing_direction` for pistons, `pillar_axis` for logs.\n\n```\n//replace oak_stairs stone_brick_stairs   facing + upside-down carried over\n//replace cobblestone_slab oak_slab       top/bottom half carried over\n//replace oak_log birch_log               axis carried over\n//replace oak_stairs oak_slab             an upside-down stair becomes a top slab\n//replace wooden_door iron_door           facing, hinge, open, upper half\n```\n\nA PNX API trap along the way: `BlockState` compares `BlockPropertyType` by **identity**, never by name. A value built from a `CommonBlockProperties` constant is rejected as soon as the block was registered with another instance of the same name — `rail_direction` exists as both 0-9 and 0-5. Values are therefore always created from the **target** block's own `getPropertyTypeSet()`.\n\n### Explicit states\n\nPatterns and masks now take `id[prop=value,...]`. That is the way out: anything written by hand is pinned and never overwritten by the old block.\n\n```\n//set oak_log[pillar_axis=y]                        stand every log upright\n//replace oak_stairs oak_stairs[weirdo_direction=0] point them all east\n//replace oak_stairs[upside_down_bit=true] oak_slab  only the flipped ones\n```\n\nAn unknown property is reported with the list of the real ones, and `/inspect` prints the block's full state — exactly the form a pattern takes, so it can be pasted straight back.\n\nZero cost on blocks with no properties: `//set stone` does no extra world read, and that is decided once when the pattern is parsed.\n\n## The smooth brush, rewritten\n\nThe old one averaged **one height per column**, then re-poured the whole column from a pattern. Consequences: overhangs and caves were shaved into a single surface, everything it touched came out in the brush's material whatever the rock was, and it rewrote its entire cylinder even where the terrain was already smooth.\n\nRedone on the model of EasyEdit's [`SmoothTask`](https://github.com/platz1de/EasyEdit). Each column of the window becomes a **signed distance field**: `+1` on the outermost ground block growing inwards, `-1` on the air touching it growing outwards. Blurring that field over the 3×3 neighbouring columns and re-thresholding it into ground/air is what actually rounds a surface off — spikes lose the vote, pits get filled, and flat ground or a straight wall does not move by a single block.\n\n- **Only cells whose depth changes are written.** Brushing already-smooth terrain now does nothing at all.\n- **The material comes from the column itself**, at the matching depth: grass stays on top of dirt on top of stone, instead of the whole cut turning into one block.\n- **Water and lava close back** over what is carved out, instead of leaving a dry hole in a lake.\n- **Trees and plants are transparent** to the height field, so the brush follows the hill and not the trunks.\n- **Overhangs and caves survive**: it is the full shape of the column that is described, not a single top.\n\nOne deliberate deviation from EasyEdit: it clamps the air side of the field to a flat `-1` while letting the ground side grow, which drags material out of any wall taller than the brush. The two sides are symmetric here — verified: a vertical cliff produces no change at all.\n\n```\n//brush smooth 6          rounds the terrain off in a 6-block sphere\n//brush smooth 6 4        four passes, melts a cliff into a slope\n```\n\n`//brush smooth` no longer takes a pattern, the radius comes first. A pattern typed out of habit is accepted and dropped, and shovels bound by a previous version keep working. `passes` defaults to 2, 6 maximum; the radius is capped at 32.\n\nBedrock detail: the numeric form needs its own command overload, otherwise the client refuses the radius where the block enum used to be.\n\n## Also in this version\n\nThe selection outline goes through `BoxShape` primitives (PR #1 from [@ValresMC](https://github.com/ValresMC)), and `//stack` with no direction stacks up or down depending on where you look.\n\nStill PNX 3.0.x. No change to selections, clipboard or schematics.\n",

@@ -2,14 +2,9 @@
   "api_version": "1.0.14",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/60499296?v=4",
-      "name": "smartcmd",
-      "url": "https://github.com/smartcmd"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
-      "name": "lt-name",
-      "url": "https://github.com/lt-name"
+      "avatar_url": "",
+      "name": "daoge_cmd",
+      "url": ""
     }
   ],
   "categories": [
@@ -50,6 +45,6 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1769601233,
+  "updated_at": 1774371083,
   "versions": []
 }

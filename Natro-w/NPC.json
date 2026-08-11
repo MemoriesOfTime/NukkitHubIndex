@@ -2,9 +2,9 @@
   "api_version": "1.0.14",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/242151603?v=4",
-      "name": "Natro-w",
-      "url": "https://github.com/Natro-w"
+      "avatar_url": "",
+      "name": "Natro",
+      "url": ""
     }
   ],
   "categories": [],
@@ -38,7 +38,7 @@
   "targets": [
     "lumi"
   ],
-  "updated_at": 1781122184,
+  "updated_at": 1781122188,
   "versions": [
     {
       "changelog": "Release v2.7.2 - NPC plugin",

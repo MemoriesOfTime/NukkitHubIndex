@@ -2,14 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/104681026?v=4",
-      "name": "ValresMC",
-      "url": "https://github.com/ValresMC"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/100467970?v=4",
-      "name": "YnXahgkiO",
-      "url": "https://github.com/YnXahgkiO"
+      "avatar_url": "",
+      "name": "Root-Studios (Valres)",
+      "url": ""
     }
   ],
   "categories": [],
@@ -29,15 +24,16 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "PNX-ToolBox",
-  "primary_target": "pnx",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/ValresMC/PNX-ToolBox",
   "stars": 1,
   "summary": "Best lib for PowerNukkitX plugins",
   "targets": [
+    "nkx",
     "pnx"
   ],
-  "updated_at": 1786296326,
+  "updated_at": 1786296340,
   "versions": [
     {
       "changelog": "## What's Changed\r\n* Add packet events with interception and monitoring by @ValresMC in https://github.com/ValresMC/PNX-ToolBox/pull/4\r\n* Fix minecraft:selection_box component for blocks\r\n\r\n**Full Changelog**: https://github.com/ValresMC/PNX-ToolBox/compare/1.5.0...1.5.1",

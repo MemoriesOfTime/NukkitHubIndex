@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/83061703?v=4",
+      "avatar_url": "",
       "name": "MEFRREEX",
-      "url": "https://github.com/MEFRREEX"
+      "url": ""
     }
   ],
   "categories": [
@@ -66,7 +66,7 @@
     "nkmot",
     "pnx"
   ],
-  "updated_at": 1728070981,
+  "updated_at": 1753762049,
   "versions": [
     {
       "changelog": "**Full Changelog**: https://github.com/MEFRREEX/Whitelister/compare/1.4.0...1.4.3",

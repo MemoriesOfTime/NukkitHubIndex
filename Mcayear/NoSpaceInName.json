@@ -2,19 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/26197131?v=4",
+      "avatar_url": "",
       "name": "PetteriM1",
-      "url": "https://github.com/PetteriM1"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/3679022?v=4",
-      "name": "Polyana-Fontes",
-      "url": "https://github.com/Polyana-Fontes"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/48203962?v=4",
-      "name": "Mcayear",
-      "url": "https://github.com/Mcayear"
+      "url": ""
     }
   ],
   "categories": [],
@@ -43,6 +33,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1781480485,
+  "updated_at": 1781480488,
   "versions": []
 }

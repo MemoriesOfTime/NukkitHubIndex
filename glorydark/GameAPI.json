@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
+      "avatar_url": "",
       "name": "glorydark",
-      "url": "https://github.com/glorydark"
+      "url": ""
     }
   ],
   "categories": [],
@@ -26,7 +26,7 @@
       "version_range": ""
     }
   ],
-  "description": "# GameAPI",
+  "description": "",
   "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
@@ -49,6 +49,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1786098678,
+  "updated_at": 1786098798,
   "versions": []
 }

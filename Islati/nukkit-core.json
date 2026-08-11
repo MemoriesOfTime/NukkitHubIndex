@@ -2,9 +2,9 @@
   "api_version": "1.0.9",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/2342656?v=4",
-      "name": "Islati",
-      "url": "https://github.com/Islati"
+      "avatar_url": "",
+      "name": "maru, PetteriM1",
+      "url": ""
     }
   ],
   "categories": [],
@@ -33,6 +33,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1752282095,
+  "updated_at": 1679314400,
   "versions": []
 }

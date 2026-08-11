@@ -2,19 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/39440218?v=4",
-      "name": "justin-eckenweber",
-      "url": "https://github.com/justin-eckenweber"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
-      "name": "Buddelbubi",
-      "url": "https://github.com/Buddelbubi"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/56545793?v=4",
-      "name": "TraxTRL",
-      "url": "https://github.com/TraxTRL"
+      "avatar_url": "",
+      "name": "Proxma",
+      "url": ""
     }
   ],
   "categories": [
@@ -42,15 +32,16 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "LlamaEconomy",
-  "primary_target": "pnx",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/LlamaEconomy",
   "stars": 0,
   "summary": "Easy to use economy system",
   "targets": [
+    "nkx",
     "pnx"
   ],
-  "updated_at": 1785110233,
+  "updated_at": 1785110237,
   "versions": [
     {
       "changelog": "Automated release for v1.0.2",

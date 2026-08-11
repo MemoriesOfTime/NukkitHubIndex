@@ -2,14 +2,14 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/50714128?v=4",
-      "name": "xRookieFight",
-      "url": "https://github.com/xRookieFight"
+      "avatar_url": "",
+      "name": "PowerNukkitX Team",
+      "url": ""
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/73995049?v=4",
-      "name": "PleaseInsertNameHere",
-      "url": "https://github.com/PleaseInsertNameHere"
+      "avatar_url": "",
+      "name": "cooldogedev",
+      "url": ""
     }
   ],
   "categories": [],
@@ -29,15 +29,16 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "Spectrum",
-  "primary_target": "pnx",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/Spectrum-PNX",
   "stars": 2,
   "summary": "Spectrum-PNX is an implementation of the Spectrum proxy for PowerNukkitX",
   "targets": [
+    "nkx",
     "pnx"
   ],
-  "updated_at": 1783688985,
+  "updated_at": 1783689034,
   "versions": [
     {
       "changelog": "",

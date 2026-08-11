@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
-      "name": "lt-name",
-      "url": "https://github.com/lt-name"
+      "avatar_url": "",
+      "name": "LT_Name",
+      "url": ""
     }
   ],
   "categories": [],
@@ -32,7 +32,7 @@
   "targets": [
     "nkmot"
   ],
-  "updated_at": 1780412073,
+  "updated_at": 1780412316,
   "versions": [
     {
       "changelog": "## SituationPuzzleGame 1.0.0\n",

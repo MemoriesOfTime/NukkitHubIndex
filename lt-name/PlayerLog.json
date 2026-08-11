@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
-      "name": "lt-name",
-      "url": "https://github.com/lt-name"
+      "avatar_url": "",
+      "name": "LT_Name",
+      "url": ""
     }
   ],
   "categories": [],
@@ -17,7 +17,7 @@
     }
   ],
   "description": "",
-  "detection_confidence": "medium",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
@@ -36,9 +36,8 @@
   "stars": 1,
   "summary": "",
   "targets": [
-    "nkx",
-    "nkmot"
+    "nkx"
   ],
-  "updated_at": 1675683259,
+  "updated_at": 1639571737,
   "versions": []
 }

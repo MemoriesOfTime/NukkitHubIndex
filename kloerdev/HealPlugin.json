@@ -2,9 +2,9 @@
   "api_version": "1.0.13",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/297729495?v=4",
+      "avatar_url": "",
       "name": "kloerdev",
-      "url": "https://github.com/kloerdev"
+      "url": ""
     }
   ],
   "categories": [],
@@ -36,6 +36,6 @@
   "targets": [
     "lumi"
   ],
-  "updated_at": 1785543182,
+  "updated_at": 1785543648,
   "versions": []
 }

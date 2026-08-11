@@ -2,14 +2,19 @@
   "api_version": "2.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/128159204?v=4",
+      "avatar_url": "",
       "name": "ayd1ndemirci",
-      "url": "https://github.com/ayd1ndemirci"
+      "url": ""
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/228748182?v=4",
-      "name": "bruchusorthopnea865",
-      "url": "https://github.com/bruchusorthopnea865"
+      "avatar_url": "",
+      "name": "OguzhanUmutlu",
+      "url": ""
+    },
+    {
+      "avatar_url": "",
+      "name": "seri4lize",
+      "url": ""
     }
   ],
   "categories": [
@@ -31,14 +36,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "Core",
-  "primary_target": "pnx",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/bruchusorthopnea865/Skyblock",
   "stars": 0,
   "summary": "🌌 Explore SkyblockCore, an open-source project for MC:BE, designed as a reference for building your own Skyblock server with Kotlin, MongoDB, and Redis.",
   "targets": [
+    "nkx",
     "pnx"
   ],
-  "updated_at": 1786342628,
+  "updated_at": 1786342634,
   "versions": []
 }

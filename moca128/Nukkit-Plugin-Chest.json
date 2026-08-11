@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/37535063?v=4",
+      "avatar_url": "",
       "name": "moca128",
-      "url": "https://github.com/moca128"
+      "url": ""
     }
   ],
   "categories": [
@@ -35,6 +35,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1550737647,
+  "updated_at": 1550737650,
   "versions": []
 }

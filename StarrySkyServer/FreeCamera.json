@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/268506330?v=4",
-      "name": "enigHim",
-      "url": "https://github.com/enigHim"
+      "avatar_url": "",
+      "name": "FreeCamera",
+      "url": ""
     }
   ],
   "categories": [],
@@ -33,6 +33,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1786379209,
+  "updated_at": 1786379224,
   "versions": []
 }

@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/52814854?v=4",
-      "name": "BlusteryS",
-      "url": "https://github.com/BlusteryS"
+      "avatar_url": "",
+      "name": "Blusterys",
+      "url": ""
     }
   ],
   "categories": [],
@@ -24,14 +24,15 @@
   "links": null,
   "manifest_path": "vault-profile-economyapi-mot/src/main/resources/plugin.yml",
   "name": "EconomyAPI",
-  "primary_target": "nkmot",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/BlusteryS/Vault",
   "stars": 0,
   "summary": "",
   "targets": [
+    "nkx",
     "nkmot"
   ],
-  "updated_at": 1784891032,
+  "updated_at": 1784891037,
   "versions": []
 }

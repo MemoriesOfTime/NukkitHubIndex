@@ -2,24 +2,9 @@
   "api_version": "1.0.7",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/6178101?v=4",
+      "avatar_url": "",
       "name": "SupremeMortal",
-      "url": "https://github.com/SupremeMortal"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
-      "name": "lt-name",
-      "url": "https://github.com/lt-name"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/26197131?v=4",
-      "name": "PetteriM1",
-      "url": "https://github.com/PetteriM1"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/24740835?v=4",
-      "name": "jrodr10",
-      "url": "https://github.com/jrodr10"
+      "url": ""
     }
   ],
   "categories": [
@@ -50,6 +35,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1784790523,
+  "updated_at": 1784790644,
   "versions": []
 }

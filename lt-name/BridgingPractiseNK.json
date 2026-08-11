@@ -2,19 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
-      "name": "lt-name",
-      "url": "https://github.com/lt-name"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/65506006?v=4",
-      "name": "hax0r31337",
-      "url": "https://github.com/hax0r31337"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/29895665?v=4",
-      "name": "jungwuk-ryu",
-      "url": "https://github.com/jungwuk-ryu"
+      "avatar_url": "",
+      "name": "Ricoco",
+      "url": ""
     }
   ],
   "categories": [
@@ -42,14 +32,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "BridgingPractise",
-  "primary_target": "nkmot",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/lt-name/BridgingPractiseNK",
   "stars": 0,
   "summary": "A bridging practise plugin helps you practise your bridging ability.",
   "targets": [
+    "nkx",
     "nkmot"
   ],
-  "updated_at": 1767403504,
+  "updated_at": 1767403508,
   "versions": []
 }

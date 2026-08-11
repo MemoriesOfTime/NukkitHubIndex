@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/16573760?v=4",
+      "avatar_url": "",
       "name": "vzlomka76",
-      "url": "https://github.com/vzlomka76"
+      "url": ""
     }
   ],
   "categories": [
@@ -35,7 +35,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1501242618,
+  "updated_at": 1756605647,
   "versions": [
     {
       "changelog": "Working VirtualInventory with default items (examples)",

@@ -2,9 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/96527285?v=4",
-      "name": "NaySurGithub",
-      "url": "https://github.com/NaySurGithub"
+      "avatar_url": "",
+      "name": "Nay",
+      "url": ""
     }
   ],
   "categories": [],
@@ -32,7 +32,7 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1786233388,
+  "updated_at": 1786233340,
   "versions": [
     {
       "changelog": "**Full Changelog**: https://github.com/NaySurGithub/Amethyst/compare/v1.0.5...1.1.0",

@@ -2,9 +2,9 @@
   "api_version": "1.1.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/68396929?v=4",
+      "avatar_url": "",
       "name": "marioCST",
-      "url": "https://github.com/marioCST"
+      "url": ""
     }
   ],
   "categories": [
@@ -40,10 +40,9 @@
   "summary": "Nukkit implementation of Onix' module control API",
   "targets": [
     "nkx",
-    "nkmot",
     "pnx"
   ],
-  "updated_at": 1748392963,
+  "updated_at": 1757797098,
   "versions": [
     {
       "changelog": "",

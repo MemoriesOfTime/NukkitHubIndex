@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/311603181?v=4",
-      "name": "HZC-MuFeng2015ye",
-      "url": "https://github.com/HZC-MuFeng2015ye"
+      "avatar_url": "",
+      "name": "mufeng2015ye",
+      "url": ""
     }
   ],
   "categories": [],
@@ -17,7 +17,7 @@
     }
   ],
   "description": "# FZG_Menu-Nukkit\n\nFZG-Menu 的 Nukkit 适配版本，保留原有 YAML 配置结构与菜单、动态命令、公告和计分板逻辑。\n\n## 构建与安装\n\n- JDK 8 或更高版本\n- Maven 3.8 或更高版本\n- Nukkit API 1.0-SNAPSHOT\n\n执行 Maven 的 clean package，将 target/FZG_Menu-Nukkit-1.0.1.jar 放入 Nukkit 的 plugins 目录。\n\n## 兼容说明\n\n- 表单改用 Nukkit 原生 FormWindow，不再依赖 Paper 版 BaseAPI。\n- 百分号变量可选兼容 CreeperFace Nukkit PlaceholderAPI。\n- SERVER 动作会发送 WaterdogPE 可识别的 TransferPacket，address 为下游服务器名；填写 IP:端口时使用基岩版直连 Transfer。\n- online-provider 默认使用 waterdog，通过 waterdog-address 查询代理 RakNet MOTD，显示整个 WaterdogPE 网络的在线人数。\n- online-provider 设为 placeholder 时，online-server 继续按 bungee 服务器占位符汇总；设为 local 时只显示当前 Nukkit 人数。\n- 计分板会在玩家加入后延迟首次显示，并周期重发 objective，避免登录阶段丢包导致侧边栏不可见。\n",
-  "detection_confidence": "medium",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/311603181?v=4",
@@ -36,9 +36,8 @@
   "stars": 0,
   "summary": "风之谷 Nukkit 菜单、公告与计分板插件",
   "targets": [
-    "nkx",
-    "nkmot"
+    "nkx"
   ],
-  "updated_at": 1786024579,
+  "updated_at": 1786024630,
   "versions": []
 }

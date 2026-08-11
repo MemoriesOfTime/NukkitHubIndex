@@ -2,9 +2,9 @@
   "api_version": "2.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/155553798?v=4",
-      "name": "kxle0801",
-      "url": "https://github.com/kxle0801"
+      "avatar_url": "",
+      "name": "Back",
+      "url": ""
     }
   ],
   "categories": [],
@@ -33,6 +33,6 @@
     "nkx",
     "pnx"
   ],
-  "updated_at": 1782038825,
+  "updated_at": 1784171077,
   "versions": []
 }

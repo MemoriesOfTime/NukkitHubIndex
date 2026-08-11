@@ -2,16 +2,16 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/202798110?v=4",
+      "avatar_url": "",
       "name": "Shfiso-a",
-      "url": "https://github.com/Shfiso-a"
+      "url": ""
     }
   ],
   "categories": [],
   "created_at": 1741872655,
   "dependencies": [],
   "description": "# FormAuth\r\n\r\nA simple authentication plugin for Nukkit Minecraft servers that uses forms for login and registration.\r\n\r\n## Configuration\r\n\r\nconfig file contains :\r\n- Login timeout\r\n- AFK timeout\r\n- Custom messages\r\n- Player database location\r\n- login attempt limiter ( without temporary block )\r\n\r\n## Credits\r\n[KibiAuth](https://github.com/KibiDB/KibiAuth-Nukkit) (i only used it's code structure )\r\n\r\n## Images\r\n\r\n![Screenshot 2025-03-13 170904](https://github.com/user-attachments/assets/6ebcd98c-0a19-4315-ad2f-a2799a44f093)\r\n",
-  "detection_confidence": "medium",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/202798110?v=4",
@@ -30,10 +30,9 @@
   "stars": 0,
   "summary": "authui",
   "targets": [
-    "nkx",
-    "nkmot"
+    "nkx"
   ],
-  "updated_at": 1783506312,
+  "updated_at": 1783505831,
   "versions": [
     {
       "changelog": "added temporary block when max login attempt reached\r\nadded MySQL and MariaDB drivers (it will get automatically downloaded)\r\nsome security updates\r\ni will add IP-based auto login in next update ",

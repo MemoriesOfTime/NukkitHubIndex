@@ -2,19 +2,14 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
-      "name": "lt-name",
-      "url": "https://github.com/lt-name"
+      "avatar_url": "",
+      "name": "LT_Name",
+      "url": ""
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "name": "dependabot[bot]",
-      "url": "https://github.com/apps/dependabot"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/59405399?v=4",
-      "name": "k7Xm9pQr",
-      "url": "https://github.com/k7Xm9pQr"
+      "avatar_url": "",
+      "name": "iGxnon",
+      "url": ""
     }
   ],
   "categories": [
@@ -43,14 +38,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "MemoriesOfTime-GameCore",
-  "primary_target": "nkmot",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/MemoriesOfTime/MemoriesOfTime-GameCore",
   "stars": 7,
   "summary": "lib plugin for nukkit",
   "targets": [
+    "nkx",
     "nkmot"
   ],
-  "updated_at": 1785941289,
+  "updated_at": 1785940852,
   "versions": []
 }

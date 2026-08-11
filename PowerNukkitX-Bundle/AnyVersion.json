@@ -2,24 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "avatar_url": "",
       "name": "Buddelbubi",
-      "url": "https://github.com/Buddelbubi"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/50714128?v=4",
-      "name": "xRookieFight",
-      "url": "https://github.com/xRookieFight"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/82237910?v=4",
-      "name": "AzaleeX",
-      "url": "https://github.com/AzaleeX"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/56545793?v=4",
-      "name": "TraxTRL",
-      "url": "https://github.com/TraxTRL"
+      "url": ""
     }
   ],
   "categories": [
@@ -41,15 +26,16 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "AnyVersion",
-  "primary_target": "pnx",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/AnyVersion",
   "stars": 13,
   "summary": "Allow older clients to join your server.",
   "targets": [
+    "nkx",
     "pnx"
   ],
-  "updated_at": 1786099762,
+  "updated_at": 1786099809,
   "versions": [
     {
       "changelog": "**Full Changelog**: https://github.com/PowerNukkitX-Bundle/AnyVersion/compare/v2.8.4...v2.8.5",

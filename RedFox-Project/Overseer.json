@@ -2,9 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/128159204?v=4",
-      "name": "ayd1ndemirci",
-      "url": "https://github.com/ayd1ndemirci"
+      "avatar_url": "",
+      "name": "RedFox",
+      "url": ""
     }
   ],
   "categories": [],
@@ -24,15 +24,16 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "Overseer",
-  "primary_target": "pnx",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/RedFox-Project/Overseer",
   "stars": 0,
   "summary": "Advanced Anti-Dupe and Item Integrity System",
   "targets": [
+    "nkx",
     "pnx"
   ],
-  "updated_at": 1786094247,
+  "updated_at": 1786094262,
   "versions": [
     {
       "changelog": "Download ",

@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/99377251?v=4",
-      "name": "lthuas",
-      "url": "https://github.com/lthuas"
+      "avatar_url": "",
+      "name": "lthua",
+      "url": ""
     }
   ],
   "categories": [],
@@ -33,6 +33,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1782314733,
+  "updated_at": 1782314795,
   "versions": []
 }

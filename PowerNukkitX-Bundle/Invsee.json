@@ -2,14 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/95095051?v=4",
-      "name": "LeonTenDev",
-      "url": "https://github.com/LeonTenDev"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
-      "name": "Buddelbubi",
-      "url": "https://github.com/Buddelbubi"
+      "avatar_url": "",
+      "name": "Leon1917141",
+      "url": ""
     }
   ],
   "categories": [
@@ -32,15 +27,16 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "Invsee",
-  "primary_target": "pnx",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/Invsee",
   "stars": 0,
   "summary": "An simple InvSee plugin for Nukkit!",
   "targets": [
+    "nkx",
     "pnx"
   ],
-  "updated_at": 1785315576,
+  "updated_at": 1785315602,
   "versions": [
     {
       "changelog": "Automated release for v1.1.2",

@@ -2,9 +2,9 @@
   "api_version": "3.0.1",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/57580080?v=4",
-      "name": "Zephyr-OP",
-      "url": "https://github.com/Zephyr-OP"
+      "avatar_url": "",
+      "name": "You",
+      "url": ""
     }
   ],
   "categories": [],
@@ -33,7 +33,7 @@
     "nkx",
     "pnx"
   ],
-  "updated_at": 1785720584,
+  "updated_at": 1785720588,
   "versions": [
     {
       "changelog": "Automated release for v1.0.0",

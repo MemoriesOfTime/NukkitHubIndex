@@ -2,9 +2,9 @@
   "api_version": "1.0.11",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/83235042?v=4",
-      "name": "SoBadFish",
-      "url": "https://github.com/SoBadFish"
+      "avatar_url": "",
+      "name": "某吃瓜咸鱼",
+      "url": ""
     }
   ],
   "categories": [
@@ -35,7 +35,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1755772013,
+  "updated_at": 1773761204,
   "versions": [
     {
       "changelog": "增加回收功能",

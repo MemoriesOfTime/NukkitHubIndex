@@ -2,16 +2,22 @@
   "api_version": "1.1.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/74652542?v=4",
+      "avatar_url": "",
       "name": "Kredwi",
-      "url": "https://github.com/Kredwi"
+      "url": ""
     }
   ],
   "categories": [],
   "created_at": 1786141576,
-  "dependencies": [],
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "EconomyAPI",
+      "version_range": ""
+    }
+  ],
   "description": "",
-  "detection_confidence": "medium",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/74652542?v=4",
@@ -28,11 +34,10 @@
   "server_version": "",
   "source": "https://github.com/Kredwi/NClanPlugin",
   "stars": 0,
-  "summary": "Clan Plugin for Nukkit",
+  "summary": "The best plugin for clan in Nukkit !",
   "targets": [
-    "nkx",
-    "nkmot"
+    "nkx"
   ],
-  "updated_at": 1786344818,
+  "updated_at": 1786449475,
   "versions": []
 }

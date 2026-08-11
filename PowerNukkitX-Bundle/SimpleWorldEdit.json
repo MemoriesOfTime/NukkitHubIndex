@@ -2,9 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "avatar_url": "",
       "name": "Buddelbubi",
-      "url": "https://github.com/Buddelbubi"
+      "url": ""
     }
   ],
   "categories": [
@@ -26,15 +26,16 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "SimpleWorldEdit",
-  "primary_target": "pnx",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/SimpleWorldEdit",
   "stars": 1,
   "summary": "Simple WorldEdit plugin for PNX",
   "targets": [
+    "nkx",
     "pnx"
   ],
-  "updated_at": 1785764232,
+  "updated_at": 1785764518,
   "versions": [
     {
       "changelog": "Automated release for v1.0.5",

@@ -2,9 +2,9 @@
   "api_version": "1.0.11",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/59405399?v=4",
-      "name": "k7Xm9pQr",
-      "url": "https://github.com/k7Xm9pQr"
+      "avatar_url": "",
+      "name": "iGxnon",
+      "url": ""
     }
   ],
   "categories": [
@@ -37,15 +37,16 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "FormDSL",
-  "primary_target": "nkmot",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/MemoriesOfTime/FormDSL",
   "stars": 2,
   "summary": "support dsl operation in kotlin to build Form UI",
   "targets": [
+    "nkx",
     "nkmot"
   ],
-  "updated_at": 1686225912,
+  "updated_at": 1707234856,
   "versions": [
     {
       "changelog": "",

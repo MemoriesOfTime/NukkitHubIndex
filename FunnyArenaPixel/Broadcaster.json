@@ -2,14 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/70517151?v=4",
-      "name": "0xliam627",
-      "url": "https://github.com/0xliam627"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
-      "name": "lt-name",
-      "url": "https://github.com/lt-name"
+      "avatar_url": "",
+      "name": "BlockMagicDev",
+      "url": ""
     }
   ],
   "categories": [],
@@ -45,6 +40,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1785760518,
+  "updated_at": 1785760570,
   "versions": []
 }

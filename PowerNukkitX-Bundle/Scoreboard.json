@@ -2,9 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "avatar_url": "",
       "name": "Buddelbubi",
-      "url": "https://github.com/Buddelbubi"
+      "url": ""
     }
   ],
   "categories": [
@@ -32,15 +32,16 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "Scoreboard",
-  "primary_target": "pnx",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/Scoreboard",
   "stars": 0,
   "summary": "Add a scoreboard to your PowerNukkitX server.",
   "targets": [
+    "nkx",
     "pnx"
   ],
-  "updated_at": 1785310757,
+  "updated_at": 1785310862,
   "versions": [
     {
       "changelog": "Automated release for v1.0.3",

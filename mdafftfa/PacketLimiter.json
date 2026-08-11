@@ -2,9 +2,9 @@
   "api_version": "2.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/239018447?v=4",
-      "name": "mdafftfa",
-      "url": "https://github.com/mdafftfa"
+      "avatar_url": "",
+      "name": "pixelwhiz",
+      "url": ""
     }
   ],
   "categories": [],
@@ -39,7 +39,7 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1783927417,
+  "updated_at": 1783927422,
   "versions": [
     {
       "changelog": "",

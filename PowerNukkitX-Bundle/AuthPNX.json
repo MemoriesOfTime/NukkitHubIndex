@@ -2,9 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "avatar_url": "",
       "name": "Buddelbubi",
-      "url": "https://github.com/Buddelbubi"
+      "url": ""
     }
   ],
   "categories": [
@@ -27,15 +27,16 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "AuthPNX",
-  "primary_target": "pnx",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/AuthPNX",
   "stars": 0,
   "summary": "An authentication plugin for PowerNukkitX",
   "targets": [
+    "nkx",
     "pnx"
   ],
-  "updated_at": 1783678176,
+  "updated_at": 1783678149,
   "versions": [
     {
       "changelog": "Automated release for v1.0.2",

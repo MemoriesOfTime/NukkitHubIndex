@@ -2,16 +2,16 @@
   "api_version": "1.0.11",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/242151603?v=4",
-      "name": "Natro-w",
-      "url": "https://github.com/Natro-w"
+      "avatar_url": "",
+      "name": "Natro",
+      "url": ""
     }
   ],
   "categories": [],
   "created_at": 1781020055,
   "dependencies": [],
   "description": "# WorldManager\n\n**The most powerful multi-world management system for Nukkit / Lumi servers.** Create, delete, copy, teleport, and configure worlds — all from in-game commands and an intuitive form UI. Extend with official addons.\n\n> **Version:** 1.2.3  \n> **Author:** Natro  \n> **API:** 1.0.11–1.0.15\n\n---\n\n## Features\n\n- **World creation** — Generate worlds with any generator and seed.\n- **World management** — Load, unload, reload, rename, copy, duplicate, and delete worlds.\n- **Teleportation** — Teleport between worlds with commands or a UI.\n- **World settings** — Per-world game mode, player limit, protection, gamerules, and spawn location.\n- **World regeneration** — Regenerate entire worlds or change their seed.\n- **Biome editing** — Change the biome of all loaded chunks in a world.\n- **Entity clearing** — Kill all entities in a world (clearlag).\n- **Addon system** — Extend functionality with official addons (signs, whitelist, chat, join messages, The End, etc.).\n- **Default world switching** — Change the server's default world at runtime.\n\n---\n\n## Installation\n\n1. Place `WorldManager.jar` into your server's `plugins/` folder.\n2. Restart the server.\n3. (Optional) Install addons from the in-game addon UI (`/wm addons`).\n\n---\n\n## Commands\n\nUse any of these aliases: `/worldmanager`, `/wm`, `/mw`, `/levelmanager`, `/lm`, or `/mv`.\n\n| Command | Description |\n|---|---|\n| `/wm teleport <world> [player]` | Teleport to a world |\n| `/wm generate <world> [generator] [seed]` | Create a new world |\n| `/wm delete <world>` | Delete a world |\n| `/wm list` | List all worlds (loaded and unloaded) |\n| `/wm load <world>` | Load a world |\n| `/wm unload <world>` | Unload a world |\n| `/wm reload [world]` | Reload a world |\n| `/wm rename <world> <newName>` | Rename a world |\n| `/wm copy <world> [copyName]` | Copy a world |\n| `/wm setspawn` | Set the world spawn to your position |\n| `/wm settings [world]` | Open world settings UI |\n| `/wm regenerate [world]` | Regenerate a world |\n| `/wm setseed <world> <seed>` | Change a world's seed |\n| `/wm info [world]` | Show world information |\n| `/wm setbiome <biome>` | Change biome in loaded chunks |\n| `/wm gamerule [world]` | Open gamerule management UI |\n| `/wm killentitys <world>` | Kill all entities in a world |\n| `/wm spawn` | Teleport to world spawn |\n| `/wm addons` | Open addon management UI |\n| `/wm default [world]` | Show or change the default world |\n| `/wm version` | Show plugin version |\n\nParameters in `[]` are optional.\n\n---\n\n## Permissions\n\n| Permission | Description |\n|---|---|\n| `worldmanager.admin` | Access all WorldManager features |\n| `worldmanager.<subcommand>` | Access a specific subcommand (e.g., `worldmanager.generate`) |\n| `worldmanager.teleport.<world>` | Teleport to a specific world |\n| `worldmanager.deny.<world>` | Prevent entry to a specific world |\n| `worldmanager.teleportui` | Open the teleport UI |\n| `worldmanager.generationui` | Open the generation UI |\n| `worldmanager.enterfullworlds` | Bypass per-world player limits |\n\n---\n\n## Addons\n\nInstall from the in-game addon UI at `/wm addons`:\n\n| Addon | Author |\n|---|---|\n| WorldSigns | Buddelbubi |\n| WorldWhitelist | Buddelbubi |\n| WorldPlayerLimits | Buddelbubi |\n| WorldChat | Buddelbubi |\n| WorldJoinMessage | Buddelbubi |\n| TheEnd | wode |\n| BetterVanillaGenerator | wode |\n| PerWorldInventory | lukeeey |\n| MultiNether | PetteriM1 |\n| FastAsyncWorldEdit | IntellectualSites |\n\n---\n\n## Building\n\n```bash\nmvn clean package\n```\n\n---\n\n## License\n\nMIT License — see [LICENSE](https://github.com/Natro-w/WorldManager/blob/main/LICENSE).\n",
-  "detection_confidence": "medium",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/242151603?v=4",
@@ -34,10 +34,9 @@
   "stars": 0,
   "summary": "WorldManager is the most powerful world management system.",
   "targets": [
-    "nkx",
-    "nkmot"
+    "nkx"
   ],
-  "updated_at": 1781122191,
+  "updated_at": 1781122268,
   "versions": [
     {
       "changelog": "Release v1.2.3 - World management plugin",

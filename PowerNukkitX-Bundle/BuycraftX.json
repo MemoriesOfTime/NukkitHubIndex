@@ -2,69 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/979956?v=4",
-      "name": "minecrafter",
-      "url": "https://github.com/minecrafter"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/10179637?v=4",
-      "name": "liam-wiltshire",
-      "url": "https://github.com/liam-wiltshire"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/1396368?v=4",
-      "name": "theminecoder",
-      "url": "https://github.com/theminecoder"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/62796605?v=4",
-      "name": "TebexOllie",
-      "url": "https://github.com/TebexOllie"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/56545793?v=4",
-      "name": "TraxTRL",
-      "url": "https://github.com/TraxTRL"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/26485672?v=4",
-      "name": "itsjh",
-      "url": "https://github.com/itsjh"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/3318873?v=4",
-      "name": "nikosgram",
-      "url": "https://github.com/nikosgram"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/82237910?v=4",
-      "name": "AzaleeX",
-      "url": "https://github.com/AzaleeX"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
-      "name": "Buddelbubi",
-      "url": "https://github.com/Buddelbubi"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/749179?v=4",
-      "name": "WildBamaBoy",
-      "url": "https://github.com/WildBamaBoy"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/20393865?v=4",
-      "name": "nilsbrychzy",
-      "url": "https://github.com/nilsbrychzy"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/73995049?v=4",
-      "name": "PleaseInsertNameHere",
-      "url": "https://github.com/PleaseInsertNameHere"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/104735961?v=4",
-      "name": "ow77",
-      "url": "https://github.com/ow77"
+      "avatar_url": "",
+      "name": "Buycraft",
+      "url": ""
     }
   ],
   "categories": [],
@@ -84,15 +24,16 @@
   "links": null,
   "manifest_path": "pnx/src/main/resources/plugin.yml",
   "name": "BuycraftX",
-  "primary_target": "pnx",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/BuycraftX",
   "stars": 0,
   "summary": "Link your Tebex store with PNX! The old BuycraftX plugin ported to PowerNukkitX.",
   "targets": [
+    "nkx",
     "pnx"
   ],
-  "updated_at": 1785311781,
+  "updated_at": 1785311799,
   "versions": [
     {
       "changelog": "",

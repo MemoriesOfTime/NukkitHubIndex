@@ -2,16 +2,16 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/62496819?v=4",
+      "avatar_url": "",
       "name": "dmblock",
-      "url": "https://github.com/dmblock"
+      "url": ""
     }
   ],
   "categories": [],
   "created_at": 1785158745,
   "dependencies": [],
   "description": "# Netools\n\n---\n\n## 项目简介\n\n网络信息工具，提供 Go CLI 查询网络接口、DNS、路由表、活跃连接和统计信息，并提供 Bukkit、Nukkit、LeviLamina 三个平台的 Minecraft 服务端插件。\n\n## 项目结构\n\n```\nnetools/\n├── netools.go                # Go CLI（跨平台）\n├── netools_windows.go        # Windows 专属 API 绑定\n├── netools_stub.go           # Linux 存根函数\n├── src/\n│   ├── levilamina/           # LeviLamina LSE TypeScript 插件\n│   ├── bukkit/               # Bukkit/Spigot/Paper Java (Maven) 插件\n│   └── nukkit/               # Nukkit Java (Maven) 插件\n├── dist/                     # Go 编译产物\n├── target/                   # 打包后的插件产物\n├── package.json              # 构建编排\n└── go.mod\n```\n\n## 构建\n\n### 前置依赖\n\n- Go 1.26+\n- Node.js + pnpm\n- JDK 17+ + Maven（Bukkit/Nukkit 插件需要）\n\n### 命令\n\n| 命令 | 产物 |\n|---|---|\n| `pnpm compile` | `dist/netools.exe` + `dist/netools` |\n| `pnpm build:levilamina` | `dist/levilamina/bundle.js` |\n| `pnpm build:bukkit` | `dist/bukkit/netools-bukkit.jar` |\n| `pnpm build:nukkit` | `dist/nukkit/netools-nukkit.jar` |\n| `pnpm build` | 全部构建 |\n| `pnpm package` | 全部构建并复制到 `target/` |\n\n### 打包产物\n\n```\ntarget/\n├── netools-lse.js                 # LeviLamina 插件\n├── netools-bukkit-1.0.0.jar       # Bukkit 插件\n└── netools-nukkit-1.0.0.jar       # Nukkit 插件\n```\n\n## CLI 使用\n\n```\n用法: netools [module] [--json] [--format]\n\n模块:\n  interfaces     显示网络接口\n  dns            显示 DNS 服务器\n  routes         显示路由表\n  connections    显示活跃连接\n  stats          显示网络统计\n  os             显示操作系统信息\n  all            显示全部（默认）\n\n选项:\n  --json         以 JSON 格式输出\n  --format       格式化 JSON 输出\n```\n\n## 插件使用\n\n每个插件提供 `/netools` 命令：\n\n```\n/netools [module]\n```\n\n工作流程：\n1. 从 GitHub Releases 下载 `netools` 二进制到 `plugins/Netools/bin/`\n2. 运行并传入 `--json` 参数\n3. 解析 JSON 输出并展示格式化结果\n\n### 配置\n\n`plugins/Netools/config.json`（LeviLamina）/ `plugins/Netools/config.yml`（Bukkit/Nukkit）：\n\n```yaml\ngithub_baseurl: \"https://github.com\"\nauto_update: true\n```\n\n`github_baseurl` 可改为代理/镜像地址加速下载（如 `https://ghproxy.com/https://github.com`）。\n\n## 许可证\n\nAGPL-3.0-only。详见 [LICENSE](https://github.com/dmblock/netools/blob/main/LICENSE)。\n\n---\n\n## Introduction\n\nNetools is a network information tool that provides a Go CLI for querying network interfaces, DNS servers, routing tables, active connections, and statistics. It also includes Minecraft server plugins for Bukkit, Nukkit, and LeviLamina.\n\n## Project Structure\n\n```\nnetools/\n├── netools.go                # Go CLI (cross-platform)\n├── netools_windows.go        # Windows API bindings\n├── netools_stub.go           # Linux stubs for Windows functions\n├── src/\n│   ├── levilamina/           # LeviLamina LSE TypeScript plugin\n│   ├── bukkit/               # Bukkit/Spigot/Paper Java (Maven) plugin\n│   └── nukkit/               # Nukkit Java (Maven) plugin\n├── dist/                     # Go build output\n├── target/                   # Packaged plugin outputs\n├── package.json              # Build orchestration\n└── go.mod\n```\n\n## Build\n\n### Prerequisites\n\n- Go 1.26+\n- Node.js + pnpm\n- JDK 17+ + Maven (for Bukkit/Nukkit plugins)\n\n### Commands\n\n| Command | Output |\n|---|---|\n| `pnpm compile` | `dist/netools.exe` + `dist/netools` |\n| `pnpm build:levilamina` | `dist/levilamina/bundle.js` |\n| `pnpm build:bukkit` | `dist/bukkit/netools-bukkit.jar` |\n| `pnpm build:nukkit` | `dist/nukkit/netools-nukkit.jar` |\n| `pnpm build` | All of the above |\n| `pnpm package` | All builds + copy to `target/` |\n\n### Package Output\n\n```\ntarget/\n├── netools-lse.js                 # LeviLamina plugin\n├── netools-bukkit-1.0.0.jar       # Bukkit plugin\n└── netools-nukkit-1.0.0.jar       # Nukkit plugin\n```\n\n## CLI Usage\n\n```\nUsage: netools [module] [--json] [--format]\n\nModules:\n  interfaces     Show network interfaces\n  dns            Show DNS servers\n  routes         Show routing table\n  connections    Show active connections\n  stats          Show network statistics\n  os             Show OS information\n  all            Show everything (default)\n\nFlags:\n  --json         Output in JSON format\n  --format       Pretty-print JSON output\n```\n\n## Plugin Usage\n\nEach plugin provides the `/netools` command:\n\n```\n/netools [module]\n```\n\nWorkflow:\n1. Downloads the `netools` binary from GitHub releases to `plugins/Netools/bin/`\n2. Runs it with the requested module + `--json`\n3. Parses the JSON output and displays formatted results\n\n### Configuration\n\n`plugins/Netools/config.json` (LeviLamina) / `plugins/Netools/config.yml` (Bukkit/Nukkit):\n\n```yaml\ngithub_baseurl: \"https://github.com\"\nauto_update: true\n```\n\nChange `github_baseurl` to a proxy/mirror URL to speed up downloads (e.g. `https://ghproxy.com/https://github.com`).\n\n## License\n\nAGPL-3.0-only. See [LICENSE](https://github.com/dmblock/netools/blob/main/LICENSE).",
-  "detection_confidence": "medium",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/62496819?v=4",
@@ -30,10 +30,9 @@
   "stars": 0,
   "summary": "Network information tool for Nukkit servers",
   "targets": [
-    "nkx",
-    "nkmot"
+    "nkx"
   ],
-  "updated_at": 1785161346,
+  "updated_at": 1785161735,
   "versions": [
     {
       "changelog": "",

@@ -2,19 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/7607627?v=4",
-      "name": "SergeyDertan",
-      "url": "https://github.com/SergeyDertan"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "name": "dependabot[bot]",
-      "url": "https://github.com/apps/dependabot"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/43497313?v=4",
-      "name": "GoodLucky777",
-      "url": "https://github.com/GoodLucky777"
+      "avatar_url": "",
+      "name": "Sergey_Dertan",
+      "url": ""
     }
   ],
   "categories": [
@@ -55,7 +45,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1684872692,
+  "updated_at": 1623622833,
   "versions": [
     {
       "changelog": "MySQL, SQLite & postrgresql support\r\nPlaceholderAPI support\r\nMigrate command\r\nRussian translation\r\nVault name pattern",

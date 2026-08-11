@@ -2,9 +2,9 @@
   "api_version": "1.0.13",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/130136947?v=4",
-      "name": "EggrollMC",
-      "url": "https://github.com/EggrollMC"
+      "avatar_url": "",
+      "name": "ACGN-M_Eggroll",
+      "url": ""
     }
   ],
   "categories": [],
@@ -37,6 +37,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1785326232,
+  "updated_at": 1785326821,
   "versions": []
 }

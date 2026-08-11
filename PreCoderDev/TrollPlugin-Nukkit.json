@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/30264842?v=4",
-      "name": "PreCoderDev",
-      "url": "https://github.com/PreCoderDev"
+      "avatar_url": "",
+      "name": "PreCoder",
+      "url": ""
     }
   ],
   "categories": [
@@ -35,7 +35,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1501931586,
+  "updated_at": 1582465184,
   "versions": [
     {
       "changelog": "- many fixes\r\n- added \"/troll\" verification\r\n- add \"/troll granade\" (a explosive tool)",

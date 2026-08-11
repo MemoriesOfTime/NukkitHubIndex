@@ -2,9 +2,9 @@
   "api_version": "1.0.9",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
-      "name": "lt-name",
-      "url": "https://github.com/lt-name"
+      "avatar_url": "",
+      "name": "LT_Name",
+      "url": ""
     }
   ],
   "categories": [
@@ -33,14 +33,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "ChatTranslate",
-  "primary_target": "nkmot",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/lt-name/ChatTranslate",
   "stars": 1,
   "summary": "Automatic translation of player chat messages in nukkit",
   "targets": [
+    "nkx",
     "nkmot"
   ],
-  "updated_at": 1667308406,
+  "updated_at": 1667261500,
   "versions": []
 }

@@ -2,14 +2,9 @@
   "api_version": "1.0.8",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/25536411?v=4",
-      "name": "Leonidius20",
-      "url": "https://github.com/Leonidius20"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/44516212?v=4",
-      "name": "3zeroed",
-      "url": "https://github.com/3zeroed"
+      "avatar_url": "",
+      "name": "Leondius20",
+      "url": ""
     }
   ],
   "categories": [
@@ -58,7 +53,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1598390886,
+  "updated_at": 1722707852,
   "versions": [
     {
       "changelog": "Warning! Please backup `buyList.yml`, `sellList.yml` and `customItemNames.yml` before installing this update.\r\nNote! Starting with version 2.0.0 the plugin depends on [DbLib](https://github.com/fromgate/DbLib).\r\n\r\n- Added support for items with enchantments, custom names and lores\r\n- Temporary discounts, which expire after a set time\r\n- Revamped interface\r\n\r\nNote! Starting with version 2.0.0 the plugin stores items in a database. When you first launch an update, `.yml` config files will be converted into the database format and deleted. Existing discounts will remain eternal after the conversion, but you will not be able to create eternal discounts anymore.",

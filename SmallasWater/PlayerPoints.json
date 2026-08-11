@@ -2,14 +2,9 @@
   "api_version": "1.0.9",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
-      "name": "SmallasWater",
-      "url": "https://github.com/SmallasWater"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
-      "name": "lt-name",
-      "url": "https://github.com/lt-name"
+      "avatar_url": "",
+      "name": "若水",
+      "url": ""
     }
   ],
   "categories": [
@@ -24,7 +19,7 @@
     }
   ],
   "description": "<a href=\"https://github.com/SmallasWater/PlayerPoints/releases/latest\" alt=\"Latest release\">\n    <img src=\"https://img.shields.io/github/v/release/SmallasWater/PlayerPoints?include_prereleases\" alt=\"Latest release\">\n</a>\n<br>\n \n\n\n#PlayerPoints\n\n点券系统",
-  "detection_confidence": "medium",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
@@ -46,7 +41,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1700226895,
+  "updated_at": 1701757005,
   "versions": [
     {
       "changelog": "v1.1.7\r\n对接 EasyMySQL 2.0.3版本\r\n\r\nv1.1.6\r\n对接 MySql数据库 （需要EasyMySql前置插件）\r\n对接 McRmb\r\n\r\nv1.0.8\r\n增加存储类型判断\r\n增加\r\nv1.0.7\r\n优化排行榜显示",

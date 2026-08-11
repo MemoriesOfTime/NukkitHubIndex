@@ -2,9 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/88402556?v=4",
-      "name": "RinierMC",
-      "url": "https://github.com/RinierMC"
+      "avatar_url": "",
+      "name": "2kMcFloat",
+      "url": ""
     }
   ],
   "categories": [],
@@ -30,14 +30,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "Kits",
-  "primary_target": "pnx",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/RinierMC/Kits",
   "stars": 0,
   "summary": "Advanced kits plugin with GUI, ranks, and chest delivery.",
   "targets": [
+    "nkx",
     "pnx"
   ],
-  "updated_at": 1784052250,
+  "updated_at": 1784052167,
   "versions": []
 }

@@ -2,16 +2,16 @@
   "api_version": "Nukkit-PM1E",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
-      "name": "lt-name",
-      "url": "https://github.com/lt-name"
+      "avatar_url": "",
+      "name": "LT_Name",
+      "url": ""
     }
   ],
   "categories": [],
   "created_at": 1630215244,
   "dependencies": [],
   "description": "",
-  "detection_confidence": "medium",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/62042238?v=4",
@@ -30,10 +30,9 @@
   "stars": 3,
   "summary": "",
   "targets": [
-    "nkx",
-    "nkmot"
+    "nkx"
   ],
-  "updated_at": 1723902187,
+  "updated_at": 1720526288,
   "versions": [
     {
       "changelog": "Now supports 1.16.100-1.19.50",

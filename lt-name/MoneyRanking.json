@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
-      "name": "lt-name",
-      "url": "https://github.com/lt-name"
+      "avatar_url": "",
+      "name": "LT_Name",
+      "url": ""
     }
   ],
   "categories": [],
@@ -50,14 +50,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "MoneyRanking",
-  "primary_target": "nkmot",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/lt-name/MoneyRanking",
   "stars": 2,
   "summary": "nukkit 金钱排行榜插件 支持对接四种经济接口",
   "targets": [
+    "nkx",
     "nkmot"
   ],
-  "updated_at": 1688644554,
+  "updated_at": 1662212327,
   "versions": []
 }

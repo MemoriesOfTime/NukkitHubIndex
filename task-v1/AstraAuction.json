@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/154591704?v=4",
+      "avatar_url": "",
       "name": "Taskov1ch",
-      "url": "https://github.com/Taskov1ch"
+      "url": ""
     }
   ],
   "categories": [
@@ -69,16 +69,17 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "AstraAuction",
-  "primary_target": "nkmot",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/task-v1/AstraAuction",
   "stars": 3,
   "summary": "Auction plugin scaffold for Lumi (Nukkit-MOT fork)",
   "targets": [
+    "nkx",
     "nkmot",
     "lumi"
   ],
-  "updated_at": 1777869450,
+  "updated_at": 1781653879,
   "versions": [
     {
       "changelog": "## What's Changed\n* Upgrade to v0.10 by @Taskov1ch in https://github.com/astra-v1/AstraAuction/pull/1\n\n## New Contributors\n* @Taskov1ch made their first contribution in https://github.com/astra-v1/AstraAuction/pull/1\n\n**Full Changelog**: https://github.com/astra-v1/AstraAuction/compare/v0.9.23...v0.10.19\n\n## What's Changed\n* Upgrade to v0.10 by @Taskov1ch in https://github.com/astra-v1/AstraAuction/pull/1\n\n## New Contributors\n* @Taskov1ch made their first contribution in https://github.com/astra-v1/AstraAuction/pull/1\n\n**Full Changelog**: https://github.com/astra-v1/AstraAuction/compare/v0.9.23...v0.10.19\n\n## What's Changed\n* Upgrade to v0.10 by @Taskov1ch in https://github.com/astra-v1/AstraAuction/pull/1\n\n## New Contributors\n* @Taskov1ch made their first contribution in https://github.com/astra-v1/AstraAuction/pull/1\n\n**Full Changelog**: https://github.com/astra-v1/AstraAuction/compare/v0.9.23...v0.10.19\n\n## What's Changed\n* Upgrade to v0.10 by @Taskov1ch in https://github.com/astra-v1/AstraAuction/pull/1\n\n## New Contributors\n* @Taskov1ch made their first contribution in https://github.com/astra-v1/AstraAuction/pull/1\n\n**Full Changelog**: https://github.com/astra-v1/AstraAuction/compare/v0.9.23...v0.10.19",

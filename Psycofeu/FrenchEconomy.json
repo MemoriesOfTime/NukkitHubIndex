@@ -2,9 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/175262502?v=4",
+      "avatar_url": "",
       "name": "Psycofeu",
-      "url": "https://github.com/Psycofeu"
+      "url": ""
     }
   ],
   "categories": [],
@@ -24,15 +24,16 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "FrenchEconomy",
-  "primary_target": "pnx",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/Psycofeu/FrenchEconomy",
   "stars": 1,
   "summary": "Economy plugin by french guy :)",
   "targets": [
+    "nkx",
     "pnx"
   ],
-  "updated_at": 1785167558,
+  "updated_at": 1785167665,
   "versions": [
     {
       "changelog": "Plugin .jar",

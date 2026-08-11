@@ -2,9 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/104681026?v=4",
-      "name": "ValresMC",
-      "url": "https://github.com/ValresMC"
+      "avatar_url": "",
+      "name": "Root-Studios (Valres)",
+      "url": ""
     }
   ],
   "categories": [],
@@ -24,14 +24,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "PNX-ToolBox",
-  "primary_target": "pnx",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/YnXahgkiO/PNX-ToolBox",
   "stars": 0,
   "summary": "Best lib for PowerNukkitX plugins",
   "targets": [
+    "nkx",
     "pnx"
   ],
-  "updated_at": 1785576132,
+  "updated_at": 1785547686,
   "versions": []
 }

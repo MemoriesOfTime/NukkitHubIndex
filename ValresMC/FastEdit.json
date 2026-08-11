@@ -2,14 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/103603305?v=4",
-      "name": "Wyze3306",
-      "url": "https://github.com/Wyze3306"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/104681026?v=4",
-      "name": "ValresMC",
-      "url": "https://github.com/ValresMC"
+      "avatar_url": "",
+      "name": "Linesia",
+      "url": ""
     }
   ],
   "categories": [],
@@ -29,14 +24,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "FastEdit",
-  "primary_target": "pnx",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/ValresMC/FastEdit",
   "stars": 0,
   "summary": "Async WorldEdit for PowerNukkitX",
   "targets": [
+    "nkx",
     "pnx"
   ],
-  "updated_at": 1786128701,
+  "updated_at": 1786128744,
   "versions": []
 }

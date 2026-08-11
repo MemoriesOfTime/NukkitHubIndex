@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/216477222?v=4",
+      "avatar_url": "",
       "name": "Kanelucky",
-      "url": "https://github.com/Kanelucky"
+      "url": ""
     }
   ],
   "categories": [],
@@ -37,7 +37,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1785499029,
+  "updated_at": 1785499128,
   "versions": [
     {
       "changelog": "**Full Changelog**: https://github.com/Kanelucky/CommandRoute/commits/0.1.0",

@@ -2,9 +2,9 @@
   "api_version": "unknown",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/202395408?v=4",
-      "name": "ShiinaHikariOVO",
-      "url": "https://github.com/ShiinaHikariOVO"
+      "avatar_url": "",
+      "name": "NemoCat",
+      "url": ""
     }
   ],
   "categories": [],
@@ -32,6 +32,6 @@
   "targets": [
     "nkmot"
   ],
-  "updated_at": 1784900208,
+  "updated_at": 1784900265,
   "versions": []
 }

@@ -2,9 +2,9 @@
   "api_version": "unknown",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/47200119?v=4",
-      "name": "zjls6",
-      "url": "https://github.com/zjls6"
+      "avatar_url": "",
+      "name": "Minecraft AUR OpenSource Community",
+      "url": ""
     }
   ],
   "categories": [
@@ -42,6 +42,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1657076109,
+  "updated_at": 1699818779,
   "versions": []
 }

@@ -1,22 +1,6 @@
 {
   "api_version": "1.0.11",
-  "authors": [
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
-      "name": "lt-name",
-      "url": "https://github.com/lt-name"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
-      "name": "SmallasWater",
-      "url": "https://github.com/SmallasWater"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/82391055?v=4",
-      "name": "stevei5mc",
-      "url": "https://github.com/stevei5mc"
-    }
-  ],
+  "authors": [],
   "categories": [
     "management",
     "utility"
@@ -52,6 +36,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1784211738,
+  "updated_at": 1784211802,
   "versions": []
 }

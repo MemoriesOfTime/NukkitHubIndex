@@ -2,14 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/50714128?v=4",
+      "avatar_url": "",
       "name": "xRookieFight",
-      "url": "https://github.com/xRookieFight"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/82237910?v=4",
-      "name": "AzaleeX",
-      "url": "https://github.com/AzaleeX"
+      "url": ""
     }
   ],
   "categories": [],
@@ -36,15 +31,16 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "CustomServerSettings",
-  "primary_target": "pnx",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/CustomServerSettings",
   "stars": 1,
   "summary": "A PowerNukkitX plugin that allows you to set your custom server settings.",
   "targets": [
+    "nkx",
     "pnx"
   ],
-  "updated_at": 1783620043,
+  "updated_at": 1783620082,
   "versions": [
     {
       "changelog": "",

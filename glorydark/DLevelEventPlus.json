@@ -2,16 +2,16 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
+      "avatar_url": "",
       "name": "glorydark",
-      "url": "https://github.com/glorydark"
+      "url": ""
     }
   ],
   "categories": [],
   "created_at": 1686127207,
   "dependencies": [],
   "description": "",
-  "detection_confidence": "medium",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
@@ -33,6 +33,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1765686534,
+  "updated_at": 1717933655,
   "versions": []
 }

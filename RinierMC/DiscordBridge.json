@@ -2,9 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/88402556?v=4",
-      "name": "RinierMC",
-      "url": "https://github.com/RinierMC"
+      "avatar_url": "",
+      "name": "2kMcFloat",
+      "url": ""
     }
   ],
   "categories": [],
@@ -24,15 +24,16 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "DiscordBridge",
-  "primary_target": "pnx",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/RinierMC/DiscordBridge",
   "stars": 0,
   "summary": "Enables PNX server's to run a Discord Bot.",
   "targets": [
+    "nkx",
     "pnx"
   ],
-  "updated_at": 1784972055,
+  "updated_at": 1784971867,
   "versions": [
     {
       "changelog": "Added User Management & Commands",

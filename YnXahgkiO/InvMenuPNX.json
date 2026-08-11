@@ -2,9 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/100467970?v=4",
-      "name": "YnXahgkiO",
-      "url": "https://github.com/YnXahgkiO"
+      "avatar_url": "",
+      "name": "Back",
+      "url": ""
     }
   ],
   "categories": [],
@@ -33,7 +33,7 @@
     "nkx",
     "pnx"
   ],
-  "updated_at": 1786129513,
+  "updated_at": 1786129573,
   "versions": [
     {
       "changelog": "Open windows after a real client ack instead of immediately.",

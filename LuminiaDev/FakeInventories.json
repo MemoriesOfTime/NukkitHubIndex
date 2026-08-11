@@ -2,19 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/51165317?v=4",
+      "avatar_url": "",
       "name": "IWareQ",
-      "url": "https://github.com/IWareQ"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/83061703?v=4",
-      "name": "MEFRREEX",
-      "url": "https://github.com/MEFRREEX"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/70357814?v=4",
-      "name": "Reider745",
-      "url": "https://github.com/Reider745"
+      "url": ""
     }
   ],
   "categories": [
@@ -47,7 +37,7 @@
     "nkmot",
     "lumi"
   ],
-  "updated_at": 1760499917,
+  "updated_at": 1769951913,
   "versions": [
     {
       "changelog": "## What's Changed\r\n* feat: open & close handlers + FakeInventory#setItemHandler method by @MEFRREEX in https://github.com/LuminiaDev/FakeInventories/pull/2\r\n\r\n\r\n**Full Changelog**: https://github.com/LuminiaDev/FakeInventories/compare/1.2.0...1.2.1",

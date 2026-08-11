@@ -1,12 +1,6 @@
 {
   "api_version": "3.0.0",
-  "authors": [
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
-      "name": "Buddelbubi",
-      "url": "https://github.com/Buddelbubi"
-    }
-  ],
+  "authors": [],
   "categories": [],
   "created_at": 1767964260,
   "dependencies": [
@@ -30,15 +24,16 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "WelcomeMessage",
-  "primary_target": "pnx",
+  "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/WelcomeMessage",
   "stars": 1,
   "summary": "Send a nice message to players that join your server",
   "targets": [
+    "nkx",
     "pnx"
   ],
-  "updated_at": 1785312133,
+  "updated_at": 1785519760,
   "versions": [
     {
       "changelog": "Automated release for v1.0.2",
