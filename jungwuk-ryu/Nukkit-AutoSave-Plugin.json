@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/29895665?v=4",
-      "name": "jungwuk-ryu",
-      "url": "https://github.com/jungwuk-ryu"
+      "avatar_url": "",
+      "name": "Hancho",
+      "url": ""
     }
   ],
   "categories": [
@@ -37,7 +37,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1613769042,
+  "updated_at": 1613769044,
   "versions": [
     {
       "changelog": "",

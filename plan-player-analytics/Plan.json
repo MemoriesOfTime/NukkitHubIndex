@@ -221,12 +221,673 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/plan-player-analytics/Plan",
-  "stars": 1022,
+  "stars": 1023,
   "summary": "Player Analytics plugin for Minecraft Server platforms - View player activity of your server with ease. :calendar:",
   "targets": [
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1786463943,
-  "versions": []
+  "updated_at": 1786508741,
+  "versions": [
+    {
+      "changelog": "# 5.8 build 3605\r\n\r\nSpecial thanks to **Zoriot**, **Minecraft0122** and **OutHimic** for contributions to this update\r\n\r\n# Change log\r\n\r\n## Bugfixes\r\n\r\n- Fixed X-Forwarded-For header being read wrong in multi-jump reverse-proxies\r\n- Fixed SQL syntax error related to database clean task cleaning plugin data\r\n- Fixed Ping graph not displaying in Server Performance graph\r\n- Possibly fixed 'Today' and 'Yesterday' showing wrong in frontend\r\n\r\n## Locale\r\n\r\n- OutHimic and Minecraft0122 updated CN and ZH_TW locales\r\n\r\n## Other\r\n\r\n- Zoriot fixed curseforge release pipeline",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.8-build-3605.jar",
+          "primary": true,
+          "size": 18278250,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.8.3605/Plan-5.8-build-3605.jar"
+        },
+        {
+          "filename": "PlanFabric-5.8-build-3605.jar",
+          "primary": true,
+          "size": 17857805,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.8.3605/PlanFabric-5.8-build-3605.jar"
+        }
+      ],
+      "name": "5.8 build 3605",
+      "prerelease": false,
+      "published_at": 1786267350,
+      "version": "5.8.3605"
+    },
+    {
+      "changelog": "# 5.8 build 3579\r\n\r\nThis is a hotfix for a database clean task error\r\n\r\nPrevious change log \r\nhttps://github.com/plan-player-analytics/Plan/releases/tag/5.8.3577\r\n\r\nMigration guide from 5.7 to 5.8 \r\nhttps://github.com/plan-player-analytics/Plan/wiki/Migration-guide-from-Version-5.7-to-5.8\r\n\r\n# Change log\r\n\r\n## Bugfixes\r\n\r\n- Fixed database clean task error when there were no plugins to clean",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.8-build-3579.jar",
+          "primary": true,
+          "size": 18272156,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.8.3579/Plan-5.8-build-3579.jar"
+        },
+        {
+          "filename": "PlanFabric-5.8-build-3579.jar",
+          "primary": true,
+          "size": 17851690,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.8.3579/PlanFabric-5.8-build-3579.jar"
+        }
+      ],
+      "name": "5.8 build 3579",
+      "prerelease": false,
+      "published_at": 1784554999,
+      "version": "5.8.3579"
+    },
+    {
+      "changelog": "# 5.8 build 3577\r\n\r\nThis update brings new features, refreshes to old features, as well as a big bunch of bugfixes and improvements.\r\n\r\nQuick rundown of new big things includes MSPT Jitter, overhauled server performance tab with new performance metrics, overhauled session tabs, date pickers and partial dataload via datapoint endpoint.\r\n\r\nFabric was also updated to support minecraft 26.2 and above.\r\n\r\nSpecial thanks to **AnttiMK & Minecraft0122** for contributions to this update\r\n\r\n# Migration from 5.7\r\n\r\n**No manual steps are required.** Older versions may fail a scheduled task due to plan_settings table removal, but that error can be safely ignored. [Migration guide to 5.8](https://github.com/plan-player-analytics/Plan/wiki/Migration-guide-from-Version-5.7-to-5.8)\r\n\r\n# Change log\r\n\r\n## Data gathering\r\n\r\n### MSPT Jitter (new metric)\r\n\r\nMSPT Jitter (Average, Max) is new gathered performance metric. - Jitter is calculated from difference between subsequent tick speeds (milliseconds per tick) Example: MSPT of 35, 36, 34, 80, 37 -> Jitter = 1, 2, 46, 43 -> Average=23, Max=46. Average and maximum for each minute is recorded.\r\n\r\nHigh jitter indicates that tick speed varies greatly between ticks, and can be used along existing MSPT metrics to further assess how high load affects gameplay.\r\n\r\n![mspt jitter](https://github.com/user-attachments/assets/0f8a4ecd-fa81-4d1a-9d06-bb4bed140623)\r\n\r\n## Database (Breaking changes)\r\n\r\n- Removed plan_settings table (breaking) - This table facilitated serverConfiguration folder on Networks, which has now been removed. - Old versions will error upon trying to store settings. If you need to use older versions those errors can be safely ignored.\r\n- Added plan_incomplete_registration table - This table now allows the last step of /plan register to work on any server, when previously it only worked on the server Plan webserver was running on.\r\n\r\n## Website\r\n\r\n### New performance metrics\r\n\r\nPerformance tab was rewritten to include more interesting metrics that reflect how players and chunks impact server load. The impact of players on Entities and Chunks was also taken into account since some servers unload all chunks without players present.\r\n\r\nThere is now a help button available on the Performance as Numbers card to explain each metric.\r\n\r\n![metrics](https://github.com/user-attachments/assets/058b6bc6-269d-4b53-b83a-be3f2222baaa)\r\n\r\n### Updated Server Performance graph\r\n\r\nServer performance graph is now less jumpy and you can select any of the data you want to see rather than just some, using either presets on the left, or the labels at the bottom.\r\n\r\n![performance graph](https://github.com/user-attachments/assets/a2697c42-d354-4578-a933-006d49482e36)\r\n\r\n### New sessions tab \r\n\r\nSessions tab was rewritten on all pages (Network, Server, Player) and it now gets you up to 10k sessions, which can be searched further and exported as CSV. You can choose a date range using the session calendar or the new date picker component.\r\n\r\nAll of the data on session page will reflect the selected dates. All ongoing sessions within selected date range are shown, even if they didn't start within the date range, but before it.\r\n\r\nOn the Export website this feature is not available and defaults to most recent data (Similar to before)\r\n![sessions-select-date](https://github.com/user-attachments/assets/a3c83cbb-d7c7-4ae5-b97b-f4fa37f648df)\r\n![sessions-selected-date](https://github.com/user-attachments/assets/0829f493-fcb0-49db-ac64-cf4af53a41b3)\r\n\r\n### Other\r\n\r\n- The new date picker component is in use anywhere you can input dates to a text field (Query page)\r\n- Servers overview (Network) now loads a lot faster (It only gets the data for the server you're looking at)\r\n- Server overview, Network overview, Online Activity overview, Sessions and Performance tabs all got their number tables changed to get individual values independently from each other.\r\n\r\n### Bugfixes\r\n\r\n- Fixed some IPv6 setups being unable to login\r\n- Fixed Average MSPT not showing if MSPT was under 1ms\r\n- Fixed Hour by Hour showing Daily new players and not hourly\r\n- Fixed date saying 'Today' if it was in the future\r\n- Fixed Alternative_IP.Address changes not being reflected in Javascript due to Cache policy\r\n- Fixed boolean Extension values causing 'variable t not found' error.\r\n- Fixed component Extension values erroring\r\n- Fixed redirects on reverse-proxy setups with subdirectory addresses\r\n- Fixed value not defined error on Playerstable when showing time or date from plugin data on player table\r\n- Fixed stacked players online graph not stacking\r\n- Fixed Players Online tooltip going under table headers\r\n\r\n## Fabric 26.2\r\n\r\n- Updated to Fabric 26.2 which required no API changes.\r\n- AnttiMK implemented Fabric 26.1 support. 1.21.9-1.21.11 are no longer supported by this version.\r\n\r\n## Settings\r\n\r\n- serverConfiguration folder and related config sync features have been removed on Networks.\r\n- Display_options.Sessions.Show_on_page setting has been removed\r\n- Changed default value for `Time.Thresholds.Remove_time_series_after` to 3650 on Bungee/Velocity (Default is not automatically replaced)\r\n\r\n## Locale\r\n\r\n- CN locale updated by Minecraft0122\r\n\r\n## Extensions\r\n\r\n- Fixed error related to Folia and CMI extension\r\n- Fixed error related to deleting disabled extension data\r\n\r\n## Placeholders\r\n\r\n- Fixed error on top list placeholders for playtime or kill count\r\n\r\n## Other\r\n\r\n- Added database transaction queue information to /plan info command\r\n- Fixed deadlock related to ban status update task\r\n- Fixed /plan db uninstalled printing \"success\" before completing properly\r\n- AnttiMK updated Java compile options so that test code can use features from newer JDKs\r\n- Optimized Playerbase development graph generation query\r\n- Optimized Players online peak query\r\n- Possibly fixed TPSTableIdPatch failing on SQLite due to table lock\r\n\r\n\r\n## Webserver: /v1/datapoint\r\n\r\nTo implement dynamic date based filtering, new endpoint /v1/datapoint was implemented. It makes implementing new single-value metrics a lot easier, since it's possible to produce tables of metrics by just defining a column 'time slot' and each row as a metric - you can already see impacts with the new metrics that were already added. This endpoint will be further expanded upon in the future.\r\n\r\nThis endpoint takes in after/afterMillisAgo, before/beforeMillisAgo and server or player parameters. server parameter can take in multiple server uuids comma separated. The endpoint returns 200, 302 (cached by browser) or 400 (invalid type). Please use ETag for caching if calling this endpoint from program code.\r\n\r\nExample /v1/datapoint?type=PLAYTIME&afterMillisAgo=86400000&server=uuid will get you playtime for last 24h on a server.\r\n\r\nAll the supported datapoint types can be found from https://github.com/plan-player-analytics/Plan/blob/master/Plan/common/src/main/java/com/djrapitops/plan/delivery/rendering/json/datapoint/DatapointType.java \r\n\r\n### Deprecated endpoints\r\n\r\nFollowing endpoints are deprecated in favor of the new /v1/datapoint endpoint:\r\n- /v1/serverOverview\r\n- /v1/network/overview\r\n- /v1/network/servers\r\n- /v1/onlineOverview\r\n- /v1/sessionOverview\r\n- /v1/performanceOverview\r\n- /v1/network/performanceOverview\r\n\r\nAccessing the deprecated endpoints will print a warning on the console (Due to performance impact).\r\n\r\n### New Web permissions\r\n\r\n/v1/datapoint uses new web permissions data.player, data.server, data.network (and further subdivisions) to control visiblity. These permissions are granted automatically based on existing permissions:\r\n\r\n- access.network -> group is given data.network\r\n- access.server -> group is given data.server\r\n- access.player -> group is given data.player\r\n\r\n/v1/datapoint will also check for access.player and access.player.self if looking for player specific data.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.8-build-3577.jar",
+          "primary": true,
+          "size": 18272003,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.8.3577/Plan-5.8-build-3577.jar"
+        },
+        {
+          "filename": "PlanFabric-5.8-build-3577.jar",
+          "primary": true,
+          "size": 17851542,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.8.3577/PlanFabric-5.8-build-3577.jar"
+        }
+      ],
+      "name": "5.8 build 3577",
+      "prerelease": false,
+      "published_at": 1784460289,
+      "version": "5.8.3577"
+    },
+    {
+      "changelog": "# 5.7 DEV build 3558\r\n\r\nThis dev release introduces MSPT Jitter, performance graph rewrite, MC version 26.2 on fabric, bugfixes and improvements. \r\n\r\nSpecial thanks to **AnttiMK & Minecraft0122** for contributions to this update\r\n\r\n# Change log\r\n\r\n## Website\r\n\r\n### MSPT Jitter\r\n\r\nAdded new metric called MSPT Jitter which displays the average and maximum difference between subsequent tick speeds (Milliseconds Per Tick). Example: MSPT of 35, 36, 34, 80, 37 -> Jitter = 1, 2, 46, 43 -> Average=23, Max=46.\r\n\r\n<img width=\"417\" height=\"99\" alt=\"image\" src=\"https://github.com/user-attachments/assets/0f8a4ecd-fa81-4d1a-9d06-bb4bed140623\" />\r\n\r\n### New performance metrics\r\n\r\n<img width=\"1654\" height=\"1364\" alt=\"image\" src=\"https://github.com/user-attachments/assets/058b6bc6-269d-4b53-b83a-be3f2222baaa\" />\r\n\r\nPerformance tab was rewritten to include more interesting metrics that reflect how players and chunks impact server load. The impact of players on Entities and Chunks was also taken into account since some servers unload all chunks without players present.\r\n\r\nThere is now a help button available on the Performance as Numbers card to explain each metric.\r\n\r\n### Updated Server Performance graph\r\n\r\n<img width=\"1655\" height=\"531\" alt=\"image\" src=\"https://github.com/user-attachments/assets/a2697c42-d354-4578-a933-006d49482e36\" />\r\n\r\nServer performance graph is now less jumpy and you can select any of the data you want to see, using either presets on the left, or the labels at the bottom.\r\n\r\nUnder the hood the graph no longer renders 6 different HighCharts graphs, instead changing a single instance whenever you pick data. This also means the graph date-range no longer jumps in annoying way when you switch what you are viewing.\r\n\r\n### New sessions tab \r\n\r\nSessions tab was rewritten on all pages (Network, Server, Player) and it now gets you up to 10k sessions, which can be searched further and exported as CSV. You can choose a date range using the session calendar or the new date picker component.\r\n\r\nAll of the data on session page will reflect the selected dates. All ongoing sessions within selected date range are shown, even if they didn't start within the date range, but before it.\r\n\r\n<img width=\"1901\" height=\"949\" alt=\"image\" src=\"https://github.com/user-attachments/assets/a3c83cbb-d7c7-4ae5-b97b-f4fa37f648df\" />\r\n<img width=\"1903\" height=\"955\" alt=\"image\" src=\"https://github.com/user-attachments/assets/0829f493-fcb0-49db-ac64-cf4af53a41b3\" />\r\n\r\nOn the Export website this feature is not available and defaults to most recent data (Similar to before)\r\n\r\n### Other\r\n\r\nThe new date picker component is in use anywhere you can input dates to a text field\r\n\r\n<img width=\"1920\" height=\"954\" alt=\"image\" src=\"https://github.com/user-attachments/assets/92c6b8e5-0ef3-423a-a4bc-03004ce98c50\" />\r\n\r\nAlso\r\n- Servers overview (Network) now loads a lot faster (It only gets the data for the server you're looking at)\r\n- Server overview, Network overview, Online Acctivity overview, Sessions and Performance tabs all got their number tables changed to get individual values independently from each other. This speeds up loading of data since you no longer need to wait for the slowest query to see all data.\r\n\r\n### Bugfixes\r\n\r\n- Fixed some IPv6 setups being unable to login\r\n- Fixed Average MSPT not showing if MSPT was under 1ms\r\n- Fixed Hour by Hour showing Daily new players and not hourly\r\n- Fixed date saying 'Today' if it was in the future\r\n- Fixed Alternative_IP.Address changes not being reflected in Javascript due to Cache policy\r\n- Fixed boolean Extension values causing 'variable t not found' error.\r\n- Fixed component Extension values erroring\r\n- Fixed redirects on reverse-proxy setups with subdirectory addresses\r\n- Fixed value not defined error on Playerstable when showing time or date from plugin data on player table\r\n- Fixed stacked players online graph not stacking\r\n- Fixed Players Online tooltip going under table headers\r\n\r\n## /v1/datapoint\r\n\r\nTo implement dynamic date based filtering seen above, new endpoint /v1/datapoint was implemented. It makes implementing new single-value metrics a lot easier, since it's possible to produce tables of metrics by just defining a column 'time slot' and each row as a metric - you can already see impacts with the new metrics that were already added. This endpoint will be further expanded upon in the future.\r\n\r\nThis endpoint takes in after/afterMillisAgo, before/beforeMillisAgo and server or player parameters. server parameter can take in multiple server uuids comma separated. The endpoint returns 200, 302 (cached by browser) or 400 (invalid type). Please use ETag for caching if calling this endpoint from program code.\r\n\r\nExample /v1/datapoint?type=PLAYTIME&afterMillisAgo=86400000&server=uuid will get you playtime for last 24h on a server.\r\n\r\nAll the supported datapoint types can be found from https://github.com/plan-player-analytics/Plan/blob/master/Plan/common/src/main/java/com/djrapitops/plan/delivery/rendering/json/datapoint/DatapointType.java \r\n\r\n### Deprecated endpoints\r\n\r\nFollowing endpoints are deprecated in favor of the new /v1/datapoint endpoint:\r\n- /v1/serverOverview\r\n- /v1/network/overview\r\n- /v1/network/servers\r\n- /v1/onlineOverview\r\n- /v1/sessionOverview\r\n- /v1/performanceOverview\r\n- /v1/network/performanceOverview\r\n\r\nAccessing the deprecated endpoints will print a warning on the console (Due to performance impact).\r\n\r\n### New Web permissions\r\n\r\nThis will be expanded upon in the future. This endpoint uses data.player, data.server, data.network (and further subdivisions) to control visiblity. These permissions are granted automatically based on existing permissions:\r\n\r\n- access.network -> group is given data.network\r\n- access.server -> group is given data.server\r\n- access.player -> group is given data.player\r\n\r\n/v1/datapoint will also check for access.player and access.player.self if looking for player specific data.\r\n\r\n## Fabric 26.2\r\n\r\n- Updated to Fabric 26.2 which required no API changes.\r\n- AnttiMK implemented Fabric 26.1 support. 1.21.9-1.21.11 are no longer supported by this version.\r\n\r\n## Config\r\n\r\n- Display_options.Sessions.Show_on_page setting has been removed\r\n- Changed default value for `Time.Thresholds.Remove_time_series_after` to 3650 on Bungee/Velocity (Default is not automatically replaced)\r\n\r\n## Locale\r\n\r\n- CN locale updated by Minecraft0122\r\n\r\n## Extensions\r\n\r\n- Fixed error related to Folia and CMI extension\r\n\r\n## Other\r\n\r\n- Added database transaction queue information to /plan info command\r\n- Fixed deadlock related to ban status update task\r\n- Fixed /plan db uninstalled printing \"success\" before completing properly\r\n- AnttiMK updated Java compile options so that test code can use features from newer JDKs\r\n- Optimized Playerbase development graph generation query\r\n- Optimized Players online peak query\r\n- Possibly fixed TPSTableIdPatch failing on SQLite due to table lock",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.7-dev-build-3558.jar",
+          "primary": true,
+          "size": 18253398,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3558/Plan-5.7-dev-build-3558.jar"
+        },
+        {
+          "filename": "PlanFabric-5.7-dev-build-3558.jar",
+          "primary": true,
+          "size": 17833277,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3558/PlanFabric-5.7-dev-build-3558.jar"
+        }
+      ],
+      "name": "5.7 DEV build 3558",
+      "prerelease": true,
+      "published_at": 1782640794,
+      "version": "5.7.3558"
+    },
+    {
+      "changelog": "# 5.7 DEV build 3506\r\n\r\nThis dev release introduces new performance metrics, new sessions tab, MC version 26.1 on fabric, and lots of bugfixes and improvements.\r\n\r\nSpecial thanks to **AnttiMK & Minecraft0122** for contributions to this update\r\n\r\n# Change log\r\n\r\n## Website\r\n\r\n### New performance metrics\r\n\r\n<img width=\"1654\" height=\"1364\" alt=\"image\" src=\"https://github.com/user-attachments/assets/058b6bc6-269d-4b53-b83a-be3f2222baaa\" />\r\n\r\nPerformance tab was rewritten to include more interesting metrics that reflect how players and chunks impact server load. The impact of players on Entities and Chunks was also taken into account since some servers unload all chunks without players present.\r\n\r\n### New sessions tab \r\n\r\nSessions tab was rewritten on all pages (Network, Server, Player) and it now gets you up to 10k sessions, which can be searched further and exported as CSV. You can choose a date range using the session calendar or the new date picker component.\r\n\r\nAll of the data on session page will reflect the selected dates. All ongoing sessions within selected date range are shown, even if they didn't start within the date range, but before it.\r\n\r\n<img width=\"1901\" height=\"949\" alt=\"image\" src=\"https://github.com/user-attachments/assets/a3c83cbb-d7c7-4ae5-b97b-f4fa37f648df\" />\r\n<img width=\"1903\" height=\"955\" alt=\"image\" src=\"https://github.com/user-attachments/assets/0829f493-fcb0-49db-ac64-cf4af53a41b3\" />\r\n\r\nOn the Export website this feature is not available and defaults to most recent data (Similar to before)\r\n\r\n### Other\r\n\r\nThe new date picker component is in use anywhere you can input dates to a text field\r\n\r\n<img width=\"1920\" height=\"954\" alt=\"image\" src=\"https://github.com/user-attachments/assets/92c6b8e5-0ef3-423a-a4bc-03004ce98c50\" />\r\n\r\nAlso\r\n- Servers overview (Network) now loads a lot faster (It only gets the data for the server you're looking at)\r\n- Server overview, Network overview, Online Acctivity overview, Sessions and Performance tabs all got their number tables changed to get individual values independently from each other. This speeds up loading of data since you no longer need to wait for the slowest query to see all data.\r\n\r\n### Bugfixes\r\n\r\n- Fixed some IPv6 setups being unable to login\r\n- Fixed Average MSPT not showing if MSPT was under 1ms\r\n- Fixed Hour by Hour showing Daily new players and not hourly\r\n- Fixed date saying 'Today' if it was in the future\r\n- Fixed Alternative_IP.Address changes not being reflected in Javascript due to Cache policy\r\n- Fixed boolean Extension values causing 'variable t not found' error.\r\n- Fixed component Extension values erroring\r\n- Fixed redirects on reverse-proxy setups with subdirectory addresses\r\n- Fixed value not defined error on Playerstable when showing time or date from plugin data on player table\r\n\r\n## /v1/datapoint\r\n\r\nTo implement dynamic date based filtering seen above, new endpoint /v1/datapoint was implemented. It makes implementing new single-value metrics a lot easier, since it's possible to produce tables of metrics by just defining a column 'time slot' and each row as a metric - you can already see impacts with the new metrics that were already added. This endpoint will be further expanded upon in the future.\r\n\r\nThis endpoint takes in after/afterMillisAgo, before/beforeMillisAgo and server or player parameters. server parameter can take in multiple server uuids comma separated. The endpoint returns 200, 302 (cached by browser) or 400 (invalid type). Please use ETag for caching if calling this endpoint from program code.\r\n\r\nExample /v1/datapoint?type=PLAYTIME&afterMillisAgo=86400000&server=uuid will get you playtime for last 24h on a server.\r\n\r\nAll the supported datapoint types can be found from https://github.com/plan-player-analytics/Plan/blob/master/Plan/common/src/main/java/com/djrapitops/plan/delivery/rendering/json/datapoint/DatapointType.java \r\n\r\n### Deprecated endpoints\r\n\r\nFollowing endpoints are deprecated in favor of the new /v1/datapoint endpoint:\r\n- /v1/serverOverview\r\n- /v1/network/overview\r\n- /v1/network/servers\r\n- /v1/onlineOverview\r\n- /v1/sessionOverview\r\n- /v1/performanceOverview\r\n- /v1/network/performanceOverview\r\n\r\nAccessing the deprecated endpoints will print a warning on the console (Due to performance impact).\r\n\r\n### New Web permissions\r\n\r\nThis will be expanded upon in the future. This endpoint uses data.player, data.server, data.network (and further subdivisions) to control visiblity. These permissions are granted automatically based on existing permissions:\r\n\r\n- access.network -> group is given data.network\r\n- access.server -> group is given data.server\r\n- access.player -> group is given data.player\r\n\r\n/v1/datapoint will also check for access.player and access.player.self if looking for player specific data.\r\n\r\n## Fabric 26.1\r\n\r\nAnttiMK implemented Fabric 26.1 support. 1.21.9-1.21.11 are no longer supported by this version.\r\n\r\n## Config\r\n\r\n- Display_options.Sessions.Show_on_page setting has been removed\r\n- Changed default value for `Time.Thresholds.Remove_time_series_after` to 3650 on Bungee/Velocity (Default is not automatically replaced)\r\n\r\n## Locale\r\n\r\n- CN locale updated by Minecraft0122\r\n\r\n## Extensions\r\n\r\n- Fixed error related to Folia and CMI extension\r\n\r\n## Other\r\n\r\n- Added database transaction queue information to /plan info command\r\n- Fixed deadlock related to ban status update task\r\n- Fixed /plan db uninstalled printing \"success\" before completing properly\r\n- AnttiMK updated Java compile options so that test code can use features from newer JDKs\r\n- Optimized Playerbase development graph generation query\r\n- Optimized Players online peak query",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.7-dev-build-3506.jar",
+          "primary": true,
+          "size": 18155402,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3506/Plan-5.7-dev-build-3506.jar"
+        },
+        {
+          "filename": "PlanFabric-5.7-dev-build-3506.jar",
+          "primary": true,
+          "size": 17735792,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3506/PlanFabric-5.7-dev-build-3506.jar"
+        }
+      ],
+      "name": "5.7 DEV build 3506",
+      "prerelease": true,
+      "published_at": 1781428620,
+      "version": "5.7.3506"
+    },
+    {
+      "changelog": "# 5.7 DEV build 3341\r\n\r\nThis dev release includes support for mc version 26.1 on fabric, new sessions tab and bugfixes.\r\n\r\nSpecial thanks to **AnttiMK & Minecraft0122** for contributions to this update\r\n\r\n# Change log\r\n\r\n## Website\r\n\r\n### New sessions tab \r\n\r\nSessions tab was rewritten on all pages (Network, Server, Player) and it now gets you up to 10k sessions, which can be searched further and exported as CSV. You can choose a date range using the session calendar or the new date picker component.\r\n\r\nAll of the data on session page will reflect the selected dates. All ongoing sessions within selected date range are shown, even if they didn't start within the date range, but before it.\r\n\r\n<img width=\"1901\" height=\"949\" alt=\"image\" src=\"https://github.com/user-attachments/assets/a3c83cbb-d7c7-4ae5-b97b-f4fa37f648df\" />\r\n<img width=\"1903\" height=\"955\" alt=\"image\" src=\"https://github.com/user-attachments/assets/0829f493-fcb0-49db-ac64-cf4af53a41b3\" />\r\n<img width=\"1903\" height=\"955\" alt=\"image\" src=\"https://github.com/user-attachments/assets/1a4d1dcf-a073-4f28-8e3f-9351e265b3dd\" />\r\n\r\nOn the Export website this feature is not available and defaults to most recent data (Similar to before)\r\n\r\n### New Web permissions\r\n\r\nTo implement dynamic date based filtering seen above, new endpoint /v1/datapoint was implemented. This will be expanded upon in the future. This endpoint uses data.player, data.server, data.network (and further subdivisions) to control visiblity. These permissions are granted automatically based on existing permissions:\r\n\r\n- access.network -> group is given data.network\r\n- access.server -> group is given data.server\r\n- access.player -> group is given data.player\r\n\r\n/v1/datapoint will also check for access.player and access.player.self if looking for player specific data.\r\n\r\n### Other\r\n\r\nThe new date picker component is in use anywhere you can input dates to a text field\r\n\r\n<img width=\"1920\" height=\"954\" alt=\"image\" src=\"https://github.com/user-attachments/assets/92c6b8e5-0ef3-423a-a4bc-03004ce98c50\" />\r\n\r\n### Bugfixes\r\n\r\n- Fixed Average MSPT not showing if MSPT was under 1ms\r\n- Fixed date saying 'Today' if it was in the future\r\n- Fixed Alternative_IP.Address changes not being reflected in Javascript due to Cache policy\r\n- Fixed boolean Extension values causing 'variable t not found' error.\r\n\r\n## Fabric 26.1\r\n\r\nAnttiMK implemented Fabric 26.1 support. 1.21.9-1.21.11 are no longer supported by this version.\r\n\r\n## Config\r\n\r\n- Display_options.Sessions.Show_on_page setting has been removed\r\n- Changed default value for `Time.Thresholds.Remove_time_series_after` to 3650 on Bungee/Velocity (Default is not automatically replaced)\r\n\r\n## Locale\r\n\r\n- CN locale updated by Minecraft0122",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.7-build-3341.jar",
+          "primary": true,
+          "size": 18028470,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3341/Plan-5.7-build-3341.jar"
+        },
+        {
+          "filename": "PlanFabric-5.7-build-3341.jar",
+          "primary": true,
+          "size": 17595858,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3341/PlanFabric-5.7-build-3341.jar"
+        }
+      ],
+      "name": "5.7 DEV build 3341",
+      "prerelease": true,
+      "published_at": 1775230721,
+      "version": "5.7.3341"
+    },
+    {
+      "changelog": "# 5.7 build 3306\r\n\r\nHotfix for config update bug in build 3288.\r\n\r\n# Change log\r\n\r\n- Fixed config resetting some values to default on reload\r\n- Fixed table sorting with alphabetical things\r\n- Minor dependency updates\r\n- CI pipelines for releasing to Ore, Hangar and Modrinth",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.7-build-3306.jar",
+          "primary": true,
+          "size": 17710640,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3306/Plan-5.7-build-3306.jar"
+        },
+        {
+          "filename": "PlanFabric-5.7-build-3306.jar",
+          "primary": true,
+          "size": 17654727,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3306/PlanFabric-5.7-build-3306.jar"
+        }
+      ],
+      "name": "5.7 build 3306",
+      "prerelease": false,
+      "published_at": 1774076440,
+      "version": "5.7.3306"
+    },
+    {
+      "changelog": "5.7 DEV build 3298\r\n\r\nDEV build to test new publishing pipelines to Ore, Hangar and Modrinth.\r\n\r\nNo changes compared to DEV build 3294/3295 https://github.com/plan-player-analytics/Plan/releases/tag/5.7.3295",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.7-dev-build-3298.jar",
+          "primary": true,
+          "size": 17710394,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3298/Plan-5.7-dev-build-3298.jar"
+        },
+        {
+          "filename": "PlanFabric-5.7-dev-build-3298.jar",
+          "primary": true,
+          "size": 17654479,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3298/PlanFabric-5.7-dev-build-3298.jar"
+        }
+      ],
+      "name": "5.7 DEV build 3298",
+      "prerelease": true,
+      "published_at": 1773846685,
+      "version": "5.7.3298"
+    },
+    {
+      "changelog": "# 5.7 DEV build 3295\r\n\r\nHotfix for config update bug in build 3288.\r\n\r\nDEV build to test new publishing pipelines to Ore, Hangar and Modrinth.\r\n\r\n# Change log\r\n\r\n- Fixed config resetting some values to default on reload\r\n- Fixed table sorting with alphabetical things",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.7-dev-build-3295.jar",
+          "primary": true,
+          "size": 17710464,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3295/Plan-5.7-dev-build-3295.jar"
+        },
+        {
+          "filename": "PlanFabric-5.7-dev-build-3295.jar",
+          "primary": true,
+          "size": 17654549,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3295/PlanFabric-5.7-dev-build-3295.jar"
+        }
+      ],
+      "name": "5.7 DEV build 3295",
+      "prerelease": true,
+      "published_at": 1773771188,
+      "version": "5.7.3295"
+    },
+    {
+      "changelog": "# 5.7 DEV build 3294\r\n\r\nHotfix for config update bug in build 3288.\r\n\r\nDEV build to test new publishing pipelines to Ore, Hangar and Modrinth.\r\n\r\n# Change log\r\n\r\n- Fixed config resetting some values to default on reload\r\n- Fixed table sorting with alphabetical things",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.7-dev-build-3294.jar",
+          "primary": true,
+          "size": 17710464,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3294/Plan-5.7-dev-build-3294.jar"
+        },
+        {
+          "filename": "PlanFabric-5.7-dev-build-3294.jar",
+          "primary": true,
+          "size": 17654549,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3294/PlanFabric-5.7-dev-build-3294.jar"
+        }
+      ],
+      "name": "5.7 DEV build 3294",
+      "prerelease": true,
+      "published_at": 1773771042,
+      "version": "5.7.3294"
+    },
+    {
+      "changelog": "# 5.7 build 3288\r\n\r\nThis release contains bugfixes to build 3265 and a new theme.\r\n\r\nSpecial thanks to **Kopo, Leolebleis & Guinness_Akihiko** for contributions to this update\r\n\r\n# Change log\r\n\r\n## Website\r\n\r\n- Improved readability of World Pie on servers that have over 7 worlds\r\n- Improved readability of Server Pie on networks that have over 7 servers\r\n- Moved Performance graph loading to Web Worker (async threading in browsers) - This should improve rendering times slightly\r\n- Fixed issue where Join Address Groups would reset when using HTTPS\r\n- Fixed a couple of instances where Trend was not properly showing\r\n- Fixed 'showPlayersOnline is not defined' when viewing network page on networks with multiple Proxy servers\r\n- Fixed a bug with Change history floating on top of the Save button in Theme Editor when using Night mode.\r\n- Fixed CUSTOM locale defaulting to Chinese locale for time/date/country localization due to \"Best match\" in browser matching.\r\n- Fixed Swagger documentation not showing\r\n- Fixed 'New player retention' label in Server overview\r\n- Fixed typo in a locale key\r\n- Fixed Low TPS Insights showing entities instead of CPU\r\n- Leolebleis fixed reverse-proxy https address not being recognized as correct address\r\n\r\n## Fabric\r\n\r\nKopo updated Fabric to use Mojang mappings (Tested with 1.12.9-1.12.11)\r\n\r\n## Themes\r\n\r\nAdded solarized theme based on https://github.com/altercation/solarized\r\n\r\n<img width=\"1903\" height=\"955\" alt=\"solarized theme\" src=\"https://github.com/user-attachments/assets/2f74fc03-76b1-4bd6-9ff4-1e45ec195c42\" />\r\n\r\n## Config\r\n\r\n- Possibly fixed a race condition that caused server identity to be reset, creating duplicate servers when server was shut down during Database patching\r\n- Fixed trailing comments removing part of config setting value.\r\n- Fixed some config changes being applied every time\r\n\r\n## Locale\r\n\r\n- Guinness_Akihiko updated KO locale\r\n\r\n## Other\r\n\r\n- Builds now require JDK 25 for switch to Mojang mappings.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.7-build-3288.jar",
+          "primary": true,
+          "size": 17710184,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3288/Plan-5.7-build-3288.jar"
+        },
+        {
+          "filename": "PlanFabric-5.7-build-3288.jar",
+          "primary": true,
+          "size": 17654270,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3288/PlanFabric-5.7-build-3288.jar"
+        }
+      ],
+      "name": "5.7 build 3288",
+      "prerelease": false,
+      "published_at": 1773495855,
+      "version": "5.7.3288"
+    },
+    {
+      "changelog": "# 5.7 DEV build 3265\r\n\r\nThis dev release is a collection of bugfixes intended to release next weekend.\r\n\r\nSpecial thanks to **Guinness_Akihiko** for contributions to this update\r\n\r\n# Change log\r\n\r\n## Website\r\n\r\n- Improved readability of World Pie on servers that have over 7 worlds\r\n- Improved readability of Server Pie on networks that have over 7 servers\r\n- Moved Performance graph loading to Web Worker (async threading in browsers) - This should improve rendering times slightly\r\n- Fixed a couple of instances where Trend was not properly showing\r\n- Fixed a bug with Change history floating on top of the Save button in Theme Editor when using Night mode.\r\n- Fixed CUSTOM locale defaulting to Chinese locale for time/date/country localization due to \"Best match\" in browser matching.\r\n\r\n## Themes\r\n\r\nAdded solarized theme based on https://github.com/altercation/solarized\r\n\r\n<img width=\"1903\" height=\"955\" alt=\"solarized theme\" src=\"https://github.com/user-attachments/assets/2f74fc03-76b1-4bd6-9ff4-1e45ec195c42\" />\r\n\r\n## Locale\r\n\r\n- Guinness_Akihiko updated KO locale\r\n\r\n## Other\r\n\r\n- Builds now require JDK 25 in preparation for switch to Mojang mappings.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.7-dev-build-3265.jar",
+          "primary": true,
+          "size": 17577523,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3265/Plan-5.7-dev-build-3265.jar"
+        },
+        {
+          "filename": "PlanFabric-5.7-dev-build-3265.jar",
+          "primary": true,
+          "size": 17522601,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3265/PlanFabric-5.7-dev-build-3265.jar"
+        }
+      ],
+      "name": "5.7 DEV build 3265",
+      "prerelease": true,
+      "published_at": 1773080750,
+      "version": "5.7.3265"
+    },
+    {
+      "changelog": "# 5.7 build 3247\r\n\r\nThis update brings a big bunch of new features and improvements, such as Theme Editor, Milliseconds per Tick, Players online -tooltip, Database move/merge rewrite and many others.\r\n\r\nSpecial thanks to **Kopo, SaolGhra, TWJohnJohn20116, Shadowhackercz, Vankka, DrexHD, Jsinco & julianvdhogen** for contributions to this update\r\n\r\n# Change log\r\n\r\nThe theme settings have changed.\r\nSee https://github.com/plan-player-analytics/Plan/wiki/Migration-guide-from-Version-5.6-to-5.7 for what might need changing in the config.\r\n\r\n## Website\r\n\r\n### Fixed vulnerabilities\r\n\r\n- Fixed potential XSS injected through malicious plugin. (User would have had to click the link to activate XSS) [What is XSS](https://owasp.org/www-community/attacks/xss/)\r\n- Fixed potential Session hijack vulnerability after successful XSS where attacker could read authentication cookie through javascript.\r\n  - It is recommended to run `/plan logout *` after the update to protect against this vulnerability, even if the sessions will eventually expire.\r\n  \r\nThere has not been reports of exploitation of these vulnerabilities.\r\n\r\n### Theme Editor\r\n\r\nYou can now create your own themes for Plan without needing Html Customization. This is the main new feature of this version and is documented [here](https://github.com/plan-player-analytics/Plan/wiki/Themes).\r\n\r\n<img alt=\"image\" src=\"https://github.com/user-attachments/assets/6574c4fe-75e6-4feb-acb3-336e34d91c55\" />\r\n\r\n- theme.yml has now been deprecated and will be deleted if it only contains default values\r\n\r\n### MSPT (Milliseconds per Tick)\r\n\r\n<img width=\"903\" height=\"507\" alt=\"image\" src=\"https://github.com/user-attachments/assets/cf799d02-efe0-4647-b954-501a3892e714\" />\r\n\r\nMilliseconds per Tick (average/95th percentile) have been added to performance metrics on all applicable platforms.\r\n\r\n### Players online -tooltip\r\n\r\n<img width=\"418\" height=\"301\" alt=\"image\" src=\"https://github.com/user-attachments/assets/1f288e4f-3bdc-459b-a384-677995689cfb\" />\r\n\r\nYou can now hover over Players online graph to see who was online at specific time (up to 63 players).\r\n\r\n### Query page improvements\r\n\r\n<img width=\"1659\" height=\"422\" alt=\"image\" src=\"https://github.com/user-attachments/assets/993ad0b7-4d97-4981-a394-39c168e58f6c\" />\r\n\r\n- New filters have been added\r\n  - Played on date\r\n  - Activity group on date\r\n  - Last seen between\r\n- All 'between' filters now support 'Before' and 'After' by deselecting one of the checkboxes (e.g. played between -> played before)\r\n- Multi-select components have been replaced with a mobile friendly, text searchable alternative that no longer requires pressing Shift for multi-selection\r\n- Fixed timezone inconsistency between View time input fields and the graph\r\n\r\n### Performance graph improvements\r\n\r\n![performance-tab-graph-linking](https://github.com/user-attachments/assets/e45a1e36-9f38-44e7-a30d-e2bc24394d99)\r\n\r\n- Performance graph tabs now sync the graph range-finder so that you can view different data for same time easier\r\n- Network performance graph colors now vary between servers to be easier to read\r\n- Fixed extra Series label appearing in HTTP mode on Performance graph (This was the plugin version history series in HTTPS mode)\r\n- Added Uptime data to Performance as Numbers tables\r\n\r\n### Other\r\n\r\n- Kills table can now be searched/sorted/exported and gets up to 25000 entries from the database  \r\n<img alt=\"image\" src=\"https://github.com/user-attachments/assets/4cb0d003-d67e-44f5-99e3-3e5fbb741ae6\" />\r\n\r\n- Added support for nickname search in player tables\r\n- Fixed some night mode text invisibility issues\r\n- SaolGhra fixed error `r.includes is not a function` related to Litebans\r\n- Fixed 'View full query' button in the modal that opens when clicking Server calendar\r\n- Fixed clicking Server calendar results including players who played on other servers during selected days\r\n\r\n## Config\r\n\r\n- Changed default `Display_options.Player_head_image_url` to `https://crafthead.net/helm/${playerUUIDNoDash}/120` (Existing configs need to be manually updated)\r\n- Jsinco updated 'Data_gathering.Join_addresses_.Filter_out_from_data' to support regex. Note that any existing setting values with . (dot character) will now match any character.\r\n- `Display_options.Theme` (default \"default\") now refers to theme name in the theme editor rather than \"What theme.yml to copy values from\"\r\n- `Display_options.Night_mode` (default false) added\r\n\r\n## Data\r\n\r\n- MSPT average and 95th percentile added to plan_tps table\r\n- Register date `0` (1970-01-01) is now regarded as invalid.\r\n- Ban status is now updated by an automatic task that cycles through all known players small amount at a time\r\n\r\n## Sponge\r\n\r\n- Sponge API 14 is now used, API 8 is no longer supported.\r\n\r\n## Fabric\r\n\r\n- Fabric was updated to 1.12.9 by DrexHD (Supports 1.12.11 as well)\r\n\r\n## Velocity\r\n\r\n- Velocity was updated to 3.5.0-SNAPSHOT\r\n\r\n## Database\r\n\r\n### Database move system rewrite\r\n\r\nRewrote the system responsible for copying data from one database to another since previous system would crash under large datasets. The goal of this was to allow copying large SQLite databases to MySQL even on larger servers. The system was tested against a 3 GB MySQL database on a server with 1 GB of allocated memory. (Sidenote: Please don't try to run your server off 3 GB large database.db SQLite file)\r\n\r\n- /plan db move, /plan db backup, /plan db restore use the new system\r\n- Added /plan db merge command (permission: plan.data.merge) which allows merging SQLite data to existing MySQL. This is useful for those merging multiple servers into a network when all servers had Plan installed on separate SQLite databases.\r\n\r\n### Other\r\n\r\n- id column added to old plan_tps tables that did not have it yet via Patch.\r\n- Lock hints for selections inside transactions to reduce deadlocks\r\n- Fixed 1020 \"Record has changed since last read in table\" error on MariaDB 11.8.3\r\n- Fixed dyplicate key violation related to AllowListBounce\r\n- Possibly fixed ShutdownDataPreservationTransaction failing on existing join address insert\r\n- Fixed playtime queries where session started before view window or ended after.\r\n\r\n## Locale\r\n\r\n- Dates, time amounts & country names are now translated based on the selected locale. (If specific ones aren't please report it as a bug)\r\n- HighCharts & Calendar are now translated based on the selected locale\r\n- TWJohnJohn20116 updated zh_TW locale\r\n- Shadowhackercz updated CS locale\r\n- julianvdhogen updated NL locale\r\n\r\n## Extensions\r\n\r\n- Fixed ArithmeticException related to LibertyBans when bans were infinite\r\n- Fixed an issue related to rendering boolean values\r\n- Updated Jobs extension to support newer version\r\n- Added Time.Periodical_tasks.Extension_player_data_refresh_every setting (default 15 MINUTES) which only affects plugins that decide to support it.\r\n- Made gathered PlaceholderAPI data update periodically\r\n\r\n## Placeholders\r\n\r\n- Fixed network_players_online always saying 0\r\n\r\n## Other\r\n\r\n- Added Typescript support.\r\n- Vankka updated DependencyDownload to clean up libraries folder of old versions\r\n- Kopo updated the build system to speed up builds & IDE indexing performance\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.7-build-3247.jar",
+          "primary": true,
+          "size": 17572915,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3247/Plan-5.7-build-3247.jar"
+        },
+        {
+          "filename": "PlanFabric-5.7-build-3247.jar",
+          "primary": true,
+          "size": 17518424,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3247/PlanFabric-5.7-build-3247.jar"
+        }
+      ],
+      "name": "5.7 build 3247",
+      "prerelease": false,
+      "published_at": 1772358029,
+      "version": "5.7.3247"
+    },
+    {
+      "changelog": "# 5.7 DEV build 3232\r\n\r\nThis dev release includes new features and bugfixes done during a surprisingly productive weekend.\r\n\r\nFull release still requires solving problems that arise from MariaDB 11.8.3 change where innodb_snapshot_isolation has now been turned on as default\r\n\r\nSpecial thanks to **Kopo, SaolGhra, TWJohnJohn20116, Shadowhackercz, Vankka, DrexHD, Jsinco & julianvdhogen** for contributions to this update\r\n\r\n# Changes since DEV build 3211\r\n\r\n- julianvdhogen updated NL locale\r\n- Potentially fixed issues with Mariadb 11.8.3 error 1020 \"Record has changed since last read in table\"\r\n- Changed default Display_options.Player_head_image_url to `https://crafthead.net/helm/${playerUUIDNoDash}/120`\r\n\r\n# Change log\r\n\r\n## Website\r\n\r\n### Theme Editor\r\n\r\nYou can now create your own themes for Plan without needing Html Customization. This is the main new feature of this version and is documented [here](https://github.com/plan-player-analytics/Plan/wiki/Themes).\r\n\r\n<img alt=\"image\" src=\"https://github.com/user-attachments/assets/6574c4fe-75e6-4feb-acb3-336e34d91c55\" />\r\n\r\n- theme.yml has now been deprecated and will be deleted if it only contains default values\r\n\r\n### MSPT (Milliseconds per Tick)\r\n\r\n<img width=\"903\" height=\"507\" alt=\"image\" src=\"https://github.com/user-attachments/assets/cf799d02-efe0-4647-b954-501a3892e714\" />\r\n\r\nMilliseconds per Tick (average/95th percentile) have been added to performance metrics on all applicable platforms.\r\n\r\n### Players online -tooltip\r\n\r\n<img width=\"418\" height=\"301\" alt=\"image\" src=\"https://github.com/user-attachments/assets/1f288e4f-3bdc-459b-a384-677995689cfb\" />\r\n\r\nYou can now hover over Players online graph to see who was online at specific time (up to 63 players).\r\n\r\n### Query page improvements\r\n\r\n<img width=\"1659\" height=\"422\" alt=\"image\" src=\"https://github.com/user-attachments/assets/993ad0b7-4d97-4981-a394-39c168e58f6c\" />\r\n\r\n- New filters have been added\r\n  - Played on date\r\n  - Activity group on date\r\n  - Last seen between\r\n- All 'between' filters now support 'Before' and 'After' by deselecting one of the checkboxes (e.g. played between -> played before)\r\n- Multi-select components have been replaced with a mobile friendly, text searchable alternative that no longer requires pressing Shift for multi-selection\r\n- Fixed timezone inconsistency between View time input fields and the graph\r\n\r\n### Other\r\n\r\n- Kills table can now be searched/sorted/exported and gets up to 25000 entries from the database  \r\n<img alt=\"image\" src=\"https://github.com/user-attachments/assets/4cb0d003-d67e-44f5-99e3-3e5fbb741ae6\" />\r\n\r\n- Added Uptime data to Performance as Numbers tables\r\n- Added support for nickname search in player tables\r\n- Performance graph tabs now sync the graph range-finder so that you can view different data for same time easier\r\n- Network performance graph colors now vary between servers to be easier to read\r\n- Fixed extra Series label appearing in HTTP mode on Performance graph (This is the plugin version history series in HTTPS mode)\r\n- Fixed some night mode text invisibility issues\r\n- SaolGhra fixed error `r.includes is not a function` related to Litebans\r\n- Fixed 'View full query' button in the modal that opens when clicking Server calendar\r\n- Fixed clicking Server calendar results including players who played on other servers during selected days\r\n\r\n## Config\r\n\r\n- Changed default `Display_options.Player_head_image_url` to `https://crafthead.net/helm/${playerUUIDNoDash}/120` (Existing configs need to be manually updated)\r\n- Jsinco updated 'Data_gathering.Join_addresses_.Filter_out_from_data' to support regex. Note that any existing setting values with . (dot character) will now match any character.\r\n- `Display_options.Theme` (default \"default\") now refers to theme name in the theme editor rather than \"What theme.yml to copy values from\"\r\n- `Display_options.Night_mode` (default false) added\r\n\r\n## Data\r\n\r\n- MSPT average and 95th percentile added to plan_tps table\r\n- Register date `0` (1970-01-01) is now regarded as invalid.\r\n- Ban status is now updated by an automatic task that cycles through all known players small amount at a time\r\n\r\n## Sponge\r\n\r\n- Sponge API 14 is now used, API 8 is no longer supported.\r\n\r\n## Fabric\r\n\r\n- Fabric was updated to 1.12.9 by DrexHD (Supports 1.12.11 as well)\r\n\r\n## Velocity\r\n\r\n- Velocity was updated to 3.5.0-SNAPSHOT\r\n\r\n## Database\r\n\r\n### Database move system rewrite\r\n\r\nRewrote the system responsible for copying data from one database to another since previous system would crash under large datasets. The goal of this was to allow copying large SQLite databases to MySQL even on larger servers. The system was tested against a 3 GB database on a server with 1 GB of allocated memory.\r\n\r\n- /plan db move, /plan db backup, /plan db restore use the new system\r\n- Added /plan db merge command (permission: plan.data.merge) which allows merging SQLite data to existing MySQL. This is useful for those merging multiple servers into a network when all servers had Plan installed on separate SQLite databases.\r\n\r\n### Other\r\n\r\n- id column added to old plan_tps tables that did not have it yet via Patch.\r\n- If MySQL runs into error code 1020 'Stale read' error, the transaction will retry instead of erroring\r\n- Fixed dyplicate key violation related to AllowListBounce\r\n- Possibly fixed ShutdownDataPreservationTransaction failing on existing join address insert\r\n- Fixed playtime queries to include playtime where session started before view window or ended after.\r\n- Potentially fixed issues with Mariadb 11.8.3 error 1020 \"Record has changed since last read in table\"\r\n\r\n## Locale\r\n\r\n- Dates, time amounts & country names are now translated based on the selected locale. (If specific ones aren't please report it as a bug)\r\n- HighCharts & Calendar are now translated based on the selected locale\r\n- TWJohnJohn20116 updated zh_TW locale\r\n- Shadowhackercz updated CS locale\r\n- julianvdhogen updated NL locale\r\n\r\n## Extensions\r\n\r\n- Fixed ArithmeticException related to LibertyBans when bans were infinite\r\n- Fixed an issue related to rendering boolean values\r\n- Updated Jobs extension to support newer version\r\n- Added Time.Periodical_tasks.Extension_player_data_refresh_every setting (default 15 MINUTES) which only affects plugins that decide to support it.\r\n- Made gathered PlaceholderAPI data update periodically\r\n\r\n## Placeholders\r\n\r\n- Fixed network_players_online always saying 0\r\n\r\n## Other\r\n\r\n- Vankka updated DependencyDownload to clean up libraries folder of old versions\r\n- Kopo updated the build system to speed up builds & IDE indexing performance\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.7-dev-build-3232.jar",
+          "primary": true,
+          "size": 17569225,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3232/Plan-5.7-dev-build-3232.jar"
+        },
+        {
+          "filename": "PlanFabric-5.7-dev-build-3232.jar",
+          "primary": true,
+          "size": 17514862,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3232/PlanFabric-5.7-dev-build-3232.jar"
+        }
+      ],
+      "name": "5.7 DEV build 3232",
+      "prerelease": true,
+      "published_at": 1771760103,
+      "version": "5.7.3232"
+    },
+    {
+      "changelog": "# 5.7 DEV build 3211\r\n\r\nThis dev release includes new features and bugfixes done during a surprisingly productive weekend.\r\n\r\nFull release still requires solving problems that arise from MariaDB 11.8.3 change where innodb_snapshot_isolation has now been turned on as default\r\n\r\nSpecial thanks to **Kopo, SaolGhra, TWJohnJohn20116, Shadowhackercz, Vankka, DrexHD & Jsinco** for contributions to this update\r\n\r\n# Changes since DEV build 3189\r\n\r\n- Added Players online list -tooltip to Players Online graphs\r\n- Added support for nickname search in player tables\r\n- Added Time.Periodical_tasks.Extension_player_data_refresh_every setting (default 15 MINUTES) which only affects plugins that decide to support it.\r\n- Made gathered PlaceholderAPI data update periodically\r\n- Added more Query filters (Played on date, Activity group on date, Last seen between)\r\n- Added Before and After checkboxes to all between filters to allow more flexible filtering\r\n- Added theme editor to navigation item\r\n- Fixed theme.yml being recreated\r\n- Fixed night mode issues where something had no colors set\r\n- Possibly fixed ShutdownDataPreservationTransaction failing on existing join address insert\r\n- Fixed playtime queries to include playtime where session started before view window or ended after.\r\n- Fixed Query timezone inconsistency between time fields and the graph\r\n- Fixed 'View full query' button in the modal that opens when clicking Server calendar\r\n- Fixed clicking Server calendar results including players who played on other servers during selected days\r\n\r\n# Change log\r\n\r\n## Website\r\n\r\n### Theme Editor\r\n\r\nYou can now create your own themes for Plan without needing Html Customization. This is the main new feature of this version and is documented [here](https://github.com/plan-player-analytics/Plan/wiki/Themes).\r\n\r\n<img alt=\"image\" src=\"https://github.com/user-attachments/assets/6574c4fe-75e6-4feb-acb3-336e34d91c55\" />\r\n\r\n- theme.yml has now been deprecated and will be deleted if it only contains default values\r\n\r\n### MSPT (Milliseconds per Tick)\r\n\r\n<img width=\"903\" height=\"507\" alt=\"image\" src=\"https://github.com/user-attachments/assets/cf799d02-efe0-4647-b954-501a3892e714\" />\r\n\r\nMilliseconds per Tick (average/95th percentile) have been added to performance metrics on all applicable platforms.\r\n\r\n### Players online -tooltip\r\n\r\n<img width=\"418\" height=\"301\" alt=\"image\" src=\"https://github.com/user-attachments/assets/1f288e4f-3bdc-459b-a384-677995689cfb\" />\r\n\r\nYou can now hover over Players online graph to see who was online at specific time (up to 63 players).\r\n\r\n### Query page improvements\r\n\r\n<img width=\"1659\" height=\"422\" alt=\"image\" src=\"https://github.com/user-attachments/assets/993ad0b7-4d97-4981-a394-39c168e58f6c\" />\r\n\r\n- New filters have been added\r\n  - Played on date\r\n  - Activity group on date\r\n  - Last seen between\r\n- All 'between' filters now support 'Before' and 'After' by deselecting one of the checkboxes (e.g. played between -> played before)\r\n- Multi-select components have been replaced with a mobile friendly, text searchable alternative that no longer requires pressing Shift for multi-selection\r\n- Fixed timezone inconsistency between View time input fields and the graph\r\n\r\n### Other\r\n\r\n- Kills table can now be searched/sorted/exported and gets up to 25000 entries from the database  \r\n<img alt=\"image\" src=\"https://github.com/user-attachments/assets/4cb0d003-d67e-44f5-99e3-3e5fbb741ae6\" />\r\n\r\n- Added Uptime data to Performance as Numbers tables\r\n- Added support for nickname search in player tables\r\n- Performance graph tabs now sync the graph range-finder so that you can view different data for same time easier\r\n- Network performance graph colors now vary between servers to be easier to read\r\n- Fixed extra Series label appearing in HTTP mode on Performance graph (This is the plugin version history series in HTTPS mode)\r\n- Fixed some night mode text invisibility issues\r\n- SaolGhra fixed error `r.includes is not a function` related to Litebans\r\n- Fixed 'View full query' button in the modal that opens when clicking Server calendar\r\n- Fixed clicking Server calendar results including players who played on other servers during selected days\r\n\r\n## Config\r\n\r\n- Jsinco updated 'Data_gathering.Join_addresses_.Filter_out_from_data' to support regex. Note that any existing setting values with . (dot character) will now match any character.\r\n- `Display_options.Theme` (default \"default\") now refers to theme name in the theme editor rather than \"What theme.yml to copy values from\"\r\n- `Display_options.Night_mode` (default false) added\r\n\r\n## Data\r\n\r\n- MSPT average and 95th percentile added to plan_tps table\r\n- Register date `0` (1970-01-01) is now regarded as invalid.\r\n- Ban status is now updated by an automatic task that cycles through all known players small amount at a time\r\n\r\n## Sponge\r\n\r\n- Sponge API 14 is now used, API 8 is no longer supported.\r\n\r\n## Fabric\r\n\r\n- Fabric was updated to 1.12.9 by DrexHD (Supports 1.12.11 as well)\r\n\r\n## Velocity\r\n\r\n- Velocity was updated to 3.5.0-SNAPSHOT\r\n\r\n## Database\r\n\r\n### Database move system rewrite\r\n\r\nRewrote the system responsible for copying data from one database to another since previous system would crash under large datasets. The goal of this was to allow copying large SQLite databases to MySQL even on larger servers. The system was tested against a 3 GB database on a server with 1 GB of allocated memory.\r\n\r\n- /plan db move, /plan db backup, /plan db restore use the new system\r\n- Added /plan db merge command (permission: plan.data.merge) which allows merging SQLite data to existing MySQL. This is useful for those merging multiple servers into a network when all servers had Plan installed on separate SQLite databases.\r\n\r\n### Other\r\n\r\n- id column added to old plan_tps tables that did not have it yet via Patch.\r\n- If MySQL runs into error code 1020 'Stale read' error, the transaction will retry instead of erroring\r\n- Fixed dyplicate key violation related to AllowListBounce\r\n- Possibly fixed ShutdownDataPreservationTransaction failing on existing join address insert\r\n- Fixed playtime queries to include playtime where session started before view window or ended after.\r\n\r\n## Locale\r\n\r\n- Dates, time amounts & country names are now translated based on the selected locale. (If specific ones aren't please report it as a bug)\r\n- HighCharts & Calendar are now translated based on the selected locale\r\n- TWJohnJohn20116 updated zh_TW locale\r\n- Shadowhackercz updated CS locale\r\n\r\n## Extensions\r\n\r\n- Fixed ArithmeticException related to LibertyBans when bans were infinite\r\n- Fixed an issue related to rendering boolean values\r\n- Updated Jobs extension to support newer version\r\n- Added Time.Periodical_tasks.Extension_player_data_refresh_every setting (default 15 MINUTES) which only affects plugins that decide to support it.\r\n- Made gathered PlaceholderAPI data update periodically\r\n\r\n## Placeholders\r\n\r\n- Fixed network_players_online always saying 0\r\n\r\n## Other\r\n\r\n- Vankka updated DependencyDownload to clean up libraries folder of old versions\r\n- Kopo updated the build system to speed up builds & IDE indexing performance\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.7-dev-build-3211.jar",
+          "primary": true,
+          "size": 17529242,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3211/Plan-5.7-dev-build-3211.jar"
+        },
+        {
+          "filename": "PlanFabric-5.7-dev-build-3211.jar",
+          "primary": true,
+          "size": 17475365,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3211/PlanFabric-5.7-dev-build-3211.jar"
+        }
+      ],
+      "name": "5.7 DEV build 3211",
+      "prerelease": true,
+      "published_at": 1771152675,
+      "version": "5.7.3211"
+    },
+    {
+      "changelog": "# 5.7 DEV build 3189\r\n\r\nThis dev release is a release candidate for 5.7 release.\r\n\r\nSpecial thanks to **Kopo, SaolGhra, TWJohnJohn20116, Shadowhackercz, Vankka, DrexHD & Jsinco** for contributions to this update\r\n\r\n# Changes since DEV build 3123\r\n\r\n- Czech locale updated by Shadowhackercz\r\n- Fixed an issue related to boolean values in Extensions\r\n- Added Server Uptime to Performance as Numbers tables\r\n- Vankka updated DependencyDownload to clean up old downloaded libraries\r\n- Added MSPT (Milliseconds per Tick) metrics to Performance\r\n- DrexHD updated fabric to 1.21.9\r\n- Jsinco updated join address filter setting to support regex\r\n- Rewrite of the database move/backup/restore system\r\n- Updated to use velocity 3.5.0-SNAPSHOT\r\n\r\n# Change log\r\n\r\n## Website\r\n\r\n### Theme Editor\r\n\r\nYou can now create your own themes for Plan without needing Html Customization. This is the main new feature of this version and is documented [here](https://github.com/plan-player-analytics/Plan/wiki/Themes).\r\n\r\n<img alt=\"image\" src=\"https://github.com/user-attachments/assets/6574c4fe-75e6-4feb-acb3-336e34d91c55\" />\r\n\r\n- theme.yml has now been deprecated and will be deleted if it only contains default values\r\n\r\n### MSPT (Milliseconds per Tick)\r\n\r\n<img width=\"903\" height=\"507\" alt=\"image\" src=\"https://github.com/user-attachments/assets/cf799d02-efe0-4647-b954-501a3892e714\" />\r\n\r\nMilliseconds per Tick (average/90th percentile) have been added to performance metrics on all applicable platforms.\r\n\r\n### Other\r\n\r\n- Kills table can now be searched/sorted/exported and gets up to 25000 entries from the database  \r\n<img alt=\"image\" src=\"https://github.com/user-attachments/assets/4cb0d003-d67e-44f5-99e3-3e5fbb741ae6\" />\r\n\r\n- Added Uptime data to Performance as Numbers tables\r\n- Multi-select components have been replaced with a more intuitive alternative, especially on mobile\r\n- Performance graph tabs now sync the graph range-finder so that you can view different data for same time easier\r\n- Network performance graph colors now vary between servers to be easier to read\r\n- Fixed extra Series label appearing in HTTP mode on Performance graph (This is the plugin version history series in HTTPS mode)\r\n- Fixed some night mode text invisibility issues\r\n- SaolGhra fixed error `r.includes is not a function` related to Litebans\r\n\r\n## Config\r\n\r\n- Jsinco updated 'Data_gathering.Join_addresses_.Filter_out_from_data' to support regex. Note that any existing setting values with . (dot character) will now match any character.\r\n- `Display_options.Theme` (default \"default\") now refers to theme name in the theme editor rather than \"What theme.yml to copy values from\"\r\n- `Display_options.Night_mode` (default false) added\r\n\r\n## Data\r\n\r\n- MSPT average and 90th percentile added to plan_tps table\r\n- Register date `0` (1970-01-01) is now regarded as invalid.\r\n- Ban status is now updated by an automatic task that cycles through all known players small amount at a time\r\n\r\n## Sponge\r\n\r\n- Sponge API 14 is now used, API 8 is no longer supported.\r\n\r\n## Fabric\r\n\r\n- Fabric was updated to 1.12.9 by DrexHD (Supports 1.12.11 as well)\r\n\r\n## Velocity\r\n\r\n- Velocity was updated to 3.5.0-SNAPSHOT\r\n\r\n## Database\r\n\r\n### Database move system rewrite\r\n\r\nRewrote the system responsible for copying data from one database to another since previous system would crash under large datasets. The goal of this was to allow copying large SQLite databases to MySQL even on larger servers. The system was tested against a 3 GB database on a server with 1 GB of allocated memory.\r\n\r\n- /plan db move, /plan db backup, /plan db restore use the new system\r\n- Added /plan db merge command (permission: plan.data.merge) which allows merging SQLite data to existing MySQL. This is useful for those merging multiple servers into a network when all servers had Plan installed on separate SQLite databases.\r\n\r\n### Other\r\n\r\n- id column added to old plan_tps tables that did not have it yet via Patch.\r\n- If MySQL runs into error code 1020 'Stale read' error, the transaction will retry instead of erroring\r\n- Fixed dyplicate key violation related to AllowListBounce\r\n\r\n## Locale\r\n\r\n- Dates, time amounts & country names are now translated based on the selected locale. (If specific ones aren't please report it as a bug)\r\n- HighCharts & Calendar are now translated based on the selected locale\r\n- TWJohnJohn20116 updated zh_TW locale\r\n- Shadowhackercz updated CS locale\r\n\r\n## Extensions\r\n\r\n- Fixed ArithmeticException related to LibertyBans when bans were infinite\r\n- Fixed an issue related to rendering boolean values\r\n- Updated Jobs extension to support newer version\r\n\r\n## Placeholders\r\n\r\n- Fixed network_players_online always saying 0\r\n\r\n## Other\r\n\r\n- Vankka updated DependencyDownload to clean up libraries folder of old versions\r\n- Kopo updated the build system to speed up builds & IDE indexing performance\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.7-dev-build-3189.jar",
+          "primary": true,
+          "size": 17490161,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3189/Plan-5.7-dev-build-3189.jar"
+        },
+        {
+          "filename": "PlanFabric-5.7-dev-build-3189.jar",
+          "primary": true,
+          "size": 17437583,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3189/PlanFabric-5.7-dev-build-3189.jar"
+        }
+      ],
+      "name": "5.7 DEV build 3189",
+      "prerelease": true,
+      "published_at": 1770655640,
+      "version": "5.7.3189"
+    },
+    {
+      "changelog": "# 5.7 DEV build 3123\r\n\r\nThis dev release contains quite a lot of changes, so please report any bugs that you may find.\r\n\r\nSpecial thanks to **Kopo, SaolGhra & TWJohnJohn20116** for contributions to this update\r\n\r\n# Change log\r\n\r\n## Website\r\n\r\n### Theme Editor\r\n\r\nYou can now create your own themes for Plan without needing Html Customization. This is the main new feature of this version and is documented [here](https://github.com/plan-player-analytics/Plan/wiki/Themes).\r\n\r\n<img alt=\"image\" src=\"https://github.com/user-attachments/assets/6574c4fe-75e6-4feb-acb3-336e34d91c55\" />\r\n\r\n- theme.yml has now been deprecated and will be deleted if it only contains default values\r\n\r\n### Localization\r\n\r\nOne goal in this version is to reduce the amount of mixed language (e.g. selected language + English) appearing on the website. This work is still underway. If you're using a locale that still has English lines in it, [please help translate it](https://github.com/plan-player-analytics/Plan/wiki/Localization)\r\n\r\n- Dates, time amounts & country names are now translated based on the selected locale. (If specific ones aren't please report it as a bug)\r\n- HighCharts & Calendar are now translated based on the selected locale\r\n\r\n### Other\r\n\r\n- Kills table can now be searched/sorted/exported and gets up to 25000 entries from the database  \r\n<img alt=\"image\" src=\"https://github.com/user-attachments/assets/4cb0d003-d67e-44f5-99e3-3e5fbb741ae6\" />\r\n\r\n- Multi-select components have been replaced with a more intuitive alternative, especially on mobile\r\n- Performance graph tabs now sync the graph range-finder so that you can view different data for same time easier\r\n- Network performance graph colors now vary between servers to be easier to read\r\n- Fixed extra Series label appearing in HTTP mode on Performance graph (This is the plugin version history series in HTTPS mode)\r\n- Fixed some night mode text invisibility issues\r\n- SaolGhra fixed error `r.includes is not a function` related to Litebans\r\n\r\n## Config\r\n\r\n- `Display_options.Theme` (default \"default\") now refers to theme name in the theme editor rather than \"What theme.yml to copy values from\"\r\n- `Display_options.Night_mode` (default false) added\r\n\r\n## Data\r\n\r\n- Register date `0` (1970-01-01) is now regarded as invalid.\r\n- Ban status is now updated by an automatic task that cycles through all known players small amount at a time\r\n\r\n## Sponge\r\n\r\n- Sponge API 14 is now used, API 8 is no longer supported.\r\n\r\n## Database\r\n\r\n- If MySQL runs into error code 1020 'Stale read' error, the transaction will retry instead of erroring\r\n- Fixed dyplicate key violation related to AllowListBounce\r\n\r\n## Locale\r\n\r\n- TWJohnJohn20116 updated zh_TW locale\r\n\r\n## Extensions\r\n\r\n- Fixed ArithmeticException related to LibertyBans when bans were infinite\r\n- Updated Jobs extension to support newer version\r\n\r\n## Placeholders\r\n\r\n- Fixed network_players_online always saying 0\r\n\r\n## Other\r\n\r\n- Kopo updated the build system to speed up builds & IDE indexing performance\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.7-dev-build-3123.jar",
+          "primary": true,
+          "size": 16923766,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3123/Plan-5.7-dev-build-3123.jar"
+        },
+        {
+          "filename": "PlanFabric-5.7-dev-build-3123.jar",
+          "primary": true,
+          "size": 16866883,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3123/PlanFabric-5.7-dev-build-3123.jar"
+        }
+      ],
+      "name": "5.7 DEV build 3123",
+      "prerelease": true,
+      "published_at": 1755597671,
+      "version": "5.7.3123"
+    },
+    {
+      "changelog": "# 5.6 build 2965\r\n\r\nThis build has a second hotfix for SQLite performance regression since it was reverted to wrong version that still had the regression.\r\nPlease see https://github.com/plan-player-analytics/Plan/releases/tag/5.6.2959 for change log of the previous version.\r\n\r\n# Change log\r\n\r\n- Reverted SQLite driver to version 3.42.0.1 due to performance regression (Thanks to Vankka for pointing out my mistake)\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.6-build-2965.jar",
+          "primary": true,
+          "size": 17346367,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2965/Plan-5.6-build-2965.jar"
+        },
+        {
+          "filename": "PlanFabric-5.6-build-2965.jar",
+          "primary": true,
+          "size": 17301275,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2965/PlanFabric-5.6-build-2965.jar"
+        }
+      ],
+      "name": "5.6 build 2965",
+      "prerelease": false,
+      "published_at": 1738398692,
+      "version": "5.6.2965"
+    },
+    {
+      "changelog": "# 5.6 build 2961\r\n\r\nThis build has a hotfix for SQLite performance regression.\r\nPlease see https://github.com/plan-player-analytics/Plan/releases/tag/5.6.2959 for change log of the previous version.\r\n\r\n# Change log\r\n\r\n- Reverted SQLite driver to version 3.45.1.0 due to performance regression",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.6-build-2961.jar",
+          "primary": true,
+          "size": 17346388,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2961/Plan-5.6-build-2961.jar"
+        },
+        {
+          "filename": "PlanFabric-5.6-build-2961.jar",
+          "primary": true,
+          "size": 17301295,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2961/PlanFabric-5.6-build-2961.jar"
+        }
+      ],
+      "name": "5.6 build 2961",
+      "prerelease": false,
+      "published_at": 1737885405,
+      "version": "5.6.2961"
+    },
+    {
+      "changelog": "# 5.6 build 2959\r\n\r\nThis is a maintenance update with bugfixes and updates to dependencies.\r\n\r\nSpecial thanks to **Kopo**, **YannicHock** & **Zaemong** for contributions to this update.\r\n\r\n# Change log\r\n\r\n## Commands [action required]\r\n\r\n- /plan and /planproxy now require `plan.command` permission to be used. This is to allow hiding /plan from tab completion, since it showed up even if a player had no access to any of the subcommands.\r\n\r\n## SQL Driver download address change\r\n\r\n- PaperMC changed their maven repository address so Plan now downloads SQL drivers from https://repo.papermc.io instead of https://papermc.io/repo - This is mentioned since some users use firewall to block external connections.\r\n\r\n## Platform specific\r\n\r\n- Fabric now uses 1.21.3 api, 1.21.4 also still supported. fabric-permissions-api 0.3.3 now required. Thanks Kopo\r\n- Fixed Nukkit incompatibility with EntityTameable being moved to a different package\r\n- Fixed Folia ConcurrentModificationException related to ping task\r\n- Fixed Folia region tick thread crash if another plugin was using Plan placeholders on server thread\r\n\r\n## Website\r\n\r\n- Fixed Calendar being one day behind when server timezone was set to negative GMT, eg. GMT-8.\r\n- Calendar now responds to selected language on the UI\r\n- Fixed Calendar popup going under Sidebar\r\n- Fixed some countries not appearing on the map due to missing country name -> ISO-3166 alpha-3 translation\r\n- Added web permissions for different Server Performance graph data types. This allows configuring permissions for viewing TPS graph and nothing else.\r\n- Fixed Logo image not loading when using reverse-proxy with a subdirectory\r\n\r\n## Database\r\n\r\n- Fixed CorrectWrongCharacterEncodingPatch applying to non-Plan tables in the same database.\r\n- Fixed ping insert duplicate key error\r\n\r\n## Config\r\n\r\n- Increased default time series data retention to 10 years (3650 days) - previously 90 days. Does not change existing configs.\r\n- Removed &useSSL=false from default MySQL Launch_options. Does not change existing configs.\r\n\r\n## Extensions\r\n\r\n- StringProvider can now store values up to 250 characters long before truncation.\r\n- CMI Extension added by YannicHock\r\n\r\n## Locale\r\n\r\n- Fixed French (FR) locale causing website loading issues\r\n- Japanese (JA) locale updated by Zaemong\r\n\r\n## Placeholders\r\n\r\n- Catch any exceptions that occur during placeholder request to not cause problems in other plugins using Plan placeholders\r\n- Added %plan_top_{category}_{n}_value_raw% placeholders for unformatted values (Useful for custom time formats)\r\n- Added %plan_server_players_online% and %plan_network_players_online% placeholders that show the latest data in the database (~1 minute accuracy)\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.6-build-2959.jar",
+          "primary": true,
+          "size": 17345444,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2959/Plan-5.6-build-2959.jar"
+        },
+        {
+          "filename": "PlanFabric-5.6-build-2959.jar",
+          "primary": true,
+          "size": 17300348,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2959/PlanFabric-5.6-build-2959.jar"
+        }
+      ],
+      "name": "5.6 build 2959",
+      "prerelease": false,
+      "published_at": 1737189328,
+      "version": "5.6.2959"
+    },
+    {
+      "changelog": "# 5.6 DEV build 2948\r\n\r\nThis dev build contains bugfixes, contributions and dependency updates that have been done since May.\r\n\r\nSpecial thanks to **Kopo**, **YannicHock** & **Zaemong** for contributions to this update.\r\n\r\n## Changes from DEV build 2906\r\n\r\n- Dependency updates\r\n- Calendar now responds to selected language\r\n- Fixed bug with calendar in negative timezones (GMT-8 etc)\r\n- Fabric updates done by Kopo\r\n- Extension string values now up to 250 chars\r\n- Minor bugfixes\r\n\r\n# Change log\r\n\r\n## Commands [action required]\r\n\r\n- /plan and /planproxy now require `plan.command` permission to be used. This is to allow hiding /plan from tab completion, since it showed up even if a player had no access to any of the subcommands.\r\n\r\n## Platform specific\r\n\r\n- Fabric now uses 1.21.3 api, 1.21.4 also still supported. fabric-permissions-api 0.3.3 now required. Thanks Kopo\r\n- Fixed Nukkit incompatibility with EntityTameable being moved to a different package\r\n- Fixed Folia ConcurrentModificationException related to ping task\r\n- Fixed Folia region tick thread crash if another plugin was using Plan placeholders on server thread\r\n\r\n## Website\r\n\r\n- Fixed Calendar being one day behind when server timezone was set to negative GMT, eg. GMT-8.\r\n- Calendar now responds to selected language on the UI\r\n- Fixed some countries not appearing on the map due to missing country name -> ISO-3166 alpha-3 translation\r\n- Added web permissions for different Server Perfomance graph data types. This allows configuring permissions for viewing TPS graph and nothing else.\r\n- Fixed reverse-proxy subdirectory address correction not applying to Logo image\r\n\r\n## Database\r\n\r\n- Fixed CorrectWrongCharacterEncodingPatch applying to non-Plan tables in the same database.\r\n- Fixed ping insert duplicate key error\r\n\r\n## Config\r\n\r\n- Increased default time series data retention to 10 years (3650 days) - previously 90 days. Does not change existing configs.\r\n- Removed &useSSL=false from default MySQL Launch_options. Does not change existing configs.\r\n\r\n## Extensions\r\n\r\n- StringProvider can now store values up to 250 characters long before truncation.\r\n- CMI Extension added by YannicHock\r\n\r\n## Locale\r\n\r\n- Fixed French (FR) locale causing website loading issues\r\n- Japanese (JA) locale updated by Zaemong\r\n\r\n## Placeholders\r\n\r\n- Catch any exceptions that occur during placeholder request to not cause problems in other plugins using Plan placeholders\r\n- Added %plan_top_{category}_{n}_value_raw% placeholders for unformatted values (Useful for custom time formats)\r\n- Added %plan_server_players_online% and %plan_network_players_online% placeholders that show the latest data in the database (~1 minute accuracy)\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.6-dev-build-2948.jar",
+          "primary": true,
+          "size": 17242021,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2948/Plan-5.6-dev-build-2948.jar"
+        },
+        {
+          "filename": "PlanFabric-5.6-dev-build-2948.jar",
+          "primary": true,
+          "size": 17194496,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2948/PlanFabric-5.6-dev-build-2948.jar"
+        }
+      ],
+      "name": "5.6 DEV build 2948",
+      "prerelease": true,
+      "published_at": 1736162945,
+      "version": "5.6.2948"
+    },
+    {
+      "changelog": "# 5.6 DEV build 2906\r\n\r\nThis dev build contains bugfixes, contributions and dependency updates that have been done since May. I would release it as a full release, but since my start of December is hectic, I want to avoid releasing a buggy version by accident.\r\n\r\nSpecial thanks to **YannicHock** & **Zaemong** for contributions to this update.\r\n\r\nThere's a small development/life update at the bottom of the change log.\r\n\r\n# Change log\r\n\r\n## Commands [action required]\r\n\r\n- /plan and /planproxy now require `plan.command` permission to be used. This is to allow hiding /plan from tab completion, since it showed up even if a player had no access to any of the subcommands.\r\n\r\n## Platform specific\r\n\r\n- Fixed Nukkit incompatibility with EntityTameable being moved to a different package\r\n- Fixed Folia ConcurrentModificationException related to ping task\r\n- Fixed Folia region tick thread crash if another plugin was using Plan placeholders on server thread\r\n\r\n## Website\r\n\r\n- Fixed some countries not appearing on the map due to missing country name -> ISO-3166 alpha-3 translation\r\n- Added web permissions for different Server Perfomance graph data types. This allows configuring permissions for viewing TPS graph and nothing else.\r\n\r\n## Database\r\n\r\n- Fixed CorrectWrongCharacterEncodingPatch applying to non-Plan tables in the same database.\r\n\r\n## Config\r\n\r\n- Increased default time series data retention to 10 years (3650 days) - previously 90 days. Does not change existing configs.\r\n\r\n## Extensions\r\n\r\n- CMI Extension added by YannicHock\r\n\r\n## Locale\r\n\r\n- Fixed French (FR) locale causing website loading issues\r\n- Japanese (JA) locale updated by Zaemong\r\n\r\n## Placeholders\r\n\r\n- Catch any exceptions that occur during placeholder request to not cause problems in other plugins using Plan placeholders\r\n- Added %plan_top_{category}_{n}_value_raw% placeholders for unformatted values (Useful for custom time formats)\r\n- Added %plan_server_players_online% and %plan_network_players_online% placeholders that show the latest data in the database (~1 minute accuracy)\r\n\r\n----\r\n\r\n# Development/Life update\r\n\r\nPlan is now 8 years old (tomorrow on 2nd of December)! Wow, that's almost third of my life.\r\n\r\nI don't know how to begin this, but since the regular updates stopped coming in June, I feel like I need to write something to let you know why.\r\n\r\nIn June, as my summer holiday started I decided to leave my laptop at home, rather than take it with me and work on Plan all summer. This was the first time in 7 years that that happened. I didn't open the IDE again for a long time, and I kind of liked it. Unfortunately any 2 month long break from a project usually leads to the build environment breaking, so I've had to deal with some of that before I could get back to regular development.\r\n\r\nOver last 4 months I've slowly worked on DataExtension Graph API on some weekends. It's surprising how much boilerplate something like that needs to function, so it's somewhere around 33%-50% done after 4 months in development. With long pauses in between due to needing to work on other bugs and broken builds, it has not progressed as fast as I would have liked.\r\n\r\nPeople always seem to wonder why I'm doing this project, and I've wondered that too over the years. I sort of rationalized the reason to be that I love doing it - and that was true for years, as I love learning new things, and Plan allowed me to do those experiments to learn. Lately I've started to think that doing this project has also been a kind of escapism. Everyone wants to feel like they're good at something, and when I found programming in 2016, that was something I felt like I could be really good at. So I started this project, and found so much enjoyment from that. It's funny how life creeps up on you if you let it, Over these last two years I've started to find my people and hobbies. Those things give me so much joy in life.\r\n\r\nI still enjoy working on this project, but I've found that doing Java projects at work, and doing Java project on the weekends is not a very sustainable hobby. I found that out the hard way when I had a burnout in 2022. In an ideal world I would love to work on this project full-time, but that's just not realistic financially.\r\n\r\nI'm not sure what the way forward is, but what I'm currently trying is to schedule Plan development time in my calendar. I feel like something I need to solve is that other activities refresh my energy, while Plan development drains it. I need to find a way to make it refresh my energy. If you've solved something like that I'd love to hear your thoughts on discord.\r\n\r\nAll that said, I don't think this project is going away anytime soon. I'll just have to figure out a sustainable way to fit it together with the rest of my life. And that just might be the learning journey that sparks my eyes again.\r\n\r\nI hope you have wonderful Christmas or other holidays ahead of you.\r\nAll the best!\r\n\r\n~Aurora",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.6-dev-build-2906.jar",
+          "primary": true,
+          "size": 17169886,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2906/Plan-5.6-dev-build-2906.jar"
+        },
+        {
+          "filename": "PlanFabric-5.6-dev-build-2906.jar",
+          "primary": true,
+          "size": 17128301,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2906/PlanFabric-5.6-dev-build-2906.jar"
+        }
+      ],
+      "name": "5.6 DEV build 2906",
+      "prerelease": true,
+      "published_at": 1733046809,
+      "version": "5.6.2906"
+    },
+    {
+      "changelog": "# 5.6 build 2883\r\n\r\nThis release brings redesigned join address visualization, Folia support, updates to Fabric 1.20.5, quality of life features and fixes some bugs.\r\n\r\nSpecial thanks to **jhqwqmc**, **Sniper_TVmc**, **mcmdev**, **DrexHD** and **ZhangYuheng** for contributions to this update\r\n\r\n# Change log\r\n\r\n## Fabric\r\n\r\n- Fabric support was updated to 1.20.5 by DrexHD, older fabric versions are no longer supported as Fabric 1.20.5 requires Java 21\r\n\r\n## Folia\r\n\r\n- Folia support was implemented by ZhangYuheng. Please note that sessions from Folia servers will have incorrect world times on Folia since the platform doesn't support PlayerWorldChangeEvent yet.\r\n\r\n## Config\r\n\r\n- You can now configure Plan using environment variables. This can be useful for those running servers in docker environments. Examples:\r\n  - Plugin.ServerName -> PLAN_PLUGIN_SERVERNAME\r\n  - Database.MySQL.Password -> PLAN_DATABASE_MYSQL_PASSWORD\r\n  - ServerInfoFile.yml is also supported, eg. PLAN_SERVER_ID, PLAN_SERVER_UUID to have specific servers keep their identity if your server destroys all files on shutdown.\r\n  - With string lists variable needs to be format \"- One\\n- Two\" where \\n is newline\r\n\r\n## Website\r\n\r\n### Redesigned Join Address visualization\r\n\r\n![image](https://github.com/plan-player-analytics/Plan/assets/24460436/bbab9615-bce3-4d2a-893a-ccc3f8713a8a)\r\n\r\nJoin address visualization was difficult for servers with 100s of join addresses. With the redesign you can select multiple addresses as a group to be visualized, and rename it to your liking. This can help you track different advertising campaigns and server list entries across time.\r\n\r\n![image](https://github.com/plan-player-analytics/Plan/assets/24460436/9c14f686-be66-4eb9-b346-f679831db604)\r\n\r\nThe same selectors are used on the Player Retention graph when you are grouping registered players by Join Address.\r\n\r\nThe address groups you make are linked to your user if you have login enabled, or stored to browser localstorage to keep them even if you close the page.\r\n\r\nIn addition:\r\n\r\n- It is now possible to disable join address gathering in the config\r\n- It is now possible to filter out specific addresses from the data in the config. This can help if you have a geyser server that isn't configured to forward hostnames, since the geyser server IP would appear in the data instead.\r\n- Join addresses that don't look like IPs or domains are now automatically filtered out. You can disable this behavior with Preserve_invalid setting.\r\n\r\n### Editing Queries\r\n\r\n- You can now press 'Edit Query' on the Query Results page to change the filters and view. This can be useful if you want to quickly select a timeframe from calendar and then filter the results further with other filters.\r\n![image](https://github.com/plan-player-analytics/Plan/assets/24460436/c57ef875-0fa5-4cb2-a0a8-1291f1d8c165)\r\n\r\n## Commands\r\n\r\n- Fixed permissions not being checked for tab completion of commands which allowed players to get list of player names via tab completion.\r\n\r\n## Database\r\n\r\n- Fixed duplicate key exception during enable in some rare cases related to UpdateWebPermissionsPatch\r\n- Fixed CorrectWrongCharacterEncodingPatch failing on mysql.user table being a view\r\n- Fixed error storing access log when IP was spoofed (Longer than IPv6)\r\n\r\n## Export\r\n\r\n- Fixed allowlist bounces data not being visible on exported pages.\r\n\r\n## Placeholders\r\n\r\n- Added %plan_server_uptime% placeholder\r\n\r\n## Extensions\r\n\r\n- Composite punishment support was added to LibertyBans Extension by mcmdev\r\n- You can now configure PlaceholderAPI values that you want to ignore from other plugins. This is useful if some plugin doesn't report placeholder value after player leaves the server.\r\n  - Placeholders that aren't replaced are now no longer stored as a changed value.\r\n\r\n## Locale\r\n\r\n- French (FR) locale was updated by Sniper_TVmc\r\n- Simplified Chinese (CN) locale was updated by jhqwqmc",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.6-build-2883.jar",
+          "primary": true,
+          "size": 17103119,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2883/Plan-5.6-build-2883.jar"
+        },
+        {
+          "filename": "PlanFabric-5.6-build-2883.jar",
+          "primary": true,
+          "size": 17062614,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2883/PlanFabric-5.6-build-2883.jar"
+        }
+      ],
+      "name": "5.6 build 2883",
+      "prerelease": false,
+      "published_at": 1716736089,
+      "version": "5.6.2883"
+    },
+    {
+      "changelog": "# 5.6 DEV build 2850\r\n\r\nThis dev release brings redesigned join address visualization, updates to Fabric 1.20.5, and fixes some bugs.\r\n\r\nSpecial thanks to **jhqwqmc**, **Sniper_TVmc**, **mcmdev** and **DrexHD** for contributions to this update\r\n\r\n# Change log\r\n\r\n## Fabric\r\n\r\n- Fabric support was updated to 1.20.5 by DrexHD, older fabric versions are no longer supported as Fabric 1.20.5 requires Java 21\r\n\r\n## Website\r\n\r\n### Redesigned Join Address visualization\r\n\r\n![320191723-aff709ec-f87d-47cf-bd56-c5f0cf866d6a](https://github.com/plan-player-analytics/Plan/assets/24460436/9e7a4501-9f84-4af2-b527-4cbc0eb3f246)\r\n\r\nJoin address visualization was difficult for servers with 100s of join addresses. With the redesign you can select multiple addresses as a group to be visualized, and rename it to your liking. This can help you track different advertising campaigns and server list entries across time.\r\n\r\n![320191710-4b70bc39-e3da-47aa-884d-fb19924cfd71](https://github.com/plan-player-analytics/Plan/assets/24460436/0cb21bb1-3570-4a58-9d31-0903a1163af2)\r\n\r\nThe same selectors are used on the Player Retention graph when you are grouping registered players by Join Address.\r\n\r\nThe address groups you make are linked to your user if you have login enabled, or stored to browser localstorage to keep them even if you close the page.\r\n\r\n### Editing Queries\r\n\r\n- You can now press 'Edit Query' on the Query Results page to change the filters and view. This can be useful if you want to quickly select a timeframe from calendar and then filter the results further with other filters.\r\n\r\n## Database\r\n\r\n- Fixed duplicate key exception during enable in some rare cases related to UpdateWebPermissionsPatch\r\n\r\n## Export\r\n\r\n- Fixed allowlist bounces data not being visible on exported pages.\r\n\r\n## Extensions\r\n\r\n- Composite punishment support was added to LibertyBans Extension by mcmdev\r\n- You can now configure PlaceholderAPI values that you want to ignore from other plugins. This is useful if some plugin doesn't report placeholder value after player leaves the server for example.\r\n\r\n## Locale\r\n\r\n- French (FR) locale was updated by Sniper_TVmc\r\n- Simplified Chinese (CN) locale was updated by jhqwqmc",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.6-dev-build-2850.jar",
+          "primary": true,
+          "size": 16833769,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2850/Plan-5.6-dev-build-2850.jar"
+        },
+        {
+          "filename": "PlanFabric-5.6-dev-build-2850.jar",
+          "primary": true,
+          "size": 16792999,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2850/PlanFabric-5.6-dev-build-2850.jar"
+        }
+      ],
+      "name": "5.6 DEV build 2850",
+      "prerelease": true,
+      "published_at": 1713597967,
+      "version": "5.6.2850"
+    },
+    {
+      "changelog": "# 5.6 build 2820\r\n\r\nThis build contains some bugfixes to things that were missed in last release. If you missed that, [here's the change log for that](https://github.com/plan-player-analytics/Plan/releases/tag/5.6.2816)\r\n\r\nSpecial thanks to **jhqwqmc** for contribution to this update\r\n\r\n# Change log\r\n\r\n- Fixed a error in extension boolean storage when using SQLite. A minor bug, but spammed the console a bit.\r\n- Fixed Join Address not appearing on the /plan ingame command due to formatting error\r\n- jhqwqmc updated Simplified Chinese Locale (CN)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.6-build-2820.jar",
+          "primary": true,
+          "size": 16799843,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2820/Plan-5.6-build-2820.jar"
+        },
+        {
+          "filename": "PlanFabric-5.6-build-2820.jar",
+          "primary": true,
+          "size": 16960019,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2820/PlanFabric-5.6-build-2820.jar"
+        }
+      ],
+      "name": "5.6 build 2820",
+      "prerelease": false,
+      "published_at": 1710429382,
+      "version": "5.6.2820"
+    },
+    {
+      "changelog": "# 5.6 build 2816\r\n\r\nThis version brings a lot of bugfixes, such as Geolocation database download changes, and some new features, such as CSV export, whitelist bounce gathering and more placeholders.\r\n\r\nSpecial thanks to **jhqwqmc, Vankka, Beniro, liuzhen932 and SlimeDog** for contributions to this update!\r\n\r\n# Change log\r\n\r\n## Data Gathering\r\n\r\n- Plan now downloads geolite database from playeranalytics.net - This is related to MaxMind reducing their daily download counts to 30/day by March 21st which breaks the geolocation database downloading. This means the geolocation database needs to be distributed via a server rather than from MaxMind directly. Currently Plan implicitly trusts that the webserver responding from geodb.playeranalytics.net is correct one. In future there will be a signature check added to ensure Plan is talking to correct server.\r\n- Fixed server crash when using SQLite and Plan tried to gather installed plugin list on the server thread.\r\n\r\n### Allowlist bounces\r\n\r\n![allowlist-bounces](https://github.com/plan-player-analytics/Plan/assets/24460436/9bfa987b-b9b4-4cc9-a3f2-ea4810838db4)\r\n\r\nSpigot, Sponge & Nukkit servers now gather whitelist bounces. There is a new tab on the server page under Online Activity which allows you to quickly see whose login has been blocked by whitelist, and who you have already allowed on the whitelist based on session data, so that you don't do unnecessary work allowing them again.\r\n\r\nVisibility is controlled with web permission `page.server.allowlist.bounce`\r\n\r\n## Website\r\n\r\n### CSV Export in tables\r\n\r\n![export-demo](https://github.com/plan-player-analytics/Plan/assets/24460436/ef72f09a-945c-4841-abff-a59af7b4878a)\r\n\r\nYou can now export CSV from most tables. This is especially useful when combined with Query features, such as the click-and-drag in calendar for selecting data from specific timeframe.\r\n\r\n### Other\r\n\r\n- The react bundle is now built using Vite. It utilizes modules available in modern browsers. This sped up build times by 7 minutes and should also improve page loading speed.\r\n- Fixed some issues where reverse proxied Plan website loaded a blank page\r\n- Fixed issue where server players online graph was fetched for network page due to bad cache lookup\r\n- Server & Network Overview now uses frontend formatting for playtime and dates\r\n- Fixed issue where server ping table never loaded\r\n- Fixed server calendar being editable (You could drag blocks around rather than select)\r\n- Fixed ping graph not rendering on player page if there was a lot of points\r\n\r\n## Webserver\r\n\r\n- Added simple DDoS protection that limits requests if same IP requests same path multiple times. This type of DDoS has become more prevalent against cloudflare IPs, where a Go-http-client based bot requests / repeatedly and doesn't follow redirects. Because browsers follow redirects this doesn't affect regular users.\r\n\r\n## Database\r\n\r\n- Optimized how database handles transactions on disable. More unnecessary transactions are dropped\r\n\r\n## Fabric 1.20.4\r\n\r\n- Binero implemented Fabric 1.20.4 support, 1.20.3 is not supported this build onwards.\r\n- Fabric command registration was moved earlier to avoid confusion when /plan reload doesn't exist after failed enable.\r\n\r\n## Placeholders\r\n\r\n- Added network_ equivalent to all missing server_ placeholders\r\n- Added %plan_regular_players% and %plan_network_regular_players% placeholders\r\n- Added %plan_join_address% placeholder\r\n- Fixed off-by-one error in %plan_top_...% placeholders where 0 would be top 1 and 9 top 10. Now it matches documentation where 1 -> 1, and 10 -> 10. If you were compensating for this bug you may need to change `%plan_top_..._0%` to `%plan_top_..._1%` etc\r\n\r\n## Commands\r\n\r\n- /plan ingame now shows Last join address of the player.\r\n\r\n## Export\r\n\r\n- Fixed react files getting exported even when all export is disabled.\r\n\r\n## Extensions\r\n\r\n- Vankka updated DiscordSRV Extension to fix an incompatibility with new DiscordSRV version\r\n- `@Conditional` values are now removed when the value of the boolean changes in a way that unsatisfies the condition.\r\n- Fixed FastLogin Extension recording \"Unknown\" when behind a proxy server\r\n- Fixed Quests Extension support for Quests version 5, version 4 is no longer supported.\r\n\r\n## Locale\r\n\r\n- jhqwqmc updated Chinese locale (CN)\r\n- liuzhen932 updated Chinese locale (CN)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.6-build-2816.jar",
+          "primary": true,
+          "size": 16799591,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2816/Plan-5.6-build-2816.jar"
+        },
+        {
+          "filename": "PlanFabric-5.6-build-2816.jar",
+          "primary": true,
+          "size": 16959759,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2816/PlanFabric-5.6-build-2816.jar"
+        }
+      ],
+      "name": "5.6 build 2816",
+      "prerelease": false,
+      "published_at": 1710060373,
+      "version": "5.6.2816"
+    },
+    {
+      "changelog": "# 5.6 DEV build 2796\r\n\r\nThis dev release contains further fixes. It is a release candidate.\r\n\r\nSpecial thanks to **jhqwqmc, Vankka, Beniro, and liuzhen932** for contributions to this update!\r\n\r\n# Changes from DEV build 2731\r\n\r\n- Plan now downloads geolite database from playeranalytics.net\r\n- Fixes to website\r\n- New placeholders\r\n- liuzhen932 updated CN locale\r\n- SQLite now logs what it is waiting for if it needs to wait on disable\r\n- Optimizations to plugin disable transaction handling\r\n\r\n# Change log\r\n\r\n## Data Gathering\r\n\r\n- Plan now downloads geolite database from playeranalytics.net - This is related to MaxMind reducing their daily download counts to 30/day by March 21st. This means the geolocation database needs to be distributed via a server rather than from MaxMind directly. Currently Plan implicitly trusts that the webserver responding from geodb.playeranalytics.net is correct one. In future there will be a signature check added to ensure Plan is talking to correct server.\r\n\r\n## Website\r\n\r\n### CSV Export in tables\r\n\r\n![export-demo](https://github.com/plan-player-analytics/Plan/assets/24460436/ef72f09a-945c-4841-abff-a59af7b4878a)\r\n\r\nYou can now export CSV from most tables. This is especially useful when combined with Query features, such as the click-and-drag in calendar for selecting data from specific timeframe.\r\n\r\n### Other\r\n\r\n- The react bundle is now built using Vite. It utilizes modules available in modern browsers. This sped up build times by 7 minutes and should also improve page loading speed.\r\n- Fixed some issues where reverse proxied Plan website loaded a blank page\r\n- Fixed issue where server players online graph was fetched for network page due to bad cache lookup\r\n- Server & Network Overview now uses frontend formatting for playtime and dates\r\n- Fixed issue where server ping table never loaded\r\n- Fixed server calendar being editable (You could drag blocks around rather than select)\r\n\r\n## Webserver\r\n\r\n- Added simple DDoS protection that limits requests if same IP requests same path multiple times. This type of DDoS has become more prevalent against cloudflare IPs, where a Go-http-client based bot requests / repeatedly and doesn't follow redirects. Because browsers follow redirects this doesn't affect regular users.\r\n\r\n## Database\r\n\r\n- Optimized how database handles transactions on disable. More unnecessary transactions are dropped\r\n\r\n## Fabric 1.20.4\r\n\r\n- Binero implemented Fabric 1.20.4 support, 1.20.3 is not supported this build onwards.\r\n- Fabric command registration was moved earlier to avoid confusion when /plan reload doesn't exist after failed enable.\r\n\r\n## Placeholders\r\n\r\n- Added network_ equivalent to all missing server_ placeholders (You can see them here until list is updated to wiki on full release https://github.com/plan-player-analytics/Plan/commit/01ce503c77c059210c229932cafea50f299f3b7b)\r\n- Added %plan_regular_players% and %plan_network_regular_players% placeholders\r\n- Fixed off-by-one error in %plan_top_...% placeholders where 0 would be top 1 and 9 top 10. Now it matches documentation where 1 -> 1, and 10 -> 10. If you were compensating for this bug you may need to change %plan_top_..._0% to %plan_top_..._1% etc\r\n\r\n## Export\r\n\r\n- Fixed react files getting exported even when all export is disabled.\r\n\r\n## Extensions\r\n\r\n- Vankka updated DiscordSRV Extension to fix an incompatibility with new DiscordSRV version\r\n- `@Conditional` values are now removed when the value of the boolean changes in a way that unsatisfies the condition.\r\n\r\n## Locale\r\n\r\n- jhqwqmc updated Chinese locale (CN)\r\n- liuzhen932 updated Chinese locale (CN)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.6-dev-build-2796.jar",
+          "primary": true,
+          "size": 16787058,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2796/Plan-5.6-dev-build-2796.jar"
+        },
+        {
+          "filename": "PlanFabric-5.6-dev-build-2796.jar",
+          "primary": true,
+          "size": 16948559,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2796/PlanFabric-5.6-dev-build-2796.jar"
+        }
+      ],
+      "name": "5.6 DEV build 2796",
+      "prerelease": true,
+      "published_at": 1709455146,
+      "version": "5.6.2796"
+    },
+    {
+      "changelog": "# 5.6 DEV build 2731\r\n\r\nThis dev release contains further maintenance and few new features\r\n\r\nSpecial thanks to **jhqwqmc, Vankka and Beniro** for contributions to this update!\r\n\r\n# Changes from DEV build 2703\r\n\r\n- CSV export added\r\n- Bugfixes in export, placeholders, fabric commands and website cache\r\n\r\n# Change log\r\n\r\n## Website\r\n\r\n### CSV Export in tables\r\n\r\n![export-demo](https://github.com/plan-player-analytics/Plan/assets/24460436/ef72f09a-945c-4841-abff-a59af7b4878a)\r\n\r\nYou can now export CSV from most tables. This is especially useful when combined with Query features, such as the click-and-drag in calendar for selecting data from specific timeframe.\r\n\r\n### Other\r\n\r\n- The react bundle is now built using Vite. It utilizes modules available in modern browsers. This sped up build times by 7 minutes and should also improve page loading speed.\r\n- Fixed some issues where reverse proxied Plan website loaded a blank page\r\n- Fixed issue where server players online graph was fetched for network page due to bad cache lookup\r\n- Server & Network Overview now uses frontend formatting for playtime and dates\r\n\r\n## Fabric 1.20.4\r\n\r\n- Binero implemented Fabric 1.20.4 support, 1.20.3 is not supported this build onwards.\r\n- Fabric command registration was moved earlier to avoid confusion when /plan reload doesn't exist after failed enable.\r\n\r\n## Placeholders\r\n\r\n- Fixed off-by-one error in %plan_top_...% placeholders where 0 would be top 1 and 9 top 10. Now it matches documentation where 1 -> 1, and 10 -> 10. If you were compensating for this bug you may need to change %plan_top_..._0% to %plan_top_..._1% etc\r\n\r\n## Export\r\n\r\n- Fixed react files getting exported even when all export is disabled.\r\n\r\n## Extensions\r\n\r\n- Vankka updated DiscordSRV Extension to fix an incompatibility with new DiscordSRV version\r\n\r\n## Locale\r\n\r\n- jhqwqmc updated Chinese locale (CN)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.6-dev-build-2731.jar",
+          "primary": true,
+          "size": 16265156,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2731/Plan-5.6-dev-build-2731.jar"
+        },
+        {
+          "filename": "PlanFabric-5.6-dev-build-2731.jar",
+          "primary": true,
+          "size": 16398789,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2731/PlanFabric-5.6-dev-build-2731.jar"
+        }
+      ],
+      "name": "5.6 DEV build 2731",
+      "prerelease": true,
+      "published_at": 1706342862,
+      "version": "5.6.2731"
+    },
+    {
+      "changelog": "# 5.6 DEV build 2703\r\n\r\nThis is dev release contains changes from last 3 months, it is mainly a maintenance update.\r\n\r\nSpecial thanks to **jhqwqmc, Vankka and Beniro** for contributions to this update!\r\n\r\n# Change log\r\n\r\n## Website\r\n\r\n- The react bundle is now built using Vite. It utilizes modules available in modern browsers. This sped up build times by 7 minutes and should also improve page loading speed.\r\n- Fixed some issues where reverse proxied Plan website loaded a blank page\r\n\r\n## Fabric 1.20.4\r\n\r\n- Binero implemented Fabric 1.20.4 support, 1.20.3 is not supported this build onwards.\r\n\r\n## Extensions\r\n\r\n- Vankka updated DiscordSRV Extension to fix an incompatibility with new DiscordSRV version\r\n\r\n## Locale\r\n\r\n- jhqwqmc updated Chinese locale (CN)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.6-dev-build-2703.jar",
+          "primary": true,
+          "size": 16264139,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2703/Plan-5.6-dev-build-2703.jar"
+        },
+        {
+          "filename": "PlanFabric-5.6-dev-build-2703.jar",
+          "primary": true,
+          "size": 16397700,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2703/PlanFabric-5.6-dev-build-2703.jar"
+        }
+      ],
+      "name": "5.6 DEV build 2703",
+      "prerelease": true,
+      "published_at": 1704622225,
+      "version": "5.6.2703"
+    },
+    {
+      "changelog": "# 5.6 build 2614\r\n\r\nHello! This version contains a hefty set of new features, bugfixes and usability improvements. Highlighted features include Web User Access-Control, Plugin Version History and 'Click to see Who'-features. There are a lot more new things so check out the change log.\r\n\r\n**Updating to this version modifies database schema**\r\nThere is a guide for updating to this version here: https://github.com/plan-player-analytics/Plan/wiki/Migration-guide-from-Version-5.5-to-5.6\r\n\r\nSpecial thanks to **yu_solt**, **ToxiWoxi**, **Kopo**, **xlanyleeet**, **Jumala9163**, **ringoXD**, **Dreeam-qwq** & **jhqwqmc** for their contributions to this update!\r\n\r\nIf you would like to support the project financially, please consider [sponsoring the main developer](https://github.com/sponsors/AuroraLS3).\r\n\r\n# Change Log\r\n\r\n## Web user access control (HTTPS required)\r\n\r\n![image](https://github.com/plan-player-analytics/Plan/assets/24460436/79fe47ef-3b80-446f-b2c1-4c5633e030f6)\r\n\r\nA more granular user access control has been requested for quite a long time. Now you can limit users to only see smaller parts of the website. This feature is documented in https://github.com/plan-player-analytics/Plan/wiki/Web-permissions though you will find some help embedded on the /manage page.\r\n\r\nMigrating from old version with permission_level adds groups 'legacy_level_0' etc with permissions that match previous behavior, users are linked to them automatically.\r\n\r\nIn order to edit web permissions on the website you need to set at least one webuser as admin with _/plan setgroup {username} admin_.\r\n\r\n**In order to keep /plan register working**, give your players 'plan.webgroup.{group_name}'-permission in your permission plugin (such as LuckPerms) for the group you want them to have. If player has none of these permissions they can't register at all.\r\n\r\n## Plugin Version History (HTTPS required)\r\n\r\n![image](https://github.com/plan-player-analytics/Plan/assets/24460436/d134147d-504d-415d-ac56-b71b68e736bc)\r\n\r\nPlan now gathers plugin versions on server start. Any modifications are timestamped. This can be useful when tracking performance impact of plugin updates. This data was possible to gather from all server platforms.\r\n\r\n**Seeing this data on the website [requires HTTPS to be set up](https://github.com/plan-player-analytics/Plan/wiki/SSL-Certificate-%28HTTPS%29-Set-Up) because some server admins may consider this data sensitive.** Without HTTPS the data endpoint is disabled and the data is only visible in the database. After HTTPS is set up admins can control who sees this data through web permissions.\r\n\r\nOn network page it is possible to check plugin versions of any server on the network. This can help you keep up to date with your plugins.\r\n\r\n## Click to see Who\r\n\r\n![click-to-see-demo](https://github.com/plan-player-analytics/Plan/assets/24460436/14504d64-5693-4f28-9972-3640fc218ca7)\r\n\r\nYou can now click & drag on Server Calendar (and the new Network Calendar) to see who was playing on specific days the calendar data is about. On Geolocations Map you can click on a Country to see who has joined from that country.\r\n\r\nThese features utilize the existing Query features so it was relatively simple to implement. If you have more ideas where you would like to see who data is about, you can make a suggestions on Github\r\n\r\n## Website\r\n\r\n### New features\r\n\r\n- Player tables now show Average, Best and Worst Ping for all players\r\n- You can now choose visible columns on any table (such as Players tables and plugin tables.)\r\n- Network Calendar was added to Network Overview, similar to Server Calendar\r\n- Navigation button can now go to Plan Error Logs and Swagger Docs\r\n- The bigger features mentioned above\r\n\r\n### Improvements\r\n\r\n- Network Performance now disables TPS, Entities and Chunks buttons if there's only Proxy servers in the selected dataset.\r\n- Player page Plugins navigation now only shows servers that the player has data from.\r\n- Fixed some table text color issues, especially in Night Mode\r\n- Fixed issues with reverse-proxy https falling back to relative addresses in frontend when proxy-mode https was not in use. (Plan would assume address is http:// but browser would have https://, leading to different start for the address, which was interpret as incorrect address.)\r\n\r\n### Removal of old frontend files\r\n\r\nWith the React rewrite being complete an in use by most users, this version deletes the old frontend files from the jar. This reduces jar size.\r\n\r\nIf you still haven't migrated your html customizations this version does not load them anymore. Migration guide: https://github.com/plan-player-analytics/Plan/wiki/Html-Customization--migration-guide-to-React\r\n\r\n- Removed Plugin.Use_Legacy_Frontend setting.\r\n- Removed any code related to this setting, old behavior and the old web files.\r\n- Moved most html rendering from backend to the frontend.\r\n- DataTables did not support rendering React inside table headers so the library was removed and all functionality used by Plan rewritten in React. The visual differences should be minimal.\r\n\r\n## PageExtension API changes\r\n\r\n- You can now use web permissions with WebUser\r\n- Registering custom web permissions is possible either by overriding Resolver#usedWebPermissions, or through ResolverService#registerPermissions. There are two methods in ResolverService, one which grants existing groups the new permissions based on existing permission.\r\n\r\n## Webserver\r\n\r\n- Address of any webserver that is enabled can now be used by commands (Useful for users with 2 game servers without proxy)\r\n- Disabled X-Forwarded-For reverse-proxy warning temporarily since it was giving false positive warnings often.\r\n- Fixed out of date information appearing on the /player page due to HTTP caching\r\n\r\n### Endpoint changes\r\n\r\n- Added /v1/preferences and /v1/storePreferences endpoints that has some default formatting values coming from config.yml and user specific preferences if they have them set. Preferences UI is not yet implemented so for now this only returns the defaults.\r\n- Deprecated /v1/players endpoint, replaced with /v1/playersTable which gives data in raw format instead of formatted.\r\n- Added Group Management related endpoints /v1/webGroups, /v1/groupPermissions, /v1/permissions, /v1/saveGroupPermissions, /v1/deleteGroup (Only enabled with https)\r\n- Added Plugin history endpoint /v1/pluginHistory (Only enabled with https)\r\n\r\n## Database\r\n\r\n- Fixed join address truncation error on backup\r\n- Added tables plan_web_group, plan_web_group_to_permission, plan_web_permission, plan_web_user_preferences & plan_plugin_versions\r\n- plan_security column permission_level was removed and a foreign key column group_id added\r\n- Inactive player cleaning is now disabled on Game servers if Proxy server is in the database to avoid confusing situations where limit configured on Proxy server doesn't apply.\r\n\r\n## Spigot\r\n\r\n- Possibly fixed Ping not being gathered on Spigot 1.20+ servers\r\n- Dreeam-qwq fixed an error that occurred when Join Address didn't contain a port number.\r\n\r\n## Fabric\r\n\r\n- Fabric 1.20.2 support was implemented by Kopo. Older versions of fabric are no longer supported.\r\n- Plan now uses semantic version for fabric metadata\r\n\r\n## Sponge\r\n\r\n- ToxiWoxi fixed SpongeForge failing to load Plan due to unspecified LuckPerms dependency version in Plan\r\n\r\n## Locale\r\n\r\nSome functionality was added to make life of translators easier.\r\n\r\n- Added setting which lists untranslated keys Plugin.Logging.Log_untranslated_locale_keys (default false). This lists anything that has default value so it may give some false positives.\r\n- Custom locale.yml file is now reloaded when it is modified.\r\n- Ukranian Locale (UK) added by xlanyleeet\r\n- Japanese Locale (JA) updated by yu_solt and Jumala9163\r\n- Simplified Chinese Locale (CN) updated by jhqwqmc\r\n- Translation of some data was moved to frontend so that it changes when you change the language.\r\n\r\n## Placeholders\r\n\r\n- Fixed off by one mistake in %plan_top_...% placeholders where 1 would give the 2nd highest and 10 nothing.\r\n- Added %plan_player_geolocation% placeholder\r\n\r\n## Extensions\r\n\r\n- Fixed BuyCraft not sorting dates correctly\r\n- Fixed an issue where rapid fire Vulcan AntiCheat violations would cause database exceptions.\r\n- Updated Lands API to newer version\r\n- Possibly fixed an issue where Litebans data was not being updated\r\n- Fixed issue where ViaVersion would show no data on network page",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.6-build-2614.jar",
+          "primary": true,
+          "size": 16202312,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2614/Plan-5.6-build-2614.jar"
+        },
+        {
+          "filename": "PlanFabric-5.6-build-2614.jar",
+          "primary": true,
+          "size": 16337921,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2614/PlanFabric-5.6-build-2614.jar"
+        }
+      ],
+      "name": "5.6 build 2614",
+      "prerelease": false,
+      "published_at": 1697879658,
+      "version": "5.6.2614"
+    }
+  ]
 }

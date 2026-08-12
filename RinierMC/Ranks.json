@@ -34,5 +34,22 @@
     "pnx"
   ],
   "updated_at": 1783974897,
-  "versions": []
+  "versions": [
+    {
+      "changelog": "Added Tag Support",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Ranks-1.0.0.jar",
+          "primary": true,
+          "size": 18976,
+          "url": "https://github.com/RinierMC/Ranks/releases/download/Release/Ranks-1.0.0.jar"
+        }
+      ],
+      "name": "",
+      "prerelease": false,
+      "published_at": 1783974787,
+      "version": "Release"
+    }
+  ]
 }

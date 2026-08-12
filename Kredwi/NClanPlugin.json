@@ -27,17 +27,21 @@
     "name": "All Rights Reserved",
     "url": ""
   },
-  "links": null,
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/Kredwi/NClanPlugin",
+    "wiki": ""
+  },
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "NClanPlugin",
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/Kredwi/NClanPlugin",
   "stars": 0,
-  "summary": "The best plugin for clan in Nukkit !",
+  "summary": "The best plugin for Clans",
   "targets": [
     "nkx"
   ],
-  "updated_at": 1786449475,
+  "updated_at": 1786536825,
   "versions": []
 }

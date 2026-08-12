@@ -34,5 +34,50 @@
     "nkmot"
   ],
   "updated_at": 1735382536,
-  "versions": []
+  "versions": [
+    {
+      "changelog": "The artifacts are kept up to date with the branch release.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "JKit-1.0.1.jar",
+          "primary": true,
+          "size": 42702,
+          "url": "https://github.com/JossArchived/JKit/releases/download/1.0.1/JKit-1.0.1.jar"
+        },
+        {
+          "filename": "original-JKit-1.0.1.jar",
+          "primary": true,
+          "size": 14675,
+          "url": "https://github.com/JossArchived/JKit/releases/download/1.0.1/original-JKit-1.0.1.jar"
+        }
+      ],
+      "name": "Release v1.0.1",
+      "prerelease": false,
+      "published_at": 1679322230,
+      "version": "1.0.1"
+    },
+    {
+      "changelog": "The artifacts are kept up to date with the branch release.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "JKit-1.0.0.jar",
+          "primary": true,
+          "size": 42456,
+          "url": "https://github.com/JossArchived/JKit/releases/download/1.0.0/JKit-1.0.0.jar"
+        },
+        {
+          "filename": "original-JKit-1.0.0.jar",
+          "primary": true,
+          "size": 14429,
+          "url": "https://github.com/JossArchived/JKit/releases/download/1.0.0/original-JKit-1.0.0.jar"
+        }
+      ],
+      "name": "Release v1.0.0",
+      "prerelease": false,
+      "published_at": 1678648330,
+      "version": "1.0.0"
+    }
+  ]
 }

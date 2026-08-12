@@ -2,9 +2,9 @@
   "api_version": "1.0.14",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/48203962?v=4",
-      "name": "Mcayear",
-      "url": "https://github.com/Mcayear"
+      "avatar_url": "",
+      "name": "mcayear",
+      "url": ""
     }
   ],
   "categories": [
@@ -42,7 +42,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1773197401,
+  "updated_at": 1773210926,
   "versions": [
     {
       "changelog": "Initial release of OfflineLogin plugin.",

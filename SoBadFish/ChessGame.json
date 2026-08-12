@@ -1,12 +1,6 @@
 {
   "api_version": "1.0.11",
-  "authors": [
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/83235042?v=4",
-      "name": "SoBadFish",
-      "url": "https://github.com/SoBadFish"
-    }
-  ],
+  "authors": [],
   "categories": [],
   "created_at": 1750058421,
   "dependencies": [],
@@ -58,6 +52,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1780903367,
+  "updated_at": 1780903371,
   "versions": []
 }

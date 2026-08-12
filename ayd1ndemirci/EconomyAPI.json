@@ -30,14 +30,14 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/ayd1ndemirci/EconomyAPI",
-  "stars": 5,
+  "stars": 4,
   "summary": "EconomyAPI plugin for PNX servers",
   "targets": [
     "nkx",
     "nkmot",
     "pnx"
   ],
-  "updated_at": 1749289727,
+  "updated_at": 1786484203,
   "versions": [
     {
       "changelog": "",

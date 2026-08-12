@@ -31,13 +31,13 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/Buddelbubi/WorldManagerPNX",
-  "stars": 2,
+  "stars": 1,
   "summary": "WorldManager is the most powerful world management system.",
   "targets": [
     "nkx",
     "pnx"
   ],
-  "updated_at": 1786102648,
+  "updated_at": 1786484200,
   "versions": [
     {
       "changelog": "Automated release for v1.2.10",

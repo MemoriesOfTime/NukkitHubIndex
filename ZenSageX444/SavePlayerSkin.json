@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/153876401?v=4",
-      "name": "ZenSageX444",
-      "url": "https://github.com/ZenSageX444"
+      "avatar_url": "",
+      "name": "ZenSageX444, SimpleZx",
+      "url": ""
     }
   ],
   "categories": [
@@ -36,7 +36,7 @@
     "nkmot",
     "pnx"
   ],
-  "updated_at": 1707484886,
+  "updated_at": 1707654863,
   "versions": [
     {
       "changelog": "1.0 version",
