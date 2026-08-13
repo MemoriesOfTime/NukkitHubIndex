@@ -48,6 +48,22 @@
         {
           "filename": "RsNPC-2.4.5.jar",
           "primary": true,
+          "size": 168955,
+          "url": "https://github.com/Lifeblock-Network/RsNPC/releases/download/v2.4.5-dev3/RsNPC-2.4.5.jar"
+        }
+      ],
+      "name": "v2.4.5-dev3",
+      "prerelease": false,
+      "published_at": 1786025375,
+      "version": "v2.4.5-dev3"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "RsNPC-2.4.5.jar",
+          "primary": true,
           "size": 164436,
           "url": "https://github.com/Lifeblock-Network/RsNPC/releases/download/v2.4.5-dev2/RsNPC-2.4.5.jar"
         }

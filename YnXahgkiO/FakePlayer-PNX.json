@@ -68,6 +68,22 @@
       "version": "v1.0.1"
     },
     {
+      "changelog": "Compatible with PowerNukkitX 3.0.0 (b/migration)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FakePlayerPNX-1.0.0.jar",
+          "primary": true,
+          "size": 313934,
+          "url": "https://github.com/YnXahgkiO/FakePlayer-PNX/releases/download/pnx-migration/FakePlayerPNX-1.0.0.jar"
+        }
+      ],
+      "name": "pnx-migration",
+      "prerelease": false,
+      "published_at": 1782038814,
+      "version": "pnx-migration"
+    },
+    {
       "changelog": "Initial release.",
       "downloads": 0,
       "files": [
