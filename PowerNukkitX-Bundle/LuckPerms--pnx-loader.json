@@ -37,13 +37,13 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/LuckPerms",
-  "stars": 1,
+  "stars": 2,
   "summary": "A permissions plugin",
   "targets": [
     "nkx",
     "pnx"
   ],
-  "updated_at": 1785108524,
+  "updated_at": 1786664622,
   "versions": [
     {
       "changelog": "Automated release for v5.4.0",

@@ -27,13 +27,13 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/PNX-Waterdog",
-  "stars": 1,
+  "stars": 2,
   "summary": "WaterdogPE proxy support for PowerNukkitX",
   "targets": [
     "nkx",
     "pnx"
   ],
-  "updated_at": 1785958571,
+  "updated_at": 1786664620,
   "versions": [
     {
       "changelog": "Automated release for v1.0.0",

@@ -35,8 +35,24 @@
     "nkx",
     "pnx"
   ],
-  "updated_at": 1786099809,
+  "updated_at": 1786701777,
   "versions": [
+    {
+      "changelog": "**Full Changelog**: https://github.com/PowerNukkitX-Bundle/AnyVersion/compare/v2.8.5...v2.8.6",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AnyVersion.jar",
+          "primary": true,
+          "size": 468623,
+          "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/v2.8.6/AnyVersion.jar"
+        }
+      ],
+      "name": "v2.8.6",
+      "prerelease": false,
+      "published_at": 1786701828,
+      "version": "v2.8.6"
+    },
     {
       "changelog": "**Full Changelog**: https://github.com/PowerNukkitX-Bundle/AnyVersion/compare/v2.8.4...v2.8.5",
       "downloads": 0,
