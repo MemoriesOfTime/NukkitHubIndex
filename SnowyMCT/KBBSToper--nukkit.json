@@ -27,13 +27,13 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/SnowyMCT/KBBSToper",
-  "stars": 9,
+  "stars": 10,
   "summary": "苦力怕论坛顶帖奖励插件（Nukkit）",
   "targets": [
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1785662986,
+  "updated_at": 1786807052,
   "versions": [
     {
       "changelog": "## What's Changed\r\n* 重构为多模块并支持 Nukkit, 同步修复 8 处问题 by @mincHR549 in https://github.com/SnowyMCT/KBBSToper/pull/7\r\n\r\n\r\n**Full Changelog**: https://github.com/SnowyMCT/KBBSToper/compare/3.7.4...3.7.4-Nukkit\r\n\r\nBukkit可选择性更新\r\nNukkit目前测试一切正常，如有问题请issue汇报或QQ找我！(663666283)",
