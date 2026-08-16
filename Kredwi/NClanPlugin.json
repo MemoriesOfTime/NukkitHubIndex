@@ -14,6 +14,11 @@
       "dependency_type": "optional",
       "plugin_id": "EconomyAPI",
       "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "PlaceholderAPI",
+      "version_range": ""
     }
   ],
   "description": "",
@@ -42,6 +47,29 @@
   "targets": [
     "nkx"
   ],
-  "updated_at": 1786536825,
-  "versions": []
+  "updated_at": 1786853359,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "NClanPlugin-1.1-SNAPSHOT.jar",
+          "primary": true,
+          "size": 152596,
+          "url": "https://github.com/Kredwi/NClanPlugin/releases/download/snapshot/NClanPlugin-1.1-SNAPSHOT.jar"
+        },
+        {
+          "filename": "original-NClanPlugin-1.1-SNAPSHOT.jar",
+          "primary": true,
+          "size": 150260,
+          "url": "https://github.com/Kredwi/NClanPlugin/releases/download/snapshot/original-NClanPlugin-1.1-SNAPSHOT.jar"
+        }
+      ],
+      "name": "Dev Build",
+      "prerelease": true,
+      "published_at": 1786853373,
+      "version": "snapshot"
+    }
+  ]
 }

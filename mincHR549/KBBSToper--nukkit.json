@@ -30,8 +30,9 @@
   "stars": 1,
   "summary": "苦力怕论坛顶帖奖励插件（Nukkit）",
   "targets": [
-    "nkx"
+    "nkx",
+    "nkmot"
   ],
-  "updated_at": 1785659014,
+  "updated_at": 1786887618,
   "versions": []
 }
