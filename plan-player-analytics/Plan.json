@@ -221,13 +221,13 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/plan-player-analytics/Plan",
-  "stars": 1027,
+  "stars": 1029,
   "summary": "Player Analytics plugin for Minecraft Server platforms - View player activity of your server with ease. :calendar:",
   "targets": [
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1786939679,
+  "updated_at": 1787055967,
   "versions": [
     {
       "changelog": "# 5.8 build 3605\r\n\r\nSpecial thanks to **Zoriot**, **Minecraft0122** and **OutHimic** for contributions to this update\r\n\r\n# Change log\r\n\r\n## Bugfixes\r\n\r\n- Fixed X-Forwarded-For header being read wrong in multi-jump reverse-proxies\r\n- Fixed SQL syntax error related to database clean task cleaning plugin data\r\n- Fixed Ping graph not displaying in Server Performance graph\r\n- Possibly fixed 'Today' and 'Yesterday' showing wrong in frontend\r\n\r\n## Locale\r\n\r\n- OutHimic and Minecraft0122 updated CN and ZH_TW locales\r\n\r\n## Other\r\n\r\n- Zoriot fixed curseforge release pipeline",
