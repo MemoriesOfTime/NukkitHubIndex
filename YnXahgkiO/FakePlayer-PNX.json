@@ -27,13 +27,13 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/YnXahgkiO/FakePlayer-PNX",
-  "stars": 1,
+  "stars": 2,
   "summary": "Fake player (bot) library for PowerNukkitX",
   "targets": [
     "nkx",
     "pnx"
   ],
-  "updated_at": 1785501133,
+  "updated_at": 1787144467,
   "versions": [
     {
       "changelog": "Fixe playerlist & skins",
