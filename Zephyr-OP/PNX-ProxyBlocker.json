@@ -27,13 +27,13 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/Zephyr-OP/PNX-ProxyBlocker",
-  "stars": 1,
+  "stars": 0,
   "summary": "Blocks Proxies",
   "targets": [
     "nkx",
     "pnx"
   ],
-  "updated_at": 1785720588,
+  "updated_at": 1787349221,
   "versions": [
     {
       "changelog": "Automated release for v1.0.0",
