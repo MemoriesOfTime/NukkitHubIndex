@@ -40,6 +40,22 @@
   "updated_at": 1785718924,
   "versions": [
     {
+      "changelog": "# PyNK v2.1.0\r\n\r\nAtualização de correções. Sem mudanças de API visíveis pros scripts — tudo\r\nque já funcionava continua funcionando do mesmo jeito, só que agora funciona\r\nde verdade.\r\n\r\n## Corrigido\r\n\r\n- **Permissões de script não tinham efeito real.** `SCRIPT_PERMISSIONS` e\r\n  `api.register_permission(...)` só guardavam o nome numa tabela interna do\r\n  PyNK, sem nunca registrar no `PluginManager` do Nukkit. Como o Nukkit trata\r\n  qualquer permissão desconhecida como \"somente OP\", declarar\r\n  `defaultValue=true` (ex: a permissão automática `<script>.use`, pensada pra\r\n  liberar pra todo jogador) não tinha efeito nenhum na prática. Agora cada\r\n  permissão vira um `Permission` real, com remoção automática quando o\r\n  último script que a usa é descarregado.\r\n\r\n- **`get_config_bool` sempre voltava o valor padrão em configs `.properties`.**\r\n  Esse formato entrega tudo como `String`, e o parser só aceitava `Boolean`\r\n  puro. Agora reconhece `\"true\"/\"false\"/\"yes\"/\"no\"/\"1\"/\"0\"`.\r\n\r\n- **Comandos duplicados sobrescreviam um ao outro sem aviso.** Dois scripts\r\n  registrando o mesmo nome de comando faziam o segundo tomar o lugar do\r\n  primeiro silenciosamente — `add_sub_command`/`set_tab_completer` do\r\n  primeiro script passavam a mexer no comando errado. Agora\r\n  `register_command` recusa o registro duplicado e loga um aviso claro.\r\n\r\n- **`api.reload_module(...)` não propagava pra quem já tinha dado\r\n  `require_module`.** Scripts que guardaram a referência do módulo numa\r\n  variável antes de um reload ficavam presos na versão antiga. Agora\r\n  `require_module` devolve um proxy que sempre resolve pro namespace mais\r\n  recente do módulo — reload passa a valer pra todo mundo que já importou.\r\n\r\n- **`SCRIPT_DEPENDENCIES` só funcionava contra `scripts/modules/`.** Se a\r\n  dependência fosse outro script (não um módulo), o PyNK até validava como\r\n  \"satisfeita\", mas nunca carregava nem injetava nada. Agora resolve nessa\r\n  ordem: módulo primeiro, depois outro script (carregando sob demanda se\r\n  ainda não estiver ativo), expondo os valores que ele exportou via\r\n  `api.export(...)`. Ciclos de dependência (A depende de B que depende de A)\r\n  são detectados e ignorados com aviso, em vez de travar o load.\r\n\r\n## Internos\r\n\r\n- `TaskRegistry` passou a usar `CopyOnWriteArrayList`, alinhado com\r\n  `EventBridge` e `PyCommand`, evitando `ConcurrentModificationException` se\r\n  uma task for cancelada durante o agendamento de outra.\r\n- `/pynk list` não faz mais busca O(n²) por string pra recompor o status de\r\n  cada script.\r\n\r\n## Compatibilidade\r\n\r\nNenhuma mudança quebra scripts existentes. `SCRIPT_PERMISSIONS`,\r\n`register_command`, `require_module`, `reload_module` e `SCRIPT_DEPENDENCIES`\r\ncontinuam com a mesma assinatura — só o comportamento por baixo dos panos\r\nficou correto.\r\n\r\n## Recomendado antes de subir pra produção\r\n\r\n- Rodar `mvn clean package` no seu ambiente (a build não foi validada aqui\r\n  contra o jar real do PowerNukkitX/Jython).\r\n- Testar `SCRIPT_PERMISSIONS` com um jogador não-OP pra confirmar que o\r\n  default agora libera de verdade.\r\n- Testar um `reload_module` num módulo usado por dois scripts diferentes.\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "PyNK.jar",
+          "primary": true,
+          "size": 47963316,
+          "url": "https://github.com/todiumm/PyNK/releases/download/2.1.0/PyNK.jar"
+        }
+      ],
+      "name": "Update v2.1.0 - PyNK",
+      "prerelease": false,
+      "published_at": 1787934500,
+      "version": "2.1.0"
+    },
+    {
       "changelog": "",
       "downloads": 0,
       "files": [
