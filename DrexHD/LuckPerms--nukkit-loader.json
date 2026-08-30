@@ -36,8 +36,24 @@
   "targets": [
     "nkx"
   ],
-  "updated_at": 1787831294,
+  "updated_at": 1788110571,
   "versions": [
+    {
+      "changelog": "Initial release",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "LuckPerms-Fabric-5.5.5.jar",
+          "primary": true,
+          "size": 1635306,
+          "url": "https://github.com/DrexHD/LuckPerms/releases/download/5.5.5/LuckPerms-Fabric-5.5.5.jar"
+        }
+      ],
+      "name": "LuckPerms-Fabric 5.5.5",
+      "prerelease": false,
+      "published_at": 1788110850,
+      "version": "5.5.5"
+    },
     {
       "changelog": "Initial release",
       "downloads": 0,
