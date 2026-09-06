@@ -30,12 +30,12 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/MemoriesOfTime/EasySQLX",
-  "stars": 1,
+  "stars": 2,
   "summary": "",
   "targets": [
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1780834148,
+  "updated_at": 1788669692,
   "versions": []
 }

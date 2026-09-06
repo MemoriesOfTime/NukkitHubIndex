@@ -27,12 +27,12 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/kxle0801/InvMenuPNX",
-  "stars": 0,
+  "stars": 1,
   "summary": "Fake inventory menu library for PowerNukkitX",
   "targets": [
     "nkx",
     "pnx"
   ],
-  "updated_at": 1784171077,
+  "updated_at": 1788677992,
   "versions": []
 }

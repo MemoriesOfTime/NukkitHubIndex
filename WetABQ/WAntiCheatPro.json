@@ -35,12 +35,12 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/WetABQ/WAntiCheatPro",
-  "stars": 20,
+  "stars": 21,
   "summary": "An outdated excellent anticheat for NukkitX / Minecraft Bedrock Edition",
   "targets": [
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1771374531,
+  "updated_at": 1788677290,
   "versions": []
 }

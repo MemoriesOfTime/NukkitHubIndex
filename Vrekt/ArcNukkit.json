@@ -30,13 +30,13 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/Vrekt/ArcNukkit",
-  "stars": 18,
+  "stars": 19,
   "summary": "An anticheat for Nukkit.",
   "targets": [
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1756389953,
+  "updated_at": 1788677309,
   "versions": [
     {
       "changelog": "Fixed a few small issues and bumped version.\r\n\r\nNow compatible with 1.19",

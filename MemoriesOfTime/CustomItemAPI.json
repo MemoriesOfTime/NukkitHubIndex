@@ -27,12 +27,12 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/MemoriesOfTime/CustomItemAPI",
-  "stars": 3,
+  "stars": 4,
   "summary": "",
   "targets": [
     "nkx"
   ],
-  "updated_at": 1720526288,
+  "updated_at": 1788669772,
   "versions": [
     {
       "changelog": "Now supports 1.16.100-1.19.50",

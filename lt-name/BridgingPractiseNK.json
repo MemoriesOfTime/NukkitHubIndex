@@ -35,12 +35,12 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/lt-name/BridgingPractiseNK",
-  "stars": 0,
+  "stars": 1,
   "summary": "A bridging practise plugin helps you practise your bridging ability.",
   "targets": [
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1767403508,
+  "updated_at": 1788667489,
   "versions": []
 }

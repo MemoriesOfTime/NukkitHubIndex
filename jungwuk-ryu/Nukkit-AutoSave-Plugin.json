@@ -31,13 +31,13 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/jungwuk-ryu/Nukkit-AutoSave-Plugin",
-  "stars": 0,
+  "stars": 1,
   "summary": "A Nukkit plugin which will save all plugins on your server without restarting server.",
   "targets": [
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1613769044,
+  "updated_at": 1788677969,
   "versions": [
     {
       "changelog": "",
