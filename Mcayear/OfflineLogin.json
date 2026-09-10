@@ -36,13 +36,13 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/Mcayear/OfflineLogin",
-  "stars": 0,
+  "stars": 1,
   "summary": "离线登录",
   "targets": [
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1773210926,
+  "updated_at": 1789057311,
   "versions": [
     {
       "changelog": "Initial release of OfflineLogin plugin.",
