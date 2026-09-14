@@ -221,13 +221,13 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/plan-player-analytics/Plan",
-  "stars": 1030,
+  "stars": 1029,
   "summary": "Player Analytics plugin for Minecraft Server platforms - View player activity of your server with ease. :calendar:",
   "targets": [
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1789195172,
+  "updated_at": 1789335053,
   "versions": [
     {
       "changelog": "# 5.8 build 3638\r\n\r\nThis update brings some improvements and bugfixes. **Next update 5.9 will require Java 17 or newer** so this is released before that to get those unable to update as many fixes as possible. bStats is showing Java versions <17 at 0.6% or 35/5300 so consider updating your Java version if you're able.\r\n\r\nSpecial thanks to **Zoriot** and **Minecraft0122** for contributions to this update.\r\n\r\n# Change log\r\n\r\n## Database\r\n\r\n- Possibly fixed deadlock related to RemoveDuplicateUserInfoTransaction\r\n\r\n## Webserver\r\n\r\n- Fixed minor vulnerability where path traversal bypass allowed anyone to read .json files on the system with a tab \\t or newline \\n character in the file path. This is minor because filesystems often block using those characters in filenames, they are not common with .json files, and attacker would need to know the relative path to the file.\r\n\r\n## Extensions\r\n\r\n- Extension metadata is now cached in memory to avoid redundant database updates. Thanks to Minecraft0122 for work on this.\r\n- Fixed LuckPerms related exception after Plan was reloaded\r\n\r\n## Other\r\n\r\n- Zoriot added fabric-permissions-api as an optional dependency to fabric publish ",
