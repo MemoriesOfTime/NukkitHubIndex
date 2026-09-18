@@ -40,8 +40,24 @@
     "nkx",
     "pnx"
   ],
-  "updated_at": 1788706748,
+  "updated_at": 1789681925,
   "versions": [
+    {
+      "changelog": "**Full Changelog**: https://github.com/NaySurGithub/Amethyst/compare/1.1.8...1.1.9",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Amethyst-1.1.9.jar",
+          "primary": true,
+          "size": 302621,
+          "url": "https://github.com/NaySurGithub/Amethyst/releases/download/1.1.9/Amethyst-1.1.9.jar"
+        }
+      ],
+      "name": "Amethyst 1.1.9",
+      "prerelease": false,
+      "published_at": 1789678541,
+      "version": "1.1.9"
+    },
     {
       "changelog": "**Full Changelog**: https://github.com/NaySurGithub/Amethyst/compare/1.1.7...1.1.8",
       "downloads": 0,
