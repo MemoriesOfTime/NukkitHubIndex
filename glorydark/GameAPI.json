@@ -27,7 +27,7 @@
     }
   ],
   "description": "# GameAPI",
-  "detection_confidence": "medium",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
@@ -49,6 +49,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1788650744,
+  "updated_at": 1789828093,
   "versions": []
 }

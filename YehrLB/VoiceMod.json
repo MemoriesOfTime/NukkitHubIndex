@@ -27,11 +27,11 @@
   "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/YehrLB/VoiceMod",
-  "stars": 0,
+  "stars": 1,
   "summary": "Voice mod for Bedrock (Nukkit MOT)",
   "targets": [
     "nkmot"
   ],
-  "updated_at": 1786194770,
+  "updated_at": 1789821361,
   "versions": []
 }
