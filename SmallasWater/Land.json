@@ -33,13 +33,13 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/SmallasWater/Land",
-  "stars": 8,
+  "stars": 9,
   "summary": "领地系统",
   "targets": [
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1771229168,
+  "updated_at": 1790208412,
   "versions": [
     {
       "changelog": "修复自动领地范围显示报错问题",
