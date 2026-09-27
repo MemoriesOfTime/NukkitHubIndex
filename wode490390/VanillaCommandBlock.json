@@ -1,0 +1,58 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+      "name": "wode490390",
+      "url": "https://github.com/wode490390"
+    }
+  ],
+  "categories": [],
+  "created_at": 1585661024,
+  "dependencies": [],
+  "description": "# Vanilla Command Block\n[![Build](https://img.shields.io/circleci/build/github/wode490390/VanillaCommandBlock/master)](https://circleci.com/gh/wode490390/VanillaCommandBlock/tree/master)\n[![Release](https://img.shields.io/github/v/release/wode490390/VanillaCommandBlock)](https://github.com/wode490390/VanillaCommandBlock/releases)\n[![Release date](https://img.shields.io/github/release-date/wode490390/VanillaCommandBlock)](https://github.com/wode490390/VanillaCommandBlock/releases)\n<!--[![MCBBS](https://img.shields.io/badge/-mcbbs-inactive)](https://www.mcbbs.net/thread-1022583-1-1.html \"命令方块\")\n[![Servers](https://img.shields.io/bstats/servers/6923)](https://bstats.org/plugin/bukkit/VanillaCommandBlock/6923)\n[![Players](https://img.shields.io/bstats/players/6923)](https://bstats.org/plugin/bukkit/VanillaCommandBlock/6923)-->\n\nVCB is a plugin that implements command blocks for [Nukkit](https://github.com/NukkitX/Nukkit) server.\n\n![](https://i.loli.net/2020/04/18/W7dRXcoB5pSeNbJ.png)\n\nIf you found any bugs or have any suggestions, please open an issue on [GitHub Issues](https://github.com/wode490390/VanillaCommandBlock/issues).\n\nIf you love this plugin, please star it on [GitHub](https://github.com/wode490390/VanillaCommandBlock).\n\n## Features\n- [X] Command Block\n- [X] Chain Command Block\n- [X] Repeating Command Block\n- [ ] Minecart with Command Block\n\n## Download\n- [Releases](https://github.com/wode490390/VanillaCommandBlock/releases)\n- [Snapshots](https://circleci.com/gh/wode490390/VanillaCommandBlock)\n\n## Compiling\n1. Install [Maven](https://maven.apache.org/).\n2. Run `mvn clean package`. The compiled JAR can be found in the `target/` directory.\n\n## Metrics Collection\n\nThis plugin uses [bStats](https://github.com/wode490390/bStats-Nukkit) - you can opt out using the global bStats config, see the [official website](https://bstats.org/getting-started) for more details.\n\n<!--[![Metrics](https://bstats.org/signatures/bukkit/VanillaCommandBlock.svg)](https://bstats.org/plugin/bukkit/VanillaCommandBlock/6923)-->\n\n###### If I have any grammar and terms error, please correct my wrong :)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+  "id": "wode490390/VanillaCommandBlock",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "http://wode490390.cn/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "VanillaCommandBlock",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/wode490390/VanillaCommandBlock",
+  "stars": 13,
+  "summary": "VanillaCommandBlock plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1587219015,
+  "versions": [
+    {
+      "changelog": "Initial release",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeVanillaCommandBlock-1.0.0.jar",
+          "primary": true,
+          "size": 32964,
+          "url": "https://github.com/wode490390/VanillaCommandBlock/releases/download/1.0.0/wodeVanillaCommandBlock-1.0.0.jar"
+        }
+      ],
+      "name": "VanillaCommandBlock-v1.0.0",
+      "prerelease": false,
+      "published_at": 1587219015,
+      "version": "1.0.0"
+    }
+  ]
+}

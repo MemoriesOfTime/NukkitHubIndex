@@ -1,0 +1,70 @@
+{
+  "api_version": "1.0.14",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/48203962?v=4",
+      "name": "Mcayear",
+      "url": "https://github.com/Mcayear"
+    }
+  ],
+  "categories": [],
+  "created_at": 1683122322,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "LLSELib",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "required",
+      "plugin_id": "Tips",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "required",
+      "plugin_id": "EconomyAPI",
+      "version_range": ""
+    }
+  ],
+  "description": "# AyearTipsAPI\npnx插件\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/48203962?v=4",
+  "id": "Mcayear/AyearTipsAPI",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "AyearTipsApi",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/Mcayear/AyearTipsAPI",
+  "stars": 0,
+  "summary": "用于注册一些玩家经验相关的TipsAPI",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1683169800,
+  "versions": [
+    {
+      "changelog": "命令` /ntitle`\r\nTips变量 ：\r\n- {NTitle}\r\n- {player_exp_level}\r\n- {player_exp_max}\r\n- {player_exp}",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AyearTipsApi-1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 24653,
+          "url": "https://github.com/Mcayear/AyearTipsAPI/releases/download/1.0.0/AyearTipsApi-1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "v1.0.0",
+      "prerelease": false,
+      "published_at": 1683122577,
+      "version": "1.0.0"
+    }
+  ]
+}

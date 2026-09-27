@@ -2,9 +2,14 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "Creadores Program",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/91704943?v=4",
+      "name": "Trollhunters501",
+      "url": "https://github.com/Trollhunters501"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/22427965?v=4",
+      "name": "poggit-bot",
+      "url": "https://github.com/poggit-bot"
     }
   ],
   "categories": [
@@ -14,7 +19,7 @@
   "created_at": 1769609011,
   "dependencies": [],
   "description": "# ViaBedrockDetect\nDetects when a Java player joins your server!\n\n\nCompatible with Nukkit, Pocketmine and ViaProxy!\n\n## Installation (ViaProxy)\nSimply put the jar file in the plugins folder and restart the server\n\n## Installation (Nukkit)\nSimply place the plugin in the plugins folder!\n### API usage\nImplement in your project:\nMaven:\nPlace the plugin's jar file in the libs folder and run this command:\n```bash\nmvn install:install-file -Dfile=libs/ViaBedrockDetect-x.x.x.jar -DgroupId=org.CreadoresProgram -DartifactId=ViaBedrockDetect -Dversion=x.x.x -Dpackaging=jar -DgeneratePom=true # replace x.x.x with the plugin version\n```\npom.xml:\n```xml\n<dependency>\n  <groupId>org.CreadoresProgram</groupId>\n  <artifactId>ViaBedrockDetect</artifactId>\n  <version>x.x.x</version><!--replace x.x.x with the plugin version-->\n  <scope>provided</scope>\n</dependency>\n```\nplugin.yml:\n```yaml\n#...\nsoftdepend:\n  - ViaBedrockDetect\nloadbefore:\n  - ViaBedrockDetect\n```\nexample of use:\n```java\n//import the class into your plugin\nimport org.CreadoresProgram.ViaBedrockDetect.NukkitMain;\n//...\n//is Java Player?\nNukkitMain.getInstance().isJavaPlayer(player);//player = cn.nukkit.Player returns boolean\n\n//get all Java Players\nNukkitMain.getInstance().getJavaPlayers(); //returns List<cn.nukkit.Player>\n```\n\n## Installation (Pocketmine)\nSimply place the plugin in the plugins folder!\n### API usage\nImplement in your plugin:\n\nplugin.yml:\n```yaml\n#...\nsoftdepend: [ViaBedrockDetect]\n```\n\nexample of use:\n```php\n<?php\ndeclare(strict_types=1);\n//...\n//Use the class in your plugin.\nuse org\\CreadoresProgram\\ViaBedrockDetect\\PocketmineMain;\n//...\n//is Java Player?\nPocketmineMain::getInstance()->isJavaPlayer(player);//player = pocketmine\\player\\Player returns bool\n//get all Java Players\nPocketmineMain::getInstance()->getJavaPlayers(); //returns pocketmine\\player\\Player[] array\n```\n",
-  "detection_confidence": "high",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/181365916?v=4",
@@ -40,7 +45,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1778778045,
+  "updated_at": 1780367472,
   "versions": [
     {
       "changelog": "**Full Changelog**: https://github.com/Creadores-Program/ViaBedrockDetect/commits/1.0.0",
@@ -49,18 +54,21 @@
         {
           "filename": "ViaBedrockDetect-1.0.0-NK-MOT.jar",
           "primary": true,
+          "sha256": "96214b543af40d6a1ff93c14cb8484dd721011de84734c619cf92f6ec745eed9",
           "size": 3754,
           "url": "https://github.com/Creadores-Program/ViaBedrockDetect/releases/download/1.0.0/ViaBedrockDetect-1.0.0-NK-MOT.jar"
         },
         {
           "filename": "ViaBedrockDetect-1.0.0-NK.jar",
           "primary": true,
+          "sha256": "e4e08a2d3dc22a27b5dd882798fd6f67801d4161e3b1d291092ff4e671b4077e",
           "size": 3706,
           "url": "https://github.com/Creadores-Program/ViaBedrockDetect/releases/download/1.0.0/ViaBedrockDetect-1.0.0-NK.jar"
         },
         {
           "filename": "ViaBedrockDetect-1.0.0-VP.jar",
           "primary": true,
+          "sha256": "300e061637fd476489acef797f1eeb2effa46be0413a01eba994e10dadcaafba",
           "size": 4657,
           "url": "https://github.com/Creadores-Program/ViaBedrockDetect/releases/download/1.0.0/ViaBedrockDetect-1.0.0-VP.jar"
         }

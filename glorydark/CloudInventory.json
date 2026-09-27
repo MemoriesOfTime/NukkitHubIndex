@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
       "name": "glorydark",
-      "url": ""
+      "url": "https://github.com/glorydark"
     }
   ],
   "categories": [],
@@ -33,6 +33,23 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1762933606,
-  "versions": []
+  "updated_at": 1710684295,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "CloudInventory-1.0.3-SNAPSHOT.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/CloudInventory/11/artifact/target/CloudInventory-1.0.3-SNAPSHOT.jar"
+        }
+      ],
+      "name": "1.0.3-SNAPSHOT",
+      "prerelease": true,
+      "published_at": 1710684305,
+      "version": "ci-11"
+    }
+  ]
 }

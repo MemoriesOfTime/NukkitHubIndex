@@ -2,9 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "2kMcFloat",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/88402556?v=4",
+      "name": "RinierMC",
+      "url": "https://github.com/RinierMC"
     }
   ],
   "categories": [],
@@ -24,16 +24,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "Custom_Enchants",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/RinierMC/Custom-Enchants",
   "stars": 0,
   "summary": "14 custom enchantments for PowerNukkitX - universal, armor, weapon, tool and single-slot enchants",
   "targets": [
-    "nkx",
     "pnx"
   ],
-  "updated_at": 1783966055,
+  "updated_at": 1783966119,
   "versions": [
     {
       "changelog": "Fixed Soulbound, and Overload enchant",
@@ -42,6 +41,7 @@
         {
           "filename": "Custom_Enchants-1.0.0.jar",
           "primary": true,
+          "sha256": "2726260abfea57fb73e2f7f4b5834936d850db15036116bd4d3a337e59bac15d",
           "size": 60988,
           "url": "https://github.com/RinierMC/Custom-Enchants/releases/download/Release/Custom_Enchants-1.0.0.jar"
         }
@@ -58,6 +58,7 @@
         {
           "filename": "Custom_Enchants-1.0.0.jar",
           "primary": true,
+          "sha256": "28853aceda34f6b8421ac93fa071fdaf55a72880f67cf512665ee8dab80c8c31",
           "size": 60727,
           "url": "https://github.com/RinierMC/Custom-Enchants/releases/download/Latest/Custom_Enchants-1.0.0.jar"
         }

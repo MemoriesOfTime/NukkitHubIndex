@@ -1,0 +1,55 @@
+{
+  "api_version": "3.0.4",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/26122521?v=4",
+      "name": "alperdrsnn",
+      "url": "https://github.com/alperdrsnn"
+    }
+  ],
+  "categories": [],
+  "created_at": 1789855260,
+  "dependencies": [],
+  "description": "# PearlLoad\n\nPowerNukkitX plugin. Ender pearls keep the chunk they are in loaded, the same way Java Edition tickets a pearl.\n\nWithout this, a Bedrock pearl that leaves the player's view distance is unloaded mid-flight and never lands.\n\n## Requirements\n\n- PowerNukkitX 3.0.4+\n- Java 21\n\n## Install\n\nDrop `PearlLoad-1.2.0.jar` into `plugins/` and restart.\n\n## Config\n\n`plugins/PearlLoad/config.yml`\n\n| Key | Default | Meaning |\n|---|---|---|\n| `ticket-radius` | `1` | `0` holds only the pearl's chunk. `1` holds a 3×3 so a chunk-border tick does not drop it. Capped at `2`. |\n| `generate-chunks` | `true` | Generate terrain the pearl flies into (Java does this). |\n| `vanish-on-death` | `true` | Java `enderPearlsVanishOnDeath`. |\n\nPearls are bound to the thrower: they unload when that player quits (or the server stops) and respawn when they join. Chunks are not held while the owner is offline. They do not expire after 60 seconds.\n\n## Build\n\n```\n./gradlew.bat build\n```\n\nJar: `build/libs/PearlLoad-1.2.0.jar`\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/26122521?v=4",
+  "id": "alperdrsnn/PearlLoad",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "PearlLoad",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/alperdrsnn/PearlLoad",
+  "stars": 0,
+  "summary": "Ender pearls load the chunk they are in, like Java Edition.",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1789855544,
+  "versions": [
+    {
+      "changelog": "**Full Changelog**: https://github.com/alperdrsnn/PearlLoad/commits/1.2.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "PearlLoad-1.2.0.jar",
+          "primary": true,
+          "sha256": "cf3b2540859ae903d0ced7dd2065c7b998650a2f0b47d36f74e680e2989f4294",
+          "size": 24184,
+          "url": "https://github.com/alperdrsnn/PearlLoad/releases/download/1.2.0/PearlLoad-1.2.0.jar"
+        }
+      ],
+      "name": "PearlLoad 1.2.0",
+      "prerelease": false,
+      "published_at": 1789855544,
+      "version": "1.2.0"
+    }
+  ]
+}

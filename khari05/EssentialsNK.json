@@ -1,0 +1,105 @@
+{
+  "api_version": "1.0.5",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/7609294?v=4",
+      "name": "Snake1999",
+      "url": "https://github.com/Snake1999"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/16952958?v=4",
+      "name": "yescallop",
+      "url": "https://github.com/yescallop"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/10363500?v=4",
+      "name": "Creeperface01",
+      "url": "https://github.com/Creeperface01"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/14209707?v=4",
+      "name": "bonnedav",
+      "url": "https://github.com/bonnedav"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/26197131?v=4",
+      "name": "PetteriM1",
+      "url": "https://github.com/PetteriM1"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/44261958?v=4",
+      "name": "Kieaer",
+      "url": "https://github.com/Kieaer"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/35894769?v=4",
+      "name": "khari05",
+      "url": "https://github.com/khari05"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/1887100?v=4",
+      "name": "augesrob",
+      "url": "https://github.com/augesrob"
+    }
+  ],
+  "categories": [],
+  "created_at": 1530747351,
+  "dependencies": [],
+  "description": "# EssentialsNK\nEssentials plugin for Nukkit\n\n**NEED HELP TO IMPROVE**\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/35894769?v=4",
+  "id": "khari05/EssentialsNK",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "EssentialsNK",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/khari05/EssentialsNK",
+  "stars": 0,
+  "summary": "EssentialsNK",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1530752659,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EssentialsNK-1.1.2.jar",
+          "primary": true,
+          "size": 105078,
+          "url": "https://github.com/khari05/EssentialsNK/releases/download/1.1.2/EssentialsNK-1.1.2.jar"
+        }
+      ],
+      "name": "Latest release with EconomyAPI support",
+      "prerelease": false,
+      "published_at": 1530752001,
+      "version": "1.1.2"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EssentialsNK-1.1.1.jar",
+          "primary": true,
+          "size": 102600,
+          "url": "https://github.com/khari05/EssentialsNK/releases/download/1.1.1/EssentialsNK-1.1.1.jar"
+        }
+      ],
+      "name": "Latest release without EconomyAPI support",
+      "prerelease": false,
+      "published_at": 1530752659,
+      "version": "1.1.1"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/25907843?v=4",
+      "name": "KCodeYT",
+      "url": "https://github.com/KCodeYT"
+    }
+  ],
+  "categories": [],
+  "created_at": 1597400070,
+  "dependencies": [],
+  "description": "![banner](https://raw.githubusercontent.com/KCodeYT/Heads/release/.github/images/banner.png)\n\nWhat is this?\n------------------------------\n\nThis project is a plugin for the nukkit server software environment.\nThis plugin adds player heads to the server.\n\nHow can I download this plugin?\n------------------------------\n\nYou can find the downloads on the [releases section](https://github.com/KCodeYT/Heads/releases) of this github page.\nThere you can find the LATEST jar file of this plugin.\n\nHow do I give myself a head?\n------------------------------\n\n    1. Open the chat in your client.\n    2. Ensure you have the operator status on the server or have the permission \"heads.command.head\", \n       otherwise you will not be able to use this command.\n    3. Type /head followed by the name of the skull owner.\n       (This can be any player which has joined the server once\n        or a java editiopn player)\n    4. You will see a head appear in your inventory if the player was found.\n       If the player was not found, you will see a message in the chat.\n\nDeveloper API\n------------------------------\n\n```java\nimport cn.nukkit.Player;\nimport de.kcodeyt.heads.api.HeadAPI;\n\npublic class YourPlugin {\n\n    public static void giveHeadByName(Player player, String name) {\n        HeadAPI.giveHead(player, name).whenComplete((result, error) -> {\n            if(result == null || error != null) {\n                // something went wrong\n                return;\n            }\n\n            if(!result.isSuccess()) {\n                // use result.getCause() to find out why the head was not given\n                return;\n            }\n\n            // head was given.\n        });\n    }\n\n}\n```",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-09-25",
+      "description": "",
+      "title": "banner",
+      "url": "https://raw.githubusercontent.com/KCodeYT/Heads/release/.github/images/banner.png"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/25907843?v=4",
+  "id": "KCodeYT/Heads",
+  "license": {
+    "id": "Apache-2.0",
+    "name": "Apache License 2.0",
+    "url": "https://spdx.org/licenses/Apache-2.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Heads",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/KCodeYT/Heads",
+  "stars": 5,
+  "summary": "An nukkit plugin that allows you to have heads in the Minecraft: Bedrock Edition",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1659274355,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HeadPlugin.jar",
+          "primary": true,
+          "size": 73364,
+          "url": "https://github.com/KCodeYT/Heads/releases/download/2.0.1/HeadPlugin.jar"
+        }
+      ],
+      "name": "HeadPlugin v2.0.1",
+      "prerelease": false,
+      "published_at": 1659274355,
+      "version": "2.0.1"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HeadPlugin.jar",
+          "primary": true,
+          "size": 72712,
+          "url": "https://github.com/KCodeYT/Heads/releases/download/2.0.0/HeadPlugin.jar"
+        }
+      ],
+      "name": "HeadPlugin v2.0.0",
+      "prerelease": false,
+      "published_at": 1654561175,
+      "version": "2.0.0"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HeadPlugin.jar",
+          "primary": true,
+          "size": 72730,
+          "url": "https://github.com/KCodeYT/Heads/releases/download/2.0-SNAPSHOT/HeadPlugin.jar"
+        }
+      ],
+      "name": "HeadPlugin v2.0-SNAPSHOT",
+      "prerelease": true,
+      "published_at": 1654560401,
+      "version": "2.0-SNAPSHOT"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HeadPlugin.jar",
+          "primary": true,
+          "size": 63318,
+          "url": "https://github.com/KCodeYT/Heads/releases/download/1.1.1/HeadPlugin.jar"
+        }
+      ],
+      "name": "HeadPlugin v1.1.1",
+      "prerelease": false,
+      "published_at": 1653759239,
+      "version": "1.1.1"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HeadPlugin.jar",
+          "primary": true,
+          "size": 63073,
+          "url": "https://github.com/KCodeYT/Heads/releases/download/1.1.0/HeadPlugin.jar"
+        }
+      ],
+      "name": "HeadPlugin v1.1.0",
+      "prerelease": false,
+      "published_at": 1653752120,
+      "version": "1.1.0"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HeadPlugin.jar",
+          "primary": true,
+          "size": 55837,
+          "url": "https://github.com/KCodeYT/Heads/releases/download/1.0.0/HeadPlugin.jar"
+        }
+      ],
+      "name": "HeadPlugin v1.0.0",
+      "prerelease": false,
+      "published_at": 1653750290,
+      "version": "1.0.0"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Heads-1.0.jar",
+          "primary": true,
+          "size": 29066,
+          "url": "https://github.com/KCodeYT/Heads/releases/download/v1.0/Heads-1.0.jar"
+        }
+      ],
+      "name": "First release",
+      "prerelease": false,
+      "published_at": 1610702053,
+      "version": "v1.0"
+    }
+  ]
+}

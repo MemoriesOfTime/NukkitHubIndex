@@ -2,9 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "2kMcFloat",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/88402556?v=4",
+      "name": "RinierMC",
+      "url": "https://github.com/RinierMC"
     }
   ],
   "categories": [],
@@ -30,16 +30,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "ChatBridge",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/RinierMC/ChatBridge",
   "stars": 0,
   "summary": "ChatBridge between minecraft and discord",
   "targets": [
-    "nkx",
     "pnx"
   ],
-  "updated_at": 1784972797,
+  "updated_at": 1784972828,
   "versions": [
     {
       "changelog": "",
@@ -48,6 +47,7 @@
         {
           "filename": "ChatBridge-1.0.0.jar",
           "primary": true,
+          "sha256": "bc803b9b4a9cbd958a8eebd293ec78643b7d51a731065aae4d16fe94b91d4e6a",
           "size": 6009,
           "url": "https://github.com/RinierMC/ChatBridge/releases/download/Patch/ChatBridge-1.0.0.jar"
         }

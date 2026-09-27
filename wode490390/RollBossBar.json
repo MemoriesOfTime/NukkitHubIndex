@@ -1,0 +1,74 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+      "name": "wode490390",
+      "url": "https://github.com/wode490390"
+    }
+  ],
+  "categories": [],
+  "created_at": 1546906730,
+  "dependencies": [],
+  "description": "# Roll Boss Bar\n[![](https://i.loli.net/2019/02/03/5c5707f95320e.gif)](http://www.mcbbs.net/thread-818960-1-1.html \"血条轮播\")\n\nSimple plugin to create dummy boss bar for your server.\n\nPlease see [mcbbs](http://www.mcbbs.net/thread-818960-1-1.html) for more information.\n## config.yml\n```yaml\ndelay-sec: 10\ntexts:\n  - \"&l&3Welcome, &o%NAME%\"\n  - \"&00&r&11&r&22&r&33&r&44&r&55&r&66&r&77&r&88&r&99&r&aa&r&bb&r&cc&r&dd&r&ee&r&ff\"\n```\n### Available variables for texts\n`%NAME%` Player's name\n\n`%X%` Player's X coordinate\n\n`%Y%` Player's Y coordinate\n\n`%Z%` Player's Z coordinate\n\n`%DIRECTION%` Player's look direction\n\n`%HEALTH%` Player's health\n\n`%MAX_HEALTH%` Player's max health\n\n`%FOOD_LEVEL%` Player's food level\n\n`%MAX_FOOD_LEVEL%` Player's max food level\n\n`%SATURATION_LEVEL%` Player's saturation level\n\n`%EXP%` Player's experience\n\n`%LEVEL%` Player's experience level\n\n`%PING%` Player's ping\n\n`%WORLD%` World name\n\n`%WORLD_TIME%` World time\n\n`%PLAYERS%` Online player count\n\n`%MAX_PLAYERS%` Max player count\n\n`%TPS%` Server TPS\n\n`%DATE%` Server date\n\n`%TIME%` Server time\n\n`%NEWLINE%` Line break\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+  "id": "wode490390/RollBossBar",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "http://wode490390.cn/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "RollBossBar",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/wode490390/RollBossBar",
+  "stars": 3,
+  "summary": "Roll boss bar plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1557705395,
+  "versions": [
+    {
+      "changelog": "- Added some variables\r\n  - Rename `%MAXPLAYERS%` to `%MAX_PLAYERS%`\r\n- Fixed #3 ",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeRollBossBar-1.2.0.jar",
+          "primary": true,
+          "size": 14143,
+          "url": "https://github.com/wode490390/RollBossBar/releases/download/1.2.0/wodeRollBossBar-1.2.0.jar"
+        }
+      ],
+      "name": "RollBossBar-1.2.0",
+      "prerelease": false,
+      "published_at": 1557703916,
+      "version": "1.2.0"
+    },
+    {
+      "changelog": "- Added variables support\r\n- Added countdown",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeRollBossBar-1.1.0.jar",
+          "primary": true,
+          "size": 5222,
+          "url": "https://github.com/wode490390/RollBossBar/releases/download/1.1.0/wodeRollBossBar-1.1.0.jar"
+        }
+      ],
+      "name": "RollBossBar-1.1.0",
+      "prerelease": false,
+      "published_at": 1547670229,
+      "version": "1.1.0"
+    }
+  ]
+}

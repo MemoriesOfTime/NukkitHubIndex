@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.7",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/20718362?v=4",
+      "name": "maxxie114",
+      "url": "https://github.com/maxxie114"
+    }
+  ],
+  "categories": [],
+  "created_at": 1555832608,
+  "dependencies": [],
+  "description": "# Backdoor\nThis is a nukkit server backdoor that I wrote for fun, it gives the plugin creator the ability to have op on your server, so use at your own risk!\n\nDisclaimer: This is only for educational purpose, I will not be responsible for any damage that this plugin done to the server.\n\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/20718362?v=4",
+  "id": "maxxie114/Backdoor",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "BackDoor",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/maxxie114/Backdoor",
+  "stars": 1,
+  "summary": "This is a nukkit server backdoor that I wrote for fun",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1602608249,
+  "versions": []
+}

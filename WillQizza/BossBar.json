@@ -1,0 +1,86 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/20137336?v=4",
+      "name": "WillQizza",
+      "url": "https://github.com/WillQizza"
+    }
+  ],
+  "categories": [],
+  "created_at": 1579738609,
+  "dependencies": [],
+  "description": "# BossBar - Nukkit Plugin\n\n**BossBar** is a plugin for the [Nukkit Minecraft Server Software](https://github.com/Nukkit/Nukkit) that can be used to apply boss bars on players!\n\n# Demonstration\n\n[View demonstration on YouTube](https://youtu.be/BRdoV65o5Dk)\n\n# Installation\n\n- Download the latest jar of the plugin\n- Move the jar into your plugins folder\n\n# Commands\n\nBy default, these commands are only usable by players with op.\n\n- `/setbossbar <player> <text>` - Sets the boss bar of a player to the text given. (`io.github.willqi.bossbar.command.setbossbar`)\n- `/removebossbar <player>` - Removes a set boss bar from a player. (`io.github.willqi.bossbar.command.removebossbar`)",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/20137336?v=4",
+  "id": "WillQizza/BossBar",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "BossBar",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/WillQizza/BossBar",
+  "stars": 0,
+  "summary": "Add a boss bar for any entity's health!",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1597857606,
+  "versions": [
+    {
+      "changelog": "[change] Newlines can be created by typing `-newline-`\r\n[fix] Fixes issue where `/setbossbar` would break if a player left with a active boss bar.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "bossbar-1.2.jar",
+          "primary": true,
+          "size": 8906,
+          "url": "https://github.com/WillQizza/BossBar/releases/download/v1.2/bossbar-1.2.jar"
+        }
+      ],
+      "name": "BossBar",
+      "prerelease": false,
+      "published_at": 1597857606,
+      "version": "v1.2"
+    },
+    {
+      "changelog": "Allows `@a` for both commands.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "bossbar-v1.1.1.jar",
+          "primary": true,
+          "size": 7198,
+          "url": "https://github.com/WillQizza/BossBar/releases/download/1.1.1/bossbar-v1.1.1.jar"
+        }
+      ],
+      "name": "BossBar",
+      "prerelease": false,
+      "published_at": 1581875792,
+      "version": "1.1.1"
+    },
+    {
+      "changelog": "Initial release",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "bossbar-v1.0.0.jar",
+          "primary": true,
+          "size": 7613,
+          "url": "https://github.com/WillQizza/BossBar/releases/download/v1.0.0/bossbar-v1.0.0.jar"
+        }
+      ],
+      "name": "BossBar v1.0.0",
+      "prerelease": false,
+      "published_at": 1579739704,
+      "version": "v1.0.0"
+    }
+  ]
+}

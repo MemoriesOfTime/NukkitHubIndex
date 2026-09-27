@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.9",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/38113441?v=4",
+      "name": "tim03we",
+      "url": "https://github.com/tim03we"
+    }
+  ],
+  "categories": [],
+  "created_at": 1590092054,
+  "dependencies": [],
+  "description": "# InvSee\n\nInvSee Plugin. Look in the inventory of other players or in their ender chest or take things out of their chest.\n\n## Important\nTo use the plugin, you need the plugin [FakeInventories](https://ci.nukkitx.com/job/NukkitX/job/FakeInventories/job/master/).\n\n# Commands\nCommand | Permission | Alias | Description\n------- | ---------- | ----- | -------------\n/invsee <<txt>player> | invsee.invsee | - | -\n/invsee <<txt>player> | invsee.invsee.move | - | -\n/enderchest [player] | invsee.enderchest | ec | Open the ender chest from yourself or other players\n/enderchest [player] | invsee.enderchest.other | - | Look into the ender chest of the other players\n/enderchest [player] | invsee.enderchest.move | - | Move or take items from the players ender chest\n\n----------------\n\nIf problems arise, create an issue or write us on Discord.\n\n| Discord |\n| :---: |\n[![Discord](https://img.shields.io/discord/639130989708181535.svg?style=flat-square&label=discord&colorB=7289da)](https://discord.gg/5tYC5dJ) |\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/38113441?v=4",
+  "id": "tim03we/InvSeeNK",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "InvSee",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/tim03we/InvSeeNK",
+  "stars": 0,
+  "summary": "A NukkitX Plugin",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1590092585,
+  "versions": []
+}

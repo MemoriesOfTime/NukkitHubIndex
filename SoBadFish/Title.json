@@ -2,9 +2,14 @@
   "api_version": "1.0.13",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "Sobadfish",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/83235042?v=4",
+      "name": "SoBadFish",
+      "url": "https://github.com/SoBadFish"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
     }
   ],
   "categories": [],
@@ -27,7 +32,7 @@
     }
   ],
   "description": "# Title\n基于MySQL的Nukkit称号插件\n",
-  "detection_confidence": "high",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/83235042?v=4",
@@ -49,6 +54,23 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1739160242,
-  "versions": []
+  "updated_at": 1739160239,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Title_Plus_v1.0.9.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/Title/13/artifact/target/Title_Plus_v1.0.9.jar"
+        }
+      ],
+      "name": "Plus_v1.0.9",
+      "prerelease": true,
+      "published_at": 1724640872,
+      "version": "ci-13"
+    }
+  ]
 }

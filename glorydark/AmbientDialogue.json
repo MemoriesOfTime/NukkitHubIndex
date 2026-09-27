@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "Glorydark",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
+      "name": "glorydark",
+      "url": "https://github.com/glorydark"
     }
   ],
   "categories": [],
@@ -44,6 +44,23 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1774391134,
-  "versions": []
+  "updated_at": 1774391131,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AmbientDialogue-1.1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/AmbientDialogue/5/artifact/target/AmbientDialogue-1.1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "1.1.0-SNAPSHOT",
+      "prerelease": true,
+      "published_at": 1708180099,
+      "version": "ci-5"
+    }
+  ]
 }

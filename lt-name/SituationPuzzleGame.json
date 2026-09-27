@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "LT_Name",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
     }
   ],
   "categories": [],
@@ -32,7 +32,7 @@
   "targets": [
     "nkmot"
   ],
-  "updated_at": 1780412316,
+  "updated_at": 1780412073,
   "versions": [
     {
       "changelog": "## SituationPuzzleGame 1.0.0\n",
@@ -41,6 +41,7 @@
         {
           "filename": "SituationPuzzleGame-1.0.0.jar",
           "primary": true,
+          "sha256": "fa2448edbfe2d0a0aefdb96bb96fd9a7dd7d2e51ec8c2dfce3b0c223bb58a364",
           "size": 109339,
           "url": "https://github.com/lt-name/SituationPuzzleGame/releases/download/v1.0.0/SituationPuzzleGame-1.0.0.jar"
         }
@@ -49,6 +50,22 @@
       "prerelease": false,
       "published_at": 1780412073,
       "version": "v1.0.0"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SituationPuzzleGame-1.0.0.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/SituationPuzzleGame/7/artifact/target/SituationPuzzleGame-1.0.0.jar"
+        }
+      ],
+      "name": "1.0.0",
+      "prerelease": true,
+      "published_at": 1780411909,
+      "version": "ci-7"
     }
   ]
 }

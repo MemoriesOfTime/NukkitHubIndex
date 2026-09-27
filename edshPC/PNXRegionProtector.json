@@ -1,0 +1,105 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/7607627?v=4",
+      "name": "SergeyDertan",
+      "url": "https://github.com/SergeyDertan"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/32373441?v=4",
+      "name": "Yexeed",
+      "url": "https://github.com/Yexeed"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/43497313?v=4",
+      "name": "GoodLucky777",
+      "url": "https://github.com/GoodLucky777"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/116029298?v=4",
+      "name": "edshPC",
+      "url": "https://github.com/edshPC"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45939749?v=4",
+      "name": "sm1ck",
+      "url": "https://github.com/sm1ck"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "name": "dependabot[bot]",
+      "url": "https://github.com/apps/dependabot"
+    }
+  ],
+  "categories": [],
+  "created_at": 1705042906,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "FastAsyncWorldEdit",
+      "version_range": ""
+    }
+  ],
+  "description": "# PNXRegionProtector\nAn adapted release of [SRegionProtector](https://github.com/SergeyDertan/SRegionProtector) for [PowerNukkitX](https://github.com/PowerNukkitX/PowerNukkitX).\n\nCurrently have some problems with database provider external libs (datanucleus) so only YAML storage is allowed.\nWill be added through DBLib plugin in future.\n\nSRegionProtector is a nukkit plugin that allows players to protect their regions.\n## Download\n* [Release](https://github.com/edshPC/PNXRegionProtector/releases/latest)\n## Features\n* Chest and form UI with custom page support\n* API for another plugins\n* Lots of flags\n* Flexible settings\n* High performance\n## Maven dependency\n<details>\n<summary>Maven dependency</summary>\n\n```\n<repositories>\n    <repository>\n        <id>SRegionProtector-master</id>\n        <url>https://raw.github.com/SergeyDertan/SRegionProtector/mvn-repo/</url>\n        <snapshots>\n            <enabled>true</enabled>\n            <updatePolicy>always</updatePolicy>\n        </snapshots>\n    </repository>\n</repositories>\n<dependencies>\n    <dependency>\n        <groupId>sergeydertan.sregionprotector</groupId>\n        <artifactId>SRegionProtector</artifactId>\n        <version>LATEST</version>\n    </dependency>\n</dependencies>\n```\n\n</details>\n\n## Commands and permissions can be found at [Wiki](https://github.com/SergeyDertan/SRegionProtector/wiki).\n\n## !Warning! some flags may not work because they are disabled, pls check config.yml first\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/116029298?v=4",
+  "id": "edshPC/PNXRegionProtector",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/edshPC/PNXRegionProtector",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "PNXRegionProtector",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/edshPC/PNXRegionProtector",
+  "stars": 0,
+  "summary": "Port of SRegionProtector for PNX: Flexible region protection plugin",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1782835796,
+  "versions": [
+    {
+      "changelog": "Now using player's UUID instaed of Names to identify players, which allows to use this plugin with xbox-auth=off",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "PNXRegionProtector-30.0.jar",
+          "primary": true,
+          "size": 832174,
+          "url": "https://github.com/edshPC/PNXRegionProtector/releases/download/Feature/PNXRegionProtector-30.0.jar"
+        }
+      ],
+      "name": "v30.0.1: UUID instead of name",
+      "prerelease": false,
+      "published_at": 1705329620,
+      "version": "Feature"
+    },
+    {
+      "changelog": "An adapted release of SRegionProtector for PowerNukkitX.\r\nCurrently have some problems with database provider external libs (datanucleus) so only YAML storage is allowed.\r\nWill be added though DBLib plugin in future.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "PNXRegionProtector-30.0.jar",
+          "primary": true,
+          "size": 830820,
+          "url": "https://github.com/edshPC/PNXRegionProtector/releases/download/Adaptation/PNXRegionProtector-30.0.jar"
+        }
+      ],
+      "name": "v30.0: adaptation",
+      "prerelease": false,
+      "published_at": 1705062202,
+      "version": "Adaptation"
+    }
+  ]
+}

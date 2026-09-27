@@ -1,0 +1,43 @@
+{
+  "api_version": "1.0.13",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/51165317?v=4",
+      "name": "IWareQ",
+      "url": "https://github.com/IWareQ"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/34367447?v=4",
+      "name": "hteppl",
+      "url": "https://github.com/hteppl"
+    }
+  ],
+  "categories": [],
+  "created_at": 1678532189,
+  "dependencies": [],
+  "description": "# ScoreboardAPI [![](https://jitpack.io/v/IWareQ/ScoreboardAPI.svg)](https://jitpack.io/#IWareQ/ScoreboardAPI)\n\nScoreboardAPI is a simple library plugin for PowerNukkit/Nukkit Minecraft Bedrock core, that will help you to create\nyour custom scoreboards with ease.\n\n##### [Download](https://github.com/IWareQ/ScoreboardAPI/releases)\n\n## Usage\n\n```java\nScoreboard scoreboard = new Scoreboard(\"Test Scoreboard\", DisplaySlot.SIDEBAR, 20);\n// Update time in ticks (20 ticks = 1 second) or skip this option to disable automatic updates\nscoreboard.setHandler(pl -> {\n    scoreboard.addLine(pl.getName());\n    scoreboard.addLine(\"§1\"); // used for skip line\n    scoreboard.addLine(\"random: \" + Math.random());\n    scoreboard.addLine(\"random: \" + Math.random());\n    scoreboard.addLine(\"random: \" + Math.random());\n    scoreboard.addLine(\"random: \" + Math.random());\n    scoreboard.addLine(\"random: \" + Math.random());\n    scoreboard.addLine(\"§2\"); // used for skip line\n    scoreboard.addLine(\"Online: \" + Server.getInstance().getOnlinePlayers().size());\n});\n\nscoreboard.show(player);\n```\n\n## Maven\n\n#### Repository\n\n```xml\n<repositories>\n    <repository>\n        <id>jitpack.io</id>\n        <url>https://jitpack.io</url>\n    </repository>\n</repositories>\n```\n\n#### Dependency\n```xml\n<dependency>\n    <groupId>com.github.IWareQ</groupId>\n    <artifactId>ScoreboardAPI</artifactId>\n    <version>Tag</version>\n</dependency>\n```",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/34367447?v=4",
+  "id": "hteppl/ScoreboardAPI",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "ScoreboardAPI",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/hteppl/ScoreboardAPI",
+  "stars": 1,
+  "summary": "Plugin for creating Scoreboard",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1678532555,
+  "versions": []
+}

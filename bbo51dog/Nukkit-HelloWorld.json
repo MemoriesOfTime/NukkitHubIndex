@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/44104663?v=4",
+      "name": "bbo51dog",
+      "url": "https://github.com/bbo51dog"
+    }
+  ],
+  "categories": [],
+  "created_at": 1581766059,
+  "dependencies": [],
+  "description": "# Nukkit-HelloWorld\nMy first Nukkit plugin\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/44104663?v=4",
+  "id": "bbo51dog/Nukkit-HelloWorld",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Nukkit-HelloWorld",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/bbo51dog/Nukkit-HelloWorld",
+  "stars": 0,
+  "summary": "My first Nukkit plugin",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1581774376,
+  "versions": []
+}

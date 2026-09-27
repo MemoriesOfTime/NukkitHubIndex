@@ -1,0 +1,41 @@
+{
+  "api_version": "1.0.8",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/50034629?v=4",
+      "name": "depascaldc",
+      "url": "https://github.com/depascaldc"
+    }
+  ],
+  "categories": [],
+  "created_at": 1580764963,
+  "dependencies": [],
+  "description": "# depascaldc-Development\n- ## Nukkit Plugin Development\n---\n\n## All - Plugins:\n- [Better-Minecraft-DiscordSync](https://github.com/depascaldc/NukkitX-Projects/tree/master/Better-Minecraft-DiscordSync) a highly configurable Discord and Minecraft Crosschat Plugin.\n- [Custom.Join/Leave.Messages](https://github.com/depascaldc/NukkitX-Projects/tree/master/Custom-Join-Leave-Messages) customize Join/Leave messages\n- [LuckyBlocks-Nukkit](https://github.com/depascaldc/NukkitX-Projects/tree/master/LuckyBlocks-Nukkit) replace Sponge with a Luckyblock\n- [SimpleNickname](https://github.com/depascaldc/NukkitX-Projects/tree/master/NicknamePlugin) let the user set a nickname\n- [Command-Signs](https://github.com/depascaldc/NukkitX-Projects/tree/master/CommandSigns) create simple Command-Signs at your server\n\n### [DiscordServer](https://discord.gg/dqRMdEk)\n\n## [Website](https://depascaldc.de)\n\n---\n\n\n# Downloads:\n\n - [Download Better-Minecraft-DiscordSync.jar](https://github.com/depascaldc/NukkitX-Projects/raw/master/Compiled-Plugins/Better-Minecraft-DiscordSync-1.0.0-SNAPSHOT.jar)\n \n - [Download Custom-Join/Leave.Messages](https://github.com/depascaldc/NukkitX-Projects/raw/master/Compiled-Plugins/Custom-JoinLeave-Messages.jar)\n \n - [Download LuckyBlocks-Nukkit](https://github.com/depascaldc/NukkitX-Projects/raw/master/Compiled-Plugins/LuckyBlocks-Nukkit.jar)\n\n - [DownLoad Custom-Join/Leave-Messages](https://github.com/depascaldc/NukkitX-Projects/raw/master/Compiled-Plugins/Custom-JoinLeave-Messages.jar)\n\n - [Download CommandSigns](https://github.com/depascaldc/NukkitX-Projects/raw/master/Compiled-Plugins/CommandSigns.jar)",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/53196344?v=4",
+  "id": "MisTenNajaranyh/NukkitX-Projects--more-essentials",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/depascaldc/NukkitX-Projects",
+    "wiki": ""
+  },
+  "manifest_path": "More-Essentials/src/main/resources/plugin.yml",
+  "name": "More-Essentials",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/MisTenNajaranyh/NukkitX-Projects",
+  "stars": 0,
+  "summary": "Add more essentials to your server",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1566364339,
+  "versions": []
+}

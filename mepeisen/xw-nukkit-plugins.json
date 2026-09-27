@@ -1,0 +1,42 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/454402?v=4",
+      "name": "mepeisen",
+      "url": "https://github.com/mepeisen"
+    }
+  ],
+  "categories": [],
+  "created_at": 1456647394,
+  "dependencies": [],
+  "description": "# xw-nukkit-plugins\nPlugins for nukkit\n\n# use/download\nSee the tutorials at [www.xworlds.eu/dev/nukkit](http://www.xworlds.eu/dev/nukkit) on how to install the nexus repository.\nYou may download the latest version from there.\n\n# plugin overview\n* [xw-nukkit-web](https://github.com/mepeisen/xw-nukkit-plugins/blob/master/xw-nukkit-web/): A web server extension that can be used to support web pages with json queries etc.",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/454402?v=4",
+  "id": "mepeisen/xw-nukkit-plugins",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/mepeisen/xw-nukkit-plugins/xw-nukkit-web",
+    "wiki": ""
+  },
+  "manifest_path": "xw-nukkit-web/src/main/resources/plugin.yml",
+  "name": "xw-web",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/mepeisen/xw-nukkit-plugins",
+  "stars": 0,
+  "summary": "Plugin to support small web servers",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1457939176,
+  "versions": []
+}

@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.14",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/86683320?v=4",
+      "name": "GommeAWM",
+      "url": "https://github.com/GommeAWM"
+    }
+  ],
+  "categories": [],
+  "created_at": 1671885066,
+  "dependencies": [],
+  "description": "# ReportAWM\nPlugin Report | Minecraft Bedrock Edition | API 1.0.14 | Nukkit | SupportAWM\n\nFOR SUPPORT/SUGGESTIONS/CUSTOM PLUGINS USE OUR DISCORD CHANNEL: https://discord.gg/mAZ9YMV3\n\n***Features:***<br />\n:star: Simple Report;<br />\n:star: Send information about report to VKONTAKTE or DISCORD;<br />\n:star: You can edit everything (messages, buttons, ..);<br />\n\n---\n\n**Installation:**<br />\n:black_square_button: Place plugin's .jar file into `plugins` folder on your server;<br />\n:black_square_button: Configure in Config;<br />\n:black_square_button: Launch the server;<br />\n\n---\n\n**Usage:**<br />\n:unlock: /report <player> <br />\n\n---\n\n**Examples**\n\n---\n\n![Screenshot_163](https://user-images.githubusercontent.com/86683320/209436837-69157754-5055-4bb1-8401-e8e835f3f8bf.png)\n\n---\n\n![Screenshot_164](https://user-images.githubusercontent.com/86683320/209436849-a70da716-a4d6-4e0c-ae4b-59208f99c0fc.png)\n\n---\n\n![Screenshot_165](https://user-images.githubusercontent.com/86683320/209436866-38c8eab5-9829-44c6-84ef-2af687f91497.png)\n\n---\n\n---\n\n> * Link to cloudburstmc article -> [CloudburstMC](https://www.cloudburstmc.org/resources/reportawm.873/) | Link to our discord group -> [SupportAWM](https://discord.gg/mAZ9YMV3)\n\n---\n\n\n```\nReporting bugs: If you come across a bug, please report it here or on cloudburstmc or join our discord https://discord.gg/mAZ9YMV3.\n```\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/86683320?v=4",
+  "id": "GommeAWM/ReportAWM",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "ReportAWM",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/GommeAWM/ReportAWM",
+  "stars": 0,
+  "summary": "Plugin Report | Minecraft Bedrock Edition | API 1.0.14 | Nukkit | SupportAWM",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1672071821,
+  "versions": []
+}

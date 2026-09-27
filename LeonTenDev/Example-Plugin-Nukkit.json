@@ -1,0 +1,54 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/95095051?v=4",
+      "name": "LeonTenDev",
+      "url": "https://github.com/LeonTenDev"
+    }
+  ],
+  "categories": [],
+  "created_at": 1658673138,
+  "dependencies": [],
+  "description": "# Example-Plugin-Nukkit\nAn Example-Plugin for Nukkit!\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/95095051?v=4",
+  "id": "LeonTenDev/Example-Plugin-Nukkit",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Test",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/LeonTenDev/Example-Plugin-Nukkit",
+  "stars": 0,
+  "summary": "An Example-Plugin for Nukkit!",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1658742968,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Example-Nukkit-1.0.2-SNAPSHOT.jar",
+          "primary": true,
+          "size": 8971,
+          "url": "https://github.com/LeonTenDev/Example-Plugin-Nukkit/releases/download/Latest/Example-Nukkit-1.0.2-SNAPSHOT.jar"
+        }
+      ],
+      "name": "1.0.2",
+      "prerelease": false,
+      "published_at": 1658742968,
+      "version": "Latest"
+    }
+  ]
+}

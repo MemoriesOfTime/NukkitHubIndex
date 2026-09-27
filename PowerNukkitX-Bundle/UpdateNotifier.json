@@ -2,9 +2,14 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/50714128?v=4",
       "name": "xRookieFight",
-      "url": ""
+      "url": "https://github.com/xRookieFight"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "name": "Buddelbubi",
+      "url": "https://github.com/Buddelbubi"
     }
   ],
   "categories": [],
@@ -24,16 +29,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "UpdateNotifier",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/UpdateNotifier",
   "stars": 2,
   "summary": "Notifies you when there is a new update available",
   "targets": [
-    "nkx",
     "pnx"
   ],
-  "updated_at": 1783681577,
+  "updated_at": 1783681493,
   "versions": [
     {
       "changelog": "Initial release of UpdateNotifier.",
@@ -42,6 +46,7 @@
         {
           "filename": "UpdateNotifier.jar",
           "primary": true,
+          "sha256": "736cda07e37e688f0fc73a5dc8ae7356571a5c08324f9426f47aefd723cb7fad",
           "size": 6949,
           "url": "https://github.com/PowerNukkitX-Bundle/UpdateNotifier/releases/download/1.0.0/UpdateNotifier.jar"
         }

@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17672473?v=4",
+      "name": "Fleynaro",
+      "url": "https://github.com/Fleynaro"
+    }
+  ],
+  "categories": [],
+  "created_at": 1499004112,
+  "dependencies": [],
+  "description": "# Minecraft-Nukkit-FloatingText\nMinecraft PE plugin for creating 3d Floating Text\n\nДанный плагин возволит создать на вашем сервере 3D информативные тексты.\n\n\n<h2>Команды:</h2>\n<i>/ftext [текст] - создать 3D текст (Permission: floatingtext.create)</i>\n\n\n<h2>Конфиг</h2>\n\nconfig.yml\n```\n#Floating Text plugin\n#made by Fleynaro v1.0\n\n#general settings\ngeneral: {}\n\n#Texts...\ntexts:\n  text1:\n    pos: 0.0,0.0,0.0\n    text: \"Привет, дорогой друг!\" \n#text ....\n```\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/17672473?v=4",
+  "id": "Fleynaro/Minecraft-Nukkit-FloatingText",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "FloatingText",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Fleynaro/Minecraft-Nukkit-FloatingText",
+  "stars": 2,
+  "summary": "The plugin lets create 3D floating text",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1499004746,
+  "versions": []
+}

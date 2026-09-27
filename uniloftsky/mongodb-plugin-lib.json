@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/70976849?v=4",
+      "name": "uniloftsky",
+      "url": "https://github.com/uniloftsky"
+    }
+  ],
+  "categories": [],
+  "created_at": 1622416130,
+  "dependencies": [],
+  "description": "",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/70976849?v=4",
+  "id": "uniloftsky/mongodb-plugin-lib",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "MongoDB",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/uniloftsky/mongodb-plugin-lib",
+  "stars": 0,
+  "summary": "A MongoDB driver plugin",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1640109355,
+  "versions": []
+}

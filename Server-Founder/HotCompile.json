@@ -1,0 +1,58 @@
+{
+  "api_version": "1.0.9",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/46070909?v=4",
+      "name": "MagicLu550",
+      "url": "https://github.com/MagicLu550"
+    }
+  ],
+  "categories": [],
+  "created_at": 1576998914,
+  "dependencies": [],
+  "description": "# HotCompile\nFor Nukkit,可以进行简单的在线编译\n\n> Command\n\n它的主要指令是`/hc`\n\n- help 获取所有指令\n\n> 如何进行在线编译\n\n将代码文件放到plugins/HotCompile文件夹里面，文件结构:\n\n-- HotCompile\n  \n  -- 根文件夹\n    \n    -- src\n      \n      -- plugin.yml\n      \n      -- 代码文件\n\n结构\n\n将会自动编译打包和执行\n\n> 环境\n\n使用scala编写，所以需要scala环境\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/57858620?v=4",
+  "id": "Server-Founder/HotCompile",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": {
+    "discord": "",
+    "homepage": "noyark.net",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "HotCompile",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Server-Founder/HotCompile",
+  "stars": 1,
+  "summary": "A Simple HotCompile Plugin",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1664564449,
+  "versions": [
+    {
+      "changelog": "完成",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HotCompile.jar",
+          "primary": true,
+          "size": 5936873,
+          "url": "https://github.com/Server-Founder/HotCompile/releases/download/1.0/HotCompile.jar"
+        }
+      ],
+      "name": "v1.0",
+      "prerelease": false,
+      "published_at": 1577015187,
+      "version": "1.0"
+    }
+  ]
+}

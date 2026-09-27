@@ -1,0 +1,423 @@
+{
+  "api_version": "unknown",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/51258524?v=4",
+      "name": "HuoHuas001",
+      "url": "https://github.com/HuoHuas001"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/170844915?v=4",
+      "name": "Shabby-666",
+      "url": "https://github.com/Shabby-666"
+    }
+  ],
+  "categories": [],
+  "created_at": 1786164787,
+  "dependencies": [],
+  "description": "# HuHoBotPenguin\n\n把 QQ 群机器人接入 Minecraft 服务器：游戏聊天与 QQ 群双向转发、白名单管理、在线查询、命令执行与敏感词审核。基于 [qqpd-bot-java](https://github.com/Kloping/qqpd-bot-java)（HuHoBot fork，以 git submodule 引入）。\n\n## 支持的平台\n\n- **Spigot / Paper**（api-version 1.18）：JDK 8，产物 `HuHoBot-Penguin_Spigot-<版本>.jar`\n- **Nukkit**（MOT）：JDK 17，产物 `HuHoBot-Penguin_Nukkit-<版本>.jar`\n- **Allay**（≥ 0.17.0）：JDK 21，产物 `HuHoBot-Penguin_Allay-<版本>.jar`\n- **BungeeCord / Velocity**（3.4）：JDK 17，产物 `HuHoBot-Penguin_Proxy-<版本>.jar`\n\n## 功能特性\n\n- 游戏 ↔ QQ 群聊天双向转发，支持格式模板与转发前缀过滤（默认只转发以 `#` 开头的游戏消息）\n- QQ 群指令系统：查在线、发信息、白名单、管理员、认证等，可在配置中逐个开关\n- 白名单管理：映射到服务器原生命令（如 `whitelist add/remove`），代理平台可配置路由到子服\n- 敏感词审核：正则 + 本地词库 + 可选 OpenAI 兼容接口 AI 二审；接口不可用时自动回退为本地屏蔽\n- MOTD 服务器状态展示：内置查询或第三方 API，可选 Markdown / 图片输出\n- 自定义命令：占位符替换（`{params}`、`{group}`、`{user}`、`{0}`…），支持权限分级\n- 多群支持：每群独立的管理员名单、管理员判定方式与全量转发开关\n- 各平台打包为独立 fat jar（shadow），放进 plugins 目录即可用\n- **扫码绑定**：启动时检测到 `bot.app-id` / `bot.secret` 任一为空，会自动在控制台输出二维码；手机 QQ 扫码授权后自动写回这两个字段并重新连接机器人（二维码过期会自动刷新）\n- **附属插件 API（AddonAPI）**：第三方插件可通过 `registerAddon()` 注册扩展，通过 `registerBotCommand()` 注册自定义命令，所有命令自动同步到 QQ 指令面板\n- **附属插件查询**：群内发送 `/附属插件` 可查看已安装的附属插件列表\n\n## 快速开始\n\n### 准备\n\n1. 到 [q.qq.com](https://q.qq.com/) 申请机器人；也可以先留空 `bot.app-id` / `bot.secret`，启动后直接扫码绑定（见下文「扫码绑定」）。\n2. 准备运行环境：Spigot 平台需要 JDK 8+，Nukkit / BungeeCord / Velocity 需要 17+，Allay 需要 21+。\n\n### 构建\n\n```bash\ngit clone --recurse-submodules git@github.com:HuHoBot/PenguinClient.git\ncd PenguinClient\n./gradlew build\n```\n\n- 项目依赖 `deps/qqpd-bot-java` 子模块；克隆时若未使用 `--recurse-submodules`，运行 `git submodule update --init --recursive`。\n- 所有产物会收集到 `build/gather-jar/`。\n- 同时构建全部平台需要本机可用的 JDK 8 / 17 / 21（Gradle toolchain 可自动下载时无需手动安装）。\n- 运行 Gradle 本身请使用 JDK 17 / 21（Gradle 8.14.5 不支持 JDK 25 及更新版本，报错时可用 `JAVA_HOME=/usr/lib/jvm/java-21-openjdk ./gradlew build` 指定）。\n\n也可以从 [Releases](https://github.com/HuHoBot/PenguinClient/releases) 下载已构建的 jar。\n\n### 安装\n\n把对应平台的 jar 放入服务端插件目录（Spigot/Allay/Nukkit 为 `plugins/`，Velocity 为 `plugins/`，BungeeCord 也为 `plugins/`），重启服务器。\n\n### 配置\n\n首次启动后会在插件数据目录生成 `config.yml`。关键配置项：\n\n- **bot**：`app-id` / `secret` 为 QQ 机器人凭据；`groups` 为允许使用的群 OpenId 列表。\n- **chat-format**：双向转发格式模板；`post-chat` 总开关；`start-with` 指定只有以该前缀开头的游戏消息才会转发（转发时移除前缀，留空表示全部转发）。\n- **player-events**：配置进退服通知；`always-forward` 为 `true` 时忽略平台的隐藏、取消或登录状态判断，始终转发进退服事件。\n- **whitelist**：白名单原生命令模板，代理平台需改为可路由到子服的命令。\n- **admin**：管理员判定方式 `qq`（群主/群管理员）、`config`（手动名单）、`both`（任一满足），及手动名单 `openids`。\n- **audit**：OpenAI 兼容审核接口（`base-url` / `api-key` / `model`）。\n- **custom-commands**：自定义指令列表，`permission: 0` 供所有成员执行，更高等级需要管理员。\n- **commands**：各群指令的开关。\n- **features**：`enable-auth` 控制 QQ 头像认证；`full-amount` 控制是否默认全量转发；`group-member-events` 控制是否订阅群成员进退群与入群申请事件（默认关闭，修改后需重启服务器）。\n\nSpigot 版另有 `command-sender: Hybrid`，用于同时收集命令发送者输出与服务端日志。\n\n### 扫码绑定\n\n首次启动时如果 `bot.app-id` 或 `bot.secret` 任一为空，插件不会直接放弃启动，而是进入扫码绑定：\n\n1. 控制台打印一张二维码（同时输出二维码链接，便于日志查看）；\n2. 手机 QQ 扫码并确认授权；\n3. 插件拿到 AppID / Secret 后自动写回 `config.yml`（保留其他配置与注释），并立即重新连接 QQ 机器人；\n4. 二维码过期会自动刷新，重新打印一张新的二维码。\n\n> 终端二维码按深色背景渲染（亮色模块 + 深色背景）。若控制台是浅色主题导致无法识别，可复制日志中的「二维码链接」自行生成二维码。\n> 扫码流程需要能访问 `q.qq.com`；连续创建绑定任务失败 5 次后会停止，重载插件即可重试。\n\n### QQ 群指令\n\n在群内发送指令（无需 @机器人）。`[]` 表示可选参数，`<>` 表示必填参数：\n\n- **查信息** `[OpenId]` —— 查询自己的 OpenId / 群 OpenId；带参数且是管理员时查询他人认证状态\n- **查管理** `<OpenId>` —— 查询某人是否为本群管理员\n- **加管理** `<OpenId>` / **删管理** `<OpenId>` —— 管理本群管理员名单\n- **管理方式** `[QQ|手动|双重]` —— 查看或设置本群管理员判定方式\n- **添加白名单** `<玩家名>` / **删除白名单** `<玩家名>` / **查白名单** —— 白名单管理\n- **查在线** —— 查询服务器在线玩家\n- **在线服务器** —— 查询已连接的服务器\n- **发信息** `<内容>` —— 发送消息到游戏内\n- **执行命令** `<命令>` —— 以管理员身份执行服务器命令\n- **执行** `<key> [参数]` / **管理员执行** `<key> [参数]` —— 执行 `custom-commands` 中定义的自定义命令\n- **全量** —— 切换本群全量聊天转发\n- **认证** —— 查询自己的认证状态；**认证 / 解除认证** `<OpenId>`（管理员）—— 管理他人认证状态\n- **附属插件** —— 查看已安装的附属插件列表\n\n## 模块结构\n\n- **common/Bot** —— 平台无关核心：QQ 客户端、群消息分发、指令、审核与状态存储\n- **server/AdapterCommon** —— 服务端适配公共层（YAML 配置、调度与命令原语）\n- **server/Spigot** / **server/Allay** / **server/Nukkit** / **server/Proxy** —— 各平台入口与适配\n- **deps/qqpd-bot-java** —— QQ 机器人 SDK（git submodule，[HuHoBot fork](https://github.com/HuHoBot/qqpd-bot-java)），源码直接参与编译\n\n## 附属插件开发\n\n第三方插件可以通过 AddonAPI 向 HuHoBotPenguin 注册扩展和自定义命令：\n\n```kotlin\nimport cn.huohuas001.bot.addon.Addon\nimport cn.huohuas001.bot.QClient\n\n// 1. 注册扩展\nval addon = Addon(\"MyAddon\", \"1.0.0\", \"我的附属插件\", \"作者名\")\nQClient.registerCommand(addon, myCommandHandler)\n\n// 2. 注册自定义命令（5 参数版本）\nplugin.registerBotCommand(\"MyAddon\", \"mycmd\", \"执行我的命令\", 0, true)\n\n// 3. 查询已安装扩展\nval addons = AddonManager.allAddons()\n```\n\n## 群管理接口与群事件\n\n除聊天与指令外，适配器还暴露了 QQ 开放平台的群管理接口，并把群成员变更透传为平台事件。\n\n### 群管理接口\n\n所有平台适配器实例（`HuHoBotSpigot` / `HuHoBotAllay` / `HuHoBotNukkit` / `HuHoBotBungee` / `HuHoBotVelocity`）都实现了同一套方法，返回值使用 QQ SDK 数据类，机器人未启动或接口报错时返回 `null` / `false`：\n\n```kotlin\nval plugin: HuHoBotSpigot = ...\n\nplugin.getGroupInfo(groupOpenId)                   // 获取群基本信息\nplugin.getGroupBotState(groupOpenId)               // 获取机器人群内状态\nplugin.getGroupMuteSetting(groupOpenId)            // 查询群禁言状态\nplugin.muteGroupMember(groupOpenId, memberOpenId, 60)   // 禁言成员（秒）\nplugin.unmuteGroupMember(groupOpenId, memberOpenId)     // 解除禁言\nplugin.getGroupJoinRequestList(groupOpenId)        // 拉取入群申请\nplugin.approveGroupJoinRequest(groupOpenId, memberOpenId, joinRequestId)  // 通过申请\nplugin.declineGroupJoinRequest(groupOpenId, memberOpenId, joinRequestId, \"拒绝理由\", false)  // 拒绝申请\nplugin.getGroupMembers(groupOpenId)                 // 群成员列表（QQ 内邀接入中）\nplugin.getGroupMember(groupOpenId, memberOpenId)    // 群成员详情\nplugin.batchRemoveGroupMembers(groupOpenId, memberOpenIds)      // 批量移除成员\nplugin.getGroupMemberBlacklist(groupOpenId)         // 查询群黑名单\nplugin.addGroupMemberBlacklist(groupOpenId, memberOpenIds)      // 加入黑名单\nplugin.removeGroupMemberBlacklist(groupOpenId, memberOpenIds)   // 移出黑名单\nplugin.getGroupJoinApprovalStrategies()             // 入群自动审批策略列表\n```\n\n完整的接口清单与参数说明见 `cn.huohuas001.bot.QClient` 与 `cn.huohuas001.bot.HuHoBot` 的注释。自动审批策略的创建、修改、删除、执行与白名单维护目前 SDK 尚未提供，因此未接入。\n\n### 群成员事件\n\n把 `features.group-member-events` 设为 `true` 并重启服务器后，插件会额外订阅 `GROUP_MEMBER_EVENT`（`1 << 24`）Intent，并触发以下平台事件：\n\n| 事件 | Spigot | Allay | Nukkit | BungeeCord | Velocity |\n| --- | --- | --- | --- | --- | --- |\n| 群成员加入 | `OnBotGroupMemberAdd` | `OnBotGroupMemberAdd` | `OnBotGroupMemberAdd` | `OnBotGroupMemberAdd` | `OnBotGroupMemberAdd` |\n| 群成员退出 | `OnBotGroupMemberRemove` | `OnBotGroupMemberRemove` | `OnBotGroupMemberRemove` | `OnBotGroupMemberRemove` | `OnBotGroupMemberRemove` |\n| 入群申请 | `OnBotJoinRequest` | `OnBotJoinRequest` | `OnBotJoinRequest` | `OnBotJoinRequest` | `OnBotJoinRequest` |\n\n事件通过 `GroupMemberPack` / `JoinRequestPack` 快照暴露数据，不直接暴露 SDK 可变对象；`OnBotJoinRequest` 附带 `approve()` / `decline(reason, addToMemberBlacklist)` 便捷审批方法。该 Intent 需要 QQ 机器人具备群管理相关权限，订阅失败会导致连接被拒，因此默认关闭；入群申请事件还要求机器人为群管理员。\n\n## 开发与发布\n\n- Kotlin + Gradle（wrapper 已随仓库提供，版本 8.14.5）。\n- CI 见 `.github/workflows/build.yml`：push 到 `main` / `dev` 或发起 PR 触发构建；推送 `v*` 标签触发构建并创建 GitHub Release。\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/197658304?v=4",
+  "id": "HuHoBot/PenguinClient--server-spigot",
+  "license": {
+    "id": "AGPL-3.0",
+    "name": "GNU Affero General Public License v3.0",
+    "url": "https://spdx.org/licenses/AGPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "server/Spigot/src/main/resources/plugin.yml",
+  "name": "HuHoBotPenguin",
+  "primary_target": "nkmot",
+  "server_version": "",
+  "source": "https://github.com/HuHoBot/PenguinClient",
+  "stars": 7,
+  "summary": "HuHoBot Penguin 服务端模组，直连 QQ 官方机器人网关，实现 QQ 群与 Minecraft Java 版服务器的双向消息桥接。",
+  "targets": [
+    "nkmot"
+  ],
+  "updated_at": 1790081210,
+  "versions": [
+    {
+      "changelog": "# HuHoBot Penguin v1.4.0\n\n- feat(bot): 添加QQ机器人扫码绑定功能\n\n### 构建信息\n- 构建时间: 2026-09-20T07:00:40Z\n- 提交哈希: [15cdbcf762b8c92581e1d7a388e51de9a5ea4501](https://github.com/HuHoBot/PenguinClient/commit/15cdbcf762b8c92581e1d7a388e51de9a5ea4501)\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Allay-1.4.0.jar",
+          "primary": true,
+          "sha256": "8c952b42d53ff6ad331b4522677f9697bb73f8d51639cc59e870fda0d72bf8f5",
+          "size": 19738479,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.4.0/HuHoBot-Penguin_Allay-1.4.0.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Nukkit-1.4.0.jar",
+          "primary": true,
+          "sha256": "10449514f6d0de777bb16ded0dd5de2f7f7e77517330ba13630a5c0a906cd71c",
+          "size": 19741475,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.4.0/HuHoBot-Penguin_Nukkit-1.4.0.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Proxy-1.4.0.jar",
+          "primary": true,
+          "sha256": "3e99a27cfe6cd6c16e56d64ba305c43fdaadc5f9d4fae0a34975f19d76981426",
+          "size": 22597015,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.4.0/HuHoBot-Penguin_Proxy-1.4.0.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.4.0.jar",
+          "primary": true,
+          "sha256": "8ea0bf201fd4f600852d33dd663341961c7d5880442478a259555b6d5563e37b",
+          "size": 19763904,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.4.0/HuHoBot-Penguin_Spigot-1.4.0.jar"
+        }
+      ],
+      "name": "HuHoBot v1.4.0",
+      "prerelease": false,
+      "published_at": 1789887641,
+      "version": "v1.4.0"
+    },
+    {
+      "changelog": "## 新增功能\n\n- **附属插件 API (AddonAPI)**：第三方插件可通过 registerAddon() 注册扩展，通过 registerBotCommand() 注册自定义命令，所有命令自动同步到 QQ 指令面板\n- **附属插件查询**：群内发送 /附属插件 可查看已安装的附属插件列表\n- Nukkit 调度器 API 兼容性修复\n\n## 变更\n\n- RegisteredCommand 新增 source 字段用于追踪命令来源\n- BaseCommand 新增 allRegisteredCommands 静态列表\n- 所有平台（Spigot/Nukkit/Allay/Velocity/BungeeCord）均已暴露 registerAddon() 和 5 参数 registerBotCommand() 方法\n- 完全向后兼容旧版 4 参数 registerBotCommand API\n\n## 产物\n\n- HuHoBot-Penguin_Spigot-1.3.0.jar\n- HuHoBot-Penguin_Nukkit-1.3.0.jar\n- HuHoBot-Penguin_Allay-1.3.0.jar\n- HuHoBot-Penguin_Proxy-1.3.0.jar",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Allay-1.3.0.jar",
+          "primary": true,
+          "sha256": "7e6117eaf6e69b20bce4de5ad84ab59f42f391753602835273f45c1a3ad4017d",
+          "size": 19098710,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.3.0/HuHoBot-Penguin_Allay-1.3.0.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Nukkit-1.3.0.jar",
+          "primary": true,
+          "sha256": "48f8e95a4b1e613a566b50f18ec1713fd46a39455200cfe7d771afe2f65154a6",
+          "size": 19101698,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.3.0/HuHoBot-Penguin_Nukkit-1.3.0.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Proxy-1.3.0.jar",
+          "primary": true,
+          "sha256": "3e1bf95e26a8cd519b4080bc04a3e2350c127883116e4a1615ebb68af4eeed1b",
+          "size": 21956903,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.3.0/HuHoBot-Penguin_Proxy-1.3.0.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.3.0.jar",
+          "primary": true,
+          "sha256": "caf0ca1a5a04524cf88d14d5c91deba1d305f39c9e55d404af8ce9e42a72ad5d",
+          "size": 19123939,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.3.0/HuHoBot-Penguin_Spigot-1.3.0.jar"
+        }
+      ],
+      "name": "HuHoBot v1.3.0",
+      "prerelease": false,
+      "published_at": 1789194038,
+      "version": "v1.3.0"
+    },
+    {
+      "changelog": "# HuHoBot Penguin v1.2.2\n\n- fix(events): 添加忽略空消息的配置项\n\n### 构建信息\n- 构建时间: 2026-08-29T14:44:20Z\n- 提交哈希: [b5162bae144ade7c3d17a8e32617030ec5112ff4](https://github.com/HuHoBot/PenguinClient/commit/b5162bae144ade7c3d17a8e32617030ec5112ff4)\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Allay-1.2.2.jar",
+          "primary": true,
+          "sha256": "12bc4195b1b70ce5e998aa953a87719623beebb3e5488e42ba98c02bec4a5a9c",
+          "size": 19089162,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.2.2/HuHoBot-Penguin_Allay-1.2.2.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Nukkit-1.2.2.jar",
+          "primary": true,
+          "sha256": "8676e0cd01ba5e1f31b2f75ad8de32121649b9f128e4f492598551c9f9d68edb",
+          "size": 19093169,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.2.2/HuHoBot-Penguin_Nukkit-1.2.2.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Proxy-1.2.2.jar",
+          "primary": true,
+          "sha256": "2568eb0c40c165fa7a4b8dfa4eaae1e08b437f756554241d3474a6e7e6376ffc",
+          "size": 21946758,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.2.2/HuHoBot-Penguin_Proxy-1.2.2.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.2.2.jar",
+          "primary": true,
+          "sha256": "bd65da2f79491ec6d88e64b8ef547843ff47d88375bd70386a07f3a8b036ee53",
+          "size": 19114373,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.2.2/HuHoBot-Penguin_Spigot-1.2.2.jar"
+        }
+      ],
+      "name": "HuHoBot v1.2.2",
+      "prerelease": false,
+      "published_at": 1788014660,
+      "version": "v1.2.2"
+    },
+    {
+      "changelog": "# HuHoBot Penguin v1.2.1\n\n- fix(events): 修复玩家加入和退出事件的空消息处理\n\n### 构建信息\n- 构建时间: 2026-08-21T19:30:06Z\n- 提交哈希: [d235fd1ac6f0d4c5170ec8d7cdb78754b8245db6](https://github.com/HuHoBot/PenguinClient/commit/d235fd1ac6f0d4c5170ec8d7cdb78754b8245db6)\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Allay-1.2.1.jar",
+          "primary": true,
+          "sha256": "004400f54d4f0f44ac02cf1c23ed18c76522ffd878b7c67d18be5e23f3ff63a2",
+          "size": 19087966,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.2.1/HuHoBot-Penguin_Allay-1.2.1.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Nukkit-1.2.1.jar",
+          "primary": true,
+          "sha256": "fa0b5293dcb376ed7d3efe5c395ab5c697dcb87aca5c692b53cc77f8221936dc",
+          "size": 19091922,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.2.1/HuHoBot-Penguin_Nukkit-1.2.1.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Proxy-1.2.1.jar",
+          "primary": true,
+          "sha256": "c9f842bb6543f38460b242673f54a9d6384da4a1aa70027cf8c856d99014c14e",
+          "size": 21945353,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.2.1/HuHoBot-Penguin_Proxy-1.2.1.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.2.1.jar",
+          "primary": true,
+          "sha256": "72f637f781ee17d44b5eeb21fd195d32e90f633040acc43390475509d48b331d",
+          "size": 19113016,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.2.1/HuHoBot-Penguin_Spigot-1.2.1.jar"
+        }
+      ],
+      "name": "HuHoBot v1.2.1",
+      "prerelease": false,
+      "published_at": 1787340606,
+      "version": "v1.2.1"
+    },
+    {
+      "changelog": "# HuHoBot Penguin v1.2.0\n\n- feat(plugin):新增自定义附属插件API和事件\n- feat(auth):修改 \\`/认证\\` 的实现方式\n\n### 构建信息\n- 构建时间: 2026-08-21T18:16:48Z\n- 提交哈希: [5dc65cb9da94529bf1f289fa80a2215dd8ab5d9b](https://github.com/HuHoBot/PenguinClient/commit/5dc65cb9da94529bf1f289fa80a2215dd8ab5d9b)\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Allay-1.2.0.jar",
+          "primary": true,
+          "sha256": "a0a355e39bd2798923edb6c2a8ea66095590c3a10ae2852ffcdaf1133fb78872",
+          "size": 19087934,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.2.0/HuHoBot-Penguin_Allay-1.2.0.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Nukkit-1.2.0.jar",
+          "primary": true,
+          "sha256": "71d7893e780f6091966a5d53eb1d7268490f14661adcf5993b1b83866149cd38",
+          "size": 19091844,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.2.0/HuHoBot-Penguin_Nukkit-1.2.0.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Proxy-1.2.0.jar",
+          "primary": true,
+          "sha256": "c28e21da1787f10c8f75d2fbd30d58d685ede237a3c0f13c471e9bc9d83a0e14",
+          "size": 21945353,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.2.0/HuHoBot-Penguin_Proxy-1.2.0.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.2.0.jar",
+          "primary": true,
+          "sha256": "73873323daadcdec8a6f6fc261e71db9685c286e50c46e39d611ce426a3b664c",
+          "size": 19112955,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.2.0/HuHoBot-Penguin_Spigot-1.2.0.jar"
+        }
+      ],
+      "name": "HuHoBot v1.2.0",
+      "prerelease": false,
+      "published_at": 1787336208,
+      "version": "v1.2.0"
+    },
+    {
+      "changelog": "# HuHoBot Penguin v1.1.0\n\n- feat(menu):新增调整命令推送至面板的规则\n- feat(motd):新增\\`motd\\`功能\n\n### 构建信息\n- 构建时间: 2026-08-16T11:34:19Z\n- 提交哈希: [be80738b1c69a9e99eace765a83b1724e7e33501](https://github.com/HuHoBot/PenguinClient/commit/be80738b1c69a9e99eace765a83b1724e7e33501)\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Allay-1.1.0.jar",
+          "primary": true,
+          "sha256": "28f9fbbd3fa67967d3ca1668a3a3d15079b9542cf49e35ea856be24550adb402",
+          "size": 19047118,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.1.0/HuHoBot-Penguin_Allay-1.1.0.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Nukkit-1.1.0.jar",
+          "primary": true,
+          "sha256": "5c0855263a13137df1a5a55ec2270afffc8f34f285d4c9226475d7234fff4804",
+          "size": 19048518,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.1.0/HuHoBot-Penguin_Nukkit-1.1.0.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Proxy-1.1.0.jar",
+          "primary": true,
+          "sha256": "a920d1f18c64e4352d32fadf270ec06f5db84cf16e9efc206cc6b303d8d85473",
+          "size": 21895910,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.1.0/HuHoBot-Penguin_Proxy-1.1.0.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.1.0.jar",
+          "primary": true,
+          "sha256": "afd681c5e026b118f4ffceced243ba6813ff3da843ffa630260e02adc0a1cb1f",
+          "size": 18728413,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.1.0/HuHoBot-Penguin_Spigot-1.1.0.jar"
+        }
+      ],
+      "name": "HuHoBot v1.1.0",
+      "prerelease": false,
+      "published_at": 1786880060,
+      "version": "v1.1.0"
+    },
+    {
+      "changelog": "# HuHoBot Penguin v1.0.4\n\n- fix(command): 修复指令不能用 \\`/命令\\` 执行自定义命令的问题\n\n### 构建信息\n- 构建时间: 2026-08-15T17:02:48Z\n- 提交哈希: [8ec1f5841072bc3a07b9227047e7d418fc865be9](https://github.com/HuHoBot/PenguinClient/commit/8ec1f5841072bc3a07b9227047e7d418fc865be9)\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Allay-1.0.4.jar",
+          "primary": true,
+          "sha256": "a790c6416387372404c605b070674fade0cf24d5b4080fafec7dbce04c91243d",
+          "size": 18947116,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.0.4/HuHoBot-Penguin_Allay-1.0.4.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Nukkit-1.0.4.jar",
+          "primary": true,
+          "sha256": "c3c3bf0ce84fcef3c2a723a81ebe086a055dca9003b56dd72dac6afa79c23051",
+          "size": 18948483,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.0.4/HuHoBot-Penguin_Nukkit-1.0.4.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Proxy-1.0.4.jar",
+          "primary": true,
+          "sha256": "77f75d1c266dcc12cf53e8e106d00616de682c2f1836b3ca147ce5698342b3fb",
+          "size": 21866496,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.0.4/HuHoBot-Penguin_Proxy-1.0.4.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.0.4.jar",
+          "primary": true,
+          "sha256": "cc35cb4c1365715b602b8ea5a29043dc7ee12af2e965cf76967896924a418e79",
+          "size": 18629029,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.0.4/HuHoBot-Penguin_Spigot-1.0.4.jar"
+        }
+      ],
+      "name": "HuHoBot v1.0.4",
+      "prerelease": false,
+      "published_at": 1786813368,
+      "version": "v1.0.4"
+    },
+    {
+      "changelog": "# HuHoBot Penguin v1.0.3\r\n\r\n- feat(menu): 新增QQ命令面板功能\r\n- feat(message): 新增解析群消息功能\r\n\r\n### 构建信息\r\n- 构建时间: 2026-08-15T16:24:57Z\r\n- 提交哈希: [5c822ace43f59da2191523523c1d2af535ec4d4b](https://github.com/HuHoBot/PenguinClient/commit/5c822ace43f59da2191523523c1d2af535ec4d4b)\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Allay-1.0.2.jar",
+          "primary": true,
+          "sha256": "0180355c96654ddf8c063b0d5adc27e930644b02caafa113d5f977a44f511a77",
+          "size": 18945702,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.0.3/HuHoBot-Penguin_Allay-1.0.2.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Nukkit-1.0.2.jar",
+          "primary": true,
+          "sha256": "2b6d481f902793389e92cd5bd90b91eeccfdf79eddac982f10fd729f0a4c944e",
+          "size": 18947069,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.0.3/HuHoBot-Penguin_Nukkit-1.0.2.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Proxy-1.0.2.jar",
+          "primary": true,
+          "sha256": "6e3913b45aca4a372a426cfadd34fa2ed7d33f6b6713d98d8b119ffc7c438897",
+          "size": 21865063,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.0.3/HuHoBot-Penguin_Proxy-1.0.2.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.0.2.jar",
+          "primary": true,
+          "sha256": "4757f2353b572361e8245c13371d45ab4ee6db88c32db57b475f8c368c65f76f",
+          "size": 18627615,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.0.3/HuHoBot-Penguin_Spigot-1.0.2.jar"
+        }
+      ],
+      "name": "HuHoBot v1.0.3",
+      "prerelease": false,
+      "published_at": 1786811097,
+      "version": "v1.0.3"
+    },
+    {
+      "changelog": "# HuHoBot Penguin v1.0.2\n\n- feat(message): 添加消息提及用户解析和格式化功能\n\n### 构建信息\n- 构建时间: 2026-08-15T11:41:54Z\n- 提交哈希: [ad863f1008b0c29b7ed9f0ca149b90e76bb1ef89](https://github.com/HuHoBot/PenguinClient/commit/ad863f1008b0c29b7ed9f0ca149b90e76bb1ef89)\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Allay-1.0.2.jar",
+          "primary": true,
+          "sha256": "ad8a737097b4c899bc33ab6bae7a2611e63d332914b9423d859e3a6cf4151bb4",
+          "size": 18908124,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.0.2/HuHoBot-Penguin_Allay-1.0.2.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Nukkit-1.0.2.jar",
+          "primary": true,
+          "sha256": "f90e1f6eb7d8544584f588fbbaf9bc73dadc03123b6fb6885ce3ff76bcbc7a41",
+          "size": 18909491,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.0.2/HuHoBot-Penguin_Nukkit-1.0.2.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Proxy-1.0.2.jar",
+          "primary": true,
+          "sha256": "47465a05b385da9ebe1ea1766c611b142dba09237b03552899fd28140ebc6bf1",
+          "size": 21827718,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.0.2/HuHoBot-Penguin_Proxy-1.0.2.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.0.2.jar",
+          "primary": true,
+          "sha256": "cdc95825a6e7783eb1525488bb828da1d1c4ce73c5c9876b86c4dcf697e8f5dc",
+          "size": 18590037,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.0.2/HuHoBot-Penguin_Spigot-1.0.2.jar"
+        }
+      ],
+      "name": "HuHoBot v1.0.2",
+      "prerelease": false,
+      "published_at": 1786794114,
+      "version": "v1.0.2"
+    },
+    {
+      "changelog": "# HuHoBot Penguin v1.0.1\r\n\r\n- fix(command): 修复了\\`查在线\\`无法使用的bug\r\n- feat(command): 新增\\`/huhobot reload\\`命令\r\n- feat(proxy): 添加Redis远程命令支持和玩家事件广播功能\r\n- feat(event): 新增玩家进出服事件\r\n- feat(queryOnline): 支持\\`查在线\\`Markdown\r\n\r\n### 构建信息\r\n- 构建时间: 2026-08-14T17:06:51Z\r\n- 提交哈希: [11281a79515adf2f8a59594571f5c21a19640486](https://github.com/HuHoBot/PenguinClient/commit/11281a79515adf2f8a59594571f5c21a19640486)\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Allay-1.0.1.jar",
+          "primary": true,
+          "sha256": "5c7596f39ac336bd29f8ef42354de831ec7bbda6e82c2a265de6929c0b0145fe",
+          "size": 18906554,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.0.1/HuHoBot-Penguin_Allay-1.0.1.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Nukkit-1.0.1.jar",
+          "primary": true,
+          "sha256": "d676f25028e02042dfbea5ead8df04f28ff03ca042f9ee3decde48cf366f9519",
+          "size": 18907921,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.0.1/HuHoBot-Penguin_Nukkit-1.0.1.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Proxy-1.0.1-hotfix.jar",
+          "primary": true,
+          "sha256": "e29b164a90e2a0a8b40b48a91c650cb9c92e40ac0581e0fd1bda8f84b8c70600",
+          "size": 21826145,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.0.1/HuHoBot-Penguin_Proxy-1.0.1-hotfix.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.0.1.jar",
+          "primary": true,
+          "sha256": "4356ca212b3b10d9f297b26b8e10f7d65fec67525abfb081b0e311ceefa8ad41",
+          "size": 18588467,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.0.1/HuHoBot-Penguin_Spigot-1.0.1.jar"
+        }
+      ],
+      "name": "HuHoBot v1.0.1",
+      "prerelease": false,
+      "published_at": 1786727212,
+      "version": "v1.0.1"
+    }
+  ]
+}

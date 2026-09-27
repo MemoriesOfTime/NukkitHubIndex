@@ -2,9 +2,19 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "Alemiz",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/45739737?v=4",
+      "name": "Alemiz112",
+      "url": "https://github.com/Alemiz112"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "name": "Buddelbubi",
+      "url": "https://github.com/Buddelbubi"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/50714128?v=4",
+      "name": "xRookieFight",
+      "url": "https://github.com/xRookieFight"
     }
   ],
   "categories": [],
@@ -28,16 +38,15 @@
   },
   "manifest_path": "powernukkitx/src/main/resources/plugin.yml",
   "name": "StarGate-Universe",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/StarGate-Universe",
   "stars": 0,
   "summary": "StarGate plugin for PowerNukkitX",
   "targets": [
-    "nkx",
     "pnx"
   ],
-  "updated_at": 1783680648,
+  "updated_at": 1783680710,
   "versions": [
     {
       "changelog": "Automated release for v2.2-SNAPSHOT",
@@ -46,6 +55,7 @@
         {
           "filename": "StarGate-Universe.jar",
           "primary": true,
+          "sha256": "d04e675d47337d328f56307baf152ca4ea7b394b2c0b21203e4b1aeef5496b1c",
           "size": 29420787,
           "url": "https://github.com/PowerNukkitX-Bundle/StarGate-Universe/releases/download/v2.2-SNAPSHOT/StarGate-Universe.jar"
         }

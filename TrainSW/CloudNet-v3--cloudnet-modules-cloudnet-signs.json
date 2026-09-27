@@ -1,0 +1,166 @@
+{
+  "api_version": "1.0.5",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/37866812?v=4",
+      "name": "einrobin",
+      "url": "https://github.com/einrobin"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/42209193?v=4",
+      "name": "juliarn",
+      "url": "https://github.com/juliarn"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/40468651?v=4",
+      "name": "derklaro",
+      "url": "https://github.com/derklaro"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/60936899?v=4",
+      "name": "0utplay",
+      "url": "https://github.com/0utplay"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/in/2141?v=4",
+      "name": "dependabot-preview[bot]",
+      "url": "https://github.com/apps/dependabot-preview"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/54715954?v=4",
+      "name": "davidmayr",
+      "url": "https://github.com/davidmayr"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/36028681?v=4",
+      "name": "florianpreuss",
+      "url": "https://github.com/florianpreuss"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/2050966?v=4",
+      "name": "GiantTreeLP",
+      "url": "https://github.com/GiantTreeLP"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/16355913?v=4",
+      "name": "byRoadrunner",
+      "url": "https://github.com/byRoadrunner"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "name": "dependabot[bot]",
+      "url": "https://github.com/apps/dependabot"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/33085157?v=4",
+      "name": "Sarsum",
+      "url": "https://github.com/Sarsum"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/51173477?v=4",
+      "name": "zLvkas",
+      "url": "https://github.com/zLvkas"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/42355796?v=4",
+      "name": "manuelkollus",
+      "url": "https://github.com/manuelkollus"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/72864666?v=4",
+      "name": "DinoMarlir",
+      "url": "https://github.com/DinoMarlir"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/19310830?v=4",
+      "name": "Meldiron",
+      "url": "https://github.com/Meldiron"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/38396937?v=4",
+      "name": "FemtoYT",
+      "url": "https://github.com/FemtoYT"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/30979070?v=4",
+      "name": "mcmdev",
+      "url": "https://github.com/mcmdev"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/22765741?v=4",
+      "name": "LowderPlay",
+      "url": "https://github.com/LowderPlay"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/35733278?v=4",
+      "name": "PAException",
+      "url": "https://github.com/PAException"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/29168749?v=4",
+      "name": "PascalKu",
+      "url": "https://github.com/PascalKu"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/36674649?v=4",
+      "name": "chaosfreak93",
+      "url": "https://github.com/chaosfreak93"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/3136830?v=4",
+      "name": "b0ykoe",
+      "url": "https://github.com/b0ykoe"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/53491662?v=4",
+      "name": "thisisfel1x",
+      "url": "https://github.com/thisisfel1x"
+    }
+  ],
+  "categories": [],
+  "created_at": 1643042849,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "CloudNet-Bridge",
+      "version_range": ""
+    }
+  ],
+  "description": "# Cloud Network Environment Technology 3 for Minecraft\n\n![CloudNet V3 Logo](https://raw.githubusercontent.com/TrainSW/CloudNet-v3/development/docs/images/header.png)\n\n## What is CloudNet?\n\n**CloudNet** is an alternative application that can dynamically and easy deploy Minecraft oriented software. It should\ngreatly simplify the work and the technical processes within a Minecraft server network or with standalone servers. The\nprogram should be the basis for a **Minecraft network**. With a **very extensive** API and a **very modular**\narchitecture, the program should be easily extensible in all its capabilities. It should be a solution to the most\ncreative ideas that brighten our Minecraft world. From minigame networks, CityBuild servers to private servers with\nCloudNet is the work **low**. If it needs to be developed for CloudNet, it will provide an **API** (Driver) that can be\nused to develop Bukkit / Sponge / Nukkit plugins or to develop modules to extend the core system. The **application\nwrapper** for the **JVM** allows support for a wide variety of Minecraft server software and allows direct inclusion of\nthe API to retain it throughout the lifetime of the application.\n\n###### **CloudNet v3** is the next generation of Minecraft Java and Bedrock cloud systems\n\n## Features\n\n- **Plug&Play**\n- **Lightweight runtime launcher** for multiple versions or easy developing on CloudNet\n- Installer of dependencies\n- **Module** system with default modules\n- User management system with roles\n- **Easy server management** with simple commands\n- Tasks to classify the services\n- Internal database system based on H2\n- **Multi group** and configuration\n- Dynamic Template Storage System\n- Dynamic Deployment System\n- Dynamic File inclusions for services with HTTP/HTTPS support\n- **Live** updating and working in a cluster\n- Smart service instance deployments in cluster\n- Supports static services for projects like CityBuild or Vanilla Minecraft\n- Automatic error log printer from running services into node console\n- New **non blocking service console log caching** without BungeeCord timeouts and infinity console streams\n- A fast **HTTP/HTTPS server**\n- A **RESTful** API\n- **SSL/TLS support** for security connections between the nodes in cluster or between the services and the node with or\n  none own certificates\n- Multi system support and synchronizing in a network cluster\n- Support for Minecraft **vanilla 1.0+**\n- Application support for [Nukkit Project for Bedrock Edition 1.7+](https://github.com/CloudburstMC/Nukkit)\n- Application support for [Bukkit based Minecraft **\n  1.8.8+** (Spigot, PaperSpigot and more...)](https://github.com/Bukkit/Bukkit)\n- Application support for [Sponge based Minecraft servers with the SpongeAPI **7.0.0+**](https://www.spongepowered.org/)\n- Application support for [BungeeCord proxy server and forks for MC **1.8.8+**](https://github.com/SpigotMC/BungeeCord)\n- Application support for [GlowStone Minecraft server for MC **1.8.9+**](https://glowstone.net)\n- Application support for [Velocity Minecraft Java edition proxy server](https://www.velocitypowered.com)\n- Application support for [Waterdog Minecraft Bedrock Edition proxy server](https://github.com/yesdog/Waterdog)\n- Application support for [GoMint Minecraft Bedrock Edition server software](https://github.com/GoMint/GoMint)\n- A **really big API** for **asynchronously** programming or **synchronously** programming\n- A **Bridge module**, which includes the basics for the Bukkit, Sponge, BungeeCord and Nukkit API and for BungeeCord a\n  /cloudnet command to dispatch the console of CloudNet ingame\n- **BungeeCord exploit protection** with the Bridge Module for BungeeCord MC **1.8.8+** and Velocity\n- **Random Hub** and **/hub** command with the Bridge Module for BungeeCord MC **1.8.8+** and Velocity\n- **/cloudnet** command which dispatches the console of CloudNet Ingame for BungeeCord MC **1.8.8+** and Velocity\n- A live, ingame, sorted signs system for Bukkit and Sponge with a dynamic animation and configuration for each group.\n- A **SyncProxy module**, which include the **synchronization between two or more BungeeCord services** in one group.\n- **Motd** layout configuration and synchronizing between Proxys with **SyncProxy module**\n- **Animated Tablist** configuration with **SyncProxy module**\n- A **Permissions module** which integrate the CloudNet user permissions system into the services plugin managers\n- A **Smart module** for advanced configurations and automatic task management\n- A **Cloudflare module** for dynamic adding and removing of DNS records for multi BungeeCord services\n- A **Report module** Easily create reports to hear the services or node in the cluster and provide easy support.\n- A **Storage FTP/FTPS Module** to transport templates from an external server via FTP / FTPS\n- A **MySQL/MariaDB database support module** as alternative central database for CloudNet data by other modules\n- Memory management protection\n- CPU management protection\n\n## Minimal requirements\n\n- Java 8 JRE (alt. 10 or 11)\n- 128MB JVM Heap size\n- 2GB DDR3 System memory\n- 2 virtual cores\n- Internet connection\n\n## Recommended requirements\n\n- Java 11 JRE\n- 512MB JVM Heap size\n- 8GB DDR3 system memory\n- 2-4 virtual cores\n- Internet connection\n\n## Build\n\nLinux / OSX\n\n```\ngit clone https://github.com/CloudNetService/CloudNet-v3.git\ncd CloudNet-v3\n./gradlew\n```\n\nWindows\n\n```\ngit clone https://github.com/CloudNetService/CloudNet-v3.git\ncd CloudNet-v3\ngradlew.bat\n```\n\n## Setup\n\nCloudNet should be started via the following script via Shell.\n\n#### Default:\n\n```\njava -XX:+UseG1GC -XX:MaxGCPauseMillis=50 -XX:CompileThreshold=100 -XX:+UnlockExperimentalVMOptions -XX:+UseCompressedOops -Xmx512m -Xms256m -jar launcher.jar\n```\n\nThe launcher should install the application files, then the dependencies. If it is finished, it will run the application\nitself. For each version, this preparation is done dynamically.\n\n**Try it out!**\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-09-25",
+      "description": "",
+      "title": "CloudNet V3 Logo",
+      "url": "https://raw.githubusercontent.com/TrainSW/CloudNet-v3/development/docs/images/header.png"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/98266655?v=4",
+  "id": "TrainSW/CloudNet-v3--cloudnet-modules-cloudnet-signs",
+  "license": {
+    "id": "Apache-2.0",
+    "name": "Apache License 2.0",
+    "url": "https://spdx.org/licenses/Apache-2.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://cloudnetservice.eu",
+    "wiki": ""
+  },
+  "manifest_path": "cloudnet-modules/cloudnet-signs/src/main/resources/plugin.nukkit.yml",
+  "name": "CloudNet-Signs",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/TrainSW/CloudNet-v3",
+  "stars": 0,
+  "summary": "Nukkit extension for the CloudNet runtime, which optimizes some features",
+  "targets": [
+    "nkx",
+    "nkmot",
+    "pnx"
+  ],
+  "updated_at": 1645709538,
+  "versions": []
+}

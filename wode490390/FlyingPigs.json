@@ -1,0 +1,58 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+      "name": "wode490390",
+      "url": "https://github.com/wode490390"
+    }
+  ],
+  "categories": [],
+  "created_at": 1580684772,
+  "dependencies": [],
+  "description": "# Fiying Pigs\n[![](https://i.loli.net/2020/02/03/WSRsHdNx3quEGez.jpg)](http://www.mcbbs.net/thread-950758-1-1.html \"飞猪\")\n\nThis plugin allows you to fly into the sky on a pig :)\n\n**This plugin requires [MobPlugin](https://github.com/Nukkit-coders/MobPlugin).**\n\nPlease see [mcbbs](http://www.mcbbs.net/thread-950758-1-1.html) for more information.\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+  "id": "wode490390/FlyingPigs",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "http://wode490390.cn/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "FiyingPigs",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/wode490390/FlyingPigs",
+  "stars": 1,
+  "summary": "Fiying pigs plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1580686579,
+  "versions": [
+    {
+      "changelog": "Initial release",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeFiyingPigs-1.0.0.jar",
+          "primary": true,
+          "size": 13763,
+          "url": "https://github.com/wode490390/FlyingPigs/releases/download/1.0.0/wodeFiyingPigs-1.0.0.jar"
+        }
+      ],
+      "name": "FiyingPigs-v1.0.0",
+      "prerelease": false,
+      "published_at": 1580686579,
+      "version": "1.0.0"
+    }
+  ]
+}

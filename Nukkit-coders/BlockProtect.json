@@ -1,0 +1,60 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/4830235?v=4",
+      "name": "HiddenMotives",
+      "url": "https://github.com/HiddenMotives"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/26197131?v=4",
+      "name": "PetteriM1",
+      "url": "https://github.com/PetteriM1"
+    }
+  ],
+  "categories": [],
+  "created_at": 1516541606,
+  "dependencies": [],
+  "description": "# BlockProtect\nNukkit Plugin: Protect yourself from griefers by placing a protection block!\n\n### Features\n- Easy to use for your players\n- Customizable Protection Block ID\n- Customizable Protection Radius\n- Ability to set maxium number of protections\n- Visualize protection radius \n\n### Usage\nPlace a protection block (default lapis lazuli block) and volla !\nThe radius (default 10 blocks) will be protected around your protection block.\n\n### Installation \nPut [BlockProtect.jar](https://github.com/Nukkit-coders/BlockProtect/releases) in the plugins directory on your Nukkit Server\n\n### Want to contribute?\nHere are some features and expansions that can be added\n- Multi World Support\n- Multi Language Support\n- OP override protection\n- Permission Based Protection, and Protection Limit\n- Toggle Protection Block Mode (So you can use the Protection Block normally)\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/34147027?v=4",
+  "id": "Nukkit-coders/BlockProtect",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "BlockProtect",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Nukkit-coders/BlockProtect",
+  "stars": 4,
+  "summary": "Protect yourself from griefers by placing a protection block! Updated by PetteriM1",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1516649181,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BlockProtect.jar",
+          "primary": true,
+          "size": 11347,
+          "url": "https://github.com/Nukkit-coders/BlockProtect/releases/download/1.1/BlockProtect.jar"
+        }
+      ],
+      "name": "Download",
+      "prerelease": false,
+      "published_at": 1516649181,
+      "version": "1.1"
+    }
+  ]
+}

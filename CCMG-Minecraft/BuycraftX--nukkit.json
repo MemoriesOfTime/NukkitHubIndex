@@ -1,0 +1,100 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/979956?v=4",
+      "name": "minecrafter",
+      "url": "https://github.com/minecrafter"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/10179637?v=4",
+      "name": "liam-wiltshire",
+      "url": "https://github.com/liam-wiltshire"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/1396368?v=4",
+      "name": "theminecoder",
+      "url": "https://github.com/theminecoder"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/13520198?v=4",
+      "name": "PhilCCMG",
+      "url": "https://github.com/PhilCCMG"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/26485672?v=4",
+      "name": "itsjh",
+      "url": "https://github.com/itsjh"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/3318873?v=4",
+      "name": "nikosgram",
+      "url": "https://github.com/nikosgram"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/62796605?v=4",
+      "name": "TebexOllie",
+      "url": "https://github.com/TebexOllie"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/20393865?v=4",
+      "name": "nilsbrychzy",
+      "url": "https://github.com/nilsbrychzy"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/104735961?v=4",
+      "name": "ow77",
+      "url": "https://github.com/ow77"
+    }
+  ],
+  "categories": [],
+  "created_at": 1605452449,
+  "dependencies": [],
+  "description": "# CheatCode Fork\nThis fork adds the ability to change how the GUI displays items in the `/buy` menu.\nTo change how an item is displayed, you can add the following to config.yml\n\n**This fork only modifies the Bukkit version of BuycraftX. BungeeCord, Nukkit, Sponge & Velocity\n are not touched.**\n\nAll properties of a display are optional.\n```yml\ndisplay:\n  1234567: # Package ID\n    name: \"\"\n    lore:\n    - \"\"\n    amount: 1\n    item: DIRT\n```\n\n# BuycraftX\n\nBuycraftX is the official plugin for the [Buycraft](https://www.buycraft.net) webstore solution for Minecraft servers.\n\n## The major differences\n\n* A total rewrite of the plugin based on modern coding standards. The new plugin is geared towards reliability and performance.\n* Supports multiple platforms:\n  * Spigot 1.7.10 or above (1.8.3+ recommended)\n  * BungeeCord (recent versions)\n  * Sponge 5.x\n* Custom item IDs are not supported, as it is not portable to other platforms and is deprecated.\n\n## Translations\n\nHelp us translate the BuycraftX project by participating in our Crowdin project located at https://crowdin.com/project/buycraftx-plugin.\n\n## Standalone API\n\nBuycraftX includes the `buycraftx-common` module, which contains an API client, and shared code across all platforms.\n\n## Standalone executor\n\nBuycraftX can be integrated into your own custom applications to handle command execution. Most applications will\nfind `StandaloneBuycraftRunnerBuilder` to be the easiest method for integration, but you can also implement the whole\nBuycraftX stack if desired.\n\n## Support\n\nPlease don't raise support issues on this repo. For support with the plugin or any Buycraft issues, please [contact support](http://help.buycraft.net)\n\n## Contributing\n\nWe welcome contributions from the community. Please refer to the CONTRIBUTING.md file for more details. By submitting code to us, you agree to the \nterms set out in the CONTRIBUTING.md file\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/67880462?v=4",
+  "id": "CCMG-Minecraft/BuycraftX--nukkit",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "nukkit/src/main/resources/plugin.yml",
+  "name": "BuycraftX",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/CCMG-Minecraft/BuycraftX",
+  "stars": 0,
+  "summary": "The official Tebex Plugin (Previously called Buycraft) for a variety of Minecraft Server platforms.",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1605453810,
+  "versions": [
+    {
+      "changelog": "- Added item display config.\r\n\r\nExample (in config.yml):\r\n```yml\r\ndisplay:\r\n  1234567: # Package ID\r\n    name: \"\"\r\n    lore:\r\n    - \"\"\r\n    amount: 1\r\n    item: DIRT\r\n```",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "buycraftx-bukkit-post-1.13-12.1.7.jar",
+          "primary": true,
+          "size": 1166348,
+          "url": "https://github.com/CCMG-Minecraft/BuycraftX/releases/download/12.1.7/buycraftx-bukkit-post-1.13-12.1.7.jar"
+        },
+        {
+          "filename": "buycraftx-bukkit-pre-1.13-12.1.7.jar",
+          "primary": true,
+          "size": 1166588,
+          "url": "https://github.com/CCMG-Minecraft/BuycraftX/releases/download/12.1.7/buycraftx-bukkit-pre-1.13-12.1.7.jar"
+        }
+      ],
+      "name": "12.1.7",
+      "prerelease": false,
+      "published_at": 1605453810,
+      "version": "12.1.7"
+    }
+  ]
+}

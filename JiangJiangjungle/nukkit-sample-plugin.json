@@ -1,0 +1,42 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/30773540?v=4",
+      "name": "JiangJiangjungle",
+      "url": "https://github.com/JiangJiangjungle"
+    }
+  ],
+  "categories": [],
+  "created_at": 1558198092,
+  "dependencies": [],
+  "description": "",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/30773540?v=4",
+  "id": "JiangJiangjungle/nukkit-sample-plugin",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/Nukkit/ExamplePlugin",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "ExamplePlugin",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/JiangJiangjungle/nukkit-sample-plugin",
+  "stars": 0,
+  "summary": "Example plugin showing the API",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1563104744,
+  "versions": []
+}

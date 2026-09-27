@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.9",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/29695863?v=4",
+      "name": "Atm85",
+      "url": "https://github.com/Atm85"
+    }
+  ],
+  "categories": [],
+  "created_at": 1577125047,
+  "dependencies": [],
+  "description": "<img src=\"https://i.imgur.com/RIWMp43.png\" alt=\"icon\" width=\"100px\" />\n\n# Important!\nThis plugin requires MongoDB java drivers which conveniently has been provided within the `/libs` directory ***OF THIS REPO***\n\n# Installation\n - Drop into plugins folder\n - Start and stop your server again\n - Edit newly generated config.yml\n ```yaml\nuri: \"YOUR_ URI_STRING\"\n```\n\n# Api Usage\n - create two `new` properties within your `config.yml`\n - It is recommended to create an additional class within your plugin to manage all NukkitDB methods\n - All of NukkitDB methods are static as shown below in `newClass.java`!\n```yaml\n# config.yml\n# ----------\ndatabase: \"databaseName\"\ncollection: \"collectionName\"\n```\n```java\n// Main.java\n// ----------\n\npublic class Main extends PluginBase {\n\n    private static Main instance;\n    \n    @override\n    public void onEnable() {\n\n        Main.instance = this;\n\n        // try to get NukkitDB plugin in your main class 'onEnable' method\n        try {\n            this.getServer().getPluginManager().getPlugin(\"NukkitDB\");\n        } catch (NullPointerException e) {\n            this.getServer().getPluginManager().disablePlugin(this);\n        }\n\n    }\n\n    // plugins main instance\n    public static Main getInstance() {\n        return instance;\n    }   \n}\n```\n```java\n// NewClass.java (i.e.) DatabaseHandler.java\n// -----------------------------------------\n\npublic class DatabaseHandler {\n     \n    // query document from database\n    public static Map<String, Object> query() {\n        String database = Main.getInstance().getConfig().getString(\"database\");\n        String collection = Main.getInstance().getConfig().getString(\"collection\");\n        return NukkitDB.query(key, fieldName, database, collection);\n    }\n\n    // inserts a new document to database\n    public static void insertDocument(Map<String, Object> objectMap) {\n        NukkitDB.insertDocument(objectMap, plugin.getConfig().getString(\"database\"), plugin.getConfig().getString(\"collection\"));\n    }\n\n    // updates a document where field is equal to query and sets key to value\n    // key is another field within the found document being search via the field property\n    // set key to a string value\n    public static updateDocument(String query, String field, String key, String value) {\n        NukkitDB.updateDocument(query, field, key, value, Main.getInstance().getConfig().getString(\"database\"), Main.getInstance().getConfig().getString(\"collection\"));\n    }\n\n    // updates a document where field is equal to query and sets key to value\n    // key is another field within the found document being search via the field property\n    // set key to an integer value\n    public static updateDocument(String query, String field, String key, Integer value) {\n        NukkitDB.updateDocument(query, field, key, value, Main.getInstance().getConfig().getString(\"database\"), Main.getInstance().getConfig().getString(\"collection\"));\n    }\n}\n```\nYou can create new documents to insert into database as follows:\n```java\nimport java.util.HashMap;public class YourClass {\n\n    public void yourMethod(Player player) {\n\n        String uuid = player.getUniqueId().toString();\n        Map<String, Object> objectMap = new HashMap<>();\n        objectMap.put(\"uuid\", uuid);\n        DatabaseHandler.insertDocument(objectMap);\n        // you can add as many fields as you want with the '.put()' operator\n        // .put(\"field\", value);        \n\n    }\n}\n```\n\n# credits [![HitCount](http://hits.dwyl.io/TimelessMC/NukkitDB.svg)](http://hits.dwyl.io/TimelessMC/NukkitDB)\nIcon made by <a href=\"https://www.flaticon.com/authors/good-ware\" title=\"Good Ware\">Good Ware</a> from <a href=\"https://www.flaticon.com/\" title=\"Flaticon\">www.flaticon.com</a>\n\n\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/59154563?v=4",
+  "id": "FoxValleyMC/NukkitDB",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "NukkitDB",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/FoxValleyMC/NukkitDB",
+  "stars": 3,
+  "summary": "Database storing system for nukkit servers! (uses mongodb); sync data across multiple servers with one database",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1583459558,
+  "versions": []
+}

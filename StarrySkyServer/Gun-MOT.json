@@ -2,19 +2,9 @@
   "api_version": "1.0.13",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "daoge_cmd",
-      "url": ""
-    },
-    {
-      "avatar_url": "",
-      "name": "lt-name",
-      "url": ""
-    },
-    {
-      "avatar_url": "",
-      "name": "zimzaza4",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/60167194?v=4",
+      "name": "szzz666",
+      "url": "https://github.com/szzz666"
     }
   ],
   "categories": [],
@@ -43,6 +33,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1786244796,
+  "updated_at": 1786244791,
   "versions": []
 }

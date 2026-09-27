@@ -1,0 +1,62 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/26197131?v=4",
+      "name": "PetteriM1",
+      "url": "https://github.com/PetteriM1"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17672473?v=4",
+      "name": "Fleynaro",
+      "url": "https://github.com/Fleynaro"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+      "name": "wode490390",
+      "url": "https://github.com/wode490390"
+    }
+  ],
+  "categories": [],
+  "created_at": 1587401252,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "EconomyAPI",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "CryptoconomyAPI",
+      "version_range": ""
+    }
+  ],
+  "description": "",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/15011102?v=4",
+  "id": "SeqSEE/AdvancedKits",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://nukkitx.com/resources/advancedkits.88/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "AdvancedKits",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/SeqSEE/AdvancedKits",
+  "stars": 0,
+  "summary": "Kit plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1587402730,
+  "versions": []
+}

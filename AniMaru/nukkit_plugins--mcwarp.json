@@ -1,0 +1,42 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17352144?v=4",
+      "name": "moca127",
+      "url": "https://github.com/moca127"
+    }
+  ],
+  "categories": [],
+  "created_at": 1470567334,
+  "dependencies": [],
+  "description": "nukkit plugins\n===============\n모카의 누킷 플러그인 개발소\n---------------\n#####개발작\n+ 2016.7.21 allPlayer 개발\n+ 2016.7.21 blockProtect 개발\n+ 2016.7.21 police 개발(미공개)\n+ 2016.7.21 morning 개발\n+ 2016.7.21 spawn 개발\n+ 2016.7.21 terrorManager 개발\n+ 2016.7.21 warp 개발\n+ 2016.7.24 MonsterTag 개발\n+ 2016.7.25 MCtag 개발\n+ 2016.7.25 police 공개\n+ 2016.7.26 MCrandoms 개발\n\n---------------\n#####최신버전 다운로드\nallPlayer [[다운로드]](https://github.com/moca127/nukkit_plugins/raw/master/MCallPlayer/SNAPSHOT/MCallPlayer-1.0-SNAPSHOT.jar)<br>\nblockProtect [[다운로드]](https://github.com/moca127/nukkit_plugins/raw/master/MCblockProtect/SNAPSHOT/MCblockProtect-1.0-SNAPSHOT.jar)<br>\nmorning [[다운로드]](https://github.com/moca127/nukkit_plugins/raw/master/MCmorning/SNAPSHOT/MCmorning-1.0-SNAPSHOT.jar)<br>\nspawn [[다운로드]](https://github.com/moca127/nukkit_plugins/raw/master/MCspawn/SNAPSHOT/MCspawn-1.0-SNAPSHOT.jar)<br>\nterrorManager [[다운로드]](https://github.com/moca127/nukkit_plugins/raw/master/MCterrorManager/SNAPSHOT/MCterrorManager-1.0-SNAPSHOT.jar)<br>\nwarp [[다운로드]](https://github.com/moca127/nukkit_plugins/raw/master/MCwarp/release/MCwarp-1.1-release.jar)<br>\nMonsterTag [[다운로드]](https://github.com/moca127/nukkit_plugins/raw/master/MonsterTag/SNAPSHOT/MonsterTag-1.0-SNAPSHOT.jar)<br>\nMCtag [[다운로드]](https://github.com/moca127/nukkit_plugins/raw/master/MCtag/SNAPSHOT/MCtag-1.0-SNAPSHOT.jar)<br>\nMCpolice [[다운로드]](https://github.com/moca127/nukkit_plugins/raw/master/MCpolice/SNAPSHOT/MCpolice-1.0-SNAPSHOT.jar)<br>\nMCrandoms [[다운로드]](https://github.com/moca127/nukkit_plugins/raw/master/MCrandoms/SNAPSHOT/MCrandoms-1.0-SNAPSHOT.jar)<br>\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/16985351?v=4",
+  "id": "AniMaru/nukkit_plugins--mcwarp",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/moca127/MOCHA-EULA/blob/master/LICENSE.md",
+    "wiki": ""
+  },
+  "manifest_path": "MCwarp/src/main/resources/plugin.yml",
+  "name": "MCwarp",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/AniMaru/nukkit_plugins",
+  "stars": 0,
+  "summary": "",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1469667691,
+  "versions": []
+}

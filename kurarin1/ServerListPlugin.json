@@ -1,0 +1,54 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/67959648?v=4",
+      "name": "skuralll",
+      "url": "https://github.com/skuralll"
+    }
+  ],
+  "categories": [],
+  "created_at": 1580700958,
+  "dependencies": [],
+  "description": "https://pe.minecraft.jp/ をNukkitサーバー内でも使えるようにする",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/13174826?v=4",
+  "id": "kurarin1/ServerListPlugin",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "ServerListPlugin",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/kurarin1/ServerListPlugin",
+  "stars": 0,
+  "summary": "",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1662074380,
+  "versions": [
+    {
+      "changelog": "First Release",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ServerListPlugin-1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 334376,
+          "url": "https://github.com/kurarin1/ServerListPlugin/releases/download/1.0/ServerListPlugin-1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "1.0",
+      "prerelease": false,
+      "published_at": 1580733049,
+      "version": "1.0"
+    }
+  ]
+}

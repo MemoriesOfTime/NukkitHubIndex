@@ -1,0 +1,62 @@
+{
+  "api_version": "1.0.9",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/20490066?v=4",
+      "name": "violets007",
+      "url": "https://github.com/violets007"
+    }
+  ],
+  "categories": [],
+  "created_at": 1646051928,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "MiraiMC",
+      "version_range": ""
+    }
+  ],
+  "description": "# mirai-nukkit-bot\nNukkit 消息互通机器人\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/20490066?v=4",
+  "id": "violets007/mirai-nukkit-bot",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "mirai-nukkit-bot",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/violets007/mirai-nukkit-bot",
+  "stars": 0,
+  "summary": "A QQ bot plugin for Nukkit",
+  "targets": [
+    "nkx",
+    "nkmot",
+    "pnx"
+  ],
+  "updated_at": 1656850250,
+  "versions": [
+    {
+      "changelog": "- 前置依赖: MiraiMC-Nukkit.jar,请下载下面版本,此版本为自定义版修复部分bug\r\n- **mirai-nukkit-bot** 请直接在Github Actions里面下载最新的版本",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "MiraiMC-Nukkit.jar",
+          "primary": true,
+          "size": 11804050,
+          "url": "https://github.com/violets007/mirai-nukkit-bot/releases/download/1.0/MiraiMC-Nukkit.jar"
+        }
+      ],
+      "name": "mirai-nukkit-bot 1.0 版本",
+      "prerelease": false,
+      "published_at": 1646319077,
+      "version": "1.0"
+    }
+  ]
+}

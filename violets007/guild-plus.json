@@ -1,0 +1,44 @@
+{
+  "api_version": "1.0.9",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/20490066?v=4",
+      "name": "violets007",
+      "url": "https://github.com/violets007"
+    }
+  ],
+  "categories": [],
+  "created_at": 1655125436,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "EconomyAPI",
+      "version_range": ""
+    }
+  ],
+  "description": "## guild-plus\n\n### 简介\n\n这是运行在 Nukkit 服务器上的一款公会插件\n\n你可以用这个**插件可以给玩家们创造一个有趣，有竞争性的游戏环境,让玩家们拥有一个目标,共同发展**\n\n### 功能\n\n- 公会商店\n- 公会仓库\n- 成员管理\n- 自定义公会职位\n- 自定义公会等级\n- 公会战争\n\n### 指令\n\n| 指令名     | 说明         | 权限         |\n| ---------- | ------------ | ------------ |\n| guild      | 公会主命令   | 普通玩家     |\n| guildadmin | 公会管理命令 | 游戏内管理员 |\n\n### 主配置文件\n\n```yaml\n# 配置版本\nversion: \"1.0\"\n\n\n# 公会命令\nadmin-command: guildadmin\nguild-command: guild\n\n# 暂时仅支持中文\ndefault-language: zh_CN.yml\n\n# 整数范围(0 - 2,147,483,647)\ncreate-guild-money: 10000\n\n# 开启公会战战争时间 单位 秒\nstart-guild-war-time: 10\n\n# 发送公会战冷却时间 单位 秒\nguild-war-cd-time: 60\n\n# 公会战对战时间 单位 秒\nbattle-against-time: 60\n\n# 职位划分\npost:\n  - {\n    name: \"会长\", # 职位名称\n    level: 1 # 职位等级 等级越低职位越高\n  }\n  - {\n    name: \"副会长\",\n    level: 2\n  }\n  - {\n    name: \"元老\",\n    level: 3\n  }\n  - {\n    name: \"精英\",\n    level: 4\n  }\n  - {\n    name: \"会员\",\n    level: 5\n  }\n\n# 公会等级配置 needContribute 需要的贡献值 allowWarehouses 允许使用的仓库类型 count 公会总人数限制\nguildLevel:\n  {\n    \"1\": { \"needContribute\": 100,\"allowWarehouses\": [ \"Hopper\" ],\"count\": 10 },\n    \"2\": { \"needContribute\": 500,\"allowWarehouses\": [ \"Hopper\" ],\"count\": 15 },\n    \"3\": { \"needContribute\": 1000,\"allowWarehouses\": [ \"Hopper\" ],\"count\": 16 },\n    \"4\": { \"needContribute\": 1500,\"allowWarehouses\": [ \"Hopper\" ],\"count\": 17 },\n    \"5\": { \"needContribute\": 2000,\"allowWarehouses\": [ \"Hopper\" ],\"count\": 18 },\n    \"6\": { \"needContribute\": 3000,\"allowWarehouses\": [ \"Hopper\",\"Chest\",\"Double Chest\" ],\"count\": 19 }\n  }\n\n```\n\n### 效果图\n\n![](https://s3.bmp.ovh/imgs/2022/06/13/71f544be126245c2.png)\n\n![](https://s3.bmp.ovh/imgs/2022/06/13/19e764c2373173d4.png)\n\n![](https://s3.bmp.ovh/imgs/2022/06/13/cee79fa84819d28b.png)\n\n![](https://s3.bmp.ovh/imgs/2022/06/13/a50126b0bf8d49b2.png)\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/20490066?v=4",
+  "id": "violets007/guild-plus",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "guild-plus",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/violets007/guild-plus",
+  "stars": 0,
+  "summary": "A guild plugin for Nukkit",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1655131093,
+  "versions": []
+}

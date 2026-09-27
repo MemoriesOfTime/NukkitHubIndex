@@ -2,9 +2,9 @@
   "api_version": "1.0.14",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "mcayear",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/48203962?v=4",
+      "name": "Mcayear",
+      "url": "https://github.com/Mcayear"
     }
   ],
   "categories": [
@@ -42,7 +42,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1789057311,
+  "updated_at": 1773197401,
   "versions": [
     {
       "changelog": "Initial release of OfflineLogin plugin.",
@@ -51,6 +51,7 @@
         {
           "filename": "offline-login-1.0.0.jar",
           "primary": true,
+          "sha256": "4bb521b125bd165875049d86fa04123b628435e0c34b0badc2bbbe92acfa6723",
           "size": 6155859,
           "url": "https://github.com/Mcayear/OfflineLogin/releases/download/v1.0.0/offline-login-1.0.0.jar"
         }

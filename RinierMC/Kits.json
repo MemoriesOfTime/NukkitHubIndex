@@ -2,9 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "2kMcFloat",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/88402556?v=4",
+      "name": "RinierMC",
+      "url": "https://github.com/RinierMC"
     }
   ],
   "categories": [],
@@ -30,16 +30,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "Kits",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/RinierMC/Kits",
   "stars": 0,
   "summary": "Advanced kits plugin with GUI, ranks, and chest delivery.",
   "targets": [
-    "nkx",
     "pnx"
   ],
-  "updated_at": 1784052167,
+  "updated_at": 1784052250,
   "versions": [
     {
       "changelog": "",
@@ -48,6 +47,7 @@
         {
           "filename": "Kits-1.0.0.jar",
           "primary": true,
+          "sha256": "1f49183d7ec5890d103eadeb6c3f863b6b0460616ebfeb3e4dc3f1070bf9b90d",
           "size": 31978,
           "url": "https://github.com/RinierMC/Kits/releases/download/BRAND_NEW_LATEST_RELEASE_BRO/Kits-1.0.0.jar"
         }

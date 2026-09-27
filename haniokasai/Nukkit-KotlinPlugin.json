@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/12643554?v=4",
+      "name": "haniokasai",
+      "url": "https://github.com/haniokasai"
+    }
+  ],
+  "categories": [],
+  "created_at": 1485626747,
+  "dependencies": [],
+  "description": "# Nukkit-KotlinPlugin\nKotlinExamplePlugin for Nukkit\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/12643554?v=4",
+  "id": "haniokasai/Nukkit-KotlinPlugin",
+  "license": {
+    "id": "Unlicense",
+    "name": "The Unlicense",
+    "url": "https://spdx.org/licenses/Unlicense.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "TutorialPlugin",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/haniokasai/Nukkit-KotlinPlugin",
+  "stars": 0,
+  "summary": "KotlinExamplePlugin for Nukkit",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1485626886,
+  "versions": []
+}

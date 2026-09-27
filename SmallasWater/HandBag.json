@@ -1,6 +1,17 @@
 {
   "api_version": "1.0.9",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
+      "name": "SmallasWater",
+      "url": "https://github.com/SmallasWater"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
+    }
+  ],
   "categories": [],
   "created_at": 1591624265,
   "dependencies": [],
@@ -28,5 +39,22 @@
     "nkmot"
   ],
   "updated_at": 1749265508,
-  "versions": []
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HandBag_v1.2.3-SNAPSHOT.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/HandBag/7/artifact/target/HandBag_v1.2.3-SNAPSHOT.jar"
+        }
+      ],
+      "name": "v1.2.3-SNAPSHOT",
+      "prerelease": true,
+      "published_at": 1749265562,
+      "version": "ci-7"
+    }
+  ]
 }

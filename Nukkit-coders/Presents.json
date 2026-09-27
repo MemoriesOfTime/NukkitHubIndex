@@ -1,0 +1,76 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/26197131?v=4",
+      "name": "PetteriM1",
+      "url": "https://github.com/PetteriM1"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/1887100?v=4",
+      "name": "augesrob",
+      "url": "https://github.com/augesrob"
+    }
+  ],
+  "categories": [],
+  "created_at": 1514380958,
+  "dependencies": [],
+  "description": "![logo](https://github.com/Tee7even/Presents/blob/master/.github/presents.png?raw=true)\nPresents is a Nukkit plugin to place chests, that players can open and get random items.\n\n**Please notice, that this plugin is no more maintained by me and therefore won't work with the newer versions of Nukkit, since its API is changed very often.**\n\n*But*, you are free to make your own fork and update it to the latest version, anyone can do that. If you'll succeed with that, you can contact me at [nukkit.ru](http://nukkit.ru/members/tee7even.7/) or [nukkit.io](https://forums.nukkit.io/members/tee7even.17/), so I can pass [the resource at official forums](https://forums.nukkit.io/resources/presents.49/). Also you can contact me there, if you can and are willing to maintain this repository.\n\nThings to think about and improve:\n* The `ChestManager` is just a bunch of static functions and variables and so is the `TextTagManager` and the `Message`.\n* The functions of the `ChestManager` are basically useless outside of the plugin. Not a good sign.\n* `StepTasks` can be shrunk to one.\n* I18n: the `Message` class can be improved and the standard translations can be provided.\n* Chests can be saved in a database or something else. Luckily there is the `DataProvider` interface, but it's not ideal (looking at that `save` method). `YamlProvider` can be expanded to save to more formats, since it's based on `Config` which supports multiple formats.",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/34147027?v=4",
+  "id": "Nukkit-coders/Presents",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Presents",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Nukkit-coders/Presents",
+  "stars": 1,
+  "summary": "Nukkit plugin to place chests, that players can open and get random items",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1516050658,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Presents-1.6.jar",
+          "primary": true,
+          "size": 23956,
+          "url": "https://github.com/Nukkit-coders/Presents/releases/download/1.6/Presents-1.6.jar"
+        }
+      ],
+      "name": "Download",
+      "prerelease": false,
+      "published_at": 1515081117,
+      "version": "1.6"
+    },
+    {
+      "changelog": "***Outdated***",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Presents.jar",
+          "primary": true,
+          "size": 22223,
+          "url": "https://github.com/Nukkit-coders/Presents/releases/download/1.5/Presents.jar"
+        }
+      ],
+      "name": "Download",
+      "prerelease": false,
+      "published_at": 1514381009,
+      "version": "1.5"
+    }
+  ]
+}

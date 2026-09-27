@@ -1,6 +1,22 @@
 {
   "api_version": "1.0.11",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
+      "name": "SmallasWater",
+      "url": "https://github.com/SmallasWater"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/82391055?v=4",
+      "name": "stevei5mc",
+      "url": "https://github.com/stevei5mc"
+    }
+  ],
   "categories": [
     "management",
     "utility"
@@ -36,6 +52,23 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1784211802,
-  "versions": []
+  "updated_at": 1784211738,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ServerInfo_v1.1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/ServerInfo/24/artifact/target/ServerInfo_v1.1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "v1.1.0-SNAPSHOT",
+      "prerelease": true,
+      "published_at": 1784211759,
+      "version": "ci-24"
+    }
+  ]
 }

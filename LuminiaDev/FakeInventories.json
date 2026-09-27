@@ -2,9 +2,14 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51165317?v=4",
       "name": "IWareQ",
-      "url": ""
+      "url": "https://github.com/IWareQ"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/83061703?v=4",
+      "name": "MEFRREEX",
+      "url": "https://github.com/MEFRREEX"
     }
   ],
   "categories": [
@@ -37,7 +42,7 @@
     "nkmot",
     "lumi"
   ],
-  "updated_at": 1769951913,
+  "updated_at": 1760499917,
   "versions": [
     {
       "changelog": "## What's Changed\r\n* feat: open & close handlers + FakeInventory#setItemHandler method by @MEFRREEX in https://github.com/LuminiaDev/FakeInventories/pull/2\r\n\r\n\r\n**Full Changelog**: https://github.com/LuminiaDev/FakeInventories/compare/1.2.0...1.2.1",
@@ -46,6 +51,7 @@
         {
           "filename": "FakeInventories-1.2.1.jar",
           "primary": true,
+          "sha256": "ddf8fca953594778ea14111d5c8d3a6af69bc683664d62ff523fb1fe7f7410c9",
           "size": 16176,
           "url": "https://github.com/LuminiaDev/FakeInventories/releases/download/1.2.1/FakeInventories-1.2.1.jar"
         }
@@ -62,6 +68,7 @@
         {
           "filename": "FakeInventories-1.2.0.jar",
           "primary": true,
+          "sha256": "3ab2ce2353e4a7bb08bceb0d002411c8a560e68b9c4be322ce5d35c7ad08f45b",
           "size": 15511,
           "url": "https://github.com/LuminiaDev/FakeInventories/releases/download/1.2.0/FakeInventories-1.2.0.jar"
         }

@@ -1,0 +1,74 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+      "name": "wode490390",
+      "url": "https://github.com/wode490390"
+    }
+  ],
+  "categories": [],
+  "created_at": 1577019959,
+  "dependencies": [],
+  "description": "# Chemistry Gameplay\n[![Build](https://img.shields.io/circleci/build/github/wode490390/ChemistryGameplay/master)](https://circleci.com/gh/wode490390/ChemistryGameplay/tree/master)\n[![Release](https://img.shields.io/github/v/release/wode490390/ChemistryGameplay)](https://github.com/wode490390/ChemistryGameplay/releases)\n[![Release date](https://img.shields.io/github/release-date/wode490390/ChemistryGameplay)](https://github.com/wode490390/ChemistryGameplay/releases)\n[![MCBBS](https://img.shields.io/badge/-mcbbs-inactive)](https://www.mcbbs.net/thread-932835-1-1.html \"化学玩法\")\n<!--[![Servers](https://img.shields.io/bstats/servers/6157)](https://bstats.org/plugin/bukkit/ChemistryGameplay/6157)\n[![Players](https://img.shields.io/bstats/players/6157)](https://bstats.org/plugin/bukkit/ChemistryGameplay/6157)-->\n\nThis plugin allows the [Nukkit](https://github.com/NukkitX/Nukkit/) server to enable support for chemistry edition.\n\n[![](https://i.loli.net/2019/12/31/Utm9zi12sGFrnBE.jpg)](http://www.mcbbs.net/thread-932835-1-1.html \"化学玩法\")\n\nIf you found any bugs or have any suggestions, please open an issue on [GitHub Issues](https://github.com/wode490390/ChemistryGameplay/issues).\n\nIf you love this plugin, please star it on [GitHub](https://github.com/wode490390/ChemistryGameplay).\n\n## Features\n- Blocks\n  - [X] Hardened Glass\n    - [X] Hardened Stained Glasses\n    - [X] Hardened Glass Pane\n      - [X] Hardened Stained Glass Panes\n  - [X] Heat Block\n  - [X] Colored Torchs\n    - [X] Red Torch\n    - [X] Green Torch\n    - [X] Blue Torch\n    - [X] Purple Torch\n  - [X] Chemistry Table\n    - [X] Compound Creator\n      - [ ] UI\n    - [X] Material Reducer\n      - [ ] UI\n    - [X] Element Constructor\n      - [ ] UI\n    - [X] Lab Table\n      - [ ] UI\n  - [X] Underwater Torch\n  - [X] Underwater TNT\n  - [ ] Camera\n  - [ ] Elements\n    - [X] Unknown Element\n- Items\n  - [X] Sparklers\n    - [ ] Animation\n  - [X] Medicines\n    - [X] Eye Drops\n    - [X] Tonic\n    - [X] Antidote\n    - [X] Elixir\n  - [X] Balloons\n  - [X] Super Fertilizer\n  - [X] Bleach\n  - [X] Camera\n  - [X] Compounds\n- Entities\n  - [X] NPC\n  - [ ] Agent\n  - [X] Camera\n  - [X] Ice Bomb\n  - [X] Balloons\n  - [X] Underwater TNT\n\n## Download\n- [Releases](https://github.com/wode490390/ChemistryGameplay/releases)\n- [Snapshots](https://circleci.com/gh/wode490390/ChemistryGameplay)\n\n## Requirements\n1. Game version: 1.4+\n\n## Compiling\n1. Install [Maven](https://maven.apache.org/).\n2. Run `mvn clean package`. The compiled JAR can be found in the `target/` directory.\n\n## Metrics Collection\n\nThis plugin uses [bStats](https://github.com/wode490390/bStats-Nukkit) - you can opt out using the global bStats config, see the [official website](https://bstats.org/getting-started) for more details.\n\n<!--[![Metrics](https://bstats.org/signatures/bukkit/ChemistryGameplay.svg)](https://bstats.org/plugin/bukkit/ChemistryGameplay/6157)-->\n\n###### If I have any grammar and terms error, please correct my wrong :)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+  "id": "wode490390/ChemistryGameplay",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "http://wode490390.cn/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "ChemistryGameplay",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/wode490390/ChemistryGameplay",
+  "stars": 6,
+  "summary": "Chemistry gameplay plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1585484207,
+  "versions": [
+    {
+      "changelog": "- Added underwater TNT (#1)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeChemistryGameplay-1.1.388.jar",
+          "primary": true,
+          "size": 60252,
+          "url": "https://github.com/wode490390/ChemistryGameplay/releases/download/1.1.388/wodeChemistryGameplay-1.1.388.jar"
+        }
+      ],
+      "name": "ChemistryGameplay-v1.1.388",
+      "prerelease": false,
+      "published_at": 1585484207,
+      "version": "1.1.388"
+    },
+    {
+      "changelog": "Initial release",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeChemistryGameplay-1.0.388.jar",
+          "primary": true,
+          "size": 52064,
+          "url": "https://github.com/wode490390/ChemistryGameplay/releases/download/1.0.388/wodeChemistryGameplay-1.0.388.jar"
+        }
+      ],
+      "name": "ChemistryGameplay-v1.0.388",
+      "prerelease": false,
+      "published_at": 1577786220,
+      "version": "1.0.388"
+    }
+  ]
+}

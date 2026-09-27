@@ -1,0 +1,42 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17672473?v=4",
+      "name": "Fleynaro",
+      "url": "https://github.com/Fleynaro"
+    }
+  ],
+  "categories": [],
+  "created_at": 1499187369,
+  "dependencies": [],
+  "description": "# Minecraft-Nukkit-AdvancedKits\n\n# Minecraft-Nukkit-AdvancedKits\nMinecraft PE plugin AdvancedKits for Nukkit\n\n\nПортированный плагин AdvancedKits для серверов Minecraft PE на серверной платформе Nukkit позволит вам создать на сервере функциональную систему выдачи наборов командой /kit.\nПоддерживается плагин EconomyAPI, все функции AdvancedKits портированы без изменений и потерь.\nПодробнее на русском и с картинками:\nhttps://forum.24serv.pro/topic/21-advancedkits-plagin-dobavlyayuschiy-kity-na-vash-server/\n\n\nThe original text:\nPocketMine-MP plugin that adds kits to your PocketMine server.\n\nThis is a simple yet useful PocketMine-MP kit plugin. For who doesn't know what kits are, they are groups of items that you can get simply by typing a command or touching a sign.\n\nFeatures:\n\nHighly configurable\nCustom permission support: give a player permission advancedkits.kitname to let him use the kit named \"kitname\"\nBuilt in perms system for non-PurePerms users (read the documentation)\nEconomy support: pay to get a kit. Support for EconomyS, PocketMoney and MassiveEconomy\nSign support: write a sign to let users get a kit\nUnlimited kits with unlimited items, and armor support\nTime limit (cooldown) for kits\nOption for one kit per life (see config.yml)\nExecute commands with kits\nEasy translation system\nCommands: The main command: /kit Alias for /kit: /ak, /advancedkits .\n\n/kit\n/akreload - reload kits.yml (when edited while the server is running)\nSigns: To let users get a kit through a sign, you can create one like this: (capitals don't matter)\n\nLine 1: [AdvancedKits]\nLine 2: kitname\nLine 3 & 4: Whatever you like\n\nThe default kit is: testkit. You can add kits editing kits.yml (see \"Kit settings\").\n\nKit Settings:\n\nIn order to add kit you will need to edit the config kits.yml . If you open that file with bloc notes, you will be not able to edit because it will be all in one line, so open it with WordPad, Notepad ++, ... You can add lots of kits, but remember to keep this file format:\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/17672473?v=4",
+  "id": "Fleynaro/Minecraft-Nukkit-AdvancedKits",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/luca28pet/AdvancedKits",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "AdvancedKits",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Fleynaro/Minecraft-Nukkit-AdvancedKits",
+  "stars": 2,
+  "summary": "The plugin adds kits to your PocketMine server",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1499188030,
+  "versions": []
+}

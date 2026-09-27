@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/99422811?v=4",
       "name": "BrunoJaegerK",
-      "url": ""
+      "url": "https://github.com/BrunoJaegerK"
     }
   ],
   "categories": [
@@ -35,7 +35,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1769630715,
+  "updated_at": 1769630711,
   "versions": [
     {
       "changelog": "Version con corrección de errores",
@@ -44,6 +44,7 @@
         {
           "filename": "butcheritems.jar",
           "primary": true,
+          "sha256": "2e8d00f848cdab777c659835a649ff404a011f9e539ca10143c80d81ca466172",
           "size": 13360,
           "url": "https://github.com/BrunoJaegerK/butcheritems/releases/download/correcci%C3%B3n/butcheritems.jar"
         }

@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/25707048?v=4",
+      "name": "hhm666",
+      "url": "https://github.com/hhm666"
+    }
+  ],
+  "categories": [],
+  "created_at": 1549629099,
+  "dependencies": [],
+  "description": "# SPluginBase\nA Nukkit plugin that eases the burden on developers. Including language API, commonly used expansion functions.\n\n[中文简介](https://github.com/hhm666/SPluginBase/blob/master/README_chs.md)\n\n## Example usage\n\n1.Create a new 'lang' folder in your resource folder.\n\n2.Create a new language file in this folder.\n\n  The format is: LanguageCode.yml. \n  \n  See the language code in language.list\n  \n  You should add at least en_US.yml.\n  \n3.Add the following code to your onLoad/onEnable method.\n  \n  TITLE is your plugin name.\n  \n  In the language file,%TITLE represents the TITLE variable here\n```kotlin\nLanguageUtils.load(this, TITLE)\n```\n## Sample language file\nPlease add the name of your plugin to Key words in language files to ensure that it does not duplicate with other plugins.\n```yaml\nspluginbase.lang.defaultSet: \"Your language has been set to %1 by region. If you want to change it, please type /lang list to see the list of languages, then type /lang set <language code> to set the language!\"\nspluginbase.lang.set.notFound: \"No language: %1!\"\nspluginbase.lang.set.success: \"Successfully set the language to %1!\"\nspluginbase.lang.load.pluginNotFound: \"Multi-language loading of plugin %1 failed!\"\nspluginbase.lang.load.usePluginDefaultLanguage: \"Cannot find %2 plugin %1 language configuration file, so use %3 plugin default language configuration file\"\nspluginbase.lang.load.useEN_US: \"Cannot find %2 plugin %1 language configuration file, so use %3 language configuration file\"\nspluginbase.command.lang.notFound: \"Unknown usage, please enter /lang help to see usage\"\nspluginbase.command.lang.help: \"§6---SPluginBase-LanguageSystemHelp---\\n§a/lang set <language code> Set language\\n§b/lang list View language code\"\n```",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/25707048?v=4",
+  "id": "hhm666/SPluginBase",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "SPluginBase",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/hhm666/SPluginBase",
+  "stars": 1,
+  "summary": "A Nukkit plugin that eases the burden on developers. Including language API, commonly used expansion functions.By hhm.",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1550561846,
+  "versions": []
+}

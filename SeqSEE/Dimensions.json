@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.9",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45960833?v=4",
+      "name": "C1oky",
+      "url": "https://github.com/C1oky"
+    }
+  ],
+  "categories": [],
+  "created_at": 1587506578,
+  "dependencies": [],
+  "description": "## Dimensions (NUKKIT API 1.0.9)\n### Fix Levels Dimension",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/15011102?v=4",
+  "id": "SeqSEE/Dimensions",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Dimensions",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/SeqSEE/Dimensions",
+  "stars": 0,
+  "summary": "Dimension change plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1587645161,
+  "versions": []
+}

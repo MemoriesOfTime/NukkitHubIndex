@@ -1,0 +1,118 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/62297254?v=4",
+      "name": "Colerar",
+      "url": "https://github.com/Colerar"
+    }
+  ],
+  "categories": [],
+  "created_at": 1584715147,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "KotlinLib",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "required",
+      "plugin_id": "EasyAPI",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "required",
+      "plugin_id": "GUI",
+      "version_range": ""
+    }
+  ],
+  "description": "# WorldProtect\n## 介绍\n这是一个高度可配置化的世界保护插件, 总之, 它面面俱到.\n## 安装\n您可在 Release 中下载打包好的 .jar 文件, 再将其放入 plugins 文件夹. 同时, 请参见 [依赖](https://github.com/Colerar/WorldProtect/new/master?readme=1#%E4%BE%9D%E8%B5%96) 章,\n## 使用\n本插件使用 EasyAPI 提供的便捷配置. \n当前 WorldProtect 支持以下自定义参数:\n- 可否交互\n- 可否与实体交互\n- 可否坐上载具\n- 可否更改游戏模式\n- 切换世界后默认游戏模式\n- 可否投掷\n- 可否丢物品\n- 可否被伤害\n- 饥饿值可否更改\n- 可否爆炸\n- 可否交换物品\n- 可否放置\n- 可否破坏\n- 方块可否被焚尽\n- 方块可否点燃\n- 方块可否生长\n- 流体可否流动\n- 树叶可否衰退\n- 天气可否改变\n- 禁止物品列表\n- 禁止命令列表\n- 白名单\n\n您可以直接输入 /wp gui 以打开 GUI 配置界面. \n\n对于白名单和禁止物品列表, 您可以通过指令操作:\n- ```/wp banitem <add|remove> [world: World] [itemId: itemId] ``` \n  - add 添加 remove 移除\n  - world 即你世界的名称, 不输入默认当前世界.\n  - itemId 即要操作的物品, 不输入默认手持物品(若有).\n- ```/wp whitelist <add|remove> [world: World] [player: Target]```\n  - add 添加 remove 移除\n  - world 即你世界的名称, 不输入默认当前世界.\n  - player 即要操作的玩家, 不输入默认为自己.\n- ```/wp bancommand <add|remove> <command: String> [world: String]```\n  - add 添加 remove 移除\n  - command 即要操作的指令.\n    - 实质上, 你可以输入一个正则表达式, 一般而言, 你只需要输入文本即可.\n    - 你可以输入主命令 (例如: ```/tp```), 你也可以输入子命令(```/wmg add```), 但是你需要添加双引号--  ```\"/wmg add\"```\n    - 一般地，推荐输入形如这样的: ```\"^/主命令(\\s+|$)\"``` , 意思是匹配开头为 主命令 后面要么空格要么终止的命令, 举个例子, ```/tp``` 不会匹配 ```/tpa``` 但是会匹配 ```/tp Steve```\n  - world 即你世界的名称, 不输入默认当前世界.\n## 依赖\n本插件依赖于:\n- [KotlinLib](https://nukkitx.com/resources/kotlinlib.48/)\n- [GUI](https://github.com/Him188/GUI)\n- [EasyAPI](https://github.com/WetABQ/EasyAPI-Nukkit)\n# 题外话\n这是我的第一个 Nukkit 插件，格外感谢ＷｅｔＡＢＱ对我的帮助。\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/62297254?v=4",
+  "id": "Colerar/WorldProtect",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "WorldProtect",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Colerar/WorldProtect",
+  "stars": 0,
+  "summary": "",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1653282279,
+  "versions": [
+    {
+      "changelog": "Fixed some bugs.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "WorldProtect.jar",
+          "primary": true,
+          "size": 54463,
+          "url": "https://github.com/Colerar/WorldProtect/releases/download/v1.2.1/WorldProtect.jar"
+        }
+      ],
+      "name": "Fixed some bugs.",
+      "prerelease": false,
+      "published_at": 1586332719,
+      "version": "v1.2.1"
+    },
+    {
+      "changelog": "Add options:\r\n- canFly\r\n- border\r\n- canBreakPutRang\r\nFix bug:\r\n- cannot change config except \"world\".",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "WorldProtect.jar",
+          "primary": true,
+          "size": 55407,
+          "url": "https://github.com/Colerar/WorldProtect/releases/download/v1.2.0/WorldProtect.jar"
+        }
+      ],
+      "name": "",
+      "prerelease": false,
+      "published_at": 1585929620,
+      "version": "v1.2.0"
+    },
+    {
+      "changelog": "Update Ban Command .",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "WorldProtect.jar",
+          "primary": true,
+          "size": 41134,
+          "url": "https://github.com/Colerar/WorldProtect/releases/download/v1.1.0/WorldProtect.jar"
+        }
+      ],
+      "name": "",
+      "prerelease": false,
+      "published_at": 1584769048,
+      "version": "v1.1.0"
+    },
+    {
+      "changelog": "First Release.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "WorldProtect.jar",
+          "primary": true,
+          "size": 35292,
+          "url": "https://github.com/Colerar/WorldProtect/releases/download/1.0.0/WorldProtect.jar"
+        }
+      ],
+      "name": "First Release ",
+      "prerelease": false,
+      "published_at": 1584715880,
+      "version": "1.0.0"
+    }
+  ]
+}

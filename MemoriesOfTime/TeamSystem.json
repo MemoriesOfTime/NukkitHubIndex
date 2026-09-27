@@ -2,19 +2,19 @@
   "api_version": "1.0.11",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "LT_Name",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
     },
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
+      "name": "glorydark",
+      "url": "https://github.com/glorydark"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
       "name": "SmallasWater",
-      "url": ""
-    },
-    {
-      "avatar_url": "",
-      "name": "iGxnon",
-      "url": ""
+      "url": "https://github.com/SmallasWater"
     }
   ],
   "categories": [
@@ -48,15 +48,37 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "TeamSystem",
-  "primary_target": "nkx",
+  "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/MemoriesOfTime/TeamSystem",
   "stars": 3,
   "summary": "",
   "targets": [
-    "nkx",
     "nkmot"
   ],
-  "updated_at": 1767698733,
-  "versions": []
+  "updated_at": 1660656601,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "TeamSystem-1.0.0-SNAPSHOT-jar-with-dependencies.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/TeamSystem/12/artifact/target/TeamSystem-1.0.0-SNAPSHOT-jar-with-dependencies.jar"
+        },
+        {
+          "filename": "TeamSystem-1.0.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/TeamSystem/12/artifact/target/TeamSystem-1.0.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "1.0.0-SNAPSHOT-jar-with-dependencies",
+      "prerelease": true,
+      "published_at": 1660656612,
+      "version": "ci-12"
+    }
+  ]
 }

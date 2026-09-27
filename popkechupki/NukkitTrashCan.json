@@ -1,0 +1,56 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/18595225?v=4",
+      "name": "popkechupki",
+      "url": "https://github.com/popkechupki"
+    }
+  ],
+  "categories": [],
+  "created_at": 1582520436,
+  "dependencies": [],
+  "description": "# NukkitTrashCan\n Trashcan plugin for Nukkit.  \n Nukkit用ゴミ箱プラグイン。\n## How to use/使い方\nIntroduce the plugin and tap the set block.  \nプラグインを導入し。設定したブロックをタップします。\n## Configure/設定\nDefault block id/標準のブロックID: 52(Monster Spawner/モンスターブロック)  \nYou can change TrachCan block id and message by config.  \nコンフィグでブロックのIDとメッセージを設定できます。\n## Download/ダウンロード\nPlease see [releases](https://github.com/popkechupki/NukkitTrashCan/releases).\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/18595225?v=4",
+  "id": "popkechupki/NukkitTrashCan",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/nukkit.yml",
+  "name": "TrashCan",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/popkechupki/NukkitTrashCan",
+  "stars": 0,
+  "summary": "ゴミ箱プラグイン",
+  "targets": [
+    "nkx",
+    "nkmot",
+    "pnx"
+  ],
+  "updated_at": 1582536962,
+  "versions": [
+    {
+      "changelog": "# NukkitTrashCan\r\n Trashcan plugin for Nukkit.  \r\n Nukkit用ゴミ箱プラグイン。\r\n## How to use/使い方\r\nIntroduce the plugin and tap the set block.  \r\nプラグインを導入し。設定したブロックをタップします。\r\n## Configure/設定\r\nDefault block id/標準のブロックID: 52(Monster Spawner/モンスターブロック)  \r\nYou can change TrachCan block id and message by config.  \r\nコンフィグでブロックのIDとメッセージを設定できます。\r\n## Download/ダウンロード\r\nPlease see [releases](https://github.com/popkechupki/NukkitTrashCan/releases).\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "TrashCan-1.1.jar",
+          "primary": true,
+          "size": 4584,
+          "url": "https://github.com/popkechupki/NukkitTrashCan/releases/download/1.1/TrashCan-1.1.jar"
+        }
+      ],
+      "name": "TrashCan v1.1.0",
+      "prerelease": false,
+      "published_at": 1582521215,
+      "version": "1.1"
+    }
+  ]
+}

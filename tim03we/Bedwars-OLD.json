@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/38113441?v=4",
+      "name": "tim03we",
+      "url": "https://github.com/tim03we"
+    }
+  ],
+  "categories": [],
+  "created_at": 1573478867,
+  "dependencies": [],
+  "description": "<h1>Bedwars<img src=\"https://t4.rbxcdn.com/e3ce663e14decd815aadd7ed922a5da4\" height=\"64\" width=\"64\" align=\"left\"></img></h1>\n<br />\n\nA Bedwars plugin where you can create up to 8 teams.\n\n| Jenkins | Discord |\n| :---: | :---: |\n| [Link](http://194.93.56.119:8080/job/Bedwars-Nukkit/) | [![Discord](https://img.shields.io/discord/427520458523672587.svg?style=flat-square&label=discord&colorB=7289da)](https://discord.gg/DePY6v4)|\n\n## Setup\n\nComing...\n\n## Servers using this Bedwars plugin?\n\n- the-programmers.de:19132\n\n----------------------\n\nThis plugin was developed for fun. There is no guarantee that this plugin will be further developed in the future, or not.\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/38113441?v=4",
+  "id": "tim03we/Bedwars-OLD",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Bedwars",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/tim03we/Bedwars-OLD",
+  "stars": 2,
+  "summary": "A MiniGame Plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1573832127,
+  "versions": []
+}

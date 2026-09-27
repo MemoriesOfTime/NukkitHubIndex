@@ -1,0 +1,452 @@
+{
+  "api_version": "1.0.5",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/170844915?v=4",
+      "name": "Shabby-666",
+      "url": "https://github.com/Shabby-666"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/317583983?v=4",
+      "name": "RiegaLee",
+      "url": "https://github.com/RiegaLee"
+    }
+  ],
+  "categories": [],
+  "created_at": 1786788694,
+  "dependencies": [],
+  "description": "# HuHoBotPenguin\n\n将 QQ 群机器人接入 Minecraft 服务器：游戏聊天与 QQ 群双向转发、白名单管理、在线查询、命令执行、敏感词审核、**AI Agent 智能管理**与 **WebUI 图形化配置**。\n\n[HuHoBot-Penguin](https://github.com/HuHoBot/PenguinClient)的更新最激进与快速，功能最齐全的分支\n\n基于 [qqpd-bot-java](https://github.com/Kloping/qqpd-bot-java)（HuHoBot fork，以 git submodule 引入）。\n\n[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](LICENSE)\n\n![HuHoBot](https://count.moeyy.cn/@huhobot?name=huhobot&theme=booru-lewd&padding=7&offset=0&align=top&scale=1&pixelated=1&darkmode=auto)\n\n---\n\n## 功能概览\n\n| 功能 | 说明 |\n|------|------|\n| 双向聊天转发 | 游戏 ↔ QQ 群消息实时互通，支持格式模板与前缀过滤 |\n| QQ 群指令系统 | 30+ 条内置命令，支持权限分级、命令开关与动态帮助 |\n| 白名单管理 | 映射到服务器原生命令，支持自定义模板 |\n| 敏感词审核 | 本地正则词库 + 可选 OpenAI 兼容接口 AI 二审 |\n| MOTD 服务器状态 | `/motd` 查询服务器状态，返回图片 + Markdown 卡片 |\n| 自定义命令 | 占位符替换，支持权限分级（普通/管理员） |\n| 多群支持 | 每群独立的管理员名单与配置 |\n| **AI Agent** | `@机器人 /agent 任务描述` —— AI 自动执行服务器管理任务 |\n| **WebUI 图形化配置** | 浏览器访问 `http://127.0.0.1:<port>` 管理所有配置项（端口可配置） |\n| **群服互通 @提及** | 游戏内 `/at` 命令发送 QQ @消息，QQ→游戏蓝色高亮+叮音效 |\n| **QQ 群管理** | AI Agent 集成禁言、入群审批、自动审批策略等群管理工具 |\n| **指令面板自动同步** | 启动时自动同步命令面板到 QQ 群（上限 20 条） |\n| **背包与末影箱查看** | `/我的背包`、`/我的末影箱` 查询唯一绑定账户；管理员可用 `/背包查看 <在线玩家名>`、`/末影箱查看 <在线玩家名>` |\n\n---\n\n## 支持的平台\n\n| 平台 | 状态 | JDK 要求 | 产物 |\n|------|------|----------|------|\n| **Spigot / Paper**（api-version 1.18+） | 活跃开发 | JDK 8+ | `HuHoBot-Penguin_Spigot-<版本>.jar` |\n| Nukkit / PMMP | 社区适配版（非本仓库维护） | — | [PenguinAgent-NukkitPlatform](https://github.com/HuHoBot/PenguinAgent-NukkitPlatform) |\n| Velocity / BungeeCord | 待适配 | — | — |\n| Allay | 待适配 | — | — |\n\n> Nukkit-MOT 适配版本维护在独立仓库 [PenguinAgent-NukkitPlatform](https://github.com/HuHoBot/PenguinAgent-NukkitPlatform)，不由本仓库维护，功能与 issue 请前往该仓库反馈。\n\n---\n\n## 快速开始\n\n### 1. 准备\n\n1. 到 [q.qq.com](https://q.qq.com/) 申请机器人，获得 **AppID** 和 **Secret**\n2. 准备运行环境：**JDK 8+**（推荐 JDK 17+）\n3. 准备 Minecraft 服务器：**Paper 1.20.5+** 或兼容 Spigot 的服务端\n\n### 2. 构建\n\n```bash\ngit clone --recurse-submodules git@github.com:HuHoBot/PenguinAgent.git\ncd PenguinAgent\n./gradlew build\n```\n\n> **注意**：项目依赖 `deps/qqpd-bot-java` 子模块。克隆时若未使用 `--recurse-submodules`，需运行：\n> ```bash\n> git submodule update --init --recursive\n> ```\n\n构建产物位于 `build/gather-jar/` 目录。\n\n### 3. 安装\n\n将 `HuHoBot-Penguin_Spigot-<版本>.jar` 放入服务器 `plugins/` 目录，重启服务器。\n\n### 4. 配置\n\n首次启动后会在插件数据目录生成 `config.yml`，也可通过 **WebUI** 进行图形化配置。\n\n#### 核心配置项\n\n```yaml\n# QQ 机器人凭据\nbot:\n  app-id: \"你的AppID\"\n  secret: \"你的Secret\"\n  name: \"机器人昵称\"\n  groups: []                    # 群 OpenID 列表，留空则不限制\n\n# 聊天格式\nchat-format:\n  from-game: \"[游戏] {message}\"       # 游戏→群 格式\n  from-group: \"[QQ] {name}: {message}\" # 群→游戏 格式\n  post-chat: true                       # 是否转发游戏聊天\n  start-with: \"\"                        # 触发前缀（留空转发全部）\n\n# AI Agent\nagent:\n  enabled: false\n  base-url: \"\"        # OpenAI 兼容接口地址\n  api-key: \"\"         # AI 接口密钥\n  model: \"gpt-4o-mini\"\n  command-mode: \"manual\"  # manual=手动审批 / auto=自动执行\n```\n\n完整配置说明请参考 WebUI 或 `config.yml` 中的注释。\n\n---\n\n## AI Agent\n\n### 使用方式\n\n在 QQ 群中 `@机器人 /agent <任务描述>`，AI 会自动执行服务器管理任务。\n\n**示例：**\n```\n@HuHoBot /agent 查看服务器插件列表\n@HuHoBot /agent 给玩家 Steve 添加白名单\n@HuHoBot /agent 禁言玩家 BadBoy 10分钟\n```\n\n### 工作原理\n\n1. 用户发送 `/agent` 命令\n2. AI 根据任务描述选择合适的工具执行\n3. 每次执行最多 **15 步**，上下文窗口 **40 条消息**\n4. 危险操作（执行命令、禁言等）需管理员通过按钮审批\n\n### 可用工具（17 个）\n\n**服务器管理（5 个）：**\n\n| 工具 | 说明 |\n|------|------|\n| `get_server_plugin_list` | 获取已安装插件列表 |\n| `get_command_help` | 获取命令帮助信息 |\n| `run_command` | 执行服务器控制台命令（需审批） |\n| `read_server_logs` | 读取服务端日志（支持关键词过滤） |\n| `load_skill` | 加载 MC 命令语法文档（components/give/item/summon/data/loot/clear） |\n\n**QQ 群管理（12 个）：**\n\n| 工具 | 说明 |\n|------|------|\n| `get_group_info` | 获取群基本信息 |\n| `get_bot_state` | 获取机器人在群内的状态 |\n| `get_join_requests` | 列出待审批的入群申请 |\n| `approve_join_request` | 审批入群申请 |\n| `get_mute_status` | 查询群禁言状态 |\n| `set_member_mute` | 设置/解除成员禁言（最长 30 天，需审批） |\n| `list_auto_approve_policies` | 列出自动审批策略 |\n| `create_auto_approve_policy` | 创建自动审批策略（需审批） |\n| `update_auto_approve_policy` | 更新自动审批策略（需审批） |\n| `delete_auto_approve_policy` | 删除自动审批策略（需审批） |\n| `execute_auto_approve_policy` | 执行自动审批策略（需审批） |\n| `update_whitelist_users` | 更新自动审批白名单 QQ 号（需审批） |\n\n### 命令执行模式\n\n| 模式 | 说明 |\n|------|------|\n| **手动审批（manual）** | AI 执行危险操作时发送审批卡片，管理员/群主点击同意/拒绝 |\n| **自动执行（auto）** | AI 直接执行所有操作，无需审批 |\n\n**不建议开auto！不建议开auto！不建议开auto！**\n\n**有用户反馈使用auto后AI幻觉问题导致误刷神装给玩家！！！**\n\n**数据无价，谨慎操作 --DiskGenius**\n\n### SKILL 系统\n\nAI 支持按需加载 Minecraft 命令语法文档：\n\n| SKILL | 内容 |\n|-------|------|\n| `components` | 物品组件语法（1.20.5+） |\n| `give` | `/give` 命令语法 |\n| `item` | 物品格式与 NBT |\n| `summon` | `/summon` 实体命令 |\n| `data` | `/data` 数据操作命令 |\n| `loot` | `/loot` 掉落物命令 |\n| `clear` | `/clear` 清除物品命令 |\n\n### 相关命令\n\n| QQ 群命令 | 说明 |\n|-----------|------|\n| `agent <任务描述>` | 触发 AI Agent 执行任务 |\n| `newsession` | 清除当前用户的 AI 会话上下文 |\n| `stop` | 紧急停止所有 AI 任务 |\n\n---\n\n## WebUI 图形化配置\n\n### 访问方式\n\n启动后在服务器控制台查看密码，然后浏览器访问（默认端口 5678，可在 config.yml 中修改 `webui-port`）：\n\n```\nhttp://127.0.0.1:5678\n```\n\n### 功能\n\n- **暗色简约风格**，响应式布局\n- **14 个配置分组**，覆盖所有配置项\n- 修改后**实时保存**，自动重载配置\n- 首次启动自动生成 **24 位随机密码**\n\n### 配置分组\n\n| 分组 | 说明 |\n|------|------|\n| QQ 机器人 | AppID、Secret、机器人名称、群列表 |\n| 服务器 | 服务器名称、命令执行器类型 |\n| 聊天格式 | 双向转发格式模板、触发前缀 |\n| 玩家事件 | 进服/退服通知开关与格式 |\n| Markdown | 在线查询 Markdown 模板 |\n| MOTD | 服务器状态查询配置 |\n| 白名单命令 | 添加/删除白名单的命令模板 |\n| 正则过滤 | 敏感词正则表达式列表 |\n| 管理员 | 管理员模式与 OpenID 列表 |\n| 功能 | 全量转发等开关 |\n| 内容审核 | AI 敏感词审核接口配置 |\n| AI Agent | Agent 启用、接口、模型、审批模式 |\n| 命令开关 | 逐个开关 20+ 条内置命令 |\n| 自定义命令 | 自定义命令模板与权限 |\n\n### 控制台命令\n\n| 命令 | 说明 |\n|------|------|\n| `/hb reload` | 重载配置文件 |\n| `/hb info` | 查看适配器信息 |\n| `/hb webui` | 查看 WebUI 地址 |\n| `/hb password <新密码>` | 修改 WebUI 登录密码 |\n\n---\n\n## 群服互通 @提及\n\n### 游戏 → QQ\n\n在 Minecraft 聊天中输入 `@玩家名 消息`，消息会以 QQ @消息格式发送到群，触发被 @ 玩家的通知。\n\n支持格式：`@张三 你好`、`@张三@李四 一起玩`\n\n### QQ → 游戏\n\nQQ 群中的 @消息会自动解析为 `§9@玩家名§r`（蓝色高亮），被 @ 的在线玩家会收到**叮**音效提醒。\n\n### /at 命令（Minecraft 游戏内）\n\n```\n/at <群成员昵称> <消息内容>\n```\n\n向 QQ 群发送 @消息，触发被 @ 玩家的通知。支持 Tab 补全昵称。\n\n### 昵称缓存\n\n- 从收到的 QQ 消息中自动缓存昵称 ↔ openid 映射\n- 持久化到 `nicknames.dat` 文件，重启不丢失\n- 自动过滤 openid 作为昵称的脏数据\n\n---\n\n## QQ 群指令系统\n\n### 公开命令（所有群成员可用）\n\n| 命令 | 说明 |\n|------|------|\n| `查信息` `[OpenId]` | 查询自己的或指定用户的 OpenId 和认证状态 |\n| `发信息` `<内容>` | 将消息转发到游戏内聊天 |\n| `查在线` | 查询在线玩家列表（支持图片/Markdown 渲染） |\n| `在线服务器` | 查看已连接的服务器名称 |\n| `帮助` | 查看所有可用命令 |\n| `执行` `<命令>` | 执行自定义命令（普通权限） |\n\n### 管理员命令（需要管理员权限）\n\n| 命令 | 说明 |\n|------|------|\n| `查管理` `<OpenId>` | 查询某用户是否为管理员 |\n| `加管理` `<OpenId>` | 添加管理员 |\n| `删管理` `<OpenId>` | 删除管理员 |\n| `管理方式` `[QQ/手动/双重]` | 查看/设置管理员判定方式 |\n| `添加白名单` `<玩家名>` | 添加玩家白名单 |\n| `删除白名单` `<玩家名>` | 删除玩家白名单 |\n| `查白名单` | 查看白名单列表 |\n| `执行命令` `<命令>` | 执行服务器原生命令 |\n| `管理员执行` `<命令>` | 以管理员权限执行自定义命令 |\n| `全量` | 切换全量聊天转发开关 |\n| `blockMotd` | 屏蔽本群 MOTD 查询 |\n| `unblockMotd` | 解除本群 MOTD 屏蔽 |\n| `我的背包` | 查看唯一绑定账户的背包（账户需在线） |\n| `我的末影箱` | 查看唯一绑定账户的末影箱（账户需在线） |\n| `背包查看` `<在线玩家名>` | 查看指定在线玩家背包（仅管理员） |\n| `末影箱查看` `<在线玩家名>` | 查看指定在线玩家末影箱（仅管理员） |\n\n背包和末影箱默认使用内置底图。若要更换壁纸，将 PNG 放到\n`plugins/HuHoBotPenguin/inventory/backgrounds/`，再在 `config.yml` 中启用\n`inventory.render.custom-background.enabled`。格子和人物区域的圆角遮罩会始终保留。\n\n### 认证命令\n\n| 命令 | 说明 |\n|------|------|\n| `认证` `[OpenId]` | 查看/设置用户认证状态 |\n| `解除认证` `<OpenId>` | 解除用户认证（仅管理员） |\n\n### MOTD 命令\n\n| 命令 | 说明 |\n|------|------|\n| `motd <服务器地址>` | 查询 MC 服务器状态（图片 + Markdown 卡片） |\n\n### AI Agent 命令\n\n| 命令 | 说明 |\n|------|------|\n| `agent <任务描述>` | 触发 AI Agent 执行任务 |\n| `newsession` | 清除 AI 会话上下文 |\n| `stop` | 紧急停止所有 AI 任务 |\n\n### 命令面板\n\n启动时自动将命令同步到 QQ 群命令面板（上限 20 条，超出部分仅在 `/帮助` 中显示）。\n\n---\n\n## 配置详解\n\n### 管理员判定模式\n\n| 模式 | 说明 |\n|------|------|\n| `qq` | 使用 QQ 群主/管理员身份 |\n| `config` | 仅使用配置文件中的 `admin.openids` 列表 |\n| `both` | 两者皆可（默认） |\n\n### 聊天格式占位符\n\n**游戏→群（from-game）：**\n- `{name}` —— 玩家名\n- `{message}` / `{msg}` —— 消息内容\n\n**群→游戏（from-group）：**\n- `{name}` / `{nick}` —— 发送者昵称\n- `{message}` / `{msg}` —— 消息内容\n\n### 敏感词审核\n\n支持两级过滤：\n\n1. **本地正则过滤**：`filter-regex` 列表中的正则匹配内容会被替换为 `*`\n2. **AI 二审**（可选）：配置 `audit.base-url` 后，本地未命中的内容会发送到 OpenAI 兼容接口进行二次审核\n\n内置默认敏感词：傻逼、操你、色情、反动、赌博\n\n### 自定义命令\n\n```yaml\ncustom-commands:\n  - key: \"触发词\"\n    command: \"huhobot run 命令模板\"\n    permission: 0    # 0=普通, 1=管理员\n```\n\n占位符：\n- `{params}` —— 命令参数\n- `{group}` —— 群 OpenID\n- `{user}` —— 用户 OpenID\n- `{0}`, `{1}` ... —— 按空格分割的参数\n\n---\n\n## 项目结构\n\n```\nPenguinAgent/\n├── build.gradle.kts              # 根构建文件\n├── settings.gradle.kts           # 模块配置\n├── deps/qqpd-bot-java/           # QQ Bot SDK（git submodule）\n├── common/Bot/                   # 平台无关核心模块\n│   └── src/main/kotlin/cn/huohuas001/bot/\n│       ├── HuHoBot.kt            # 核心接口（各平台实现）\n│       ├── QClient.kt            # QQ 客户端单例\n│       ├── NicknameManager.kt    # 昵称 ↔ openid 映射\n│       ├── MenuManager.kt        # 命令面板自动同步\n│       ├── agent/                # AI Agent 系统\n│       │   ├── AgentManager.kt       # Agent 调度器\n│       │   ├── AgentTools.kt         # 工具定义与执行\n│       │   ├── AgentApiClient.kt     # OpenAI 兼容 HTTP 客户端\n│       │   ├── AgentCommands.kt      # agent/newsession/stop 命令\n│       │   └── GroupManagementApi.kt # QQ 群管理 API 封装\n│       ├── events/               # 事件处理\n│       │   ├── GroupMessageHandler.kt    # 群消息入口\n│       │   └── commands/                 # 命令系统\n│       │       ├── BaseCommand.kt            # 命令基类（反射分发）\n│       │       ├── PublicCommands.kt         # 公开命令\n│       │       ├── AdministrationCommands.kt # 管理员命令\n│       │       ├── AuthenticationCommands.kt # 认证命令\n│       │       ├── MotdCommands.kt           # MOTD 命令\n│       │       ├── CustomCommandRegistry.kt  # 自定义命令注册\n│       │       └── SensitiveFilter.kt        # 敏感词过滤\n│       ├── provider/             # 提供者接口\n│       │   ├── ConfigProvider.kt    # 配置提供者\n│       │   ├── MessageProvider.kt   # 消息提供者\n│       │   └── CommandProvider.kt   # 命令提供者\n│       ├── state/                # 持久化状态\n│       ├── web/                  # WebUI\n│       │   ├── WebUiServer.kt      # HTTP 服务器\n│       │   ├── WebUiSchema.kt      # 配置表单 Schema\n│       │   └── WebUiPassword.kt    # 密码管理\n│       └── tools/                # 工具类\n├── server/Spigot/                # Spigot/Paper 平台适配\n│   └── src/main/kotlin/cn/huohuas001/huhobotPenguin/spigot/\n│       ├── HuHoBotSpigot.kt      # 插件主类\n│       └── commands/\n│           ├── AtCommand.kt      # /at 命令\n│           ├── HuHoBotCommand.kt # /huhobot 命令\n│           └── ...\n└── server/AdapterCommon/         # 适配器公共层\n```\n\n---\n\n## 构建与开发\n\n### 环境要求\n\n- **JDK 24**（构建时）/ **JDK 8+**（运行时，Spigot 模块）\n- **Gradle 9.6.1**（使用项目自带的 `gradlew`）\n- **Git**（子模块管理）\n\n### 构建命令\n\n```bash\n# 完整构建\n./gradlew clean build\n\n# 仅构建 Spigot 产物\n./gradlew :server-Spigot:shadowJar\n\n# 构建产物位置\nls build/gather-jar/\n```\n\n### 模块说明\n\n| 模块 | 说明 |\n|------|------|\n| `common-Bot` | 平台无关核心：QQ 客户端、群消息分发、指令、AI Agent、WebUI |\n| `server-AdapterCommon` | 服务端适配公共层 |\n| `server-Spigot` | Spigot/Paper 平台适配（活跃） |\n| `server-Nukkit` | Nukkit/PMMP 平台适配（待适配） |\n| `server-Proxy` | Velocity/BungeeCord 代理适配（待适配） |\n| `server-Allay` | Allay 平台适配（待适配） |\n\n---\n\n## 版本历史\n\n### v1.9.0（最新）\n\n**新功能：**\n- feat: 首次启动自动扫码登录 — 控制台打印二维码，手机 QQ 扫码后自动写入 AppID/Secret 到 config.yml\n\n**优化：**\n- opt: jar 文件名统一为 `PenguinAgent.jar`\n- opt: Gradle 配置缓存清理，确保 plugin.yml 版本号正确替换\n\n### v1.8.0\n\n**新功能：**\n- feat: `/send <消息>` — 游戏内向 QQ 群发送消息，所有人可用\n- feat: `/hb reload` 完整重启 — 注销所有命令 → 重新加载配置 → 重启 QQ 客户端\n\n**Bug 修复：**\n- fix: plugin.yml 重复 permissions 段导致 `/qqbind` 权限丢失\n- fix: 禁用的命令不再注册到 QQ 指令面板\n- fix: 命令面板同步日志增强，便于排查问题\n\n### v1.6.0\n\n**新功能：**\n- feat: WebUI 端口可通过 `config.yml` 中的 `webui-port` 配置（默认 5678）\n- feat: 配置文件版本升级到 v7，旧版自动迁移添加 `webui-port` 默认值\n\n### v1.5.0\n- feat: `MsgPack` / `MsgPackFactory` — MsgPack 消息序列化\n- feat: `OnBotRecvMsg` / `OnBotCommand` 事件 — 第三方插件可监听 QQ 消息与命令事件\n- feat: `AddonManager` 扩展注册中心 — 管理已安装扩展及其命令\n- feat: `registerAddon(name, version, description, author)` — 注册扩展元数据\n- feat: `registerBotCommand(addonName, key, command, permission, pushMenu)` — 注册扩展命令并关联归属\n- feat: `/addons` 命令 — 查看已安装扩展列表\n- feat: `/帮助` 三段式显示（内置命令、自定义命令、扩展命令），按 command key 全局去重\n- feat: `MessageProvider.onBotReceivedGroupMessage()` / `onBotCommand()` 回调\n\n**Bug 修复：**\n- fix: `/帮助` 命令重复显示问题（旧 API 注册的命令不再重复归类）\n- fix: QQ markdown 转义玩家名中 `_text_` 被识别为斜体\n\n### v1.4.0\n\n**新功能：**\n- feat: `/背包查看 <玩家名>` — 查看指定在线玩家背包内容（PNG 图片渲染，仅管理员）\n- feat: Faithful 32x 贴图包集成 — 物品图标与方块预览使用 Faithful 32x 纹理\n- feat: 玩家皮肤预览 — 背包图片中显示玩家正面皮肤\n- feat: 等距3D方块预览 — 有面贴图的方块自动合成等距3D效果\n- feat: `/qqbind` 权限改为所有玩家可用（默认 true）\n\n**变更：**\n- change: `/背包查看` 仅管理员可用\n\n**Bug 修复：**\n- fix: 命令方块等动画贴图渲染异常（自动裁剪为第一帧）\n- fix: 铁砧等无面贴图方块使用基础贴图做2D图标\n- fix: 箱子贴图从 overrides 目录正确加载\n- fix: QQ markdown 转义玩家名中 `_` 字符\n\n### v1.3.0\n\n**新功能：**\n- feat: 命令黑名单（`command-blacklist`）— 禁止通过 `/执行` 或 Agent `run_command` 运行指定服务器命令\n- feat: `/版本` 命令输出中显示文档链接\n- feat: WebUI 新增「绑定」和「命令黑名单」配置分区\n- feat: `ConfigUpgrader.upgradeValues()` 支持版本化升级已有配置字段\n- feat: `BaseCommand.handleMessage()` 实际执行 `onlyAdmin` 拦截\n\n**变更：**\n- change: motd `post-img` 和 `use-markdown` 默认值改为 `true`\n- change: AI Agent 命令（`/agent`、`/newsession`、`/stop`）标记为仅管理员\n- change: 配置文件版本升级到 v6，旧版自动迁移 motd 默认值\n\n**Bug 修复：**\n- fix: 自定义命令执行时不再转发到游戏\n- fix: 文档许可证从 GPL v3 更正为 AGPL v3\n- fix: 文档网址从 `huhobot.txssb.cn` 更正为 GitHub Pages\n\n### v1.3.0-beta.2\n\n**Bug 修复：**\n- fix: 游戏命令执行结果以纯文本发送，不再被 QQ 渲染为 Markdown 格式\n- fix: SDK `InterAction.getEnvType()` NPE 修复 — `chat_type` 空值检查\n\n**新功能：**\n- feat: QQ→游戏消息支持 `&` 颜色符号转换（如 `&a绿色` → 绿色文字）\n\n**文档：**\n- docs: 文档全面改版适配 HuHoBotPenguin 分支\n\n### v1.3.0-beta.1\n\n**上游同步（PenguinClient 功能合入）：**\n- feat: `FaceEmojiParser` —— QQ 表情标签转可读文本\n- feat: `MessageAttachmentParser` —— 语音/图片/视频/文件标签转可读文本\n- feat: `@Commands` 注解重构 —— `command`/`describe`/`onlyAdmin` 字段 + `RegisteredCommand` 数据类\n- feat: `BaseCommand.DispatchResult` 枚举（HANDLED/NOT_HANDLED/CUSTOM_COMMAND）\n- feat: `CustomCommandRegistry` 运行时注册/注销 + 面板自动同步\n- feat: `MenuManager` 改为 HTTP API 动态面板（启动时同步，上限 20 条命令）\n- feat: `ConfigProvider` 新增 `isAuthenticationEnabled()`、`commandMenuList()`、motd.md 模板\n- feat: `QClient.syncGroupPanels()` 启动时一次性同步面板，运行时注册不再重复同步\n- feat: `motd.md` Markdown 模板内置，首次启动自动解压\n- feat: 动态 `/帮助` 命令 —— 自动列出所有已注册命令（含自定义命令）\n- feat: `blockMotd` / `unblockMotd` —— 按群屏蔽 MOTD 查询\n- feat: `GroupSettingsRepository` 新增 `motdBlocked` 群级设置\n- feat: `BaseCommand.allCommands()` 全局命令注册表\n\n**Bug 修复：**\n- fix: 绑定游戏账号后自动添加白名单（QQ 直接绑定 + 游戏验证两条路径均已修复）\n- fix: `HuHoBotSpigot.companion` 静态实例，支持 `getInstance()` 调用\n- fix: 命令面板超出上限时日志提示，仅同步前 20 条命令\n\n**已知限制：**\n- 本地 QQ Bot SDK 版本不含 `MsgPack`/`OnBotRecvMsg`/`OnBotCommand` 事件，暂不支持第三方插件监听 QQ 消息事件\n\n**群服互通 @提及：**\n- feat: `/at` 命令 —— 游戏内发送 QQ @消息，支持 Tab 补全昵称\n- feat: QQ→游戏 @提及蓝色高亮（`§9@玩家名`）+ 叮音效提醒\n- feat: `NicknameManager` 昵称 ↔ openid 双向映射，持久化到 `nicknames.dat`\n- feat: `resolveAtMentions` 自动将 `@昵称` 转为 QQ `<@openid>` 格式\n- feat: `escapeMarkdown` 转义玩家名中 `_` 等特殊字符，防止被识别为斜体\n\n**WebUI：**\n- feat: 暗色简约风格 WebUI，14 个配置分组，覆盖所有配置项\n- feat: 启动时自动生成 24 位随机密码\n- fix: 侧边栏空 bug（renderNav 移到 schema 加载后调用）\n- fix: 保存后值丢失 bug（保存后重新读取配置刷新 UI）\n\n**AI Agent 群管理：**\n- feat: 禁言到期时间服务端计算，不依赖 AI\n- feat: @提及识别 —— AI 可直接使用 @成员的用户名进行操作\n- feat: 用户名显示 —— Agent 操作结果显示管理员/成员真实用户名\n- feat: 审批/拒绝通知显示操作管理员用户名\n- fix: `get_group_members` API 移除（无权限）\n- fix: 禁言、审批等工具 `group_openid` 标注\"可选，已自动绑定当前群\"\n\n**Bug 修复：**\n- fix: openid 被当作昵称存储导致 Tab 补全显示 openid\n- fix: QQ→游戏转发时 openid 被当作发送者显示名\n- fix: NicknameManager.load() 自动跳过昵称是 openid 的脏数据\n- fix: plugin.yml `/at` 命令描述修正\n\n### v1.2.0-alpha.1\n\n- 初版 WebUI 图形化配置\n- AI Agent 群管理功能（禁言、入群审批、自动审批策略）\n- @提及识别与用户名显示\n\n### v1.1.0-alpha.3\n\n- AI Agent 系统初版\n- SKILL 按需加载系统\n- `/motd` 服务器状态查询\n- `/stop` 紧急停止命令\n- 指令面板自动同步\n\n---\n\n## 许可证\n\n本项目采用 [GNU Affero General Public License v3.0](https://github.com/HuHoBot/PenguinAgent/blob/master/LICENSE) 许可证。\n\n### 第三方资源\n\n背包查看功能使用 [Faithful 32x](https://faithfulpack.net/) 贴图包（[Faithful License v3](https://github.com/HuHoBot/PenguinAgent/blob/master/server/Spigot/src/main/resources/inventory/faithful32x/LICENSE.txt)）。\n\n这意味着你可以自由使用、修改和分发本软件，但：\n- 修改后的版本必须以相同许可证发布\n- 如果通过网络提供服务，必须向用户提供源代码\n- 包含来自贡献者的专利授权\n\n---\n\n[![bStats](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fbstats.org%2Fapi%2Fv1%2Fplugins%2F34268%2Fcharts%2Fservers%2Fdata%3FmaxElements%3D1&query=%24%5B0%5D%5B1%5D&label=servers&color=blue)](https://bstats.org/plugin/bukkit/34268)\n[![players](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fbstats.org%2Fapi%2Fv1%2Fplugins%2F34268%2Fcharts%2Fplayers%2Fdata%3FmaxElements%3D1&query=%24%5B0%5D%5B1%5D&label=players&color=blue)](https://bstats.org/plugin/bukkit/34268)\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/197658304?v=4",
+  "id": "HuHoBot/PenguinAgent--server-nukkit",
+  "license": {
+    "id": "AGPL-3.0",
+    "name": "GNU Affero General Public License v3.0",
+    "url": "https://spdx.org/licenses/AGPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "server/Nukkit/src/main/resources/plugin.yml",
+  "name": "HuHoBotPenguin",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/HuHoBot/PenguinAgent",
+  "stars": 9,
+  "summary": "HuHoBot-Penguin的超级牛逼的功能宇宙超级无敌非常特别齐全的分支",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1790404575,
+  "versions": [
+    {
+      "changelog": "## HuHoBot-Penguin_Spigot v1.14.0\n\n### WebUI 附属插件中心（新增）\n- 侧边栏新增「附属插件中心」分区，从附属插件中心 API 拉取插件列表\n- **只显示 Spigot / Paper 平台的插件**，其他平台自动过滤\n- 支持按名称/简介搜索，可展开查看插件详情（readme）\n- 一键下载安装：下载到服务端 `plugins/` 目录，**不做热加载**，飘窗提示「重启服务器后生效」\n- 下载记录持久化到 `installed-addons.json`，刷新页面不会退回「未安装」\n- 支持删除已下载的插件（文件不存在时直接清理记录），同样提示重启后生效\n\n### WebUI 体验优化\n- Toast 从底部改为顶部中上方飘窗，带淡入缩放动画\n- 面板切换、配置字段、状态卡片逐条错峰淡入\n- 导航项与按钮点击涟漪反馈，按下回弹，聚焦光圈\n- 「保存全部」按钮保存中显示 loading 并禁用\n- 分区图标补齐：绑定 🔗 / 命令黑名单 🚫 / 版本更新 🆕 / PlaceholderAPI 🔤\n- 群名称在获取完成前显示「正在获取…」，失败后才显示「名称暂不可用」\n\n### 群接入\n- 群列表为空或未收录该群时，**收到任意消息**即自动把群 OpenID 写入 `bot.groups`（不再要求先发「查信息」）\n\n### 群服互通与占位符\n- 群服互通默认格式恢复为 `[游戏] {name}: {message}` / `[QQ] {name}: {message}`\n- 绑定后不再自动把 QQ→游戏 显示名切成 MC 名，默认仍用 QQ 用户名，需要时用 `/MC显示名称 MC` 切换\n- PlaceholderAPI 解析改用在线玩家实例，玩家类占位符可正常返回\n\n### 其它\n- 群名获取失败日志改为按数据源汇总，便于定位\n- 群名刷新失败 30 秒内不重复请求，控制台不再刷屏\n- 版本检查失败日志区分数据源（gh-proxy / github）\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.14.0.jar",
+          "primary": true,
+          "sha256": "022aa2487c68711e0c4579f0389a76a606229b32bd854e0edafcf05d7c97b54d",
+          "size": 24921611,
+          "url": "https://github.com/HuHoBot/PenguinAgent/releases/download/v1.14.0/HuHoBot-Penguin_Spigot-1.14.0.jar"
+        }
+      ],
+      "name": "v1.14.0",
+      "prerelease": false,
+      "published_at": 1790404575,
+      "version": "v1.14.0"
+    },
+    {
+      "changelog": "## HuHoBot-Penguin_Spigot v1.13.0\n\n本次实现并关闭以下 Issue：\n\n### #10 Agent 获取类工具结果不再刷屏\n- 获取插件列表 / 命令帮助 / 服务器日志的结果只交给 AI，不再在群里发卡片\n- 新增开关 `agent.hide-fetch-results`（默认开启），需要回显可在 WebUI 或配置文件关闭\n\n### #9 接入 PlaceholderAPI\n- 安装 PlaceholderAPI 后，配置里的 `%占位符%` 交由 PAPI 解析（纯反射接入，不引入编译期依赖，未安装时原样保留）\n- 覆盖场景：游戏↔QQ 双向转发、进服/退服通知、白名单命令、自定义命令、在线列表与 MOTD 模板\n- 玩家类占位符使用在线玩家实例解析；新增开关 `placeholder-api.enabled`（默认开启）\n- 默认配置文本未改动，也不内置任何占位符\n\n### #8 版本更新提醒\n- 启动时后台检查一次，`/版本` 命令再检查一次（10 分钟内复用结果）\n- `/版本` 现在显示：当前版本、最新版本、官网 huhobot.dpdns.org、GitHub、文档 docs.huhobot.dpdns.org\n- 只认 GitHub 正式 Release，忽略 Pre-Release；发现新版提示前往官网下载\n- 数据源走 gh-proxy 代理的 GitHub API，国内网络可用；失败时降级为「暂时无法检查」，不影响启动\n- 新增 `update-check.enabled`、`update-check.url`（自定义数据源）\n\n### #7 QQ 群接入简化\n- WebUI「群列表」显示群名称（附 OpenID 尾号），点击可复制完整 OpenID；名称缓存 30 分钟并持久化\n- 状态页列出已绑定群名称\n- 陌生群发来消息时自动把群 OpenID 写入 `bot.groups`，无需手动查询复制；开关 `bot.auto-add-groups`（默认开启）\n\n### 其它\n- 群服互通默认格式恢复为 `[游戏] {name}: {message}` / `[QQ] {name}: {message}`\n- 绑定后不再自动把 QQ→游戏 显示名切成 MC 名，默认仍用 QQ 用户名，需要时用 `/MC显示名称 MC` 切换\n- 清理群管理 API 的调试输出，控制台更干净\n\n---\n\nCloses #7\nCloses #8\nCloses #9\nCloses #10\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.13.0.jar",
+          "primary": true,
+          "sha256": "01becbc1776be3f9500b2f7f6bcde624f5f35569ebd8cf3de02086c99be25d0b",
+          "size": 24894986,
+          "url": "https://github.com/HuHoBot/PenguinAgent/releases/download/v1.13.0/HuHoBot-Penguin_Spigot-1.13.0.jar"
+        }
+      ],
+      "name": "v1.13.0",
+      "prerelease": false,
+      "published_at": 1790308825,
+      "version": "v1.13.0"
+    },
+    {
+      "changelog": "## HuHoBot-Penguin_Spigot v1.12.0\n\n### 新功能\n- 集成 [bStats](https://bstats.org/) 统计（插件 ID `34268`），bStats 库已重定位到 `cn.huohuas001.bstats`，不会与其他插件冲突\n- README 新增项目计数器\n\n### 构建\n- 产物：`HuHoBot-Penguin_Spigot-1.12.0.jar`\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.12.0.jar",
+          "primary": true,
+          "sha256": "a3a0f432b7da9b5cd10a9e6fde7512a7fa9a2ef1193687045192b31c8428c0f3",
+          "size": 24862317,
+          "url": "https://github.com/HuHoBot/PenguinAgent/releases/download/v1.12.0/HuHoBot-Penguin_Spigot-1.12.0.jar"
+        }
+      ],
+      "name": "v1.12.0",
+      "prerelease": false,
+      "published_at": 1790255536,
+      "version": "v1.12.0"
+    },
+    {
+      "changelog": "## HuHoBot-Penguin_Spigot v1.11.0\n\n### 消息键盘自动撤回\n- 所有带键盘的消息发送后 **30 秒自动撤回**，不再长期刷屏\n- 点击键盘按钮后可立即撤回对应卡片\n\n### AI Agent 审批超时\n- 手动审批模式下，审批卡片 **30 秒未处理自动拒绝**，并撤回卡片\n- 超时后 Agent 会继续执行后续流程，并向群内说明操作已被自动拒绝\n- 任务被紧急停止时，待审批卡片同样会被撤回\n\n### 修复\n- 修复 qqpd-bot-java 消息撤回接口始终返回失败的问题（`RestApi` 依赖未绑定导致 DELETE 请求被跳过），撤回现已正常工作\n- 撤回失败时输出 HTTP 状态码与响应体，便于排查\n\n### 依赖\n- qqpd-bot-java 更新至 `0287d4e`（撤回接口修复）\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.11.0.jar",
+          "primary": true,
+          "sha256": "79b4cd0316c8efd576efd896e4d3c09d6f0f4aeefcff85e45f8bb05c15aa3760",
+          "size": 24766959,
+          "url": "https://github.com/HuHoBot/PenguinAgent/releases/download/v1.11.0/HuHoBot-Penguin_Spigot-1.11.0.jar"
+        }
+      ],
+      "name": "HuHoBot v1.11.0",
+      "prerelease": false,
+      "published_at": 1790253011,
+      "version": "v1.11.0"
+    },
+    {
+      "changelog": "## v1.10.0\n\n### 新功能\n- feat(inventory): 背包与末影箱渲染整合（#6）\n  - 3D 玩家模型渲染（`PlayerModelRenderer`），支持护甲、鞘翅、副手\n  - 离线背包快照（`OfflineInventorySnapshots`）——玩家离线后仍可查看最近一次背包\n  - 默认皮肤库与皮肤配置解析（`DefaultPlayerSkinProvider` / `ServerSkinProfile`）\n  - 护甲材质与附魔光泽资源（`armor-assets`）\n- feat(bot): QQ 命令面板与命令体验整合（#6）\n  - 面板分页、重复面板清理、20 条上限截断\n  - 命令按权限分组显示、`pushMenu` / `priority` 支持\n  - WebUI 自定义命令编辑保留 `pushMenu` 字段\n\n### Bug 修复\n- fix: 恢复 Faithful 32x 许可水印（渲染 PNG 底部署名）\n- fix: 背包查询名字大小写不匹配时正确解析在线玩家，不再误标离线快照\n- fix: 末影箱渲染失败与无离线快照的错误提示区分\n- fix: `onServerThread` 增加 10s 超时与异常处理，避免线程永久阻塞\n- fix: 背包快照 YAML 序列化移出主线程，避免周期性卡顿\n- fix: 关服时快照写盘等待超时 15s → 3s\n- fix: 瘦手臂（slim）胸甲 UV 宽度修正\n- fix: 皮肤下载失败增加 60s 负缓存，避免反复超时重试\n- fix: 配置重复段合并对行尾注释/空子段更健壮，防止内容丢失\n- fix: `registerBotCommand` / `unregisterBotCommand` 面板同步改为异步，避免阻塞附属插件主线程\n\n### 变更\n- change: jar 命名恢复为 `HuHoBot-Penguin_Spigot-{version}.jar`\n- change: `showAdminCommandsInMenu` 接口默认值统一为 `true`\n- change: 版本号 1.10.0（semver minor，新增功能）\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.10.0.jar",
+          "primary": true,
+          "sha256": "10fd6995dbb3d05222d460dfe10da7625d80114f9e8ef96ac933e5fff4c6ef93",
+          "size": 24763440,
+          "url": "https://github.com/HuHoBot/PenguinAgent/releases/download/v1.10.0/HuHoBot-Penguin_Spigot-1.10.0.jar"
+        }
+      ],
+      "name": "HuHoBot v1.10.0",
+      "prerelease": false,
+      "published_at": 1790239715,
+      "version": "v1.10.0"
+    },
+    {
+      "changelog": "## v1.9.0\n\n### 新功能\n- feat: 首次启动自动扫码登录 — 控制台打印二维码，手机 QQ 扫码后自动写入 AppID/Secret 到 config.yml\n- feat: `/hb reload` 改为完整重启（softClose 关闭旧 WebSocket，不杀共享线程池）\n\n### 优化\n- opt: jar 文件名统一为 `PenguinAgent.jar`\n- opt: Gradle 配置缓存清理，确保 plugin.yml 版本号正确替换\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "PenguinAgent.jar",
+          "primary": true,
+          "sha256": "de693f7689c116d7098191db31251b510a84c413060aa3894a11a114ff69ac06",
+          "size": 22750899,
+          "url": "https://github.com/HuHoBot/PenguinAgent/releases/download/v1.9.0/PenguinAgent.jar"
+        }
+      ],
+      "name": "v1.9.0",
+      "prerelease": false,
+      "published_at": 1789829272,
+      "version": "v1.9.0"
+    },
+    {
+      "changelog": "## v1.8.0\n\n### 新功能\n- feat: `/send <消息>` — 游戏内向 QQ 群发送消息，所有人可用\n- feat: `/hb reload` 完整重启 — 注销所有命令 → 重新加载配置 → 重启 QQ 客户端\n\n### Bug 修复\n- fix: plugin.yml 重复 permissions 段导致 `/qqbind` 权限丢失\n- fix: 禁用的命令不再注册到 QQ 指令面板\n- fix: 命令面板同步日志增强，便于排查问题\n- fix: `/hb reload` 后消息重复发送问题（softClose 替代 shutdown）\n- fix: Gradle 配置缓存导致 plugin.yml 版本号未更新\n\n### 其他\n- jar 文件名统一为 `PenguinAgent.jar`\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "PenguinAgent.jar",
+          "primary": true,
+          "sha256": "a5db0715d5e055dcc76907b1bbe140141fe276090d1e3664d840e4bed42ad2e2",
+          "size": 21376052,
+          "url": "https://github.com/HuHoBot/PenguinAgent/releases/download/v1.8.0/PenguinAgent.jar"
+        }
+      ],
+      "name": "v1.8.0",
+      "prerelease": false,
+      "published_at": 1789785955,
+      "version": "v1.8.0"
+    },
+    {
+      "changelog": "v1.4.0（2026-08-29）\n\n#\n\n### 构建信息\n- 构建时间: 2026-09-13T05:44:51Z\n- 提交哈希: [c5b0f4f545dbd04c9ba5c10cf847bcef62737d5a](https://github.com/HuHoBot/PenguinAgent/commit/c5b0f4f545dbd04c9ba5c10cf847bcef62737d5a)\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.7.0.jar",
+          "primary": true,
+          "sha256": "f8f48b13be8d981b7d1ea0b7a9443918c9c290f498045559928b2e9e8a9ebb63",
+          "size": 21369870,
+          "url": "https://github.com/HuHoBot/PenguinAgent/releases/download/v1.7.0/HuHoBot-Penguin_Spigot-1.7.0.jar"
+        }
+      ],
+      "name": "HuHoBot v1.7.0",
+      "prerelease": false,
+      "published_at": 1789278123,
+      "version": "v1.7.0"
+    },
+    {
+      "changelog": "## v1.6.1\n\n### Bug 修复\n- fix: plugin.yml 重复 permissions 段导致 `/qqbind` 权限丢失，所有玩家无法使用\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.6.1.jar",
+          "primary": true,
+          "sha256": "bfbdd08a6fd84205614450065c1a579e966f1154b267ed9ed8dfe5cfaba09dd0",
+          "size": 21370784,
+          "url": "https://github.com/HuHoBot/PenguinAgent/releases/download/v1.6.1/HuHoBot-Penguin_Spigot-1.6.1.jar"
+        }
+      ],
+      "name": "v1.6.1",
+      "prerelease": false,
+      "published_at": 1788577240,
+      "version": "v1.6.1"
+    },
+    {
+      "changelog": "v1.6.0（2026-08-29）\r\n\r\n#\r\n\r\n### 构建信息\r\n- 构建时间: 2026-08-30T13:20:05Z\r\n- 提交哈希: [c667ac0884fe096f938b40b0c5f6e4ba7351a4ea](https://github.com/HuHoBot/PenguinAgent/commit/c667ac0884fe096f938b40b0c5f6e4ba7351a4ea)\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.6.0.jar",
+          "primary": true,
+          "sha256": "85c329261eeb46559a480aa70c1d7a4da2b7a3120d16880585963d57cdc32e4b",
+          "size": 21367936,
+          "url": "https://github.com/HuHoBot/PenguinAgent/releases/download/v1.6.0/HuHoBot-Penguin_Spigot-1.6.0.jar"
+        }
+      ],
+      "name": "HuHoBot v1.6.0",
+      "prerelease": false,
+      "published_at": 1788095862,
+      "version": "v1.6.0"
+    },
+    {
+      "changelog": "## v1.5.0\n\n### 上游同步（扩展API合入）\n- feat: MsgPack/MsgPackFactory 消息序列化\n- feat: OnBotRecvMsg/OnBotCommand 事件支持\n- feat: AddonManager 扩展注册中心\n- feat: registerAddon/registerBotCommand 扩展API\n- feat: /addons 查看已安装扩展\n- feat: /帮助三段式显示+按key去重\n- feat: MessageProvider.onBotReceivedGroupMessage/onBotCommand回调\n\n### Bug修复\n- fix: /帮助命令重复显示问题\n- fix: QQ markdown转义_text_被识别为斜体\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.5.0.jar",
+          "primary": true,
+          "sha256": "4f3114f21b744544519edea91f3d2038fec28d7061170e3dab8d2bbd1eeaa253",
+          "size": 21370237,
+          "url": "https://github.com/HuHoBot/PenguinAgent/releases/download/v1.5.0/HuHoBot-Penguin_Spigot-1.5.0.jar"
+        }
+      ],
+      "name": "v1.5.0",
+      "prerelease": false,
+      "published_at": 1788075918,
+      "version": "v1.5.0"
+    },
+    {
+      "changelog": "v1.4.0（2026-08-29）\n\n#\n\n### 构建信息\n- 构建时间: 2026-08-29T06:11:26Z\n- 提交哈希: [bd59219a02d44f2c9242279a6e3adbe73205f44a](https://github.com/HuHoBot/PenguinAgent/commit/bd59219a02d44f2c9242279a6e3adbe73205f44a)\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.4.0.jar",
+          "primary": true,
+          "sha256": "4c9d94275bef02286644ae637b15c784e19dc2c9d1a9f049a65fdbe8bcb393be",
+          "size": 20995168,
+          "url": "https://github.com/HuHoBot/PenguinAgent/releases/download/v1.4.0/HuHoBot-Penguin_Spigot-1.4.0.jar"
+        }
+      ],
+      "name": "HuHoBot v1.4.0",
+      "prerelease": false,
+      "published_at": 1787983781,
+      "version": "v1.4.0"
+    },
+    {
+      "changelog": "v1.3.0（2026-08-27）\n\n#\n\n### 构建信息\n- 构建时间: 2026-08-27T03:53:02Z\n- 提交哈希: [0893934b88ebdf13abe8d8ddae23649b4f81815e](https://github.com/HuHoBot/PenguinAgent/commit/0893934b88ebdf13abe8d8ddae23649b4f81815e)\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.3.0.jar",
+          "primary": true,
+          "sha256": "cdca47ea66e7060134739f6cf65ea32963c252f53c8b347d4ef9d6fe47c8fa75",
+          "size": 18814874,
+          "url": "https://github.com/HuHoBot/PenguinAgent/releases/download/v1.3.0/HuHoBot-Penguin_Spigot-1.3.0.jar"
+        }
+      ],
+      "name": "HuHoBot v1.3.0",
+      "prerelease": false,
+      "published_at": 1787802667,
+      "version": "v1.3.0"
+    },
+    {
+      "changelog": "# Changelog\n\n### 构建信息\n- 构建时间: 2026-08-26T14:46:22Z\n- 提交哈希: [6fb25cfb01acab999110709dc5b773395e0085e1](https://github.com/HuHoBot/PenguinAgent/commit/6fb25cfb01acab999110709dc5b773395e0085e1)\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.3.0-beta.4.jar",
+          "primary": true,
+          "sha256": "125519b0779f940019c07802b0c6c96096d9340fd658a1421e63dbd6e17249fb",
+          "size": 18805864,
+          "url": "https://github.com/HuHoBot/PenguinAgent/releases/download/v1.3.0-beta.4/HuHoBot-Penguin_Spigot-1.3.0-beta.4.jar"
+        }
+      ],
+      "name": "HuHoBot v1.3.0-beta.4",
+      "prerelease": true,
+      "published_at": 1787755451,
+      "version": "v1.3.0-beta.4"
+    },
+    {
+      "changelog": "# Changelog\n\n### 构建信息\n- 构建时间: 2026-08-24T13:14:17Z\n- 提交哈希: [3c398becc617dcf48fcd6fe1e454b5d9c71883f6](https://github.com/HuHoBot/PenguinAgent/commit/3c398becc617dcf48fcd6fe1e454b5d9c71883f6)\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.3.0-beta.2.jar",
+          "primary": true,
+          "sha256": "c6fb3f2ba577c7d23ec926151267f645c7923706afd08bc3ba90818fdda2f669",
+          "size": 18805833,
+          "url": "https://github.com/HuHoBot/PenguinAgent/releases/download/v1.3.0-beta.2/HuHoBot-Penguin_Spigot-1.3.0-beta.2.jar"
+        }
+      ],
+      "name": "HuHoBot v1.3.0-beta.2",
+      "prerelease": true,
+      "published_at": 1787577111,
+      "version": "v1.3.0-beta.2"
+    },
+    {
+      "changelog": "# HuHoBot Penguin v1.2.2\n\n### 构建信息\n- 构建时间: 2026-08-24T02:08:18Z\n- 提交哈希: [a5936ced7c87c17f3640b872c71a7fb9843ded14](https://github.com/HuHoBot/PenguinAgent/commit/a5936ced7c87c17f3640b872c71a7fb9843ded14)\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.3.0-beta.1.jar",
+          "primary": true,
+          "sha256": "f4ab6d52ace07c14e14f3d28330fa0bba9cb66bc108cf812ac2114159a579800",
+          "size": 18803868,
+          "url": "https://github.com/HuHoBot/PenguinAgent/releases/download/v1.3.0-beta.1/HuHoBot-Penguin_Spigot-1.3.0-beta.1.jar"
+        }
+      ],
+      "name": "HuHoBot v1.3.0-beta.1",
+      "prerelease": true,
+      "published_at": 1787537181,
+      "version": "v1.3.0-beta.1"
+    },
+    {
+      "changelog": "# HuHoBot Penguin v1.2.2\n\n### 构建信息\n- 构建时间: 2026-08-18T10:52:24Z\n- 提交哈希: [b22132665da14a9442d75574925b967534907044](https://github.com/HuHoBot/PenguinAgent/commit/b22132665da14a9442d75574925b967534907044)\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.2.2.jar",
+          "primary": true,
+          "sha256": "a223f82552a8288146f531dadf2180c4a7e15a9382329838e6ff1c5a9af0f446",
+          "size": 18759239,
+          "url": "https://github.com/HuHoBot/PenguinAgent/releases/download/v1.2.2/HuHoBot-Penguin_Spigot-1.2.2.jar"
+        }
+      ],
+      "name": "HuHoBot v1.2.2",
+      "prerelease": false,
+      "published_at": 1787050212,
+      "version": "v1.2.2"
+    },
+    {
+      "changelog": "# HuHoBot Penguin v1.2.0\n\n### 构建信息\n- 构建时间: 2026-08-17T11:46:00Z\n- 提交哈希: [3a36f7a197720807ecefc9d3b10cbd5901dbe2cf](https://github.com/HuHoBot/PenguinAgent/commit/3a36f7a197720807ecefc9d3b10cbd5901dbe2cf)\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.2.1-hotfix.jar",
+          "primary": true,
+          "sha256": "ecdb1e545d3d74323fc9c941ca58877f20ad3101842d818fb1252f6be405814e",
+          "size": 18758712,
+          "url": "https://github.com/HuHoBot/PenguinAgent/releases/download/v1.2.1-hotfix/HuHoBot-Penguin_Spigot-1.2.1-hotfix.jar"
+        }
+      ],
+      "name": "HuHoBot v1.2.1-hotfix",
+      "prerelease": false,
+      "published_at": 1786967033,
+      "version": "v1.2.1-hotfix"
+    },
+    {
+      "changelog": "# HuHoBot Penguin v1.2.0\n\n### 构建信息\n- 构建时间: 2026-08-17T11:26:38Z\n- 提交哈希: [2c115b23dee34862516796d09095b2b3312f088e](https://github.com/HuHoBot/PenguinAgent/commit/2c115b23dee34862516796d09095b2b3312f088e)\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.2.0.jar",
+          "primary": true,
+          "sha256": "b58047b47ef7d9a3ab710739886b16cdd77252fef6c887dda93c3d1c1c1dd2a8",
+          "size": 18758652,
+          "url": "https://github.com/HuHoBot/PenguinAgent/releases/download/v1.2.0/HuHoBot-Penguin_Spigot-1.2.0.jar"
+        }
+      ],
+      "name": "HuHoBot v1.2.0",
+      "prerelease": false,
+      "published_at": 1786965829,
+      "version": "v1.2.0"
+    },
+    {
+      "changelog": "# HuHoBot Penguin v1.2.0-alpha.2\n\n### 构建信息\n- 构建时间: 2026-08-16T15:00:46Z\n- 提交哈希: [06f552af6df5a936b7cba26c47fa39be3b143615](https://github.com/HuHoBot/PenguinAgent/commit/06f552af6df5a936b7cba26c47fa39be3b143615)\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.2.0-alpha.2.jar",
+          "primary": true,
+          "sha256": "1c9a59aca9789a06bd232ee1ee947aa1db31e50b11598ba50b5436a68d9119c7",
+          "size": 18740220,
+          "url": "https://github.com/HuHoBot/PenguinAgent/releases/download/v1.2.0-alpha.2/HuHoBot-Penguin_Spigot-1.2.0-alpha.2.jar"
+        }
+      ],
+      "name": "HuHoBot v1.2.0-alpha.2",
+      "prerelease": true,
+      "published_at": 1786892390,
+      "version": "v1.2.0-alpha.2"
+    },
+    {
+      "changelog": "## v1.2.0-alpha.1\n\n### New Features\n- **WebUI 图形化配置界面** — 浏览器访问 127.0.0.1:5678 管理全部 config.yml，暗色简约风格，14 个配置分组\n- 启动自动生成 24 位随机强密码（仅日志打印一次），`/hb password <密码>` 修改，`/hb webui` 查看地址\n- **Agent @提及识别** — AI 可直接使用 @成员 的用户名进行群管理操作，无需手动传 openid\n- **Agent 群管理工具审批** — 禁言、入群审批、策略修改需管理员按钮审批（manual 模式下）\n- **group_openid 自动绑定** — 所有群工具已自动绑定当前群的 group_openid，AI 无需也无法传入伪造值\n- 禁言到期时间由服务端计算，AI 只需传 minutes 参数（1-43200 分钟）\n- 审批/拒绝通知显示管理员用户名而非 openid\n- `/hb password` 修改 WebUI 登录密码\n- `/hb webui` 查看 WebUI 地址\n\n### Fixes\n- 侧边栏导航未渲染（renderNav 在 schema 加载前调用导致空导航）\n- 保存配置后界面未刷新（state.values 未更新，重新读取配置文件）\n- WebUI 启动日志改为中文：网页配置UI已在127.0.0.1:5678启动\n\n### Changed\n- Agent 系统提示词新增群管理操作规范（自动绑定 group_openid、禁言前检查机器人权限）\n- QQ 群工具定义更新：group_openid 标注「可选，已自动绑定当前群」\n- 审批回调扩展：支持 QQ 群管理工具（PendingApproval 增加 toolName/query/isTool）\n- README 补充 WebUI 文档、群管理工具说明、服务器控制台指令\n\n### Dependencies\n- deps/qqpd-bot-java 子模块更新\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.2.0-alpha.1.jar",
+          "primary": true,
+          "sha256": "8df93354805a55620a3c4ffa60d137a065080b4f95c284f7360bff7a821e0da8",
+          "size": 18724613,
+          "url": "https://github.com/HuHoBot/PenguinAgent/releases/download/v1.2.0-alpha.1/HuHoBot-Penguin_Spigot-1.2.0-alpha.1.jar"
+        }
+      ],
+      "name": "HuHoBot v1.2.0-alpha.1",
+      "prerelease": true,
+      "published_at": 1786851283,
+      "version": "v1.2.0-alpha.1"
+    },
+    {
+      "changelog": "# HuHoBot Penguin v1.1.0-alpha.3\n\n## 新功能\n\n- feat(menu): 启动时自动同步指令面板到 QQ 群，包含全部 20 条命令\n- feat(motd): 新增 `/motd <服务器地址>` 命令，查询 MC 服务器状态（图片 + Markdown）\n- feat(stop): 新增 `/stop` 命令，紧急停止所有 AI 任务输出和处理\n- feat(message): 添加消息提及用户解析和格式化功能\n- feat(agent): 新增 AI Agent 系统，管理员通过 `@机器人 /agent 任务描述` 触发 AI 执行服务器管理任务\n- feat(agent): AI 通过 function call 获取插件列表、命令帮助、执行命令、读取日志\n- feat(agent): 命令执行支持手动审批模式（按钮卡片同意/拒绝，仅管理员与群主可审批）\n- feat(agent): 新增 SKILL 按需加载系统（components/give/item/summon/data/loot/clear）\n- feat(agent): 新增 `/newsession` 命令手动清除 AI 会话上下文\n- feat(agent): AI 推理模型支持（reasoning_content 思考过程输出）\n- feat(command): 原版命令帮助通过反射 CraftServer commandMap 获取\n- feat(spigot): 新增 `read_server_logs` 工具读取服务端日志\n\n## 改进\n\n- refactor(agent): 会话上下文复用，同一用户连续对话保留历史\n- refactor(agent): 错误输出清理，只显示根本原因（Brigadier CommandSyntaxException）\n- refactor(agent): 消息无截断，超长内容分块发送\n- refactor(agent): 上下文窗口管理（MAX_CONTEXT_MESSAGES=40）\n- fix(agent): 命令输出剥离 Minecraft 格式化代码（§x），避免 QQ 群显示乱码\n- fix(agent): 修复 interaction 回调 405 错误日志噪音\n- fix(spigot): BukkitConsoleSender 改用真实 console sender 执行命令\n\n## 依赖\n\n- 基于 [qqpd-bot-java](https://github.com/Kloping/qqpd-bot-java) (AGPL-3.0)\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.1.0-alpha.3.jar",
+          "primary": true,
+          "sha256": "1f8ca62a49e2a5dce44c3c5e58521f46e937dddc3293f47807e708a5ab7015e3",
+          "size": 18667890,
+          "url": "https://github.com/HuHoBot/PenguinAgent/releases/download/v1.1.0-alpha.3/HuHoBot-Penguin_Spigot-1.1.0-alpha.3.jar"
+        }
+      ],
+      "name": "HuHoBot Penguin v1.1.0-alpha.3",
+      "prerelease": true,
+      "published_at": 1786807168,
+      "version": "v1.1.0-alpha.3"
+    },
+    {
+      "changelog": "# HuHoBot Penguin v1.1.0-alpha.2\n\n## 新功能\n\n- feat(motd): 新增 `/motd <服务器地址>` 命令，查询 MC 服务器状态（图片 + Markdown）\n- feat(stop): 新增 `/stop` 命令，紧急停止所有 AI 任务输出和处理\n- feat(message): 添加消息提及用户解析和格式化功能\n- feat(agent): 新增 AI Agent 系统，管理员通过 `@机器人 /agent 任务描述` 触发 AI 执行服务器管理任务\n- feat(agent): AI 通过 function call 获取插件列表、命令帮助、执行命令、读取日志\n- feat(agent): 命令执行支持手动审批模式（按钮卡片同意/拒绝，仅管理员与群主可审批）\n- feat(agent): 新增 SKILL 按需加载系统（components/give/item/summon/data/loot/clear）\n- feat(agent): 新增 `/newsession` 命令手动清除 AI 会话上下文\n- feat(agent): AI 推理模型支持（reasoning_content 思考过程输出）\n- feat(command): 原版命令帮助通过反射 CraftServer commandMap 获取\n- feat(spigot): 新增 `read_server_logs` 工具读取服务端日志\n\n## 改进\n\n- refactor(agent): 会话上下文复用，同一用户连续对话保留历史\n- refactor(agent): 错误输出清理，只显示根本原因（Brigadier CommandSyntaxException）\n- refactor(agent): 消息无截断，超长内容分块发送\n- refactor(agent): 上下文窗口管理（MAX_CONTEXT_MESSAGES=40）\n- fix(agent): 命令输出剥离 Minecraft 格式化代码（§x），避免 QQ 群显示乱码\n- fix(agent): 修复 interaction 回调 405 错误日志噪音\n- fix(spigot): BukkitConsoleSender 改用真实 console sender 执行命令\n\n## 依赖\n\n- 基于 [qqpd-bot-java](https://github.com/Kloping/qqpd-bot-java) (AGPL-3.0)\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.1.0-alpha.2.jar",
+          "primary": true,
+          "sha256": "eb206ca9e5578cf90bcaabf0f3513d28492f92160c85adc31db5f3ef36124187",
+          "size": 18659070,
+          "url": "https://github.com/HuHoBot/PenguinAgent/releases/download/v1.1.0-alpha.2/HuHoBot-Penguin_Spigot-1.1.0-alpha.2.jar"
+        }
+      ],
+      "name": "HuHoBot Penguin v1.1.0-alpha.2",
+      "prerelease": true,
+      "published_at": 1786804301,
+      "version": "v1.1.0-alpha.2"
+    },
+    {
+      "changelog": "# HuHoBot Penguin v1.1.0-alpha.1\n\n## 新功能\n\n- feat(agent): 新增 AI Agent 系统，管理员通过 `@机器人 /agent 任务描述` 触发 AI 执行服务器管理任务\n- feat(agent): AI 通过 function call 获取插件列表、命令帮助、执行命令、读取日志\n- feat(agent): 命令执行支持手动审批模式（按钮卡片同意/拒绝，仅管理员与群主可审批）\n- feat(agent): 新增 SKILL 按需加载系统（components/give/item/summon/data/loot/clear）\n- feat(agent): 新增 `/newsession` 命令手动清除 AI 会话上下文\n- feat(agent): AI 推理模型支持（reasoning_content 思考过程输出）\n- feat(command): 原版命令帮助通过反射 CraftServer commandMap 获取\n- feat(spigot): 新增 `read_server_logs` 工具读取服务端日志\n\n## 改进\n\n- refactor(agent): 会话上下文复用，同一用户连续对话保留历史\n- refactor(agent): 错误输出清理，只显示根本原因（Brigadier CommandSyntaxException）\n- refactor(agent): 消息无截断，超长内容分块发送\n- refactor(agent): 上下文窗口管理（MAX_CONTEXT_MESSAGES=40）\n- fix(agent): 命令输出剥离 Minecraft 格式化代码（§x），避免 QQ 群显示乱码\n- fix(agent): 修复 interaction 回调 405 错误日志噪音\n- fix(spigot): BukkitConsoleSender 改用真实 console sender 执行命令\n\n## 依赖\n\n- 基于 [qqpd-bot-java](https://github.com/Kloping/qqpd-bot-java) (AGPL-3.0)\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.1.0-alpha.1.jar",
+          "primary": true,
+          "sha256": "18fff661ff2f573696b174a553ccc5090ae068ede3c6205207245c29afe44ed2",
+          "size": 18652443,
+          "url": "https://github.com/HuHoBot/PenguinAgent/releases/download/v1.1.0-alpha.1/HuHoBot-Penguin_Spigot-1.1.0-alpha.1.jar"
+        }
+      ],
+      "name": "HuHoBot Penguin v1.1.0-alpha.1",
+      "prerelease": true,
+      "published_at": 1786788807,
+      "version": "v1.1.0-alpha.1"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/24549913?v=4",
+      "name": "glowgrew",
+      "url": "https://github.com/glowgrew"
+    }
+  ],
+  "categories": [],
+  "created_at": 1635625751,
+  "dependencies": [],
+  "description": "# Moneybox\n\nAn economy plugin for different Minecraft server environments powered by Reactor Core with a _wide-range_ of supported\nplatforms and versions.\n\n### Techologies used\n\n- [R2DBC](https://github.com/r2dbc/r2dbc-pool) (database connectivity)\n- [adventure](https://github.com/KyoriPowered/adventure) (UI library)\n- [cloud](https://github.com/Incendo/cloud) (in-game command framework)\n- [caffeine](https://github.com/ben-manes/caffeine) (high-performance caching library)\n\n### Available environments\n\n- Bukkit for Java Edition:\n  - [Crucible](https://github.com/CrucibleMC/Crucible/releases) (for 1.7.10)\n  - [CatServer](https://github.com/Luohuayu/CatServer) (for 1.12.2)\n  - [Arclight](https://github.com/IzzelAliz/Arclight/releases) (for 1.16.5 and above)\n  - _or any fork that runs on >1.7.10_\n\n- Nukkit for Bedrock:\n  - [PowerNukkit](https://github.com/PowerNukkit/PowerNukkit) (for 1.18 and above)\n  - _or any fork that runs on >1.0.0_\n\n### Available connection types\n\n- `POSTGRESQL` - Discover connection through the PostgreSQL\n- `MYSQL` - Discover connection through the MySQL\n\n### Environment variables\n\n| Name                           |      Description       | Default value |\n|:-------------------------------|:----------------------:|--------------:|\n| `MONEYBOX_STARTING_BALANCE`    | Default balance amount |           `0` |\n| `MONEYBOX_DATASOURCE`          |    Data source type    |  `POSTGRESQL` |\n| `MONEYBOX_DATASOURCE_HOST`     |    Data source host    |   `127.0.0.1` |\n| `MONEYBOX_DATASOURCE_PORT`     |    Data source port    |        `5432` |\n| `MONEYBOX_DATASOURCE_USER`     |  Data source username  |         `app` |\n| `MONEYBOX_DATASOURCE_PASSWORD` |  Data source password  |       `gbplf` |\n| `MONEYBOX_DATASOURCE_DB`       |  Data source database  |         `app` |\n\n### Examples\n\n- You can retrieve an instance of Moneybox API via platform's Service Manager API\n  - Bukkit:\n      ```java\n      MoneyboxApi api = getServer().getServicesManager().getRegistration(MoneyboxApi.class).getProvider();\n      ``` \n  - Nukkit:\n    ```java\n    MoneyboxApi api = getServer().getServiceManager().getProvider(MoneyboxApi.class).getProvider();\n    ``` \n\n- Deposit player an amount then send a message asynchronously.\n\n   ```java\n   api.depositBalanceAsync(username, amount).doOnSuccess($ -> {\n           sender.sendMessage(\"You have deposit %d for player %s\".formatted(amount, username));\n   }).subscribe();\n   ```\n\n- Retrieve a balance amount of a player then send it asynchronously.\n   ```java\n   api.getBalanceAsync(username)\n           .subscribe(balance -> sender.sendMessage(\"Balance amount of %s is %d\".formatted(username, balance));\n   ```\n\n- Retrieve a balance amount of an online player then send it.\n   ```java\n   long balance = api.getCachedBalance(MoneyboxPlayer.of(username));\n   sender.sendMessage(\"Balance amount of %s is %d\".formatted(username, balance));\n   ```\n\n### Supported by MCSTUDIO",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/24549913?v=4",
+  "id": "glowgrew/moneybox",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "moneybox-nukkit/src/main/resources/plugin.yml",
+  "name": "Moneybox",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/glowgrew/moneybox",
+  "stars": 2,
+  "summary": "An economy plugin for different Minecraft server environments powered by Reactor Core",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1643905356,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Moneybox-Bukkit.jar",
+          "primary": true,
+          "size": 11393987,
+          "url": "https://github.com/glowgrew/moneybox/releases/download/v1.0.2/Moneybox-Bukkit.jar"
+        },
+        {
+          "filename": "Moneybox-Nukkit.jar",
+          "primary": true,
+          "size": 10320308,
+          "url": "https://github.com/glowgrew/moneybox/releases/download/v1.0.2/Moneybox-Nukkit.jar"
+        }
+      ],
+      "name": "Add Nukkit support",
+      "prerelease": false,
+      "published_at": 1642177639,
+      "version": "v1.0.2"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Moneybox.jar",
+          "primary": true,
+          "size": 11152085,
+          "url": "https://github.com/glowgrew/moneybox/releases/download/v1.0.1/Moneybox.jar"
+        }
+      ],
+      "name": "Fix typo",
+      "prerelease": false,
+      "published_at": 1637503726,
+      "version": "v1.0.1"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Moneybox.jar",
+          "primary": true,
+          "size": 11152079,
+          "url": "https://github.com/glowgrew/moneybox/releases/download/v1.0.0/Moneybox.jar"
+        }
+      ],
+      "name": "First release",
+      "prerelease": false,
+      "published_at": 1636885638,
+      "version": "v1.0.0"
+    }
+  ]
+}

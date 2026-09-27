@@ -1,0 +1,45 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/18255883?v=4",
+      "name": "Ogiwara-CostlierRain464",
+      "url": "https://github.com/Ogiwara-CostlierRain464"
+    }
+  ],
+  "categories": [],
+  "created_at": 1517032732,
+  "dependencies": [],
+  "description": "# NukkitArchitectureRFC\nMy idea's of nukkit plugin architecture\n\n## SampleOAuth\n\n[Nukkit Version](https://github.com/Ogiwara-CostlierRain464/NukkitArchitectureRFC/tree/master/SampleOAuth)  \n\n[PMMP Version](https://github.com/Ogiwara-CostlierRain464/PMMPArchitectureRFC/tree/master/SampleOAuth/src/ogiwara/oauth)\n\nMainly, nukkit plugin is event callback based system,  \nso I've applied MVVM and Repository pattern to nukkit plugin architecture.\n\n![MVVM like Architecture](https://raw.githubusercontent.com/Ogiwara-CostlierRain464/NukkitArchitectureRFC/master/imgs/mvvm.png)\n\n#### Main \nMain class of plugin, which extends PluginBase.  \nCatch all events of plugin, filter it, and send to Dispatcher.  \n\nMost plugin's event callback class is separated, and I think it makes confusing, so in this architecture, all the events are caught at here. \n\n#### Dispatcher\nAbstracted event callback class.\n\n#### Repository\nAccess config, DataBase, or NetworkAPI and offer the data to Dispatcher.\n\n\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-09-25",
+      "description": "",
+      "title": "MVVM like Architecture",
+      "url": "https://raw.githubusercontent.com/Ogiwara-CostlierRain464/NukkitArchitectureRFC/master/imgs/mvvm.png"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/18255883?v=4",
+  "id": "Ogiwara-CostlierRain464/NukkitArchitectureRFC--sampleoauth",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "SampleOAuth/src/main/resources/plugin.yml",
+  "name": "SampleOAuth",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Ogiwara-CostlierRain464/NukkitArchitectureRFC",
+  "stars": 5,
+  "summary": "Sample OAuth plugin",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1517137051,
+  "versions": []
+}

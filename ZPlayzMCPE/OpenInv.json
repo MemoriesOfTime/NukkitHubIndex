@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/25635727?v=4",
+      "name": "ZPlayzMCPE",
+      "url": "https://github.com/ZPlayzMCPE"
+    }
+  ],
+  "categories": [],
+  "created_at": 1505480313,
+  "dependencies": [],
+  "description": "# OpenInv-Nukkit\n\nThis plugin implement command /echest, from Bukkit.\n\nPlugin is for Apollo/Nukkit!\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/25635727?v=4",
+  "id": "ZPlayzMCPE/OpenInv",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "OpenInv",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/ZPlayzMCPE/OpenInv",
+  "stars": 0,
+  "summary": "Implement echest command to Nukkit.",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1483471848,
+  "versions": []
+}

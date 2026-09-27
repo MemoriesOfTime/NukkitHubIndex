@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/71610210?v=4",
+      "name": "ayrzDev",
+      "url": "https://github.com/ayrzDev"
+    }
+  ],
+  "categories": [],
+  "created_at": 1629191944,
+  "dependencies": [],
+  "description": "# PrimedTNT-Nukkit\nNukkitX PrimedTNT Plugin\n![Resim](https://opengraph.githubassets.com/5648a59e973021920aa2529fa79d00396489bae79de9cb87384dd8ce20ee0a05/AyrzC/PrimedTNT-Nukkit)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/71610210?v=4",
+  "id": "ayrzDev/PrimedTNT-Nukkit",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "PrimedTNT",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/ayrzDev/PrimedTNT-Nukkit",
+  "stars": 2,
+  "summary": "NukkitX PrimedTNT Plugin",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1629193354,
+  "versions": []
+}

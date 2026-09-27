@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/37160059?v=4",
+      "name": "lclarkdwain",
+      "url": "https://github.com/lclarkdwain"
+    }
+  ],
+  "categories": [],
+  "created_at": 1566057279,
+  "dependencies": [],
+  "description": "# MOTD",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/37160059?v=4",
+  "id": "lclarkdwain/MOTD",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "MOTD",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/lclarkdwain/MOTD",
+  "stars": 2,
+  "summary": "Nukkit - MC Bedrock Edition Plugin (MOTD)",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1566080613,
+  "versions": []
+}

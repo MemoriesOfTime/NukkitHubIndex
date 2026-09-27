@@ -1,0 +1,178 @@
+{
+  "api_version": "1.0.9",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/18595225?v=4",
+      "name": "popkechupki",
+      "url": "https://github.com/popkechupki"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/43497313?v=4",
+      "name": "GoodLucky777",
+      "url": "https://github.com/GoodLucky777"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "name": "dependabot[bot]",
+      "url": "https://github.com/apps/dependabot"
+    }
+  ],
+  "categories": [],
+  "created_at": 1589291507,
+  "dependencies": [],
+  "description": "# ServerMail\nA Nukkit plugin to mail other players. Using SQLite or MySQL to store all data (optional).\n**Support over Java8. (from ver1.0.3)**\n### Language\nSupport three languages. English, Japanese, and Korean. This plugin use default server language that configured on nukkit.yml.\n - [English](#Usage)\n - [日本語](#使い方)\n - [한국어](#사용법)\n## Usage\nYou can control this plugin with command, config.yml and lang.properties. Descriptions each files are written in it.\nWhen you update this plugin, the plugin will replace config.yml to the latest version. Therefore, old configuration file is renamed to old_config.yml. You may have to setting up the new configuration file. Also, we suggest to delete lang.properties file as well because the plugin doesn't update that file automatically.\n### Command\n| Command | Description |\n|--|--|\n| /sendmail {target} {subject} {message. you can use space key.} | Send mail to entered player. |\n| /send | Confirm send new mail. |\n| /listmail {page} | See your mail box. |\n| /readmail {ID} | Read specified ID mail.(Confirmable /listmail) |\n| /deletemail {ID} | Delete specified ID mail.(Confirmable /listmail) |\n## 使い方\nこのプラグインはコマンド、コンフィグファイル、言語ファイルを操作できます。それぞれのファイルの説明はファイル内に記載されています。\nプラグインを更新する際には、古いコンフィグファイルの内容はold_config.ymlに保存されるので、新しく生成されたconfig.ymlの編集の参考にしてください。また、更新時にはlang.propertiesファイルの削除をお勧めします。プラグインは、このファイルについては更新があっても自動で置き換えることはありません。\n### コマンド\n| Command | Description |\n|--|--|\n| /sendmail {送信先} {件名} {内容(スペースが使えます。)} | 指定したプレイヤーにメッセージを送信します。 |\n| /send | メールの送信を確定します。 |\n| /listmail {ページ} | メールボックスを確認します。 |\n| /readmail {ID} | 指定したIDのメールを読みます。(/listmailで確認できます) |\n| /deletemail {ID} | 指定したIDのメールを削除します。(/listmailで確認できます。) |\n## 사용법\n이 플러그인은 명령어, config.yml, lang.properties으로 조작할 수 있습니다. 각각의 파일에 대한 설명은 파일에 적혀있습니다.\n### 명령어\n| 명령어 | 설명 |\n|--|--|\n| /sendmail {타켓} {주제} {메시지 (띄어쓰기가 가능합니다.)} | 참가한 플레이어에게 메일을 전송합니다. |\n| /send | 새 메일 전송을 확인합니다. |\n| /listmail {페이지} | 메일함을 보여줍니다. |\n| /readmail {아이디} | 특정한 아이디로 메일을 읽습니다. (/listmail로 확인 가능) |\n| /deletemail {아이디} | 특정한 아이디로 메일을 삭제합니다. (/listmail로 확인 가능) |\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/18595225?v=4",
+  "id": "popkechupki/ServerMail",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/nukkit.yml",
+  "name": "ServerMail",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/popkechupki/ServerMail",
+  "stars": 3,
+  "summary": "Server mail for Nukkit.",
+  "targets": [
+    "nkx",
+    "nkmot",
+    "pnx"
+  ],
+  "updated_at": 1684872678,
+  "versions": [
+    {
+      "changelog": "## Update\r\n- Patch for a security issue.\r\n## アップデート\r\n- セキュリティ向上",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ServerMail-1.1-SNAPSHOT.jar",
+          "primary": true,
+          "size": 9589866,
+          "url": "https://github.com/popkechupki/ServerMail/releases/download/1.1.1/ServerMail-1.1-SNAPSHOT.jar"
+        }
+      ],
+      "name": "ServerMail v1.1.1",
+      "prerelease": false,
+      "published_at": 1668574692,
+      "version": "1.1.1"
+    },
+    {
+      "changelog": "## Update\r\n- Add MySQL support.\r\n## アップデート\r\n- MySQLに対応。",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ServerMail-1.1-SNAPSHOT.jar",
+          "primary": true,
+          "size": 9541267,
+          "url": "https://github.com/popkechupki/ServerMail/releases/download/1.1.0/ServerMail-1.1-SNAPSHOT.jar"
+        }
+      ],
+      "name": "ServerMail v1.1",
+      "prerelease": false,
+      "published_at": 1623481534,
+      "version": "1.1.0"
+    },
+    {
+      "changelog": "## Update\r\n- Add Korean language support.(Thank you good777LUCKY.)\r\n## アップデート\r\n- 韓国語をサポート\r\n## 최신 정보\r\n- 한국어를 지원",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ServerMail-1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 7093558,
+          "url": "https://github.com/popkechupki/ServerMail/releases/download/1.0.7/ServerMail-1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "ServerMail v1.0.7",
+      "prerelease": false,
+      "published_at": 1590043876,
+      "version": "1.0.7"
+    },
+    {
+      "changelog": "## Update\r\n- A part of the command processing has been changed.\r\n## アップデート\r\n- コマンド処理の一部を変更しました。",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ServerMail-1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 7092577,
+          "url": "https://github.com/popkechupki/ServerMail/releases/download/1.0.5/ServerMail-1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "ServerMail v1.0.5",
+      "prerelease": false,
+      "published_at": 1589809093,
+      "version": "1.0.5"
+    },
+    {
+      "changelog": "## Update\r\n- Fix mail notifier error.\r\n- Change /sendmail command args. So you can use space from now.\r\n- Compiled by Java8. From now on, you can use this plugin just download instead build by yourself on Java8 environment.\r\n## アップデート\r\n- メール通知機能のエラーを修正\r\n- /sendmailコマンドのパラメーターを変更しました。これによりスペースを打つことができるようになりました。\r\n- Java8でコンパイルしました。これ以降はわざわざあなた自身でビルドしなくてもJava8の環境で使用できるようになります。",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ServerMail-1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 7091940,
+          "url": "https://github.com/popkechupki/ServerMail/releases/download/1.0.4/ServerMail-1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "ServerMail v1.0.4",
+      "prerelease": false,
+      "published_at": 1589720665,
+      "version": "1.0.4"
+    },
+    {
+      "changelog": "## Update\r\n- Fix loading error.\r\n## アップデート\r\n- ロード時のバグを修正\r\n\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ServerMail-1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 7091749,
+          "url": "https://github.com/popkechupki/ServerMail/releases/download/1.0.2-2/ServerMail-1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "ServerMail",
+      "prerelease": false,
+      "published_at": 1589609192,
+      "version": "1.0.2-2"
+    },
+    {
+      "changelog": "## Update\r\n- Support Java 8. (If you want to use on Java8 environment, please build yourself.)\r\n- Fix mail notifier movement.\r\n\r\n## アップデート\r\n- Java8をサポートしました。（ただし該当環境で利用するには各自でビルドしてください。)\r\n- 通知機能の動作を改善しました。",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ServerMail-1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 7091755,
+          "url": "https://github.com/popkechupki/ServerMail/releases/download/1.0.1/ServerMail-1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "ServerMail v1.0.1",
+      "prerelease": false,
+      "published_at": 1589343502,
+      "version": "1.0.1"
+    },
+    {
+      "changelog": "# ServerMail\r\nA Nukkit plugin to mail other players.\r\n**Support over Java11.**\r\n### Language\r\nSupport two languages. English and Japanese. This plugin use default server language that configured on nukkit.yml. I would like you to contribute adding more languages.\r\n - [English](#Usage)\r\n - [日本語](#使い方)\r\n## Usage\r\nYou can control this plugin with command, config.yml and lang.properties. Descriptions each files are written in it.\r\n### Command\r\n| Command | Description |\r\n|--|--|\r\n| /sendmail {subject} {message} {target} | Send mail to entered player. |\r\n| /send | Confirm send new mail. |\r\n| /listmail {page} | See your mail box. |\r\n| /readmail {ID} | Read specified ID mail.(Confirmable /listmail) |\r\n| /deletemail {ID} | Delete specified ID mail.(Confirmable /listmail) |\r\n## 使い方\r\nこのプラグインはコマンド、コンフィグファイル、言語ファイルを操作できます。それぞれのファイルの説明はファイル内に記載されています。\r\n### コマンド\r\n| Command | Description |\r\n|--|--|\r\n| /sendmail {件名} {メッセージ} {送信先} | 指定したプレイヤーにメッセージを送信します。 |\r\n| /send | メールの送信を確定します。 |\r\n| /listmail {page} | メールボックスを確認します。 |\r\n| /readmail {ID} | 指定したIDのメールを読みます。(/listmailで確認できます) |\r\n| /deletemail {ID} | 指定したIDのメールを削除します。(/listmailで確認できます。) |\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ServerMail-1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 7091877,
+          "url": "https://github.com/popkechupki/ServerMail/releases/download/1.0/ServerMail-1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "ServerMail v1.0.0",
+      "prerelease": false,
+      "published_at": 1589291795,
+      "version": "1.0"
+    }
+  ]
+}

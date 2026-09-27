@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/12643554?v=4",
+      "name": "haniokasai",
+      "url": "https://github.com/haniokasai"
+    }
+  ],
+  "categories": [],
+  "created_at": 1468582007,
+  "dependencies": [],
+  "description": "# MyAuth\nQuick &amp; Easy LoginSystem for nukkit\n\nDownload [![Build Status](http://jenkins.haniokasai.com/buildStatus/icon?job=MyAuth-Nukkit)](http://jenkins.haniokasai.com/job/MyAuth-Nukkit/ \"Jenkins \")\n\nforum\n\nhttps://forums.nukkit.io/resources/myauth.96/\n\n##feature\n-this plugin keeps your ipaddress and clientID,so if ipAdress and cid have not been changed,you can login without entering passwd.\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/12643554?v=4",
+  "id": "haniokasai/MyAuth",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "MyAuth",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/haniokasai/MyAuth",
+  "stars": 1,
+  "summary": "Nukkit auth plugin (support ClientID)",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1486122958,
+  "versions": []
+}

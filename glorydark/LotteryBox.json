@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
       "name": "glorydark",
-      "url": ""
+      "url": "https://github.com/glorydark"
     }
   ],
   "categories": [],
@@ -49,6 +49,23 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1759048755,
-  "versions": []
+  "updated_at": 1759048752,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "LotteryBox-1.3.4.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/LotteryBox/51/artifact/target/LotteryBox-1.3.4.jar"
+        }
+      ],
+      "name": "1.3.4",
+      "prerelease": true,
+      "published_at": 1759048764,
+      "version": "ci-51"
+    }
+  ]
 }

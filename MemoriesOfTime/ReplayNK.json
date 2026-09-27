@@ -2,9 +2,14 @@
   "api_version": "1.0.14",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "daoge_cmd",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/60499296?v=4",
+      "name": "smartcmd",
+      "url": "https://github.com/smartcmd"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
     }
   ],
   "categories": [
@@ -45,6 +50,23 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1788669723,
-  "versions": []
+  "updated_at": 1769601233,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ReplayNK-1.0.2.3-NKMOT.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/ReplayNK/9/artifact/target/ReplayNK-1.0.2.3-NKMOT.jar"
+        }
+      ],
+      "name": "1.0.2.3-NKMOT",
+      "prerelease": true,
+      "published_at": 1769601242,
+      "version": "ci-9"
+    }
+  ]
 }

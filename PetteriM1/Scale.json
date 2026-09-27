@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/26197131?v=4",
+      "name": "PetteriM1",
+      "url": "https://github.com/PetteriM1"
+    }
+  ],
+  "categories": [],
+  "created_at": 1538580163,
+  "dependencies": [],
+  "description": "",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/26197131?v=4",
+  "id": "PetteriM1/Scale",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Scale",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/PetteriM1/Scale",
+  "stars": 0,
+  "summary": "Change player size plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1586360456,
+  "versions": []
+}

@@ -1,6 +1,17 @@
 {
   "api_version": "unknown",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/110056737?v=4",
+      "name": "zernix2077",
+      "url": "https://github.com/zernix2077"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/216477222?v=4",
+      "name": "Kanelucky",
+      "url": "https://github.com/Kanelucky"
+    }
+  ],
   "categories": [
     "game-mechanics"
   ],
@@ -42,7 +53,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1782720607,
+  "updated_at": 1782571928,
   "versions": [
     {
       "changelog": "",
@@ -51,6 +62,7 @@
         {
           "filename": "OldConsoleWorldGenMOT-0.1.2.jar",
           "primary": true,
+          "sha256": "56f489ec2e5cb4712be8bc2a6edc6af4fdefa02f493f4969506998f9abdbed68",
           "size": 103016,
           "url": "https://github.com/Kanelucky/LCEWorldGenMOT/releases/download/MOT/OldConsoleWorldGenMOT-0.1.2.jar"
         }

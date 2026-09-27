@@ -1,0 +1,87 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/63941519?v=4",
+      "name": "Minosuko",
+      "url": "https://github.com/Minosuko"
+    }
+  ],
+  "categories": [],
+  "created_at": 1689574253,
+  "dependencies": [],
+  "description": "# Backpack\nA Backpack plugin for Nukkit.\nbetter and functional (optimized or not, idk)\n\n# Deps\n - Fakeinventories\n\n\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/63941519?v=4",
+  "id": "Minosuko/NukkitBackpack",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Backpack",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Minosuko/NukkitBackpack",
+  "stars": 1,
+  "summary": "NukkitBackpack, better than other backpack engine",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1689653460,
+  "versions": [
+    {
+      "changelog": "added open other player backpack\r\nfix api version\r\n**Full Changelog**: https://github.com/Minosuko/NukkitBackpack/compare/v1.0.1...v1.0.2",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Backpack-1.0.2.jar",
+          "primary": true,
+          "size": 12560,
+          "url": "https://github.com/Minosuko/NukkitBackpack/releases/download/v1.0.2/Backpack-1.0.2.jar"
+        }
+      ],
+      "name": "v1.0.2",
+      "prerelease": false,
+      "published_at": 1689653460,
+      "version": "v1.0.2"
+    },
+    {
+      "changelog": "fix java.lang.NullPointerException\r\nuse UUID instead Player Name for SQL Query\r\n**Full Changelog**: https://github.com/Minosuko/NukkitBackpack/compare/v1.0.0...v1.0.1",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Backpack-1.0.1.jar",
+          "primary": true,
+          "size": 12058,
+          "url": "https://github.com/Minosuko/NukkitBackpack/releases/download/v1.0.1/Backpack-1.0.1.jar"
+        }
+      ],
+      "name": "v1.0.1 release",
+      "prerelease": false,
+      "published_at": 1689645840,
+      "version": "v1.0.1"
+    },
+    {
+      "changelog": "**Full Changelog**: https://github.com/Minosuko/NukkitBackpack/commits/v1.0.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Backpack-1.0.0.jar",
+          "primary": true,
+          "size": 12080,
+          "url": "https://github.com/Minosuko/NukkitBackpack/releases/download/v1.0.0/Backpack-1.0.0.jar"
+        }
+      ],
+      "name": "First release",
+      "prerelease": false,
+      "published_at": 1689574427,
+      "version": "v1.0.0"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/90005225?v=4",
+      "name": "angga7togk",
+      "url": "https://github.com/angga7togk"
+    }
+  ],
+  "categories": [],
+  "created_at": 1690459733,
+  "dependencies": [],
+  "description": "# AutoClearLag\n AutoClearLag Nukkit Plugin\n \n This plugin will reduce the lag on your server\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/90005225?v=4",
+  "id": "angga7togk/AutoClearLag",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "AutoClearLag",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/angga7togk/AutoClearLag",
+  "stars": 2,
+  "summary": "AutoClearLag Nukkit Plugin",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1697120900,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoClearLag-1.1.jar",
+          "primary": true,
+          "size": 5520,
+          "url": "https://github.com/angga7togk/AutoClearLag/releases/download/1.1/AutoClearLag-1.1.jar"
+        }
+      ],
+      "name": "AutoClearLag-NK v1.1",
+      "prerelease": false,
+      "published_at": 1697120900,
+      "version": "1.1"
+    },
+    {
+      "changelog": "AutoClearLag v1.0.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "original-AutoClearLag-1.0.jar",
+          "primary": true,
+          "size": 5620,
+          "url": "https://github.com/angga7togk/AutoClearLag/releases/download/1.0.0/original-AutoClearLag-1.0.jar"
+        }
+      ],
+      "name": "AutoClearLag Nukkit Plugin",
+      "prerelease": false,
+      "published_at": 1690461892,
+      "version": "1.0.0"
+    }
+  ]
+}

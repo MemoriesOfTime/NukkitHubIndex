@@ -1,0 +1,58 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+      "name": "wode490390",
+      "url": "https://github.com/wode490390"
+    }
+  ],
+  "categories": [],
+  "created_at": 1567822111,
+  "dependencies": [],
+  "description": "# Sneak Attack\n[![](https://i.loli.net/2019/09/02/5DEx2zKFskWAy9G.gif)](http://www.mcbbs.net/thread-910962-1-1.html \"刺客\")\n\nSneak attack plugin for Nukkit\n\nPlease see [mcbbs](http://www.mcbbs.net/thread-910962-1-1.html) for more information.\n## Permissions\n| Permission | Description | Default |\n| - | - | - |\n| sneakattack.invisible | Allows the player to be invisible when sneaking | true |\n| sneakattack.unlimited | Allows the player to invisible without paying the price | OP |\n## config.yml\n```yaml\n# Sneaking reduces the player's food level. Disable this feature when the value is 0\nfood-level-reduce-every-x-ticks: 50\n```\n###### If I have any grammar and terms error, please correct my wrong :)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+  "id": "wode490390/SneakAttack",
+  "license": {
+    "id": "NOASSERTION",
+    "name": "Other",
+    "url": "https://github.com/wode490390/SneakAttack/blob/master/LICENSE"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "http://wode490390.cn/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "SneakAttack",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/wode490390/SneakAttack",
+  "stars": 0,
+  "summary": "Sneak attack plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1572394636,
+  "versions": [
+    {
+      "changelog": "Initial release",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeSneakAttack-1.0.0.jar",
+          "primary": true,
+          "size": 14026,
+          "url": "https://github.com/wode490390/SneakAttack/releases/download/1.0.0/wodeSneakAttack-1.0.0.jar"
+        }
+      ],
+      "name": "SneakAttack-v1.0.0",
+      "prerelease": false,
+      "published_at": 1572394636,
+      "version": "1.0.0"
+    }
+  ]
+}

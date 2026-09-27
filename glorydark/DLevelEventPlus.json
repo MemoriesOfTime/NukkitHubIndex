@@ -2,16 +2,16 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
       "name": "glorydark",
-      "url": ""
+      "url": "https://github.com/glorydark"
     }
   ],
   "categories": [],
   "created_at": 1686127207,
   "dependencies": [],
   "description": "",
-  "detection_confidence": "high",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
@@ -33,6 +33,23 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1717933655,
-  "versions": []
+  "updated_at": 1765686534,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "DLevelEventPlus-1.2.2.2.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/DLevelEventPlus/job/main(1.2.0)/28/artifact/target/DLevelEventPlus-1.2.2.2.jar"
+        }
+      ],
+      "name": "1.2.2.2",
+      "prerelease": true,
+      "published_at": 1716027255,
+      "version": "ci-28"
+    }
+  ]
 }

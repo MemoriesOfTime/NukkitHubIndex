@@ -1,0 +1,140 @@
+{
+  "api_version": "1.0.9",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/54776640?v=4",
+      "name": "ScarletRedMan",
+      "url": "https://github.com/ScarletRedMan"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/32621158?v=4",
+      "name": "SenseiTarzan",
+      "url": "https://github.com/SenseiTarzan"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45960833?v=4",
+      "name": "C1oky",
+      "url": "https://github.com/C1oky"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/34367447?v=4",
+      "name": "hteppl",
+      "url": "https://github.com/hteppl"
+    }
+  ],
+  "categories": [],
+  "created_at": 1690906551,
+  "dependencies": [],
+  "description": "# FormAPI | PowerNukkitX\n\nSimple library for creating forms (MCBE PowerNukkitX)\n\n<br/><br/>\n## Examples:\n\n### SimpleForm\n\n-----------------------------------\n\n```java\nSimpleForm simpleForm = new SimpleForm((targetPlayer, data) -> {\n        targetPlayer.sendMessage(data == null ? \"null\" : data.toString()); // return \"diamond\" if click in button Hello because has label \"diamond\" else null for exit form\n});\nsimpleForm.setTitle(\"From with label\");\nsimpleForm.setContent(\"i'am a SimpleForm\");\nsimpleForm.addButton(\"Hello\", ImageType.PATH, \"textures/items/diamond\", \"diamond\");\nsimpleForm.send(event.getPlayer());\n```\n![image SimpleForm UI](https://raw.githubusercontent.com/SenseiTarzan/FormAPI-PNX/master/image/SimpleFormUI.png)\n<br/>\nis clicked in button Hello\n<br/>\n![image SimpleForm Handler](https://raw.githubusercontent.com/SenseiTarzan/FormAPI-PNX/master/image/SimpleFormHandlerClick.png)\n<br/>\nis exit of form\n<br/>\n![img_1.png](https://raw.githubusercontent.com/SenseiTarzan/FormAPI-PNX/master/image/ExitHandlerSimpleForm.png)\n### CustomForm\n\n-----------------------------------\n\n```java\nCustomForm customForm = new CustomForm((player, data) -> {\n        ifdata == null) return;\n        player.sendMessage(\"test: \" + data.get(0).toString()); // return label element\n        player.sendMessage(\"input: \" + data.get(\"input1\")); //return input send by client\n});\ncustomForm.setTitle(\"It`s a title\");\ncustomForm.addLabel(\"label element\");\ncustomForm.addInput(new ElementInput(\"Input button\"), \"input1\");\ncustomForm.send(event.getPlayer());\n```         \n![image Custom Form UI](https://raw.githubusercontent.com/SenseiTarzan/FormAPI-PNX/master/image/CustomFormUI.png)\n![image Custom Form Handler](https://raw.githubusercontent.com/SenseiTarzan/FormAPI-PNX/master/image/CustomFormHandlerMessage.png)\n### ModalForm\n\n-----------------------------------\n```java\nModalForm form = new ModalForm((targetPlayer, data) -> {\n        if(data == null) return;\n        targetPlayer.sendMessage(data.toString());\n});\nform.setTitle(\"It`s a title\");\nform.setContent(\"Sample text\");\nform.setButtonTrue(\"Positive button\");\nform.setButtonFalse(\"Negative button\");\nform.send(player);\n```\n![ModelForm UI](https://raw.githubusercontent.com/SenseiTarzan/FormAPI-PNX/master/image/ModelFormUI.png)\n### Form in Server Setting\n\n-----------------------------------\nhandler is run after leave setting\n```java\nCustomForm customForm = new CustomForm((player, data) -> {\n        if(data == null) return;\n        player.sendMessage(\"test: \" + data.get(0).toString()); // return Hello, i'am form server setting\n        player.sendMessage(\"input: \" + data.get(\"test\")); //return input send by client\n});\ncustomForm.setTitle(\"Test Setting\");\ncustomForm.addLabel(\"Hello, i'am form server setting\");\ncustomForm.setIcon(ImageType.PATH,\"textures/items/apple\");\ncustomForm.addInput(new ElementInput(\"test\"), \"test\");\ncustomForm.setFormSetting(event.getPlayer());\n```\n![ServerForm UI](https://raw.githubusercontent.com/SenseiTarzan/FormAPI-PNX/master/image/ServerFormUI.png)\n<br/>\nAfter the processing phase, it defaults to the values sent by the client.\n<br/>\n![ServerFormHandlerMessage.png](https://raw.githubusercontent.com/SenseiTarzan/FormAPI-PNX/master/image/ServerFormHandlerMessage.png)\n![ServerForm2.png](https://raw.githubusercontent.com/SenseiTarzan/FormAPI-PNX/master/image/ServerForm2.png)\n\n## Import in Maven or gradle\n\n-----------------------------------\n### Maven\n````xml\n<repositories>\n    <repository>\n        <id>jitpack.io</id>\n        <url>https://jitpack.io</url>\n    </repository>\n</repositories>\n````\n````xml\n<dependency>\n    <groupId>com.github.SenseiTarzan</groupId>\n    <artifactId>FormAPI-PNX</artifactId>\n    <version>1.0.1</version>\n</dependency>\n````\n### Gradle\n```kotlin\nrepositories {\n    mavenCentral()\n    maven {\n        name = \"jitpack\"\n        url = uri(\"https://jitpack.io\")\n    }\n}\n\ndependencies {\n    compileOnly(\"com.github.SenseiTarzan:FormAPI-PNX:1.0.1\")\n}\n```",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-09-25",
+      "description": "",
+      "title": "image SimpleForm UI",
+      "url": "https://raw.githubusercontent.com/SenseiTarzan/FormAPI-PNX/master/image/SimpleFormUI.png"
+    },
+    {
+      "created": "2026-09-25",
+      "description": "",
+      "title": "image SimpleForm Handler",
+      "url": "https://raw.githubusercontent.com/SenseiTarzan/FormAPI-PNX/master/image/SimpleFormHandlerClick.png"
+    },
+    {
+      "created": "2026-09-25",
+      "description": "",
+      "title": "img_1.png",
+      "url": "https://raw.githubusercontent.com/SenseiTarzan/FormAPI-PNX/master/image/ExitHandlerSimpleForm.png"
+    },
+    {
+      "created": "2026-09-25",
+      "description": "",
+      "title": "image Custom Form UI",
+      "url": "https://raw.githubusercontent.com/SenseiTarzan/FormAPI-PNX/master/image/CustomFormUI.png"
+    },
+    {
+      "created": "2026-09-25",
+      "description": "",
+      "title": "image Custom Form Handler",
+      "url": "https://raw.githubusercontent.com/SenseiTarzan/FormAPI-PNX/master/image/CustomFormHandlerMessage.png"
+    },
+    {
+      "created": "2026-09-25",
+      "description": "",
+      "title": "ModelForm UI",
+      "url": "https://raw.githubusercontent.com/SenseiTarzan/FormAPI-PNX/master/image/ModelFormUI.png"
+    },
+    {
+      "created": "2026-09-25",
+      "description": "",
+      "title": "ServerForm UI",
+      "url": "https://raw.githubusercontent.com/SenseiTarzan/FormAPI-PNX/master/image/ServerFormUI.png"
+    },
+    {
+      "created": "2026-09-25",
+      "description": "",
+      "title": "ServerFormHandlerMessage.png",
+      "url": "https://raw.githubusercontent.com/SenseiTarzan/FormAPI-PNX/master/image/ServerFormHandlerMessage.png"
+    },
+    {
+      "created": "2026-09-25",
+      "description": "",
+      "title": "ServerForm2.png",
+      "url": "https://raw.githubusercontent.com/SenseiTarzan/FormAPI-PNX/master/image/ServerForm2.png"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/32621158?v=4",
+  "id": "SenseiTarzan/FormAPI-PNX",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "FormAPI",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/SenseiTarzan/FormAPI-PNX",
+  "stars": 1,
+  "summary": "Simple API for creating forms (MCBE PNX)",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1691187231,
+  "versions": [
+    {
+      "changelog": "delete System.out.pintln when you have a Server Form\r\nadd in README configuration in project maven and Gradle.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FormAPI-1.0.1.jar",
+          "primary": true,
+          "size": 19600,
+          "url": "https://github.com/SenseiTarzan/FormAPI-PNX/releases/download/1.0.1/FormAPI-1.0.1.jar"
+        }
+      ],
+      "name": "Version 1.0.1",
+      "prerelease": false,
+      "published_at": 1691187100,
+      "version": "1.0.1"
+    },
+    {
+      "changelog": "All support Form",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FormAPI-1.0.0.jar",
+          "primary": true,
+          "size": 19618,
+          "url": "https://github.com/SenseiTarzan/FormAPI-PNX/releases/download/1.0.0/FormAPI-1.0.0.jar"
+        }
+      ],
+      "name": "Version 1.0.0",
+      "prerelease": false,
+      "published_at": 1691176687,
+      "version": "1.0.0"
+    }
+  ]
+}

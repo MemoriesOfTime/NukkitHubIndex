@@ -2,14 +2,14 @@
   "api_version": "Nukkit-MOT",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "daoge_cmd",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/60499296?v=4",
+      "name": "smartcmd",
+      "url": "https://github.com/smartcmd"
     },
     {
-      "avatar_url": "",
-      "name": "CoolLoong",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
     }
   ],
   "categories": [
@@ -19,7 +19,7 @@
   "created_at": 1685620784,
   "dependencies": [],
   "description": "# ImageNK\nShow images in your server!  \nModified version of Nukkit-MOT supported",
-  "detection_confidence": "high",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/62042238?v=4",
@@ -38,9 +38,10 @@
   "stars": 2,
   "summary": "Show images in your server!",
   "targets": [
-    "nkx"
+    "nkx",
+    "nkmot"
   ],
-  "updated_at": 1785744424,
+  "updated_at": 1772356717,
   "versions": [
     {
       "changelog": "",
@@ -57,6 +58,22 @@
       "prerelease": false,
       "published_at": 1685873502,
       "version": "1.0.3-MOT"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ImageNK-1.0.4-MOT-SNAPSHOT-shaded.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/ImageNK-MOT/4/artifact/target/ImageNK-1.0.4-MOT-SNAPSHOT-shaded.jar"
+        }
+      ],
+      "name": "1.0.4-MOT-SNAPSHOT-shaded",
+      "prerelease": true,
+      "published_at": 1772356976,
+      "version": "ci-4"
     }
   ]
 }

@@ -1,0 +1,42 @@
+{
+  "api_version": "1.0.8",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/46070909?v=4",
+      "name": "MagicLu550",
+      "url": "https://github.com/MagicLu550"
+    }
+  ],
+  "categories": [],
+  "created_at": 1558709421,
+  "dependencies": [],
+  "description": "# nukkitPluginForCoder\n用于插件的代码解密\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/46070909?v=4",
+  "id": "MagicLu550/nukkitPluginForCoder",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": {
+    "discord": "",
+    "homepage": "magic.noyark.net",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "dc4n",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/MagicLu550/nukkitPluginForCoder",
+  "stars": 1,
+  "summary": "This is the empower decoder for nukkit @net.noyark.www.PluginEmpowerSystem",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1560252768,
+  "versions": []
+}

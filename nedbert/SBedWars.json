@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/25707048?v=4",
+      "name": "hhm666",
+      "url": "https://github.com/hhm666"
+    }
+  ],
+  "categories": [],
+  "created_at": 1516682289,
+  "dependencies": [],
+  "description": "# SBedWars\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/1257735?v=4",
+  "id": "nedbert/SBedWars",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "SBedWars",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/nedbert/SBedWars",
+  "stars": 0,
+  "summary": "开源的起床战争小游戏.jpg",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1504105594,
+  "versions": []
+}

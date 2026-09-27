@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.7",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/22188404?v=4",
+      "name": "kake26s",
+      "url": "https://github.com/kake26s"
+    }
+  ],
+  "categories": [],
+  "created_at": 1541681154,
+  "dependencies": [],
+  "description": "# DiscordChatPlugin\nDiscordでNukkitのサーバーのメッセージを受信送信するプラグインです。\n \n## ダウンロード \nhttps://github.com/kake26s/DiscordChatPlugin/blob/master/DiscordChatPlugin.jar\n\n## 使用方法\nblogにまとめます \n 1. プラグインをpluginsフォルダに入れる\n 2. サーバーを起動しエラーが表示されたら閉じる\n 3. pluginsフォルダの新しくできているディレクトリに移動\n 4. その中のdiscord.jsonを開く\n 5. tokenとchannelを書き込み保存(token: botのtoken, channel: 使用したいチャンネル名)\n 6. サーバーを起動し使えるか確認\n \n\n## 詳しくは\nblogにまとめます",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/22188404?v=4",
+  "id": "kake26s/DiscordChatPlugin",
+  "license": {
+    "id": "LGPL-3.0",
+    "name": "GNU Lesser General Public License v3.0",
+    "url": "https://spdx.org/licenses/LGPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "DiscordChatPlugin",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/kake26s/DiscordChatPlugin",
+  "stars": 0,
+  "summary": "【Nukkit】Discordとチャットが行えるプラグイン",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1541693015,
+  "versions": []
+}

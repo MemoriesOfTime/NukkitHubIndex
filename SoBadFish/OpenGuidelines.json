@@ -1,6 +1,12 @@
 {
   "api_version": "1.0.11",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/83235042?v=4",
+      "name": "SoBadFish",
+      "url": "https://github.com/SoBadFish"
+    }
+  ],
   "categories": [],
   "created_at": 1766816186,
   "dependencies": [],
@@ -27,7 +33,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1782007042,
+  "updated_at": 1782007038,
   "versions": [
     {
       "changelog": "发行到Github",
@@ -36,6 +42,7 @@
         {
           "filename": "OpenGuidelines_v1.0-SNAPSHOT.jar",
           "primary": true,
+          "sha256": "db7a9de8d35a2b6bea2ca7686a19b2e156c8f2798c84ed2572a13903ffc221e5",
           "size": 45021,
           "url": "https://github.com/SoBadFish/OpenGuidelines/releases/download/v1.0.0/OpenGuidelines_v1.0-SNAPSHOT.jar"
         }

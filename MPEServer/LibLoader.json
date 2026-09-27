@@ -1,0 +1,71 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/31998072?v=4",
+      "name": "MPEServer",
+      "url": "https://github.com/MPEServer"
+    }
+  ],
+  "categories": [],
+  "created_at": 1517942939,
+  "dependencies": [],
+  "description": "# LibLoader [![CircleCI](https://circleci.com/gh/MPEServer/LibLoader.svg?style=svg)](https://circleci.com/gh/MPEServer/LibLoader)\nLoad any .jar in Nukkit\n\n*You should add to plugin.yml dependencies:*\n```\ndepend: [LibLoader]\n```\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/31998072?v=4",
+  "id": "MPEServer/LibLoader",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "LibLoader",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/MPEServer/LibLoader",
+  "stars": 1,
+  "summary": "Load any .jar in Nukkit (Java <= 8)",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1526245315,
+  "versions": [
+    {
+      "changelog": "- API for loading libs\r\n- fix show libs by command after reloading server",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "LibLoader.jar",
+          "primary": true,
+          "size": 4860,
+          "url": "https://github.com/MPEServer/LibLoader/releases/download/0.0.2/LibLoader.jar"
+        }
+      ],
+      "name": "LibLoader 0.0.2",
+      "prerelease": false,
+      "published_at": 1526245315,
+      "version": "0.0.2"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "LibLoader-1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 6470,
+          "url": "https://github.com/MPEServer/LibLoader/releases/download/0.0.1/LibLoader-1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "LibLoader 0.0.1",
+      "prerelease": false,
+      "published_at": 1518295843,
+      "version": "0.0.1"
+    }
+  ]
+}

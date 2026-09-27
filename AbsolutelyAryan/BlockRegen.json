@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.13",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/56485712?v=4",
+      "name": "AbsolutelyAryan",
+      "url": "https://github.com/AbsolutelyAryan"
+    }
+  ],
+  "categories": [],
+  "created_at": 1656226709,
+  "dependencies": [],
+  "description": "# What is block Regen?\n\nits a nukkit plugin regenrates blocks for RPG, Skyblock, Prison Servers.\n\n# Commands & Permissions\n\n\n\n/blockregen - Main command\n\n/blockregen reload - permission: blockregen.admin\n\n/blockregen set <helditem/BlockID> - permission: blockregen.admin\n\n/blockregen remove <helditem/BlockID> - permission: blockregen.admin\n\n\n\n\n\n# How to add more blocks ?\n\n\n\nsimply add your BlockID into Blocks.yml or with in-game command\n\n/blockregen <set/remove> <helditem/BlockID>\n\n\n\nex. /blockregen set 3\n\n     /blockregen remove 3\n\n     /blockregen add helditem\n\n\n\n\n\nList of BlockIDs:- https://www.digminecraft.com/lists/item_id_list_pe.php\n\n# Problem/Bug?\n\nIf you have any problems or any bugs, reach me out through opening Issue on github, on Discord server ill try my best to help you out!!\n\n\n\nFastest Way to reach me out\nhttps://discord.gg/9s8cb9g7\nLiven#1360\n\n\n\n# TODO: add Region based blocks, custom drops, per-block regen delay, what to regen what to replace from and all, if you want any feature added let me know\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/56485712?v=4",
+  "id": "AbsolutelyAryan/BlockRegen",
+  "license": {
+    "id": "Unlicense",
+    "name": "The Unlicense",
+    "url": "https://spdx.org/licenses/Unlicense.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "BlockRegen",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/AbsolutelyAryan/BlockRegen",
+  "stars": 1,
+  "summary": "Simple Plugin That Regenrates blocks!",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1657363486,
+  "versions": []
+}

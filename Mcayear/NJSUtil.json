@@ -1,0 +1,54 @@
+{
+  "api_version": "1.0.14",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/48203962?v=4",
+      "name": "Mcayear",
+      "url": "https://github.com/Mcayear"
+    }
+  ],
+  "categories": [],
+  "created_at": 1679828389,
+  "dependencies": [],
+  "description": "# NJSUtil\n插件的前置库，提供浮空字Class及YAMLtoJSON等API\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/48203962?v=4",
+  "id": "Mcayear/NJSUtil",
+  "license": {
+    "id": "AGPL-3.0",
+    "name": "GNU Affero General Public License v3.0",
+    "url": "https://spdx.org/licenses/AGPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "NJSUtil",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/Mcayear/NJSUtil",
+  "stars": 0,
+  "summary": "年JS工具包",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1679833249,
+  "versions": [
+    {
+      "changelog": "# cn.vusv.njsutil.Util\r\n- `new Util()`\r\n- `String` YAMLtoJSON(String yaml)\r\n- `String`  JSONtoYAML(String json)\r\n# cn.vusv.njsutil.FloatTextEntity",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "NJSUtil-1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 6838,
+          "url": "https://github.com/Mcayear/NJSUtil/releases/download/v1.0.0/NJSUtil-1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "v1.0.0",
+      "prerelease": false,
+      "published_at": 1679833249,
+      "version": "v1.0.0"
+    }
+  ]
+}

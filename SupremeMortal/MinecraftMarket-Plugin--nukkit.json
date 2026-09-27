@@ -1,0 +1,63 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/230887156?v=4",
+      "name": "r4g3baby",
+      "url": "https://github.com/r4g3baby"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/1025672?v=4",
+      "name": "BuckinghamIO",
+      "url": "https://github.com/BuckinghamIO"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/2059160?v=4",
+      "name": "Xevryll",
+      "url": "https://github.com/Xevryll"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/626020?v=4",
+      "name": "MineSAT",
+      "url": "https://github.com/MineSAT"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/7574195?v=4",
+      "name": "SpiderRobotMan",
+      "url": "https://github.com/SpiderRobotMan"
+    }
+  ],
+  "categories": [],
+  "created_at": 1527849940,
+  "dependencies": [],
+  "description": "# ![MinecraftMarket](https://assets.minecraftmarket.com/static/img/signature.png)\n\nWebsite: [https://www.minecraftmarket.com](https://www.minecraftmarket.com)\\\nTwitter: [https://twitter.com/_MCMarket](https://twitter.com/_MCMarket)\\\nPlugin Stats: [https://bstats.org/plugin/bukkit/MinecraftMarket](https://bstats.org/plugin/bukkit/MinecraftMarket)\\\nLicense: [MIT](https://github.com/MinecraftMarket/MinecraftMarket-Plugin/blob/master/LICENSE)\n\n## What is MinecraftMarket?\nMinecraftMarket is a web based shopping platform that allows you as a Minecraft server owner to sell collections of in-game aesthetics to players.​\n\n## Our Forum Posts\n[Spigot](https://www.spigotmc.org/resources/44031)\\\n[Bukkit](https://dev.bukkit.org/projects/minecraft-market-free-donation)\\\n[Nukkit](https://forums.nukkit.io/resources/140)\\\n[Sponge](https://forums.spongepowered.org/t/20149)\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/6178101?v=4",
+  "id": "SupremeMortal/MinecraftMarket-Plugin--nukkit",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "${project.parent.url}",
+    "wiki": ""
+  },
+  "manifest_path": "nukkit/src/main/resources/nukkit.yml",
+  "name": "MinecraftMarket-Plugin",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/SupremeMortal/MinecraftMarket-Plugin",
+  "stars": 0,
+  "summary": "The #1 webstore platform for Minecraft servers.",
+  "targets": [
+    "nkx",
+    "nkmot",
+    "pnx"
+  ],
+  "updated_at": 1517177607,
+  "versions": []
+}

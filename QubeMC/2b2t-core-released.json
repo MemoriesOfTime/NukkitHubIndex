@@ -1,0 +1,42 @@
+{
+  "api_version": "1.0.7",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/20718362?v=4",
+      "name": "maxxie114",
+      "url": "https://github.com/maxxie114"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "name": "dependabot[bot]",
+      "url": "https://github.com/apps/dependabot"
+    }
+  ],
+  "categories": [],
+  "created_at": 1579847396,
+  "dependencies": [],
+  "description": "# 2b2tpe\nThis is a portion of the Core plugin for 2b2tmcpe, it is used to implements all bug fixes, and new features in one plugin. This way there won't be too much concurrent task that mess up all the plugin functions, this project is only half open source.\n\nAny empty directories means that the code is either un-released or the directory is empty by default\n# Build Status\n[![Build Status](https://travis-ci.com/2B2TMCBE/2b2tpe.svg?token=xvymS3hSvzb4cCSjsscb&branch=master)](https://travis-ci.com/2B2TMCBE/2b2tpe)\n# Coding Style\n[![Coding Style](https://img.shields.io/badge/Coding%20Style-Google%20Style-green.svg)](https://google.github.io/styleguide/javaguide.html)\n# API/Framework Used\n- Nukkitx Engine [![Nukkitx](https://img.shields.io/badge/Software-Nukkitx-brightgreen.svg)](https://github.com/Nukkitx/Nukkit)\n- Raknet Networking Engine\n# Installation\n- This installation guide is for Debian linux only, windows please download the newest jar file from https://github.com/2B2TMCBE/2b2tpe/releases and then proceed to step 7.\n\n1. require installation of Nukkitx, please go to https://www.nukkitx.com/ for instruction\n2. Download maven using this command:\n```sudo apt-get install maven```\n3. After installation, run this command to clone this git repository:\n```git clone https://github.com/2B2TMCBE/2b2t-core-released.git```\n4. Change directory to the plugin's base directory, which contains the file named pom.xml\n5. Run this command to compile the plugin using maven\n```mvn clean package```\n6. Wait until the compiling process is completed, a new directory named `target` should now be created, nevigate into target.\n7. move the jar file named `2b2tpe-1.0-SNAPSHOT.jar` into Nukkit's server directory, move it into a directory named plugins.\n8. Restart the server, the plugin should be installed.\n# Contribution\nThis project is proprietary, contribution is only allowed with permission from the owner of the repository. If you have permission to contribute, you **must** code accoding to Google Coding Style.\n# License\nMIT License\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/43770717?v=4",
+  "id": "QubeMC/2b2t-core-released",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "2b2tpeCore",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/QubeMC/2b2t-core-released",
+  "stars": 1,
+  "summary": "This is a portion of the core plugin used by 2b2tmcpe.",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1602711305,
+  "versions": []
+}

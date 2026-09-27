@@ -2,9 +2,14 @@
   "api_version": "1.0.8",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "若水",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
+      "name": "SmallasWater",
+      "url": "https://github.com/SmallasWater"
     }
   ],
   "categories": [
@@ -14,7 +19,7 @@
   "created_at": 1617236552,
   "dependencies": [],
   "description": "# CustomCraft\n自定义合成/熔炉配方  \n此版本根据UHC-Land服务器需求进行了修改，可能不适用于所有服务器！\n\n自定义合成配置(craft.json)示例：\n```json\n{\n  \"recipes\": [\n    {\n      \"type\": 0,\n      \"maxCraftCount\": 1,\n      \"input\": [\n        \"3:0\"\n      ],\n      \"output\": \"58:0:1\"\n    },\n    {\n      \"type\": 1,\n      \"maxCraftCount\": -1,\n      \"input\": {\n        \"A\": \"3:0\"\n      },\n      \"shape\": [\n        \"AAA\",\n        \"AAA\",\n        \"AAA\"\n      ],\n      \"output\": \"58:0:1\"\n    }\n  ]\n}\n```\n",
-  "detection_confidence": "high",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/81676263?v=4",
@@ -33,8 +38,26 @@
   "stars": 0,
   "summary": "自定义合成插件",
   "targets": [
-    "nkx"
+    "nkx",
+    "nkmot"
   ],
-  "updated_at": 1712150758,
-  "versions": []
+  "updated_at": 1712150754,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "CustomCraft-1.3.0-UHC_Land.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/UHC-Land/job/CustomCraft/10/artifact/target/CustomCraft-1.3.0-UHC_Land.jar"
+        }
+      ],
+      "name": "1.3.0-UHC_Land",
+      "prerelease": true,
+      "published_at": 1642938566,
+      "version": "ci-10"
+    }
+  ]
 }

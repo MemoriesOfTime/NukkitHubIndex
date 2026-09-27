@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/406975?v=4",
+      "name": "jwulf",
+      "url": "https://github.com/jwulf"
+    }
+  ],
+  "categories": [],
+  "created_at": 1518585911,
+  "dependencies": [],
+  "description": "# BossBarAPI-Magikcraft\n\nThis is a BossBar plugin for the Nukkit Minecraft server for Pocket Edition Minecraft.\n\nIt's based on a plugin originally written by by XenialDan aka thebigsmileXD for Pocket Mine, a PHP Minecraft server.\n\nhttp://github.com/thebigsmileXD/BossBarAPI\n\nThe original Nukkit port was done by solo5star [here](https://github.com/solo5star/BossBarAPI_Nukkit), I've mavenised it.\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/20208248?v=4",
+  "id": "Magikcraft/BossBarAPI-Magikcraft",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "BossBarAPI",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Magikcraft/BossBarAPI-Magikcraft",
+  "stars": 0,
+  "summary": "BossBarAPI",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1554913960,
+  "versions": []
+}

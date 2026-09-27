@@ -2,9 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "2kMcFloar",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/88402556?v=4",
+      "name": "RinierMC",
+      "url": "https://github.com/RinierMC"
     }
   ],
   "categories": [],
@@ -24,16 +24,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "Shop",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/RinierMC/Shop",
   "stars": 0,
   "summary": "A simple Shop with Auction house and Economy support for PowerNukkitX.",
   "targets": [
-    "nkx",
     "pnx"
   ],
-  "updated_at": 1783782104,
+  "updated_at": 1783782284,
   "versions": [
     {
       "changelog": "Released",
@@ -42,6 +41,7 @@
         {
           "filename": "Shop.jar",
           "primary": true,
+          "sha256": "8107a4acdd84cc927f5733dd274940bb09bd148269d52e63840ba4d6d74e4abf",
           "size": 49789,
           "url": "https://github.com/RinierMC/Shop/releases/download/Latest/Shop.jar"
         }

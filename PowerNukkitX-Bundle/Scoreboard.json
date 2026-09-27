@@ -2,9 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
       "name": "Buddelbubi",
-      "url": ""
+      "url": "https://github.com/Buddelbubi"
     }
   ],
   "categories": [
@@ -32,16 +32,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "Scoreboard",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/Scoreboard",
   "stars": 0,
   "summary": "Add a scoreboard to your PowerNukkitX server.",
   "targets": [
-    "nkx",
     "pnx"
   ],
-  "updated_at": 1785310862,
+  "updated_at": 1785310757,
   "versions": [
     {
       "changelog": "Automated release for v1.0.3",
@@ -50,6 +49,7 @@
         {
           "filename": "Scoreboard.jar",
           "primary": true,
+          "sha256": "d8d18cf55e67c71991e1386c20813516cdc2946c0726a137ab57e251f3b98e0d",
           "size": 10672,
           "url": "https://github.com/PowerNukkitX-Bundle/Scoreboard/releases/download/v1.0.3/Scoreboard.jar"
         }
@@ -66,6 +66,7 @@
         {
           "filename": "Scoreboard.jar",
           "primary": true,
+          "sha256": "30169967ba05fd74b227ad87dc02ec0351aa1fb739d2d7b31eafa88332caaea6",
           "size": 10679,
           "url": "https://github.com/PowerNukkitX-Bundle/Scoreboard/releases/download/v1.0.2/Scoreboard.jar"
         }
@@ -82,6 +83,7 @@
         {
           "filename": "Scoreboard-1.0.1.jar",
           "primary": true,
+          "sha256": "6f21b4294703fbcbcaa637e37c948eb6b696a3bea8c5f1de63727a7d69cb2620",
           "size": 10684,
           "url": "https://github.com/PowerNukkitX-Bundle/Scoreboard/releases/download/1.0.1/Scoreboard-1.0.1.jar"
         }
@@ -98,6 +100,7 @@
         {
           "filename": "Scoreboard-1.0.0.jar",
           "primary": true,
+          "sha256": "efe0e126ba05b497986c5358f4635012052e29180c6b2005fede06b6cbdc421b",
           "size": 10661,
           "url": "https://github.com/PowerNukkitX-Bundle/Scoreboard/releases/download/1.0.0/Scoreboard-1.0.0.jar"
         }

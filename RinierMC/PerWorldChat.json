@@ -2,9 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "2kkMcFloat",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/88402556?v=4",
+      "name": "RinierMC",
+      "url": "https://github.com/RinierMC"
     }
   ],
   "categories": [],
@@ -24,16 +24,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "PerWorldChat",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/RinierMC/PerWorldChat",
   "stars": 0,
   "summary": "Restricts chat to per-world groups with global chat and spy mode support.",
   "targets": [
-    "nkx",
     "pnx"
   ],
-  "updated_at": 1784738833,
+  "updated_at": 1784738918,
   "versions": [
     {
       "changelog": "",
@@ -42,6 +41,7 @@
         {
           "filename": "PerWorldChat-1.0.0.jar",
           "primary": true,
+          "sha256": "fcb6294c23ae5ff5c133a3a53f10463ccdf31a63c0a9c75a2590bb65b55bd7c6",
           "size": 12630,
           "url": "https://github.com/RinierMC/PerWorldChat/releases/download/v1/PerWorldChat-1.0.0.jar"
         }

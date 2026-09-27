@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/593870?v=4",
+      "name": "ProjectInfinity",
+      "url": "https://github.com/ProjectInfinity"
+    }
+  ],
+  "categories": [],
+  "created_at": 1453948545,
+  "dependencies": [],
+  "description": "# MultiWorld\nMultiWorld is a Nukkit plugin that lets you run multiple worlds on your server.\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/593870?v=4",
+  "id": "ProjectInfinity/MultiWorld",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "MultiWorld",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/ProjectInfinity/MultiWorld",
+  "stars": 3,
+  "summary": "Multi-world management made simple",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1459379074,
+  "versions": []
+}

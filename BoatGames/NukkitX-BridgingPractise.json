@@ -1,0 +1,52 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/65506006?v=4",
+      "name": "hax0r31337",
+      "url": "https://github.com/hax0r31337"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/49330438?v=4",
+      "name": "gougocoffee",
+      "url": "https://github.com/gougocoffee"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/29895665?v=4",
+      "name": "jungwuk-ryu",
+      "url": "https://github.com/jungwuk-ryu"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "name": "dependabot[bot]",
+      "url": "https://github.com/apps/dependabot"
+    }
+  ],
+  "categories": [],
+  "created_at": 1662005747,
+  "dependencies": [],
+  "description": "# BridgingPractiseNK  \n  \nThis is a bridging practise plugin helps you practise your bridging ability.  \n一个帮助你练习搭路的插件  \n  \n# 介绍  \n  \n## 简体中文  \n  \n### 指令  \n  \n(默认/bpractise可在config.json中修改)  \n/bpractise join 加入练习区  \n/bpractise leave 离开练习区  \n  \n### 警告  \n  \n1.不要让MobPlugin在练习区生成生物,否则会空指针  \n2.不要乱动./plugins/BridgingPractise/cache下的地图备份文件  \n3.关服请用stop命令关服,不要点X,否则可能会导致一些未知的问题  \n4.初始化前请保证没有名为“bpractise”的地图,否则将被覆盖  \n  \n### 配置文件  \n  \nconfig.json键值说明:  \n  \n#### block  \n  \nblock 搭路用方块(id:物品id,d:物品特殊值,c:物品数量)  \nstop 结束点方块id  \nres 重生点设置方块id  \nspeedup 加速方块id  \nbackres 回出生点方块id  \nelevator 电梯方块id(需在同一x,z坐标不同高度有2个这种方块,站在其中一个方块上即可传送到另一个)  \npickaxe 搞(id:物品id,d:物品特殊值)  \n  \n#### pos  \n  \nlowy 最低y坐标(低于将被拉回重生点)  \npra 练习区坐标(x:x坐标,y:y坐标,z:z坐标,l:世界名)  \nexit 退出后回到的坐标(x:x坐标,y:y坐标,z:z坐标,l:世界名)(初始化时会使用主世界安全重生点)  \n  \n#### pra  \n  \nlanguage 语言文件(对应./plugins/BridgingPractise/lang/值.json)(假如没有会在控制台警告并读取英文的语言文件)  \ninstabreak 死亡后方块是否直接清除(true直接清除,false逐渐清除)  \nbreakparticle 清除方块是否掉落粒子  \nbreakdelay 逐渐清除方块时清除单个方块的延时(ms)  \nfalldmgtip 是否在受到掉落伤害时向玩家发出提示  \niffalllagdmg 是否受到超过阈值的跌落伤害时回到出生点  \npvpprotect pvp保护  \ncandrop 玩家能否扔物品  \nprompt 是否向玩家发送搭路方块速度,距离,最远距离信息的Popup提示  \nspeedlv 站在加速方块上获得速度效果的等级  \nspeedtick 站在加速方块上获得速度效果的世时间(tick刻)  \ntime 锁定练习区世界的时间  \nweather 锁定练习区世界的天气(clear,rain,thunder)  \ncommand 搭路练习指令名(/值 join/leave)  \nenablecmd 练习区允许的指令(需包含插件指令否则玩家无法退出)(取指令名例如/kill @e就是kill)  \nenable - 启用等级系统  \nscoreboard - 显示积分版（需启动等级系统）  \nlevelup - 升级提示  \ngetexp - 获得经验提示  \ntimeearn - 时间奖励(enable开关，sec时长，exp获得的经验)  \nblockearn - 方块奖励(enable-开关,bls-需要的方块,exp-获得的经验)  \n  \n## English  \n  \nsorry my english is bad.  \n  \n### Commands  \n  \ndefault:/bpractise,can change in config.json  \n/bpractise join - Join the practise area  \n/bpractise leave - Leave the practise area  \n  \n### Warning  \n  \n1.DON'T LET MobPlugin GENERATE MOBS AT PRACTISE AREA  \n2.DON'T MODIFY LEVEL BACKUP FILE AT ./plugins/BridgingPractise/cache  \n3.PLEASE USE 'stop' COMMAND TO STOP THE SERVER,DON'T CLICK \"X\" TO STOP  \n4.PLEASE MAKE SURE THAT THERE IS NO LEVEL NAMED \"BPRACTISE\" BEFORE INITIALIZATION, OTHERWISE IT WILL BE OVERWRITTEN  \n  \n### Config File  \n  \nconfig.json keys:  \n  \n#### block  \n  \nblock - Block used to bridging(id:item id,d:item data id/damage,c:item count)  \nstop - Stop point block id  \nres - respawn point block id  \nspeedup - speedup block id  \nbackres - back-to-respawn block id  \nelevator - elevator block id(Need to have 2 such blocks at the same x, z coordinates and different heights, stand on one of them and you can teleport to the other)  \npickaxe - pickaxe(id:item id,d:item data id/damage)  \n  \n#### pos  \n  \nlowy - Lowest y position(Below will be pulled back to the respawn point)  \npra - Practise Position(x:x position,y:y position,z:z position,l:Level name)  \nexit - The Position when return back(x:x position,y:y position,z:z position,l:Level name)(The main world safe respawn point will be used during initialization)  \n  \n#### pra  \n  \nlanguage - Language File(Corresponding to ./plugins/BridgingPractise/lang/value.json) (if the file is not exists will warning in the console and read the English language file)  \ninstabreak - Will cleared directly when player death?(true is cleared directly, false is cleared gradually)  \nbreakparticle - Will drop down particles when block break?  \nbreakdelay - delay time when clear blocks gradually(ms)  \nfalldmgtip - Will warn player when take damage from falling  \niffalllagdmg - Will to return to the spawn point when receiving fall damage that exceeds the threshold  \npvpprotect - PvP Protection in the Practise area  \ncandrop - Can players drop items in the Practise area  \nprompt - Will send popup prompts to players about the speed, distance, and farthest distance  \nspeedlv - The level of speed effect obtained by standing on the speedup block  \nspeedtick - Time to get the speed effect by standing on the speedup block(tick)  \ntime - Lock the time in the practice area world(int Time)  \nweather - Lock the weather in the practice area world(clear,rain,thunder)  \ncommand - Command of bridging practise plugin(/value join/leave)  \nenablecmd - Commands allowed in the practice area(plugin commands must be included or the player cannot exit) (use the command name for example /kill @e is kill)\nenable - Enable the player Levelling System  \nscoreboard - Enable scoreboard(Need to enable levelling system)  \nlevelup - LevelUP Prompt  \ngetexp - GetExp Prompt  \ntimeearn - “Time-Played\" Exp (enable-enable?,sec-time,exp-earnd exp)  \nblockearn - exp earn when place block(enable-enable?,bls-need blocks,exp-earnd exp)  \n  \n# Update  \n  \n## Update 1.2 from 1.0/1.1  \n  \n从1.0/1.1升级插件  \nwhy i not put auto-update?  \nbecause it will lost the format of JSON  \n为什么不做一个自动升级配置文件？  \n因为会丢失json的格式  \n  \n### config.json  \n  \nAll modify is in key \"pra\"  \n所有的修改都在pra键里  \n~~~  \n\"victoryreplace\": {\"id\": 169,\"d\": 0},  \n\"exp\": {  \n    \"enable\": true,  \n    \"scoreboard\": true,  \n    \"levelup\": true,  \n    \"getexp\": true,  \n    \"timeearn\": {\"enable\":true,\"sec\": 30,\"exp\": 5},  \n    \"blockearn\": {\"enable\":true,\"bls\": 50,\"exp\": 10}  \n},  \n\"scoreboard\": [  \n    \"§fName: §a%player%\",  \n    \"§fLevel: §b%level%\",  \n    \"§fProcess: §b%lowProgcess%§f/§a%maxProgcess%\",  \n    \"Placed: §a%placed%\",  \n    \"§6§lMineBBS.com\"  \n]  \n~~~  \nvictoryreplace - 玩家搭路成功之后将玩家的方块替换成的方块  \nvictoryreplace - Replaced block when player completed the bridge  \nscoreboard - 积分版内容  \nscoreboard - Scoreboard Text  \n  \n#### exp  \n  \nenable - 启用等级系统  \nenable - Enable the player Levelling System  \nscoreboard - 显示积分版（需启动等级系统）  \nscoreboard - Enable scoreboard(Need to enable levelling system)  \nlevelup - 升级提示  \nlevelup - LevelUP Prompt  \ngetexp - 获得经验提示  \ngetexp - GetExp Prompt  \ntimeearn - 时间奖励(enable开关，sec时长，exp获得的经验)  \ntimeearn - “Time-Played\" Exp (enable-enable?,sec-time,exp-earnd exp)  \nblockearn - 方块奖励(enable-开关,bls-需要的方块,exp-获得的经验)  \nblockearn - exp earn when place block(enable-enable?,bls-need blocks,exp-earnd exp)  \n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/109536280?v=4",
+  "id": "BoatGames/NukkitX-BridgingPractise",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "BridgingPractise",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/BoatGames/NukkitX-BridgingPractise",
+  "stars": 4,
+  "summary": "A bridging practise plugin helps you practise your bridging ability.",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1665236726,
+  "versions": []
+}

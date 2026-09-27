@@ -1,0 +1,54 @@
+{
+  "api_version": "1.0.9",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/38113441?v=4",
+      "name": "tim03we",
+      "url": "https://github.com/tim03we"
+    }
+  ],
+  "categories": [],
+  "created_at": 1562788478,
+  "dependencies": [],
+  "description": "# LobbySystem\nThis LobbySystem is for beginners. I don't have to say more about that here. You can find all information in the settings.yml.\n\n# Config\n```yaml\n# Use ID-Meta-Count-Slot-Name-Command\n# Placeholder: %player%\n# Example:\n# items:\n#   - 345-0-1-4-§bTeleport-help\nitems:\n  - 345-0-1-4-§bTeleport-help\n\n# Gamemode on join\ngamemode: 2\n\n# Change the join and leave message.\n# To disable the messages, leave the fields as they were at the beginning.\n# Like: join: \"\"\nmessages:\n  join: \"\"\n  quit: \"\"\n\n# Change the Events\n# Use true or false\nevents:\n  place: false\n  break: false\n  hunger: false\n  inv-move: false\n  drop: false\n  pick: false\n```",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/38113441?v=4",
+  "id": "tim03we/LobbySystem-Nukkit",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "LobbySystem",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/tim03we/LobbySystem-Nukkit",
+  "stars": 0,
+  "summary": "A Cloudburst Plugin",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1596877346,
+  "versions": [
+    {
+      "changelog": "LobbySystem for Minecraft: Bedrock Edition 1.16.X+\r\n\r\nThis version is a patch update. ",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "LobbySystem-1.1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 6238,
+          "url": "https://github.com/tim03we/LobbySystem-Nukkit/releases/download/1.1.0-SNAPSHOT/LobbySystem-1.1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "LobbySystem 1.1.0-SNAPSHOT",
+      "prerelease": false,
+      "published_at": 1596876315,
+      "version": "1.1.0-SNAPSHOT"
+    }
+  ]
+}

@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
       "name": "glorydark",
-      "url": ""
+      "url": "https://github.com/glorydark"
     }
   ],
   "categories": [],
@@ -22,7 +22,7 @@
     }
   ],
   "description": "# DCurrency",
-  "detection_confidence": "high",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
@@ -41,8 +41,26 @@
   "stars": 0,
   "summary": "DCurrency",
   "targets": [
-    "nkx"
+    "nkx",
+    "nkmot"
   ],
-  "updated_at": 1754902802,
-  "versions": []
+  "updated_at": 1754902798,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "DCurrency-1.3.4.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/DCurrency/40/artifact/target/DCurrency-1.3.4.jar"
+        }
+      ],
+      "name": "1.3.4",
+      "prerelease": true,
+      "published_at": 1754902808,
+      "version": "ci-40"
+    }
+  ]
 }

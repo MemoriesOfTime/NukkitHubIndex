@@ -1,0 +1,258 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/205583884?v=4",
+      "name": "Jawollo07",
+      "url": "https://github.com/Jawollo07"
+    }
+  ],
+  "categories": [],
+  "created_at": 1789128993,
+  "dependencies": [],
+  "description": "# Siedler 2.0 – PowerNukkitX\n\nNative rewrite of the Siedler Minecraft Bedrock server system for **PowerNukkitX**.\n\nRepository: https://github.com/Jawollo07/Siedler-PNX\n\n## Status\n\n🚧 **Phase 2 – Teams: migration in progress.**\n\nThe previous Siedler 1.x implementation is a Bedrock Script API behavior pack. Siedler 2.0 is being rebuilt as a native Java/PowerNukkitX plugin rather than as a direct JavaScript-to-Java translation.\n\n### Current implementation\n\n- Java 21 / **Maven** project\n- PowerNukkitX plugin descriptor\n- Central `SiedlerPlugin` lifecycle\n- Central manager structure\n- SQLite persistence foundation\n- MariaDB JDBC support\n- Initial `/siedler` command\n- Configurable gameplay defaults\n- TeamManager\n- Team creation and deletion\n- Team membership with stable player IDs\n- Team colors / display data\n\n## Versioning\n\nProject versions are coupled to the migration plan using:\n\n```text\nPHASE.FEATURE.PATCH\n```\n\n- **PHASE** identifies the current migration phase.\n- **FEATURE** identifies a functional milestone inside that phase.\n- **PATCH** is reserved for bugfixes and small non-feature changes.\n- Development versions use the `-SNAPSHOT` suffix.\n- Each new migration phase starts at `X.0.0-SNAPSHOT`.\n- The first stable complete release is planned as **`10.0.0`**.\n\nExample for the Teams phase:\n\n| Version | Milestone |\n|---|---|\n| `2.0.0` | TeamManager foundation |\n| `2.1.0` | Team creation/deletion |\n| `2.2.0` | Team members + stable player IDs |\n| `2.3.0` | Team colors/display |\n| `2.4.0` | Team chat |\n| `2.5.0` | Diplomacy |\n| `2.6.0` | Team elimination |\n| `2.7.0` | Permanent spectator after elimination |\n| `2.8.0` | Configurable elimination block |\n\nThe version is therefore a progress indicator for the migration plan, not an independent semantic-versioning roadmap.\n\n## Target architecture\n\n```text\nsrc/main/java/de/jawollo07/siedler/\n├── SiedlerPlugin.java\n├── core/\n├── storage/\n├── command/\n├── team/\n├── claims/\n├── economy/\n├── monsters/\n├── soldiers/\n├── market/\n├── essentials/\n└── mines/\n```\n\nThe systems from Siedler 1.x are migrated in dependency order:\n\n1. Core + persistence\n2. Teams + player identity + diplomacy\n3. Claims + protection\n4. Economy + taxes + TaxBonus\n5. Token monsters + outposts + raids\n6. Soldiers + AI + groups + levels\n7. Market + traders\n8. Essentials + inventories + statistics\n9. Mines + control system\n10. Migration, compatibility and release hardening\n\nThe detailed checklist and current progress are maintained in [`plan.md`](https://github.com/Jawollo07/Siedler-PNX/blob/main/plan.md).\n\n## PowerNukkitX target\n\nThe project targets **PowerNukkitX 3.0.4-SNAPSHOT** / API **3.0.x**, Java **21**, and Minecraft Bedrock **1.26.45**. PowerNukkitX is supplied by Maven as a `provided` dependency because the server provides it at runtime.\n\nIf exact server-version compatibility changes, the dependency and compatibility notes will be updated together with the code.\n\n## Persistence\n\nSQLite is the default local storage backend, with MariaDB JDBC support available for database-backed deployments. Persistent data is designed around stable player UUID/ID values rather than player names wherever the server API provides a stable identifier.\n\n## Development principles\n\n- Native PowerNukkitX APIs first.\n- Managers/services with clear responsibilities instead of one large main class.\n- Persistent state must survive restarts.\n- Gameplay rules should be configurable.\n- Existing Siedler 1.x behavior is the functional reference, while Siedler 2.0 may improve implementation details where PowerNukkitX provides better native facilities.\n- README and `plan.md` are kept synchronized with the implementation.\n- Version milestones follow `plan.md`.\n\n## Build\n\nRequires **JDK 21** and **Maven**.\n\n```bash\nmvn clean package\n```\n\nThe plugin JAR is produced under `target/`. The current Maven project version is **`2.2.0-SNAPSHOT`**.\n\n## Migration reference\n\nThe feature set being migrated includes teams, diplomacy, claims, taxes, TaxBonus, token monsters, outpost capture, monster raids, soldiers (infantry/archer/cavalry), soldier AI, market/traders, homes/TPA, persistent ender/team chests, player statistics, anti-AFK, and the minefield/control system.\n\n## Next milestone\n\nThe next planned feature milestone is **`2.4.0 – Teamchat`**, followed by diplomacy and the remaining team-elimination mechanics. See [`plan.md`](https://github.com/Jawollo07/Siedler-PNX/blob/main/plan.md) for the complete roadmap.\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/205583884?v=4",
+  "id": "Jawollo07/Siedler-PNX",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/Jawollo07/Siedler-PNX",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Siedler",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/Jawollo07/Siedler-PNX",
+  "stars": 0,
+  "summary": "Siedler 6.9.1 - Teams, Claims, Economy, Monsters, Soldiers and Essentials",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1790419527,
+  "versions": [
+    {
+      "changelog": "**Full Changelog**: https://github.com/Jawollo07/Siedler-PNX/compare/v8.0.1...v8.0.2",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "original-siedler-8.0.2.jar",
+          "primary": true,
+          "sha256": "d04ddf33b070d1a19892b32a8755c144fe83c6da2a4e3da35266cd3dd20c215d",
+          "size": 321907,
+          "url": "https://github.com/Jawollo07/Siedler-PNX/releases/download/v8.0.2/original-siedler-8.0.2.jar"
+        },
+        {
+          "filename": "siedler-8.0.2.jar",
+          "primary": true,
+          "sha256": "e7676d97e2ca6ad7c6801381f1e25631d19be23c85bcd05a92e04c8fe5b0ce14",
+          "size": 15459175,
+          "url": "https://github.com/Jawollo07/Siedler-PNX/releases/download/v8.0.2/siedler-8.0.2.jar"
+        }
+      ],
+      "name": "v8.0.2 (Beta)",
+      "prerelease": true,
+      "published_at": 1790419527,
+      "version": "v8.0.2"
+    },
+    {
+      "changelog": "**Full Changelog**: https://github.com/Jawollo07/Siedler-PNX/compare/v6.9.2...v8.0.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "original-siedler-8.0.0.jar",
+          "primary": true,
+          "sha256": "8ce75ba9b65e0f9dbdf1aadaf62e7ccb2ff71c4c5b1e31b98dd05455ce08e366",
+          "size": 287955,
+          "url": "https://github.com/Jawollo07/Siedler-PNX/releases/download/v8.0.0/original-siedler-8.0.0.jar"
+        },
+        {
+          "filename": "siedler-8.0.0.jar",
+          "primary": true,
+          "sha256": "fb0a311509576e66e3e021d9cb8a29ee8db113a1b4e460ef27f57ef9b68224c2",
+          "size": 15425077,
+          "url": "https://github.com/Jawollo07/Siedler-PNX/releases/download/v8.0.0/siedler-8.0.0.jar"
+        }
+      ],
+      "name": "v8.0.0 (Beta)",
+      "prerelease": true,
+      "published_at": 1790366766,
+      "version": "v8.0.0"
+    },
+    {
+      "changelog": "**Full Changelog**: https://github.com/Jawollo07/Siedler-PNX/compare/v6.9.1...v6.9.2",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "original-siedler-6.9.2.jar",
+          "primary": true,
+          "sha256": "e71cfe47960b0801bbe38c7b3ad3457b12e807a735eec003a202946929c25d63",
+          "size": 266549,
+          "url": "https://github.com/Jawollo07/Siedler-PNX/releases/download/v6.9.2/original-siedler-6.9.2.jar"
+        },
+        {
+          "filename": "siedler-6.9.2.jar",
+          "primary": true,
+          "sha256": "2f3bf4273367098df4ac9f61365c9b6b1cd4f022582a962a1287727f09a13888",
+          "size": 15403557,
+          "url": "https://github.com/Jawollo07/Siedler-PNX/releases/download/v6.9.2/siedler-6.9.2.jar"
+        }
+      ],
+      "name": "v6.9.2 (Beta)",
+      "prerelease": true,
+      "published_at": 1790350869,
+      "version": "v6.9.2"
+    },
+    {
+      "changelog": "**Full Changelog**: https://github.com/Jawollo07/Siedler-PNX/compare/v3.3.1...v4.4.1",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "original-siedler-4.4.1.jar",
+          "primary": true,
+          "sha256": "dc1b3ef748d39c97663a68cef828e08dd565a48c0827195a39fe604029b69bce",
+          "size": 206312,
+          "url": "https://github.com/Jawollo07/Siedler-PNX/releases/download/v4.4.1/original-siedler-4.4.1.jar"
+        },
+        {
+          "filename": "siedler-4.4.1.jar",
+          "primary": true,
+          "sha256": "884f7cb084e5a4f182cfbb8a455070d5e3d98c45ce625d99c69a2bbe88c6387e",
+          "size": 15343030,
+          "url": "https://github.com/Jawollo07/Siedler-PNX/releases/download/v4.4.1/siedler-4.4.1.jar"
+        }
+      ],
+      "name": "v4.4.1 (Beta)",
+      "prerelease": true,
+      "published_at": 1790194444,
+      "version": "v4.4.1"
+    },
+    {
+      "changelog": "**Full Changelog**: https://github.com/Jawollo07/Siedler-PNX/compare/v3.3.0...v3.3.1",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "original-siedler-3.3.1.jar",
+          "primary": true,
+          "sha256": "15e80f4691276de376306dd8a706e5090d149684fd622a0bb4b83e6c4795eb5b",
+          "size": 85976,
+          "url": "https://github.com/Jawollo07/Siedler-PNX/releases/download/v3.3.1/original-siedler-3.3.1.jar"
+        },
+        {
+          "filename": "siedler-3.3.1.jar",
+          "primary": true,
+          "sha256": "136ba963c8738595a64b27a73c4d9e7308f306c1ab91149575adee3489c07b82",
+          "size": 15222084,
+          "url": "https://github.com/Jawollo07/Siedler-PNX/releases/download/v3.3.1/siedler-3.3.1.jar"
+        }
+      ],
+      "name": "v3.3.1 (Beta)",
+      "prerelease": true,
+      "published_at": 1789852398,
+      "version": "v3.3.1"
+    },
+    {
+      "changelog": "**Full Changelog**: https://github.com/Jawollo07/Siedler-PNX/compare/v2.4.0...v3.3.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "original-siedler-3.3.0.jar",
+          "primary": true,
+          "sha256": "b4f1a1879640339f93d6e49fb784f485acf4b2a9e0cd1442457ba7f4a006e544",
+          "size": 93140,
+          "url": "https://github.com/Jawollo07/Siedler-PNX/releases/download/v3.3.0/original-siedler-3.3.0.jar"
+        },
+        {
+          "filename": "siedler-3.3.0.jar",
+          "primary": true,
+          "sha256": "745facc3d67a2e128f4dcbda5a0f76cd67f8567b93b36e315c4ade311523f3a3",
+          "size": 15229360,
+          "url": "https://github.com/Jawollo07/Siedler-PNX/releases/download/v3.3.0/siedler-3.3.0.jar"
+        }
+      ],
+      "name": "v3.3.0 (Beta)",
+      "prerelease": true,
+      "published_at": 1789832417,
+      "version": "v3.3.0"
+    },
+    {
+      "changelog": "**Full Changelog**: https://github.com/Jawollo07/Siedler-PNX/compare/v2.3.1...v2.4.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "original-siedler-2.4.0.jar",
+          "primary": true,
+          "sha256": "abf5098321cc109a3b12a21efad297af8d19fcb3674bba7e443e36391071fb37",
+          "size": 61877,
+          "url": "https://github.com/Jawollo07/Siedler-PNX/releases/download/v2.4.0/original-siedler-2.4.0.jar"
+        },
+        {
+          "filename": "siedler-2.4.0.jar",
+          "primary": true,
+          "sha256": "728a53aa5b56f567e00b01e88bae182faf46da87a285de63233f0e408c914e3a",
+          "size": 15197901,
+          "url": "https://github.com/Jawollo07/Siedler-PNX/releases/download/v2.4.0/siedler-2.4.0.jar"
+        }
+      ],
+      "name": "v2.4.0 (Beta)",
+      "prerelease": true,
+      "published_at": 1789574255,
+      "version": "v2.4.0"
+    },
+    {
+      "changelog": "**Full Changelog**: https://github.com/Jawollo07/Siedler-PNX/compare/v2.3.0...v2.3.1",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "original-siedler-2.3.1.jar",
+          "primary": true,
+          "sha256": "d77f1c024474e69f5e933a09a83a0fca7f87046e73f9845081e7d1e2202bb156",
+          "size": 38203,
+          "url": "https://github.com/Jawollo07/Siedler-PNX/releases/download/v2.3.1/original-siedler-2.3.1.jar"
+        },
+        {
+          "filename": "siedler-2.3.1.jar",
+          "primary": true,
+          "sha256": "d2437c453773d6fc9f459946724c5a6d348e24867ff82df5547ce1e594b66e73",
+          "size": 15174115,
+          "url": "https://github.com/Jawollo07/Siedler-PNX/releases/download/v2.3.1/siedler-2.3.1.jar"
+        }
+      ],
+      "name": "v2.3.1 (Beta)",
+      "prerelease": true,
+      "published_at": 1789549269,
+      "version": "v2.3.1"
+    },
+    {
+      "changelog": "**Full Changelog**: https://github.com/Jawollo07/Siedler-PNX/commits/v2.3.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "original-siedler-2.3.0.jar",
+          "primary": true,
+          "sha256": "e28415f23e7b5e0a59bd3bace10dccc9cb679198fbfdab1fc6b0337f20d650ad",
+          "size": 38199,
+          "url": "https://github.com/Jawollo07/Siedler-PNX/releases/download/v2.3.0/original-siedler-2.3.0.jar"
+        },
+        {
+          "filename": "siedler-2.3.0.jar",
+          "primary": true,
+          "sha256": "4c37af6981ecf5a0f8f9bfb31ada7c6684c1d5078db497484d5ab6e4b50f2d70",
+          "size": 15174111,
+          "url": "https://github.com/Jawollo07/Siedler-PNX/releases/download/v2.3.0/siedler-2.3.0.jar"
+        }
+      ],
+      "name": "v2.3.0 (Beta)",
+      "prerelease": true,
+      "published_at": 1789503470,
+      "version": "v2.3.0"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "api_version": "1.0.8",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/51378109?v=4",
+      "name": "yequid-old",
+      "url": "https://github.com/yequid-old"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/20367738?v=4",
+      "name": "AlexBrin",
+      "url": "https://github.com/AlexBrin"
+    }
+  ],
+  "categories": [],
+  "created_at": 1574581568,
+  "dependencies": [],
+  "description": "first-nukkit-plugin\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/48614643?v=4",
+  "id": "php-pmapi-nukkit-learn/first-nukkit-plugin",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "adminCommands",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/php-pmapi-nukkit-learn/first-nukkit-plugin",
+  "stars": 0,
+  "summary": "",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1575035379,
+  "versions": []
+}

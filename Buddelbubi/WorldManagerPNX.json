@@ -2,9 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
       "name": "Buddelbubi",
-      "url": ""
+      "url": "https://github.com/Buddelbubi"
     }
   ],
   "categories": [],
@@ -28,16 +28,15 @@
   },
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "WorldManager",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/Buddelbubi/WorldManagerPNX",
   "stars": 1,
   "summary": "WorldManager is the most powerful world management system.",
   "targets": [
-    "nkx",
     "pnx"
   ],
-  "updated_at": 1786484200,
+  "updated_at": 1786102487,
   "versions": [
     {
       "changelog": "Automated release for v1.2.10",
@@ -46,6 +45,7 @@
         {
           "filename": "WorldManager.jar",
           "primary": true,
+          "sha256": "9e85e040ae7c155ed37377f9e6f5d7e611387407924f2db3a6839b0f094fde08",
           "size": 115201,
           "url": "https://github.com/Buddelbubi/WorldManagerPNX/releases/download/v1.2.10/WorldManager.jar"
         }
@@ -62,6 +62,7 @@
         {
           "filename": "WorldManager.jar",
           "primary": true,
+          "sha256": "397ca80c5a71850bb9b6fb78871872e28a36653593b1ce5ae663bb7db2a7bf56",
           "size": 113686,
           "url": "https://github.com/Buddelbubi/WorldManagerPNX/releases/download/v1.2.9/WorldManager.jar"
         }
@@ -78,6 +79,7 @@
         {
           "filename": "WorldManager.jar",
           "primary": true,
+          "sha256": "16286d55dcf54988bd1dd526d71eb9046cc24ed9edf8c77c7ac820fedf4ec1e4",
           "size": 113281,
           "url": "https://github.com/Buddelbubi/WorldManagerPNX/releases/download/1.2.8/WorldManager.jar"
         }

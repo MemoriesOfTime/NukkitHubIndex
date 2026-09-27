@@ -1,0 +1,54 @@
+{
+  "api_version": "1.0.7",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/20718362?v=4",
+      "name": "maxxie114",
+      "url": "https://github.com/maxxie114"
+    }
+  ],
+  "categories": [],
+  "created_at": 1555149639,
+  "dependencies": [],
+  "description": "# CustomDeathMessage\nThis is the open source version of the custom death message plugin that is used by our server, 2b2tmcpe.org, in the plugin, you can edit every single death message from the config.yml\n# Warning\nPlease do not remove any of the tags from the config.yml, I haven't added a null check, so it might error out if you remove a tag. However, you are free to move around the tags to different location of the sentences.\n# Coding Style\n[![Coding Style](https://img.shields.io/badge/Coding%20Style-Google%20Style-green.svg)](https://google.github.io/styleguide/javaguide.html)\n# API/Framework Used\n- Nukkitx Engine [![Nukkitx](https://img.shields.io/badge/Software-Nukkitx-brightgreen.svg)](https://github.com/Nukkitx/Nukkit)\n- Raknet Networking Engine\n# Installation\n- This installation guide is for Debian linux only, windows please download the newest jar file from https://github.com/2B2TMCBE/CustomDeathMessage/releases and then proceed to step 7.\n\n1. require installation of Nukkitx, please go to https://www.nukkitx.com/ for instruction\n2. Download maven using this command:\n```sudo apt-get install maven```\n3. After installation, run this command to clone this git repository:\n```git clone https://github.com/2B2TMCBE/CustomDeathMessage.git```\n4. Change directory to the plugin's base directory, which contains the file named pom.xml\n5. Run this command to compile the plugin using maven\n```mvn clean package```\n6. Wait until the compiling process is completed, a new directory named `target` should now be created, nevigate into target.\n7. move the jar file named `CustomDeathMessage-1.0.0-SNAPSHOT.jar` into Nukkit's server directory, move it into a directory named plugins.\n8. Restart the server, the plugin should be installed.\n# Contribution\nYou are free to contribute to this project by sending a pull request, but please make sure you use the same coding style as our plugin. The coding Style guide can by found here: https://google.github.io/styleguide/javaguide.html\n# License\n[MIT](https://choosealicense.com/licenses/mit/)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/43770717?v=4",
+  "id": "QubeMC/CustomDeathMessage",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "CustomDeathMessage",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/QubeMC/CustomDeathMessage",
+  "stars": 0,
+  "summary": "This is the open source version of the 2b2tmcpe custom death message plugin",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1555156315,
+  "versions": [
+    {
+      "changelog": "This is the open sourced version of 2b2tmcpe's custom death message plugin, everything is highly customizable in this plugin.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "CustomDeathMessage-1.0.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 7831,
+          "url": "https://github.com/QubeMC/CustomDeathMessage/releases/download/1.0.0/CustomDeathMessage-1.0.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "Initial Release",
+      "prerelease": false,
+      "published_at": 1555155380,
+      "version": "1.0.0"
+    }
+  ]
+}

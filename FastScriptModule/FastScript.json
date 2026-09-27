@@ -1,0 +1,158 @@
+{
+  "api_version": "unknown",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/16173457?v=4",
+      "name": "Score2",
+      "url": "https://github.com/Score2"
+    }
+  ],
+  "categories": [],
+  "created_at": 1601125952,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "PlaceholderAPI",
+      "version_range": ""
+    }
+  ],
+  "description": "![](https://img.iroselle.com/plugins/fastscript/big_logo.gif)\n[<img src=\"https://img.shields.io/discord/760802420552105995?label=Discord&style=for-the-badge\"/>](https://discord.gg/GVM6vx9)\n[<img src=\"https://img.shields.io/github/issues/Score2/FastScript?style=for-the-badge\"/>](https://github.com/Score2/FastScript/issues)\n[<img src=\"https://img.shields.io/github/issues-pr/Score2/FastScript?style=for-the-badge\"/>](https://github.com/Score2/FastScript/pulls)\n[<img src=\"https://img.shields.io/github/license/Score2/FastScript?style=for-the-badge\"/>](https://github.com/Score2/FastScript/blob/master/LICENSE)\n[<img src=\"https://img.shields.io/github/last-commit/Score2/FastScript?style=for-the-badge\"/>](https://github.com/Score2/FastScript/commits/master)\n[<img src=\"https://img.shields.io/bstats/servers/9014?label=BSTATS-SERVERS&style=for-the-badge\"/>](https://bstats.org/plugin/bukkit/FastScript/9014)\n> Because the structure of the project is too confusing, the project will stop updating until major errors are discovered. Reset the project when [Insinuate](https://github.com/InsinuateProjects/Insinuate) completes development and testing.\n***\n### About\nSupport multiple scripting languages, use scripts to change Minecraft!\n\n>At present, the project is still unfinished and cannot be used.\n***\n### Build\nIn the project root directory:\n```\n./gradle shadowJar\n  or\n./gradle\n```\n***\n### Developer\n> Maven usage\n```\n<repositories>\n    <repository>\n        <id>roselle-repo</id>\n        <url>http://repo.iroselle.com/snapshots/</url>\n    </repository>\n</repositories>\n\n<dependencies>\n    <dependency>\n        <groupId>me.scoretwo</groupId>\n        <artifactId>FastScript</artifactId>\n        <version>1.0.1-SNAPSHOT</version>\n        <scope>provided</scope>\n    </dependency>\n</dependencies>\n```\n> Gradle\n```\nrepositories {\n    maven {url 'http://repo.iroselle.com/snapshots/'}\n}\ndependencies {\n    implementation 'me.scoretwo:FastScript:1.0.1-SNAPSHOT'\n}\n```\n> Gradle Kotlin DSL\n```\nrepositories {\n    maven(\"http://repo.iroselle.com/snapshots/\")\n}\ndependencies {\n    implementation(\"me.scoretwo:FastScript-common:1.0.1-SNAPSHOT\")\n}\n```\n\n### Links\n\n[<img src=\"http://mc3.roselle.vip:602/icons/github.svg\" width=\"64\" height=\"64\"/>](https://github.com/Score2/FastScript) 　\n[<img src=\"http://mc3.roselle.vip:602/icons/wiki.svg\" width=\"64\" height=\"64\"/>](https://github.com/Score2/FastScript/wiki) 　\n[<img src=\"http://mc3.roselle.vip:602/icons/discord.svg\" width=\"64\" height=\"64\"/>](https://discord.gg/GVM6vx9)\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/77624313?v=4",
+  "id": "FastScriptModule/FastScript",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "FastScript",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/FastScriptModule/FastScript",
+  "stars": 9,
+  "summary": "Support multiple scripting languages, use scripts to change Minecraft!",
+  "targets": [
+    "nkx",
+    "nkmot",
+    "pnx"
+  ],
+  "updated_at": 1626243288,
+  "versions": [
+    {
+      "changelog": "* 修复了 js 在某些特殊环境下无法正常载入.\r\n* 修复了文件监听器的错误.\r\n\r\n### 在出现重大错误前, V1版本将会处于停止更新的状态, 请期待 FastScript 2.0.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FastScript-1.1.5-SNAPSHOT.jar",
+          "primary": true,
+          "size": 3204436,
+          "url": "https://github.com/FastScriptModule/FastScript/releases/download/1.1.5-SNAPSHOT/FastScript-1.1.5-SNAPSHOT.jar"
+        }
+      ],
+      "name": "SNAPSHOT 1.1.5",
+      "prerelease": false,
+      "published_at": 1626243288,
+      "version": "1.1.5-SNAPSHOT"
+    },
+    {
+      "changelog": "* 兼容 Java16 下的 JavaScript, 将会在未来提供从 PlaceholderAPI 的 JavaScript 迁入 FastScript 的方案.\r\n* 将会兼容未来的 Bukkit 1.17.\r\n* 修复已知问题.\r\n\r\n在报告重大错误前, V1版本将会处于停止更新的状态, 请期待 FastScript 2.0.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FastScript-1.1.3-SNAPSHOT.jar",
+          "primary": true,
+          "size": 3200337,
+          "url": "https://github.com/FastScriptModule/FastScript/releases/download/1.1.3-SNAPSHOT/FastScript-1.1.3-SNAPSHOT.jar"
+        }
+      ],
+      "name": "SNAPSHOT 1.1.3",
+      "prerelease": false,
+      "published_at": 1623331070,
+      "version": "1.1.3-SNAPSHOT"
+    },
+    {
+      "changelog": "* 更简便的方式注册事件 `script.registerListener(<事件实例, 以各自服务端的监听类格式为准>)`\r\n* 修复 FileListener 的一些问题, 例如 `fs reload` 后自动重载会多次进行.\r\n* 添加新 script 的 Bindings, `\"meta\", HashMap<String, Any?>()` `\"plugin\", plugin.toOriginalPlugin()` 等.\r\n* 修复部分逻辑错误导致的异常.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FastScript-1.1.1-SNAPSHOT.jar",
+          "primary": true,
+          "size": 3222966,
+          "url": "https://github.com/FastScriptModule/FastScript/releases/download/1.1.1-SNAPSHOT/FastScript-1.1.1-SNAPSHOT.jar"
+        }
+      ],
+      "name": "SNAPSHOT 1.1.1",
+      "prerelease": false,
+      "published_at": 1616214298,
+      "version": "1.1.1-SNAPSHOT"
+    },
+    {
+      "changelog": "* 添加 Nukkit 服务端的支持.\r\n* 添加文件监听, 在 settings.yml 中启用 options.file-listener 后可用(即自动重载).\r\n* 修复部分细节, 提高插件稳定性.\r\n* 脚本可通过 \"脚本配置文件\" 中的 init.protected 来启用保护, 使其不会受到 reload 的影响.\r\n* 添加 zh_CN(简体中文 中国) 的语言支持.\r\n* 添加支持 1.8+ 服务端",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FastScript-1.1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 3220959,
+          "url": "https://github.com/FastScriptModule/FastScript/releases/download/1.1.0-SNAPSHOT/FastScript-1.1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "SNAPSHOT 1.1.0",
+      "prerelease": false,
+      "published_at": 1616085586,
+      "version": "1.1.0-SNAPSHOT"
+    },
+    {
+      "changelog": "* Fixed issus #1 \r\n* Fixed issus #2 ",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FastScript-1.0.4-SNAPSHOT.jar",
+          "primary": true,
+          "size": 3151175,
+          "url": "https://github.com/FastScriptModule/FastScript/releases/download/1.0.4-SNAPSHOT/FastScript-1.0.4-SNAPSHOT.jar"
+        }
+      ],
+      "name": "SNAPSHOT 1.0.4",
+      "prerelease": false,
+      "published_at": 1614784509,
+      "version": "1.0.4-SNAPSHOT"
+    },
+    {
+      "changelog": "* 修复了 FastScript 在 Mohist 上的运行错误\r\n* 修复部分语言替换错误\r\n* 优化部分体验(2021年2月26日11:52:48)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FastScript-1.0.3-SNAPSHOT.jar",
+          "primary": true,
+          "size": 3150009,
+          "url": "https://github.com/FastScriptModule/FastScript/releases/download/1.0.3-SNAPSHOT/FastScript-1.0.3-SNAPSHOT.jar"
+        }
+      ],
+      "name": "SNAPSHOT 1.0.3",
+      "prerelease": false,
+      "published_at": 1614282411,
+      "version": "1.0.3-SNAPSHOT"
+    },
+    {
+      "changelog": "* 第一个版本 | First release.\r\n* 拓展 Grooxy 下载地址: https://github.com/FastScriptModule/Expansion-Groovy/releases",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FastScript-1.0.1-SNAPSHOT.jar",
+          "primary": true,
+          "size": 3124180,
+          "url": "https://github.com/FastScriptModule/FastScript/releases/download/1.0.1-SNAPSHOT/FastScript-1.0.1-SNAPSHOT.jar"
+        }
+      ],
+      "name": "SNAPSHOT 1.0.1",
+      "prerelease": false,
+      "published_at": 1614160554,
+      "version": "1.0.1-SNAPSHOT"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.13",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/86683320?v=4",
+      "name": "GommeAWM",
+      "url": "https://github.com/GommeAWM"
+    }
+  ],
+  "categories": [],
+  "created_at": 1650005511,
+  "dependencies": [],
+  "description": "# EffectsGUI\nEffectsGU| Minecraft Bedrock Edition | Nukkit | API 1.0.13\n\n---\n\n**Description:**<br />\n\n> * You can give an effect to yourself or someone, all in the GUI (Forms).\n\n---\n\n***Features:***<br />\n:star: You can `give` an effect for someone in GUI with the `/effects` command but to give someone you need permission `reyd.effectgive`;<br />\n:star: You can `give` yourself an effect with the `/effects` command, player who don't have Permission `reyd.effectgive` can only give themselves an effect;<br />\n:star: `GUI` with `sliders` where you can `easily` give effects;<br />\n:star: `Config`;<br />\n\n---\n\n**Installation:**<br />\n:black_square_button: Place plugin's .jar file into `plugins` folder on your server;<br />\n:black_square_button: `Configure` in Config;<br />\n:black_square_button: `Launch` the server;<br />\n\n---\n\n**Usage:**<br />\n:unlock: To open EffectsGUI type `/effects` into the chat;<br />\n\n---\n\n**all Information**\n| Command | Permission | Descripton | config |\n| --- | ------|-----| -------|\n|effects| reyd.effectsgui |It allows you to give effects|Support|\n\n---\n\n**Examples**\n\n![Screenshot_324](https://user-images.githubusercontent.com/86683320/163538107-8ae1e5ee-ef65-41b3-9ba5-7bbbfd62a1f8.png)\n\n---\n\n![Screenshot_325](https://user-images.githubusercontent.com/86683320/163538119-a2b86166-194c-41bb-be55-9d24ce405996.png)\n\n---\n\n![Screenshot_326](https://user-images.githubusercontent.com/86683320/163538125-19fdbec9-0237-4d31-a757-9c6042331e17.png)\n\n---\n\n> * Link to cloudburstmc article -> [CloudburstMC](https://cloudburstmc.org/resources/effectsgui.800/)\n\n---\n\n```\nReporting bugs: If you come across a bug, please report it here or on cloudburstmc.\n```\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/86683320?v=4",
+  "id": "GommeAWM/EffectsGUI",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "EffectGUI/src/main/resources/plugin.yml",
+  "name": "EffectsGUI",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/GommeAWM/EffectsGUI",
+  "stars": 1,
+  "summary": "EffectsGU| Minecraft Bedrock Edition | Nukkit | API 1.0.13",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1650007768,
+  "versions": []
+}

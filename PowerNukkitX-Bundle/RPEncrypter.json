@@ -2,9 +2,14 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "name": "Buddelbubi",
+      "url": "https://github.com/Buddelbubi"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/50714128?v=4",
       "name": "xRookieFight",
-      "url": ""
+      "url": "https://github.com/xRookieFight"
     }
   ],
   "categories": [],
@@ -24,16 +29,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "RPEncrypterPNX",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/RPEncrypter",
   "stars": 3,
   "summary": "Resource pack encryptor for PowerNukkitX",
   "targets": [
-    "nkx",
     "pnx"
   ],
-  "updated_at": 1783680507,
+  "updated_at": 1783680556,
   "versions": [
     {
       "changelog": "Automated release for v1.0.2",
@@ -42,6 +46,7 @@
         {
           "filename": "RPEncrypter.jar",
           "primary": true,
+          "sha256": "6e31f34a204c691beae77ac0bd59ebe5fa1ead0ae4e9fd9c5f28efdc88998022",
           "size": 12972,
           "url": "https://github.com/PowerNukkitX-Bundle/RPEncrypter/releases/download/v1.0.2/RPEncrypter.jar"
         }
@@ -58,6 +63,7 @@
         {
           "filename": "RPEncrypter.jar",
           "primary": true,
+          "sha256": "f05651fa9de7b43d791881827b9f6a358759ccc7d018ab04e4246c18416e4540",
           "size": 12971,
           "url": "https://github.com/PowerNukkitX-Bundle/RPEncrypter/releases/download/v1.0.1/RPEncrypter.jar"
         }
@@ -74,6 +80,7 @@
         {
           "filename": "RPEncrypter.jar",
           "primary": true,
+          "sha256": "b9a2fd29911a61a1a9d80e86835a9cbcf7ba62400e604e0392e11371769e0a2b",
           "size": 12971,
           "url": "https://github.com/PowerNukkitX-Bundle/RPEncrypter/releases/download/latest/RPEncrypter.jar"
         }

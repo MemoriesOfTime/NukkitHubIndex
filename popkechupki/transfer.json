@@ -1,0 +1,99 @@
+{
+  "api_version": "1.0.9",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/18595225?v=4",
+      "name": "popkechupki",
+      "url": "https://github.com/popkechupki"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "name": "dependabot[bot]",
+      "url": "https://github.com/apps/dependabot"
+    }
+  ],
+  "categories": [],
+  "created_at": 1592921736,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "FormAPI",
+      "version_range": ""
+    }
+  ],
+  "description": "# transfer for Nukkit\n他のサーバーに移動できるプラグイン！！  \n## Features\n - [x] 呼出を除き全て簡単なGUIで操作（呼出は/transferまたは/stpui）\n - [x] [MCServers.JP](https://mcservers.jp/) のサーバーリストを読み込み\n - [x] 上記リストの他に手動でアドレス・ポート入力が可能\n - [x] 便利な履歴機能（5件まで保存、重複なし、削除機能あり）\n## 動作条件\nこのプラグインは以下の環境で動作を確認しています。\n### サーバーソフトウェア\n - Nukkit (API ver.: 1.0.9)\n### 依存プラグイン\n - [FormAPI](https://nukkitx.com/resources/formapi.359/) ...Formの管理はこのプラグインに依存しています。\n## LICENSE\n - GNU General Public License v3.0",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/18595225?v=4",
+  "id": "popkechupki/transfer",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/nukkit.yml",
+  "name": "transfer",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/popkechupki/transfer",
+  "stars": 1,
+  "summary": "mcservers.jpに載ってるサーバーなどに移動できる",
+  "targets": [
+    "nkx",
+    "nkmot",
+    "pnx"
+  ],
+  "updated_at": 1660051663,
+  "versions": [
+    {
+      "changelog": "## Release Note\r\n- Fix IllegalStateException error when loading server list.\r\n- There are no new features on this version.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "transfer-1.2.jar",
+          "primary": true,
+          "size": 21773,
+          "url": "https://github.com/popkechupki/transfer/releases/download/1.2.3/transfer-1.2.jar"
+        }
+      ],
+      "name": "transfer v1.2.3",
+      "prerelease": false,
+      "published_at": 1660049761,
+      "version": "1.2.3"
+    },
+    {
+      "changelog": "## Update\r\n- 1.2系最終版",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "transfer-1.2.jar",
+          "primary": true,
+          "size": 21515,
+          "url": "https://github.com/popkechupki/transfer/releases/download/1.2.2/transfer-1.2.jar"
+        }
+      ],
+      "name": "transfer v1.2.2",
+      "prerelease": false,
+      "published_at": 1593659574,
+      "version": "1.2.2"
+    },
+    {
+      "changelog": "# transfer for Nukkit\r\n他のサーバーに移動できるプラグイン！！  \r\n## Features\r\n - [x] 呼出を除き全て簡単なGUIで操作（呼出は/transferまたは/stpui）\r\n - [x] [MCServers.JP](https://mcservers.jp/) のサーバーリストを読み込み\r\n - [x] 上記リストの他に手動でアドレス・ポート入力が可能\r\n - [x] 便利な履歴機能（5件まで保存、重複なし、削除機能あり）\r\n## 動作条件\r\nこのプラグインは以下の環境で動作を確認しています。\r\n### サーバーソフトウェア\r\n - Nukkit (API ver.: 1.0.9)\r\n### 依存プラグイン\r\n - [FormAPI](https://nukkitx.com/resources/formapi.359/) ...Formの管理はこのプラグインに依存しています。\r\n## LICENSE\r\n - GNU General Public License v3.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "transfer-1.0.jar",
+          "primary": true,
+          "size": 18646,
+          "url": "https://github.com/popkechupki/transfer/releases/download/1.0.0/transfer-1.0.jar"
+        }
+      ],
+      "name": "transfer v1.0.0",
+      "prerelease": false,
+      "published_at": 1592921933,
+      "version": "1.0.0"
+    }
+  ]
+}

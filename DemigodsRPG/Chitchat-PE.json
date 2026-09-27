@@ -1,0 +1,43 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/671738?v=4",
+      "name": "HmmmQuestionMark",
+      "url": "https://github.com/HmmmQuestionMark"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/3318472?v=4",
+      "name": "TheFatDemon",
+      "url": "https://github.com/TheFatDemon"
+    }
+  ],
+  "categories": [],
+  "created_at": 1459283170,
+  "dependencies": [],
+  "description": "# Chitchat ![](http://builds.ii.dg-mg.club/job/Chitchat/badge/icon)\nThe simplest plugin for chitchat.\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/7493646?v=4",
+  "id": "DemigodsRPG/Chitchat-PE",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Chitchat-PE",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/DemigodsRPG/Chitchat-PE",
+  "stars": 0,
+  "summary": "The simplest plugin for chitchat.",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1459308014,
+  "versions": []
+}

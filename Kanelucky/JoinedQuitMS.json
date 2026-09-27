@@ -1,0 +1,72 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/216477222?v=4",
+      "name": "Kanelucky",
+      "url": "https://github.com/Kanelucky"
+    }
+  ],
+  "categories": [],
+  "created_at": 1764682650,
+  "dependencies": [],
+  "description": "# ✨ JoinedQuitMS\nA simple plugin to replace boring default join and quit messages with your custom messages.\n# ⚙️ Configuration (config.yml)\n```yaml\njoin-message: \"&a[+] &f{player}\"\nquit-message: \"&4[-] &f{player}\"\n```\n\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/216477222?v=4",
+  "id": "Kanelucky/JoinedQuitMS",
+  "license": {
+    "id": "Apache-2.0",
+    "name": "Apache License 2.0",
+    "url": "https://spdx.org/licenses/Apache-2.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "JoinedQuitMS",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/Kanelucky/JoinedQuitMS",
+  "stars": 0,
+  "summary": "Replace boring default join & quit message with your custom message",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1786717294,
+  "versions": [
+    {
+      "changelog": "**Full Changelog**: https://github.com/Kanelucky/JoinedQuitMS/commits/1.1.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "JoinedQuitMS-1.1.0.jar",
+          "primary": true,
+          "sha256": "2b6653ca43d24c4ce3bcb77b7a9717e8d239fdc5ac292b0040c2952f9984ab0b",
+          "size": 5702,
+          "url": "https://github.com/Kanelucky/JoinedQuitMS/releases/download/1.1.0/JoinedQuitMS-1.1.0.jar"
+        }
+      ],
+      "name": "1.1.0",
+      "prerelease": false,
+      "published_at": 1786717294,
+      "version": "1.1.0"
+    },
+    {
+      "changelog": "first release.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "JoinedQuitMS-1.0.0.jar",
+          "primary": true,
+          "sha256": "b5a8a735704bab8db01efbb684b41460a40da08dd497526ec8f5ed0e211c84db",
+          "size": 5595,
+          "url": "https://github.com/Kanelucky/JoinedQuitMS/releases/download/v1.0.0/JoinedQuitMS-1.0.0.jar"
+        }
+      ],
+      "name": "v1.0.0",
+      "prerelease": false,
+      "published_at": 1764682712,
+      "version": "v1.0.0"
+    }
+  ]
+}

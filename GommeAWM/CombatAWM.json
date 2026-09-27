@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.14",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/86683320?v=4",
+      "name": "GommeAWM",
+      "url": "https://github.com/GommeAWM"
+    }
+  ],
+  "categories": [],
+  "created_at": 1671480867,
+  "dependencies": [],
+  "description": "# CombatAWM\nCombatAWM | Minecraft Bedrock Edition | Nukkit\n\n***Features:***<br />\n:star: When a player is in combat, he cannot leave the game or he will die;<br />\n:star: You can see how long battle mode lasts (BossBar);<br />\n:star: You can edit messages;<br />\n\n---\n\n**Installation:**<br />\n:black_square_button: Place plugin's .jar file into `plugins` folder on your server;<br />\n:black_square_button: Configure in Config;<br />\n:black_square_button: Launch the server;<br />\n\n---\n\n**Usage:**<br />\n:unlock: Just attack player<br />\n\n---\n\n**Examples**\n\n---\n\n![Screenshot_161](https://user-images.githubusercontent.com/86683320/208513743-1cea155c-3818-4d61-8388-d41d82fa9cd2.png)\n\n---\n\n---\n\n> * Link to cloudburstmc article -> [CloudburstMC](https://www.cloudburstmc.org/resources/combatawm.871/) | Link to our discord group -> [SupportAWM](https://discord.gg/mAZ9YMV3)\n\n---\n\n\n```\nReporting bugs: If you come across a bug, please report it here or on cloudburstmc or join our discord https://discord.gg/mAZ9YMV3.\n```\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/86683320?v=4",
+  "id": "GommeAWM/CombatAWM",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "CombatAWM",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/GommeAWM/CombatAWM",
+  "stars": 1,
+  "summary": "Plugin Combat | Minecraft Bedrock Edition | API 1.0.14 | Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1671887319,
+  "versions": []
+}

@@ -2,9 +2,19 @@
   "api_version": "1.0.11",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "LT_Name",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "name": "dependabot[bot]",
+      "url": "https://github.com/apps/dependabot"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/99377251?v=4",
+      "name": "lthuas",
+      "url": "https://github.com/lthuas"
     }
   ],
   "categories": [
@@ -39,15 +49,31 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "AutoResourceChest",
-  "primary_target": "nkx",
+  "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/lt-name/AutoResourceChest",
   "stars": 0,
   "summary": "",
   "targets": [
-    "nkx",
     "nkmot"
   ],
-  "updated_at": 1781274138,
-  "versions": []
+  "updated_at": 1781274066,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoResourceChest-0.4.5-SNAPSHOT.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/AutoResourceChest/job/master/60/artifact/target/AutoResourceChest-0.4.5-SNAPSHOT.jar"
+        }
+      ],
+      "name": "0.4.5-SNAPSHOT",
+      "prerelease": true,
+      "published_at": 1781274077,
+      "version": "ci-60"
+    }
+  ]
 }

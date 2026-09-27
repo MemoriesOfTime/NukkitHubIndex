@@ -1,6 +1,12 @@
 {
   "api_version": "1.0.11",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/83235042?v=4",
+      "name": "SoBadFish",
+      "url": "https://github.com/SoBadFish"
+    }
+  ],
   "categories": [],
   "created_at": 1750058421,
   "dependencies": [],
@@ -52,6 +58,23 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1780903371,
-  "versions": []
+  "updated_at": 1780903367,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ChessGame_v1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/ChessGame/9/artifact/target/ChessGame_v1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "v1.0-SNAPSHOT",
+      "prerelease": true,
+      "published_at": 1750211680,
+      "version": "ci-9"
+    }
+  ]
 }

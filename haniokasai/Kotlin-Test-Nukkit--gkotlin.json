@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/12643554?v=4",
+      "name": "haniokasai",
+      "url": "https://github.com/haniokasai"
+    }
+  ],
+  "categories": [],
+  "created_at": 1485611990,
+  "dependencies": [],
+  "description": "# Kotlin-Test-Nukkit\nExample Nukkit Plugin written in Kotlin\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/12643554?v=4",
+  "id": "haniokasai/Kotlin-Test-Nukkit--gkotlin",
+  "license": {
+    "id": "Unlicense",
+    "name": "The Unlicense",
+    "url": "https://spdx.org/licenses/Unlicense.html"
+  },
+  "links": null,
+  "manifest_path": "gkotlin/src/main/resources/plugin.yml",
+  "name": "TutorialPlugin",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/haniokasai/Kotlin-Test-Nukkit",
+  "stars": 0,
+  "summary": "Example Nukkit Plugin written in Kotlin",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1485626638,
+  "versions": []
+}

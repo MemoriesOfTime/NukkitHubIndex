@@ -1,11 +1,22 @@
 {
   "api_version": "1.0.11",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
+      "name": "SmallasWater",
+      "url": "https://github.com/SmallasWater"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
+    }
+  ],
   "categories": [],
   "created_at": 1629606739,
   "dependencies": [],
-  "description": "",
-  "detection_confidence": "high",
+  "description": "# InvSee\n查看并编辑玩家背包~\n",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
@@ -24,8 +35,26 @@
   "stars": 1,
   "summary": "查看并编辑玩家背包~",
   "targets": [
-    "nkx"
+    "nkx",
+    "nkmot"
   ],
-  "updated_at": 1651796113,
-  "versions": []
+  "updated_at": 1635927506,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "InvSee_v1.0.5.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/InvSee/4/artifact/target/InvSee_v1.0.5.jar"
+        }
+      ],
+      "name": "v1.0.5",
+      "prerelease": true,
+      "published_at": 1635927515,
+      "version": "ci-4"
+    }
+  ]
 }

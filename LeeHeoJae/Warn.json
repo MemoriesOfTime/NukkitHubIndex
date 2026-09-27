@@ -1,0 +1,55 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/22636395?v=4",
+      "name": "LeeHeoJae",
+      "url": "https://github.com/LeeHeoJae"
+    }
+  ],
+  "categories": [],
+  "created_at": 1480165196,
+  "dependencies": [],
+  "description": "# Warn\nWarn plugin for nukkit\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/22636395?v=4",
+  "id": "LeeHeoJae/Warn",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Warn",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/LeeHeoJae/Warn",
+  "stars": 0,
+  "summary": "Warn plugin for nukkit",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1534342419,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Warn-1.1.0.jar",
+          "primary": true,
+          "size": 6011,
+          "url": "https://github.com/LeeHeoJae/Warn/releases/download/1.1.0/Warn-1.1.0.jar"
+        }
+      ],
+      "name": "Warn v1.1.0",
+      "prerelease": false,
+      "published_at": 1524568031,
+      "version": "1.1.0"
+    }
+  ]
+}

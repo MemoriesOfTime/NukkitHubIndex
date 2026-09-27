@@ -2,14 +2,19 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "Angga7togk",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "name": "Buddelbubi",
+      "url": "https://github.com/Buddelbubi"
     },
     {
-      "avatar_url": "",
-      "name": "Buddelbubi",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/90005225?v=4",
+      "name": "angga7togk",
+      "url": "https://github.com/angga7togk"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/54219265?v=4",
+      "name": "tunikakeks",
+      "url": "https://github.com/tunikakeks"
     }
   ],
   "categories": [
@@ -31,16 +36,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "PlaceholderAPI",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/PlaceholderAPI",
   "stars": 1,
   "summary": "PlaceholderAPI",
   "targets": [
-    "nkx",
     "pnx"
   ],
-  "updated_at": 1786347812,
+  "updated_at": 1786347803,
   "versions": [
     {
       "changelog": "Automated release for v1.2.4",
@@ -49,6 +53,7 @@
         {
           "filename": "PlaceholderAPI.jar",
           "primary": true,
+          "sha256": "7f2d96c6970c77346dd28e7c1d4be891d9190819d4ef030eb65b03781b97bf2f",
           "size": 11020,
           "url": "https://github.com/PowerNukkitX-Bundle/PlaceholderAPI/releases/download/v1.2.4/PlaceholderAPI.jar"
         }
@@ -65,6 +70,7 @@
         {
           "filename": "PlaceholderAPI.jar",
           "primary": true,
+          "sha256": "eec53212dd9395c0efdcfcca5426240e3b956aae7abfb95c43040f264a9fe129",
           "size": 10989,
           "url": "https://github.com/PowerNukkitX-Bundle/PlaceholderAPI/releases/download/v1.2.3/PlaceholderAPI.jar"
         }
@@ -81,6 +87,7 @@
         {
           "filename": "PlaceholderAPI.jar",
           "primary": true,
+          "sha256": "02ecfa9643a23e7e7d0800dc9c02273e1752e778924a0b96941f011dcf128ba9",
           "size": 10925,
           "url": "https://github.com/PowerNukkitX-Bundle/PlaceholderAPI/releases/download/v1.2.2/PlaceholderAPI.jar"
         }
@@ -97,6 +104,7 @@
         {
           "filename": "PlaceholderAPI-1.2.1.jar",
           "primary": true,
+          "sha256": "bbc067a07eda14754cffd72be38ba6f555a03e39cb1dba043cbd5e6a96a34002",
           "size": 10631,
           "url": "https://github.com/PowerNukkitX-Bundle/PlaceholderAPI/releases/download/1.2.1/PlaceholderAPI-1.2.1.jar"
         }
@@ -113,6 +121,7 @@
         {
           "filename": "PlaceholderAPI-1.2.0.jar",
           "primary": true,
+          "sha256": "52601336d0b1d090541291ce7f4ba8663bf2aa02d69ae608ed91af6cce200a53",
           "size": 10548,
           "url": "https://github.com/PowerNukkitX-Bundle/PlaceholderAPI/releases/download/1.2.0/PlaceholderAPI-1.2.0.jar"
         }
@@ -129,6 +138,7 @@
         {
           "filename": "placeholderapi-1.1.0.jar",
           "primary": true,
+          "sha256": "ec2560fd2a7b7fbfe98f6f7df0240b63031b801923ad56ddb8eabf3152d700e5",
           "size": 9824,
           "url": "https://github.com/PowerNukkitX-Bundle/PlaceholderAPI/releases/download/1.1.0/placeholderapi-1.1.0.jar"
         }
@@ -145,6 +155,7 @@
         {
           "filename": "placeholderapi-1.0.0.jar",
           "primary": true,
+          "sha256": "762dd06852c8c4799a1ff3f7a4641828e54b11de10c2a685f5e46a6da8158cb0",
           "size": 9785,
           "url": "https://github.com/PowerNukkitX-Bundle/PlaceholderAPI/releases/download/1.0.0/placeholderapi-1.0.0.jar"
         }

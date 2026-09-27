@@ -1,0 +1,418 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/110071800?v=4",
+      "name": "hutuyee",
+      "url": "https://github.com/hutuyee"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "name": "github-actions[bot]",
+      "url": "https://github.com/apps/github-actions"
+    }
+  ],
+  "categories": [],
+  "created_at": 1785130120,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "LuckPerms",
+      "version_range": ""
+    }
+  ],
+  "description": "# ShitBot\n\n连接 Minecraft 服务器与 QQ 群的 OneBot v11 插件，提供账号绑定、群服互通、在线状态图片、背包查询、TPS 查询、受控的 QQ 快捷命令，以及可选的高级图片模板系统。\n\n支持 Spigot/Paper/Folia、BungeeCord、Velocity 和 Nukkit-MOT。OneBot 实现可以使用 [LuckyLilliaBot](https://github.com/LLOneBot/LuckyLilliaBot) 或其他兼容 OneBot v11 正向 WebSocket 的实现。\n\n> [!Warning]\n> \n> 请勿在 LLBot 群内讨论本插件的使用问题。\n> \n> 本插件由AI辅助完成，如有缺陷可提出\n> \n\n## 下载\n\n从 [GitHub Releases](https://github.com/hutuyee/ShitBot/releases) 下载当前平台的 JAR：\n\n| 运行平台 | 下载文件 | 放置目录 | Java |\n| --- | --- | --- | --- |\n| Spigot、Paper、Folia、CatServer 等 Bukkit 服务端 | `ShitBotSpigot-*.jar` | `plugins/` | 8+ |\n| BungeeCord | `ShitBotBungee-*.jar` | `plugins/` | 8+ |\n| Velocity | `ShitBotVelocity-*.jar` | `plugins/` | 21+ |\n| Nukkit-MOT | `ShitBotNukkit-*.jar` | `plugins/` | 17+ |\n\n只安装与你的平台匹配的 JAR，不要将多个平台版本放进同一个实例。某个 Release 没有对应平台 JAR 时，表示该版本没有发布该平台构建，不能用其他平台 JAR 代替。表中的 Java 是插件字节码要求，实际运行时还必须满足服务端核心自身的 Java 要求。\n\n默认图片模式不需要安装 `ShitBotRenderer`。只有明确开启 `custom-image-templates.enabled` 后，插件才会按当前版本从同一个官方 Release 下载、校验并缓存这个可选组件；不要把它手工放进 `plugins/`。\n\n## 安装\n\n1. 停止服务器或代理。\n2. 将对应平台的 JAR 放入 `plugins/`。\n3. 启动一次，让 ShitBot 生成 `config.yml`、`commands.yml`、`lang/` 语言文件和 `templates/default.yml` 图片模板。\n4. 停止实例并修改配置。\n5. 再次启动，然后执行 `/shitbot status` 检查数据库和 OneBot 连接状态。\n\n不要使用插件管理器热加载或热卸载 ShitBot。修改配置、语言文件或图片模板时使用 `/shitbot reload`，升级 JAR 后正常重启服务器或代理。\n\n## 最小配置\n\n在插件数据目录的 `config.yml` 中填写 OneBot 地址、Token 和允许使用的 QQ 群：\n\n```yaml\nonebot:\n  enabled: true\n  websocket-url: \"ws://127.0.0.1:3001\"\n  access-token: \"\"\n  allow-all-groups: false\n  allowed-group-ids:\n    - 123456789\n```\n\nShitBot 使用 OneBot v11 正向 WebSocket，由插件主动连接 OneBot。跨主机连接应使用 `wss://`。\n\n界面语言由 `config.yml` 顶层的 `language` 选择。内置 `zh_CN` 和 `en_US`；扩展其他语言时，复制 `lang/zh_CN.yml` 或 `lang/en_US.yml`，翻译并改名，再填写不带 `.yml` 的文件名：\n\n```yaml\nlanguage: \"en_US\"\n```\n\n如需开启群服互通，再修改：\n\n```yaml\nforwarding:\n  game-to-group:\n    enabled: true\n    require-prefix: true\n    prefix: \"#qq \"\n  group-to-game:\n    enabled: true\n    require-prefix: true\n    prefix: \"#mc \"\n    media-mode: \"browser\"\n```\n\n从 `config-version: 1` 升级时，ShitBot 会在首次加载时自动把旧 `config.yml` 中的 `messages`、通知文本、内置指令别名/用法和图片标题写入 `lang/zh_CN.yml`。旧配置文件不会被重写；确认迁移结果后，可以自行删除其中已经废弃的文本项。\n\n在线列表和背包图片的外观由 `templates/*.yml` 控制。复制 `templates/default.yml` 为新文件（例如 `ocean.yml`），修改布局、字号、圆角和颜色后，在 `config.yml` 中分别选择：\n\n```yaml\nimage:\n  template: \"ocean\"\ninventory:\n  template: \"ocean\"\n```\n\n模板名不带 `.yml`；未写出的字段会回退到 `default.yml`。\n\n需要自由图层、条件/循环、PAPI、可视化编辑器或第三方插件渲染 API 时，再启用独立的 `image-templates/` 高级系统。两种模式的选择和按需下载规则见[图片渲染与高级模板](https://github.com/hutuyee/ShitBot/blob/main/docs/image-templates.md)。\n\n配置完成后执行：\n\n```text\n/shitbot reload\n```\n\n## 选择部署方式\n\n| 场景 | 安装方式 | 数据库 |\n| --- | --- | --- |\n| 单个 Bukkit 服务端 | 只安装 Spigot 版，保持 `deployment.role: \"standalone\"` | SQLite 或 MySQL |\n| BungeeCord/Velocity 群组服 | 在代理安装对应代理版 | 推荐 MySQL |\n| 代理接收 QQ 命令并在子服执行 | 代理安装对应版本，每个目标子服安装 Spigot 版并设为 `deployment.role: \"backend\"` | 必须共用 MySQL |\n| Nukkit-MOT 单服 | 只安装 Nukkit 版 | SQLite 或 MySQL |\n\n代理与后端模式还需要配置 `commands.yml` 中的 `backend-transport`。不要让多个插件实例同时使用同一个 SQLite 文件。\n\n## 常用命令\n\n| 命令 | 功能 | 权限 |\n| --- | --- | --- |\n| `/shitbot status` | 查看数据库、OneBot 和插件运行状态 | 无 |\n| `/shitbot reload` | 重载配置、语言文件、图片模板和运行实例 | `shitbot.admin` |\n| `/shitbot update` | 下载并校验当前平台的新版本，替换后等待手动重启 | `shitbot.admin` |\n| `/shitbot image` | 生成一次在线状态图片 | `shitbot.admin` |\n| `/shitbot editor` | 生成高级图片模板编辑器的一次性登录地址 | `shitbot.admin` |\n| `/shitbot whitelist` | 添加、删除、查询绑定和无 QQ 白名单 | `shitbot.admin` |\n| `/shitbot migrate easybot [EasyBot.db]` | 导入 EasyBot 绑定数据 | `shitbot.admin` |\n\nSpigot 和 Nukkit-MOT 默认仅 OP 拥有 `shitbot.admin`。BungeeCord 与 Velocity 同样检查该权限。\n\n## QQ 群内使用\n\n默认指令和前缀：\n\n| 输入位置 | 示例 | 功能 |\n| --- | --- | --- |\n| QQ 群 | `绑定 Steve ABC123` | 绑定游戏账号 |\n| QQ 群 | `服务器状态` | 获取在线状态图片 |\n| QQ 群 | `背包` 或 `背包 Steve` | 查询自己绑定角色的背包 |\n| QQ 群 | `TPS` | 查询服务器 TPS |\n| QQ 群 | `lp编辑` | 执行配置的快捷命令 |\n| Minecraft | `#qq 内容` | 将游戏消息转发到 QQ 群 |\n| QQ 群 | `#mc 内容` | 将群消息转发到游戏 |\n\n面向用户的别名和文本在所选 `lang/*.yml` 中修改；开关在 `config.yml` 中修改，权限、目标子服和快捷命令执行内容在 `commands.yml` 中修改。\n\n## 文档\n\n[在线文档中心](https://hutuyee.github.io/docs/)提供 ShitBot、BiliMusicBridge、AllMusic QQMusic 与 Kugou 的统一导航和搜索；[ShitBot 在线手册](https://hutuyee.github.io/docs/shitbot/)与本仓库文档同步维护。\n\n- [安装与部署](https://github.com/hutuyee/ShitBot/blob/main/docs/installation.md)\n- [配置说明](https://github.com/hutuyee/ShitBot/blob/main/docs/configuration.md)\n- [命令与权限](https://github.com/hutuyee/ShitBot/blob/main/docs/commands.md)\n- [代理与后端子服](https://github.com/hutuyee/ShitBot/blob/main/docs/proxy-backend.md)\n- [数据库与数据迁移](https://github.com/hutuyee/ShitBot/blob/main/docs/database.md)\n- [背包查询与材质配置](https://github.com/hutuyee/ShitBot/blob/main/docs/inventory.md)\n- [图片渲染与高级模板](https://github.com/hutuyee/ShitBot/blob/main/docs/image-templates.md)\n- [自己的底图与像素坐标文字](https://github.com/hutuyee/ShitBot/blob/main/docs/pixel-templates.md)\n- [PlaceholderAPI 变量](https://github.com/hutuyee/ShitBot/blob/main/docs/placeholders.md)\n- [服务器启动提醒](https://github.com/hutuyee/ShitBot/blob/main/docs/startup-notices.md)\n- [常见问题](https://github.com/hutuyee/ShitBot/blob/main/docs/troubleshooting.md)\n- [平台兼容性](https://github.com/hutuyee/ShitBot/blob/main/docs/compatibility.md)\n- [升级与自动更新](https://github.com/hutuyee/ShitBot/blob/main/docs/updating.md)\n- [生产环境安全清单](https://github.com/hutuyee/ShitBot/blob/main/docs/security.md)\n- [构建与开发](https://github.com/hutuyee/ShitBot/blob/main/docs/development.md)\n- [插件 API 与白名单管理](https://github.com/hutuyee/ShitBot/blob/main/docs/api.md)\n- [全部文档](https://github.com/hutuyee/ShitBot/blob/main/docs/README.md)\n\n## 支持与反馈\n\n项目仍在开发中。遇到问题请通过 [GitHub Issues](https://github.com/hutuyee/ShitBot/issues) 反馈，并附上运行平台、服务端版本、Java 版本和相关日志。\n\nShitBot 不与 EasyBot 竞争\n\n## 统计数据\n\n- [bStats Bukkit](https://bstats.org/plugin/bukkit/ShitBot/33865)\n- [bStats BungeeCord](https://bstats.org/plugin/bungeecord/ShitBot/33866)\n- [bStats Velocity](https://bstats.org/plugin/velocity/ShitBot/33868)\n- ![bStats Bukkit](https://bstats.org/signatures/bukkit/ShitBot.svg)\n\n## License\n\n[MIT](https://github.com/hutuyee/ShitBot/blob/main/LICENSE)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/110071800?v=4",
+  "id": "hutuyee/ShitBot--shitbotnukkit",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "ShitBotNukkit/src/main/resources/plugin.yml",
+  "name": "ShitBotNukkit",
+  "primary_target": "nkmot",
+  "server_version": "",
+  "source": "https://github.com/hutuyee/ShitBot",
+  "stars": 2,
+  "summary": "ShitBot for Nukkit-MOT",
+  "targets": [
+    "nkmot"
+  ],
+  "updated_at": 1790430668,
+  "versions": [
+    {
+      "changelog": "## What's Changed\n\n- 新增高级图片模板与可视化编辑器，支持图层、条件/循环、PAPI、玩家头像及模板发布、回滚。\n- 重绘在线状态图、背包图和编辑器界面，优化单服玩家列表、代理子服分组与文字对比度。\n- 完善编辑器快捷键、撤销/重做和会话自动续期，支持在游戏内打开、复制编辑器链接。\n- 新增独立公共 API 和无 QQ 白名单管理，补全 PlaceholderAPI 变量。\n- 修复玩家名大小写造成的权限、背包查询和解绑串号问题，绑定验证码改为代理认证完成后发放。\n- 增加调试日志与本地渲染器加载，修复重载时启动通知状态丢失，优化图片渲染缓存。\n\n高级图片模板为可选功能，启用后自动下载对应版本的 ShitBotRenderer；默认图片模式无需额外安装。\n\n**Full Changelog**: [1.1.0...1.1.5](https://github.com/hutuyee/ShitBot/compare/1.1.0...1.1.5)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ShitBotApi-1.1.5.jar",
+          "primary": true,
+          "sha256": "c872a620a9df7cca380ddf59748f22a7f91cb94ed3b42fdcf10c224f52f4adff",
+          "size": 14548,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.1.5/ShitBotApi-1.1.5.jar"
+        },
+        {
+          "filename": "ShitBotBungee-1.1.5.jar",
+          "primary": true,
+          "sha256": "de500074298eecc6f148805e91b4095511eadaa0ea9d8d9a3701f68bf2e7f127",
+          "size": 899872,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.1.5/ShitBotBungee-1.1.5.jar"
+        },
+        {
+          "filename": "ShitBotNukkit-1.1.5.jar",
+          "primary": true,
+          "sha256": "278caa94e3cadb35bdb4ea9efcdb0e4ca8c7d5fd8156960722ef7f5dc963e9a7",
+          "size": 863914,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.1.5/ShitBotNukkit-1.1.5.jar"
+        },
+        {
+          "filename": "ShitBotRenderer-1.1.5.jar",
+          "primary": true,
+          "sha256": "241f730ce3c6d7015ad59ea65a10ba571f9b04b1bdcc0cd74a90f089a3a1e92c",
+          "size": 2216183,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.1.5/ShitBotRenderer-1.1.5.jar"
+        },
+        {
+          "filename": "ShitBotSpigot-1.1.5.jar",
+          "primary": true,
+          "sha256": "c1af2d50d909b5df6a1442cf7ab0d62610026a2fd300457cab63386caabd5cad",
+          "size": 971350,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.1.5/ShitBotSpigot-1.1.5.jar"
+        },
+        {
+          "filename": "ShitBotVelocity-1.1.5.jar",
+          "primary": true,
+          "sha256": "754f3643cfb1263dab94bb1086174e97928dacdd3e56d055eb6e239b2957437b",
+          "size": 805222,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.1.5/ShitBotVelocity-1.1.5.jar"
+        }
+      ],
+      "name": "ShitBot v1.1.5",
+      "prerelease": false,
+      "published_at": 1790417526,
+      "version": "1.1.5"
+    },
+    {
+      "changelog": "## What's Changed\n\nShitBot 1.1.0 是一次较大的跨平台、配置与可维护性更新。本版新增 Nukkit-MOT 支持、服务器启动群通知、可扩展语言文件和现有在线图/背包图的 YAML 主题配置，并继续加强数据库、OneBot、代理—后端通信和自动更新流程。\n\n### 新平台与部署\n\n- 新增 Nukkit-MOT 平台支持，提供独立的 `ShitBotNukkit-1.1.0.jar`。\n- 保留 Spigot/Paper/Folia、BungeeCord 和 Velocity 支持；Release 继续按平台分别提供安装包。\n- 新增可选的服务器启动 QQ 群通知，可配置目标后端和检查间隔。\n- 修正跨平台边界、关闭流程和重连竞态，降低重载、断线和服务器关闭期间出现状态错乱的概率。\n\n### 图片与语言自定义\n\n- 在线状态图和背包图新增 `templates/*.yml` 主题文件，可自定义布局、字号、圆角和颜色。\n- 支持分别为在线图和背包图选择模板；自定义模板缺少字段时回退到内置 `default.yml`。\n- 新增独立的 `lang/*.yml` 语言文件，内置 `zh_CN` 和 `en_US`，管理员可以复制后扩展其他语言。\n- 从旧配置升级时，会把旧 `config.yml` 中的语言文本、通知文本、指令别名和图片标题迁移到 `lang/zh_CN.yml`；旧配置文件不会被自动删除或重写。\n\n### bStats\n\n- Spigot、BungeeCord 和 Velocity 接入 bStats 统计。\n- 可通过配置关闭统计，统计开关会在重载后生效。\n\n### 数据库与运行稳定性\n\n- 重构 JDBC 驱动加载，使核心可以复用服务端已有驱动并按需补齐缺失驱动。\n- 改进 MySQL 连接池、连接回收、超时和异常恢复。\n- 使用服务端提供的 Gson 处理 JSON，减少重复依赖。\n- 仅内嵌并隔离必要的 WebSocket 依赖，修复重复打包以及 Velocity SLF4J 类型冲突。\n- 修复回退 JDBC 驱动加载异常。\n\n### 文档与工程维护\n\n- 重写快速上手，并拆分安装、配置、命令、数据库、代理后端、安全、故障排查、更新和开发文档。\n- 明确不同平台 JAR、Java 版本、代理/后端部署方式和升级要求。\n- PictureBridge 子模块更新到较新版本，并增加自动同步流程。\n- 增加问题反馈模板和四个平台 Release 产物检查。\n\n### 后续计划\n\n- 已在 `TODO.md` 记录无代码自定义图片模板系统：版本化 YAML 场景、可视化编辑器、插件渲染 API、PAPI 数据源、草稿/发布/回滚和安全限制。\n- 上述高级图片模板和编辑器仅为后续规划，**不包含在 1.1.0 中**；本版提供的是现有在线图与背包图的 YAML 主题自定义。\n\n### 升级注意事项\n\n- 本版配置结构已经升级。首次启动后请检查新生成或迁移的 `lang/`、`templates/` 和配置项。\n- 代理—后端部署应同时升级代理端与全部 Spigot 后端，并继续共用 MySQL。\n- Nukkit-MOT 使用独立安装包，不能与其他平台 JAR 混用。\n- Release 自动化会为四个平台上传 JAR、SHA-256 校验文件和 RSA 独立签名文件。\n- 更新完成后请正常重启服务器或代理，不建议使用插件管理器热加载。\n\n完整变更记录：https://github.com/hutuyee/ShitBot/compare/1.0.9...1.1.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ShitBotBungee-1.1.0.jar",
+          "primary": true,
+          "sha256": "589922ebe9dc40bc0052f93e3e9731e4467af1f25b57237999d682fe1297b202",
+          "size": 786139,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.1.0/ShitBotBungee-1.1.0.jar"
+        },
+        {
+          "filename": "ShitBotNukkit-1.1.0.jar",
+          "primary": true,
+          "sha256": "71bdf13bd05df08bb37d8d2f8beeee97c359cef20cb7ed0827ee79f394773040",
+          "size": 751638,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.1.0/ShitBotNukkit-1.1.0.jar"
+        },
+        {
+          "filename": "ShitBotSpigot-1.1.0.jar",
+          "primary": true,
+          "sha256": "8b0dd8eb0fc1cbf5ebd60c47861e5da01c14d365e97dde337bc71f446a6b547c",
+          "size": 845421,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.1.0/ShitBotSpigot-1.1.0.jar"
+        },
+        {
+          "filename": "ShitBotVelocity-1.1.0.jar",
+          "primary": true,
+          "sha256": "796d099c1804cdd2f68b0ef0ab439d281bc32da0f0716e52ddeb984a38385fb1",
+          "size": 694179,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.1.0/ShitBotVelocity-1.1.0.jar"
+        }
+      ],
+      "name": "ShitBot v1.1.0",
+      "prerelease": false,
+      "published_at": 1788608637,
+      "version": "1.1.0"
+    },
+    {
+      "changelog": "## What's Changed\r\n\r\n本次更新主要完善 QQ 快捷命令的控制台日志捕获与隐私过滤，同时强化插件更新、代理—后端通信、OneBot 和数据库连接的安全性。\r\n> [!WARNING]\r\n> 记得新加载config\r\n\r\n### 控制台命令日志捕获\r\n\r\n- 快捷命令现在直接以只读方式监听服务器的 `logs/latest.log`：\r\n  - 执行命令前记录日志位置；\r\n  - 等待 `capture-seconds` 指定的时间；\r\n  - 回传这段时间内所有插件追加的新日志；\r\n  - 支持捕获 LuckPerms 等插件异步线程产生的输出；\r\n  - 不再依赖插件名称或命令注册来源判断是否抓取日志。\r\n- 日志读取不会修改、清空或重写服务器原有的 `latest.log`。\r\n- 自动移除 ANSI 颜色与格式控制符，修复 LuckPerms 编辑器链接等日志中可能出现的乱码。\r\n- 如果命令成功但没有产生新日志，会返回明确提示，而不是发送空消息。\r\n- 单次回传最多保留 100 行、4000 个字符，避免大量日志刷屏。\r\n\r\n### 日志隐私保护\r\n\r\n回传给 QQ 的日志副本现在会自动进行隐私过滤：\r\n\r\n- 丢弃玩家聊天消息；\r\n- 丢弃玩家加入、退出、连接和断开日志；\r\n- 丢弃玩家执行命令的日志；\r\n- 丢弃类似 `[玩家: Set own game mode to Creative Mode]` 的命令反馈日志；\r\n- 将请求绑定玩家及当前在线玩家的名称替换为 `<player>`；\r\n- 将玩家 UUID 替换为 `<uuid>`；\r\n- 将 IPv4 和 IPv6 地址替换为 `<ip>`；\r\n- 脱敏 Bearer Token、Authorization、password、secret、token 和数据库连接地址等敏感内容。\r\n\r\n这些过滤只作用于回传内容，不会修改服务器中的原始日志文件。\r\n\r\n### 插件更新安全\r\n\r\n- `/shitbot update` 现在除了 SHA-256 和 JAR 内容检查，还必须验证独立 RSA 签名。\r\n- 更新验证公钥已经内置到 ShitBotCore，并会被打包进 Spigot、BungeeCord 和 Velocity 插件。\r\n- 服主不需要下载或配置公钥。\r\n- Release 缺少 `.sig` 文件、签名不匹配、JAR 平台不匹配或版本信息异常时，更新器会拒绝替换现有插件。\r\n- GitHub Release 构建流程会为三个平台的 JAR 自动生成：\r\n  - `.sha256` 校验文件；\r\n  - `.sig` 独立签名文件。\r\n- BungeeCord 向后端分发更新时，会同时传递 JAR、SHA-256 和签名元数据，由各子服独立验证后再执行替换。\r\n\r\n### 代理与后端通信安全\r\n\r\n- Console Socket 协议升级到版本 2。\r\n- 每个连接都会使用服务端随机 challenge 参与 HMAC 签名，阻止旧请求在服务器重启后被重放。\r\n- 新增 TLS 和可选双向 TLS 支持：\r\n  - 支持 PKCS12 key store；\r\n  - 支持自定义 trust store；\r\n  - 支持要求客户端证书。\r\n- 非回环地址的明文代理—后端连接现在默认拒绝。\r\n- 只有在 WireGuard、Tailscale 等外部加密隧道中并明确接受风险时，才应开启 `allow-insecure-remote-plaintext`。\r\n- 新增固定大小的连接池、等待队列、请求截止时间和连接失败熔断，避免大量请求拖垮代理或后端。\r\n- 加强请求 ID、nonce、消息长度和重复请求检查。\r\n\r\n### OneBot 连接安全与稳定性\r\n\r\n- 远程 `ws://` OneBot 连接现在默认拒绝，跨主机部署应使用 `wss://`。\r\n- 如已通过可信加密隧道传输，可显式开启 `onebot.allow-insecure-remote-websocket`。\r\n- 优化插件关闭时的 WebSocket 处理，不再无限等待 OneBot 关闭连接。\r\n- OneBot 关闭流程增加超时与强制终止兜底，降低服务器关闭卡住的概率。\r\n- 隔离控制台任务和 OneBot 任务，避免日志抓取或网络任务相互阻塞。\r\n\r\n### 数据库与绑定安全\r\n\r\n- 远程 MySQL 连接现在默认要求 TLS，推荐使用：\r\n\r\n  ```text\r\n  sslMode=VERIFY_IDENTITY\r\n\r\n- 如确实需要远程明文 MySQL，必须显式开启 allow-insecure-remote-mysql。\r\n- 默认关闭 allowPublicKeyRetrieval，降低认证信息暴露风险。\r\n- MySQL 数据库迁移新增 GET_LOCK 数据库级锁，避免代理和多个后端同时启动时并发执行 DDL。\r\n- 数据库迁移锁等待时间受 JDBC 超时限制，不会无限阻塞启动。\r\n- 只有数据库列定义确实不符合目标结构时才执行修复性 ALTER TABLE。\r\n- 加强数据库初始化、事务处理和异常恢复。\r\n- 调整绑定验证码防爆破机制：\r\n  - 总尝试次数默认提高到 30；\r\n  - 达到总上限后进入短暂冷却，不再立即销毁验证码；\r\n  - 新增 binding.total-attempt-cooldown-seconds；\r\n  - 实际总尝试上限至少为单 QQ 尝试上限的 4 倍，减少恶意用户提前耗尽他人验证码的可能。\r\n\r\n### PictureBridge\r\n- ShitBot 仓库中的 PictureBridge 子模块已更新到最新版本。\r\n- 子模块明确跟踪 PictureBridge 的 main 分支。\r\n- 新增自动同步 workflow：PictureBridge 出现新提交后，ShitBot 会定期更新子模块引用。\r\n- PictureBridge 仍然是独立的纯客户端模组，不会被合并进服务端插件 JAR。\r\n\r\n### 升级注意事项\r\n- Console Socket 协议已经升级，使用代理—后端模式时，请同时升级代理端和所有 Spigot 后端。\r\n- 跨机器使用明文 Console Socket、远程 ws:// OneBot 或未启用 TLS 的远程 MySQL，在本版本中会默认拒绝连接。\r\n- 同机 127.0.0.1 / ::1 通信不受远程明文限制影响。\r\n- 新版本更新器要求 Release 同时包含对应 JAR 的 .sha256 和 .sig 文件。\r\n- 更新完成后仍需手动重启服务器或代理，不建议使用插件热重载。\r\n\r\n完整变更记录： https://github.com/hutuyee/ShitBot/compare/1.0.8...1.0.9\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ShitBotBungee-1.0.9.jar",
+          "primary": true,
+          "sha256": "1c48e7a5bce13d399e149b171327605a686119a5309bc212c339c48c8868f38e",
+          "size": 19623050,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.0.9/ShitBotBungee-1.0.9.jar"
+        },
+        {
+          "filename": "ShitBotSpigot-1.0.9.jar",
+          "primary": true,
+          "sha256": "3f2c5712c5aab687d01b0f876361e16a67e47ae94a183d8be44a8388f71ea244",
+          "size": 19688114,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.0.9/ShitBotSpigot-1.0.9.jar"
+        },
+        {
+          "filename": "ShitBotVelocity-1.0.9.jar",
+          "primary": true,
+          "sha256": "16f6eaec5ccf9ce80588a5194dddd96017b6fe6596980695fdbab9d8254147f7",
+          "size": 19940632,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.0.9/ShitBotVelocity-1.0.9.jar"
+        }
+      ],
+      "name": "ShitBot v1.0.9",
+      "prerelease": false,
+      "published_at": 1787830696,
+      "version": "1.0.9"
+    },
+    {
+      "changelog": "## What's Changed\n\n### 自动更新\n\n- 插件加载后异步检查 GitHub Release，网络访问不会阻塞服务器主线程；仅在版本信息变化时更新本地缓存。\n- 管理员上线时提示可用的新版本及 Release 链接。\n- `/shitbot update` 支持下载对应平台 JAR、校验 SHA-256 与 JAR 内容、备份现有文件并安全替换，完成后提示手动重启，不执行热重载。\n- BungeeCord 更新时会通过已认证的 Console Socket 同步更新配置的 Bukkit 子服，并分别返回更新结果。\n- Release 现在同时发布各平台 JAR 和独立的 `.jar.sha256` 校验文件。\n\n### QQ 快捷命令\n\n- `lp` / `luckperms` 快捷命令会先核对命令确实归 LuckPerms 注册，再抓取五秒内的控制台日志，因此可以返回异步生成的编辑器链接。\n- 代理到子服的日志捕获设置会随已认证请求传递；旧版 `commands.yml` 中的 `lp editor` 无需新增字段也能自动识别。\n\n### 稳定性与安全性\n\n- 强化代理与子服之间的认证、回包来源校验、超时取消和命令输出隔离。\n- 限制数据库、背包快照、头像处理和远程命令相关队列及缓存，避免异常流量造成无界资源占用。\n- 改进运行时重载和 Console Listener 重载的失败回退，旧运行实例会在新实例初始化成功前继续保留。\n\n> 代理与 Bukkit 子服部署需要一起更新到 1.0.8，并在文件替换完成后手动重启各端。",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ShitBotBungee-1.0.8.jar",
+          "primary": true,
+          "sha256": "29378dc6f9d57c3e259731315eca6307522d2f2ec489a7f7662ffd584357ccc2",
+          "size": 19606270,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.0.8/ShitBotBungee-1.0.8.jar"
+        },
+        {
+          "filename": "ShitBotSpigot-1.0.8.jar",
+          "primary": true,
+          "sha256": "73aa2a5aad8889f8fbede9d2e1aaf1a795c7428b3a41095758ea3db25fbebe69",
+          "size": 19671562,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.0.8/ShitBotSpigot-1.0.8.jar"
+        },
+        {
+          "filename": "ShitBotVelocity-1.0.8.jar",
+          "primary": true,
+          "sha256": "67ffdfa313a2a78a4b4bfe65562442aeccdd079bed34f41b03dd4c1ebc1a91b9",
+          "size": 19919984,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.0.8/ShitBotVelocity-1.0.8.jar"
+        }
+      ],
+      "name": "ShitBot v1.0.8",
+      "prerelease": false,
+      "published_at": 1787717180,
+      "version": "1.0.8"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ShitBotBungee-1.0.7.jar",
+          "primary": true,
+          "sha256": "ce4c62cd69e8a08522e01756fefb9e27fbe0308e095a91620c5286a60a8dd9f4",
+          "size": 19477404,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.0.7/ShitBotBungee-1.0.7.jar"
+        },
+        {
+          "filename": "ShitBotSpigot-1.0.7.jar",
+          "primary": true,
+          "sha256": "6bfe6214355c1061077c2a2ccb90ceed35c4d332e83e759ee1807a0aa798cb49",
+          "size": 19516423,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.0.7/ShitBotSpigot-1.0.7.jar"
+        },
+        {
+          "filename": "ShitBotVelocity-1.0.7.jar",
+          "primary": true,
+          "sha256": "57d6fe4b3891bebccc48e83528262b7d88942a466e9a91deeddc3390ef54edbe",
+          "size": 19814735,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.0.7/ShitBotVelocity-1.0.7.jar"
+        }
+      ],
+      "name": "ShitBot v1.0.7",
+      "prerelease": false,
+      "published_at": 1786864181,
+      "version": "1.0.7"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ShitBotBungee-1.0.5.jar",
+          "primary": true,
+          "sha256": "74d4534eb298d2c359a63dc3b4a85adeda35a9cba3562838031dba783672fb2a",
+          "size": 19477404,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.0.6/ShitBotBungee-1.0.5.jar"
+        },
+        {
+          "filename": "ShitBotSpigot-1.0.5.jar",
+          "primary": true,
+          "sha256": "2be6a80678ac7209b240a95befa2e1f5055ce9566a3936a53150b18644cc1aa2",
+          "size": 19503716,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.0.6/ShitBotSpigot-1.0.5.jar"
+        },
+        {
+          "filename": "ShitBotVelocity-1.0.5.jar",
+          "primary": true,
+          "sha256": "57807036a5d59bb4a4a88ce742b30d48b128c4cdb955cfb3179e6cf75458aeb4",
+          "size": 19814735,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.0.6/ShitBotVelocity-1.0.5.jar"
+        }
+      ],
+      "name": "ShitBot v1.0.6",
+      "prerelease": false,
+      "published_at": 1786683614,
+      "version": "1.0.6"
+    },
+    {
+      "changelog": "[fix: 背包查询](https://github.com/hutuyee/ShitBot/commit/493d994c74af29451227506dcaf61e5a64b6719a)\r\n[feat: 背包查询](https://github.com/hutuyee/ShitBot/commit/277eb3c49fe33996884b27debc4a2eaa76e5dd83)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ShitBotBungee-1.0.5.jar",
+          "primary": true,
+          "sha256": "2f5d914db5d9483f82fea774ac008ea9a167f5a62e792d5d26f60988a7d76587",
+          "size": 19472669,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.0.5/ShitBotBungee-1.0.5.jar"
+        },
+        {
+          "filename": "ShitBotSpigot-1.0.5.jar",
+          "primary": true,
+          "sha256": "d240f1ea5800ff63f04e29daf8fcf59bf9efd175a3768dd1ba903d829a49a680",
+          "size": 19498093,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.0.5/ShitBotSpigot-1.0.5.jar"
+        },
+        {
+          "filename": "ShitBotVelocity-1.0.5.jar",
+          "primary": true,
+          "sha256": "0be3e081f25e20e16fb4b892f41cb06a548d1a1b29ec568276d111ec9900f8b7",
+          "size": 19809977,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.0.5/ShitBotVelocity-1.0.5.jar"
+        }
+      ],
+      "name": "ShitBot v1.0.5",
+      "prerelease": false,
+      "published_at": 1785996368,
+      "version": "1.0.5"
+    },
+    {
+      "changelog": "- [fix: PlayerLoginListener 在 runtime 不可用时无条件拒绝登录 (fail-closed)](https://github.com/hutuyee/ShitBot/commit/fccc43f893e2a710ed88279ed77da709f32e8674)\r\n- [feat: 允许导入EasyBot多ID绑定数据](https://github.com/hutuyee/ShitBot/commit/1bb3e8556aa64a0a11495fa46e69245a59ef2178)\n\n**Full Changelog**: https://github.com/hutuyee/ShitBot/compare/1.0.2...1.0.3",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ShitBot-Bungee-1.0.3.jar",
+          "primary": true,
+          "sha256": "c30c08b235fe8297a1c64ba3027e6cf22fcdec78dda5cf50ba368fa14e231b8f",
+          "size": 19309521,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.0.3/ShitBot-Bungee-1.0.3.jar"
+        },
+        {
+          "filename": "ShitBot-Spigot-1.0.3.jar",
+          "primary": true,
+          "sha256": "bfcf352d99e0dfd09fc23a02117dbbff307758e6f3a9811c072180371fd32656",
+          "size": 19310159,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.0.3/ShitBot-Spigot-1.0.3.jar"
+        },
+        {
+          "filename": "ShitBot-Velocity-1.0.3.jar",
+          "primary": true,
+          "sha256": "0471c4d59af9860c9866f092ab6c2fc191136e9fbb89a84a2c65d8b4d61c65f9",
+          "size": 19646808,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.0.3/ShitBot-Velocity-1.0.3.jar"
+        }
+      ],
+      "name": "ShitBot 1.0.3",
+      "prerelease": false,
+      "published_at": 1785300953,
+      "version": "1.0.3"
+    },
+    {
+      "changelog": "- 添加退群解绑\n\n**Full Changelog**: https://github.com/hutuyee/ShitBot/compare/1.0.1...1.0.2",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ShitBot-Bungee-1.0.2.jar",
+          "primary": true,
+          "sha256": "9e7f754bb117ceedab146c507d044a65c18ca38add60a98a4f4aa1644d93e9fb",
+          "size": 19301119,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.0.2/ShitBot-Bungee-1.0.2.jar"
+        },
+        {
+          "filename": "ShitBot-Spigot-1.0.2.jar",
+          "primary": true,
+          "sha256": "0a699366ce7beb86632d38fa82b251f33afa50fe06077584a34f5c0fe79cfa0e",
+          "size": 19301764,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.0.2/ShitBot-Spigot-1.0.2.jar"
+        },
+        {
+          "filename": "ShitBot-Velocity-1.0.2.jar",
+          "primary": true,
+          "sha256": "9c870a56ef404dadb6356efa404a39934c26f52894b1945bfdc1b40f8cc48b80",
+          "size": 19638422,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.0.2/ShitBot-Velocity-1.0.2.jar"
+        }
+      ],
+      "name": "ShitBot 1.0.2",
+      "prerelease": false,
+      "published_at": 1785246074,
+      "version": "1.0.2"
+    },
+    {
+      "changelog": "# ShitBot v1.0.1\r\n\r\n- 增加EasyBot QQ绑定数据迁移\n\n**Full Changelog**: https://github.com/hutuyee/ShitBot/compare/1.0.0...1.0.1",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ShitBot-Bungee-1.0.1.jar",
+          "primary": true,
+          "sha256": "136af60d7c962230a4ed38b7994f3b457b3e0200f59a003452467d7400a5e0a9",
+          "size": 19290048,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.0.1/ShitBot-Bungee-1.0.1.jar"
+        },
+        {
+          "filename": "ShitBot-Spigot-1.0.1.jar",
+          "primary": true,
+          "sha256": "d6920872c4fcdc6dbca87ba29e640b46c4c11901d1752b830737bec4e1a1a814",
+          "size": 19290692,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.0.1/ShitBot-Spigot-1.0.1.jar"
+        },
+        {
+          "filename": "ShitBot-Velocity-1.0.1.jar",
+          "primary": true,
+          "sha256": "834a219d2076d8163a9360bdf708ffd4606a6f7f352365f1dc6711761f71e0da",
+          "size": 19627353,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.0.1/ShitBot-Velocity-1.0.1.jar"
+        }
+      ],
+      "name": "ShitBot 1.0.1",
+      "prerelease": false,
+      "published_at": 1785231588,
+      "version": "1.0.1"
+    },
+    {
+      "changelog": "初步完成整体框架\r\n支持QQ白名单绑定\r\n支持发送图片形式的在线人数\n\n**Full Changelog**: https://github.com/hutuyee/ShitBot/commits/1.0.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ShitBot-Bungee-1.0.0.jar",
+          "primary": true,
+          "sha256": "60f82fa9810e5a833ea20f81f069296594bde2300b46774a2565316cebec4a5e",
+          "size": 19275056,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.0.0/ShitBot-Bungee-1.0.0.jar"
+        },
+        {
+          "filename": "ShitBot-Spigot-1.0.0.jar",
+          "primary": true,
+          "sha256": "22f90592cd6239d3218002f1f7fe0955d8b901fca7d9ce8ce533ddcfc8cf86dc",
+          "size": 19275641,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.0.0/ShitBot-Spigot-1.0.0.jar"
+        },
+        {
+          "filename": "ShitBot-Velocity-1.0.0.jar",
+          "primary": true,
+          "sha256": "821bf69f562c3eabb9a06fc0af6aef4fb4b6515e4353469425355a56941638ac",
+          "size": 19614091,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.0.0/ShitBot-Velocity-1.0.0.jar"
+        }
+      ],
+      "name": "ShitBot 1.0.0",
+      "prerelease": false,
+      "published_at": 1785138034,
+      "version": "1.0.0"
+    }
+  ]
+}

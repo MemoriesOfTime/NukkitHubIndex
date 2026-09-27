@@ -1,0 +1,42 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/37897528?v=4",
+      "name": "jan-pretzer",
+      "url": "https://github.com/jan-pretzer"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/39440218?v=4",
+      "name": "justin-eckenweber",
+      "url": "https://github.com/justin-eckenweber"
+    }
+  ],
+  "categories": [],
+  "created_at": 1649410894,
+  "dependencies": [],
+  "description": "# BanSystem\n\nMany new features and code improvements!\\\nSupport for Nukkit 2.0 is available soon!\n\n> * Download the latest version here: [Download](https://cloudburstmc.org/resources/bansystem.332/download)\n> * Browse other versions of BanSystem here: [Browse](https://cloudburstmc.org/resources/bansystem.332/history)\n\n### Join our Discord: \n[![d](https://img.shields.io/discord/323953253458903040.svg)](https://discord.gg/Qcuv2f6)\n* If you have questions or problems with the plugin, write to us on Discord or Github!\n* You can get faster support on our Discord server! Just open a ticket and we will respond within a short time.\n\n---\n\n## Features\n\n* Timed bans & mutes\n* Log data of bans, mutes and warnings\n* Change reason and time of running punishments\n* Cancel punishments\n* Warning system\n* [MongoDB](https://mongodb.com) support\n* YAML support\n* MySql support\n* Everything is editable\n* API\n\n---\n\n## Installation\n\n1. [Download](https://cloudburstmc.org/resources/bansystem.332/download) the .jar file.\n2. Paste the file into your plugin folder.\n3. If you want to use MySql, you have to install [DBLib](https://cloudburstmc.org/resources/dblib.12) on your server.\n4. Start your server.\n5. And have fun using BanSystem.\n\n---\n\n## Addons\n\n* [BanSystem UI-Addon](https://cloudburstmc.org/resources/bansystem-ui-addon.468/download) - _Manage the BanSystem in a UI_\n* [BanSystem Discord-Addon](https://cloudburstmc.org/resources/bansystem-discord-addon.575/download) - _Get notifications of BanSystem in your Discord_\n* [BanSystem Duplicate Account Prevention-Addon](https://cloudburstmc.org/resources/bansystem-duplicated-account-prevention-addon.612/download) - _Get a player info and see wich duplicated accounts this player owns_\n\n---\n\n## Commands & Permissions\n\nCommand | Usage | Default Permission\n------------ | ------------- | -------------\nban |    /ban \\<Player> <ID> |    bansystem.command.ban\nbanlog    |/banlog \\<Player>    | bansystem.command.banlog\ncheckban|    /checkban \\<Player>|    bansystem.command.checkban\ncheckmute|    /checkmute \\<Player>|    bansystem.command.checkmute\nclearbanlog    |/clearbanlog \\<Player>    | bansystem.command.clearbanlog\nclearmutelog|    /clearmutelog \\<Player>|    bansystem.command.clearmutelog\nclearwarnings    |/clearwarnings \\<Player>|    bansystem.command.clearwarnings\neditban    | /editban \\<Player> reason \\<Reason> <br> /editban \\<Player> time \\<hours/days> \\<Time>|    bansystem.command.editban\neditmute    | /editmute \\<Player> reason \\<Reason> <br> /editmute \\<Player> time \\<hours/days> \\<Time>|    bansystem.command.editmute\nkick    |/kick \\<Player> \\<Reason>|    bansystem.command.kick\nmute    |/mute \\<Player> \\<ID>    |bansystem.command.mute\nmutelog    |/mutelog \\<Player>    |bansystem.command.mutelog\ntempban    |/tempban \\<Player> \\<hours/days> \\<Time>|    bansystem.command.tempban\ntempmute    |/tempmute \\<Player> \\<hours/days> \\<Time>    |bansystem.command.tempmute\nunban    |/unban \\<Player>    |bansystem.command.unban\nunmute    |/unmute \\<Player>|    bansystem.command.unmute\nwarn    |/warn \\<Player> \\<Reason>|    bansystem.command.warn\nwarnlog    |/warnlog \\<Player>    |bansystem.command.warnlog\ndeleteban    |/deleteban \\<ID>    |bansystem.command.deleteban\ndeletemute    |/deletemute \\<ID>|    bansystem.command.deletemute\ndeletewarn    |/deletewarn \\<ID>|    bansystem.command.deletewarn\nhistory    |/history \\<Player>|    bansystem.command.history\n\n**All commands are editable: Permission, Usage, Command name and Command aliases.**\n\n## Developer API\n\n---\n\nMaven\n```xml\n\n<repository>\n    <id>lldv-repo</id>\n    <url>http://system01.lldv.net:8082/artifactory/libs-snapshot</url>\n</repository>\n\n<dependency>\n    <groupId>net.llamadevelopment.bansystem</groupId>\n    <artifactId>BanSystemNK</artifactId>\n    <version>2.5.0-20201229.153344-1</version>\n</dependency>\n```\n\nAPI\n\n```java\nimport net.llamadevelopment.bansystem.BanSystem;\nimport net.llamadevelopment.bansystem.components.api.BanSystemAPI;\n\npublic class Test {\n\n    private Provider api = BanSystem.getApi().getProvider();\n\n    public void test() {\n        this.api.getBan(\"testuser\", ban -> {\n            System.out.println(\"Player is banned for: \" + ban.getReason());\n        });\n\n        this.api.unbanPlayer(\"testuser\", \"byME\");\n    }\n\n}\n```\n\nEvents\n\n```java\nimport cn.nukkit.event.EventHandler;\nimport cn.nukkit.event.Listener;\nimport net.llamadevelopment.bansystem.components.event.PlayerBanEvent;\nimport net.llamadevelopment.bansystem.components.event.PlayerUnbanEvent;\n\npublic class Test implements Listener {\n\n    @EventHandler\n    public void on(PlayerBanEvent event) {\n        System.out.println(\"Player \" + event.getBan().getPlayer() + \" was banned for \" + event.getBan().getReason() + \"!\");\n    }\n\n    @EventHandler\n    public void on(PlayerUnbanEvent event) {\n        System.out.println(\"Player \" + event.getTarget() + \" was unbanned by \" + event.getExecutor() + \"!\");\n    }\n\n}\n```\n\n---\n\n## Screenshots\n\n![Alt Text](https://cloudburstmc.org/attachments/bansystem_1-png.1814/)\n![Alt Text](https://cloudburstmc.org/attachments/bansystem_2-png.1815/)\n![Alt Text](https://cloudburstmc.org/attachments/bansystem_3-png.1816/)\n![Alt Text](https://cloudburstmc.org/attachments/bansystem_4-png.1817/)\n\n---\n\n\n## Thanks to ZAP-Hosting!\nThis project wouldn't be possible without the help of ZAP-Hosting!\n***\n### ZAP-Hosting\nZap-Hosting is a VPS, Rootserver, (Lifetime) Gameserver, Domain & TeamSpeak 3/5 hosting company. They offer **good quality** servers **at a low price**. This project was also tested on a ZAP-Hosting Server. So if you need a **cheap** vps/gameserver/rootserver/teamspeak3/etc. hoster, ZAP-Hosting is the best choice.\n\nGet your own **Server** today here: [Click me](https://zap-hosting.com/lldv)\n\n### Special offer\nUse the code `proxma-20` for a 20% discount\n***\n\n![YourKit](https://www.yourkit.com/images/yklogo.png)\n------\nYourKit supports open source projects with innovative and intelligent tools for monitoring and profiling Java and .NET applications. YourKit is the creator of [YourKit Java Profiler](https://www.yourkit.com/java/profiler/),\n[YourKit .NET Profiler](https://www.yourkit.com/.net/profiler/\")\nand [YourKit YouMonitor](https://www.yourkit.com/youmonitor/)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/86683320?v=4",
+  "id": "GommeAWM/BanSystem",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "BanSystemNK",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/GommeAWM/BanSystem",
+  "stars": 0,
+  "summary": "An advanced punishment tool",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1624123590,
+  "versions": []
+}

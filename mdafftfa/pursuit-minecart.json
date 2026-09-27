@@ -2,9 +2,9 @@
   "api_version": "2.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/239018447?v=4",
       "name": "mdafftfa",
-      "url": ""
+      "url": "https://github.com/mdafftfa"
     }
   ],
   "categories": [],
@@ -24,15 +24,14 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "PursuitMinecart",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/mdafftfa/pursuit-minecart",
   "stars": 1,
   "summary": "A Minecraft Bedrock Server (PowerNukkitX) plugin that a Minecart can pursue nearest entity selected using AHP, TOPSIS, and A* pathfinding",
   "targets": [
-    "nkx",
     "pnx"
   ],
-  "updated_at": 1783923823,
+  "updated_at": 1781855064,
   "versions": []
 }

@@ -1,6 +1,22 @@
 {
   "api_version": "1.0.9",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
+      "name": "SmallasWater",
+      "url": "https://github.com/SmallasWater"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/48203962?v=4",
+      "name": "Mcayear",
+      "url": "https://github.com/Mcayear"
+    }
+  ],
   "categories": [
     "library"
   ],
@@ -27,15 +43,31 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "EasySQLX",
-  "primary_target": "nkx",
+  "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/MemoriesOfTime/EasySQLX",
   "stars": 2,
   "summary": "",
   "targets": [
-    "nkx",
     "nkmot"
   ],
-  "updated_at": 1788669692,
-  "versions": []
+  "updated_at": 1780834144,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "A_EasySQLX_v4.0.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/EasySQLX/9/artifact/target/A_EasySQLX_v4.0.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "A_EasySQLX_v4.0.0-SNAPSHOT",
+      "prerelease": true,
+      "published_at": 1780834161,
+      "version": "ci-9"
+    }
+  ]
 }

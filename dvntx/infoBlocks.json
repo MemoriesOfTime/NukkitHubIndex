@@ -1,0 +1,55 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/121702180?v=4",
+      "name": "dvntx",
+      "url": "https://github.com/dvntx"
+    }
+  ],
+  "categories": [],
+  "created_at": 1789401667,
+  "dependencies": [],
+  "description": "# infoBlocks\n\n📦 InfoBlock\n\n (PowerNukkitX Plugin)\nInfoBlock is a lightweight and efficient plugin designed for PowerNukkitX servers that tracks and maintains a detailed history of blocks throughout your world, recording exactly who interacted with them, what action was performed, and when. \nIt is an essential tool for server administrators and moderators to quickly investigate griefing, theft, or block changes directly in-game.  \n\n✨ Key Features\n\n 🔍 Interactive Inspector Mode: Toggles an inspection mode that allows staff to view the history of any block or container with a simple left or right click.  \n \n📝 Background Event Tracking: Logs essential world actions automatically in real time:\n Block placements.  \n Block breaking.  \n Container openings (chests, furnaces, barrels, etc.).  \n \n📅 Detailed History Logs: Displays formatted entries in chat showing timestamp, player name, action performed, and block name.  \n \n💾 Persistent Disk Storage: Built-in ⁠HistoryManager⁠ saves and loads data safely with configurable periodic auto-saving.  \n \n🛡️ Clean Session Handling: Clears inspection states automatically upon player disconnect to prevent stuck modes.  \n\n🎮 Commands & Permissions\n \nCommand: ⁠/infoblock⁠ (Aliases: ⁠/infoblocks⁠, ⁠/ib⁠)  \n\nPermission: ⁠infoblock.use⁠ (Required to run the command and use the inspector mode)  \n\n⚙️ Configuration (⁠config.yml⁠)\n\nThe plugin features a flexible config file to adjust limits and behavior:\n\n ⁠max-history-per-block⁠: Maximum history entries retained per block position.  \n\n ⁠autosave-minutes⁠: Interval in minutes for auto-saving history to disk.  \n\n ⁠max-lines-shown⁠: Maximum number of recent history lines displayed in chat per inspection.  \n\n ⁠log-container-opens⁠: Enable or disable logging when players open container inventories.\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/121702180?v=4",
+  "id": "dvntx/infoBlocks",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "InfoBlock",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/dvntx/infoBlocks",
+  "stars": 0,
+  "summary": "Muestra el historial (colocado / roto / abierto) de bloques y cofres.",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1789965045,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "InfoBlock.jar",
+          "primary": true,
+          "sha256": "3d1f1f2cc276fccdccf68a409dd91b15faab15747361d74dd5b5da8b24eed2a2",
+          "size": 12761,
+          "url": "https://github.com/dvntx/infoBlocks/releases/download/a/InfoBlock.jar"
+        }
+      ],
+      "name": "InfoBlocks 1.0.0",
+      "prerelease": false,
+      "published_at": 1789964834,
+      "version": "a"
+    }
+  ]
+}

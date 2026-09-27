@@ -1,0 +1,65 @@
+{
+  "api_version": "1.0.9",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/57228397?v=4",
+      "name": "HmmHmmmm",
+      "url": "https://github.com/HmmHmmmm"
+    }
+  ],
+  "categories": [],
+  "created_at": 1582107405,
+  "dependencies": [],
+  "description": "![icon](https://raw.githubusercontent.com/HmmHmmmm/MailPluginNukkit/master/images/1.0/PicsArt_02-19-05.13.43.jpg)\n\n\n**คุณสมบัติปลั๊กอิน**<br>\n- มี gui form\n- มี report\n- เป็นปลั๊กอินส่งข้อความหาผู้เล่น (สามารถส่งข้อความแบบออฟไลน์ได้)\n- สามารถดูข้อความที่เราส่งไปว่า อ่านรึยัง?\n\n\n**วิธีใช้งาน**<br>\n- คลิปตัวอย่าง เวอร์ชั่น 1.0 [คลิก](https://youtu.be/OgWbkfY7foE)\n\n\n## ดาวโหลด\n| version  | plugin support                        | Download  zip/phar                                                 |\n| ---- | ------------------------------------ | ---------------------------------------------------------- |\n| 1.0  | nukkit api 1.0.9 mcpe 1.14 [Click here](https://github.com/NukkitX/Nukkit) | [คลิก](https://github.com/HmmHmmmm/MailPluginNukkit/releases/1.0) |\n\n\n**Config**<br>\n```\n#ชื่อผู้เล่นที่จะรับข้อความ report\nreport:\n  name: HmmHmmmm\n```\n\n\n**Command**<br>\n- /mail : เปิด gui form\n- /mail info : เครดิตผู้สร้าง\n- /mail write <ชื่อผู้เล่น> : แล้วพิมที่แชทเขียนข้อความเพื่อส่งข้อความให้ผู้เล่นคนนั้น\r\n- /mail read <ชื่อผู้ที่ส่งข้อความ> : อ่านข้อความผู้ที่ส่งมา\n- /mail read-all : อ่านข้อความผู้ที่ส่งมาทั้งหมด\n- /mail clear <ชื่อผู้ที่ส่งข้อความ> <หมายเลขข้อความ> : เพื่อลบข้อความนั้น\n- /mail clear-all : เพื่อลบข้อความของผู้ที่ส่งมาทั้งหมด\n- /mail see <ชื่อผู้เล่น> : เพื่อดูข้อความที่เราส่งไปว่าเค้าอ่านรึยัง?\n- /report : แจ้งแอดมิน\n\n\n**API**<br>\n- ดูเลขข้อความที่มีอยู่ทั้งหมด Mail.getThis().getCountMail(String playerName)\n\n\n**Install API**<br>\n\n- ก็อปไฟล์ MailPlugin.jar ในลง $HOME/lib/\n- จากนั้น ก็อปโค้ดตามล่างล่าง ลงใน pom.xml ของคุณ ของบรรทัด dependencies\n- แค่นี้ก็ ติดตั้ง api ได้ละ\n\n```xml\n<dependency>\n    <groupId>hmmhmmmm.mail</groupId>\n    <artifactId>MailPlugin</artifactId>\n    <version>1.0</version>\n    <optional>false</optional>\n    <scope>system</scope>\n    <systemPath>${basedir}/lib/MailPlugin.jar</systemPath>\n</dependency>\n```\n\n\n## LICENSE\nใบอนุญาต GPL-3.0 [license](https://github.com/HmmHmmmm/MailPluginNukkit/blob/master/LICENSE)",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-09-25",
+      "description": "",
+      "title": "icon",
+      "url": "https://raw.githubusercontent.com/HmmHmmmm/MailPluginNukkit/master/images/1.0/PicsArt_02-19-05.13.43.jpg"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/57228397?v=4",
+  "id": "HmmHmmmm/MailPluginNukkit",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/HmmHmmmm/MailPluginNukkit",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "MailPluginNukkit",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/HmmHmmmm/MailPluginNukkit",
+  "stars": 0,
+  "summary": "nukkit plugin (ปลั๊กอินส่งข้อความหากัน)",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1582121452,
+  "versions": [
+    {
+      "changelog": "![icon](https://github.com/HmmHmmmm/MailPluginNukkit/blob/master/images/1.0/PicsArt_02-19-05.13.43.jpg)\r\n\r\n\r\n**มีอะไรใหม่**<br>\r\n- 1.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "MailPlugin.jar",
+          "primary": true,
+          "size": 24033,
+          "url": "https://github.com/HmmHmmmm/MailPluginNukkit/releases/download/1.0/MailPlugin.jar"
+        }
+      ],
+      "name": "",
+      "prerelease": false,
+      "published_at": 1582107792,
+      "version": "1.0"
+    }
+  ]
+}

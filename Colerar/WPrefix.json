@@ -1,0 +1,91 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/62297254?v=4",
+      "name": "Colerar",
+      "url": "https://github.com/Colerar"
+    }
+  ],
+  "categories": [],
+  "created_at": 1584984434,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "KotlinLib",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "required",
+      "plugin_id": "EasyAPI",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "required",
+      "plugin_id": "GUI",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "required",
+      "plugin_id": "EconomyAPI",
+      "version_range": ""
+    }
+  ],
+  "description": "# WPrefix\n## 介绍\n这是一个高度自定义化的称号插件.\n## 安装\n您可在 Release 中下载打包好的 .jar 文件, 再将其放入 plugins 文件夹. 同时, 请参见 依赖 章。\n## 使用\n您可以直接输入 /wprefix gui 以打开 GUI 配置界面. \n## 依赖\n本插件依赖于:\n- [KotlinLib](https://nukkitx.com/resources/kotlinlib.48/)\n- [GUI](https://github.com/Him188/GUI)\n- [EasyAPI](https://github.com/WetABQ/EasyAPI-Nukkit)\n- [EconomyAPI](https://nukkitx.com/resources/economyapi.14/)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/62297254?v=4",
+  "id": "Colerar/WPrefix",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "WPrefix",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Colerar/WPrefix",
+  "stars": 1,
+  "summary": "A nukkit prefix plugin.",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1628404457,
+  "versions": [
+    {
+      "changelog": "Fix a bug: \r\nNametag cannot display.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "WPrefix.jar",
+          "primary": true,
+          "size": 62877,
+          "url": "https://github.com/Colerar/WPrefix/releases/download/v1.1.0/WPrefix.jar"
+        }
+      ],
+      "name": "Update to v1.1.0",
+      "prerelease": false,
+      "published_at": 1585403163,
+      "version": "v1.1.0"
+    },
+    {
+      "changelog": "First release.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "WPrefix.jar",
+          "primary": true,
+          "size": 61449,
+          "url": "https://github.com/Colerar/WPrefix/releases/download/v1.0.0/WPrefix.jar"
+        }
+      ],
+      "name": "First Release",
+      "prerelease": false,
+      "published_at": 1585027237,
+      "version": "v1.0.0"
+    }
+  ]
+}

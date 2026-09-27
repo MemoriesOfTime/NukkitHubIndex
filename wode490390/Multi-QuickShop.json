@@ -1,0 +1,71 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/25319400?v=4",
+      "name": "WetABQ",
+      "url": "https://github.com/WetABQ"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+      "name": "wode490390",
+      "url": "https://github.com/wode490390"
+    }
+  ],
+  "categories": [],
+  "created_at": 1550208925,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "Multi-EconomyAPI",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "required",
+      "plugin_id": "KotlinLib",
+      "version_range": ""
+    }
+  ],
+  "description": "# Multi-QuickShop\nMulti-QuickShop for Nukkit\n\n## How to use?\n\n- **Install plugin**\n  1. Download 'Multi-QuickShop' plugin.\n  2. Put the plugin in the \"plugins\" folder.\n  3. Restart your server.\n- **Create Shop**\n  1. Put a chest on ground\n  2. Put a sign on the chest\n  3. Use the items you want to sell and click on the chest\n  4. Enter the price.\n\n## Config:(No changes are recommended)\n```\ntitle: '&l&eQuick&6Shop &r&c» &a'\n\n```\n\n--------\n\n## Command:\n|    Command    |        Args      |          Describe              |                     Permission                     |\n|:----------------:|:--------------|:------------------------------:|:--------------------------------------------------:|\n|    mqs        |      [subcmd] [args]      |         Multi-QuickShop          |        All         |\n\n--------\n\n## API: \n```java\n//Listening event(PlayerBuyEvent,PlayerSellEvent,PlayerCreateShopEvent,PlayerRemoveShopEvent)\n@EventHandler\npublic void onPlayerBuyEvent(PlayerBuyEvent event) {\n  event.player.sendMessage(event.getShopDate()+\"\\n\"+event.getCount());\n}\n```\n\n--------\n\n### Images:\n![SHOP.jpg](https://i.loli.net/2018/09/08/5b93e3efbc115.jpg)\n\n--------\n\n### Open source:\n\n- [GitHub(QuickShop)](https://github.com/WetABQ/Nukkit-QuickShop)\n\n### Author:\n\n- [WetABQ](https://github.com/WetABQ)\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+  "id": "wode490390/Multi-QuickShop",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Multi-QuickShop",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/wode490390/Multi-QuickShop",
+  "stars": 0,
+  "summary": "QuickShop for Nukkit",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1555338112,
+  "versions": [
+    {
+      "changelog": "Initial release",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "MultiQuickShop-1.0.1.jar",
+          "primary": true,
+          "size": 61646,
+          "url": "https://github.com/wode490390/Multi-QuickShop/releases/download/1.0.1/MultiQuickShop-1.0.1.jar"
+        }
+      ],
+      "name": "Multi-QuickShop-v1.0.1",
+      "prerelease": false,
+      "published_at": 1555338112,
+      "version": "1.0.1"
+    }
+  ]
+}

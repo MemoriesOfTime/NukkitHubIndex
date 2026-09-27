@@ -2,9 +2,24 @@
   "api_version": "2.0.0",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "RedstoneCloud",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/54219265?v=4",
+      "name": "tunikakeks",
+      "url": "https://github.com/tunikakeks"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/73995049?v=4",
+      "name": "PleaseInsertNameHere",
+      "url": "https://github.com/PleaseInsertNameHere"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/213217140?v=4",
+      "name": "wan-adrian",
+      "url": "https://github.com/wan-adrian"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/38558911?v=4",
+      "name": "xxFLORII",
+      "url": "https://github.com/xxFLORII"
     }
   ],
   "categories": [
@@ -38,9 +53,10 @@
   "summary": "CloudBridge for RedstoneCloud",
   "targets": [
     "nkx",
+    "nkmot",
     "pnx"
   ],
-  "updated_at": 1774556234,
+  "updated_at": 1774556637,
   "versions": [
     {
       "changelog": "",
@@ -49,6 +65,7 @@
         {
           "filename": "cloudbridge.jar",
           "primary": true,
+          "sha256": "fd1a9dd3fabff3aa19e7f4a0b2ce743bb720eda5fbac7b08244107f88e461bf8",
           "size": 47334777,
           "url": "https://github.com/RedstoneCloud/CloudBridge/releases/download/snapshot/cloudbridge.jar"
         }

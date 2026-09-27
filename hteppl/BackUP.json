@@ -1,0 +1,65 @@
+{
+  "api_version": "1.0.13",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/34367447?v=4",
+      "name": "hteppl",
+      "url": "https://github.com/hteppl"
+    }
+  ],
+  "categories": [],
+  "created_at": 1679551823,
+  "dependencies": [],
+  "description": "# BackUP\n\n[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)\n[![jitpack](https://jitpack.io/v/hteppl/BackUP.svg)](https://jitpack.io/#hteppl/BackUP)\n\nSimple backup plugin for Nukkit Minecraft Bedrock core (and forks), that will help you to create backups with ease.\n\nPlease note, that this plugin will work only on UNIX-based OS, because of\n[**Parallel Virtual File System**](https://en.wikipedia.org/wiki/Parallel_Virtual_File_System) needed.\n\n## Libraries\n\n[**Nukkit**](https://github.com/CloudburstMC/Nukkit) is nuclear-powered server software for Minecraft: Pocket Edition\n(you can also use PowerNukkit or PowerNukkitX).\n\n## How to install\n\nYou just need to download and put `BackUP` plugin in `plugins` folder. Usually it will be\nenough. Also, you can configure some default settings in `config.yml`.\n\n### Maven\n\n```xml\n<repositories>\n    <repository>\n        <id>jitpack.io</id>\n        <url>https://jitpack.io</url>\n    </repository>\n</repositories>\n```\n\n```xml\n<dependency>\n    <groupId>com.github.hteppl</groupId>\n    <artifactId>BackUP</artifactId>\n    <version>1.0.0-SNAPSHOT</version>\n</dependency>\n```\n\n### Gradle\n\n```groovy\nallprojects {\n    repositories {\n        maven { url 'https://jitpack.io' }\n    }\n}\n```\n\n```groovy\ndependencies {\n    implementation 'com.github.hteppl:BackUP:1.0.0-SNAPSHOT'\n}\n```\n\n## Configuration\n\nDefault plugin `config.yml` settings.\n\n```yaml\n# backups frequency time in days\nfrequency: 2\n# compression level 0-9\ncompression: 9\n# default backups folder (near plugins, worlds, etc.)\npath: \"backups\"\n# log compressed files names in console\nlog: false\n```",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/34367447?v=4",
+  "id": "hteppl/BackUP",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/hteppl/DataManager",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "BackUP",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/hteppl/BackUP",
+  "stars": 0,
+  "summary": "Simple backup plugin for Nukkit Minecraft Bedrock core (and forks), that will help you to create backups with ease.",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1679601325,
+  "versions": [
+    {
+      "changelog": "**Full Changelog**: https://github.com/hteppl/BackUP/commits/1.0.0-SNAPSHOT",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BackUP-1.0.0-PNX-SNAPSHOT.jar",
+          "primary": true,
+          "size": 9166,
+          "url": "https://github.com/hteppl/BackUP/releases/download/1.0.0-SNAPSHOT/BackUP-1.0.0-PNX-SNAPSHOT.jar"
+        },
+        {
+          "filename": "BackUP-1.0.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 9188,
+          "url": "https://github.com/hteppl/BackUP/releases/download/1.0.0-SNAPSHOT/BackUP-1.0.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "1.0.0-SNAPSHOT",
+      "prerelease": false,
+      "published_at": 1679601325,
+      "version": "1.0.0-SNAPSHOT"
+    }
+  ]
+}

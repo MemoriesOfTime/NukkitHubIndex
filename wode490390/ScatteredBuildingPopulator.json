@@ -1,0 +1,90 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+      "name": "wode490390",
+      "url": "https://github.com/wode490390"
+    }
+  ],
+  "categories": [],
+  "created_at": 1579782148,
+  "dependencies": [],
+  "description": "# Scattered Building Populator\n[![](https://i.loli.net/2020/01/23/XalOf5wK61tPvCc.png)](https://www.mcbbs.net/thread-945451-1-1.html \"零散建筑物生成器\")\n\nThe ScatteredBuildingPopulator plugin for Nukkit.\n\nThis plugin is used to generate non-template building in overworld.\n\nPlease see [mcbbs](https://www.mcbbs.net/thread-945451-1-1.html) for more information.\n## Features\n- [X] Desert Pyramid\n  - [X] Loots\n- [X] Jungle Pyramid\n  - [X] Loots\n- [X] Swamp Hut\n\n###### If I have any grammar and terms error, please correct my wrong :)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+  "id": "wode490390/ScatteredBuildingPopulator",
+  "license": {
+    "id": "NOASSERTION",
+    "name": "Other",
+    "url": "https://github.com/wode490390/ScatteredBuildingPopulator/blob/master/LICENSE"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "http://wode490390.cn/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "ScatteredBuildingPopulator",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/wode490390/ScatteredBuildingPopulator",
+  "stars": 7,
+  "summary": "Scattered building populator plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1581126657,
+  "versions": [
+    {
+      "changelog": "Fixed NASE",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeScatteredBuildingPopulator-1.0.2.jar",
+          "primary": true,
+          "size": 47961,
+          "url": "https://github.com/wode490390/ScatteredBuildingPopulator/releases/download/1.0.2/wodeScatteredBuildingPopulator-1.0.2.jar"
+        }
+      ],
+      "name": "ScatteredBuildingPopulator-v1.0.2",
+      "prerelease": false,
+      "published_at": 1581126657,
+      "version": "1.0.2"
+    },
+    {
+      "changelog": "Generate structures asynchronously",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeScatteredBuildingPopulator-1.0.1.jar",
+          "primary": true,
+          "size": 45586,
+          "url": "https://github.com/wode490390/ScatteredBuildingPopulator/releases/download/1.0.1/wodeScatteredBuildingPopulator-1.0.1.jar"
+        }
+      ],
+      "name": "ScatteredBuildingPopulator-v1.0.1",
+      "prerelease": false,
+      "published_at": 1580124882,
+      "version": "1.0.1"
+    },
+    {
+      "changelog": "Initial release",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeScatteredBuildingPopulator-1.0.0.jar",
+          "primary": true,
+          "size": 44722,
+          "url": "https://github.com/wode490390/ScatteredBuildingPopulator/releases/download/1.0.0/wodeScatteredBuildingPopulator-1.0.0.jar"
+        }
+      ],
+      "name": "ScatteredBuildingPopulator-v1.0.0",
+      "prerelease": false,
+      "published_at": 1579786500,
+      "version": "1.0.0"
+    }
+  ]
+}

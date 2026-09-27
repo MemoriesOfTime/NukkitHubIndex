@@ -2,9 +2,9 @@
   "api_version": "1.0.11",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "Natro",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/242151603?v=4",
+      "name": "Natro-w",
+      "url": "https://github.com/Natro-w"
     }
   ],
   "categories": [],
@@ -39,7 +39,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1781122244,
+  "updated_at": 1781122190,
   "versions": [
     {
       "changelog": "Release v1.0.1 - Chat formatting with LuckPerms",
@@ -48,6 +48,7 @@
         {
           "filename": "ChatFormatter-1.0.1.jar",
           "primary": true,
+          "sha256": "2dbb8322be765bc300d26c21227bce1907a2740c8cacaaf52cbd8cd6cb01998e",
           "size": 10297,
           "url": "https://github.com/Natro-w/ChatFormatter/releases/download/v1.0.1/ChatFormatter-1.0.1.jar"
         }

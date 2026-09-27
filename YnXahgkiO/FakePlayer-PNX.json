@@ -2,9 +2,14 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "Back",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/100467970?v=4",
+      "name": "YnXahgkiO",
+      "url": "https://github.com/YnXahgkiO"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/104681026?v=4",
+      "name": "ValresMC",
+      "url": "https://github.com/ValresMC"
     }
   ],
   "categories": [],
@@ -33,7 +38,7 @@
     "nkx",
     "pnx"
   ],
-  "updated_at": 1787144467,
+  "updated_at": 1785501083,
   "versions": [
     {
       "changelog": "Fixe playerlist & skins",
@@ -42,6 +47,7 @@
         {
           "filename": "FakePlayerPNX-1.0.0.jar",
           "primary": true,
+          "sha256": "d3751460ae843adbb89f3156021fa1ad625e7064f15c90ad478aa1a3837c0266",
           "size": 315099,
           "url": "https://github.com/YnXahgkiO/FakePlayer-PNX/releases/download/v1.0.2/FakePlayerPNX-1.0.0.jar"
         }
@@ -58,6 +64,7 @@
         {
           "filename": "FakePlayerPNX-1.0.0.jar",
           "primary": true,
+          "sha256": "530932420d3c63ebd0ddbeed352b7cf3c40a3a75517ded0e7fcb2cfc0fde6b86",
           "size": 314583,
           "url": "https://github.com/YnXahgkiO/FakePlayer-PNX/releases/download/v1.0.1/FakePlayerPNX-1.0.0.jar"
         }
@@ -74,6 +81,7 @@
         {
           "filename": "FakePlayerPNX-1.0.0.jar",
           "primary": true,
+          "sha256": "24e72ef9f4071cafec6bfa1a55500c33b4c3a1dea3e6815fb8233d076b8282c2",
           "size": 313934,
           "url": "https://github.com/YnXahgkiO/FakePlayer-PNX/releases/download/pnx-migration/FakePlayerPNX-1.0.0.jar"
         }
@@ -90,6 +98,7 @@
         {
           "filename": "FakePlayerPNX-1.0.0.jar",
           "primary": true,
+          "sha256": "33ed31b4d50b294d8f2503e2e5e8dce9d68dc82b648ee875678e3ef712346df1",
           "size": 314927,
           "url": "https://github.com/YnXahgkiO/FakePlayer-PNX/releases/download/v1.0.0/FakePlayerPNX-1.0.0.jar"
         }

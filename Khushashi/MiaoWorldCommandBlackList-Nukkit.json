@@ -1,0 +1,41 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/49273456?v=4",
+      "name": "Khushashi",
+      "url": "https://github.com/Khushashi"
+    }
+  ],
+  "categories": [],
+  "created_at": 1577851974,
+  "dependencies": [],
+  "description": "# MiaoWorldCommandBlackList\nA simple forbidden world directive plugin\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/49273456?v=4",
+  "id": "Khushashi/MiaoWorldCommandBlackList-Nukkit",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "http://bbs.i8mc.xyz",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "MiaoWorldCommandBlackList",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Khushashi/MiaoWorldCommandBlackList-Nukkit",
+  "stars": 0,
+  "summary": "更多资源访问我们的官方网站http://bbs.i8mc.xyz",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1580798444,
+  "versions": []
+}

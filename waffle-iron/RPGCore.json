@@ -1,0 +1,43 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/13712304?v=4",
+      "name": "seompark",
+      "url": "https://github.com/seompark"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/6912981?v=4",
+      "name": "waffle-iron",
+      "url": "https://github.com/waffle-iron"
+    }
+  ],
+  "categories": [],
+  "created_at": 1465923649,
+  "dependencies": [],
+  "description": "[![Stories in Ready](https://badge.waffle.io/Nukkit-RPG/RPGCore.png?label=ready&title=Ready)](https://waffle.io/Nukkit-RPG/RPGCore)\n# RPGCore\nNukkit RPG core plugin<br>\nThis is a framework of RPG for Nukkit\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/6912981?v=4",
+  "id": "waffle-iron/RPGCore",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "RPGCore",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/waffle-iron/RPGCore",
+  "stars": 4,
+  "summary": "Nukkit RPG core plugin",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1465923651,
+  "versions": []
+}

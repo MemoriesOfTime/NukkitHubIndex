@@ -1,0 +1,123 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/86530895?v=4",
+      "name": "NazarbekAld",
+      "url": "https://github.com/NazarbekAld"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/187245918?v=4",
+      "name": "NazarXeXe",
+      "url": "https://github.com/NazarXeXe"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
+    }
+  ],
+  "categories": [],
+  "created_at": 1674122833,
+  "dependencies": [],
+  "description": "\n\n\n<!-- PROJECT LOGO -->\n<br />\n<div align=\"center\">\n  <a href=\"https://github.com/NazarbekAld/SurvivalCore\">\n    <img src=\"https://raw.githubusercontent.com/NazarbekAld/SurvivalCore/master/logo.png\" alt=\"Logo\" width=\"80\" height=\"80\">\n  </a>\n\n  <h3 align=\"center\">SurvivalCore</h3>\n\n  <p align=\"center\">\n    Best LIB for your development!\n    <br />\n    <a href=\"https://github.com/NazarbekAld/SurvivalCore/issues\">Report Bug</a>\n    ·\n    <a href=\"https://github.com/NazarbekAld/SurvivalCore/issues\">Request Feature</a>\n    ·\n    <a href=\"https://github.com/NazarbekAld/SurvivalEconomy\">Economy Plugin</a>\n  </p>\n</div>\n\n<div>\n\n<div align=\"center\">\n  <img alt=\"GitHub contributors\" src=\"https://img.shields.io/github/contributors/NazarbekAld/SurvivalCore?style=for-the-badge\">\n  <img alt=\"GitHub repo size\" src=\"https://img.shields.io/github/repo-size/NazarbekAld/SurvivalCore?style=for-the-badge\">\n  <img alt=\"GitHub issues\" src=\"https://img.shields.io/github/issues-raw/NazarbekAld/SurvivalCore?style=for-the-badge\">\n  <img alt=\"GitHub all releases\" src=\"https://img.shields.io/github/downloads/NazarbekAld/SurvivalCore/total?style=for-the-badge\">\n</div>\n\n<div align=\"center\">\n  <br />\n  <a href=\"https://github.com/PowerNukkitX\" target=\"_blank\"> <img alt=\"PoweredNukkitX\", src=\"https://img.shields.io/badge/PowerNukkitX-Fast open source server framework-lightgrey?style=for-the-badge\"> <a/>\n  <br />\n  <a href=\"https://maven.apache.org/\" target=\"_blank\"><img alt=\"maven\", src=\"https://img.shields.io/badge/Maven-Dependency manager-yellow?style=for-the-badge\"> </a>\n  <br />\n  <a href=\"https://projectlombok.org/\" target=\"_blank\"> <img alt=\"lombok\", src=\"https://img.shields.io/badge/Lombok-Generating getters, setters, etc.-red?style=for-the-badge\"> <a/>\n</div>\n\n\n\n## Getting Started\n\n\n### Installation\n\n* Get [SQLite Libary](https://github.com/xerial/sqlite-jdbc) or MySql driver. Then put in to \"libs\" folder.\n* Get needed version of [SurvivalCore](https://github.com/NazarbekAld/SurvivalCore/releases) and put in to \"plugins\" folder.\n\n\n### Dependency\n\n```html\n    <repositories>\n\n        <repository>\n            <id>jitpack.io</id>\n            <url>https://jitpack.io</url>\n        </repository>\n\n    </repositories>\n\n    <dependencies>\n        <dependency>\n            <groupId>com.github.NazarbekAld</groupId>\n            <artifactId>SurvivalCore</artifactId>\n            <version>0.1.4P</version>\n        </dependency>\n    </dependencies>\n```\n\n### API hook\n```java\n    // NOTE: You may add null checks!\n    EconomyManager economyManager = getServer().getServiceManager().getProvider(EconomyManager.class).getProvider(); // Getting economy manager\n    ChatManager chatManager = getServer().getServiceManager().getProvider(ChatManager.class).getProvider(); // Getting chat manager\n```\n    \n    \n## Authors\n\n* **NazarbekAlda** - *Initial work* - [NazarbekAld](https://github.com/NazarbekAld)\n\nSee also the list of [contributors](https://github.com/NazarbekAld/SurvivalCore/contributors) who participated in this project.\n\n## License\n\nThis project is licensed under the MIT License - see the [LICENSE](https://github.com/NazarbekAld/SurvivalCore/blob/master/LICENSE) file for details\n\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-09-25",
+      "description": "",
+      "title": "Logo",
+      "url": "https://raw.githubusercontent.com/NazarbekAld/SurvivalCore/master/logo.png"
+    }
+  ],
+  "icon_url": "https://raw.githubusercontent.com/NazarbekAld/SurvivalCore/master/logo.png",
+  "id": "NazarbekAld/SurvivalCore",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "null",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "SurvivalCore",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/NazarbekAld/SurvivalCore",
+  "stars": 0,
+  "summary": "Core of my plugins",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1677000285,
+  "versions": [
+    {
+      "changelog": "BUG FIX: 0.1.4P overrides every command in the server, so I fixed it 😂",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SurvivalCore-0.1.jar",
+          "primary": true,
+          "size": 39057,
+          "url": "https://github.com/NazarbekAld/SurvivalCore/releases/download/0.1.45/SurvivalCore-0.1.jar"
+        }
+      ],
+      "name": "0.1.45",
+      "prerelease": false,
+      "published_at": 1675331176,
+      "version": "0.1.45"
+    },
+    {
+      "changelog": "**PATCH**\r\nSometimes makes empty command that need to override.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SurvivalCore-0.1.jar",
+          "primary": true,
+          "size": 38964,
+          "url": "https://github.com/NazarbekAld/SurvivalCore/releases/download/0.1.4P/SurvivalCore-0.1.jar"
+        }
+      ],
+      "name": "0.1.4P",
+      "prerelease": false,
+      "published_at": 1675094219,
+      "version": "0.1.4P"
+    },
+    {
+      "changelog": "\r\n**ADDED**\r\n📜MySQL support\r\n🛠EzCommands",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SurvivalCore-0.1.jar",
+          "primary": true,
+          "size": 38460,
+          "url": "https://github.com/NazarbekAld/SurvivalCore/releases/download/0.1.4/SurvivalCore-0.1.jar"
+        }
+      ],
+      "name": "0.1.4",
+      "prerelease": false,
+      "published_at": 1674894643,
+      "version": "0.1.4"
+    },
+    {
+      "changelog": "\r\n**ADDED**\r\n📜 Chat API\r\n💰 Economy API",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SurvivalCore-0.1.3.jar",
+          "primary": true,
+          "size": 27097,
+          "url": "https://github.com/NazarbekAld/SurvivalCore/releases/download/0.1.3/SurvivalCore-0.1.3.jar"
+        }
+      ],
+      "name": " 🔌 1st realase",
+      "prerelease": true,
+      "published_at": 1674334511,
+      "version": "0.1.3"
+    }
+  ]
+}

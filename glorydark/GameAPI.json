@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
       "name": "glorydark",
-      "url": ""
+      "url": "https://github.com/glorydark"
     }
   ],
   "categories": [],
@@ -49,6 +49,23 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1789828093,
-  "versions": []
+  "updated_at": 1789828089,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "GameAPI-1.9.3.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/GameAPI/68/artifact/target/GameAPI-1.9.3.jar"
+        }
+      ],
+      "name": "1.9.3",
+      "prerelease": true,
+      "published_at": 1786098685,
+      "version": "ci-68"
+    }
+  ]
 }

@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/73650825?v=4",
+      "name": "nicugnm",
+      "url": "https://github.com/nicugnm"
+    }
+  ],
+  "categories": [],
+  "created_at": 1475859865,
+  "dependencies": [],
+  "description": "# SynapseFixInventory\nWith this plugin,you can fix PlayerBreakEvent for server if you use SynapseAPI and Nemisys\n\nMy first plugin to Nukkit. :)\n\nIs finished and work :)\n\n**CircleCI Build Status + DOWNLOAD .jar** [![CircleCI](https://circleci.com/gh/NycuRO/SynapseFixInventory.svg?style=svg)](https://circleci.com/gh/NycuRO/SynapseFixInventory)\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/73650825?v=4",
+  "id": "nicugnm/SynapseFixInventory",
+  "license": {
+    "id": "Apache-2.0",
+    "name": "Apache License 2.0",
+    "url": "https://spdx.org/licenses/Apache-2.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "SynapseFixInventory",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/nicugnm/SynapseFixInventory",
+  "stars": 0,
+  "summary": "Fix EntityBreakEvent for SynapseAPI",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1478885350,
+  "versions": []
+}

@@ -1,0 +1,250 @@
+{
+  "api_version": "1.0.9",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+      "name": "wode490390",
+      "url": "https://github.com/wode490390"
+    }
+  ],
+  "categories": [],
+  "created_at": 1547946683,
+  "dependencies": [],
+  "description": "# Anti X-Ray for Nukkit\n[![Nukkit](https://img.shields.io/badge/Nukkit-1.0-green)](https://github.com/NukkitX/Nukkit)\n[![Build](https://img.shields.io/circleci/build/github/wode490390/AntiXray/master)](https://circleci.com/gh/wode490390/AntiXray/tree/master)\n[![Release](https://img.shields.io/github/v/release/wode490390/AntiXray)](https://github.com/wode490390/AntiXray/releases)\n[![Release date](https://img.shields.io/github/release-date/wode490390/AntiXray)](https://github.com/wode490390/AntiXray/releases)\n<!--[![MCBBS](https://img.shields.io/badge/-mcbbs-inactive)](https://www.mcbbs.net/thread-838490-1-1.html \"假矿\")\n[![Servers](https://img.shields.io/bstats/servers/5123)](https://bstats.org/plugin/bukkit/AntiXray/5123)\n[![Players](https://img.shields.io/bstats/players/5123)](https://bstats.org/plugin/bukkit/AntiXray/5123)-->\n\nThis plugin is used to counter X-RAY Client add-ons.\n\nIt modifies data that are sent to clients to hide blocks.\n\nIt does not manipulate blocks in the level file, thus is safe to use.\n\n[![](https://i.loli.net/2019/01/27/5c4d21504445e.png)](# \"Texture Pack\")\n\n[![](https://i.loli.net/2019/08/14/2Wm3haAxELGOB15.png)](# \"Toolbox\")\n\nIf you found any bugs or have any suggestions, please open an issue on [GitHub](https://github.com/wode490390/AntiXray/issues).\n\nIf you like this plugin, please star it on [GitHub](https://github.com/wode490390/AntiXray).\n\n## Download\n- [Releases](https://github.com/wode490390/AntiXray/releases)\n- [Snapshots](https://circleci.com/gh/wode490390/AntiXray)\n\n## Configurations\n\n<details>\n<summary>config.yml</summary>\n\n```yaml\n# The smaller the value, the higher the performance (1~16)\nscan-chunk-height-limit: 4\n# Save a serialized copy of the chunk in memory for faster sending\nmemory-cache: false\n# Set this to false to use hidden mode\nobfuscator-mode: true\n# The fake block is used to replace ores in different dimensions (hidden mode only)\noverworld-fake-block: 1\nnether-fake-block: 87\n# Worlds that need to be protected\nprotect-worlds:\n  - \"world\"\n# Blocks that need to be hidden\nores:\n  - 14\n  - 15\n  - 16\n  - 21\n  - 56\n  - 73\n  - 74\n  - 129\n  - 153\n# Such as transparent blocks and non-full blocks\nfilters:\n  - 0\n  - 6\n  - 8\n  - 9\n  - 10\n  - 11\n  - 18\n  - 20\n  - 26\n  - 27\n  - 28\n  - 29\n  - 30\n  - 31\n  - 32\n  - 33\n  - 34\n  - 37\n  - 38\n  - 39\n  - 40\n  - 44\n  - 50\n  - 51\n  - 52\n  - 53\n  - 54\n  - 55\n  - 59\n  - 60\n  - 63\n  - 64\n  - 65\n  - 66\n  - 67\n  - 68\n  - 69\n  - 70\n  - 71\n  - 72\n  - 75\n  - 76\n  - 77\n  - 78\n  - 79\n  - 81\n  - 83\n  - 85\n  - 88\n  - 90\n  - 92\n  - 93\n  - 94\n  - 95\n  - 96\n  - 101\n  - 102\n  - 104\n  - 105\n  - 106\n  - 107\n  - 108\n  - 109\n  - 111\n  - 113\n  - 114\n  - 115\n  - 116\n  - 117\n  - 118\n  - 119\n  - 120\n  - 122\n  - 126\n  - 127\n  - 128\n  - 130\n  - 131\n  - 132\n  - 134\n  - 135\n  - 136\n  - 138\n  - 139\n  - 140\n  - 141\n  - 142\n  - 143\n  - 144\n  - 145\n  - 146\n  - 147\n  - 148\n  - 149\n  - 150\n  - 151\n  - 154\n  - 156\n  - 158\n  - 160\n  - 161\n  - 163\n  - 164\n  - 165\n  - 166\n  - 167\n  - 171\n  - 175\n  - 176\n  - 177\n  - 178\n  - 180\n  - 182\n  - 183\n  - 184\n  - 185\n  - 186\n  - 187\n  - 190\n  - 191\n  - 193\n  - 194\n  - 195\n  - 196\n  - 197\n  - 198\n  - 199\n  - 200\n  - 202\n  - 203\n  - 204\n  - 205\n  - 207\n  - 208\n  - 218\n  - 230\n  - 238\n  - 239\n  - 240\n  - 241\n  - 244\n  - 250\n  - 253\n  - 254\n```\n</details>\n\n## Compiling\n1. Install [Maven](https://maven.apache.org/).\n2. Run `mvn clean package`. The compiled JAR can be found in the `target/` directory.\n\n## Metrics Collection\n\nThis plugin uses [bStats](https://github.com/wode490390/bStats-Nukkit). You can opt out using the global bStats config; see the [official website](https://bstats.org/getting-started) for more details.\n\n<!--[![Metrics](https://bstats.org/signatures/bukkit/AntiXray.svg)](https://bstats.org/plugin/bukkit/AntiXray/5123)-->\n\n###### If I have any grammar and/or term errors, please correct them :)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+  "id": "wode490390/AntiXray",
+  "license": {
+    "id": "NOASSERTION",
+    "name": "Other",
+    "url": "https://github.com/wode490390/AntiXray/blob/master/LICENSE"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "http://wode490390.cn/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "AntiXray",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/wode490390/AntiXray",
+  "stars": 20,
+  "summary": "Anti X-Ray cheat plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1606906665,
+  "versions": [
+    {
+      "changelog": "- Added support for BE 1.16.100",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeAntiXray-1.2.3.jar",
+          "primary": true,
+          "size": 25715,
+          "url": "https://github.com/wode490390/AntiXray/releases/download/1.2.3/wodeAntiXray-1.2.3.jar"
+        }
+      ],
+      "name": "AntiXray-v1.2.3",
+      "prerelease": false,
+      "published_at": 1606906665,
+      "version": "1.2.3"
+    },
+    {
+      "changelog": "- Removed disk cache (because the current algorithm is fast)\r\n- Removed whitelist\r\n- Removed useless code (LevelDB/McRegion)\r\n- `memory-cache` is disabled by default\r\n- Fixed client crash issues\r\n- Fixed #8\r\n- Re-added timings\r\n- Performance improvement",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeAntiXray-1.2.2.jar",
+          "primary": true,
+          "size": 25512,
+          "url": "https://github.com/wode490390/AntiXray/releases/download/1.2.2/wodeAntiXray-1.2.2.jar"
+        }
+      ],
+      "name": "AntiXray-v1.2.2",
+      "prerelease": false,
+      "published_at": 1589973104,
+      "version": "1.2.2"
+    },
+    {
+      "changelog": "- Convert to latest chunk format on send\r\n- Performance improvement",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeAntiXray-1.1.4.jar",
+          "primary": true,
+          "size": 105700,
+          "url": "https://github.com/wode490390/AntiXray/releases/download/1.1.4/wodeAntiXray-1.1.4.jar"
+        }
+      ],
+      "name": "AntiXray-v1.1.4",
+      "prerelease": false,
+      "published_at": 1586346758,
+      "version": "1.1.4"
+    },
+    {
+      "changelog": "Fix NPE",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeAntiXray-1.1.3.jar",
+          "primary": true,
+          "size": 102939,
+          "url": "https://github.com/wode490390/AntiXray/releases/download/1.1.3/wodeAntiXray-1.1.3.jar"
+        }
+      ],
+      "name": "AntiXray-v1.1.3",
+      "prerelease": false,
+      "published_at": 1580206622,
+      "version": "1.1.3"
+    },
+    {
+      "changelog": "- Fixed NASE\r\n- Performance improvement",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeAntiXray-1.1.2.jar",
+          "primary": true,
+          "size": 102882,
+          "url": "https://github.com/wode490390/AntiXray/releases/download/1.1.2/wodeAntiXray-1.1.2.jar"
+        }
+      ],
+      "name": "AntiXray-v1.1.2",
+      "prerelease": false,
+      "published_at": 1579685485,
+      "version": "1.1.2"
+    },
+    {
+      "changelog": "- Fixed #7\r\n- Performance improvement",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeAntiXray-1.1.1.jar",
+          "primary": true,
+          "size": 88883,
+          "url": "https://github.com/wode490390/AntiXray/releases/download/1.1.1/wodeAntiXray-1.1.1.jar"
+        }
+      ],
+      "name": "AntiXray-v1.1.1",
+      "prerelease": false,
+      "published_at": 1570629800,
+      "version": "1.1.1"
+    },
+    {
+      "changelog": "- Faster algorithm\r\n- Disk cache (using [`xxHash64`](https://github.com/OpenHFT/Zero-Allocation-Hashing))\r\n- Asynchronous processing",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeAntiXray-1.1.0.jar",
+          "primary": true,
+          "size": 89733,
+          "url": "https://github.com/wode490390/AntiXray/releases/download/1.1.0/wodeAntiXray-1.1.0.jar"
+        }
+      ],
+      "name": "AntiXray-v1.1.0",
+      "prerelease": false,
+      "published_at": 1565836559,
+      "version": "1.1.0"
+    },
+    {
+      "changelog": "- Fixed #6",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeAntiXray-1.0.9.jar",
+          "primary": true,
+          "size": 25292,
+          "url": "https://github.com/wode490390/AntiXray/releases/download/1.0.9/wodeAntiXray-1.0.9.jar"
+        }
+      ],
+      "name": "AntiXray-v1.0.9",
+      "prerelease": false,
+      "published_at": 1563990057,
+      "version": "1.0.9"
+    },
+    {
+      "changelog": "- Added support for BE 1.12",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeAntiXray-1.0.5.jar",
+          "primary": true,
+          "size": 23857,
+          "url": "https://github.com/wode490390/AntiXray/releases/download/1.0.5/wodeAntiXray-1.0.5.jar"
+        }
+      ],
+      "name": "AntiXray-v1.0.5",
+      "prerelease": false,
+      "published_at": 1563042466,
+      "version": "1.0.5"
+    },
+    {
+      "changelog": "- Fixed caches\r\n- Fixed height limit\r\n- Fixed improper data processing in `LevelDB` and `McRegion`\r\n- Optimized performance\r\n- The cache is enabled by default\r\n- The default height is reduced from 255 to 64\r\n- `Obfuscator Mode` is used by default",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeAntiXray-1.0.3.jar",
+          "primary": true,
+          "size": 23936,
+          "url": "https://github.com/wode490390/AntiXray/releases/download/1.0.3/wodeAntiXray-1.0.3.jar"
+        }
+      ],
+      "name": "AntiXray-v1.0.3",
+      "prerelease": false,
+      "published_at": 1562749563,
+      "version": "1.0.3"
+    },
+    {
+      "changelog": "- Fix NPE caused by the world loaded after plugin init",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeAntiXray-v1.0.2.jar",
+          "primary": true,
+          "size": 13085,
+          "url": "https://github.com/wode490390/AntiXray/releases/download/1.0.2/wodeAntiXray-v1.0.2.jar"
+        }
+      ],
+      "name": "AntiXray-v1.0.2",
+      "prerelease": false,
+      "published_at": 1548736296,
+      "version": "1.0.2"
+    },
+    {
+      "changelog": "- Fix NSEE (legacy issue)\r\n- Fix fake block data",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeAntiXray-v1.0.1.jar",
+          "primary": true,
+          "size": 13173,
+          "url": "https://github.com/wode490390/AntiXray/releases/download/1.0.1/wodeAntiXray-v1.0.1.jar"
+        }
+      ],
+      "name": "AntiXray-v1.0.1",
+      "prerelease": false,
+      "published_at": 1548287356,
+      "version": "1.0.1"
+    },
+    {
+      "changelog": "Initial release",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeAntiXray-v1.0.0.jar",
+          "primary": true,
+          "size": 12595,
+          "url": "https://github.com/wode490390/AntiXray/releases/download/1.0.0/wodeAntiXray-v1.0.0.jar"
+        }
+      ],
+      "name": "AntiXray-v1.0.0",
+      "prerelease": false,
+      "published_at": 1547952185,
+      "version": "1.0.0"
+    }
+  ]
+}

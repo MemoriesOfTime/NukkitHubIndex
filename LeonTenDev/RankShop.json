@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/95095051?v=4",
+      "name": "LeonTenDev",
+      "url": "https://github.com/LeonTenDev"
+    }
+  ],
+  "categories": [],
+  "created_at": 1638389026,
+  "dependencies": [],
+  "description": "# RankShop\nAn RankShop plugin for Nukkit!\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/95095051?v=4",
+  "id": "LeonTenDev/RankShop",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "RankShop",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/LeonTenDev/RankShop",
+  "stars": 0,
+  "summary": "An RankShop plugin for Nukkit!",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1638389562,
+  "versions": []
+}

@@ -1,0 +1,58 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+      "name": "wode490390",
+      "url": "https://github.com/wode490390"
+    }
+  ],
+  "categories": [],
+  "created_at": 1547016775,
+  "dependencies": [],
+  "description": "# World Reset for Nukkit\n[![Build](https://img.shields.io/circleci/build/github/wode490390/WorldReset/master)](https://circleci.com/gh/wode490390/WorldReset/tree/master)\n[![Release](https://img.shields.io/github/v/release/wode490390/WorldReset)](https://github.com/wode490390/WorldReset/releases)\n[![Release date](https://img.shields.io/github/release-date/wode490390/WorldReset)](https://github.com/wode490390/WorldReset/releases)\n[![MCBBS](https://img.shields.io/badge/-mcbbs-inactive)](https://www.mcbbs.net/thread-819930-1-1.html \"世界重置\")\n<!--[![Servers](https://img.shields.io/bstats/servers/6811)](https://bstats.org/plugin/bukkit/WorldReset/6811)\n[![Players](https://img.shields.io/bstats/players/6811)](https://bstats.org/plugin/bukkit/WorldReset/6811)-->\n\nThis plugin is used to automatically reset worlds. You can also use command to reset worlds.\n\nIf you found any bugs or have any suggestions, please open an issue on [GitHub Issues](https://github.com/wode490390/WorldReset/issues).\n\nIf you love this plugin, please star it on [GitHub](https://github.com/wode490390/WorldReset).\n\n## Download\n- [Releases](https://github.com/wode490390/WorldReset/releases)\n- [Snapshots](https://circleci.com/gh/wode490390/WorldReset)\n\n## Commands\n| Command | Alias | Permission | Description | Default |\n| - | - | - | - | - |\n| /worldreset \\<levelName\\> [keepSeed] [keepRules] | `/wr` | worldreset.command | Resets a world | OP |\n\n## Configurations\n\n### config.yml\n```yaml\nworlds:\n  # world name\n  example_world1:\n    # default is 10080 minutes (7 days)\n    period: 10080\n    keep-seed: false\n    keep-gamerule: true\n  example_world2:\n    period: 10080\n    keep-seed: false\n    keep-gamerule: true\n```\n\n## Compiling\n1. Install [Maven](https://maven.apache.org/).\n2. Run `mvn clean package`. The compiled JAR can be found in the `target/` directory.\n\n## Metrics Collection\n\nThis plugin uses [bStats](https://github.com/wode490390/bStats-Nukkit) - you can opt out using the global bStats config, see the [official website](https://bstats.org/getting-started) for more details.\n\n<!--[![Metrics](https://bstats.org/signatures/bukkit/WorldReset.svg)](https://bstats.org/plugin/bukkit/WorldReset/6811)-->\n\n###### If I have any grammar and terms error, please correct my wrong :)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+  "id": "wode490390/WorldReset",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "http://wode490390.cn/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "WorldReset",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/wode490390/WorldReset",
+  "stars": 2,
+  "summary": "World reset plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1584712409,
+  "versions": [
+    {
+      "changelog": "Code refactoring",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeWorldReset-2.0.0.jar",
+          "primary": true,
+          "size": 22890,
+          "url": "https://github.com/wode490390/WorldReset/releases/download/2.0.0/wodeWorldReset-2.0.0.jar"
+        }
+      ],
+      "name": "WorldReset-v2.0.0",
+      "prerelease": false,
+      "published_at": 1584712409,
+      "version": "2.0.0"
+    }
+  ]
+}

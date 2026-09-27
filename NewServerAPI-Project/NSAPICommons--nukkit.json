@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.9",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/16578982?v=4",
+      "name": "squeeglii",
+      "url": "https://github.com/squeeglii"
+    }
+  ],
+  "categories": [],
+  "created_at": 1610822911,
+  "dependencies": [],
+  "description": "# NSAPI Commons: Cross-platform Minecraft Util Library\n![Badge: Java](https://img.shields.io/badge/Java-8-red?style=for-the-badge)\n![Version: Commons](https://img.shields.io/badge/Version-1.0-blue?style=for-the-badge)\n\n![Supports: Spigot](https://img.shields.io/badge/Spigot-1.16.4-orange?style=for-the-badge)\n![Supports: Nukkit](https://img.shields.io/badge/Nukkit-1.0.11-darkred?style=for-the-badge)\n\nThis project contains a bunch of classes, utility methods, and constants that are used across projects that fall under the NSAPI project, written in Java 8. This library is *not* meant to be packaged withing any plugins as that would lead to duplicate code. It should remain as a standalone jar.\n\nThe project is written in a way where the majority of the code is compatible across multiple Minecraft platforms such as Nukkit and Spigot with possible additions being Sponge and Forge if required.\n\n## Components:\n - **MapRegion Data Type:** 2 corners associated with a type and properties.\n - **PointEntity Data Type:** A position associated with a type and properties.\n - **Platform Independent Log:** A very simple logging interface, translated for each platform.\n - **PosRot, Pos & Region:** Two data types that store positions.\n - **Text Utilities:** Generate a random string, pick a random string out of an array, etc.\n - **Quick Immutability:** A shortened way of making a list, or a map immutable.\n - **Event System:** A custom event system with support for *filters* on Event Managers and Listeners.",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/76582697?v=4",
+  "id": "NewServerAPI-Project/NSAPICommons--nukkit",
+  "license": {
+    "id": "BSD-3-Clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "url": "https://spdx.org/licenses/BSD-3-Clause.html"
+  },
+  "links": null,
+  "manifest_path": "Nukkit/src/main/resources/plugin.yml",
+  "name": "NSAPICommons",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/NewServerAPI-Project/NSAPICommons",
+  "stars": 0,
+  "summary": "This plugin provides common utilities throughout all NSAPI projects.",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1617663375,
+  "versions": []
+}

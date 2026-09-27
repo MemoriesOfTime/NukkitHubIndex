@@ -1,0 +1,63 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/37160059?v=4",
+      "name": "lclarkdwain",
+      "url": "https://github.com/lclarkdwain"
+    }
+  ],
+  "categories": [],
+  "created_at": 1540532898,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "WorldGuard",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "Multiverse-Core",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "Multiverse",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "Multiworld",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "My Worlds",
+      "version_range": ""
+    }
+  ],
+  "description": "# WarpPortals\nWarpPortals plugin for nukkit\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/37160059?v=4",
+  "id": "lclarkdwain/WarpPortals",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "WarpPortals",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/lclarkdwain/WarpPortals",
+  "stars": 0,
+  "summary": "WarpPortals plugin for nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1540894197,
+  "versions": []
+}

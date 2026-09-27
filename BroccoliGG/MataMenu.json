@@ -1,0 +1,42 @@
+{
+  "api_version": "1.0.8",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/16448853?v=4",
+      "name": "BeerMC",
+      "url": "https://github.com/BeerMC"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/54747177?v=4",
+      "name": "BroccoliGG",
+      "url": "https://github.com/BroccoliGG"
+    }
+  ],
+  "categories": [],
+  "created_at": 1661652802,
+  "dependencies": [],
+  "description": "# MataMenu\nA multi-functional menu plugin in container and gui for Nukkit\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/54747177?v=4",
+  "id": "BroccoliGG/MataMenu",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "MataMenu",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/BroccoliGG/MataMenu",
+  "stars": 0,
+  "summary": "A multi-functional menu plugin in container and gui for Nukkit.(in production)",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1661654148,
+  "versions": []
+}

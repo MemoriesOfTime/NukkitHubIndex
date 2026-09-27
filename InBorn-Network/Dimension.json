@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.11",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45960833?v=4",
+      "name": "C1oky",
+      "url": "https://github.com/C1oky"
+    }
+  ],
+  "categories": [],
+  "created_at": 1598610749,
+  "dependencies": [],
+  "description": "#### The compiled plugin can be found [here](https://cloudburstmc.org/resources/dimensions.443/).\n#### You can report bugs in the issues of the repository\n\n![Image alt](https://github.com/InBorn-Network/Dimension/blob/master/images/BUiScpl2OeU.jpg)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/69345524?v=4",
+  "id": "InBorn-Network/Dimension",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Dimension",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/InBorn-Network/Dimension",
+  "stars": 0,
+  "summary": "Plugin for Cloudburst Nukkit to solve Dimension-related problems in worlds",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1598665906,
+  "versions": []
+}

@@ -2,9 +2,24 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
       "name": "Buddelbubi",
-      "url": ""
+      "url": "https://github.com/Buddelbubi"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/50714128?v=4",
+      "name": "xRookieFight",
+      "url": "https://github.com/xRookieFight"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/82237910?v=4",
+      "name": "AzaleeX",
+      "url": "https://github.com/AzaleeX"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/56545793?v=4",
+      "name": "TraxTRL",
+      "url": "https://github.com/TraxTRL"
     }
   ],
   "categories": [
@@ -26,16 +41,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "AnyVersion",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/AnyVersion",
   "stars": 13,
   "summary": "Allow older clients to join your server.",
   "targets": [
-    "nkx",
     "pnx"
   ],
-  "updated_at": 1787233456,
+  "updated_at": 1789411483,
   "versions": [
     {
       "changelog": "## What's Changed\n* feat: add 1.26.44 & 1.26.45 version support by @xRookieFight in https://github.com/PowerNukkitX-Bundle/AnyVersion/pull/14\n\n\n**Full Changelog**: https://github.com/PowerNukkitX-Bundle/AnyVersion/compare/v2.8.6...v2.8.7",
@@ -44,6 +58,7 @@
         {
           "filename": "AnyVersion.jar",
           "primary": true,
+          "sha256": "ae21939aee18a1276343614dcf9fac7a4da8f5fb91c576f92e6a18fad1038467",
           "size": 469613,
           "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/v2.8.7/AnyVersion.jar"
         }
@@ -60,6 +75,7 @@
         {
           "filename": "AnyVersion.jar",
           "primary": true,
+          "sha256": "ae6e39cf51cfa30732e9c35ace31a1c2aaacee8a972b546d132d0a2e10d466c1",
           "size": 468623,
           "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/v2.8.6/AnyVersion.jar"
         }
@@ -76,6 +92,7 @@
         {
           "filename": "AnyVersion.jar",
           "primary": true,
+          "sha256": "325221fb27200696a811edf00f43edbe75143175e19a258470ddc184ccf5fe67",
           "size": 467589,
           "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/v2.8.5/AnyVersion.jar"
         }
@@ -92,6 +109,7 @@
         {
           "filename": "AnyVersion.jar",
           "primary": true,
+          "sha256": "0e57188f13b6d9919f5de68d047df1dba004a84d65eca24972633d6224bdee15",
           "size": 462551,
           "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/v2.8.4/AnyVersion.jar"
         }
@@ -108,6 +126,7 @@
         {
           "filename": "AnyVersion.jar",
           "primary": true,
+          "sha256": "6cc687c08c3ae79b48536abe1cca68e30039776a7e82680abb987c33b7fad7d8",
           "size": 458702,
           "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/v2.8.3/AnyVersion.jar"
         }
@@ -124,6 +143,7 @@
         {
           "filename": "AnyVersion.jar",
           "primary": true,
+          "sha256": "00d0e525e1c915bccbe496386c3c70d789999ad4dc7d90006bf7d69ec40f2b9b",
           "size": 456559,
           "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/2.8.2/AnyVersion.jar"
         }
@@ -140,6 +160,7 @@
         {
           "filename": "AnyVersion-2.8.1.jar",
           "primary": true,
+          "sha256": "d688ccf41923eb60e4288b1c1e23cb9f103bee61b5650386b58da2deee12752f",
           "size": 451396,
           "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/2.8.1/AnyVersion-2.8.1.jar"
         }
@@ -156,6 +177,7 @@
         {
           "filename": "AnyVersion.jar",
           "primary": true,
+          "sha256": "096b6dbadc0b856c483f003af69eeb574928b9ac76f095886581b3f839c0d357",
           "size": 455740,
           "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/2.8.0/AnyVersion.jar"
         }
@@ -172,6 +194,7 @@
         {
           "filename": "AnyVersion.jar",
           "primary": true,
+          "sha256": "ab0bc55d70e5c0b41a0458c60fb4affd6ac2a3eb5d946559dacaea4a275189a8",
           "size": 7027482,
           "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/2.7.0/AnyVersion.jar"
         }
@@ -188,6 +211,7 @@
         {
           "filename": "AnyVersion.jar",
           "primary": true,
+          "sha256": "9caf54b82c3f5852d5cfb7c083e61becb9a5e2c1d34d2bd96717876da400aad0",
           "size": 6952234,
           "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/2.6.0/AnyVersion.jar"
         }
@@ -204,6 +228,7 @@
         {
           "filename": "AnyVersion.jar",
           "primary": true,
+          "sha256": "72f14bd60b42151ac72fadb9d4f890337bbc710dab4cb31474b6369560714dad",
           "size": 6951962,
           "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/2.5.1/AnyVersion.jar"
         }
@@ -220,6 +245,7 @@
         {
           "filename": "AnyVersion.jar",
           "primary": true,
+          "sha256": "74cc324e9343a9b4261b9eef718bf6115828cad23dff59c2f52c52d53676d132",
           "size": 6863463,
           "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/2.5.0/AnyVersion.jar"
         }
@@ -236,6 +262,7 @@
         {
           "filename": "AnyVersion.jar",
           "primary": true,
+          "sha256": "2667c4d975d7fa3e7d595644c9fb37e4f5bee6b27acb942209bd1741bca103d5",
           "size": 6760516,
           "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/2.4.0/AnyVersion.jar"
         }
@@ -252,6 +279,7 @@
         {
           "filename": "AnyVersion.jar",
           "primary": true,
+          "sha256": "35235b9ab7a580a07882d3b62d05769bd05c00237c6475953538ecd478827521",
           "size": 6746753,
           "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/2.3.1/AnyVersion.jar"
         }
@@ -268,6 +296,7 @@
         {
           "filename": "AnyVersion.jar",
           "primary": true,
+          "sha256": "df919ae4ad4325fa21aed59b9e4b7d6564d657433cdfa91971be31e5394c3faf",
           "size": 6704725,
           "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/2.3.0/AnyVersion.jar"
         }
@@ -284,6 +313,7 @@
         {
           "filename": "AnyVersion.jar",
           "primary": true,
+          "sha256": "e98908ada1d8f1c3b158b78a5373e90566237ce40c0038cf380f8fd202bc2d4c",
           "size": 6620156,
           "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/2.2.0/AnyVersion.jar"
         }

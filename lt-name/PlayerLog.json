@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "LT_Name",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
     }
   ],
   "categories": [],
@@ -17,7 +17,7 @@
     }
   ],
   "description": "",
-  "detection_confidence": "high",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
@@ -36,8 +36,26 @@
   "stars": 1,
   "summary": "",
   "targets": [
-    "nkx"
+    "nkx",
+    "nkmot"
   ],
-  "updated_at": 1639571737,
-  "versions": []
+  "updated_at": 1675683259,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "PlayerLog-1.0.3.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/PlayerLog/13/artifact/target/PlayerLog-1.0.3.jar"
+        }
+      ],
+      "name": "1.0.3",
+      "prerelease": true,
+      "published_at": 1675683271,
+      "version": "ci-13"
+    }
+  ]
 }

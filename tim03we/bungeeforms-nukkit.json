@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.9",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/38113441?v=4",
+      "name": "tim03we",
+      "url": "https://github.com/tim03we"
+    }
+  ],
+  "categories": [],
+  "created_at": 1606670533,
+  "dependencies": [],
+  "description": "# BungeeForms\nSend Simple Forms and Custom Forms from Bungeecord to Nukkit. Simplify your systems and much more. \n\n## Important\nNote that the plugin must be installed on both servers. So once on the Bungeecord and Nukkit server. \n\n## Example\nPlease note that you take the package `tim03we.bungeeforms.bungee` and not the one from Nukkit.\n```java\npublic class WaterdogTest extends Plugin implements Listener {\n\n    @Override\n    public void onEnable() {\n        getProxy().getPluginManager().registerListener(this, this);\n    }\n\n    @EventHandler\n    public void on(ProxiedPlayerInteractEvent event) {\n        ProxiedPlayer proxiedPlayer = event.getProxiedPlayer();\n        if(event.getType() == InteractType.RIGHT_CLICK_AIR) {\n            if(event.getItem().getId() == 345) {\n                proxiedPlayer.sendMessage(\"Item: Compass\");\n            }\n        }\n    }\n\n    public void sendSimpleForm(ProxiedPlayer proxiedPlayer) {\n        SimpleForm.Builder form = new SimpleForm.Builder(\"My title\", \"My content\");\n        form.addButton(new ElementButton(\"Button 1\"));\n        form.addButton(new ElementButton(\"Button 2\"));\n        form.onSubmit((p, response) -> {\n            proxiedPlayer.sendMessage(\"Clicked button: \" + response);\n        });\n        form.build().send(proxiedPlayer);\n    }\n\n    public void sendCustomForm(ProxiedPlayer proxiedPlayer) {\n        CustomForm.Builder form = new CustomForm.Builder(\"My title\");\n\n        List<String> dropdownList = new ArrayList<>();\n        dropdownList.add(\"Select 1\");\n        dropdownList.add(\"Select 2\");\n\n        form.addElement(new ElementDropdown(\"Dropdown Menu\", dropdownList, 0)); // index 0\n        form.addElement(new ElementInput(\"Input Menu\", \"Input placeholder\", \"Input default text\")); // index 1\n        form.onSubmit((p, response) -> {\n            proxiedPlayer.sendMessage(\"Dropdown: \" + response.get(/* index */ 0));\n            proxiedPlayer.sendMessage(\"Input: \" + response.get(/* index */ 1));\n        });\n        form.build().send(proxiedPlayer);\n    }\n}\n```\n\n# Credits\nThis simple API for the Forms could only be done by the [@llamadevelopment](https://github.com/llamadevelopment) team.",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/38113441?v=4",
+  "id": "tim03we/bungeeforms-nukkit",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "BungeeForms",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/tim03we/bungeeforms-nukkit",
+  "stars": 0,
+  "summary": "A Cloudburst Plugin",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1608132894,
+  "versions": []
+}

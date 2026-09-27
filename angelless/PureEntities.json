@@ -1,0 +1,47 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/8337568?v=4",
+      "name": "HmHmmHm",
+      "url": "https://github.com/HmHmmHm"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/12643554?v=4",
+      "name": "haniokasai",
+      "url": "https://github.com/haniokasai"
+    }
+  ],
+  "categories": [],
+  "created_at": 1479728365,
+  "dependencies": [],
+  "description": "# PureEntities\nDevelopment: **[SW-Team](https://github.com/SW-Team)**\n\nPureEntities is a Plug-in that makes implement the entity.\nThis Plug-in provides a simple Entity AI.\n\n## How to build\n1. Extract [plugin.zip](https://github.com/SW-Team/PureEntities/archive/master.zip)\n2. Enter to the extracted folder\n3. Run `mvn install` command from shell\n4. Move the build output(PureEntities.jar) to `${NUKKIT_DIR}/plugins` folder\n\n## Notice\n#### Welcome Github issue!\nThis plug-in is in development. Therefore, It is possible to function abnormally.\n\n#### About PMMP\nPocketMine-MP Version : [PureEntities-PMMP](https://github.com/milk0417/PureEntities)  \n(However, This project was deprecated.)\n\n## Sub Module\n[EntityManager](https://github.com/SW-Team/EntityManager)  \n\n## Method list\n  * PureEntities\n    * `static BaseEntity create(int type, Position pos, Object... args)`\n    * `static BaseEntity create(String type, Position pos, Object... args)`\n  * BaseEntity\n    * `Entity getTarget()`\n    * `boolean isMovement()`\n    * `boolean isFriendly()`\n    * `boolean isWallCheck()`\n    * `void setTarget(Entity target)`\n    * `void setMovement(boolean value)`\n    * `void setFriendly(boolean value)`\n    * `void setWallCheck(boolean value)`\n  * Monster\n    * `double getDamage()`\n    * `double getMinDamage()`\n    * `double getMaxDamage()`\n    * `double getDamage(int difficulty)`\n    * `double getMinDamage(int difficulty)`\n    * `double getMaxDamage(int difficulty)`\n    * `void setDamage(double damage)`\n    * `void setDamage(double[] damage)`\n    * `void setDamage(double damage, int difficulty)`\n  * Animal, Zombie\n    * `boolean isBaby()`\n  * PigZombie, Wolf, Ocelot\n    * `boolean isAngry()`\n    * `void setAngry(int angry)`\n\n## Example\n``` java\nServer.getInstance().getDefaultLevel().getEntities().forEach((id, entity) -> {\n    entity.setWallCheck(false);\n    entity.setMovement(!entity.isMovement());\n\n    if(entity instanceof Monster){\n        Monster mob = (Monster) entity;\n\n        mob.setDamage(10);\n\n        mob.setMaxDamage(10);\n        mob.setMinDamage(10);\n    }\n});\n\nZombie zombie = (Zombie) PureEntities.create(\"Zombie\", position);\nif(zombie != null){\n    zombie.spawnToAll(); //if you don't use this method, you couldn't see this\n}\n\nEntityArrow arrow = (EntityArrow) PureEntities.create(\"Arrow\", position, player, true);\nif(arrow != null){\n    arrow.spawnToAll();\n}\n```\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/18616383?v=4",
+  "id": "angelless/PureEntities",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/SW-Team/PureEntities",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "PureEntities",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/angelless/PureEntities",
+  "stars": 0,
+  "summary": "Implement all MCPE entities",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1479726863,
+  "versions": []
+}

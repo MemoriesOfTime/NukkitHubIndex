@@ -1,0 +1,95 @@
+{
+  "api_version": "1.0.8",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+      "name": "wode490390",
+      "url": "https://github.com/wode490390"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "name": "dependabot[bot]",
+      "url": "https://github.com/apps/dependabot"
+    }
+  ],
+  "categories": [],
+  "created_at": 1558660011,
+  "dependencies": [],
+  "description": "# Lucky Block\n[![Nukkit](https://img.shields.io/badge/Nukkit-1.0-green)](https://github.com/NukkitX/Nukkit)\n[![Build](https://img.shields.io/circleci/build/github/wode490390/LuckyBlock/master)](https://circleci.com/gh/wode490390/LuckyBlock/tree/master)\n[![Release](https://img.shields.io/github/v/release/wode490390/LuckyBlock)](https://github.com/wode490390/LuckyBlock/releases)\n[![Release date](https://img.shields.io/github/release-date/wode490390/LuckyBlock)](https://github.com/wode490390/LuckyBlock/releases)\n<!--[![MCBBS](https://img.shields.io/badge/-mcbbs-inactive)](https://www.mcbbs.net/thread-868171-1-1.html \"幸运方块\")\n[![Servers](https://img.shields.io/bstats/servers/4839)](https://bstats.org/plugin/bukkit/LuckyBlock/4839)\n[![Players](https://img.shields.io/bstats/players/4839)](https://bstats.org/plugin/bukkit/LuckyBlock/4839)-->\n\nCustomizable LuckyBlock plugin for Nukkit servers\n\n![](https://i.loli.net/2019/05/24/5ce745b82a0a470870.gif)\n\nIf you found any bugs or have any suggestions, please open an issue on [GitHub Issues](https://github.com/wode490390/LuckyBlock/issues).\n\nIf you like this plugin, please star it on [GitHub](https://github.com/wode490390/LuckyBlock).\n\n## Configuration\n<details>\n<summary>config.yml</summary>\n\n```yaml\nsend-msg: true\nmsg: \"&6You are so lucky!\"\n\nsend-animation: true\nanimation-id: 3\n\nblocks:\n  # block namespaced ID or number ID\n  # see https://minecraft.gamepedia.com/Bedrock_Edition_data_values#Block_IDs\n  emerald_ore: # namespaced ID\n    -\n      # command (@p = player's name)\n      cmd: \"give @p 382 2\"\n      # probability (0-1)\n      pr: 0.0005\n    -\n      cmd: \"give @p 450 1\"\n      pr: 0.0002\n  \"95\": # number ID\n    - cmd: \"say example :)\"\n      pr: 0.00000001\n```\n</details>\n\n## Permissions\n| Permission | Description | Default |\n| - | - | - |\n| luckyblock.trigger | Allows a player to trigger the lucky block | true |\n\n## Download\n- [Releases](https://github.com/wode490390/LuckyBlock/releases)\n- [Snapshots](https://circleci.com/gh/wode490390/LuckyBlock)\n\n## Compiling\n1. Install [Maven](https://maven.apache.org/).\n2. Run `mvn clean package`. The compiled JAR can be found in the `target/` directory.\n\n## Metrics Collection\n\nThis plugin uses [bStats](https://github.com/wode490390/bStats-Nukkit). You can opt out using the global bStats config; see the [official website](https://bstats.org/getting-started) for more details.\n\n<!--[![Metrics](https://bstats.org/signatures/bukkit/LuckyBlock.svg)](https://bstats.org/plugin/bukkit/LuckyBlock/4839)-->\n\n###### If I have any grammar and/or term errors, please correct them :)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+  "id": "wode490390/LuckyBlock",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "http://wode490390.cn/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "LuckyBlock",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/wode490390/LuckyBlock",
+  "stars": 5,
+  "summary": "LuckyBlock plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1627909313,
+  "versions": [
+    {
+      "changelog": "- Allows legacy (number) ID to be used in config.yml",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeLuckyBlock-1.1.1.jar",
+          "primary": true,
+          "size": 23202,
+          "url": "https://github.com/wode490390/LuckyBlock/releases/download/1.1.1/wodeLuckyBlock-1.1.1.jar"
+        }
+      ],
+      "name": "LuckyBlock-v1.1.1",
+      "prerelease": false,
+      "published_at": 1599126203,
+      "version": "1.1.1"
+    },
+    {
+      "changelog": "- Added on-screen animation",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeLuckyBlock-1.1.0.jar",
+          "primary": true,
+          "size": 22959,
+          "url": "https://github.com/wode490390/LuckyBlock/releases/download/1.1.0/wodeLuckyBlock-1.1.0.jar"
+        }
+      ],
+      "name": "LuckyBlock-v1.1.0",
+      "prerelease": false,
+      "published_at": 1598967184,
+      "version": "1.1.0"
+    },
+    {
+      "changelog": "Initial release",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeLuckyBlock-1.0.0.jar",
+          "primary": true,
+          "size": 18538,
+          "url": "https://github.com/wode490390/LuckyBlock/releases/download/1.0.0/wodeLuckyBlock-1.0.0.jar"
+        }
+      ],
+      "name": "LuckyBlock-v1.0.0",
+      "prerelease": false,
+      "published_at": 1558667020,
+      "version": "1.0.0"
+    }
+  ]
+}

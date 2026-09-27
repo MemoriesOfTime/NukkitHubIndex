@@ -1,0 +1,76 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/22636395?v=4",
+      "name": "LeeHeoJae",
+      "url": "https://github.com/LeeHeoJae"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17352144?v=4",
+      "name": "moca127",
+      "url": "https://github.com/moca127"
+    }
+  ],
+  "categories": [],
+  "created_at": 1523191285,
+  "dependencies": [],
+  "description": "# Elevator\nElevator plugin\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/22636395?v=4",
+  "id": "LeeHeoJae/Elevator",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Elevator",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/LeeHeoJae/Elevator",
+  "stars": 0,
+  "summary": "Elevator management plugin",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1523453232,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Elevator-1.3-SNAPSHOT.jar",
+          "primary": true,
+          "size": 6515,
+          "url": "https://github.com/LeeHeoJae/Elevator/releases/download/1.3/Elevator-1.3-SNAPSHOT.jar"
+        }
+      ],
+      "name": "Elevator v1.3",
+      "prerelease": false,
+      "published_at": 1523453232,
+      "version": "1.3"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Elevator-1.1-SNAPSHOT.jar",
+          "primary": true,
+          "size": 6108,
+          "url": "https://github.com/LeeHeoJae/Elevator/releases/download/1.1/Elevator-1.1-SNAPSHOT.jar"
+        }
+      ],
+      "name": "Elevator v1.1",
+      "prerelease": false,
+      "published_at": 1523259792,
+      "version": "1.1"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/20203944?v=4",
+      "name": "solo5star",
+      "url": "https://github.com/solo5star"
+    }
+  ],
+  "categories": [],
+  "created_at": 1486304663,
+  "dependencies": [],
+  "description": "",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/24989094?v=4",
+  "id": "SOLOPlugins-Nukkit/TransferPro",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "TransferPro",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/SOLOPlugins-Nukkit/TransferPro",
+  "stars": 0,
+  "summary": "Transfer Plugin + LoadBalancer",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1486304687,
+  "versions": []
+}

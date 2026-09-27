@@ -2,9 +2,14 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "name": "dependabot[bot]",
+      "url": "https://github.com/apps/dependabot"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/50714128?v=4",
       "name": "xRookieFight",
-      "url": ""
+      "url": "https://github.com/xRookieFight"
     }
   ],
   "categories": [],
@@ -39,7 +44,7 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1784916902,
+  "updated_at": 1788789914,
   "versions": [
     {
       "changelog": "## What's Changed\r\n* build: bump org.projectlombok:lombok from 1.18.42 to 1.18.46 by @dependabot[bot] in https://github.com/xRookieFight/Reactor/pull/11\r\n* build: bump org.junit:junit-bom from 6.0.0 to 6.1.2 by @dependabot[bot] in https://github.com/xRookieFight/Reactor/pull/10\r\n* build: bump com.gradleup.shadow from 9.0.0 to 9.6.0 by @dependabot[bot] in https://github.com/xRookieFight/Reactor/pull/5\r\n* ci: bump gradle/actions from 4 to 6 by @dependabot[bot] in https://github.com/xRookieFight/Reactor/pull/3\r\n* build: bump org.jetbrains:annotations from 26.0.2 to 26.1.0 by @dependabot[bot] in https://github.com/xRookieFight/Reactor/pull/9\r\n* build: bump gradle-wrapper from 9.3.0 to 9.6.1 by @dependabot[bot] in https://github.com/xRookieFight/Reactor/pull/8\r\n* ci: bump actions/upload-artifact from 4 to 7 by @dependabot[bot] in https://github.com/xRookieFight/Reactor/pull/7\r\n* ci: bump codecov/codecov-action from 5 to 7 by @dependabot[bot] in https://github.com/xRookieFight/Reactor/pull/6\r\n* ci: bump actions/setup-java from 4 to 5 by @dependabot[bot] in https://github.com/xRookieFight/Reactor/pull/4\r\n* ci: bump actions/checkout from 4 to 7 by @dependabot[bot] in https://github.com/xRookieFight/Reactor/pull/1\r\n\r\n## New Contributors\r\n* @dependabot[bot] made their first contribution in https://github.com/xRookieFight/Reactor/pull/11\r\n\r\n**Full Changelog**: https://github.com/xRookieFight/Reactor/commits/v0.0.1",
@@ -48,6 +53,7 @@
         {
           "filename": "Reactor-1.0-SNAPSHOT.jar",
           "primary": true,
+          "sha256": "4a20a7c60ab48d7866e70138ae01b212fc4b9b29a86f9ce35411e83860d5a336",
           "size": 19470625,
           "url": "https://github.com/xRookieFight/Reactor/releases/download/v0.0.1/Reactor-1.0-SNAPSHOT.jar"
         }
@@ -64,12 +70,14 @@
         {
           "filename": "plugin-1.0-SNAPSHOT.jar",
           "primary": true,
+          "sha256": "d651e4d4a8b9d0fc80d67f03ab27c866a6f3ddd5f9e2e966ba9f19ec5fa73a7a",
           "size": 76405,
           "url": "https://github.com/xRookieFight/Reactor/releases/download/nightly/plugin-1.0-SNAPSHOT.jar"
         },
         {
           "filename": "Reactor-1.0-SNAPSHOT.jar",
           "primary": true,
+          "sha256": "4a20a7c60ab48d7866e70138ae01b212fc4b9b29a86f9ce35411e83860d5a336",
           "size": 19470625,
           "url": "https://github.com/xRookieFight/Reactor/releases/download/nightly/Reactor-1.0-SNAPSHOT.jar"
         }

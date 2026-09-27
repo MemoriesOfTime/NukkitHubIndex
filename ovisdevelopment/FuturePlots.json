@@ -1,0 +1,130 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/38113441?v=4",
+      "name": "tim03we",
+      "url": "https://github.com/tim03we"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/54219265?v=4",
+      "name": "tunikakeks",
+      "url": "https://github.com/tunikakeks"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/41548487?v=4",
+      "name": "Aenoxic",
+      "url": "https://github.com/Aenoxic"
+    }
+  ],
+  "categories": [],
+  "created_at": 1734219804,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "LlamaEconomy",
+      "version_range": ""
+    }
+  ],
+  "description": "<p align=\"center\">\n    <a href=\"https://ovis.dev\">\n      <img src=\"https://i.imgur.com/SU8k5fV.png\" width=30%>\n    </a>\n    <p align=\"center\">\n        <strong>\n            A Minecraft Bedrock Edition Plot Plugin, open source and written in java\n        </strong>\n    </p>\n</p>\n\n\n<p align=\"center\">\n   <img alt=\"Version\" src=\"https://img.shields.io/badge/version-4.0.0-blue.svg?cacheSeconds=2592000\" />\n   <a href=\"https://feedback.minecraft.net/hc/en-us/articles/26247797084173--Minecraft-1-21-1-Bedrock\">\n      <img alt=\"Minecraft\" src=\"https://img.shields.io/badge/minecraft-v1.21.60%20(Bedrock)-56383E\" />\n   </a>\n    <a href=\"https://github.com/ovisdevelopment/FuturePlots/actions?query=branch%3Amaster+is%3Asuccess\" target=\"_blank\">\n      <img alt=\"Action\" src=\"https://github.com/ovisdevelopment/FuturePlots/actions/workflows/build.yml/badge.svg\" />\n   </a>\n   <a href=\"https://discord.gg/2PYGr7GfTf\">\n      <img alt=\"Discord\" src=\"https://img.shields.io/discord/639130989708181535?label=discord&color=7289DA&logo=discord\" />\n   </a>\n   <a href=\"https://github.com/ovisdevelopment/FuturePlots/wiki\" target=\"_blank\">\n      <img alt=\"Documentation\" src=\"https://img.shields.io/badge/documentation-yes-brightgreen.svg\" />\n   </a>\n   <a href=\"https://www.apache.org/licenses/LICENSE-2.0.html\" target=\"_blank\">\n      <img alt=\"License: Apache-2.0\" src=\"https://img.shields.io/badge/Apache-2.0-yellow.svg\" />\n   </a>\n</p>\n\n\n----------------\n\n# FuturePlots\n\nFuturePlots is an innovative and versatile plugin specifically designed for Minecraft servers to provide advanced plot management capabilities. Whether you're running a small private server or a large multiplayer community, FuturePlots offers all the tools you need to create an organized and user-friendly world.\n\n\n----------------\n\n## 🌟 Features\n### User-Friendly Plot Management\nPlayers can easily create, manage, and customize their plots with simple commands.\n\n### Access Restrictions and Permissions\nPrecisely control who can enter, build on, or modify plots.\n\n### Automatic Plot Assignment\nPlots can be automatically assigned to players—eliminating the need for manual management.\n\n### Extensive Configuration Options\nCustomize the plugin to fit your server’s specific requirements, including plot size, custom roads, and more.\n\n### Seamless Integration\nWorks smoothly with other plugins and is fully compatible with bStats for tracking server statistics.\n\n\n----------------\n\n## 🚀 Why FuturePlots?\nFuturePlots stands out for its stability, efficiency, and user-friendly design, setting it apart from other plot management plugins. It is built with a focus on performance and scalability, ensuring that even large servers with thousands of players can be supported effortlessly. Thanks to its carefully optimized architecture, you can trust that FuturePlots won’t consume unnecessary resources, keeping your server running smoothly.\n\n\n----------------\n\n## 📜 Documentation\nFind all commands, permissions, developer usage and configuration options in our official [documentation](https://github.com/ovisdevelopment/FuturePlots/wiki).\n\n----------------\n\n## 📊 Statistics\nWe use bStats to gain insights into how our plugin is being used. This anonymized data helps us continually improve FuturePlots and develop new features. Here's a snapshot of the current usage of our plugin:\n\n![bStats](https://bstats.org/signatures/bukkit/FuturePlots.svg)\n\n\n----------------\n\n## JetBrains\nThis project was made with the help of JetBrains' amazing tools. ✨🚀💻  \nYou can visit [JetBrains here](https://www.jetbrains.com).\n\n\n\n----------------\n\n## 🤝 Contributing to FuturePlots\nFuturePlots is an open-source project and welcomes contributions! You can help by:\n\n- Reporting bugs\n- Suggesting new features\n- Contributing code\n<br><br><br>\n<a href=\"https://github.com/ovisdevelopment/FuturePlots/graphs/contributors\">\n  <img src=\"https://contrib.rocks/image?repo=ovisdevelopment/FuturePlots\" />\n</a>\n\n## 📝 License Information\n\nThis project is licensed under Apache-2.0 license. Please see the [LICENSE](https://github.com/ovisdevelopment/FuturePlots/blob/master//LICENSE) file for details.",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/100522986?v=4",
+  "id": "ovisdevelopment/FuturePlots",
+  "license": {
+    "id": "Apache-2.0",
+    "name": "Apache License 2.0",
+    "url": "https://spdx.org/licenses/Apache-2.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "ovis.dev",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/nukkit.yml",
+  "name": "FuturePlots",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/ovisdevelopment/FuturePlots",
+  "stars": 7,
+  "summary": "A Nukkit based plot plugin",
+  "targets": [
+    "nkx",
+    "nkmot",
+    "pnx"
+  ],
+  "updated_at": 1785356935,
+  "versions": [
+    {
+      "changelog": "This update delivers a complete rewrite of FuturePlots for PowerNukkitX 3.0, bringing improved compatibility, performance, and maintainability.\r\n\r\n## Changes\r\n\r\n- Migrated to the PowerNukkitX 3.0 API\r\n- Completely rewrote the schematic serialization system\r\n- Replaced deprecated APIs with modern implementations\r\n- Improved performance and overall code structure\r\n- Various internal optimizations and bug fixes\r\n\r\n**Full Changelog**: https://github.com/ovisdevelopment/FuturePlots/compare/4.0.2-SNAPSHOT...4.1.0-dev\r\n\r\n**In case of errors, open an [issue](https://github.com/ovisdevelopment/FuturePlots/issues) or contact us on our [Discord](https://discord.gg/2PYGr7GfTf).**",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FuturePlots-4.1.0-dev.jar",
+          "primary": true,
+          "sha256": "77abb6297b35becb712c53f937d8a8c3dcfeaa7fcc1f7ebf1e7df618d46dac08",
+          "size": 22665456,
+          "url": "https://github.com/ovisdevelopment/FuturePlots/releases/download/4.1.0-dev/FuturePlots-4.1.0-dev.jar"
+        }
+      ],
+      "name": "4.1.0-dev",
+      "prerelease": false,
+      "published_at": 1784669441,
+      "version": "4.1.0-dev"
+    },
+    {
+      "changelog": "This update brings essential fixes for an even better user experience.\r\n\r\n- New event priority for listeners\r\n\r\n\r\n**In case of errors, open an [issue](https://github.com/ovisdevelopment/FuturePlots/issues) or contact us on our [Discord](https://discord.gg/2PYGr7GfTf).**\r\n\r\n**Full Changelog**: https://github.com/ovisdevelopment/FuturePlots/compare/4.0.1-SNAPSHOT...4.0.2-SNAPSHOT",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FuturePlots-4.0.2-SNAPSHOT.jar",
+          "primary": true,
+          "size": 8166653,
+          "url": "https://github.com/ovisdevelopment/FuturePlots/releases/download/4.0.2-SNAPSHOT/FuturePlots-4.0.2-SNAPSHOT.jar"
+        }
+      ],
+      "name": "4.0.2-SNAPSHOT",
+      "prerelease": false,
+      "published_at": 1745447561,
+      "version": "4.0.2-SNAPSHOT"
+    },
+    {
+      "changelog": "This update brings exciting improvements and essential fixes for an even better user experience.\r\n\r\n- New Economy System – Introducing a reworked economy system for better balance and enhanced game mechanics.\r\n- Forms Fix – Resolved issues with forms\r\n- General Bug Fixes & Optimizations – Improved stability, fewer bugs, and optimized performance\r\n- Expanded Language Support – New translation chinese\r\n\r\n**You can find out how to use the Economy System in our [Wiki](https://github.com/ovisdevelopment/FuturePlots/wiki/Economy).**\r\n\r\n**In case of errors, open an [issue](https://github.com/ovisdevelopment/FuturePlots/issues) or contact us on our [Discord](https://discord.gg/2PYGr7GfTf).**\r\n\r\n\r\n**Full Changelog**: https://github.com/ovisdevelopment/FuturePlots/compare/4.0.0-SNAPSHOT...4.0.1-SNAPSHOT",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FuturePlots-4.0.1-SNAPSHOT.jar",
+          "primary": true,
+          "size": 8165954,
+          "url": "https://github.com/ovisdevelopment/FuturePlots/releases/download/4.0.1-SNAPSHOT/FuturePlots-4.0.1-SNAPSHOT.jar"
+        }
+      ],
+      "name": "4.0.1-SNAPSHOT",
+      "prerelease": false,
+      "published_at": 1741967295,
+      "version": "4.0.1-SNAPSHOT"
+    },
+    {
+      "changelog": "# New Release!\r\n\r\n**Full Changelog**: https://github.com/ovisdevelopment/FuturePlots/commits/4.0.0-SNAPSHOT",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FuturePlots-4.0.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 8152060,
+          "url": "https://github.com/ovisdevelopment/FuturePlots/releases/download/4.0.0-SNAPSHOT/FuturePlots-4.0.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "4.0.0-SNAPSHOT",
+      "prerelease": false,
+      "published_at": 1736029643,
+      "version": "4.0.0-SNAPSHOT"
+    }
+  ]
+}

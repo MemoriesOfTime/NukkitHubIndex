@@ -1,0 +1,37 @@
+{
+  "api_version": "2.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/26197131?v=4",
+      "name": "PetteriM1",
+      "url": "https://github.com/PetteriM1"
+    }
+  ],
+  "categories": [],
+  "created_at": 1586313853,
+  "dependencies": [],
+  "description": "",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/18595225?v=4",
+  "id": "popkechupki/RealTime",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "RealTime",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/popkechupki/RealTime",
+  "stars": 0,
+  "summary": "Real time plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1586313900,
+  "versions": []
+}

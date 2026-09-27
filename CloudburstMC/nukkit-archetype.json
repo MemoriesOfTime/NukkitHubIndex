@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.9",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/754048?v=4",
+      "name": "Sleepybear",
+      "url": "https://github.com/Sleepybear"
+    }
+  ],
+  "categories": [],
+  "created_at": 1586733455,
+  "dependencies": [],
+  "description": "# Nukkit Plugin Maven Archetype\n\nThis will allow for automatic creation of a base Plugin template to start a Nukkit Plugin. \n\nYou will need to specify a few things to the archetype:\n - groupId: this will be the package name for the main class. For example, NukkitX uses com.nukkitx (you need to use something different) \n - artifactId: maven ID for your plugin. Typically this is all lowercase\n - version: initial version for your plugin\n - pluginName: this will become the name of your Main Class, and the name of the plugin in the `plugin.yml` file. Typically CamelCase formatting is used, for example: MyPlugin \n\nSetup\n-----\n\nDue to the newest version of the Maven archetype plugin, we can no longer specify the repository on the command line, which causes IntelliJ to screw up when trying to use a third party archetype. \nWe can still create via command line if you setup the archetype repo in your `settings.xml`.\nLocate your `settings.xml` (in `{USERHOME}/.m2`) and create a profile with the NukkitX repo with an id of `archetype`. You can do this by adding the following to your `settings.xml`:\n```xml\n<profiles>\n\t<profile>\n\t\t<id>nukkitx</id>\n\t\t<repositories>\n\t\t\t<repository>\n\t\t\t\t<id>archetype</id>\n\t\t\t\t<name>NukkitX</name>\n\t\t\t\t<url>https://repo.opencollab.dev/maven-releases/</url>\n\t\t\t</repository>\n\t\t</repositories>\n\t</profile>\n</profiles>\n```\n\nIf you wish for this profile to always be active, also add the following:\n```xml\n<activeProfiles>\n    <activeProfile>nukkitx</activeProfile>\n</activeProfiles>\n```\n\nCreating new Plugin from command line:\n------\nIf you have maven installed and set on your path, you can run the following command from the folder you want the project root to be created in. Maven will create a new folder for the project in the folder where this command is run. If you used a different profile name than `nukkitx` during setup above, be sure to change that as well. \n```\nmvn archetype:generate -DarchetypeGroupId=com.nukkitx -DarchetypeArtifactId=plugin-archetype -DarchetypeVersion=1.0 -P nukkitx -DgroupId=<yourGroupId> -DartifactId=<yourArtifactId> -Dversion=<yourVersion> -DpluginName=<yourPluginName>\n```\n\nReplace the variables in `<>` brackets with your values (see above) and it should then generate your project. \n\nCreating new Plugin from IntelliJ:\n------\nDue to the way IntelliJ calls the `mvn` command from it's new project tool, we are unable to use third party archetypes at this time. \n\n\n  \n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/34250602?v=4",
+  "id": "CloudburstMC/nukkit-archetype",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/archetype-resources/src/main/resources/plugin.yml",
+  "name": "nukkit-archetype",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/CloudburstMC/nukkit-archetype",
+  "stars": 1,
+  "summary": "Maven Archetype for creating Nukkit plugins",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1631596465,
+  "versions": []
+}

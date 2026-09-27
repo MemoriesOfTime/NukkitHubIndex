@@ -2,9 +2,9 @@
   "api_version": "1.0.9",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "LT_Name",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
     }
   ],
   "categories": [],
@@ -22,7 +22,7 @@
     }
   ],
   "description": "",
-  "detection_confidence": "high",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
@@ -41,8 +41,26 @@
   "stars": 1,
   "summary": "",
   "targets": [
-    "nkx"
+    "nkx",
+    "nkmot"
   ],
-  "updated_at": 1686241505,
-  "versions": []
+  "updated_at": 1702382345,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "RsNpcVariable-0.2.1-SNAPSHOT.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/RsNpcVariable/9/artifact/target/RsNpcVariable-0.2.1-SNAPSHOT.jar"
+        }
+      ],
+      "name": "0.2.1-SNAPSHOT",
+      "prerelease": true,
+      "published_at": 1702382682,
+      "version": "ci-9"
+    }
+  ]
 }

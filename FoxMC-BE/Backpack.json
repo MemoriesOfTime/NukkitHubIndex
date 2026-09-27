@@ -1,0 +1,53 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/26197131?v=4",
+      "name": "PetteriM1",
+      "url": "https://github.com/PetteriM1"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/83180802?v=4",
+      "name": "AlwaysOutofRange",
+      "url": "https://github.com/AlwaysOutofRange"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/31376638?v=4",
+      "name": "iRedFox",
+      "url": "https://github.com/iRedFox"
+    }
+  ],
+  "categories": [],
+  "created_at": 1631240359,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "MongoDriver",
+      "version_range": ""
+    }
+  ],
+  "description": "# Backpack\nA Backpack plugin for Nukkit.\n\n# Deps\n - FakeInventories\n - MongoDriver\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/90462676?v=4",
+  "id": "FoxMC-BE/Backpack",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Backpack",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/FoxMC-BE/Backpack",
+  "stars": 0,
+  "summary": "A Backpack Plugin for Nukkit.",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1632173331,
+  "versions": []
+}

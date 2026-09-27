@@ -1,0 +1,48 @@
+{
+  "api_version": "1.0.13",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/60499296?v=4",
+      "name": "smartcmd",
+      "url": "https://github.com/smartcmd"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
+    }
+  ],
+  "categories": [],
+  "created_at": 1668862976,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "Easy4Form",
+      "version_range": ""
+    }
+  ],
+  "description": "# Gun\nGun plugin for Nukkit!\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/56059204?v=4",
+  "id": "FunnyArenaPixel/Gun",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Gun",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/FunnyArenaPixel/Gun",
+  "stars": 1,
+  "summary": "Gun plugin for Nukkit!",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1664026137,
+  "versions": []
+}

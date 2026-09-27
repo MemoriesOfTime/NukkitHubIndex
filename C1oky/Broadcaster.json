@@ -1,0 +1,42 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45960833?v=4",
+      "name": "C1oky",
+      "url": "https://github.com/C1oky"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/29895665?v=4",
+      "name": "jungwuk-ryu",
+      "url": "https://github.com/jungwuk-ryu"
+    }
+  ],
+  "categories": [],
+  "created_at": 1551788761,
+  "dependencies": [],
+  "description": "# [Broadcaster](https://cloudburstmc.org/resources/broadcaster.217/)\nIs plugin by [Table Studio](https://vk.com/table.studio) for Cloudburst Nukkit\nFinished and work",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/45960833?v=4",
+  "id": "C1oky/Broadcaster",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Broadcaster",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/C1oky/Broadcaster",
+  "stars": 2,
+  "summary": "Plugin for Cloudburst Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1612362362,
+  "versions": []
+}

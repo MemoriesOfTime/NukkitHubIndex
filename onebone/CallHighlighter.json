@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/3233503?v=4",
+      "name": "onebone",
+      "url": "https://github.com/onebone"
+    }
+  ],
+  "categories": [],
+  "created_at": 1459084372,
+  "dependencies": [],
+  "description": "# CallHighlighter\nNukkit plugin which highlight chats which calls player\n\n## Build\n- git clone https://github.com/onebone/CallHighlighter && cd CallHighlighter\n- mvn clean\n- mvn package\n\n## Permissions\n- callhighlighter\n\t- callhighlighter.emphasize\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/3233503?v=4",
+  "id": "onebone/CallHighlighter",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "CallHighlighter",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/onebone/CallHighlighter",
+  "stars": 0,
+  "summary": "Nukkit plugin which highlight chats which calls player",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1459084832,
+  "versions": []
+}

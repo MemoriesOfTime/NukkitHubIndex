@@ -2,9 +2,14 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "Root-Studios (Valres)",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/104681026?v=4",
+      "name": "ValresMC",
+      "url": "https://github.com/ValresMC"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/100467970?v=4",
+      "name": "YnXahgkiO",
+      "url": "https://github.com/YnXahgkiO"
     }
   ],
   "categories": [],
@@ -24,16 +29,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "PNX-ToolBox",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/ValresMC/PNX-ToolBox",
   "stars": 2,
   "summary": "Best lib for PowerNukkitX plugins",
   "targets": [
-    "nkx",
     "pnx"
   ],
-  "updated_at": 1786988521,
+  "updated_at": 1788206971,
   "versions": [
     {
       "changelog": "## What's Changed\r\n* Add packet events with interception and monitoring by @ValresMC in https://github.com/ValresMC/PNX-ToolBox/pull/4\r\n* Fix minecraft:selection_box component for blocks\r\n\r\n**Full Changelog**: https://github.com/ValresMC/PNX-ToolBox/compare/1.5.0...1.5.1",
@@ -42,6 +46,7 @@
         {
           "filename": "PNX-ToolBox-1.5.1.jar",
           "primary": true,
+          "sha256": "fee00a3da7ea4d4c61d719dcf096a6b9613cbfb92a2314f078c680a94c7e0031",
           "size": 421600,
           "url": "https://github.com/ValresMC/PNX-ToolBox/releases/download/1.5.1/PNX-ToolBox-1.5.1.jar"
         }
@@ -58,6 +63,7 @@
         {
           "filename": "PNX-ToolBox-1.5.0.jar",
           "primary": true,
+          "sha256": "604a02d0e41fad32f0c96537131105b6639e3bf01ba7ba638df58cdc712a7572",
           "size": 401502,
           "url": "https://github.com/ValresMC/PNX-ToolBox/releases/download/1.5.0/PNX-ToolBox-1.5.0.jar"
         }
@@ -74,6 +80,7 @@
         {
           "filename": "pnx-toolbox-1.1.0-SNAPSHOT.jar",
           "primary": true,
+          "sha256": "f1e74e6215cf95939b815d3a40071de2a4d0c44c5e567cf7898b4ab744e51510",
           "size": 363702,
           "url": "https://github.com/ValresMC/PNX-ToolBox/releases/download/1.1.0/pnx-toolbox-1.1.0-SNAPSHOT.jar"
         }
@@ -90,6 +97,7 @@
         {
           "filename": "pnx-toolbox-1.0.22-SNAPSHOT.jar",
           "primary": true,
+          "sha256": "b3815f44f793b6acc603561e7e449727aa0befa547236f8fa63ba70170c44bff",
           "size": 363701,
           "url": "https://github.com/ValresMC/PNX-ToolBox/releases/download/1.0.22/pnx-toolbox-1.0.22-SNAPSHOT.jar"
         }
@@ -106,6 +114,7 @@
         {
           "filename": "pnx-toolbox-1.0.21-SNAPSHOT.jar",
           "primary": true,
+          "sha256": "c0f3a7b24aee854a3e5e536866136b35748507f6e387264cf2bf5d5992cf85a0",
           "size": 363609,
           "url": "https://github.com/ValresMC/PNX-ToolBox/releases/download/1.0.21/pnx-toolbox-1.0.21-SNAPSHOT.jar"
         }
@@ -122,6 +131,7 @@
         {
           "filename": "pnx-toolbox-1.0.2-SNAPSHOT.jar",
           "primary": true,
+          "sha256": "060607f5daa8298845503d9b867e7701dee97e90d1cc66e1bff6f8dc78ef7cc4",
           "size": 363179,
           "url": "https://github.com/ValresMC/PNX-ToolBox/releases/download/1.0.2/pnx-toolbox-1.0.2-SNAPSHOT.jar"
         }
@@ -138,6 +148,7 @@
         {
           "filename": "pnx-toolbox-1.0.15-SNAPSHOT.jar",
           "primary": true,
+          "sha256": "71a5960d527387e785577009e790c27b5656acf14ea8fa4d2fb092be3f37ddbb",
           "size": 362318,
           "url": "https://github.com/ValresMC/PNX-ToolBox/releases/download/1.0.15/pnx-toolbox-1.0.15-SNAPSHOT.jar"
         }
@@ -154,6 +165,7 @@
         {
           "filename": "pnx-toolbox-1.0-SNAPSHOT.jar",
           "primary": true,
+          "sha256": "5c53c85cc9c759b78b581cace8ca8d940bf1347aecd9af6c8b573357d920ad31",
           "size": 362312,
           "url": "https://github.com/ValresMC/PNX-ToolBox/releases/download/1.0.1/pnx-toolbox-1.0-SNAPSHOT.jar"
         }
@@ -170,6 +182,7 @@
         {
           "filename": "pnx-toolbox-1.0-SNAPSHOT.jar",
           "primary": true,
+          "sha256": "518d20a11085517ad13fbb436d5711438e7ad40ff91a45243f9d667c686a7d95",
           "size": 364195,
           "url": "https://github.com/ValresMC/PNX-ToolBox/releases/download/1.0.0/pnx-toolbox-1.0-SNAPSHOT.jar"
         }

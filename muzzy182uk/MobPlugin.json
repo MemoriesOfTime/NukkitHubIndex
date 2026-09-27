@@ -1,0 +1,58 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/88597837?v=4",
+      "name": "PikyXoS",
+      "url": "https://github.com/PikyXoS"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/25864932?v=4",
+      "name": "WesleyVanNeck",
+      "url": "https://github.com/WesleyVanNeck"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/20710759?v=4",
+      "name": "skipfie",
+      "url": "https://github.com/skipfie"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/10363500?v=4",
+      "name": "Creeperface01",
+      "url": "https://github.com/Creeperface01"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/64783526?v=4",
+      "name": "wbzhang6413",
+      "url": "https://github.com/wbzhang6413"
+    }
+  ],
+  "categories": [],
+  "created_at": 1498996468,
+  "dependencies": [],
+  "description": "# MobPlugin \n\nDevelopment: **[PikyCZ](https://github.com/PikyCZ)**\n\n[![CircleCI](https://circleci.com/gh/PikyCZ/MobPlugin/tree/master.svg?style=shield&circle-token=)](https://circleci.com/gh/PikyCZ/MobPlugin/tree/master)\n\n![mobplugin](https://github.com/PikyCZ/MobPlugin/blob/master/images/MobPlugin.png)\n\nMobPlugin is a plugin that implements the mob entities for MCPE including movement, aggression etc.\n\n## Notice\nThis plug-in is in development.\n\n# Credits\nCredits go to Team-SW! They have a nice plugin already made. I used it and adapt it for 1.1.x\n\n# Plugin Example configuration\nPlace this plugin jar file to your Nukkit's home directory \"${NUKKIT_HOME}/plugin\".\n#### Example:\n  /usr/share/nukkit/plugins/MobPlugin-1.1.0-SNAPSHOT.jar\n  \nThen you have to create a folder in plugin folder with the name of the plugin and place the config.yml there (\"${NUKKIT_HOME}/plugin/MobPlugin\").\n#### Example:\n  /usr/share/nukkit/plugins/MobPlugin/config.yml\n\nWhen Nukkit Server starts up and the plugin is activated, the config.yml is read and evaluated by the plugin.\n\n## config.yml example\n\nThe following configuration sets mobs AI enabled and the auto spawn task will be triggered all 300 ticks.\n\n**Config**\n```yml\n# general settings\nentities:\n  mob-ai: true\n  auto-spawn-tick: 300 \n  spawn-animals: true\n  spawn-mobs: true\n  worlds-spawn-disabled:\n\n# max spawn settings\nmax-spawns:\n  bat: 0\n  blaze: 0\n  cave-spider: 0\n  chicken: 0\n  cow: 0\n  creeper: 0\n  donkey: 0\n  enderman: 0\n  ghast: 0\n  horse: 0\n  husk: 0 \n  iron-golem: 0\n  mooshroom: 0\n  mule: 0\n  ocelot: 0\n  pig: 0\n  pig-zombie: 0\n  rabbit: 0\n  stray: 0\n  silverfish: 0\n  sheep: 0\n  skeleton: 0\n  skeleton-horse: 0\n  snow-golem: 0\n  spider: 0\n  wolf: 1\n  zombie: 0\n  zombie-horse: 0\n  zombie-villager: 0\n```\n\n# Commands\n| Command | Usage | Description |\n| ------- |  ----- | ----------- |\n| `/mob` | `/mob` | Display list of commands|\n| `/mob spawn <mob_name>` | `/mob spawn <mob_name>` | Spawn mob (mob_name write always with a capital letter.. For example: Pig,Zombie)\n| `/mob removemobs` | `/mob removemobs` | Remove all living mobs|\n| `/mob removeitems` | `/mob removeitems` | Remove all items from all levels (ground)|\n\n# Permissions\n```yml\n mob-plugin.mob:\n    default: op\n  ```\n\n# Download\n\n**If you want this plugin, please download from Circle CI!**\n\n__[Jar Download at Circle CI](https://circleci.com/gh/PikyCZ/MobPlugin/tree/master/)__ (**login required**)\n\n# Contributed code since 2016\n* [PikyCZ](https://github.com/muzzy182uk/MobPlugin/blob/master///github.com/PikyCZ)\n* [Creeperface01](https://github.com/muzzy182uk/MobPlugin/blob/master///github.com/Creeperface01)\n* [woofie](https://github.com/muzzy182uk/MobPlugin/blob/master///https://github.com/woofie)\n* [caspervanneck](https://github.com/muzzy182uk/MobPlugin/blob/master///https://github.com/caspervanneck)\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/26063500?v=4",
+  "id": "muzzy182uk/MobPlugin",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "MobPlugin",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/muzzy182uk/MobPlugin",
+  "stars": 0,
+  "summary": "Mobs have inteligence?",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1498903313,
+  "versions": []
+}

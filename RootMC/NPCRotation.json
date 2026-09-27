@@ -1,0 +1,43 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/23021197?v=4",
+      "name": "TanToan99",
+      "url": "https://github.com/TanToan99"
+    }
+  ],
+  "categories": [],
+  "created_at": 1588145818,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "NPC",
+      "version_range": ""
+    }
+  ],
+  "description": "# NPCRotation\nThis Plugin makes your NPCs on Nukkit look on you.\n\n# How to\n1. Download the jar.\n2. Put the jar in the plugins folder of your Nukkit server.\n3. Make sure you installed [this](https://nukkitx.com/resources/npc.143/).\n4. Restart the server and enjoy!\n\n# Questions/Problems?\nFeel free to create an issue.\n\n------------\n\n*This plugin was made for the German Minecraft: Bedrock Edition Network AdvancedCraft.net.*\n\n[Join](https://join.advancedcraft.net) | [Website](https://advancedcraft.net) | [Discord](https://discord.advancedcraft.net)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/64393553?v=4",
+  "id": "RootMC/NPCRotation",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "NPCRotation",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/RootMC/NPCRotation",
+  "stars": 1,
+  "summary": "NPCs look at players, when they move! (ported SlapperRotation by jojoe77777 from PMMP to Nukkit)",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1588178403,
+  "versions": []
+}

@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12077835?v=4",
       "name": "ZeroDevOfficial",
-      "url": ""
+      "url": "https://github.com/ZeroDevOfficial"
     }
   ],
   "categories": [
@@ -36,7 +36,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1608176409,
+  "updated_at": 1563194398,
   "versions": [
     {
       "changelog": "this fix will prevent multiple gui's from appearing ",

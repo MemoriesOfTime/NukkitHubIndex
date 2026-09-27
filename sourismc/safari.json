@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/30155505?v=4",
+      "name": "souriscloud",
+      "url": "https://github.com/souriscloud"
+    }
+  ],
+  "categories": [],
+  "created_at": 1615400781,
+  "dependencies": [],
+  "description": "# Safari Plugin for NukkitX\n[![Safari Maven CI](https://github.com/sourismc/safari/actions/workflows/maven.yml/badge.svg)](https://github.com/sourismc/safari/actions/workflows/maven.yml)\n\nLibrary dependencies (must be present in your nukkit/plugins folder)\n- FormAPI 2.1\n- ScoreboardAPI 1.4\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/80413312?v=4",
+  "id": "sourismc/safari",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Safari",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/sourismc/safari",
+  "stars": 0,
+  "summary": "Nukkit plugin",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1615765657,
+  "versions": []
+}

@@ -1,0 +1,72 @@
+{
+  "api_version": "1.0.9",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/26197131?v=4",
+      "name": "PetteriM1",
+      "url": "https://github.com/PetteriM1"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45960833?v=4",
+      "name": "C1oky",
+      "url": "https://github.com/C1oky"
+    }
+  ],
+  "categories": [],
+  "created_at": 1585414267,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "FormAPI",
+      "version_range": ""
+    }
+  ],
+  "description": "## NPC - Plugin for simplified NPC creation (NUKKIT API 1.0.9)\n\n- ### This plugin requires [FormAPI](https://nukkitx.com/resources/formapi.359/) installed! \n\n\n\n #### Permission: ***npc.use***\n #### Available commands:\n ##### - /npc spawn - Create npc entity \n ##### - /npc getID - Get ID entity \n ##### - /npc list - Get npc entity list \n ##### - /npc teleport - Teleport entity to you\n ##### - /npc edit - Open entity setup menu \n \n ![Demonstration](https://raw.githubusercontent.com/NukkitX-RU/NPC/master/.github/images/screenshot.png)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-09-25",
+      "description": "",
+      "title": "Demonstration",
+      "url": "https://raw.githubusercontent.com/NukkitX-RU/NPC/master/.github/images/screenshot.png"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/58968735?v=4",
+  "id": "NukkitX-RU/NPC",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "NPC",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/NukkitX-RU/NPC",
+  "stars": 1,
+  "summary": "NPC plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1654624431,
+  "versions": [
+    {
+      "changelog": "Ready and working",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "NPC-1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 53851,
+          "url": "https://github.com/NukkitX-RU/NPC/releases/download/1.0-SNAPSHOT/NPC-1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "NPC-1.0-SNAPSHOT",
+      "prerelease": false,
+      "published_at": 1587009537,
+      "version": "1.0-SNAPSHOT"
+    }
+  ]
+}

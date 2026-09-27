@@ -2,9 +2,9 @@
   "api_version": "1.0.13",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "Vaktari-Dev",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/288031207?v=4",
+      "name": "FarukDevv",
+      "url": "https://github.com/FarukDevv"
     }
   ],
   "categories": [],
@@ -28,16 +28,15 @@
   },
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "NukkitWorlds",
-  "primary_target": "nkx",
+  "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/FarukDevv/NukkitWorlds",
   "stars": 0,
   "summary": "World management plugin for Nukkit-PM1E and Nukkit-MOT/Lumi",
   "targets": [
-    "nkx",
     "nkmot"
   ],
-  "updated_at": 1780912583,
+  "updated_at": 1780912580,
   "versions": [
     {
       "changelog": "",
@@ -46,6 +45,7 @@
         {
           "filename": "NukkitWorlds.jar",
           "primary": true,
+          "sha256": "5a5ae51ca0d6284a3106071b49302c45456aeada232569d777a0489f30052900",
           "size": 12627,
           "url": "https://github.com/FarukDevv/NukkitWorlds/releases/download/v1.0.0/NukkitWorlds.jar"
         }

@@ -1,0 +1,43 @@
+{
+  "api_version": "1.0.8",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/46070909?v=4",
+      "name": "MagicLu550",
+      "url": "https://github.com/MagicLu550"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/44516212?v=4",
+      "name": "3zeroed",
+      "url": "https://github.com/3zeroed"
+    }
+  ],
+  "categories": [],
+  "created_at": 1557900719,
+  "dependencies": [],
+  "description": "![LICENSE](https://img.shields.io/badge/license-GPL-blue.svg)\n[![zh](https://img.shields.io/badge/readme-chinese-orange.svg)](README_CN.md)\n\n# nukkit_mariataframework\n`nukkit framework`\n\n```\nAfter using this framework, if you use the new plugin structure provided by the framework, the listener (implementing the Listener interface) and the command (inherited from the Command parent class) will be registered as the default object by the framework.\nAccording to the specified root package, the automatic registration of the listeners and commands in the lower level package and the lower level package and the lower level package and the lower level...\n```\n\n* Decoupling: This means separating the main class from the registration class, making them completely independent\n* Container: This refers to the framework as a container for the plugin.\n\nIn addition, the mariata framework supports a new plugin structure, the file directory is under plugins/mariataframework/plugin/\nDeploy the built jar package here.\n\n\n\n- jar package structure, do not need plugin.yml, only need mariata.oml file\n\nThe configuration format of the mariata.oml file:\n\n```yaml\n?encoding: utf-8 version: 1.0.0?\n\nname: the name of the plugin\n\npackage: root directory package\n#(such as net.noyark.oaml package, just fill in the net,\n#Frame will scan the lower directory according to the root package directory, including all listeners and commands of the directory.\n#If it is multiple roots, you can use arrays [root 1, root 2...])\n\nmain: main class class that inherits from PluginBase\n```\n> The syntax structure of oaml: https://github.com/noyark-system/noyark_oaml_java\n\n> github: https://github.com/MagicLu550/nukkit_mariataframework\n\n`Pre-plugin settings`\n\n- Add parameters to mariataSet:\n  * startbefore\n  \n```yaml\nstartbefore:\n -\n -\n -\n```\n\nCurrently loading plugins with plugin.yml is supported.\n\nThe class that inherits the task will be started immediately if you add a \n```java\n@StartNow\n```\n- getReflectLoader method\n\n> Regulation: The plugin using the MariataPluginBase as the main class must use mariata.oml\n\nUse of custom hub methods\n```java\n//this is the main class that inherits MariataPluginBase\n\nthis.getReflectLoader(this,(obj,clz)->{\n\n/ / Object processing\n\nIf(obj instanceof xxx){\n\nObject processing\n\n}\n\n},new String[]{root package name});\n\n```\nAfter using this method, all objects will be loaded here, and all objects can be loaded in lambada expressions.\n\n`Such as: processing all objects that inherit AAA class`\n\n```java\nthis.getReflectLoader(this,(obj,clz)->{\n\n/ / Object processing\n\nIf(obj instanceof AAA){\n\n\n\n}\n\n},new String[]{root package name});\n```\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/17727619?v=4",
+  "id": "xkmp/mariata-framework",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "mariataframework",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/xkmp/mariata-framework",
+  "stars": 0,
+  "summary": "The nukkit framework",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1558697830,
+  "versions": []
+}

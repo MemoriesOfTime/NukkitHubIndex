@@ -1,0 +1,61 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/25707048?v=4",
+      "name": "hhm666",
+      "url": "https://github.com/hhm666"
+    }
+  ],
+  "categories": [],
+  "created_at": 1549600983,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "KotlinLib",
+      "version_range": ""
+    }
+  ],
+  "description": "# SGUI-API\nMinecraft Nukkit Plugin GUI API\n\n**Now Version: 0.1.0-Alpha**\n\nSGUI-API requires [KotlinLib](https://nukkitx.com/resources/kotlinlib.48/)\n\nExample usage\n```kotlin\nclass SLogin : PluginBase(),Listener {\n    private lateinit var loginGUI: LambdaCustomGUI\n\n    override fun onLoad() {\n        loginGUI = LambdaCustomGUI(\"SLogin_login\", \"Validation\")\n        loginGUI.addText(\"t1\", \"§l§6Welcome,Please enter nice below!\")\n        loginGUI.addInput(\"pw\", \"Verification Code\")\n        loginGUI.submittedClickedListener = BiConsumer { data, player ->\n            if (player !is NukkitPlayer) return@BiConsumer\n            if(data[\"pw\"].toString()==\"nice\") {\n                player.sendMessage(\"Verify success!\")\n            }else{\n                player.kick(\"§cValidation failed\")\n            }\n        }\n        loginGUI.closedClickedListener = Consumer {\n            player.kick(\"§cValidation failed\")\n        }\n        this.server.pluginManager.registerEvents(GUIListener(), this)\n        this.server.pluginManager.registerEvents(this, this)\n    }\n    \n    @EventHandler(priority = EventPriority.LOWEST)\n    fun onJoin(event: PlayerJoinEvent) {\n        if (event.player !is NukkitPlayer) return\n        player.showGUI(loginGUI)\n    }\n}\n```",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/25707048?v=4",
+  "id": "hhm666/SGUI-API",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "SGUI-API",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/hhm666/SGUI-API",
+  "stars": 1,
+  "summary": "Nukkit Simple GUI API",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1549606319,
+  "versions": [
+    {
+      "changelog": "Has basically realized the function",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SGUI-API-0.1.0-Alpha.jar",
+          "primary": true,
+          "size": 57240,
+          "url": "https://github.com/hhm666/SGUI-API/releases/download/0.1.0-Alpha/SGUI-API-0.1.0-Alpha.jar"
+        }
+      ],
+      "name": "SGUI-API 0.1.0-Alpha",
+      "prerelease": false,
+      "published_at": 1549605412,
+      "version": "0.1.0-Alpha"
+    }
+  ]
+}

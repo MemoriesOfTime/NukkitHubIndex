@@ -2,19 +2,24 @@
   "api_version": "1.0.9",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "LT_Name",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
     },
     {
-      "avatar_url": "",
-      "name": "iGxnon",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "name": "dependabot[bot]",
+      "url": "https://github.com/apps/dependabot"
     },
     {
-      "avatar_url": "",
-      "name": "Glorydark",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/108974603?v=4",
+      "name": "LYEmerald",
+      "url": "https://github.com/LYEmerald"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
+      "name": "glorydark",
+      "url": "https://github.com/glorydark"
     }
   ],
   "categories": [
@@ -42,15 +47,31 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "CrystalWars",
-  "primary_target": "nkx",
+  "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/MemoriesOfTime/CrystalWars",
   "stars": 7,
   "summary": "",
   "targets": [
-    "nkx",
     "nkmot"
   ],
-  "updated_at": 1685693511,
-  "versions": []
+  "updated_at": 1706340547,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "CrystalWars-0.6.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/CrystalWars/job/master/92/artifact/target/CrystalWars-0.6.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "0.6.0-SNAPSHOT",
+      "prerelease": true,
+      "published_at": 1706340555,
+      "version": "ci-92"
+    }
+  ]
 }

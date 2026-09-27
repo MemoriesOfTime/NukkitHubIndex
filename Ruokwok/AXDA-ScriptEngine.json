@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "Ruok",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/72373519?v=4",
+      "name": "Ruokwok",
+      "url": "https://github.com/Ruokwok"
     }
   ],
   "categories": [
@@ -57,6 +57,23 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1766927725,
-  "versions": []
+  "updated_at": 1757162784,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AXDA-ScriptEngine-1.0.0.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/AXDA-ScriptEngine/27/artifact/target/AXDA-ScriptEngine-1.0.0.jar"
+        }
+      ],
+      "name": "1.0.0",
+      "prerelease": true,
+      "published_at": 1757085424,
+      "version": "ci-27"
+    }
+  ]
 }

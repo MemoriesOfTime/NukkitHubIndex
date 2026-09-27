@@ -1,0 +1,58 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+      "name": "wode490390",
+      "url": "https://github.com/wode490390"
+    }
+  ],
+  "categories": [],
+  "created_at": 1585958906,
+  "dependencies": [],
+  "description": "# Retro Generator for Nukkit\n[![Build](https://img.shields.io/circleci/build/github/wode490390/RetroGenerator/master)](https://circleci.com/gh/wode490390/RetroGenerator/tree/master)\n[![Release](https://img.shields.io/github/v/release/wode490390/RetroGenerator)](https://github.com/wode490390/RetroGenerator/releases)\n[![Release date](https://img.shields.io/github/release-date/wode490390/RetroGenerator)](https://github.com/wode490390/RetroGenerator/releases)\n<!--[![Servers](https://img.shields.io/bstats/servers/6997)](https://bstats.org/plugin/bukkit/RetroGenerator/6997)\n[![Players](https://img.shields.io/bstats/players/6997)](https://bstats.org/plugin/bukkit/RetroGenerator/6997)-->\n\nThis is an easter egg generator ported from [20w14infinite](https://minecraft.gamepedia.com/Java_Edition_20w14infinite).\n\n![](https://i.loli.net/2020/04/04/EIMhzjrtg9DiZYu.png)\n\nIf you found any bugs or have any suggestions, please open an issue on [GitHub Issues](https://github.com/wode490390/RetroGenerator/issues).\n\nIf you love this plugin, please star it on [GitHub](https://github.com/wode490390/RetroGenerator).\n\n## Download\n- [Releases](https://github.com/wode490390/RetroGenerator/releases)\n- [Snapshots](https://circleci.com/gh/wode490390/RetroGenerator)\n\n## Configurations\n\n### config.yml\n```yaml\nline:\n  # Block ID used to generate the line\n  material: 236\n  meta: 5\nbackground:\n  # Block ID used to generate the background\n  material: 236\n  meta: 15\n```\n\n## Compiling\n1. Install [Maven](https://maven.apache.org/).\n2. Run `mvn clean package`. The compiled JAR can be found in the `target/` directory.\n\n## Metrics Collection\n\nThis plugin uses [bStats](https://github.com/wode490390/bStats-Nukkit) - you can opt out using the global bStats config, see the [official website](https://bstats.org/getting-started) for more details.\n\n<!--[![Metrics](https://bstats.org/signatures/bukkit/RetroGenerator.svg)](https://bstats.org/plugin/bukkit/RetroGenerator/6997)-->\n\n###### If I have any grammar and terms error, please correct my wrong :)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+  "id": "wode490390/RetroGenerator",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "http://wode490390.cn/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "RetroGenerator",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/wode490390/RetroGenerator",
+  "stars": 0,
+  "summary": "This is an easter egg generator ported from 20w14infinite",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1586709923,
+  "versions": [
+    {
+      "changelog": "Initial release",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeRetroGenerator-1.0.0.jar",
+          "primary": true,
+          "size": 17875,
+          "url": "https://github.com/wode490390/RetroGenerator/releases/download/1.0.0/wodeRetroGenerator-1.0.0.jar"
+        }
+      ],
+      "name": "RetroGenerator-v1.0.0",
+      "prerelease": false,
+      "published_at": 1586709923,
+      "version": "1.0.0"
+    }
+  ]
+}

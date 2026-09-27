@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/29895665?v=4",
+      "name": "jungwuk-ryu",
+      "url": "https://github.com/jungwuk-ryu"
+    }
+  ],
+  "categories": [],
+  "created_at": 1585062745,
+  "dependencies": [],
+  "description": "```\n/loadplugin <pluginFileName>      - (without .jar)\n/unloadplugin <pluginName>\n/forceunloadplugin <pluginName>       - unload plugin without onDisable()\n```\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/67546956?v=4",
+  "id": "chsv-devs/TogglePlugins",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "TogglePlugins",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/chsv-devs/TogglePlugins",
+  "stars": 2,
+  "summary": "manually load plugins on Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1596052268,
+  "versions": []
+}

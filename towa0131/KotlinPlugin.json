@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/23122010?v=4",
+      "name": "towa0131",
+      "url": "https://github.com/towa0131"
+    }
+  ],
+  "categories": [],
+  "created_at": 1495705445,
+  "dependencies": [],
+  "description": "",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/23122010?v=4",
+  "id": "towa0131/KotlinPlugin",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "KotlinPlugin",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/towa0131/KotlinPlugin",
+  "stars": 3,
+  "summary": "Nukkit Test Plugin written in Kotlin",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1511035128,
+  "versions": []
+}

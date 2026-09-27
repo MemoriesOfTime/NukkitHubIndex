@@ -1,0 +1,99 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/12100985?v=4",
+      "name": "Him188",
+      "url": "https://github.com/Him188"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/1887100?v=4",
+      "name": "augesrob",
+      "url": "https://github.com/augesrob"
+    }
+  ],
+  "categories": [],
+  "created_at": 1514820310,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "Mr_World",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "MultiWorld",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "Worlds",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "SMultiWorld",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "MultiWorlds",
+      "version_range": ""
+    }
+  ],
+  "description": "# MyMap\n\nMyMap plugin for [Nukkit](https://github.com/nukkit/nukkit). Show your gif image on the server!\n\n## Description\n\nThis plugin allows you to show static images, gif images, multi images\non your server.  \nScreenshots is in the end.\n\n## Usage\n\n1. Install the plugin into your server. And join in.\n2. Create a rectangle in a world(Any one, not just the main world).\n3. Use command `/mymap add <id>` to make the rectangle become a frame.\n4. Use command `/mymap setpicture <id> <imageFile>` to set the picture\n   in the frame.\n5. The plugin will start to fill in the frame. Enjoy it!\n\n## Tips\n\n- If you want to change the picture, just use command `/mymap setpicture <id> <imageFile>` again.\n- An OP can long-touch(Left-click for Win10) a frame to look up id of the frame.\n- This plugin supports languages in 简体中文(Chinese Simplified) and English\n\n## Q&A\n\n- How to set GIF image?  \n  The same way as static images.\n- How to set Multi images?  \n  Create a folder under plugins/MyMap/images, put images in it.(Needs static picture, dynamic GIF only displays the first frame).  \n  Name of picture decides how long to display. (Not included the suffix, explodes by \"-\", the last one is the display time)  \n  Examples:\n  - pic-3000.jpg  displays 3000ms = 3s\n  - img-500.png  displays 500ms = 0.5s\n  - -3000.bmp  displays 3000ms = 3s\n\n  PS: If filename has no or more than 1 \"-\", or the number is invalid(negative), it will use default display time 3000ms=3s.\n\n## Screenshots\n\n![](https://raw.githubusercontent.com/Nukkit-coders/MyMap/master/images/MyMap-GIF.gif)  \n![](https://raw.githubusercontent.com/Nukkit-coders/MyMap/master/images/MyMap-STATIC.jpg)",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-09-25",
+      "description": "",
+      "title": "",
+      "url": "https://raw.githubusercontent.com/Nukkit-coders/MyMap/master/images/MyMap-GIF.gif"
+    },
+    {
+      "created": "2026-09-25",
+      "description": "",
+      "title": "",
+      "url": "https://raw.githubusercontent.com/Nukkit-coders/MyMap/master/images/MyMap-STATIC.jpg"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/34147027?v=4",
+  "id": "Nukkit-coders/MyMap",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "MyMap",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Nukkit-coders/MyMap",
+  "stars": 1,
+  "summary": "Shows images on your server!",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1518036895,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "mymap-1.2.0.jar",
+          "primary": true,
+          "size": 63371,
+          "url": "https://github.com/Nukkit-coders/MyMap/releases/download/1.2.0/mymap-1.2.0.jar"
+        }
+      ],
+      "name": "",
+      "prerelease": false,
+      "published_at": 1514827591,
+      "version": "1.2.0"
+    }
+  ]
+}

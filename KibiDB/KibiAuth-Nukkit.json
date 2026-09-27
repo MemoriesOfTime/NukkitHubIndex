@@ -1,0 +1,54 @@
+{
+  "api_version": "1.0.9",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45833810?v=4",
+      "name": "Josewowgame2888",
+      "url": "https://github.com/Josewowgame2888"
+    }
+  ],
+  "categories": [],
+  "created_at": 1600575164,
+  "dependencies": [],
+  "description": "# KibiAuth\nAuth plugin for Minecraft Bedrock (Nukkit software) incorporating KibiDB Server and KibiDB-Driver-Java services\n\n### How install\n\n- Have installing KibiDB Server (https://github.com/KibiDB/KibiDB)\n- Put KibiAuth.jar in the plugins folder of your server\n- Start the server and then shut it down\n- Open the configuration file that the plugin generated \"kibi.yml\" and put the corresponding credentials\n- You can now start using the plugin. Remember that it is necessary to have KibiDB Server running",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/71568895?v=4",
+  "id": "KibiDB/KibiAuth-Nukkit",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "KibiAuth",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/KibiDB/KibiAuth-Nukkit",
+  "stars": 0,
+  "summary": "Auth plugin for Minecraft Bedrock (Nukkit software) incorporating KibiDB Server and KibiDB-Driver-Java services",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1600888653,
+  "versions": [
+    {
+      "changelog": "\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "KibiAuth.jar",
+          "primary": true,
+          "size": 18271,
+          "url": "https://github.com/KibiDB/KibiAuth-Nukkit/releases/download/1.0/KibiAuth.jar"
+        }
+      ],
+      "name": "KibiAuth_v1.0",
+      "prerelease": false,
+      "published_at": 1600575916,
+      "version": "1.0"
+    }
+  ]
+}

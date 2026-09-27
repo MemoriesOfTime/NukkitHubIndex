@@ -2,16 +2,21 @@
   "api_version": "1.0.8",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "若水",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
+      "name": "SmallasWater",
+      "url": "https://github.com/SmallasWater"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
     }
   ],
   "categories": [],
   "created_at": 1571297948,
   "dependencies": [],
   "description": "# AutoUpData\n根据Github仓库 更新插件\n",
-  "detection_confidence": "high",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
@@ -33,7 +38,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1700644032,
+  "updated_at": 1701050886,
   "versions": [
     {
       "changelog": "* 完善maven不指定后缀时的版本检查\r\n* 支持版本后缀检查",
@@ -402,6 +407,22 @@
       "prerelease": false,
       "published_at": 1571298027,
       "version": "v1.0.0"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoUpData-1.3.0.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/AutoUpData/7/artifact/target/AutoUpData-1.3.0.jar"
+        }
+      ],
+      "name": "1.3.0",
+      "prerelease": true,
+      "published_at": 1701001837,
+      "version": "ci-7"
     }
   ]
 }

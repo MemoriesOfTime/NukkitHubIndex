@@ -1,6 +1,12 @@
 {
   "api_version": "1.0.0",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/33370594?v=4",
+      "name": "TLRSC",
+      "url": "https://github.com/TLRSC"
+    }
+  ],
   "categories": [
     "management"
   ],
@@ -29,7 +35,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1556897559,
+  "updated_at": 1515703221,
   "versions": [
     {
       "changelog": "",

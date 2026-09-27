@@ -2,14 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
       "name": "Buddelbubi",
-      "url": ""
-    },
-    {
-      "avatar_url": "",
-      "name": "Syodo Minigames Network",
-      "url": ""
+      "url": "https://github.com/Buddelbubi"
     }
   ],
   "categories": [],
@@ -29,16 +24,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "Heads",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/Heads",
   "stars": 1,
   "summary": "Heads is a Head Plugin for PowerNukkitX which adds playerheads to the server.",
   "targets": [
-    "nkx",
     "pnx"
   ],
-  "updated_at": 1785738482,
+  "updated_at": 1785738470,
   "versions": [
     {
       "changelog": "Automated release for v1.1.3",
@@ -47,6 +41,7 @@
         {
           "filename": "Heads.jar",
           "primary": true,
+          "sha256": "dbaf7e628872839b329fe6be9788426380debf3d77d0d8cbb5972d8549e14766",
           "size": 23643,
           "url": "https://github.com/PowerNukkitX-Bundle/Heads/releases/download/v1.1.3/Heads.jar"
         }
@@ -63,6 +58,7 @@
         {
           "filename": "SyoHeads.jar",
           "primary": true,
+          "sha256": "cf3cb2e44a64454e3c36c07d605605875b80b9ac56d6afbb61623f59b8ef2b42",
           "size": 23498,
           "url": "https://github.com/PowerNukkitX-Bundle/Heads/releases/download/v1.1.2/SyoHeads.jar"
         }

@@ -1,0 +1,38 @@
+{
+  "api_version": "unknown",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/70720009?v=4",
+      "name": "YmirSonmez",
+      "url": "https://github.com/YmirSonmez"
+    }
+  ],
+  "categories": [],
+  "created_at": 1628844275,
+  "dependencies": [],
+  "description": "# CustomCommands\nCustomCommands Plugin for Nukkit.\nYou can simply add commands via config.\n\n### Config\n```YML\ncommands:\n\n  - name: \"test\"\n    desc: \"First command\"\n    perm: \"mcpe.testperm\"\n    kill: false\n    allies:\n      - \"testt\"\n    messages:\n      - \"Hello world!\"\n      - \"How are you?\"\n      \n  - name: \"killme\"\n    desc: \"Second command\"\n    perm: \"bruh.kill\"\n    kill: true\n    allies:\n      - \"killl\"\n    messages:\n      - \"OH NO!\"\n```\n\n#### Keywords\n- kill : Boolean -> True kills command sender -> Default false\n- name : String -> Command -> Forced -> Must lowercase\n- allies : String List -> Must lowercase\n- perm : String -> Command permission\n- desc : String -> Command description -> Default \"Server Command\"\n- messages : String List -> Sends the entire list as a chat message\n- formContent : ----\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/70720009?v=4",
+  "id": "YmirSonmez/CustomCommands",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "CustomCommands",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/YmirSonmez/CustomCommands",
+  "stars": 1,
+  "summary": "CustomCommands Plugin for Nukkit",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1629232254,
+  "versions": []
+}

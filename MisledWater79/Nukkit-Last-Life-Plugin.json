@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/59891258?v=4",
+      "name": "MisledWater79",
+      "url": "https://github.com/MisledWater79"
+    }
+  ],
+  "categories": [],
+  "created_at": 1632280205,
+  "dependencies": [],
+  "description": "# Nukkit-Last-Life-Plugin\nThis is a plugin for Minecraft bedrock edition Nukkit servers that allows it to be played like Hermitcraft's Last Life series.\n## Last Life Rules\n1. 2+ lives cannot kill/fight others unless they were attacked first.\n2. On the beginning of every session the server will **randomly** and **seceretly** select a non-red name to become the Boogeyman\n## Boogeyman Info\n1. Only non-red life users can be picked as a Boogeyman\n2. Only 1 Boogeyman is choosen with a rare chance of 2 Boogeymen\n3. If you are the Boogeyman you, by any means necessary, must kill a green or yellow name by direct action to be cured of the curse\n4. If the Boogeyman fails, next session they will become a red name\n5. All loyalties and friendships are removed while you are the Boogeyman\n## Life Info\n* At the start of the server everyone will get 2-6 lives\n* 5 or 6 lives will have a Dark Green name in chat and above their head\n* 4 lives will have a Lime Green name in chat and above their head\n* 3 lives will have a Yellow name in chat and above their head\n* 2 lives will have a Orange name in chat and above their head\n* People with 1 life left will have a Red name in chat and above their head\n* Red Names will have all of their friendships and ties broken and become hostile\n* Red Names can team up with other red names\n* In order to win you must be the last player standing\n## Server Info\nIn order to start the game you must run `/lastlifestart`. This will add all online players to the game, along with giving people lives and picking a Boogeyman/Boogeymen. Once the game has started it will put any players who have died on their last life or players who arent added to the game into spectator mode. If you wish to add someone to the game you can run `/addplayer <player>`. If at any point you would like to end the game you can run `/lastlifestop` to stop the game and reset everyone.\n## Commands\n:red_circle: `/lastlifestart` \n\nThis command starts the game, while it is started, none of the setting commands will work.\n\n:red_circle: `/lastlifestop` \n\nThis command stops the game, while it is stopped, all of the commands will work.\n\n:green_circle: `/givelife` or `/gl`\n\nThis command gives one of your ives and gives it to another player.\n\n:red_circle: `/` \n\nPlace holder text\n\n:red_circle: `/` \n\nPlace holder text\n\n:red_circle: `/` \n\nPlace holder text\n\n:red_circle: `/` \n\nPlace holder text",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/59891258?v=4",
+  "id": "MisledWater79/Nukkit-Last-Life-Plugin",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "LastLifeCore",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/MisledWater79/Nukkit-Last-Life-Plugin",
+  "stars": 0,
+  "summary": "A plugin for Last Life, a game from the Hermitcraft series",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1633140848,
+  "versions": []
+}

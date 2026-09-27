@@ -1,0 +1,72 @@
+{
+  "api_version": "2.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/216477222?v=4",
+      "name": "Kanelucky",
+      "url": "https://github.com/Kanelucky"
+    }
+  ],
+  "categories": [],
+  "created_at": 1766024008,
+  "dependencies": [],
+  "description": "<img width=\"666\" height=\"375\" alt=\"Command-Block-Minecraft-removebg-preview\" src=\"https://github.com/user-attachments/assets/85650b50-920c-45c5-a506-d25ed1b27739\" />\n\n# ✨ CommandWhiteList\n- You decide what commands players can use or tab complete on your server!\n# ⚙️ Configuration (config.yml)\n```yml\nopByPass: true\ncommands:\n  - ver\n  - version\n  - plugins\n  - help\nmessage: \"You do not have permission to use this command!\"\n```\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/216477222?v=4",
+  "id": "Kanelucky/CommandWhiteList",
+  "license": {
+    "id": "Apache-2.0",
+    "name": "Apache License 2.0",
+    "url": "https://spdx.org/licenses/Apache-2.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "CommandWhiteList",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/Kanelucky/CommandWhiteList",
+  "stars": 0,
+  "summary": "You decide what commands players can use or tab complete on your server!",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1786715657,
+  "versions": [
+    {
+      "changelog": "**Full Changelog**: https://github.com/Kanelucky/CommandWhiteList/compare/v1.0.0...1.1.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "CommandWhiteList-1.1.jar",
+          "primary": true,
+          "sha256": "30e2eea8724bc3ab688b13b2d543ba21af6f6f995056791f4719b669e7617960",
+          "size": 4966,
+          "url": "https://github.com/Kanelucky/CommandWhiteList/releases/download/1.1.0/CommandWhiteList-1.1.jar"
+        }
+      ],
+      "name": "1.1.0",
+      "prerelease": false,
+      "published_at": 1786715657,
+      "version": "1.1.0"
+    },
+    {
+      "changelog": "First release",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "CommandWhiteList-1.0-SNAPSHOT.jar",
+          "primary": true,
+          "sha256": "d97a19104aee237727a66f58717716e931516a91eecd46aaf3a71717345b0b53",
+          "size": 4938,
+          "url": "https://github.com/Kanelucky/CommandWhiteList/releases/download/v1.0.0/CommandWhiteList-1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "v1.0.0",
+      "prerelease": false,
+      "published_at": 1766024796,
+      "version": "v1.0.0"
+    }
+  ]
+}

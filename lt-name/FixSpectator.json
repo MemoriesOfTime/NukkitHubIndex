@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "LT_Name",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
     }
   ],
   "categories": [],
@@ -32,6 +32,23 @@
   "targets": [
     "nkx"
   ],
-  "updated_at": 1597307198,
-  "versions": []
+  "updated_at": 1597223723,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FixSpectator-1.0.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/FixSpectator/6/artifact/target/FixSpectator-1.0.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "1.0.0-SNAPSHOT",
+      "prerelease": true,
+      "published_at": 1597745352,
+      "version": "ci-6"
+    }
+  ]
 }

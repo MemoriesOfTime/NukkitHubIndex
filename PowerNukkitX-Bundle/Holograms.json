@@ -2,9 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
       "name": "Buddelbubi",
-      "url": ""
+      "url": "https://github.com/Buddelbubi"
     }
   ],
   "categories": [
@@ -34,16 +34,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "Holograms",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/Holograms",
   "stars": 1,
   "summary": "Add holograms to your server",
   "targets": [
-    "nkx",
     "pnx"
   ],
-  "updated_at": 1785777925,
+  "updated_at": 1785690393,
   "versions": [
     {
       "changelog": "Automated release for v1.0.4",
@@ -52,6 +51,7 @@
         {
           "filename": "Holograms.jar",
           "primary": true,
+          "sha256": "59497e762c8e2fddf38a7dc671b8a489e503fc2c6111779bc8e3b6fb98e40f83",
           "size": 15126,
           "url": "https://github.com/PowerNukkitX-Bundle/Holograms/releases/download/v1.0.4/Holograms.jar"
         }
@@ -68,6 +68,7 @@
         {
           "filename": "Holograms.jar",
           "primary": true,
+          "sha256": "bef76b94c3da68f6f9aa74a4bb1328448128791e7a89e2779890359ba7ce4575",
           "size": 15127,
           "url": "https://github.com/PowerNukkitX-Bundle/Holograms/releases/download/v1.0.3/Holograms.jar"
         }
@@ -84,6 +85,7 @@
         {
           "filename": "Holograms.jar",
           "primary": true,
+          "sha256": "09b79014cb377caa1e2b24a146ba3c7de856ab1e728759effc19fa16aa0ae56d",
           "size": 15111,
           "url": "https://github.com/PowerNukkitX-Bundle/Holograms/releases/download/1.0.2/Holograms.jar"
         }
@@ -100,6 +102,7 @@
         {
           "filename": "Holograms-1.0.1.jar",
           "primary": true,
+          "sha256": "0fbca9b94dee0eba73bc6d2a8450f55ff49a1f8863123563e9016499ec1b2968",
           "size": 16366,
           "url": "https://github.com/PowerNukkitX-Bundle/Holograms/releases/download/1.0.0/Holograms-1.0.1.jar"
         }

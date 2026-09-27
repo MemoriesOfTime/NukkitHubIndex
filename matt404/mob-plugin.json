@@ -1,0 +1,69 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/236871?v=4",
+      "name": "kniffo80",
+      "url": "https://github.com/kniffo80"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/1887100?v=4",
+      "name": "augesrob",
+      "url": "https://github.com/augesrob"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/13001615?v=4",
+      "name": "matt404",
+      "url": "https://github.com/matt404"
+    }
+  ],
+  "categories": [],
+  "created_at": 1511501533,
+  "dependencies": [],
+  "description": "# Nukkit Mob Plugin\nDevelopment: **[kniffo80](https://github.com/kniffo80)**\n             **[matt404](https://github.com/matt404)**\n             **[augesrob](https://github.com/augesrob)**\n\nMobPlugin is a plugin that implements the mob entities for MCPE including movement, aggression etc.\n\n## Notice\n#### Welcome Github issue!\nThis plug-in is in development. Therefore, It is possible to function abnormally.\n\n[![Nukkit.io](https://img.shields.io/badge/Nukkit%20MobPlugin-Download-yellow.svg)](https://forums.nukkit.io/resources/mobplugin.155/)\n[![Discord](https://discordapp.com/api/guilds/331619998059593738/widget.png)](https://discord.gg/tDfqkNB)\n\n# Credits\nCredits go to Team-SW! They have a nice plugin already made. I used it and adapt it for 0.16.\n\n# Plugin Example configuration\nPlace this plugin jar file to your Nukkit's home directory \"${NUKKIT_HOME}/plugin\".\n#### Example:\n  /usr/share/nukkit/plugins/MobPlugin-0.0.2-SNAPSHOT.jar\n\nThen you have to create a folder in plugin folder with the name of the plugin and place the config.yml there (\"${NUKKIT_HOME}/plugin/MobPlugin\").\n#### Example:\n  /usr/share/nukkit/plugins/MobPlugin/config.yml\n\nWhen Nukkit Server starts up and the plugin is activated, the config.yml is read and evaluated by the plugin.\n\n## config.yml example\n\nThe following configuration sets mobs AI enabled and the auto spawn task will be triggered all 300 ticks.\nIt's configured to spawn only wolfes:\n\n```yaml\nentities:\n  mob-ai: true\n  auto-spawn-tick: 300\n  worlds-spawn-disabled: \n\nmax-spawns:\n  bat: 0\n  blaze: 0\n  cave-spider: 0\n  chicken: 0\n  cow: 0\n  creeper: 0\n  donkey: 0\n  enderman: 0\n  ghast: 0\n  horse: 0\n  iron-golem: 0\n  mooshroom: 0\n  mule: 0\n  ocelot: 0\n  pig: 0\n  pig-zombie: 0\n  rabbit: 0\n  silverfish: 0\n  sheep: 0\n  skeleton: 0\n  skeleton-horse: 0\n  snow-golem: 0\n  spider: 0\n  squid: 0\n  witch: 0\n  wolf: 1\n  zombie: 0\n  zombie-horse: 0\n  zombie-villager: 0\n```\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/13001615?v=4",
+  "id": "matt404/mob-plugin",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/kniffo80/NukkitMobPlugin",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "MobPlugin",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/matt404/mob-plugin",
+  "stars": 1,
+  "summary": "Implement Entity AI from scratch beginning with 0.16.x",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1511921760,
+  "versions": [
+    {
+      "changelog": "This fixed what some of the animals eat. Still WIP.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "MobPlugin-0.0.2-SNAPSHOT.jar",
+          "primary": true,
+          "size": 152237,
+          "url": "https://github.com/matt404/mob-plugin/releases/download/0.0.2-SNAPSHOT-FIX/MobPlugin-0.0.2-SNAPSHOT.jar"
+        }
+      ],
+      "name": "what animals eat",
+      "prerelease": true,
+      "published_at": 1511680856,
+      "version": "0.0.2-SNAPSHOT-FIX"
+    }
+  ]
+}

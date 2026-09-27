@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/10361945?v=4",
+      "name": "jiwon02971",
+      "url": "https://github.com/jiwon02971"
+    }
+  ],
+  "categories": [],
+  "created_at": 1609618091,
+  "dependencies": [],
+  "description": "# ExamplePlugin\n\nCloudBurst Nukkit의 플러그인을 코틀린으로 코딩한 예제입니다.",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/10361945?v=4",
+  "id": "jiwon02971/ExamplePlugin-Kotlin",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "ExamplePlugin",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/jiwon02971/ExamplePlugin-Kotlin",
+  "stars": 0,
+  "summary": "Cloudburst Nukkit Plugin",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1609619816,
+  "versions": []
+}

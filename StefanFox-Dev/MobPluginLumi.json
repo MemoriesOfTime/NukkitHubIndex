@@ -2,9 +2,9 @@
   "api_version": "1.0.14",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "Koshak_Mine, kniffo80, matt404, augesrob, PetteriM1, PikyCZ, zzz1999, SergeyDertan",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/52908036?v=4",
+      "name": "KoshakMineDEV",
+      "url": "https://github.com/KoshakMineDEV"
     }
   ],
   "categories": [],
@@ -32,6 +32,6 @@
   "targets": [
     "lumi"
   ],
-  "updated_at": 1785849314,
+  "updated_at": 1785849127,
   "versions": []
 }

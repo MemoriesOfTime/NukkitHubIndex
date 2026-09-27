@@ -1,0 +1,177 @@
+{
+  "api_version": "1.0.9",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/646044?v=4",
+      "name": "bekvon",
+      "url": "https://github.com/bekvon"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/1392429?v=4",
+      "name": "nate302",
+      "url": "https://github.com/nate302"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/8595779?v=4",
+      "name": "DartCZ",
+      "url": "https://github.com/DartCZ"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/1379859?v=4",
+      "name": "smbarbour",
+      "url": "https://github.com/smbarbour"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/10363500?v=4",
+      "name": "Creeperface01",
+      "url": "https://github.com/Creeperface01"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/1556470?v=4",
+      "name": "inorixu",
+      "url": "https://github.com/inorixu"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/1569380?v=4",
+      "name": "javacraft",
+      "url": "https://github.com/javacraft"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/161332?v=4",
+      "name": "ryall",
+      "url": "https://github.com/ryall"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/88597837?v=4",
+      "name": "PikyXoS",
+      "url": "https://github.com/PikyXoS"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/998408?v=4",
+      "name": "Sejsel",
+      "url": "https://github.com/Sejsel"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/4652370?v=4",
+      "name": "filipsohajek",
+      "url": "https://github.com/filipsohajek"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/1403624?v=4",
+      "name": "xyberviri",
+      "url": "https://github.com/xyberviri"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/708250?v=4",
+      "name": "Moo0",
+      "url": "https://github.com/Moo0"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/1607082?v=4",
+      "name": "GSValore",
+      "url": "https://github.com/GSValore"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/4789106?v=4",
+      "name": "AyACZE",
+      "url": "https://github.com/AyACZE"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/5508988?v=4",
+      "name": "Darker",
+      "url": "https://github.com/Darker"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/12164?v=4",
+      "name": "glguy",
+      "url": "https://github.com/glguy"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/190156?v=4",
+      "name": "Kilandor",
+      "url": "https://github.com/Kilandor"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/963797?v=4",
+      "name": "TomyLobo",
+      "url": "https://github.com/TomyLobo"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/83449313?v=4",
+      "name": "gaetleba",
+      "url": "https://github.com/gaetleba"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/1034770?v=4",
+      "name": "Dockter",
+      "url": "https://github.com/Dockter"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/4472204?v=4",
+      "name": "silvinios",
+      "url": "https://github.com/silvinios"
+    }
+  ],
+  "categories": [],
+  "created_at": 1516967648,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "EconomyAPI",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "MadPerms",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "Multipass",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "FastAsyncWorldEdit",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "LuckPerms",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "LlamaEconomy",
+      "version_range": ""
+    }
+  ],
+  "description": "ResidencePE - Self serve area protection system for Nukkit\n=============================================\n\nOfficial links:\nWiki: https://github.com/bekvon/Residence/wiki\nIRC: irc://irc.esper.net/Residence\nSpigot Resource page: nukkit>todo\n\nDownload:\n//TODO\n\n**Todo**\n-EconomyAPI support\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/10363500?v=4",
+  "id": "Creeperface01/Residence",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "http://www.spigotmc.org/resources/residence-reloaded-1-8.2697/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Residence",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Creeperface01/Residence",
+  "stars": 5,
+  "summary": "Cuboid Residence Plugin",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1615238769,
+  "versions": []
+}

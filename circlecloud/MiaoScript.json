@@ -1,0 +1,151 @@
+{
+  "api_version": "unknown",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/10203793?v=4",
+      "name": "502647092",
+      "url": "https://github.com/502647092"
+    }
+  ],
+  "categories": [],
+  "created_at": 1553304324,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "OriginAttribute",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "AttributeSystem",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "ItemLoreOrigin",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "PlaceholderAPI",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "AttributePlus",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "PlayerPoints",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "SX-Attribute",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "CrazyCrates",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "ProtocolLib",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "DragonCore",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "MythicMobs",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "WorldGuard",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "Adyeshach",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "WorldEdit",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "SkillAPI",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "TradeMe",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "Chemdah",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "Vault",
+      "version_range": ""
+    }
+  ],
+  "description": "# MiaoScript\n\n> 一个兼容 Spigot Sponge Nukkit BungeeCord 的 脚本插件运行时\n\n## 简介\n\n## 安装\n\n- 下载后放入对应服务器目录\n  - Bukkit Nukkit BungeeCord 以及其分支 => `plugins`\n  - Sponge => `mods`\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/49047918?v=4",
+  "id": "circlecloud/MiaoScript",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": {
+    "discord": "",
+    "homepage": "${ciManagement.url}",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "MiaoScript",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/circlecloud/MiaoScript",
+  "stars": 6,
+  "summary": "",
+  "targets": [
+    "nkx",
+    "nkmot",
+    "pnx"
+  ],
+  "updated_at": 1704699901,
+  "versions": [
+    {
+      "changelog": "## 更新日志\r\n\r\n- 23-07-30\r\n  - feat: 优化 require 性能;\r\n  - fix: 修复 require 加载特殊文件异常;\r\n- 23-07-22\r\n  - feat: 网络加载 jtar 优化包大小;\r\n  - feat: 移除 Spring 相关支持;\r\n  - remove: 移除 Spring 相关支持;\r\n  - deps: 更新 Nashorn 和 GraalvmJS 引擎版本\r\n\r\n> 此版本未正式发布前 需要进行下列操作 防止重启更新\r\n> 在 plugins/MiaoScript 目录下 新建 `channel` 文件 并且写入 `beta` 防止自动更新\r\n> 当此版本发布后 你可以删除 beta 文件 更新至正式版本",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "MiaoScript.jar",
+          "primary": true,
+          "size": 35332,
+          "url": "https://github.com/circlecloud/MiaoScript/releases/download/0.28.0/MiaoScript.jar"
+        }
+      ],
+      "name": "v0.28.0",
+      "prerelease": false,
+      "published_at": 1690712056,
+      "version": "0.28.0"
+    }
+  ]
+}

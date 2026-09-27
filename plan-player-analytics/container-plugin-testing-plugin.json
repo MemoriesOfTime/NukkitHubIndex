@@ -1,0 +1,39 @@
+{
+  "api_version": "unknown",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/24460436?v=4",
+      "name": "AuroraLS3",
+      "url": "https://github.com/AuroraLS3"
+    }
+  ],
+  "categories": [],
+  "created_at": 1623581305,
+  "dependencies": [],
+  "description": "# container-plugin-testing-plugin\nA multi-platform Minecraft plugin that exposes parts of the server platform API via HTTP endpoints on port 7777\n\n## Usage\n\n- Plugin works on Spigot, Sponge, Nukkit, Bungeecord, Velocity\n- Place plugin on the plugins or mods folder and enable the server\n\n## Endpoints\n\n```\nGET /server\nHTTP 200 if server has started\nHTTP 503 if server has not started yet\nConnection refused if server has not started yet\n```\n\n```\nGET /plugin?name=<Name of a plugin>\nHTTP 200 if the plugin has enabled\nHTTP 404 if the plugin has not enabled or is not installed\n```\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/48692242?v=4",
+  "id": "plan-player-analytics/container-plugin-testing-plugin",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "container-plugin-testing",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/plan-player-analytics/container-plugin-testing-plugin",
+  "stars": 0,
+  "summary": "A multi-platform Minecraft plugin that exposes parts of the server platform API via HTTP endpoints",
+  "targets": [
+    "nkx",
+    "nkmot",
+    "pnx"
+  ],
+  "updated_at": 1624184434,
+  "versions": []
+}

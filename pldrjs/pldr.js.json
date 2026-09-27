@@ -1,0 +1,92 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/3919433?v=4",
+      "name": "HelloWorld017",
+      "url": "https://github.com/HelloWorld017"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/3233503?v=4",
+      "name": "onebone",
+      "url": "https://github.com/onebone"
+    }
+  ],
+  "categories": [],
+  "created_at": 1469660793,
+  "dependencies": [],
+  "description": "",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/20691915?v=4",
+  "id": "pldrjs/pldr.js",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "pldr.js",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/pldrjs/pldr.js",
+  "stars": 5,
+  "summary": "A plugin which enables javascript plugin in nukkit.",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1471963597,
+  "versions": [
+    {
+      "changelog": "- 이제 신버전 pldr.js 가 설치될 경우 파일들도 같이 업데이트 됩니다.  \n- 이제 GUIEnabled가 동작하며, GUI가 지원되지 않는 환경에서 오류를 생성하지 않습니다.\n- 그 외에 버그 수정  \n\n# 핫스팟 패치 : aquafix\n\n너킷의 변동사항으로 인한 TextFormat.AQUA 버그가 패치됐습니다.\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "pldrjs-1.2.0-aquafix.jar",
+          "primary": true,
+          "size": 1965295,
+          "url": "https://github.com/pldrjs/pldr.js/releases/download/v1.2.0/pldrjs-1.2.0-aquafix.jar"
+        }
+      ],
+      "name": "pldr.js 1.2 + 160823 핫스팟 패치",
+      "prerelease": true,
+      "published_at": 1471694670,
+      "version": "v1.2.0"
+    },
+    {
+      "changelog": "# 수정사항\n1. PldrJS.Script.save 명령어 오작동 수정  \n2. node_modules 압축 해제 시 오류 나던 것 수정  \n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "pldrjs-1.1.0.jar",
+          "primary": true,
+          "size": 1963950,
+          "url": "https://github.com/pldrjs/pldr.js/releases/download/v1.1.0/pldrjs-1.1.0.jar"
+        }
+      ],
+      "name": "pldr.js 1.1.0",
+      "prerelease": true,
+      "published_at": 1470970734,
+      "version": "v1.1.0"
+    },
+    {
+      "changelog": "# pldr.js 1.0\n- 기본적인 이벤트와 API 포함\n- 테스트 안 됨\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "pldrjs-1.0.jar",
+          "primary": true,
+          "size": 859357,
+          "url": "https://github.com/pldrjs/pldr.js/releases/download/v1.0/pldrjs-1.0.jar"
+        }
+      ],
+      "name": "pldr.js 1.0",
+      "prerelease": true,
+      "published_at": 1470734988,
+      "version": "v1.0"
+    }
+  ]
+}

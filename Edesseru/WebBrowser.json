@@ -1,0 +1,43 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/26784861?v=4",
+      "name": "itsu-dev",
+      "url": "https://github.com/itsu-dev"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45833318?v=4",
+      "name": "Edesseru",
+      "url": "https://github.com/Edesseru"
+    }
+  ],
+  "categories": [],
+  "created_at": 1544999609,
+  "dependencies": [],
+  "description": "# WebBrowser\nSimple web browser in Minecraft Bedrock Edition (Nukkit Server)\n\n## how to create display\n1 place blocks (default: 8x5)  \n2 place itemframes on that blocks  \n3 /web create  \n4 tap itemframes following this:  \n■: frame  \n1)→→→→→→  \n■■■■■■■■  \n2)→→→→→→  \n■■■■■■■■  \n3)→→→→→→  \n■■■■■■■■  \n:  \n:  \n5 load url automatically (default: google)  \n  \n## Config\n__Location: ./plugins/WebBrowser.yml__  \n\n## Commands\n- /web load [URL]\nload url.  \n  \n- /web create\ncreate display.  \n  \n- /web break\nbreak the display.  \n  \n## Attentions\nDisplay will be saved if you create display, and it will be loaded automatically when this plugin enabled.  \nIf you delete display anyway, delete \"./plugins/WebBrowser_display.dat\".  \n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/45833318?v=4",
+  "id": "Edesseru/WebBrowser",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "WebBrowser",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Edesseru/WebBrowser",
+  "stars": 0,
+  "summary": "Simple web browser in Minecraft Bedrock Edition (Nukkit Server)",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1544999729,
+  "versions": []
+}

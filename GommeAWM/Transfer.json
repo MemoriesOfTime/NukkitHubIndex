@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.13",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/86683320?v=4",
+      "name": "GommeAWM",
+      "url": "https://github.com/GommeAWM"
+    }
+  ],
+  "categories": [],
+  "created_at": 1639741500,
+  "dependencies": [],
+  "description": "# Transfer\nPlugin for transfer to a server | Minecraft Bedrock Edition| Nukkit | API 1.0.13\n\n# Description\nThis plugin have a Config for Settings, and you need a permission to use this command -> Permission - [\"cmd.transfer\"]\n\n/transfer help\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/86683320?v=4",
+  "id": "GommeAWM/Transfer",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Transfer",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/GommeAWM/Transfer",
+  "stars": 2,
+  "summary": "Plugin for transfer to a server | Minecraft Bedrock Edition| Nukkit | API 1.0.13",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1639741863,
+  "versions": []
+}

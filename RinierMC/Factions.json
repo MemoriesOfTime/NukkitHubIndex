@@ -2,9 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "2kMcFloat",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/88402556?v=4",
+      "name": "RinierMC",
+      "url": "https://github.com/RinierMC"
     }
   ],
   "categories": [],
@@ -24,16 +24,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "Factions",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/RinierMC/Factions",
   "stars": 0,
   "summary": "A simple faction plugin - create, join, invite, claim and manage factions with economy and bounty system.",
   "targets": [
-    "nkx",
     "pnx"
   ],
-  "updated_at": 1783973503,
+  "updated_at": 1783973909,
   "versions": [
     {
       "changelog": "",
@@ -42,6 +41,7 @@
         {
           "filename": "FactionsPlugin-1.0.0.jar",
           "primary": true,
+          "sha256": "7ab70c871a17f263b43761a060888412904998d8f4c1a0c69920dda465b23f8d",
           "size": 46791,
           "url": "https://github.com/RinierMC/Factions/releases/download/New/FactionsPlugin-1.0.0.jar"
         }

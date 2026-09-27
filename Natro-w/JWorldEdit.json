@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "Natro",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/242151603?v=4",
+      "name": "Natro-w",
+      "url": "https://github.com/Natro-w"
     }
   ],
   "categories": [],
@@ -24,16 +24,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "JWorldEdit",
-  "primary_target": "nkx",
+  "primary_target": "lumi",
   "server_version": "",
   "source": "https://github.com/Natro-w/JWorldEdit",
   "stars": 0,
   "summary": "",
   "targets": [
-    "nkx",
     "lumi"
   ],
-  "updated_at": 1781122256,
+  "updated_at": 1781122193,
   "versions": [
     {
       "changelog": "Release v1.0.0 - WorldEdit for Nukkit",
@@ -42,6 +41,7 @@
         {
           "filename": "JWorldEdit-1.0-SNAPSHOT.jar",
           "primary": true,
+          "sha256": "3130d89a1410d4bf2802093daa4c9aa68ec21c1ce08f118e46837311345b3dce",
           "size": 67271,
           "url": "https://github.com/Natro-w/JWorldEdit/releases/download/v1.0.0/JWorldEdit-1.0-SNAPSHOT.jar"
         }

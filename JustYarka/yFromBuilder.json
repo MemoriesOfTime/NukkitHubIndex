@@ -1,0 +1,54 @@
+{
+  "api_version": "1.0.8",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/42116658?v=4",
+      "name": "JustYarka",
+      "url": "https://github.com/JustYarka"
+    }
+  ],
+  "categories": [],
+  "created_at": 1588964131,
+  "dependencies": [],
+  "description": "# Description\nA simple API for creating and handling forms\n# Build\n```bash\ngit clone https://github.com/YarkaDev/yFormBuilder\ncd yFormBuilder\nmvn package\n```\n# Examples\n## SimpleForm\n```java\nSimpleForm form = SimpleFormBuilder.create(\"title\")\n.addText(\"Hello world!\")\n.addButton(new ElementButton(\"Button\"))\n.setHandler((viewer, formResponse) -> {\n    viewer.sendMessage(\"Clicked...\");\n})\n.setCloseHandler((viewer, formResponse) -> {\n    viewer.sendMessage(\"Form closed\");\n})\n.build();\nplayer.showFormWindow(form);\n```\n## ModalForm\n```java\nModalForm form = ModalFormBuilder.create(\"title\")\n.addText(\"Hello world!\")\n.addTrueButton(\"Enter\")\n.addFalseButton(\"Back\")\n.setHandler((viewer, formResponse) -> {\n    viewer.sendMessage(formResponse.getClickedButtonId() == 0 ? \"false\" : \"true\");\n})\n.setCloseHandler((viewer, formResponse) -> {\n    viewer.sendMessage(\"Form closed\");\n})\n.build();\nplayer.showFormWindow(form);\n```\n## CustomForm\n```java\nCustomForm form = CustomFormBuilder.create(\"title\")\n.addLabel(\"Let`s talk any more about you...\")\n.addInput(new ElementInput(\"\", \"Enter your nickname\"))\n.setHandler((viewer, formResponse) -> {\n    viewer.sendMessage(\"Your name: \" + String.valueOf(formResponse.getResponse(1)));\n})\n.setCloseHandler((viewer, formResponse) -> {\n    viewer.sendMessage(\"Form closed\");\n})\n.build();\nplayer.showFormWindow(form);\n```\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/42116658?v=4",
+  "id": "JustYarka/yFromBuilder",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "yFormBuilder",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/JustYarka/yFromBuilder",
+  "stars": 0,
+  "summary": "A Nukkit plugin that ads form API",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1589815839,
+  "versions": [
+    {
+      "changelog": "This is my last success build",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "yFormBuilder-0.1.0.jar",
+          "primary": true,
+          "size": 10061,
+          "url": "https://github.com/JustYarka/yFromBuilder/releases/download/last/yFormBuilder-0.1.0.jar"
+        }
+      ],
+      "name": "Last Release",
+      "prerelease": false,
+      "published_at": 1589627168,
+      "version": "last"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/10363500?v=4",
+      "name": "Creeperface01",
+      "url": "https://github.com/Creeperface01"
+    }
+  ],
+  "categories": [],
+  "created_at": 1482906040,
+  "dependencies": [],
+  "description": "# BiomeMaster\nBiomeMaster is one plugin for Nukkit with improved Generator and a lot more features.\n\nNote: This is one plugin specialy **for Nukkit** (Not for Genisys, not for ClearSky, not for BukkitPE **or other software**, SO **NOT** COPY-PASTE OR TRANSLATE), for improve Generator ,for add more Biomes and other.\nThis plugin is in development and not have all features like Spigot or Bukkit.\n\nPhotos with world: http://imgur.com/a/PVqoH\n\n\n**TravisCI Build Status** [![TravisCI](https://travis-ci.org/NycuRO/BiomeMaster.svg?branch=master)](https://travis-ci.org/NycuRO/BiomeMaster \"TravisCI Build Status\")\n\n**CircleCI Build Status + DOWNLOAD .jar** [![CircleCI](https://circleci.com/gh/NycuRO/BiomeMaster.svg?style=svg)](https://circleci.com/gh/NycuRO/BiomeMaster)\n\n## Information\n\n- Need to communicate with us? Join our [GITTER](https://gitter.im/BiomeMaster/Lobby) group!\n- BiomeMaster is one plugin for Nukkit with improved Generator and a lot more features\n- You can download .jar from Circle CI. Tab to latest build,tap to artifacts selection and download .jar\n\nI'm planned to change name \"NORMAL\" for fix conflicts with nukkit generator and BiomeMaster generator.\n\nIf == normal, biomes and generation and temperature is cuplate and get fuck world. If you want BiomeMaster generation ,use:\n\nlevel-type=BiomeMaster **IN SERVER.PROPRIETES**\n\n## Thanks\n\nThanks to all for help me. If you want to help me ,create PR's or tell me :)\n\n## Features\n\n- Worlds: Generator has been improved and more biomes!\n- Little to no lag at all!\n- Correct generation with RainFall and Temperature fixed\n\n## World Features\n\n- Swamp Trees with Swamp Biome like SinglePlayer\n- Acacia Trees with Savanna Biome like SinglePlayer\n- DarkOak Trees with Roofed Forest and Roofed Forest M like SinglePlayer\n- Big tree ( Oak and Jungle ) with Jungle Biome like SinglePlayer\n- Diorite, Andesite and Granite in WorldGenerator\n\n## Upcoming Update\n\n- 0.1beta - Fix populators\n- 0.1 - Add more populators\n- 0.2dev - Fix trees\n- 0.2beta - Add more trees\n- 0.2 - Finish all trees\n- 0.3dev - Finish all populators in biomes\n- 0.3beta - Add more to biomes\n- 0.3 - Fix color on Desert and other\n- 0.4dev - Fix RainFall and Temperature generation\n- 0.4beta - Fix more\n- 0.4 - Coming Soon\n ...\n\nAttention! All version have new biomes added and more changes in biomes and more performances :)\n \n## TODO :\n\n If you have epic ideas, create an issue and tell us the idea!\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/8976857?v=4",
+  "id": "yungtechboy1/BiomeMaster",
+  "license": {
+    "id": "Apache-2.0",
+    "name": "Apache License 2.0",
+    "url": "https://spdx.org/licenses/Apache-2.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/NycuRO/BiomeMaster",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "BiomeMaster",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/yungtechboy1/BiomeMaster",
+  "stars": 0,
+  "summary": "BiomeMaster is one plugin for Nukkit with improved Generator and a lot more features.",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1480852544,
+  "versions": []
+}

@@ -1,0 +1,79 @@
+{
+  "api_version": "1.0.11",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+      "name": "wode490390",
+      "url": "https://github.com/wode490390"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "name": "dependabot[bot]",
+      "url": "https://github.com/apps/dependabot"
+    }
+  ],
+  "categories": [],
+  "created_at": 1558472548,
+  "dependencies": [],
+  "description": "# Atlantis Generator\n[![Nukkit](https://img.shields.io/badge/Nukkit-1.0-green)](https://github.com/NukkitX/Nukkit)\n[![Build](https://img.shields.io/circleci/build/github/wode490390/AtlantisGenerator/master)](https://circleci.com/gh/wode490390/AtlantisGenerator/tree/master)\n[![Release](https://img.shields.io/github/v/release/wode490390/AtlantisGenerator)](https://github.com/wode490390/AtlantisGenerator/releases)\n[![Release date](https://img.shields.io/github/release-date/wode490390/AtlantisGenerator)](https://github.com/wode490390/AtlantisGenerator/releases)\n<!--[![MCBBS](https://img.shields.io/badge/-mcbbs-inactive)](https://www.mcbbs.net/thread-867768-1-1.html \"亚特兰蒂斯水世界生成器\")\n[![Servers](https://img.shields.io/bstats/servers/4840)](https://bstats.org/plugin/bukkit/AtlantisGenerator/4840)\n[![Players](https://img.shields.io/bstats/players/4840)](https://bstats.org/plugin/bukkit/AtlantisGenerator/4840)-->\n\nWaterworld generator plugin for Nukkit.\n\n![](https://i.loli.net/2020/09/28/1Bz6E7UHtrvRwJV.png)\n\nIf you found any bugs or have any suggestions, please open an issue on [GitHub](https://github.com/wode490390/AtlantisGenerator/issues).\n\nIf you like this plugin, please star it on [GitHub](https://github.com/wode490390/AtlantisGenerator).\n\n*Note: Please back up old worlds before using this plugin.*\n\n## Download\n- [Releases](https://github.com/wode490390/AtlantisGenerator/releases)\n- [Snapshots](https://circleci.com/gh/wode490390/AtlantisGenerator)\n\n## Configuration\n<details>\n<summary>config.yml</summary>\n\n```yaml\n# Allowed values: Integers in the range [0, 255]\nsea-level: 128\n# enable biome\nbiome: true\n# register limited old world generator\nold: true\n```\n</details>\n\n## Compiling\n1. Install [Maven](https://maven.apache.org/).\n2. Run `mvn clean package`. The compiled JAR can be found in the `target/` directory.\n\n## Metrics Collection\n\nThis plugin uses [bStats](https://github.com/wode490390/bStats-Nukkit). You can opt out using the global bStats config; see the [official website](https://bstats.org/getting-started) for more details.\n\n<!--[![Metrics](https://bstats.org/signatures/bukkit/AtlantisGenerator.svg)](https://bstats.org/plugin/bukkit/AtlantisGenerator/4840)-->\n\n###### If I have any grammar and/or term errors, please correct them :)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+  "id": "wode490390/AtlantisGenerator",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "http://wode490390.cn/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "AtlantisGenerator",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/wode490390/AtlantisGenerator",
+  "stars": 6,
+  "summary": "Atlantis generator plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1627905833,
+  "versions": [
+    {
+      "changelog": "- Support for latest NukkitX",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeAtlantisGenerator-1.0.1.jar",
+          "primary": true,
+          "size": 21225,
+          "url": "https://github.com/wode490390/AtlantisGenerator/releases/download/1.0.1/wodeAtlantisGenerator-1.0.1.jar"
+        }
+      ],
+      "name": "AtlantisGenerator-v1.0.1",
+      "prerelease": false,
+      "published_at": 1601289463,
+      "version": "1.0.1"
+    },
+    {
+      "changelog": "Initial release",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeAtlantisGenerator-1.0.0.jar",
+          "primary": true,
+          "size": 17872,
+          "url": "https://github.com/wode490390/AtlantisGenerator/releases/download/1.0.0/wodeAtlantisGenerator-1.0.0.jar"
+        }
+      ],
+      "name": "AtlantisGenerator-v1.0.0",
+      "prerelease": false,
+      "published_at": 1558473223,
+      "version": "1.0.0"
+    }
+  ]
+}

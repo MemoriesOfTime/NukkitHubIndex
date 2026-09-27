@@ -1,0 +1,46 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/39440218?v=4",
+      "name": "justin-eckenweber",
+      "url": "https://github.com/justin-eckenweber"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/43497313?v=4",
+      "name": "GoodLucky777",
+      "url": "https://github.com/GoodLucky777"
+    }
+  ],
+  "categories": [],
+  "created_at": 1594348944,
+  "dependencies": [],
+  "description": "",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/782180?v=4",
+  "id": "alexvorobiev/LlamaTroll",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": {
+    "discord": "",
+    "homepage": "lldv.net",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "LlamaTroll",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/alexvorobiev/LlamaTroll",
+  "stars": 0,
+  "summary": "LlamaTroll plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1594213613,
+  "versions": []
+}

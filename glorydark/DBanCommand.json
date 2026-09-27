@@ -2,16 +2,16 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
       "name": "glorydark",
-      "url": ""
+      "url": "https://github.com/glorydark"
     }
   ],
   "categories": [],
   "created_at": 1734355751,
   "dependencies": [],
   "description": "",
-  "detection_confidence": "high",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
@@ -30,8 +30,26 @@
   "stars": 0,
   "summary": "BanCommand",
   "targets": [
-    "nkx"
+    "nkx",
+    "nkmot"
   ],
-  "updated_at": 1734355952,
-  "versions": []
+  "updated_at": 1734355948,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "DBanCommand-1.1.0.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/DBanCommand/1/artifact/target/DBanCommand-1.1.0.jar"
+        }
+      ],
+      "name": "1.1.0",
+      "prerelease": true,
+      "published_at": 1734356440,
+      "version": "ci-1"
+    }
+  ]
 }

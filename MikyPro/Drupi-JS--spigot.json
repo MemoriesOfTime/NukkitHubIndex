@@ -1,0 +1,63 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/32719411?v=4",
+      "name": "Hundeklemmen",
+      "url": "https://github.com/Hundeklemmen"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/37606040?v=4",
+      "name": "MikyPro",
+      "url": "https://github.com/MikyPro"
+    }
+  ],
+  "categories": [],
+  "created_at": 1553668469,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "PlaceholderAPI",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "Vault",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "WorldEdit",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "WorldGuard",
+      "version_range": ""
+    }
+  ],
+  "description": "# Drupi-JS\nWelcome to the Drupi's github!\n\n**What is Drupi?**\n\nDrupi is a plugin that allows you to create custom plugins easily using JavaScript that is cross-compatible between Minecraft: Java and Bedrock Edition. To get started with Drupi, click here to download our plugin for Spigot or Nukkit respectively, restart your server and begin coding your first Drupi plugin!\n\n[Get started!](https://github.com/drupijs/Drupi-JS/wiki/Getting-Started)\n[Dowload here](https://github.com/drupijs/Drupi-JS/releases)\n\nLink to our community discord: \n[Click here](https://discord.gg/hEwaxsN)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/37606040?v=4",
+  "id": "MikyPro/Drupi-JS--spigot",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "spigot/src/main/resources/plugin.yml",
+  "name": "Drupi",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/MikyPro/Drupi-JS",
+  "stars": 0,
+  "summary": "js scripting in spigot",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1553690012,
+  "versions": []
+}

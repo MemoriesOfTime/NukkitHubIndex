@@ -1,0 +1,58 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+      "name": "wode490390",
+      "url": "https://github.com/wode490390"
+    }
+  ],
+  "categories": [],
+  "created_at": 1547016541,
+  "dependencies": [],
+  "description": "# AcidRain\n[![](http://i.loli.net/2018/10/23/5bcef3bf626e3.png)](http://www.mcbbs.net/thread-825299-1-1.html \"酸雨\")\n\nAcid rain effect plugin for Nukkit\n\nPlease see [mcbbs](http://www.mcbbs.net/thread-825299-1-1.html) for more information.\n## Permissions\n| Permission | Description |\n| - | - |\n| acidrain.immune | Grants immunity to effect from acid rain |\n## config.yml\nTip: https://minecraft.gamepedia.com/Bedrock_Edition_data_values#Effect_IDs\n```yaml\n# seconds\ndelay: 5\nworld:\n  - \"world\"\nimmune-armor:\n  - 298\n  - 136\n  - 314\neffects:\n  -\n    id: 2\n    # seconds\n    duration: 6\n    amplifier: 2\n  -\n    id: 9\n    duration: 8\n    amplifier: 0\n  -\n    id: 17\n    duration: 10\n    amplifier: 1\n  -\n    id: 18\n    duration: 9\n    amplifier: 1\n  -\n    id: 19\n    duration: 5\n    amplifier: 0\n```\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+  "id": "wode490390/AcidRain",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "http://wode490390.cn/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "AcidRain",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/wode490390/AcidRain",
+  "stars": 1,
+  "summary": "Acid rain effect plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1554887183,
+  "versions": [
+    {
+      "changelog": "- Refactoring\r\n- Customize worlds that acid rain will occur\r\n- Customize armor for immune acid rain\r\n- Fix iterator exception",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeAcidRain-2.0.0.jar",
+          "primary": true,
+          "size": 13524,
+          "url": "https://github.com/wode490390/AcidRain/releases/download/2.0.0/wodeAcidRain-2.0.0.jar"
+        }
+      ],
+      "name": "AcidRain-2.0.0",
+      "prerelease": false,
+      "published_at": 1554885299,
+      "version": "2.0.0"
+    }
+  ]
+}

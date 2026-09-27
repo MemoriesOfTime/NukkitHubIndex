@@ -1,0 +1,74 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+      "name": "wode490390",
+      "url": "https://github.com/wode490390"
+    }
+  ],
+  "categories": [],
+  "created_at": 1564406390,
+  "dependencies": [],
+  "description": "# Biome Fixer\n\nBiome fixer plugin for Nukkit\n\nPlease see [mcbbs](http://www.mcbbs.net/thread-893674-1-1.html) for more information.\n## Commands\n| Command | Alias | Permission | Description | Default |\n| - | - | - | - | - |\n| `/fixbiome` | `/fb` | biomefixer.command | Fixes the biome of the chunk where the player is located | OP |\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+  "id": "wode490390/BiomeFixer",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "http://wode490390.cn/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "BiomeFixer",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/wode490390/BiomeFixer",
+  "stars": 6,
+  "summary": "Biome fixer plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1565673220,
+  "versions": [
+    {
+      "changelog": "- Added support for Nether and The End",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeBiomeFixer-1.0.1.jar",
+          "primary": true,
+          "size": 11351,
+          "url": "https://github.com/wode490390/BiomeFixer/releases/download/1.0.1/wodeBiomeFixer-1.0.1.jar"
+        }
+      ],
+      "name": "BiomeFixer-v1.0.1",
+      "prerelease": false,
+      "published_at": 1565673220,
+      "version": "1.0.1"
+    },
+    {
+      "changelog": "Initial release",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeBiomeFixer-1.0.0.jar",
+          "primary": true,
+          "size": 11033,
+          "url": "https://github.com/wode490390/BiomeFixer/releases/download/1.0.0/wodeBiomeFixer-1.0.0.jar"
+        }
+      ],
+      "name": "BiomeFixer-v1.0.0",
+      "prerelease": false,
+      "published_at": 1564414513,
+      "version": "1.0.0"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "api_version": "1.0.7",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/26197131?v=4",
+      "name": "PetteriM1",
+      "url": "https://github.com/PetteriM1"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/14215022?v=4",
+      "name": "zzz1999",
+      "url": "https://github.com/zzz1999"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/1887100?v=4",
+      "name": "augesrob",
+      "url": "https://github.com/augesrob"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/236871?v=4",
+      "name": "kniffo80",
+      "url": "https://github.com/kniffo80"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/88597837?v=4",
+      "name": "PikyXoS",
+      "url": "https://github.com/PikyXoS"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/10636674?v=4",
+      "name": "leifis80",
+      "url": "https://github.com/leifis80"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/13001615?v=4",
+      "name": "matt404",
+      "url": "https://github.com/matt404"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/19608113?v=4",
+      "name": "VTsybrov",
+      "url": "https://github.com/VTsybrov"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/73650825?v=4",
+      "name": "nicugnm",
+      "url": "https://github.com/nicugnm"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/6209108?v=4",
+      "name": "magicus",
+      "url": "https://github.com/magicus"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/6342362?v=4",
+      "name": "Spitz4478",
+      "url": "https://github.com/Spitz4478"
+    }
+  ],
+  "categories": [],
+  "created_at": 1523124993,
+  "dependencies": [],
+  "description": "# Nukkit Mob Plugin\nDevelopment: **[kniffo80](https://github.com/kniffo80)**\n             **[matt404](https://github.com/matt404)**\n             **[augesrob](https://github.com/augesrob)**\n             **[PetteriM1](https://github.com/PetteriM1)**\n             **[PikyCZ](https://github.com/PikyCZ)**\n             **[zzz1999](https://github.com/zzz1999)**\n\nMobPlugin is a plugin that implements mobs and animals for Nukkit servers including movement, aggression etc.\n\n## Notice\nThis plugin is in development. Therefore, It is possible to function abnormally.\n\n[![NukkitX.com](https://img.shields.io/badge/MobPlugin-Download-brightgreen.svg)](https://nukkitx.com/resources/mob-plugin.3/)\n[![GitHub release](https://img.shields.io/github/release/Nukkit-coders/mob-plugin.svg)](https://github.com/Nukkit-coders/mob-plugin/releases/latest)\n[![CircleCI builds](https://img.shields.io/circleci/project/github/Nukkit-coders/MobPlugin.svg)](https://circleci.com/gh/Nukkit-coders/MobPlugin)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/10636674?v=4",
+  "id": "leifis80/mob-plugin",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://nukkitx.com/resources/mobplugin.3/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "MobPlugin",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/leifis80/mob-plugin",
+  "stars": 0,
+  "summary": "Entity AI & autospawn plugin for NukkitX servers",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1535742356,
+  "versions": []
+}

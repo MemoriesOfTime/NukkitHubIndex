@@ -2,9 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/175262502?v=4",
       "name": "Psycofeu",
-      "url": ""
+      "url": "https://github.com/Psycofeu"
     }
   ],
   "categories": [],
@@ -24,16 +24,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "FrenchEconomy",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/Psycofeu/FrenchEconomy",
   "stars": 1,
   "summary": "Economy plugin by french guy :)",
   "targets": [
-    "nkx",
     "pnx"
   ],
-  "updated_at": 1785167665,
+  "updated_at": 1785167558,
   "versions": [
     {
       "changelog": "Plugin .jar",
@@ -42,6 +41,7 @@
         {
           "filename": "FrenchEconomy-1.0.jar",
           "primary": true,
+          "sha256": "60781a05fda4a48fc1f746d948fbc4fe8977404d8b8a235d7a537efae68b7217",
           "size": 1067356,
           "url": "https://github.com/Psycofeu/FrenchEconomy/releases/download/Release/FrenchEconomy-1.0.jar"
         }

@@ -1,0 +1,43 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/37160059?v=4",
+      "name": "lclarkdwain",
+      "url": "https://github.com/lclarkdwain"
+    }
+  ],
+  "categories": [],
+  "created_at": 1566146083,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "EconomyAPI",
+      "version_range": ""
+    }
+  ],
+  "description": "# Auction",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/37160059?v=4",
+  "id": "lclarkdwain/Auction",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Auction",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/lclarkdwain/Auction",
+  "stars": 0,
+  "summary": "Auction Plugin for Nukkit Server",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1566363471,
+  "versions": []
+}

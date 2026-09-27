@@ -1,0 +1,75 @@
+{
+  "api_version": "1.0.7",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/26197131?v=4",
+      "name": "PetteriM1",
+      "url": "https://github.com/PetteriM1"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+      "name": "wode490390",
+      "url": "https://github.com/wode490390"
+    }
+  ],
+  "categories": [],
+  "created_at": 1553524927,
+  "dependencies": [],
+  "description": "",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+  "id": "wode490390/BlockPets",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "BlockPets",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/wode490390/BlockPets",
+  "stars": 6,
+  "summary": "BlockPets plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1560835154,
+  "versions": [
+    {
+      "changelog": "- Fixed #1 ",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BlockPets-1.2.jar",
+          "primary": true,
+          "size": 20905,
+          "url": "https://github.com/wode490390/BlockPets/releases/download/1.2/BlockPets-1.2.jar"
+        }
+      ],
+      "name": "BlockPets-1.2",
+      "prerelease": false,
+      "published_at": 1560835154,
+      "version": "1.2"
+    },
+    {
+      "changelog": "Initial release",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BlockPets-1.0.2.jar",
+          "primary": true,
+          "size": 21350,
+          "url": "https://github.com/wode490390/BlockPets/releases/download/1.0.2/BlockPets-1.0.2.jar"
+        }
+      ],
+      "name": "BlockPets-1.0.2",
+      "prerelease": false,
+      "published_at": 1553610806,
+      "version": "1.0.2"
+    }
+  ]
+}

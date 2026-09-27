@@ -1,0 +1,42 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/37770098?v=4",
+      "name": "Phuongaz",
+      "url": "https://github.com/Phuongaz"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/37160059?v=4",
+      "name": "lclarkdwain",
+      "url": "https://github.com/lclarkdwain"
+    }
+  ],
+  "categories": [],
+  "created_at": 1629981123,
+  "dependencies": [],
+  "description": "# PyPlugins\n\nExample:\n- [SimpleTPA](https://github.com/Phuongaz/SimpleTPA)\n\nEventHandler Example:\n```python\n\ndef PlayerJoinEvent(e):\n  player = e.getPlayer()\n  player.sendMessage(player.getName() + \" Welcome back\")\n \ndef PlayerQuitEvent(e):\n  player = event.getPlayer()\n  e.setQuitMessage(player.getName() + \" Quit\")\n```\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/37770098?v=4",
+  "id": "Phuongaz/PyPlugins",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "PyPlugins",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Phuongaz/PyPlugins",
+  "stars": 0,
+  "summary": "Nukkit - MC Bedrock Edition Plugin (PyPlugins)",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1630074852,
+  "versions": []
+}

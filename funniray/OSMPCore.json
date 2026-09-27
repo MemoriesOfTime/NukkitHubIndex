@@ -1,0 +1,52 @@
+{
+  "api_version": "unknown",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/16416198?v=4",
+      "name": "funniray",
+      "url": "https://github.com/funniray"
+    }
+  ],
+  "categories": [],
+  "created_at": 1526001563,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "FastAsyncWorldEdit",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "SynapseAPI",
+      "version_range": ""
+    }
+  ],
+  "description": "# OSMP  \n## What is OSMP?  \nOSMP stands for Open Source Minecraft Platform.  \nThis is a platform that hopes to be on almost every Nukkit minigame server.  \nThis plugin should help develop minigames for the Nukkit platform.  \n## Sounds great, how do I start?  \nCurrently, there are no builds availible and I probably won't make builds myself  \nWhy? I feel like if you're going to make a minigame server then you should atleast maintain it and build your own tools.  \n## Examples  \nCurrently there are no examples, these are yet to come!",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/16416198?v=4",
+  "id": "funniray/OSMPCore",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://www.kdray.pro/OSMP",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "OSMPCore",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/funniray/OSMPCore",
+  "stars": 0,
+  "summary": "Open Source Minecraft Platform",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1526001875,
+  "versions": []
+}

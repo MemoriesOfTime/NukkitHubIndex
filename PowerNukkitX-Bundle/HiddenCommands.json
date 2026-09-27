@@ -2,9 +2,14 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "name": "Buddelbubi",
+      "url": "https://github.com/Buddelbubi"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/26197131?v=4",
       "name": "PetteriM1",
-      "url": ""
+      "url": "https://github.com/PetteriM1"
     }
   ],
   "categories": [
@@ -26,16 +31,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "HiddenCommands",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/HiddenCommands",
   "stars": 0,
   "summary": "A Nukkit plugin to hide commands from command suggestions",
   "targets": [
-    "nkx",
     "pnx"
   ],
-  "updated_at": 1785314585,
+  "updated_at": 1785314536,
   "versions": [
     {
       "changelog": "Automated release for v1.2.2",
@@ -44,6 +48,7 @@
         {
           "filename": "HiddenCommands.jar",
           "primary": true,
+          "sha256": "4939241f56a48d5fab6e54fb83100bc53ad20346fde3ceca0170be5785c31b73",
           "size": 5743,
           "url": "https://github.com/PowerNukkitX-Bundle/HiddenCommands/releases/download/v1.2.2/HiddenCommands.jar"
         }
@@ -60,6 +65,7 @@
         {
           "filename": "HiddenCommands.jar",
           "primary": true,
+          "sha256": "73b963e238281868556248d7540f62e3f4f2949e1e210a2b9cce75ccbb5eb11f",
           "size": 4573,
           "url": "https://github.com/PowerNukkitX-Bundle/HiddenCommands/releases/download/v1.2.1/HiddenCommands.jar"
         }
@@ -76,6 +82,7 @@
         {
           "filename": "HiddenCommands.jar",
           "primary": true,
+          "sha256": "2235cf6ea656ebd541b5438d1e5c9635dabbd145c2c19aadcd90999e00110b8d",
           "size": 4554,
           "url": "https://github.com/PowerNukkitX-Bundle/HiddenCommands/releases/download/v1.2/HiddenCommands.jar"
         }
@@ -92,6 +99,7 @@
         {
           "filename": "HiddenCommands-1.1.jar",
           "primary": true,
+          "sha256": "a24f125946d70d254ad59b458e8115b5d33fdf15dd2466c21e82f4a9571717a6",
           "size": 4357,
           "url": "https://github.com/PowerNukkitX-Bundle/HiddenCommands/releases/download/1.1/HiddenCommands-1.1.jar"
         }

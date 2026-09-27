@@ -1,0 +1,122 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+      "name": "wode490390",
+      "url": "https://github.com/wode490390"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "name": "dependabot[bot]",
+      "url": "https://github.com/apps/dependabot"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/43497313?v=4",
+      "name": "GoodLucky777",
+      "url": "https://github.com/GoodLucky777"
+    }
+  ],
+  "categories": [],
+  "created_at": 1576190445,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "MobPlugin",
+      "version_range": ""
+    }
+  ],
+  "description": "# Quasi-structure Populator\n[![Nukkit](https://img.shields.io/badge/Nukkit-1.0-green)](https://github.com/NukkitX/Nukkit)\n[![Build](https://img.shields.io/circleci/build/github/wode490390/QuasiStructurePopulator/master)](https://circleci.com/gh/wode490390/QuasiStructurePopulator/tree/master)\n[![Release](https://img.shields.io/github/v/release/wode490390/QuasiStructurePopulator)](https://github.com/wode490390/QuasiStructurePopulator/releases)\n[![Release date](https://img.shields.io/github/release-date/wode490390/QuasiStructurePopulator)](https://github.com/wode490390/QuasiStructurePopulator/releases)\n<!--[![MCBBS](https://img.shields.io/badge/-mcbbs-inactive)](https://www.mcbbs.net/thread-932291-1-1.html \"准建筑物生成器\")\n[![Servers](https://img.shields.io/bstats/servers/6037)](https://bstats.org/plugin/bukkit/QuasiStructurePopulator/6037)\n[![Players](https://img.shields.io/bstats/players/6037)](https://bstats.org/plugin/bukkit/QuasiStructurePopulator/6037)-->\n\nQSP is a plugin that implements [quasi-structure](https://minecraft.gamepedia.com/index.php?title=Generated_structures&oldid=1432668#Quasi-structures) features for Nukkit servers.\n\n![](https://i.loli.net/2020/10/27/JYFfNDjSGKnLUO4.png)\n\nIf you found any bugs or have any suggestions, please open an issue on [GitHub Issues](https://github.com/wode490390/QuasiStructurePopulator/issues).\n\nIf you like this plugin, please star it on [GitHub](https://github.com/wode490390/QuasiStructurePopulator).\n\n## Features\n- [X] [Dungeon](https://minecraft.gamepedia.com/Dungeon)\n  - [X] Loots\n  - [X] [Mob Spawner](https://minecraft.gamepedia.com/Spawner) (requires [MobPlugin](https://github.com/Nukkit-coders/MobPlugin))\n- [X] [Desert Well](https://minecraft.gamepedia.com/Desert_well)\n\n## Download\n- [Releases](https://github.com/wode490390/QuasiStructurePopulator/releases)\n- [Snapshots](https://circleci.com/gh/wode490390/QuasiStructurePopulator)\n\n## Compiling\n1. Install [Maven](https://maven.apache.org/).\n2. Run `mvn clean package`. The compiled JAR can be found in the `target/` directory.\n\n## Metrics Collection\n\nThis plugin uses [bStats](https://github.com/wode490390/bStats-Nukkit). You can opt out using the global bStats config; see the [official website](https://bstats.org/getting-started) for more details.\n\n<!--[![Metrics](https://bstats.org/signatures/bukkit/QuasiStructurePopulator.svg)](https://bstats.org/plugin/bukkit/QuasiStructurePopulator/6037)-->\n\n###### If I have any grammar and/or term errors, please correct them :)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+  "id": "wode490390/QuasiStructurePopulator",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "http://wode490390.cn/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "QuasiStructurePopulator",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/wode490390/QuasiStructurePopulator",
+  "stars": 8,
+  "summary": "Quasi-structure populator plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1627920181,
+  "versions": [
+    {
+      "changelog": "- Enchanted golden apple can now be found in dungeon\r\n- Desert well is now more common",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeQuasiStructurePopulator-1.0.3.jar",
+          "primary": true,
+          "size": 27312,
+          "url": "https://github.com/wode490390/QuasiStructurePopulator/releases/download/1.0.3/wodeQuasiStructurePopulator-1.0.3.jar"
+        }
+      ],
+      "name": "QuasiStructurePopulator-v1.0.3",
+      "prerelease": false,
+      "published_at": 1603815336,
+      "version": "1.0.3"
+    },
+    {
+      "changelog": "Fixed NASE",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeQuasiStructurePopulator-1.0.2.jar",
+          "primary": true,
+          "size": 27489,
+          "url": "https://github.com/wode490390/QuasiStructurePopulator/releases/download/1.0.2/wodeQuasiStructurePopulator-1.0.2.jar"
+        }
+      ],
+      "name": "QuasiStructurePopulator-v1.0.2",
+      "prerelease": false,
+      "published_at": 1581126656,
+      "version": "1.0.2"
+    },
+    {
+      "changelog": "Generate structures asynchronously",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeQuasiStructurePopulator-1.0.1.jar",
+          "primary": true,
+          "size": 26162,
+          "url": "https://github.com/wode490390/QuasiStructurePopulator/releases/download/1.0.1/wodeQuasiStructurePopulator-1.0.1.jar"
+        }
+      ],
+      "name": "QuasiStructurePopulator-v1.0.1",
+      "prerelease": false,
+      "published_at": 1580124876,
+      "version": "1.0.1"
+    },
+    {
+      "changelog": "Initial release",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeQuasiStructurePopulator-1.0.0.jar",
+          "primary": true,
+          "size": 24754,
+          "url": "https://github.com/wode490390/QuasiStructurePopulator/releases/download/1.0.0/wodeQuasiStructurePopulator-1.0.0.jar"
+        }
+      ],
+      "name": "QuasiStructurePopulator-v1.0.0",
+      "prerelease": false,
+      "published_at": 1576191042,
+      "version": "1.0.0"
+    }
+  ]
+}

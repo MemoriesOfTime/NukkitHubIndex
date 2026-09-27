@@ -2,16 +2,16 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202798110?v=4",
       "name": "Shfiso-a",
-      "url": ""
+      "url": "https://github.com/Shfiso-a"
     }
   ],
   "categories": [],
   "created_at": 1741872655,
   "dependencies": [],
   "description": "# FormAuth\r\n\r\nA simple authentication plugin for Nukkit Minecraft servers that uses forms for login and registration.\r\n\r\n## Configuration\r\n\r\nconfig file contains :\r\n- Login timeout\r\n- AFK timeout\r\n- Custom messages\r\n- Player database location\r\n- login attempt limiter ( without temporary block )\r\n\r\n## Credits\r\n[KibiAuth](https://github.com/KibiDB/KibiAuth-Nukkit) (i only used it's code structure )\r\n\r\n## Images\r\n\r\n![Screenshot 2025-03-13 170904](https://github.com/user-attachments/assets/6ebcd98c-0a19-4315-ad2f-a2799a44f093)\r\n",
-  "detection_confidence": "high",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/202798110?v=4",
@@ -30,9 +30,10 @@
   "stars": 0,
   "summary": "authui",
   "targets": [
-    "nkx"
+    "nkx",
+    "nkmot"
   ],
-  "updated_at": 1783505831,
+  "updated_at": 1783506312,
   "versions": [
     {
       "changelog": "added temporary block when max login attempt reached\r\nadded MySQL and MariaDB drivers (it will get automatically downloaded)\r\nsome security updates\r\ni will add IP-based auto login in next update ",
@@ -41,6 +42,7 @@
         {
           "filename": "FormAuth-1.3.0.jar",
           "primary": true,
+          "sha256": "71dec5e2e0adc37a258e16441c43565ba0044959422276a686bdba1179761399",
           "size": 2724540,
           "url": "https://github.com/Shfiso-a/FormAuth/releases/download/1.3.0/FormAuth-1.3.0.jar"
         }
@@ -57,6 +59,7 @@
         {
           "filename": "FormAuth-1.0.3.jar",
           "primary": true,
+          "sha256": "a30d7d915e93aa84c627f83a61688e1c9ce0302e0fdc7a8070bb6fd750f5b2b1",
           "size": 22006,
           "url": "https://github.com/Shfiso-a/FormAuth/releases/download/1.0.3/FormAuth-1.0.3.jar"
         }

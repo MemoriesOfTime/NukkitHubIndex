@@ -2,9 +2,14 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "name": "Buddelbubi",
+      "url": "https://github.com/Buddelbubi"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/26197131?v=4",
       "name": "PetteriM1",
-      "url": ""
+      "url": "https://github.com/PetteriM1"
     }
   ],
   "categories": [],
@@ -28,16 +33,15 @@
   },
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "ItemBlacklist",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/ItemBlacklist",
   "stars": 0,
   "summary": "Advanced item blacklist plugin for Nukkit",
   "targets": [
-    "nkx",
     "pnx"
   ],
-  "updated_at": 1784844698,
+  "updated_at": 1784844661,
   "versions": [
     {
       "changelog": "Automated release for v1.3.2",
@@ -46,6 +50,7 @@
         {
           "filename": "ItemBlacklist.jar",
           "primary": true,
+          "sha256": "bccdd0d207b9e40b7612f6c89e50486c3ffc8837321f0d69f18d86e3337b8354",
           "size": 8655,
           "url": "https://github.com/PowerNukkitX-Bundle/ItemBlacklist/releases/download/v1.3.2/ItemBlacklist.jar"
         }
@@ -62,6 +67,7 @@
         {
           "filename": "ItemBlacklist.jar",
           "primary": true,
+          "sha256": "5632025d9d36bbe035e72ef42ca779113133ff9390e1fdf23979aaae11d011d9",
           "size": 8618,
           "url": "https://github.com/PowerNukkitX-Bundle/ItemBlacklist/releases/download/v1.3.1/ItemBlacklist.jar"
         }
@@ -78,6 +84,7 @@
         {
           "filename": "ItemBlacklist-1.3.0.jar",
           "primary": true,
+          "sha256": "ab2b648fd5537cede4913ecbcb043a5123a00dc4645b0532f063a0360db8be55",
           "size": 8590,
           "url": "https://github.com/PowerNukkitX-Bundle/ItemBlacklist/releases/download/1.3.0/ItemBlacklist-1.3.0.jar"
         }

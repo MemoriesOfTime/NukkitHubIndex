@@ -1,0 +1,55 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/216477222?v=4",
+      "name": "Kanelucky",
+      "url": "https://github.com/Kanelucky"
+    }
+  ],
+  "categories": [],
+  "created_at": 1766234373,
+  "dependencies": [],
+  "description": "# BacktoDeath\n- A simple PowerNukkitX plugin that adds a /back command to teleport players to their last death location.\n\nPermission: back.run\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/216477222?v=4",
+  "id": "Kanelucky/BacktoDeath",
+  "license": {
+    "id": "Apache-2.0",
+    "name": "Apache License 2.0",
+    "url": "https://spdx.org/licenses/Apache-2.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "BacktoDeath",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/Kanelucky/BacktoDeath",
+  "stars": 1,
+  "summary": "Return to your last death location with /back command.",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1786717562,
+  "versions": [
+    {
+      "changelog": "First release",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BacktoDeath-1.0.jar",
+          "primary": true,
+          "sha256": "9f20835aed42262bee12fbabe4e5096888face5d0507ad8a763bdcbbf8f521ad",
+          "size": 2711,
+          "url": "https://github.com/Kanelucky/BacktoDeath/releases/download/v1.0/BacktoDeath-1.0.jar"
+        }
+      ],
+      "name": "v1.0",
+      "prerelease": false,
+      "published_at": 1766234775,
+      "version": "v1.0"
+    }
+  ]
+}

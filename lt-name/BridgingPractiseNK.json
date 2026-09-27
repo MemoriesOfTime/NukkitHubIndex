@@ -2,9 +2,19 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "Ricoco",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/65506006?v=4",
+      "name": "hax0r31337",
+      "url": "https://github.com/hax0r31337"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/29895665?v=4",
+      "name": "jungwuk-ryu",
+      "url": "https://github.com/jungwuk-ryu"
     }
   ],
   "categories": [
@@ -32,15 +42,31 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "BridgingPractise",
-  "primary_target": "nkx",
+  "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/lt-name/BridgingPractiseNK",
   "stars": 1,
   "summary": "A bridging practise plugin helps you practise your bridging ability.",
   "targets": [
-    "nkx",
     "nkmot"
   ],
-  "updated_at": 1788667489,
-  "versions": []
+  "updated_at": 1767403504,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BridgingPractise-1.3.0.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/BridgingPractiseNK/30/artifact/target/BridgingPractise-1.3.0.jar"
+        }
+      ],
+      "name": "1.3.0",
+      "prerelease": true,
+      "published_at": 1767403517,
+      "version": "ci-30"
+    }
+  ]
 }

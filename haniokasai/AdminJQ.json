@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/12643554?v=4",
+      "name": "haniokasai",
+      "url": "https://github.com/haniokasai"
+    }
+  ],
+  "categories": [],
+  "created_at": 1459943243,
+  "dependencies": [],
+  "description": "# AdminJQ\n\n[![Build Status](http://jenkins.haniokasai.com/buildStatus/icon?job=AdminJQ)](http://jenkins.haniokasai.com/job/AdminJQ/ \"Jenkins \")\n\n My first nukkit plugin.\n\na nukkit plugin. When ops join or quit,broadcast it.\n\nDownload http://jenkins.haniokasai.com/job/AdminJQ/\n\nforum http://forums.nukkit.cn/index.php?resources/adminjq.46/\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/12643554?v=4",
+  "id": "haniokasai/AdminJQ",
+  "license": {
+    "id": "CC0-1.0",
+    "name": "Creative Commons Zero v1.0 Universal",
+    "url": "https://spdx.org/licenses/CC0-1.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "SpamBan",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/haniokasai/AdminJQ",
+  "stars": 0,
+  "summary": "Spam Block Plugin",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1468655603,
+  "versions": []
+}

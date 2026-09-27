@@ -1,0 +1,58 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+      "name": "wode490390",
+      "url": "https://github.com/wode490390"
+    }
+  ],
+  "categories": [],
+  "created_at": 1573733058,
+  "dependencies": [],
+  "description": "",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+  "id": "wode490390/FlyingSquid",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "http://wode490390.cn/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "FlyingSquid",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/wode490390/FlyingSquid",
+  "stars": 0,
+  "summary": "Flying squid plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1579683325,
+  "versions": [
+    {
+      "changelog": "Basic function completion",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeFlyingSquid-0.0.1.jar",
+          "primary": true,
+          "size": 26675,
+          "url": "https://github.com/wode490390/FlyingSquid/releases/download/0.0.1/wodeFlyingSquid-0.0.1.jar"
+        }
+      ],
+      "name": "FlyingSquid-v0.0.1-alpha",
+      "prerelease": true,
+      "published_at": 1573738432,
+      "version": "0.0.1"
+    }
+  ]
+}

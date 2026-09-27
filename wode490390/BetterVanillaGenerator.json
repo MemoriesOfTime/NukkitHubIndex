@@ -1,0 +1,148 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+      "name": "wode490390",
+      "url": "https://github.com/wode490390"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17153084?v=4",
+      "name": "tuilakhanh",
+      "url": "https://github.com/tuilakhanh"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "name": "dependabot[bot]",
+      "url": "https://github.com/apps/dependabot"
+    }
+  ],
+  "categories": [],
+  "created_at": 1560500311,
+  "dependencies": [],
+  "description": "# Better Vanilla Generator\n[![Build](https://img.shields.io/circleci/build/github/wode490390/BetterVanillaGenerator/master)](https://circleci.com/gh/wode490390/BetterVanillaGenerator/tree/master)\n[![Release](https://img.shields.io/github/v/release/wode490390/BetterVanillaGenerator)](https://github.com/wode490390/BetterVanillaGenerator/releases)\n[![Release date](https://img.shields.io/github/release-date/wode490390/BetterVanillaGenerator)](https://github.com/wode490390/BetterVanillaGenerator/releases)\n<!--[![Servers](https://img.shields.io/bstats/servers/5198)](https://bstats.org/plugin/bukkit/BetterVanillaGenerator/5198)\n[![Players](https://img.shields.io/bstats/players/5198)](https://bstats.org/plugin/bukkit/BetterVanillaGenerator/5198)-->\n\nThis plugin not only provides better terrain generators for [Nukkit](https://github.com/NukkitX/Nukkit), you can also customize your world by modifying the configuration.\n\nIn addition, this plugin can offload overworld surface noise operations onto the GPU. (Experimental)\n\n[![](https://i.loli.net/2019/06/12/5d00613070e3947388.png)](https://www.mcbbs.net/thread-872584-1-1.html \"可自定义的更好的原生地形生成器\")\n\nIf you found any bugs or have any suggestions, please open an issue on [GitHub](https://github.com/wode490390/BetterVanillaGenerator/issues).\n\nIf you like this plugin, please star it on [GitHub](https://github.com/wode490390/BetterVanillaGenerator).\n\n*Note: Please back up old worlds before using this plugin.*\n\n## Download\n- [Releases](https://github.com/wode490390/BetterVanillaGenerator/releases)\n- [Snapshots](https://circleci.com/gh/wode490390/BetterVanillaGenerator)\n\n## Configuration\n<details>\n<summary>config.yml</summary>\n\n```yaml\nreplace:\n  # Whether to replace the overworld generator\n  overworld: true\n  # Whether to replace the nether generator\n  nether: true\n\n# Advanced configuration for generator\ngenerator:\n  general:\n    sea_level: 64\n  overworld:\n    coordinate-scale: 684.412\n    height:\n      scale: 684.412\n      noise-scale:\n        x: 200.0\n        z: 200.0\n    detail:\n      noise-scale:\n        x: 80.0\n        y: 160.0\n        z: 80.0\n    surface-scale: 0.0625\n    base-size: 8.5\n    stretch-y: 12.0\n    biome:\n      height-offset: 0.0\n      height-weight: 1.0\n      scale-offset: 0.0\n      scale-weight: 1.0\n      height:\n        default: 0.1\n        flat-shore: 0.0\n        high-plateau: 1.5\n        flatlands: 0.125\n        swampland: -0.2\n        mid-plains: 0.2\n        flatlands-hills: 0.275\n        swampland-hills: -0.1\n        low-hills: 0.2\n        hills: 0.45\n        mid-hills2: 0.1\n        default-hills: 0.2\n        mid-hills: 0.3\n        big-hills: 0.525\n        big-hills2: 0.55\n        extreme-hills: 1.0\n        rocky-shore: 0.1\n        low-spikes: 0.4125\n        high-spikes: 1.1\n        river: -0.5\n        ocean: -1.0\n        deep-ocean: -1.8\n      scale:\n        default: 0.2\n        flat-shore: 0.025\n        high-plateau: 0.025\n        flatlands: 0.05\n        swampland: 0.1\n        mid-plains: 0.2\n        flatlands-hills: 0.25\n        swampland-hills: 0.3\n        low-hills: 0.3\n        hills: 0.3\n        mid-hills2: 0.4\n        default-hills: 0.4\n        mid-hills: 0.4\n        big-hills: 0.55\n        big-hills2: 0.5\n        extreme-hills: 0.5\n        rocky-shore: 0.8\n        low-spikes: 1.325\n        high-spikes: 1.3125\n        river: 0.0\n        ocean: 0.1\n        deep-ocean: 0.1\n    density:\n      fill:\n        mode: 0\n        sea-mode: 0\n        offset: 0.0\n  nether:\n    coordinate-scale: 684.412\n    height:\n      scale: 2053.236\n      noise-scale:\n        x: 100.0\n        z: 100.0\n    detail:\n      noise-scale:\n        x: 80.0\n        y: 60.0\n        z: 80.0\n    surface-scale: 0.0625\n\n# Whether to use graphics compute functionality (Experimental)\ngpu:\n  enable: false\n  use-any-device: false\n```\n</details>\n\n## Compiling\n1. Install [Maven](https://maven.apache.org/).\n2. Run `mvn clean package`. The compiled JAR can be found in the `target/` directory.\n\n## Metrics Collection\n\nThis plugin uses [bStats](https://github.com/wode490390/bStats-Nukkit). You can opt out using the global bStats config; see the [official website](https://bstats.org/getting-started) for more details.\n\n[![Metrics](https://bstats.org/signatures/bukkit/BetterVanillaGenerator.svg)](https://bstats.org/plugin/bukkit/BetterVanillaGenerator/5198)\n\n###### If I have any grammar and/or term errors, please correct them :)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+  "id": "wode490390/BetterVanillaGenerator",
+  "license": {
+    "id": "NOASSERTION",
+    "name": "Other",
+    "url": "https://github.com/wode490390/BetterVanillaGenerator/blob/master/LICENSE"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "http://wode490390.cn/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "BetterVanillaGenerator",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/wode490390/BetterVanillaGenerator",
+  "stars": 31,
+  "summary": "Better vanilla generator plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1666940672,
+  "versions": [
+    {
+      "changelog": "- Support for latest NukkitX",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeBetterVanillaGenerator-1.2.2.jar",
+          "primary": true,
+          "size": 890972,
+          "url": "https://github.com/wode490390/BetterVanillaGenerator/releases/download/1.2.2/wodeBetterVanillaGenerator-1.2.2.jar"
+        }
+      ],
+      "name": "BetterVanillaGenerator-v1.2.2",
+      "prerelease": false,
+      "published_at": 1601204604,
+      "version": "1.2.2"
+    },
+    {
+      "changelog": "- Improved top snow.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeBetterVanillaGenerator-1.2.1.jar",
+          "primary": true,
+          "size": 888209,
+          "url": "https://github.com/wode490390/BetterVanillaGenerator/releases/download/1.2.1/wodeBetterVanillaGenerator-1.2.1.jar"
+        }
+      ],
+      "name": "BetterVanillaGenerator-v1.2.1",
+      "prerelease": false,
+      "published_at": 1591784854,
+      "version": "1.2.1"
+    },
+    {
+      "changelog": "- Snow can now generate in **multiple layers** in snowy biomes\r\n- Fixed badlands (#3)\r\n\r\n![](https://i.loli.net/2020/04/28/qKfOAUvlBSj69Mu.png)\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeBetterVanillaGenerator-1.2.0.jar",
+          "primary": true,
+          "size": 887500,
+          "url": "https://github.com/wode490390/BetterVanillaGenerator/releases/download/1.2.0/wodeBetterVanillaGenerator-1.2.0.jar"
+        }
+      ],
+      "name": "BetterVanillaGenerator-v1.2.0",
+      "prerelease": false,
+      "published_at": 1588083133,
+      "version": "1.2.0"
+    },
+    {
+      "changelog": "- Added graphics compute functionality (Experimental)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeBetterVanillaGenerator-1.1.0.jar",
+          "primary": true,
+          "size": 886424,
+          "url": "https://github.com/wode490390/BetterVanillaGenerator/releases/download/1.1.0/wodeBetterVanillaGenerator-1.1.0.jar"
+        }
+      ],
+      "name": "BetterVanillaGenerator-v1.1.0",
+      "prerelease": false,
+      "published_at": 1583543789,
+      "version": "1.1.0"
+    },
+    {
+      "changelog": "- Use new APIs instead of deprecated APIs",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeBetterVanillaGenerator-1.0.1.jar",
+          "primary": true,
+          "size": 109935,
+          "url": "https://github.com/wode490390/BetterVanillaGenerator/releases/download/1.0.1/wodeBetterVanillaGenerator-1.0.1.jar"
+        }
+      ],
+      "name": "BetterVanillaGenerator-v1.0.1",
+      "prerelease": false,
+      "published_at": 1563959841,
+      "version": "1.0.1"
+    },
+    {
+      "changelog": "Initial release",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeBetterVanillaGenerator-1.0.0.jar",
+          "primary": true,
+          "size": 109934,
+          "url": "https://github.com/wode490390/BetterVanillaGenerator/releases/download/1.0.0/wodeBetterVanillaGenerator-1.0.0.jar"
+        }
+      ],
+      "name": "BetterVanillaGenerator-v1.0.0",
+      "prerelease": false,
+      "published_at": 1563958823,
+      "version": "1.0.0"
+    }
+  ]
+}

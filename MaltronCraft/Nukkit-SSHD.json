@@ -1,0 +1,53 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/1494347?v=4",
+      "name": "Haarolean",
+      "url": "https://github.com/Haarolean"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/167733?v=4",
+      "name": "rmichela",
+      "url": "https://github.com/rmichela"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/41383245?v=4",
+      "name": "MaltronCraft",
+      "url": "https://github.com/MaltronCraft"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/868268?v=4",
+      "name": "toxuin",
+      "url": "https://github.com/toxuin"
+    }
+  ],
+  "categories": [],
+  "created_at": 1543869861,
+  "dependencies": [],
+  "description": "Nukkit-SSHD\n===========\n\nA fork of an SSHD daemon embedded in a Nukkit plugin.\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/41383245?v=4",
+  "id": "MaltronCraft/Nukkit-SSHD",
+  "license": {
+    "id": "Apache-2.0",
+    "name": "Apache License 2.0",
+    "url": "https://spdx.org/licenses/Apache-2.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "SSHD",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/MaltronCraft/Nukkit-SSHD",
+  "stars": 0,
+  "summary": "An SSHD daemon embedded in a Bukkit plugin.",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1557505205,
+  "versions": []
+}

@@ -1,0 +1,78 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/83061703?v=4",
+      "name": "MEFRREEX",
+      "url": "https://github.com/MEFRREEX"
+    }
+  ],
+  "categories": [],
+  "created_at": 1671504398,
+  "dependencies": [],
+  "description": "# ChatSplitter\nA plugin for local and global chat for your Nukkit server!\n\n![image](https://user-images.githubusercontent.com/83061703/208570855-1c065f53-b62a-46f9-843a-0c2d134a96c1.png)\n\n## ⚙️ Configuration\n```yml\n# Available languages: eng (English), rus (Русский)\nlanguage: \"eng\"\n\n# Distance at which the local message will be visible\nlocal-chat-radius: 100\n\n# The symbol for sending a message to the global chat.\n# Example: \"!your message\"\nglobal-chat-symbol: \"!\"\n\n# Prefix for local and global chat \n# Example: \"L | MEFRREEX: your message\"\nchat-prefix:\n  local: \"&l &aL &8|&r\"\n  global: \"&l &cG &8|&r\"\n  spy: \"&l &6SPY &8|&r\"\n\n# Message that there are no recipients\nenable-no-recipients-message: true\n\n# If enabled, only players with permission can write in local and global chat.\n# Permissions: chatsplitter.chat.local, chatsplitter.chat.global\nenable-permissions: false\n\n# Plugin command\ncommands:\n  # Local spy command\n  spy:\n    name: \"localspy\"\n    description: \"Local chat spy\"\n    aliases: [\"lspy\"]\n```\n\n## 🧩 Placeholders\n### Warning: you must use these placeholders in your chat plugin, to display the chat type\n\n```{chatsplitter_prefix}``` - Displays the type of chat (local, global or spy).\n\n```{chatsplitter_distance}``` - Display the distance to the player who sent the message (only works with spy).\n\n## 💻 Commands\n| Command     | Description                 |\n|-------------|-----------------------------|\n| `/localspy` | Toggles the local chat spy. |\n\n## 🔒 Permissions\n| Permission                      | Description                                                     |\n|---------------------------------|-----------------------------------------------------------------|\n| `chatsplitter.chat.local`       | Allows the player to use local chat (if enabled in config.yml). |\n| `chatsplitter.chat.global`      | Allows the player to use global chat (if enabled in config.yml. |\n| `chatsplitter.command.spy`      | Allows the player to use the `/localspy` command.               |",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/83061703?v=4",
+  "id": "MEFRREEX/ChatSplitter",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "ChatSplitter",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/MEFRREEX/ChatSplitter",
+  "stars": 4,
+  "summary": "A plugin for local and global chat for your Nukkit server",
+  "targets": [
+    "nkx",
+    "nkmot",
+    "pnx"
+  ],
+  "updated_at": 1740922651,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SplitChat-1.2.jar",
+          "primary": true,
+          "size": 7431,
+          "url": "https://github.com/MEFRREEX/ChatSplitter/releases/download/1.2/SplitChat-1.2.jar"
+        }
+      ],
+      "name": "1.2",
+      "prerelease": false,
+      "published_at": 1680604937,
+      "version": "1.2"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SplitChat-RU.jar",
+          "primary": true,
+          "size": 7828,
+          "url": "https://github.com/MEFRREEX/ChatSplitter/releases/download/release/SplitChat-RU.jar"
+        },
+        {
+          "filename": "SplitChat.jar",
+          "primary": true,
+          "size": 7500,
+          "url": "https://github.com/MEFRREEX/ChatSplitter/releases/download/release/SplitChat.jar"
+        }
+      ],
+      "name": "1.1",
+      "prerelease": false,
+      "published_at": 1671504505,
+      "version": "release"
+    }
+  ]
+}

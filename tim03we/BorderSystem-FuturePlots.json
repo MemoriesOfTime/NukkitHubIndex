@@ -1,0 +1,43 @@
+{
+  "api_version": "1.0.9",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/38113441?v=4",
+      "name": "tim03we",
+      "url": "https://github.com/tim03we"
+    }
+  ],
+  "categories": [],
+  "created_at": 1590313980,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "FuturePlots",
+      "version_range": ""
+    }
+  ],
+  "description": "# BorderSystem\n\nThis is an border system for the plugin FuturePlots on Nukkit. With this plugin you can change the borders of your plot.\n\n# Commands\nCommand | SubCommand | Description | Permission \n--------- | ------- | ------------------- | ------- \n/plot | border | Change your plot border | futureplots.command.border\n\n----------------\n\nIf problems arise, create an issue or write us on Discord.\n\n| Discord |\n| :---: |\n[![Discord](https://img.shields.io/discord/639130989708181535.svg?style=flat-square&label=discord&colorB=7289da)](https://discord.gg/5tYC5dJ) |\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/38113441?v=4",
+  "id": "tim03we/BorderSystem-FuturePlots",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "BorderSystem",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/tim03we/BorderSystem-FuturePlots",
+  "stars": 1,
+  "summary": "A NukkitX Plugin",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1590836877,
+  "versions": []
+}

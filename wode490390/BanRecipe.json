@@ -1,0 +1,58 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+      "name": "wode490390",
+      "url": "https://github.com/wode490390"
+    }
+  ],
+  "categories": [],
+  "created_at": 1559570869,
+  "dependencies": [],
+  "description": "# Ban Recipe\n[![](https://i.loli.net/2019/06/05/5cf7c56c07e7437679.gif)](http://www.mcbbs.net/thread-871470-1-1.html \"禁用配方\")\n\nBan recipe plugin for Nukkit\n\nPlease see [mcbbs](http://www.mcbbs.net/thread-871470-1-1.html) for more information.\n## Permissions\n| Permission | Description | Default |\n| - | - | - |\n| banrecipe.craft | Allows player to craft banned recipes | OP |\n## config.yml\n```yaml\ncraft-msg: \"&cThis item cannot be crafted!\"\n# item id\nban:\n  craft-result:\n    - 46\n  smelt-result: []\n  smelt-fuel: []\n```\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+  "id": "wode490390/BanRecipe",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "http://wode490390.cn/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "BanRecipe",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/wode490390/BanRecipe",
+  "stars": 0,
+  "summary": "Ban recipe plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1560203684,
+  "versions": [
+    {
+      "changelog": "Initial release",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeBanRecipe-1.0.0.jar",
+          "primary": true,
+          "size": 11190,
+          "url": "https://github.com/wode490390/BanRecipe/releases/download/1.0.0/wodeBanRecipe-1.0.0.jar"
+        }
+      ],
+      "name": "BanRecipe-v1.0.0",
+      "prerelease": false,
+      "published_at": 1559919818,
+      "version": "1.0.0"
+    }
+  ]
+}

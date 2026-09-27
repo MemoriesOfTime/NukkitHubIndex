@@ -1,0 +1,74 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+      "name": "wode490390",
+      "url": "https://github.com/wode490390"
+    }
+  ],
+  "categories": [],
+  "created_at": 1547016691,
+  "dependencies": [],
+  "description": "# Sign Editor\n[![Nukkit](https://img.shields.io/badge/Nukkit-1.0-green)](https://github.com/NukkitX/Nukkit)\n[![Build](https://img.shields.io/circleci/build/github/wode490390/SignEditor/master)](https://circleci.com/gh/wode490390/SignEditor/tree/master)\n[![Release](https://img.shields.io/github/v/release/wode490390/SignEditor)](https://github.com/wode490390/SignEditor/releases)\n[![Release date](https://img.shields.io/github/release-date/wode490390/SignEditor)](https://github.com/wode490390/SignEditor/releases)\n<!--[![MCBBS](https://img.shields.io/badge/-mcbbs-inactive)](https://www.mcbbs.net/thread-814526-1-1.html \"告示牌编辑器\")\n[![Servers](https://img.shields.io/bstats/servers/3111)](https://bstats.org/plugin/bukkit/SignEditor/3111)\n[![Players](https://img.shields.io/bstats/players/3111)](https://bstats.org/plugin/bukkit/SignEditor/3111)-->\n\nSign editor plugin for Nukkit.\n\n![](https://i.loli.net/2021/03/16/LjWctCMxlJihTo1.png)\n\nIf you found any bugs or have any suggestions, please open an issue on [GitHub Issues](https://github.com/wode490390/SignEditor/issues).\n\nIf you like this plugin, please star it on [GitHub](https://github.com/wode490390/SignEditor).\n\n## Download\n- [Releases](https://github.com/wode490390/SignEditor/releases)\n- [Snapshots](https://circleci.com/gh/wode490390/SignEditor)\n\n## Usage\n1. Click a sign.\n2. Send the `/sign` command to open the editor.\n\n## Commands\n| Command | Permission | Description | Default |\n| - | - | - | - |\n| `/sign [line] [text]` | sign.command | Changes the text of a sign | OP |\n\n*Use `/sign 0` to emptying a sign.*\n\n## Compiling\n1. Install [Maven](https://maven.apache.org/).\n2. Run `mvn clean package`. The compiled JAR can be found in the `target/` directory.\n\n## Metrics Collection\n\nThis plugin uses [bStats](https://github.com/wode490390/bStats-Nukkit). You can opt out using the global bStats config; see the [official website](https://bstats.org/getting-started) for more details.\n\n<!--[![Metrics](https://bstats.org/signatures/bukkit/SignEditor.svg)](https://bstats.org/plugin/bukkit/SignEditor/3111)-->\n\n###### If I have any grammar and/or term errors, please correct them :)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+  "id": "wode490390/SignEditor",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://wode490390.cn/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "SignsEditor",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/wode490390/SignEditor",
+  "stars": 3,
+  "summary": "Sign editor plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1663330574,
+  "versions": [
+    {
+      "changelog": "- Added UI for `/sign` command",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeSignEditor-1.2.0.jar",
+          "primary": true,
+          "size": 15728,
+          "url": "https://github.com/wode490390/SignEditor/releases/download/1.2.0/wodeSignEditor-1.2.0.jar"
+        }
+      ],
+      "name": "SignEditor-v1.2.0",
+      "prerelease": false,
+      "published_at": 1615908154,
+      "version": "1.2.0"
+    },
+    {
+      "changelog": "- Added support for command parameters\r\n- Bug fixes",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeSignEditor-v1.1.0.jar",
+          "primary": true,
+          "size": 13024,
+          "url": "https://github.com/wode490390/SignEditor/releases/download/1.1.0/wodeSignEditor-v1.1.0.jar"
+        }
+      ],
+      "name": "SignEditor-v1.1.0",
+      "prerelease": false,
+      "published_at": 1550355234,
+      "version": "1.1.0"
+    }
+  ]
+}

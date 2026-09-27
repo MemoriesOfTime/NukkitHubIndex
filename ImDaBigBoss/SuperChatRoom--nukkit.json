@@ -1,0 +1,231 @@
+{
+  "api_version": "1.0.5",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/67973871?v=4",
+      "name": "ImDaBigBoss",
+      "url": "https://github.com/ImDaBigBoss"
+    }
+  ],
+  "categories": [],
+  "created_at": 1610994621,
+  "dependencies": [],
+  "description": "# SuperChatRoom\n[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)\n\nA simple chat room plugin that allows you to talk with friends privately!<br>\nThis is a Bungee Cord, Spigot & Nukkit plugin!<br>\n\n## What this plugin does\nYou are able to use `/chatroom` to create, join and leave rooms. But also to invite other players into your room!<br>\nYou can even use `/shout` to talk in the general chat as if you wern't in a room at all!<br>\n\n## Where else can I find this plugin?\n* [Nukkit](https://cloudburstmc.org/resources/superchatroom.650/)\n* [Spigot](https://www.spigotmc.org/resources/super-chat-room.88017/)\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/67973871?v=4",
+  "id": "ImDaBigBoss/SuperChatRoom--nukkit",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/ImDaBigBoss/SuperChatRoom",
+    "wiki": ""
+  },
+  "manifest_path": "nukkit/src/main/resources/plugin.yml",
+  "name": "SuperChatRoom",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/ImDaBigBoss/SuperChatRoom",
+  "stars": 1,
+  "summary": "A simple chat room plugin that allows you to talk with friends privately!",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1653926424,
+  "versions": [
+    {
+      "changelog": "## Commits\n- f2dd71c: Refactor and error fixes (ImDaBigBoss)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SuperChatRoom-Bungee.jar",
+          "primary": true,
+          "size": 24260,
+          "url": "https://github.com/ImDaBigBoss/SuperChatRoom/releases/download/latest/SuperChatRoom-Bungee.jar"
+        },
+        {
+          "filename": "SuperChatRoom-Nukkit.jar",
+          "primary": true,
+          "size": 21706,
+          "url": "https://github.com/ImDaBigBoss/SuperChatRoom/releases/download/latest/SuperChatRoom-Nukkit.jar"
+        },
+        {
+          "filename": "SuperChatRoom-Spigot.jar",
+          "primary": true,
+          "size": 22901,
+          "url": "https://github.com/ImDaBigBoss/SuperChatRoom/releases/download/latest/SuperChatRoom-Spigot.jar"
+        }
+      ],
+      "name": "Latest build",
+      "prerelease": false,
+      "published_at": 1653926424,
+      "version": "latest"
+    },
+    {
+      "changelog": "Fixed a silly mistake in the /chatroom leave command.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SuperChatRoom-Bungee.jar",
+          "primary": true,
+          "size": 23820,
+          "url": "https://github.com/ImDaBigBoss/SuperChatRoom/releases/download/1.4.1/SuperChatRoom-Bungee.jar"
+        },
+        {
+          "filename": "SuperChatRoom-Nukkit.jar",
+          "primary": true,
+          "size": 21026,
+          "url": "https://github.com/ImDaBigBoss/SuperChatRoom/releases/download/1.4.1/SuperChatRoom-Nukkit.jar"
+        },
+        {
+          "filename": "SuperChatRoom-Spigot.jar",
+          "primary": true,
+          "size": 22369,
+          "url": "https://github.com/ImDaBigBoss/SuperChatRoom/releases/download/1.4.1/SuperChatRoom-Spigot.jar"
+        }
+      ],
+      "name": "Chatroom leave error fix",
+      "prerelease": false,
+      "published_at": 1618911507,
+      "version": "1.4.1"
+    },
+    {
+      "changelog": "Bungee Cord support was sucessfully added. Do NOT use bungee and spigot version at the same time!",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SuperChatRoom-Bungee.jar",
+          "primary": true,
+          "size": 23808,
+          "url": "https://github.com/ImDaBigBoss/SuperChatRoom/releases/download/1.4.0/SuperChatRoom-Bungee.jar"
+        },
+        {
+          "filename": "SuperChatRoom-Nukkit.jar",
+          "primary": true,
+          "size": 21010,
+          "url": "https://github.com/ImDaBigBoss/SuperChatRoom/releases/download/1.4.0/SuperChatRoom-Nukkit.jar"
+        },
+        {
+          "filename": "SuperChatRoom-Spigot.jar",
+          "primary": true,
+          "size": 22353,
+          "url": "https://github.com/ImDaBigBoss/SuperChatRoom/releases/download/1.4.0/SuperChatRoom-Spigot.jar"
+        }
+      ],
+      "name": "BungeeCord support and bug fixes",
+      "prerelease": false,
+      "published_at": 1615573894,
+      "version": "1.4.0"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SuperChatRoom-Nukkit.jar",
+          "primary": true,
+          "size": 20579,
+          "url": "https://github.com/ImDaBigBoss/SuperChatRoom/releases/download/1.3.0/SuperChatRoom-Nukkit.jar"
+        },
+        {
+          "filename": "SuperChatRoom-Spigot.jar",
+          "primary": true,
+          "size": 21926,
+          "url": "https://github.com/ImDaBigBoss/SuperChatRoom/releases/download/1.3.0/SuperChatRoom-Spigot.jar"
+        }
+      ],
+      "name": "Allow players to disable the general chat",
+      "prerelease": false,
+      "published_at": 1615028605,
+      "version": "1.3.0"
+    },
+    {
+      "changelog": "You can now set the chat format to match any other plugins in config.yml!",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SuperChatRoom-Nukkit.jar",
+          "primary": true,
+          "size": 19759,
+          "url": "https://github.com/ImDaBigBoss/SuperChatRoom/releases/download/1.2.0/SuperChatRoom-Nukkit.jar"
+        },
+        {
+          "filename": "SuperChatRoom-Spigot.jar",
+          "primary": true,
+          "size": 21034,
+          "url": "https://github.com/ImDaBigBoss/SuperChatRoom/releases/download/1.2.0/SuperChatRoom-Spigot.jar"
+        }
+      ],
+      "name": "Chat format update & fix incoherences between platforms",
+      "prerelease": false,
+      "published_at": 1614429132,
+      "version": "1.2.0"
+    },
+    {
+      "changelog": "Chatroom chat is now colored in green (suggested by Señor Oreo)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SuperChatRoom-Nukkit.jar",
+          "primary": true,
+          "size": 11605,
+          "url": "https://github.com/ImDaBigBoss/SuperChatRoom/releases/download/1.1.0/SuperChatRoom-Nukkit.jar"
+        },
+        {
+          "filename": "SuperChatRoom-Spigot.jar",
+          "primary": true,
+          "size": 12957,
+          "url": "https://github.com/ImDaBigBoss/SuperChatRoom/releases/download/1.1.0/SuperChatRoom-Spigot.jar"
+        }
+      ],
+      "name": "1.1.0",
+      "prerelease": false,
+      "published_at": 1612205467,
+      "version": "1.1.0"
+    },
+    {
+      "changelog": "Added support for Nukkit, no visible changes to Spigot",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SuperChatRoom-Nukkit.jar",
+          "primary": true,
+          "size": 11723,
+          "url": "https://github.com/ImDaBigBoss/SuperChatRoom/releases/download/1.0.1/SuperChatRoom-Nukkit.jar"
+        },
+        {
+          "filename": "SuperChatRoom-Spigot.jar",
+          "primary": true,
+          "size": 13134,
+          "url": "https://github.com/ImDaBigBoss/SuperChatRoom/releases/download/1.0.1/SuperChatRoom-Spigot.jar"
+        }
+      ],
+      "name": "Re-release 1.0",
+      "prerelease": false,
+      "published_at": 1612118588,
+      "version": "1.0.1"
+    },
+    {
+      "changelog": "This is the first release!",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SuperChatRoom.jar",
+          "primary": true,
+          "size": 9610,
+          "url": "https://github.com/ImDaBigBoss/SuperChatRoom/releases/download/1.0/SuperChatRoom.jar"
+        }
+      ],
+      "name": "Release 1.0",
+      "prerelease": false,
+      "published_at": 1610995014,
+      "version": "1.0"
+    }
+  ]
+}

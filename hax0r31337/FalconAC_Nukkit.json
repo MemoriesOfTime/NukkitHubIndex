@@ -1,0 +1,55 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/65506006?v=4",
+      "name": "hax0r31337",
+      "url": "https://github.com/hax0r31337"
+    }
+  ],
+  "categories": [],
+  "created_at": 1609320894,
+  "dependencies": [],
+  "description": "",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/65506006?v=4",
+  "id": "hax0r31337/FalconAC_Nukkit",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Melhor",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/hax0r31337/FalconAC_Nukkit",
+  "stars": 11,
+  "summary": "A AntiCheat Plugin.",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1619086478,
+  "versions": [
+    {
+      "changelog": "# Blocked Cheats\r\n## Combat\r\nAimbot(2 checks)\r\nCriticals\r\nKillaura(3 checks)\r\nVelocity(2 checks)\r\n\r\n## Movement\r\nSpeed(3 checks)\r\nFlight(4 checks)\r\nNoClip/Phase\r\nStrafe\r\nWaterWalk(2 checks)\r\n\r\n## World\r\nFastPlace\r\nIlligalInteract\r\nTimer\r\n\r\n## Misc\r\nBadPackets(2 checks)\r\nNoSwing",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FalconAC-1.3.jar",
+          "primary": true,
+          "size": 91133,
+          "url": "https://github.com/hax0r31337/FalconAC_Nukkit/releases/download/v1.3/FalconAC-1.3.jar"
+        }
+      ],
+      "name": "v1.3",
+      "prerelease": false,
+      "published_at": 1613467628,
+      "version": "v1.3"
+    }
+  ]
+}

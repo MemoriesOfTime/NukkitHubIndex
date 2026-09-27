@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/83061703?v=4",
+      "name": "MEFRREEX",
+      "url": "https://github.com/MEFRREEX"
+    }
+  ],
+  "categories": [],
+  "created_at": 1677689548,
+  "dependencies": [],
+  "description": "",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/169675468?v=4",
+  "id": "mefrreexarchive/AntiCaps",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "AntiCaps",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/mefrreexarchive/AntiCaps",
+  "stars": 0,
+  "summary": "Makes words from uppercase to lowercase",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1677689651,
+  "versions": []
+}

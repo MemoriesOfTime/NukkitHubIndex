@@ -1,6 +1,12 @@
 {
   "api_version": "3.0.0",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "name": "Buddelbubi",
+      "url": "https://github.com/Buddelbubi"
+    }
+  ],
   "categories": [
     "decoration",
     "utility"
@@ -21,16 +27,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "NPC",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/Syodo-Development/NPC",
   "stars": 2,
   "summary": "Syodo NPC Plugin",
   "targets": [
-    "nkx",
     "pnx"
   ],
-  "updated_at": 1785777780,
+  "updated_at": 1785110919,
   "versions": [
     {
       "changelog": "Automated release for v1.0.2",
@@ -39,6 +44,7 @@
         {
           "filename": "NPC.jar",
           "primary": true,
+          "sha256": "1edde883fa321c7e5594226568800786610d45e758b35244f576d310df7dbff5",
           "size": 20790,
           "url": "https://github.com/Syodo-Development/NPC/releases/download/v1.0.2/NPC.jar"
         }
@@ -55,6 +61,7 @@
         {
           "filename": "NPC-1.0.0.jar",
           "primary": true,
+          "sha256": "f8feebe809e86ec7633d6df7948b2230f79c83ce39b206f4f3e7595fafb13f23",
           "size": 20901,
           "url": "https://github.com/Syodo-Development/NPC/releases/download/1.0.0_2/NPC-1.0.0.jar"
         }
@@ -71,6 +78,7 @@
         {
           "filename": "NPC.jar",
           "primary": true,
+          "sha256": "6bbc2db656469bb18a711c083283767670ff2de84448d3e831b417b3ad4988d9",
           "size": 20689,
           "url": "https://github.com/Syodo-Development/NPC/releases/download/1.0.1/NPC.jar"
         }

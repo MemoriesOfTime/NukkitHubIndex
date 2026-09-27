@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/37770098?v=4",
+      "name": "Phuongaz",
+      "url": "https://github.com/Phuongaz"
+    }
+  ],
+  "categories": [],
+  "created_at": 1654007143,
+  "dependencies": [],
+  "description": "# CustomFishing\nCustom fishing for nukkit server. This repository migrates the old [LOCM](https://github.com/LOCM-Team/) plugins repository\n\n\n# Installing and Build\n\n```\ngit clone https://github.com/OPS-MCBE-Server/CustomFishing.git\n\ncd CustomFishing-main\nmvn clean package\n```\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/104296625?v=4",
+  "id": "OPBTeam/CustomFishing",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "CustomFishing",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/OPBTeam/CustomFishing",
+  "stars": 0,
+  "summary": "A plugin custom fishing for nukkit server",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1654007538,
+  "versions": []
+}

@@ -1,0 +1,43 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/3233503?v=4",
+      "name": "onebone",
+      "url": "https://github.com/onebone"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/127063331?v=4",
+      "name": "lmheesoo",
+      "url": "https://github.com/lmheesoo"
+    }
+  ],
+  "categories": [],
+  "created_at": 1465577920,
+  "dependencies": [],
+  "description": "# Rino\nNPC plugin for Nukkit\n\n### Build\n- git clone https://github.com/onebone/Rino\n- mvn clean\n- mvn package\n\n### Commands\n- /rino create <name>\n- /rino remove <entity id>\n- /rino list [page]\n- /rino option [-m <message>] [-i <item>] [-n <name>] [-c]\n\t- `-m` `--message` Set message\n\t- `-i` `--item` Set item\n\t- `-n` `--name` Set name\n\t- `-c` `--clear` Clear all requests\n\t- ie. /rino option `-m` \"This is a message\" `-i` Dirt `--name` \"My name\"\n\n### Permissions\n- rino\n\t- rino.command\n\t\t- rino.command.rino\n\t\t\t- rino.command.rino.create\n\t\t\t- rino.command.rino.remove\n\t\t\t- rino.command.rino.list\n\t\t\t- rino.command.rino.message\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/3233503?v=4",
+  "id": "onebone/Rino",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Rino",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/onebone/Rino",
+  "stars": 7,
+  "summary": "NPC plugin for Nukkit",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1478338406,
+  "versions": []
+}

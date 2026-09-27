@@ -1,0 +1,65 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/43937423?v=4",
+      "name": "TienIC",
+      "url": "https://github.com/TienIC"
+    }
+  ],
+  "categories": [],
+  "created_at": 1640205053,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "DbLib",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "EconomyAPI",
+      "version_range": ""
+    }
+  ],
+  "description": "# ASkyBlock-Remastered-NukkitPM1\nASkyBlock Remastered For NukkitPM1\n\nPlugins Origin: https://github.com/larryTheCoder/ASkyBlock\n\nOnly Support For NukkitPM1E: https://github.com/PetteriM1/NukkitPetteriM1Edition\n\nI'm simply editing and don't have much Java experience. The basics of java code I don't even know. I just follow paste and copy or fix a few things.\n\nIt runs stable, have fun playing\n\n\n<a href=\"https://ibb.co/bWR3XyB\"><img src=\"https://i.ibb.co/f1GSHKp/Screenshot-20211223-035606-Minecraft.png\" alt=\"Screenshot-20211223-035606-Minecraft\" border=\"0\"></a>\n\nGG\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/43937423?v=4",
+  "id": "TienIC/ASkyBlock-Remastered-NukkitPM1E",
+  "license": {
+    "id": "NOASSERTION",
+    "name": "Other",
+    "url": "https://github.com/TienIC/ASkyBlock-Remastered-NukkitPM1E/blob/master/LICENSE"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "ASkyBlock",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/TienIC/ASkyBlock-Remastered-NukkitPM1E",
+  "stars": 1,
+  "summary": "ASkyBlock Remastered For NukkitPM1",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1640215920,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ASkyBlock-0.5.2-BETA.jar",
+          "primary": true,
+          "size": 298476,
+          "url": "https://github.com/TienIC/ASkyBlock-Remastered-NukkitPM1E/releases/download/download/ASkyBlock-0.5.2-BETA.jar"
+        }
+      ],
+      "name": "Download File Jar",
+      "prerelease": false,
+      "published_at": 1640205480,
+      "version": "download"
+    }
+  ]
+}

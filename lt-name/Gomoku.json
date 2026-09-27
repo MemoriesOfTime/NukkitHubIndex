@@ -1,0 +1,62 @@
+{
+  "api_version": "Nukkit-MOT",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
+    }
+  ],
+  "categories": [],
+  "created_at": 1750157106,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "MemoriesOfTime-GameCore",
+      "version_range": ""
+    }
+  ],
+  "description": "# Gomoku - Nukkit 五子棋插件\n\n## 项目概述\nGomoku 是一个为 Nukkit 服务器开发的五子棋插件，它为玩家提供了玩家对战和人机对战两种游戏模式。玩家可以通过命令管理棋盘，选择不同难度的 AI 进行对战。插件包含丰富的实体模型资源，用于展示棋盘、棋子等游戏元素。\n\n## 功能特性\n- **玩家对战**：支持两名玩家在棋盘上进行五子棋对战。\n- **人机对战**：提供简单和困难两种难度的 AI 供玩家选择。\n- **操作简便**：通过视角移动棋子，右键放置棋子。\n- **丰富模型**：使用自定义实体模型展示棋盘、棋子和放置点，增强游戏体验。",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+  "id": "lt-name/Gomoku",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/nukkit.yml",
+  "name": "Gomoku",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/lt-name/Gomoku",
+  "stars": 2,
+  "summary": "",
+  "targets": [
+    "nkx",
+    "nkmot",
+    "pnx"
+  ],
+  "updated_at": 1751550088,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Gomoku-0.1.0.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/Gomoku/3/artifact/target/Gomoku-0.1.0.jar"
+        }
+      ],
+      "name": "0.1.0",
+      "prerelease": true,
+      "published_at": 1751550100,
+      "version": "ci-3"
+    }
+  ]
+}

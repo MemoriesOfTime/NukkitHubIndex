@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
       "name": "glorydark",
-      "url": ""
+      "url": "https://github.com/glorydark"
     }
   ],
   "categories": [],
@@ -22,7 +22,7 @@
     }
   ],
   "description": "",
-  "detection_confidence": "high",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
@@ -44,6 +44,23 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1722483255,
-  "versions": []
+  "updated_at": 1722483252,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "TreasureHunt-2.0.6.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/TreasureHunt/job/master/7/artifact/target/TreasureHunt-2.0.6.jar"
+        }
+      ],
+      "name": "2.0.6",
+      "prerelease": true,
+      "published_at": 1722483261,
+      "version": "ci-7"
+    }
+  ]
 }

@@ -1,6 +1,12 @@
 {
   "api_version": "3.0.0",
-  "authors": [],
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "name": "Buddelbubi",
+      "url": "https://github.com/Buddelbubi"
+    }
+  ],
   "categories": [],
   "created_at": 1767964260,
   "dependencies": [
@@ -24,16 +30,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "WelcomeMessage",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/WelcomeMessage",
   "stars": 1,
   "summary": "Send a nice message to players that join your server",
   "targets": [
-    "nkx",
     "pnx"
   ],
-  "updated_at": 1785519760,
+  "updated_at": 1785312133,
   "versions": [
     {
       "changelog": "Automated release for v1.0.2",
@@ -42,6 +47,7 @@
         {
           "filename": "WelcomeMessage.jar",
           "primary": true,
+          "sha256": "d408abbc0712f8b6d539fefd69cb7b3cb1537807ea35416dc953bc8f2ad66171",
           "size": 4464,
           "url": "https://github.com/PowerNukkitX-Bundle/WelcomeMessage/releases/download/v1.0.2/WelcomeMessage.jar"
         }
@@ -58,6 +64,7 @@
         {
           "filename": "WelcomeMessage.jar",
           "primary": true,
+          "sha256": "cc721fdd7d8eff2175849742d94ae710ca2532e0c0a5b83a61d70614bfb16ea7",
           "size": 4491,
           "url": "https://github.com/PowerNukkitX-Bundle/WelcomeMessage/releases/download/v1.0.1/WelcomeMessage.jar"
         }
@@ -74,6 +81,7 @@
         {
           "filename": "WelcomeMessage.jar",
           "primary": true,
+          "sha256": "1d4560093425aae5c01e6acf883eb5633b857d38d743a3ac375450d18bc493d1",
           "size": 4411,
           "url": "https://github.com/PowerNukkitX-Bundle/WelcomeMessage/releases/download/1.0.0/WelcomeMessage.jar"
         }

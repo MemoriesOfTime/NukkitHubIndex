@@ -1,0 +1,38 @@
+{
+  "api_version": "2.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/29028687?v=4",
+      "name": "WanneSimon",
+      "url": "https://github.com/WanneSimon"
+    }
+  ],
+  "categories": [],
+  "created_at": 1594441957,
+  "dependencies": [],
+  "description": "",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/29028687?v=4",
+  "id": "WanneSimon/StarterPluginDemo",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "nsdemo",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/WanneSimon/StarterPluginDemo",
+  "stars": 0,
+  "summary": "spring-nukkit-plugin demo",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1596250197,
+  "versions": []
+}

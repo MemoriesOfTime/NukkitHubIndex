@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.5",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/28224435?v=4",
+      "name": "conceputoutput",
+      "url": "https://github.com/conceputoutput"
+    }
+  ],
+  "categories": [],
+  "created_at": 1580014616,
+  "dependencies": [],
+  "description": "# neconomy\n \n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/28224435?v=4",
+  "id": "conceputoutput/neconomy",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "NEconomy",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/conceputoutput/neconomy",
+  "stars": 0,
+  "summary": "Economy plugin for nukkit server",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1580014622,
+  "versions": []
+}

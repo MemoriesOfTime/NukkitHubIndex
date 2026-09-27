@@ -1,0 +1,43 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/1344181?v=4",
+      "name": "fromgate",
+      "url": "https://github.com/fromgate"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/6178101?v=4",
+      "name": "SupremeMortal",
+      "url": "https://github.com/SupremeMortal"
+    }
+  ],
+  "categories": [],
+  "created_at": 1510345918,
+  "dependencies": [],
+  "description": "# DbLib\nDbLib a library for Nukkit and Voxelwind, that include ORMLite, Sql2o and jdbc-connectors (MySQL and SQLite).\n\n[Download at nukkit.ru](http://nukkit.ru/resources/dblib.14/)\n\nExample project: [DbExample](https://github.com/fromgate/DbExample)\n\n\n## Features\n\n* Provide access to popular database jdbc-drivers: SQLite and MySQL;\n* Include popular library ORMLite, that provides access to database without using SQL-queries;\n* Include great Sql2o engine. Make your queries easy :)\n* Organizes universal data storage for all plugins, that uses DbLib. Server owner must configure DbLib once and all plugins that use DbLib will work fine!\n\n## Configuration\nConfiguration file named config.yml in Nukkit and config.json in Voxelwind.\n```\ngeneral:\n# Messages language\n# Supported languages: russian, english\n  language: english \n# Debug mode. Usually you don't need to enable this parameter\n  debug-mode: false\nDbLib:\n# ORMLite specific parameters\n  ORMLite:\n# ORMLite debug mode. Set true to see more messages :)\n    debug: false\n# Keep-alive time interval (ms) for ORMLite connections\n# Increase this value if your database server timeout connections is too low\n# Set 0 to disable this mode (usually it's ok)\n    keep-alive-interval: 0\n\n# Database type:\n#  true - MySQL\n#  false - SQLite\n  use-MySQL: false\n\n# # Full path to sqlite file\nSQLite:\n  file-name: C:\\NukkitServer\\nukkit.db\n  \n# MySQL connections parameters\nMySQL:\n  host: localhost\n  port: 3306\n  database: db\n  username: nukkit\n  password: tikkun\n```\n\n## How to use plugin (Server owners must read this)\nIf any plugin requires a DbLib you just need to download and install it. Usually it will be enough. But if you going to use to MySQL or another sqlite file you need to configure plugin (Read at Config section)\n\n## Note for plugin developers\n[**ORMLite**](http://ormlite.com/) is popular engine, that provides access to databases using ORM technique. Practically it means that you can read and save data into dabase without writing SQL-queries.\n\n[**Sql2o**](http://www.sql2o.org/) is small useful framework that makes coding for database easy. \n\nDbLib also include database drivers:\n\n* SQLite driver\n* MySQL driver\n\nIf you would not like to use ORMLite, you can use MySQL (or SQLite) drivers as usually, using JDBC provided by Java.\n\n\n## How to connect to universal DbLib storage\n\nDbLib suggests to use universal database (by default it is a file nukkit.db, located in sever folder or MySQL database defined by user) for all plugins. If DbLib installed on server you don't need to think about database drivers, urls, names and passwords.\n\nHere is example of creating new table:\n```\n  public boolean connectToDbLib(){\n    if (this.getServer().getPluginManager().getPlugin(\"DbLib\") == null){\n      this.getLogger().info(TextFormat.RED+\"DbLib plugin not found\");\n      return false;\n    }\n    connectionSource = DbLib.getConnectionSource();\n    if (connectionSource == null) return false;\n    try {\n      passDao =  DaoManager.createDao(connectionSource, PasswordsTable.class);\n      TableUtils.createTableIfNotExists(connectionSource, PasswordsTable.class);\n    } catch (Exception e) {\n      return false;\n    }\n    return true; //  Table created!\n  }\n```\n\nBut if you going to use any other database you must use this method:\n```\n  ConnectionSource connectionSource = DbLib.getConnectionSoruce(String url, String userName, String password);\n```\n\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/6178101?v=4",
+  "id": "SupremeMortal/DbLib",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "nukkit/src/main/resources/plugin.yml",
+  "name": "DbLib",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/SupremeMortal/DbLib",
+  "stars": 0,
+  "summary": "SQLite/MySQL library for your plugins (Nukkit/Voxelwind)",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1510355019,
+  "versions": []
+}

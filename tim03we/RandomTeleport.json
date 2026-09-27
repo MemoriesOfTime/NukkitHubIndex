@@ -1,0 +1,86 @@
+{
+  "api_version": "1.0.9",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/38113441?v=4",
+      "name": "tim03we",
+      "url": "https://github.com/tim03we"
+    }
+  ],
+  "categories": [],
+  "created_at": 1596056294,
+  "dependencies": [],
+  "description": "# RandomTeleport\n\nWith the plugin RandomTeleport you can teleport to random positions in the world.\n\n# Command\nCommand | Permission | Alias\n------- | ---------- | ------\n/randomteleport [level] | randomteleport.use | randomtp, rtp\n\n----------------\n\nIf problems arise, create an issue or write us on Discord.\n\n| Discord |\n| :---: |\n[![Discord](https://img.shields.io/discord/639130989708181535.svg?style=flat-square&label=discord&colorB=7289da)](https://discord.gg/5tYC5dJ) |\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/38113441?v=4",
+  "id": "tim03we/RandomTeleport",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "RandomTeleport",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/tim03we/RandomTeleport",
+  "stars": 1,
+  "summary": "A Cloudburst Plugin",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1597858976,
+  "versions": [
+    {
+      "changelog": "RandomTeleport Plugin for Minecraft: Bedrock Edition 1.16.X+\r\n\r\nThis version stands for the release of the plugin.\r\nFor more information on what's new, visit the [RandomTeleport page on NukkitX](https://cloudburstmc.org/resources/randomteleport.526/).",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "RandomTeleport-1.1.1-SNAPSHOT.jar",
+          "primary": true,
+          "size": 8630,
+          "url": "https://github.com/tim03we/RandomTeleport/releases/download/1.1.1-SNAPSHOT/RandomTeleport-1.1.1-SNAPSHOT.jar"
+        }
+      ],
+      "name": "RandomTeleport-1.1.1-SNAPSHOT",
+      "prerelease": false,
+      "published_at": 1597858976,
+      "version": "1.1.1-SNAPSHOT"
+    },
+    {
+      "changelog": "RandomTeleport Plugin for Minecraft: Bedrock Edition 1.16.X+\r\n\r\nThis version stands for the release of the plugin.\r\nFor more information on what's new, visit the [RandomTeleport page on NukkitX](https://cloudburstmc.org/resources/randomteleport.526/).",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "RandomTeleport-1.1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 8503,
+          "url": "https://github.com/tim03we/RandomTeleport/releases/download/1.1.0-SNAPSHOT/RandomTeleport-1.1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "RandomTeleport-1.1.0-SNAPSHOT",
+      "prerelease": false,
+      "published_at": 1597571892,
+      "version": "1.1.0-SNAPSHOT"
+    },
+    {
+      "changelog": "RandomTeleport Plugin for Minecraft: Bedrock Edition 1.16.X+\r\n\r\nThis version stands for the release of the plugin.\r\nFor more information on what's new, visit the [RandomTeleport page on NukkitX](https://cloudburstmc.org/resources/randomteleport.526/).",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "RandomTeleport-1.0.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 8460,
+          "url": "https://github.com/tim03we/RandomTeleport/releases/download/1.0.0-SNAPSHOT/RandomTeleport-1.0.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "RandomTeleport-1.0.0-SNAPSHOT",
+      "prerelease": false,
+      "published_at": 1596061019,
+      "version": "1.0.0-SNAPSHOT"
+    }
+  ]
+}

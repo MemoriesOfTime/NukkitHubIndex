@@ -1,0 +1,92 @@
+{
+  "api_version": "1.0.5",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/73650825?v=4",
+      "name": "nicugnm",
+      "url": "https://github.com/nicugnm"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/25319400?v=4",
+      "name": "WetABQ",
+      "url": "https://github.com/WetABQ"
+    }
+  ],
+  "categories": [],
+  "created_at": 1517932440,
+  "dependencies": [],
+  "description": "# Nukkit-AntiCheat\nAntiCheat  - Nukkit plugin\n\n--------\n\n## Description\n\n  - AntiCheat is a plugin running on the Nukkit server.\n  - It can help you better detect cheating players.\n  - Including Fast Chat, sensitive words, Auto Aim, Speed, Bounding Box and so on.\n  - If you can, you can make it better.\n\n--------\n\n## How to use?\n\n- **Install plugin**\n  1. Download 'AntiCheat' plugin.\n  2. Put the plugin in the plugins folder.\n  3. Restart your server.\n\n## Config:\n```\nantiSpeed: true\nantiSpeedPingCheck: true\npingNoCheckValue: 25\nmaxMoveSpeed: 10.24\ncheckBB: true\nantiFly: true\ninAirTimeCheck: 5\ncheckChat: true\nchatSec: 2\ncheckChatWord: true\nSensitiveWords:\n- fuck\n- shit\nantiKillAura: true\nantiAutoAim: true\ncheckKillAuraCPS: 3\nRobotSkinPath: xxxx/plugins/AntiCheat/Steve.png\n```\n\n--------\n\n### Open source:\n\n- [GitHub(Nukkit-AntiCheat)](https://github.com/WetABQ/Nukkit-AntiCheat)\n\n### Author:\n\n- [WetABQ](https://github.com/WetABQ)\n- [NycuRO](https://github.com/NycuRO)\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/34147027?v=4",
+  "id": "Nukkit-coders/Nukkit-AntiCheat",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "AntiCheat",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Nukkit-coders/Nukkit-AntiCheat",
+  "stars": 2,
+  "summary": "AntiCheat Plugin",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1518130978,
+  "versions": [
+    {
+      "changelog": "Maximum speed was 1024, not 600 or 700.\r\n\r\nFixed in this version 1.3.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AntiCheat-1.3-SNAPSHOT.jar",
+          "primary": true,
+          "size": 39516,
+          "url": "https://github.com/Nukkit-coders/Nukkit-AntiCheat/releases/download/1.3/AntiCheat-1.3-SNAPSHOT.jar"
+        }
+      ],
+      "name": "Fixed Speed False Positive",
+      "prerelease": false,
+      "published_at": 1518130050,
+      "version": "1.3"
+    },
+    {
+      "changelog": "This version removed all Threads/Runnable from Plugin and replaced them to Repeating Tasks.\r\nThis make them more efficience and no much more ram consumed.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AntiCheat-1.2-SNAPSHOT.jar",
+          "primary": true,
+          "size": 39519,
+          "url": "https://github.com/Nukkit-coders/Nukkit-AntiCheat/releases/download/1.2/AntiCheat-1.2-SNAPSHOT.jar"
+        }
+      ],
+      "name": "More optimizes + CleanUp Project+ Not Consume Much Ram",
+      "prerelease": false,
+      "published_at": 1518128696,
+      "version": "1.2"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AntiCheat-1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 39728,
+          "url": "https://github.com/Nukkit-coders/Nukkit-AntiCheat/releases/download/1.0.0/AntiCheat-1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "Fixed Warnings, Optimize Imports, Reformat Code, More Good!",
+      "prerelease": false,
+      "published_at": 1518010143,
+      "version": "1.0.0"
+    }
+  ]
+}

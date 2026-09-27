@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.9",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/38113441?v=4",
+      "name": "tim03we",
+      "url": "https://github.com/tim03we"
+    }
+  ],
+  "categories": [],
+  "created_at": 1561463349,
+  "dependencies": [],
+  "description": "<h1>GunGame<img src=\"http://imgur.com/tCTL2QD.png\" height=\"64\" width=\"64\" align=\"left\"></img></h1>\r\n<br />\r\n\r\nGunGame is a nice MiniGame that hasn't been seen often in the Minecraft Bedrock Edition scene before. That's why I want to give you one. This MiniGame also includes a self-configurable Config that allows you to customize the game to your needs.\r\n\r\n# Features\r\n- Edit the game news\r\n- Activate or deactivate certain events\r\n- Change the chat format, as well as your nametag in the game\r\n# Setup\r\n- Download the plugin as Jar\r\n- Pack the plugin into the plugins folder\r\n- Set the game mode in server.properties to Adventure (value: 2)\r\n- Start / restart the server\r\n- You can play with your friends now\r\n\r\n# Config\r\n```\r\n# At which level should you no longer be able to receive kits?\r\nMaximum-Level: 3\r\n\r\n# Specify a percentage of the chance that you will lose many levels.\r\n# Default = 0.60\r\nChance: 0.60\r\n\r\n# Set the default game mode.\r\n# Default = 2\r\ngamemode: 2\r\n\r\n# Activate or deactivate if you want to get your old level kit back after a rejoin\r\nsave-level: false\r\n\r\n# Set the PvP radius in which PvP should be allowed.\r\npvp-radius: 10\r\n\r\n# Allow other items to be added. You can manage them in \"level.yml\" under \"other-items\".\r\nuse-other-items: false\r\n\r\n# Here you can change the chat and nametag format.\r\nformat:\r\n  chat: \"§8[§c{level}§8] §7{player} §8> §f{msg}\"\r\n  nametag: \"§8[§c{level}§8] §7{player}\"\r\n\r\nevents:\r\n  load:\r\n    login: true\r\n    join: true\r\n    quit: true\r\n    break: true\r\n    place: true\r\n    damage: true\r\n    death: true\r\n    drop: true\r\n    hunger: true\r\n    inv-move: true\r\n    move: true\r\n    respawn: true\r\n    chat: true\r\n    fight: true\r\n\r\n# Here you can change the messages.\r\n# {player} = The player is you\r\n# {level} = Your current level\r\n# {msg} = Your message\r\n# {killer} = Who killed you\r\nmessages:\r\n  join: \"{player} has entered the GunGame server.\"\r\n  quit: \"{player} has left the GunGame server.\"\r\n  death: \"{player} died!\"\r\n  kill: \"{player} was killed by {killer}.\"\r\n  reload: \"Your levels were reset by a server reload.\"\r\n```\r\n----------------\r\n# Discord\r\n\r\nIf problems arise, create an issue or write us on Discord.\r\n\r\n| The Programmers |\r\n| :---: |\r\n[![Discord](https://img.shields.io/discord/427472879072968714.svg?style=flat-square&label=discord&colorB=7289da)](https://discord.gg/Ce2aY25) |",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/38113441?v=4",
+  "id": "tim03we/GunGame-Nukkit",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "GunGame",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/tim03we/GunGame-Nukkit",
+  "stars": 1,
+  "summary": "A Cloudburst Plugin",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1595579932,
+  "versions": []
+}

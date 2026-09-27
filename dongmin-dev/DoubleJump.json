@@ -1,0 +1,86 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/63569586?v=4",
+      "name": "dongmin-dev",
+      "url": "https://github.com/dongmin-dev"
+    }
+  ],
+  "categories": [],
+  "created_at": 1589115683,
+  "dependencies": [],
+  "description": "# DoubleJump\nMost Simple DoubleJump plugin for Nukkit!\n# Usage\nPut the .jar file at ~/Nukkit/plugins  \nNo more setup for you!\n# Get To Know This Plugin\nYou can't do this on Creative. (cuz you are already FLYING)  \nSometimes, you can doublejump twice.\n# ToDo\n- [x] Add toggle switch to enable doublejump. do /djump  \n- [x] Add License  \n- [x] Add getLogger()\n- [x] Add sound effect when double jumping\n# Changelog\nv0.0.1 - first release  \nv0.0.2 - added getLogger(), added sound effect when double jumping.  \nv0.0.3 - added permission (jump.DoubleJump), added /djump to toggle DoubleJump.  \n(May collide with fly on survival plugin / If it keeps colliding, rollback to v0.0.2)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/63569586?v=4",
+  "id": "dongmin-dev/DoubleJump",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "DoubleJump",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/dongmin-dev/DoubleJump",
+  "stars": 1,
+  "summary": "⏫ Most Simple DoubleJump plugin for Nukkit!",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1589250556,
+  "versions": [
+    {
+      "changelog": "added /djump to toggle DoubleJump.\r\n(permission jump.DoubleJump)\r\nMay collide with fly on survival plugin\r\nIf it keeps colliding, rollback to v0.0.2",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "DoubleJump-0.0.3-SNAPSHOT.jar",
+          "primary": true,
+          "size": 3874,
+          "url": "https://github.com/dongmin-dev/DoubleJump/releases/download/SNAPSHOT-v0.0.3/DoubleJump-0.0.3-SNAPSHOT.jar"
+        }
+      ],
+      "name": "DoubleJump-SNAPSHOT-v0.0.3",
+      "prerelease": false,
+      "published_at": 1589250517,
+      "version": "SNAPSHOT-v0.0.3"
+    },
+    {
+      "changelog": "Now has new getLogger() and sound effect when double jumping!",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "DoubleJump-0.0.2-SNAPSHOT.jar",
+          "primary": true,
+          "size": 3251,
+          "url": "https://github.com/dongmin-dev/DoubleJump/releases/download/SNAPSHOT-v0.0.2/DoubleJump-0.0.2-SNAPSHOT.jar"
+        }
+      ],
+      "name": "DoubleJump-SNAPSHOT-v0.0.2",
+      "prerelease": false,
+      "published_at": 1589159653,
+      "version": "SNAPSHOT-v0.0.2"
+    },
+    {
+      "changelog": "First stable release enjoy",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "DoubleJump-0.0.1-SNAPSHOT.jar",
+          "primary": true,
+          "size": 2980,
+          "url": "https://github.com/dongmin-dev/DoubleJump/releases/download/SNAPSHOT-v0.0.1/DoubleJump-0.0.1-SNAPSHOT.jar"
+        }
+      ],
+      "name": "DoubleJump-SNAPSHOT-v0.0.1",
+      "prerelease": false,
+      "published_at": 1589116067,
+      "version": "SNAPSHOT-v0.0.1"
+    }
+  ]
+}

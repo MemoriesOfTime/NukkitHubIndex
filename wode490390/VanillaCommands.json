@@ -1,0 +1,79 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+      "name": "wode490390",
+      "url": "https://github.com/wode490390"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/63671187?v=4",
+      "name": "bremea",
+      "url": "https://github.com/bremea"
+    }
+  ],
+  "categories": [],
+  "created_at": 1547016587,
+  "dependencies": [],
+  "description": "# Vanilla Commands\n[![Build](https://img.shields.io/circleci/build/github/wode490390/VanillaCommands/master)](https://circleci.com/gh/wode490390/VanillaCommands/tree/master)\n[![Release](https://img.shields.io/github/v/release/wode490390/VanillaCommands)](https://github.com/wode490390/VanillaCommands/releases)\n[![Release date](https://img.shields.io/github/release-date/wode490390/VanillaCommands)](https://github.com/wode490390/VanillaCommands/releases)\n[![MCBBS](https://img.shields.io/badge/-mcbbs-inactive)](https://www.mcbbs.net/thread-814171-1-1.html \"原生命令\")\n<!--[![Servers](https://img.shields.io/bstats/servers/6884)](https://bstats.org/plugin/bukkit/VanillaCommands/6884)\n[![Players](https://img.shields.io/bstats/players/6884)](https://bstats.org/plugin/bukkit/VanillaCommands/6884)-->\n\nThis plugin is used to add missing Minecraft: Bedrock Edition vanilla commands to [Nukkit](https://github.com/NukkitX/Nukkit) servers.\n\nIf you found any bugs or have any suggestions, please open an issue on [GitHub](https://github.com/wode490390/VanillaCommands/issues).\n\nIf you like this plugin, please star it on [GitHub](https://github.com/wode490390/VanillaCommands).\n\n## Features\n- [ ] Commands\n  - [X] [`/clear`](https://minecraft.gamepedia.com/Commands/clear)\n  - [X] [`/clone`](https://minecraft.gamepedia.com/Commands/clone)\n  - [X] [`/daylock`](https://minecraft.gamepedia.com/Commands/daylock)\n  - [X] [`/fill`](https://minecraft.gamepedia.com/Commands/fill)\n  - [X] [`/playsound`](https://minecraft.gamepedia.com/Commands/playsound)\n  - [X] [`/replaceitem`](https://minecraft.gamepedia.com/Commands/replaceitem)\n  - [X] [`/setblock`](https://minecraft.gamepedia.com/Commands/setblock)\n  - [X] [`/setmaxplayers`](https://minecraft.gamepedia.com/Commands/setmaxplayers)\n  - [X] [`/spreadplayers`](https://minecraft.gamepedia.com/Commands/spreadplayers)\n  - [X] [`/stopsound`](https://minecraft.gamepedia.com/Commands/stopsound)\n  - [ ] [`/tellraw`](https://minecraft.gamepedia.com/Commands/tellraw)\n  - [X] [`/testforblock`](https://minecraft.gamepedia.com/Commands/testforblock)\n  - [X] [`/testforblocks`](https://minecraft.gamepedia.com/Commands/testforblocks)\n  - [X] [`/testfor`](https://minecraft.gamepedia.com/Commands/testfor)\n  - [ ] [`/titleraw`](https://minecraft.gamepedia.com/Commands/title)\n  - [X] [`/toggledownfall`](https://minecraft.gamepedia.com/Commands/toggledownfall)\n- [X] [Target Selector](https://minecraft.gamepedia.com/Commands#Target_selectors)\n  - [X] [Selector variables](https://minecraft.gamepedia.com/Commands#Target_selector_variables)\n    - [X] `@a`\n    - [X] `@e`\n    - [X] `@p`\n    - [X] `@r`\n    - [X] `@s`\n  - [X] [Selector arguments](https://minecraft.gamepedia.com/Commands#Target_selector_arguments)\n    - [X] `c`\n    - [X] `dx`\n    - [X] `dy`\n    - [X] `dz`\n    - [X] `l`\n    - [X] `lm`\n    - [X] `m`\n    - [X] `name`\n    - [X] `r`\n    - [X] `rm`\n    - [X] `rx`\n    - [X] `rxm`\n    - [X] `ry`\n    - [X] `rym`\n    - [X] `type`\n    - [X] `x`\n    - [X] `y`\n    - [X] `z`\n\n*Note: Only [legacy IDs](https://minecraft.gamepedia.com/Bedrock_Edition_data_values) (numbers) can be used in this plugin.*\n\n## Download\n- [Releases](https://github.com/wode490390/VanillaCommands/releases)\n- [Snapshots](https://circleci.com/gh/wode490390/VanillaCommands)\n\n## Permissions\n| Command | Alias | Permission | Default |\n| - | - | - | - |\n| /clear | | vanillacommand.clear | OP |\n| /clone | | vanillacommand.clone | OP |\n| /daylock | /alwaysday | vanillacommand.daylock | OP |\n| /fill | | vanillacommand.fill | OP |\n| /playsound | | vanillacommand.playsound | OP |\n| /replaceitem | | vanillacommand.replaceitem | OP |\n| /setblock | | vanillacommand.setblock | OP |\n| /setmaxplayers | | vanillacommand.setmaxplayers | OP |\n| /spreadplayers | | vanillacommand.spreadplayers | OP |\n| /stopsound | | vanillacommand.stopsound | OP |\n| /testforblock | | vanillacommand.testforblock | OP |\n| /testforblocks | | vanillacommand.testforblocks | OP |\n| /testfor | | vanillacommand.testfor | OP |\n| /toggledownfall | | vanillacommand.toggledownfall | OP |\n\n## Compiling\n1. Install [Maven](https://maven.apache.org/).\n2. Run `mvn clean package`. The compiled JAR can be found in the `target/` directory.\n\n## Metrics Collection\n\nThis plugin uses [bStats](https://github.com/wode490390/bStats-Nukkit). You can opt out using the global bStats config; see the [official website](https://bstats.org/getting-started) for more details.\n\n<!--[![Metrics](https://bstats.org/signatures/bukkit/VanillaCommands.svg)](https://bstats.org/plugin/bukkit/VanillaCommands/6884)-->\n\n###### If I have any grammar and/or term errors, please correct them :)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+  "id": "wode490390/VanillaCommands",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "http://wode490390.cn/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "VanillaCommands",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/wode490390/VanillaCommands",
+  "stars": 11,
+  "summary": "VanillaCommands plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1590532978,
+  "versions": [
+    {
+      "changelog": "- Target selector is now compatible with multi-world",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeVanillaCommands-1.0.1.jar",
+          "primary": true,
+          "size": 94085,
+          "url": "https://github.com/wode490390/VanillaCommands/releases/download/1.0.1/wodeVanillaCommands-1.0.1.jar"
+        }
+      ],
+      "name": "VanillaCommands-v1.0.1",
+      "prerelease": false,
+      "published_at": 1586130229,
+      "version": "1.0.1"
+    },
+    {
+      "changelog": "Initial release",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeVanillaCommands-1.0.0.jar",
+          "primary": true,
+          "size": 94081,
+          "url": "https://github.com/wode490390/VanillaCommands/releases/download/1.0.0/wodeVanillaCommands-1.0.0.jar"
+        }
+      ],
+      "name": "VanillaCommands-v1.0.0",
+      "prerelease": false,
+      "published_at": 1585658294,
+      "version": "1.0.0"
+    }
+  ]
+}

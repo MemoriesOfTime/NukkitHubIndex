@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/73650825?v=4",
+      "name": "nicugnm",
+      "url": "https://github.com/nicugnm"
+    }
+  ],
+  "categories": [],
+  "created_at": 1529076836,
+  "dependencies": [],
+  "description": "# CoreJobs\nThis plugin was created for all. Anyone can modify them and make a PR. Thanks for using them.\n\nNote: This plugin now is very very pointless and basic. Just for be.\n\nI'm planning add:\n- Database SQLITE Async.\n- More Costumisable Job.\n- More Jobs.\n- Job Level\n- Job Skills.\n- BossBar when you use a job.\n- Experience System.\n- MultiLanguage Support (Messages + API for custom plugins for their Core).\n\n## Config\n\n```php\n{\n  \"messages\": {\n    \"consoleMessage\"        : \"&cYou can't use this command as Console Command Sender.\",\n    \"messageTitleJobWindow\" : \"                       Hello!\\n           Welcome to Job Category!\\n    Select what you want to do from now.\",\n    \"receiveJob\"            : \"&7» &3You have successfully selected Job: &b%job &3!\",\n    \"withoutJobTitleWindow\" : \"Without Job Option\",\n    \"withoutJobMessage\"     : \"&7» &3From now, you don't have One Job &3!\"\n  },\n  \"icons\": {\n    \"lumberJackIcon\"        : \"https://i.imgur.com/uWmtrax.png\",\n    \"minerIcon\"             : \"https://i.imgur.com/XFCYdCz.png\",\n    \"farmerIcon\"            : \"https://i.imgur.com/otMDlEU.png\",\n    \"killerIcon\"            : \"https://i.imgur.com/YHkAa4q.png\",\n    \"hunterIcon\"            : \"https://i.imgur.com/HpwAZvq.png\",\n    \"infoIcon\"              : \"https://i.imgur.com/nujWKR3.png\",\n    \"withoutJobIcon\"        : \"https://i.imgur.com/YXBNPBc.png\"\n  }\n}\n```\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/33223157?v=4",
+  "id": "BedrockCommunity/CoreJobs-Nukkit",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "CoreJobs-Nukkit",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/BedrockCommunity/CoreJobs-Nukkit",
+  "stars": 3,
+  "summary": "Very Basic plugin Jobs for Nukkit with Forms. More coming soon.",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1539772162,
+  "versions": []
+}

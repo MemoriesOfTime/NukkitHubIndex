@@ -1,0 +1,54 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/20137336?v=4",
+      "name": "WillQizza",
+      "url": "https://github.com/WillQizza"
+    }
+  ],
+  "categories": [],
+  "created_at": 1581880811,
+  "dependencies": [],
+  "description": "# PlayerLifestyleModifier - Nukkit Plugin\n\n**PlayerLifestyleModifier** is a plugin for the [Nukkit Minecraft Server Software](https://github.com/Nukkit/Nukkit) that can be used to change the current amount of health and hunger players on your server have!\n\n# Demonstration\n\n[View demonstration on YouTube](https://youtu.be/d_oWuLPqYsc)\n\n# Installation\n\n- Download the latest jar of the plugin\n- Move the jar into your plugins folder\n\n# Commands\n\nBy default, this command is only usable by players with op.\n\n- `/modify-player <player>` - Brings up a popup to modify the health and hunger of a player! (`io.github.willqi.playerlifestylemodifier.command.modifyplayer`)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/20137336?v=4",
+  "id": "WillQizza/PlayerLifestyleModifier",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "PlayerLifestyleModifier",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/WillQizza/PlayerLifestyleModifier",
+  "stars": 0,
+  "summary": "Modify the health and hunger of players.",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1581895715,
+  "versions": [
+    {
+      "changelog": "Initial release!",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "PlayerLifestyleModifier-v1.0.0.jar",
+          "primary": true,
+          "size": 6266,
+          "url": "https://github.com/WillQizza/PlayerLifestyleModifier/releases/download/v1.0.0/PlayerLifestyleModifier-v1.0.0.jar"
+        }
+      ],
+      "name": "PlayerLifestyleModifier",
+      "prerelease": false,
+      "published_at": 1581895715,
+      "version": "v1.0.0"
+    }
+  ]
+}

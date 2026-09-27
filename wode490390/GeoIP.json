@@ -1,0 +1,74 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+      "name": "wode490390",
+      "url": "https://github.com/wode490390"
+    }
+  ],
+  "categories": [],
+  "created_at": 1565525469,
+  "dependencies": [],
+  "description": "# GeoIP for Nukkit\n[![Nukkit](https://img.shields.io/badge/Nukkit-1.0-green)](https://github.com/NukkitX/Nukkit)\n[![Build](https://img.shields.io/circleci/build/github/wode490390/GeoIP/master)](https://circleci.com/gh/wode490390/GeoIP/tree/master)\n[![Release](https://img.shields.io/github/v/release/wode490390/GeoIP)](https://github.com/wode490390/GeoIP/releases)\n[![Release date](https://img.shields.io/github/release-date/wode490390/GeoIP)](https://github.com/wode490390/GeoIP/releases)\n<!--[![MCBBS](https://img.shields.io/badge/-mcbbs-inactive)](https://www.mcbbs.net/thread-900823-1-1.html \"IP定位\")\n[![Servers](https://img.shields.io/bstats/servers/5375)](https://bstats.org/plugin/bukkit/GeoIP/5375)\n[![Players](https://img.shields.io/bstats/players/5375)](https://bstats.org/plugin/bukkit/GeoIP/5375)-->\n\nGeoIP provides an approximate lookup of where your players come from, based on their public IP and public geographical databases.\n\nIf you found any bugs or have any suggestions, please open an issue on [GitHub Issues](https://github.com/wode490390/GeoIP/issues).\n\nIf you like this plugin, please star it on [GitHub](https://github.com/wode490390/GeoIP).\n\n## Commands\n| Command | Permission | Description | Default |\n| - | - | - | - |\n| `/geoip` | geoip.show | Shows the GeoIP location of a player. | OP |\n| `/geoip` | geoip.show.fullip | Shows the full ip address of a player. | false |\n| | geoip.hide | Allows player to hide player's country and city from people who have permission geoip.show | false |\n\n## Configuration\n<details>\n<summary>config.yml</summary>\n\n```yaml\ndatabase:\n  show-cities: false\n  download-if-missing: true\n  # Url for country\n  lzma-download-url: \"https://cdn.jsdelivr.net/gh/wodeBot/geoipdb@lzma/country.mmdb.lzma\"\n  # Url for cities\n  lzma-download-url-city: \"https://cdn.jsdelivr.net/gh/wodeBot/geoipdb@lzma/city.mmdb.lzma\"\nshow-on-login: true\n# \"enable-locale\" enables locale on geolocation display.\nenable-locale: true\n# Not all languages are supported. See https://dev.maxmind.com/geoip/geoip2/web-services/#Languages\nlocale: en\n```\n</details>\n\n## Download\n- [Releases](https://github.com/wode490390/GeoIP/releases)\n- [Snapshots](https://circleci.com/gh/wode490390/GeoIP)\n\n## API Usage\n<details>\n<summary>example code</summary>\n\n```java\nimport cn.wode490390.nukkit.geoip.GeoIP;\nimport java.util.UUID;\n\nclass Example {\n    Example() {\n        UUID uuid = UUID.fromString(\"ecb32467-6cee-4a59-b3c0-5468fec58ed4\");\n        String geoLocation = GeoIP.query(uuid); //Our API :)\n        System.out.println(\"Location: \" + geoLocation);\n    }\n}\n```\n</details>\n\n## Compiling\n1. Install [Maven](https://maven.apache.org/).\n2. Fork and clone the repo.\n3. Run `mvn clean package`. The compiled JAR can be found in the `target/` directory.\n\n## Metrics Collection\n\nThis plugin uses [bStats](https://github.com/wode490390/bStats-Nukkit). You can opt out using the global bStats config; see the [official website](https://bstats.org/getting-started) for more details.\n\n<!--[![Metrics](https://bstats.org/signatures/bukkit/GeoIP.svg)](https://bstats.org/plugin/bukkit/GeoIP/5375)-->\n\n###### If I have any grammar and/or term errors, please correct them :)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+  "id": "wode490390/GeoIP",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "http://wode490390.cn/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "GeoIP",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/wode490390/GeoIP",
+  "stars": 2,
+  "summary": "GeoIP provides an approximate lookup of where your players come from, based on their public IP and public geographical databases.",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1596382608,
+  "versions": [
+    {
+      "changelog": "- Update database URL (#1)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeGeoIP-1.1.0.jar",
+          "primary": true,
+          "size": 2066013,
+          "url": "https://github.com/wode490390/GeoIP/releases/download/1.1.0/wodeGeoIP-1.1.0.jar"
+        }
+      ],
+      "name": "GeoIP-v1.1.0",
+      "prerelease": false,
+      "published_at": 1596382608,
+      "version": "1.1.0"
+    },
+    {
+      "changelog": "Initial release",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeGeoIP-1.0.0.jar",
+          "primary": true,
+          "size": 1930330,
+          "url": "https://github.com/wode490390/GeoIP/releases/download/1.0.0/wodeGeoIP-1.0.0.jar"
+        }
+      ],
+      "name": "GeoIP-v1.0.0",
+      "prerelease": false,
+      "published_at": 1565761823,
+      "version": "1.0.0"
+    }
+  ]
+}

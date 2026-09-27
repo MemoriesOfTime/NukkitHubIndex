@@ -2,14 +2,19 @@
   "api_version": "1.0.13",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "ScarletRedMan",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/83061703?v=4",
+      "name": "MEFRREEX",
+      "url": "https://github.com/MEFRREEX"
     },
     {
-      "avatar_url": "",
-      "name": "MEFRREEX",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/54776640?v=4",
+      "name": "ScarletRedMan",
+      "url": "https://github.com/ScarletRedMan"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/68228599?v=4",
+      "name": "IndianBartonka",
+      "url": "https://github.com/IndianBartonka"
     }
   ],
   "categories": [
@@ -73,7 +78,7 @@
     "pnx",
     "lumi"
   ],
-  "updated_at": 1788611352,
+  "updated_at": 1759666407,
   "versions": [
     {
       "changelog": "## What's Changed\r\n* feat: added api for element tooltips + refactor: remove debug command by @MEFRREEX in https://github.com/MEFRREEX/FormConstructor/pull/12\r\n\r\n\r\n**Full Changelog**: https://github.com/MEFRREEX/FormConstructor/compare/3.0.0...3.1.0",
@@ -82,6 +87,7 @@
         {
           "filename": "FormConstructor-3.1.0.jar",
           "primary": true,
+          "sha256": "36f71cee45aeda47f3c7d14d54546c343009d7f63cfa495788b9e1efea23cb78",
           "size": 52722,
           "url": "https://github.com/MEFRREEX/FormConstructor/releases/download/3.1.0/FormConstructor-3.1.0.jar"
         }

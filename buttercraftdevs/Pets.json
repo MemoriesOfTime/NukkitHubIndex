@@ -1,0 +1,63 @@
+{
+  "api_version": "1.0.7",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/26197131?v=4",
+      "name": "PetteriM1",
+      "url": "https://github.com/PetteriM1"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/18482195?v=4",
+      "name": "xXSirGamesXx",
+      "url": "https://github.com/xXSirGamesXx"
+    }
+  ],
+  "categories": [],
+  "created_at": 1563638141,
+  "dependencies": [],
+  "description": "",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/53325729?v=4",
+  "id": "buttercraftdevs/Pets",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/PetteriM1/Pets/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Pets",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/buttercraftdevs/Pets",
+  "stars": 1,
+  "summary": "Pets plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1563651630,
+  "versions": [
+    {
+      "changelog": "Works with 1.12.0 and added rabbits.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Pets_v1-0-1.jar",
+          "primary": true,
+          "size": 15729,
+          "url": "https://github.com/buttercraftdevs/Pets/releases/download/1.0.1/Pets_v1-0-1.jar"
+        }
+      ],
+      "name": "Pets 1.0.1",
+      "prerelease": false,
+      "published_at": 1563642033,
+      "version": "1.0.1"
+    }
+  ]
+}

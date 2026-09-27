@@ -1,0 +1,42 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/39871161?v=4",
+      "name": "ZenSirzechs",
+      "url": "https://github.com/ZenSirzechs"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/6178101?v=4",
+      "name": "SupremeMortal",
+      "url": "https://github.com/SupremeMortal"
+    }
+  ],
+  "categories": [],
+  "created_at": 1552162235,
+  "dependencies": [],
+  "description": "# LuckChat-NK\nA chat formatting plugin for LuckPerms Nukkit\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/39871161?v=4",
+  "id": "ZenSirzechs/LuckChat-NK",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "LuckChat",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/ZenSirzechs/LuckChat-NK",
+  "stars": 2,
+  "summary": "A chat formatting plugin for LuckPerms Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1625957927,
+  "versions": []
+}

@@ -2,9 +2,19 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
       "name": "Buddelbubi",
-      "url": ""
+      "url": "https://github.com/Buddelbubi"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/82237910?v=4",
+      "name": "AzaleeX",
+      "url": "https://github.com/AzaleeX"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/10363500?v=4",
+      "name": "Creeperface01",
+      "url": "https://github.com/Creeperface01"
     }
   ],
   "categories": [],
@@ -24,16 +34,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "EmptyWorld",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/EmptyWorld",
   "stars": 1,
   "summary": "An empty world generator for PowerNukkitX",
   "targets": [
-    "nkx",
     "pnx"
   ],
-  "updated_at": 1785309050,
+  "updated_at": 1785308951,
   "versions": [
     {
       "changelog": "Automated release for v2.0.1",
@@ -42,6 +51,7 @@
         {
           "filename": "EmptyWorld.jar",
           "primary": true,
+          "sha256": "a4835572a21cbfb554147f1be99a951b7fafb0733d4be694734a6709432d85e4",
           "size": 9851,
           "url": "https://github.com/PowerNukkitX-Bundle/EmptyWorld/releases/download/v2.0.1/EmptyWorld.jar"
         }
@@ -58,6 +68,7 @@
         {
           "filename": "EmptyWorld.jar",
           "primary": true,
+          "sha256": "ccb725a3bfd3326344a77b836ee7fb6705f2279333f2edaf6c9059d1c60b43b6",
           "size": 9599,
           "url": "https://github.com/PowerNukkitX-Bundle/EmptyWorld/releases/download/v2.0.0/EmptyWorld.jar"
         }
@@ -74,6 +85,7 @@
         {
           "filename": "EmptyWorld.jar",
           "primary": true,
+          "sha256": "63614e693ccaba94f8605c9c9140db17023ecf15071d1ed1821560e1a17bae3f",
           "size": 5841,
           "url": "https://github.com/PowerNukkitX-Bundle/EmptyWorld/releases/download/v1.0.1/EmptyWorld.jar"
         }
@@ -90,6 +102,7 @@
         {
           "filename": "EmptyWorld.jar",
           "primary": true,
+          "sha256": "a0d451b7af82acf7e8bfc5fae547e1599ce36f92a92912f5ac2659bea589d6f3",
           "size": 5924,
           "url": "https://github.com/PowerNukkitX-Bundle/EmptyWorld/releases/download/1.0/EmptyWorld.jar"
         }

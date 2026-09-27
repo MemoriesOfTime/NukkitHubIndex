@@ -2,14 +2,14 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "PowerNukkitX Team",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/50714128?v=4",
+      "name": "xRookieFight",
+      "url": "https://github.com/xRookieFight"
     },
     {
-      "avatar_url": "",
-      "name": "cooldogedev",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/73995049?v=4",
+      "name": "PleaseInsertNameHere",
+      "url": "https://github.com/PleaseInsertNameHere"
     }
   ],
   "categories": [],
@@ -29,16 +29,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "Spectrum",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/Spectrum-PNX",
   "stars": 2,
   "summary": "Spectrum-PNX is an implementation of the Spectrum proxy for PowerNukkitX",
   "targets": [
-    "nkx",
     "pnx"
   ],
-  "updated_at": 1783689034,
+  "updated_at": 1783688985,
   "versions": [
     {
       "changelog": "",
@@ -47,6 +46,7 @@
         {
           "filename": "Spectrum-PNX-1.0-SNAPSHOT-all.jar",
           "primary": true,
+          "sha256": "dce1498ec3bbc11f4e0aef4168603f18a1a83398bd4b94eea80a1a48ada12ef5",
           "size": 86946,
           "url": "https://github.com/PowerNukkitX-Bundle/Spectrum-PNX/releases/download/1.0.0/Spectrum-PNX-1.0-SNAPSHOT-all.jar"
         }

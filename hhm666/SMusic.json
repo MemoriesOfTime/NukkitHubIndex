@@ -1,0 +1,44 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/25707048?v=4",
+      "name": "hhm666",
+      "url": "https://github.com/hhm666"
+    }
+  ],
+  "categories": [],
+  "created_at": 1550554624,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "SPluginBase",
+      "version_range": ""
+    }
+  ],
+  "description": "# SMusic\nNukkit Plugin.Redstone Music.\n\nThis Plugin Uses [NoteBlockAPI](https://github.com/xxmicloxx/NoteBlockAPI)\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/25707048?v=4",
+  "id": "hhm666/SMusic",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "SMusic",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/hhm666/SMusic",
+  "stars": 2,
+  "summary": "Redstone Music,By hhm",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1550567469,
+  "versions": []
+}

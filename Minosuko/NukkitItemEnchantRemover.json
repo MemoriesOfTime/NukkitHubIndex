@@ -1,0 +1,71 @@
+{
+  "api_version": "1.0.1",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/63941519?v=4",
+      "name": "Minosuko",
+      "url": "https://github.com/Minosuko"
+    }
+  ],
+  "categories": [],
+  "created_at": 1690112819,
+  "dependencies": [],
+  "description": "# NukkitItemEnchantRemover\nA Item enchant remover plugin for Nukkit. \n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/63941519?v=4",
+  "id": "Minosuko/NukkitItemEnchantRemover",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "ItemEnchantRemover",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Minosuko/NukkitItemEnchantRemover",
+  "stars": 0,
+  "summary": "A Item enchant remover plugin for Nukkit.",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1690123371,
+  "versions": [
+    {
+      "changelog": ">: (",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ItemEnchantRemover-1.0.1.jar",
+          "primary": true,
+          "size": 4657,
+          "url": "https://github.com/Minosuko/NukkitItemEnchantRemover/releases/download/v1.0.1/ItemEnchantRemover-1.0.1.jar"
+        }
+      ],
+      "name": "Dumb Buggy Fix",
+      "prerelease": false,
+      "published_at": 1690123371,
+      "version": "v1.0.1"
+    },
+    {
+      "changelog": "**Full Changelog**: https://github.com/Minosuko/NukkitItemEnchantRemover/commits/v1.0.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ItemEnchantRemover-1.0.0.jar",
+          "primary": true,
+          "size": 4655,
+          "url": "https://github.com/Minosuko/NukkitItemEnchantRemover/releases/download/v1.0.0/ItemEnchantRemover-1.0.0.jar"
+        }
+      ],
+      "name": "First release",
+      "prerelease": false,
+      "published_at": 1690112972,
+      "version": "v1.0.0"
+    }
+  ]
+}

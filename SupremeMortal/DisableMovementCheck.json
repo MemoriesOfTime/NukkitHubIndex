@@ -1,0 +1,58 @@
+{
+  "api_version": "1.0.6",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/6178101?v=4",
+      "name": "SupremeMortal",
+      "url": "https://github.com/SupremeMortal"
+    }
+  ],
+  "categories": [],
+  "created_at": 1522666666,
+  "dependencies": [],
+  "description": "",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/6178101?v=4",
+  "id": "SupremeMortal/DisableMovementCheck",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/SupremeMortal/DisableMovementCheck",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "DisableMovementCheck",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/SupremeMortal/DisableMovementCheck",
+  "stars": 1,
+  "summary": "Disables movement checks for all players",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1522677271,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "dmc-1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 3185,
+          "url": "https://github.com/SupremeMortal/DisableMovementCheck/releases/download/1.0.0/dmc-1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "1.0.0",
+      "prerelease": false,
+      "published_at": 1522668323,
+      "version": "1.0.0"
+    }
+  ]
+}

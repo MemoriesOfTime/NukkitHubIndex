@@ -2,9 +2,9 @@
   "api_version": "1.0.9",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "LT_Name",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
     }
   ],
   "categories": [],
@@ -32,6 +32,23 @@
   "targets": [
     "nkx"
   ],
-  "updated_at": 1600160712,
-  "versions": []
+  "updated_at": 1600160710,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "JoinCommand-1.0.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/JoinCommmand/2/artifact/target/JoinCommand-1.0.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "1.0.0-SNAPSHOT",
+      "prerelease": true,
+      "published_at": 1642938648,
+      "version": "ci-2"
+    }
+  ]
 }

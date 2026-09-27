@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/3233503?v=4",
+      "name": "onebone",
+      "url": "https://github.com/onebone"
+    }
+  ],
+  "categories": [],
+  "created_at": 1456149604,
+  "dependencies": [],
+  "description": "# Kami\nA typical permission management plugin for Nukkit\n\n## Build\n- git clone https://github.com/onebone/Kami && cd Kami\n- mvn clean\n- mvn package\n\n## Commands\n\n- /addgroup `[[-d]]` `<group>`\n - `-d`: Set as default group\n- /rmgroup `<group>`\n- /usermod `<[-g <group>][-a <permission>][-r <permission>]>` `<player>`\n - `-g`: Set group of player\n - `-a`: Appends permission to player\n - `-r`: Removes permission from player\n- /groups\n- /user `<player>`\n- /group `<[-d][-a <permission>][-r <permission>]>` `<group>`\n - `-d`: Set as default group\n- /perms `<[-u <user>][-g <group>][-p <page>]>`\n - `-u`: Shows user permission\n - `-g`: Shows group permission\n - `-p`: Sets page to show\n\n#### Command Example\n- `/addgroup NewGroup` will create a new group named `NewGroup`.\n- `/addgroup -d NewGroup` will create a new group named `NewGroup` and set it as default group.\n- `/addgroup \"With Space\"` will create a new group named `With Space`.\n- `/usermod -g Admin onebone` will set `onebone`'s group into `Admin`.\n- `/usermod -a kami.command.* onebone` will append permission node `kami.command.*` to `onebone`.\n- `/group -a kami.command.* Admin` will append permission node `kami.command.*` to `Admin` group.\n- `/perms -u onebone -p 1` will show page `1` of `onebone`'s permission node.\n\n## Permission management\nYou can manually or by command to modify permissions for players.\nLet's give an example.\n\n| Permission | Node | Matching |\n|:----------:|:----:|:--------:|\n| nukkit.command.say | nukkit.command.say | Yes |\n| nukkit.command.me | nukkit.command.me | Yes |\n| kami.command | kami.* | Yes |\n| kami.command.groups | kami.*.groups | Yes |\n| kami.command.asdf.groups | kami.*.groups | Yes |\n| All Permissions Available | * | Yes |\n| kami.invalidmove | kami | No ** |\n| nukkit.command | kami | No |\n\n\\*\\* But will be applied because it is children\n\n- You can negate permission by using prefix `-` at the start of the permission node.\n\t- Example: `-kami` will negate permission `kami`, and `-*` will negate all permissions available.\n\n## Permissions\n- kami\n  - kami.command\n    - kami.command.addgroup\n\t- kami.command.rmgroup\n\t- kami.command.usermod\n\t- kami.command.groups\n\t- kami.command.user\n  - kami.invalidmove\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/3233503?v=4",
+  "id": "onebone/Kami",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Kami",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/onebone/Kami",
+  "stars": 1,
+  "summary": "A typical permission management plugin for Nukkit",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1469352256,
+  "versions": []
+}

@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/12643554?v=4",
+      "name": "haniokasai",
+      "url": "https://github.com/haniokasai"
+    }
+  ],
+  "categories": [],
+  "created_at": 1468058462,
+  "dependencies": [],
+  "description": "# SPAMBAN\n\n\nDownload [![Build Status](http://jenkins.haniokasai.com/buildStatus/icon?job=SPAMBAN-Nukkit)](http://jenkins.haniokasai.com/job/SPAMBAN-Nukkit/ \"Jenkins \")\n\nSpam Block Plugin for nukkit\n\n##forum\nhttps://forums.nukkit.io/resources/spamban.93/\n\n##video\nhttps://www.youtube.com/watch?v=LlhhGEsMhCw\n\noops\nhttps://www.youtube.com/watch?v=27hxPt9efdc\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/12643554?v=4",
+  "id": "haniokasai/SPAMBAN",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "SpamBan",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/haniokasai/SPAMBAN",
+  "stars": 0,
+  "summary": "Spam Block Plugin",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1470727920,
+  "versions": []
+}

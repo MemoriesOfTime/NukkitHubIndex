@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26197131?v=4",
       "name": "PetteriM1",
-      "url": ""
+      "url": "https://github.com/PetteriM1"
     }
   ],
   "categories": [],
@@ -33,6 +33,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1782824288,
+  "updated_at": 1782824284,
   "versions": []
 }

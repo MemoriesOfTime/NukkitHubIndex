@@ -1,0 +1,47 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/39871161?v=4",
+      "name": "ZenSirzechs",
+      "url": "https://github.com/ZenSirzechs"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/30836054?v=4",
+      "name": "chicuong2412",
+      "url": "https://github.com/chicuong2412"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/6178101?v=4",
+      "name": "SupremeMortal",
+      "url": "https://github.com/SupremeMortal"
+    }
+  ],
+  "categories": [],
+  "created_at": 1571348362,
+  "dependencies": [],
+  "description": "#Elmentary\nGUI for Nukkit\nThis plugin was developed by a Chinese.\nI just added the support of CreeperFace's PlaceholderAPI\nOriginal post address:\nhttps://www.mcbbs.net/thread-809697-1-4.html\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/30836054?v=4",
+  "id": "chicuong2412/LuckChat-NK",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "LuckChat",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/chicuong2412/LuckChat-NK",
+  "stars": 0,
+  "summary": "GUI for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1571350718,
+  "versions": []
+}

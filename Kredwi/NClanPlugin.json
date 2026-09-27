@@ -2,9 +2,9 @@
   "api_version": "1.1.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74652542?v=4",
       "name": "Kredwi",
-      "url": ""
+      "url": "https://github.com/Kredwi"
     }
   ],
   "categories": [],
@@ -22,7 +22,7 @@
     }
   ],
   "description": "",
-  "detection_confidence": "high",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/74652542?v=4",
@@ -45,9 +45,10 @@
   "stars": 0,
   "summary": "The best plugin for Clans",
   "targets": [
-    "nkx"
+    "nkx",
+    "nkmot"
   ],
-  "updated_at": 1786853359,
+  "updated_at": 1786853373,
   "versions": [
     {
       "changelog": "",
@@ -56,12 +57,14 @@
         {
           "filename": "NClanPlugin-1.1-SNAPSHOT.jar",
           "primary": true,
+          "sha256": "a904ce3d229ec3e72d3bd6ac136cd67aa38e340b93e2593302026210b9f09061",
           "size": 152596,
           "url": "https://github.com/Kredwi/NClanPlugin/releases/download/snapshot/NClanPlugin-1.1-SNAPSHOT.jar"
         },
         {
           "filename": "original-NClanPlugin-1.1-SNAPSHOT.jar",
           "primary": true,
+          "sha256": "460f1d626b06898c142122d67362a6d348bc8c4b90b4b75f78469193c28a99c9",
           "size": 150260,
           "url": "https://github.com/Kredwi/NClanPlugin/releases/download/snapshot/original-NClanPlugin-1.1-SNAPSHOT.jar"
         }

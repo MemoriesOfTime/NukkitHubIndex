@@ -1,0 +1,55 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/96192624?v=4",
+      "name": "CuteNyami",
+      "url": "https://github.com/CuteNyami"
+    }
+  ],
+  "categories": [],
+  "created_at": 1652641640,
+  "dependencies": [],
+  "description": "# Nukkit-NickSystem\nSimple NickSystem for Nukkit server!\n\n### - Features\n* MySQL Support\n\n### - Commands\n* /nick\n* /nick <nickname>\n* /nick reset\n\n### - HowToUse\nYou will find a file called mysql.json in plugins/NickSystem/ you need to file in you account data of MySQL.\n\nThen it will look like that:\n```json\n{\n  \"profile\": {\n    \"host\": \"127.0.0.1\",\n    \"database\": \"System\",\n    \"user\": \"root\",\n    \"password\": \"123456\",\n    \"port\": 3306\n  }\n}\n```\n  \n### You need luckchat or any chat formatting plugin to use the NickSystem!\n\nconfig of LuckChat:\n\n```yml\nFirstRun: false\nChatAsync: true\nChat:\n default: '[%disname%] >> %msg%'\n admin: '[%disname%] >> %msg%'\nNameTag:\n  update: 20\n  updateAsync: true\n  default: '%disname%'\n  admin: '%disname%'\n```\n\n#### Download of LuckChat\n* https://cloudburstmc.org/resources/luckchat.213/\n\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/96192624?v=4",
+  "id": "CuteNyami/Nukkit-NickSystem",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "NickSystem",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/CuteNyami/Nukkit-NickSystem",
+  "stars": 0,
+  "summary": "Simple NickSystem",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1652731569,
+  "versions": [
+    {
+      "changelog": "**First release of NickSystem**",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "NickSystem-1.0.jar",
+          "primary": true,
+          "size": 984830,
+          "url": "https://github.com/CuteNyami/Nukkit-NickSystem/releases/download/main/NickSystem-1.0.jar"
+        }
+      ],
+      "name": "NickSystem v1.0.0",
+      "prerelease": false,
+      "published_at": 1652707253,
+      "version": "main"
+    }
+  ]
+}

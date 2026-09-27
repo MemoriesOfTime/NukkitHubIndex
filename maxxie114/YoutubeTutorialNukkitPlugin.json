@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.7",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/20718362?v=4",
+      "name": "maxxie114",
+      "url": "https://github.com/maxxie114"
+    }
+  ],
+  "categories": [],
+  "created_at": 1556362238,
+  "dependencies": [],
+  "description": "# YoutubeTutorialNukkitPlugin\nThis is an example plugin that is made for Youtube, it shows the join and quit message of a player, and showed the basic API\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/20718362?v=4",
+  "id": "maxxie114/YoutubeTutorialNukkitPlugin",
+  "license": {
+    "id": "Unlicense",
+    "name": "The Unlicense",
+    "url": "https://spdx.org/licenses/Unlicense.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "ExamplePlugin",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/maxxie114/YoutubeTutorialNukkitPlugin",
+  "stars": 0,
+  "summary": "This is an example plugin that is made for Youtube, it shows the join and quit message of a player, and showed the basic API",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1556362531,
+  "versions": []
+}

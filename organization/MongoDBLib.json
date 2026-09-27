@@ -1,0 +1,91 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/8337568?v=4",
+      "name": "HmHmmHm",
+      "url": "https://github.com/HmHmmHm"
+    }
+  ],
+  "categories": [],
+  "created_at": 1458110813,
+  "dependencies": [],
+  "description": "# MongoDBLib\nMongoDBLib for Nukkit Plugin\nThrough this plugin it can be used MongoDB in Nukkit.\n\n## What exactly do this project\n- This plug-in is help using mongodb in nukkit by some other plug-ins.\n- It also shared with other plug-ins about the 'MongoDB server'.\n- It can may help when you need to share information between multiple servers.\n\n## Usage(Normal User)\n- MongoDBLib is need to MongoDB Server (it must be using sha1 credential)\n- Enter the following command to enter the default server address and account information.\n```\n/mongo <url> <id> <pw> <dbname> <timeout>\n```\n\n## Usage(Developer)\n- Please send us a lot of pull request :p\n- You might be check 'MongoDBLib' is exist server before the using the plugin code.\n```\nif (this.getServer().getPluginManager().getPlugin(\"MongoDBLib\") == null) return false;\n```\n- If you want to get the default database you can use this plugin method.\n```\nMongoDBLib.getDatabase()\n```\n- If you want to get the other database you can use this plugin method.\n```\nMongoDBLib.getDatabase(String dbName)\n```\n- And if you want to get MongoDBClient, you must use this plugin method,\n```\nMongoDBLib.getClient(); //- there will be returned MongoClient\n```\n- If you want some make a direct connect with other mongodb server, you can try this method\n```\nMongoDBLib.getClient(String url,String id,String pw,String dbName, int serverSelectionTimeout);\n```\n\n## Maven Dependency Connect(Developer)\n- This project is maven project.\n- If you want use this project In another Maven project, you can use to the put a following information in the pom.xml, then MongoDBLib is automatically applied.\n```\n<repositories>\n <repository>\n  <id>organization</id>\n  <url>https://github.com/organization/maven-repo/raw/master/</url>\n </repository>\n</repositories>\n<dependencies>\n <dependency>\n\t<groupId>org.mongodb</groupId>\n\t<artifactId>mongo-java-driver</artifactId>\n\t<version>3.2.2</version>\n\t<scope>provided</scope>\n </dependency>\n <dependency>\n\t<groupId>mongodblib</groupId>\n\t<artifactId>MongoDBLib</artifactId>\n\t<version>1.0.3-SNAPSHOT</version>\n\t<scope>provided</scope>\n </dependency>\n</dependencies>\n```\n\n## Build\n- This project is maven project.\n- If you have some maven build system, so you can build plugin to jar.\n- 1. Download proeject file. (or git clone https://github.com/organization/MongoDBLib && cd MongoDBLib)\n- 2. Type mvn package in terminal.\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/11614510?v=4",
+  "id": "organization/MongoDBLib",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/Organization",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "MongoDBLib",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/organization/MongoDBLib",
+  "stars": 0,
+  "summary": "MongoDB library for Nukkit plugins",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1462027343,
+  "versions": [
+    {
+      "changelog": "The MongoDBLib Plugin-in for Nukkit.\n\nUpdates\n- Automatic connection recovery\n- DB Connect Command (+ Automatic connection & save)\n- /mongo (url) (id) (pw) (dbname) (timeout)\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "MongoDBLib-1.0.3-SNAPSHOT-shaded.jar",
+          "primary": true,
+          "size": 1514185,
+          "url": "https://github.com/organization/MongoDBLib/releases/download/1.0.3/MongoDBLib-1.0.3-SNAPSHOT-shaded.jar"
+        }
+      ],
+      "name": "MongoDBLib-1.0.3-SNAPSHOT-shaded",
+      "prerelease": false,
+      "published_at": 1461833286,
+      "version": "1.0.3"
+    },
+    {
+      "changelog": "The MongoDBLib Plugin-in for Nukkit.\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "MongoDBLib-1.0.2-SNAPSHOT-shaded.jar",
+          "primary": true,
+          "size": 1507996,
+          "url": "https://github.com/organization/MongoDBLib/releases/download/1.0.2/MongoDBLib-1.0.2-SNAPSHOT-shaded.jar"
+        }
+      ],
+      "name": "MongoDBLib-1.0.2-SNAPSHOT-shaded",
+      "prerelease": false,
+      "published_at": 1459767891,
+      "version": "1.0.2"
+    },
+    {
+      "changelog": "The MongoDBLib Plugin-in for Nukkit.\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "MongoDBLib-1.0.0-SNAPSHOT-shaded.jar",
+          "primary": true,
+          "size": 1507869,
+          "url": "https://github.com/organization/MongoDBLib/releases/download/1.0.0/MongoDBLib-1.0.0-SNAPSHOT-shaded.jar"
+        }
+      ],
+      "name": "MongoDBLib-1.0.0-SNAPSHOT-shaded",
+      "prerelease": false,
+      "published_at": 1458111155,
+      "version": "1.0.0"
+    }
+  ]
+}

@@ -2,9 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "Back",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/100467970?v=4",
+      "name": "YnXahgkiO",
+      "url": "https://github.com/YnXahgkiO"
     }
   ],
   "categories": [],
@@ -33,7 +33,7 @@
     "nkx",
     "pnx"
   ],
-  "updated_at": 1785321309,
+  "updated_at": 1785321056,
   "versions": [
     {
       "changelog": "Migrate to PowerNukkitX 3.0.0 & Cloudburst API.\n",
@@ -42,6 +42,7 @@
         {
           "filename": "DiscordWebhookAPI-PNX-1.0.0.jar",
           "primary": true,
+          "sha256": "2abd0ec961bc3db92cc0e730d8dcf4231674f4d53bbfb64899f2eda24bc7bb05",
           "size": 8725,
           "url": "https://github.com/YnXahgkiO/DiscordWebhookAPI-PNX/releases/download/v1.0.1/DiscordWebhookAPI-PNX-1.0.0.jar"
         }
@@ -58,6 +59,7 @@
         {
           "filename": "DiscordWebhookAPI-PNX-1.0.0.jar",
           "primary": true,
+          "sha256": "1c12819061bff4f1a28d88dbb913b1407f533a03ef91978fd15c539c37f150d7",
           "size": 8704,
           "url": "https://github.com/YnXahgkiO/DiscordWebhookAPI-PNX/releases/download/v1.0.0/DiscordWebhookAPI-PNX-1.0.0.jar"
         }

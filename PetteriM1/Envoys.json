@@ -1,0 +1,41 @@
+{
+  "api_version": "1.0.9",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/26197131?v=4",
+      "name": "PetteriM1",
+      "url": "https://github.com/PetteriM1"
+    }
+  ],
+  "categories": [],
+  "created_at": 1574610568,
+  "dependencies": [],
+  "description": "",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/26197131?v=4",
+  "id": "PetteriM1/Envoys",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://nukkitx.com/resources/envoys.358/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Envoys",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/PetteriM1/Envoys",
+  "stars": 0,
+  "summary": "Envoys plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1582393839,
+  "versions": []
+}

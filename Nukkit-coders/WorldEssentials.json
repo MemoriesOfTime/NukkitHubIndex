@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/1887100?v=4",
+      "name": "augesrob",
+      "url": "https://github.com/augesrob"
+    }
+  ],
+  "categories": [],
+  "created_at": 1515275053,
+  "dependencies": [],
+  "description": "",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/34147027?v=4",
+  "id": "Nukkit-coders/WorldEssentials",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "WorldEssentials",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Nukkit-coders/WorldEssentials",
+  "stars": 0,
+  "summary": "Essentials for Worlds",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1516050540,
+  "versions": []
+}

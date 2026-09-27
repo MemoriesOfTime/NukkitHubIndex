@@ -2,9 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "2kMcFloat",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/88402556?v=4",
+      "name": "RinierMC",
+      "url": "https://github.com/RinierMC"
     }
   ],
   "categories": [],
@@ -24,16 +24,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "Ranks",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/RinierMC/Ranks",
   "stars": 0,
   "summary": "Ranks Plugin with permission management",
   "targets": [
-    "nkx",
     "pnx"
   ],
-  "updated_at": 1783974897,
+  "updated_at": 1783974888,
   "versions": [
     {
       "changelog": "Added Tag Support",
@@ -42,6 +41,7 @@
         {
           "filename": "Ranks-1.0.0.jar",
           "primary": true,
+          "sha256": "3535307f05e561ad1defdd2cc2827d478a0db5d107c4260067202947e8f8d3a9",
           "size": 18976,
           "url": "https://github.com/RinierMC/Ranks/releases/download/Release/Ranks-1.0.0.jar"
         }

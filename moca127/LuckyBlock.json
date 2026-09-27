@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17352144?v=4",
+      "name": "moca127",
+      "url": "https://github.com/moca127"
+    }
+  ],
+  "categories": [],
+  "created_at": 1478263072,
+  "dependencies": [],
+  "description": "# LuckyBlock\nLuckyBlock plugin for nukkit\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/17352144?v=4",
+  "id": "moca127/LuckyBlock",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "LuckyBox",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/moca127/LuckyBlock",
+  "stars": 0,
+  "summary": "LuckyBlock plugin for nukkit",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1479643464,
+  "versions": []
+}

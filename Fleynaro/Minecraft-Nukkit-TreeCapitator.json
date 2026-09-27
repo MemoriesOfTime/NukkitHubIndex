@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17672473?v=4",
+      "name": "Fleynaro",
+      "url": "https://github.com/Fleynaro"
+    }
+  ],
+  "categories": [],
+  "created_at": 1499410312,
+  "dependencies": [],
+  "description": "# Minecraft-Nukkit-TreeCapitator\nThe plugin TreeCapitator for Nukkit lets you cut down trees by a few hits\n\nДанный плагин позволит вам рубить деревья разом! Поддерживаются все дервья, включая тропическую секвойю и темный дуб.\n\n![alt text](http://file-minecraft.com/wp-content/uploads/2014/07/Tree-Capitator-Mod.jpg)\n\n<h3>Config</h3>\n<b>config.yml</b>\n\n~~~\n#TreeCapitator\n#made by Fleynaro v1.0\n#GitHub: https://github.com/Fleynaro/Minecraft-Nukkit-TreeCapitator\n\n#Чтобы срубить всё разом, нужен топор\nonly-axe: true\n\n#Насколько единиц уменьшается прочность топора при рубке.\n#Например, прочность деревянного топора - 60, а каменного - 132.\naxe-durability-damage: 5\n\n#Коэффициент кол-ва рубок одного блока: ((кол-во рубок) * hit-to-cut-down)\n#Например, значение 3.0 увеличит необходимое кол-во рубок в 2 раза, так как сейчас стоит 1.5\nhit-to-cut-down: 1.5\n\n#Кол-во блоков дерева до земли, чтобы срубить дерево разом\ncount-down-blocks: 1\n\n#Проверять снизу на блок земли\ncheck-dirt-down: true\n~~~\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/17672473?v=4",
+  "id": "Fleynaro/Minecraft-Nukkit-TreeCapitator",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "TreeCapitator",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Fleynaro/Minecraft-Nukkit-TreeCapitator",
+  "stars": 3,
+  "summary": "Trees by TreeCapitator!",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1499421083,
+  "versions": []
+}

@@ -1,0 +1,58 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+      "name": "wode490390",
+      "url": "https://github.com/wode490390"
+    }
+  ],
+  "categories": [],
+  "created_at": 1572392163,
+  "dependencies": [],
+  "description": "# Bounce\n[![](https://i.loli.net/2019/10/30/VYqP8b64JiMgaKt.gif)](http://www.mcbbs.net/thread-923143-1-1.html \"弹跳\")\n\nBounce plugin for Nukkit.\n\nPlease see [mcbbs](http://www.mcbbs.net/thread-923143-1-1.html) for more information.\n## config.yml\n```yaml\nbounce-power: 2.675\n```\n\n###### If I have any grammar and terms error, please correct my wrong :)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+  "id": "wode490390/Bounce",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "http://wode490390.cn/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Bounce",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/wode490390/Bounce",
+  "stars": 0,
+  "summary": "Bounce plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1572394710,
+  "versions": [
+    {
+      "changelog": "Initial release",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeBounce-1.0.0.jar",
+          "primary": true,
+          "size": 14370,
+          "url": "https://github.com/wode490390/Bounce/releases/download/1.0.0/wodeBounce-1.0.0.jar"
+        }
+      ],
+      "name": "Bounce-v1.0.0",
+      "prerelease": false,
+      "published_at": 1572394710,
+      "version": "1.0.0"
+    }
+  ]
+}

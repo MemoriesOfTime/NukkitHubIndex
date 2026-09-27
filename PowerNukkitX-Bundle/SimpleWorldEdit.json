@@ -2,9 +2,9 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
       "name": "Buddelbubi",
-      "url": ""
+      "url": "https://github.com/Buddelbubi"
     }
   ],
   "categories": [
@@ -26,16 +26,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "SimpleWorldEdit",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/SimpleWorldEdit",
   "stars": 1,
   "summary": "Simple WorldEdit plugin for PNX",
   "targets": [
-    "nkx",
     "pnx"
   ],
-  "updated_at": 1787087394,
+  "updated_at": 1787087393,
   "versions": [
     {
       "changelog": "Automated release for v1.0.6",
@@ -44,6 +43,7 @@
         {
           "filename": "SimpleWorldEdit.jar",
           "primary": true,
+          "sha256": "e72c3e5ba759527abfe7ebbd88c480f601c73f3018488720a11e7fd6a86313fe",
           "size": 52964,
           "url": "https://github.com/PowerNukkitX-Bundle/SimpleWorldEdit/releases/download/v1.0.6/SimpleWorldEdit.jar"
         }
@@ -60,6 +60,7 @@
         {
           "filename": "SimpleWorldEdit.jar",
           "primary": true,
+          "sha256": "9198aad09e244529a306bad8150edb4d85284d4442c0e13397ced47d5ce80aa0",
           "size": 52841,
           "url": "https://github.com/PowerNukkitX-Bundle/SimpleWorldEdit/releases/download/v1.0.5/SimpleWorldEdit.jar"
         }
@@ -76,6 +77,7 @@
         {
           "filename": "SimpleWorldEdit.jar",
           "primary": true,
+          "sha256": "c77b721abb22415d87729b7650d07c68d2dd826b6671971db92a49f8313c8f00",
           "size": 52472,
           "url": "https://github.com/PowerNukkitX-Bundle/SimpleWorldEdit/releases/download/v1.0.4/SimpleWorldEdit.jar"
         }
@@ -92,6 +94,7 @@
         {
           "filename": "SimpleWorldEdit.jar",
           "primary": true,
+          "sha256": "02ec0ceb38c67518ddd741cd1f7f1d86480884d6d3443e89d99d1b8e034c0e42",
           "size": 52381,
           "url": "https://github.com/PowerNukkitX-Bundle/SimpleWorldEdit/releases/download/v1.0.3/SimpleWorldEdit.jar"
         }
@@ -108,6 +111,7 @@
         {
           "filename": "SimpleWorldEdit.jar",
           "primary": true,
+          "sha256": "a38637ed45c4d1e17a39af38f9c5e3f3b483b1b7e4f5773c4acb04be010612e6",
           "size": 52298,
           "url": "https://github.com/PowerNukkitX-Bundle/SimpleWorldEdit/releases/download/v1.0.2/SimpleWorldEdit.jar"
         }
@@ -124,6 +128,7 @@
         {
           "filename": "SimpleWorldEdit.jar",
           "primary": true,
+          "sha256": "3805a6251f88de5acc10a5a5d31a6b5d435cfc1303ac1f2850185883a0f49428",
           "size": 52220,
           "url": "https://github.com/PowerNukkitX-Bundle/SimpleWorldEdit/releases/download/1.0.1/SimpleWorldEdit.jar"
         }
@@ -140,6 +145,7 @@
         {
           "filename": "SimpleWorldEdit-1.0.0.jar",
           "primary": true,
+          "sha256": "83bfe3312d48a3fdba5c865f4f4f3f9da3f82f35948be449a0a4c1291aec442d",
           "size": 51345,
           "url": "https://github.com/PowerNukkitX-Bundle/SimpleWorldEdit/releases/download/1.0.0/SimpleWorldEdit-1.0.0.jar"
         }

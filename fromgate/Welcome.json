@@ -1,0 +1,64 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/1344181?v=4",
+      "name": "fromgate",
+      "url": "https://github.com/fromgate"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/11244874?v=4",
+      "name": "Pub4Game",
+      "url": "https://github.com/Pub4Game"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/10437212?v=4",
+      "name": "Awzaw",
+      "url": "https://github.com/Awzaw"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/19805061?v=4",
+      "name": "seetch",
+      "url": "https://github.com/seetch"
+    }
+  ],
+  "categories": [],
+  "created_at": 1450621974,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "DbLib",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "Nedis",
+      "version_range": ""
+    }
+  ],
+  "description": "# Welcome\n**Authorization plugin for Nukkit server**\n\n[**Download at nukkit.ru**](http://nukkit.ru/resources/welcome.17/)\n\n## Features\n\n* Saving player information in YAML-files or in database (SQLite, MySQL)\n* Built-in password validator\n* Supporting popular hash-algorithms: plain-text :), md5, sha-1, sha-256 and sha-512\n* Remember players (for configured amount of time) and allow to login without entering password)\n* Language file support. You can easily translate plugin!\n\n\n## Database support\nWelcome plugin can store data in YAML-files and in MySQL or SQLite database. Database support provided by plugin [DbLib](http://nukkit.ru/resources/dblib.14/).\n\n## Welcome translation\nI need help with translating Welcome plugin. You can feel free to made a pull request or you can join to [**translation project at crowdin**](https://crowdin.com/project/welcome/invite).\n\n[![Crowdin](https://d322cqt584bo4o.cloudfront.net/welcome/localized.svg)](https://crowdin.com/project/welcome)",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/1344181?v=4",
+  "id": "fromgate/Welcome",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Welcome",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/fromgate/Welcome",
+  "stars": 10,
+  "summary": "User authentication plugin",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1510127141,
+  "versions": []
+}

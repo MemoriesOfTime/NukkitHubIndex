@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/314587755?v=4",
       "name": "YehrLB",
-      "url": ""
+      "url": "https://github.com/YehrLB"
     }
   ],
   "categories": [],
@@ -32,6 +32,6 @@
   "targets": [
     "nkmot"
   ],
-  "updated_at": 1786195420,
+  "updated_at": 1786195416,
   "versions": []
 }

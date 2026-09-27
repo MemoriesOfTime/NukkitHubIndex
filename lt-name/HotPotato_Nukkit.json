@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "LT_Name",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
     }
   ],
   "categories": [
@@ -41,7 +41,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1703405569,
+  "updated_at": 1706020737,
   "versions": [
     {
       "changelog": "",
@@ -96,6 +96,22 @@
       "prerelease": false,
       "published_at": 1595559240,
       "version": "v1.0.1"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HotPotato-1.2.2-SNAPSHOT.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/HotPotato/job/master/65/artifact/target/HotPotato-1.2.2-SNAPSHOT.jar"
+        }
+      ],
+      "name": "1.2.2-SNAPSHOT",
+      "prerelease": true,
+      "published_at": 1706020750,
+      "version": "ci-65"
     }
   ]
 }

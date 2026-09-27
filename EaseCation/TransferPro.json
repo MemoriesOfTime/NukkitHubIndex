@@ -1,0 +1,48 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/8210983?v=4",
+      "name": "boybook",
+      "url": "https://github.com/boybook"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+      "name": "wode490390",
+      "url": "https://github.com/wode490390"
+    }
+  ],
+  "categories": [],
+  "created_at": 1577034303,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "DbLib",
+      "version_range": ""
+    }
+  ],
+  "description": "# TransferPro\n\nTransfer plugin based on vanilla transfer for Nukkit\n\n*Requires [DbLib](https://cloudburstmc.org/resources/dblib.12/)*\n\n## Features\n\n1. You can view the real-time status of all servers\n2. Transfer in different ways\n    1. When only `Group` is provided, the player will be randomly transferred to a server in the group\n    2. When only `Server ID` is provided, the player can be transferred to a server in a different group\n3. Sync Player count\n4. APIs\n    - Provides real-time information of all servers\n    - Customizable transfer behavior and messages\n\n## Getting Started\n\n1. Makes all servers in a group connect to a same data source. See [DbLib configuration](https://github.com/fromgate/DbLib#configuration)\n2. Run all servers in the group. You need to configure `Group (optional)`, `Server ID` and `Public Address` for each server.\n    - Enters this command at the console：`tspro setme [Group] <Server ID> <Public Address>`  \n    Example: `/tspro setme group1 server1 play.easecation.net`\n\n## Commands\n\n#### Console command `tspro`\n\n- default permission: console\n- usage: `tspro <setme|dump|exportlang>`\n  - `tspro setme [Group] <Server ID> <Public Address>` Sets up server data (see [Getting Started](#getting_started))\n  - `tspro dump [Group]` Displays all server information\n  - `tspro exportlang` Exports language files\n  - `tspro clean` Cleans up offline server information\n\n#### Transfer to a server `/transfer`\n\n- alias：`/ts`\n- default permission：player\n- usage: `/transfer [Group] <Server ID>`\n\n#### Transfer other player to a server `/transferplayer`\n\n- alias：`/tsp`\n- default permission: op\n- usage: `/transferplayer <Player> [Group] <Server ID>`\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/20168691?v=4",
+  "id": "EaseCation/TransferPro",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "TranferPro",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/EaseCation/TransferPro",
+  "stars": 6,
+  "summary": "Transfer plugin based on origin transfer for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1598976503,
+  "versions": []
+}

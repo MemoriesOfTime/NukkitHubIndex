@@ -1,0 +1,48 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/21226358?v=4",
+      "name": "aLyxRed",
+      "url": "https://github.com/aLyxRed"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/10363500?v=4",
+      "name": "Creeperface01",
+      "url": "https://github.com/Creeperface01"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/7609294?v=4",
+      "name": "Snake1999",
+      "url": "https://github.com/Snake1999"
+    }
+  ],
+  "categories": [],
+  "created_at": 1474010815,
+  "dependencies": [],
+  "description": "#EssentialsNK\nEssentials plugin for Nukkit\n\nAlmost completed\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/21226358?v=4",
+  "id": "aLyxRed/EssentialsNK",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "EssentialsNK",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/aLyxRed/EssentialsNK",
+  "stars": 0,
+  "summary": "EssentialsNK",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1474014316,
+  "versions": []
+}

@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/216477222?v=4",
       "name": "Kanelucky",
-      "url": ""
+      "url": "https://github.com/Kanelucky"
     }
   ],
   "categories": [],
@@ -37,7 +37,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1785499128,
+  "updated_at": 1785499029,
   "versions": [
     {
       "changelog": "**Full Changelog**: https://github.com/Kanelucky/CommandRoute/commits/0.1.0",
@@ -46,6 +46,7 @@
         {
           "filename": "CommandRoute-0.1.0.jar",
           "primary": true,
+          "sha256": "209379cc31843aab47b6333ed51a51174b6cfc3cddbaa0254454666af63a9375",
           "size": 21334,
           "url": "https://github.com/Kanelucky/CommandRoute/releases/download/0.1.0/CommandRoute-0.1.0.jar"
         }

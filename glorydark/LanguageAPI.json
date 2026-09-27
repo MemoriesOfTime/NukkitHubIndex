@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
       "name": "glorydark",
-      "url": ""
+      "url": "https://github.com/glorydark"
     }
   ],
   "categories": [
@@ -35,6 +35,29 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1773079447,
-  "versions": []
+  "updated_at": 1773079441,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "LanguageAPI-1.2.4.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/LanguageAPI/20/artifact/target/LanguageAPI-1.2.4.jar"
+        },
+        {
+          "filename": "original-LanguageAPI-1.2.4.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/LanguageAPI/20/artifact/target/original-LanguageAPI-1.2.4.jar"
+        }
+      ],
+      "name": "1.2.4",
+      "prerelease": true,
+      "published_at": 1773079452,
+      "version": "ci-20"
+    }
+  ]
 }

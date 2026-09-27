@@ -1,0 +1,43 @@
+{
+  "api_version": "1.0.9",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/38113441?v=4",
+      "name": "tim03we",
+      "url": "https://github.com/tim03we"
+    }
+  ],
+  "categories": [],
+  "created_at": 1577803749,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "PlotSquared",
+      "version_range": ""
+    }
+  ],
+  "description": "# RandSystem (Nukkit)\n\nThis is an wall system for the plugin PlotSquared on Nukkit. With this plugin you can change the walls of your plot.\n\n# Commands\nCommand | SubCommand | Description | Permission \n--------- | ------- | ------------------- | ------- \n/p | wall | Change your plot wall | plots.wall\n\n---------------------------\n| Discord |\n| :---: |\n[![Discord](https://img.shields.io/discord/427520458523672587.svg?style=flat-square&label=discord&colorB=7289da)](https://discord.gg/fZBYHsV) |",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/38113441?v=4",
+  "id": "tim03we/WallSystem-Nukkit",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "WallSystem",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/tim03we/WallSystem-Nukkit",
+  "stars": 0,
+  "summary": "A NukkitX Plugin",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1578051591,
+  "versions": []
+}

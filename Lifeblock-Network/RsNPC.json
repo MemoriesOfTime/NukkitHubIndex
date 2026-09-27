@@ -2,14 +2,39 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "若水",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
     },
     {
-      "avatar_url": "",
-      "name": "LT_Name",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/56545793?v=4",
+      "name": "TraxTRL",
+      "url": "https://github.com/TraxTRL"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "name": "dependabot[bot]",
+      "url": "https://github.com/apps/dependabot"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/44944269?v=4",
+      "name": "Buddelbubi",
+      "url": "https://github.com/Buddelbubi"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
+      "name": "glorydark",
+      "url": "https://github.com/glorydark"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/82391055?v=4",
+      "name": "stevei5mc",
+      "url": "https://github.com/stevei5mc"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/46156675?v=4",
+      "name": "SmallasWater",
+      "url": "https://github.com/SmallasWater"
     }
   ],
   "categories": [],
@@ -29,17 +54,16 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "RsNPC",
-  "primary_target": "nkx",
+  "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/Lifeblock-Network/RsNPC",
   "stars": 0,
   "summary": "Advanced NPC plugin for PowerNukkitX",
   "targets": [
-    "nkx",
     "nkmot",
     "pnx"
   ],
-  "updated_at": 1786025245,
+  "updated_at": 1786025375,
   "versions": [
     {
       "changelog": "",
@@ -48,6 +72,7 @@
         {
           "filename": "RsNPC-2.4.5.jar",
           "primary": true,
+          "sha256": "b3f5ce55484a05ded8134550c9e38c133985eecb8d5d8bdd3e99ca360e3f101e",
           "size": 168955,
           "url": "https://github.com/Lifeblock-Network/RsNPC/releases/download/v2.4.5-dev3/RsNPC-2.4.5.jar"
         }
@@ -64,6 +89,7 @@
         {
           "filename": "RsNPC-2.4.5.jar",
           "primary": true,
+          "sha256": "3885f870293f73e83efda42fd7b729251e6826c0145aaf1984764914349ad408",
           "size": 164436,
           "url": "https://github.com/Lifeblock-Network/RsNPC/releases/download/v2.4.5-dev2/RsNPC-2.4.5.jar"
         }
@@ -80,6 +106,7 @@
         {
           "filename": "RsNPC-2.4.5.jar",
           "primary": true,
+          "sha256": "67546f46eae68354b0037bf00b5f0177538104aa5a54bcd2f0413298600be997",
           "size": 164486,
           "url": "https://github.com/Lifeblock-Network/RsNPC/releases/download/v2.4.5-dev1/RsNPC-2.4.5.jar"
         }

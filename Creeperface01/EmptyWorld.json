@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/10363500?v=4",
+      "name": "Creeperface01",
+      "url": "https://github.com/Creeperface01"
+    }
+  ],
+  "categories": [],
+  "created_at": 1552202664,
+  "dependencies": [],
+  "description": "",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/10363500?v=4",
+  "id": "Creeperface01/EmptyWorld",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "EmptyWorld",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Creeperface01/EmptyWorld",
+  "stars": 2,
+  "summary": "EmptyWorld generator",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1552202683,
+  "versions": []
+}

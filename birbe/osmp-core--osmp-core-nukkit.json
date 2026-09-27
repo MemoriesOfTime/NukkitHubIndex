@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/16416198?v=4",
+      "name": "funniray",
+      "url": "https://github.com/funniray"
+    }
+  ],
+  "categories": [],
+  "created_at": 1579438184,
+  "dependencies": [],
+  "description": "# OSMC\n### (Open Source Minipack Core)\n\n\nOSMC is a framework designed to make the creation of plugins (minipacks as they're called as to prevent confusion) dead simple.\n\nIt is an abstracted layer that sandwiches between any OSMC-Minipack created, and any other server library.\n\n##### What does that mean for the average person?\nIt means that any OSMC minipack created will work perfectly on any server that OSMC is supported on.\n\nLet's say you find a Spleef minipack. You can then run that exact minipack on Spigot, Nukkit (Bedrock), even Sponge, and\nit will work the exact same way every time.\n\n##### How is that possible?\nOSMC is just an outline of tools that you can use. It is then up to the plugins created for the specific server to translate\neverything from Spigot events, as an example. It looks like this\n\nSpigot <-> OSMC <-> Minipacks\n\nIt doesn't even need to run on Minecraft, technically.",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/9312500?v=4",
+  "id": "birbe/osmp-core--osmp-core-nukkit",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "osmp-core-nukkit/src/main/resources/plugin.yml",
+  "name": "OSMP-Core",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/birbe/osmp-core",
+  "stars": 0,
+  "summary": "Open Source Minipack Core for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1579447149,
+  "versions": []
+}

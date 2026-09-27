@@ -1,0 +1,90 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/35894769?v=4",
+      "name": "khari05",
+      "url": "https://github.com/khari05"
+    }
+  ],
+  "categories": [],
+  "created_at": 1517181159,
+  "dependencies": [],
+  "description": "# TeamPlugin\nPlugin that disables team killing, enables team deathcount, and allows you to change your nametag to something with color.\ncommands:\n /team <red/blue/clear> [player]\n /textcolor <color/reset>\n /nickname <nickname>\n /rank <admin/rank/reset>\n /deathcount <on/off/reset>\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/35894769?v=4",
+  "id": "khari05/TeamPlugin",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/MrCoderBoy345/TeamPlugin",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "TeamPlugin",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/khari05/TeamPlugin",
+  "stars": 3,
+  "summary": "Teams plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1540774400,
+  "versions": [
+    {
+      "changelog": "Now works with nukkit on MCPE1.5 and up",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "TeamPlugin.jar",
+          "primary": true,
+          "size": 11490,
+          "url": "https://github.com/khari05/TeamPlugin/releases/download/v1.2/TeamPlugin.jar"
+        }
+      ],
+      "name": "TeamPlugin V1.2",
+      "prerelease": false,
+      "published_at": 1540757927,
+      "version": "v1.2"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "TeamPlugin.jar",
+          "primary": true,
+          "size": 10824,
+          "url": "https://github.com/khari05/TeamPlugin/releases/download/1.0.1/TeamPlugin.jar"
+        }
+      ],
+      "name": "TeamPlugin v 1.0.1",
+      "prerelease": false,
+      "published_at": 1531406586,
+      "version": "1.0.1"
+    },
+    {
+      "changelog": "Finished TeamPlugin",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "TeamPlugin.jar",
+          "primary": true,
+          "size": 10824,
+          "url": "https://github.com/khari05/TeamPlugin/releases/download/1.0/TeamPlugin.jar"
+        }
+      ],
+      "name": "TeamPlugin1.0",
+      "prerelease": false,
+      "published_at": 1528925563,
+      "version": "1.0"
+    }
+  ]
+}

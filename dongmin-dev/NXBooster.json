@@ -1,0 +1,70 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/63569586?v=4",
+      "name": "dongmin-dev",
+      "url": "https://github.com/dongmin-dev"
+    }
+  ],
+  "categories": [],
+  "created_at": 1588914541,
+  "dependencies": [],
+  "description": "# NXBooster\nMost convenient Booster plugin for Nukkit (Support NXBooster for recent NukkitX)    \nOriginal from NX-Team\n# Usage\nPut .jar file at ~/Nukkit/Plugins/  \n\nIron Block-Boost you little  \nGold Block-Boost you more  \nDiamond Block-BOOOOST  \n~But I think I deleted that~\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/63569586?v=4",
+  "id": "dongmin-dev/NXBooster",
+  "license": {
+    "id": "NOASSERTION",
+    "name": "Other",
+    "url": "https://github.com/dongmin-dev/NXBooster/blob/master/LICENSE"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "NXBooster",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/dongmin-dev/NXBooster",
+  "stars": 0,
+  "summary": "Most convenient Booster plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1589159813,
+  "versions": [
+    {
+      "changelog": "Now has new getLogger() and sound effect when boosting!",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "NXBooster-0.0.2-SNAPSHOT.jar",
+          "primary": true,
+          "size": 4381,
+          "url": "https://github.com/dongmin-dev/NXBooster/releases/download/SNAPSHOT-v0.0.2/NXBooster-0.0.2-SNAPSHOT.jar"
+        }
+      ],
+      "name": "NXBooster-SNAPSHOT-v0.0.2",
+      "prerelease": false,
+      "published_at": 1589159813,
+      "version": "SNAPSHOT-v0.0.2"
+    },
+    {
+      "changelog": "Added support for recent NukkitX\r\nNow shows ZERO error message at console.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "NXBooster-0.0.1-SNAPSHOT.jar",
+          "primary": true,
+          "size": 4338,
+          "url": "https://github.com/dongmin-dev/NXBooster/releases/download/v0.0.1/NXBooster-0.0.1-SNAPSHOT.jar"
+        }
+      ],
+      "name": "NXBooster",
+      "prerelease": false,
+      "published_at": 1588914782,
+      "version": "v0.0.1"
+    }
+  ]
+}

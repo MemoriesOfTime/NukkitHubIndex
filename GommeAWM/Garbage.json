@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.13",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/86683320?v=4",
+      "name": "GommeAWM",
+      "url": "https://github.com/GommeAWM"
+    }
+  ],
+  "categories": [],
+  "created_at": 1649490690,
+  "dependencies": [],
+  "description": "# Garbage\nGarbage | Minecraft Bedrock Edition | Nukkit | API 1.0.13\n\n---\n\n**Description:**<br />\n\n> * Create/edit/delete personal list of items you want to delete from inventory\n\n---\n\n***Features:***<br />\n:star: Your `personal list` with Items;<br />\n:star: Support for items with `meta`;<br />\n:star: Command `/gid` for get id with meta;<br />\n:star: `UI`;<br />\n:star: Personal list is `stored` in config;<br />\n\n---\n\n**Installation:**<br />\n:black_square_button: Place plugin's .jar file into `plugins` folder on your server;<br />\n:black_square_button: `Configure` in Config;<br />\n:black_square_button: `Launch` the server;<br />\n\n---\n\n**Usage:**<br />\n:unlock: To open Garbage main menu type `/garbage help` into the chat;<br />\n:unlock: To get id:meta type `/gid` into the chat;<br />\n\n---\n\n**all Information**\n| Command | Permission | Descripton | config |\n| --- | ------|-----| -------|\n|garbage| reyd.garbage |The player can create a personal list of items and delete those items in his inventory that are in the list|Support|\n\n---\n\n**Examples**\n\n![Screenshot_313](https://user-images.githubusercontent.com/86683320/162589563-153faf5c-6d0a-419b-ae74-f11650ba9e42.png)\n\n\n---\n\n![Screenshot_314](https://user-images.githubusercontent.com/86683320/162589560-830c595c-3032-48f6-acc4-7a565bb49d72.png)\n\n---\n\n![Screenshot_315](https://user-images.githubusercontent.com/86683320/162589562-dfa9aff8-aac5-4feb-aec0-0689291c4876.png)\n\n---\n\n```\nReporting bugs: If you come across a bug, please report it here or on cloudburstmc.\n```\n\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/86683320?v=4",
+  "id": "GommeAWM/Garbage",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "GetGarbage/src/main/resources/plugin.yml",
+  "name": "Garbage",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/GommeAWM/Garbage",
+  "stars": 3,
+  "summary": "Garbage | Minecraft Bedrock Edition | Nukkit | API 1.0.13",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1649764813,
+  "versions": []
+}

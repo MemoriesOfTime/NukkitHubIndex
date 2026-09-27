@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/88597837?v=4",
+      "name": "PikyXoS",
+      "url": "https://github.com/PikyXoS"
+    }
+  ],
+  "categories": [],
+  "created_at": 1516737888,
+  "dependencies": [],
+  "description": "<p align=\"center\"><img width=12.5% src=\"https://github.com/PikyCZ/NVault/blob/master/icon/NVault.png\"></p>\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n[![Github All Releases](https://img.shields.io/github/downloads/PikyCZ/NVault/total.svg?style=flat-square)]()\n[![CircleCI branch](https://img.shields.io/circleci/project/github/PikyCZ/NVault/master.svg?style=flat-square)]()\n[![GitHub Issues](https://img.shields.io/github/issues/PikyCZ/NVault.svg?style=flat-square)](https://github.com/PikyCZ/NVault/issues)\n\n# NVault\n\nNVault plugin for Nukkit\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/7196070?v=4",
+  "id": "twixi/NVault",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "NVault",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/twixi/NVault",
+  "stars": 0,
+  "summary": "NVault plugin for Nukkit",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1516315802,
+  "versions": []
+}

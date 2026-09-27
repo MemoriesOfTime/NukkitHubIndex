@@ -1,0 +1,48 @@
+{
+  "api_version": "1.0.10",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/10363500?v=4",
+      "name": "Creeperface01",
+      "url": "https://github.com/Creeperface01"
+    }
+  ],
+  "categories": [],
+  "created_at": 1555686577,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "KotlinLib",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "SynapseAPI",
+      "version_range": ""
+    }
+  ],
+  "description": "Simple anticheat plugin for nukkit\n\nInstallation\n--------------\n- download the jar file from https://nukkitx.com/resources/gac.119/\n- put the jar file into plugins directory\n\nCompiling\n--------------\nrun command\n``mvn package``\nfrom the project directory\n\nTODO list\n--------------\n- [ ] cobweb support\n- [ ] elytra support\n- [x] bhop detection\n- [ ] better glide detection\n- [ ] blink detection\n- [ ] improve/rework jump handling\n- [ ] jump boost effect\n- [ ] levitation effect\n- [ ] fast eat\n- [ ] creative fly",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/10363500?v=4",
+  "id": "Creeperface01/GAC",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "GAC",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Creeperface01/GAC",
+  "stars": 11,
+  "summary": "Basic AntiCheat plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1672134011,
+  "versions": []
+}

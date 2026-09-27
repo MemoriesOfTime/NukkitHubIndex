@@ -1,0 +1,117 @@
+{
+  "api_version": "1.0.9",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/50034629?v=4",
+      "name": "depascaldc",
+      "url": "https://github.com/depascaldc"
+    }
+  ],
+  "categories": [],
+  "created_at": 1607919012,
+  "dependencies": [],
+  "description": "# MinecraftDiscordSync Plugin\n\n[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](LICENSE)\n[![Discord](https://img.shields.io/discord/785956343407181824.svg)](https://discord.gg/wvcX92VyEH)\n\n#### The Minecraft Discord Sync Plugin allows you to Sync your Minecraft and discord Server.\n\n#### Synchronize Minecraft and Discord Ranks and Ingame <-> Discord Chat\n\n--- \n\n#### Supported ServerVersions:\n\n---\n\n- Bukkit Based Servers: \n  - [Spigot](https://getbukkit.org/download/spigot)  API: 1.15 ++\n  - [PaperMC](https://papermc.io/downloads)  API: 1.15 ++\n  - Default Supported Permission Plugins:\n    - [LuckPerms](https://www.spigotmc.org/resources/luckperms.28140/)\n    - [Vault](https://www.spigotmc.org/resources/vault.34315/)\n   \n---  \n  \n- BungeeCord Servers:\n  - [BungeeCord](https://ci.md-5.net/job/BungeeCord/) \n  - Default Supported Permission Plugins:\n    - [LuckPerms](https://www.spigotmc.org/resources/luckperms.28140/) [Download](https://ci.lucko.me/job/LuckPerms/1232/artifact/bungee/build/libs/LuckPerms-Bungee-5.2.67.jar)\n  \n  \n- Velocity Support:\n  - [Velocity](https://velocitypowered.com/) \n  - Default Supported Permission Plugins:\n    - [LuckPerms](https://www.spigotmc.org/resources/luckperms.28140/) [Download](https://ci.lucko.me/job/LuckPerms/1232/artifact/velocity/build/libs/LuckPerms-Velocity-5.2.67.jar)\n\n---\n\nMinecraft Bedrock:\n- Nukkit Based Servers: \n  - [Nukkit](https://github.com/CloudburstMC/Nukkit)  API: 1.0.9 ++\n  - [PowerNukkit ( untested )](https://github.com/PowerNukkit/PowerNukkit)\n  - Default Supported Permission Plugins:\n    - [LuckPerms](https://cloudburstmc.org/resources/luckperms.51/)\n    - [Multipass](https://cloudburstmc.org/resources/multipass.29/)\n\n\n---\n\n## Commands:\n\n- IngameCommands:\n  - verify ( PERM: mcdcs.command.verify ) - Sends you an code to verify at the discord server\n  - discord ( PERM: mcdcs.command.discord ) - send the discord invitelink\n  - discordinfo/dcinfo ( PERM: mcdcs.command.discordinfo ) - shows some informations about the connected discordserver\n- DiscordCommands:\n  - verify (verificationcode) - Verifies the user by the ingame given verification code ( IngameCommand verify )\n  - about - prints plugin and author infos\n  - online - shows the online players at the server\n  - playerlist - shows the online player list\n  - serverinfo - shows some general minecraft server infos of the connected minecraft server\n  \n  \n---\n\n### More Features:\n- Custom Activity ( GameStatus / OnlineStatus )\n- Custom OnlineCounter Channel - displays every minute the live online count of the minecraftserver\n\n---\n\n### Default Storage Providers\n- YAML ( config file in plugin datafolder )\n- MongoDB ( stores data in a database - its a nice feature if the plugin is running on multiple servers to sync verifications )\n\n---\n\n## API:\n#### The plugin provides an API wich you can use to add own discordcommands and discordevents to the discordbot instance or to use a custom permission provider or storage provider\n\nResolve API:\n```java\nMinecraftDiscordSyncAPI api = MinecraftDiscordSyncAPI.get();\n```\n\nExample PermissionProvider:\n\n```java\nclass MyPermissionProvider implements IPermissionProvider {\n\n\t\t@Override\n\t\tpublic String getPrimaryPlayerGroupName(UUID uuid) {\n\t\t\treturn MyPlugin.getInstance().resolvePrimaryGroupForPlayerByUUID(uuid);\n\t\t}\n\n\t\t@Override\n\t\tpublic String getPrimaryPlayerGroupName(String name) {\n\t\t\treturn MyPlugin.getInstance().resolvePrimaryGroupForPlayerByName(name);;\n\t\t}\n\t\t\n\t}\n```\n\nSet new providers:\n\n```java\nvoid setNewProviderExample() {\n\tapi.setPermissionProvider(new MyPermissionProvider());\n\tapi.setStorageProvider(new MyStorageProvider())\n}\n```\n---\n\n#### TODOS:\n- TODO: SQL Storage provider support\n- TODO: SQLite Storage provider support\n- :)\n- TODO: CloudNet Perms support\n- TODO: PermissionsEx support\n\n---\n\n## Maven Repository for the API:\n\n```xml\n\n<repository>\n    <id>vironlab-repo</id>\n\t<url>https://repo.vironlab.eu/repository/snapshot/</url>\n</repository>\n\n<dependency>\n\t<groupId>eu.vironlab.minecraft.mds</groupId>\n\t<artifactId>MinecraftDiscordSync-API</artifactId>\n\t<version>1.0.1-SNAPSHOT</version>\n</dependency>\n\n```\n\n### Gradle:\n\n```groovy\n\nrepositories {\n    maven {\n        url \"https://repo.vironlab.eu/repository/snapshot\"\n    } \n}\n\ndependencies {\n    compileOnly 'eu.vironlab.minecraft.mds:MinecraftDiscordSync-API:1.0.1-SNAPSHOT'\n}\n\n\n```\n\n---\n\n<div align=\"center\">\n    <h1 style=\"color:#154444\">Other Links:</h1>\n    <a style=\"color:#00ff00\" target=\"_blank\" href=\"https://github.com/VironLab\"><img src=\"https://img.shields.io/github/followers/VironLab?label=GitHub%20Followers&logo=GitHub&logoColor=%23ffffff&style=flat-square\"></img></a>\n    <a style=\"color:#00ff00\" target=\"_blank\" href=\"https://discord.gg/wvcX92VyEH\"><img src=\"https://img.shields.io/discord/785956343407181824?label=vironlab.eu%20Discord&logo=Discord&logoColor=%23ffffff&style=flat-square\"></img></a>\n    <a style=\"color:#00ff00\" target=\"_blank\" href=\"https://www.paypal.com/paypalme/depascaldc\"><img src=\"https://img.shields.io/static/v1?label=Donate%20Via%20Paypal&message=paypal&style=flat-square&logo=paypal&color=lightgrey\"></img></a>\n</div>\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/75695749?v=4",
+  "id": "VironLab/MinecraftDiscordSync--minecraftdiscordsync-nukkit",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://vironlab.eu/",
+    "wiki": ""
+  },
+  "manifest_path": "MinecraftDiscordSync-Nukkit/src/main/resources/plugin.yml",
+  "name": "MinecraftDiscordSyncPlugin",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/VironLab/MinecraftDiscordSync",
+  "stars": 10,
+  "summary": "Sync Discord and Minecraftservers",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1617552803,
+  "versions": [
+    {
+      "changelog": "Reduce FileSize using dependency injection.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "MinecraftDiscordSync-Bukkit-1.0.1-SNAPSHOT.jar",
+          "primary": true,
+          "size": 88760,
+          "url": "https://github.com/VironLab/MinecraftDiscordSync/releases/download/1.0.1-SNAPSHOT/MinecraftDiscordSync-Bukkit-1.0.1-SNAPSHOT.jar"
+        },
+        {
+          "filename": "MinecraftDiscordSync-Bungee-1.0.1-SNAPSHOT.jar",
+          "primary": true,
+          "size": 88454,
+          "url": "https://github.com/VironLab/MinecraftDiscordSync/releases/download/1.0.1-SNAPSHOT/MinecraftDiscordSync-Bungee-1.0.1-SNAPSHOT.jar"
+        },
+        {
+          "filename": "MinecraftDiscordSync-Nukkit-1.0.1-SNAPSHOT.jar",
+          "primary": true,
+          "size": 88327,
+          "url": "https://github.com/VironLab/MinecraftDiscordSync/releases/download/1.0.1-SNAPSHOT/MinecraftDiscordSync-Nukkit-1.0.1-SNAPSHOT.jar"
+        },
+        {
+          "filename": "MinecraftDiscordSync-Sponge-1.0.1-SNAPSHOT.jar",
+          "primary": true,
+          "size": 108109,
+          "url": "https://github.com/VironLab/MinecraftDiscordSync/releases/download/1.0.1-SNAPSHOT/MinecraftDiscordSync-Sponge-1.0.1-SNAPSHOT.jar"
+        },
+        {
+          "filename": "MinecraftDiscordSync-Velocity-1.0.1-SNAPSHOT.jar",
+          "primary": true,
+          "size": 107553,
+          "url": "https://github.com/VironLab/MinecraftDiscordSync/releases/download/1.0.1-SNAPSHOT/MinecraftDiscordSync-Velocity-1.0.1-SNAPSHOT.jar"
+        }
+      ],
+      "name": "MinecraftDiscordSyncPlugin v1.0.1-SNAPSHOT",
+      "prerelease": false,
+      "published_at": 1608776580,
+      "version": "1.0.1-SNAPSHOT"
+    },
+    {
+      "changelog": "First Release",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "MinecraftDiscordSync-Bukkit-1.0.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 10338642,
+          "url": "https://github.com/VironLab/MinecraftDiscordSync/releases/download/1.0.0-SNAPSHOT/MinecraftDiscordSync-Bukkit-1.0.0-SNAPSHOT.jar"
+        },
+        {
+          "filename": "MinecraftDiscordSync-Bungee-1.0.0-SNAPSHOT.UNTESTED.jar",
+          "primary": true,
+          "size": 10338165,
+          "url": "https://github.com/VironLab/MinecraftDiscordSync/releases/download/1.0.0-SNAPSHOT/MinecraftDiscordSync-Bungee-1.0.0-SNAPSHOT.UNTESTED.jar"
+        },
+        {
+          "filename": "MinecraftDiscordSync-Nukkit-1.0.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 10338216,
+          "url": "https://github.com/VironLab/MinecraftDiscordSync/releases/download/1.0.0-SNAPSHOT/MinecraftDiscordSync-Nukkit-1.0.0-SNAPSHOT.jar"
+        },
+        {
+          "filename": "MinecraftDiscordSync-Velocity-1.0.0-SNAPSHOT.UNTESTED.jar",
+          "primary": true,
+          "size": 10357964,
+          "url": "https://github.com/VironLab/MinecraftDiscordSync/releases/download/1.0.0-SNAPSHOT/MinecraftDiscordSync-Velocity-1.0.0-SNAPSHOT.UNTESTED.jar"
+        }
+      ],
+      "name": "MinecraftDiscordSyncPlugin",
+      "prerelease": false,
+      "published_at": 1608447118,
+      "version": "1.0.0-SNAPSHOT"
+    }
+  ]
+}

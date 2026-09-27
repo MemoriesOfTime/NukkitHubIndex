@@ -1,0 +1,70 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/25536411?v=4",
+      "name": "Leonidius20",
+      "url": "https://github.com/Leonidius20"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/26197131?v=4",
+      "name": "PetteriM1",
+      "url": "https://github.com/PetteriM1"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/1887100?v=4",
+      "name": "augesrob",
+      "url": "https://github.com/augesrob"
+    }
+  ],
+  "categories": [],
+  "created_at": 1514379924,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "EconomyAPI",
+      "version_range": ""
+    }
+  ],
+  "description": "# Trading Commands\nA shop and auction system for [NukkitX][nukkitx] server software for Minecraft Bedrock Edition, based on commands.\n\n**Note!** This plugin is no longer supported. I advise you to migrate to [Trading Interface][interface].\n\n## Setting up\n-   Make sure that [EconomyAPI][economy] is installed;\n-   Place the plugin's `.jar` file into the `plugins` folder on your server;\n-   Set up the configuration file (see \"Configuration file\");\n-   Set up the lists of buyable and sellable items using admin commands. The lists update automatically after editing, so you don't need to reboot your server.\n \n## User commands\n-   `/buy <id> <amount>` — buying a specified amount of items with a specified ID (string or number).\n-   `/buy <id>` — buying 1 item with a specified ID.\n-   `/sell <id> <amount>` — selling a specified amount of items with a specified ID.\n-   `/sell <id>` — selling 1 item with a specified ID.\n-   `/sell` — selling items from your hands.\n-   `/buylist (/blist)` — list of buyable items.\n-   `/selllist (/slist)` — list of sellable items.\n-   `/auc <id> <amount> <start price>` — put a specified amount of items with a specified ID with a specified start price on an auction.\n-   `/auc <id> <start price>` — put 1 item with a specified ID with a specified start price on an auction.\n-   `/auc <start price>` — place items from your hands on an auction.\n-   `/bet <your bid>` — place a bet on an ongoing auction.\n-   `/id` — shows the ID of the item in your hand.\n-   `/shophelp` — list of shop commands.\n  \n## Admin commands\nAdmin commands are available to players with `trading.editshoplist` permission. Operators have this permission by default.\n-   `/addbuyitem <id> <price> (/abi <id> <price>)` — add an item to the list of buyable items.\n-   `/addsellitem <id> <price> (/asi <id> <price>)` — add an item to the list of sellable items.\n-   `/delbuyitem <id> (/dbi <id>)` — delete an item from the list of buyable items.\n-   `/delsellitem <id> (/dsi <id>)` — delete an item from the list of sellable items.\n-   `/adddiscount <id> <percent>` — add a discount for an item.\n-   `/deldiscount <id>` — delete a discount.\n\n## Configuration file\nAll parameters in the [configuration file](https://github.com/Nukkit-coders/TradingCommands/blob/master/src/main/resources/config.yml) are commented.\n  \n## Other functions\nThe plugin supports custom translations. In order to use your own language, set `general.languauge` option in the config file to `<your_lang>`. The plugin will create `<your_lang>.lng` file with English strings. You have to translate the text in this file to your language.\n\n## Building from sources\n`mvn clean package`\n\n## Links\n-   [Trading Commands on nukkitx.com](https://nukkitx.com/resources/trading-commands.13/)\n-   [Trading Commands on nukkit.ru](http://forums.voxelwind.com/resources/trading-commands.120/)\n\n[nukkitx]: https://github.com/NukkitX/Nukkit\n[economy]: https://github.com/EconomyS/EconomyAPI\n[interface]: https://github.com/Leonidius20/TradingInterface",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/34147027?v=4",
+  "id": "Nukkit-coders/TradingCommands",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Trading Commands",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Nukkit-coders/TradingCommands",
+  "stars": 0,
+  "summary": "Shop and auction system, based on commands.",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1656591262,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Trading.jar",
+          "primary": true,
+          "size": 48320,
+          "url": "https://github.com/Nukkit-coders/TradingCommands/releases/download/0.2.1/Trading.jar"
+        }
+      ],
+      "name": "TradingCommands",
+      "prerelease": false,
+      "published_at": 1514379972,
+      "version": "0.2.1"
+    }
+  ]
+}

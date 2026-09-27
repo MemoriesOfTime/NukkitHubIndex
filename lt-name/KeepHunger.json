@@ -2,16 +2,16 @@
   "api_version": "1.0.9",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "LT_Name",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
     }
   ],
   "categories": [],
   "created_at": 1641169846,
   "dependencies": [],
   "description": "",
-  "detection_confidence": "high",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
@@ -30,8 +30,26 @@
   "stars": 0,
   "summary": "",
   "targets": [
-    "nkx"
+    "nkx",
+    "nkmot"
   ],
-  "updated_at": 1641169910,
-  "versions": []
+  "updated_at": 1641169907,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "KeepHunger-1.0.0.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/KeepHunger/1/artifact/target/KeepHunger-1.0.0.jar"
+        }
+      ],
+      "name": "1.0.0",
+      "prerelease": true,
+      "published_at": 1641169993,
+      "version": "ci-1"
+    }
+  ]
 }

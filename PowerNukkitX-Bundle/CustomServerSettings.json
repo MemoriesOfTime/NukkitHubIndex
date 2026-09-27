@@ -2,9 +2,14 @@
   "api_version": "3.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/50714128?v=4",
       "name": "xRookieFight",
-      "url": ""
+      "url": "https://github.com/xRookieFight"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/82237910?v=4",
+      "name": "AzaleeX",
+      "url": "https://github.com/AzaleeX"
     }
   ],
   "categories": [],
@@ -31,16 +36,15 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "CustomServerSettings",
-  "primary_target": "nkx",
+  "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/PowerNukkitX-Bundle/CustomServerSettings",
   "stars": 1,
   "summary": "A PowerNukkitX plugin that allows you to set your custom server settings.",
   "targets": [
-    "nkx",
     "pnx"
   ],
-  "updated_at": 1783620082,
+  "updated_at": 1783620043,
   "versions": [
     {
       "changelog": "",
@@ -49,6 +53,7 @@
         {
           "filename": "CustomServerSettings.jar",
           "primary": true,
+          "sha256": "4bb1336d566ab2e0e2455dca0bfd6d253ef05c4849087bd1dec5a6782e8d4d12",
           "size": 6392,
           "url": "https://github.com/PowerNukkitX-Bundle/CustomServerSettings/releases/download/1.0.1/CustomServerSettings.jar"
         }
@@ -65,6 +70,7 @@
         {
           "filename": "CustomServerSettings.jar",
           "primary": true,
+          "sha256": "ffa9017bbfd6a617a7fdf3cfb610a302bef994b3158ad7dc22fd03642edf8869",
           "size": 6385,
           "url": "https://github.com/PowerNukkitX-Bundle/CustomServerSettings/releases/download/latest/CustomServerSettings.jar"
         }

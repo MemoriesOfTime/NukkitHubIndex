@@ -1,0 +1,43 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/8010252?v=4",
+      "name": "trychen",
+      "url": "https://github.com/trychen"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/18260727?v=4",
+      "name": "ningwang747",
+      "url": "https://github.com/ningwang747"
+    }
+  ],
+  "categories": [],
+  "created_at": 1462154229,
+  "dependencies": [],
+  "description": "# Nukkit-JoinMessage\nA custom Join Message plugin for Nukkit\n\nMcbbs:\nhttp://www.mcbbs.net/thread-550991-1-1.html\n\nCI:\nhttp://ci.mccraft.cn:8080/job/Nukkit-JoinMessage/\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/15951295?v=4",
+  "id": "UnknownStudio/Nukkit-JoinMessage",
+  "license": {
+    "id": "Apache-2.0",
+    "name": "Apache License 2.0",
+    "url": "https://spdx.org/licenses/Apache-2.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "JoinMessage",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/UnknownStudio/Nukkit-JoinMessage",
+  "stars": 0,
+  "summary": "A custom Join Message plugin for Nukkit",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1477725897,
+  "versions": []
+}

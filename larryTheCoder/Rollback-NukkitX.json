@@ -1,0 +1,48 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/1491512?v=4",
+      "name": "boy0001",
+      "url": "https://github.com/boy0001"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/15889642?v=4",
+      "name": "larryTheCoder",
+      "url": "https://github.com/larryTheCoder"
+    }
+  ],
+  "categories": [],
+  "created_at": 1594522621,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "FastAsyncWorldEdit",
+      "version_range": ""
+    }
+  ],
+  "description": "# WIP rollback for MCPE\r\n[![Jenkins-CI](https://jenkins.potatohome.xyz/job/Rollback%20Nukkit/badge/icon)](https://jenkins.potatohome.xyz/job/Rollback%20Nukkit)\r\n\r\nThis plugin requires FastAsyncWorldEdit plugin in order to work correctly. Works for NukkitX\r\nAPI 1.0.11, MCPE 1.16.x\r\n\r\n### Simple\r\n - This can log block breaking and placement (more events will be added later).\r\n - Quickly inspect blocks by left clicking with a clock (crouch to inspect the adjacent block)\r\n - Rollback using a single command `/rollback <user> <radius> <time>`\r\n\r\n### Scalable\r\n - Small database (12MB per million blocks) (MySQL compression)\r\n - Works well with hundreds of players\r\n - Lookup and rollback time does not degrade with database size\r\n\r\n### Fast\r\n - Can log hundreds of thousands of blocks a second\r\n - Rollback millions of blocks without lag\r\n - Inspect areas instantly\r\n \r\n### TODO\r\n  - Logging entity / all NBT\r\n - More events + configuration\r\n - Translatable messages\r\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/15889642?v=4",
+  "id": "larryTheCoder/Rollback-NukkitX",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Rollback-NukkitX",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/larryTheCoder/Rollback-NukkitX",
+  "stars": 3,
+  "summary": "Provides anti-grief protection for your servers.",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1594524561,
+  "versions": []
+}

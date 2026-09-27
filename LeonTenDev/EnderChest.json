@@ -1,0 +1,60 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/95095051?v=4",
+      "name": "LeonTenDev",
+      "url": "https://github.com/LeonTenDev"
+    }
+  ],
+  "categories": [],
+  "created_at": 1638109473,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "FakeInventories",
+      "version_range": ""
+    }
+  ],
+  "description": "# EnderChest\nAn EnderChest plugin for Nukkit!\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/95095051?v=4",
+  "id": "LeonTenDev/EnderChest",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "EnderChest",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/LeonTenDev/EnderChest",
+  "stars": 2,
+  "summary": "An EnderChest plugin for Nukkit!",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1656445768,
+  "versions": [
+    {
+      "changelog": "This plugin uses FakeInventories!\r\nFakeInventories:  [Download](https://ci.opencollab.dev//job/NukkitX/job/FakeInventories/job/master/)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EnderChest-1.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 9255,
+          "url": "https://github.com/LeonTenDev/EnderChest/releases/download/Latest/EnderChest-1.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "EnderChest v1.0.0",
+      "prerelease": false,
+      "published_at": 1656445768,
+      "version": "Latest"
+    }
+  ]
+}

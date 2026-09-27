@@ -1,0 +1,144 @@
+{
+  "api_version": "1.0.8",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+      "name": "wode490390",
+      "url": "https://github.com/wode490390"
+    }
+  ],
+  "categories": [],
+  "created_at": 1560294311,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "MobPlugin",
+      "version_range": ""
+    }
+  ],
+  "description": "# The End\n[![Nukkit](https://img.shields.io/badge/Nukkit-1.0-green)](https://github.com/NukkitX/Nukkit)\n[![Build](https://img.shields.io/circleci/build/github/wode490390/TheEnd/master)](https://circleci.com/gh/wode490390/TheEnd/tree/master)\n[![Release](https://img.shields.io/github/v/release/wode490390/TheEnd)](https://github.com/wode490390/TheEnd/releases)\n[![Release date](https://img.shields.io/github/release-date/wode490390/TheEnd)](https://github.com/wode490390/TheEnd/releases)\n<!--[![MCBBS](https://img.shields.io/badge/-mcbbs-inactive)](https://www.mcbbs.net/thread-872583-1-1.html \"末路之地\")\n[![Servers](https://img.shields.io/bstats/servers/4882)](https://bstats.org/plugin/bukkit/TheEnd/4882)\n[![Players](https://img.shields.io/bstats/players/4882)](https://bstats.org/plugin/bukkit/TheEnd/4882)-->\n\nThis is a plugin that implements [The End](https://minecraft.fandom.com/wiki/The_End) feature for [Nukkit](https://github.com/NukkitX/Nukkit) servers.\n\n![](https://i.loli.net/2019/06/12/5d0035e6ec88465573.png)\n\nIf you found any bugs or have any suggestions, please open an issue on [GitHub](https://github.com/wode490390/TheEnd/issues).\n\nIf you like this plugin, please star it on [GitHub](https://github.com/wode490390/TheEnd).\n\n## Features\n- [ ] World Generation\n  - [ ] Biome\n    - [X] Main End Island\n    - [X] Small End Island\n    - [ ] End Midland\n    - [ ] End Highland\n    - [ ] End Barren\n  - [ ] Structures\n    - [X] End Podium\n    - [X] Obsidian Pillar\n    - [X] Obsidian Platform\n    - [X] Chorus Tree\n    - [ ] End Cities\n- [X] Entities\n  - [X] End Crystal\n  - [X] Ender Dragon (requires [MobPlugin](https://github.com/Nukkit-coders/MobPlugin))\n    - [X] Re-summoning\n      - [X] Animation\n- [ ] Misc\n  - [X] End Portal\n    - [X] Exit Portal\n      - [X] End Poem\n  - [ ] End Gateway\n\n## Download\n- [Releases](https://github.com/wode490390/TheEnd/releases)\n- [Snapshots](https://circleci.com/gh/wode490390/TheEnd)\n\n## Configuration\n\n<details>\n<summary>config.yml</summary>\n\n```yaml\nenable-end-portal: true\nexit-portal-activated: true\nspawn-ender-dragon: true\nallow-resummon-ender-dragon: true\n\ngenerator:\n  end:\n    coordinate-scale: 684.412\n    height:\n      scale: 1368.824\n    detail:\n      noise-scale:\n        x: 80.0\n        y: 160.0\n        z: 80.0\n```\n</details>\n\n## Compiling\n1. Install [Maven](https://maven.apache.org/).\n2. Run `mvn clean package`. The compiled JAR can be found in the `target/` directory.\n\n## Known Issues\n+ The dimension is not changed when the player enters the portal. (Not supported by [Nukkit](https://github.com/NukkitX/Nukkit/issues/839))\n\n## Metrics Collection\n\nThis plugin uses [bStats](https://github.com/wode490390/bStats-Nukkit). You can opt out using the global bStats config; see the [official website](https://bstats.org/getting-started) for more details.\n\n[![Metrics](https://bstats.org/signatures/bukkit/TheEnd.svg)](https://bstats.org/plugin/bukkit/TheEnd/4882)\n\n###### If I have any grammar and/or term errors, please correct them :)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+  "id": "wode490390/TheEnd",
+  "license": {
+    "id": "NOASSERTION",
+    "name": "Other",
+    "url": "https://github.com/wode490390/TheEnd/blob/master/LICENSE"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://wode490390.cn/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "TheEnd",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/wode490390/TheEnd",
+  "stars": 22,
+  "summary": "TheEnd plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1617466827,
+  "versions": [
+    {
+      "changelog": "- Players can now re-summon the Ender dragon.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeTheEnd-1.2.0.jar",
+          "primary": true,
+          "size": 81288,
+          "url": "https://github.com/wode490390/TheEnd/releases/download/1.2.0/wodeTheEnd-1.2.0.jar"
+        }
+      ],
+      "name": "TheEnd-v1.2.0",
+      "prerelease": false,
+      "published_at": 1617466827,
+      "version": "1.2.0"
+    },
+    {
+      "changelog": "- Added Ender dragon (#5)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeTheEnd-1.1.0.jar",
+          "primary": true,
+          "size": 64143,
+          "url": "https://github.com/wode490390/TheEnd/releases/download/1.1.0/wodeTheEnd-1.1.0.jar"
+        }
+      ],
+      "name": "TheEnd-v1.1.0",
+      "prerelease": false,
+      "published_at": 1582986230,
+      "version": "1.1.0"
+    },
+    {
+      "changelog": "- Fixed #3 ",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeTheEnd-1.0.3.jar",
+          "primary": true,
+          "size": 62283,
+          "url": "https://github.com/wode490390/TheEnd/releases/download/1.0.3/wodeTheEnd-1.0.3.jar"
+        }
+      ],
+      "name": "TheEnd-v1.0.3",
+      "prerelease": false,
+      "published_at": 1581083923,
+      "version": "1.0.3"
+    },
+    {
+      "changelog": "**Nukkit build [#423](https://ci.nukkitx.com/job/NukkitX/job/Nukkit/job/master/423/) ([e6220b1](https://github.com/NukkitX/Nukkit/tree/e6220b1bdb09cabd446fa1c7378c87e26f7e0af1)) or later is required to use this plugin**",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeTheEnd-1.0.2.jar",
+          "primary": true,
+          "size": 58521,
+          "url": "https://github.com/wode490390/TheEnd/releases/download/1.0.2/wodeTheEnd-1.0.2.jar"
+        }
+      ],
+      "name": "TheEnd-v1.0.2",
+      "prerelease": false,
+      "published_at": 1569738373,
+      "version": "1.0.2"
+    },
+    {
+      "changelog": "- Fixed #1 ",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeTheEnd-1.0.1.jar",
+          "primary": true,
+          "size": 59236,
+          "url": "https://github.com/wode490390/TheEnd/releases/download/1.0.1/wodeTheEnd-1.0.1.jar"
+        }
+      ],
+      "name": "TheEnd-v1.0.1",
+      "prerelease": false,
+      "published_at": 1560931096,
+      "version": "1.0.1"
+    },
+    {
+      "changelog": "Initial release",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeTheEnd-1.0.0.jar",
+          "primary": true,
+          "size": 56950,
+          "url": "https://github.com/wode490390/TheEnd/releases/download/1.0.0/wodeTheEnd-1.0.0.jar"
+        }
+      ],
+      "name": "TheEnd-v1.0.0",
+      "prerelease": false,
+      "published_at": 1560382094,
+      "version": "1.0.0"
+    }
+  ]
+}

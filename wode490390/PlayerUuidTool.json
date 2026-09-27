@@ -1,0 +1,58 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+      "name": "wode490390",
+      "url": "https://github.com/wode490390"
+    }
+  ],
+  "categories": [],
+  "created_at": 1558705876,
+  "dependencies": [],
+  "description": "# Player UUID Tool\n[![](https://i.loli.net/2019/05/25/5ce8b59a6292554068.png)](http://www.mcbbs.net/thread-868498-1-1.html \"UUID查询\")\n\nPlayer UUID tool plugin for Nukkit\n\nPlease see [mcbbs](http://www.mcbbs.net/thread-868498-1-1.html) for more information.\n## Commands\n| Command | Alias | Permission | Description | Default |\n| - | - | - | - | - |\n| /playeruuidtool <player\\|UUID> | /put | playeruuidtool.command | Querys player's UUID | OP |\n## config.yml\n```yaml\n# Display the player's UUID on console when player join\nconsole-show: true\n```\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+  "id": "wode490390/PlayerUuidTool",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "http://wode490390.cn/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "PlayerUuidTool",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/wode490390/PlayerUuidTool",
+  "stars": 2,
+  "summary": "Player UUID tool plugin for Nukkit",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1558757855,
+  "versions": [
+    {
+      "changelog": "Initial release",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodePlayerUuidTool-1.0.0.jar",
+          "primary": true,
+          "size": 12238,
+          "url": "https://github.com/wode490390/PlayerUuidTool/releases/download/1.0.0/wodePlayerUuidTool-1.0.0.jar"
+        }
+      ],
+      "name": "PlayerUuidTool-v1.0.0",
+      "prerelease": false,
+      "published_at": 1558757855,
+      "version": "1.0.0"
+    }
+  ]
+}

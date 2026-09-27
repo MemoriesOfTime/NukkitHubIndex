@@ -1,0 +1,42 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/39440218?v=4",
+      "name": "justin-eckenweber",
+      "url": "https://github.com/justin-eckenweber"
+    }
+  ],
+  "categories": [],
+  "created_at": 1570548643,
+  "dependencies": [],
+  "description": "# AreaProtection\nAreaProtection: A simple protection plugin for Nukkit servers.\n\n# Download\nYou can download AreaProtection at Nukkit resources: https://nukkitx.com/resources/areaprotection.281/\n\n# Only for simple protection.\nThis Plugin is only made for simple protection. It's not thought for selling areas or making normal players able to protect something.\nIt's made for the admins.\n\n# Features\n| Feature          |   |\n|------------------|---|\n| Simple           | ✅ |\n| Lightweight      | ✅ |\n| Grief Protection | ✅ |\n| Helpful Features | ✅ |\n| Selling Areas    | ❌ |\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/12071163?v=4",
+  "id": "pilock/AreaProtection",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "llama-games.net",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "AreaProtection",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/pilock/AreaProtection",
+  "stars": 0,
+  "summary": "AreaProtection",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1569751591,
+  "versions": []
+}

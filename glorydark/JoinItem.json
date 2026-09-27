@@ -2,16 +2,16 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "Glorydark",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
+      "name": "glorydark",
+      "url": "https://github.com/glorydark"
     }
   ],
   "categories": [],
   "created_at": 1708591047,
   "dependencies": [],
   "description": "# JoinItem\n\n",
-  "detection_confidence": "high",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
@@ -30,8 +30,26 @@
   "stars": 0,
   "summary": "JoinItem",
   "targets": [
-    "nkx"
+    "nkx",
+    "nkmot"
   ],
-  "updated_at": 1719739708,
-  "versions": []
+  "updated_at": 1719739706,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "JoinItem-1.0.5.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/JoinItem/1/artifact/target/JoinItem-1.0.5.jar"
+        }
+      ],
+      "name": "1.0.5",
+      "prerelease": true,
+      "published_at": 1719739871,
+      "version": "ci-1"
+    }
+  ]
 }

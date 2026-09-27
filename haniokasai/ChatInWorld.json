@@ -1,0 +1,42 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/12643554?v=4",
+      "name": "haniokasai",
+      "url": "https://github.com/haniokasai"
+    }
+  ],
+  "categories": [],
+  "created_at": 1473506781,
+  "dependencies": [],
+  "description": "# ChatInWorld\n\n##Download http://jenkins.haniokasai.com/job/ChatInWorld-Nukkit/\n[![Build Status](http://jenkins.haniokasai.com/buildStatus/icon?job=ChatInWorld-Nukkit)](http://jenkins.haniokasai.com/job/ChatInWorld-Nukkit/ \"Jenkins \")\n\nyou can separate chat  per-world.\n\n\n##API\n\n###Maven\n```html\n<repository>\n  <id>hani</id>\n  <url>http://jenkins.haniokasai.com/plugin/repository/project/ChatInWorld-Nukkit/LastSuccessful/repository/</url>\n</repository>\n\n\n<dependency>\n  <groupId>com.haniokasai.nukkit.ChatInWorld</groupId>\n  <artifactId>ChatInWorld</artifactId>\n  <version>1.0.0-SNAPSHOT</version>\n  <scope>provided</scope>\n</dependency>\n```\n\n###Code\n\n```java\nChatInWorld a = new ChatInWorld();\na.sendchat(\"name\", \"message\",Server.getInstance().getDefaultLevel().getName());\n```\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/12643554?v=4",
+  "id": "haniokasai/ChatInWorld",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "http://haniokasai.com",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "MagicPVP",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/haniokasai/ChatInWorld",
+  "stars": 1,
+  "summary": "ChatInWorld",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1474102319,
+  "versions": []
+}

@@ -1,0 +1,101 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+      "name": "wode490390",
+      "url": "https://github.com/wode490390"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "name": "dependabot[bot]",
+      "url": "https://github.com/apps/dependabot"
+    }
+  ],
+  "categories": [],
+  "created_at": 1591425145,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "MobPlugin",
+      "version_range": ""
+    }
+  ],
+  "description": "# Classic Village Populator\n[![Nukkit](https://img.shields.io/badge/Nukkit-1.0-green)](https://github.com/NukkitX/Nukkit)\n[![Build](https://img.shields.io/circleci/build/github/wode490390/ClassicVillagePopulator/master)](https://circleci.com/gh/wode490390/ClassicVillagePopulator/tree/master)\n[![Release](https://img.shields.io/github/v/release/wode490390/ClassicVillagePopulator)](https://github.com/wode490390/ClassicVillagePopulator/releases)\n[![Release date](https://img.shields.io/github/release-date/wode490390/ClassicVillagePopulator)](https://github.com/wode490390/ClassicVillagePopulator/releases)\n<!--[![MCBBS](https://img.shields.io/badge/-mcbbs-inactive)](https://www.mcbbs.net/thread-1058673-1-1.html \"旧版村庄生成器\")\n[![Servers](https://img.shields.io/bstats/servers/7753)](https://bstats.org/plugin/bukkit/ClassicVillagePopulator/7753)\n[![Players](https://img.shields.io/bstats/players/7753)](https://bstats.org/plugin/bukkit/ClassicVillagePopulator/7753)-->\n\nThis is a plugin that implements the old [village](https://minecraft.gamepedia.com/Village) feature for Nukkit servers.\n\n![](https://i.loli.net/2020/06/09/plitBwWkxPEv7MA.png)\n\nIf you found any bugs or have any suggestions, please open an issue on [GitHub Issues](https://github.com/wode490390/ClassicVillagePopulator/issues).\n\nIf you like this plugin, please star it on [GitHub](https://github.com/wode490390/ClassicVillagePopulator).\n\n## Download\n- [Releases](https://github.com/wode490390/ClassicVillagePopulator/releases)\n- [Snapshots](https://circleci.com/gh/wode490390/ClassicVillagePopulator)\n\n## Compiling\n1. Install [Maven](https://maven.apache.org/).\n2. Run `mvn clean package`. The compiled JAR can be found in the `target/` directory.\n\n## Metrics Collection\n\nThis plugin uses [bStats](https://github.com/wode490390/bStats-Nukkit). You can opt out using the global bStats config; see the [official website](https://bstats.org/getting-started) for more details.\n\n<!--[![Metrics](https://bstats.org/signatures/bukkit/ClassicVillagePopulator.svg)](https://bstats.org/plugin/bukkit/ClassicVillagePopulator/7753)-->\n\n###### If I have any grammar and/or term errors, please correct them :)\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+  "id": "wode490390/ClassicVillagePopulator",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "http://wode490390.cn/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "ClassicVillagePopulator",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/wode490390/ClassicVillagePopulator",
+  "stars": 17,
+  "summary": "This is a plugin that implements the old village feature for Nukkit servers",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1627902134,
+  "versions": [
+    {
+      "changelog": "- Fixed #2",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeClassicVillagePopulator-1.0.2.jar",
+          "primary": true,
+          "size": 104592,
+          "url": "https://github.com/wode490390/ClassicVillagePopulator/releases/download/1.0.2/wodeClassicVillagePopulator-1.0.2.jar"
+        }
+      ],
+      "name": "ClassicVillagePopulator-v1.0.2",
+      "prerelease": false,
+      "published_at": 1597325826,
+      "version": "1.0.2"
+    },
+    {
+      "changelog": "- Fixed sea level issues (NukkitGenerator Only).\r\n\r\nps: The sea level of NukkitGenerator is 2 blocks higher than that of [vanilla generator](https://github.com/wode490390/BetterVanillaGenerator).",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeClassicVillagePopulator-1.0.1.jar",
+          "primary": true,
+          "size": 104601,
+          "url": "https://github.com/wode490390/ClassicVillagePopulator/releases/download/1.0.1/wodeClassicVillagePopulator-1.0.1.jar"
+        }
+      ],
+      "name": "ClassicVillagePopulator-v1.0.1",
+      "prerelease": false,
+      "published_at": 1593061319,
+      "version": "1.0.1"
+    },
+    {
+      "changelog": "Initial release",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "wodeClassicVillagePopulator-1.0.0.jar",
+          "primary": true,
+          "size": 104282,
+          "url": "https://github.com/wode490390/ClassicVillagePopulator/releases/download/1.0.0/wodeClassicVillagePopulator-1.0.0.jar"
+        }
+      ],
+      "name": "ClassicVillagePopulator-v1.0.0",
+      "prerelease": false,
+      "published_at": 1592063266,
+      "version": "1.0.0"
+    }
+  ]
+}

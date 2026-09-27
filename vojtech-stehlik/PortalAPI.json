@@ -1,0 +1,37 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/40556088?v=4",
+      "name": "vojtech-stehlik",
+      "url": "https://github.com/vojtech-stehlik"
+    }
+  ],
+  "categories": [],
+  "created_at": 1610400401,
+  "dependencies": [],
+  "description": "# PortalNK\n\n**A Nukkit plugin implementation of the Portal TCP socket API.**\n\n## Usage:\n\n1) Make sure you already have Portal set up\n2) Edit config.yml and update the credentials/information to match your Portal configuration\n3) Run the server and wait for the connection to authenticate. \n   - If successful, you should see `Authentication with Portal was successful!` in console \n   - If the connection failed to authenticate, you will see an error telling you what is wrong \n4) The server is now connected to the proxy and can communicate using the API\n\n\n## API:\n\n### Sending packets:\n\n- Example of sending transfer request packet:\n```java\npublic void transferPlayer(Player player, String group, String server) {\n    TransferRequestPacket pk = TransferRequestPacket.create(player.getUniqueId(), group, server);\n    Portal.getInstance().getThread().addPacketToQueue(pk);\n}\n```\n\n### Handling packets:\n\n- Example of handling player info response packet:\n\n```java\n@EventHandler\npublic void onPortalPacketReceive(PortalPacketReceiveEvent event){\n    Packet packet = event.getPacket();\n    if(packet instanceof PlayerInfoResponsePacket) {\n        if(!Server.getInstance().getPlayer(packet.uuid).isPresent()) { // checks if player is still on the server\n            return;\n        } \n        \n        this.getLogger().info(Server.getInstance().getPlayer(packet.uuid).get().getName() + \"'s ip is \" + packet.address);\n    }\n}\n```\n\n\n## Configuration:\n\n```yaml\nproxy-address: \"127.0.0.1\"\nsocket:\n  port: 19131\n  secret: \"\"\nserver:\n  group: \"Hub\"\n  name: \"Hub-1\"\n```\n\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/40556088?v=4",
+  "id": "vojtech-stehlik/PortalAPI",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "portal-nukkit/src/main/resources/plugin.yml",
+  "name": "Portal",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/vojtech-stehlik/PortalAPI",
+  "stars": 0,
+  "summary": "Nukkit plugin implementation of portal tcp api",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1614071468,
+  "versions": []
+}

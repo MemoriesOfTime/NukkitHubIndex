@@ -1,0 +1,42 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/12643554?v=4",
+      "name": "haniokasai",
+      "url": "https://github.com/haniokasai"
+    }
+  ],
+  "categories": [],
+  "created_at": 1490263927,
+  "dependencies": [],
+  "description": "# NuclearGunWars\nGunfight MCPE Server Plugin written for Nukkit\n\n\n## config\n\nhttps://github.com/BulletProject/conf-jpn\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/12643554?v=4",
+  "id": "haniokasai/NuclearGunWars-plugin",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "http://haniokasai.com",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "ArrowGun",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/haniokasai/NuclearGunWars-plugin",
+  "stars": 8,
+  "summary": "com.haniokasai.nukkit.ArrowGun",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1490264376,
+  "versions": []
+}

@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/37877491?v=4",
+      "name": "Kaooot",
+      "url": "https://github.com/Kaooot"
+    }
+  ],
+  "categories": [],
+  "created_at": 1556965592,
+  "dependencies": [],
+  "description": "# PocketEssentials (DEVELOPMENT PAUSED)\nA clone of the famous EssentialsX Plugin from the Minecraft: Java Edition | suited for the Nukkit environment\n\n# Download\n* [PocketEssentials v1.0.0](https://github.com/Kaooot/PocketEssentials/releases)\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/18189490?v=4",
+  "id": "Tominous/PocketEssentials--pocket-plugin",
+  "license": {
+    "id": "NOASSERTION",
+    "name": "Other",
+    "url": "https://github.com/Tominous/PocketEssentials/blob/master/LICENSE"
+  },
+  "links": null,
+  "manifest_path": "pocket-plugin/src/main/resources/plugin.yml",
+  "name": "PocketEssentials",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Tominous/PocketEssentials",
+  "stars": 0,
+  "summary": "A clone of the famous EssentialsX Plugin from the Minecraft: Java Edition | suited for the Nukkit environment",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1553794622,
+  "versions": []
+}

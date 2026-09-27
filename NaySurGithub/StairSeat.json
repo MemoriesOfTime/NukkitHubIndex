@@ -1,0 +1,59 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/96527285?v=4",
+      "name": "NaySurGithub",
+      "url": "https://github.com/NaySurGithub"
+    }
+  ],
+  "categories": [],
+  "created_at": 1790193744,
+  "dependencies": [],
+  "description": "# StairSeat 🪑\n\n**Take a seat.** Right-click any stair and your player sits down on it.\nPerfect for lobbies, roleplay, cafés and spawn builds. Jump to stand back up.\n\n![StairSeat](https://raw.githubusercontent.com/NaySurGithub/StairSeat/main/.jarbage/icon.png \"StairSeat\")\n\n## Features\n\n- 🪑 Sit on **every** stair, including new ones — no list to keep up to date\n- 🦘 Jump to stand up, just like getting off a horse\n- 👥 One player per stair, others get a \"this seat is used\" message\n- 🧱 Break the stair and whoever sits on it stands up\n- 🔀 Players can turn sitting on or off for themselves with `/sit`\n- 🧹 Nothing is saved in your world — no ghost entities after a restart\n\n## Install\n\n1. Put `StairSeat-x.y.z.jar` in your `plugins/` folder.\n2. Restart the server. Done!\n\n## Config\n\nEverything is in `plugins/StairSeat/config.yml`:\n\n| Option | Default | What it does |\n| --- | --- | --- |\n| `worlds` | all worlds | Worlds where players can sit. Empty = everywhere. |\n| `default-toggle-sit` | `true` | Whether sitting is on by default. If `false`, players turn it on with `/sit`. |\n| `allow-seat-high-height` | `true` | Allow sitting on a stair higher than your feet. |\n| `allow-seat-upsidedown` | `false` | Allow sitting on upside-down stairs. |\n| `stand-up-when-break-block` | `true` | Stand the player up when their stair is broken. |\n| `disable-damage-when-sit` | `false` | Seated players take no damage. |\n| `enable-check-up-block` | `false` | Only allow sitting when there is air above the stair. |\n| `allow-only-right-click` | `true` | Set to `false` to also sit with a left click. |\n| `disabled-stairs` | none | Stairs you can't sit on, e.g. `minecraft:oak_stairs`. |\n| `seat-y-offset` | `0.0` | Move the seat up or down if players look too high or too low. |\n| `send-tip-when-sit` | `Tap jump to exit the seat` | Tip shown when sitting. `@b` `@x` `@y` `@z` are replaced. |\n| `try-to-sit-already-inuse` | `This seat is used by @p` | Message when the seat is taken. `@p` `@b` are replaced. |\n| `toggle-on-message` / `toggle-off-message` | — | Messages of `/sit`. |\n\nSneak while clicking a stair to place blocks on it without sitting down.\n\n## Commands\n\n| Command | Who | What |\n| --- | --- | --- |\n| `/sit` | `stairseat.toggle` (everyone) | Turn sitting on stairs on or off for yourself |\n\n## For developers\n\n```java\nStairSeatPlugin stairSeat = (StairSeatPlugin) server.getPluginManager().getPlugin(\"StairSeat\");\nboolean sitting = stairSeat.isSitting(player);\n```\n\n## Requirements\n\nPowerNukkitX 3.0.0+ · Java 21\n\n## Building\n\n```bash\n./gradlew build\n```\n\nMIT license - do whatever you want with it.\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/96527285?v=4",
+  "id": "NaySurGithub/StairSeat",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/NaySurGithub/StairSeat",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "StairSeat",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/NaySurGithub/StairSeat",
+  "stars": 0,
+  "summary": "Lets players sit on stairs.",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1790193821,
+  "versions": [
+    {
+      "changelog": "**Full Changelog**: https://github.com/NaySurGithub/StairSeat/commits/v1.0.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "StairSeat-1.0.0.jar",
+          "primary": true,
+          "sha256": "d69a8a9d161a4fe9fabf42270fe54cf56096ca3734e642d8578b242c68fe2468",
+          "size": 7965,
+          "url": "https://github.com/NaySurGithub/StairSeat/releases/download/v1.0.0/StairSeat-1.0.0.jar"
+        }
+      ],
+      "name": "StairSeat v1.0.0",
+      "prerelease": false,
+      "published_at": 1790193821,
+      "version": "v1.0.0"
+    }
+  ]
+}

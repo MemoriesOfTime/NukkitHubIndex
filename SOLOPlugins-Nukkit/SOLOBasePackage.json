@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/20203944?v=4",
+      "name": "solo5star",
+      "url": "https://github.com/solo5star"
+    }
+  ],
+  "categories": [],
+  "created_at": 1484031612,
+  "dependencies": [],
+  "description": "",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/24989094?v=4",
+  "id": "SOLOPlugins-Nukkit/SOLOBasePackage",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "SOLOBasePackage",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/SOLOPlugins-Nukkit/SOLOBasePackage",
+  "stars": 0,
+  "summary": "You must apply this plugin to use SOLOPlugins",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1487572810,
+  "versions": []
+}

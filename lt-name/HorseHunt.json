@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "",
-      "name": "LT_Name",
-      "url": ""
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
     }
   ],
   "categories": [],
@@ -50,15 +50,31 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "HorseHunt",
-  "primary_target": "nkx",
+  "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/lt-name/HorseHunt",
   "stars": 0,
   "summary": "",
   "targets": [
-    "nkx",
     "nkmot"
   ],
-  "updated_at": 1671730584,
-  "versions": []
+  "updated_at": 1628039872,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HorseHunt-0.0.2.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/HorseHunt/7/artifact/target/HorseHunt-0.0.2.jar"
+        }
+      ],
+      "name": "0.0.2",
+      "prerelease": true,
+      "published_at": 1628039882,
+      "version": "ci-7"
+    }
+  ]
 }

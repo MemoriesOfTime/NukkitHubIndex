@@ -1,0 +1,122 @@
+{
+  "api_version": "1.0.9",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/26197131?v=4",
+      "name": "PetteriM1",
+      "url": "https://github.com/PetteriM1"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/14215022?v=4",
+      "name": "zzz1999",
+      "url": "https://github.com/zzz1999"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/1887100?v=4",
+      "name": "augesrob",
+      "url": "https://github.com/augesrob"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/236871?v=4",
+      "name": "kniffo80",
+      "url": "https://github.com/kniffo80"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/88597837?v=4",
+      "name": "PikyXoS",
+      "url": "https://github.com/PikyXoS"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/13001615?v=4",
+      "name": "matt404",
+      "url": "https://github.com/matt404"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/43497313?v=4",
+      "name": "GoodLucky777",
+      "url": "https://github.com/GoodLucky777"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17339354?v=4",
+      "name": "wode490390",
+      "url": "https://github.com/wode490390"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/19608113?v=4",
+      "name": "VTsybrov",
+      "url": "https://github.com/VTsybrov"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/7607627?v=4",
+      "name": "SergeyDertan",
+      "url": "https://github.com/SergeyDertan"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/73995049?v=4",
+      "name": "PleaseInsertNameHere",
+      "url": "https://github.com/PleaseInsertNameHere"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/50852129?v=4",
+      "name": "canhphung",
+      "url": "https://github.com/canhphung"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/56657837?v=4",
+      "name": "FlamingKnight",
+      "url": "https://github.com/FlamingKnight"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/73650825?v=4",
+      "name": "nicugnm",
+      "url": "https://github.com/nicugnm"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/6209108?v=4",
+      "name": "magicus",
+      "url": "https://github.com/magicus"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/6342362?v=4",
+      "name": "Spitz4478",
+      "url": "https://github.com/Spitz4478"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/16448853?v=4",
+      "name": "BeerMC",
+      "url": "https://github.com/BeerMC"
+    }
+  ],
+  "categories": [],
+  "created_at": 1658914230,
+  "dependencies": [],
+  "description": "# NukkitX MobPlugin\nMobPlugin is a plugin that implements mobs and animals for NukkitX servers including movement, aggression, spawners etc.\n\n## Notice\nThis plugin is still in development. Therefore, it may function abnormally. Please report bugs on the issues page.\n\n[![NukkitX.com](https://img.shields.io/badge/MobPlugin-Download-brightgreen.svg)](https://cloudburstmc.org/resources/mobplugin.3/)\n[![CircleCI builds](https://img.shields.io/circleci/project/github/Nukkit-coders/MobPlugin.svg)](https://circleci.com/gh/Nukkit-coders/MobPlugin)\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/50852129?v=4",
+  "id": "canhphung/MobPlugin",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://nukkitx.com/resources/mobplugin.3/",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "MobPlugin",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/canhphung/MobPlugin",
+  "stars": 0,
+  "summary": "Entity AI & autospawn plugin for NukkitX servers",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1658914704,
+  "versions": []
+}

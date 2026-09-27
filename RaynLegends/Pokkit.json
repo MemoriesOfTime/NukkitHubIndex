@@ -1,0 +1,78 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/1462188?v=4",
+      "name": "rutgerkok",
+      "url": "https://github.com/rutgerkok"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/9496359?v=4",
+      "name": "MrPowerGamerBR",
+      "url": "https://github.com/MrPowerGamerBR"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/4592633?v=4",
+      "name": "RaynLegends",
+      "url": "https://github.com/RaynLegends"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/127063331?v=4",
+      "name": "lmheesoo",
+      "url": "https://github.com/lmheesoo"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/16529507?v=4",
+      "name": "SuperAlecs",
+      "url": "https://github.com/SuperAlecs"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/1673471?v=4",
+      "name": "davidboden",
+      "url": "https://github.com/davidboden"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/292029178?v=4",
+      "name": "ankit252-source",
+      "url": "https://github.com/ankit252-source"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/374505?v=4",
+      "name": "OliverUv",
+      "url": "https://github.com/OliverUv"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/88597837?v=4",
+      "name": "PikyXoS",
+      "url": "https://github.com/PikyXoS"
+    }
+  ],
+  "categories": [],
+  "created_at": 1491262895,
+  "dependencies": [],
+  "description": "Outdated fork. Main project:\nhttps://github.com/rutgerkok/Pokkit\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/4592633?v=4",
+  "id": "RaynLegends/Pokkit",
+  "license": {
+    "id": "NOASSERTION",
+    "name": "Other",
+    "url": "https://github.com/RaynLegends/Pokkit/blob/master/LICENSE"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Pokkit",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/RaynLegends/Pokkit",
+  "stars": 0,
+  "summary": "Nukkit plugin that is able to load Bukkit plugins. Bring your Bukkit plugins to Minecraft PE!",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1491697108,
+  "versions": []
+}

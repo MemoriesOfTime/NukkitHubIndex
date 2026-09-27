@@ -2,9 +2,9 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
       "name": "glorydark",
-      "url": ""
+      "url": "https://github.com/glorydark"
     }
   ],
   "categories": [],
@@ -16,8 +16,8 @@
       "version_range": ""
     }
   ],
-  "description": "",
-  "detection_confidence": "high",
+  "description": "# Mytp\n单独储存，由于频繁更改。\n",
+  "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/61799945?v=4",
@@ -39,6 +39,23 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1731771237,
-  "versions": []
+  "updated_at": 1731771233,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Mytp-1.1.8.4.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/Mytp/8/artifact/target/Mytp-1.1.8.4.jar"
+        }
+      ],
+      "name": "1.1.8.4",
+      "prerelease": true,
+      "published_at": 1731771243,
+      "version": "ci-8"
+    }
+  ]
 }
