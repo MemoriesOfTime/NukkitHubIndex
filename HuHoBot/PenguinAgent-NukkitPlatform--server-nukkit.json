@@ -52,7 +52,7 @@
   "targets": [
     "nkmot"
   ],
-  "updated_at": 1790416995,
+  "updated_at": 1790485681,
   "versions": [
     {
       "changelog": "## v1.14.0\n\n- 平台：Nukkit-MOT（Bedrock）\n- 上游提交：[`d2e611ce6965`](https://github.com/HuHoBot/PenguinAgent/commit/d2e611ce6965000b7401662c498bd5ace98fc0f3)\n- 合并后提交：`917fc6c313c8`\n- 产物：`HuHoBot-Penguin_Nukkit-1.14.0.jar`\n\n### 本次迁移内容\n\n本版本同步上游 v1.14.0，并把新增能力适配到 Nukkit。\n\n### 新功能\n\n- **WebUI 附属插件中心** —— 在网页后台浏览、安装、卸载附属插件。\n  下载的 jar 会写入服务端 `plugins/` 目录，**需要重启服务器才会生效**。\n  Nukkit 侧新增 `installAddon()` / `removeAddon()` 实现，与 Spigot 侧同一套语义\n  （文件名安全校验拒绝空名、`..`、`/`、`\\`，避免路径穿越）\n- WebUI 界面改版与动画\n\n### Bug 修复\n\n- fix: **自动收录群逻辑放宽** —— 原先只在「群列表非空且该群未收录」时才自动添加，\n  导致**群列表为空时反而不会收录任何群**。现在群列表为空或未收录该群时都会写入 `bot.groups`\n- fix: **群名刷新失败后反复重试** —— 现在 30 秒内不重复请求，避免刷屏和打爆接口\n\n### Nukkit 适配说明\n\n上游这两个提交里只有两个方法需要平台侧实现，其余均为平台无关的公共代码。\n\n---\n\n> 本 Release 由自动化迁移流水线发布：拉取上游 → AI 迁移到 Nukkit 适配器 → 构建 → 推送 → 发布。",
