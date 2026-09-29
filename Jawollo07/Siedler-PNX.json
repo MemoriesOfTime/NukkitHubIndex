@@ -36,8 +36,32 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1790538487,
+  "updated_at": 1790694528,
   "versions": [
+    {
+      "changelog": "**Full Changelog**: https://github.com/Jawollo07/Siedler-PNX/compare/v8.1.0...v8.1.1",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "original-siedler-8.1.1.jar",
+          "primary": true,
+          "sha256": "d7e7db27e0045e13420bd25926459555fa39e39d3be084540fbac145e280a322",
+          "size": 343180,
+          "url": "https://github.com/Jawollo07/Siedler-PNX/releases/download/v8.1.1/original-siedler-8.1.1.jar"
+        },
+        {
+          "filename": "siedler-8.1.1.jar",
+          "primary": true,
+          "sha256": "fe4eb99f4703c9190793d886a601420bcceb17fc5721616e6417ea8cd1281196",
+          "size": 15480544,
+          "url": "https://github.com/Jawollo07/Siedler-PNX/releases/download/v8.1.1/siedler-8.1.1.jar"
+        }
+      ],
+      "name": "v8.1.1 (Beta)",
+      "prerelease": true,
+      "published_at": 1790594894,
+      "version": "v8.1.1"
+    },
     {
       "changelog": "**Full Changelog**: https://github.com/Jawollo07/Siedler-PNX/compare/v8.0.3...v8.0.4",
       "downloads": 0,

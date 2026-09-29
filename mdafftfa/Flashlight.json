@@ -53,7 +53,7 @@
   "server_version": "",
   "source": "https://github.com/mdafftfa/Flashlight",
   "stars": 3,
-  "summary": "🕯️ A Plugin for PowerNukkitX used to provide light in the dark when holding a luminous item",
+  "summary": "🕯️ Flashlight plugin for PowerNukkitX Server",
   "targets": [
     "pnx"
   ],

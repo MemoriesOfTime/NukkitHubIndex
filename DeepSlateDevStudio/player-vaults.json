@@ -1,0 +1,59 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/83244214?v=4",
+      "name": "Hollowseam",
+      "url": "https://github.com/Hollowseam"
+    }
+  ],
+  "categories": [],
+  "created_at": 1790685690,
+  "dependencies": [],
+  "description": "# PlayerVaults\n\nPersonal vaults for every player on PowerNukkitX. Type `/pv` and get a private chest that follows you everywhere, saved on the server. Give more vaults with a permission, look into anyone's vault as an admin, even when they are offline.\n\n## What it does\n\n- **`/pv` opens your vault.** With one vault it opens straight away. With several, a picker shows every vault and how many stacks it holds.\n- **Double chest vaults** (54 slots) by default, or single chests (27 slots) if you prefer.\n- **Vaults by permission:** `playervaults.amount.3` gives 3 vaults, up to the maximum you set.\n- **Admin access:** `/pv <number> <player>` opens the vault of another player, online or offline. If the owner has it open at the same time, you both see the same items live.\n- **Blacklist:** block items you don't want stored (bedrock, command blocks and barriers by default).\n- **Safe storage:** one compressed file per player, written through a temporary file so a crash never leaves a half saved vault. A damaged file is renamed and kept instead of being overwritten.\n- **Reliable menus:** vaults use their own chest handling, so they open every time and never leave a ghost chest behind.\n\n## Install\n\n1. Drop `PlayerVaults.jar` in your `plugins` folder.\n2. Restart the server.\n\n## Commands\n\n| Command | What it does | Permission |\n|---|---|---|\n| `/pv` | Open your vault, or the picker if you have several | `playervaults.use` (everyone) |\n| `/pv <number>` | Open one of your vaults | `playervaults.use` (everyone) |\n| `/pv <number> <player>` | Open another player's vault | `playervaults.admin` (op) |\n\nAliases: `/vault`, `/vaults`, `/playervault`.\n\n## Permissions\n\n| Permission | Default | Effect |\n|---|---|---|\n| `playervaults.use` | everyone | Open your own vaults |\n| `playervaults.amount.<n>` | nobody | Number of vaults the player gets (the highest one wins) |\n| `playervaults.admin` | op | Open and edit other players' vaults |\n| `playervaults.bypass.blacklist` | op | Store blacklisted items |\n\nPlayers without any `playervaults.amount.<n>` permission get `default-vaults`.\n\n## Config\n\n```yaml\ndefault-vaults: 1\nmax-vaults: 27\nvault-size: 54\nopen-delay-ticks: 10\ncommand-delay-ticks: 10\nblacklist:\n  - minecraft:bedrock\n  - minecraft:command_block\n  - minecraft:barrier\n```\n\nEvery message is in the `messages` section of `config.yml`.\n\n## Compatibility\n\nPowerNukkitX 3.x (API 3.0.0), tested on 3.0.5 with Minecraft Bedrock 1.26.50.\n\n## About\n\nMade by DeepSlate Dev. Released under the MIT license, free to use on any server.\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/333457031?v=4",
+  "id": "DeepSlateDevStudio/player-vaults",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/DeepSlateDevStudio/player-vaults",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "PlayerVaults",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/DeepSlateDevStudio/player-vaults",
+  "stars": 0,
+  "summary": "Personal vaults for every player, sized by permission",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1790686771,
+  "versions": [
+    {
+      "changelog": "First release.\n\n- `/pv` personal vaults, one straight away or a picker when you have several\n- Vault count by permission (`playervaults.amount.<n>`)\n- Admin access to any player vault, online or offline\n- Item blacklist\n- Reliable chest menus\n\nTested on PowerNukkitX 3.0.5 (Minecraft Bedrock 1.26.50).",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "PlayerVaults.jar",
+          "primary": true,
+          "sha256": "a3eaf82affd846e0255e2b0dd8c256ed5230c8a626d428b3df5d1fa7d0c3c466",
+          "size": 14249,
+          "url": "https://github.com/DeepSlateDevStudio/player-vaults/releases/download/v1.0.0/PlayerVaults.jar"
+        }
+      ],
+      "name": "PlayerVaults 1.0.0",
+      "prerelease": false,
+      "published_at": 1790686771,
+      "version": "v1.0.0"
+    }
+  ]
+}

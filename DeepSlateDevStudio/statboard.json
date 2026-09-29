@@ -1,0 +1,75 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/83244214?v=4",
+      "name": "Hollowseam",
+      "url": "https://github.com/Hollowseam"
+    }
+  ],
+  "categories": [],
+  "created_at": 1790688170,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "LlamaEconomy",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "EconomyAPI",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "FrenchEconomy",
+      "version_range": ""
+    }
+  ],
+  "description": "# StatBoard\n\nPlayer stats and leaderboards for PowerNukkitX, with floating text leaderboards you can place anywhere in your world.\n\n## What it does\n\n- **Tracks every player:** kills, deaths, K/D ratio, mobs killed, blocks broken, blocks placed, playtime, best kill streak and balance.\n- **`/stats`** shows your stats, or another player's, in a clean menu with a button to the leaderboards.\n- **`/top`** opens the leaderboards menu. Each leaderboard shows the top 10 and your own rank.\n- **Floating leaderboards:** stand where you want one, type `/stats hologram kills`, done. They refresh on their own and show up again after a reconnect or a world change.\n- **Balance leaderboard** works with LlamaEconomy, EconomyAPI or FrenchEconomy, detected automatically.\n- **Fair K/D:** players need a minimum number of kills to appear in the K/D leaderboard.\n- Every category can be turned off and every text can be edited.\n\n## Install\n\n1. Drop `StatBoard.jar` in your `plugins` folder.\n2. Restart the server.\n\n## Commands\n\n| Command | What it does | Permission |\n|---|---|---|\n| `/stats [player]` | Show stats | `statboard.use` (everyone) |\n| `/top` | Open the leaderboards menu | `statboard.use` (everyone) |\n| `/top <category>` | Open one leaderboard | `statboard.use` (everyone) |\n| `/stats hologram <category>` | Place a floating leaderboard where you stand | `statboard.admin` (op) |\n| `/stats hologram remove` | Remove the closest floating leaderboard (5 blocks) | `statboard.admin` (op) |\n| `/stats reload` | Reload the config | `statboard.admin` (op) |\n\nCategories: `kills`, `deaths`, `kdr`, `mobs`, `broken`, `placed`, `playtime`, `streak`, `balance`.\n\n## Config\n\n```yaml\nleaderboard-size: 10\nhologram-size: 10\nhologram-refresh-seconds: 30\nsave-interval-seconds: 60\nkdr-min-kills: 10\ncategories:\n  kills: true\n  deaths: true\n  kdr: true\n  mobs: true\n  broken: true\n  placed: true\n  playtime: true\n  streak: true\n  balance: true\n```\n\nEvery message is in the `messages` section of `config.yml`. Stats are saved in `stats.yml`, floating leaderboards in `holograms.yml`.\n\n## Good to know\n\n- The balance of a player is read while they are online, then kept for the leaderboard.\n- Playtime is counted every minute a player is online.\n\n## Compatibility\n\nPowerNukkitX 3.x (API 3.0.0), tested on 3.0.5 with Minecraft Bedrock 1.26.50.\n\n## About\n\nMade by DeepSlate Dev. Released under the MIT license, free to use on any server.\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/333457031?v=4",
+  "id": "DeepSlateDevStudio/statboard",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/DeepSlateDevStudio/statboard",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "StatBoard",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/DeepSlateDevStudio/statboard",
+  "stars": 0,
+  "summary": "Player stats, leaderboards and floating text leaderboards",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1790689480,
+  "versions": [
+    {
+      "changelog": "First release.\n\n- Stats: kills, deaths, K/D, mobs, blocks broken and placed, playtime, best kill streak, balance\n- `/stats` and a `/top` leaderboards menu with the top 10 and your rank\n- Floating text leaderboards with `/stats hologram <category>`\n- Balance from LlamaEconomy, EconomyAPI or FrenchEconomy\n\nTested on PowerNukkitX 3.0.5 (Minecraft Bedrock 1.26.50).",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "StatBoard.jar",
+          "primary": true,
+          "sha256": "903985cf043256499702245bb36754559fe3876244b0adef2a87c927e3f8d2d4",
+          "size": 15911,
+          "url": "https://github.com/DeepSlateDevStudio/statboard/releases/download/v1.0.0/StatBoard.jar"
+        }
+      ],
+      "name": "StatBoard 1.0.0",
+      "prerelease": false,
+      "published_at": 1790689480,
+      "version": "v1.0.0"
+    }
+  ]
+}
