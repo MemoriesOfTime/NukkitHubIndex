@@ -41,7 +41,7 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/wode490390/BetterVanillaGenerator",
-  "stars": 31,
+  "stars": 32,
   "summary": "Better vanilla generator plugin for Nukkit",
   "targets": [
     "nkx"

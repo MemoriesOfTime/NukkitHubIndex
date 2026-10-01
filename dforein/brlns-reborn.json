@@ -34,7 +34,7 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1790776123,
+  "updated_at": 1790877385,
   "versions": [
     {
       "changelog": "## What's Changed\r\n* Main development by @dforein in https://github.com/dforein/brlns-reborn/pull/55\r\nDeveloped new server structure\r\nApplied many bug fixes and refactoring\r\nMoved to gradle\r\nMoved to AGPL license\r\n\r\n\r\n**Full Changelog**: https://github.com/dforein/brlns-reborn/compare/1.2.1...2.0.0",

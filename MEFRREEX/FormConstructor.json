@@ -70,7 +70,7 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/MEFRREEX/FormConstructor",
-  "stars": 6,
+  "stars": 7,
   "summary": "Library for easy creating and handling of forms",
   "targets": [
     "nkx",
