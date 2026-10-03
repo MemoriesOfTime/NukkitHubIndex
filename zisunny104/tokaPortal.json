@@ -1,0 +1,49 @@
+{
+  "api_version": "1.0.11",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/18164643?v=4",
+      "name": "zisunny104",
+      "url": "https://github.com/zisunny104"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/78028736?v=4",
+      "name": "Ethan940114",
+      "url": "https://github.com/Ethan940114"
+    }
+  ],
+  "categories": [],
+  "created_at": 1622995830,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "zero",
+      "version_range": ""
+    }
+  ],
+  "description": "# tokaPortal\n\n**tokaPortal 2.1.0** 是 **Nukkit PetteriM1 Edition（PM1E）伺服器的傳送插件**，安裝於伺服器端，為伺服器內的玩家提供傳送功能。伺服器需要使用 **Java 21**。\n\n玩家可以向其他人提出傳送請求，透過 `/back` 和 `/next` 回到先前的位置；管理員也能傳送到指定世界。輸入 `/portal` 即可開啟傳送選單。\n\n搭配相容的 zero 插件，還能使用住家、領地、區域、商店與傳送點功能。沒有安裝 zero 時，基本傳送仍可使用，選單只會顯示可用項目。\n\n## 安裝\n\n目前已驗證的環境為 Java 21 與 [Nukkit PetteriM1 Edition 發行版 4511](https://github.com/PetteriM1/NukkitPetteriM1Edition/releases/tag/4511)。其他 Nukkit 分支尚未驗證。\n\n1. 停止伺服器，確認啟動伺服器的 Java 版本為 21。\n2. 將 `tokaPortal-2.1.0.jar` 放入伺服器的 `plugins/` 目錄。\n3. 需要住家或領地等功能時，一併安裝相容的 zero 插件。\n4. 啟動伺服器，確認 tokaPortal 已啟用，再於遊戲內輸入 `/portal`。\n\n更新既有安裝時，先備份 `plugins/tokaPortal/`，移除舊版 tokaPortal JAR，再放入新版本。請保留資料目錄與 `data.yml`；從 1.x 升級也使用相同步驟，並先確認 Java 與核心版本符合需求。\n\n## 使用方式\n\n所有指令都在遊戲內執行。下表中的 `<參數>` 為必填，`[參數]` 為選填。\n\n### 基本傳送\n\n這些功能不需要 zero。\n\n| 指令 | 用途 |\n| --- | --- |\n| `/portal` | 開啟傳送選單 |\n| `/tpa <玩家名稱>` | 向線上玩家提出傳送請求 |\n| `/tpw <世界名稱>` | 傳送至世界的安全出生點，僅限 OP；必要時嘗試載入世界 |\n| `/back` | 返回前一個傳送位置 |\n| `/next` | 前往下一個傳送位置 |\n| `/portal help` | 顯示傳送紀錄指令提示 |\n\n指令輸入介面會提示 `/tpw` 的世界名稱與 `/tpa` 的線上玩家名稱；世界清單包含已載入及 `worlds/` 內可辨識的世界，也可手動輸入名稱。玩家進出或世界載入、卸載時會更新提示。\n\n例如，輸入 `/tpa Steve` 後，對方會收到同意或拒絕的選單。一般玩家必須取得對方同意；未安裝 zero 時，OP 可直接傳送。若有相容的 zero 玩家權限功能，則依其權限規則處理。\n\n`/back` 與 `/next` 需要已有傳送紀錄。沒有可前往的位置，或紀錄中的世界尚未載入時，插件會顯示原因。\n\n### zero 整合功能\n\nzero 必須提供本專案使用的 `prj.toka.zero` 功能介面；同名插件不一定相容。\n\n| 指令 | 用途 | 所需 zero 功能 |\n| --- | --- | --- |\n| `/spawn` | 前往名稱為 `spawn` 的傳送點；須先建立該傳送點 | 傳送點 |\n| `/tpp [名稱]` | 前往指定傳送點；省略名稱時開啟傳送選單 | 傳送點 |\n| `/portal point set <名稱> [類型]` | 在目前位置建立傳送點，預設類型為 `point` | 傳送點與管理功能 |\n| `/portal point del <名稱>` | 刪除自己建立的傳送點；OP 可刪除其他人的傳送點 | 傳送點與管理功能 |\n| `/tpl [領地名稱]` | 前往指定領地；省略名稱時開啟領地選單 | 領地 |\n| `/home [操作] [名稱]` | 查看或管理住家，操作可用 `list`、`set`、`del`、`edit` | 玩家與區域 |\n| `/tph [住家名稱]` | 前往自己的住家；省略名稱時開啟住家列表 | 玩家與區域 |\n| `/wild` | 在 `ZiYuan` 世界隨機傳送，須符合冷卻條件 | 玩家冷卻功能 |\n\n傳送選單也可顯示 zero 提供的商店、區域與城市通入口。插件會分別檢查各項功能，缺少或不相容的項目會隱藏；直接執行相關指令時，會說明停用原因。zero 停用或功能呼叫失敗時，其他可用功能仍會繼續運作，既有住家資料也會保留。\n\n若 zero 在 `plugin.yml` 宣告的名稱不是 `zero`，請將其實際名稱加入 tokaPortal 的 `softdepend`，確保載入順序正確。\n\n`/home` 會提示 `list`、`set`、`del`、`edit`；`/tph` 與 `/home del` 只提示自己的住家。新增或刪除住家後會更新清單，`/home set` 的新名稱可自由輸入。提示的選取方式依 Bedrock 客戶端而定。\n\n### 使用限制\n\n住家指令僅限 OP 或 zero 最高權限玩家使用，只能管理及傳送至自己的住家，並須在允許的區域新增住家。住家更名與跨伺服器目的地管理尚未提供。\n\n目前沒有可供權限插件配置的獨立權限節點。住家允許區域與隨機傳送世界名稱等限制仍寫在原始碼中。\n\n## 資料與統計\n\n設定檔位於 `plugins/tokaPortal/config.yml`。住家資料預設使用 YAML；資料較多時可選擇 SQLite：\n\n```yaml\nstorage:\n  type: yaml # 可用 yaml 或 sqlite\n```\n\nYAML 儲存於 `data.yml`，SQLite 儲存於 `homes.db`。修改格式後重新啟動，插件會先備份現用資料，再轉換並核對內容。原始檔與 `.backup-*` 備份會保留；請保留 `storage-state.txt`，它記錄目前使用的格式。請勿在伺服器運行時編輯資料檔。\n\n兩種格式都保留座標精度與自訂欄位，目前未提供 JSON 儲存選項。SQLite 只寫入變更的紀錄，YAML 每次重新寫入整份資料；實際效能取決於住家數量與硬碟，少量資料通常差異不大。\n\n資料缺漏、格式錯誤或轉換失敗時，插件會停止啟動並留下錯誤訊息，避免覆寫原始資料。更新或搬移前請備份完整資料目錄；傳送點、領地與區域資料由 zero 管理，須另外備份。\n\n### bStats\n\nbStats 用於了解插件使用情況，收集版本、玩家數量、Java 與作業系統等統計資訊。\n\n內建統計元件為舊版移植程式，尚未確認資料能被服務正確接收，因此預設停用。`config.yml` 中的 `metrics.enabled: false` 可維持停用；不影響傳送功能，也不會修改其他插件共用的 bStats 設定。服務說明可參考 [bStats 官方文件](https://bstats.org/docs/troubleshooting)。\n\n## 開發與建置\n\n需要 JDK 21、Maven 3.9 與 PowerShell。在專案根目錄執行：\n\n```powershell\n.\\build.ps1\n```\n\n首次建置需連線下載依賴。若 JDK 或 Maven 安裝位置與腳本預設值不同，可透過 `-JdkHome` 與 `-Maven` 指定路徑。\n\n可部署的 JAR：`output/tokaPortal-2.1.0.jar`。建置腳本會執行測試；`output/` 與建置快取不納入 Git。\n\n## 驗證範圍與問題回報\n\n已完成 Java 21.0.11 與 PM1E 4511 的建置及隔離伺服器測試，涵蓋無 zero 時啟動、部分功能可用、功能呼叫失敗、住家資料儲存與重載，以及傳送事件取消。\n\n部分情境使用測試替身驗證，尚未搭配實際 zero 插件與遊戲客戶端完成端對端測試。\n\n回報問題時，請提供版本資訊、重現步驟與相關日誌；若有使用 zero，也請附上它的版本。分享資料檔前，請移除不希望公開的資訊。\n\n本次安全修正與檢核範圍見 [安全檢核](https://github.com/zisunny104/tokaPortal/blob/master/SECURITY_REVIEW.md)。\n\n## 授權\n\n本專案採用 [MIT License](https://github.com/zisunny104/tokaPortal/blob/master/LICENSE)，授權全文位於專案根目錄的 `LICENSE`。散布時須保留著作權與授權聲明。\n\n第三方元件的授權、來源查核範圍與 GPL 核心散布注意事項，請參閱 [第三方授權聲明](https://github.com/zisunny104/tokaPortal/blob/master/THIRD_PARTY_NOTICES.md)。JAR 亦附有相關授權文件。\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/18164643?v=4",
+  "id": "zisunny104/tokaPortal",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "tokaPortal",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/zisunny104/tokaPortal",
+  "stars": 0,
+  "summary": "[prjToka]傳送插件",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1791050385,
+  "versions": []
+}

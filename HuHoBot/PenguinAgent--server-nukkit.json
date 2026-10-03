@@ -43,8 +43,39 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1790778344,
+  "updated_at": 1791040037,
   "versions": [
+    {
+      "changelog": "## HuHoBot-Penguin_Spigot v1.15.1\n\n修复版本：QQ 指令面板同步 30019「面板版本冲突」。直接替换 `plugins/` 下的主插件 jar 重启即可。\n\n### 下载\n\n| 文件 | 用途 | 大小 |\n|---|---|---|\n| `HuHoBot-Penguin_Spigot-1.15.1.jar` | **主插件，必需**。放在 `plugins/` | 22.6 MB |\n| `HuHoBot-Engine-GraalJs-1.15.1.jar` | 可选。仅当你要写 `.js` 脚本时需要，放进 `plugins/HuHoBotPenguin/engines/` | 34.1 MB |\n| `HuHoBot-Engine-GraalPy-1.15.1.jar` | 可选。仅当你要写 `.py` 脚本时需要，放进 `plugins/HuHoBotPenguin/engines/` | 124.6 MB |\n\n只想用现成附属插件的话，**只下载主插件**即可，两个引擎包不必装。\n`.lua` 脚本不需要任何引擎——LuaJ 已经打进主 jar，不放引擎包插件照常启动，只是对应语言的脚本加载失败，其它语言不受影响。\n引擎包需与主插件**同一次构建**产出（文件名版本号要一致，对不上时启动会给出告警）。\n\n### 修复内容\n\n- **fix: QQ 指令面板同步报 30019「面板版本冲突」** —— 原位更新按官方文档补传 `panel.version`（详情接口顶层与 `panel` 内两个位置都读取）；冲突时重读一次版本再重试一次\n- **fix: 面板同步并发自撞与撞限频（40030009「面板操作进行中」）** —— 同步入口串行化，同一时刻只跑一次，期间的请求收敛为一次补跑；两次同步最小间隔 6 秒，对应官方写接口 10 QPM 限频\n- **improve:** 面板同步错误提示区分 30013 / 30019 / 40030009 并给出排查建议\n\n### 原因说明\n\n`PUT /v2/panels/{panel_id}` 属于乐观并发接口：请求体的 `panel.version` 必须等于服务端当前版本，否则返回 30019。旧实现从查询详情里取回了面板却丢掉了 `version`，只提交 `remark` + `items`，因此原位更新必然触发版本冲突；多个命令注册并发触发同步时还会互相覆盖，进一步触发 40030009。本版本在请求中带上版本号、冲突时重读重试，并对同步入口做串行化与节流。\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Engine-GraalJs-1.15.1.jar",
+          "primary": true,
+          "sha256": "bd0ac04090c5562c4049c43df80e4c77cea4534165e2f6dd053d2049858d3293",
+          "size": 35706110,
+          "url": "https://github.com/HuHoBot/PenguinAgent/releases/download/v1.15.1/HuHoBot-Engine-GraalJs-1.15.1.jar"
+        },
+        {
+          "filename": "HuHoBot-Engine-GraalPy-1.15.1.jar",
+          "primary": true,
+          "sha256": "e801d0cc718a2cb44d0819d53e05a057dc03e6fb1af59a7a84f938f567949220",
+          "size": 130672978,
+          "url": "https://github.com/HuHoBot/PenguinAgent/releases/download/v1.15.1/HuHoBot-Engine-GraalPy-1.15.1.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.15.1.jar",
+          "primary": true,
+          "sha256": "1e74bcef597d67b6a25c6494082dcd3f96df53acd31210df78cef1c5524e660d",
+          "size": 23732857,
+          "url": "https://github.com/HuHoBot/PenguinAgent/releases/download/v1.15.1/HuHoBot-Penguin_Spigot-1.15.1.jar"
+        }
+      ],
+      "name": "HuHoBot-Penguin_Spigot v1.15.1",
+      "prerelease": false,
+      "published_at": 1791020703,
+      "version": "v1.15.1"
+    },
     {
       "changelog": "## HuHoBot-Penguin_Spigot v1.15.0\n\n### 下载\n\n| 文件 | 用途 | 大小 |\n|---|---|---|\n| `HuHoBot-Penguin_Spigot-1.15.0.jar` | **主插件，必需**。放进 `plugins/` | 22.6 MB |\n| `HuHoBot-Engine-GraalJs-1.15.0.jar` | 可选。仅当你要写 `.js` 脚本时需要，放进 `plugins/HuHoBotPenguin/engines/` | 34.1 MB |\n| `HuHoBot-Engine-GraalPy-1.15.0.jar` | 可选。仅当你要写 `.py` 脚本时需要，放进 `plugins/HuHoBotPenguin/engines/` | 124.6 MB |\n\n只想用现成附属插件的话，**只下载主插件**即可，两个引擎包不必装。\n\n`.lua` 脚本不需要任何引擎——LuaJ 已经打进主 jar。**不放引擎包插件照常启动**，只是对应语言的脚本加载失败，其它语言不受影响。\n\n引擎包需与主插件**同一次构建**产出（文件名版本号要一致，对不上时启动会给出告警）。\n\n### 脚本扩展系统（新增，仅 Spigot / Paper）\n\n不用编译就能扩展插件，用 **JavaScript / Lua / Python** 写脚本即可。\n\n**目录式脚本插件**——`plugins/HuHoBotPenguin/addons/<名字>/` 下放一个目录就是一个插件：\n\n```\nplugins/HuHoBotPenguin/addons/hello/\n├── metadata.yaml          name / version / author / description / entry\n├── _conf_schema.json      配置声明（可选），默认值写回 addons/config/hello.json\n├── requirements.txt       Python 依赖声明（可选，仅预检提示）\n└── main.js                或 main.lua / main.py\n```\n\n根目录上直接放 `.js` / `.lua` / `.py` **不再加载**（会有一条提示告诉你挪到哪）。\n\n**`Bird` 桥**——三种语言注入同一组对象，能力完全对等：\n\n| 能力 | 说明 |\n|------|------|\n| `Bird.onEvent` | 监听任意 Bukkit 事件，可指定优先级 |\n| `Bird.onCommand` | 注册游戏内命令，**不需要改 `plugin.yml`**，支持 Tab 补全 |\n| `Bird.runTask*` | 同步 / 异步定时任务，重载时自动取消 |\n| `Bird.fetch` | 异步 HTTP，回调切回主线程 |\n| `Bird.on` / `Bird.emit` | 跨脚本事件总线 |\n| `Bird.registerBotCommand` | 往 QQ 群里加自定义命令 |\n| `config` / `kv` / `setData` | 用户可改配置、键值存储、脚本私有持久化 |\n| 玩家 / 世界 / 方块 / 物品 / 音效 / 粒子 | 常用 Bukkit 操作的封装 |\n\n**引擎按需安装**：\n\n| 入口 | 引擎 | 放在哪 | 体积 |\n|------|------|--------|------|\n| `main.lua` | LuaJ 3.0.1 | 已在主 jar 内 | — |\n| `main.js` | GraalJS 24.1.2 | `plugins/HuHoBotPenguin/engines/HuHoBot-Engine-GraalJs-<版本>.jar` | 约 34 MB |\n| `main.py` | GraalPy 24.1.2（Python 3） | `plugins/HuHoBotPenguin/engines/HuHoBot-Engine-GraalPy-<版本>.jar` | 约 125 MB |\n\n### 重载\n\n```\n/huhobot scripts reload              卸载全部再加载全部\n/huhobot scripts reload hello        只重载 addons/hello/，目录名大小写不敏感\n```\n\n重载和**加载失败**都会撤销该脚本登记的全部内容——Bukkit 事件、动态命令、定时任务、QQ 群命令、addon 元数据，不会留下幽灵条目。`_enabled: false` 记为「跳过」而不是「失败」。\n\n### 兼容性\n\n- **仅 Spigot / Paper 平台**（其它平台未适配）\n- 主插件保持 **Java 8 字节码**，可运行在 **1.16.5 及以上**服务端\n- 引擎包由 Java 17 构建，但只是被加载的库，不影响服务端自身的 Java 要求\n\n### 三语言写法差异\n\n同一种返回值，三种语言拿到的形态不同，这是最容易踩的地方：\n\n|  | 命令参数 | 列表 | 字典 |\n|---|---|---|---|\n| JavaScript | `args[0]` | `.length`、`arr[0]` | `obj.key` |\n| Lua | `args[1]` | `#t`、`t[1]`、`ipairs(t)` | `t.key`、`pairs(t)` |\n| Python | `args[0]` | `len(x)`、`for v in x` | `x[\"key\"]` |\n\n**Lua 侧是 1 起**。LuaJ 会把 Java 的 `List` / `Map` 变成 userdata，在 Lua 里既不能取长度也不能 `pairs`，所以插件的 Lua 绑定层会把容器返回值转成真正的 table。另外 Lua 调用 `Bird` 的方法**必须用冒号**（`Bird:broadcast(...)`），点号会丢掉 `self` 导致参数错位。\n\n`Bird.tell` 支持玩家、任意 `CommandSender` 和玩家名三种重载，所以从控制台执行脚本命令也能正常回应；`giveItem` / `sendActionBar` 这些只接受 `Player`，从控制台调用前先 `Bird.getPlayer(...)` 并判空。\n\n### 已知边界\n\n- `Bird.fetch` 走 JVM 默认信任库。目标站点证书链不被信任时会失败（例如本机装了流量代理时 GitHub 会被拦截），需要访问这类站点时把根证书导入服务端 JVM 的 `cacerts`。\n- Python 的 `requirements.txt` 只做 `import` 预检并打警告，**不会自动安装**任何第三方库。\n- `.py` 首次加载需要解压 GraalPy 标准库，约 10 秒，之后有缓存会快很多。\n- 脚本回调在主线程执行，回调里不要做长时间阻塞操作。\n\n### 文档\n\n完整说明见仓库 [`docs/spigot-script-addons.md`](https://github.com/HuHoBot/PenguinAgent/blob/master/docs/spigot-script-addons.md)，含全部 `Bird` API 清单、三语言完整示例和常见报错速查。\n\n### 致谢\n\n脚本扩展系统（`Bird` 桥与脚本加载、生命周期设计）借鉴并移植自 [birdlibraryapi](https://github.com/prach1121/birdlibraryapi)（Apache-2.0，原作者 prach1121），并按 Spigot 1.16+ 与 HuHoBot 附属插件注册做了适配。\n",
       "downloads": 0,

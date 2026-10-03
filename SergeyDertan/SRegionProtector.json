@@ -65,7 +65,7 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/SergeyDertan/SRegionProtector",
-  "stars": 17,
+  "stars": 15,
   "summary": "Flexible region protection plugin for nukkit",
   "targets": [
     "nkx",

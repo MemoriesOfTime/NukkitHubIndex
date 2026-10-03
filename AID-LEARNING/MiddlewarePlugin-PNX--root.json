@@ -27,7 +27,7 @@
   "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/AID-LEARNING/MiddlewarePlugin-PNX",
-  "stars": 0,
+  "stars": 1,
   "summary": "Async Middleware system for PowerNukkitX",
   "targets": [
     "pnx"

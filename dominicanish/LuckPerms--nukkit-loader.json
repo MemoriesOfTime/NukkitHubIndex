@@ -32,14 +32,19 @@
       "url": "https://github.com/EuropeJing"
     },
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/133561392?v=4",
+      "name": "dominicanish",
+      "url": "https://github.com/dominicanish"
+    },
+    {
       "avatar_url": "https://avatars.githubusercontent.com/u/2998171?v=4",
       "name": "bloodmc",
       "url": "https://github.com/bloodmc"
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/11576465?v=4",
-      "name": "Andre601",
-      "url": "https://github.com/Andre601"
+      "avatar_url": "https://avatars.githubusercontent.com/u/1076914?v=4",
+      "name": "electron93",
+      "url": "https://github.com/electron93"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/26658563?v=4",
@@ -47,9 +52,9 @@
       "url": "https://github.com/PixelmonPRO"
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/1076914?v=4",
-      "name": "electron93",
-      "url": "https://github.com/electron93"
+      "avatar_url": "https://avatars.githubusercontent.com/u/11576465?v=4",
+      "name": "Andre601",
+      "url": "https://github.com/Andre601"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/6516698?v=4",
@@ -80,11 +85,6 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/30863452?v=4",
       "name": "MrMicky-FR",
       "url": "https://github.com/MrMicky-FR"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/133561392?v=4",
-      "name": "dominicanish",
-      "url": "https://github.com/dominicanish"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/58414982?v=4",
@@ -492,6 +492,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1790854770,
+  "updated_at": 1790953296,
   "versions": []
 }
