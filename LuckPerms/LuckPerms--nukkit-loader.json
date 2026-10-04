@@ -77,24 +77,9 @@
       "url": "https://github.com/tadhgboyle"
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/30863452?v=4",
-      "name": "MrMicky-FR",
-      "url": "https://github.com/MrMicky-FR"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/58414982?v=4",
-      "name": "Laarryy",
-      "url": "https://github.com/Laarryy"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/11360596?v=4",
-      "name": "jpenilla",
-      "url": "https://github.com/jpenilla"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/21029868?v=4",
-      "name": "IzzelAliz",
-      "url": "https://github.com/IzzelAliz"
+      "avatar_url": "https://avatars.githubusercontent.com/u/10443061?v=4",
+      "name": "LXGaming",
+      "url": "https://github.com/LXGaming"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/25344713?v=4",
@@ -102,9 +87,24 @@
       "url": "https://github.com/BomBardyGamer"
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/10443061?v=4",
-      "name": "LXGaming",
-      "url": "https://github.com/LXGaming"
+      "avatar_url": "https://avatars.githubusercontent.com/u/21029868?v=4",
+      "name": "IzzelAliz",
+      "url": "https://github.com/IzzelAliz"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/30863452?v=4",
+      "name": "MrMicky-FR",
+      "url": "https://github.com/MrMicky-FR"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/11360596?v=4",
+      "name": "jpenilla",
+      "url": "https://github.com/jpenilla"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/58414982?v=4",
+      "name": "Laarryy",
+      "url": "https://github.com/Laarryy"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/20979389?v=4",
@@ -130,6 +130,11 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/10846855?v=4",
       "name": "Turbotailz",
       "url": "https://github.com/Turbotailz"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/37129600?v=4",
+      "name": "rishabhvenu",
+      "url": "https://github.com/rishabhvenu"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/31587616?v=4",
@@ -185,11 +190,6 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/12042006?v=4",
       "name": "masonakdev",
       "url": "https://github.com/masonakdev"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/12481684?v=4",
-      "name": "EduardWayland",
-      "url": "https://github.com/EduardWayland"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/11415969?v=4",
@@ -280,6 +280,11 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/55677189?v=4",
       "name": "underscore11code",
       "url": "https://github.com/underscore11code"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/12481684?v=4",
+      "name": "EduardWayland",
+      "url": "https://github.com/EduardWayland"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/43303963?v=4",
@@ -483,12 +488,12 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/LuckPerms/LuckPerms",
-  "stars": 2322,
+  "stars": 2324,
   "summary": "A permissions plugin",
   "targets": [
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1789802630,
+  "updated_at": 1791129095,
   "versions": []
 }
