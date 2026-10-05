@@ -24,6 +24,7 @@
   "links": null,
   "manifest_path": "sourcecode_public/TreasureHunt/src/main/resources/plugin.yml",
   "name": "TreasureHunt",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/glorydark/PluginsForNukkit",

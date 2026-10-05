@@ -24,6 +24,7 @@
   "links": null,
   "manifest_path": "src/main/resources/nukkit.yml",
   "name": "UrbanBuilder",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/haniokasai/WebBrowser",

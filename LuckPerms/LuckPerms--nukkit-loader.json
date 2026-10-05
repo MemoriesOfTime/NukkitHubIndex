@@ -485,10 +485,11 @@
   },
   "manifest_path": "nukkit/loader/src/main/resources/plugin.yml",
   "name": "LuckPerms",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/LuckPerms/LuckPerms",
-  "stars": 2324,
+  "stars": 2326,
   "summary": "A permissions plugin",
   "targets": [
     "nkx",

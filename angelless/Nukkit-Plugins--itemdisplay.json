@@ -34,6 +34,7 @@
   },
   "manifest_path": "ItemDisplay/src/main/resources/plugin.yml",
   "name": "ItemDisplay",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/angelless/Nukkit-Plugins",

@@ -24,6 +24,7 @@
   "links": null,
   "manifest_path": "sourcecode_public/DBanCommand/src/main/resources/plugin.yml",
   "name": "DBanCommand",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/glorydark/PluginsForNukkit",

@@ -30,6 +30,7 @@
   "links": null,
   "manifest_path": "Nukkit/src/main/resources/plugin.yml",
   "name": "TabletopGames",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/squeeglii/TabletopGamesPlugin",

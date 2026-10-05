@@ -35,6 +35,7 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "FormDSL",
+  "pending": true,
   "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/k7Xm9pQr/FormDSL",

@@ -30,6 +30,7 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "BorderSystem",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/tim03we/BorderSystem-FuturePlots",

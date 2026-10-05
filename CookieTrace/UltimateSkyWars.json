@@ -39,6 +39,7 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "UltimateSkyWars",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/CookieTrace/UltimateSkyWars",

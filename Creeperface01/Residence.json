@@ -164,6 +164,7 @@
   },
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "Residence",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/Creeperface01/Residence",

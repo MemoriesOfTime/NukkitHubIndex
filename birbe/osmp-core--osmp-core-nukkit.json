@@ -24,6 +24,7 @@
   "links": null,
   "manifest_path": "osmp-core-nukkit/src/main/resources/plugin.yml",
   "name": "OSMP-Core",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/birbe/osmp-core",

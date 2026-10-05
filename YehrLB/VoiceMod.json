@@ -24,6 +24,7 @@
   "links": null,
   "manifest_path": "VoiceMod/src/main/resources/plugin.yml",
   "name": "VoiceMod",
+  "pending": true,
   "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/YehrLB/VoiceMod",

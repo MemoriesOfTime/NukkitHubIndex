@@ -24,6 +24,7 @@
   "links": null,
   "manifest_path": "src/main/resources/archetype-resources/src/main/resources/plugin.yml",
   "name": "nukkit-archetype",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/CloudburstMC/nukkit-archetype",

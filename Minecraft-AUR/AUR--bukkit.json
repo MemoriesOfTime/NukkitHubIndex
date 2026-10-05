@@ -33,6 +33,7 @@
   "links": null,
   "manifest_path": "bukkit/src/main/resources/plugin.yml",
   "name": "AUR",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/Minecraft-AUR/AUR",

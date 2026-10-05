@@ -28,6 +28,7 @@
   },
   "manifest_path": "MCpolice/src/main/resources/plugin.yml",
   "name": "MCpolice",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/AniMaru/nukkit_plugins",

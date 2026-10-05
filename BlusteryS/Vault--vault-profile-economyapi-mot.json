@@ -24,6 +24,7 @@
   "links": null,
   "manifest_path": "vault-profile-economyapi-mot/src/main/resources/plugin.yml",
   "name": "EconomyAPI",
+  "pending": true,
   "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/BlusteryS/Vault",

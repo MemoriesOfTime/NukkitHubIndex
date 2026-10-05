@@ -30,6 +30,7 @@
   "links": null,
   "manifest_path": "sourcecode_public/DRecknessHero_old/src/main/resources/plugin.yml",
   "name": "DRecknessHero",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/glorydark/PluginsForNukkit",

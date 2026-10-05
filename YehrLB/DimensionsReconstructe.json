@@ -24,6 +24,7 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "EndFix",
+  "pending": true,
   "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/YehrLB/DimensionsReconstructe",

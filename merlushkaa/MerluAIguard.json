@@ -28,6 +28,7 @@
   "links": null,
   "manifest_path": "plugin/src/main/resources/plugin.yml",
   "name": "MerluAIguard",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/merlushkaa/MerluAIguard",

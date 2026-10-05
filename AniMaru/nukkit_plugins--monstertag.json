@@ -28,6 +28,7 @@
   },
   "manifest_path": "MonsterTag/src/main/resources/plugin.yml",
   "name": "MonsterTag",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/AniMaru/nukkit_plugins",

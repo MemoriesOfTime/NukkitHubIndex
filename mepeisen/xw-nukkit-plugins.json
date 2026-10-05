@@ -28,6 +28,7 @@
   },
   "manifest_path": "xw-nukkit-web/src/main/resources/plugin.yml",
   "name": "xw-web",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/mepeisen/xw-nukkit-plugins",

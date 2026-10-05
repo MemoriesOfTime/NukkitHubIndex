@@ -24,6 +24,7 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "ExplosiveArrows",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/PetteriM1/ExplosiveArrows",

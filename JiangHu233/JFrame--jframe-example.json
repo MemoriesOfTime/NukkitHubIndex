@@ -30,6 +30,7 @@
   "links": null,
   "manifest_path": "jframe_example/src/main/resources/plugin.yml",
   "name": "JFrameExample",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/JiangHu233/JFrame",

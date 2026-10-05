@@ -35,6 +35,7 @@
   "links": null,
   "manifest_path": "sourcecode_public/DSheepWar_old/src/main/resources/plugin.yml",
   "name": "DSheepWar",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/glorydark/PluginsForNukkit",

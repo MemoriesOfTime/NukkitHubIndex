@@ -24,6 +24,7 @@
   "links": null,
   "manifest_path": "jframe_main/src/main/resources/plugin.yml",
   "name": "JFrame",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/JiangHu233/JFrame",

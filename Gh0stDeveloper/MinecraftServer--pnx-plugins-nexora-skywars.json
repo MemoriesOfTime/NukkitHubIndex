@@ -31,6 +31,7 @@
   "links": null,
   "manifest_path": "pnx-plugins/nexora-skywars/src/main/resources/plugin.yml",
   "name": "NexoraSkyWars",
+  "pending": true,
   "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/Gh0stDeveloper/MinecraftServer",

@@ -31,6 +31,7 @@
   "links": null,
   "manifest_path": "SampleTask/src/main/resources/plugin.yml",
   "name": "SampleTask",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/Ogiwara-CostlierRain464/NukkitArchitectureRFC",

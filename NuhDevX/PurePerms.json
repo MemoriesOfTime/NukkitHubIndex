@@ -28,6 +28,7 @@
   },
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "PurePerms-PNX",
+  "pending": true,
   "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/NuhDevX/PurePerms",

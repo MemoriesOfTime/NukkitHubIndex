@@ -26,6 +26,7 @@
   "links": null,
   "manifest_path": "PSMPlugin/src/main/resources/plugin.yml",
   "name": "PSMPlugin",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/moca128/Nukkit-Plugin-Chest",

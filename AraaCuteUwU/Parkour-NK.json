@@ -24,6 +24,7 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "Parkour-NK",
+  "pending": true,
   "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/AraaCuteUwU/Parkour-NK",

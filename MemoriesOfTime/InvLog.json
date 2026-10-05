@@ -39,6 +39,7 @@
   },
   "manifest_path": "src/main/resources/nukkit.yml",
   "name": "InvLog",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/MemoriesOfTime/InvLog",

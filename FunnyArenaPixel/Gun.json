@@ -35,6 +35,7 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "Gun",
+  "pending": true,
   "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/FunnyArenaPixel/Gun",

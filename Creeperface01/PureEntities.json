@@ -38,6 +38,7 @@
   },
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "PureEntities",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/Creeperface01/PureEntities",

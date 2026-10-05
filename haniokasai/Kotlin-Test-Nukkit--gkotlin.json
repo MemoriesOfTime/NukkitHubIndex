@@ -24,6 +24,7 @@
   "links": null,
   "manifest_path": "gkotlin/src/main/resources/plugin.yml",
   "name": "TutorialPlugin",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/haniokasai/Kotlin-Test-Nukkit",

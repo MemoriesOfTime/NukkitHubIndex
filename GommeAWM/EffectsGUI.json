@@ -24,6 +24,7 @@
   "links": null,
   "manifest_path": "EffectGUI/src/main/resources/plugin.yml",
   "name": "EffectsGUI",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/GommeAWM/EffectsGUI",

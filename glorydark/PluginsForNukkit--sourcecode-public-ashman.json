@@ -24,6 +24,7 @@
   "links": null,
   "manifest_path": "sourcecode_public/AshMan/src/main/resources/plugin.yml",
   "name": "AshMan",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/glorydark/PluginsForNukkit",

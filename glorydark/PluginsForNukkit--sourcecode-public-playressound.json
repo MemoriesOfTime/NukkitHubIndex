@@ -24,6 +24,7 @@
   "links": null,
   "manifest_path": "sourcecode_public/PlayResSound/src/main/resources/plugin.yml",
   "name": "PlayResSound",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/glorydark/PluginsForNukkit",

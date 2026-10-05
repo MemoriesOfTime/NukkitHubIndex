@@ -29,6 +29,7 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "2b2tpeCore",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/QubeMC/2b2t-core-released",

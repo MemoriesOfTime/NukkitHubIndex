@@ -39,6 +39,7 @@
   },
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "OSMPCore",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/funniray/OSMPCore",

@@ -24,6 +24,7 @@
   "links": null,
   "manifest_path": "vault-profile-playerpoints/src/main/resources/plugin.yml",
   "name": "playerPoints",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/BlusteryS/Vault",

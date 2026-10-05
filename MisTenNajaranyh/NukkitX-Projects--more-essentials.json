@@ -28,6 +28,7 @@
   },
   "manifest_path": "More-Essentials/src/main/resources/plugin.yml",
   "name": "More-Essentials",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/MisTenNajaranyh/NukkitX-Projects",

@@ -24,6 +24,7 @@
   "links": null,
   "manifest_path": "BowTeleport/src/main/resources/plugin.yml",
   "name": "BowTeleport",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/GommeAWM/BowTeleport",

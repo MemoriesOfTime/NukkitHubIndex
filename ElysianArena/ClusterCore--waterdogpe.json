@@ -24,6 +24,7 @@
   "links": null,
   "manifest_path": "waterdogpe/src/main/resources/plugin.yml",
   "name": "ClusterCore",
+  "pending": true,
   "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/ElysianArena/ClusterCore",

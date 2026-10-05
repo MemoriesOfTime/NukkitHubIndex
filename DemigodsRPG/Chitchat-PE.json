@@ -29,6 +29,7 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "Chitchat-PE",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/DemigodsRPG/Chitchat-PE",

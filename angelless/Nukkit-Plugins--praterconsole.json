@@ -28,6 +28,7 @@
   },
   "manifest_path": "PraterConsole/src/main/resources/plugin.yml",
   "name": "PraterConsole",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/angelless/Nukkit-Plugins",

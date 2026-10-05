@@ -33,6 +33,7 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "SimpleHome",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/maj27012005/SimpleHome",
@@ -42,6 +43,6 @@
     "nkx",
     "pnx"
   ],
-  "updated_at": 1791011480,
+  "updated_at": 1791214789,
   "versions": []
 }

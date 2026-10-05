@@ -24,6 +24,7 @@
   "links": null,
   "manifest_path": "vault-profile-coins/src/main/resources/plugin.yml",
   "name": "Coins",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/BlusteryS/Vault",

@@ -24,6 +24,7 @@
   "links": null,
   "manifest_path": "CustomDrop/src/main/resources/plugin.yml",
   "name": "CustomDrop",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/GommeAWM/TimerClearDrop",

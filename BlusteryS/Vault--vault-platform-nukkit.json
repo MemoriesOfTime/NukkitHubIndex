@@ -49,6 +49,7 @@
   },
   "manifest_path": "vault-platform-nukkit/src/main/resources/plugin.yml",
   "name": "Vault",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/BlusteryS/Vault",

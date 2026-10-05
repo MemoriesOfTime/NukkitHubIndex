@@ -24,6 +24,7 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "AntiCaps",
+  "pending": true,
   "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/mefrreexarchive/AntiCaps",

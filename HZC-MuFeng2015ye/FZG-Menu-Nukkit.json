@@ -30,6 +30,7 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "FZG_Menu-Nukkit",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/HZC-MuFeng2015ye/FZG-Menu-Nukkit",

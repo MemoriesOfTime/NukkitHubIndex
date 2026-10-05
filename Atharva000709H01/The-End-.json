@@ -34,6 +34,7 @@
   },
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "TheEnd",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/Atharva000709H01/The-End-",

@@ -29,6 +29,7 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "LuckChat",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/ZenSirzechs/LuckChat-NK",

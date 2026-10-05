@@ -24,6 +24,7 @@
   "links": null,
   "manifest_path": "nukkit/src/main/resources/plugin.yml",
   "name": "ClearLag",
+  "pending": true,
   "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/YehrLB/EntityClear",

@@ -28,6 +28,7 @@
   },
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "HotCompile",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/MagicLu550/PluginHotCompile",
