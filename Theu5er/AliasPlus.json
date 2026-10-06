@@ -1,0 +1,56 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/305477005?v=4",
+      "name": "Theu5er",
+      "url": "https://github.com/Theu5er"
+    }
+  ],
+  "categories": [],
+  "created_at": 1791132147,
+  "dependencies": [],
+  "description": "# Alias+\n\nA Minecraft Bedrock Edition alt-account detection plugin built on the Nukkit-MOT core.  \n\n**Advantages:**\n\nUnlike other anti-alt plugins on the market, we not only support basic checks like DID, SSID, and CID, but also have developed detection based on resource pack cache and BlobCache—less common methods designed specifically to catch spoofers.\n\n**Usage:**\n\nEnable force-resources in the server.properties file.\n/alias <name/uuid/xuid>\n\nExample output:\n\n```\nplayer's accounts (uuid: b1033201-7292-3cac-9bf0-2059ac139adc)--\nDeviceId: player1\nSelfSignedId: player1\nClientRandomId: player1\nResPackCache: player1\nBlobCache: player1\n```\n\n**Notes:**\n\nThis project was originally intended as a technical demonstration. It has not undergone comprehensive or rigorous testing and may contain bugs—please do not use it on a production server.\n\nThe ResPackCache output can potentially be spoofed, but when necessary, you can simply ban all accounts returned, since they can only be alt accounts or cheaters.\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/305477005?v=4",
+  "id": "Theu5er/AliasPlus",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Alias+",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Theu5er/AliasPlus",
+  "stars": 1,
+  "summary": "Advanced Alt Detection Plugin",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1791297123,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Alias+.jar",
+          "primary": true,
+          "sha256": "d1cb17ea62e4e5232a0ca1a9e949ef4dbdf33f001d58a2f5fb9c68eadcbcd4f1",
+          "size": 36469,
+          "url": "https://github.com/Theu5er/AliasPlus/releases/download/v1.0.0/Alias%2B.jar"
+        }
+      ],
+      "name": "v1.0.0",
+      "prerelease": false,
+      "published_at": 1791280160,
+      "version": "v1.0.0"
+    }
+  ]
+}
