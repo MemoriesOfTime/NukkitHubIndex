@@ -10,7 +10,7 @@
   "categories": [],
   "created_at": 1791132147,
   "dependencies": [],
-  "description": "# Alias+\n\nA Minecraft Bedrock Edition alt-account detection plugin built on the Nukkit-MOT core.  \n\n**Advantages:**\n\nUnlike other anti-alt plugins on the market, we not only support basic checks like DID, SSID, and CID, but also have developed detection based on resource pack cache and BlobCache—less common methods designed specifically to catch spoofers.\n\n**Usage:**\n\nEnable force-resources in the server.properties file.\n/alias <name/uuid/xuid>\n\nExample output:\n\n```\nplayer's accounts (uuid: b1033201-7292-3cac-9bf0-2059ac139adc)--\nDeviceId: player1\nSelfSignedId: player1\nClientRandomId: player1\nResPackCache: player1\nBlobCache: player1\n```\n\n**Notes:**\n\nThis project was originally intended as a technical demonstration. It has not undergone comprehensive or rigorous testing and may contain bugs—please do not use it on a production server.\n\nThe ResPackCache output can potentially be spoofed, but when necessary, you can simply ban all accounts returned, since they can only be alt accounts or cheaters.\n",
+  "description": "# Alias+\n\nA Minecraft Bedrock Edition alt-account detection plugin built on the Nukkit-MOT core.\n\n**Advantages:**\n\nUnlike other anti-alt plugins on the market, we not only support basic checks like DID, SSID, and CID, but also have developed detection based on resource pack cache and BlobCache—less common methods designed specifically to catch spoofers. We also provide a query and punishment API, with support for delayed punishments.\n\n**Usage:**\n\nEnable `force-resources` in the `server.properties` file.\n\n```\n/alias <name/uuid/xuid>\n```\n\nExample output:\n\n```\nplayer's accounts (uuid: b1033201-7292-3cac-9bf0-2059ac139adc)--\nDeviceId: player1\nSelfSignedId: player1\nClientRandomId: player1\nResPackCache: player1\nBlobCache: player1\n```\n\n**Notes:**\n\nThis project was originally intended as a technical demonstration. It has not undergone comprehensive or rigorous testing and may contain bugs—please do not use it on a production server.\n\nThe ResPackCache output can potentially be spoofed, but when necessary, you can simply ban all accounts returned, since they can only be alt accounts or cheaters.\n\n## Developer API\n\n### Setup\n\nAdd `depend: [Alias+]` to your plugin's `plugin.yml`, then get the instance:\n\n```java\nAltDetector alias = (AltDetector) getServer().getPluginManager().getPlugin(\"Alias+\");\n```\n\n### Punish API\n\n```java\nint count = alias.punish(uuid, delayed);\n```\n\n- `uuid`: player uuid string (`player.getUniqueId().toString()`)\n- `delayed`: `true` for delayed ban / `false` for immediate ban\n- Returns: number of accounts queued (the target itself + all related alt accounts, deduplicated)\n- Punishment command and delay range are configured in `config.yml`: `punish-command` (placeholders `%player%`, `%uuid%`), `punish-delay-min`, `punish-delay-max` (seconds)\n\n### Query API\n\n```java\nSet<String> alts = alias.getRelatedAccounts(uuid);                  // all related alt uuids\nMap<String, Set<String>> byDim = alias.getRelatedByDimension(uuid); // by dimension (device/selfSigned/clientRandom/pack/blob)\n```",
   "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
@@ -33,8 +33,25 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1791297123,
+  "updated_at": 1791376131,
   "versions": [
+    {
+      "changelog": "v1.0.1\r\n\r\n[+] Added query and punishment API for alt accounts; see README for details\r\n[-] Removed the success message for BlobCache queries\r\n[*] Only players with the altdetector.alias permission can use /alias now",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Alias+.jar",
+          "primary": true,
+          "sha256": "7433255e69e8ed730a45fd4681f5dd4eae4fdf1753f7ffc1916fea4ea6a7a091",
+          "size": 48547,
+          "url": "https://github.com/Theu5er/AliasPlus/releases/download/v1.0.1/Alias%2B.jar"
+        }
+      ],
+      "name": "v1.0.1",
+      "prerelease": false,
+      "published_at": 1791376131,
+      "version": "v1.0.1"
+    },
     {
       "changelog": "",
       "downloads": 0,

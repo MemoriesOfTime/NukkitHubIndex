@@ -57,9 +57,9 @@
       "url": "https://github.com/rymiel"
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/31071265?v=4",
-      "name": "FluxCapacitor2",
-      "url": "https://github.com/FluxCapacitor2"
+      "avatar_url": "https://avatars.githubusercontent.com/u/19390615?v=4",
+      "name": "jvdoorn",
+      "url": "https://github.com/jvdoorn"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/40425798?v=4",
@@ -67,29 +67,14 @@
       "url": "https://github.com/yukieiji"
     },
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/31071265?v=4",
+      "name": "FluxCapacitor2",
+      "url": "https://github.com/FluxCapacitor2"
+    },
+    {
       "avatar_url": "https://avatars.githubusercontent.com/u/22878739?v=4",
       "name": "DrexHD",
       "url": "https://github.com/DrexHD"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/19390615?v=4",
-      "name": "jvdoorn",
-      "url": "https://github.com/jvdoorn"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/3696988?v=4",
-      "name": "Shadowhackercz",
-      "url": "https://github.com/Shadowhackercz"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/6323125?v=4",
-      "name": "hafarooki",
-      "url": "https://github.com/hafarooki"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/60987685?v=4",
-      "name": "saph1s",
-      "url": "https://github.com/saph1s"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/15361899?v=4",
@@ -97,14 +82,29 @@
       "url": "https://github.com/enterih"
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/30070303?v=4",
-      "name": "Karlatemp",
-      "url": "https://github.com/Karlatemp"
+      "avatar_url": "https://avatars.githubusercontent.com/u/60987685?v=4",
+      "name": "saph1s",
+      "url": "https://github.com/saph1s"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/6323125?v=4",
+      "name": "hafarooki",
+      "url": "https://github.com/hafarooki"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/3696988?v=4",
+      "name": "Shadowhackercz",
+      "url": "https://github.com/Shadowhackercz"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/26180623?v=4",
       "name": "hallo1142",
       "url": "https://github.com/hallo1142"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/30070303?v=4",
+      "name": "Karlatemp",
+      "url": "https://github.com/Karlatemp"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/7571437?v=4",
@@ -122,6 +122,11 @@
       "url": "https://github.com/Zoriot"
     },
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/123275998?v=4",
+      "name": "RomainCabaret",
+      "url": "https://github.com/RomainCabaret"
+    },
+    {
       "avatar_url": "https://avatars.githubusercontent.com/u/47119570?v=4",
       "name": "QuakyCZ",
       "url": "https://github.com/QuakyCZ"
@@ -130,11 +135,6 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/68118654?v=4",
       "name": "PerchunPak",
       "url": "https://github.com/PerchunPak"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/20236173?v=4",
-      "name": "inductor",
-      "url": "https://github.com/inductor"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/3718398?v=4",
@@ -147,19 +147,24 @@
       "url": "https://github.com/Creeperface01"
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/6012891?v=4",
-      "name": "HexedHero",
-      "url": "https://github.com/HexedHero"
-    },
-    {
       "avatar_url": "https://avatars.githubusercontent.com/u/13738234?v=4",
       "name": "Eyremba",
       "url": "https://github.com/Eyremba"
     },
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/20236173?v=4",
+      "name": "inductor",
+      "url": "https://github.com/inductor"
+    },
+    {
       "avatar_url": "https://avatars.githubusercontent.com/u/12835420?v=4",
       "name": "portlek",
       "url": "https://github.com/portlek"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/6012891?v=4",
+      "name": "HexedHero",
+      "url": "https://github.com/HexedHero"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/59678453?v=4",
@@ -170,11 +175,6 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/4625696?v=4",
       "name": "RoboMWM",
       "url": "https://github.com/RoboMWM"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/123275998?v=4",
-      "name": "RomainCabaret",
-      "url": "https://github.com/RomainCabaret"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/3246162?v=4",
@@ -619,7 +619,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1791280787,
+  "updated_at": 1791389425,
   "versions": [
     {
       "changelog": "# 5.8 build 3638\r\n\r\nThis update brings some improvements and bugfixes. **Next update 5.9 will require Java 17 or newer** so this is released before that to get those unable to update as many fixes as possible. bStats is showing Java versions <17 at 0.6% or 35/5300 so consider updating your Java version if you're able.\r\n\r\nSpecial thanks to **Zoriot** and **Minecraft0122** for contributions to this update.\r\n\r\n# Change log\r\n\r\n## Database\r\n\r\n- Possibly fixed deadlock related to RemoveDuplicateUserInfoTransaction\r\n\r\n## Webserver\r\n\r\n- Fixed minor vulnerability where path traversal bypass allowed anyone to read .json files on the system with a tab \\t or newline \\n character in the file path. This is minor because filesystems often block using those characters in filenames, they are not common with .json files, and attacker would need to know the relative path to the file.\r\n\r\n## Extensions\r\n\r\n- Extension metadata is now cached in memory to avoid redundant database updates. Thanks to Minecraft0122 for work on this.\r\n- Fixed LuckPerms related exception after Plan was reloaded\r\n\r\n## Other\r\n\r\n- Zoriot added fabric-permissions-api as an optional dependency to fabric publish ",
