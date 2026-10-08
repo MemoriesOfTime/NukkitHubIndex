@@ -94,22 +94,6 @@
       "prerelease": false,
       "published_at": 1749804535,
       "version": "v1.0.0"
-    },
-    {
-      "changelog": "",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "TeleportGun_v1.0.5.1.jar",
-          "primary": true,
-          "size": 0,
-          "url": "https://motci.cn/job/TeleportGun/15/artifact/target/TeleportGun_v1.0.5.1.jar"
-        }
-      ],
-      "name": "v1.0.5.1",
-      "prerelease": true,
-      "published_at": 1784713012,
-      "version": "ci-15"
     }
   ]
 }

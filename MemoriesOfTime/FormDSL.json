@@ -62,22 +62,6 @@
       "prerelease": true,
       "published_at": 1659623366,
       "version": "1.0.0"
-    },
-    {
-      "changelog": "",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "FormDSL-1.0.1-SNAPSHOT.jar",
-          "primary": true,
-          "size": 0,
-          "url": "https://motci.cn/job/FormDSL/2/artifact/target/FormDSL-1.0.1-SNAPSHOT.jar"
-        }
-      ],
-      "name": "1.0.1-SNAPSHOT",
-      "prerelease": true,
-      "published_at": 1686225920,
-      "version": "ci-2"
     }
   ]
 }

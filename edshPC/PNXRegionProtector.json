@@ -62,7 +62,7 @@
   "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/edshPC/PNXRegionProtector",
-  "stars": 0,
+  "stars": 1,
   "summary": "Port of SRegionProtector for PNX: Flexible region protection plugin",
   "targets": [
     "pnx"

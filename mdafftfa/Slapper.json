@@ -1,0 +1,79 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/239018447?v=4",
+      "name": "mdafftfa",
+      "url": "https://github.com/mdafftfa"
+    }
+  ],
+  "categories": [],
+  "created_at": 1769594780,
+  "dependencies": [],
+  "description": "# Slapper for PowerNukkitX\n\n![](https://raw.githubusercontent.com/mdafftfa/Slapper/master/assets/preview.png)\n\n**Slapper** is a high-performance NPC (Non-Player Character) plugin specifically optimized for [PowerNukkitX](https://github.com/PowerNukkitX/PowerNukkitX). It allows server administrators to create stationary, persistent entities that execute one or multiple commands when interacted with or attacked by players.\n\n---\n\n## Features\n\n* **Optimized for PowerNukkitX:** Leverages modern PNX entity registries and NBT handling for maximum stability.\n* **Diverse Entity Support:** Support for a wide range of entities including Humans, Mob types, and even objects like Primed TNT or Minecarts.\n* **Deep Human Customization:** Full persistence for skins (including Persona and Geometry), armor, inventory, and off-hand items.\n* **Command Automation:** Attach multiple commands to a single entity with console-level execution.\n* **Dynamic Placeholders:** Use `{player}` in commands to dynamically target the player interacting with the NPC.\n* **Remote Command Authority (RCA):** Includes a utility to force players to execute commands via `/rca`.\n* **Robust Persistence:** Custom `SlapperLoaderEntity` logic ensures NPCs are correctly restored after chunk reloads or server restarts.\n* **Developer API:** Comprehensive custom events for integration with other PNX plugins.\n\n---\n\n## Installation\n\n1.  Download [Slapper.jar](https://github.com/mdafftfa/Slapper/releases/download/slapperv1.0.0/Slapper.jar).\n2.  Place the file into your PowerNukkitX `plugins/` folder.\n3.  Restart your server.\n4.  Done.\n\n---\n\n## Commands & Permissions\n\n### Slapper Commands\n| Command                               | Description                                                                    | Permission               | Default |\n|:--------------------------------------|:-------------------------------------------------------------------------------|:-------------------------| :--- |\n| `/slapper id`                         | Find an NPC's ID by hitting/slapping it.                                       | `slapper.command.id`     | OP |\n| `/slapper cancel`                     | Cancel the hit session of (/slapper id) & (/slapper remove                     | `slapper.command.cancel` | OP |\n| `/slapper edit <id> <action> [value]` | Modifies an existing NPC's properties, equipment, commands, scale, or location | `slapper.command.edit`   | OP |\n| `/slapper help`                       | Show all available Slapper commands.                                           | `slapper.command.help`   | OP |\n| `/slapper list`                       | Show a list of all available slapper entities.                                 | `slapper.command.list`   | OP |\n| `/slapper remove <null:id>`           | Enter removal mode to delete an NPC.                                           | `slapper.command.remove` | OP |\n| `/slapper spawn <type> [name]`        | Spawns a new NPC at your location.                                             | `slapper.command.spawn`  | OP |\n\n### Utility Commands\n| Command | Description | Permission | Default |\n| :--- | :--- | :--- | :--- |\n| `/rca <player> <command>` | Force a player to execute a command. | `rca.command` | OP |\n\n---\n\n## Usage Examples\n\n### 1. Creating a Server Navigator\nTo create a Human NPC that opens a menu or teleports a player:\n1.  **Spawn:** `/slapper spawn human §6§lNavigator`\n2.  **Identify:** Run `/slapper id` and hit the NPC. (Let's say the ID is `500`).\n3.  **Add Command:** `/slapper edit 500 addcommand rca {player} warp lobby`\n4.  **Execute Command:** Ensure the `/warp lobby` command is for teleport to lobby then interact slapper to execute the command.\n5.  **To delete an NPC:** Run `/slapper remove` then hit the target NPC. You will see: `[Slapper] Entity removed!`.\n\n---\n\n## Developer API (PowerNukkitX)\n\nYou can listen to Slapper events by registering a listener in your PNX plugin:\n\n* **`SlapperCreationEvent`**: Called when an NPC is created.\n* **`SlapperHitEvent`**: Called when a player interacts with an NPC (Cancellable).\n* **`SlapperDeletionEvent`**: Called when an NPC is removed (Cancellable).\n\n### Example Listener:\n```java\n@EventHandler\npublic void onSlapperHit(SlapperHitEvent event) {\n    Player player = event.getExecutor();\n    if (player != null) {\n        player.sendMessage(\"You interacted with a Slapper NPC!\");\n    }\n}\n```\n\n# Contributing\nContributions are welcome! If you'd like to improve Slapper, please follow these steps:\n\n1. **Fork the repository.**\n2. **Create a Feature Branch** `git checkout -b feature/AmazingFeature`\n3. **Commit your changes** `git commit -m 'Add some AmazingFeature'`\n4. **Push to the branch** `git push origin feature/AmazingFeature`\n5. **Open a Pull Request.**\n\nPlease ensure your code follows the existing style, maintains compatibility with the PowerNukkitX API, and includes comments for complex logic.",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-10-08",
+      "description": "",
+      "title": "",
+      "url": "https://raw.githubusercontent.com/mdafftfa/Slapper/master/assets/preview.png"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/239018447?v=4",
+  "id": "mdafftfa/Slapper",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Slapper",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/mdafftfa/Slapper",
+  "stars": 2,
+  "summary": "Slapper is an NPC plugin for PowerNukkitX Server",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1791445494,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Slapper.jar",
+          "primary": true,
+          "sha256": "ef4de8e856d2fd493fdc6fad012ee0dba2529aaf57c061336bf8e363fc1b0db9",
+          "size": 69740,
+          "url": "https://github.com/mdafftfa/Slapper/releases/download/slapperv1.0.1/Slapper.jar"
+        }
+      ],
+      "name": "Slapper v1.0.1",
+      "prerelease": false,
+      "published_at": 1791445494,
+      "version": "slapperv1.0.1"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Slapper_v1.0.0.jar",
+          "primary": true,
+          "sha256": "5d893ae9c2cb147f2f8158a46977be94410f1b50f351a8605411ab2228e035fc",
+          "size": 59760808,
+          "url": "https://github.com/mdafftfa/Slapper/releases/download/slapperv1.0.0/Slapper_v1.0.0.jar"
+        }
+      ],
+      "name": "Slapper v1.0.0",
+      "prerelease": false,
+      "published_at": 1773307791,
+      "version": "slapperv1.0.0"
+    }
+  ]
+}

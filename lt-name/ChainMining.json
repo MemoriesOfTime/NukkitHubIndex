@@ -87,22 +87,6 @@
       "prerelease": false,
       "published_at": 1621940002,
       "version": "v1.2.0"
-    },
-    {
-      "changelog": "",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "ChainMining-1.4.0.jar",
-          "primary": true,
-          "size": 0,
-          "url": "https://motci.cn/job/ChainMining/job/master/426/artifact/target/ChainMining-1.4.0.jar"
-        }
-      ],
-      "name": "1.4.0",
-      "prerelease": true,
-      "published_at": 1656693548,
-      "version": "ci-426"
     }
   ]
 }

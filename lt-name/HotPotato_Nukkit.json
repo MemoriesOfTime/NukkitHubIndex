@@ -96,22 +96,6 @@
       "prerelease": false,
       "published_at": 1595559240,
       "version": "v1.0.1"
-    },
-    {
-      "changelog": "",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "HotPotato-1.2.2-SNAPSHOT.jar",
-          "primary": true,
-          "size": 0,
-          "url": "https://motci.cn/job/HotPotato/job/master/65/artifact/target/HotPotato-1.2.2-SNAPSHOT.jar"
-        }
-      ],
-      "name": "1.2.2-SNAPSHOT",
-      "prerelease": true,
-      "published_at": 1706020750,
-      "version": "ci-65"
     }
   ]
 }

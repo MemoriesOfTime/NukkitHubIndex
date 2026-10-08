@@ -90,22 +90,6 @@
       "prerelease": false,
       "published_at": 1584948710,
       "version": "1.0.1"
-    },
-    {
-      "changelog": "",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "WorldBorder-1.2.3-SNAPSHOT.jar",
-          "primary": true,
-          "size": 0,
-          "url": "https://motci.cn/job/WorldBorder/19/artifact/target/WorldBorder-1.2.3-SNAPSHOT.jar"
-        }
-      ],
-      "name": "1.2.3-SNAPSHOT",
-      "prerelease": true,
-      "published_at": 1658576353,
-      "version": "ci-19"
     }
   ]
 }

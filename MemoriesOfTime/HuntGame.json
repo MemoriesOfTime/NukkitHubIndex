@@ -269,22 +269,6 @@
       "prerelease": false,
       "published_at": 1595587032,
       "version": "0.0.1"
-    },
-    {
-      "changelog": "",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "HuntGame-1.3.2-SNAPSHOT.jar",
-          "primary": true,
-          "size": 0,
-          "url": "https://motci.cn/job/HuntGame/job/master/95/artifact/target/HuntGame-1.3.2-SNAPSHOT.jar"
-        }
-      ],
-      "name": "1.3.2-SNAPSHOT",
-      "prerelease": true,
-      "published_at": 1735716680,
-      "version": "ci-95"
     }
   ]
 }
