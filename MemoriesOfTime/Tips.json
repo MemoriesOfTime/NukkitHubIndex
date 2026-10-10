@@ -180,6 +180,22 @@
       "prerelease": false,
       "published_at": 1595499788,
       "version": "v1.7.4"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Tips-2.2.3.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/Tips/58/artifact/target/Tips-2.2.3.jar"
+        }
+      ],
+      "name": "2.2.3",
+      "prerelease": true,
+      "published_at": 1785942311,
+      "version": "ci-58"
     }
   ]
 }

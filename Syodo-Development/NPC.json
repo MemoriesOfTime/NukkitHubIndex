@@ -30,7 +30,7 @@
   "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/Syodo-Development/NPC",
-  "stars": 2,
+  "stars": 3,
   "summary": "Syodo NPC Plugin",
   "targets": [
     "pnx"

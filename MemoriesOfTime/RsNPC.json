@@ -63,7 +63,7 @@
   "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/MemoriesOfTime/RsNPC",
-  "stars": 13,
+  "stars": 14,
   "summary": "NPC plugin for Nukkit-MOT",
   "targets": [
     "nkmot"

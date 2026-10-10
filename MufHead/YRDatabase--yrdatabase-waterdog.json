@@ -87,6 +87,34 @@
       "prerelease": false,
       "published_at": 1770348672,
       "version": "v2.0.0"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "yrdatabase-allay-2.0.0.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/YRDatabase/23/artifact/yrdatabase-allay/build/libs/yrdatabase-allay-2.0.0.jar"
+        },
+        {
+          "filename": "yrdatabase-nukkit-2.0.0.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/YRDatabase/23/artifact/yrdatabase-nukkit/build/libs/yrdatabase-nukkit-2.0.0.jar"
+        },
+        {
+          "filename": "yrdatabase-waterdog.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/YRDatabase/23/artifact/yrdatabase-waterdog/build/libs/yrdatabase-waterdog.jar"
+        }
+      ],
+      "name": "allay-2.0.0",
+      "prerelease": true,
+      "published_at": 1773249027,
+      "version": "ci-23"
     }
   ]
 }
