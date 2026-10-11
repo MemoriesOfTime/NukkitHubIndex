@@ -1,0 +1,66 @@
+{
+  "api_version": "1.0.5",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/99422811?v=4",
+      "name": "BrunoJaegerK",
+      "url": "https://github.com/BrunoJaegerK"
+    }
+  ],
+  "categories": [],
+  "created_at": 1791662353,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "FormConstructor",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "required",
+      "plugin_id": "EconomyAPI",
+      "version_range": ""
+    }
+  ],
+  "description": " # NeoBuyer V2\n\n<p align=\"center\">\n  <img src=\"https://img.shields.io/badge/Minecraft-Nukkit-brightgreen.svg\" alt=\"Minecraft Nukkit\">\n  <img src=\"https://img.shields.io/badge/Versión-2.1.0-blue.svg\" alt=\"Versión\">\n  <img src=\"https://img.shields.io/badge/Java-17-orange.svg\" alt=\"Java 17\">\n</p>\n\n## 📋 Descripción\n\n**NeoBuyer V2** - Este es un práctico plugin para Nukkit que permite a los jugadores vender sus objetos al servidor a precios fijos o dinámicos. El plugin ofrece una interfaz sencilla para vender objetos y la opción de activar la venta automática.\n\n> [!NOTE]\n> Este plugin es un fork de NeoBuyer con algunas funciones añadidas y traducido al español\n\n## ✨ Particularidades\n\n- **💰 Ventas de artículos simples** - Vende objetos al servidor a través de una interfaz cómoda.\n- **🔄 Precios dinámicos** – los precios de los artículos pueden variar según la cantidad de artículos vendidos.\n- **⚙️ Venta automática** – activa la venta automática de objetos a medida que aparecen en tu inventario.\n- **🔹 Soporte de recursos** – venta automática de minerales en bruto (hierro, oro, diamantes, etc.)\n- **📊 Estadísticas de ventas**: seguimiento de los artículos vendidos y los ingresos obtenidos.\n- **🌐 Formularios fáciles de usar** – una interfaz intuitiva para vender artículos\n\n## 🛠️ Instalación\n\n1. Descarga la última versión del plugin desde la página de [releases]\n2. Coloca el archivo JAR en el directorio `plugins` de tu servidor\n3. Asegúrate de que las dependencias —FormConstructor y EconomyAPI— estén instaladas\n4. Reinicia el servidor\n5. Configura los ajustes en `plugins/NeoBuyer/config.yml`\n6. ¡Listo!\n\n## ⚙️ Ajustes\n\n### Parámetros clave\n\nPuede configurar los siguientes parámetros en el archivo `config.yml`:\n\n- **buyer-form** - ajustes de apariencia para los formularios de venta de objetos\n- **price-ratio** - factor de ajuste de precio para ventas al por mayor\n- **level-ratio** - factor que determina el impacto del nivel del jugador en el precio\n- **auto-buyer.resources-enabled** - activar/desactivar la compatibilidad con recursos en el comprador automático\n\n### Personalización del artículo\n\nEjemplo de configuración de artículos a la venta:\n\n```yaml\nitems:\n  1:\n    id: 1\n    meta: 0\n    count: 64\n    name: \"Piedra\"\n    price: 5\n    image: \"https://example.com/stone.png\"\n  2:\n    id: 17\n    meta: 0\n    count: 32\n    name: \"Madera\"\n    price: 10\n    image: \"https://example.com/wood.png\"\n```\n\n## 📌 Equipos\n\n| Comando | Descripción |\n|---------|----------|\n| `/buyer` | Abra el formulario de venta de artículos. |\n| `/buyer reload` | Recargar la configuración del plugin (se requieren privilegios de administrador) |\n\n## 📝 Permisos\n\n- `neobuyer.use` - Acceso a las funciones principales del plugin\n- `neobuyer.admin` - Acceso a las funciones administrativas del plugin (recargar la configuración)\n\n## ❓ Preguntas frecuentes\n\n<details>\n<summary><b>¿Cómo funciona la venta automática?</b></summary>\n<p>\nLa venta automática te permite vender artículos específicos de forma automática tan pronto como aparecen en tu inventario. Para activar esta función, abre la interfaz de compra mediante el comando <code>/buyer</code>, ve a «Configuración» y activa la opción de venta automática.\n</p>\n</details>\n\n<details>\n<summary><b>¿Por qué cambian los precios de los artículos?</b></summary>\n<p>\nEl plugin utiliza un sistema de precios dinámicos en el que los precios de los objetos pueden variar según la cantidad vendida de un tipo específico. Cuantos más objetos de un tipo determinado se vendan en el servidor, menor puede llegar a ser su precio.\n</p>\n</details>\n\n<details>\n<summary><b>¿Cómo configuro la venta automática de minerales?</b></summary>\n<p>\nEn el archivo `config.yml`, dentro de la sección `auto-buyer`, habilita el parámetro `resources-enabled` estableciendo su valor en `true`. A continuación, en la sección `resources`, puedes configurar la correspondencia entre los ID de mineral y los ID de producto terminado.\n</p>\n</details>\n\n---\n\n<p align=\"center\">\nMejorado con ❤️ <a href=\"https://github.com/BrunoJaegerK/NeoBuyerV2.2/blob/main/(https://github.com/BrunoJaegerK)\">BrunoJaegerK</a>\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/99422811?v=4",
+  "id": "BrunoJaegerK/NeoBuyerV2.2",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "NeoBuyer",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/BrunoJaegerK/NeoBuyerV2.2",
+  "stars": 0,
+  "summary": "Plugin de tienda para servidores de minecraft bedrock que usan Nukkitt y sus forks",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1791664788,
+  "versions": [
+    {
+      "changelog": ".jar del plugin ",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "NeoBuyer-2.1.0.jar",
+          "primary": true,
+          "sha256": "e72057de081e15f9e9fcd7d8c1e2742279683d96a2a9283f5bf9c459357fe763",
+          "size": 21668,
+          "url": "https://github.com/BrunoJaegerK/NeoBuyerV2.2/releases/download/nukkit/NeoBuyer-2.1.0.jar"
+        }
+      ],
+      "name": ".jar para instalar en el servidor",
+      "prerelease": true,
+      "published_at": 1791664788,
+      "version": "nukkit"
+    }
+  ]
+}
