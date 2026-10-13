@@ -66,22 +66,6 @@
       "prerelease": false,
       "published_at": 1654774779,
       "version": "1.0.2-PM1E"
-    },
-    {
-      "changelog": "",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "CustomItemAPI-1.0.1.jar",
-          "primary": true,
-          "size": 0,
-          "url": "https://motci.cn/job/CustomItemAPI/job/master/5/artifact/target/CustomItemAPI-1.0.1.jar"
-        }
-      ],
-      "name": "1.0.1",
-      "prerelease": true,
-      "published_at": 1643459728,
-      "version": "ci-5"
     }
   ]
 }

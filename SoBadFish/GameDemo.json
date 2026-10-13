@@ -96,22 +96,6 @@
       "prerelease": false,
       "published_at": 1665758434,
       "version": "v2.0.0"
-    },
-    {
-      "changelog": "",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "GameDemo_v2.5.0.jar",
-          "primary": true,
-          "size": 0,
-          "url": "https://motci.cn/job/GameDemo/6/artifact/target/GameDemo_v2.5.0.jar"
-        }
-      ],
-      "name": "v2.5.0",
-      "prerelease": true,
-      "published_at": 1724666268,
-      "version": "ci-6"
     }
   ]
 }

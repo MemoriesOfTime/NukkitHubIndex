@@ -1,0 +1,76 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/67771200?v=4",
+      "name": "REGENTUM",
+      "url": "https://github.com/REGENTUM"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/59245729?v=4",
+      "name": "StefanFox-Dev",
+      "url": "https://github.com/StefanFox-Dev"
+    }
+  ],
+  "categories": [],
+  "created_at": 1791882000,
+  "dependencies": [],
+  "description": "<p align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/StefanFox-Dev/mc-kordon-plugin-bedrock/main/.github/kordon-labs-logo.svg\" alt=\"Kordon Labs\" width=\"420\">\n</p>\n\n<p align=\"center\">\n  VPN, proxy and bot protection for Minecraft Bedrock & Java servers and proxies.<br>\n  <a href=\"https://kordonlabs.com\">Website</a> ·\n  <a href=\"https://panel.kordonlabs.com/register\">Get started for free</a> ·\n  <a href=\"https://t.me/kordonlabs\">News</a>\n</p>\n\n---\n\n**Kordon** keeps VPNs, proxies, bots and suspicious clients off your Minecraft server, while real players join\nwithout delay. This repository contains the source code of the Kordon plugin for **Lumi / Nukkit** (Bedrock),\n**BungeeCord** and **Velocity** (Java). The plugin connects your server or proxy to the [Kordon](https://kordonlabs.com)\nservice, where you manage everything from the web panel. No config files.\n\n> **Kordon has a free plan with no time limit:** 1,000 checks a day, enough for a small server.\n> Paid plans add higher limits, more servers, a team, and advanced filters.\n> See [pricing](https://kordonlabs.com/#pricing) or [create an account](https://panel.kordonlabs.com/register).\n\n## Features\n\n- **Checks every login** before the player reaches your server: VPNs, proxies, Tor, hosting and residential proxies.\n- **Kordon's shared database:** an address caught on any server protected by Kordon is blocked on yours too.\n- **Bot attack protection:** detects bursts of bot connections.\n- **Country and nickname filters**, mobile carrier and network (AS) rules, and maintenance mode.\n- **Whitelist and blacklist** of nicknames, IPs and IP ranges, managed in the panel or in-game.\n- **Live view of your server:** who is online, where they connect from, their client and version, and one-click\n  kicks from the panel.\n- **Login log and statistics:** block reasons, attacks, new players, clients and join domains.\n- **Observe mode:** see who would be blocked without blocking anyone.\n- **Custom messages** for blocked players and staff notifications in chat.\n- **Fail-safe:** if Kordon cannot be reached, the plugin follows your setting and either lets everyone in or nobody.\n\nAvailability of some features depends on your plan.\n\n## Compatibility\n\n| Platform | Versions |\n|---|---|\n| **Lumi / Nukkit** (Bedrock) | Lumi, Nukkit 2.0 and newer |\n| **BungeeCord**, Waterfall and forks (XCord, FlameCord, Travertine) | BungeeCord API 1.16 and newer |\n| **Velocity** | 3.4 and newer, including 4.x |\n\nRequires **Java 21** or newer (Velocity 4 requires Java 25).\n- For Lumi / Nukkit servers: use `Kordon-Lumi.jar` or the universal `Kordon.jar` directly in the `plugins/` directory. Real player IPs behind WaterdogPE proxies (`getWaterdogIP`) are automatically resolved and verified.\n- For Java proxies: install `Kordon.jar` on the proxy, not on backend servers. Geyser/Floodgate players are fully supported.\n\n## Installation\n\n1. [Sign up](https://panel.kordonlabs.com/register) and add your server in the Kordon panel.\n2. Download `Kordon.jar` (or `Kordon-Lumi.jar`) from the server's **Plugin** page. This file is personal: it already contains your server\n   key, so there is nothing to configure.\n3. Put it into your server/proxy's `plugins` folder and restart.\n\nAlternatively, use the generic jar and link it from the **console** with `/kordon link <key>`. The key\nis on the same **Plugin** page. The plugin verifies the key, saves it to `plugins/Kordon/secret.key` and connects\nright away, without a restart.\n\nWhen everything is ready, the console shows `Kordon connected to server \"...\"` and the panel marks the plugin as\nonline within a minute.\n\n> Treat the server key like a password: do not share the downloaded jar or the key. If it leaks, issue a new key in\n> the panel and the old one stops working immediately.\n\nTo update, stop the server or proxy, replace the jar and start it again. The key stays in `plugins/Kordon/secret.key`.\n\n## Commands\n\nEvery command requires `kordon.command` plus the permission listed below. The console has all permissions.\n\n| Command | Permission | Description |\n|---|---|---|\n| `/kordon`, `/kordon help` | `kordon.command` | List available commands |\n| `/kordon status` | `kordon.command` | Connection status, mode, key and online count |\n| `/kordon reload` | `kordon.command.reload` | Fetch the settings from the panel now |\n| `/kordon lookup <nick\\|UUID\\|IP>` | `kordon.command.lookup` | What Kordon knows about a player or address |\n| `/kordon whitelist add <nick\\|IP\\|range> [duration] [note]` | `kordon.command.whitelist` | Let in without VPN and country checks |\n| `/kordon whitelist remove <value>` | `kordon.command.whitelist` | Remove from the whitelist |\n| `/kordon blacklist add <nick\\|IP\\|range> [duration] [note]` | `kordon.command.blacklist` | Block, and disconnect if online |\n| `/kordon blacklist remove <value>` | `kordon.command.blacklist` | Remove from the blacklist |\n| `/kordon link <key>` | `kordon.command.link` | Link the server to your Kordon server |\n| `/kordon unlink` | `kordon.command.link` | Remove the saved key |\n\n- Aliases: `wl` / `bl`, `rm` / `del`.\n- Duration: `1h`, `1d`, `7d`, `30d` or `never` (default).\n- `--ip` targets the current IP of an online player, `--name` forces a nickname.\n- Enter the key in the console, not in-game, so it does not end up in chat or command logs.\n- In-game commands can be turned off in the panel.\n\n## Permissions\n\n| Permission | Grants |\n|---|---|\n| `kordon.command` | Required for any `/kordon` command; status and help |\n| `kordon.command.lookup` | Player lookup |\n| `kordon.command.lookup.ip` | See IP addresses and look up by IP |\n| `kordon.command.whitelist` | Manage the whitelist |\n| `kordon.command.blacklist` | Manage the blacklist |\n| `kordon.command.reload` | Reload settings from the panel |\n| `kordon.command.link` | Link and unlink the server/proxy (give it to the owner only) |\n| `kordon.notify` | Staff notifications in chat |\n\n## Data sent to Kordon\n\nFor each login: nickname, UUID, IP address, protocol version, skin (online mode), whether the player is a Bedrock\nplayer, the address the player connected to, and later the backend server, client brand and language.\nAbout the server/proxy: platform and version, plugin version, machine name, online count and response time.\n\nThe plugin does not collect chat, player commands or any other client data.\n\n## Developer API\n\nOther plugins can react to Kordon decisions. Add `Kordon.jar` as a `compileOnly` dependency.\n\n| Event | Fired when | You can |\n|---|---|---|\n| `KordonLoginCheckedEvent` | Kordon has decided whether to let a player in | Read the verdict and reasons, change the kick message, or cancel a block to let the player in |\n| `KordonRemoteKickEvent` | Kordon is about to disconnect a player on a panel command or a blacklist entry | Change the message or cancel the kick |\n\nPackages:\n- `com.kordonlabs.plugin.nukkit.api` (Lumi / Nukkit)\n- `com.kordonlabs.plugin.bungee.api` (BungeeCord, `softDepends: [Kordon]`)\n- `com.kordonlabs.plugin.velocity.api` (Velocity, `\"dependencies\": [{\"id\": \"kordon\", \"optional\": true}]`)\n\nEvents are fired asynchronously off the server/proxy's main thread; keep handlers fast and thread-safe.\n\n```java\n// Nukkit / Lumi example\n@EventHandler\npublic void onChecked(KordonLoginCheckedEvent event) {\n    if (event.isBlocked() && isTrusted(event.getConnection())) {\n        event.setCancelled(true);\n    }\n}\n```\n\n## Building from source\n\nRequires JDK 21 or newer.\n\n```bash\n./gradlew build\n```\n\nThe universal plugin jar is written to `kordon-universal/build/libs/Kordon.jar`.\nThe dedicated Lumi/Nukkit plugin jar is written to `kordon-nukkit/build/libs/Kordon-Lumi.jar`.\nTo point a build at another Kordon API address, pass `-PkordonApiUrl=https://...`.\n\n| Module | Contents |\n|---|---|\n| `kordon-common` | Platform-independent core: login checks, panel connection, sessions, commands |\n| `kordon-nukkit` | Lumi and Nukkit (Minecraft Bedrock) integration |\n| `kordon-bungee` | BungeeCord and Waterfall integration |\n| `kordon-velocity` | Velocity integration |\n| `kordon-universal` | Packages all platforms into a single `Kordon.jar` |\n\n## License\n\nKordon is licensed under the [GNU General Public License v3.0](https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/blob/main/LICENSE).\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-10-13",
+      "description": "",
+      "title": "Kordon Labs",
+      "url": "https://raw.githubusercontent.com/StefanFox-Dev/mc-kordon-plugin-bedrock/main/.github/kordon-labs-logo.svg"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/59245729?v=4",
+  "id": "StefanFox-Dev/mc-kordon-plugin-bedrock",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "kordon-nukkit/src/main/resources/plugin.yml",
+  "name": "Kordon",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock",
+  "stars": 1,
+  "summary": "Cloud-based proxy and server protection",
+  "targets": [
+    "nkx",
+    "nkmot",
+    "pnx"
+  ],
+  "updated_at": 1791906967,
+  "versions": [
+    {
+      "changelog": "## Kordon 1.9.1 — Поддержка Bedrock (Lumi / Nukkit) & Java Universal\n\n### Что нового:\n- **Интеграция с ядром Lumi (Nukkit Bedrock)**: добавлен полноценный платформенный модуль kordon-nukkit.\n- **Современная архитектура Lumi EventBus**: регистрация слушателей напрямую через шину событий ядра без использования устаревшего интерфейса Listener.\n- **Асинхронная проверка входов (PlayerAsyncPreLoginEvent)**: надежная блокировка VPN, прокси, ботов и нежелательных подключений до допуска игрока на сервер без задержек основного тика.\n- **Поддержка WaterdogPE**: автоматическое определение реального IP-адреса игрока (getWaterdogIP) за Bedrock-прокси.\n- **Интеграция с веб-панелью Kordon**: онлайн-мониторинг, статистика в реальном времени, вайтлист/блеклист, фильтры стран/ников и удаленные кики игроков в один клик.\n- **Universal Jar**: универсальный Kordon.jar теперь поддерживает BungeeCord, Velocity и Lumi/Nukkit в одном файле.\n\n---\n\n### Файлы релиза (Assets):\n- **Kordon-Lumi.jar**: оптимизированный плагин для серверов Lumi / Nukkit Bedrock.\n- **Kordon.jar**: универсальная мультиплатформенная сборка (BungeeCord / Velocity / Lumi).",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Kordon-Lumi.jar",
+          "primary": true,
+          "sha256": "10a18e91f3071028dcd0d4348f4e17c53f4caa2e76716c8e32c746e434d2920e",
+          "size": 666477,
+          "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.9.1-bedrock/Kordon-Lumi.jar"
+        },
+        {
+          "filename": "Kordon.jar",
+          "primary": true,
+          "sha256": "9721364531f7ead2b9d54cc2adc4e0d8c4167eceba4299c4cd761269933d21f9",
+          "size": 734432,
+          "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.9.1-bedrock/Kordon.jar"
+        }
+      ],
+      "name": "Kordon 1.9.1 - Bedrock (Lumi) & Java Universal",
+      "prerelease": false,
+      "published_at": 1791906967,
+      "version": "v1.9.1-bedrock"
+    }
+  ]
+}
