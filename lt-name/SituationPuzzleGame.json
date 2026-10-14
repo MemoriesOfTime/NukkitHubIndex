@@ -50,6 +50,22 @@
       "prerelease": false,
       "published_at": 1780412073,
       "version": "v1.0.0"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SituationPuzzleGame-1.0.0.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/SituationPuzzleGame/7/artifact/target/SituationPuzzleGame-1.0.0.jar"
+        }
+      ],
+      "name": "1.0.0",
+      "prerelease": true,
+      "published_at": 1780411909,
+      "version": "ci-7"
     }
   ]
 }

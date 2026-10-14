@@ -83,6 +83,22 @@
       "prerelease": false,
       "published_at": 1700017840,
       "version": "v1.0.6"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Report_v1.1.2.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/Report/6/artifact/target/Report_v1.1.2.jar"
+        }
+      ],
+      "name": "v1.1.2",
+      "prerelease": true,
+      "published_at": 1713834200,
+      "version": "ci-6"
     }
   ]
 }

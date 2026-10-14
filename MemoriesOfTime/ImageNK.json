@@ -58,6 +58,22 @@
       "prerelease": false,
       "published_at": 1685873502,
       "version": "1.0.3-MOT"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ImageNK-1.0.4-MOT-SNAPSHOT-shaded.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/ImageNK-MOT/4/artifact/target/ImageNK-1.0.4-MOT-SNAPSHOT-shaded.jar"
+        }
+      ],
+      "name": "1.0.4-MOT-SNAPSHOT-shaded",
+      "prerelease": true,
+      "published_at": 1772356976,
+      "version": "ci-4"
     }
   ]
 }

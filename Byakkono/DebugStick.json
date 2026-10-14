@@ -1,0 +1,59 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/86829135?v=4",
+      "name": "Byakkono",
+      "url": "https://github.com/Byakkono"
+    }
+  ],
+  "categories": [],
+  "created_at": 1791960846,
+  "dependencies": [],
+  "description": "<div align=\"center\">\n  <h1>DebugStick</h1>\n  <h3>Java Edition Style Debug Stick for PowerNukkitX</h3>\n\n  <p>\n    <strong>English</strong> | <a href=\"https://github.com/Byakkono/DebugStick/blob/main/README.ja.md\">日本語</a>\n  </p>\n\n  <p>\n    <a href=\"https://github.com/Byakkono/DebugStick/blob/main/LICENSE\"><img src=\"https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge\" alt=\"License\"></a>\n    <a href=\"https://github.com/PowerNukkitX/PowerNukkitX\"><img src=\"https://img.shields.io/badge/Platform-PowerNukkitX-green?style=for-the-badge&logo=minecraft\" alt=\"Platform\"></a>\n    <a href=\"https://openjdk.org/\"><img src=\"https://img.shields.io/badge/Language-Java%2021-blue?style=for-the-badge&logo=openjdk\" alt=\"Language\"></a>\n    <a href=\"https://github.com/Byakkono/DebugStick/releases\"><img src=\"https://img.shields.io/badge/Version-1.0.0-orange?style=for-the-badge\" alt=\"Version\"></a>\n  </p>\n\n  <p>\n    <strong>Change block states with just a click</strong>\n    <br>\n    Standalone • Lightweight • English / Japanese\n  </p>\n\n  <p>\n    <a href=\"https://github.com/Byakkono/DebugStick/releases\">Download</a> •\n    <a href=\"#features\">Features</a> •\n    <a href=\"#usage\">Usage</a> •\n    <a href=\"#configuration\">Configuration</a>\n  </p>\n</div>\n\n---\n\n<a name=\"overview\"></a>\n## Overview\n\n**DebugStick** brings the Java Edition `debug_stick` to **PowerNukkitX**. Change block properties such as stair facing, slab halves and fence connections with just a click, no GUI needed.\n\n<a name=\"features\"></a>\n## Features\n\n*   **Property Selection:** Left click to select a property. The selection is stored on the stick and carries over to other blocks.\n*   **Value Cycling:** Right click to cycle the value. Sneak to cycle in reverse.\n*   **Free Connections:** Blocks are changed without block updates, so fence and wall connections can be set freely.\n*   **Keeps Contents:** Chest contents and sign text are kept when changing a block's state.\n*   **Access Control:** Choose who can use the stick: operators only (default), anyone in creative mode, or everyone.\n*   **Protection Friendly:** Clicks cancelled by other plugins are ignored, so it works alongside land protection plugins.\n*   **Standalone:** No dependencies other than PowerNukkitX itself.\n*   **English / Japanese:** English by default. Switch to Japanese or each player's game language in the config, or add your own language file.\n\n<a name=\"installation\"></a>\n## Installation\n\n1.  Download `DebugStick-1.0.0.jar` from the [releases page](https://github.com/Byakkono/DebugStick/releases).\n2.  Place the file into your server's `plugins` folder.\n3.  Restart your PowerNukkitX server.\n\n<a name=\"usage\"></a>\n## Usage\n\n1.  Run `/debugstick` to get the stick. By default only operators can use it (see [Access](#access)).\n2.  Click a block while holding the stick.\n\n| Action | Effect |\n| :--- | :--- |\n| Left click | Select a property |\n| Right click | Cycle the value of the selected property |\n| Sneak + click | Cycle in reverse |\n\n> [!NOTE]\n> The stick does nothing where another plugin, such as land protection, cancels the click. There is no direct integration with any specific plugin.\n\n<a name=\"commands\"></a>\n## Commands & Permissions\n\n| Command | Description | Permission | Default |\n| :--- | :--- | :--- | :--- |\n| `/debugstick` | Get a debug stick | `debugstick.use` (only when `access: op`) | OP |\n\n<a name=\"configuration\"></a>\n## Configuration\n\n<a name=\"access\"></a>\n### Access\n\nChoose who can use the debug stick with `access` in `plugins/DebugStick/config.yml`.\n\n```yaml\naccess: op\n```\n\n| Value | Who can use it |\n| :--- | :--- |\n| `op` | Players with the `debugstick.use` permission. Operators have it by default (default) |\n| `creative` | Anyone in creative mode |\n| `everyone` | Anyone in any game mode |\n\nIn survival, left click selects a property as soon as you start breaking the block, and the block is not broken.\n\n> [!WARNING]\n> With `everyone`, survival players can change any block state, including crop growth stages. Use it with care on survival servers.\n\n### Language\n\nMessages are in English by default. Change `language` in `plugins/DebugStick/config.yml` to switch.\n\n```yaml\n# en   : English (default)\n# ja   : Japanese\n# auto : each player's game language (falls back to English)\nlanguage: en\n```\n\n| Value | Display |\n| :--- | :--- |\n| `en` | English (default) |\n| `ja` | Japanese |\n| `auto` | Each player's game language, English if not available |\n\n### Messages\n\nItem name, lore and messages are in `plugins/DebugStick/lang/`. Use `&` for color codes. Copy `lang/en.yml` to a new file such as `lang/fr.yml` to add a language. Missing keys fall back to English.\n\n```yaml\n# lang/en.yml\nitem:\n  name: \"&bDebug Stick\"\n  lore:\n    - \"&7Left click: select property\"\n    - \"&7Right click: change value\"\n    - \"&7Sneak to reverse\"\nmessage:\n  player-only: \"This command can only be used in game.\"\n  creative-only: \"&cUse it in creative mode.\"\n  no-permission: \"&cYou do not have permission to use the debug stick.\"\n  inventory-full: \"&cYour inventory is full.\"\n```\n\n<a name=\"requirements\"></a>\n## Requirements\n\n*   PowerNukkitX 3.0.x\n*   Java 21\n\n<a name=\"development\"></a>\n## Development\n\nBuilt with **Maven**.\n\n```bash\nmvn clean package\n```\n\nThe jar is created at `target/DebugStick-1.0.0.jar`.\n\n## Contributing\n\nBug reports and suggestions are welcome. Please open an issue or submit a pull request.\n\n## License\n\nThis project is licensed under the **[MIT License](https://github.com/Byakkono/DebugStick/blob/main/LICENSE)**.\n\n---\n\n<div align=\"center\">\n  <p>Made by <strong>Byakkono</strong> for the PowerNukkitX Community.</p>\n</div>\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/86829135?v=4",
+  "id": "Byakkono/DebugStick",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/Byakkono/DebugStick",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "DebugStick",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/Byakkono/DebugStick",
+  "stars": 0,
+  "summary": "Java Edition style debug stick for PowerNukkitX",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1791963964,
+  "versions": [
+    {
+      "changelog": "First release.\n\n- Java Edition style debug stick for PowerNukkitX\n- Access setting: op (default), creative or everyone\n- English / Japanese messages\n\nRequires PowerNukkitX 3.0.x and Java 21. Put DebugStick-1.0.0.jar into your plugins folder.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "DebugStick-1.0.0.jar",
+          "primary": true,
+          "sha256": "82ee886b7165702c9d7c6cbdcfd85bba95cc89269668b938fff85b42e43b09db",
+          "size": 19892,
+          "url": "https://github.com/Byakkono/DebugStick/releases/download/v1.0.0/DebugStick-1.0.0.jar"
+        }
+      ],
+      "name": "DebugStick 1.0.0",
+      "prerelease": false,
+      "published_at": 1791963964,
+      "version": "v1.0.0"
+    }
+  ]
+}

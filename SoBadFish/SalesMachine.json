@@ -124,6 +124,22 @@
       "prerelease": false,
       "published_at": 1701065241,
       "version": "1.0.9"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SalesMachine_v1.5.7.1.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/SalesMachine_Project/job/master/287/artifact/target/SalesMachine_v1.5.7.1.jar"
+        }
+      ],
+      "name": "v1.5.7.1",
+      "prerelease": true,
+      "published_at": 1784705862,
+      "version": "ci-287"
     }
   ]
 }

@@ -2,14 +2,14 @@
   "api_version": "1.0.0",
   "authors": [
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/67771200?v=4",
-      "name": "REGENTUM",
-      "url": "https://github.com/REGENTUM"
-    },
-    {
       "avatar_url": "https://avatars.githubusercontent.com/u/59245729?v=4",
       "name": "StefanFox-Dev",
       "url": "https://github.com/StefanFox-Dev"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/67771200?v=4",
+      "name": "REGENTUM",
+      "url": "https://github.com/REGENTUM"
     }
   ],
   "categories": [],
@@ -46,8 +46,84 @@
     "nkmot",
     "pnx"
   ],
-  "updated_at": 1791906967,
+  "updated_at": 1791995086,
   "versions": [
+    {
+      "changelog": "Kordon 1.11.0 — Lumi, BungeeCord, Waterfall, Velocity и прокси на их основе (например, XCord), нужна Java 21 или новее\r\n\r\n### Changes from upstream 1.11.0:\r\n- Merged upstream Kordon 1.11.0 changes: ClientSettings tracking, BungeeChannels & VelocityChannels fake connection mitigation.\r\n- Full Bedrock Edition & Floodgate support:\r\n  - Supports Bedrock gamertags containing spaces in authentication and API sync.\r\n  - Strips raw § color codes from Bedrock kick messages to avoid client glitches.\r\n  - Waterdog / WaterdogPE proxy support.\r\n  - Native Lumi / Nukkit Bedrock module.\r\n\r\n### Downloads:\r\n- **Kordon.jar**: Universal proxy plugin (BungeeCord, Waterfall, Velocity)\r\n- **Kordon-Bungee.jar**: Standalone BungeeCord / Waterfall plugin\r\n- **Kordon-Velocity.jar**: Standalone Velocity plugin\r\n- **Kordon-Lumi.jar**: Native Lumi / Nukkit server plugin",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Kordon-Bungee.jar",
+          "primary": true,
+          "sha256": "a256b48a43867d844842ec43eb63b0830bae4b3fea438c2172079b5735b5f7a3",
+          "size": 698458,
+          "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.11.0/Kordon-Bungee.jar"
+        },
+        {
+          "filename": "Kordon-Lumi.jar",
+          "primary": true,
+          "sha256": "7992be00cfd5bdfd90a4b5b8fc75cd838a326294ab2f67121d39e4e7cd6aa380",
+          "size": 679621,
+          "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.11.0/Kordon-Lumi.jar"
+        },
+        {
+          "filename": "Kordon-Velocity.jar",
+          "primary": true,
+          "sha256": "9c0e92e6b57082d4ba6bb8047cd75dd1f6caa9d7177eecf4ce72495337abdc63",
+          "size": 691038,
+          "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.11.0/Kordon-Velocity.jar"
+        },
+        {
+          "filename": "Kordon.jar",
+          "primary": true,
+          "sha256": "eb822438396f5902c0e0871a4a351d041f25b4f2f8e3b69eae9013eb3822c2bb",
+          "size": 760615,
+          "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.11.0/Kordon.jar"
+        }
+      ],
+      "name": "Release 1.11.0",
+      "prerelease": false,
+      "published_at": 1791989353,
+      "version": "v1.11.0"
+    },
+    {
+      "changelog": "## Kordon 1.10.0 (Bedrock & Lumi Edition)\n\n### Что нового:\n- **Синхронизация с официальным обновлением Kordon 1.10.0**:\n  - Добавлены модули чтения статистики соединений: ConnStats, ConnStatsReader, BungeeConn, VelocityConn.\n  - Добавлено периодическое сэмплирование и агрегация статистики соединений в сессиях (SessionTracker, TrackedSession).\n  - Передача сетевой статистики в LoginGate.\n- **Исправление входа игроков с Bedrock с пробелами в никах**:\n  - При отправке запроса в панель пробелы в нике Bedrock-игроков заменяются на _ и длина ограничивается до 16 символов, предотвращая ошибку панели 400 Bad Request.\n- **Очистка цветов при кике игроков с Bedrock**:\n  - Удалены все коды цветов § из сообщений об отказе во входе и удаленном кике для Bedrock-клиентов, чтобы экран отключения не ломался.\n- **Закрытие уязвимости со спуфингом Waterdog IP**:\n  - Клиентский заголовок LoginChainData.getWaterdogIP() принимается только если проксирование Waterdog действительно активно в настройках сервера Nukkit/Lumi (useWaterdog), иначе используется подтвержденный адрес сокета.\n\n### Файлы для скачивания:\n- **Kordon-Lumi.jar** — готовый плагин для Lumi / Nukkit (помещается в папку plugins/).\n- **Kordon.jar** — универсальный плагин (подходит для Bungee, Velocity, Nukkit).\n- **kordon-bungee-1.10.0.jar** — плагин для BungeeCord / WaterdogPE.\n- **kordon-velocity-1.10.0.jar** — плагин для Velocity.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "kordon-bungee-1.10.0.jar",
+          "primary": true,
+          "sha256": "de338a1e5f0569ecb48d983b9b671a14163c2fc1e40233118c6319028d64ad5a",
+          "size": 41344,
+          "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.10.0/kordon-bungee-1.10.0.jar"
+        },
+        {
+          "filename": "Kordon-Lumi.jar",
+          "primary": true,
+          "sha256": "364dcce62f0ac9157576d2a237f21f1b494124e8845b0aa5505ba8c1e017289a",
+          "size": 676462,
+          "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.10.0/Kordon-Lumi.jar"
+        },
+        {
+          "filename": "kordon-velocity-1.10.0.jar",
+          "primary": true,
+          "sha256": "66247b4e7566b853f8646486f255a3d64cc0be4ac46e8160ad533aaa98a4efd3",
+          "size": 33228,
+          "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.10.0/kordon-velocity-1.10.0.jar"
+        },
+        {
+          "filename": "Kordon.jar",
+          "primary": true,
+          "sha256": "bce7ad214aed603f28e8134e1f1dae5b24fc10533108ba6492623308028fd1c2",
+          "size": 750660,
+          "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.10.0/Kordon.jar"
+        }
+      ],
+      "name": "Release 1.10.0",
+      "prerelease": false,
+      "published_at": 1791987035,
+      "version": "v1.10.0"
+    },
     {
       "changelog": "## Kordon 1.9.1 — Поддержка Bedrock (Lumi / Nukkit) & Java Universal\n\n### Что нового:\n- **Интеграция с ядром Lumi (Nukkit Bedrock)**: добавлен полноценный платформенный модуль kordon-nukkit.\n- **Современная архитектура Lumi EventBus**: регистрация слушателей напрямую через шину событий ядра без использования устаревшего интерфейса Listener.\n- **Асинхронная проверка входов (PlayerAsyncPreLoginEvent)**: надежная блокировка VPN, прокси, ботов и нежелательных подключений до допуска игрока на сервер без задержек основного тика.\n- **Поддержка WaterdogPE**: автоматическое определение реального IP-адреса игрока (getWaterdogIP) за Bedrock-прокси.\n- **Интеграция с веб-панелью Kordon**: онлайн-мониторинг, статистика в реальном времени, вайтлист/блеклист, фильтры стран/ников и удаленные кики игроков в один клик.\n- **Universal Jar**: универсальный Kordon.jar теперь поддерживает BungeeCord, Velocity и Lumi/Nukkit в одном файле.\n\n---\n\n### Файлы релиза (Assets):\n- **Kordon-Lumi.jar**: оптимизированный плагин для серверов Lumi / Nukkit Bedrock.\n- **Kordon.jar**: универсальная мультиплатформенная сборка (BungeeCord / Velocity / Lumi).",
       "downloads": 0,
