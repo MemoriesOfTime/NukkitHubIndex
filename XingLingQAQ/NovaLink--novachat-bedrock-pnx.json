@@ -1,0 +1,109 @@
+{
+  "api_version": "2.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/92240364?v=4",
+      "name": "XingLingQAQ",
+      "url": "https://github.com/XingLingQAQ"
+    }
+  ],
+  "categories": [],
+  "created_at": 1765536945,
+  "dependencies": [],
+  "description": "<p align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/XingLingQAQ/NovaLink/master/Panel/web/public/novalink-logo.svg\" width=\"88\" alt=\"NovaLink logo\" />\n</p>\n\n<h1 align=\"center\">NovaLink</h1>\n\n<p align=\"center\">\n  <strong>一套把不同 Minecraft 服务端接入同一个聊天网络的跨服聊天方案。</strong><br />\n  中心后端统一处理认证、频道、权限、禁言与路由；各平台通过 NovaChat 接入端连接。\n</p>\n\n<p align=\"center\">\n  <a href=\"#overview\">项目简介</a> ·\n  <a href=\"#architecture\">架构</a> ·\n  <a href=\"#get-started\">快速开始</a> ·\n  <a href=\"#system-map\">模块</a> ·\n  <a href=\"#channels\">频道</a> ·\n  <a href=\"#operations\">部署</a> ·\n  <a href=\"#build-verify\">开发</a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/XingLingQAQ/NovaLink/blob/master/LICENSE\"><img src=\"https://img.shields.io/badge/license-MIT-0B6E4F?style=flat-square\" alt=\"MIT License\" /></a>\n  <img src=\"https://img.shields.io/badge/Java-17%2B-1D4ED8?style=flat-square\" alt=\"Java 17 or later\" />\n  <img src=\"https://img.shields.io/badge/NovaProtocol-v1-16A34A?style=flat-square\" alt=\"NovaProtocol v1\" />\n  <img src=\"https://img.shields.io/badge/Admin%20Console-React%20%2B%20Vite-0EA5E9?style=flat-square\" alt=\"React and Vite admin console\" />\n</p>\n\n<p align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/XingLingQAQ/NovaLink/master/assets/readme/novalink-network.webp\" alt=\"NovaLink connects Java, Bedrock, proxy and mod servers through one routing core\" width=\"100%\" />\n</p>\n\n> [!TIP]\n> **NovaLink 后端负责认证、频道、路由、持久化和权限控制；NovaChat 负责各平台接入。** 接入端统一通过 NovaProtocol 连接后端，让 Java、Bedrock、代理和模组环境使用同一套聊天规则。\n\n---\n\n<a id=\"overview\"></a>\n<p align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/XingLingQAQ/NovaLink/master/assets/readme/sections/section-00-overview.png\" alt=\"项目概览\" width=\"100%\" />\n</p>\n\nNovaLink 解决的是多服社区的聊天分散问题：社区里同时跑着 Paper、Velocity、Nukkit、LeviLamina 等不同平台时，每个平台的聊天、权限和频道规则各不相同，公告发不出去、禁言管不到其他服、玩家聊天各说各话。\n\nNovaLink 把\"平台接入\"和\"中心路由\"分开。所有 NovaChat 客户端通过 **NovaProtocol v1** 连接到同一个后端，后端负责：\n\n- **跨服消息路由** —— 频道消息、私聊、公告统一在后端转发，玩家换服不用重连。\n- **统一权限与治理** —— 认证、禁言、踢出、权限判定集中一处，规则改一次全局生效。\n- **管理控制面** —— REST / WebSocket + Web 管理面板，日常运营不需要写脚本翻日志。\n\n### 主要能力\n\n| 能力 | 说明 |\n| --- | --- |\n| 跨服频道 | `GLOBAL`、`SERVER`、`WORLD`、`PRIVATE` 四种作用域，路由边界清晰 |\n| 跨服私聊 | `/msg`、`/reply` 跨服点对点聊天，支持屏蔽（`/nc ignore`） |\n| 权限与禁言 | 基于频道的权限、禁言、踢出、公告、敏感词过滤 |\n| 管理面板 | React + Vite 管理后台：仪表盘、消息监控、频道/玩家管理、Webhook、通知 |\n| 多平台接入 | Java 插件、代理插件、Bedrock 插件、模组、C++/PHP/Python 扩展 |\n\n---\n\n<a id=\"architecture\"></a>\n<p align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/XingLingQAQ/NovaLink/master/assets/readme/sections/section-01-architecture.png\" alt=\"系统架构\" width=\"100%\" />\n</p>\n\nNovaChat 以插件、模组或扩展的形式运行在各平台中，通过共享的 NovaProtocol 与后端通信。每个平台保留自己的生命周期与玩家 API，后端统一处理网络级规则。\n\n```mermaid\nflowchart LR\n    subgraph Edge[平台边缘]\n        J[Java 插件与模组]\n        P[Velocity / BungeeCord]\n        B[Bedrock 扩展]\n    end\n\n    subgraph Core[NovaLink 路由核心]\n        N[NovaProtocol v1]\n        A[认证与权限]\n        C[频道、禁言与路由]\n        R[REST / WebSocket]\n    end\n\n    subgraph Operations[运营与数据]\n        W[Admin Console]\n        D[(持久化与缓存)]\n    end\n\n    J --> N\n    P --> N\n    B --> N\n    N --> A --> C\n    C --> D\n    C --> R --> W\n\n    classDef edge fill:#E0F2FE,stroke:#0284C7,color:#0C4A6E,stroke-width:1.5px;\n    classDef core fill:#0F172A,stroke:#38BDF8,color:#F8FAFC,stroke-width:2px;\n    classDef ops fill:#DCFCE7,stroke:#16A34A,color:#14532D,stroke-width:1.5px;\n    class J,P,B edge;\n    class N,A,C,R core;\n    class W,D ops;\n```\n\n协议层由后端和客户端共用；客户端运行时服务于插件与模组；中心后端只依赖共享协议层，不引入任何平台 API——这个依赖方向让平台适配与核心服务互不耦合。\n\n### 连接恢复与重连\n\n接入端运行时负责握手、KeepAlive、连接状态和重连策略。意外断开时按指数退避重连，延迟从 1 秒逐步增长，封顶 30 秒；连续多次失败后停止重试并留下明确日志。显式停止则不会偷偷重连。\n\n完整的连接生命周期、平台边界与重连约定见 [`NovaChat/client-core/DESIGN.md`](https://github.com/XingLingQAQ/NovaLink/blob/master/NovaChat/client-core/DESIGN.md)。\n\n---\n\n<a id=\"get-started\"></a>\n<p align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/XingLingQAQ/NovaLink/master/assets/readme/sections/section-02-get-started.png\" alt=\"快速开始\" width=\"100%\" />\n</p>\n\n最小接入只需要启动中心后端，再接一个平台客户端。先跑通认证、频道和消息路径，再逐步启用更多能力。\n\n### 01 — 构建中心后端\n\n```bash\ngit clone https://github.com/XingLingQAQ/NovaLink.git\ncd NovaLink\n\n# Linux / macOS\n./gradlew :StarLink:core:shadowJar\n\n# Windows PowerShell\n.\\gradlew.bat :StarLink:core:shadowJar\n```\n\n构建产物是可直接运行的 fat JAR，位于 `StarLink/core/build/libs/*-all.jar`，不依赖额外运行时。\n\n### 02 — 创建并配置 `novalink.yml`\n\n```bash\ncp examples/novalink.yml novalink.yml\n```\n\n从示例配置开始，替换 `server.secret-key`、数据库凭据与 `clients` 中的客户端凭据。小型或本地环境可以用 `sqlite` 或 `memory`；生产环境应使用持久化存储，并限制允许访问的 IP/CIDR。\n\n```yaml\nserver:\n  bind-address: 0.0.0.0\n  port: 8888\n  websocket-port: 8889\n  secret-key: \"replace-with-a-long-random-secret\"\n\ndatabase:\n  type: sqlite\n  sqlite:\n    file-path: data/novalink.db\n\nclients:\n  - username: \"survival\"\n    password: \"replace-with-a-password-hash\"\n    display_name: \"Survival\"\n```\n\n### 03 — 启动后端并接入平台客户端\n\n```bash\n# 默认读取当前工作目录中的 novalink.yml\njava -jar StarLink/core/build/libs/*-all.jar\n\n# 或显式指定配置文件\njava -jar StarLink/core/build/libs/*-all.jar /opt/novalink/novalink.yml\n```\n\n默认示例用 `8888` 作为 NovaProtocol TCP 端口、`8889` 作为 WebSocket 端口。选择目标平台的 NovaChat 模块，放入插件、模组或扩展目录，然后对照 [`examples/novachat-config.yml`](https://github.com/XingLingQAQ/NovaLink/blob/master/examples/novachat-config.yml) 填好主机、端口、用户名和密码。\n\n> [!IMPORTANT]\n> 示例里的密码、JWT 密钥、数据库账号和 Webhook 地址都只是占位符。它们能帮助你启动，但不能直接用于生产环境。\n\n---\n\n<a id=\"system-map\"></a>\n<p align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/XingLingQAQ/NovaLink/master/assets/readme/sections/section-03-system-map.png\" alt=\"模块结构\" width=\"100%\" />\n</p>\n\n仓库包含后端、共享协议层、平台接入端、管理面板和真实环境验证模块。\n\n| 模块 | 路径 | 职责 |\n| --- | --- | --- |\n| 共享协议与公共层 | [`NovaChat/common`](https://github.com/XingLingQAQ/NovaLink/blob/master/NovaChat/common) | NovaProtocol 编解码、提及与物品展示、扩展加载、事件与命令注册 |\n| 客户端运行时 | [`NovaChat/client-core`](https://github.com/XingLingQAQ/NovaLink/blob/master/NovaChat/client-core) | 连接生命周期、退避重连、请求跟踪、频道状态、格式工具与 i18n |\n| 中心后端 | [`StarLink/core`](https://github.com/XingLingQAQ/NovaLink/blob/master/StarLink/core) | 会话认证、频道路由、持久化、REST / WebSocket、治理能力 |\n| 管理面板 | [`Panel/web`](https://github.com/XingLingQAQ/NovaLink/blob/master/Panel/web) | React + Vite 管理后台：登录、观测、频道/玩家/公告/敏感词/Webhook 管理 |\n| 真实环境验证 | [`test/`](https://github.com/XingLingQAQ/NovaLink/blob/master/test) | 真实服务器、机器人进程与多平台端到端验证编排（`gradlew realE2E`） |\n\n### 平台适配\n\n| 平台族 | 目录 | 接入形态 |\n| --- | --- | --- |\n| Bukkit / Spigot / Paper / Purpur / Folia | `NovaChat/Plugin` | Java 服务端插件 |\n| Velocity / BungeeCord | `NovaChat/Proxy` | Java 代理端插件 |\n| Fabric / NeoForge / Quilt | `NovaChat/MOD` | 共享模组层与 Loader 实现 |\n| Nukkit / PowerNukkitX | `NovaChat/Bedrock` | Java Bedrock 服务端插件 |\n| LeviLamina / PocketMine-MP / Endstone | `NovaChat/Bedrock` | C++、PHP、Python 生态扩展 |\n| Sponge | `NovaChat/Sponge` | Sponge 平台插件 |\n\n> [!NOTE]\n> Minecraft、Loader、JDK 与上游 API 的组合一直在变化。这里列出的是仓库现有的接入模块，不代表对每个版本组合都做了承诺。部署前请以对应模块的 `build.gradle`、`plugin.yml` 或平台文档为准，并在目标环境验证。\n\n---\n\n<a id=\"channels\"></a>\n<p align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/XingLingQAQ/NovaLink/master/assets/readme/sections/section-04-channels.png\" alt=\"频道与路由\" width=\"100%\" />\n</p>\n\n频道定义了消息的路由范围、可见范围和管理边界。作用域确定后，权限、禁言、世界限制和私密会话才能按一致规则处理。\n\n| 频道作用域 | 适合放什么 | 路由边界 |\n| --- | --- | --- |\n| `GLOBAL` | 全网公告、跨服公共聊天 | 所有已授权且连接的客户端 |\n| `SERVER` | 单服务端本地频道 | 指定 NovaChat 客户端内 |\n| `WORLD` | 资源世界、PVP 世界、子世界聊天 | 指定服务端及 `allowed_worlds` 范围 |\n| `PRIVATE` | 玩家创建或受控的私密会话 | 频道成员与权限边界内 |\n\n### 玩法与治理\n\n- **跨服私聊**：`/msg <玩家> <内容>`、`/reply <内容>` 跨服点对点，后端路由，支持离线目标的处理与私信开关。\n- **屏蔽玩家**：`/nc ignore <玩家>` 屏蔽后不再收到对方聊天、提及和私聊内容。\n- **频道前缀**：支持单字符频道前缀（如 `!`、`#`），快速在频道间切换发言。\n- **慢速模式**：频道级发言间隔限制，也承担了服务端的限流职责。\n- **管理操作**：禁言、踢出、公告、Title 广播等治理命令集中在后端处理，不依赖消息来自哪个平台。\n- **敏感词过滤**：支持自定义词表与正则，配合通知系统可做违规计分与自动处罚。\n\n完整字段、数据库选项与功能开关见 [`examples/novalink.yml`](https://github.com/XingLingQAQ/NovaLink/blob/master/examples/novalink.yml)。\n\n---\n\n<a id=\"operations\"></a>\n<p align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/XingLingQAQ/NovaLink/master/assets/readme/sections/section-05-operations.png\" alt=\"部署与运营\" width=\"100%\" />\n</p>\n\nNovaLink 可以从单台本地服务器起步，也可以根据社区规模拆分数据层、反向代理和控制面。部署时请明确数据面、控制面、存储和管理入口的网络边界。\n\n### 后端与数据层\n\n| 组件 | 说明 | 适合的起点 |\n| --- | --- | --- |\n| NovaLink 后端 | Java 17+ 运行时（构建需 JDK 21+，Folia/Velocity 平台需 JDK 25）；`StarLink/core` 产出可直接运行的 fat JAR | 先在本地或测试环境跑通一条端到端消息 |\n| 数据存储 | 支持 MySQL/MariaDB、PostgreSQL、SQLite、Redis 与内存模式 | 本地从 SQLite 起步；生产环境选持久化方案 |\n| 平台客户端 | 不同模块使用 Java、PHP、Python 或原生工具链 | 从你网络里最重要的服务端开始接入 |\n\n### Admin Console\n\n管理面板位于 [`Panel/web`](https://github.com/XingLingQAQ/NovaLink/blob/master/Panel/web)，用 React + Vite 构建。它是后端控制面的入口，不是另一套聊天系统：登录后，前端通过 REST 与 WebSocket 连接同一个 NovaLink 网络。\n\n```bash\ncd Panel/web\nnpm ci\nnpm run dev\n\n# 生产构建\nnpm run build\n```\n\n登录页默认向同源 `/api` 发起 REST 请求，并用当前主机的 `8889` 端口建立 WebSocket 连接。**Advanced Settings** 可以在当前会话覆盖这两个地址。生产部署时请显式配置反向代理的 API 与 WebSocket 转发，并避免把认证端点暴露在不可信网络中。\n\n面板内置页面：仪表盘、消息监控（支持历史消息检索）、控制台、服务器状态、频道管理、玩家管理、公告管理、敏感词管理、Webhook 与通知。\n\n---\n\n<a id=\"build-verify\"></a>\n<p align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/XingLingQAQ/NovaLink/master/assets/readme/sections/section-06-build-verify.png\" alt=\"开发与验证\" width=\"100%\" />\n</p>\n\n修改协议、路由或平台适配时，请选择与改动范围相符的验证方式。下面这些命令按日常构建到真实环境验证的范围排列；文档或小范围改动通常不需要启动真实 Minecraft 集群。\n\n| 你要确认什么 | 命令 |\n| --- | --- |\n| 全仓能否正常构建 | `./gradlew build` |\n| 常规静态检查是否通过 | `./gradlew check` |\n| 后端行为是否通过测试 | `./gradlew :StarLink:core:test` |\n| 后端 JAR 是否可产出 | `./gradlew :StarLink:core:shadowJar` |\n| Admin Console 是否可生产构建 | `cd Panel/web && npm run build` |\n| 真实服务端链路是否可跑通 | `./gradlew realE2E` |\n\n项目维护单元、属性、集成和真实服务端 E2E 的分层验证路径。跨语言协议一致性由 golden bytes 测试保证（Java / PHP / Python / C++ 四端对同一批字节样本编解码比对）。真实 E2E 是显式选择的任务，需要真实 Minecraft 服务端文件、机器人进程、Node.js、匹配的 JDK 与平台运行环境；环境前提和编排方式见 [`test/README.md`](https://github.com/XingLingQAQ/NovaLink/blob/master/test/README.md)。\n\n---\n\n<a id=\"resources\"></a>\n<p align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/XingLingQAQ/NovaLink/master/assets/readme/sections/section-07-resources.png\" alt=\"项目资源与协作\" width=\"100%\" />\n</p>\n\n| 如果你正在…… | 从这里开始 |\n| --- | --- |\n| 调整后端、频道、客户端或权限配置 | [`examples/novalink.yml`](https://github.com/XingLingQAQ/NovaLink/blob/master/examples/novalink.yml) |\n| 配置某个 NovaChat 接入端 | [`examples/novachat-config.yml`](https://github.com/XingLingQAQ/NovaLink/blob/master/examples/novachat-config.yml) |\n| 理解客户端运行时的设计边界 | [`NovaChat/client-core/DESIGN.md`](https://github.com/XingLingQAQ/NovaLink/blob/master/NovaChat/client-core/DESIGN.md) |\n| 修改或部署管理面板 | [`Panel/web`](https://github.com/XingLingQAQ/NovaLink/blob/master/Panel/web) |\n| 准备真实服务器验证 | [`test/README.md`](https://github.com/XingLingQAQ/NovaLink/blob/master/test/README.md) |\n| 从接入、部署、运维或 API 文档开始 | [`docs/README.md`](https://github.com/XingLingQAQ/NovaLink/blob/master/docs/README.md) |\n| 查阅架构与协议文档 | [`docs`](https://github.com/XingLingQAQ/NovaLink/blob/master/docs) |\n\n提交贡献前，请在 [Issues](https://github.com/XingLingQAQ/NovaLink/issues) 里确认是否已有类似需求、缺陷或平台兼容性讨论。提交 PR 时请说明受影响的平台、配置或接口、已执行的验证以及仍未验证的限制。不要在 Issue、示例配置或测试日志里提交真实密码、JWT 密钥、数据库凭据、私有 IP 或生产 Webhook。\n\n---\n\n<a id=\"license\"></a>\n<p align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/XingLingQAQ/NovaLink/master/assets/readme/sections/section-08-license.png\" alt=\"许可证\" width=\"100%\" />\n</p>\n\nNovaLink 以 [MIT License](https://github.com/XingLingQAQ/NovaLink/blob/master/LICENSE) 发布。你可以在遵守许可证的前提下使用、修改和分发本项目。\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-10-17",
+      "description": "",
+      "title": "NovaLink logo",
+      "url": "https://raw.githubusercontent.com/XingLingQAQ/NovaLink/master/Panel/web/public/novalink-logo.svg"
+    },
+    {
+      "created": "2026-10-17",
+      "description": "",
+      "title": "NovaLink connects Java, Bedrock, proxy and mod servers through one routing core",
+      "url": "https://raw.githubusercontent.com/XingLingQAQ/NovaLink/master/assets/readme/novalink-network.webp"
+    },
+    {
+      "created": "2026-10-17",
+      "description": "",
+      "title": "项目概览",
+      "url": "https://raw.githubusercontent.com/XingLingQAQ/NovaLink/master/assets/readme/sections/section-00-overview.png"
+    },
+    {
+      "created": "2026-10-17",
+      "description": "",
+      "title": "系统架构",
+      "url": "https://raw.githubusercontent.com/XingLingQAQ/NovaLink/master/assets/readme/sections/section-01-architecture.png"
+    },
+    {
+      "created": "2026-10-17",
+      "description": "",
+      "title": "快速开始",
+      "url": "https://raw.githubusercontent.com/XingLingQAQ/NovaLink/master/assets/readme/sections/section-02-get-started.png"
+    },
+    {
+      "created": "2026-10-17",
+      "description": "",
+      "title": "模块结构",
+      "url": "https://raw.githubusercontent.com/XingLingQAQ/NovaLink/master/assets/readme/sections/section-03-system-map.png"
+    },
+    {
+      "created": "2026-10-17",
+      "description": "",
+      "title": "频道与路由",
+      "url": "https://raw.githubusercontent.com/XingLingQAQ/NovaLink/master/assets/readme/sections/section-04-channels.png"
+    },
+    {
+      "created": "2026-10-17",
+      "description": "",
+      "title": "部署与运营",
+      "url": "https://raw.githubusercontent.com/XingLingQAQ/NovaLink/master/assets/readme/sections/section-05-operations.png"
+    },
+    {
+      "created": "2026-10-17",
+      "description": "",
+      "title": "开发与验证",
+      "url": "https://raw.githubusercontent.com/XingLingQAQ/NovaLink/master/assets/readme/sections/section-06-build-verify.png"
+    },
+    {
+      "created": "2026-10-17",
+      "description": "",
+      "title": "项目资源与协作",
+      "url": "https://raw.githubusercontent.com/XingLingQAQ/NovaLink/master/assets/readme/sections/section-07-resources.png"
+    },
+    {
+      "created": "2026-10-17",
+      "description": "",
+      "title": "许可证",
+      "url": "https://raw.githubusercontent.com/XingLingQAQ/NovaLink/master/assets/readme/sections/section-08-license.png"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/92240364?v=4",
+  "id": "XingLingQAQ/NovaLink--novachat-bedrock-pnx",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/nova/novachat",
+    "wiki": ""
+  },
+  "manifest_path": "NovaChat/Bedrock/pnx/src/main/resources/plugin.yml",
+  "name": "NovaChat",
+  "pending": true,
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/XingLingQAQ/NovaLink",
+  "stars": 0,
+  "summary": "Cross-server chat channel system for PowerNukkitX Bedrock",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1792259827,
+  "versions": []
+}

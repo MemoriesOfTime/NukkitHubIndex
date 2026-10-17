@@ -122,6 +122,11 @@
       "url": "https://github.com/PyvesB"
     },
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/18164643?v=4",
+      "name": "zisunny104",
+      "url": "https://github.com/zisunny104"
+    },
+    {
       "avatar_url": "https://avatars.githubusercontent.com/u/59896907?v=4",
       "name": "Zoriot",
       "url": "https://github.com/Zoriot"
@@ -137,11 +142,6 @@
       "url": "https://github.com/PerchunPak"
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/20236173?v=4",
-      "name": "inductor",
-      "url": "https://github.com/inductor"
-    },
-    {
       "avatar_url": "https://avatars.githubusercontent.com/u/3718398?v=4",
       "name": "galexrt",
       "url": "https://github.com/galexrt"
@@ -152,14 +152,19 @@
       "url": "https://github.com/Creeperface01"
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/6012891?v=4",
-      "name": "HexedHero",
-      "url": "https://github.com/HexedHero"
-    },
-    {
       "avatar_url": "https://avatars.githubusercontent.com/u/13738234?v=4",
       "name": "Eyremba",
       "url": "https://github.com/Eyremba"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/20236173?v=4",
+      "name": "inductor",
+      "url": "https://github.com/inductor"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/6012891?v=4",
+      "name": "HexedHero",
+      "url": "https://github.com/HexedHero"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/12835420?v=4",
@@ -227,9 +232,9 @@
       "url": "https://github.com/ToxiWoxi"
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/18164643?v=4",
-      "name": "zisunny104",
-      "url": "https://github.com/zisunny104"
+      "avatar_url": "https://avatars.githubusercontent.com/u/24662388?v=4",
+      "name": "tkwhd123",
+      "url": "https://github.com/tkwhd123"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/22937970?v=4",
@@ -275,11 +280,6 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/29792376?v=4",
       "name": "ColdeZhang",
       "url": "https://github.com/ColdeZhang"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/24662388?v=4",
-      "name": "tkwhd123",
-      "url": "https://github.com/tkwhd123"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/32383605?v=4",
@@ -435,8 +435,32 @@
     "nkmot",
     "pnx"
   ],
-  "updated_at": 1791831023,
+  "updated_at": 1792259582,
   "versions": [
+    {
+      "changelog": "# 5.9 DEV build 3705\r\n\r\nThis dev build contains a lot of new features, fabric 26.3 support as well as bugfixes.\r\n\r\nSpecial thanks to **AnttiMK**, **DomasUrbonas** & **RomainCabaret** for contributions to this update\r\n\r\n# Breaking changes: Java 17 or newer now required\r\n\r\nPlan now requires Java 17 or newer. \r\n\r\nAPI is still compiled with Java 8, but that will also change to 17 in Plan version 5.10.\r\n\r\n# Change log\r\n\r\n## Fabric 26.3\r\n\r\n- DomasUrbonas added support for fabric 26.3, older versions are no longer supported.\r\n\r\n## Data gathering\r\n\r\n### New data: Minecraft statistics\r\n\r\nPlan will now gather all Minecraft statistics from the player json files found in statistics folder on the game servers. They are displayed on Player, Server (sum of players) and Network pages (sum of players / server or sum of all players)\r\n\r\n### Kill tracking additions\r\n\r\n- RomanCabaret implemented support for TNT explosion kills on Bukkit, Fabric and Sponge when ignited directly by a player\r\n\r\n### Bugfixes\r\n\r\n- Fixed Shutdown session save sometimes storing sessions twice if server was shutdown via keyboard interrupt\r\n- AnttiMK Fixed Folia gathering performance data 20 times more frequently than intended.\r\n- Fixed Exception on Folia when setHealth(0) was called that killed the player.\r\n- Fixed setHealth(0) recording the death as a kill for the last player that damaged the player\r\n\r\n## Database\r\n\r\n- Fixed database transaction queue size tracking not working correctly.\r\n- Reduced memory impact of transaction queue\r\n\r\n## Webserver\r\n\r\n- Webserver was migrated to Jetty 12 which requires Java 17. This added support for asynchronous response resolution which means more requests can be processed without waiting for previous requests to complete.\r\n\r\n## DataExtensions\r\n\r\n### DataExtensions Graph API\r\n\r\n- New API allows DataExtensions to add their own Line graph data to the website. Documented here: https://github.com/plan-player-analytics/Plan/wiki/DataExtension-API-Graphs\r\n- Vault now graphs player balance over time\r\n- BuyCraft now graphs cumulative income over time.\r\n\r\n### DataExtensions Statistics API\r\n\r\n- New API allows DataExtensions to add numeric data in table format more easily\r\n- Jobs now lists job levels as Statistics\r\n- mcMMO now lists skill levels as Statistics\r\n\r\n### Other\r\n\r\n- Plugin data cards can now be collapsed for easier viewing\r\n- Different types of data inside plugin cards now layout slightly better.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.9-build-3705.jar",
+          "primary": true,
+          "sha256": "75cc7109e146b289320674fb56da395374d979ea7badddb09830231c7d37603a",
+          "size": 18492202,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.9.3705/Plan-5.9-build-3705.jar"
+        },
+        {
+          "filename": "PlanFabric-5.9-build-3705.jar",
+          "primary": true,
+          "sha256": "1cac0e6f200359274b9ab5bfe1ecc8ed35837a6067b5fd95bb1feed1c77f45f4",
+          "size": 18068801,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.9.3705/PlanFabric-5.9-build-3705.jar"
+        }
+      ],
+      "name": "5.9 DEV build 3705",
+      "prerelease": true,
+      "published_at": 1792229594,
+      "version": "5.9.3705"
+    },
     {
       "changelog": "# 5.8 build 3638\r\n\r\nThis update brings some improvements and bugfixes. **Next update 5.9 will require Java 17 or newer** so this is released before that to get those unable to update as many fixes as possible. bStats is showing Java versions <17 at 0.6% or 35/5300 so consider updating your Java version if you're able.\r\n\r\nSpecial thanks to **Zoriot** and **Minecraft0122** for contributions to this update.\r\n\r\n# Change log\r\n\r\n## Database\r\n\r\n- Possibly fixed deadlock related to RemoveDuplicateUserInfoTransaction\r\n\r\n## Webserver\r\n\r\n- Fixed minor vulnerability where path traversal bypass allowed anyone to read .json files on the system with a tab \\t or newline \\n character in the file path. This is minor because filesystems often block using those characters in filenames, they are not common with .json files, and attacker would need to know the relative path to the file.\r\n\r\n## Extensions\r\n\r\n- Extension metadata is now cached in memory to avoid redundant database updates. Thanks to Minecraft0122 for work on this.\r\n- Fixed LuckPerms related exception after Plan was reloaded\r\n\r\n## Other\r\n\r\n- Zoriot added fabric-permissions-api as an optional dependency to fabric publish ",
       "downloads": 0,
@@ -1110,28 +1134,6 @@
       "prerelease": true,
       "published_at": 1706342862,
       "version": "5.6.2731"
-    },
-    {
-      "changelog": "# 5.6 DEV build 2703\r\n\r\nThis is dev release contains changes from last 3 months, it is mainly a maintenance update.\r\n\r\nSpecial thanks to **jhqwqmc, Vankka and Beniro** for contributions to this update!\r\n\r\n# Change log\r\n\r\n## Website\r\n\r\n- The react bundle is now built using Vite. It utilizes modules available in modern browsers. This sped up build times by 7 minutes and should also improve page loading speed.\r\n- Fixed some issues where reverse proxied Plan website loaded a blank page\r\n\r\n## Fabric 1.20.4\r\n\r\n- Binero implemented Fabric 1.20.4 support, 1.20.3 is not supported this build onwards.\r\n\r\n## Extensions\r\n\r\n- Vankka updated DiscordSRV Extension to fix an incompatibility with new DiscordSRV version\r\n\r\n## Locale\r\n\r\n- jhqwqmc updated Chinese locale (CN)",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "Plan-5.6-dev-build-2703.jar",
-          "primary": true,
-          "size": 16264139,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2703/Plan-5.6-dev-build-2703.jar"
-        },
-        {
-          "filename": "PlanFabric-5.6-dev-build-2703.jar",
-          "primary": true,
-          "size": 16397700,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2703/PlanFabric-5.6-dev-build-2703.jar"
-        }
-      ],
-      "name": "5.6 DEV build 2703",
-      "prerelease": true,
-      "published_at": 1704622225,
-      "version": "5.6.2703"
     }
   ]
 }

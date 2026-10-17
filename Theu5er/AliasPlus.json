@@ -10,7 +10,7 @@
   "categories": [],
   "created_at": 1791132147,
   "dependencies": [],
-  "description": "# Alias+\n\nA Minecraft Bedrock Edition alt-account detection plugin built on the Nukkit-MOT core.\n\n**Advantages:**\n\nUnlike other anti-alt plugins on the market, we not only support basic checks like DID, SSID, and CID, but also have developed detection based on resource pack cache and BlobCache—less common methods designed specifically to catch spoofers. We also provide a query and punishment API, with support for delayed punishments.\n\n**Usage:**\n\nEnable `force-resources` in the `server.properties` file.\n\n```\n/alias <name/uuid/xuid>\n```\n\nExample output:\n\n```\nplayer's accounts (uuid: b1033201-7292-3cac-9bf0-2059ac139adc)--\nDeviceId: player1\nSelfSignedId: player1\nClientRandomId: player1\nResPackCache: player1\nBlobCache: player1\n```\n\n**Notes:**\n\nThis project was originally intended as a technical demonstration. It has not undergone comprehensive or rigorous testing and may contain bugs—please do not use it on a production server.\n\nThe ResPackCache output can potentially be spoofed, but when necessary, you can simply ban all accounts returned, since they can only be alt accounts or cheaters.\n\n## Developer API\n\n### Setup\n\nAdd `depend: [Alias+]` to your plugin's `plugin.yml`, then get the instance:\n\n```java\nAltDetector alias = (AltDetector) getServer().getPluginManager().getPlugin(\"Alias+\");\n```\n\n### Punish API\n\n```java\nint count = alias.punish(uuid, delayed);\n```\n\n- `uuid`: player uuid string (`player.getUniqueId().toString()`)\n- `delayed`: `true` for delayed ban / `false` for immediate ban\n- Returns: number of accounts queued (the target itself + all related alt accounts, deduplicated)\n- Punishment command and delay range are configured in `config.yml`: `punish-command` (placeholders `%player%`, `%uuid%`), `punish-delay-min`, `punish-delay-max` (seconds)\n\n### Query API\n\n```java\nSet<String> alts = alias.getRelatedAccounts(uuid);                  // all related alt uuids\nMap<String, Set<String>> byDim = alias.getRelatedByDimension(uuid); // by dimension (device/selfSigned/clientRandom/pack/blob)\n```",
+  "description": "# Alias+\n\nA Minecraft Bedrock Edition alt-account detection plugin built on the Nukkit-MOT core.\n\n**Advantages:**\n\n🔍\n**Unique Detection**\nWe have more detection methods than similar plugins, so the average spoofer is no longer unsolvable.\n\n🎯\n**High Accuracy**\nDetection does not rely on non-unique evidence like IP; results can be used for bans directly.\n\n🤫\n**Silent Detection**\nDetection is almost completely silent and supports delayed punishments—cheaters have no idea why they got banned.\n\n🔗\n**Developer API**\nWe provide query and punishment APIs, allowing you to ban all alt accounts with one call.\n\n**Usage:**\n\nEnable `force-resources` in the `server.properties` file.\n\n```\n/alias <name/uuid/xuid>\n```\n\nExample output:\n\n```\n--ExampleAcc's accounts (xuid: 123456)--\nDeviceId: ExampleAcc\nClientRandomId: ExampleAcc\nResPackCache: ExampleAcc\nBlobCache: ExampleAcc\n```\n\n## Configuration (`config.yml`)\n\nAll options are created with defaults on first launch; everything below is optional.\n\n| Option | Default | Description |\n|---|---|---|\n| `packcache-enabled` | `true` | Enable the resource pack cache detection dimension |\n| `blobcache-enabled` | `true` | Enable the blob cache detection dimension |\n| `strictmode` | `true` | Association direction. `true` = one-way (only show who cached/hit the target's fingerprints); `false` = two-way (also show whose fingerprints the target cached/hit). Two-way mode allows spoofed hits to frame innocent players via punishment chaining. |\n| `punish-command` | `ban %player% Alt account detected` | Punishment command template, executed as console. Placeholders: `%player%` = player name, `%uuid%` = player uuid |\n| `punish-delay-min` | `5` | Minimum random delay for delayed bans (seconds, rolled independently per account) |\n| `punish-delay-max` | `30` | Maximum random delay for delayed bans (seconds, rolled independently per account) |\n\n**Notes:**\n\nThis project is a vibe-coding-assisted technical demo. It may contain bugs—do not use it on a production server.\n\nThe ResPackCache and BlobCache output can potentially be spoofed, but when necessary, you can simply ban all accounts returned, since they can only be alt accounts or cheaters.\n\n## Developer API\n\n### Setup\n\nAdd `depend: [Alias+]` to your plugin's `plugin.yml`, then get the instance:\n\n```java\nAltDetector alias = (AltDetector) getServer().getPluginManager().getPlugin(\"Alias+\");\n```\n\n### Punish API\n\n```java\nint count = alias.punish(uuid, delayed);\n```\n\n- `uuid`: player uuid string (`player.getUniqueId().toString()`)\n- `delayed`: `true` for delayed ban / `false` for immediate ban\n- Returns: number of accounts queued (the target itself + all related alt accounts, deduplicated)\n- Punishment command and delay range are configured in `config.yml`: `punish-command` (placeholders `%player%`, `%uuid%`), `punish-delay-min`, `punish-delay-max` (seconds)\n\n### Query API\n\n```java\nSet<String> alts = alias.getRelatedAccounts(uuid);                  // all related alt uuids\nMap<String, Set<String>> byDim = alias.getRelatedByDimension(uuid); // by dimension (device/selfSigned/clientRandom/pack/blob)\n```",
   "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
@@ -33,8 +33,25 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1791376131,
+  "updated_at": 1792255007,
   "versions": [
+    {
+      "changelog": "v1.0.2\r\n\r\n[+] Added a strictmode option; disabling it allows two-way marking between ResPackCache and BlobCache. Enabled by default.\r\n[*] BlobCache: two-way marking is now disabled to avoid potential false positives; detection is now triggered when a player joins the server; minor performance improvements.\r\n[*] ResPackCache: no longer requires initialization, and fixed false positives in ResourcePackSpoof detection.\r\n[*] Rewrote the punishment logic.\r\n[*] Fixed some other minor issues.\r\n[-] Removed the blobcache-debug config option.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Alias+.jar",
+          "primary": true,
+          "sha256": "702fa225d3a00728621fd72ce125a7fc9c845b6afb924ac76b31aed780831e2e",
+          "size": 46753,
+          "url": "https://github.com/Theu5er/AliasPlus/releases/download/v1.0.2/Alias%2B.jar"
+        }
+      ],
+      "name": "v1.0.2",
+      "prerelease": false,
+      "published_at": 1792250080,
+      "version": "v1.0.2"
+    },
     {
       "changelog": "v1.0.1\r\n\r\n[+] Added query and punishment API for alt accounts; see README for details\r\n[-] Removed the success message for BlobCache queries\r\n[*] Only players with the altdetector.alias permission can use /alias now",
       "downloads": 0,

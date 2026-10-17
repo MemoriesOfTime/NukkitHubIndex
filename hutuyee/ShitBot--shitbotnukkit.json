@@ -55,8 +55,60 @@
   "targets": [
     "nkmot"
   ],
-  "updated_at": 1791707904,
+  "updated_at": 1792229642,
   "versions": [
+    {
+      "changelog": "## What's Changed\n\n### Fixed Bug\n\n- 修复缺失配置、语言文本和图片主题默认值只在内存中生效的问题：启动或重载时会补齐缺失键、`null` 值及空文件，并写回磁盘，保留已有配置、自定义键和注释。\n- 修复空配置与旧版语言迁移的执行顺序，避免补全默认配置后遗漏旧语言文本。\n- 修复内置高级图片模板不完整时无法恢复的问题：自动补全缺失的草稿、素材目录和默认字段；发布指针丢失时可从有效的历史版本恢复，已有图层与历史快照会保留。\n- 修复 OneBot 调试日志、连接地址和异常信息可能泄露 Access Token 的问题；收紧回环地址识别，并在 WebSocket 解码阶段限制超大入站消息。\n- 修复远程 MySQL TLS 参数检查可能被重复参数、大小写或参数优先级绕过的问题，按实际连接参数严格判断是否启用 TLS。\n- 加强远程模板图片下载：固定已验证的公网连接地址、逐次检查重定向并保留域名证书校验，防止 DNS 重绑定绕过地址限制；同时限制下载队列、缓存、图片解码和网络读取耗时。\n- 修复模板 YAML 循环引用、过深或过量展开造成的资源消耗问题，并加强素材上传及源码读取的符号链接与临时文件保护。\n\n### Feat\n\n- 新增内置玩家个人资料图：QQ 群发送 `个人资料` / `个人信息`，可查询自己绑定角色的皮肤、在线状态、权限组、点券和累计在线时长；可选 PlaceholderAPI 字段不可用时自动隐藏。关联 [#2](https://github.com/hutuyee/ShitBot/issues/2)。\n- 新增可编辑的 `player-profile` 与 `inventory` 高级图片模板及数据提供器，支持个人信息卡片、装备、副手、主背包、快捷栏、物品数量和耐久展示；`自定义个人信息`、`自定义背包` 群命令入口可在 `commands.yml` 中启用，默认关闭。\n- 扩展公共图片 API：开放在线状态、个人资料和背包图片渲染，提供 PNG 字节、流式读取、按需 Base64 / data URI，以及有界队列的异步本地文件保存；原生个人资料与背包图片接口无需开启高级模板。\n- 新增自动配置备份：版本变化、自动补全或迁移配置，以及新版本更新器替换 JAR 前，保存原始配置到 `config-backups/`；代理联动更新的后端各自备份，备份失败时停止对应写入或替换。\n- 补齐英文 README 和使用手册，完善个人资料、外置模板、图片 API、配置恢复及安全边界说明。\n- 完善发布流程，增加 Java 8 / 17 / 21 与 Linux / Windows CI 矩阵、测试报告汇总、发布文件内容与 Java 字节码目标检查。\n\n**升级说明：** 无需删除或重新生成完整配置，首次启动会备份现有配置并补齐新增字段。数据库自动升级至 schema 7，新增 `shitbot_player_stats` 保存在线时长；数据库、`image-templates/` 和自定义图片资源仍需自行备份。代理与后端建议同步升级至 1.2.0，并正常重启。Java 最低要求保持不变：Spigot / BungeeCord 为 8，Nukkit-MOT 为 17，Velocity 为 21。高级模板使用同版本 `ShitBotRenderer`，启用后按需下载；个人资料皮肤地址可通过 `profile.skin-url-template` 配置。\n\n**Full Changelog**: [1.1.5...1.2.0](https://github.com/hutuyee/ShitBot/compare/1.1.5...1.2.0)\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ShitBotApi-1.2.0.jar",
+          "primary": true,
+          "sha256": "30026c339f04ea1a1cf70975e1554d7e8ae9b7cec438470d0bd187d35d630c68",
+          "size": 19372,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.2.0/ShitBotApi-1.2.0.jar"
+        },
+        {
+          "filename": "ShitBotBungee-1.2.0.jar",
+          "primary": true,
+          "sha256": "d0cec75a6101caa64b9af456754720b1c97eb8f95238a8d784ff83280fae8f7a",
+          "size": 1302859,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.2.0/ShitBotBungee-1.2.0.jar"
+        },
+        {
+          "filename": "ShitBotNukkit-1.2.0.jar",
+          "primary": true,
+          "sha256": "ef57f1c4db18f08192ddf858bf32587dc7cadd88ac5643c1d3840b4b15aa9600",
+          "size": 1267851,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.2.0/ShitBotNukkit-1.2.0.jar"
+        },
+        {
+          "filename": "ShitBotRenderer-1.2.0.jar",
+          "primary": true,
+          "sha256": "e17a2a8e43bfbfd3bf03cd2fd85d022e7155359e9e7f270d8a3148572732a2b7",
+          "size": 2228369,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.2.0/ShitBotRenderer-1.2.0.jar"
+        },
+        {
+          "filename": "ShitBotSpigot-1.2.0.jar",
+          "primary": true,
+          "sha256": "03afbd3a68583f1091450b95bdb0d1da430ced9c6b6c3a113e4479fc239e80bb",
+          "size": 1375421,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.2.0/ShitBotSpigot-1.2.0.jar"
+        },
+        {
+          "filename": "ShitBotVelocity-1.2.0.jar",
+          "primary": true,
+          "sha256": "21190e52d2a883d2658961cae902002a9982f1d6e4633c4e9d44bd3546eb6f97",
+          "size": 1208806,
+          "url": "https://github.com/hutuyee/ShitBot/releases/download/1.2.0/ShitBotVelocity-1.2.0.jar"
+        }
+      ],
+      "name": "ShitBot v1.2.0",
+      "prerelease": false,
+      "published_at": 1792229642,
+      "version": "1.2.0"
+    },
     {
       "changelog": "## What's Changed\n\n- 新增高级图片模板与可视化编辑器，支持图层、条件/循环、PAPI、玩家头像及模板发布、回滚。\n- 重绘在线状态图、背包图和编辑器界面，优化单服玩家列表、代理子服分组与文字对比度。\n- 完善编辑器快捷键、撤销/重做和会话自动续期，支持在游戏内打开、复制编辑器链接。\n- 新增独立公共 API 和无 QQ 白名单管理，补全 PlaceholderAPI 变量。\n- 修复玩家名大小写造成的权限、背包查询和解绑串号问题，绑定验证码改为代理认证完成后发放。\n- 增加调试日志与本地渲染器加载，修复重载时启动通知状态丢失，优化图片渲染缓存。\n\n高级图片模板为可选功能，启用后自动下载对应版本的 ShitBotRenderer；默认图片模式无需额外安装。\n\n**Full Changelog**: [1.1.0...1.1.5](https://github.com/hutuyee/ShitBot/compare/1.1.0...1.1.5)",
       "downloads": 0,
