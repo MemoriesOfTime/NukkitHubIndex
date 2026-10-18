@@ -12,14 +12,19 @@
       "url": "https://github.com/xRookieFight"
     },
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/56545793?v=4",
+      "name": "TraxTRL",
+      "url": "https://github.com/TraxTRL"
+    },
+    {
       "avatar_url": "https://avatars.githubusercontent.com/u/82237910?v=4",
       "name": "AzaleeX",
       "url": "https://github.com/AzaleeX"
     },
     {
-      "avatar_url": "https://avatars.githubusercontent.com/u/56545793?v=4",
-      "name": "TraxTRL",
-      "url": "https://github.com/TraxTRL"
+      "avatar_url": "https://avatars.githubusercontent.com/u/77458410?v=4",
+      "name": "pedrotelesh",
+      "url": "https://github.com/pedrotelesh"
     }
   ],
   "categories": [
@@ -49,8 +54,25 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1789411483,
+  "updated_at": 1792310314,
   "versions": [
+    {
+      "changelog": "## What's Changed\n* feat: Add 1.26.50 support (2192) by @xRookieFight in https://github.com/PowerNukkitX-Bundle/AnyVersion/pull/19\n\n\n**Full Changelog**: https://github.com/PowerNukkitX-Bundle/AnyVersion/compare/v2.8.7...v2.8.8",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AnyVersion.jar",
+          "primary": true,
+          "sha256": "a38d8921a1161b3299bb2ef52d6147f5cc5afa95d7315f84241f4ac5eb53c0b3",
+          "size": 484672,
+          "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/v2.8.8/AnyVersion.jar"
+        }
+      ],
+      "name": "v2.8.8",
+      "prerelease": false,
+      "published_at": 1792310314,
+      "version": "v2.8.8"
+    },
     {
       "changelog": "## What's Changed\n* feat: add 1.26.44 & 1.26.45 version support by @xRookieFight in https://github.com/PowerNukkitX-Bundle/AnyVersion/pull/14\n\n\n**Full Changelog**: https://github.com/PowerNukkitX-Bundle/AnyVersion/compare/v2.8.6...v2.8.7",
       "downloads": 0,

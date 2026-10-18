@@ -33,7 +33,7 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/PowerEssentials/PowerEssentials-Nukkit",
-  "stars": 1,
+  "stars": 2,
   "summary": "PowerEssentials plugin for Nukkit",
   "targets": [
     "nkx",
