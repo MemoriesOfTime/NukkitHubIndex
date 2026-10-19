@@ -46,7 +46,7 @@
     "nkmot",
     "pnx"
   ],
-  "updated_at": 1791995086,
+  "updated_at": 1792412563,
   "versions": [
     {
       "changelog": "Kordon 1.11.0 — Lumi, BungeeCord, Waterfall, Velocity и прокси на их основе (например, XCord), нужна Java 21 или новее\r\n\r\n### Changes from upstream 1.11.0:\r\n- Merged upstream Kordon 1.11.0 changes: ClientSettings tracking, BungeeChannels & VelocityChannels fake connection mitigation.\r\n- Full Bedrock Edition & Floodgate support:\r\n  - Supports Bedrock gamertags containing spaces in authentication and API sync.\r\n  - Strips raw § color codes from Bedrock kick messages to avoid client glitches.\r\n  - Waterdog / WaterdogPE proxy support.\r\n  - Native Lumi / Nukkit Bedrock module.\r\n\r\n### Downloads:\r\n- **Kordon.jar**: Universal proxy plugin (BungeeCord, Waterfall, Velocity)\r\n- **Kordon-Bungee.jar**: Standalone BungeeCord / Waterfall plugin\r\n- **Kordon-Velocity.jar**: Standalone Velocity plugin\r\n- **Kordon-Lumi.jar**: Native Lumi / Nukkit server plugin",
