@@ -46,8 +46,46 @@
     "nkmot",
     "pnx"
   ],
-  "updated_at": 1792412563,
+  "updated_at": 1792504850,
   "versions": [
+    {
+      "changelog": "### Changes in v1.11.1\n\n- Enhanced Velocity spoofer for Bedrock / Nukkit\n- Java deterministic offline UUID generation for online players, login and lookups\n- Bedrock port 19132 mapped to default Java 25565 virtualHost fallback\n- Backend server connection, vanilla brand and client settings emulation upon join",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Kordon-Bungee.jar",
+          "primary": true,
+          "sha256": "d266dad7425c236e9ecb83c8fbd7b2792f091ed15466aafadcf7cf2c3fe4e1de",
+          "size": 698458,
+          "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.11.1/Kordon-Bungee.jar"
+        },
+        {
+          "filename": "Kordon-Lumi.jar",
+          "primary": true,
+          "sha256": "a5ddff8b11a8c6f82608dced0f5b24b717775786b500c123fe632148b5331cb3",
+          "size": 679152,
+          "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.11.1/Kordon-Lumi.jar"
+        },
+        {
+          "filename": "Kordon-Velocity.jar",
+          "primary": true,
+          "sha256": "64a830ab80ff3b1ab31322cf71394c0d4e013c9de028927e8402411d715272b9",
+          "size": 691038,
+          "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.11.1/Kordon-Velocity.jar"
+        },
+        {
+          "filename": "Kordon.jar",
+          "primary": true,
+          "sha256": "dcff2baaa0903b6a6be53857ce365ebf28765f90a03767703e917a5b6e71bdbe",
+          "size": 760146,
+          "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.11.1/Kordon.jar"
+        }
+      ],
+      "name": "v1.11.1",
+      "prerelease": false,
+      "published_at": 1792504850,
+      "version": "v1.11.1"
+    },
     {
       "changelog": "Kordon 1.11.0 — Lumi, BungeeCord, Waterfall, Velocity и прокси на их основе (например, XCord), нужна Java 21 или новее\r\n\r\n### Changes from upstream 1.11.0:\r\n- Merged upstream Kordon 1.11.0 changes: ClientSettings tracking, BungeeChannels & VelocityChannels fake connection mitigation.\r\n- Full Bedrock Edition & Floodgate support:\r\n  - Supports Bedrock gamertags containing spaces in authentication and API sync.\r\n  - Strips raw § color codes from Bedrock kick messages to avoid client glitches.\r\n  - Waterdog / WaterdogPE proxy support.\r\n  - Native Lumi / Nukkit Bedrock module.\r\n\r\n### Downloads:\r\n- **Kordon.jar**: Universal proxy plugin (BungeeCord, Waterfall, Velocity)\r\n- **Kordon-Bungee.jar**: Standalone BungeeCord / Waterfall plugin\r\n- **Kordon-Velocity.jar**: Standalone Velocity plugin\r\n- **Kordon-Lumi.jar**: Native Lumi / Nukkit server plugin",
       "downloads": 0,
