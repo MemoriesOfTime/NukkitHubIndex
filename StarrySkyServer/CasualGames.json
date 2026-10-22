@@ -1,0 +1,44 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/268506330?v=4",
+      "name": "enigHim",
+      "url": "https://github.com/enigHim"
+    }
+  ],
+  "categories": [],
+  "created_at": 1792654374,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "EconomyAPI",
+      "version_range": ""
+    }
+  ],
+  "description": "# CasualGames — Nukkit-MOT 休闲游戏合集\n\n## 项目简介\n\nCasualGames 是一个基于 **Nukkit-MOT** 的桌面/牌桌游戏插件，为 Minecraft 基岩版服务器提供七种游戏：\n**五子棋 / 中国象棋 / 黑白棋（奥赛罗）/ 围棋 / 斗兽棋 / UNO / 斗地主**。\n\n棋盘与牌桌由自定义方块 + 单个渲染实体 + 内置资源包绘制，玩家右键放下、入座即玩，\n支持机器人 AI、托管代打、断线接管与 EconomyAPI 结算。资源包随插件打包，由服务端自动下发。\n\n## 游戏一览\n\n| 游戏 | 规格 | 人数 | 备注 |\n| --- | --- | --- | --- |\n| 五子棋 | 15×15，2×2 / 3×3 两种摆放 | 2 | 内置 AI |\n| 中国象棋 | 9×10 标准棋盘（32 子） | 2 | xqwlight 引擎 |\n| 黑白棋 | 8×8 | 2 | 内置 AI |\n| 围棋 | 9 / 13 / 19 路（19 路另有大号 4×4 摆放） | 2 | 内置 AI |\n| 斗兽棋 | 标准 7×9 兽棋棋盘（32 子） | 2 | 内置 AI |\n| UNO | 2~4 人牌桌 | 2~4 | 完整规则，含定庄 / 发牌 / 结算 |\n| 斗地主 | 3 人牌桌 | 3 | 叫抢地主、加倍、两档机器人 |\n\n## 功能特性\n\n### 🤖 机器人\n- 六种棋类各内置 AI（象棋接入 xqwlight 引擎），**全部在异步线程计算**，不占服务端主线程\n- UNO / 斗地主为两档：**初级**（权重打分，毫秒级）/ **高级**（采样推演，秒级）\n- **托管、离线、出范围代打一律降级为初级**，避免后台线程堆积\n- 斗地主按场次限制加人机：免费场任意；新手/高级场需 ≥2 位真人；大师场只允许 3 位真人\n\n### 👥 对局流程\n- 右键棋盘物品放置，按玩家视角自动定向；点击棋盘打开菜单、入座、补人机\n- UNO：四家同时抽牌定庄（并列重抽）→ 逐张发牌动画 → 两档出牌倒计时\n  （未摸牌默认 20 秒 / 摸牌后默认 15 秒；最后 3 秒红、3~10 秒黄、其余绿）\n- 一局结束**不自动收档**：「下一局」投票制；无人事变动时上局赢家连庄、免定庄\n- 出牌飞行动画、方向箭头、庄家徽记、回合标记、倒计时与结算板\n\n### 💰 结算（EconomyAPI）\n- UNO 按倍数 k 结算（k = 0 为免费局）；实扣 = min(手牌分 × k, 余额)\n- 斗地主按场次底分结算：免费场 0 / 新手场 50 / 高级场 800 / 大师场 10000\n- 抽水比例可配置，税后全额给赢家；开局前校验余额门槛\n\n### 🔦 定位器\n- 入座 UNO / 斗地主时自动发放，离桌回收；手持它右键可稳定上报点击（悬空手牌也能点中）\n- **蹲下 + 使用键**切换「屏幕十字准星」（标题层画一个 `+`），**只在坐上座位后显示**，\n  离座或关掉立刻消失；默认开启，切换有动作栏提示\n\n### ⚙️ 性能与持久化\n- **单实体渲染**：整盘棋子 / 整桌牌由一个实体绘制，避免海量实体拖垮服务端\n- 状态按位域编码进实体整型属性，一次 `sendData` 同步整桌\n- 观战者动画**差量发送**，只发给新进入范围的人\n- 七套棋牌共用一个 250ms 调度任务；棋盘/牌桌各自存档（`plugins/CasualGames/`），重启自动恢复\n\n## 安装要求\n\n| 项目 | 要求 |\n| --- | --- |\n| 服务端 | Nukkit-MOT |\n| Java | 17+ |\n| 前置插件 | **EconomyAPI**（强依赖，缺失时插件拒绝加载） |\n| 客户端 | 基岩版，进服时需**接受资源包** |\n\n> `plugin.yml` 里声明了 `depend: [EconomyAPI]`，未安装时 Nukkit 直接拒绝加载，\n> 不会以「结算不可用」的降级形态运行。\n\n## 构建与安装\n\n```bash\nmvn clean package\n# 产物：target/CasualGames-1.0.0-SNAPSHOT.jar\n```\n\n1. 把 jar 放进服务端 `plugins/` 目录（**不要在服务运行中覆盖同名 jar**，需重启生效）\n2. 启动服务器，首次会自动生成 `plugins/CasualGames/config.yml`\n3. 客户端进服接受资源包（拒绝下载会看不到棋盘/牌桌模型）\n\n> 资源包内置于 jar 的 `assets/resource_pack`。更换过资源内容时必须同时升级\n> `manifest.json` 的版本号并更换 header / module 双 UUID，客户端才会重新下载。\n\n## 命令\n\n| 命令 | 说明 | 权限 |\n| --- | --- | --- |\n| `/casualgames` | 打开「全局配置」表单（选游戏 → 进各自配置） | OP |\n| `/casualgames settings` | 同上 | OP |\n| `/casualgames reload` | 重载配置文件 | OP / 控制台 |\n\n权限节点：`casualgames.command`（默认仅 OP）。\n\n> 棋盘 / 牌桌物品**不再用命令发放**，直接从**创造模式物品栏**取（共 12 件：\n> 五子棋 2×2、五子棋 3×3、象棋、斗兽棋、黑白棋、围棋 9/13/19/19 大号、UNO 牌桌、斗地主牌桌、定位器）。\n\n## 配置\n\n`plugins/CasualGames/config.yml` 按游戏分七节：`gomoku / xiangqi / othello / go / doushouqi / uno / ddz`。\n每节包含识别半径、菜单独占超时、结算与时间参数等；UNO 另有倍数 k、抽水、两档回合时间，\n斗地主另有四档底分、倍数上限、发牌节奏。\n\n推荐用 `/casualgames` 表单修改（实时生效并写回文件）。手动编辑时注意：多行注释必须是 YAML 数组，\n格式错误会导致加载失败——插件会自动把损坏文件备份为 `config.broken-<时间戳>.yml` 并重建默认配置。\n\n## 项目结构\n\n```\nsrc/main/java/com/casualgames/\n├── CasualGamesPlugin.java   # 插件入口（实体/方块/物品注册、统一 tick）\n├── ai/                      # 各棋 AI、UNO/斗地主 AI、异步调度\n├── board/                   # 棋盘 / 牌桌方块\n├── command/                 # /casualgames 命令\n├── config/                  # 配置定义（okaeri-configs）\n├── economy/                 # EconomyAPI 接入\n├── entity/                  # 棋子 / 牌桌 / 飞牌实体\n├── game/                    # 游戏逻辑（各 Manager、UNO/斗地主状态机）\n├── item/                    # 棋盘 / 牌桌 / 定位器物品\n├── storage/                 # 存档读写\n└── ui/                      # 表单菜单\n```\n\n## 开发团队\n\n- **作者**：MysteriousHim\n\n## 许可证\n\n遵循 Nukkit 插件开发规范与相关开源协议。\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/269338922?v=4",
+  "id": "StarrySkyServer/CasualGames",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "CasualGames",
+  "pending": true,
+  "primary_target": "nkmot",
+  "server_version": "",
+  "source": "https://github.com/StarrySkyServer/CasualGames",
+  "stars": 0,
+  "summary": "休闲游戏合集（五子棋 / 中国象棋 / 斗兽棋 / 黑白棋 / 围棋 / UNO / 斗地主）",
+  "targets": [
+    "nkmot"
+  ],
+  "updated_at": 1792654925,
+  "versions": []
+}

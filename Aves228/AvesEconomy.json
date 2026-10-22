@@ -1,0 +1,38 @@
+{
+  "api_version": "2.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/322829826?v=4",
+      "name": "Aves228",
+      "url": "https://github.com/Aves228"
+    }
+  ],
+  "categories": [],
+  "created_at": 1792645376,
+  "dependencies": [],
+  "description": "# AvesEconomy\nEconomy plugin for PowerNukkitX\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/322829826?v=4",
+  "id": "Aves228/AvesEconomy",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "AvesEconomy",
+  "pending": true,
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/Aves228/AvesEconomy",
+  "stars": 0,
+  "summary": "AVC economy for Aves Project",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1792648484,
+  "versions": []
+}
