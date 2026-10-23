@@ -1,0 +1,65 @@
+{
+  "api_version": "1.0.4",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/18164643?v=4",
+      "name": "zisunny104",
+      "url": "https://github.com/zisunny104"
+    }
+  ],
+  "categories": [],
+  "created_at": 1792761972,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "tokaEconomy",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "tokaSigns",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "tokaRegions",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "tokaDisplay",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "optional",
+      "plugin_id": "tokaProfiles",
+      "version_range": ""
+    }
+  ],
+  "description": "# tokaShop\n\nNukkit-MOT 商店外掛：圖示視窗、告示牌（購買 31、回收 32、物品管理 33）、消費稅，以及舊商店條碼的相容。\n\n- 商品目錄 `src/main/resources/catalogue.json`：6 類別、14 區段，同一物品的顏色、木種、氧化程度合為一個家族；每個品項有層級、每組數量與每組的買賣價。價格 -1 表示該方向關閉。\n- 價格規則：整數，個位數只用 0、3、7、9，賣價不高於買價，不能靠合成套利。\n- 商品代碼只有字母與數字，例如 `A1001`（A 類別、1 區段、流水號 001），由匯出工具固定，新增品項只會接在後面，舊代碼不變。\n- 個別調整寫在資料夾的 `overrides.yml`（價格、名稱、停用）；名稱預設取伺服器語言的原版名稱。\n- 消費稅：視窗購買預設 5%，告示牌 0%，稅金存入 tokaRegions 的主國庫。\n- 設計草案：`docs/PLAYER-SHOPS.md`（個人商店與分租領地）。\n\n需要 tokaEconomy；tokaSigns、tokaRegions、tokaDisplay 為選用。建置：`build.ps1`。\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/18164643?v=4",
+  "id": "zisunny104/tokaShop",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "tokaShop",
+  "pending": true,
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/zisunny104/tokaShop",
+  "stars": 0,
+  "summary": "Nukkit-MOT shop plugin: icon window, signs, consumption tax",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1792776651,
+  "versions": []
+}

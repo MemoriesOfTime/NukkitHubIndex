@@ -12,11 +12,6 @@
   "dependencies": [
     {
       "dependency_type": "optional",
-      "plugin_id": "zero",
-      "version_range": ""
-    },
-    {
-      "dependency_type": "optional",
       "plugin_id": "tokaPortal",
       "version_range": ""
     },
@@ -26,7 +21,7 @@
       "version_range": ""
     }
   ],
-  "description": "# tokaWorlds\n\n世界管理、批次更名、資料連動與舊物品轉換。操作先加入待辦，檢查後再排程執行。\n\n## 主要功能\n\n- **啟用／停用世界**：啟用時載入既有地圖，停用時關閉世界但保留地圖資料。\n- **批次更名**：一次排好多個世界的更名，一起執行；可連動 zero 的世界欄位及相容版本 tokaPortal 的住家。\n- **待辦清單**：操作加入自己的待辦，檢查後排程執行，可延遲 0–3600 秒。\n- **玩家安全**：停用或更名前，先把玩家移到安全世界。更名完成後嘗試送回原座標；停用成功後玩家留在安全世界。目標世界已存在時不會被覆蓋。\n- **舊物品轉換**：玩家上線時，把舊核心留下、現在已無法辨識的物品換成指定的新物品，並留下紀錄。\n\n## 玩家指令\n\n| 指令 | 用法 | 說明 |\n| --- | --- | --- |\n| `/worlds return` | `/worlds return` | 世界維護後若尚未回到原位置，手動回去 |\n\n## 管理指令\n\n輸入 `/worlds` 開啟管理視窗；主控台可使用下列指令。`/worlds help` 查看完整說明。\n\n| 指令 | 用法 | 說明 | 權限 |\n| --- | --- | --- | --- |\n| `list` | `/worlds list` | 列出世界與啟用狀態、線上人數 | `tokaWorlds.admin` |\n| `mount` | `/worlds mount <世界>` | 加入待辦：啟用 | `tokaWorlds.admin` |\n| `unmount` | `/worlds unmount <世界>` | 加入待辦：停用世界，保留地圖 | `tokaWorlds.admin` |\n| `rename` | `/worlds rename <A> <B> [--link｜--no-link]` | 加入待辦：更名；`--link` 連動 zero／tokaPortal，`--no-link` 只改地圖資料夾 | `tokaWorlds.admin` |\n| `plan`、`check` | `/worlds plan`、`/worlds check` | 查看待辦／檢查全部待辦 | `tokaWorlds.admin` |\n| `confirm` | `/worlds confirm [秒數]` | 排程執行，延遲 0–3600 秒，預設 0 | `tokaWorlds.admin` |\n| `clear`、`cancel` | `/worlds clear`、`/worlds cancel` | 清空自己的待辦／工作開始前取消排程 | `tokaWorlds.admin` |\n| `resend` | `/worlds resend [半徑]` | 重送周圍連接方塊，只影響自己的畫面；半徑 1–48，預設 16 | `tokaWorlds.admin` |\n| `return` | `/worlds return` | 回到維護前的位置 | 所有人 |\n\n| 權限 | 說明 | 預設 |\n| --- | --- | --- |\n| `tokaWorlds.use` | 使用 `/worlds return` | 所有人 |\n| `tokaWorlds.admin` | 世界管理 | OP |\n\n建議流程：`rename A B` → `plan` → `check` → `confirm 30`。每位管理員有各自的待辦；伺服器預設世界不能在線停用或更名；執行中途失敗會停止，已完成的項目保留；重新啟動後待辦需重新檢查與確認。\n\n## 設定 config.yml\n\n變更後需重新啟動。\n\n| key | 預設 | 說明 |\n| --- | --- | --- |\n| `language` | `zh-TW` | 訊息語言 |\n| `reserved-names` | help、list、set、del、edit | 不可作為世界名稱的字 |\n| `link-on-rename` | `true` | 更名時是否預設連動 zero 與相容版本 tokaPortal 的資料 |\n| `storage.backend` | `sqlite` | 儲存格式：`sqlite`、`json`、`yaml`；切換前需停服並搬遷資料，不能只改設定 |\n| `evacuation-world` | 空白 | 停用或更名時，玩家被移往的世界；空白使用預設世界 |\n| `slow-operation-ms` | `200` | 世界操作耗時超過此毫秒數時，後台耗時紀錄改用警告色 |\n| `legacy-items` | 903、879 兩筆 | 舊物品編號轉換規則，`to` 為新物品（留空或 `remove` 代表移除），`per-item` 為每個舊物換幾個 |\n\n物品轉換紀錄寫在 `plugins/tokaWorlds/legacy-items.log`，可依此手動還原。\n\n## 疑難排解\n\n- **為什麼 `confirm` 說尚未檢查？** 請先執行 `/worlds check`，待辦有變動後需重新檢查。\n- **更名連動無法通過檢查？** 確認該次更名使用 `--link`，或 `link-on-rename` 為 `true`。住家連動僅支援 tokaPortal 2.0.0、2.1.1、2.1.2。使用其他版本時，需更新轉接程式，或以 `--no-link` 只更名世界。\n- **更名後玩家沒有被送回原位？** 世界恢復且服務正常後，可輸入 `/worlds return`。停用世界成功時不會保留該世界的返回紀錄。\n",
+  "description": "# tokaWorlds\n\n世界管理、批次更名、資料連動與舊物品轉換。操作先加入待辦，檢查後再排程執行。\n\n## 主要功能\n\n- **啟用／停用世界**：啟用時載入既有地圖，停用時關閉世界但保留地圖資料。\n- **批次更名**：一次排好多個世界的更名，一起執行；可連動相容版本 tokaPortal 的住家與 tokaLand 的領地。\n- **待辦清單**：操作加入自己的待辦，檢查後排程執行，可延遲 0–3600 秒。\n- **玩家安全**：停用或更名前，先把玩家移到安全世界。更名完成後嘗試送回原座標；停用成功後玩家留在安全世界。目標世界已存在時不會被覆蓋。\n- **舊物品轉換**：玩家上線時，把舊核心留下、現在已無法辨識的物品換成指定的新物品，並留下紀錄。\n\n## 玩家指令\n\n| 指令 | 用法 | 說明 |\n| --- | --- | --- |\n| `/worlds return` | `/worlds return` | 世界維護後若尚未回到原位置，手動回去 |\n\n## 管理指令\n\n輸入 `/worlds` 開啟管理視窗；主控台可使用下列指令。`/worlds help` 查看完整說明。\n\n| 指令 | 用法 | 說明 | 權限 |\n| --- | --- | --- | --- |\n| `list` | `/worlds list` | 列出世界與啟用狀態、線上人數 | `tokaWorlds.admin` |\n| `mount` | `/worlds mount <世界>` | 加入待辦：啟用 | `tokaWorlds.admin` |\n| `unmount` | `/worlds unmount <世界>` | 加入待辦：停用世界，保留地圖 | `tokaWorlds.admin` |\n| `rename` | `/worlds rename <A> <B> [--link｜--no-link]` | 加入待辦：更名；`--link` 連動 tokaPortal／tokaLand，`--no-link` 只改地圖資料夾 | `tokaWorlds.admin` |\n| `plan`、`check` | `/worlds plan`、`/worlds check` | 查看待辦／檢查全部待辦 | `tokaWorlds.admin` |\n| `confirm` | `/worlds confirm [秒數]` | 排程執行，延遲 0–3600 秒，預設 0 | `tokaWorlds.admin` |\n| `clear`、`cancel` | `/worlds clear`、`/worlds cancel` | 清空自己的待辦／工作開始前取消排程 | `tokaWorlds.admin` |\n| `resend` | `/worlds resend [半徑]` | 重送周圍連接方塊，只影響自己的畫面；半徑 1–48，預設 16 | `tokaWorlds.admin` |\n| `return` | `/worlds return` | 回到維護前的位置 | 所有人 |\n\n| 權限 | 說明 | 預設 |\n| --- | --- | --- |\n| `tokaWorlds.use` | 使用 `/worlds return` | 所有人 |\n| `tokaWorlds.admin` | 世界管理 | OP |\n\n建議流程：`rename A B` → `plan` → `check` → `confirm 30`。每位管理員有各自的待辦；伺服器預設世界不能在線停用或更名；執行中途失敗會停止，已完成的項目保留；重新啟動後待辦需重新檢查與確認。\n\n## 設定 config.yml\n\n變更後需重新啟動。\n\n| key | 預設 | 說明 |\n| --- | --- | --- |\n| `language` | `zh-TW` | 訊息語言 |\n| `reserved-names` | help、list、set、del、edit | 不可作為世界名稱的字 |\n| `link-on-rename` | `true` | 更名時是否預設連動相容版本 tokaPortal 與 tokaLand 的資料 |\n| `storage.backend` | `sqlite` | 儲存格式：`sqlite`、`json`、`yaml`；切換前需停服並搬遷資料，不能只改設定 |\n| `evacuation-world` | 空白 | 停用或更名時，玩家被移往的世界；空白使用預設世界 |\n| `slow-operation-ms` | `200` | 世界操作耗時超過此毫秒數時，後台耗時紀錄改用警告色 |\n| `legacy-items` | 903、879 兩筆 | 舊物品編號轉換規則，`to` 為新物品（留空或 `remove` 代表移除），`per-item` 為每個舊物換幾個 |\n\n物品轉換紀錄寫在 `plugins/tokaWorlds/legacy-items.log`，可依此手動還原。\n\n## 疑難排解\n\n- **為什麼 `confirm` 說尚未檢查？** 請先執行 `/worlds check`，待辦有變動後需重新檢查。\n- **更名連動無法通過檢查？** 確認該次更名使用 `--link`，或 `link-on-rename` 為 `true`。住家連動僅支援 tokaPortal 2.0.0、2.1.1、2.1.2。使用其他版本時，需更新轉接程式，或以 `--no-link` 只更名世界。\n- **更名後玩家沒有被送回原位？** 世界恢復且服務正常後，可輸入 `/worlds return`。停用世界成功時不會保留該世界的返回紀錄。\n",
   "detection_confidence": "medium",
   "downloads": 0,
   "gallery": [],
@@ -50,6 +45,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1792674353,
+  "updated_at": 1792776656,
   "versions": []
 }
