@@ -27,7 +27,7 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/Theu5er/AliasPlus",
-  "stars": 1,
+  "stars": 2,
   "summary": "Advanced Alt Detection Plugin",
   "targets": [
     "nkx",

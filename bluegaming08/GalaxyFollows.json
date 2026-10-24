@@ -1,0 +1,72 @@
+{
+  "api_version": "unknown",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/305570327?v=4",
+      "name": "peepeepopo91-svg",
+      "url": "https://github.com/peepeepopo91-svg"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/251212738?v=4",
+      "name": "bluegaming08",
+      "url": "https://github.com/bluegaming08"
+    }
+  ],
+  "categories": [],
+  "created_at": 1792848193,
+  "dependencies": [],
+  "description": "<a href=\"https://galaxy.gamer.gd/download\"><img src=\"https://raw.githubusercontent.com/bluegaming08/GalaxyFollows/main/docs/img/banner.png\" alt=\"GalaxyFollows banner\"></a>\n\n<div align=\"center\">\n\n[![License: MIT](https://img.shields.io/badge/license-MIT-4AEDD9?style=flat-square)](LICENSE)\n[![Java](https://img.shields.io/badge/Java-Paper%201.21%20%2B%2026.x-1e6f5c?style=flat-square)](java/)\n[![Bedrock](https://img.shields.io/badge/Bedrock-PocketMine%20%2B%20PowerNukkitX-1e6f5c?style=flat-square)](bedrock/)\n[![No API keys](https://img.shields.io/badge/config-just%20a%20username-4AEDD9?style=flat-square)](#why-you-can-trust-it)\n\n**Reward players on your Minecraft server when they follow your [BlueGalaxy](https://galaxy.gamer.gd) account.**\nJava and Bedrock. Free, MIT licensed, fully open source.\n\n[Download](https://galaxy.gamer.gd/download) &bull; [How it works](#how-it-works) &bull; [Install](#install) &bull; [Building](#building)\n\n</div>\n\n## How it works\n\n<img src=\"https://raw.githubusercontent.com/bluegaming08/GalaxyFollows/main/docs/img/how-it-works.svg\" alt=\"Follow, poll, reward flow diagram\" width=\"100%\">\n\nSomeone follows you on BlueGalaxy - your server runs your reward commands the next time that player joins (instantly if they are already online). The queue lives on BlueGalaxy, so follows that happen while your server is down are never lost.\n\n## Editions\n\n<table>\n  <tr>\n    <td width=\"50%\" align=\"center\" valign=\"bottom\">\n      <a href=\"https://github.com/bluegaming08/GalaxyFollows/blob/main/java/\"><img src=\"https://raw.githubusercontent.com/bluegaming08/GalaxyFollows/main/docs/img/edition-java.webp\" alt=\"Java edition art\" width=\"88%\"></a><br>\n      <b>Java</b><br>\n      <sub>Paper 1.21 up to 26.x - one universal build<br><code>java/</code> (Maven, JDK 21+)</sub>\n    </td>\n    <td width=\"50%\" align=\"center\" valign=\"bottom\">\n      <a href=\"https://github.com/bluegaming08/GalaxyFollows/blob/main/bedrock/\"><img src=\"https://raw.githubusercontent.com/bluegaming08/GalaxyFollows/main/docs/img/edition-bedrock.webp\" alt=\"Bedrock edition art\" width=\"88%\"></a><br>\n      <b>Bedrock</b><br>\n      <sub>PocketMine-MP 5 (PHP) + PowerNukkitX / Nukkit<br><code>bedrock/</code></sub>\n    </td>\n  </tr>\n</table>\n\nReady-made downloads (jar, phar, and install notes) live at **[galaxy.gamer.gd/download](https://galaxy.gamer.gd/download)**, with a 60-second tutorial video.\n\n## Why you can trust it\n\n- **No keys, no secrets, no sign-up.** The only account setting in the config is your BlueGalaxy username. There is no API key, no token, no credential file, nothing to leak.\n- **Fully open source.** You are reading the whole plugin. It only talks to the BlueGalaxy API over HTTPS and runs your own reward commands.\n- **Unfollow proof.** By default a follow only pays after it has existed for 24 hours, and the follow is re-checked at reward time. Follow and unfollow five minutes later: no reward, ever.\n\n## Install\n\n1. Drop the plugin in your server's `plugins/` folder (PocketMine: PM5 only loads `.phar` files - package the source as a phar first, see the Bedrock build notes below).\n2. Start the server once. A `config.yml` is generated next to the plugin.\n3. Set your BlueGalaxy username and your reward commands:\n\n```yaml\ngalaxyfollows:\n  enabled: true\n  prefix: \"&d[GalaxyFollows]&r \"\n  username: \"your_name\"          # the account whose followers get rewards\n  reward-commands:\n    - \"give {player} diamond 1\"\n    - \"lp user {player} parent set follower\"\n  reward-message: \"&bYou got a reward for following &f{account}&b!\"\n  follow-hold-hours: 24           # unfollow protection, 0 = instant\n  poll-interval-seconds: 30\n  max-age-days: 30\n```\n\n4. Run `/galaxyfollows reload`. Done.\n\n## Commands\n\n- `/galaxyfollows status` - polls, queue depth, rewards delivered\n- `/galaxyfollows reload` - reload the config\n\n## Building\n\nJava (needs JDK 21+):\n\n```sh\ncd java && mvn clean package\n```\n\nPowerNukkitX: the `stubs/` folder is compile-only (a minimal `cn.nukkit` surface so the plugin builds without the full PowerNukkitX jar). Build against real PowerNukkitX for release.\n\nPocketMine: plain PHP, no build step - but PocketMine-MP 5 only loads `.phar` files (it ignores loose source folders). Package it like this:\n\n```\nmkdir pkg/GalaxyFollows/src pkg/GalaxyFollows/resources\ncp -r bedrock/pocketmine/bluenetwork pkg/GalaxyFollows/src/\ncp bedrock/pocketmine/config.yml pkg/GalaxyFollows/resources/config.yml\ncp bedrock/pocketmine/plugin.yml pkg/GalaxyFollows/\nphp -d phar.readonly=0 -r '$p = new Phar(\"GalaxyFollows.phar\");\n  $p->buildFromDirectory(\"pkg/GalaxyFollows\");\n  $p->setStub(\"<?php __HALT_COMPILER();\");'\n```\n\nThen drop `GalaxyFollows.phar` into your `plugins/` folder. Boot-tested on PocketMine-MP 5.44.3 / PHP 8.4: enable, live API poll, /galaxyfollows status, clean shutdown.\n\n## License\n\nMIT. See `LICENSE`. Updating for newer Minecraft versions? Read `UPDATING-VERSIONS.md`.\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-10-24",
+      "description": "",
+      "title": "GalaxyFollows banner",
+      "url": "https://raw.githubusercontent.com/bluegaming08/GalaxyFollows/main/docs/img/banner.png"
+    },
+    {
+      "created": "2026-10-24",
+      "description": "",
+      "title": "Follow, poll, reward flow diagram",
+      "url": "https://raw.githubusercontent.com/bluegaming08/GalaxyFollows/main/docs/img/how-it-works.svg"
+    },
+    {
+      "created": "2026-10-24",
+      "description": "",
+      "title": "Java edition art",
+      "url": "https://raw.githubusercontent.com/bluegaming08/GalaxyFollows/main/docs/img/edition-java.webp"
+    },
+    {
+      "created": "2026-10-24",
+      "description": "",
+      "title": "Bedrock edition art",
+      "url": "https://raw.githubusercontent.com/bluegaming08/GalaxyFollows/main/docs/img/edition-bedrock.webp"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/251212738?v=4",
+  "id": "bluegaming08/GalaxyFollows",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://galaxy.gamer.gd",
+    "wiki": ""
+  },
+  "manifest_path": "java/src/main/resources/plugin.yml",
+  "name": "GalaxyFollows",
+  "pending": true,
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/bluegaming08/GalaxyFollows",
+  "stars": 1,
+  "summary": "Reward players for following your BlueGalaxy account",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1792849905,
+  "versions": []
+}
