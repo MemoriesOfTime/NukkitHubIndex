@@ -10,8 +10,8 @@
   "categories": [],
   "created_at": 1791132147,
   "dependencies": [],
-  "description": "# Alias+\n\nA Minecraft Bedrock Edition alt-account detection plugin built on the Nukkit-MOT core.\n\n**Advantages:**\n\n🔍\n**Unique Detection**\nWe have more detection methods than similar plugins, so the average spoofer is no longer unsolvable.\n\n🎯\n**High Accuracy**\nDetection does not rely on non-unique evidence like IP; results can be used for bans directly.\n\n🤫\n**Silent Detection**\nDetection is almost completely silent and supports delayed punishments—cheaters have no idea why they got banned.\n\n🔗\n**Developer API**\nWe provide query and punishment APIs, allowing you to ban all alt accounts with one call.\n\n**Usage:**\n\nEnable `force-resources` in the `server.properties` file.\n\n```\n/alias <name/uuid/xuid>\n```\n\nExample output:\n\n```\n--ExampleAcc's accounts (xuid: 123456)--\nDeviceId: ExampleAcc\nClientRandomId: ExampleAcc\nResPackCache: ExampleAcc\nBlobCache: ExampleAcc\n```\n\n## Configuration (`config.yml`)\n\nAll options are created with defaults on first launch; everything below is optional.\n\n| Option | Default | Description |\n|---|---|---|\n| `packcache-enabled` | `true` | Enable the resource pack cache detection dimension |\n| `blobcache-enabled` | `true` | Enable the blob cache detection dimension |\n| `strictmode` | `true` | Association direction. `true` = one-way (only show who cached/hit the target's fingerprints); `false` = two-way (also show whose fingerprints the target cached/hit). Two-way mode allows spoofed hits to frame innocent players via punishment chaining. |\n| `punish-command` | `ban %player% Alt account detected` | Punishment command template, executed as console. Placeholders: `%player%` = player name, `%uuid%` = player uuid |\n| `punish-delay-min` | `5` | Minimum random delay for delayed bans (seconds, rolled independently per account) |\n| `punish-delay-max` | `30` | Maximum random delay for delayed bans (seconds, rolled independently per account) |\n\n**Notes:**\n\nThis project is a vibe-coding-assisted technical demo. It may contain bugs—do not use it on a production server.\n\nThe ResPackCache and BlobCache output can potentially be spoofed, but when necessary, you can simply ban all accounts returned, since they can only be alt accounts or cheaters.\n\n## Developer API\n\n### Setup\n\nAdd `depend: [Alias+]` to your plugin's `plugin.yml`, then get the instance:\n\n```java\nAltDetector alias = (AltDetector) getServer().getPluginManager().getPlugin(\"Alias+\");\n```\n\n### Punish API\n\n```java\nint count = alias.punish(uuid, delayed);\n```\n\n- `uuid`: player uuid string (`player.getUniqueId().toString()`)\n- `delayed`: `true` for delayed ban / `false` for immediate ban\n- Returns: number of accounts queued (the target itself + all related alt accounts, deduplicated)\n- Punishment command and delay range are configured in `config.yml`: `punish-command` (placeholders `%player%`, `%uuid%`), `punish-delay-min`, `punish-delay-max` (seconds)\n\n### Query API\n\n```java\nSet<String> alts = alias.getRelatedAccounts(uuid);                  // all related alt uuids\nMap<String, Set<String>> byDim = alias.getRelatedByDimension(uuid); // by dimension (device/selfSigned/clientRandom/pack/blob)\n```",
-  "detection_confidence": "medium",
+  "description": "# Alias+\n\n**English** | [中文](https://github.com/Theu5er/AliasPlus/blob/main/README.zh.md)\n\nA Minecraft Bedrock Edition alt-account detection plugin built on the Nukkit-MOT core.\n\n**Advantages:**\n\n🔍\n**Unique Detection**\nWe have more detection methods than similar plugins, so the average spoofer is no longer unsolvable.\n\n🎯\n**High Accuracy**\nDetection does not rely on non-unique evidence like IP; results can be used for bans directly.\n\n🤫\n**Silent Detection**\nDetection is almost completely silent and supports delayed punishments—cheaters have no idea why they got banned.\n\n🔗\n**Developer API**\nWe provide query and punishment APIs, allowing you to ban all alt accounts with one call.\n\n## Detection Vectors\n\nAlias+ currently checks:\n\n- `DeviceId`\n- `ClientRandomId`\n- `SelfSignedId` (maybe unavailable now)\n- `NetworkID` (NetherNet clients only)\n- Resource Pack Cache\n- Blob Cache\n\n**Usage:**\n\nEnable `force-resources` in the `server.properties` file.\nEnable `nethernet` in the `nukkit-mot.yml` file.\n\n```\n/alias <name/uuid/xuid>\n```\n\nExample output:\n\n```\n--ExampleAcc's accounts (xuid: 123456)--\nDeviceId: ExampleAcc\nClientRandomId: ExampleAcc\nNetworkID: ExampleAcc\nResPackCache: ExampleAcc\nBlobCache: ExampleAcc\n```\n\n## Configuration (`config.yml`)\n\nAll options are created with defaults on first launch; everything below is optional.\n\n| Option | Default | Description |\n|---|---|---|\n| `packcache-enabled` | `true` | Enable the resource pack cache detection dimension |\n| `blobcache-enabled` | `true` | Enable the blob cache detection dimension |\n| `networkid-enabled` | `true` | Enable the NetherNet NetworkID detection dimension (NetherNet/WebRTC clients only; RakNet connections carry no NetworkID and are skipped silently) |\n| `strictmode` | `true` | Association direction. `true` = one-way (only show who cached/hit the target's fingerprints); `false` = two-way (also show whose fingerprints the target cached/hit). ⚠️ Two-way mode allows spoofed hits to frame innocent players via punishment chaining. |\n| `punish-command` | `ban %player% Alt account detected` | Punishment command template, executed as console. Placeholders: `%player%` = player name, `%uuid%` = player uuid |\n| `punish-delay-min` | `5` | Minimum random delay for delayed bans (seconds, rolled independently per account) |\n| `punish-delay-max` | `30` | Maximum random delay for delayed bans (seconds, rolled independently per account) |\n\n**Notes:**\n\nThis project is a vibe-coding-assisted technical demo. It may contain bugs—do not use it on a production server.\n\nThe ResPackCache and BlobCache output can potentially be spoofed, but when necessary, you can simply ban all accounts returned, since they can only be alt accounts or hackers.\n\n## Developer API\n\n### Setup\n\nAdd `depend: [Alias+]` to your plugin's `plugin.yml`, then get the instance:\n\n```java\nAltDetector alias = (AltDetector) getServer().getPluginManager().getPlugin(\"Alias+\");\n```\n\n### Punish API\n\n```java\nint count = alias.punish(uuid, delayed);\n```\n\n- `uuid`: player uuid string (`player.getUniqueId().toString()`)\n- `delayed`: `true` for delayed ban / `false` for immediate ban\n- Returns: number of accounts queued (the target itself + all related alt accounts, deduplicated)\n- Punishment command and delay range are configured in `config.yml`: `punish-command` (placeholders `%player%`, `%uuid%`), `punish-delay-min`, `punish-delay-max` (seconds)\n\n### Query API\n\n```java\nSet<String> alts = alias.getRelatedAccounts(uuid);                  // all related alt uuids\nMap<String, Set<String>> byDim = alias.getRelatedByDimension(uuid); // by dimension (device/selfSigned/clientRandom/networkid/pack/blob)\n```",
+  "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
   "icon_url": "https://avatars.githubusercontent.com/u/305477005?v=4",
@@ -24,17 +24,33 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "Alias+",
-  "primary_target": "nkx",
+  "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/Theu5er/AliasPlus",
   "stars": 2,
   "summary": "Advanced Alt Detection Plugin",
   "targets": [
-    "nkx",
     "nkmot"
   ],
-  "updated_at": 1792255007,
+  "updated_at": 1792947240,
   "versions": [
+    {
+      "changelog": "v1.0.3\r\n\r\n[+] (Experimental) Added NetworkId detection (available only for clients that support NetherNet).\r\n[*] /alias now shows the main account in the BlobCache output.\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Alias+.jar",
+          "primary": true,
+          "sha256": "32bd75e8c33fc41de90c5649ea73e46ce781392dfc9407cecfa1a7e1a25c2c33",
+          "size": 49570,
+          "url": "https://github.com/Theu5er/AliasPlus/releases/download/v1.0.3/Alias%2B.jar"
+        }
+      ],
+      "name": "v1.0.3",
+      "prerelease": false,
+      "published_at": 1792947240,
+      "version": "v1.0.3"
+    },
     {
       "changelog": "v1.0.2\r\n\r\n[+] Added a strictmode option; disabling it allows two-way marking between ResPackCache and BlobCache. Enabled by default.\r\n[*] BlobCache: two-way marking is now disabled to avoid potential false positives; detection is now triggered when a player joins the server; minor performance improvements.\r\n[*] ResPackCache: no longer requires initialization, and fixed false positives in ResourcePackSpoof detection.\r\n[*] Rewrote the punishment logic.\r\n[*] Fixed some other minor issues.\r\n[-] Removed the blobcache-debug config option.",
       "downloads": 0,
