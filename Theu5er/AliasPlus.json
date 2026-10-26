@@ -32,7 +32,7 @@
   "targets": [
     "nkmot"
   ],
-  "updated_at": 1792947240,
+  "updated_at": 1793031862,
   "versions": [
     {
       "changelog": "v1.0.3\r\n\r\n[+] (Experimental) Added NetworkId detection (available only for clients that support NetherNet).\r\n[*] /alias now shows the main account in the BlobCache output.\r\n",

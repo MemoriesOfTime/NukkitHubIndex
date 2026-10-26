@@ -1,0 +1,115 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/99422811?v=4",
+      "name": "BrunoJaegerK",
+      "url": "https://github.com/BrunoJaegerK"
+    }
+  ],
+  "categories": [],
+  "created_at": 1791877378,
+  "dependencies": [],
+  "description": "# 💎 RankshopUIV2\n\n<p align=\"center\">\n  <img src=\"https://img.shields.io/badge/Minecraft-Bedrock-brightgreen?logo=minecraft&logoColor=white\" alt=\"Minecraft Bedrock\">\n  <img src=\"https://img.shields.io/badge/Plataforma-Nukkit-blue\" alt=\"Nukkit\">\n  <img src=\"https://img.shields.io/badge/Lenguaje-Java-orange?logo=openjdk&logoColor=white\" alt=\"Java\">\n  <img src=\"https://img.shields.io/badge/Build-Gradle-02303A?logo=gradle&logoColor=white\" alt=\"Gradle\">\n  <img src=\"https://img.shields.io/badge/Versión-1.1.0-purple\" alt=\"Versión\">\n</p>\n\n<p align=\"center\">\n  <b>Una tienda de rangos con interfaz gráfica, economía integrada y kits personalizables para servidores Minecraft Bedrock con Nukkit.</b>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/BrunoJaegerK/RankshopUIV2\">Repositorio</a> •\n  <a href=\"https://github.com/BrunoJaegerK/NeoBuyerV2.2\">Otro proyecto: NeoBuyerV2.2</a>\n</p>\n\n---\n\n## 📑 Índice\n\n- [📋 Descripción](#-descripción)\n- [✨ Características](#-características)\n- [🖥️ Capturas de pantalla](#️-capturas-de-pantalla)\n- [🔄 Funcionamiento](#-funcionamiento)\n- [📦 Dependencias](#-dependencias)\n- [⚙️ Instalación](#️-instalación)\n- [🎮 Comandos](#-comandos)\n- [🛒 Configuración de rangos](#-configuración-de-rangos)\n- [🎁 Configuración de kits](#-configuración-de-kits)\n- [⚔️ Nombres y encantamientos](#️-nombres-y-encantamientos)\n- [🌐 Idioma y mensajes](#-idioma-y-mensajes)\n- [💾 Datos de jugadores](#-datos-de-jugadores)\n- [🧩 Estructura del proyecto](#-estructura-del-proyecto)\n- [🔨 Compilar desde el código fuente](#-compilar-desde-el-código-fuente)\n- [❓ Solución de problemas](#-solución-de-problemas)\n- [👨‍💻 Autor](#-autor)\n\n---\n\n## 📋 Descripción\n\n**RankshopUIV2** es un plugin para servidores de Minecraft Bedrock basados en Nukkit y forks compatibles. Su objetivo es permitir que los jugadores compren rangos con la moneda del servidor y reciban acceso a kits especiales que pueden reclamar desde una interfaz gráfica.\n\nEl plugin integra dos sistemas principales:\n\n- **LlamaEconomy:** consulta el saldo del jugador y descuenta el costo de la compra.\n- **LuckPerms:** asigna el grupo correspondiente al rango comprado.\n\nAdemás, incluye un sistema de kits configurables con cooldowns individuales, objetos con nombres personalizados, colores y múltiples encantamientos.\n\nLa configuración se administra mediante archivos YAML, por lo que puedes personalizar rangos, precios, kits, mensajes y tiempos de espera sin modificar directamente el código Java.\n\n## ✨ Características\n\n| Función | Descripción |\n|---|---|\n| 🛒 Tienda de rangos | Muestra los rangos disponibles mediante formularios dentro del juego. |\n| ✅ Confirmación de compra | Permite confirmar o cancelar una compra antes de procesarla. |\n| 💰 Economía | Comprueba el saldo y descuenta el precio mediante LlamaEconomy. |\n| 🛡️ Rangos con LuckPerms | Ejecuta la asignación del grupo configurado en LuckPerms. |\n| 🎁 Kits desbloqueables | Cada rango puede desbloquear uno o varios kits. |\n| ⏳ Cooldowns individuales | Cada kit tiene su propio tiempo de espera. |\n| ⚔️ Objetos personalizados | Admite nombres, colores, cantidades y metadata. |\n| ✨ Encantamientos múltiples | Permite configurar varios encantamientos y niveles en un objeto. |\n| 💾 Persistencia | Guarda los kits desbloqueados y los cooldowns en el archivo de datos. |\n| 🌐 Idioma configurable | Permite editar los mensajes y textos de las interfaces. |\n| 📂 Configuración YAML | Separa los rangos, los kits, los mensajes y los datos de jugadores. |\n| 🎒 Protección del inventario | Comprueba que haya espacio para los objetos antes de entregarlos. |\n\n## 🖥️ Capturas de pantalla\n\nLas siguientes imágenes están reservadas para capturas reales del plugin en funcionamiento.\n\n### 🛒 Tienda de rangos\n\n![Captura de la tienda de rangos](https://raw.githubusercontent.com/BrunoJaegerK/RankshopUIV2/main/docs/images/Interfazrangos.png)\n\n*Interfaz con los rangos disponibles y sus precios.*\n\n### ✅ Confirmación de compra\n\n![Captura de confirmación de compra](https://raw.githubusercontent.com/BrunoJaegerK/RankshopUIV2/main/docs/images/Confirmacionrangos.png)\n\n*Formulario para confirmar o cancelar la compra de un rango.*\n\n### 🎁 Menú de kits\n\n![Captura del menú de kits](https://raw.githubusercontent.com/BrunoJaegerK/RankshopUIV2/main/docs/images/InterfazKits.png)\n\n*Interfaz que muestra los kits desbloqueados y su disponibilidad.*\n\n### ⚔️ Objetos personalizados\n\n![Captura de objetos personalizados](https://raw.githubusercontent.com/BrunoJaegerK/RankshopUIV2/main/docs/images/Kitsentregados.png)\n\n*Ejemplo de objetos con nombres personalizados y encantamientos.*\n\n## 🔄 Funcionamiento\n\n### 1. Compra de rangos\n\n1. El jugador ejecuta `/rangos`.\n2. Se abre la tienda gráfica.\n3. El jugador selecciona el rango que desea.\n4. El plugin muestra el precio y solicita confirmación.\n5. Si confirma, se comprueba su saldo.\n6. Se intenta asignar el grupo configurado mediante LuckPerms.\n7. Se descuenta el dinero con LlamaEconomy.\n8. Se desbloquean los kits vinculados al rango.\n\n### 2. Reclamación de kits\n\n1. El jugador ejecuta `/kits`.\n2. El plugin muestra sus kits desbloqueados.\n3. Cada kit indica si está disponible o cuánto tiempo falta.\n4. Al seleccionar un kit, se comprueba que esté desbloqueado.\n5. Se verifica que el cooldown haya terminado.\n6. Se valida la configuración de los objetos.\n7. Se comprueba que todos los objetos quepan en el inventario.\n8. Se entregan los objetos y se guarda el siguiente tiempo de reclamación.\n\n### Diagrama del sistema\n\n```mermaid\nflowchart TD\n    A[\"/rangos\"] --> B[\"Seleccionar rango\"]\n    B --> C[\"Confirmar compra\"]\n    C --> D{\"¿Saldo suficiente?\"}\n    D -- \"No\" --> E[\"Mostrar saldo insuficiente\"]\n    D -- \"Sí\" --> F[\"Asignar grupo con LuckPerms\"]\n    F --> G[\"Descontar dinero con LlamaEconomy\"]\n    G --> H[\"Desbloquear kits\"]\n    H --> I[\"/kits\"]\n    I --> J[\"Seleccionar kit\"]\n    J --> K{\"¿Kit disponible?\"}\n    K -- \"No\" --> L[\"Mostrar bloqueo o cooldown\"]\n    K -- \"Sí\" --> M{\"¿Inventario suficiente?\"}\n    M -- \"No\" --> N[\"Mostrar inventario lleno\"]\n    M -- \"Sí\" --> O[\"Entregar objetos\"]\n    O --> P[\"Guardar cooldown\"]\n```\n\n> **Importante:** el proceso de compra utiliza una orden de LuckPerms y después descuenta el dinero. No es una transacción atómica: un fallo durante una de esas operaciones podría dejar los resultados parcialmente aplicados. Comprueba la consola si una compra presenta problemas.\n\n## 📦 Dependencias\n\nRankshopUIV2 necesita las siguientes dependencias:\n\n| Dependencia | Función |\n|---|---|\n| **Nukkit o fork compatible** | Plataforma del servidor donde se ejecuta el plugin. |\n| **LlamaEconomy** | Sistema económico utilizado para consultar y descontar dinero. |\n| **LuckPerms para Nukkit** | Administración de grupos y permisos de rangos. |\n\nLas versiones de estas dependencias deben ser compatibles con el servidor utilizado.\n\nEl plugin comprueba al iniciarse que LlamaEconomy y LuckPerms estén instalados. Si no encuentra alguno de ellos, deshabilita el plugin.\n\n## ⚙️ Instalación\n\n1. Descarga o compila el JAR de Rankshop.\n2. Instala LlamaEconomy y LuckPerms en versiones compatibles con tu servidor.\n3. Coloca el JAR de Rankshop en la carpeta `plugins/`.\n4. Inicia el servidor para que se generen los archivos de configuración.\n5. Detén el servidor antes de editar la configuración.\n6. Personaliza los archivos dentro de `plugins/Rankshop/`.\n7. Inicia de nuevo el servidor.\n8. Prueba `/rangos` y `/kits`.\n\nLa carpeta de configuración debería contener:\n\n```text\nplugins/\n└── Rankshop/\n    ├── config.yml\n    ├── kits.yml\n    ├── lang.yml\n    └── playerdata.yml\n```\n\n`playerdata.yml` se genera para almacenar los datos de los jugadores. No es necesario crearlo manualmente.\n\n> Haz una copia de seguridad de los archivos de configuración y datos antes de actualizar el plugin.\n\n## 🎮 Comandos\n\n| Comando | Alias | Descripción |\n|---|---|---|\n| `/rangos` | `/ranks`, `/rank` | Abre la tienda de rangos. |\n| `/kits` | `/kit` | Abre el menú de kits desbloqueados. |\n\nEstos comandos abren formularios dentro del juego y, por ello, están destinados a jugadores conectados, no a la consola.\n\n## 🛒 Configuración de rangos\n\nEl archivo `config.yml` define los rangos, los precios, los grupos de LuckPerms y los kits que desbloquea cada rango.\n\n### Ejemplo de configuración\n\n```yaml\nidentifiers:\n  - \"vip\"\n  - \"vipplus\"\n  - \"elite\"\n\n\"vip\":\n  name: \"VIP\"\n  lp-user: \"vip\"\n  price: 20000\n  kits:\n    - \"vip\"\n\n\"vipplus\":\n  name: \"VIP+\"\n  lp-user: \"vipplus\"\n  price: 35000\n  kits:\n    - \"vipplus\"\n    - \"vip\"\n\n\"elite\":\n  name: \"Elite\"\n  lp-user: \"elite\"\n  price: 50000\n  kits:\n    - \"elite\"\n```\n\n### ¿Qué significa cada opción?\n\n| Opción | Función |\n|---|---|\n| `identifiers` | Lista de identificadores que aparecen en la tienda. |\n| `name` | Nombre que se muestra en el formulario. |\n| `lp-user` | Nombre del grupo de LuckPerms que se asigna. |\n| `price` | Precio del rango en la moneda de LlamaEconomy. |\n| `kits` | Lista de identificadores de kits que se desbloquean. |\n\n### Cómo añadir un rango nuevo\n\n1. Añade su identificador a `identifiers`.\n2. Crea una sección con ese mismo identificador.\n3. Define `name`, `lp-user` y `price`.\n4. Añade los kits que debe desbloquear.\n5. Asegúrate de que los grupos de LuckPerms y los kits estén configurados.\n\n**Ejemplo:** para añadir el rango `Legend`, crea el grupo `legend` en LuckPerms, define la sección correspondiente en `config.yml` y asegúrate de que exista el kit `legend` en `kits.yml`.\n\n### ¿Cómo funciona la asignación de rangos?\n\nEl código utiliza el comando:\n\n```text\nlp user NOMBRE parent add GRUPO\n```\n\nEsto **añade el grupo como padre** al usuario; no garantiza que sustituya el rango anterior. Si compras `VIP+` después de tener `VIP`, ambos grupos pueden permanecer asignados.\n\nPara configurar una jerarquía de rangos en la que cada compra sustituya al rango anterior, debes decidir cómo quieres gestionar los grupos y ajustar la lógica de compra o la configuración de LuckPerms. No asumas que el plugin elimina automáticamente los rangos anteriores.\n\nTambién es recomendable probar las compras con precios de prueba y revisar los permisos antes de utilizarlo en un servidor público.\n\n## 🎁 Configuración de kits\n\nEl archivo `kits.yml` define los objetos y las condiciones de reclamación de cada kit.\n\n### Ejemplo\n\n```yaml\nvip:\n  name: \"Kit VIP\"\n  cooldown-seconds: 86400\n  items:\n    - \"276:0:1:&dEspada VIP:9:3:13:2\"\n    - \"278:0:1:&bPico VIP:15:3:17:2\"\n    - \"322:0:8:&6Manzana dorada\"\n\nvipplus:\n  name: \"Kit VIP+\"\n  cooldown-seconds: 172800\n  items:\n    - \"276:0:1:&dEspada VIP+:9:4:13:2\"\n    - \"322:0:12:&6Manzana dorada\"\n```\n\n### Opciones de un kit\n\n| Opción | Descripción |\n|---|---|\n| `vip` | Identificador interno del kit. |\n| `name` | Nombre visible del kit. |\n| `cooldown-seconds` | Tiempo de espera expresado en segundos. |\n| `items` | Lista de objetos que se entregan al reclamar el kit. |\n\n### Ejemplos de cooldowns\n\n| Valor | Tiempo de espera |\n|---:|---|\n| `0` | Sin espera entre reclamaciones. |\n| `3600` | 1 hora. |\n| `86400` | 24 horas. |\n| `172800` | 48 horas. |\n| `259200` | 72 horas. |\n\nEl cooldown empieza cuando el jugador reclama el kit. El tiempo se guarda en `playerdata.yml`, por lo que continúa contando aunque el servidor se reinicie.\n\n### Asociar kits a rangos\n\nLos kits se vinculan desde `config.yml`:\n\n```yaml\n\"vip\":\n  name: \"VIP\"\n  lp-user: \"vip\"\n  price: 20000\n  kits:\n    - \"vip\"\n    - \"vipplus\"\n```\n\nEn este ejemplo, la compra del rango desbloquea los dos kits indicados. El nombre del kit debe coincidir con su identificador en `kits.yml`.\n\nLos kits se desbloquean al comprar el rango; el plugin no comprueba automáticamente si el jugador ya tenía ese grupo antes de la compra.\n\n## ⚔️ Nombres y encantamientos\n\nRankshopUIV2 permite configurar nombres personalizados y varios encantamientos para un mismo objeto desde `kits.yml`.\n\n### Formatos admitidos\n\n| Formato | Resultado |\n|---|---|\n| `ID:META:CANTIDAD` | Objeto básico. |\n| `ID:META:CANTIDAD:NOMBRE` | Objeto con nombre personalizado. |\n| `ID:META:CANTIDAD:NOMBRE:ENCANTAMIENTO:NIVEL` | Objeto con un encantamiento. |\n| `ID:META:CANTIDAD:NOMBRE:ENCANTAMIENTO:NIVEL:ENCANTAMIENTO:NIVEL` | Objeto con varios encantamientos. |\n\n### Ejemplo con varios encantamientos\n\n```yaml\nitems:\n  - \"276:0:1:&dEspada VIP:9:3:13:2\"\n```\n\nEl formato se interpreta de la siguiente manera:\n\n| Valor | Significado |\n|---|---|\n| `276` | ID del objeto. |\n| `0` | Metadata del objeto. |\n| `1` | Cantidad. |\n| `&dEspada VIP` | Nombre personalizado en color morado claro. |\n| `9:3` | Encantamiento con ID `9`, nivel `3`. |\n| `13:2` | Segundo encantamiento con ID `13`, nivel `2`. |\n\nLos identificadores de objetos y encantamientos deben corresponder a los disponibles en la versión de Nukkit utilizada. Los ID del ejemplo no deben considerarse universales para todas las versiones.\n\n### Colores del nombre\n\nPuedes usar códigos de color con `&` en el nombre personalizado:\n\n```yaml\nitems:\n  - \"276:0:1:&dEspada VIP\"\n  - \"276:0:1:&6Espada Legend\"\n  - \"276:0:1:&cEspada Hero\"\n```\n\nEl plugin convierte `&` al símbolo de formato `§`.\n\n### Mantener el nombre original\n\nPuedes utilizar `default` para no asignar un nombre personalizado:\n\n```yaml\nitems:\n  - \"276:0:1:default:9:3\"\n```\n\nSi añades encantamientos, cada uno necesita dos valores: el ID del encantamiento y su nivel. Los niveles deben ser positivos.\n\n> **Consejo:** si un objeto no aparece correctamente, revisa el formato, la cantidad, el ID del objeto y los ID de los encantamientos. Una configuración inválida puede impedir que se reclame el kit.\n\n## 🌐 Idioma y mensajes\n\nEl archivo `lang.yml` permite personalizar los textos que se muestran a los jugadores.\n\n### Secciones principales\n\n| Sección | Contenido |\n|---|---|\n| `forms.shop` | Título, descripción y botones de la tienda. |\n| `forms.confirmation` | Confirmación y cancelación de compra. |\n| `forms.kits` | Título, descripción y estado de los kits. |\n| `messages` | Mensajes de errores, compras, cooldowns y reclamaciones. |\n\n### Marcadores dinámicos\n\nAlgunos textos utilizan marcadores que el plugin sustituye automáticamente:\n\n| Marcador | Contenido |\n|---|---|\n| `{rank}` | Nombre del rango. |\n| `{price}` | Precio del rango. |\n| `{kit}` | Nombre del kit. |\n| `{time}` | Tiempo restante del cooldown. |\n| `{status}` | Estado del kit en el formulario. |\n\nEjemplo:\n\n```yaml\nmessages:\n  purchase-success: \"§aHas comprado el rango §d{rank}§a correctamente.\"\n  kit-cooldown: \"§cPodrás reclamar este kit en §e{time}§c.\"\n  kit-claimed: \"§aHas reclamado el kit §b{kit}§a.\"\n```\n\nConserva los marcadores al traducir o personalizar los textos para que el plugin pueda reemplazarlos correctamente.\n\n## 💾 Datos de jugadores\n\nEl archivo `playerdata.yml` almacena información persistente de cada jugador.\n\nIncluye principalmente:\n\n- **Kits desbloqueados:** los kits que el jugador ha obtenido mediante la compra de rangos.\n- **Cooldowns:** el momento a partir del cual puede volver a reclamar cada kit.\n\nEjemplo ilustrativo de la estructura de datos:\n\n```yaml\nplayers:\n  nombrejugador:\n    unlocked-kits:\n      - \"vip\"\n    cooldowns:\n      vip: 1790000000\n```\n\nEl valor del cooldown es una marca de tiempo Unix expresada en segundos. El ejemplo es únicamente ilustrativo; el plugin genera y administra los datos reales.\n\nNo edites ni elimines este archivo mientras el servidor está en funcionamiento. Haz una copia de seguridad antes de realizar cambios manuales.\n\n## ❓ Solución de problemas\n\n<details>\n<summary><b>El plugin no se habilita al iniciar</b></summary>\n\nComprueba que LlamaEconomy y LuckPerms estén instalados y que sean compatibles con tu servidor. Revisa la consola para encontrar el mensaje de error y confirma que el archivo JAR de Rankshop esté en la carpeta `plugins/`.\n</details>\n\n<details>\n<summary><b>No aparece un rango en la tienda</b></summary>\n\nVerifica que su identificador esté incluido en `identifiers` en `config.yml` y que tenga una sección con su nombre, grupo y precio.\n</details>\n\n<details>\n<summary><b>El jugador no tiene suficiente dinero</b></summary>\n\nComprueba su saldo en LlamaEconomy y verifica que el precio configurado sea correcto.\n</details>\n\n<details>\n<summary><b>El jugador compra un rango, pero no obtiene el grupo esperado</b></summary>\n\nComprueba que `lp-user` coincida con el nombre del grupo en LuckPerms. Revisa también los permisos para ejecutar comandos de LuckPerms desde la consola del servidor.\n</details>\n\n<details>\n<summary><b>El jugador compra un rango, pero no ve su kit</b></summary>\n\nRevisa que el kit esté incluido en la lista `kits` del rango y que su identificador exista en `kits.yml`. Recuerda que el plugin desbloquea los kits cuando se realiza una compra; no sincroniza automáticamente los kits con los grupos que el jugador ya tenía.\n</details>\n\n<details>\n<summary><b>El jugador no puede reclamar un kit</b></summary>\n\nComprueba que el kit esté desbloqueado, que el cooldown haya terminado, que el kit contenga objetos válidos y que haya espacio suficiente en el inventario.\n</details>\n\n<details>\n<summary><b>Los objetos personalizados no funcionan</b></summary>\n\nRevisa el orden de los valores, la cantidad, la metadata, los códigos de color y los pares de ID y nivel de los encantamientos. Los ID deben ser compatibles con tu versión de Nukkit.\n</details>\n\n<details>\n<summary><b>Los kits o cooldowns parecen haberse reiniciado</b></summary>\n\nComprueba que `playerdata.yml` exista y que el servidor tenga permisos de escritura en la carpeta del plugin. Evita borrar el archivo al actualizarlo y conserva copias de seguridad.\n</details>\n\n<details>\n<summary><b>La compilación falla en IntelliJ</b></summary>\n\nEjecuta `.\\gradlew.bat clean build` desde la raíz del proyecto y revisa el primer error de Gradle. Comprueba que los JAR de `libs/` existan y que el JDK seleccionado sea compatible.\n</details>\n\n## 🔐 Recomendaciones para administradores\n\n- Crea y prueba los grupos de LuckPerms antes de publicar los rangos.\n- Prueba las compras con precios bajos en un servidor de desarrollo.\n- Haz copias de seguridad de `config.yml`, `kits.yml` y `playerdata.yml`.\n- Comprueba que los objetos y encantamientos funcionen en la versión exacta del servidor.\n- No compartas datos privados ni credenciales en los archivos del repositorio.\n- Verifica que la lógica de rangos coincida con la jerarquía de permisos que deseas utilizar.\n\n## 👨‍💻 Autor\n\n**Desarrollado por BrunoJaegerK**\n\n- GitHub: [@BrunoJaegerK](https://github.com/BrunoJaegerK)\n- Repositorio: [RankshopUIV2](https://github.com/BrunoJaegerK/RankshopUIV2)\n- Otro proyecto: [NeoBuyerV2.2](https://github.com/BrunoJaegerK/NeoBuyerV2.2)\n\n---\n\n<p align=\"center\">\n</p>\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-10-26",
+      "description": "",
+      "title": "Captura de la tienda de rangos",
+      "url": "https://raw.githubusercontent.com/BrunoJaegerK/RankshopUIV2/main/docs/images/Interfazrangos.png"
+    },
+    {
+      "created": "2026-10-26",
+      "description": "",
+      "title": "Captura de confirmación de compra",
+      "url": "https://raw.githubusercontent.com/BrunoJaegerK/RankshopUIV2/main/docs/images/Confirmacionrangos.png"
+    },
+    {
+      "created": "2026-10-26",
+      "description": "",
+      "title": "Captura del menú de kits",
+      "url": "https://raw.githubusercontent.com/BrunoJaegerK/RankshopUIV2/main/docs/images/InterfazKits.png"
+    },
+    {
+      "created": "2026-10-26",
+      "description": "",
+      "title": "Captura de objetos personalizados",
+      "url": "https://raw.githubusercontent.com/BrunoJaegerK/RankshopUIV2/main/docs/images/Kitsentregados.png"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/99422811?v=4",
+  "id": "BrunoJaegerK/RankshopUIV2",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Rankshop",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/BrunoJaegerK/RankshopUIV2",
+  "stars": 0,
+  "summary": "Tienda de rangos y kits con nombres personalizados y encantamientos",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1793017667,
+  "versions": [
+    {
+      "changelog": "separe funciones y agregue comprobaciones",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "RankshopUIV2-1.0.0.jar",
+          "primary": true,
+          "sha256": "85a141782282a8135bb082ef5a3a7b7bb80a34ce212845b290f6149ff8cb4a0a",
+          "size": 19193,
+          "url": "https://github.com/BrunoJaegerK/RankshopUIV2/releases/download/V2.0.1/RankshopUIV2-1.0.0.jar"
+        }
+      ],
+      "name": "RankShopUIV2.0.1",
+      "prerelease": false,
+      "published_at": 1793017667,
+      "version": "V2.0.1"
+    },
+    {
+      "changelog": "Instala este jar en tu servidor ",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "RankshopUIV2-1.0.0.jar",
+          "primary": true,
+          "sha256": "6ccfaa341a22f5c7ea8984d1a3e9d0391986f59d976e9d6313e284799593e41f",
+          "size": 12141,
+          "url": "https://github.com/BrunoJaegerK/RankshopUIV2/releases/download/nukkit/RankshopUIV2-1.0.0.jar"
+        }
+      ],
+      "name": "Version inicial",
+      "prerelease": false,
+      "published_at": 1791962546,
+      "version": "nukkit"
+    },
+    {
+      "changelog": "- Centre los mensajes del form de kits\r\n- agregue un nuevo mensaje en lang.yml",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "RankshopUIV2-1.0.0.jar",
+          "primary": true,
+          "sha256": "2eba7544502f0bb4d6965dfef1a589c5a6df11a2faf0b6a1e36df717de8dfca2",
+          "size": 12933,
+          "url": "https://github.com/BrunoJaegerK/RankshopUIV2/releases/download/bug/RankshopUIV2-1.0.0.jar"
+        }
+      ],
+      "name": "Arreglos ",
+      "prerelease": false,
+      "published_at": 1791992539,
+      "version": "bug"
+    }
+  ]
+}
