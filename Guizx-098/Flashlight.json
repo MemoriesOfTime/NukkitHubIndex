@@ -1,0 +1,60 @@
+{
+  "api_version": "3.0.5",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/239018447?v=4",
+      "name": "mdafftfa",
+      "url": "https://github.com/mdafftfa"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/144815167?v=4",
+      "name": "Guizx-098",
+      "url": "https://github.com/Guizx-098"
+    }
+  ],
+  "categories": [],
+  "created_at": 1793132209,
+  "dependencies": [],
+  "description": "# 🔦 Flashlight — Edição Kugo\n\nUma versão modificada do plugin Flashlight, adaptada por **Kugo** para servidores Minecraft Bedrock que utilizam PowerNukkitX.\n\nO projeto passou por alterações no código-fonte para adaptar seu funcionamento à API do PowerNukkitX, com ajustes na compilação, no processamento de eventos e no sistema de iluminação.\n\n## ✨ Sobre o projeto\n\nO Flashlight permite criar iluminação temporária ao redor do jogador utilizando itens reconhecidos pelo plugin. Esta versão reúne modificações feitas durante o processo de adaptação e testes no PowerNukkitX.\n\n## 🚀 Recursos\n\n- **Iluminação dinâmica:** criação de iluminação temporária ao redor do jogador.\n- **Cálculo de luminosidade:** processamento dos níveis de luz dos itens compatíveis.\n- **Atualização periódica:** atualização da iluminação conforme a configuração do plugin.\n- **Limpeza automática:** remoção da iluminação temporária quando ela deixa de ser necessária.\n- **Adaptações para PowerNukkitX:** alterações no código para compatibilidade com a API utilizada.\n- **Eventos e inventário:** ajustes no processamento dos eventos relacionados ao funcionamento do plugin.\n\nA disponibilidade de cada recurso depende da implementação e da configuração da versão instalada.\n\n## 📥 Instalação\n\n1. Baixe o arquivo `Flashlight.jar` na seção Releases deste repositório.\n2. Copie o arquivo para a pasta `plugins/` do servidor PowerNukkitX.\n3. Reinicie o servidor.\n4. Verifique o console para confirmar que o plugin foi carregado corretamente.\n\n## 🛠️ Compilação\n\nRequisitos:\n- Java 21.\n- PowerNukkitX compatível com a API declarada no `plugin.yml`.\n- Gradle Wrapper incluído no projeto.\n\nPara compilar, execute na pasta do projeto:\n\n`./gradlew clean build --no-daemon`\n\nO arquivo JAR compilado deverá estar em `build/libs/`.\n\n## 👨‍💻 Créditos\n\n**Responsável pelas modificações desta versão:** Kugo.\n\n**Projeto original:** [Flashlight — pixelwhiz](https://github.com/pixelwhiz/Flashlight).\n\nEsta edição contém alterações realizadas por Kugo sobre o projeto original. Os créditos e os direitos relativos ao trabalho original permanecem com seus respectivos titulares.\n\n## 📄 Licença\n\nA licença do projeto-base é mantida conforme o arquivo `LICENSE` incluído neste repositório. Consulte esse arquivo para conhecer os termos aplicáveis.\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/144815167?v=4",
+  "id": "Guizx-098/Flashlight",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Flashlight",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/Guizx-098/Flashlight",
+  "stars": 0,
+  "summary": "Flashlight modificado por Kugo para PowerNukkitX",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1793132283,
+  "versions": [
+    {
+      "changelog": "## Flashlight — Edição Kugo\n\nVersão modificada do Flashlight para PowerNukkitX.\n\n### Instalação\n1. Baixe Flashlight.jar nos arquivos desta Release.\n2. Coloque o arquivo na pasta plugins/ do servidor.\n3. Reinicie o servidor e confira o console.\n\n### Créditos\n- Modificações: Kugo\n- Projeto original: pixelwhiz/Flashlight\n\nConsulte o README e a licença incluída no repositório.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Flashlight.jar",
+          "primary": true,
+          "sha256": "3404bcfe37366f910bab3f114aaba7c40fe3b199a4d6759610d0d3ae7bd9807d",
+          "size": 9742,
+          "url": "https://github.com/Guizx-098/Flashlight/releases/download/v1.0.0/Flashlight.jar"
+        }
+      ],
+      "name": "Flashlight Kugo Edition v1.0.0",
+      "prerelease": false,
+      "published_at": 1793132283,
+      "version": "v1.0.0"
+    }
+  ]
+}
