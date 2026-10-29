@@ -32,8 +32,25 @@
   "targets": [
     "nkmot"
   ],
-  "updated_at": 1793031862,
+  "updated_at": 1793280462,
   "versions": [
+    {
+      "changelog": "v1.0.4\r\n\r\n[*] /alias now shows the main account in the ResPackCache output.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Alias+.jar",
+          "primary": true,
+          "sha256": "88ea45ec60be8b5ce4c33d46ced175285b9e838039cb6af996e2503ea4094467",
+          "size": 49679,
+          "url": "https://github.com/Theu5er/AliasPlus/releases/download/v1.0.4/Alias%2B.jar"
+        }
+      ],
+      "name": "v1.0.4",
+      "prerelease": false,
+      "published_at": 1793280462,
+      "version": "v1.0.4"
+    },
     {
       "changelog": "v1.0.3\r\n\r\n[+] (Experimental) Added NetworkId detection (available only for clients that support NetherNet).\r\n[*] /alias now shows the main account in the BlobCache output.\r\n",
       "downloads": 0,
