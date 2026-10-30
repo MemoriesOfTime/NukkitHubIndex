@@ -433,14 +433,14 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/plan-player-analytics/Plan",
-  "stars": 1040,
+  "stars": 1041,
   "summary": "Player Analytics plugin for Minecraft Server platforms - View player activity of your server with ease. :calendar:",
   "targets": [
     "nkx",
     "nkmot",
     "pnx"
   ],
-  "updated_at": 1793029854,
+  "updated_at": 1793320801,
   "versions": [
     {
       "changelog": "# 5.9 DEV build 3705\r\n\r\nThis dev build contains a lot of new features, fabric 26.3 support as well as bugfixes.\r\n\r\nSpecial thanks to **AnttiMK**, **DomasUrbonas** & **RomainCabaret** for contributions to this update\r\n\r\n# Breaking changes: Java 17 or newer now required\r\n\r\nPlan now requires Java 17 or newer. \r\n\r\nAPI is still compiled with Java 8, but that will also change to 17 in Plan version 5.10.\r\n\r\n# Change log\r\n\r\n## Fabric 26.3\r\n\r\n- DomasUrbonas added support for fabric 26.3, older versions are no longer supported.\r\n\r\n## Data gathering\r\n\r\n### New data: Minecraft statistics\r\n\r\nPlan will now gather all Minecraft statistics from the player json files found in statistics folder on the game servers. They are displayed on Player, Server (sum of players) and Network pages (sum of players / server or sum of all players)\r\n\r\n### Kill tracking additions\r\n\r\n- RomanCabaret implemented support for TNT explosion kills on Bukkit, Fabric and Sponge when ignited directly by a player\r\n\r\n### Bugfixes\r\n\r\n- Fixed Shutdown session save sometimes storing sessions twice if server was shutdown via keyboard interrupt\r\n- AnttiMK Fixed Folia gathering performance data 20 times more frequently than intended.\r\n- Fixed Exception on Folia when setHealth(0) was called that killed the player.\r\n- Fixed setHealth(0) recording the death as a kill for the last player that damaged the player\r\n\r\n## Database\r\n\r\n- Fixed database transaction queue size tracking not working correctly.\r\n- Reduced memory impact of transaction queue\r\n\r\n## Webserver\r\n\r\n- Webserver was migrated to Jetty 12 which requires Java 17. This added support for asynchronous response resolution which means more requests can be processed without waiting for previous requests to complete.\r\n\r\n## DataExtensions\r\n\r\n### DataExtensions Graph API\r\n\r\n- New API allows DataExtensions to add their own Line graph data to the website. Documented here: https://github.com/plan-player-analytics/Plan/wiki/DataExtension-API-Graphs\r\n- Vault now graphs player balance over time\r\n- BuyCraft now graphs cumulative income over time.\r\n\r\n### DataExtensions Statistics API\r\n\r\n- New API allows DataExtensions to add numeric data in table format more easily\r\n- Jobs now lists job levels as Statistics\r\n- mcMMO now lists skill levels as Statistics\r\n\r\n### Other\r\n\r\n- Plugin data cards can now be collapsed for easier viewing\r\n- Different types of data inside plugin cards now layout slightly better.",

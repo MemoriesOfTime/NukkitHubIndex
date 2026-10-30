@@ -27,7 +27,7 @@
   "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/Theu5er/AliasPlus",
-  "stars": 2,
+  "stars": 3,
   "summary": "Advanced Alt Detection Plugin",
   "targets": [
     "nkmot"
