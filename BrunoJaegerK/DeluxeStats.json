@@ -44,7 +44,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1793498838,
+  "updated_at": 1793557607,
   "versions": [
     {
       "changelog": "## 🛡️ Mejoras en el sistema Anti-Farming\r\n\r\n- ⚔️ Se implementó un sistema para evitar el farmeo de kills entre jugadores.\r\n- ⏱️ Se estableció un tiempo de espera de **2 minutos y 30 segundos** para las kills repetidas entre el mismo par de jugadores y en la misma dirección.\r\n- 🔄 El control es independiente por jugador: si A mata a B, B todavía puede obtener una kill al matar a A durante ese período, ya que tiene su propio temporizador.\r\n- ✅ Una vez transcurridos los **2 minutos y 30 segundos**, A puede volver a obtener una kill contra B. Al registrarse, comienza un nuevo período de espera.\r\n- 🎯 Las kills contra otros jugadores no se ven afectadas por el temporizador de una pareja diferente.",

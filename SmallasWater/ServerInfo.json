@@ -46,7 +46,7 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/SmallasWater/ServerInfo",
-  "stars": 6,
+  "stars": 5,
   "summary": "跨服菜单 可显示服务器在线人数",
   "targets": [
     "nkx",

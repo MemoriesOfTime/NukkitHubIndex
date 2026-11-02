@@ -1,0 +1,39 @@
+{
+  "api_version": "1.0.20",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/340877626?v=4",
+      "name": "HollowKnightttt",
+      "url": "https://github.com/HollowKnightttt"
+    }
+  ],
+  "categories": [],
+  "created_at": 1793533291,
+  "dependencies": [],
+  "description": "# Vanilla IG\nAn Behavior Pack for nukkit, nukkit pm1e, and nukkit MOT\n> Still Work In Progress (W.I.P)\n\n\n[Follow Me On Tiktok!](https://github.com/HollowKnightttt/Vanilla-ig/blob/main/tiktok.com/@flok.flok.wiedlak)\n\n# Installing Vanilla IG on your server\n1. download vanilla IG and behaviorpackloader\n2. put behaviorpackloader on the plugin folder\n3. search for behavior_packs folder\n4. to install the vanilla IG there the tutorial website [Click Here](https://help.baohost.com/articles/bedrock-addons)\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/340877626?v=4",
+  "id": "HollowKnightttt/Vanilla-ig--nukkit-pm1e",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "nukkit-pm1e/src/main/resources/plugin.yml",
+  "name": "vanilla-ig",
+  "pending": true,
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/HollowKnightttt/Vanilla-ig",
+  "stars": 0,
+  "summary": "Vanilla blocks i guess",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1793613867,
+  "versions": []
+}
