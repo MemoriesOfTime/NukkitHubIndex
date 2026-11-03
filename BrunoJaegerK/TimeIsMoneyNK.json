@@ -1,0 +1,45 @@
+{
+  "api_version": "1.0.13",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/99422811?v=4",
+      "name": "BrunoJaegerK",
+      "url": "https://github.com/BrunoJaegerK"
+    }
+  ],
+  "categories": [],
+  "created_at": 1793693393,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "EconomyAPI",
+      "version_range": ""
+    }
+  ],
+  "description": "# TimeIsMoneyNK\n\n**TimeIsMoneyNK** es un plugin para servidores Minecraft Bedrock basados en Nukkit que recompensa a los jugadores por el tiempo que permanecen conectados al servidor.\n\nEl plugin permite configurar recompensas económicas por rango, controlar el tiempo de actividad de los jugadores y evitar que los usuarios reciban dinero mientras permanecen AFK.\n\nDesarrollado por **BrunoJaegerK** para **DELUXEMINE NETWORK**.\n\n## ✨ Características\n\n- **Recompensas por tiempo conectado:** los jugadores reciben dinero automáticamente después de cumplir un intervalo de tiempo.\n- **Sistema de rangos:** permite configurar recompensas diferentes según el rango del jugador.\n- **Prioridad de rangos:** se aplica únicamente la recompensa del rango de mayor prioridad, sin acumular recompensas.\n- **Sistema anti-AFK:** detecta la inactividad de los jugadores.\n- **Control de pagos AFK:** permite habilitar o deshabilitar las recompensas para jugadores AFK.\n- **Configuración personalizable:** permite modificar los importes, intervalos y ajustes del sistema.\n- **Recarga de configuración:** permite recargar `config.yml` mediante un comando.\n- **Integración con EconomyAPI:** utiliza EconomyAPI para entregar las recompensas.\n\n## 📋 Requisitos\n\n- Servidor Nukkit compatible.\n- NukkitPetteriM1Edition (PM1E).\n- Java 25.\n- [EconomyAPI](https://github.com/Nukkit-coders/EconomyAPI).\n\n## 📦 Instalación\n\n1. Descarga el archivo `.jar` de TimeIsMoneyNK desde la sección Releases.\n2. Coloca el archivo en la carpeta `plugins` de tu servidor.\n3. Asegúrate de tener EconomyAPI instalado.\n4. Inicia o reinicia el servidor.\n5. Edita `plugins/TimeIsMoneyNK/config.yml` para personalizar las recompensas.\n\nEl archivo de configuración se genera al iniciar el plugin.\n\n## 💰 Recompensas predeterminadas\n\n| Rango | Recompensa | Intervalo |\n|---|---:|---:|\n| Default | $100 | 10 minutos |\n| VIP | $150 | 10 minutos |\n| VIP+ | $200 | 10 minutos |\n| VIP Ext+ | $300 | 10 minutos |\n\nLos importes y permisos pueden personalizarse mediante la configuración del plugin.\n\n**Importante:** las recompensas no se acumulan entre rangos. Se utiliza únicamente el rango de mayor prioridad que tenga el jugador.\n\n## 💤 Sistema AFK\n\nTimeIsMoneyNK incluye un sistema de detección de inactividad.\n\n- Detecta el movimiento y determinadas acciones del jugador.\n- No considera la rotación de cámara como actividad.\n- Permite establecer el tiempo necesario para considerar a un jugador AFK.\n- Permite desactivar los pagos mientras el jugador está AFK.\n\nPor defecto, los jugadores AFK no reciben recompensas.\n\n## ⚙️ Comandos\n\n| Comando | Descripción |\n|---|---|\n| `/tim` | Muestra información del plugin. |\n| `/tim reload` | Recarga la configuración. |\n\n## 🔐 Permisos\n\n| Permiso | Descripción | Predeterminado |\n|---|---|---|\n| `timeismoney.info` | Permite utilizar el comando principal. | Todos |\n| `timeismoney.admin` | Permite recargar la configuración. | Operadores |\n| `timeismoney.rank.vip` | Permiso de recompensa VIP. | Configurable |\n| `timeismoney.rank.vipplus` | Permiso de recompensa VIP+. | Configurable |\n| `timeismoney.rank.vipext` | Permiso de recompensa VIP Ext+. | Configurable |\n\nLos permisos de rangos pueden adaptarse a la configuración de LuckPerms.\n\n## 🛠️ Compilación\n\nEl proyecto utiliza Maven y Java 25.\n\nPara compilarlo desde la raíz del proyecto:\n\n```bash\nmvn clean package\n```\n\nEl archivo compilado se encontrará en:\n\n```text\ntarget/TimeIsMoneyNK-1.0.0.jar\n```\n\n## ❤️ Créditos\n\nDesarrollado con cariño para **DELUXEMINE NETWORK**.\n\n**Autor:** BrunoJaegerK\n\n**Repositorio:** https://github.com/BrunoJaegerK/TimeIsMoneyNK\n\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/99422811?v=4",
+  "id": "BrunoJaegerK/TimeIsMoneyNK",
+  "license": {
+    "id": "Apache-2.0",
+    "name": "Apache License 2.0",
+    "url": "https://spdx.org/licenses/Apache-2.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "TimeIsMoneyNK",
+  "pending": true,
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/BrunoJaegerK/TimeIsMoneyNK",
+  "stars": 0,
+  "summary": "Sistema de recompensas por tiempo conectado para DeluxeMine",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1793695710,
+  "versions": []
+}
