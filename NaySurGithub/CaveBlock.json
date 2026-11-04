@@ -1,0 +1,59 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/96527285?v=4",
+      "name": "NaySurGithub",
+      "url": "https://github.com/NaySurGithub"
+    }
+  ],
+  "categories": [],
+  "created_at": 1793737485,
+  "dependencies": [],
+  "description": "# CaveBlock 🕳️\n\n**See through the ground.** Place a Cave Block in a wall or a floor and look\ninto it: you see straight through the rock behind it, right into the caves.\n\n![CaveBlock](https://raw.githubusercontent.com/NaySurGithub/CaveBlock/main/.jarbage/icon.png \"CaveBlock\")\n\n![Looking through Cave Blocks](https://raw.githubusercontent.com/NaySurGithub/CaveBlock/main/.jarbage/screenshot.png \"Looking through Cave Blocks\")\n\n## Features\n\n- 🕳️ A real custom block — no shader, no client mod\n- ⛏️ Look into it to find caves, ores and hidden rooms behind the rock\n- 🧱 Breaks, drops and places like any other block\n- 🎨 Shows up in the creative inventory (Construction tab)\n- ⚙️ Zero setup — the plugin turns on the client feature it needs by itself\n- 📦 The texture pack installs itself — players download it automatically\n\n## Install\n\n1. Put `CaveBlock-x.y.z.jar` in your `plugins/` folder.\n2. Restart the server. Done!\n\nGet the block from the creative inventory, or with\n`/give <player> caveblock:cave_block`.\n\n## How it works\n\nThe Cave Block uses the client's voxel shapes: it tells the client it fills the\nwhole cell, so the blocks touching it hide the faces against it, while it draws\nonly its frame. Stone never draws the faces between two stones, so looking\ninto the Cave Block shows straight through the rock until the next open space.\n\nThe plugin adds the `voxel_shapes` experiment to what the server sends players\nat login (no need to edit `pnx.yml`).\n\n## Requirements\n\nPowerNukkitX 3.0.6+ · Java 21 · Bedrock 1.26.x\n\n## For developers\n\n```bash\n./gradlew build\n```\n\nMIT license — do whatever you want with it.\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/96527285?v=4",
+  "id": "NaySurGithub/CaveBlock",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": {
+    "discord": "",
+    "homepage": "https://github.com/NaySurGithub/CaveBlock",
+    "wiki": ""
+  },
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "CaveBlock",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/NaySurGithub/CaveBlock",
+  "stars": 0,
+  "summary": "A block you see through, along with the rock behind it, straight into the caves.",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1793737732,
+  "versions": [
+    {
+      "changelog": "**Full Changelog**: https://github.com/NaySurGithub/CaveBlock/commits/v1.0.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "CaveBlock-1.0.0.jar",
+          "primary": true,
+          "sha256": "c8bae55037ca907d23a8b58dd61163157902af7b4ea812d833a7cfa223f9f5eb",
+          "size": 8423,
+          "url": "https://github.com/NaySurGithub/CaveBlock/releases/download/v1.0.0/CaveBlock-1.0.0.jar"
+        }
+      ],
+      "name": "CaveBlock v1.0.0",
+      "prerelease": false,
+      "published_at": 1793737575,
+      "version": "v1.0.0"
+    }
+  ]
+}

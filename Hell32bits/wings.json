@@ -1,0 +1,55 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/100521632?v=4",
+      "name": "Hell32bits",
+      "url": "https://github.com/Hell32bits"
+    }
+  ],
+  "categories": [],
+  "created_at": 1793801030,
+  "dependencies": [],
+  "description": "# Wings++ para PowerNukkitX\n\nPorte do addon **Wings++** para plugin Java.\n\n- `src/main/java` : itens customizados, voo, livro guia e receitas (toda a logica do `scripts/*.js`).\n- `src/main/resources/WingsPlusRP.zip` : resource pack (modelos, texturas, animacoes) do addon original.\n  O plugin copia esse zip para `resource_packs/` ao iniciar; reinicie o servidor.\n- `config.yml` : velocidade do voo.\n\nBuild: `mvn package` -> `target/wings-plus-pnx-1.0.0.jar` em `plugins/`.\n\n<img width=\"919\" height=\"520\" alt=\"image\" src=\"https://github.com/user-attachments/assets/efda3541-b7ce-47ce-9e02-7197efce41b9\" />\n<img width=\"919\" height=\"499\" alt=\"image\" src=\"https://github.com/user-attachments/assets/88554648-6c2f-475f-aa48-54565b087254\" />\n<img width=\"918\" height=\"513\" alt=\"image\" src=\"https://github.com/user-attachments/assets/c7f71952-dd90-474a-b10d-0c427e4bd6ae\" />\n<img width=\"913\" height=\"514\" alt=\"image\" src=\"https://github.com/user-attachments/assets/e9efbde8-fc9b-439f-ba17-68a3cc125848\" />\n\n\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/100521632?v=4",
+  "id": "Hell32bits/wings",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "WingsPlus",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/Hell32bits/wings",
+  "stars": 0,
+  "summary": "Wings++ (asas voaveis + livro guia) para PowerNukkitX",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1793802514,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "WingsPlus-1.0.0.jar",
+          "primary": true,
+          "sha256": "993afcc9273beb1e7efad05c84e203a37c732e48a7bfea205c246340ee2d7b9f",
+          "size": 382638,
+          "url": "https://github.com/Hell32bits/wings/releases/download/v1.0.0-beta/WingsPlus-1.0.0.jar"
+        }
+      ],
+      "name": "WingsPlus",
+      "prerelease": false,
+      "published_at": 1793801630,
+      "version": "v1.0.0-beta"
+    }
+  ]
+}

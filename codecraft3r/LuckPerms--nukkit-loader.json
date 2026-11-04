@@ -412,8 +412,25 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1793680536,
+  "updated_at": 1793750330,
   "versions": [
+    {
+      "changelog": "# LuckPerms 5.4.143-patched for NeoForge 1.21.1\n\nCustom build of LuckPerms built from source for Minecraft 1.21.1 / NeoForge 21.1.265.\n\n### Changes:\n- Backports upstream commit `b18717ede` (*Remove NeoForge capability attachment*) onto the official 1.21.1 base commit (`9bf30fc83`).\n- Replaces player capability context caching with `InlineContextManager` (direct Caffeine loading cache) to eliminate `IllegalStateException: Capability has not been initialised` when permission nodes (such as Balm/Waystones or Brigadier commands) are checked during early login (`placeNewPlayer`).\n- Preserves native 1.21.1 registry access calls in `NeoForgePlayerCalculator` (`server.registryAccess().registry(...)`) to ensure full compatibility with 1.21.1 MappedRegistry and prevent `ClassCastException` during `/lp editor`.\n- Implements `NeoForgeCommandExecutor#run()` to handle Brigadier command dispatch, argument parsing, selector resolution, and future completion on console.\n- Adds RCON console detection in `NeoForgeSenderFactory` to forward command feedback directly via `sender.getServer().sendSystemMessage(...)`.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "LuckPerms-NeoForge-5.4.143-patched.jar",
+          "primary": true,
+          "sha256": "868183b785ffe8d9e877087ba3d02eec4e1fa2cf8d0aa7c1a3efb29cd9c45976",
+          "size": 1431791,
+          "url": "https://github.com/codecraft3r/LuckPerms/releases/download/v5.4.143-patched/LuckPerms-NeoForge-5.4.143-patched.jar"
+        }
+      ],
+      "name": "LuckPerms-NeoForge-5.4.143-patched",
+      "prerelease": false,
+      "published_at": 1793750330,
+      "version": "v5.4.143-patched"
+    },
     {
       "changelog": "# LuckPerms 5.4.140-patched for NeoForge 1.21.1\n\nCustom build of LuckPerms built from source for Minecraft 1.21.1 / NeoForge 21.1.265.\n\n### Changes:\n- Backports upstream commit `b18717ede` (*Remove NeoForge capability attachment*) onto the official 1.21.1 base commit (`9bf30fc83`).\n- Replaces player capability context caching with `InlineContextManager` (direct Caffeine loading cache) to eliminate `IllegalStateException: Capability has not been initialised` when permission nodes (such as Balm/Waystones or Brigadier commands) are checked during early login (`placeNewPlayer`).\n- Preserves native 1.21.1 registry access calls in `NeoForgePlayerCalculator` (`server.registryAccess().registry(...)`) to ensure full compatibility with 1.21.1 MappedRegistry and prevent `ClassCastException` during `/lp editor`.",
       "downloads": 0,

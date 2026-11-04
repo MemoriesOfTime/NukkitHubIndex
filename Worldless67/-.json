@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/351091618?v=4",
+      "name": "Worldless67",
+      "url": "https://github.com/Worldless67"
+    }
+  ],
+  "categories": [],
+  "created_at": 1793560081,
+  "dependencies": [],
+  "description": "# FrizProject 1.9.0 — FrizMine Bedrock\nПлагин для Nukkit-MOT 1.2.0 (Bedrock 1.21.114), Java 17.\n\n## Сборка\nGitHub Actions (`.github/workflows/build.yml`) или локально `mvn package`.\n\n## Установка на хост (mcpehost.ru)\n1. Панель → Файлы → `plugins/` → загрузить JAR.\n2. Ресурс-пак распаковать в `resource_packs/FrizResourcePack/`.\n3. Перезапустить. Спавн строится при первом старте.\n4. В `nukkit.yml`: `force-resources: true`.\n\n## Документы\ndocs/INSTALL.md, docs/COMMANDS.md, docs/ITEMS.md, docs/TESTING.md",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/351091618?v=4",
+  "id": "Worldless67/-",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "FrizProject",
+  "pending": true,
+  "primary_target": "nkmot",
+  "server_version": "",
+  "source": "https://github.com/Worldless67/-",
+  "stars": 0,
+  "summary": "",
+  "targets": [
+    "nkmot"
+  ],
+  "updated_at": 1793784742,
+  "versions": []
+}
