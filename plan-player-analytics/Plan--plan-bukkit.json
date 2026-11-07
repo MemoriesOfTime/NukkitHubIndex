@@ -52,6 +52,11 @@
       "url": "https://github.com/BrainStone"
     },
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/68785377?v=4",
+      "name": "Almost10",
+      "url": "https://github.com/Almost10"
+    },
+    {
       "avatar_url": "https://avatars.githubusercontent.com/u/53803019?v=4",
       "name": "rymiel",
       "url": "https://github.com/rymiel"
@@ -100,11 +105,6 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/3696988?v=4",
       "name": "Shadowhackercz",
       "url": "https://github.com/Shadowhackercz"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/68785377?v=4",
-      "name": "Almost10",
-      "url": "https://github.com/Almost10"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/26180623?v=4",
@@ -634,8 +634,32 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1793945430,
+  "updated_at": 1794055685,
   "versions": [
+    {
+      "changelog": "# 5.9 DEV build 3786\r\n\r\nThis is a release candidate.\r\n\r\nThis dev build contains security fixes, bugfixes, as well as some new features\r\n\r\nSpecial thanks to **AnttiMK**, **DomasUrbonas**, **RomainCabaret**, **Tokas**, **Axionize** & **Almost10** for contributions to this update.\r\n\r\n# Changes from previous DEV build\r\n\r\n- snake_case to camelCase conversion in JSON endpoints\r\n- Fixed security vulnerability in the webserver\r\n- Query page date range presets\r\n- Datapoint table timeframe presets\r\n- Fixed command source mixin collision on Fabric\r\n- Fixes to statistics storage\r\n- Bed & respawn anchor kill tracking (Bukkit, Fabric)\r\n- Small fixes to query page relating to extensions\r\n- Locale updates\r\n\r\n# Breaking changes\r\n\r\n## Java 17 or newer now required\r\n\r\nPlan now requires Java 17 or newer. \r\n\r\nAPI is still compiled with Java 8, but that will also change to 17 in Plan version 5.10.\r\n\r\n## snake_case variables changed to camelCase in JSON endpoints\r\n\r\nAll snake_case variables in Plan /v1/ endpoints were changed to camelCase for consistency.\r\n\r\n# Change log\r\n\r\n## Fixed Security vulnerabilities\r\n\r\n- Fixed a Denial of Service vulnerability with the Jetty webserver. This affects all versions prior to this version. Vulnerability details are to be released along with the full release later.\r\n\r\n## Fabric 26.3\r\n\r\n- DomasUrbonas added support for fabric 26.3, older versions are no longer supported.\r\n- Axionize fixed command source mixin collision with another plugin\r\n\r\n## Data gathering\r\n\r\n### New data: Minecraft statistics\r\n\r\nPlan will now gather all Minecraft statistics from the player json files found in statistics folder on the game servers. They are displayed on Player, Server (sum of players) and Network pages (sum of players / server or sum of all players)\r\n\r\n### Kill tracking additions\r\n\r\nRomanCabaret implemented support for:\r\n  - TNT explosion kills on Bukkit, Fabric and Sponge when ignited directly by a player\r\n  - Bed and Respawn Anchor explosions on Bukkit, Fabric\r\n\r\n### Bugfixes\r\n\r\n- Fixed Shutdown session save sometimes storing sessions twice if server was shutdown via keyboard interrupt\r\n- AnttiMK Fixed Folia gathering performance data 20 times more frequently than intended.\r\n- Fixed Exception on Folia when setHealth(0) was called that killed the player.\r\n- Fixed setHealth(0) recording the death as a kill for the last player that damaged the player\r\n\r\n## Website\r\n\r\n- Almost10 implemented Query page Date-range presets\r\n- Almost10 implemented Timeframe presets to datapoint tables (Week comparison, Online Activity as Numbers, Performance as Numbers)\r\n\r\n## Database\r\n\r\n- Fixed database transaction queue size tracking not working correctly.\r\n- Reduced memory impact of transaction queue\r\n\r\n## Webserver\r\n\r\n- Webserver was migrated to Jetty 12 which requires Java 17. This added support for asynchronous response resolution which means more requests can be processed without waiting for previous requests to complete.\r\n\r\n## DataExtensions\r\n\r\n### DataExtensions Graph API\r\n\r\n- New API allows DataExtensions to add their own Line graph data to the website. Documented here: https://github.com/plan-player-analytics/Plan/wiki/DataExtension-API-Graphs\r\n- Vault now graphs player balance over time\r\n- BuyCraft now graphs cumulative income over time.\r\n\r\n### DataExtensions Statistics API\r\n\r\n- New API allows DataExtensions to add numeric data in table format more easily\r\n- Jobs now lists job levels as Statistics\r\n- mcMMO now lists skill levels as Statistics\r\n\r\n### Other\r\n\r\n- Plugin data cards can now be collapsed for easier viewing\r\n- Different types of data inside plugin cards now layout slightly better.\r\n- Fixed error in extension page when rendering a number on a table\r\n- Fixed Booleans with 'hidden' flag appearing on the Query page\r\n\r\n## Locale\r\n\r\n- Tokas updated CN and ZH_TW locales\r\n- AuroraLS3 updated FI locale\r\n- Translated missing locale keys in other locales using AI (~5000 missing translations total).\r\n\r\n## Technical \r\n\r\n- Plan frontend code is now formatted with Prettier\r\n- Almost10 helped progress Javascript to Typescript conversion.",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Plan-5.9-dev-build-3786.jar",
+          "primary": true,
+          "sha256": "ccd7501b65f3f714fa0a4f5c80b323d00f9cee8f683d230eef0bdfcb6fab1d59",
+          "size": 18599247,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.9.3786/Plan-5.9-dev-build-3786.jar"
+        },
+        {
+          "filename": "PlanFabric-5.9-dev-build-3786.jar",
+          "primary": true,
+          "sha256": "65c738bf3419d6aa8c896c732662136362193e821a3ef42e6101a50fefb5895f",
+          "size": 18176758,
+          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.9.3786/PlanFabric-5.9-dev-build-3786.jar"
+        }
+      ],
+      "name": "5.9 DEV build 3786",
+      "prerelease": true,
+      "published_at": 1794043641,
+      "version": "5.9.3786"
+    },
     {
       "changelog": "# 5.9 DEV build 3705\r\n\r\nThis dev build contains a lot of new features, fabric 26.3 support as well as bugfixes.\r\n\r\nSpecial thanks to **AnttiMK**, **DomasUrbonas** & **RomainCabaret** for contributions to this update\r\n\r\n# Breaking changes: Java 17 or newer now required\r\n\r\nPlan now requires Java 17 or newer. \r\n\r\nAPI is still compiled with Java 8, but that will also change to 17 in Plan version 5.10.\r\n\r\n# Change log\r\n\r\n## Fabric 26.3\r\n\r\n- DomasUrbonas added support for fabric 26.3, older versions are no longer supported.\r\n\r\n## Data gathering\r\n\r\n### New data: Minecraft statistics\r\n\r\nPlan will now gather all Minecraft statistics from the player json files found in statistics folder on the game servers. They are displayed on Player, Server (sum of players) and Network pages (sum of players / server or sum of all players)\r\n\r\n### Kill tracking additions\r\n\r\n- RomanCabaret implemented support for TNT explosion kills on Bukkit, Fabric and Sponge when ignited directly by a player\r\n\r\n### Bugfixes\r\n\r\n- Fixed Shutdown session save sometimes storing sessions twice if server was shutdown via keyboard interrupt\r\n- AnttiMK Fixed Folia gathering performance data 20 times more frequently than intended.\r\n- Fixed Exception on Folia when setHealth(0) was called that killed the player.\r\n- Fixed setHealth(0) recording the death as a kill for the last player that damaged the player\r\n\r\n## Database\r\n\r\n- Fixed database transaction queue size tracking not working correctly.\r\n- Reduced memory impact of transaction queue\r\n\r\n## Webserver\r\n\r\n- Webserver was migrated to Jetty 12 which requires Java 17. This added support for asynchronous response resolution which means more requests can be processed without waiting for previous requests to complete.\r\n\r\n## DataExtensions\r\n\r\n### DataExtensions Graph API\r\n\r\n- New API allows DataExtensions to add their own Line graph data to the website. Documented here: https://github.com/plan-player-analytics/Plan/wiki/DataExtension-API-Graphs\r\n- Vault now graphs player balance over time\r\n- BuyCraft now graphs cumulative income over time.\r\n\r\n### DataExtensions Statistics API\r\n\r\n- New API allows DataExtensions to add numeric data in table format more easily\r\n- Jobs now lists job levels as Statistics\r\n- mcMMO now lists skill levels as Statistics\r\n\r\n### Other\r\n\r\n- Plugin data cards can now be collapsed for easier viewing\r\n- Different types of data inside plugin cards now layout slightly better.",
       "downloads": 0,
@@ -1311,28 +1335,6 @@
       "prerelease": true,
       "published_at": 1709455146,
       "version": "5.6.2796"
-    },
-    {
-      "changelog": "# 5.6 DEV build 2731\r\n\r\nThis dev release contains further maintenance and few new features\r\n\r\nSpecial thanks to **jhqwqmc, Vankka and Beniro** for contributions to this update!\r\n\r\n# Changes from DEV build 2703\r\n\r\n- CSV export added\r\n- Bugfixes in export, placeholders, fabric commands and website cache\r\n\r\n# Change log\r\n\r\n## Website\r\n\r\n### CSV Export in tables\r\n\r\n![export-demo](https://github.com/plan-player-analytics/Plan/assets/24460436/ef72f09a-945c-4841-abff-a59af7b4878a)\r\n\r\nYou can now export CSV from most tables. This is especially useful when combined with Query features, such as the click-and-drag in calendar for selecting data from specific timeframe.\r\n\r\n### Other\r\n\r\n- The react bundle is now built using Vite. It utilizes modules available in modern browsers. This sped up build times by 7 minutes and should also improve page loading speed.\r\n- Fixed some issues where reverse proxied Plan website loaded a blank page\r\n- Fixed issue where server players online graph was fetched for network page due to bad cache lookup\r\n- Server & Network Overview now uses frontend formatting for playtime and dates\r\n\r\n## Fabric 1.20.4\r\n\r\n- Binero implemented Fabric 1.20.4 support, 1.20.3 is not supported this build onwards.\r\n- Fabric command registration was moved earlier to avoid confusion when /plan reload doesn't exist after failed enable.\r\n\r\n## Placeholders\r\n\r\n- Fixed off-by-one error in %plan_top_...% placeholders where 0 would be top 1 and 9 top 10. Now it matches documentation where 1 -> 1, and 10 -> 10. If you were compensating for this bug you may need to change %plan_top_..._0% to %plan_top_..._1% etc\r\n\r\n## Export\r\n\r\n- Fixed react files getting exported even when all export is disabled.\r\n\r\n## Extensions\r\n\r\n- Vankka updated DiscordSRV Extension to fix an incompatibility with new DiscordSRV version\r\n\r\n## Locale\r\n\r\n- jhqwqmc updated Chinese locale (CN)",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "Plan-5.6-dev-build-2731.jar",
-          "primary": true,
-          "size": 16265156,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2731/Plan-5.6-dev-build-2731.jar"
-        },
-        {
-          "filename": "PlanFabric-5.6-dev-build-2731.jar",
-          "primary": true,
-          "size": 16398789,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2731/PlanFabric-5.6-dev-build-2731.jar"
-        }
-      ],
-      "name": "5.6 DEV build 2731",
-      "prerelease": true,
-      "published_at": 1706342862,
-      "version": "5.6.2731"
     }
   ]
 }
