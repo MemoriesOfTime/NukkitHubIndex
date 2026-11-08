@@ -65,7 +65,7 @@
   "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/hutuyee/ShitBot",
-  "stars": 6,
+  "stars": 7,
   "summary": "ShitBot 是一个面向 Minecraft 服务器的QQ机器人插件, 支持mc绑定白名单, OneBotV11协议，WebSocket正向连接，支持Paper，spigot，bungeecord等",
   "targets": [
     "nkmot"

@@ -50,7 +50,7 @@
   "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/hutuyee/ShitBot",
-  "stars": 6,
+  "stars": 7,
   "summary": "ShitBot for Nukkit-MOT",
   "targets": [
     "nkmot"
