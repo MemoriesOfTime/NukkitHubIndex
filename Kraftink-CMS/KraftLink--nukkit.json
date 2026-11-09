@@ -1,0 +1,556 @@
+{
+  "api_version": "1.1.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "name": "github-actions[bot]",
+      "url": "https://github.com/apps/github-actions"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/36514752?v=4",
+      "name": "nivcoo",
+      "url": "https://github.com/nivcoo"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/347802032?v=4",
+      "name": "kraftink-automation[bot]",
+      "url": "https://github.com/apps/kraftink-automation"
+    }
+  ],
+  "categories": [],
+  "created_at": 1793261021,
+  "dependencies": [],
+  "description": "# KraftLink\n\nKraftLink connects your game server or proxy to KraftInk. It reports server status and online players and runs commands sent from the CMS.\n\n[Installation guide](https://kraftink.com/en/documentation/kraftlink) · [Releases](https://github.com/kraftink-cms/KraftLink/releases) · [Discord](https://discord.kraftink.com)\n\n## Install KraftLink\n\nDownload the universal `KraftLink.jar` or choose the dedicated variant for your platform. Check the release notes for\nplatform support. Stop the server and install one KraftLink JAR per instance.\n\n| Platform                        | Dedicated JAR                    | Installation folder |\n| ------------------------------- | -------------------------------- | ------------------- |\n| Bukkit, Spigot, Paper and Folia | `KraftLink-Bukkit-VERSION.jar`   | `plugins/`          |\n| Velocity                        | `KraftLink-Velocity-VERSION.jar` | `plugins/`          |\n| Hytale                          | `KraftLink-Hytale-VERSION.jar`   | `mods/`             |\n| Fabric                          | `KraftLink-Fabric-VERSION.jar`   | `mods/`             |\n| Forge                           | `KraftLink-Forge-VERSION.jar`    | `mods/`             |\n| NeoForge                        | `KraftLink-NeoForge-VERSION.jar` | `mods/`             |\n| Sponge                          | `KraftLink-Sponge-VERSION.jar`   | `mods/plugins/`     |\n| Nukkit                          | `KraftLink-Nukkit-VERSION.jar`   | `plugins/`          |\n\nThe Bukkit variant supports Minecraft from 1.8.8 and targets Java 8. The Hytale variant is built against server 0.7.4.\nFabric, Forge and NeoForge target Minecraft Java 26.1.2 and require Java 25. Fabric also requires Fabric API. Sponge\ntargets SpongeAPI 17 on Minecraft Java 1.21.10. The Nukkit variant targets Cloudburst Nukkit API 1.1 and connects to a\nMinecraft Bedrock server. See the [installation guide](https://kraftink.com/en/documentation/kraftlink) for platform\nrequirements.\n\nOn SpongeVanilla and SpongeForge, put either JAR in `mods/plugins/`. Use the dedicated Sponge JAR on SpongeNeo so that\nthe NeoForge loader discovers KraftLink as a Sponge plugin.\n\nOn Nukkit, the universal JAR loads the plugin and may log a warning while looking for a Bedrock resource pack in the\nHytale manifest. Use the dedicated Nukkit JAR to avoid that warning.\n\n1. In KraftInk, open **Servers → Game servers**, add a KraftLink connection and generate a connection token.\n2. Restart the server. Set `cms_url` to your KraftInk site's HTTPS address and enter the connection `token` in KraftLink's generated `config.json`. To run commands, list the allowed command names in `allowed_command_roots`.\n3. Run `kraftlink reload`, then use `kraftlink status` to check that the connection is `connected`.\n\n## Build from source\n\nBuild with JDK 25, Maven and the Gradle wrapper.\n\n```shell\nmvn clean package\nbash mods/gradlew -p mods assemble\n```\n\nOn Windows, use `mods\\gradlew.bat -p mods assemble` for the second command. The builds write `KraftLink.jar` and the dedicated variants to `target/`.\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/347802032?v=4",
+  "id": "Kraftink-CMS/KraftLink--nukkit",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "nukkit/src/main/resources/nukkit.yml",
+  "name": "KraftLink",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Kraftink-CMS/KraftLink",
+  "stars": 0,
+  "summary": "KraftInk server connection",
+  "targets": [
+    "nkx",
+    "nkmot",
+    "pnx"
+  ],
+  "updated_at": 1794245336,
+  "versions": [
+    {
+      "changelog": "## Changes\n\n- feat: report process CPU usage in heartbeats ([`883b7ac`](https://github.com/Kraftink-CMS/KraftLink/commit/883b7ac8f05587c195dd0b30bd42690d81bd1aff))\n- fix: simplify automatic skin synchronization ([`3e93b14`](https://github.com/Kraftink-CMS/KraftLink/commit/3e93b14c0267c6004eddf7a9a402727c0c955e26))\n- docs: restore KraftLink prerequisite versions ([`f40e53b`](https://github.com/Kraftink-CMS/KraftLink/commit/f40e53b67ab369ec5a6973190062c1c045c97278))\n- docs: link to current KraftLink requirements ([`3918e12`](https://github.com/Kraftink-CMS/KraftLink/commit/3918e122164736dc059e9a446d16072f819eb5ad))\n- fix: package all KraftLink platforms in the universal jar ([`773130a`](https://github.com/Kraftink-CMS/KraftLink/commit/773130a7de421c2a3e7f534182df34b758af7085))\n\n[Full comparison](https://github.com/Kraftink-CMS/KraftLink/compare/v1.4.0...883b7ac8f05587c195dd0b30bd42690d81bd1aff)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "KraftLink-API-1.5.0.jar",
+          "primary": true,
+          "sha256": "f292fb647709d0e592a985e8ce4f42f61e10c3d185eb76e248dbcb7231d6f02e",
+          "size": 7155,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.5.0/KraftLink-API-1.5.0.jar"
+        },
+        {
+          "filename": "KraftLink-Bukkit-1.5.0.jar",
+          "primary": true,
+          "sha256": "bd32c1580bd4f19aa2a47f4012172a08258ac6e7e5ed589bb5d4e4f108fb4eed",
+          "size": 481614,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.5.0/KraftLink-Bukkit-1.5.0.jar"
+        },
+        {
+          "filename": "KraftLink-Fabric-1.5.0.jar",
+          "primary": true,
+          "sha256": "794df8b6b26c408a161320fb21e4c024c375f56c29d05250d8d4b339c413e03a",
+          "size": 434394,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.5.0/KraftLink-Fabric-1.5.0.jar"
+        },
+        {
+          "filename": "KraftLink-Forge-1.5.0.jar",
+          "primary": true,
+          "sha256": "b1189e2c084c2bd77ccc118ef0bc232a5f0123715d94acf1714222a9760aefb9",
+          "size": 431207,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.5.0/KraftLink-Forge-1.5.0.jar"
+        },
+        {
+          "filename": "KraftLink-Hytale-1.5.0.jar",
+          "primary": true,
+          "sha256": "b47739d5f37d757c634c3a88143ab8f6031fb1b7c9a4a41289516c829d03e8f9",
+          "size": 440006,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.5.0/KraftLink-Hytale-1.5.0.jar"
+        },
+        {
+          "filename": "KraftLink-NeoForge-1.5.0.jar",
+          "primary": true,
+          "sha256": "1b10154247978c9656f24d7b70af4167d9f014ae6a835edda3f545e78eccf13a",
+          "size": 431135,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.5.0/KraftLink-NeoForge-1.5.0.jar"
+        },
+        {
+          "filename": "KraftLink-Nukkit-1.5.0.jar",
+          "primary": true,
+          "sha256": "7d6b60db62f8f193b150450dbfab2477a872eeeedf46443f865c8e8d82e09540",
+          "size": 434789,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.5.0/KraftLink-Nukkit-1.5.0.jar"
+        },
+        {
+          "filename": "KraftLink-Sponge-1.5.0.jar",
+          "primary": true,
+          "sha256": "6f08e879119fb8b4934216cd8d799f14a99b2eccbd55a4dfbc60a0a8c5909763",
+          "size": 435698,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.5.0/KraftLink-Sponge-1.5.0.jar"
+        },
+        {
+          "filename": "KraftLink-Velocity-1.5.0.jar",
+          "primary": true,
+          "sha256": "83cba8e62cce26a87e244fddc75d7aef39aab88dff8d6dc843ea6a0e8124a8a1",
+          "size": 444743,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.5.0/KraftLink-Velocity-1.5.0.jar"
+        },
+        {
+          "filename": "KraftLink.jar",
+          "primary": true,
+          "sha256": "2d2c6c4ba1b3a2fc7f5c54261a87efb2efaf8dfdfbfbe12fd78c39cb58ee228d",
+          "size": 529213,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.5.0/KraftLink.jar"
+        }
+      ],
+      "name": "KraftLink 1.5.0",
+      "prerelease": false,
+      "published_at": 1794242182,
+      "version": "v1.5.0"
+    },
+    {
+      "changelog": "## Changes\n\n- feat: support modded servers and synchronize Minecraft skins ([`fc8a499`](https://github.com/Kraftink-CMS/KraftLink/commit/fc8a4991f69d0368b12d3b7f8a2f6a74500ee871))\n\n[Full comparison](https://github.com/Kraftink-CMS/KraftLink/compare/v1.3.3...fc8a4991f69d0368b12d3b7f8a2f6a74500ee871)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "KraftLink-API-1.4.0.jar",
+          "primary": true,
+          "sha256": "d77012a69607b2dca38b74dd5b45a6c878d7e8ceb1319dcc9df2ee323c333390",
+          "size": 7155,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.4.0/KraftLink-API-1.4.0.jar"
+        },
+        {
+          "filename": "KraftLink-Bukkit-1.4.0.jar",
+          "primary": true,
+          "sha256": "2d5498d4fde8ec81f3d710fbe1357031376bbd984943c63398292a79a546a45d",
+          "size": 480075,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.4.0/KraftLink-Bukkit-1.4.0.jar"
+        },
+        {
+          "filename": "KraftLink-Fabric-1.4.0.jar",
+          "primary": true,
+          "sha256": "37801086dbd4a2bbaaa6c2dc6834b23e300656d14ea5bdb7251d4ef1f2353fe9",
+          "size": 434042,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.4.0/KraftLink-Fabric-1.4.0.jar"
+        },
+        {
+          "filename": "KraftLink-Forge-1.4.0.jar",
+          "primary": true,
+          "sha256": "3825010dafbe3dfefc87c5b667a1b0e51c1d64bdd712eff2a3c4256b0c7fe246",
+          "size": 430830,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.4.0/KraftLink-Forge-1.4.0.jar"
+        },
+        {
+          "filename": "KraftLink-Hytale-1.4.0.jar",
+          "primary": true,
+          "sha256": "8766b9f546f6879533647067b5b6c4b7877d26266c874150cad15002165fa629",
+          "size": 439728,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.4.0/KraftLink-Hytale-1.4.0.jar"
+        },
+        {
+          "filename": "KraftLink-NeoForge-1.4.0.jar",
+          "primary": true,
+          "sha256": "8b15bcdeede0ceff6557a2de669d7becca26c36c9edd5f72b6e1abb3081c0348",
+          "size": 430756,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.4.0/KraftLink-NeoForge-1.4.0.jar"
+        },
+        {
+          "filename": "KraftLink-Nukkit-1.4.0.jar",
+          "primary": true,
+          "sha256": "e0f342bd4eb6ca91bc8fa77427d056eaa891fb58b5623abef3940d549d53b783",
+          "size": 434511,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.4.0/KraftLink-Nukkit-1.4.0.jar"
+        },
+        {
+          "filename": "KraftLink-Sponge-1.4.0.jar",
+          "primary": true,
+          "sha256": "08388f4d4586e01cc82803e3664974530147e54d7895f4d40c0e1dc6b6f07f84",
+          "size": 435416,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.4.0/KraftLink-Sponge-1.4.0.jar"
+        },
+        {
+          "filename": "KraftLink-Velocity-1.4.0.jar",
+          "primary": true,
+          "sha256": "e2faa78cf4275ae66e9536d8b127ab0048e2f8552873e73086e2c080a2744159",
+          "size": 444465,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.4.0/KraftLink-Velocity-1.4.0.jar"
+        },
+        {
+          "filename": "KraftLink.jar",
+          "primary": true,
+          "sha256": "bdbd7962379442bea0dfaa2403e130680a7e9b552f006abdd840fc6e9f693939",
+          "size": 507992,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.4.0/KraftLink.jar"
+        }
+      ],
+      "name": "KraftLink 1.4.0",
+      "prerelease": false,
+      "published_at": 1794235506,
+      "version": "v1.4.0"
+    },
+    {
+      "changelog": "## Changes\n\n- refactor: share KraftLink shade configuration ([`7165460`](https://github.com/Kraftink-CMS/KraftLink/commit/7165460db9e9e4195afd4dc9145e994e1e8b8efe))\n\n[Full comparison](https://github.com/Kraftink-CMS/KraftLink/compare/v1.3.2...7165460db9e9e4195afd4dc9145e994e1e8b8efe)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "KraftLink-API-1.3.3.jar",
+          "primary": true,
+          "sha256": "f240ca4c62229aa4335f77869a2f08374966120d9c9d207d0c710890f7459158",
+          "size": 7010,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.3.3/KraftLink-API-1.3.3.jar"
+        },
+        {
+          "filename": "KraftLink-Bukkit-1.3.3.jar",
+          "primary": true,
+          "sha256": "4b93b928da5a9fb5366323032a9ee56014423e71aa4b91364566e028d12cead5",
+          "size": 468200,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.3.3/KraftLink-Bukkit-1.3.3.jar"
+        },
+        {
+          "filename": "KraftLink-Hytale-1.3.3.jar",
+          "primary": true,
+          "sha256": "790aa23a2256e406430746389c1038cdd9764c040dc6a945fef248a09abed764",
+          "size": 437018,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.3.3/KraftLink-Hytale-1.3.3.jar"
+        },
+        {
+          "filename": "KraftLink-Velocity-1.3.3.jar",
+          "primary": true,
+          "sha256": "3ec22aee5e4089d700772c1d23712d0e716797e172343dcabe67843b73ad6741",
+          "size": 441755,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.3.3/KraftLink-Velocity-1.3.3.jar"
+        },
+        {
+          "filename": "KraftLink.jar",
+          "primary": true,
+          "sha256": "654d5ea61f390da2a91705a70bd01aad6ff9b293e83e2509b013fc808700a997",
+          "size": 496117,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.3.3/KraftLink.jar"
+        }
+      ],
+      "name": "KraftLink 1.3.3",
+      "prerelease": false,
+      "published_at": 1794231089,
+      "version": "v1.3.3"
+    },
+    {
+      "changelog": "## Changes\n\n- fix: simplify the Bedrock error default ([`375b835`](https://github.com/Kraftink-CMS/KraftLink/commit/375b83515c96e361ed5718b7bc2654a357c3ed70))\n\n[Full comparison](https://github.com/Kraftink-CMS/KraftLink/compare/v1.3.1...375b83515c96e361ed5718b7bc2654a357c3ed70)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "KraftLink-API-1.3.2.jar",
+          "primary": true,
+          "sha256": "9b3f24817afdd09e08edee4a4f9ef498a3d7dff06d06ff0112ca5977efe29ce1",
+          "size": 7010,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.3.2/KraftLink-API-1.3.2.jar"
+        },
+        {
+          "filename": "KraftLink-Bukkit-1.3.2.jar",
+          "primary": true,
+          "sha256": "f3a388aed92701b7270a76a361f419b2549eceaac837db2a19e45e670645ff37",
+          "size": 468200,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.3.2/KraftLink-Bukkit-1.3.2.jar"
+        },
+        {
+          "filename": "KraftLink-Hytale-1.3.2.jar",
+          "primary": true,
+          "sha256": "5aa66c1f3ab1658be4e34d4634b4691fa4a34ff586c34461913464faae4a30a9",
+          "size": 437017,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.3.2/KraftLink-Hytale-1.3.2.jar"
+        },
+        {
+          "filename": "KraftLink-Velocity-1.3.2.jar",
+          "primary": true,
+          "sha256": "e4f3255464dec26eaf62b58bb36630cb62800e7fe0293e75ca59b6dfab7eb35f",
+          "size": 441755,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.3.2/KraftLink-Velocity-1.3.2.jar"
+        },
+        {
+          "filename": "KraftLink.jar",
+          "primary": true,
+          "sha256": "844ef309a0955bdfea37fbae1fbab0bdf5f93acfbdd917df250fdb5f20e73535",
+          "size": 496116,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.3.2/KraftLink.jar"
+        }
+      ],
+      "name": "KraftLink 1.3.2",
+      "prerelease": false,
+      "published_at": 1794230296,
+      "version": "v1.3.2"
+    },
+    {
+      "changelog": "## Changes\n\n- fix: update the Bedrock verification error message ([`9db6978`](https://github.com/Kraftink-CMS/KraftLink/commit/9db6978a47fcc7aaeeddaeec910c31f00206e54c))\n\n[Full comparison](https://github.com/Kraftink-CMS/KraftLink/compare/v1.3.0...9db6978a47fcc7aaeeddaeec910c31f00206e54c)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "KraftLink-API-1.3.1.jar",
+          "primary": true,
+          "sha256": "1819ba7a5cedd0cf47edc5c059c6b4e52901c4594e9a9957d60fd7ab0b5feabb",
+          "size": 7010,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.3.1/KraftLink-API-1.3.1.jar"
+        },
+        {
+          "filename": "KraftLink-Bukkit-1.3.1.jar",
+          "primary": true,
+          "sha256": "9cf134870a6fe6d4f1387134379b4fa4b7bcde0bab78a3e1602abb1afdf4ba4a",
+          "size": 468391,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.3.1/KraftLink-Bukkit-1.3.1.jar"
+        },
+        {
+          "filename": "KraftLink-Hytale-1.3.1.jar",
+          "primary": true,
+          "sha256": "7da7fe246f58d96d54cb8d0f104aa9dac19f9f4f53d57f41ea0d58f2d2e8d6b0",
+          "size": 437209,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.3.1/KraftLink-Hytale-1.3.1.jar"
+        },
+        {
+          "filename": "KraftLink-Velocity-1.3.1.jar",
+          "primary": true,
+          "sha256": "22796670325db321463dda6ebf29218d4197405159aed2021d86f005e1eb38b0",
+          "size": 441946,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.3.1/KraftLink-Velocity-1.3.1.jar"
+        },
+        {
+          "filename": "KraftLink.jar",
+          "primary": true,
+          "sha256": "2cf583e15766ce71b7c75ca343d41b251a237895c5a382b44bbf1e71958be996",
+          "size": 496308,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.3.1/KraftLink.jar"
+        }
+      ],
+      "name": "KraftLink 1.3.1",
+      "prerelease": false,
+      "published_at": 1794230084,
+      "version": "v1.3.1"
+    },
+    {
+      "changelog": "## Changes\n\n- feat: let the CMS control Bedrock verification ([`f6e6ef6`](https://github.com/Kraftink-CMS/KraftLink/commit/f6e6ef62b060d6e39b71b935c7e9d998e5277aec))\n\n[Full comparison](https://github.com/Kraftink-CMS/KraftLink/compare/v1.2.0...f6e6ef62b060d6e39b71b935c7e9d998e5277aec)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "KraftLink-API-1.3.0.jar",
+          "primary": true,
+          "sha256": "e0d5af6d07f73e8ffee5e8d6fd257a3633e34a83f21e026ec3ac5d3204337310",
+          "size": 7010,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.3.0/KraftLink-API-1.3.0.jar"
+        },
+        {
+          "filename": "KraftLink-Bukkit-1.3.0.jar",
+          "primary": true,
+          "sha256": "35d882f978c4b5f09f0edd0aba12ed79b954e0b0e75749db16fe759ca4592147",
+          "size": 468220,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.3.0/KraftLink-Bukkit-1.3.0.jar"
+        },
+        {
+          "filename": "KraftLink-Hytale-1.3.0.jar",
+          "primary": true,
+          "sha256": "a1b8f9db5216c1ec6c4b781a5721a8fc01cf5c7150431203c14a351d33955cd4",
+          "size": 437038,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.3.0/KraftLink-Hytale-1.3.0.jar"
+        },
+        {
+          "filename": "KraftLink-Velocity-1.3.0.jar",
+          "primary": true,
+          "sha256": "52e7354340592bee8b83dd5cf3318031732d5bdf7c62be043ef31653209f83dc",
+          "size": 441775,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.3.0/KraftLink-Velocity-1.3.0.jar"
+        },
+        {
+          "filename": "KraftLink.jar",
+          "primary": true,
+          "sha256": "be5318f62bfd9d4d8faba914720878378e607103528588b968c2e42b0ccc9393",
+          "size": 496137,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.3.0/KraftLink.jar"
+        }
+      ],
+      "name": "KraftLink 1.3.0",
+      "prerelease": false,
+      "published_at": 1794229071,
+      "version": "v1.3.0"
+    },
+    {
+      "changelog": "## Changes\n\n- feat: add the Bedrock link shortcut and simplify API access ([`d0dc8f6`](https://github.com/Kraftink-CMS/KraftLink/commit/d0dc8f61bca06c52ec135a6d8987fa311b8efdd8))\n\n[Full comparison](https://github.com/Kraftink-CMS/KraftLink/compare/v1.1.0...d0dc8f61bca06c52ec135a6d8987fa311b8efdd8)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "KraftLink-API-1.2.0.jar",
+          "primary": true,
+          "sha256": "7e4a40ecf9e703682321f31cc5685433d50031e0ee3755b6ebaec065751a8c7d",
+          "size": 7010,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.2.0/KraftLink-API-1.2.0.jar"
+        },
+        {
+          "filename": "KraftLink-Bukkit-1.2.0.jar",
+          "primary": true,
+          "sha256": "40f986c837ede21614468f819e07096ea1a82df63c1c879b8f976a64f9f96f5c",
+          "size": 468231,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.2.0/KraftLink-Bukkit-1.2.0.jar"
+        },
+        {
+          "filename": "KraftLink-Hytale-1.2.0.jar",
+          "primary": true,
+          "sha256": "b1688014fa198edda04853d6a41ac8ed14e8bd9663c7438dfa4c34ea3d2ba081",
+          "size": 436639,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.2.0/KraftLink-Hytale-1.2.0.jar"
+        },
+        {
+          "filename": "KraftLink-Velocity-1.2.0.jar",
+          "primary": true,
+          "sha256": "c423e0e983c3a2d4d46cc89afd378a274c2088204d3a686e7862ebf01a9e37f6",
+          "size": 441533,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.2.0/KraftLink-Velocity-1.2.0.jar"
+        },
+        {
+          "filename": "KraftLink.jar",
+          "primary": true,
+          "sha256": "336578d3b98ca6e2ddb566188d940139a9fdcce8d036fe1a6973abd91de2426c",
+          "size": 496305,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.2.0/KraftLink.jar"
+        }
+      ],
+      "name": "KraftLink 1.2.0",
+      "prerelease": false,
+      "published_at": 1794228224,
+      "version": "v1.2.0"
+    },
+    {
+      "changelog": "## Changes\n\n- fix: resolve stable Floodgate dependencies ([`f318a69`](https://github.com/Kraftink-CMS/KraftLink/commit/f318a69b4fa6654692d61e918603a0ef993e49ae))\n- feat: add in\\-game sign\\-in and a plugin API ([`f8f291f`](https://github.com/Kraftink-CMS/KraftLink/commit/f8f291f3dfdc9cdf911460db4efe23d30b8aaa19))\n\n[Full comparison](https://github.com/Kraftink-CMS/KraftLink/compare/v1.0.1...f318a69b4fa6654692d61e918603a0ef993e49ae)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "KraftLink-API-1.1.0.jar",
+          "primary": true,
+          "sha256": "ea41c1896b1daa3a04cc6a1b73c32bf7f65692980e8c2fb4e3cc312bc3458598",
+          "size": 5794,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.1.0/KraftLink-API-1.1.0.jar"
+        },
+        {
+          "filename": "KraftLink-Bukkit-1.1.0.jar",
+          "primary": true,
+          "sha256": "d32bc89ca6fca82c4593722ce43fa5e3eeaddb7913ec1343440ee46bfc10e562",
+          "size": 463712,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.1.0/KraftLink-Bukkit-1.1.0.jar"
+        },
+        {
+          "filename": "KraftLink-Hytale-1.1.0.jar",
+          "primary": true,
+          "sha256": "40b943b7dd1d0fb8ae9f80a44c292ca705851ba38fdd979e7a10bb4e579a17df",
+          "size": 435112,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.1.0/KraftLink-Hytale-1.1.0.jar"
+        },
+        {
+          "filename": "KraftLink-Velocity-1.1.0.jar",
+          "primary": true,
+          "sha256": "21f08c722f340689c6c18e8dfa7cd22d50839cd18704065e25a38781f8d506d5",
+          "size": 437306,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.1.0/KraftLink-Velocity-1.1.0.jar"
+        },
+        {
+          "filename": "KraftLink.jar",
+          "primary": true,
+          "sha256": "bf924b6c304744f1cb5065d6c5d939dec41304297100d6c542a3bff6cf3bfb8b",
+          "size": 488958,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.1.0/KraftLink.jar"
+        }
+      ],
+      "name": "KraftLink 1.1.0",
+      "prerelease": false,
+      "published_at": 1794227483,
+      "version": "v1.1.0"
+    },
+    {
+      "changelog": "## Changes\n\n- docs: write the KraftLink README in English ([`15a8f94`](https://github.com/Kraftink-CMS/KraftLink/commit/15a8f940e8a350d59ed28d6e82a7b3b8d31e8e9c))\n\n[Full comparison](https://github.com/Kraftink-CMS/KraftLink/compare/v1.0.0...15a8f940e8a350d59ed28d6e82a7b3b8d31e8e9c)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "KraftLink-Bukkit-1.0.1.jar",
+          "primary": true,
+          "sha256": "7d6ae857cbf43ad2b115b4bfc4df21d6c0041078b4ef1431b4a08a0bf33074a7",
+          "size": 387204,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.0.1/KraftLink-Bukkit-1.0.1.jar"
+        },
+        {
+          "filename": "KraftLink-Hytale-1.0.1.jar",
+          "primary": true,
+          "sha256": "4e9c6acdaa82e095c5bbcae0e9ee3db0715c60b28ee701d8017036fe25d54acb",
+          "size": 382147,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.0.1/KraftLink-Hytale-1.0.1.jar"
+        },
+        {
+          "filename": "KraftLink-Velocity-1.0.1.jar",
+          "primary": true,
+          "sha256": "ccad713a3e86e6371d16683f39fbe5525eaebb89b896313e156a2dc229307ea7",
+          "size": 380874,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.0.1/KraftLink-Velocity-1.0.1.jar"
+        },
+        {
+          "filename": "KraftLink.jar",
+          "primary": true,
+          "sha256": "6e778e72d74de82c2e766d1838948a3ecbc57fd6ebf2b669ed8c2acdda996701",
+          "size": 408091,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.0.1/KraftLink.jar"
+        }
+      ],
+      "name": "KraftLink 1.0.1",
+      "prerelease": false,
+      "published_at": 1794134971,
+      "version": "v1.0.1"
+    },
+    {
+      "changelog": "## Changes\n\n- feat: add KraftLink server connectors ([`3b9309a`](https://github.com/Kraftink-CMS/KraftLink/commit/3b9309a98c7356d04aa358dbdeccada2e4007494))\n- Initial commit ([`e0181f3`](https://github.com/Kraftink-CMS/KraftLink/commit/e0181f3093e4f2fce31296af1c67dce9fbb04319))\n\n[Full history](https://github.com/Kraftink-CMS/KraftLink/commits/3b9309a98c7356d04aa358dbdeccada2e4007494)",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "KraftLink-Bukkit-1.0.0.jar",
+          "primary": true,
+          "sha256": "444df643fa925506e8f75165c42767e6e23455ba55badf979c0f807a1d57b3f5",
+          "size": 387204,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.0.0/KraftLink-Bukkit-1.0.0.jar"
+        },
+        {
+          "filename": "KraftLink-Hytale-1.0.0.jar",
+          "primary": true,
+          "sha256": "fbb70d5acfb3bde6cd078837de6f8576745c28e60e600fb25eaf59de476b5af3",
+          "size": 382147,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.0.0/KraftLink-Hytale-1.0.0.jar"
+        },
+        {
+          "filename": "KraftLink-Velocity-1.0.0.jar",
+          "primary": true,
+          "sha256": "1e44820f95939627a05205c65fc11a43bed3e7e1fad5c141f3ba12e829652544",
+          "size": 380874,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.0.0/KraftLink-Velocity-1.0.0.jar"
+        },
+        {
+          "filename": "KraftLink.jar",
+          "primary": true,
+          "sha256": "458858367f299fd6a12593c6666da666da2fb4796799a06e9d9503335bca8ed6",
+          "size": 408091,
+          "url": "https://github.com/Kraftink-CMS/KraftLink/releases/download/v1.0.0/KraftLink.jar"
+        }
+      ],
+      "name": "KraftLink 1.0.0",
+      "prerelease": false,
+      "published_at": 1793267276,
+      "version": "v1.0.0"
+    }
+  ]
+}
