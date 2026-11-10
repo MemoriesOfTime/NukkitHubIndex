@@ -59,7 +59,7 @@
     "nkmot",
     "pnx"
   ],
-  "updated_at": 1785356935,
+  "updated_at": 1794273703,
   "versions": [
     {
       "changelog": "This update delivers a complete rewrite of FuturePlots for PowerNukkitX 3.0, bringing improved compatibility, performance, and maintainability.\r\n\r\n## Changes\r\n\r\n- Migrated to the PowerNukkitX 3.0 API\r\n- Completely rewrote the schematic serialization system\r\n- Replaced deprecated APIs with modern implementations\r\n- Improved performance and overall code structure\r\n- Various internal optimizations and bug fixes\r\n\r\n**Full Changelog**: https://github.com/ovisdevelopment/FuturePlots/compare/4.0.2-SNAPSHOT...4.1.0-dev\r\n\r\n**In case of errors, open an [issue](https://github.com/ovisdevelopment/FuturePlots/issues) or contact us on our [Discord](https://discord.gg/2PYGr7GfTf).**",

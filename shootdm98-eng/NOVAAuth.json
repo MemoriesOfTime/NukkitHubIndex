@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/354628107?v=4",
+      "name": "shootdm98-eng",
+      "url": "https://github.com/shootdm98-eng"
+    }
+  ],
+  "categories": [],
+  "created_at": 1794256719,
+  "dependencies": [],
+  "description": "# ExamplePlugin\n\nExample plugin for [Lumi](https://github.com/KoshakMineDEV/Lumi) bedrock server software\n\n## What the plugin includes\n- Example of a **custom item**\n- Example of a **custom block**\n- Example of a **custom enchantment**\n- Example of working with **commands**\n- Example of working with **effects**\n- Example of working with **block** and **item** types\n- Example of working with non-reflection and reflection-based **event listeners**\n\n\n## How to build\n1. Clone repo: `git clone https://github.com/LuminiaDev/ExamplePlugin.git`\n2. Go to the folder: `cd ExamplePlugin`\n3. Use command `./gradlew build`\n4. Your plugin is built and will be located in `build/libs`",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/354628107?v=4",
+  "id": "shootdm98-eng/NOVAAuth",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "ExamplePlugin",
+  "pending": true,
+  "primary_target": "lumi",
+  "server_version": "",
+  "source": "https://github.com/shootdm98-eng/NOVAAuth",
+  "stars": 0,
+  "summary": "Example plugin for Lumi bedrock server software",
+  "targets": [
+    "lumi"
+  ],
+  "updated_at": 1794256724,
+  "versions": []
+}

@@ -30,7 +30,6 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "TimeIsMoneyNK",
-  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/BrunoJaegerK/TimeIsMoneyNK",
@@ -40,6 +39,24 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1793780956,
-  "versions": []
+  "updated_at": 1794275018,
+  "versions": [
+    {
+      "changelog": "Todas las funciones actualizadas",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "TimeIsMoneyNK-1.0.0-SNAPSHOT.jar",
+          "primary": true,
+          "sha256": "618dc1cd727207a5f12330d42580d63074bd03a7871268bfb68f9edb8ca40b74",
+          "size": 23499,
+          "url": "https://github.com/BrunoJaegerK/TimeIsMoneyNK/releases/download/V1.0/TimeIsMoneyNK-1.0.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "Version inicial",
+      "prerelease": false,
+      "published_at": 1794275018,
+      "version": "V1.0"
+    }
+  ]
 }

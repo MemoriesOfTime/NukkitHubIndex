@@ -1,0 +1,62 @@
+{
+  "api_version": "1.0.8",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/99422811?v=4",
+      "name": "BrunoJaegerK",
+      "url": "https://github.com/BrunoJaegerK"
+    }
+  ],
+  "categories": [],
+  "created_at": 1794114131,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "FakeInventories",
+      "version_range": ""
+    }
+  ],
+  "description": "# 🎁 SimpleCrates\n\n<p align=\"center\">\n  <img src=\"https://img.shields.io/badge/Minecraft-Bedrock%20Edition-00AA00?style=for-the-badge&logo=minecraft&logoColor=white\" />\n  <img src=\"https://img.shields.io/badge/Server-NukkitPetteriM1Edition-orange?style=for-the-badge\" />\n  <img src=\"https://img.shields.io/badge/Language-Java%2025-blue?style=for-the-badge&logo=openjdk&logoColor=white\" />\n  <img src=\"https://img.shields.io/badge/Build-Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white\" />\n</p>\n\n<p align=\"center\">\n  **An enhanced crate system for Minecraft Bedrock Edition servers running NukkitPetteriM1Edition.**\n</p>\n\n---\n\n## 📖 About\n\n**SimpleCrates** is a fork of the original [SimpleCrates v1.0.2](https://cloudburstmc.org/resources/simplecrates.145/), originally developed by **Ceremonious**.\n\nThis project preserves the original crate system while introducing new features, visual effects, inventory interfaces and opening animations, improving the overall experience for Minecraft Bedrock Edition players.\n\nThe plugin is developed and adapted for **NukkitPetteriM1Edition**.\n\n## ✨ Features\n\n### 🎁 Original Features\n- Create and manage custom crates.\n- Physical and virtual crate keys.\n- Configurable rewards with weighted chances.\n- Item rewards with custom names, lore and enchantments.\n- Console commands as rewards.\n- Player commands as rewards.\n- Configurable reward rounds.\n- Custom key names and lore.\n- Preview crate rewards.\n\n### 🆕 Added Features\n\n**🎨 Particle Effects**\n- Configurable particles around crates.\n- Available particle types: FLAME, SMOKE and HEART.\n- Adjustable particle interval, radius and number of points.\n- Enable or disable effects through `effects.yml`.\n\n**🔍 Reward Preview**\n- Inventory interface powered by FakeInventories.\n- Displays reward names, lore and quantities.\n- Shows the probability assigned to each reward.\n\n**🔊 Crate Effects**\n- Knockback and sound effects when a player attempts to open a crate without a key.\n- Configurable opening sounds.\n- Sound effects during roulette movement.\n- Configurable final roulette sound.\n\n**🎬 Opening Animations**\n\nTwo animation modes are available:\n\n- **Classic:** Opening animation with configurable particles and sounds.\n- **Roulette:** Animated reward selection inside a virtual inventory.\n\nThe roulette includes:\n- Moving reward items.\n- Progressive animation slowdown.\n- Highlighted winning reward in the center.\n- Gold blocks decorating the winning reward.\n- Configurable spin and finish sounds.\n- Configurable animation duration.\n\n## 📦 Dependencies\n\n- [NukkitPetteriM1Edition](https://github.com/PetteriM1/NukkitPetteriM1Edition/releases/tag/4567)\n- [FakeInventories](https://github.com/PetteriM1/FakeInventories-1)\n\n**Important:** FakeInventories must be installed on your server for the inventory interfaces and roulette animation to work.\n\n## ⚙️ Installation\n\n1. Download or compile the SimpleCrates JAR.\n2. Download and install FakeInventories.\n3. Place both JAR files inside your server's `plugins` folder.\n4. Start or restart your server.\n5. Configure your crates and their rewards.\n\n## 📝 Configuration\n\nSimpleCrates generates configuration files in its plugin folder.\n\n| File | Description |\n|---|---|\n| `config.yml` | Main configuration, crate settings, keys and rewards. |\n| `effects.yml` | Particle effects around crates. |\n| `animations.yml` | Opening animation mode, particles, duration and sounds. |\n\n### 🎨 effects.yml\n\nConfigure the particles displayed around your crates.\n\nAvailable particle types:\n- `FLAME`\n- `SMOKE`\n- `HEART`\n\nYou can enable or disable particles and customize their interval, radius and distribution points.\n\n### 🎬 animations.yml\n\nConfigure the crate opening animations.\n\nAvailable modes:\n- `classic`\n- `roulette`\n\nEach animation has its own settings for duration, particles and sounds.\n\nYou can also enable or disable the sound effects used during the opening process.\n\n## 🎮 Commands\n\n| Command | Description |\n|---|---|\n| `/keys` | Check your virtual crate keys. |\n| `/crates read` | Display information about the item in your hand. |\n| `/crates list` | List existing crates. |\n| `/crates create <crate>` | Create a crate. |\n| `/crates delete <crate>` | Delete a crate. |\n| `/crates setblock <crate>` | Set the crate block. |\n| `/crates additem <crate>` | Add an item reward. |\n| `/crates addcmd <crate> <command>` | Add a console reward command. |\n| `/crates addplayercmd <crate> <command>` | Add a player reward command. |\n| `/crates givekey <player> <crate> <amount>` | Give crate keys to a player. |\n\n### 🔐 Permissions\n\n| Permission | Description |\n|---|---|\n| `crates.admin` | Access to crate administration commands. |\n| `crates.keys` | Access to the `/keys` command. |\n\n## ⚖️ Reward Chances\n\nThe reward chance system uses **weights**, not fixed percentages.\n\nFor example:\n\n| Reward | Weight |\n|---|---:|\n| Diamond | 50 |\n| Emerald | 30 |\n| Netherite Ingot | 20 |\n| **Total** | **100** |\n\nThe probability of obtaining a reward is calculated using:\n\n`(Reward Weight / Total Weight) × 100`\n\nThe total weight does not have to equal 100.\n\n## 🤝 Credits\n\n- **Ceremonious:** Original SimpleCrates plugin and its original functionality.\n- **PetteriM1:** NukkitPetteriM1Edition.\n- **IWareQ / PetteriM1:** FakeInventories.\n\nThis project is an independent fork and is not an official release of the original SimpleCrates author.\n\n## 🐛 Bug Reports & Support\n\nIf you encounter a bug or have a suggestion, please report it through:\n\n- [GitHub Issues](https://github.com/BrunoJaegerK/SimpleCrates1/issues)\n- [GitHub Discussions](https://github.com/BrunoJaegerK/SimpleCrates1/discussions)\n\nPlease include the error message, server version and steps to reproduce the problem.\n\n---\n\n<p align=\"center\">\n  **Made with ❤️ for Minecraft Bedrock Edition**\n</p>\n\n<p align=\"center\">\n  This plugin was created for DELUXEMINE NETWORK and its development depends entirely on your support.\n</p>\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/99422811?v=4",
+  "id": "BrunoJaegerK/SimpleCrates1",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "SimpleCrates",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/BrunoJaegerK/SimpleCrates1",
+  "stars": 0,
+  "summary": "Ceremonious's simple crates",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1794288405,
+  "versions": [
+    {
+      "changelog": "Todas las funciones estan habilitadas y añadidas",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "SimpleCrates.jar",
+          "primary": true,
+          "sha256": "be39b2f13f127ec6d9e01be04be835a96db8a1c3ce0a55295e670c8abbb8beb8",
+          "size": 44528,
+          "url": "https://github.com/BrunoJaegerK/SimpleCrates1/releases/download/v1.2.0/SimpleCrates.jar"
+        }
+      ],
+      "name": "Version 1.2.0",
+      "prerelease": false,
+      "published_at": 1794275374,
+      "version": "v1.2.0"
+    }
+  ]
+}
