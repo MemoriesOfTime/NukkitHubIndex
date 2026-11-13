@@ -39,7 +39,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1793498680,
+  "updated_at": 1794592328,
   "versions": [
     {
       "changelog": "### SimpleHomesNK v1.0.0\r\n\r\n- Implementación inicial de los comandos `/sethome`, `/home`, `/delhome` y `/homes`.\r\n- Se añadió una interfaz gráfica para consultar y gestionar hogares.\r\n- Se agregó la función de renombrar hogares desde la interfaz.\r\n- Se implementó un sistema de límites de hogares por rango mediante LuckPerms.\r\n- Se añadió protección durante el teletransporte: cuenta regresiva de 3 segundos que se cancela al moverse o recibir daño.\r\n- Se implementó el almacenamiento persistente de hogares mediante SQLite.\r\n- Se añadió configuración para personalizar los límites de hogares y el tiempo de teletransporte.",
