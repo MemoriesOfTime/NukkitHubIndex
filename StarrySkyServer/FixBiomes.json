@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/268506330?v=4",
+      "name": "enigHim",
+      "url": "https://github.com/enigHim"
+    }
+  ],
+  "categories": [],
+  "created_at": 1794729331,
+  "dependencies": [],
+  "description": "# FixBiomes\n\n给 Nukkit-MOT 用的群系修改插件：**一条指令，把指定矩形范围内的群系直接写进存档**，并保留可回退的改动历史。\n\n基岩版至今没有 Java 版那样的 `/fillbiome`，游戏里也没有任何改群系的入口。这个插件补上了这块空白——不是给客户端发假包，而是真的改区块数据，改完把插件删掉也照样生效。\n\n## 功能\n\n- `/fixbiomes add` 把矩形区域内**已生成**的区块改成任意群系（支持 `~` 相对坐标）\n- 每次改动自动编号存档，只记录被改动的那部分数据，类似 git 的增量\n- `/fixbiomes reset` 按编号回退，`undo` 回退最近一次\n- `blame` 查某一格群系是被哪次改动改的\n- 客户端 Tab 补全（子命令、群系名）\n\n## 环境\n\n- 服务端：Nukkit-MOT（`api: 1.0.0`）\n- Java 17 及以上\n\n## 安装\n\n1. 把 `FixBiomes.jar` 放进服务端的 `plugins/` 目录\n2. 重启服务器\n3. 进游戏执行 `/fixbiomes`，能看到帮助就说明装好了\n\n无需任何配置文件。\n\n## 指令\n\n```\n/fixbiomes add <x1> <z1> <x2> <z2> <群系>\n/fixbiomes log [编号]\n/fixbiomes show <编号>\n/fixbiomes reset <编号>\n/fixbiomes undo\n/fixbiomes forget <编号>\n/fixbiomes prune [天数]\n/fixbiomes blame <x> <z>\n```\n\n### add\n\n把 `(x1,z1)` 到 `(x2,z2)` 这个矩形内的群系改成指定值。\n\n- **只接受 4 个坐标**（x、z），y 轴不参与——群系是按列存的，整列一起改\n- 坐标支持 `~`（脚下）、`~100`、`~-100`、小数（向下取整）\n- 只处理**已经生成过**的区块，没去过的区域不会被凭空生成\n- 端点包含在内\n\n```\n/fixbiomes add 120 80 200 160 snow\n/fixbiomes add ~ ~ ~100 ~100 snow\n/fixbiomes add ~-100 ~-100 ~100 ~100 desert\n/fixbiomes add 0 0 500 500 12\n```\n\n执行完会提示改了多少列、多少个区块，并生成一条带编号的记录。\n\n**生效方式**：走出这片区域让区块卸载，再走回来重新加载，就能看到变化（客户端只在区块加载时读群系）。\n\n### 群系写法\n\n| 写法 | 群系 |\n|---|---|\n| `snow` / `ice` / `snowy` / `雪` / `雪地` | 冰原 (12) |\n| `desert` / `dry` / `沙漠` | 沙漠 (2) |\n| `plains` / `rain` / `平原` | 平原 (1) |\n| `forest` / `森林` | 森林 (4) |\n| `taiga` / `针叶林` | 针叶林 (5) |\n| `ocean` / `海洋` | 海洋 (0) |\n| `mushroom` / `蘑菇岛` | 蘑菇岛 (14) |\n| `0`–`255` | 直接按数字 id |\n| `ice_plains`、`cold_taiga` 等 | 群系英文名 |\n\n### log / show\n\n```\n/fixbiomes log          # 列出所有改动\n/fixbiomes log 3        # #3 的详情，会统计每种群系被换成了什么\n/fixbiomes show 3       # 同 log 3\n```\n\n`show` 的详情示例：\n\n```\n#3 11-15 14:32\n  指令: /fixbiomes add 120 80 200 160 snow\n  世界: land 范围: (120,80) → (200,160)\n  结果: 32,400 列 / 49 个区块\n群系替换:\n  Plains(1) → Ice Plains(12)   32,272 列\n  Forest(4) → Ice Plains(12)      128 列\n```\n\n### reset / undo\n\n```\n/fixbiomes reset 3      # 回退 #3\n/fixbiomes undo         # 回退最近一条还没回退的\n```\n\n回退规则跟 git revert 一样：只把**仍然是这次改的值**的列还原；已经被后续改动覆盖的列会跳过并计数，不会误删别人的结果。所以先回退后面的、再回退前面的能退干净，反过来会被挡住。\n\n### forget / prune\n\n```\n/fixbiomes forget 3     # 删除 #3 的记录\n/fixbiomes prune        # 清理 30 天前、且已回退的记录\n/fixbiomes prune 7      # 7 天\n/fixbiomes prune 0      # 所有已回退的\n```\n\n`forget` 只允许删**已回退**的记录。记录还在生效时删掉，这次改动就永远回不去了，所以会拒绝。\n\n### blame\n\n```\n/fixbiomes blame 128 64\n/fixbiomes blame ~ ~\n```\n\n显示这一格当前的群系、最后一次覆盖它的记录编号，以及改之前是什么。\n\n## 权限\n\n| 项 | 值 |\n|---|---|\n| 权限节点 | `fixbiomes.admin` |\n| 默认 | `op` |\n\n默认只有 OP 能用。装了权限插件的话，可以把 `fixbiomes.admin` 授给普通玩家。\n\n`add` 和 `blame` 需要知道执行者在哪个世界、站在哪，所以只能在游戏里执行；`log` / `show` / `reset` / `undo` / `forget` / `prune` 控制台也能用。\n\n## 数据存放\n\n```\nplugins/FixBiomes/ops/1.op\nplugins/FixBiomes/ops/2.op\n...\n```\n\n每次 `add` 一个文件，内容：编号、时间、世界、矩形范围、目标群系、原始指令、改动列数，以及被改动区块改动前的 256 字节群系数据，整体 deflate 压缩。\n\n因为只存被碰过的区块，体积很小：81×81 的区域（49 个区块）压缩后约 300 字节，全图两万多个区块也就一百多 KB。\n\n**删掉 `ops` 目录 = 放弃回退能力**，但存档里的群系不会被还原。\n\n## 生效与限制\n\n- **改的是存档，不是客户端**。卸载插件后效果依然存在\n- **只影响已生成的区块**。之后新探索的区域，群系仍由世界生成器决定\n- **整列生效**。Nukkit 只存 2D 群系（每列一个值），做不了“山上下雪、山下雨”\n- **写入单位是区块**。改 1 格也要把整个 16×16 区块读进来保存一次\n- **不会立刻刷新客户端**。需要区块重新加载（走远再回来）\n\n## 构建\n\n```bash\nmvn clean package\n# 产物：target/FixBiomes.jar\n```\n\n依赖 `cn.nukkit:Nukkit:MOT-SNAPSHOT`（provided），仓库 `https://repo.lanink.cn/repository/maven-public/`。\n\n## License\n\n未指定。\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/269338922?v=4",
+  "id": "StarrySkyServer/FixBiomes",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "FixBiomes",
+  "pending": true,
+  "primary_target": "nkmot",
+  "server_version": "",
+  "source": "https://github.com/StarrySkyServer/FixBiomes",
+  "stars": 0,
+  "summary": "按区域直接改写存档里的群系，带可回退的改动历史",
+  "targets": [
+    "nkmot"
+  ],
+  "updated_at": 1794729581,
+  "versions": []
+}

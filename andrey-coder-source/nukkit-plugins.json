@@ -1,0 +1,55 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/352985095?v=4",
+      "name": "andrey-coder-source",
+      "url": "https://github.com/andrey-coder-source"
+    }
+  ],
+  "categories": [],
+  "created_at": 1794739439,
+  "dependencies": [
+    {
+      "dependency_type": "required",
+      "plugin_id": "EconomyAPI",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "required",
+      "plugin_id": "Ranks",
+      "version_range": ""
+    },
+    {
+      "dependency_type": "required",
+      "plugin_id": "Cases",
+      "version_range": ""
+    }
+  ],
+  "description": "# My Nukkit-MOT Plugins\n\nЗдесь собраны мои авторские плагины для сервера Minecraft на базе Nukkit-MOT. \nНаписаны на **Java** с использованием **Maven**.\n\n---\n\n## 🇷🇺 Описание (Russian)\n* **EconomyExt** — расширенная экономическая система (исходный код в папке `My_Nukkit_Plugins/EconomyExt_Source`).\n* **CreateAdmin** — инструмент для создания и управления администраторами.\n* **PowerfulAdmin** — расширенные права и команды для администрации.\n* **SWorldEdit** — утилита для работы с миром.\n\n**Как установить:**\n1. Скачайте `.jar` файл из папки `My_Nukkit_Plugins`.\n2. Поместите его в папку `plugins` вашего сервера.\n3. Перезапустите сервер.\n\n---\n\n## 🇬🇧 Description (English)\nThese are my custom plugins for a Minecraft server based on Nukkit-MOT. \nWritten in **Java** using **Maven**.\n\n* **EconomyExt** — Advanced economy system (source code is in the `My_Nukkit_Plugins/EconomyExt_Source` folder).\n* **CreateAdmin** — Tool for creating and managing administrators.\n* **PowerfulAdmin** — Extended permissions and commands for server administration.\n* **SWorldEdit** — World manipulation utility.\n\n**Installation:**\n1. Download the `.jar` file from the `My_Nukkit_Plugins` folder.\n2. Place it in the `plugins` folder of your Nukkit-MOT server.\n3. Restart the server.\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/352985095?v=4",
+  "id": "andrey-coder-source/nukkit-plugins",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "My_Nukkit_Plugins/EconomyExt_Source/src/main/resources/plugin.yml",
+  "name": "EconomyExt",
+  "pending": true,
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/andrey-coder-source/nukkit-plugins",
+  "stars": 0,
+  "summary": "Расширенные команды экономики для Создателя",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1794740495,
+  "versions": []
+}
