@@ -52,8 +52,25 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1792310314,
+  "updated_at": 1794820702,
   "versions": [
+    {
+      "changelog": "## What's Changed\n* feat: added 26.60 support by @Buddelbubi in https://github.com/PowerNukkitX-Bundle/AnyVersion/pull/22\n\n\n**Full Changelog**: https://github.com/PowerNukkitX-Bundle/AnyVersion/compare/v2.8.8...v2.9.0",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AnyVersion.jar",
+          "primary": true,
+          "sha256": "0a90d71e8b82a34ba5b7de6a342eef6bb186668210fce1eda129dbccbf834d7e",
+          "size": 485120,
+          "url": "https://github.com/PowerNukkitX-Bundle/AnyVersion/releases/download/v2.9.0/AnyVersion.jar"
+        }
+      ],
+      "name": "v2.9.0",
+      "prerelease": false,
+      "published_at": 1794820702,
+      "version": "v2.9.0"
+    },
     {
       "changelog": "## What's Changed\n* feat: Add 1.26.50 support (2192) by @xRookieFight in https://github.com/PowerNukkitX-Bundle/AnyVersion/pull/19\n\n\n**Full Changelog**: https://github.com/PowerNukkitX-Bundle/AnyVersion/compare/v2.8.7...v2.8.8",
       "downloads": 0,

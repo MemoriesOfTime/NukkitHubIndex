@@ -34,7 +34,7 @@
   "primary_target": "pnx",
   "server_version": "",
   "source": "https://github.com/NaySurGithub/Amethyst",
-  "stars": 4,
+  "stars": 5,
   "summary": "Server-authoritative anti-cheat for PowerNukkitX.",
   "targets": [
     "pnx"

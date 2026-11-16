@@ -1,0 +1,45 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/99422811?v=4",
+      "name": "BrunoJaegerK",
+      "url": "https://github.com/BrunoJaegerK"
+    }
+  ],
+  "categories": [],
+  "created_at": 1794847589,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "EconomyAPI",
+      "version_range": ""
+    }
+  ],
+  "description": "# ChatGamesNK\n\nPlugin de minijuegos de chat para **Nukkit PetteriM1 Edition**, inspirado funcionalmente en [RareHyperIonYT/ChatGames](https://github.com/RareHyperIonYT/ChatGames) y adaptado a Nukkit.\n\n## Características\n- Cinco categorías iniciales con cinco desafíos por categoría (25 en total).\n- Partidas automáticas y comandos para iniciar, detener, listar y recargar.\n- Una sola ronda activa; gana el primer jugador que responde correctamente.\n- Recompensas con EconomyAPI 2.x.\n- Sonido al acertar configurable y desactivable.\n- Mensajes centralizados en lang/es_ES.yml.\n- Preguntas y variantes editables en archivos YAML independientes.\n- Estadísticas persistentes en stats.yml.\n\n## Requisitos\n- Nukkit PetteriM1 Edition y Java 17.\n- EconomyAPI 2.x para entregar recompensas.\n\n## Compilar\n\nEl proyecto depende de la API de Nukkit PetteriM1 Edition. Primero instala esa API en el repositorio Maven local desde la rama `release`:\n\n```bash\ngit clone --branch release https://github.com/BrunoJaegerK/NukkitPetteriM1Edition.git\ncd NukkitPetteriM1Edition\nmvn -DskipTests install\ncd ..\n```\n\nDespués, desde la carpeta raíz de ChatGamesNK:\n\n```bash\nmvn clean package\n```\n\nEl artefacto esperado es `target/ChatGamesNK.jar`. El workflow de GitHub Actions realiza ambos pasos automáticamente. EconomyAPI se integra por reflexión en tiempo de ejecución, por lo que no hace falta descargar su JAR para compilar; sí debe estar instalado en el servidor para pagar recompensas.\n\n## Instalar\n1. Coloca ChatGamesNK.jar y EconomyAPI en plugins/.\n2. Inicia el servidor para generar la configuración.\n3. Edita config.yml, lang/es_ES.yml y los archivos de games/.\n\n## Comandos\n| Comando | Permiso | Función |\n|---|---|---|\n| /chatgames start <juego o random> | chatgames.admin | Inicia un juego |\n| /chatgames stop | chatgames.admin | Detiene la ronda |\n| /chatgames list | chatgames.admin | Lista juegos |\n| /chatgames reload | chatgames.admin | Recarga archivos |\n| /chatgames stats <jugador> | chatgames.stats | Consulta estadísticas del jugador conectado |\n\nAlias: /cg.\n\n## Añadir preguntas\nAgrega una entrada a questions en el archivo YAML del minijuego:\n- question: \"&e¿Cuánto es 10 x 10?\"\n  answer: \"100\"\n\nPara opción múltiple añade options y configura answer con la letra correcta (por ejemplo B).\n\n## Almacenamiento\nLa primera versión usa YAML para las estadísticas. No necesita MongoDB, MySQL, H2 ni SQLite: los saldos los administra EconomyAPI y las estadísticas actuales son pequeñas. No se añade una base de datos externa sin necesidad; si luego se requiere clasificación global de alto volumen, se puede incorporar un adaptador configurable.\n\n## Créditos\n- Referencia funcional: https://github.com/RareHyperIonYT/ChatGames\n- Economía: https://cloudburstmc.org/resources/economyapi.14/\n- Autor: BrunoJaegerK.\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/99422811?v=4",
+  "id": "BrunoJaegerK/ChatGamesNK",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "ChatGamesNK",
+  "pending": true,
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/BrunoJaegerK/ChatGamesNK",
+  "stars": 0,
+  "summary": "Minijuegos de chat configurables para Nukkit PetteriM1 Edition",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1794849546,
+  "versions": []
+}

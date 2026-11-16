@@ -1,0 +1,38 @@
+{
+  "api_version": "3.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/333513207?v=4",
+      "name": "Xoappo",
+      "url": "https://github.com/Xoappo"
+    }
+  ],
+  "categories": [],
+  "created_at": 1794820259,
+  "dependencies": [],
+  "description": "# Portals\n\nA simple portals plugin for **PowerNukkitX**. Create teleport zones without portal blocks: just mark two corners and a destination.\n\n## NOTE\n\nThe plugin has not yet been tested so it may have bugs, I will be correcting the bugs when I test it.\n\n## Features\n\n- Create named portals.\n- Define the portal area with two corners.\n- Set a destination, including a different world.\n- Teleport players when they walk into the portal area.\n- Confirmation and error messages for every step.\n\n## Commands\n\n| Command | Description |\n|---------|-------------|\n| `/portal help` | Show the help |\n| `/portal list` | List existing portals |\n| `/portal make <name>` | Create a portal |\n| `/portal delete <name>` | Delete a portal |\n\nAliases: `/portals`, `/prt`.\n\n## Creating a portal\n\n1. Run `/portal make <name>`.\n2. Use the **golden axe** to mark the first corner.\n3. Use the **diamond axe** to mark the opposite corner.\n4. Use the **iron axe** to mark the destination.\n5. Use the **green dye** to save the portal.\n6. Use the **red dye** to cancel and exit.\n\nOnce saved, walk into the portal area to teleport.\n\n## Installation\n\n1. Build with `./gradlew build`.\n2. Copy the JAR from `build/libs/` into the server's `plugins/` folder.\n3. Restart PowerNukkitX.\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/333513207?v=4",
+  "id": "Xoappo/Portals",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "Portals",
+  "pending": true,
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/Xoappo/Portals",
+  "stars": 0,
+  "summary": "PowerNukkitX simple portals plugin",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1794821008,
+  "versions": []
+}
