@@ -1,0 +1,55 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/10363500?v=4",
+      "name": "Creeperface01",
+      "url": "https://github.com/Creeperface01"
+    }
+  ],
+  "categories": [],
+  "created_at": 1541361740,
+  "dependencies": [],
+  "description": "",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/10363500?v=4",
+  "id": "Creeperface01/BottomlessChest",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "BottomlessChest",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Creeperface01/BottomlessChest",
+  "stars": 1,
+  "summary": "Simple plugin to make chest bottomless",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1572362440,
+  "versions": [
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "BottomlessChest-1.0.jar",
+          "primary": true,
+          "size": 12437,
+          "url": "https://github.com/Creeperface01/BottomlessChest/releases/download/v1.0/BottomlessChest-1.0.jar"
+        }
+      ],
+      "name": "BottomlessChest v1.0",
+      "prerelease": false,
+      "published_at": 1572362440,
+      "version": "v1.0"
+    }
+  ]
+}
