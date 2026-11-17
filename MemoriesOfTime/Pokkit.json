@@ -17,6 +17,11 @@
       "url": "https://github.com/PetteriM1"
     },
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
+      "name": "lt-name",
+      "url": "https://github.com/lt-name"
+    },
+    {
       "avatar_url": "https://avatars.githubusercontent.com/u/406975?v=4",
       "name": "jwulf",
       "url": "https://github.com/jwulf"
@@ -30,11 +35,6 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/127063331?v=4",
       "name": "lmheesoo",
       "url": "https://github.com/lmheesoo"
-    },
-    {
-      "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
-      "name": "lt-name",
-      "url": "https://github.com/lt-name"
     },
     {
       "avatar_url": "https://avatars.githubusercontent.com/u/16275535?v=4",
@@ -117,23 +117,23 @@
   "targets": [
     "nkmot"
   ],
-  "updated_at": 1794843507,
+  "updated_at": 1794921510,
   "versions": [
     {
       "changelog": "",
       "downloads": 0,
       "files": [
         {
-          "filename": "Pokkit-1.21-R0.1-SNAPSHOT.jar",
+          "filename": "Pokkit-1.21.11-R0.2-SNAPSHOT.jar",
           "primary": true,
           "size": 0,
-          "url": "https://motci.cn/job/Pokkit/4/artifact/target/Pokkit-1.21-R0.1-SNAPSHOT.jar"
+          "url": "https://motci.cn/job/Pokkit/7/artifact/target/Pokkit-1.21.11-R0.2-SNAPSHOT.jar"
         }
       ],
-      "name": "1.21-R0.1-SNAPSHOT",
+      "name": "1.21.11-R0.2-SNAPSHOT",
       "prerelease": true,
-      "published_at": 1794843524,
-      "version": "ci-4"
+      "published_at": 1794921652,
+      "version": "ci-7"
     }
   ]
 }

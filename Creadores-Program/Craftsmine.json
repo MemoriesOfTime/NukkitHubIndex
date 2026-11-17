@@ -1,0 +1,113 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/91704943?v=4",
+      "name": "Trollhunters501",
+      "url": "https://github.com/Trollhunters501"
+    }
+  ],
+  "categories": [],
+  "created_at": 1716433738,
+  "dependencies": [],
+  "description": "# CraftsMineNKM (Beta)\n\n![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)\n![YAML](https://img.shields.io/badge/yaml-%23ffffff.svg?style=for-the-badge&logo=yaml&logoColor=151515)\n\nExtends the compatibility of [Nukkit-MOT](https://github.com/MemoriesOfTime/Nukkit-MOT) to Minecraft Pocket 0.15.x (protocol 80)\n\nExtiende la compatibilidad de [Nukkit-MOT](https://github.com/MemoriesOfTime/Nukkit-MOT) a Minecraft Pocket 0.15.x (protocolo 80)\n\n## Selecciona tu Idioma/Select your language:\n  - [Español](https://github.com/Creadores-Program/Craftsmine/blob/main/Espa%C3%B1ol/LEAME.md)\n  - [English](https://github.com/Creadores-Program/Craftsmine/blob/main/English/README.md)\n  - [Português](https://github.com/Creadores-Program/Craftsmine/blob/main/Português/LEIA-ME.md)\n  - [Italiano](https://github.com/Creadores-Program/Craftsmine/blob/main/Italiano/LEGGIMI.md)\n  - [Français](https://github.com/Creadores-Program/Craftsmine/blob/main/Français/LISEZ-MOI.md)\n  - [中国人](https://github.com/Creadores-Program/Craftsmine/blob/main/%E4%B8%AD%E5%9B%BD%E4%BA%BA/%E8%AF%BB%E6%88%91.md)\n  - [Русский](https://github.com/Creadores-Program/Craftsmine/blob/main/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9/%D0%9F%D0%A0%D0%9E%D0%A7%D0%A2%D0%98%20%D0%9C%D0%95%D0%9D%D0%AF.md)\n\n# Credits/Créditos\n- [Dr1xyDev/MySoft-0.15.x-1.21.x](https://github.com/Dr1xyDev/MySoft-0.15.x-1.21.x)\n- [Google IA Studio](https://aistudio.google.com/apps)\n\nHecho en México.\n\nMade in Mexico.\n\n\nCreadores Program ©2026\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/181365916?v=4",
+  "id": "Creadores-Program/Craftsmine",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "CraftsmineNKM",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Creadores-Program/Craftsmine",
+  "stars": 8,
+  "summary": "Multiversion legacy protocol bridge for Nukkit-MOT supporting MCPE 0.15.0 (Protocol 80) through 1.1.x (Protocol 113).",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1794924188,
+  "versions": [
+    {
+      "changelog": "Actualización de Libs\r\nCambio de puerto por default a 19132",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "CraftsMine-1.0.0-SNAPSHOT-original.jar",
+          "primary": true,
+          "sha256": "24454a8b69990bb7c3ebff22418adae2fcea5a76770c523cad08ffccbcf571a4",
+          "size": 12457512,
+          "url": "https://github.com/Creadores-Program/Craftsmine/releases/download/0.3.1/CraftsMine-1.0.0-SNAPSHOT-original.jar"
+        },
+        {
+          "filename": "CraftsMine-1.0.0-SNAPSHOT.jar",
+          "primary": true,
+          "sha256": "89ed97672afe9e0540eea9bd735a80a7ad277b4f2ce309e33d34b0968e66726c",
+          "size": 12626866,
+          "url": "https://github.com/Creadores-Program/Craftsmine/releases/download/0.3.1/CraftsMine-1.0.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "Actualizar libs",
+      "prerelease": true,
+      "published_at": 1726892320,
+      "version": "0.3.1"
+    },
+    {
+      "changelog": "se añadió Scoreboard y bossbars\r\nA la configuracion se añadio \r\n - gcCollectionAuto, \r\n - gcCollectionTime, \r\n - langPlayer, \r\n - synchServer, [Creditos](https://github.com/justin-eckenweber/BedrockServerQuery)\r\n - timeSynchServer \r\n\r\nse arreglaron bugs.\r\n\r\nPara pedir el CraftsMine entra a nuestro discord! https://discord.com/invite/mrmHcwxXff",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "CraftsMine-1.0.0-SNAPSHOT.jar",
+          "primary": true,
+          "sha256": "643f0225c48b601335dc9c19630f03b8a3a2f27ea46ff4c05d53996f4a659b9c",
+          "size": 12888585,
+          "url": "https://github.com/Creadores-Program/Craftsmine/releases/download/0.2.0/CraftsMine-1.0.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "Añadir Scoreboard y bossbar",
+      "prerelease": true,
+      "published_at": 1724116292,
+      "version": "0.2.0"
+    },
+    {
+      "changelog": "se añadieron 32 particulas\r\nse añadió la opción consoleLog (recomendado reiniciar config.yml o añadir manualmente)\r\narreglo de bugs\r\n\r\nPara pedir el CraftsMine entra a nuestro discord! https://discord.com/invite/mrmHcwxXff",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "CraftsMine-1.0.0-SNAPSHOT.jar",
+          "primary": true,
+          "sha256": "8f26cd388922e07872b2c6531f33939c1fc4d408da1ffc03cb099cf43d9e7b4a",
+          "size": 12915247,
+          "url": "https://github.com/Creadores-Program/Craftsmine/releases/download/0.1.1/CraftsMine-1.0.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "Prototype v0.1.1 Arreglo de bugs.",
+      "prerelease": true,
+      "published_at": 1723405026,
+      "version": "0.1.1"
+    },
+    {
+      "changelog": "Lanzamiento oficial!\r\nrecuerda ver las instrucciones en el readme de tu idioma!\r\nPara pedir el CraftsMine entra a nuestro discord! https://discord.com/invite/mrmHcwxXff",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "CraftsMine-1.0.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 12913832,
+          "url": "https://github.com/Creadores-Program/Craftsmine/releases/download/0.1.0/CraftsMine-1.0.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "Prototype v0.1.0 Lanzamiento Oficial.",
+      "prerelease": true,
+      "published_at": 1723263522,
+      "version": "0.1.0"
+    }
+  ]
+}

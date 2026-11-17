@@ -23,9 +23,9 @@
   "icon_url": "https://avatars.githubusercontent.com/u/99422811?v=4",
   "id": "BrunoJaegerK/ChatGamesNK",
   "license": {
-    "id": "ARR",
-    "name": "All Rights Reserved",
-    "url": ""
+    "id": "Apache-2.0",
+    "name": "Apache License 2.0",
+    "url": "https://spdx.org/licenses/Apache-2.0.html"
   },
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
@@ -40,6 +40,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1794849546,
+  "updated_at": 1794906397,
   "versions": []
 }

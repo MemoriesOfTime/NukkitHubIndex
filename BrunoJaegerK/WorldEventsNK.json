@@ -1,0 +1,45 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/99422811?v=4",
+      "name": "BrunoJaegerK",
+      "url": "https://github.com/BrunoJaegerK"
+    }
+  ],
+  "categories": [],
+  "created_at": 1794911547,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "EconomyAPI",
+      "version_range": ""
+    }
+  ],
+  "description": "# WorldEventsNK\n\nPlugin de eventos dinamicos para **NukkitPetteriM1Edition (PM1E)**.\n\n- Autor: BrunoJaegerK\n- Java: 17\n- Dependencia: `cn.nukkit:Nukkit:PM1E` (provided)\n- Eventos iniciales: MeteorFall y LostTreasure\n\n## Eventos\n\n### MeteorFall\n- Duracion del estado activo configurable independientemente mediante `meteorfall.duration-seconds`. El impacto en el terreno sigue siendo permanente.\n- Busca ubicaciones en todos los mundos cargados y no excluidos, tomando el spawn como referencia para el rango configurado.\n- Muestrea el rango completo de distancia al spawn y solo evalua chunks que ya estan cargados; nunca genera terreno para buscar ubicaciones.\n- Valida el volumen completo antes de cambiar bloques.\n- Rechaza volumenes con bloques no naturales y ubicaciones denegadas por proveedores de proteccion.\n- Anuncia el punto de impacto con una fase de advertencia configurable (`meteorfall.warning-seconds`) para dar tiempo a los jugadores a apartarse.\n- Genera un crater permanente, con borde de roca, vetas de hierro/oro/diamante y nucleo de obsidiana.\n- Si falla una escritura durante el impacto, intenta restaurar los bloques modificados.\n\n### LostTreasure\n- Duracion del evento configurable mediante `losttreasure.duration-seconds`.\n- Coloca un cofre con un identificador persistente propio.\n- Publica hasta tres pistas progresivas con radios independientes configurables (`hint-radius-first`, `hint-radius-second`, `hint-radius-third`); la última puede revelar las coordenadas exactas.\n- El primer jugador dentro del radio configurado puede reclamar la recompensa principal.\n- El cofre no puede romperse normalmente durante el evento.\n- Se elimina al reclamar, expirar o detener el evento.\n- El registro permite recuperar y limpiar el cofre tras un cierre abrupto, sin borrar cofres ajenos.\n- Si el chunk se descarga antes de expirar o detener el evento, la limpieza queda persistida y se reintenta cuando PM1E vuelve a inicializar ese chunk.\n\n## Extensibilidad\n\n- Otros plugins pueden registrar eventos propios mediante `EventRegistry` y la interfaz `WorldEvent`. Consulta [la API de eventos externos](https://github.com/BrunoJaegerK/WorldEventsNK/blob/main/docs/EVENT_API.md).\n\n## Integraciones\n\n- EconomyAPI es opcional y se detecta por reflexion usando `me.onebone.economyapi.EconomyAPI`.\n- La proteccion de regiones usa la interfaz `RegionProtectionProvider`. Consulta [la guía para crear adaptadores](https://github.com/BrunoJaegerK/WorldEventsNK/blob/main/docs/PROTECTION_API.md).\n- Un plugin de proteccion externo debe implementar y registrar su adaptador contra su API real. No se anuncia compatibilidad automatica con WorldGuard ni con otros plugins.\n- Si EconomyAPI no esta disponible, se omite el dinero y se mantienen las recompensas de objetos.\n\n## Comandos\n\n- `/we` — ayuda.\n- `/we list` — eventos registrados, estado habilitado/deshabilitado, peso aleatorio y enfriamiento restante.\n- `/we status` — evento activo o cuenta regresiva del siguiente intento automático.\n- `/we history [1-10]` — historial persistente de los últimos eventos con resultado, fecha y ubicación.\n- `/we start <meteorfall|losttreasure|random>` — iniciar un evento.\n- `/we stop` — detener el evento.\n- `/we claim` — reclamar el tesoro dentro del radio.\n- `/we stats` — estadisticas propias o totales desde consola.\n- `/we stats <jugador>` — estadisticas por nombre, aunque el jugador este desconectado (si ya tiene registros).\n- `/we stats top [1-10]` — clasificación persistente de los jugadores con más tesoros reclamados, incluidos los desconectados.\n- `/we reload` — recargar configuracion y mensajes.\n\n## Datos persistentes\n\n- `pending-event.yml`: ubicacion, fase y marcador del cofre temporal para recuperacion.\n- `statistics.yml`: reclamaciones por UUID y total acumulado.\n- `history.yml`: historial limitado de inicios, finalizaciones, detenciones y fallos de eventos.\n- `rewards.yml`: activa/desactiva todas las recompensas, configura cantidades de diamantes/esmeraldas y dinero, y permite un objeto adicional con ID, daño, probabilidad y cantidad configurables.\n- `events.yml`: habilitación, peso de selección y enfriamiento individual de cada evento.\n\nLa reclamacion se registra en disco antes de entregar el premio para impedir duplicaciones tras un cierre abrupto. Como contrapartida, un cierre en el instante exacto entre el registro y la entrega puede dejar una reclamacion contabilizada sin que el jugador haya recibido todos los premios.\n\n## Programación y selección automática\n\n- Cada evento admite `enabled`, `weight` y `cooldown-seconds` en `events.yml`.\n- Los enfriamientos se calculan usando el historial persistente y sobreviven reinicios mientras el registro de inicio siga retenido.\n- `events.avoid-consecutive-same-event` evita repetir el último evento cuando existe otra opción elegible.\n- Los enfriamientos se aplican a `/we start random` y al programador automático; iniciar un evento concreto manualmente es una acción administrativa y omite ese enfriamiento.\n- El temporizador automático solo avanza cuando se alcanza el mínimo de jugadores en línea.\n\n## Compilacion\n\nRequiere JDK 17 y Maven 3.9+.\n\n```bash\nmvn clean package\n```\n\nEl JAR se genera en `target/WorldEventsNK.jar`. GitHub Actions construye primero la rama `release` de `BrunoJaegerK/NukkitPetteriM1Edition` y despues compila WorldEventsNK.\n\n## Seguridad y limites\n\n- MeteorFall modifica el mundo permanentemente. Excluye los mundos donde no quieras crateres. Una construccion hecha enteramente con bloques naturales no se puede distinguir del terreno solo mediante IDs de bloque; protege esas zonas con el adaptador de regiones.\n- La proteccion generica solo puede respetar regiones de terceros cuando existe un adaptador registrado para ese plugin.\n- La seleccion considera todos los mundos cargados y no excluidos. Usa jugadores como referencia cuando los hay y el spawn en mundos sin jugadores; nunca fuerza la generacion de chunks.\n- No se ha validado aun el comportamiento visual y de juego dentro de una instancia real de servidor; la compilacion automatizada valida compatibilidad de codigo/API, no una prueba de gameplay.\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/99422811?v=4",
+  "id": "BrunoJaegerK/WorldEventsNK",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "WorldEventsNK",
+  "pending": true,
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/BrunoJaegerK/WorldEventsNK",
+  "stars": 0,
+  "summary": "Eventos dinámicos permanentes y temporales para Survival en Nukkit PM1E",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1794942294,
+  "versions": []
+}
