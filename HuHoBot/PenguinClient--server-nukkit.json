@@ -38,7 +38,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1790081210,
+  "updated_at": 1795089540,
   "versions": [
     {
       "changelog": "# HuHoBot Penguin v1.4.0\n\n- feat(bot): 添加QQ机器人扫码绑定功能\n\n### 构建信息\n- 构建时间: 2026-09-20T07:00:40Z\n- 提交哈希: [15cdbcf762b8c92581e1d7a388e51de9a5ea4501](https://github.com/HuHoBot/PenguinClient/commit/15cdbcf762b8c92581e1d7a388e51de9a5ea4501)\n",

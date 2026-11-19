@@ -1,0 +1,45 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/99422811?v=4",
+      "name": "BrunoJaegerK",
+      "url": "https://github.com/BrunoJaegerK"
+    }
+  ],
+  "categories": [],
+  "created_at": 1795031343,
+  "dependencies": [
+    {
+      "dependency_type": "optional",
+      "plugin_id": "PlaceholderAPI",
+      "version_range": ""
+    }
+  ],
+  "description": "# SimpleKothNK\n\n<p align=\"center\">\n  <img src=\"https://img.shields.io/badge/Minecraft-Bedrock%20Edition-43A047?style=for-the-badge&logo=minecraft&logoColor=white\" alt=\"Minecraft Bedrock Edition\">\n  <img src=\"https://img.shields.io/badge/Server-NukkitPetteriM1Edition-2196F3?style=for-the-badge\" alt=\"NukkitPetteriM1Edition\">\n  <img src=\"https://img.shields.io/badge/Java-17-orange?style=for-the-badge&logo=openjdk&logoColor=white\" alt=\"Java 17\">\n  <img src=\"https://img.shields.io/badge/Build-Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white\" alt=\"Maven\">\n</p>\n\n<p align=\"center\"><b>Plugin KOTH por temporizador global para NukkitPetteriM1Edition, con regiones configurables, BossBar regresiva, efectos de zona y recompensas por comandos.</b></p>\n\n---\n\nPlugin KOTH ligero y configurable para **NukkitPetteriM1Edition (PM1E)**.\n\n- Autor: **BrunoJaegerK**\n- Java: **17**\n- Build: **Maven**\n- PlaceholderAPI: integración opcional con **PlaceholderAPI-nukkit** de Creeperface01.\n\n## Características\n\n- Región cúbica definida por dos esquinas, incluso en un área pequeña de un mundo existente.\n- Temporizador global: avanza aunque la región esté vacía o disputada.\n- Si hay dos o más jugadores dentro de la zona cuando el tiempo llega a cero, se elige un ganador aleatoriamente entre ellos.\n- BossBar nativa de PM1E persistente, con tiempo restante y progreso; sigue la posición del jugador para evitar que desaparezca.\n- Partículas de brillo alrededor de la región cuando no está disputada y partículas de enfado cuando hay varios jugadores dentro.\n- Cuenta regresiva configurable antes de iniciar, con anuncios en los segundos elegidos.\n- Inicio automático periódico configurable (por defecto cada 24 horas), con próxima fecha persistida tras reinicios.\n- Mensajes independientes y editables en `lang.yml`.\n- Anuncio de inicio y victoria en el chat.\n- Comandos configurables al ganar.\n- Placeholders de PlaceholderAPI-nukkit.\n- Sin scoreboard propio, clanes, economía ni sistemas de arenas.\n\n## Comandos\n\n| Comando | Descripción |\n|---|---|\n| `/koth` | Muestra la ayuda |\n| `/koth set pos1` | Guarda la primera esquina en la posición actual |\n| `/koth set pos2` | Guarda la segunda esquina en la posición actual |\n| `/koth start` | Programa el inicio con cuenta regresiva |\n| `/koth stop` | Detiene el KOTH |\n| `/koth status` | Muestra estado, tiempo y capturador |\n| `/koth reload` | Recarga la configuración |\n\nPermiso: `simplekoth.admin` (por defecto OP).\n\n## Configuración\n\nEn `plugins/SimpleKothNK/config.yml`:\n\n- `capture-time-seconds`: segundos que se necesitan para ganar.\n- `countdown.seconds`: duración de la cuenta regresiva; se fuerza un mínimo de 30 segundos.\n- `countdown.announcements`: segundos restantes en los que se anuncia la cuenta regresiva (por defecto 30 y 20).\n- `auto-start.enabled`: activa o desactiva los inicios automáticos.\n- `auto-start.interval-seconds`: intervalo entre inicios automáticos. Usa `86400` para 24 horas o `259200` para 3 días.\n- `auto-start.next-start-at`: fecha interna persistida automáticamente; no modificar manualmente.\n- `winner-commands`: comandos ejecutados desde consola. Usa `{player}`.\n- `region`: se guarda automáticamente al usar `/koth set pos1` y `/koth set pos2`.\n\nLos mensajes están en `plugins/SimpleKothNK/lang.yml`; puedes personalizar prefijo, cuenta regresiva, inicio, victoria y respuestas de comandos.\n\nLa región exige que ambas posiciones estén en el mismo mundo. No se modifica ningún bloque ni se protege el resto del mundo.\n\n## Reglas de captura\n\n1. Al ejecutar `/koth start`, comienza una cuenta regresiva de al menos 30 segundos. Al terminar, se anuncia el inicio y comienza el evento.\n2. El temporizador global avanza sin pausas, incluso si no hay jugadores dentro o la región está disputada.\n3. La BossBar se muestra a todos los jugadores conectados y refleja el estado de la región.\n4. Si hay varios jugadores dentro cuando el tiempo llega a cero, el ganador se elige aleatoriamente entre los jugadores vivos que estén dentro.\n5. Si el tiempo llega a cero con la región vacía, permanece en cero y gana el primer jugador (o uno aleatorio entre varios) que entre.\n6. Mientras haya disputa se muestran partículas de enfado; no se envían mensajes de captura o disputa al chat.\n7. Al ganar, se anuncia al jugador y se ejecutan los comandos configurados.\n\nEl inicio automático está activado por defecto y programa el primer evento 24 horas después de la primera carga. La fecha del siguiente ciclo se conserva en `config.yml`; reiniciar el servidor no vuelve a contar las 24 horas desde cero.\n\nJugadores muertos no cuentan como participantes dentro de la zona.\n\n## PlaceholderAPI-nukkit\n\nSe integra con la API de [Creeperface01/PlaceholderAPI-nukkit](https://github.com/Creeperface01/PlaceholderAPI-nukkit). No es la PlaceholderAPI de Bukkit/Spigot.\n\n| Placeholder | Resultado |\n|---|---|\n| `%koth_time%` | Tiempo restante `MM:SS` |\n| `%koth_time_seconds%` | Segundos restantes |\n| `%koth_status%` | `stopped`, `waiting`, `capturing` o `contested` |\n| `%koth_capturer%` | Nombre del único jugador que esté dentro; vacío si hay cero o varios |\n\nLa integración se activa si PlaceholderAPI está instalado; no es una dependencia obligatoria.\n\n## Compilar\n\nRequisitos: JDK 17 y Maven 3.8.6 o superior.\n\n```bash\nmvn clean package\n```\n\nEl JAR se genera en `target/SimpleKothNK-1.0.0-SNAPSHOT.jar`.\n\n## Compatibilidad\n\nEl proyecto usa la API pública de Nukkit publicada en OpenCollab para compilar en CI y las llamadas específicas de BossBar verificadas en el código fuente de PM1E. La compatibilidad binaria exacta debe contrastarse con el JAR de la compilación PM1E que utilice el servidor de destino.\n\n## ℹ️ About\n\nPlugin KOTH ligero para NukkitPetteriM1Edition, con regiones configurables, captura disputada, BossBar y recompensas por comandos.\n\n- **Autor:** BrunoJaegerK\n- **Servidor objetivo:** NukkitPetteriM1Edition (Minecraft Bedrock)\n- **Repositorio:** https://github.com/BrunoJaegerK/SimpleKothNK\n\n## 📜 Licencia\n\nEste proyecto se distribuye bajo **GPL-3.0**. Puedes utilizarlo, modificarlo y redistribuirlo respetando los términos de la licencia, conservando los avisos de copyright y atribución aplicables. En el caso de GPL-3.0, las versiones modificadas distribuidas deben permanecer bajo GPL-3.0 y proporcionar el código fuente correspondiente.\n\nConsulta el archivo [LICENSE](https://github.com/BrunoJaegerK/SimpleKothNK/blob/main/LICENSE) para leer el texto completo.\n",
+  "detection_confidence": "medium",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/99422811?v=4",
+  "id": "BrunoJaegerK/SimpleKothNK",
+  "license": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "SimpleKothNK",
+  "pending": true,
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/BrunoJaegerK/SimpleKothNK",
+  "stars": 0,
+  "summary": "KOTH individual por regiones para NukkitPetteriM1Edition",
+  "targets": [
+    "nkx",
+    "nkmot"
+  ],
+  "updated_at": 1795045939,
+  "versions": []
+}
