@@ -5,6 +5,11 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/45508179?v=4",
       "name": "lt-name",
       "url": "https://github.com/lt-name"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/83235042?v=4",
+      "name": "SoBadFish",
+      "url": "https://github.com/SoBadFish"
     }
   ],
   "categories": [],
@@ -32,7 +37,7 @@
   "targets": [
     "nkmot"
   ],
-  "updated_at": 1795016413,
+  "updated_at": 1795172431,
   "versions": [
     {
       "changelog": "",
@@ -42,13 +47,13 @@
           "filename": "Mukkit.jar",
           "primary": true,
           "size": 0,
-          "url": "https://motci.cn/job/Mukkit/3/artifact/mukkit-nukkit/build/libs/Mukkit.jar"
+          "url": "https://motci.cn/job/Mukkit/4/artifact/mukkit-nukkit/build/libs/Mukkit.jar"
         }
       ],
       "name": "Mukkit",
       "prerelease": true,
-      "published_at": 1795016424,
-      "version": "ci-3"
+      "published_at": 1795172441,
+      "version": "ci-4"
     }
   ]
 }

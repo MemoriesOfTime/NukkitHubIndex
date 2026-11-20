@@ -27,13 +27,13 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/Creadores-Program/Craftsmine",
-  "stars": 8,
+  "stars": 9,
   "summary": "Multiversion legacy protocol bridge for Nukkit-MOT supporting MCPE 0.15.0 (Protocol 80) through 1.1.x (Protocol 113).",
   "targets": [
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1795058248,
+  "updated_at": 1795142100,
   "versions": [
     {
       "changelog": "Actualización de Libs\r\nCambio de puerto por default a 19132",

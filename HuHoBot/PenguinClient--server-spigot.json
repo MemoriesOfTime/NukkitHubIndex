@@ -37,8 +37,46 @@
   "targets": [
     "nkmot"
   ],
-  "updated_at": 1795089540,
+  "updated_at": 1795184582,
   "versions": [
+    {
+      "changelog": "# HuHoBot Penguin v1.5.0\n\n- feat(group): 接入 QQ 群管理接口：群基本信息、机器人群内状态、入群申请列表与审批、群禁言查询/设置、群成员列表与详情、批量移除成员、群黑名单、入群自动审批策略列表\n- feat(group): 新增群成员加入/退出与入群申请平台事件（\\`OnBotGroupMemberAdd\\` / \\`OnBotGroupMemberRemove\\` / \\`OnBotJoinRequest\\`），入群申请事件支持直接 \\`approve()\\` / \\`decline()\\`\n- feat(group): 新增 \\`features.group-member-events\\` 配置项，控制是否订阅 \\`GROUP_MEMBER_EVENT\\`（默认关闭，需机器人具备群管理权限）\n- feat(bot): QClient/HuHoBot 暴露统一的群管理方法，各平台适配器（Spigot / Allay / Nukkit / BungeeCord / Velocity）自动具备\n- feat(webui): 新增WebUI控制面板\n\n### 构建信息\n- 构建时间: 2026-11-20T14:23:01Z\n- 提交哈希: [88b2a0dd6a38ffa6dddf11609dcb4a0379165125](https://github.com/HuHoBot/PenguinClient/commit/88b2a0dd6a38ffa6dddf11609dcb4a0379165125)\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "HuHoBot-Penguin_Allay-1.5.0.jar",
+          "primary": true,
+          "sha256": "2d14f47b1e988917f33bb0c286288a79713378faa8f07c1cec68700d186e5530",
+          "size": 18793961,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.5.0/HuHoBot-Penguin_Allay-1.5.0.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Nukkit-1.5.0.jar",
+          "primary": true,
+          "sha256": "ae0706fd28faf5f004430f6d69b867369bf85d9d116304c223c1787e69974651",
+          "size": 18802106,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.5.0/HuHoBot-Penguin_Nukkit-1.5.0.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Proxy-1.5.0.jar",
+          "primary": true,
+          "sha256": "b33ff29338fcc57f78e8fc59c47550596a7eda4286559eea0657ffd34d257e4f",
+          "size": 21666640,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.5.0/HuHoBot-Penguin_Proxy-1.5.0.jar"
+        },
+        {
+          "filename": "HuHoBot-Penguin_Spigot-1.5.0.jar",
+          "primary": true,
+          "sha256": "372d7f1c6d9de561200530b0d2f2af194ecb9a203d208e0f07b1aa589dd24ac5",
+          "size": 18827104,
+          "url": "https://github.com/HuHoBot/PenguinClient/releases/download/v1.5.0/HuHoBot-Penguin_Spigot-1.5.0.jar"
+        }
+      ],
+      "name": "HuHoBot v1.5.0",
+      "prerelease": false,
+      "published_at": 1795184582,
+      "version": "v1.5.0"
+    },
     {
       "changelog": "# HuHoBot Penguin v1.4.0\n\n- feat(bot): 添加QQ机器人扫码绑定功能\n\n### 构建信息\n- 构建时间: 2026-09-20T07:00:40Z\n- 提交哈希: [15cdbcf762b8c92581e1d7a388e51de9a5ea4501](https://github.com/HuHoBot/PenguinClient/commit/15cdbcf762b8c92581e1d7a388e51de9a5ea4501)\n",
       "downloads": 0,
