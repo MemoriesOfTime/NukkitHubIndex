@@ -23,7 +23,7 @@
   },
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
-  "name": "NoCommandBlock",
+  "name": "LTNoCommandBlock",
   "pending": true,
   "primary_target": "nkx",
   "server_version": "",
@@ -34,6 +34,6 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1782314733,
+  "updated_at": 1795282948,
   "versions": []
 }

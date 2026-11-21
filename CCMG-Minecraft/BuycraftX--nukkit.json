@@ -64,6 +64,7 @@
   "links": null,
   "manifest_path": "nukkit/src/main/resources/plugin.yml",
   "name": "BuycraftX",
+  "pending": true,
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/CCMG-Minecraft/BuycraftX",
@@ -73,28 +74,5 @@
     "nkx"
   ],
   "updated_at": 1605453810,
-  "versions": [
-    {
-      "changelog": "- Added item display config.\r\n\r\nExample (in config.yml):\r\n```yml\r\ndisplay:\r\n  1234567: # Package ID\r\n    name: \"\"\r\n    lore:\r\n    - \"\"\r\n    amount: 1\r\n    item: DIRT\r\n```",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "buycraftx-bukkit-post-1.13-12.1.7.jar",
-          "primary": true,
-          "size": 1166348,
-          "url": "https://github.com/CCMG-Minecraft/BuycraftX/releases/download/12.1.7/buycraftx-bukkit-post-1.13-12.1.7.jar"
-        },
-        {
-          "filename": "buycraftx-bukkit-pre-1.13-12.1.7.jar",
-          "primary": true,
-          "size": 1166588,
-          "url": "https://github.com/CCMG-Minecraft/BuycraftX/releases/download/12.1.7/buycraftx-bukkit-pre-1.13-12.1.7.jar"
-        }
-      ],
-      "name": "12.1.7",
-      "prerelease": false,
-      "published_at": 1605453810,
-      "version": "12.1.7"
-    }
-  ]
+  "versions": []
 }

@@ -48,22 +48,6 @@
       "downloads": 0,
       "files": [
         {
-          "filename": "ImageNK-1.0.3-MOT-shaded.jar",
-          "primary": true,
-          "size": 483024,
-          "url": "https://github.com/MemoriesOfTime/ImageNK/releases/download/1.0.3-MOT/ImageNK-1.0.3-MOT-shaded.jar"
-        }
-      ],
-      "name": "1.0.3-MOT",
-      "prerelease": false,
-      "published_at": 1685873502,
-      "version": "1.0.3-MOT"
-    },
-    {
-      "changelog": "",
-      "downloads": 0,
-      "files": [
-        {
           "filename": "ImageNK-1.0.4-MOT-SNAPSHOT-shaded.jar",
           "primary": true,
           "size": 0,
@@ -74,6 +58,22 @@
       "prerelease": true,
       "published_at": 1772356976,
       "version": "ci-4"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ImageNK-1.0.3-MOT-shaded.jar",
+          "primary": true,
+          "size": 483024,
+          "url": "https://github.com/MemoriesOfTime/ImageNK/releases/download/1.0.3-MOT/ImageNK-1.0.3-MOT-shaded.jar"
+        }
+      ],
+      "name": "1.0.3-MOT",
+      "prerelease": false,
+      "published_at": 1685873502,
+      "version": "1.0.3-MOT"
     }
   ]
 }

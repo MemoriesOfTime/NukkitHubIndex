@@ -18,7 +18,7 @@
       "version_range": ""
     }
   ],
-  "description": "# HotPotato  \n[![License](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](LICENSE)\n![Java CI](https://github.com/lt-name/HotPotato_Nukkit/workflows/Java%20CI/badge.svg)\n[![MCBBS](https://img.shields.io/badge/Link-MCBBS-brightgreen)](https://www.mcbbs.net/thread-1042842-1-1.html)  \n\n> HotPotato是一个简单的小游戏插件，在游戏中玩家需要在倒计时结束前将手中的烤马铃薯交给其他玩家，在倒计时结束后手中持有烤马铃薯的玩家将会被淘汰\n\n## 介绍\n请前往插件介绍贴查看！  \n[mcbbs](https://www.mcbbs.net/thread-1042842-1-1.html)  \n[minebbs](https://www.minebbs.com/resources/hotpotato.1237/)\n\n## 下载\n[Jenkins](https://ci.lt-name.cn/view/LT_Name/job/HotPotato/)  \n[GitHub-Actions](https://github.com/lt-name/HotPotato_Nukkit/actions)",
+  "description": "# HotPotato  \n[![License](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://github.com/lt-name/HotPotato_Nukkit/blob/master/LICENSE)\n![Java CI](https://github.com/lt-name/HotPotato_Nukkit/workflows/Java%20CI/badge.svg)\n[![MCBBS](https://img.shields.io/badge/Link-MCBBS-brightgreen)](https://www.mcbbs.net/thread-1042842-1-1.html)  \n\n> HotPotato是一个简单的小游戏插件，在游戏中玩家需要在倒计时结束前将手中的烤马铃薯交给其他玩家，在倒计时结束后手中持有烤马铃薯的玩家将会被淘汰\n\n## 介绍\n请前往插件介绍贴查看！  \n[mcbbs](https://www.mcbbs.net/thread-1042842-1-1.html)  \n[minebbs](https://www.minebbs.com/resources/hotpotato.1237/)\n\n## 下载\n[Jenkins](https://ci.lt-name.cn/view/LT_Name/job/HotPotato/)  \n[GitHub-Actions](https://github.com/lt-name/HotPotato_Nukkit/actions)",
   "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
@@ -48,6 +48,22 @@
       "downloads": 0,
       "files": [
         {
+          "filename": "HotPotato-1.2.2-SNAPSHOT.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/HotPotato/job/master/65/artifact/target/HotPotato-1.2.2-SNAPSHOT.jar"
+        }
+      ],
+      "name": "1.2.2-SNAPSHOT",
+      "prerelease": true,
+      "published_at": 1706020750,
+      "version": "ci-65"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
           "filename": "HotPotato-1.2.1-PM1E.jar",
           "primary": true,
           "size": 109629,
@@ -55,7 +71,7 @@
         },
         {
           "filename": "HotPotato-1.2.1.jar",
-          "primary": true,
+          "primary": false,
           "size": 109471,
           "url": "https://github.com/lt-name/HotPotato_Nukkit/releases/download/v1.2.1/HotPotato-1.2.1.jar"
         }
@@ -96,22 +112,6 @@
       "prerelease": false,
       "published_at": 1595559240,
       "version": "v1.0.1"
-    },
-    {
-      "changelog": "",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "HotPotato-1.2.2-SNAPSHOT.jar",
-          "primary": true,
-          "size": 0,
-          "url": "https://motci.cn/job/HotPotato/job/master/65/artifact/target/HotPotato-1.2.2-SNAPSHOT.jar"
-        }
-      ],
-      "name": "1.2.2-SNAPSHOT",
-      "prerelease": true,
-      "published_at": 1706020750,
-      "version": "ci-65"
     }
   ]
 }

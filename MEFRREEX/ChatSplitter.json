@@ -64,7 +64,7 @@
         },
         {
           "filename": "SplitChat.jar",
-          "primary": true,
+          "primary": false,
           "size": 7500,
           "url": "https://github.com/MEFRREEX/ChatSplitter/releases/download/release/SplitChat.jar"
         }

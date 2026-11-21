@@ -47,6 +47,22 @@
   "updated_at": 1771229295,
   "versions": [
     {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Land_v1.8.8-SNAPSHOT.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/Land/job/master/53/artifact/target/Land_v1.8.8-SNAPSHOT.jar"
+        }
+      ],
+      "name": "v1.8.8-SNAPSHOT",
+      "prerelease": true,
+      "published_at": 1771229176,
+      "version": "ci-53"
+    },
+    {
       "changelog": "修复自动领地范围显示报错问题",
       "downloads": 0,
       "files": [
@@ -189,22 +205,6 @@
       "prerelease": false,
       "published_at": 1595482680,
       "version": "v1.6.6"
-    },
-    {
-      "changelog": "",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "Land_v1.8.8-SNAPSHOT.jar",
-          "primary": true,
-          "size": 0,
-          "url": "https://motci.cn/job/Land/job/master/53/artifact/target/Land_v1.8.8-SNAPSHOT.jar"
-        }
-      ],
-      "name": "v1.8.8-SNAPSHOT",
-      "prerelease": true,
-      "published_at": 1771229176,
-      "version": "ci-53"
     }
   ]
 }

@@ -47,7 +47,7 @@
         },
         {
           "filename": "original-JKit-1.0.1.jar",
-          "primary": true,
+          "primary": false,
           "size": 14675,
           "url": "https://github.com/JossArchived/JKit/releases/download/1.0.1/original-JKit-1.0.1.jar"
         }
@@ -69,7 +69,7 @@
         },
         {
           "filename": "original-JKit-1.0.0.jar",
-          "primary": true,
+          "primary": false,
           "size": 14429,
           "url": "https://github.com/JossArchived/JKit/releases/download/1.0.0/original-JKit-1.0.0.jar"
         }

@@ -101,7 +101,7 @@
         },
         {
           "filename": "NoCheatPlus-1.0.0.jar",
-          "primary": true,
+          "primary": false,
           "size": 0,
           "url": "https://motci.cn/job/NoCheatPlus/157/artifact/NCPCore/target/NoCheatPlus-1.0.0.jar"
         }

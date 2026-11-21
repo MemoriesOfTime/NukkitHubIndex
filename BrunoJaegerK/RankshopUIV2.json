@@ -84,23 +84,6 @@
       "version": "V2.0.1"
     },
     {
-      "changelog": "Instala este jar en tu servidor ",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "RankshopUIV2-1.0.0.jar",
-          "primary": true,
-          "sha256": "6ccfaa341a22f5c7ea8984d1a3e9d0391986f59d976e9d6313e284799593e41f",
-          "size": 12141,
-          "url": "https://github.com/BrunoJaegerK/RankshopUIV2/releases/download/nukkit/RankshopUIV2-1.0.0.jar"
-        }
-      ],
-      "name": "Version inicial",
-      "prerelease": false,
-      "published_at": 1791962546,
-      "version": "nukkit"
-    },
-    {
       "changelog": "- Centre los mensajes del form de kits\r\n- agregue un nuevo mensaje en lang.yml",
       "downloads": 0,
       "files": [
@@ -116,6 +99,23 @@
       "prerelease": false,
       "published_at": 1791992539,
       "version": "bug"
+    },
+    {
+      "changelog": "Instala este jar en tu servidor ",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "RankshopUIV2-1.0.0.jar",
+          "primary": true,
+          "sha256": "6ccfaa341a22f5c7ea8984d1a3e9d0391986f59d976e9d6313e284799593e41f",
+          "size": 12141,
+          "url": "https://github.com/BrunoJaegerK/RankshopUIV2/releases/download/nukkit/RankshopUIV2-1.0.0.jar"
+        }
+      ],
+      "name": "Version inicial",
+      "prerelease": false,
+      "published_at": 1791962546,
+      "version": "nukkit"
     }
   ]
 }

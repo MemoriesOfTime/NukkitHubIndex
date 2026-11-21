@@ -450,7 +450,7 @@
     "nkmot",
     "pnx"
   ],
-  "updated_at": 1795134984,
+  "updated_at": 1795278942,
   "versions": [
     {
       "changelog": "# 5.9 build 3867\r\n\r\nThis update includes a bunch of new features, security improvements, bugfixes, new APIs and more.\r\n\r\nSpecial thanks to **AnttiMK**, **DomasUrbonas**, **RomainCabaret**, **Tokas**, **Axionize**, **bobhenl** & **Almost10** for contributions to this update.\r\n\r\n# Breaking changes\r\n\r\n## Java 17 or newer now required\r\n\r\nPlan now requires Java 17 or newer. \r\n\r\nAPI is still compiled with Java 8, but that will also change to 17 in Plan version 5.10.\r\n\r\n## snake_case variables changed to camelCase in JSON endpoints\r\n\r\nAll snake_case variables in Plan /v1/ endpoints were changed to camelCase for consistency.\r\n\r\n# Change log\r\n\r\n## ⚠ Fixed Denial of Service security vulnerability (CVSS 7.5)\r\n\r\nFixed a Denial of Service vulnerability with the Jetty webserver. This affects all versions prior to this version. Updating is recommended as soon as possible, because **the fixed vulnerability can be used to crash a server through memory exhaustion.**\r\n\r\nIf your webserver is behind a reverse-proxy, the reverse-proxy likely mitigates the issue.\r\n\r\nIf you can not update right away, disabling the webserver temporarily with `Webserver.Disable_webserver`-setting until you can update also mitigates the issue.\r\n\r\n## Fabric 26.3\r\n\r\n- DomasUrbonas added support for fabric 26.3, older versions are no longer supported.\r\n- Axionize fixed command source mixin collision with another plugin\r\n\r\n## Data gathering\r\n\r\n### New data: Minecraft statistics\r\n\r\nPlan will now gather all Minecraft statistics from the player json files found in statistics folder on the game servers. They are displayed on Player, Server (sum of players) and Network pages (sum of players / server or sum of all players)\r\n\r\n<img width=\"1647\" height=\"776\" alt=\"image\" src=\"https://github.com/user-attachments/assets/c602537b-d324-482c-aa41-2441d18dd60d\" />\r\n\r\n### Kill tracking additions\r\n\r\nRomanCabaret implemented support for:\r\n  - TNT explosion kills on Bukkit, Fabric and Sponge when ignited directly by a player\r\n  - Bed and Respawn Anchor explosion kills on Bukkit, Fabric and Sponge\r\n\r\n### Bugfixes\r\n\r\n- Fixed Shutdown session save sometimes storing sessions twice if server was shutdown via keyboard interrupt\r\n- AnttiMK Fixed Folia gathering performance data 20 times more frequently than intended.\r\n- Fixed Exception on Folia when setHealth(0) was called that killed the player.\r\n- Fixed setHealth(0) recording the death as a kill for the last player that damaged the player\r\n\r\n## Website\r\n\r\n- Improved Players table loading speed (From minutes to few seconds) by removing Average ping from the table\r\n- Network performance graph now supports stacking on all graphs except TPS where it doesn't make sense.\r\n![Screenshot of players online graph with stacked series](https://github.com/user-attachments/assets/ad9f3d0d-4ae9-4bb0-8b1e-11ef56ac62a8)\r\n- Converted Playerbase trends to Datapoint table (Gets individual values)\r\n![Screenshot of Playerbase trends for 30 days](https://github.com/user-attachments/assets/449da0cb-ea46-40c8-97ee-898f1b9d7342)\r\n- Playerbase Insights were incorporated into the table above\r\n- Converted PvpPve as Numbers table to Datapoint table (Gets individual values)\r\n- Almost10 implemented Query page Date-range presets\r\n![Screenshot of two Query page presets 'Current Month' and 'Previous month'](https://github.com/user-attachments/assets/dc4fb3e1-218b-4875-8af2-60f8557e943f)\r\n![Screenshot of Query page preset list on Show a view](https://github.com/user-attachments/assets/67f09cd6-82d4-47ad-a17d-60cf9112e9b7)\r\n- Made it easier to select servers on Query page\r\n- Almost10 implemented Timeframe presets to datapoint tables\r\n![Screenshot of preset list](https://github.com/user-attachments/assets/f5157304-dd38-4297-9c9d-a67841e4c1f2)\r\n- Fixed New Player Retention always counting 0\r\n- Fixed Join Address groups not being stored\r\n- Fixed New Player Retention help sliders not working\r\n- Fixed Registration erroring if same user tries to register twice before code expires\r\n\r\n## Database\r\n\r\n- Fixed database transaction queue size tracking not working correctly.\r\n- Reduced memory impact of transaction queue\r\n\r\n## Webserver\r\n\r\n- Webserver was migrated to Jetty 12 which requires Java 17. This added support for asynchronous response resolution which means more requests can be processed without waiting for previous requests to complete.\r\n- Deprecated /v1/playerVersus, /v1/playersOverview and /v1/network/playersOverview endpoints. Use /v1/datapoint instead.\r\n\r\n## Placeholders\r\n\r\n- bobhenl reduced memory footprint of Plan Placeholders\r\n\r\n## DataExtensions\r\n\r\nThere are some new additions to DataExtension API.\r\n\r\n### DataExtensions Graph API\r\n\r\n![Screenshot of Vault balance over time graph](https://github.com/user-attachments/assets/155c3f2b-f843-42c1-b72b-deed986c9365)\r\n\r\n- New API allows DataExtensions to add their own Line graph data to the website. Documented here: https://github.com/plan-player-analytics/Plan/wiki/DataExtension-API-Graphs\r\n- Vault now graphs player balance over time\r\n- BuyCraft now graphs cumulative income over time.\r\n\r\n### DataExtensions Statistics API\r\n\r\n![Screenshot of Jobs statistics table](https://github.com/user-attachments/assets/e592cd37-20e4-47f8-80c7-091081f7ba43)\r\n\r\n- New API allows DataExtensions to add numeric data in table format more easily. The difference to existing API is that this allows calculating sums for these numbers across the whole server.\r\n- Jobs now lists job levels as Statistics\r\n- mcMMO now lists skill levels as Statistics\r\n\r\n### Other\r\n\r\n- Plugin data cards can now be collapsed for easier viewing\r\n![Screenshot of collapsed plugin cards](https://github.com/user-attachments/assets/299a1ffc-830e-4aaa-81e1-ac80a5156c33)\r\n- Different types of data inside plugin cards now layout slightly better.\r\n- Fixed error in extension page when rendering a number on a table\r\n- Fixed Booleans with 'hidden' flag appearing on the Query page\r\n\r\n## Locale\r\n\r\n- Tokas updated CN and ZH_TW locales\r\n- AuroraLS3 updated FI locale\r\n- Translated missing locale keys in other locales using AI (~5000 missing translations total).\r\n\r\n## Technical \r\n\r\n- Plan frontend code is now formatted with Prettier\r\n- Almost10 helped progress Javascript to Typescript conversion.",
@@ -462,13 +462,6 @@
           "sha256": "bae8ce7aa945dc1e0e4318032a2d61e1635fa011c8d3b9b64da1b6beb69d48a9",
           "size": 18674009,
           "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.9.3867/Plan-5.9-build-3867.jar"
-        },
-        {
-          "filename": "PlanFabric-5.9-build-3867.jar",
-          "primary": true,
-          "sha256": "e353912607c2eb996c80c182799cf4b4bf94e4ac458f763fd4c8b57d2a61a337",
-          "size": 18246438,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.9.3867/PlanFabric-5.9-build-3867.jar"
         }
       ],
       "name": "5.9 build 3867",
@@ -486,13 +479,6 @@
           "sha256": "ccd7501b65f3f714fa0a4f5c80b323d00f9cee8f683d230eef0bdfcb6fab1d59",
           "size": 18599247,
           "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.9.3786/Plan-5.9-dev-build-3786.jar"
-        },
-        {
-          "filename": "PlanFabric-5.9-dev-build-3786.jar",
-          "primary": true,
-          "sha256": "65c738bf3419d6aa8c896c732662136362193e821a3ef42e6101a50fefb5895f",
-          "size": 18176758,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.9.3786/PlanFabric-5.9-dev-build-3786.jar"
         }
       ],
       "name": "5.9 DEV build 3786",
@@ -510,13 +496,6 @@
           "sha256": "75cc7109e146b289320674fb56da395374d979ea7badddb09830231c7d37603a",
           "size": 18492202,
           "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.9.3705/Plan-5.9-build-3705.jar"
-        },
-        {
-          "filename": "PlanFabric-5.9-build-3705.jar",
-          "primary": true,
-          "sha256": "1cac0e6f200359274b9ab5bfe1ecc8ed35837a6067b5fd95bb1feed1c77f45f4",
-          "size": 18068801,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.9.3705/PlanFabric-5.9-build-3705.jar"
         }
       ],
       "name": "5.9 DEV build 3705",
@@ -534,13 +513,6 @@
           "sha256": "0804b0053205f807c85cd3c4f59f07a54afb81c6ff563dd24915e3a955612c8c",
           "size": 18294836,
           "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.8.3638/Plan-5.8-build-3638.jar"
-        },
-        {
-          "filename": "PlanFabric-5.8-build-3638.jar",
-          "primary": true,
-          "sha256": "da8556aa7b074b7c902c7a5d81000396402d05a614f359d8c3169ce7051a87d6",
-          "size": 17874061,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.8.3638/PlanFabric-5.8-build-3638.jar"
         }
       ],
       "name": "5.8 build 3638",
@@ -558,13 +530,6 @@
           "sha256": "f61cb806910dd7d2aceb2a37d53eb5ec4c6045f8a7531206fe731ec0ef9a105c",
           "size": 18278250,
           "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.8.3605/Plan-5.8-build-3605.jar"
-        },
-        {
-          "filename": "PlanFabric-5.8-build-3605.jar",
-          "primary": true,
-          "sha256": "12979b0bb6055d2a35917e6c1895ad413342a2b00b9f8fc5a6675d8599098642",
-          "size": 17857805,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.8.3605/PlanFabric-5.8-build-3605.jar"
         }
       ],
       "name": "5.8 build 3605",
@@ -582,13 +547,6 @@
           "sha256": "70eec6f34a1b7092559a0634b7f4f107d43b047594c6957c022b001687302182",
           "size": 18272156,
           "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.8.3579/Plan-5.8-build-3579.jar"
-        },
-        {
-          "filename": "PlanFabric-5.8-build-3579.jar",
-          "primary": true,
-          "sha256": "e2935a900bf423f308679cdb71ecf441b29c96b4baa1a6d0762fb2da7aa553c8",
-          "size": 17851690,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.8.3579/PlanFabric-5.8-build-3579.jar"
         }
       ],
       "name": "5.8 build 3579",
@@ -606,13 +564,6 @@
           "sha256": "0600ca790b36322a1e3427f615ef3c4e89fd6ea2d2915c93f125071a9eefe7db",
           "size": 18272003,
           "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.8.3577/Plan-5.8-build-3577.jar"
-        },
-        {
-          "filename": "PlanFabric-5.8-build-3577.jar",
-          "primary": true,
-          "sha256": "6e774b11c977da765e03bb2a4313f1ab5a6e4b79128834e2cf4c1a0da160db60",
-          "size": 17851542,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.8.3577/PlanFabric-5.8-build-3577.jar"
         }
       ],
       "name": "5.8 build 3577",
@@ -630,13 +581,6 @@
           "sha256": "1b670d2cd0c6a38cf1fa633c119f968240772444b7833edb8f1a0caa16c57927",
           "size": 18253398,
           "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3558/Plan-5.7-dev-build-3558.jar"
-        },
-        {
-          "filename": "PlanFabric-5.7-dev-build-3558.jar",
-          "primary": true,
-          "sha256": "8f2ee30a307a6c2f09ec531cc58e6082efdf1621b689732aa49ca7ab1447633f",
-          "size": 17833277,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3558/PlanFabric-5.7-dev-build-3558.jar"
         }
       ],
       "name": "5.7 DEV build 3558",
@@ -654,13 +598,6 @@
           "sha256": "8ee27bfed0e08f9c04e5bb536b1415801f8ec5b4c1507643e7677e3c0bae3610",
           "size": 18155402,
           "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3506/Plan-5.7-dev-build-3506.jar"
-        },
-        {
-          "filename": "PlanFabric-5.7-dev-build-3506.jar",
-          "primary": true,
-          "sha256": "76d873eb191f6fe794abefbf7ae73a6536c14fb1d255826704f473bdc915245c",
-          "size": 17735792,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3506/PlanFabric-5.7-dev-build-3506.jar"
         }
       ],
       "name": "5.7 DEV build 3506",
@@ -678,13 +615,6 @@
           "sha256": "4493d365c581901f621553eec8430392e668cc1970cd64710a9105a7914860fa",
           "size": 18028470,
           "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3341/Plan-5.7-build-3341.jar"
-        },
-        {
-          "filename": "PlanFabric-5.7-build-3341.jar",
-          "primary": true,
-          "sha256": "070f2ff6f81c08eef25e67932fee7c5d683160e4a6c983d6c180a1af83a9690b",
-          "size": 17595858,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3341/PlanFabric-5.7-build-3341.jar"
         }
       ],
       "name": "5.7 DEV build 3341",
@@ -702,13 +632,6 @@
           "sha256": "483dba79990881fb7b6389706af107ec185ee2abfcd3d7f9b7457770681afcc1",
           "size": 17710640,
           "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3306/Plan-5.7-build-3306.jar"
-        },
-        {
-          "filename": "PlanFabric-5.7-build-3306.jar",
-          "primary": true,
-          "sha256": "8deb16ab51ba5feeb09f8d23d8b7bdceeedf93722d9fc86c9ed1747d36f43460",
-          "size": 17654727,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3306/PlanFabric-5.7-build-3306.jar"
         }
       ],
       "name": "5.7 build 3306",
@@ -726,13 +649,6 @@
           "sha256": "7535054681ea597d5ab4055a01edb7135009364495c8583cce017fba76413fd1",
           "size": 17710394,
           "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3298/Plan-5.7-dev-build-3298.jar"
-        },
-        {
-          "filename": "PlanFabric-5.7-dev-build-3298.jar",
-          "primary": true,
-          "sha256": "52613b233aba43cc847e766295ca2b6ce500ac408a2b692443347574edf76e1d",
-          "size": 17654479,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3298/PlanFabric-5.7-dev-build-3298.jar"
         }
       ],
       "name": "5.7 DEV build 3298",
@@ -750,13 +666,6 @@
           "sha256": "8cc2ff849049ad28e0753b6464b0208e37478a0ae5e985767c5e1fb7564d080f",
           "size": 17710464,
           "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3295/Plan-5.7-dev-build-3295.jar"
-        },
-        {
-          "filename": "PlanFabric-5.7-dev-build-3295.jar",
-          "primary": true,
-          "sha256": "19e950a07d8d871618893eddabba6036502110ab1cefb07acd02454df39b2e4f",
-          "size": 17654549,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3295/PlanFabric-5.7-dev-build-3295.jar"
         }
       ],
       "name": "5.7 DEV build 3295",
@@ -774,13 +683,6 @@
           "sha256": "8cc2ff849049ad28e0753b6464b0208e37478a0ae5e985767c5e1fb7564d080f",
           "size": 17710464,
           "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3294/Plan-5.7-dev-build-3294.jar"
-        },
-        {
-          "filename": "PlanFabric-5.7-dev-build-3294.jar",
-          "primary": true,
-          "sha256": "19e950a07d8d871618893eddabba6036502110ab1cefb07acd02454df39b2e4f",
-          "size": 17654549,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3294/PlanFabric-5.7-dev-build-3294.jar"
         }
       ],
       "name": "5.7 DEV build 3294",
@@ -798,13 +700,6 @@
           "sha256": "4bdec2a8d919536fa890693cb7d57deb3ebc5e6bfbc1e996a680c71c42844870",
           "size": 17710184,
           "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3288/Plan-5.7-build-3288.jar"
-        },
-        {
-          "filename": "PlanFabric-5.7-build-3288.jar",
-          "primary": true,
-          "sha256": "2547a1cdbaff487a21a04eb83226159762ba57160e23c3fadf7be35447083950",
-          "size": 17654270,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3288/PlanFabric-5.7-build-3288.jar"
         }
       ],
       "name": "5.7 build 3288",
@@ -822,13 +717,6 @@
           "sha256": "6745a1d25004d0071640835810dedb3e4a9feddb5c87b244afdb708783758d4f",
           "size": 17577523,
           "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3265/Plan-5.7-dev-build-3265.jar"
-        },
-        {
-          "filename": "PlanFabric-5.7-dev-build-3265.jar",
-          "primary": true,
-          "sha256": "3156def078d53b884ea8da76207c64de3ae903e8105976e0850c1eaba58fbeee",
-          "size": 17522601,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3265/PlanFabric-5.7-dev-build-3265.jar"
         }
       ],
       "name": "5.7 DEV build 3265",
@@ -846,13 +734,6 @@
           "sha256": "3e041f37bd1457147885bded38760ac929adf6a2845750871c6213b20131d056",
           "size": 17572915,
           "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3247/Plan-5.7-build-3247.jar"
-        },
-        {
-          "filename": "PlanFabric-5.7-build-3247.jar",
-          "primary": true,
-          "sha256": "3eda6b220794a6ac8e17c76baaacd07d5f614c6e903a7d7346595bc4c1063a59",
-          "size": 17518424,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3247/PlanFabric-5.7-build-3247.jar"
         }
       ],
       "name": "5.7 build 3247",
@@ -870,13 +751,6 @@
           "sha256": "f558e44810f1d5963a2557244a2fb5b78fb7e5fd420c9089834293e39fe8f8a2",
           "size": 17569225,
           "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3232/Plan-5.7-dev-build-3232.jar"
-        },
-        {
-          "filename": "PlanFabric-5.7-dev-build-3232.jar",
-          "primary": true,
-          "sha256": "404d05c08119eb55e3c4307aefcc12d2eadcd1cffa5a542b4357520a5ee1e752",
-          "size": 17514862,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3232/PlanFabric-5.7-dev-build-3232.jar"
         }
       ],
       "name": "5.7 DEV build 3232",
@@ -894,13 +768,6 @@
           "sha256": "c6db5dc29ab445cd6595c583e977fe4e3386f5b4b226e018bea69c71113587ff",
           "size": 17529242,
           "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3211/Plan-5.7-dev-build-3211.jar"
-        },
-        {
-          "filename": "PlanFabric-5.7-dev-build-3211.jar",
-          "primary": true,
-          "sha256": "9e7c6e6146003f54bc2d191b2515c050a2329da02db4da0b265743a7de7ada85",
-          "size": 17475365,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3211/PlanFabric-5.7-dev-build-3211.jar"
         }
       ],
       "name": "5.7 DEV build 3211",
@@ -918,13 +785,6 @@
           "sha256": "162be8022445adc34783c4705b1d859b09cf81c9e423b4a648b4d56ab5dea514",
           "size": 17490161,
           "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3189/Plan-5.7-dev-build-3189.jar"
-        },
-        {
-          "filename": "PlanFabric-5.7-dev-build-3189.jar",
-          "primary": true,
-          "sha256": "d1213963242bf554eb8528aca06a31da9a7a03795768cb914786d8bd0ce07721",
-          "size": 17437583,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3189/PlanFabric-5.7-dev-build-3189.jar"
         }
       ],
       "name": "5.7 DEV build 3189",
@@ -942,13 +802,6 @@
           "sha256": "67ccaa3bcaff477e99d2c8a56557b95153c20e982f52b3c0b178177278083b38",
           "size": 16923766,
           "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3123/Plan-5.7-dev-build-3123.jar"
-        },
-        {
-          "filename": "PlanFabric-5.7-dev-build-3123.jar",
-          "primary": true,
-          "sha256": "ca0ca2e7a19f4d18886a6ad1bf72cf334eabafceaafd710e976d462d00b2955c",
-          "size": 16866883,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.7.3123/PlanFabric-5.7-dev-build-3123.jar"
         }
       ],
       "name": "5.7 DEV build 3123",
@@ -965,12 +818,6 @@
           "primary": true,
           "size": 17346367,
           "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2965/Plan-5.6-build-2965.jar"
-        },
-        {
-          "filename": "PlanFabric-5.6-build-2965.jar",
-          "primary": true,
-          "size": 17301275,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2965/PlanFabric-5.6-build-2965.jar"
         }
       ],
       "name": "5.6 build 2965",
@@ -987,12 +834,6 @@
           "primary": true,
           "size": 17346388,
           "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2961/Plan-5.6-build-2961.jar"
-        },
-        {
-          "filename": "PlanFabric-5.6-build-2961.jar",
-          "primary": true,
-          "size": 17301295,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2961/PlanFabric-5.6-build-2961.jar"
         }
       ],
       "name": "5.6 build 2961",
@@ -1009,12 +850,6 @@
           "primary": true,
           "size": 17345444,
           "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2959/Plan-5.6-build-2959.jar"
-        },
-        {
-          "filename": "PlanFabric-5.6-build-2959.jar",
-          "primary": true,
-          "size": 17300348,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2959/PlanFabric-5.6-build-2959.jar"
         }
       ],
       "name": "5.6 build 2959",
@@ -1031,12 +866,6 @@
           "primary": true,
           "size": 17242021,
           "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2948/Plan-5.6-dev-build-2948.jar"
-        },
-        {
-          "filename": "PlanFabric-5.6-dev-build-2948.jar",
-          "primary": true,
-          "size": 17194496,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2948/PlanFabric-5.6-dev-build-2948.jar"
         }
       ],
       "name": "5.6 DEV build 2948",
@@ -1053,12 +882,6 @@
           "primary": true,
           "size": 17169886,
           "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2906/Plan-5.6-dev-build-2906.jar"
-        },
-        {
-          "filename": "PlanFabric-5.6-dev-build-2906.jar",
-          "primary": true,
-          "size": 17128301,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2906/PlanFabric-5.6-dev-build-2906.jar"
         }
       ],
       "name": "5.6 DEV build 2906",
@@ -1075,12 +898,6 @@
           "primary": true,
           "size": 17103119,
           "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2883/Plan-5.6-build-2883.jar"
-        },
-        {
-          "filename": "PlanFabric-5.6-build-2883.jar",
-          "primary": true,
-          "size": 17062614,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2883/PlanFabric-5.6-build-2883.jar"
         }
       ],
       "name": "5.6 build 2883",
@@ -1097,12 +914,6 @@
           "primary": true,
           "size": 16833769,
           "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2850/Plan-5.6-dev-build-2850.jar"
-        },
-        {
-          "filename": "PlanFabric-5.6-dev-build-2850.jar",
-          "primary": true,
-          "size": 16792999,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2850/PlanFabric-5.6-dev-build-2850.jar"
         }
       ],
       "name": "5.6 DEV build 2850",
@@ -1119,12 +930,6 @@
           "primary": true,
           "size": 16799843,
           "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2820/Plan-5.6-build-2820.jar"
-        },
-        {
-          "filename": "PlanFabric-5.6-build-2820.jar",
-          "primary": true,
-          "size": 16960019,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2820/PlanFabric-5.6-build-2820.jar"
         }
       ],
       "name": "5.6 build 2820",
@@ -1141,12 +946,6 @@
           "primary": true,
           "size": 16799591,
           "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2816/Plan-5.6-build-2816.jar"
-        },
-        {
-          "filename": "PlanFabric-5.6-build-2816.jar",
-          "primary": true,
-          "size": 16959759,
-          "url": "https://github.com/plan-player-analytics/Plan/releases/download/5.6.2816/PlanFabric-5.6-build-2816.jar"
         }
       ],
       "name": "5.6 build 2816",

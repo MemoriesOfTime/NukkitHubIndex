@@ -58,13 +58,6 @@
           "sha256": "4da26b7a617177e83ede376d488fb3433fd2baf54b134f9ef7551c3385aa90fb",
           "size": 7955051,
           "url": "https://github.com/lukeeey/DiscordRelay/releases/download/1.0.5/discordrelay-bukkit-1.0.5.jar"
-        },
-        {
-          "filename": "discordrelay-nukkit-1.0.5.jar",
-          "primary": true,
-          "sha256": "6968319277badc03162e48d1f5112bb89e0a3e88efdd5e57454354e71a91e97a",
-          "size": 17491826,
-          "url": "https://github.com/lukeeey/DiscordRelay/releases/download/1.0.5/discordrelay-nukkit-1.0.5.jar"
         }
       ],
       "name": "DiscordRelay 1.0.5",
@@ -97,12 +90,6 @@
           "primary": true,
           "size": 3996198,
           "url": "https://github.com/lukeeey/DiscordRelay/releases/download/1.0.3/DiscordRelay-Bukkit-1.0.3.jar"
-        },
-        {
-          "filename": "DiscordRelay-Nukkit-1.0.3.jar",
-          "primary": true,
-          "size": 8447580,
-          "url": "https://github.com/lukeeey/DiscordRelay/releases/download/1.0.3/DiscordRelay-Nukkit-1.0.3.jar"
         }
       ],
       "name": "DiscordRelay v1.0.3",
@@ -135,12 +122,6 @@
           "primary": true,
           "size": 3991511,
           "url": "https://github.com/lukeeey/DiscordRelay/releases/download/1.0.1/DiscordRelay-Bukkit-1.0.1.jar"
-        },
-        {
-          "filename": "DiscordRelay-Nukkit-1.0.1.jar",
-          "primary": true,
-          "size": 8447078,
-          "url": "https://github.com/lukeeey/DiscordRelay/releases/download/1.0.1/DiscordRelay-Nukkit-1.0.1.jar"
         }
       ],
       "name": "DiscordRelay v1.0.1",
@@ -157,12 +138,6 @@
           "primary": true,
           "size": 8443347,
           "url": "https://github.com/lukeeey/DiscordRelay/releases/download/1.0.0/DiscordRelay-Bukkit-1.0.0.jar"
-        },
-        {
-          "filename": "DiscordRelay-Nukkit-1.0.0.jar",
-          "primary": true,
-          "size": 8443252,
-          "url": "https://github.com/lukeeey/DiscordRelay/releases/download/1.0.0/DiscordRelay-Nukkit-1.0.0.jar"
         }
       ],
       "name": "DiscordRelay v1.0.0",

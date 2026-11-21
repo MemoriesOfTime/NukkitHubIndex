@@ -47,6 +47,22 @@
       "downloads": 0,
       "files": [
         {
+          "filename": "EasyMySQL_v3.0.7.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/EasyMySQL/job/master/44/artifact/target/EasyMySQL_v3.0.7.jar"
+        }
+      ],
+      "name": "v3.0.7",
+      "prerelease": true,
+      "published_at": 1696335340,
+      "version": "ci-44"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
           "filename": "EasyMySQL_v3.0.6.jar",
           "primary": true,
           "size": 8884601,
@@ -89,22 +105,6 @@
       "prerelease": false,
       "published_at": 1625452867,
       "version": "v2.1.0"
-    },
-    {
-      "changelog": "",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "EasyMySQL_v3.0.7.jar",
-          "primary": true,
-          "size": 0,
-          "url": "https://motci.cn/job/EasyMySQL/job/master/44/artifact/target/EasyMySQL_v3.0.7.jar"
-        }
-      ],
-      "name": "v3.0.7",
-      "prerelease": true,
-      "published_at": 1696335340,
-      "version": "ci-44"
     }
   ]
 }

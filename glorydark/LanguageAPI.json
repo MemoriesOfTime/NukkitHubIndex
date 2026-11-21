@@ -49,7 +49,7 @@
         },
         {
           "filename": "original-LanguageAPI-1.2.4.jar",
-          "primary": true,
+          "primary": false,
           "size": 0,
           "url": "https://motci.cn/job/LanguageAPI/20/artifact/target/original-LanguageAPI-1.2.4.jar"
         }

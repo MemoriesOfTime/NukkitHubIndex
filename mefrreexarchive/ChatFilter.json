@@ -65,16 +65,16 @@
       "downloads": 0,
       "files": [
         {
-          "filename": "ChatFilter-RU.jar",
-          "primary": true,
-          "size": 5648,
-          "url": "https://github.com/mefrreexarchive/ChatFilter/releases/download/2.2/ChatFilter-RU.jar"
-        },
-        {
           "filename": "ChatFilter.jar",
           "primary": true,
           "size": 5420,
           "url": "https://github.com/mefrreexarchive/ChatFilter/releases/download/2.2/ChatFilter.jar"
+        },
+        {
+          "filename": "ChatFilter-RU.jar",
+          "primary": false,
+          "size": 5648,
+          "url": "https://github.com/mefrreexarchive/ChatFilter/releases/download/2.2/ChatFilter-RU.jar"
         }
       ],
       "name": "v2.2",
@@ -87,16 +87,16 @@
       "downloads": 0,
       "files": [
         {
-          "filename": "ChatFilter-RU.jar",
-          "primary": true,
-          "size": 5473,
-          "url": "https://github.com/mefrreexarchive/ChatFilter/releases/download/2.1/ChatFilter-RU.jar"
-        },
-        {
           "filename": "ChatFilter.jar",
           "primary": true,
           "size": 5342,
           "url": "https://github.com/mefrreexarchive/ChatFilter/releases/download/2.1/ChatFilter.jar"
+        },
+        {
+          "filename": "ChatFilter-RU.jar",
+          "primary": false,
+          "size": 5473,
+          "url": "https://github.com/mefrreexarchive/ChatFilter/releases/download/2.1/ChatFilter-RU.jar"
         }
       ],
       "name": "v2.1",

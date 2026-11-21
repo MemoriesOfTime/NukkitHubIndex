@@ -46,13 +46,6 @@
       "downloads": 0,
       "files": [
         {
-          "filename": "discordrelay-bukkit-1.0.5.jar",
-          "primary": true,
-          "sha256": "4da26b7a617177e83ede376d488fb3433fd2baf54b134f9ef7551c3385aa90fb",
-          "size": 7955051,
-          "url": "https://github.com/lukeeey/DiscordRelay/releases/download/1.0.5/discordrelay-bukkit-1.0.5.jar"
-        },
-        {
           "filename": "discordrelay-nukkit-1.0.5.jar",
           "primary": true,
           "sha256": "6968319277badc03162e48d1f5112bb89e0a3e88efdd5e57454354e71a91e97a",
@@ -86,12 +79,6 @@
       "downloads": 0,
       "files": [
         {
-          "filename": "DiscordRelay-Bukkit-1.0.3.jar",
-          "primary": true,
-          "size": 3996198,
-          "url": "https://github.com/lukeeey/DiscordRelay/releases/download/1.0.3/DiscordRelay-Bukkit-1.0.3.jar"
-        },
-        {
           "filename": "DiscordRelay-Nukkit-1.0.3.jar",
           "primary": true,
           "size": 8447580,
@@ -104,31 +91,9 @@
       "version": "1.0.3"
     },
     {
-      "changelog": "This release is only available for Bukkit and has only one additional feature: **PlaceholderAPI support**!",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "DiscordRelay-Bukkit-1.0.2.jar",
-          "primary": true,
-          "size": 3992145,
-          "url": "https://github.com/lukeeey/DiscordRelay/releases/download/1.0.2/DiscordRelay-Bukkit-1.0.2.jar"
-        }
-      ],
-      "name": "DiscordRelay v1.0.2 (Bukkit)",
-      "prerelease": false,
-      "published_at": 1616528632,
-      "version": "1.0.2"
-    },
-    {
       "changelog": "Small release with a few things:\r\n\r\n* Fixed in-game /discord command not displaying anything when executed\r\n* Added `playerinfo` Discord command for viewing some basic info on a player\r\n* Added `serverinfo` Discord command for viewing some basic info about the server\r\n\r\nThere will be more customization features in future updates.",
       "downloads": 0,
       "files": [
-        {
-          "filename": "DiscordRelay-Bukkit-1.0.1.jar",
-          "primary": true,
-          "size": 3991511,
-          "url": "https://github.com/lukeeey/DiscordRelay/releases/download/1.0.1/DiscordRelay-Bukkit-1.0.1.jar"
-        },
         {
           "filename": "DiscordRelay-Nukkit-1.0.1.jar",
           "primary": true,
@@ -145,12 +110,6 @@
       "changelog": "This is the initial release of DiscordRelay, for both Nukkit and Bukkit.\r\n\r\n## Features\r\n* Two-way chat between Discord and Minecraft\r\n* Display messages in Discord (optionally in embeds) for common events like player joins or deaths\r\n* Role ping protection from Minecraft\r\n* Simple Developer API for creating new Discord commands\r\n* Built-in `!playerlist` Discord command for seeing who's online\r\n* Built-in `/discord` in-game command so players can see info about your Discord server  \r\n* Automatic updating of the relay channel topic in Discord!  \r\n...and more!",
       "downloads": 0,
       "files": [
-        {
-          "filename": "DiscordRelay-Bukkit-1.0.0.jar",
-          "primary": true,
-          "size": 8443347,
-          "url": "https://github.com/lukeeey/DiscordRelay/releases/download/1.0.0/DiscordRelay-Bukkit-1.0.0.jar"
-        },
         {
           "filename": "DiscordRelay-Nukkit-1.0.0.jar",
           "primary": true,

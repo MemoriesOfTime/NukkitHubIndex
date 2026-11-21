@@ -72,7 +72,7 @@
         },
         {
           "filename": "EssentialsNK-Reloaded-2.0.jar",
-          "primary": true,
+          "primary": false,
           "size": 97418,
           "url": "https://github.com/Tr0j4n9/EssentialsNK/releases/download/v2.0/EssentialsNK-Reloaded-2.0.jar"
         }

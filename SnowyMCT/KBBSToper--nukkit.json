@@ -65,13 +65,6 @@
       "downloads": 0,
       "files": [
         {
-          "filename": "KBBSToper-Bukkit-3.7.4.jar",
-          "primary": true,
-          "sha256": "65d756fb8609d81298d0b910b522e869ed13c809699480ad56443ad0dd70f9f9",
-          "size": 172725,
-          "url": "https://github.com/SnowyMCT/KBBSToper/releases/download/3.7.4-Nukkit/KBBSToper-Bukkit-3.7.4.jar"
-        },
-        {
           "filename": "KBBSToper-Nukkit-3.7.4.jar",
           "primary": true,
           "sha256": "2fa57d285f1106611895523d3a47b86e46a2e9f4261b6fcb9b06e525312f75d0",

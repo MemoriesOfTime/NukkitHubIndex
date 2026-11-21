@@ -51,7 +51,7 @@
         },
         {
           "filename": "BackUP-1.0.0-SNAPSHOT.jar",
-          "primary": true,
+          "primary": false,
           "size": 9188,
           "url": "https://github.com/hteppl/BackUP/releases/download/1.0.0-SNAPSHOT/BackUP-1.0.0-SNAPSHOT.jar"
         }

@@ -43,18 +43,18 @@
       "downloads": 0,
       "files": [
         {
-          "filename": "PyNK-PowerNukkitX.jar",
-          "primary": true,
-          "sha256": "1795bf7b712ae899d5795476ad7c02698996d8497be451befe637322f10cd13b",
-          "size": 47965629,
-          "url": "https://github.com/todiumm/PyNK/releases/download/2.1.0/PyNK-PowerNukkitX.jar"
-        },
-        {
           "filename": "PyNK.jar",
           "primary": true,
           "sha256": "73211754e56dab361be45f761b3235332c5abce50e0a52e8ff0fbc2cdea8bf00",
           "size": 47963316,
           "url": "https://github.com/todiumm/PyNK/releases/download/2.1.0/PyNK.jar"
+        },
+        {
+          "filename": "PyNK-PowerNukkitX.jar",
+          "primary": false,
+          "sha256": "1795bf7b712ae899d5795476ad7c02698996d8497be451befe637322f10cd13b",
+          "size": 47965629,
+          "url": "https://github.com/todiumm/PyNK/releases/download/2.1.0/PyNK-PowerNukkitX.jar"
         }
       ],
       "name": "Update v2.1.0 - PyNK",

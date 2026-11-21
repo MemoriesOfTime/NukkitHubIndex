@@ -33,7 +33,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1795142100,
+  "updated_at": 1795234403,
   "versions": [
     {
       "changelog": "Actualización de Libs\r\nCambio de puerto por default a 19132",
@@ -48,7 +48,7 @@
         },
         {
           "filename": "CraftsMine-1.0.0-SNAPSHOT.jar",
-          "primary": true,
+          "primary": false,
           "sha256": "89ed97672afe9e0540eea9bd735a80a7ad277b4f2ce309e33d34b0968e66726c",
           "size": 12626866,
           "url": "https://github.com/Creadores-Program/Craftsmine/releases/download/0.3.1/CraftsMine-1.0.0-SNAPSHOT.jar"

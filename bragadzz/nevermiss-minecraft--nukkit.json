@@ -43,53 +43,11 @@
       "downloads": 0,
       "files": [
         {
-          "filename": "NeverMiss-Bukkit-1.3.1.jar",
-          "primary": true,
-          "sha256": "eabd34afcc3292603e3ac7403b369d7ce16cdbd753d10477b5532f980b9e834a",
-          "size": 386525,
-          "url": "https://github.com/bragadzz/nevermiss-minecraft/releases/download/v1.3.1/NeverMiss-Bukkit-1.3.1.jar"
-        },
-        {
-          "filename": "NeverMiss-Bungee-1.3.1.jar",
-          "primary": true,
-          "sha256": "ed10e1b527e8edadeceeab36b786bcfa6716bf1adf9ae8b1e410d10dd741c358",
-          "size": 357645,
-          "url": "https://github.com/bragadzz/nevermiss-minecraft/releases/download/v1.3.1/NeverMiss-Bungee-1.3.1.jar"
-        },
-        {
-          "filename": "NeverMiss-Fabric-1.16.5-26.x-1.3.1.jar",
-          "primary": true,
-          "sha256": "711f4d77a6aad77e8a047e221cd2b873abca5df71e252a94769f80b161400cfc",
-          "size": 368053,
-          "url": "https://github.com/bragadzz/nevermiss-minecraft/releases/download/v1.3.1/NeverMiss-Fabric-1.16.5-26.x-1.3.1.jar"
-        },
-        {
-          "filename": "NeverMiss-Forge-1.12.2-1.3.1.jar",
-          "primary": true,
-          "sha256": "7973e199fac689e889c1968bddd58d816ec88062516f58f4c1d3257d3cf23d4a",
-          "size": 361192,
-          "url": "https://github.com/bragadzz/nevermiss-minecraft/releases/download/v1.3.1/NeverMiss-Forge-1.12.2-1.3.1.jar"
-        },
-        {
-          "filename": "NeverMiss-Forge-1.16.5-1.20.1-NeoForge-1.20.4-26.x-1.3.1.jar",
-          "primary": true,
-          "sha256": "c423fa5e6a1b3d80db7b0eeaf73166474594e6fb43c63456994ad7c565d709fc",
-          "size": 367132,
-          "url": "https://github.com/bragadzz/nevermiss-minecraft/releases/download/v1.3.1/NeverMiss-Forge-1.16.5-1.20.1-NeoForge-1.20.4-26.x-1.3.1.jar"
-        },
-        {
           "filename": "NeverMiss-PowerNukkitX-3.x-1.3.1.jar",
           "primary": true,
           "sha256": "52814f8da0fd2f856e113365fabc0ce96d320264e7f29ea607a4ce1cee370c89",
           "size": 357402,
           "url": "https://github.com/bragadzz/nevermiss-minecraft/releases/download/v1.3.1/NeverMiss-PowerNukkitX-3.x-1.3.1.jar"
-        },
-        {
-          "filename": "NeverMiss-Velocity-1.3.1.jar",
-          "primary": true,
-          "sha256": "366fc6e9e12877ef0507c62fcd99322f00645b8a0070416cb2f7fa778e021499",
-          "size": 358917,
-          "url": "https://github.com/bragadzz/nevermiss-minecraft/releases/download/v1.3.1/NeverMiss-Velocity-1.3.1.jar"
         }
       ],
       "name": "NeverMiss 1.3.1",
@@ -102,90 +60,17 @@
       "downloads": 0,
       "files": [
         {
-          "filename": "NeverMiss-Bukkit-1.3.0.jar",
-          "primary": true,
-          "sha256": "8bd543b8fdb9bdbadf37c8db0441193f94c02efd56de12a51d233ed9e8f88145",
-          "size": 382303,
-          "url": "https://github.com/bragadzz/nevermiss-minecraft/releases/download/v1.3.0/NeverMiss-Bukkit-1.3.0.jar"
-        },
-        {
-          "filename": "NeverMiss-Bungee-1.3.0.jar",
-          "primary": true,
-          "sha256": "89db8b60964fa9bf740f4e84092e3eb7c55b77b93ed60c7d92cc1e554af375a1",
-          "size": 356664,
-          "url": "https://github.com/bragadzz/nevermiss-minecraft/releases/download/v1.3.0/NeverMiss-Bungee-1.3.0.jar"
-        },
-        {
-          "filename": "NeverMiss-Fabric-1.16.5-26.x-1.3.0.jar",
-          "primary": true,
-          "sha256": "c7347d200a928e6c739dd9b39e14428b7435dcbbc7117408910ff59170c68a57",
-          "size": 367073,
-          "url": "https://github.com/bragadzz/nevermiss-minecraft/releases/download/v1.3.0/NeverMiss-Fabric-1.16.5-26.x-1.3.0.jar"
-        },
-        {
-          "filename": "NeverMiss-Forge-1.12.2-1.3.0.jar",
-          "primary": true,
-          "sha256": "be59c66164e276f396633c1da9f47c0f336f66b076206ebe9a8074c80035c758",
-          "size": 360211,
-          "url": "https://github.com/bragadzz/nevermiss-minecraft/releases/download/v1.3.0/NeverMiss-Forge-1.12.2-1.3.0.jar"
-        },
-        {
-          "filename": "NeverMiss-Forge-1.16.5-1.20.1-NeoForge-1.20.4-26.x-1.3.0.jar",
-          "primary": true,
-          "sha256": "1bda13d542d5f2ce5d0cc411efb7b2c6704bc4037061f1d424fc7670e547d6b9",
-          "size": 366152,
-          "url": "https://github.com/bragadzz/nevermiss-minecraft/releases/download/v1.3.0/NeverMiss-Forge-1.16.5-1.20.1-NeoForge-1.20.4-26.x-1.3.0.jar"
-        },
-        {
           "filename": "NeverMiss-PowerNukkitX-3.x-1.3.0.jar",
           "primary": true,
           "sha256": "53a7bf6717f631a0ac4b07e2a21e632a17e3cfb7d358ff0fe999d2650123c67c",
           "size": 356420,
           "url": "https://github.com/bragadzz/nevermiss-minecraft/releases/download/v1.3.0/NeverMiss-PowerNukkitX-3.x-1.3.0.jar"
-        },
-        {
-          "filename": "NeverMiss-Velocity-1.3.0.jar",
-          "primary": true,
-          "sha256": "b8c547901b6414599f4362395b812ce4b93122e29e73222a3d89aced74187523",
-          "size": 357936,
-          "url": "https://github.com/bragadzz/nevermiss-minecraft/releases/download/v1.3.0/NeverMiss-Velocity-1.3.0.jar"
         }
       ],
       "name": "NeverMiss 1.3.0",
       "prerelease": false,
       "published_at": 1793731728,
       "version": "v1.3.0"
-    },
-    {
-      "changelog": "- Paper, Spigot, Purpur e forks do 1.7.10 ao mais novo, e o Folia, num jar só: NeverMiss-Bukkit-1.2.0.jar.\n- Proxy: NeverMiss-Velocity-1.2.0.jar e NeverMiss-Bungee-1.2.0.jar (BungeeCord e Waterfall).\n- PocketMine-MP 5 (Bedrock): NeverMiss-PocketMine-1.2.0.phar.\n- Jogadores Bedrock pelo Geyser + Floodgate.\n- Kit da NeverMiss (Paper, Spigot e Purpur): os itens entram no inventário, com a armadura já vestida, e o /kit libera de novo no intervalo escolhido. O /kit ainda não vale para jogador Bedrock.\nQuem tem o NeverMiss-1.0.0.jar: troque pelo NeverMiss-Bukkit-1.2.0.jar. A pasta plugins/NeverMiss continua a mesma.\nConfira o SHA-256 de cada arquivo no SHA256SUMS.txt antes de instalar. Licença MIT.",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "NeverMiss-Bukkit-1.2.0.jar",
-          "primary": true,
-          "sha256": "8bfa7e83d3b31fd413be32d963b63331eb6a3ee0db48937d96a8644e3047e7a6",
-          "size": 351223,
-          "url": "https://github.com/bragadzz/nevermiss-minecraft/releases/download/v1.2.0/NeverMiss-Bukkit-1.2.0.jar"
-        },
-        {
-          "filename": "NeverMiss-Bungee-1.2.0.jar",
-          "primary": true,
-          "sha256": "17caddf067c4cace4d7dca14177130b070a3e0c1e6a5fbf50bd0341ebe8d35d6",
-          "size": 345675,
-          "url": "https://github.com/bragadzz/nevermiss-minecraft/releases/download/v1.2.0/NeverMiss-Bungee-1.2.0.jar"
-        },
-        {
-          "filename": "NeverMiss-Velocity-1.2.0.jar",
-          "primary": true,
-          "sha256": "37078777009d805c68241ecf4e8c0e660b01e64efe07e02d122b293dc5d923e2",
-          "size": 346946,
-          "url": "https://github.com/bragadzz/nevermiss-minecraft/releases/download/v1.2.0/NeverMiss-Velocity-1.2.0.jar"
-        }
-      ],
-      "name": "NeverMiss 1.2.0",
-      "prerelease": false,
-      "published_at": 1793364208,
-      "version": "v1.2.0"
     },
     {
       "changelog": "Primeira versão.\n\n- Spigot e Paper 1.8.8 em diante, num jar só (Java 8 ou mais novo).\n- Servidor original e pirata.\n- Entrega os comandos que você configura no painel da NeverMiss, com prazo e reembolso.\n\nSHA-256 do NeverMiss-1.0.0.jar:\n`bf63ff78effe32ee690b1fcc25487afe4d2d2c8fcd9965f28676063221547661`",

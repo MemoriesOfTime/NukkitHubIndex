@@ -69,22 +69,6 @@
   "updated_at": 1713834001,
   "versions": [
     {
-      "changelog": "开源到GitHub",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "Report_v1.0.6.jar",
-          "primary": true,
-          "size": 42820,
-          "url": "https://github.com/SoBadFish/Report/releases/download/v1.0.6/Report_v1.0.6.jar"
-        }
-      ],
-      "name": "2023/11/15更新",
-      "prerelease": false,
-      "published_at": 1700017840,
-      "version": "v1.0.6"
-    },
-    {
       "changelog": "",
       "downloads": 0,
       "files": [
@@ -99,6 +83,22 @@
       "prerelease": true,
       "published_at": 1713834200,
       "version": "ci-6"
+    },
+    {
+      "changelog": "开源到GitHub",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "Report_v1.0.6.jar",
+          "primary": true,
+          "size": 42820,
+          "url": "https://github.com/SoBadFish/Report/releases/download/v1.0.6/Report_v1.0.6.jar"
+        }
+      ],
+      "name": "2023/11/15更新",
+      "prerelease": false,
+      "published_at": 1700017840,
+      "version": "v1.0.6"
     }
   ]
 }

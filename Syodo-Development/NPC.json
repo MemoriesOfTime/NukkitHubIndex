@@ -55,23 +55,6 @@
       "version": "v1.0.2"
     },
     {
-      "changelog": "Fixed for latest PNX",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "NPC-1.0.0.jar",
-          "primary": true,
-          "sha256": "f8feebe809e86ec7633d6df7948b2230f79c83ce39b206f4f3e7595fafb13f23",
-          "size": 20901,
-          "url": "https://github.com/Syodo-Development/NPC/releases/download/1.0.0_2/NPC-1.0.0.jar"
-        }
-      ],
-      "name": "1.0.0_2",
-      "prerelease": false,
-      "published_at": 1759753269,
-      "version": "1.0.0_2"
-    },
-    {
       "changelog": "API 3.0.0\r\n\r\n**Full Changelog**: https://github.com/Syodo-Development/NPC/compare/1.0.0...1.0.1",
       "downloads": 0,
       "files": [
@@ -87,6 +70,23 @@
       "prerelease": false,
       "published_at": 1780153477,
       "version": "1.0.1"
+    },
+    {
+      "changelog": "Fixed for latest PNX",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "NPC-1.0.0.jar",
+          "primary": true,
+          "sha256": "f8feebe809e86ec7633d6df7948b2230f79c83ce39b206f4f3e7595fafb13f23",
+          "size": 20901,
+          "url": "https://github.com/Syodo-Development/NPC/releases/download/1.0.0_2/NPC-1.0.0.jar"
+        }
+      ],
+      "name": "1.0.0_2",
+      "prerelease": false,
+      "published_at": 1759753269,
+      "version": "1.0.0_2"
     },
     {
       "changelog": "Removed jackson library",

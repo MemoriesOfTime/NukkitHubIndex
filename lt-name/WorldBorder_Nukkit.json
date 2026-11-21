@@ -44,6 +44,22 @@
   "updated_at": 1738548377,
   "versions": [
     {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "WorldBorder-1.2.3-SNAPSHOT.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/WorldBorder/19/artifact/target/WorldBorder-1.2.3-SNAPSHOT.jar"
+        }
+      ],
+      "name": "1.2.3-SNAPSHOT",
+      "prerelease": true,
+      "published_at": 1658576353,
+      "version": "ci-19"
+    },
+    {
       "changelog": "更改插件名称\r\n修复文本实体重复生成问题\r\n添加 /worldborder delete 命令\r\n添加新的检测方式",
       "downloads": 0,
       "files": [
@@ -90,22 +106,6 @@
       "prerelease": false,
       "published_at": 1584948710,
       "version": "1.0.1"
-    },
-    {
-      "changelog": "",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "WorldBorder-1.2.3-SNAPSHOT.jar",
-          "primary": true,
-          "size": 0,
-          "url": "https://motci.cn/job/WorldBorder/19/artifact/target/WorldBorder-1.2.3-SNAPSHOT.jar"
-        }
-      ],
-      "name": "1.2.3-SNAPSHOT",
-      "prerelease": true,
-      "published_at": 1658576353,
-      "version": "ci-19"
     }
   ]
 }

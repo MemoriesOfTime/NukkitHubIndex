@@ -57,6 +57,22 @@
       "version": "v1.3.0"
     },
     {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "AutoUpData-1.3.0.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/AutoUpData/7/artifact/target/AutoUpData-1.3.0.jar"
+        }
+      ],
+      "name": "1.3.0",
+      "prerelease": true,
+      "published_at": 1701001837,
+      "version": "ci-7"
+    },
+    {
       "changelog": "增加 API接口\r\n详情请阅读\r\nhttps://github.com/SmallasWater/AutoUpData/blob/master/README.md\r\n优化插件启动",
       "downloads": 0,
       "files": [
@@ -407,22 +423,6 @@
       "prerelease": false,
       "published_at": 1571298027,
       "version": "v1.0.0"
-    },
-    {
-      "changelog": "",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "AutoUpData-1.3.0.jar",
-          "primary": true,
-          "size": 0,
-          "url": "https://motci.cn/job/AutoUpData/7/artifact/target/AutoUpData-1.3.0.jar"
-        }
-      ],
-      "name": "1.3.0",
-      "prerelease": true,
-      "published_at": 1701001837,
-      "version": "ci-7"
     }
   ]
 }

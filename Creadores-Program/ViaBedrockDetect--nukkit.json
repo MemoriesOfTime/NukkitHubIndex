@@ -60,14 +60,14 @@
         },
         {
           "filename": "ViaBedrockDetect-1.0.0-NK.jar",
-          "primary": true,
+          "primary": false,
           "sha256": "e4e08a2d3dc22a27b5dd882798fd6f67801d4161e3b1d291092ff4e671b4077e",
           "size": 3706,
           "url": "https://github.com/Creadores-Program/ViaBedrockDetect/releases/download/1.0.0/ViaBedrockDetect-1.0.0-NK.jar"
         },
         {
           "filename": "ViaBedrockDetect-1.0.0-VP.jar",
-          "primary": true,
+          "primary": false,
           "sha256": "300e061637fd476489acef797f1eeb2effa46be0413a01eba994e10dadcaafba",
           "size": 4657,
           "url": "https://github.com/Creadores-Program/ViaBedrockDetect/releases/download/1.0.0/ViaBedrockDetect-1.0.0-VP.jar"

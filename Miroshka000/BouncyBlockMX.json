@@ -42,13 +42,6 @@
       "downloads": 0,
       "files": [
         {
-          "filename": "bouncy-platform-allay-1.5.0.jar",
-          "primary": true,
-          "sha256": "e7106a0a969c6d64127253f4299194ebd1f3636d008d7b73739bdf669ec58b45",
-          "size": 474373,
-          "url": "https://github.com/Miroshka000/BouncyBlockMX/releases/download/v1.5.0/bouncy-platform-allay-1.5.0.jar"
-        },
-        {
           "filename": "bouncy-platform-nukkit-1.5.0.jar",
           "primary": true,
           "sha256": "7c345592b69701714af9f992278f7e4e951f46c24dafb51bc5c07adc108f9535",

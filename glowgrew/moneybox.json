@@ -40,12 +40,6 @@
       "downloads": 0,
       "files": [
         {
-          "filename": "Moneybox-Bukkit.jar",
-          "primary": true,
-          "size": 11393987,
-          "url": "https://github.com/glowgrew/moneybox/releases/download/v1.0.2/Moneybox-Bukkit.jar"
-        },
-        {
           "filename": "Moneybox-Nukkit.jar",
           "primary": true,
           "size": 10320308,

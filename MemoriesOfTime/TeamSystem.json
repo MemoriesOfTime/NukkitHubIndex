@@ -70,7 +70,7 @@
         },
         {
           "filename": "TeamSystem-1.0.0-SNAPSHOT.jar",
-          "primary": true,
+          "primary": false,
           "size": 0,
           "url": "https://motci.cn/job/TeamSystem/12/artifact/target/TeamSystem-1.0.0-SNAPSHOT.jar"
         }

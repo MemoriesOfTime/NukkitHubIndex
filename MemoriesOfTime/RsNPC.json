@@ -85,6 +85,188 @@
       "prerelease": true,
       "published_at": 1788669470,
       "version": "ci-242"
+    },
+    {
+      "changelog": "## Changes\r\n\r\n- imple: RsNPC Command Sender @Mcayear (#50)\r\n- fix russian language @Feisk73 (#48)\r\n- Added russian language @Feisk73 (#47)\r\n- fix: fishing hook continuously triggers the NPC\r\n- fix: 1.21.90 Skin display issue\r\n\r\n**Full Changelog**: https://github.com/MemoriesOfTime/RsNPC/compare/v2.5.0...v2.5.2\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "RsNPC-2.5.2-NKX.jar",
+          "primary": true,
+          "sha256": "e426a4f43eaba56b3bf90da0b5f4c4176045331edfb4e3d3fae1483670a3b9c3",
+          "size": 144968,
+          "url": "https://github.com/MemoriesOfTime/RsNPC/releases/download/v2.5.2/RsNPC-2.5.2-NKX.jar"
+        },
+        {
+          "filename": "RsNPC-2.5.2.jar",
+          "primary": false,
+          "sha256": "40c9b01c85418fd95b80b620bdea6f763c9ff2b13f7cc9e1d16181275f9644ae",
+          "size": 147822,
+          "url": "https://github.com/MemoriesOfTime/RsNPC/releases/download/v2.5.2/RsNPC-2.5.2.jar"
+        }
+      ],
+      "name": "v2.5.2",
+      "prerelease": false,
+      "published_at": 1762063603,
+      "version": "v2.5.2"
+    },
+    {
+      "changelog": "## Changes\r\n\r\n- feat: 添加点击对话框按钮播放声音功能 @lt-name (https://github.com/MemoriesOfTime/RsNPCX/commit/71f98e28dc70995ea283fbbcc8dc7a70cddc41be)\r\n- feat: GUI管理添加移动NPC到当前位置按钮 @lt-name (https://github.com/MemoriesOfTime/RsNPCX/commit/717961d504468653612aade4a35d130c7dea2d10)\r\n- feat: 添加打开对话框播放声音功能 @lt-name (https://github.com/MemoriesOfTime/RsNPCX/commit/9c24eb91b3536c4b3a90782d272bde625b8d45f5)\r\n- feat: NPC的坐标项添加 headYaw 参数 @Mcayear (#42)\r\n\r\n**Full Changelog**: https://github.com/MemoriesOfTime/RsNPC/compare/2.4.2...v2.5.0\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "RsNPC-2.5.0-NKX.jar",
+          "primary": true,
+          "size": 136360,
+          "url": "https://github.com/MemoriesOfTime/RsNPC/releases/download/v2.5.0/RsNPC-2.5.0-NKX.jar"
+        },
+        {
+          "filename": "RsNPC-2.5.0.jar",
+          "primary": false,
+          "size": 138716,
+          "url": "https://github.com/MemoriesOfTime/RsNPC/releases/download/v2.5.0/RsNPC-2.5.0.jar"
+        }
+      ],
+      "name": "v2.5.0",
+      "prerelease": false,
+      "published_at": 1738288853,
+      "version": "v2.5.0"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "RsNPC-2.4.2-PM1E.jar",
+          "primary": true,
+          "size": 130368,
+          "url": "https://github.com/MemoriesOfTime/RsNPC/releases/download/2.4.2/RsNPC-2.4.2-PM1E.jar"
+        },
+        {
+          "filename": "RsNPC-2.4.2-PNX.jar",
+          "primary": false,
+          "size": 131239,
+          "url": "https://github.com/MemoriesOfTime/RsNPC/releases/download/2.4.2/RsNPC-2.4.2-PNX.jar"
+        },
+        {
+          "filename": "RsNPC-2.4.2.jar",
+          "primary": false,
+          "size": 130017,
+          "url": "https://github.com/MemoriesOfTime/RsNPC/releases/download/2.4.2/RsNPC-2.4.2.jar"
+        }
+      ],
+      "name": "2.4.2",
+      "prerelease": false,
+      "published_at": 1703853782,
+      "version": "2.4.2"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "RsNPC-2.3.0-PM1E.jar",
+          "primary": true,
+          "size": 202308,
+          "url": "https://github.com/MemoriesOfTime/RsNPC/releases/download/2.3.0/RsNPC-2.3.0-PM1E.jar"
+        },
+        {
+          "filename": "RsNPC-2.3.0-PNX.jar",
+          "primary": false,
+          "size": 203461,
+          "url": "https://github.com/MemoriesOfTime/RsNPC/releases/download/2.3.0/RsNPC-2.3.0-PNX.jar"
+        },
+        {
+          "filename": "RsNPC-2.3.0.jar",
+          "primary": false,
+          "size": 202350,
+          "url": "https://github.com/MemoriesOfTime/RsNPC/releases/download/2.3.0/RsNPC-2.3.0.jar"
+        }
+      ],
+      "name": "2.3.0",
+      "prerelease": false,
+      "published_at": 1672198177,
+      "version": "2.3.0"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "RsNPCX-1.8.3.jar",
+          "primary": true,
+          "size": 158435,
+          "url": "https://github.com/MemoriesOfTime/RsNPC/releases/download/1.8.3/RsNPCX-1.8.3.jar"
+        }
+      ],
+      "name": "1.8.3",
+      "prerelease": false,
+      "published_at": 1631332393,
+      "version": "1.8.3"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "RsNPCX-1.8.0.jar",
+          "primary": true,
+          "size": 156429,
+          "url": "https://github.com/MemoriesOfTime/RsNPC/releases/download/1.8.0/RsNPCX-1.8.0.jar"
+        }
+      ],
+      "name": "1.8.0",
+      "prerelease": false,
+      "published_at": 1629799304,
+      "version": "1.8.0"
+    },
+    {
+      "changelog": "**修复：​**\r\n> 基础移动速度小数部分无效​",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "RsNPCX-1.7.1.jar",
+          "primary": true,
+          "size": 127183,
+          "url": "https://github.com/MemoriesOfTime/RsNPC/releases/download/1.7.1/RsNPCX-1.7.1.jar"
+        }
+      ],
+      "name": "1.7.1",
+      "prerelease": false,
+      "published_at": 1626928402,
+      "version": "1.7.1"
+    },
+    {
+      "changelog": "**更改：​**\r\n\r\n> 现在NPC移动更流畅​\r\n> 现在NPC在流体中移动速度会下降​\r\n\r\n**添加：​**\r\n\r\n> 现在可以在配置文件设置NPC实体大小​\r\n> 现在可以在配置文件设置NPC移动基础速度(需要先添加路径点)​\r\n> 现在长按（Win10右键）NPC也会触发​\r\n\r\n**修复：​**\r\n\r\n> 在控制台使用addroute命令会报错​\r\n> NPC会被载具带走​",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "RsNPCX-1.7.0.jar",
+          "primary": true,
+          "size": 127119,
+          "url": "https://github.com/MemoriesOfTime/RsNPC/releases/download/1.7.0/RsNPCX-1.7.0.jar"
+        }
+      ],
+      "name": "1.7.0",
+      "prerelease": false,
+      "published_at": 1626592921,
+      "version": "1.7.0"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "RsNPCX_v1.6.0.jar",
+          "primary": true,
+          "size": 126529,
+          "url": "https://github.com/MemoriesOfTime/RsNPC/releases/download/1.6.0/RsNPCX_v1.6.0.jar"
+        }
+      ],
+      "name": "1.6.0",
+      "prerelease": false,
+      "published_at": 1621380744,
+      "version": "1.6.0"
     }
   ]
 }

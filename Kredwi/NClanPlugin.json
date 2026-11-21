@@ -63,7 +63,7 @@
         },
         {
           "filename": "original-NClanPlugin-1.1-SNAPSHOT.jar",
-          "primary": true,
+          "primary": false,
           "sha256": "460f1d626b06898c142122d67362a6d348bc8c4b90b4b75f78469193c28a99c9",
           "size": 150260,
           "url": "https://github.com/Kredwi/NClanPlugin/releases/download/snapshot/original-NClanPlugin-1.1-SNAPSHOT.jar"

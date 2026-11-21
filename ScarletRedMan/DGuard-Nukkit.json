@@ -23,7 +23,7 @@
       "version_range": ""
     }
   ],
-  "description": "[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)\n[![Version](https://img.shields.io/badge/version-3.0-brightgreen)](https://github.com/qPexLegendary/DGuard-Nukkit/releases/tag/3.0)\n\nDGuard\n------------- \n\nПлагин для ядра PowerNukkitX для защиты регионов от гриферства.\n\nОтличия от других плагинов на приват:\n\n- Качественный интерфейс с помощью форм.\n- Возможность устанавливать абсолютно любые названия для регионов.\n- Добавлена специальная роль `Гость`, которая дает доступ к региону без доступа к строительства в нем.\n- Создание регионов по всей высоте, где размер региона расчитывается по его площади. Эту опцию можно выключить в конфиге.\n- Возможность легко создавать свои флаги с помощью кода.\n- Упор плагина идет на максимальную производительность. Присутствует кеширование поиска регионов.\n\n\n### Зависимости\n- Библиотека [FormConstructor](https://github.com/ContentForge/FormConstructor) версии не менее 2.0.0\n- PowerNukkitX версии не менее 2.0\n",
+  "description": "[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ScarletRedMan/DGuard-Nukkit/blob/master/LICENSE)\n[![Version](https://img.shields.io/badge/version-3.0-brightgreen)](https://github.com/qPexLegendary/DGuard-Nukkit/releases/tag/3.0)\n\nDGuard\n------------- \n\nПлагин для ядра PowerNukkitX для защиты регионов от гриферства.\n\nОтличия от других плагинов на приват:\n\n- Качественный интерфейс с помощью форм.\n- Возможность устанавливать абсолютно любые названия для регионов.\n- Добавлена специальная роль `Гость`, которая дает доступ к региону без доступа к строительства в нем.\n- Создание регионов по всей высоте, где размер региона расчитывается по его площади. Эту опцию можно выключить в конфиге.\n- Возможность легко создавать свои флаги с помощью кода.\n- Упор плагина идет на максимальную производительность. Присутствует кеширование поиска регионов.\n\n\n### Зависимости\n- Библиотека [FormConstructor](https://github.com/ContentForge/FormConstructor) версии не менее 2.0.0\n- PowerNukkitX версии не менее 2.0\n",
   "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
@@ -109,7 +109,7 @@
         },
         {
           "filename": "FormConstructor.jar",
-          "primary": true,
+          "primary": false,
           "size": 26190,
           "url": "https://github.com/ScarletRedMan/DGuard-Nukkit/releases/download/2.0/FormConstructor.jar"
         }

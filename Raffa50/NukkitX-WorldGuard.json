@@ -86,16 +86,16 @@
       "downloads": 0,
       "files": [
         {
-          "filename": "gson-2.8.6.jar",
-          "primary": true,
-          "size": 240255,
-          "url": "https://github.com/Raffa50/NukkitX-WorldGuard/releases/download/0.1.2.0/gson-2.8.6.jar"
-        },
-        {
           "filename": "WorldGuard.jar",
           "primary": true,
           "size": 27899,
           "url": "https://github.com/Raffa50/NukkitX-WorldGuard/releases/download/0.1.2.0/WorldGuard.jar"
+        },
+        {
+          "filename": "gson-2.8.6.jar",
+          "primary": false,
+          "size": 240255,
+          "url": "https://github.com/Raffa50/NukkitX-WorldGuard/releases/download/0.1.2.0/gson-2.8.6.jar"
         }
       ],
       "name": "WorldGuard-0.1.2.0",
@@ -108,16 +108,16 @@
       "downloads": 0,
       "files": [
         {
-          "filename": "gson-2.8.6.jar",
-          "primary": true,
-          "size": 240255,
-          "url": "https://github.com/Raffa50/NukkitX-WorldGuard/releases/download/0.1.0.1/gson-2.8.6.jar"
-        },
-        {
           "filename": "WorldGuard.jar",
           "primary": true,
           "size": 24473,
           "url": "https://github.com/Raffa50/NukkitX-WorldGuard/releases/download/0.1.0.1/WorldGuard.jar"
+        },
+        {
+          "filename": "gson-2.8.6.jar",
+          "primary": false,
+          "size": 240255,
+          "url": "https://github.com/Raffa50/NukkitX-WorldGuard/releases/download/0.1.0.1/gson-2.8.6.jar"
         }
       ],
       "name": "WorldGuard-0.1.0.1",
@@ -130,16 +130,16 @@
       "downloads": 0,
       "files": [
         {
-          "filename": "gson-2.8.6.jar",
-          "primary": true,
-          "size": 240255,
-          "url": "https://github.com/Raffa50/NukkitX-WorldGuard/releases/download/0.1.0/gson-2.8.6.jar"
-        },
-        {
           "filename": "WorldGuard.jar",
           "primary": true,
           "size": 24485,
           "url": "https://github.com/Raffa50/NukkitX-WorldGuard/releases/download/0.1.0/WorldGuard.jar"
+        },
+        {
+          "filename": "gson-2.8.6.jar",
+          "primary": false,
+          "size": 240255,
+          "url": "https://github.com/Raffa50/NukkitX-WorldGuard/releases/download/0.1.0/gson-2.8.6.jar"
         }
       ],
       "name": "WorldGuard-0.1.0",

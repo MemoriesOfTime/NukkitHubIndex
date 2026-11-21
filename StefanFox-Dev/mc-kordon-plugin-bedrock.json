@@ -53,32 +53,18 @@
       "downloads": 0,
       "files": [
         {
-          "filename": "Kordon-Bungee.jar",
-          "primary": true,
-          "sha256": "d266dad7425c236e9ecb83c8fbd7b2792f091ed15466aafadcf7cf2c3fe4e1de",
-          "size": 698458,
-          "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.11.1/Kordon-Bungee.jar"
-        },
-        {
-          "filename": "Kordon-Lumi.jar",
-          "primary": true,
-          "sha256": "a5ddff8b11a8c6f82608dced0f5b24b717775786b500c123fe632148b5331cb3",
-          "size": 679152,
-          "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.11.1/Kordon-Lumi.jar"
-        },
-        {
-          "filename": "Kordon-Velocity.jar",
-          "primary": true,
-          "sha256": "64a830ab80ff3b1ab31322cf71394c0d4e013c9de028927e8402411d715272b9",
-          "size": 691038,
-          "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.11.1/Kordon-Velocity.jar"
-        },
-        {
           "filename": "Kordon.jar",
           "primary": true,
           "sha256": "dcff2baaa0903b6a6be53857ce365ebf28765f90a03767703e917a5b6e71bdbe",
           "size": 760146,
           "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.11.1/Kordon.jar"
+        },
+        {
+          "filename": "Kordon-Lumi.jar",
+          "primary": false,
+          "sha256": "a5ddff8b11a8c6f82608dced0f5b24b717775786b500c123fe632148b5331cb3",
+          "size": 679152,
+          "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.11.1/Kordon-Lumi.jar"
         }
       ],
       "name": "v1.11.1",
@@ -91,32 +77,18 @@
       "downloads": 0,
       "files": [
         {
-          "filename": "Kordon-Bungee.jar",
-          "primary": true,
-          "sha256": "a256b48a43867d844842ec43eb63b0830bae4b3fea438c2172079b5735b5f7a3",
-          "size": 698458,
-          "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.11.0/Kordon-Bungee.jar"
-        },
-        {
-          "filename": "Kordon-Lumi.jar",
-          "primary": true,
-          "sha256": "7992be00cfd5bdfd90a4b5b8fc75cd838a326294ab2f67121d39e4e7cd6aa380",
-          "size": 679621,
-          "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.11.0/Kordon-Lumi.jar"
-        },
-        {
-          "filename": "Kordon-Velocity.jar",
-          "primary": true,
-          "sha256": "9c0e92e6b57082d4ba6bb8047cd75dd1f6caa9d7177eecf4ce72495337abdc63",
-          "size": 691038,
-          "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.11.0/Kordon-Velocity.jar"
-        },
-        {
           "filename": "Kordon.jar",
           "primary": true,
           "sha256": "eb822438396f5902c0e0871a4a351d041f25b4f2f8e3b69eae9013eb3822c2bb",
           "size": 760615,
           "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.11.0/Kordon.jar"
+        },
+        {
+          "filename": "Kordon-Lumi.jar",
+          "primary": false,
+          "sha256": "7992be00cfd5bdfd90a4b5b8fc75cd838a326294ab2f67121d39e4e7cd6aa380",
+          "size": 679621,
+          "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.11.0/Kordon-Lumi.jar"
         }
       ],
       "name": "Release 1.11.0",
@@ -129,32 +101,18 @@
       "downloads": 0,
       "files": [
         {
-          "filename": "kordon-bungee-1.10.0.jar",
-          "primary": true,
-          "sha256": "de338a1e5f0569ecb48d983b9b671a14163c2fc1e40233118c6319028d64ad5a",
-          "size": 41344,
-          "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.10.0/kordon-bungee-1.10.0.jar"
-        },
-        {
-          "filename": "Kordon-Lumi.jar",
-          "primary": true,
-          "sha256": "364dcce62f0ac9157576d2a237f21f1b494124e8845b0aa5505ba8c1e017289a",
-          "size": 676462,
-          "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.10.0/Kordon-Lumi.jar"
-        },
-        {
-          "filename": "kordon-velocity-1.10.0.jar",
-          "primary": true,
-          "sha256": "66247b4e7566b853f8646486f255a3d64cc0be4ac46e8160ad533aaa98a4efd3",
-          "size": 33228,
-          "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.10.0/kordon-velocity-1.10.0.jar"
-        },
-        {
           "filename": "Kordon.jar",
           "primary": true,
           "sha256": "bce7ad214aed603f28e8134e1f1dae5b24fc10533108ba6492623308028fd1c2",
           "size": 750660,
           "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.10.0/Kordon.jar"
+        },
+        {
+          "filename": "Kordon-Lumi.jar",
+          "primary": false,
+          "sha256": "364dcce62f0ac9157576d2a237f21f1b494124e8845b0aa5505ba8c1e017289a",
+          "size": 676462,
+          "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.10.0/Kordon-Lumi.jar"
         }
       ],
       "name": "Release 1.10.0",
@@ -167,18 +125,18 @@
       "downloads": 0,
       "files": [
         {
-          "filename": "Kordon-Lumi.jar",
-          "primary": true,
-          "sha256": "10a18e91f3071028dcd0d4348f4e17c53f4caa2e76716c8e32c746e434d2920e",
-          "size": 666477,
-          "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.9.1-bedrock/Kordon-Lumi.jar"
-        },
-        {
           "filename": "Kordon.jar",
           "primary": true,
           "sha256": "9721364531f7ead2b9d54cc2adc4e0d8c4167eceba4299c4cd761269933d21f9",
           "size": 734432,
           "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.9.1-bedrock/Kordon.jar"
+        },
+        {
+          "filename": "Kordon-Lumi.jar",
+          "primary": false,
+          "sha256": "10a18e91f3071028dcd0d4348f4e17c53f4caa2e76716c8e32c746e434d2920e",
+          "size": 666477,
+          "url": "https://github.com/StefanFox-Dev/mc-kordon-plugin-bedrock/releases/download/v1.9.1-bedrock/Kordon-Lumi.jar"
         }
       ],
       "name": "Kordon 1.9.1 - Bedrock (Lumi) & Java Universal",

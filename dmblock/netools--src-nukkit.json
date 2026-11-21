@@ -40,13 +40,6 @@
       "downloads": 0,
       "files": [
         {
-          "filename": "netools-bukkit-1.0.0.jar",
-          "primary": true,
-          "sha256": "35c035f9dd2326e49c65e4e6da12f1c0194b39bcd7d10162de158ad67472a2d4",
-          "size": 12856,
-          "url": "https://github.com/dmblock/netools/releases/download/v1.0.0/netools-bukkit-1.0.0.jar"
-        },
-        {
           "filename": "netools-nukkit-1.0.0.jar",
           "primary": true,
           "sha256": "3f84b8f86f7f7e91584d63a433aac528a4c8e81c626ca831bd4d21f80ed9a898",

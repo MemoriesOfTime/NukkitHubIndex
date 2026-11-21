@@ -44,37 +44,31 @@
   "updated_at": 1773249125,
   "versions": [
     {
-      "changelog": "## Downloads\r\n- yrdatabase-allay-2.0.0.jar\r\n- yrdatabase-nukkit-2.0.0.jar\r\n- yrdatabase-waterdog.jar\r\n- yrdatabase-api.jar\r\n- yrdatabase-core.jar\r\n\r\n## Notes\r\n- Multi-platform build with session bridge support\r\n- JitPack artifacts available under com.github.MufHead.YRDatabase\r\n",
+      "changelog": "",
       "downloads": 0,
       "files": [
         {
-          "filename": "yrdatabase-allay-2.0.0.jar",
-          "primary": true,
-          "sha256": "45469634cc793ae24200325c8a5a4961cf0df8bab0704da34bd5668ab1ea8503",
-          "size": 25421564,
-          "url": "https://github.com/MufHead/YRDatabase/releases/download/v2.0.0/yrdatabase-allay-2.0.0.jar"
-        },
-        {
-          "filename": "yrdatabase-api.jar",
-          "primary": true,
-          "sha256": "c4211f037177f93ac2cb8d2aeabc3c8fcf2b204c35448e6c00c834d44cfcddac",
-          "size": 53431,
-          "url": "https://github.com/MufHead/YRDatabase/releases/download/v2.0.0/yrdatabase-api.jar"
-        },
-        {
-          "filename": "yrdatabase-core.jar",
-          "primary": true,
-          "sha256": "f3ada3988dd7b69949cb1ad16e9aeb7662c3a338f1af9bcf6036873103eeb488",
-          "size": 73317,
-          "url": "https://github.com/MufHead/YRDatabase/releases/download/v2.0.0/yrdatabase-core.jar"
-        },
-        {
           "filename": "yrdatabase-nukkit-2.0.0.jar",
           "primary": true,
-          "sha256": "fbd7a25a61bf73c167fbc2690a3bd839bfe5735355d292653373d44ff26de589",
-          "size": 25421811,
-          "url": "https://github.com/MufHead/YRDatabase/releases/download/v2.0.0/yrdatabase-nukkit-2.0.0.jar"
+          "size": 0,
+          "url": "https://motci.cn/job/YRDatabase/23/artifact/yrdatabase-nukkit/build/libs/yrdatabase-nukkit-2.0.0.jar"
         },
+        {
+          "filename": "yrdatabase-waterdog.jar",
+          "primary": false,
+          "size": 0,
+          "url": "https://motci.cn/job/YRDatabase/23/artifact/yrdatabase-waterdog/build/libs/yrdatabase-waterdog.jar"
+        }
+      ],
+      "name": "nukkit-2.0.0",
+      "prerelease": true,
+      "published_at": 1773249027,
+      "version": "ci-23"
+    },
+    {
+      "changelog": "## Downloads\r\n- yrdatabase-allay-2.0.0.jar\r\n- yrdatabase-nukkit-2.0.0.jar\r\n- yrdatabase-waterdog.jar\r\n- yrdatabase-api.jar\r\n- yrdatabase-core.jar\r\n\r\n## Notes\r\n- Multi-platform build with session bridge support\r\n- JitPack artifacts available under com.github.MufHead.YRDatabase\r\n",
+      "downloads": 0,
+      "files": [
         {
           "filename": "yrdatabase-waterdog-2.0.0.jar",
           "primary": true,
@@ -87,34 +81,6 @@
       "prerelease": false,
       "published_at": 1770348672,
       "version": "v2.0.0"
-    },
-    {
-      "changelog": "",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "yrdatabase-allay-2.0.0.jar",
-          "primary": true,
-          "size": 0,
-          "url": "https://motci.cn/job/YRDatabase/23/artifact/yrdatabase-allay/build/libs/yrdatabase-allay-2.0.0.jar"
-        },
-        {
-          "filename": "yrdatabase-nukkit-2.0.0.jar",
-          "primary": true,
-          "size": 0,
-          "url": "https://motci.cn/job/YRDatabase/23/artifact/yrdatabase-nukkit/build/libs/yrdatabase-nukkit-2.0.0.jar"
-        },
-        {
-          "filename": "yrdatabase-waterdog.jar",
-          "primary": true,
-          "size": 0,
-          "url": "https://motci.cn/job/YRDatabase/23/artifact/yrdatabase-waterdog/build/libs/yrdatabase-waterdog.jar"
-        }
-      ],
-      "name": "allay-2.0.0",
-      "prerelease": true,
-      "published_at": 1773249027,
-      "version": "ci-23"
     }
   ]
 }

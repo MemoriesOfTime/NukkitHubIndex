@@ -74,22 +74,6 @@
       "downloads": 0,
       "files": [
         {
-          "filename": "EssentialsNK-1.1.2.jar",
-          "primary": true,
-          "size": 105078,
-          "url": "https://github.com/khari05/EssentialsNK/releases/download/1.1.2/EssentialsNK-1.1.2.jar"
-        }
-      ],
-      "name": "Latest release with EconomyAPI support",
-      "prerelease": false,
-      "published_at": 1530752001,
-      "version": "1.1.2"
-    },
-    {
-      "changelog": "",
-      "downloads": 0,
-      "files": [
-        {
           "filename": "EssentialsNK-1.1.1.jar",
           "primary": true,
           "size": 102600,
@@ -100,6 +84,22 @@
       "prerelease": false,
       "published_at": 1530752659,
       "version": "1.1.1"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "EssentialsNK-1.1.2.jar",
+          "primary": true,
+          "size": 105078,
+          "url": "https://github.com/khari05/EssentialsNK/releases/download/1.1.2/EssentialsNK-1.1.2.jar"
+        }
+      ],
+      "name": "Latest release with EconomyAPI support",
+      "prerelease": false,
+      "published_at": 1530752001,
+      "version": "1.1.2"
     }
   ]
 }

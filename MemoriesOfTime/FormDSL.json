@@ -52,22 +52,6 @@
       "downloads": 0,
       "files": [
         {
-          "filename": "FormDSL-1.0.0-SNAPSHOT.jar",
-          "primary": true,
-          "size": 49995,
-          "url": "https://github.com/MemoriesOfTime/FormDSL/releases/download/1.0.0/FormDSL-1.0.0-SNAPSHOT.jar"
-        }
-      ],
-      "name": "v1.0.0-pre-release",
-      "prerelease": true,
-      "published_at": 1659623366,
-      "version": "1.0.0"
-    },
-    {
-      "changelog": "",
-      "downloads": 0,
-      "files": [
-        {
           "filename": "FormDSL-1.0.1-SNAPSHOT.jar",
           "primary": true,
           "size": 0,
@@ -78,6 +62,22 @@
       "prerelease": true,
       "published_at": 1686225920,
       "version": "ci-2"
+    },
+    {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FormDSL-1.0.0-SNAPSHOT.jar",
+          "primary": true,
+          "size": 49995,
+          "url": "https://github.com/MemoriesOfTime/FormDSL/releases/download/1.0.0/FormDSL-1.0.0-SNAPSHOT.jar"
+        }
+      ],
+      "name": "v1.0.0-pre-release",
+      "prerelease": true,
+      "published_at": 1659623366,
+      "version": "1.0.0"
     }
   ]
 }

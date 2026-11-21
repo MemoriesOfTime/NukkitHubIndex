@@ -50,6 +50,22 @@
   "updated_at": 1770253417,
   "versions": [
     {
+      "changelog": "",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "GameDemo_v2.5.0.jar",
+          "primary": true,
+          "size": 0,
+          "url": "https://motci.cn/job/GameDemo/6/artifact/target/GameDemo_v2.5.0.jar"
+        }
+      ],
+      "name": "v2.5.0",
+      "prerelease": true,
+      "published_at": 1724666268,
+      "version": "ci-6"
+    },
+    {
       "changelog": "+ 优化小游戏结束条件逻辑\r\n+ 增加获得经验的提示",
       "downloads": 0,
       "files": [
@@ -96,22 +112,6 @@
       "prerelease": false,
       "published_at": 1665758434,
       "version": "v2.0.0"
-    },
-    {
-      "changelog": "",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "GameDemo_v2.5.0.jar",
-          "primary": true,
-          "size": 0,
-          "url": "https://motci.cn/job/GameDemo/6/artifact/target/GameDemo_v2.5.0.jar"
-        }
-      ],
-      "name": "v2.5.0",
-      "prerelease": true,
-      "published_at": 1724666268,
-      "version": "ci-6"
     }
   ]
 }
