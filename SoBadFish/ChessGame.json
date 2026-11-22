@@ -52,7 +52,7 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/SoBadFish/ChessGame",
-  "stars": 0,
+  "stars": 1,
   "summary": "象棋游戏",
   "targets": [
     "nkx",

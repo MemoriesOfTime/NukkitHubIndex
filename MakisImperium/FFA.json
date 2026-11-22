@@ -1,0 +1,81 @@
+{
+  "api_version": "3.0.6",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/135838039?v=4",
+      "name": "MakisImperium",
+      "url": "https://github.com/MakisImperium"
+    }
+  ],
+  "categories": [
+    "minigame"
+  ],
+  "created_at": 1733433339,
+  "dependencies": [],
+  "description": "<p align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/MakisImperium/FFA/master/docs/assets/zernyth-ffa.png\" alt=\"Zernyth FFA with the silver and violet Zernyth emblem beside a torchlit PvP arena\" width=\"100%\">\n</p>\n\n<div align=\"center\">\n\n# Zernyth FFA\n\n**Multi-arena free-for-all for Minecraft: Bedrock Edition**\n\nRun PvP arenas on PowerNukkitX with configurable kits, protected spawn areas, and in-game menus for players and admins.\n\n**PowerNukkitX 3.0.6 · Java 21+ · English / German**\n\n[Quick start](#quick-start) · [Arena setup](#arena-setup) · [Commands](#commands) · [Configuration](#configuration) · [Development](#development)\n\n</div>\n\n---\n\n## Quick start\n\nBuild with a JDK 21 or newer. Choose either build tool.\n\n| Build tool | Command | Plugin JAR |\n| --- | --- | --- |\n| Gradle Wrapper (Windows PowerShell) | `.\\gradlew.bat build` | `build/libs/ZernythFFA.jar` |\n| Gradle Wrapper (Linux/macOS) | `sh ./gradlew build` | `build/libs/ZernythFFA.jar` |\n| Maven | `mvn clean package` | `target/ZernythFFA.jar` |\n\nThe Gradle Wrapper downloads the pinned Gradle version on first use. The Maven command uses a local Maven installation.\n\n1. Stop the PowerNukkitX 3.0.6 server and copy `ZernythFFA.jar` into its `plugins/` directory. When upgrading, replace the previous plugin JAR. Start the server again.\n2. In game, open `/ffaadmin` as an operator or with the `ffa.admin` permission. Follow the arena setup below, then join through `/ffa`.\n\nOn first launch, the plugin creates `plugins/FFAGameV2/` and a **Soldier** kit if no kits exist. Player profiles use JSON until MySQL is configured.\n\n## Arena setup\n\n1. In **Arena Management → Create Arena**, enter an arena ID, a display name, and the name of an existing server world.\n2. Stand at a spawn point in that world and use **Add Spawn** to record your position and facing direction. Repeat for each spawn you want to add.\n3. To protect an area, open **Arena Management → Zone Tools** and start safe-zone placement. Select the arena and click two opposite corner blocks in its world. The cuboid saves automatically.\n4. Open **Set Arena Status** and choose **Live**. An arena needs a loadable world and at least one spawn before players can join.\n\nUse **Kit Management → Create / Update Kit → Snapshot from inventory** to save your current items and armor. The admin menu also lets you edit individual kit slots and armor pieces.\n\n## Commands\n\n| Command | Opens | Access |\n| --- | --- | --- |\n| `/ffa` | Arena, stats, and settings menus. Inside an arena, it opens the leave, kit, and settings options. | In-game players |\n| `/ffaadmin` | Arena and kit management forms. | Operators by default, or players with `ffa.admin` |\n\nPlayers can choose English or German and toggle the arena scoreboard in **Settings**. The scoreboard shows the arena, player count, kills, deaths, and current streak. Arena sessions block block breaking, block placement, and item drops. Safe zones block combat and damage.\n\n## Configuration\n\nEdit `plugins/FFAGameV2/config.json` and restart the server to apply changes.\n\n| `storageBackend` | Player profiles and stats |\n| --- | --- |\n| `JSON` | Local files in `players/`. Runs without a database. |\n| `MYSQL` | MySQL table keyed by player UUID. The generated configuration selects MySQL and uses JSON while the database credentials are incomplete. |\n\nFor a local JSON setup, use `\"storageBackend\": \"JSON\"`. To enable MySQL, create the database and supply its connection settings. The plugin creates the profile table.\n\n```json\n{\n  \"storageBackend\": \"MYSQL\",\n  \"database\": {\n    \"host\": \"127.0.0.1\",\n    \"port\": 3306,\n    \"database\": \"ffa\",\n    \"username\": \"ffa\",\n    \"password\": \"your-database-password\",\n    \"table\": \"ffa_player_profiles\",\n    \"useSsl\": false,\n    \"allowPublicKeyRetrieval\": true\n  },\n  \"scoreboard\": {\n    \"enabledByDefault\": true,\n    \"updateIntervalTicks\": 20\n  }\n}\n```\n\nIf a configured MySQL connection drops while the server is running, the plugin takes stats offline, ends active arena sessions, and sets all arenas to **Offline**. It tries to reconnect up to three times at 15-second intervals. Once MySQL recovers, stats return and an admin can set each arena back to **Live**. If all three attempts fail, the plugin disables itself.\n\n### Data files\n\n| Path under `plugins/FFAGameV2/` | Contents |\n| --- | --- |\n| `config.json` | Storage and scoreboard settings |\n| `arenas/` | Arena definitions, spawn points, and zones |\n| `kits/` | Kit inventories and armor |\n| `lang/en.json`, `lang/de.json` | English and German text |\n| `players/` | UUID-keyed profiles in JSON mode |\n\nKits use item IDs such as `minecraft:iron_sword`. Replace any numeric IDs in existing kit JSON files with their PowerNukkitX equivalents. Items with unrecognized IDs appear as **Unknown Item** and are skipped when equipping.\n\n## Development\n\nKeep the Java target and dependency versions in sync between [`build.gradle.kts`](https://github.com/MakisImperium/FFA/blob/master/build.gradle.kts) and [`pom.xml`](https://github.com/MakisImperium/FFA/blob/master/pom.xml) when changing the build.\n\nThe Java sources use the `net.zernyth.ffa` namespace. [`FFABootstrap`](https://github.com/MakisImperium/FFA/blob/master/src/main/java/net/zernyth/ffa/FFABootstrap.java) wires storage, services, commands, and listeners. The [PowerNukkitX descriptor](https://github.com/MakisImperium/FFA/blob/master/src/main/resources/powernukkitx.yml) declares the entry point and admin permission.\n\n| Package | Responsibility |\n| --- | --- |\n| `arena` | Arena definitions, persistence, sessions, spawns, and safe zones |\n| `kit` | Kit storage, selection, and inventory application |\n| `player` | Profiles, statistics, preferences, and JSON/MySQL repositories |\n| `ui.form`, `command`, `listener` | Menus, command entry points, and server events |\n| `scoreboard`, `i18n`, `config` | Live scoreboard, translations, and settings |\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [
+    {
+      "created": "2026-11-22",
+      "description": "",
+      "title": "Zernyth FFA with the silver and violet Zernyth emblem beside a torchlit PvP arena",
+      "url": "https://raw.githubusercontent.com/MakisImperium/FFA/master/docs/assets/zernyth-ffa.png"
+    }
+  ],
+  "icon_url": "https://avatars.githubusercontent.com/u/135838039?v=4",
+  "id": "MakisImperium/FFA",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/powernukkitx.yml",
+  "name": "FFAGameV2",
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/MakisImperium/FFA",
+  "stars": 2,
+  "summary": "Professional multi-arena FFA minigame with JSON or MySQL profile storage",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1795366654,
+  "versions": [
+    {
+      "changelog": "Zernyth FFA brings multi-arena free-for-all PvP to PowerNukkitX for Minecraft: Bedrock Edition. Players join arenas, choose kits, and view stats through in-game forms. Admins can set up arenas, spawns, and protected zones in game.\n\n## What's new\n\n- Ported forms, scoreboards, kits, combat, and respawns to the PowerNukkitX 3.0.6 API.\n- Added a Gradle Wrapper build alongside Maven. Both produce `ZernythFFA.jar`.\n- Updated the project documentation and moved Java sources to `net.zernyth.ffa`.\n\n## Install or upgrade\n\n1. Use **PowerNukkitX 3.0.6** and **Java 21 or newer**.\n2. Stop the server. Download `ZernythFFA.jar` from this release and place it in `plugins/`, replacing the previous plugin JAR if upgrading.\n3. For existing kits, replace any numeric item IDs in the kit JSON files with namespaced IDs such as `minecraft:iron_sword`.\n4. Start the server. Use `/ffaadmin` to set up an arena and `/ffa` to join.\n\nConfiguration, arenas, and kits are stored in `plugins/FFAGameV2/`. Player profiles can use JSON or MySQL.\n\nBoth builds and local server startup were verified. The migration was also tested with two Bedrock protocol clients for arena setup, kit loading, the scoreboard, combat, and respawn, with stats persisted in MySQL.\n\n[Setup and configuration guide](https://github.com/MakisImperium/FFA/tree/v3.0.0#quick-start)\r\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ZernythFFA.jar",
+          "primary": true,
+          "sha256": "c56c6244a7a73cd21efa0cb4ca82ed5b655dc1b17b9a6b1428feda3d8489e7b6",
+          "size": 4919832,
+          "url": "https://github.com/MakisImperium/FFA/releases/download/v3.0.0/ZernythFFA.jar"
+        }
+      ],
+      "name": "Zernyth FFA 3.0.0",
+      "prerelease": false,
+      "published_at": 1795366654,
+      "version": "v3.0.0"
+    },
+    {
+      "changelog": "efewfgewfewf",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "FFAGameV2.jar",
+          "primary": true,
+          "sha256": "e15c7bd93bc6c58a3bafcb32d6ecada61cef2267742e350cc8c73c78ea7b62d5",
+          "size": 4924234,
+          "url": "https://github.com/MakisImperium/FFA/releases/download/2.0/FFAGameV2.jar"
+        }
+      ],
+      "name": "Test",
+      "prerelease": false,
+      "published_at": 1776705912,
+      "version": "2.0"
+    }
+  ]
+}

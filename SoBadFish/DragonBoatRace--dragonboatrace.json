@@ -34,7 +34,7 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/SoBadFish/DragonBoatRace",
-  "stars": 0,
+  "stars": 1,
   "summary": "龙舟竞速小游戏/龙舟本体",
   "targets": [
     "nkx",

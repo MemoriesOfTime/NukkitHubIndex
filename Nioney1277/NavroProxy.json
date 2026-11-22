@@ -1,0 +1,65 @@
+{
+  "api_version": "1.0.14",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/353637523?v=4",
+      "name": "Nioney1277",
+      "url": "https://github.com/Nioney1277"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/145243596?v=4",
+      "name": "globesg",
+      "url": "https://github.com/globesg"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/302356211?v=4",
+      "name": "GhostNgEnd",
+      "url": "https://github.com/GhostNgEnd"
+    }
+  ],
+  "categories": [],
+  "created_at": 1795089372,
+  "dependencies": [],
+  "description": "# NavroProxy\n\nAn anti-cheat proxy for Minecraft Bedrock Edition. NavroProxy runs between players and a backend server, tracks the world and player state, and checks movement and gameplay packets.\n\nIt runs on Windows and Linux with Java 21. Clients can connect over RakNet or through the separate NetherNet frontend.\n\n## Build\n\nInstall JDK 21 or later, then run the Gradle wrapper.\n\nLinux\n\n```sh\nbash gradlew distZip\n```\n\nWindows PowerShell\n\n```powershell\n.\\gradlew.bat distZip\n```\n\nThe distribution ZIP is written to `build/distributions/`. Extract the entire archive to keep the launcher and its dependencies together.\n\nTo build an unpacked distribution\n\n```sh\nbash gradlew installDist\n```\n\n## Run\n\nLinux\n\n```sh\nbin/navro-proxy --listen 0.0.0.0:19132 --backend 127.0.0.1:19133 --mode detect\n```\n\nWindows PowerShell\n\n```powershell\n.\\bin\\navro-proxy.bat --listen 0.0.0.0:19132 --backend 127.0.0.1:19133 --mode detect\n```\n\nThe backend must accept trusted proxy connections. The client and backend must use compatible Bedrock protocol versions.\n\nSettings are stored in `plugins/Navro/`:\n\n| File | Purpose |\n| --- | --- |\n| `config.yml` | Movement tolerances, corrections, disabled checks and latency limits |\n| `punishments.yml` | Check groups, recent violation windows and alert/log/kick thresholds |\n| `messages.yml` | Prefix, alert format, command replies and disconnect messages |\n\nAll three files are bundled under `src/main/resources/` and included in the distribution. Missing files are created at startup; existing settings are preserved. A legacy prefix in `config.yml` moves to `messages.yml` when that file is first created. `/navro reload` reloads all three together; an invalid file leaves the previous configuration active.\n\nPunishment rules use `threshold:interval action`. For example, `50:0 kick %player%` kicks at 50 recent violations, once until the group's window expires. `1:1 [alert]` reports each violation. Check selectors support exact names (`RotationPlace`, `Sprint-A`), check families (`Sprint`), `*` wildcards, and `!` exclusions. The default file has a separate section for each of the 22 implemented checks, so Timer, NegativeTimer and each Sprint type have independent counters. Each player's counters are also independent; reloading or reconnecting resets them. Default rules only alert. The proxy supports `[alert]`, `[log]`, and kicks; it does not execute arbitrary backend console commands.\n\nMessage placeholders include `%prefix%`, `%player%`, `%check_name%`, `%check%`, `%vl%` (recent group count), `%check_vl%` (individual check count), `%verbose%`, and `%message%` (the original detailed alert). Color codes use `&`.\n\n- `detect` runs the registered checks.\n- `inspect` observes protocol traffic.\n- `--backend-type bds` selects the BDS adapter.\n- `--block-palette` supplies a backend runtime palette for the NetherNet adapter.\n\nKeep the backend on a private network or restrict it to connections from the proxy.\n\n## Player commands\n\n- `/navro alert` toggles alerts.\n- `/navro reload` reloads configuration.\n- `/navro debug` and `/navro debug2` control diagnostic output.\n\n## NetherNet and backend adapters\n\nThe NetherNet frontend requires Go 1.26 or later and runs alongside the Java proxy.\n\n- NetherNet frontend source: `nethernet/`.\n- Geyser and Floodgate integration: `backend/geyser/`.\n- Nukkit bridge source and build script: `backend/nukkit/`.\n- PocketMine-MP 5 bridge source and build script: `backend/pocketmine-mp/`.\n\nThe Nukkit-MOT bridge also forwards NavroProxy alerts to the backend console and permitted staff. `/navroalerts` toggles persistent chat alerts for players with `navrobridge.alerts` (operators by default). Set `trusted-proxy-addresses`, `console-alerts`, and `staff-chat-alerts` in the plugin's `config.yml`; trusted addresses refer to the actual proxy connection, before player IP forwarding. Use the updated proxy together with bridge version 0.3.0 for alert forwarding. Existing native tick and inventory synchronization remain negotiated per connection, and firework boosts end when the attached rocket or glide ends.\n\n### PocketMine-MP-NG over NetherNet\n\nInstall `NavroBackendBridge.phar` and generate a signing key on the proxy host. Copy `navro-backend.pub.pem` to the bridge's data directory and set `private-nethernet.enabled: true` in its `config.yml`. Keep the private PEM on Navro. The bridge listens on `127.0.0.1:19608` over TCP and uses loopback UDP 20000–20127 by default. Disable `network.nethernet.enabled` in PocketMine's `pocketmine.yml` if the bridge is the sole NetherNet listener. `network.raklib.enabled` can also be disabled for a NetherNet-only setup.\n\n```powershell\n.\\navro-nethernet.exe -init-backend-signing-key .\\keys\\navro-backend.pem\njava -cp \".\\lib\\*\" ac.navro.proxy.nethernet.NetherNetInspectServer 19138\n.\\navro-nethernet.exe -listen 0.0.0.0:19132 -backend http://127.0.0.1:19608 -adapter 127.0.0.1:19138 -detect -offline-backend -backend-signing-key .\\keys\\navro-backend.pem\n```\n\n### PocketMine-MP-NG over RakNet\n\nKeep the PocketMine-MP-NG RakLib listener on loopback (`server-ip=127.0.0.1`, `server-port=19608`, and `network.raklib.enabled: true`). This mode uses PocketMine-MP-NG's existing local proxy login support. Xbox authentication and backend encryption can stay enabled.\n\nStart the Java adapter from the NavroProxy distribution directory, then start the Go frontend:\n\n```powershell\njava -cp \".\\lib\\*\" ac.navro.proxy.nethernet.NetherNetInspectServer 19138\n.\\navro-nethernet.exe -listen 0.0.0.0:19132 -backend raknet://127.0.0.1:19608 -adapter 127.0.0.1:19138 -detect\n```\n\n26.60 clients connect to the Go frontend over NetherNet. TCP 19132 is used for signaling and UDP 19210–19273 for ICE in either backend mode. The RakNet backend uses loopback UDP 19608.\n\nAirLiquidPlace and RotationPlace require a valid native server tick from the backend bridge. They automatically disable when samples are missing, stale, or reset; FarPlace and ordinary inventory validation remain active. RotationPlace timeouts use only backend ticks. Missing selection data skips local placement prediction without a confirmation wait or timeout cancellation.\n\n\n## Contributors\n\n- [Nioney1277](https://github.com/nioney1277-lab)\n- [GLOBEsg](https://github.com/globesg)\n- [GhostNgEnd](https://github.com/GhostNgEnd)\n- [huangyxHUTAO](https://github.com/huangyxHUTAO)\n- [Theu5er](https://github.com/Theu5er)\n\n## License\n\n[MIT](https://github.com/Nioney1277/NavroProxy/blob/main/LICENSE)\n\nInput timing uses a server-owned counter that advances once per input. Client tick values are stored separately for correction frame matching. Negative frames disconnect the client; duplicate, backward and jumping frames do not add VL. BadPacketsC checks respawn requests (formerly BadPacketsD).\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/353637523?v=4",
+  "id": "Nioney1277/NavroProxy",
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "links": null,
+  "manifest_path": "backend/nukkit/src/main/resources/plugin.yml",
+  "name": "NavroFireworkBridge",
+  "primary_target": "nkx",
+  "server_version": "",
+  "source": "https://github.com/Nioney1277/NavroProxy",
+  "stars": 3,
+  "summary": "Bridges NavroProxy alerts, native server state, inventories and fireworks on Nukkit-MOT.",
+  "targets": [
+    "nkx"
+  ],
+  "updated_at": 1795359711,
+  "versions": [
+    {
+      "changelog": "Nukkit bridge plugin that supplies the server data required by the proxy.\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "NavroBackendBridge.jar",
+          "primary": true,
+          "sha256": "a154623a8c793cbd4141b3b62ebade21d7729728aa111bd366baf115b44920d2",
+          "size": 21722,
+          "url": "https://github.com/Nioney1277/NavroProxy/releases/download/nukkit-mot-v0.3.0/NavroBackendBridge.jar"
+        }
+      ],
+      "name": "Nukkit-MOT backend bridge v0.3.0",
+      "prerelease": false,
+      "published_at": 1795356253,
+      "version": "nukkit-mot-v0.3.0"
+    }
+  ]
+}
