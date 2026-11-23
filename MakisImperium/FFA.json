@@ -41,8 +41,25 @@
   "targets": [
     "pnx"
   ],
-  "updated_at": 1795366654,
+  "updated_at": 1795425218,
   "versions": [
+    {
+      "changelog": "**Full Changelog**: https://github.com/MakisImperium/FFA/compare/v3.0.0...stable",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "ZernythFFA.jar",
+          "primary": true,
+          "sha256": "9c3771ead0aa81c1e515cc2ab48cb2231c09c56b2a3c6e43c24ac37104078a93",
+          "size": 4919819,
+          "url": "https://github.com/MakisImperium/FFA/releases/download/stable/ZernythFFA.jar"
+        }
+      ],
+      "name": "Stable 3.0.0",
+      "prerelease": false,
+      "published_at": 1795419995,
+      "version": "stable"
+    },
     {
       "changelog": "Zernyth FFA brings multi-arena free-for-all PvP to PowerNukkitX for Minecraft: Bedrock Edition. Players join arenas, choose kits, and view stats through in-game forms. Admins can set up arenas, spawns, and protected zones in game.\n\n## What's new\n\n- Ported forms, scoreboards, kits, combat, and respawns to the PowerNukkitX 3.0.6 API.\n- Added a Gradle Wrapper build alongside Maven. Both produce `ZernythFFA.jar`.\n- Updated the project documentation and moved Java sources to `net.zernyth.ffa`.\n\n## Install or upgrade\n\n1. Use **PowerNukkitX 3.0.6** and **Java 21 or newer**.\n2. Stop the server. Download `ZernythFFA.jar` from this release and place it in `plugins/`, replacing the previous plugin JAR if upgrading.\n3. For existing kits, replace any numeric item IDs in the kit JSON files with namespaced IDs such as `minecraft:iron_sword`.\n4. Start the server. Use `/ffaadmin` to set up an arena and `/ffa` to join.\n\nConfiguration, arenas, and kits are stored in `plugins/FFAGameV2/`. Player profiles can use JSON or MySQL.\n\nBoth builds and local server startup were verified. The migration was also tested with two Bedrock protocol clients for arena setup, kit loading, the scoreboard, combat, and respawn, with stats persisted in MySQL.\n\n[Setup and configuration guide](https://github.com/MakisImperium/FFA/tree/v3.0.0#quick-start)\r\n",
       "downloads": 0,

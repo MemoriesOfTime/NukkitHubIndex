@@ -37,7 +37,7 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/Nioney1277/NavroProxy",
-  "stars": 3,
+  "stars": 4,
   "summary": "Bridges NavroProxy alerts, native server state, inventories and fireworks on Nukkit-MOT.",
   "targets": [
     "nkx"

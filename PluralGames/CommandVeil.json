@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/152277863?v=4",
+      "name": "wlkek",
+      "url": "https://github.com/wlkek"
+    }
+  ],
+  "categories": [],
+  "created_at": 1795427195,
+  "dependencies": [],
+  "description": "# CommandVeil\n\n隐藏普通玩家命令补全内容的 Nukkit-MOT 服务端插件。\n\n普通玩家输入 `/` 时不会看到命令列表，输入命令后按 Tab 也不会获得任何补全；拥有管理权限的玩家不受影响，并可配置允许普通玩家看到补全的命令白名单。\n\n## 功能特性\n\n- 普通玩家默认看不到任何命令补全内容（命令名、参数、命令说明均不下发）\n- 拥有 `commandveil.admin` 权限的玩家（默认 OP）可以看到完整补全\n- 支持白名单，自定义普通玩家可以看到补全的命令\n- 支持别名匹配（例如白名单写 `?` 也能放行 `help`）\n- 支持重载配置并实时刷新在线玩家\n- 不影响命令的实际执行，仅控制客户端显示的补全内容\n\n## 工作原理\n\nBedrock 客户端的 `/` 命令列表与 Tab 补全完全由服务端下发的 `AvailableCommandsPacket` 决定，客户端本地不会向服务端请求补全。插件监听数据包发送事件，按玩家过滤该数据包中的命令条目：\n\n- 管理员：数据包原样放行\n- 普通玩家：只保留白名单内的命令，未命中时下发空列表以清除客户端缓存\n\n因此隐藏补全不会影响命令本身的注册与执行。\n\n## 环境要求\n\n- Nukkit-MOT（`MOT-SNAPSHOT`）\n- Java 17 或更高版本\n\n## 安装\n\n1. 将 `CommandVeil-1.0.0.jar` 放入服务端的 `plugins/` 目录\n2. 重启服务器\n3. 按需编辑 `plugins/CommandVeil/config.yml`\n\n## 配置\n\n首次启动后会生成 `plugins/CommandVeil/config.yml`：\n\n```yaml\n# 允许普通玩家看到补全的命令白名单\n# 只写命令名，不要带 \"/\"，不区分大小写，支持别名\n# 留空（[]）表示玩家看不到任何命令补全\nvisible-commands:\n  - help\n  - list\n\n# 控制台等非玩家命令发送者接收消息时使用的语言\nconsole-language: zh_CN\n```\n\n修改后可执行 `/commandveil reload` 立即生效，无需重启。\n\n## 命令与权限\n\n| 命令 | 说明 |\n| --- | --- |\n| `/commandveil status` | 查看当前过滤状态与可见命令 |\n| `/commandveil reload` | 重载配置并刷新在线玩家 |\n\n命令别名：`/cv`\n\n| 权限 | 默认值 | 说明 |\n| --- | --- | --- |\n| `commandveil.admin` | `op` | 查看全部命令补全，并使用 `/commandveil` 管理命令 |\n\n## 从源码构建\n\n```bash\nmvn -DskipTests package\n```\n\n构建产物位于 `target/CommandVeil-1.0.0.jar`。\n\n## 注意事项\n\n- 插件依赖服务端的 `call-data-pk-send-event` 开关（默认开启）。若该开关被关闭，插件无法拦截数据包，启动日志与 `/commandveil status` 会给出提示。\n- 1.20+ 客户端自带一个客户端侧的 `/help` 条目，服务端无法移除，但它不会展示任何服务端命令内容。\n- 本插件只影响补全的可见性，不会改变命令的执行权限；权限控制请交给权限插件。\n\n## 作者\n\nGezi\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/360161694?v=4",
+  "id": "PluralGames/CommandVeil",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "src/main/resources/plugin.yml",
+  "name": "CommandVeil",
+  "pending": true,
+  "primary_target": "nkmot",
+  "server_version": "",
+  "source": "https://github.com/PluralGames/CommandVeil",
+  "stars": 0,
+  "summary": "Hide command tab-completion from normal players; only administrators can see it.",
+  "targets": [
+    "nkmot"
+  ],
+  "updated_at": 1795427225,
+  "versions": []
+}

@@ -33,7 +33,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1795303505,
+  "updated_at": 1795460791,
   "versions": [
     {
       "changelog": "Actualización de Libs\r\nCambio de puerto por default a 19132",

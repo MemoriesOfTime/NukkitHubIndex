@@ -40,7 +40,7 @@
   "server_version": "",
   "source": "https://github.com/zisunny104/tokaRewards",
   "stars": 0,
-  "summary": "",
+  "summary": "每日簽到與獎勵，金額由 tokaEconomy 入帳",
   "targets": [
     "nkx",
     "nkmot"

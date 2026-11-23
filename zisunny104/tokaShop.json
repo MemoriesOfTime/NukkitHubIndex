@@ -55,7 +55,7 @@
   "server_version": "",
   "source": "https://github.com/zisunny104/tokaShop",
   "stars": 0,
-  "summary": "Nukkit-MOT shop plugin: icon window, signs, consumption tax",
+  "summary": "Nukkit 商店外掛：圖示視窗、告示牌、消費稅",
   "targets": [
     "nkx",
     "nkmot"
