@@ -24,7 +24,6 @@
   "links": null,
   "manifest_path": "src/main/resources/plugin.yml",
   "name": "CommandVeil",
-  "pending": true,
   "primary_target": "nkmot",
   "server_version": "",
   "source": "https://github.com/PluralGames/CommandVeil",
@@ -33,6 +32,24 @@
   "targets": [
     "nkmot"
   ],
-  "updated_at": 1795427225,
-  "versions": []
+  "updated_at": 1795484713,
+  "versions": [
+    {
+      "changelog": "## CommandVeil v1.0.0\n\n隐藏普通玩家的命令补全，只让管理员看见。\n\n### 功能\n\n- 普通玩家输入 `/` 看不到命令列表，Tab 无补全\n- 管理员（`commandveil.admin`，默认 OP）可见完整补全\n- 支持命令白名单与别名匹配\n- 支持 `/commandveil reload` 热重载\n- 只影响补全显示，不影响命令执行\n\n### 安装\n\n1. 下载 `CommandVeil-1.0.0.jar`\n2. 放入服务端 `plugins/` 目录\n3. 重启服务器\n4. 按需编辑 `plugins/CommandVeil/config.yml`\n\n### 环境要求\n\n- Nukkit-MOT（`MOT-SNAPSHOT`）\n- Java 17 或更高版本\n\n### 链接\n\n- 源码：https://github.com/PluralGames/CommandVeil\n- 问题反馈：https://github.com/PluralGames/CommandVeil/issues\n",
+      "downloads": 0,
+      "files": [
+        {
+          "filename": "CommandVeil-1.0.0.jar",
+          "primary": true,
+          "sha256": "ba672bc9344b7a10eff977c1c15be8e8f3bea19bd248095bc7f8389a72e4ae2c",
+          "size": 9619,
+          "url": "https://github.com/PluralGames/CommandVeil/releases/download/v1.0.0/CommandVeil-1.0.0.jar"
+        }
+      ],
+      "name": "CommandVeil v1.0.0",
+      "prerelease": false,
+      "published_at": 1795484713,
+      "version": "v1.0.0"
+    }
+  ]
 }

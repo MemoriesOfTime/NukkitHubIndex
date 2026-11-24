@@ -31,7 +31,7 @@
   "primary_target": "nkx",
   "server_version": "",
   "source": "https://github.com/wode490390/BiomeFixer",
-  "stars": 6,
+  "stars": 7,
   "summary": "Biome fixer plugin for Nukkit",
   "targets": [
     "nkx"

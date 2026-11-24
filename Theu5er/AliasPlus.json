@@ -36,23 +36,6 @@
   "updated_at": 1795269270,
   "versions": [
     {
-      "changelog": "## v1.1.1\r\n\r\n**ResourcePackCache:**\r\n- If a player manually deletes the resource pack, it will be automatically restored\r\n- Fixed an issue where detection became invalid if the player unexpectedly disconnected during their first join\r\n- Supports custom resource pack names and icons, see `config.yml` for details\r\n\r\n**DeviceIdFormat:**\r\n- Added validation of the expected DeviceId format based on the operating system\r\n\r\n**Expire:**\r\n- Each player's cache expires after 7 days by default; once expired, it is excluded from detection, and the timer is reset each time the player joins the game\r\n\r\n**Misc:**\r\n- Optimized file structure\r\n- Fixed other bugs\r\n\r\n---\r\n\r\n**ResourcePackCache:**\r\n- 如果玩家手动删除了资源包，将自动补全\r\n- 修复了首次进服过程中如果意外掉线导致检测无效问题\r\n- 支持自定义资源包名称与图标，详见 `config.yml`\r\n\r\n**DeviceIdFormat:**\r\n- 增加根据操作系统期望的 DeviceId 格式的校验\r\n\r\n**Expire:**\r\n- 每个玩家的缓存将于默认 7 天后过期，过期后不加入检测，玩家每次加入游戏都会重置时间\r\n\r\n**Misc:**\r\n- 优化文件结构\r\n- 修复其他的 bug",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "AliasPlus-1.1.1.jar",
-          "primary": true,
-          "sha256": "fcd0aea788b7004694094fd70ecb4d6ae02d2ab56161cac7de0b75203eee84cf",
-          "size": 54207,
-          "url": "https://github.com/Theu5er/AliasPlus/releases/download/v1.1.1/AliasPlus-1.1.1.jar"
-        }
-      ],
-      "name": "v1.1.1",
-      "prerelease": false,
-      "published_at": 1795269270,
-      "version": "v1.1.1"
-    },
-    {
       "changelog": "v1.1.0\r\n\r\nDeviceIdFormat:\r\n\r\n· Added this new check: validates the format of DeviceId; failing the check triggers the punishment command.\r\n\r\nResourcePackCache (ResPackCache):\r\n\r\n· Fixed the issue where resource loading failure prevented players from joining the server.\r\n· Fixed the issue where the server resource pack could not be downloaded.\r\n· Added an independent toggle for the sub-check ResourcePackSpoof; triggering it automatically runs the punishment command.\r\n· This check is automatically disabled if force-resources is disabled.\r\n\r\nConfig:\r\n\r\n· Each check now has its own independent toggle.\r\n· Added Simplified Chinese and English support.\r\n\r\nMisc:\r\n\r\n· Removed unused code.\r\n· Fixed some minor bugs and improved performance.\r\n· DeviceId, SelfSignedId, and ClientRandomId are now stored as hashes instead of plaintext.\r\n\r\nAPI:\r\n\r\n· Removed delayed punishments.\r\n\r\nv1.1.0\r\nDeviceIdFormat:\r\n- 新增该项检测，对DeviceId进行格式校验，不通过会执行惩罚命令\r\n\r\nResourcePackCache(ResPackCache):\r\n- 修复资源加载失败无法进入服务器问题\r\n- 修复无法下载服务器资源包问题\r\n- 子检测ResourcePackSpoof增加独立开关，检测到自动执行惩罚命令\r\n- 如果force-resources被禁用则自动禁用该项检测\r\n\r\nConfig:\r\n- 每项检测可独立开关\r\n- 支持简体中文与英文\r\n\r\nMisc:\r\n- 清理无用代码\r\n- 修复一些小bug以及性能提升\r\n- DeviceId,SelfSignedId,ClientRandomId改为储存哈希而不是明文\r\n\r\nAPI:\r\n - 删除延迟封禁",
       "downloads": 0,
       "files": [
@@ -64,7 +47,7 @@
           "url": "https://github.com/Theu5er/AliasPlus/releases/download/v1.1.0/AliasPlus-1.1.0.jar"
         }
       ],
-      "name": "v1.1.0",
+      "name": "v1.1.0 (deprecated)",
       "prerelease": false,
       "published_at": 1794042629,
       "version": "v1.1.0"

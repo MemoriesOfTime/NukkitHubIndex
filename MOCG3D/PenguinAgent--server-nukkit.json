@@ -48,7 +48,7 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1795448679,
+  "updated_at": 1795536109,
   "versions": [
     {
       "changelog": "v1.24.0：聊天 AI、TTS、查在线与群管理增强；新增背包/末影箱指定格物品查询。",
@@ -57,8 +57,8 @@
         {
           "filename": "HuHoBot-Penguin-1.24.jar",
           "primary": true,
-          "sha256": "0510b1e4134d6170e0f11012942e4548577edac3ee6258f20cdbf7907a570771",
-          "size": 37435437,
+          "sha256": "35ce75767e31df63e048e2c33976a95acb12ab6233e43bb7e15e3a23dfc623fc",
+          "size": 37452028,
           "url": "https://github.com/MOCG3D/PenguinAgent/releases/download/v1.24.0/HuHoBot-Penguin-1.24.jar"
         }
       ],
