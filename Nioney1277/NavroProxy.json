@@ -42,7 +42,7 @@
   "targets": [
     "nkx"
   ],
-  "updated_at": 1795530369,
+  "updated_at": 1795616514,
   "versions": [
     {
       "changelog": "Nukkit-MOT backend bridge 0.4.0 adds a separate RSA-authenticated NetherNet listener with the same private-nethernet configuration as PMMP: signaling port, bind addresses, advertised address, ICE range and trusted proxy public PEM.\n\nInstall NavroBackendBridge.jar; the internal plugin name remains NavroFireworkBridge. Remove the old JAR before restarting. Requires a Nukkit-MOT build with native NetherNet enabled and xbox-auth=off for private proxy login. Navro authenticates players; the bridge validates the proxy signature and binds forwarded login/client-data signatures to its session key, preserving the account UUID/XUID. Use backend-auth: pmmp-ng on Navro for the compatible RSA signing format.\n\nValidated against real Nukkit-MOT: signed WebRTC connection, NetworkSettings and game login; wrong keys/self-signed peers return 401. Firework, inventory/tick synchronization and alert integration checks passed. No real-client movement or public NAT deployment test.\n",

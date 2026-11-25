@@ -1,0 +1,38 @@
+{
+  "api_version": "3.0.6",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/360892290?v=4",
+      "name": "fjdjkd619-source",
+      "url": "https://github.com/fjdjkd619-source"
+    }
+  ],
+  "categories": [],
+  "created_at": 1795563983,
+  "dependencies": [],
+  "description": "",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/360892290?v=4",
+  "id": "fjdjkd619-source/PNXRTP",
+  "license": {
+    "id": "ARR",
+    "name": "All Rights Reserved",
+    "url": ""
+  },
+  "links": null,
+  "manifest_path": "PNXRTP/src/main/resources/plugin.yml",
+  "name": "PNXRTP",
+  "pending": true,
+  "primary_target": "pnx",
+  "server_version": "",
+  "source": "https://github.com/fjdjkd619-source/PNXRTP",
+  "stars": 0,
+  "summary": "Safe random teleport and throttled chunk generation for PowerNukkitX",
+  "targets": [
+    "pnx"
+  ],
+  "updated_at": 1795631519,
+  "versions": []
+}

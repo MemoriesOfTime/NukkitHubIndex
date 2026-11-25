@@ -1,0 +1,38 @@
+{
+  "api_version": "1.0.0",
+  "authors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/357809802?v=4",
+      "name": "xboxmainqq-ctrl",
+      "url": "https://github.com/xboxmainqq-ctrl"
+    }
+  ],
+  "categories": [],
+  "created_at": 1795624001,
+  "dependencies": [],
+  "description": "# NEXORA — режим Minecraft Bedrock\n\nЕдиный репозиторий плагинов режима NEXORA для Nukkit-MOT.\n\n## Структура\n- `plugins/NEXORA_MapBuilder` — строительство мира и постоянные координаты.\n- Далее здесь будут добавляться остальные плагины режима (существа, классы/способности, бои, экономика и т.д.).\n\n## Целевая серверная платформа\nNukkit-MOT. Известный идентификатор сборки сервера: `vgit-74e4b5c`.\n\n> Важно: идентификатор commit не равен Maven-версии API. Перед публикацией JAR необходимо подтвердить точную зависимость и проверить сборку на целевой версии сервера.\n\n## Состояние\nMapBuilder находится на этапе начальной реализации. Наличие исходников в репозитории не означает, что JAR уже собран или протестирован на сервере.\n",
+  "detection_confidence": "high",
+  "downloads": 0,
+  "gallery": [],
+  "icon_url": "https://avatars.githubusercontent.com/u/357809802?v=4",
+  "id": "xboxmainqq-ctrl/Nexora-svoi-rejim",
+  "license": {
+    "id": "Apache-2.0",
+    "name": "Apache License 2.0",
+    "url": "https://spdx.org/licenses/Apache-2.0.html"
+  },
+  "links": null,
+  "manifest_path": "plugins/NEXORA_MapBuilder/src/main/resources/plugin.yml",
+  "name": "NEXORA_MapBuilder",
+  "pending": true,
+  "primary_target": "nkmot",
+  "server_version": "",
+  "source": "https://github.com/xboxmainqq-ctrl/Nexora-svoi-rejim",
+  "stars": 0,
+  "summary": "Persistent named locations and staged world construction",
+  "targets": [
+    "nkmot"
+  ],
+  "updated_at": 1795626670,
+  "versions": []
+}
