@@ -49,7 +49,7 @@
   "targets": [
     "nkx"
   ],
-  "updated_at": 1795569984,
+  "updated_at": 1795717022,
   "versions": [
     {
       "changelog": "**For Minecraft: Bedrock Edition v1.26.60 (26.60)**\r\n\r\nThis release adds an experimental plugin API to Netherrack, alongside customizable console logging, whitelisting, time, weather and difficulty commands.\r\nPlease see the [changelogs](https://github.com/NetherrackOSS/Netherrack/blob/main/changelogs/beta.md#v040-beta) for details.\r\n\r\nℹ️ Check the installation guide [here](https://github.com/NetherrackOSS/Netherrack/blob/main/INSTALLATION.md).\r\n\r\n## ⚠️ Pre-release Notice\r\nNetherrack v0.4.0-beta is not yet stable. Expect missing features, bugs and glitches. Do not use it for production servers or worlds containing important data without maintaining independent backups.",
