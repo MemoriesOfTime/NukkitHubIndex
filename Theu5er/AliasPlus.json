@@ -10,7 +10,7 @@
   "categories": [],
   "created_at": 1791132147,
   "dependencies": [],
-  "description": "# Alias+\n\n**English** | [中文](https://github.com/Theu5er/AliasPlus/blob/main/README.zh.md)\n\nA Minecraft Bedrock Edition alt-account detection plugin built on the Nukkit-MOT core.\n\n**Advantages:**\n\n🔍\n**Unique Detection**\nWe have more detection methods than similar plugins, so the average spoofer is no longer unsolvable.\n\n🎯\n**High Accuracy**\nDetection does not rely on non-unique evidence like IP; results can be used for bans directly.\n\n🤫\n**Silent Detection**\nDetection is almost completely silent—cheaters have no idea why they got banned.\n\n🔗\n**Developer API**\nWe provide query and punishment APIs, allowing you to ban all alt accounts with one call.\n\n## Detection Vectors\n\nAlias+ currently checks:\n\n- `DeviceId`\n- `ClientRandomId`\n- `SelfSignedId`\n- `NetworkID`\n- `Resource Pack Cache`\n- `Blob Cache`\n\nEvery vector can be turned on or off in `config.yml` under `checks`. Two extra guards live there as well:\n\n- `DeviceIdFormat` — reject `DeviceId` values whose format is malformed **or** does not match the reported device OS (Android/iOS upper or lower hex, Windows hex or UUID, Xbox base64, PlayStation UUID; platforms without observation data are passed through). Rejected values are not stored and the account is punished\n- `ResourcePackSpoof` — disconnect and punish clients that claim to already hold the pack just assigned to them; only effective while `ResourcePackCache` is enabled\n\n### Fingerprint lifetime\n\n`expire.ResourcePackCache` and `expire.BlobCache` control how long a fingerprint stays in rotation (in days, default 7).\nExpired fingerprints are skipped when the detection list is built. Setting a value to `0` disables expiry.\nEvery login refreshes the timestamp of any fingerprint that player already holds.\n\n### Cache refill\n\nOnce a player has completed the first check (`confirmed`), every later login also re-sends that player's own\nfingerprint pack. A client that still has it skips the download; a client that cleared its cache downloads it again.\n\n### Fingerprint pack appearance\n\n`pack-name` sets the name shown in the client's resource pack list (default `Test`).\nPut an `icon.png` next to `config.yml` in the plugin folder to use it as the pack icon; without it the pack has no icon.\n\n**Usage:**\n\nEnable `force-resources` in the `server.properties` file — without it the resource pack vector is disabled at startup and a warning is logged.\nEnable `nethernet` in the `nukkit-mot.yml` file.\n\n```\n/alias <name/uuid>\n```\n\n**Notes:**\n\nThis project is a vibe-coding-assisted technical demo. It may contain bugs—do not use it on a production server.\n\n## Developer API\n\n### Setup\n\nAdd `depend: [Alias+]` to your plugin's `plugin.yml`, then get the instance:\n\n```java\nAltDetector alias = (AltDetector) getServer().getPluginManager().getPlugin(\"Alias+\");\n```\n\n### Punish API\n\n```java\nint count = alias.punish(uuid);\n```\n\n- `uuid`: player uuid string (`player.getUniqueId().toString()`)\n- Returns: number of accounts added to the punishment queue (the target itself + all related alt accounts, deduplicated)\n- Punishment command is configured in `config.yml`: `punish.command` (placeholders `%player%`, `%uuid%`)\n\n### Query API\n\n```java\nSet<String> alts = alias.getRelatedAccounts(uuid);                  // all related alt uuids\nMap<String, Set<String>> byDim = alias.getRelatedByDimension(uuid); // by dimension (DeviceId/SelfSignedId/ClientRandomId/NetworkID/pack/blob)\n```",
+  "description": "# Alias+\n\n**English** | [中文](https://github.com/Theu5er/AliasPlus/blob/main/README.zh.md)\n\nAlternate account detection plugin for Minecraft Bedrock Edition, built on the Nukkit-MOT core.\n\n**Advantages:**\n\n🔍\n**Distinctive detection**\nWe cover more detection vectors than comparable plugins — common spoofers are no longer an unsolvable case.\n\n🎯\n**High accuracy**\nDetection does not rely on non-unique evidence such as IP addresses, so results can be used for banning directly.\n\n🤫\n**Silent detection**\nDetection is almost entirely silent — alternate account users never find out why they were banned.\n\n🔗\n**Developer API**\nWe provide lookup and punishment APIs, so all alternate accounts can be banned in one call.\n\n## Detection vectors\n\nAlias+ currently detects:\n\n- `DeviceId`\n- `ClientRandomId`\n- `SelfSignedId`\n- `NetworkID`\n- `Resource Pack Cache`\n- `Blob Cache`\n\nEvery vector can be toggled individually under `checks` in `config.yml`. Two additional validation switches live there as well:\n\n- `IdFormat` — reject identifiers with a malformed format\n- `ResourcePackSpoof` — only effective while `ResourcePackCache` is enabled\n\n### Fingerprint expiry\n\n`expire.ResourcePackCache` and `expire.BlobCache` control how long a fingerprint stays in the detection list (in days, default 7).\nFingerprints past their expiry are skipped when the detection list is built. Set to `0` to disable expiry.\nEach join refreshes the timestamps of the fingerprints the player already holds.\n\n**Usage:**\n\nEnable `force-resources` in `server.properties`, otherwise the resource pack vector is disabled automatically at startup with a warning.\nEnable `nethernet` in `nukkit-mot.yml`.\n\n```\n/alias <name/uuid>      list every account related to that player\n/alias -stats           ban statistics grouped by detection vector\n/alias -reload          reload config.yml without restarting\n```\n\n`-stats` and `-reload` require the `altdetector.admin` permission (op only by default).\n\n**Notes:**\n\nThis project was built with AI assistance and is currently a beta release — bugs are possible.\n\n## Developer API\n\n### Integration\n\nAdd `depend: [Alias]` to your plugin's `plugin.yml`, then grab the instance.\n\nNote that the plugin id is `Alias`, not `Alias+`: Nukkit strips the plus sign when registering the plugin, so writing `Alias+` results in `Unknown dependency`. Also use `depend` rather than `softdepend` — the latter does not share classes, and the cast below throws `ClassCastException`.\n\n```java\nAltDetector alias = (AltDetector) getServer().getPluginManager().getPlugin(\"Alias\");\n```\n\n### Punishment API\n\n```java\nint count = alias.punish(uuid);\n```\n\n- `uuid`: the player uuid string (`player.getUniqueId().toString()`)\n- Returns: the number of accounts queued for punishment (the target itself plus every related alternate, de-duplicated)\n- The punishment command is configured in `config.yml`: `punish.command` (placeholders `%player%`, `%uuid%`)\n\n### Query API\n\n```java\nSet<String> alts = alias.getRelatedAccounts(uuid);                  // uuids of all related alternates\nMap<String, Set<String>> byDim = alias.getRelatedByDimension(uuid); // grouped by vector (DeviceId/SelfSignedId/ClientRandomId/NetworkID/pack/blob)\n```\n",
   "detection_confidence": "high",
   "downloads": 0,
   "gallery": [],
@@ -33,92 +33,24 @@
     "nkx",
     "nkmot"
   ],
-  "updated_at": 1795269270,
+  "updated_at": 1795793994,
   "versions": [
     {
-      "changelog": "v1.1.0\r\n\r\nDeviceIdFormat:\r\n\r\n· Added this new check: validates the format of DeviceId; failing the check triggers the punishment command.\r\n\r\nResourcePackCache (ResPackCache):\r\n\r\n· Fixed the issue where resource loading failure prevented players from joining the server.\r\n· Fixed the issue where the server resource pack could not be downloaded.\r\n· Added an independent toggle for the sub-check ResourcePackSpoof; triggering it automatically runs the punishment command.\r\n· This check is automatically disabled if force-resources is disabled.\r\n\r\nConfig:\r\n\r\n· Each check now has its own independent toggle.\r\n· Added Simplified Chinese and English support.\r\n\r\nMisc:\r\n\r\n· Removed unused code.\r\n· Fixed some minor bugs and improved performance.\r\n· DeviceId, SelfSignedId, and ClientRandomId are now stored as hashes instead of plaintext.\r\n\r\nAPI:\r\n\r\n· Removed delayed punishments.\r\n\r\nv1.1.0\r\nDeviceIdFormat:\r\n- 新增该项检测，对DeviceId进行格式校验，不通过会执行惩罚命令\r\n\r\nResourcePackCache(ResPackCache):\r\n- 修复资源加载失败无法进入服务器问题\r\n- 修复无法下载服务器资源包问题\r\n- 子检测ResourcePackSpoof增加独立开关，检测到自动执行惩罚命令\r\n- 如果force-resources被禁用则自动禁用该项检测\r\n\r\nConfig:\r\n- 每项检测可独立开关\r\n- 支持简体中文与英文\r\n\r\nMisc:\r\n- 清理无用代码\r\n- 修复一些小bug以及性能提升\r\n- DeviceId,SelfSignedId,ClientRandomId改为储存哈希而不是明文\r\n\r\nAPI:\r\n - 删除延迟封禁",
+      "changelog": "v1.1.2\r\nResourcePackSpoof:\r\n- 修复再次进服会下载所有人的资源包问题\r\nPerformance:\r\n- 改用 H2 存储数据，显著提升读写速度\r\nIdFormat(DeviceIdFormat):\r\n- 给ClientRandomId与SelfSignedId添加了非法值判断\r\nCommand:\r\n- 增加子命令 /alias -stats 输出各维度累计处罚了多少账号\r\n- 增加子命令 /alias -reload 用于重加载配置\r\nBlobCache:\r\n- 增加debug选项\r\nMisc:\r\n- 优化文件结构\r\n- 修复一些小问题\r\nAPI:\r\n- 改进Punish API\r\n- 移除执行命令的log",
       "downloads": 0,
       "files": [
         {
-          "filename": "AliasPlus-1.1.0.jar",
+          "filename": "AliasPlus-1.1.2.jar",
           "primary": true,
-          "sha256": "b2228b7088ca26ac55bb96fb7e6d58da84962b7591f65bd0976ac3ee86ac2869",
-          "size": 51841,
-          "url": "https://github.com/Theu5er/AliasPlus/releases/download/v1.1.0/AliasPlus-1.1.0.jar"
+          "sha256": "7c3e38ba83222a42be9caff05e908ca8f55d790f2fbb2e368066611db3812b81",
+          "size": 2726583,
+          "url": "https://github.com/Theu5er/AliasPlus/releases/download/v1.1.2/AliasPlus-1.1.2.jar"
         }
       ],
-      "name": "v1.1.0 (deprecated)",
+      "name": "v1.1.2",
       "prerelease": false,
-      "published_at": 1794042629,
-      "version": "v1.1.0"
-    },
-    {
-      "changelog": "v1.0.6\r\n[*] ResPackCache no longer requires initialization\r\n[-] Removed the ResourcePackSpoof option from players.yml and the ResourcePackSpoof detection notice in the /alias output. Now, if a player is detected as ResourcePackSpoof, they will be disconnected directly.\r\n\r\nv1.0.6\r\n[*] ResPackCache不再需要初始化\r\n[-] 删除players.yml中ResourcePackSpoof选项以及/alias输出里的ResourcePackSpoof检测提示，现在如果被认为是ResourcePackSpoof将会直接断开连接",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "Alias+.jar",
-          "primary": true,
-          "sha256": "b17d15bd167ef082c5e02f43d4902b98ac4a98007f247c14d636672fec83866a",
-          "size": 57844,
-          "url": "https://github.com/Theu5er/AliasPlus/releases/download/v1.0.6/Alias%2B.jar"
-        }
-      ],
-      "name": "v1.0.6 (deprecated)",
-      "prerelease": false,
-      "published_at": 1793619816,
-      "version": "v1.0.6"
-    },
-    {
-      "changelog": "v1.0.5\r\n[] Performance optimization\r\n[] respackcache now requires initialization; do not use v1.0.2~v1.0.4\r\n[*] In the text returned by /alias:\r\n\"ResPackCache\" -> \"ResPackCache by\"\r\n\"BlobCache\" -> \"BlobCache by\"\r\n[+] Added a configuration option for custom initialization text\r\n[-] xuid is no longer supported\r\n\r\nv1.0.5\r\n[*] 性能优化\r\n[*] respackcache现在需要初始化，请勿使用v1.0.2~v1.0.4\r\n[*] /alias返回文本中\r\n“ResPackCache”->“ResPackCache by”\r\n“BlobCache”->“BlobCache by”\r\n[+] 添加自定义初始化文本配置选项\r\n[-] 不再支持xuid ",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "Alias+.jar",
-          "primary": true,
-          "sha256": "2e743441b23166c873649e0a971828157a2e88ccbdba03095c19960ed035cd39",
-          "size": 55299,
-          "url": "https://github.com/Theu5er/AliasPlus/releases/download/v1.0.5/Alias%2B.jar"
-        }
-      ],
-      "name": "v1.0.5 (deprecated)",
-      "prerelease": false,
-      "published_at": 1793536534,
-      "version": "v1.0.5"
-    },
-    {
-      "changelog": "v1.0.1\r\n\r\n[+] Added query and punishment API for alt accounts; see README for details\r\n[-] Removed the success message for BlobCache queries\r\n[*] Only players with the altdetector.alias permission can use /alias now",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "Alias+.jar",
-          "primary": true,
-          "sha256": "7433255e69e8ed730a45fd4681f5dd4eae4fdf1753f7ffc1916fea4ea6a7a091",
-          "size": 48547,
-          "url": "https://github.com/Theu5er/AliasPlus/releases/download/v1.0.1/Alias%2B.jar"
-        }
-      ],
-      "name": "v1.0.1 (deprecated)",
-      "prerelease": false,
-      "published_at": 1791376131,
-      "version": "v1.0.1"
-    },
-    {
-      "changelog": "",
-      "downloads": 0,
-      "files": [
-        {
-          "filename": "Alias+.jar",
-          "primary": true,
-          "sha256": "d1cb17ea62e4e5232a0ca1a9e949ef4dbdf33f001d58a2f5fb9c68eadcbcd4f1",
-          "size": 36469,
-          "url": "https://github.com/Theu5er/AliasPlus/releases/download/v1.0.0/Alias%2B.jar"
-        }
-      ],
-      "name": "v1.0.0 (deprecated)",
-      "prerelease": false,
-      "published_at": 1791280160,
-      "version": "v1.0.0"
+      "published_at": 1795793994,
+      "version": "v1.1.2"
     }
   ]
 }
